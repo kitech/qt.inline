@@ -214,7 +214,7 @@ void C_ZN5QFile11setFileNameERK7QString(void *this_, QString* name) {
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:88
+// /usr/include/qt/QtCore/qfile.h:87
 // [8] QByteArray encodeName(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFile10encodeNameERK7QString(QString* fileName) {
@@ -223,7 +223,7 @@ return new QByteArray(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:92
+// /usr/include/qt/QtCore/qfile.h:91
 // [8] QString decodeName(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFile10decodeNameERK10QByteArray(QByteArray* localFileName) {
@@ -232,7 +232,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:97
+// /usr/include/qt/QtCore/qfile.h:96
 // [8] QString decodeName(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFile10decodeNameEPKc(const char * localFileName) {
@@ -241,7 +241,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:107
+// /usr/include/qt/QtCore/qfile.h:106
 // [1] bool exists()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFile6existsEv(void *this_) {
@@ -249,7 +249,7 @@ bool C_ZNK5QFile6existsEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:108
+// /usr/include/qt/QtCore/qfile.h:107
 // [1] bool exists(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile6existsERK7QString(QString* fileName) {
@@ -257,7 +257,7 @@ bool C_ZN5QFile6existsERK7QString(QString* fileName) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:110
+// /usr/include/qt/QtCore/qfile.h:109
 // [8] QString readLink()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFile8readLinkEv(void *this_) {
@@ -266,7 +266,7 @@ return new QString(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:111
+// /usr/include/qt/QtCore/qfile.h:110
 // [8] QString readLink(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFile8readLinkERK7QString(QString* fileName) {
@@ -276,7 +276,7 @@ return new QString(rv);
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtCore/qfile.h:112
+// /usr/include/qt/QtCore/qfile.h:111
 // [8] QString symLinkTarget()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -288,7 +288,7 @@ return new QString(rv);
 
 // Public static inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtCore/qfile.h:113
+// /usr/include/qt/QtCore/qfile.h:112
 // [8] QString symLinkTarget(const QString &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -299,7 +299,7 @@ return new QString(rv);
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:115
+// /usr/include/qt/QtCore/qfile.h:114
 // [1] bool remove()
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile6removeEv(void *this_) {
@@ -307,7 +307,7 @@ bool C_ZN5QFile6removeEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:116
+// /usr/include/qt/QtCore/qfile.h:115
 // [1] bool remove(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile6removeERK7QString(QString* fileName) {
@@ -315,7 +315,7 @@ bool C_ZN5QFile6removeERK7QString(QString* fileName) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:118
+// /usr/include/qt/QtCore/qfile.h:117
 // [1] bool rename(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile6renameERK7QString(void *this_, QString* newName) {
@@ -323,7 +323,7 @@ bool C_ZN5QFile6renameERK7QString(void *this_, QString* newName) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:119
+// /usr/include/qt/QtCore/qfile.h:118
 // [1] bool rename(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile6renameERK7QStringS2_(QString* oldName, QString* newName) {
@@ -331,7 +331,7 @@ bool C_ZN5QFile6renameERK7QStringS2_(QString* oldName, QString* newName) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:121
+// /usr/include/qt/QtCore/qfile.h:120
 // [1] bool link(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile4linkERK7QString(void *this_, QString* newName) {
@@ -339,7 +339,7 @@ bool C_ZN5QFile4linkERK7QString(void *this_, QString* newName) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:122
+// /usr/include/qt/QtCore/qfile.h:121
 // [1] bool link(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile4linkERK7QStringS2_(QString* oldname, QString* newName) {
@@ -347,7 +347,7 @@ bool C_ZN5QFile4linkERK7QStringS2_(QString* oldname, QString* newName) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:124
+// /usr/include/qt/QtCore/qfile.h:123
 // [1] bool copy(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile4copyERK7QString(void *this_, QString* newName) {
@@ -355,7 +355,7 @@ bool C_ZN5QFile4copyERK7QString(void *this_, QString* newName) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:125
+// /usr/include/qt/QtCore/qfile.h:124
 // [1] bool copy(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile4copyERK7QStringS2_(QString* fileName, QString* newName) {
@@ -363,7 +363,7 @@ bool C_ZN5QFile4copyERK7QStringS2_(QString* fileName, QString* newName) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:127
+// /usr/include/qt/QtCore/qfile.h:126
 // [1] bool open(QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> flags) {
@@ -371,7 +371,7 @@ bool C_ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIO
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:128
+// /usr/include/qt/QtCore/qfile.h:127
 // [1] bool open(FILE *, QIODevice::OpenMode, QFileDevice::FileHandleFlags)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile4openEP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEES2_IN11QFileDevice14FileHandleFlagEE(void *this_, FILE * f, QFlags<QIODevice::OpenModeFlag> ioFlags, QFlags<QFileDevice::FileHandleFlag> handleFlags) {
@@ -379,7 +379,7 @@ bool C_ZN5QFile4openEP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEES2_IN11QFileDe
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:129
+// /usr/include/qt/QtCore/qfile.h:128
 // [1] bool open(int, QIODevice::OpenMode, QFileDevice::FileHandleFlags)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile4openEi6QFlagsIN9QIODevice12OpenModeFlagEES0_IN11QFileDevice14FileHandleFlagEE(void *this_, int fd, QFlags<QIODevice::OpenModeFlag> ioFlags, QFlags<QFileDevice::FileHandleFlag> handleFlags) {
@@ -387,7 +387,7 @@ bool C_ZN5QFile4openEi6QFlagsIN9QIODevice12OpenModeFlagEES0_IN11QFileDevice14Fil
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:131
+// /usr/include/qt/QtCore/qfile.h:130
 // [8] qint64 size()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK5QFile4sizeEv(void *this_) {
@@ -395,7 +395,7 @@ qint64 C_ZNK5QFile4sizeEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:133
+// /usr/include/qt/QtCore/qfile.h:132
 // [1] bool resize(qint64)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile6resizeEx(void *this_, qint64 sz) {
@@ -403,7 +403,7 @@ bool C_ZN5QFile6resizeEx(void *this_, qint64 sz) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:134
+// /usr/include/qt/QtCore/qfile.h:133
 // [1] bool resize(const QString &, qint64)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile6resizeERK7QStringx(QString* filename, qint64 sz) {
@@ -411,7 +411,7 @@ bool C_ZN5QFile6resizeERK7QStringx(QString* filename, qint64 sz) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:136
+// /usr/include/qt/QtCore/qfile.h:135
 // [4] QFileDevice::Permissions permissions()
 extern "C" Q_DECL_EXPORT
 QFileDevice::Permissions* C_ZNK5QFile11permissionsEv(void *this_) {
@@ -420,7 +420,7 @@ return new QFileDevice::Permissions(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:137
+// /usr/include/qt/QtCore/qfile.h:136
 // [4] QFileDevice::Permissions permissions(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFile11permissionsERK7QString(QString* filename) {
@@ -429,7 +429,7 @@ void C_ZN5QFile11permissionsERK7QString(QString* filename) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:138
+// /usr/include/qt/QtCore/qfile.h:137
 // [1] bool setPermissions(QFileDevice::Permissions)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile14setPermissionsE6QFlagsIN11QFileDevice10PermissionEE(void *this_, QFlags<QFileDevice::Permission> permissionSpec) {
@@ -437,7 +437,7 @@ bool C_ZN5QFile14setPermissionsE6QFlagsIN11QFileDevice10PermissionEE(void *this_
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfile.h:139
+// /usr/include/qt/QtCore/qfile.h:138
 // [1] bool setPermissions(const QString &, QFileDevice::Permissions)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFile14setPermissionsERK7QString6QFlagsIN11QFileDevice10PermissionEE(QString* filename, QFlags<QFileDevice::Permission> permissionSpec) {

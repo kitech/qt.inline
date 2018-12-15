@@ -55,7 +55,7 @@ MyQStyleOptionTab(const QStyleOptionTab & other) : QStyleOptionTab(other) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:285
+// /usr/include/qt/QtWidgets/qstyleoption.h:274
 // [-2] void QStyleOptionTab()
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QStyleOptionTabC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN15QStyleOptionTabC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:286
+// /usr/include/qt/QtWidgets/qstyleoption.h:275
 // [-2] void QStyleOptionTab(const QStyleOptionTab &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QStyleOptionTabC2ERKS_(QStyleOptionTab* other) {

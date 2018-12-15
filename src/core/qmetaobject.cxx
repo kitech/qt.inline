@@ -427,7 +427,7 @@ bool C_ZN11QMetaObject12invokeMethodEP7QObjectPKc16QGenericArgumentS4_S4_S4_S4_S
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qobjectdefs.h:554
+// /usr/include/qt/QtCore/qobjectdefs.h:469
 // [8] QObject * newInstance(QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -437,7 +437,7 @@ void* C_ZNK11QMetaObject11newInstanceE16QGenericArgumentS0_S0_S0_S0_S0_S0_S0_S0_
 #endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:581
+// /usr/include/qt/QtCore/qobjectdefs.h:496
 // [4] int static_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QMetaObject15static_metacallENS_4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -445,7 +445,7 @@ int C_ZNK11QMetaObject15static_metacallENS_4CallEiPPv(void *this_, QMetaObject::
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:582
+// /usr/include/qt/QtCore/qobjectdefs.h:497
 // [4] int metacall(QObject *, QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaObject8metacallEP7QObjectNS_4CallEiPPv(QObject * arg0, QMetaObject::Call arg1, int arg2, void ** arg3) {

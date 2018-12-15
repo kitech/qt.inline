@@ -55,7 +55,7 @@ MyQStyleOptionTitleBar(const QStyleOptionTitleBar & other) : QStyleOptionTitleBa
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:619
+// /usr/include/qt/QtWidgets/qstyleoption.h:608
 // [-2] void QStyleOptionTitleBar()
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionTitleBarC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN20QStyleOptionTitleBarC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:620
+// /usr/include/qt/QtWidgets/qstyleoption.h:609
 // [-2] void QStyleOptionTitleBar(const QStyleOptionTitleBar &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionTitleBarC2ERKS_(QStyleOptionTitleBar* other) {

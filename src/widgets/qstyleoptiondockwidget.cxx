@@ -55,7 +55,7 @@ MyQStyleOptionDockWidget(const QStyleOptionDockWidget & other) : QStyleOptionDoc
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:391
+// /usr/include/qt/QtWidgets/qstyleoption.h:380
 // [-2] void QStyleOptionDockWidget()
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionDockWidgetC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN22QStyleOptionDockWidgetC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:392
+// /usr/include/qt/QtWidgets/qstyleoption.h:381
 // [-2] void QStyleOptionDockWidget(const QStyleOptionDockWidget &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionDockWidgetC2ERKS_(QStyleOptionDockWidget* other) {

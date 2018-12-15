@@ -53,7 +53,7 @@ MyQResizeEvent(const QSize & size, const QSize & oldSize) : QResizeEvent(size, o
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:463
+// /usr/include/qt/QtGui/qevent.h:456
 // [-2] void QResizeEvent(const QSize &, const QSize &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QResizeEventC2ERK5QSizeS2_(QSize* size, QSize* oldSize) {
@@ -61,14 +61,14 @@ void* C_ZN12QResizeEventC2ERK5QSizeS2_(QSize* size, QSize* oldSize) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:464
+// /usr/include/qt/QtGui/qevent.h:457
 // [-2] void ~QResizeEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QResizeEventD2Ev(void *this_) {
   delete (QResizeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:466
+// /usr/include/qt/QtGui/qevent.h:459
 // [8] const QSize & size()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QResizeEvent4sizeEv(void *this_) {
@@ -77,7 +77,7 @@ return new QSize(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:467
+// /usr/include/qt/QtGui/qevent.h:460
 // [8] const QSize & oldSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QResizeEvent7oldSizeEv(void *this_) {

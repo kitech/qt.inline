@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
@@ -81,13 +80,13 @@ MyQAbstractGraphicsShapeItem(QGraphicsItem * parent) : QAbstractGraphicsShapeIte
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:324
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:325
 // [32] QRectF boundingRect()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:344
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:345
 // [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:603
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:604
 // [-2] void QAbstractGraphicsShapeItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QAbstractGraphicsShapeItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
@@ -95,14 +94,14 @@ void* C_ZN26QAbstractGraphicsShapeItemC2EP13QGraphicsItem(QGraphicsItem * parent
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:604
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:605
 // [-2] void ~QAbstractGraphicsShapeItem()
 extern "C" Q_DECL_EXPORT
 void C_ZN26QAbstractGraphicsShapeItemD2Ev(void *this_) {
   delete (QAbstractGraphicsShapeItem*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:606
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:607
 // [8] QPen pen()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK26QAbstractGraphicsShapeItem3penEv(void *this_) {
@@ -111,7 +110,7 @@ return new QPen(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:607
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:608
 // [-2] void setPen(const QPen &)
 extern "C" Q_DECL_EXPORT
 void C_ZN26QAbstractGraphicsShapeItem6setPenERK4QPen(void *this_, QPen* pen) {
@@ -119,7 +118,7 @@ void C_ZN26QAbstractGraphicsShapeItem6setPenERK4QPen(void *this_, QPen* pen) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:609
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:610
 // [8] QBrush brush()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK26QAbstractGraphicsShapeItem5brushEv(void *this_) {
@@ -128,7 +127,7 @@ return new QBrush(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:610
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:611
 // [-2] void setBrush(const QBrush &)
 extern "C" Q_DECL_EXPORT
 void C_ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush(void *this_, QBrush* brush) {
@@ -136,7 +135,7 @@ void C_ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush(void *this_, QBrush* br
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:612
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:613
 // [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK26QAbstractGraphicsShapeItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
@@ -144,7 +143,7 @@ bool C_ZNK26QAbstractGraphicsShapeItem12isObscuredByEPK13QGraphicsItem(void *thi
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:613
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:614
 // [8] QPainterPath opaqueArea()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK26QAbstractGraphicsShapeItem10opaqueAreaEv(void *this_) {
@@ -168,5 +167,4 @@ return new QPainterPath(rv);
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

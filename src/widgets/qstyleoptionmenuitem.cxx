@@ -55,7 +55,7 @@ MyQStyleOptionMenuItem(const QStyleOptionMenuItem & other) : QStyleOptionMenuIte
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:372
+// /usr/include/qt/QtWidgets/qstyleoption.h:361
 // [-2] void QStyleOptionMenuItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionMenuItemC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN20QStyleOptionMenuItemC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:373
+// /usr/include/qt/QtWidgets/qstyleoption.h:362
 // [-2] void QStyleOptionMenuItem(const QStyleOptionMenuItem &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionMenuItemC2ERKS_(QStyleOptionMenuItem* other) {

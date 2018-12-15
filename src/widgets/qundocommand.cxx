@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qundostack.h
 #ifndef protected
@@ -57,7 +56,7 @@ MyQUndoCommand(const QString & text, QUndoCommand * parent) : QUndoCommand(text,
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundostack.h:60
+// /usr/include/qt/QtWidgets/qundostack.h:61
 // [-2] void QUndoCommand(QUndoCommand *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QUndoCommandC2EPS_(QUndoCommand * parent) {
@@ -65,7 +64,7 @@ void* C_ZN12QUndoCommandC2EPS_(QUndoCommand * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundostack.h:61
+// /usr/include/qt/QtWidgets/qundostack.h:62
 // [-2] void QUndoCommand(const QString &, QUndoCommand *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QUndoCommandC2ERK7QStringPS_(QString* text, QUndoCommand * parent) {
@@ -73,14 +72,14 @@ void* C_ZN12QUndoCommandC2ERK7QStringPS_(QString* text, QUndoCommand * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundostack.h:62
+// /usr/include/qt/QtWidgets/qundostack.h:63
 // [-2] void ~QUndoCommand()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QUndoCommandD2Ev(void *this_) {
   delete (QUndoCommand*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundostack.h:64
+// /usr/include/qt/QtWidgets/qundostack.h:65
 // [-2] void undo()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QUndoCommand4undoEv(void *this_) {
@@ -88,7 +87,7 @@ void C_ZN12QUndoCommand4undoEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundostack.h:65
+// /usr/include/qt/QtWidgets/qundostack.h:66
 // [-2] void redo()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QUndoCommand4redoEv(void *this_) {
@@ -96,7 +95,7 @@ void C_ZN12QUndoCommand4redoEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundostack.h:67
+// /usr/include/qt/QtWidgets/qundostack.h:68
 // [8] QString text()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QUndoCommand4textEv(void *this_) {
@@ -106,7 +105,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtWidgets/qundostack.h:68
+// /usr/include/qt/QtWidgets/qundostack.h:69
 // [8] QString actionText()
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -117,7 +116,7 @@ return new QString(rv);
 #endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundostack.h:69
+// /usr/include/qt/QtWidgets/qundostack.h:70
 // [-2] void setText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QUndoCommand7setTextERK7QString(void *this_, QString* text) {
@@ -126,7 +125,7 @@ void C_ZN12QUndoCommand7setTextERK7QString(void *this_, QString* text) {
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtWidgets/qundostack.h:71
+// /usr/include/qt/QtWidgets/qundostack.h:72
 // [1] bool isObsolete()
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -137,7 +136,7 @@ bool C_ZNK12QUndoCommand10isObsoleteEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtWidgets/qundostack.h:72
+// /usr/include/qt/QtWidgets/qundostack.h:73
 // [-2] void setObsolete(bool)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -147,7 +146,7 @@ void C_ZN12QUndoCommand11setObsoleteEb(void *this_, bool obsolete) {
 #endif // QT_VERSION >= 0x050900
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundostack.h:74
+// /usr/include/qt/QtWidgets/qundostack.h:75
 // [4] int id()
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QUndoCommand2idEv(void *this_) {
@@ -155,7 +154,7 @@ int C_ZNK12QUndoCommand2idEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundostack.h:75
+// /usr/include/qt/QtWidgets/qundostack.h:76
 // [1] bool mergeWith(const QUndoCommand *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QUndoCommand9mergeWithEPKS_(void *this_, const QUndoCommand * other) {
@@ -164,7 +163,7 @@ bool C_ZN12QUndoCommand9mergeWithEPKS_(void *this_, const QUndoCommand * other) 
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qundostack.h:77
+// /usr/include/qt/QtWidgets/qundostack.h:78
 // [4] int childCount()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -175,7 +174,7 @@ int C_ZNK12QUndoCommand10childCountEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qundostack.h:78
+// /usr/include/qt/QtWidgets/qundostack.h:79
 // [8] const QUndoCommand * child(int)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -200,5 +199,4 @@ void* C_ZNK12QUndoCommand5childEi(void *this_, int index) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

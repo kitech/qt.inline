@@ -55,7 +55,7 @@ MyQKeyEvent(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers,
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:338
+// /usr/include/qt/QtGui/qevent.h:331
 // [-2] void QKeyEvent(QEvent::Type, int, Qt::KeyboardModifiers, const QString &, bool, ushort)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, QString* text, bool autorep, ushort count) {
@@ -63,7 +63,7 @@ void* C_ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QString
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:340
+// /usr/include/qt/QtGui/qevent.h:333
 // [-2] void QKeyEvent(QEvent::Type, int, Qt::KeyboardModifiers, quint32, quint32, quint32, const QString &, bool, ushort)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, quint32 nativeScanCode, quint32 nativeVirtualKey, quint32 nativeModifiers, QString* text, bool autorep, ushort count) {
@@ -71,14 +71,14 @@ void* C_ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStr
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:343
+// /usr/include/qt/QtGui/qevent.h:336
 // [-2] void ~QKeyEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QKeyEventD2Ev(void *this_) {
   delete (QKeyEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:345
+// /usr/include/qt/QtGui/qevent.h:338
 // [4] int key()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QKeyEvent3keyEv(void *this_) {
@@ -87,7 +87,7 @@ int C_ZNK9QKeyEvent3keyEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qevent.h:347
+// /usr/include/qt/QtGui/qevent.h:340
 // [1] bool matches(QKeySequence::StandardKey)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -97,7 +97,7 @@ bool C_ZNK9QKeyEvent7matchesEN12QKeySequence11StandardKeyE(void *this_, QKeySequ
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:349
+// /usr/include/qt/QtGui/qevent.h:342
 // [4] Qt::KeyboardModifiers modifiers()
 extern "C" Q_DECL_EXPORT
 Qt::KeyboardModifiers C_ZNK9QKeyEvent9modifiersEv(void *this_) {
@@ -105,7 +105,7 @@ Qt::KeyboardModifiers C_ZNK9QKeyEvent9modifiersEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:350
+// /usr/include/qt/QtGui/qevent.h:343
 // [8] QString text()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QKeyEvent4textEv(void *this_) {
@@ -114,7 +114,7 @@ return new QString(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:351
+// /usr/include/qt/QtGui/qevent.h:344
 // [1] bool isAutoRepeat()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QKeyEvent12isAutoRepeatEv(void *this_) {
@@ -122,7 +122,7 @@ bool C_ZNK9QKeyEvent12isAutoRepeatEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:352
+// /usr/include/qt/QtGui/qevent.h:345
 // [4] int count()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QKeyEvent5countEv(void *this_) {
@@ -131,7 +131,7 @@ int C_ZNK9QKeyEvent5countEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qevent.h:354
+// /usr/include/qt/QtGui/qevent.h:347
 // [4] quint32 nativeScanCode()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -142,7 +142,7 @@ quint32 C_ZNK9QKeyEvent14nativeScanCodeEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qevent.h:355
+// /usr/include/qt/QtGui/qevent.h:348
 // [4] quint32 nativeVirtualKey()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -153,7 +153,7 @@ quint32 C_ZNK9QKeyEvent16nativeVirtualKeyEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtGui/qevent.h:356
+// /usr/include/qt/QtGui/qevent.h:349
 // [4] quint32 nativeModifiers()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT

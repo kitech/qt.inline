@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
@@ -55,7 +54,7 @@ MyQGraphicsItemGroup(QGraphicsItem * parent) : QGraphicsItemGroup(parent) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1004
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1005
 // [-2] void QGraphicsItemGroup(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QGraphicsItemGroupC2EP13QGraphicsItem(QGraphicsItem * parent) {
@@ -63,14 +62,14 @@ void* C_ZN18QGraphicsItemGroupC2EP13QGraphicsItem(QGraphicsItem * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1005
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1006
 // [-2] void ~QGraphicsItemGroup()
 extern "C" Q_DECL_EXPORT
 void C_ZN18QGraphicsItemGroupD2Ev(void *this_) {
   delete (QGraphicsItemGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1007
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1008
 // [-2] void addToGroup(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QGraphicsItemGroup10addToGroupEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
@@ -78,7 +77,7 @@ void C_ZN18QGraphicsItemGroup10addToGroupEP13QGraphicsItem(void *this_, QGraphic
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1008
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1009
 // [-2] void removeFromGroup(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QGraphicsItemGroup15removeFromGroupEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
@@ -86,7 +85,7 @@ void C_ZN18QGraphicsItemGroup15removeFromGroupEP13QGraphicsItem(void *this_, QGr
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1010
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1011
 // [32] QRectF boundingRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QGraphicsItemGroup12boundingRectEv(void *this_) {
@@ -95,7 +94,7 @@ return new QRectF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1011
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1012
 // [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QGraphicsItemGroup5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
@@ -103,7 +102,7 @@ void C_ZN18QGraphicsItemGroup5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWid
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1013
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1014
 // [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK18QGraphicsItemGroup12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
@@ -111,7 +110,7 @@ bool C_ZNK18QGraphicsItemGroup12isObscuredByEPK13QGraphicsItem(void *this_, cons
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1014
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1015
 // [8] QPainterPath opaqueArea()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QGraphicsItemGroup10opaqueAreaEv(void *this_) {
@@ -120,7 +119,7 @@ return new QPainterPath(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:1017
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:1018
 // [4] int type()
 extern "C" Q_DECL_EXPORT
 int C_ZNK18QGraphicsItemGroup4typeEv(void *this_) {
@@ -143,5 +142,4 @@ int C_ZNK18QGraphicsItemGroup4typeEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

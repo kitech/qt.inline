@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qcompleter.h
 #ifndef protected
@@ -142,7 +141,7 @@ void* C_QCompleter_init_staticMetaObject(void* this_, void* strdat, void* dat, v
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:145
+// /usr/include/qt/QtWidgets/qcompleter.h:146
 // [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QCompleter11eventFilterEP7QObjectP6QEvent(void *this_, QObject * o, QEvent * e) {
@@ -150,7 +149,7 @@ bool C_ZN10QCompleter11eventFilterEP7QObjectP6QEvent(void *this_, QObject * o, Q
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:146
+// /usr/include/qt/QtWidgets/qcompleter.h:147
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QCompleter5eventEP6QEvent(void *this_, QEvent * arg0) {
@@ -158,7 +157,7 @@ bool C_ZN10QCompleter5eventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:61
+// /usr/include/qt/QtWidgets/qcompleter.h:62
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter10metaObjectEv(void *this_) {
@@ -166,7 +165,7 @@ void* C_ZNK10QCompleter10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:61
+// /usr/include/qt/QtWidgets/qcompleter.h:62
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QCompleter11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -174,7 +173,7 @@ void* C_ZN10QCompleter11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:61
+// /usr/include/qt/QtWidgets/qcompleter.h:62
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN10QCompleter11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -182,7 +181,7 @@ int C_ZN10QCompleter11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObj
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:61
+// /usr/include/qt/QtWidgets/qcompleter.h:62
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QCompleter2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -191,7 +190,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:61
+// /usr/include/qt/QtWidgets/qcompleter.h:62
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QCompleter6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -200,7 +199,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:85
+// /usr/include/qt/QtWidgets/qcompleter.h:86
 // [-2] void QCompleter(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QCompleterC2EP7QObject(QObject * parent) {
@@ -209,7 +208,7 @@ void* C_ZN10QCompleterC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:86
+// /usr/include/qt/QtWidgets/qcompleter.h:87
 // [-2] void QCompleter(QAbstractItemModel *, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QCompleterC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * model, QObject * parent) {
@@ -218,7 +217,7 @@ void* C_ZN10QCompleterC2EP18QAbstractItemModelP7QObject(QAbstractItemModel * mod
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:88
+// /usr/include/qt/QtWidgets/qcompleter.h:89
 // [-2] void QCompleter(const QStringList &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QCompleterC2ERK11QStringListP7QObject(QStringList* completions, QObject * parent) {
@@ -227,14 +226,14 @@ void* C_ZN10QCompleterC2ERK11QStringListP7QObject(QStringList* completions, QObj
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:90
+// /usr/include/qt/QtWidgets/qcompleter.h:91
 // [-2] void ~QCompleter()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleterD2Ev(void *this_) {
   delete (QCompleter*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:92
+// /usr/include/qt/QtWidgets/qcompleter.h:93
 // [-2] void setWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter9setWidgetEP7QWidget(void *this_, QWidget * widget) {
@@ -242,7 +241,7 @@ void C_ZN10QCompleter9setWidgetEP7QWidget(void *this_, QWidget * widget) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:93
+// /usr/include/qt/QtWidgets/qcompleter.h:94
 // [8] QWidget * widget()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter6widgetEv(void *this_) {
@@ -250,7 +249,7 @@ void* C_ZNK10QCompleter6widgetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:95
+// /usr/include/qt/QtWidgets/qcompleter.h:96
 // [-2] void setModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * c) {
@@ -258,7 +257,7 @@ void C_ZN10QCompleter8setModelEP18QAbstractItemModel(void *this_, QAbstractItemM
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:96
+// /usr/include/qt/QtWidgets/qcompleter.h:97
 // [8] QAbstractItemModel * model()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter5modelEv(void *this_) {
@@ -266,7 +265,7 @@ void* C_ZNK10QCompleter5modelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:98
+// /usr/include/qt/QtWidgets/qcompleter.h:99
 // [-2] void setCompletionMode(QCompleter::CompletionMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter17setCompletionModeENS_14CompletionModeE(void *this_, QCompleter::CompletionMode mode) {
@@ -274,7 +273,7 @@ void C_ZN10QCompleter17setCompletionModeENS_14CompletionModeE(void *this_, QComp
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:99
+// /usr/include/qt/QtWidgets/qcompleter.h:100
 // [4] QCompleter::CompletionMode completionMode()
 extern "C" Q_DECL_EXPORT
 QCompleter::CompletionMode C_ZNK10QCompleter14completionModeEv(void *this_) {
@@ -282,7 +281,7 @@ QCompleter::CompletionMode C_ZNK10QCompleter14completionModeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:101
+// /usr/include/qt/QtWidgets/qcompleter.h:102
 // [-2] void setFilterMode(Qt::MatchFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter13setFilterModeE6QFlagsIN2Qt9MatchFlagEE(void *this_, QFlags<Qt::MatchFlag> filterMode) {
@@ -290,7 +289,7 @@ void C_ZN10QCompleter13setFilterModeE6QFlagsIN2Qt9MatchFlagEE(void *this_, QFlag
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:102
+// /usr/include/qt/QtWidgets/qcompleter.h:103
 // [4] Qt::MatchFlags filterMode()
 extern "C" Q_DECL_EXPORT
 Qt::MatchFlags C_ZNK10QCompleter10filterModeEv(void *this_) {
@@ -298,7 +297,7 @@ Qt::MatchFlags C_ZNK10QCompleter10filterModeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:104
+// /usr/include/qt/QtWidgets/qcompleter.h:105
 // [8] QAbstractItemView * popup()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter5popupEv(void *this_) {
@@ -306,7 +305,7 @@ void* C_ZNK10QCompleter5popupEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:105
+// /usr/include/qt/QtWidgets/qcompleter.h:106
 // [-2] void setPopup(QAbstractItemView *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter8setPopupEP17QAbstractItemView(void *this_, QAbstractItemView * popup) {
@@ -314,7 +313,7 @@ void C_ZN10QCompleter8setPopupEP17QAbstractItemView(void *this_, QAbstractItemVi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:107
+// /usr/include/qt/QtWidgets/qcompleter.h:108
 // [-2] void setCaseSensitivity(Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter18setCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity caseSensitivity) {
@@ -322,7 +321,7 @@ void C_ZN10QCompleter18setCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:108
+// /usr/include/qt/QtWidgets/qcompleter.h:109
 // [4] Qt::CaseSensitivity caseSensitivity()
 extern "C" Q_DECL_EXPORT
 Qt::CaseSensitivity C_ZNK10QCompleter15caseSensitivityEv(void *this_) {
@@ -330,7 +329,7 @@ Qt::CaseSensitivity C_ZNK10QCompleter15caseSensitivityEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:110
+// /usr/include/qt/QtWidgets/qcompleter.h:111
 // [-2] void setModelSorting(QCompleter::ModelSorting)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter15setModelSortingENS_12ModelSortingE(void *this_, QCompleter::ModelSorting sorting) {
@@ -338,7 +337,7 @@ void C_ZN10QCompleter15setModelSortingENS_12ModelSortingE(void *this_, QComplete
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:111
+// /usr/include/qt/QtWidgets/qcompleter.h:112
 // [4] QCompleter::ModelSorting modelSorting()
 extern "C" Q_DECL_EXPORT
 QCompleter::ModelSorting C_ZNK10QCompleter12modelSortingEv(void *this_) {
@@ -346,7 +345,7 @@ QCompleter::ModelSorting C_ZNK10QCompleter12modelSortingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:113
+// /usr/include/qt/QtWidgets/qcompleter.h:114
 // [-2] void setCompletionColumn(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter19setCompletionColumnEi(void *this_, int column) {
@@ -354,7 +353,7 @@ void C_ZN10QCompleter19setCompletionColumnEi(void *this_, int column) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:114
+// /usr/include/qt/QtWidgets/qcompleter.h:115
 // [4] int completionColumn()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QCompleter16completionColumnEv(void *this_) {
@@ -362,7 +361,7 @@ int C_ZNK10QCompleter16completionColumnEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:116
+// /usr/include/qt/QtWidgets/qcompleter.h:117
 // [-2] void setCompletionRole(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter17setCompletionRoleEi(void *this_, int role) {
@@ -370,7 +369,7 @@ void C_ZN10QCompleter17setCompletionRoleEi(void *this_, int role) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:117
+// /usr/include/qt/QtWidgets/qcompleter.h:118
 // [4] int completionRole()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QCompleter14completionRoleEv(void *this_) {
@@ -378,7 +377,7 @@ int C_ZNK10QCompleter14completionRoleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:119
+// /usr/include/qt/QtWidgets/qcompleter.h:120
 // [1] bool wrapAround()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QCompleter10wrapAroundEv(void *this_) {
@@ -386,7 +385,7 @@ bool C_ZNK10QCompleter10wrapAroundEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:121
+// /usr/include/qt/QtWidgets/qcompleter.h:122
 // [4] int maxVisibleItems()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QCompleter15maxVisibleItemsEv(void *this_) {
@@ -394,7 +393,7 @@ int C_ZNK10QCompleter15maxVisibleItemsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:122
+// /usr/include/qt/QtWidgets/qcompleter.h:123
 // [-2] void setMaxVisibleItems(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter18setMaxVisibleItemsEi(void *this_, int maxItems) {
@@ -402,7 +401,7 @@ void C_ZN10QCompleter18setMaxVisibleItemsEi(void *this_, int maxItems) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:124
+// /usr/include/qt/QtWidgets/qcompleter.h:125
 // [4] int completionCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QCompleter15completionCountEv(void *this_) {
@@ -410,7 +409,7 @@ int C_ZNK10QCompleter15completionCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:125
+// /usr/include/qt/QtWidgets/qcompleter.h:126
 // [1] bool setCurrentRow(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QCompleter13setCurrentRowEi(void *this_, int row) {
@@ -418,7 +417,7 @@ bool C_ZN10QCompleter13setCurrentRowEi(void *this_, int row) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:126
+// /usr/include/qt/QtWidgets/qcompleter.h:127
 // [4] int currentRow()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QCompleter10currentRowEv(void *this_) {
@@ -426,7 +425,7 @@ int C_ZNK10QCompleter10currentRowEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:128
+// /usr/include/qt/QtWidgets/qcompleter.h:129
 // [24] QModelIndex currentIndex()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter12currentIndexEv(void *this_) {
@@ -435,7 +434,7 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:129
+// /usr/include/qt/QtWidgets/qcompleter.h:130
 // [8] QString currentCompletion()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter17currentCompletionEv(void *this_) {
@@ -444,7 +443,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:131
+// /usr/include/qt/QtWidgets/qcompleter.h:132
 // [8] QAbstractItemModel * completionModel()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter15completionModelEv(void *this_) {
@@ -452,7 +451,7 @@ void* C_ZNK10QCompleter15completionModelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:133
+// /usr/include/qt/QtWidgets/qcompleter.h:134
 // [8] QString completionPrefix()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter16completionPrefixEv(void *this_) {
@@ -461,7 +460,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:136
+// /usr/include/qt/QtWidgets/qcompleter.h:137
 // [-2] void setCompletionPrefix(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter19setCompletionPrefixERK7QString(void *this_, QString* prefix) {
@@ -469,7 +468,7 @@ void C_ZN10QCompleter19setCompletionPrefixERK7QString(void *this_, QString* pref
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:137
+// /usr/include/qt/QtWidgets/qcompleter.h:138
 // [-2] void complete(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter8completeERK5QRect(void *this_, QRect* rect) {
@@ -477,7 +476,7 @@ void C_ZN10QCompleter8completeERK5QRect(void *this_, QRect* rect) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:138
+// /usr/include/qt/QtWidgets/qcompleter.h:139
 // [-2] void setWrapAround(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter13setWrapAroundEb(void *this_, bool wrap) {
@@ -485,7 +484,7 @@ void C_ZN10QCompleter13setWrapAroundEb(void *this_, bool wrap) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:141
+// /usr/include/qt/QtWidgets/qcompleter.h:142
 // [8] QString pathFromIndex(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter13pathFromIndexERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -494,7 +493,7 @@ return new QString(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:142
+// /usr/include/qt/QtWidgets/qcompleter.h:143
 // [8] QStringList splitPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QCompleter9splitPathERK7QString(void *this_, QString* path) {
@@ -503,7 +502,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:149
+// /usr/include/qt/QtWidgets/qcompleter.h:150
 // [-2] void activated(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter9activatedERK7QString(void *this_, QString* text) {
@@ -511,7 +510,7 @@ void C_ZN10QCompleter9activatedERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:150
+// /usr/include/qt/QtWidgets/qcompleter.h:151
 // [-2] void activated(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter9activatedERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -519,7 +518,7 @@ void C_ZN10QCompleter9activatedERK11QModelIndex(void *this_, QModelIndex* index)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:151
+// /usr/include/qt/QtWidgets/qcompleter.h:152
 // [-2] void highlighted(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter11highlightedERK7QString(void *this_, QString* text) {
@@ -527,7 +526,7 @@ void C_ZN10QCompleter11highlightedERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcompleter.h:152
+// /usr/include/qt/QtWidgets/qcompleter.h:153
 // [-2] void highlighted(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QCompleter11highlightedERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -550,5 +549,4 @@ void C_ZN10QCompleter11highlightedERK11QModelIndex(void *this_, QModelIndex* ind
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

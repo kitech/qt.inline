@@ -99,24 +99,24 @@ void* C_ZN18QNetworkProxyQueryC2EtRK7QStringNS_9QueryTypeE(quint16 bindPort, QSt
   return  new QNetworkProxyQuery(bindPort, *protocolTag, queryType);
 }
 
-// Public Visibility=Default Availability=Deprecated
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:80
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:79
 // [-2] void QNetworkProxyQuery(const QNetworkConfiguration &, const QUrl &, QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK4QUrlNS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, QUrl* requestUrl, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*networkConfiguration, *requestUrl, queryType);
 }
 
-// Public Visibility=Default Availability=Deprecated
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:83
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:81
 // [-2] void QNetworkProxyQuery(const QNetworkConfiguration &, const QString &, int, const QString &, QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK7QStringiS5_NS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, QString* hostname, int port, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
   return  new QNetworkProxyQuery(*networkConfiguration, *hostname, port, *protocolTag, queryType);
 }
 
-// Public Visibility=Default Availability=Deprecated
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:87
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:84
 // [-2] void QNetworkProxyQuery(const QNetworkConfiguration &, quint16, const QString &, QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationtRK7QStringNS_9QueryTypeE(QNetworkConfiguration* networkConfiguration, quint16 bindPort, QString* protocolTag, QNetworkProxyQuery::QueryType queryType) {
@@ -124,7 +124,7 @@ void* C_ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationtRK7QStringNS_9QueryTy
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:91
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:88
 // [-2] void QNetworkProxyQuery(const QNetworkProxyQuery &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryC2ERKS_(QNetworkProxyQuery* other) {
@@ -132,7 +132,7 @@ void* C_ZN18QNetworkProxyQueryC2ERKS_(QNetworkProxyQuery* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:93
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:90
 // [8] QNetworkProxyQuery & operator=(QNetworkProxyQuery &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryaSEOS_(void *this_, QNetworkProxyQuery && other) {
@@ -141,7 +141,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:95
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:92
 // [8] QNetworkProxyQuery & operator=(const QNetworkProxyQuery &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QNetworkProxyQueryaSERKS_(void *this_, QNetworkProxyQuery* other) {
@@ -150,7 +150,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:96
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:93
 // [-2] void ~QNetworkProxyQuery()
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQueryD2Ev(void *this_) {
@@ -158,7 +158,7 @@ void C_ZN18QNetworkProxyQueryD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:98
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:95
 // [-2] void swap(QNetworkProxyQuery &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -168,7 +168,7 @@ void C_ZN18QNetworkProxyQuery4swapERS_(void *this_, QNetworkProxyQuery* other) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:100
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:97
 // [1] bool operator==(const QNetworkProxyQuery &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK18QNetworkProxyQueryeqERKS_(void *this_, QNetworkProxyQuery* other) {
@@ -176,7 +176,7 @@ bool C_ZNK18QNetworkProxyQueryeqERKS_(void *this_, QNetworkProxyQuery* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:101
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:98
 // [1] bool operator!=(const QNetworkProxyQuery &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK18QNetworkProxyQueryneERKS_(void *this_, QNetworkProxyQuery* other) {
@@ -184,7 +184,7 @@ bool C_ZNK18QNetworkProxyQueryneERKS_(void *this_, QNetworkProxyQuery* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:104
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:101
 // [4] QNetworkProxyQuery::QueryType queryType()
 extern "C" Q_DECL_EXPORT
 QNetworkProxyQuery::QueryType C_ZNK18QNetworkProxyQuery9queryTypeEv(void *this_) {
@@ -192,7 +192,7 @@ QNetworkProxyQuery::QueryType C_ZNK18QNetworkProxyQuery9queryTypeEv(void *this_)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:105
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:102
 // [-2] void setQueryType(QNetworkProxyQuery::QueryType)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery12setQueryTypeENS_9QueryTypeE(void *this_, QNetworkProxyQuery::QueryType type_) {
@@ -200,7 +200,7 @@ void C_ZN18QNetworkProxyQuery12setQueryTypeENS_9QueryTypeE(void *this_, QNetwork
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:107
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:104
 // [4] int peerPort()
 extern "C" Q_DECL_EXPORT
 int C_ZNK18QNetworkProxyQuery8peerPortEv(void *this_) {
@@ -208,7 +208,7 @@ int C_ZNK18QNetworkProxyQuery8peerPortEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:108
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:105
 // [-2] void setPeerPort(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery11setPeerPortEi(void *this_, int port) {
@@ -216,7 +216,7 @@ void C_ZN18QNetworkProxyQuery11setPeerPortEi(void *this_, int port) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:110
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:107
 // [8] QString peerHostName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QNetworkProxyQuery12peerHostNameEv(void *this_) {
@@ -225,7 +225,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:111
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:108
 // [-2] void setPeerHostName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery15setPeerHostNameERK7QString(void *this_, QString* hostname) {
@@ -233,7 +233,7 @@ void C_ZN18QNetworkProxyQuery15setPeerHostNameERK7QString(void *this_, QString* 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:113
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:110
 // [4] int localPort()
 extern "C" Q_DECL_EXPORT
 int C_ZNK18QNetworkProxyQuery9localPortEv(void *this_) {
@@ -241,7 +241,7 @@ int C_ZNK18QNetworkProxyQuery9localPortEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:114
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:111
 // [-2] void setLocalPort(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery12setLocalPortEi(void *this_, int port) {
@@ -249,7 +249,7 @@ void C_ZN18QNetworkProxyQuery12setLocalPortEi(void *this_, int port) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:116
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:113
 // [8] QString protocolTag()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QNetworkProxyQuery11protocolTagEv(void *this_) {
@@ -258,7 +258,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:117
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:114
 // [-2] void setProtocolTag(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery14setProtocolTagERK7QString(void *this_, QString* protocolTag) {
@@ -266,7 +266,7 @@ void C_ZN18QNetworkProxyQuery14setProtocolTagERK7QString(void *this_, QString* p
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:119
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:116
 // [8] QUrl url()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QNetworkProxyQuery3urlEv(void *this_) {
@@ -275,15 +275,15 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:120
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:117
 // [-2] void setUrl(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery6setUrlERK4QUrl(void *this_, QUrl* url) {
   ((QNetworkProxyQuery*)this_)->setUrl(*url);
 }
 
-// Public Visibility=Default Availability=Deprecated
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:124
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:120
 // [8] QNetworkConfiguration networkConfiguration()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QNetworkProxyQuery20networkConfigurationEv(void *this_) {
@@ -291,8 +291,8 @@ void* C_ZNK18QNetworkProxyQuery20networkConfigurationEv(void *this_) {
 return new QNetworkConfiguration(rv);
 }
 
-// Public Visibility=Default Availability=Deprecated
-// /usr/include/qt/QtNetwork/qnetworkproxy.h:126
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:121
 // [-2] void setNetworkConfiguration(const QNetworkConfiguration &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QNetworkProxyQuery23setNetworkConfigurationERK21QNetworkConfiguration(void *this_, QNetworkConfiguration* networkConfiguration) {

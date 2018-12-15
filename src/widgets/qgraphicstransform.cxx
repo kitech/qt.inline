@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicstransform.h
 #ifndef protected
@@ -207,5 +206,4 @@ void C_ZNK18QGraphicsTransform7applyToEP10QMatrix4x4(void *this_, QMatrix4x4 * m
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

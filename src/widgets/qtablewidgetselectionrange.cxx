@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qtablewidget.h
 #ifndef protected
 #define protected public
@@ -58,7 +57,7 @@ MyQTableWidgetSelectionRange(const QTableWidgetSelectionRange & other) : QTableW
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:55
+// /usr/include/qt/QtWidgets/qtablewidget.h:57
 // [-2] void QTableWidgetSelectionRange()
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QTableWidgetSelectionRangeC2Ev() {
@@ -66,7 +65,7 @@ void* C_ZN26QTableWidgetSelectionRangeC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:56
+// /usr/include/qt/QtWidgets/qtablewidget.h:58
 // [-2] void QTableWidgetSelectionRange(int, int, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QTableWidgetSelectionRangeC2Eiiii(int top, int left, int bottom, int right) {
@@ -74,7 +73,7 @@ void* C_ZN26QTableWidgetSelectionRangeC2Eiiii(int top, int left, int bottom, int
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:57
+// /usr/include/qt/QtWidgets/qtablewidget.h:59
 // [-2] void QTableWidgetSelectionRange(const QTableWidgetSelectionRange &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN26QTableWidgetSelectionRangeC2ERKS_(QTableWidgetSelectionRange* other) {
@@ -82,14 +81,14 @@ void* C_ZN26QTableWidgetSelectionRangeC2ERKS_(QTableWidgetSelectionRange* other)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:58
+// /usr/include/qt/QtWidgets/qtablewidget.h:60
 // [-2] void ~QTableWidgetSelectionRange()
 extern "C" Q_DECL_EXPORT
 void C_ZN26QTableWidgetSelectionRangeD2Ev(void *this_) {
   delete (QTableWidgetSelectionRange*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:60
+// /usr/include/qt/QtWidgets/qtablewidget.h:62
 // [4] int topRow()
 extern "C" Q_DECL_EXPORT
 int C_ZNK26QTableWidgetSelectionRange6topRowEv(void *this_) {
@@ -97,7 +96,7 @@ int C_ZNK26QTableWidgetSelectionRange6topRowEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:61
+// /usr/include/qt/QtWidgets/qtablewidget.h:63
 // [4] int bottomRow()
 extern "C" Q_DECL_EXPORT
 int C_ZNK26QTableWidgetSelectionRange9bottomRowEv(void *this_) {
@@ -105,7 +104,7 @@ int C_ZNK26QTableWidgetSelectionRange9bottomRowEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:62
+// /usr/include/qt/QtWidgets/qtablewidget.h:64
 // [4] int leftColumn()
 extern "C" Q_DECL_EXPORT
 int C_ZNK26QTableWidgetSelectionRange10leftColumnEv(void *this_) {
@@ -113,7 +112,7 @@ int C_ZNK26QTableWidgetSelectionRange10leftColumnEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:63
+// /usr/include/qt/QtWidgets/qtablewidget.h:65
 // [4] int rightColumn()
 extern "C" Q_DECL_EXPORT
 int C_ZNK26QTableWidgetSelectionRange11rightColumnEv(void *this_) {
@@ -122,7 +121,7 @@ int C_ZNK26QTableWidgetSelectionRange11rightColumnEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:64
+// /usr/include/qt/QtWidgets/qtablewidget.h:66
 // [4] int rowCount()
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -133,7 +132,7 @@ int C_ZNK26QTableWidgetSelectionRange8rowCountEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:65
+// /usr/include/qt/QtWidgets/qtablewidget.h:67
 // [4] int columnCount()
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -158,5 +157,4 @@ int C_ZNK26QTableWidgetSelectionRange11columnCountEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

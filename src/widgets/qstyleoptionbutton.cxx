@@ -55,7 +55,7 @@ MyQStyleOptionButton(const QStyleOptionButton & other) : QStyleOptionButton(othe
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:248
+// /usr/include/qt/QtWidgets/qstyleoption.h:237
 // [-2] void QStyleOptionButton()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStyleOptionButtonC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN18QStyleOptionButtonC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:249
+// /usr/include/qt/QtWidgets/qstyleoption.h:238
 // [-2] void QStyleOptionButton(const QStyleOptionButton &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStyleOptionButtonC2ERKS_(QStyleOptionButton* other) {

@@ -41,7 +41,7 @@ bool C_ZN17QPagedPaintDevice7newPageEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:219
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:217
 // [1] bool setPageLayout(const QPageLayout &)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -52,7 +52,7 @@ bool C_ZN17QPagedPaintDevice13setPageLayoutERK11QPageLayout(void *this_, QPageLa
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:220
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:218
 // [1] bool setPageSize(const QPageSize &)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -63,7 +63,7 @@ bool C_ZN17QPagedPaintDevice11setPageSizeERK9QPageSize(void *this_, QPageSize* p
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:221
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:219
 // [1] bool setPageOrientation(QPageLayout::Orientation)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -74,7 +74,7 @@ bool C_ZN17QPagedPaintDevice18setPageOrientationEN11QPageLayout11OrientationE(vo
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:222
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:220
 // [1] bool setPageMargins(const QMarginsF &)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -85,7 +85,7 @@ bool C_ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsF(void *this_, QMarginsF
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:223
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:221
 // [1] bool setPageMargins(const QMarginsF &, QPageLayout::Unit)
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -96,7 +96,7 @@ bool C_ZN17QPagedPaintDevice14setPageMarginsERK9QMarginsFN11QPageLayout4UnitE(vo
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:224
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:222
 // [8] QPageLayout pageLayout()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -107,7 +107,7 @@ return new QPageLayout(rv);
 #endif // QT_VERSION >= 0x050300
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:226
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:224
 // [-2] void setPageSize(QPagedPaintDevice::PageSize)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QPagedPaintDevice11setPageSizeENS_8PageSizeE(void *this_, QPagedPaintDevice::PageSize size) {
@@ -115,7 +115,7 @@ void C_ZN17QPagedPaintDevice11setPageSizeENS_8PageSizeE(void *this_, QPagedPaint
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:227
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:225
 // [4] QPagedPaintDevice::PageSize pageSize()
 extern "C" Q_DECL_EXPORT
 QPagedPaintDevice::PageSize C_ZNK17QPagedPaintDevice8pageSizeEv(void *this_) {
@@ -123,7 +123,7 @@ QPagedPaintDevice::PageSize C_ZNK17QPagedPaintDevice8pageSizeEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:229
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:227
 // [-2] void setPageSizeMM(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QPagedPaintDevice13setPageSizeMMERK6QSizeF(void *this_, QSizeF* size) {
@@ -131,7 +131,7 @@ void C_ZN17QPagedPaintDevice13setPageSizeMMERK6QSizeF(void *this_, QSizeF* size)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:230
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:228
 // [16] QSizeF pageSizeMM()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QPagedPaintDevice10pageSizeMMEv(void *this_) {
@@ -140,7 +140,7 @@ return new QSizeF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:240
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:238
 // [-2] void setMargins(const QPagedPaintDevice::Margins &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QPagedPaintDevice10setMarginsERKNS_7MarginsE(void *this_, QPagedPaintDevice::Margins* margins) {
@@ -148,7 +148,7 @@ void C_ZN17QPagedPaintDevice10setMarginsERKNS_7MarginsE(void *this_, QPagedPaint
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpagedpaintdevice.h:241
+// /usr/include/qt/QtGui/qpagedpaintdevice.h:239
 // [32] QPagedPaintDevice::Margins margins()
 extern "C" Q_DECL_EXPORT
 void C_ZNK17QPagedPaintDevice7marginsEv(void *this_) {

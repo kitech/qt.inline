@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040300
 // /usr/include/qt/QtWidgets/qmdisubwindow.h
 #ifndef protected
@@ -354,7 +353,7 @@ void* C_QMdiSubWindow_init_staticMetaObject(void* this_, void* strdat, void* dat
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:110
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:111
 // [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent(void *this_, QObject * object, QEvent * event) {
@@ -362,7 +361,7 @@ bool C_ZN13QMdiSubWindow11eventFilterEP7QObjectP6QEvent(void *this_, QObject * o
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:111
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:112
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QMdiSubWindow5eventEP6QEvent(void *this_, QEvent * event) {
@@ -370,7 +369,7 @@ bool C_ZN13QMdiSubWindow5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:112
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:113
 // [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow9showEventEP10QShowEvent(void *this_, QShowEvent * showEvent) {
@@ -378,7 +377,7 @@ void C_ZN13QMdiSubWindow9showEventEP10QShowEvent(void *this_, QShowEvent * showE
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:113
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:114
 // [-2] void hideEvent(QHideEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow9hideEventEP10QHideEvent(void *this_, QHideEvent * hideEvent) {
@@ -386,7 +385,7 @@ void C_ZN13QMdiSubWindow9hideEventEP10QHideEvent(void *this_, QHideEvent * hideE
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:114
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:115
 // [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow11changeEventEP6QEvent(void *this_, QEvent * changeEvent) {
@@ -394,7 +393,7 @@ void C_ZN13QMdiSubWindow11changeEventEP6QEvent(void *this_, QEvent * changeEvent
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:115
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:116
 // [-2] void closeEvent(QCloseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow10closeEventEP11QCloseEvent(void *this_, QCloseEvent * closeEvent) {
@@ -402,7 +401,7 @@ void C_ZN13QMdiSubWindow10closeEventEP11QCloseEvent(void *this_, QCloseEvent * c
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:116
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:117
 // [-2] void leaveEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow10leaveEventEP6QEvent(void *this_, QEvent * leaveEvent) {
@@ -410,7 +409,7 @@ void C_ZN13QMdiSubWindow10leaveEventEP6QEvent(void *this_, QEvent * leaveEvent) 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:117
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:118
 // [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * resizeEvent) {
@@ -418,7 +417,7 @@ void C_ZN13QMdiSubWindow11resizeEventEP12QResizeEvent(void *this_, QResizeEvent 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:118
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:119
 // [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow10timerEventEP11QTimerEvent(void *this_, QTimerEvent * timerEvent) {
@@ -426,7 +425,7 @@ void C_ZN13QMdiSubWindow10timerEventEP11QTimerEvent(void *this_, QTimerEvent * t
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:119
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:120
 // [-2] void moveEvent(QMoveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow9moveEventEP10QMoveEvent(void *this_, QMoveEvent * moveEvent) {
@@ -434,7 +433,7 @@ void C_ZN13QMdiSubWindow9moveEventEP10QMoveEvent(void *this_, QMoveEvent * moveE
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:120
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:121
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow10paintEventEP11QPaintEvent(void *this_, QPaintEvent * paintEvent) {
@@ -442,7 +441,7 @@ void C_ZN13QMdiSubWindow10paintEventEP11QPaintEvent(void *this_, QPaintEvent * p
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:121
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:122
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * mouseEvent) {
@@ -450,7 +449,7 @@ void C_ZN13QMdiSubWindow15mousePressEventEP11QMouseEvent(void *this_, QMouseEven
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:122
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:123
 // [-2] void mouseDoubleClickEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMouseEvent * mouseEvent) {
@@ -458,7 +457,7 @@ void C_ZN13QMdiSubWindow21mouseDoubleClickEventEP11QMouseEvent(void *this_, QMou
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:123
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:124
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * mouseEvent) {
@@ -466,7 +465,7 @@ void C_ZN13QMdiSubWindow17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEv
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:124
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:125
 // [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * mouseEvent) {
@@ -474,7 +473,7 @@ void C_ZN13QMdiSubWindow14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:125
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:126
 // [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * keyEvent) {
@@ -482,7 +481,7 @@ void C_ZN13QMdiSubWindow13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * key
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:127
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:128
 // [-2] void contextMenuEvent(QContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * contextMenuEvent) {
@@ -490,7 +489,7 @@ void C_ZN13QMdiSubWindow16contextMenuEventEP17QContextMenuEvent(void *this_, QCo
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:129
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:130
 // [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * focusInEvent) {
@@ -498,7 +497,7 @@ void C_ZN13QMdiSubWindow12focusInEventEP11QFocusEvent(void *this_, QFocusEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:130
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:131
 // [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * focusOutEvent) {
@@ -506,7 +505,7 @@ void C_ZN13QMdiSubWindow13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:131
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:132
 // [-2] void childEvent(QChildEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow10childEventEP11QChildEvent(void *this_, QChildEvent * childEvent) {
@@ -514,7 +513,7 @@ void C_ZN13QMdiSubWindow10childEventEP11QChildEvent(void *this_, QChildEvent * c
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:57
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:58
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMdiSubWindow10metaObjectEv(void *this_) {
@@ -522,7 +521,7 @@ void* C_ZNK13QMdiSubWindow10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:57
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:58
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QMdiSubWindow11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -530,7 +529,7 @@ void* C_ZN13QMdiSubWindow11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:57
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:58
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN13QMdiSubWindow11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -538,7 +537,7 @@ int C_ZN13QMdiSubWindow11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMeta
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:57
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:58
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QMdiSubWindow2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -547,7 +546,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:57
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:58
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QMdiSubWindow6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -556,7 +555,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:69
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:70
 // [-2] void QMdiSubWindow(QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QMdiSubWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
@@ -565,14 +564,14 @@ void* C_ZN13QMdiSubWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:70
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:71
 // [-2] void ~QMdiSubWindow()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindowD2Ev(void *this_) {
   delete (QMdiSubWindow*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:72
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:73
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMdiSubWindow8sizeHintEv(void *this_) {
@@ -581,7 +580,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:73
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:74
 // [8] QSize minimumSizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMdiSubWindow15minimumSizeHintEv(void *this_) {
@@ -590,7 +589,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:75
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:76
 // [-2] void setWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow9setWidgetEP7QWidget(void *this_, QWidget * widget) {
@@ -598,7 +597,7 @@ void C_ZN13QMdiSubWindow9setWidgetEP7QWidget(void *this_, QWidget * widget) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:76
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:77
 // [8] QWidget * widget()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMdiSubWindow6widgetEv(void *this_) {
@@ -606,7 +605,7 @@ void* C_ZNK13QMdiSubWindow6widgetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:78
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:79
 // [8] QWidget * maximizedButtonsWidget()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMdiSubWindow22maximizedButtonsWidgetEv(void *this_) {
@@ -614,7 +613,7 @@ void* C_ZNK13QMdiSubWindow22maximizedButtonsWidgetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:79
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:80
 // [8] QWidget * maximizedSystemMenuIconWidget()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMdiSubWindow29maximizedSystemMenuIconWidgetEv(void *this_) {
@@ -622,7 +621,7 @@ void* C_ZNK13QMdiSubWindow29maximizedSystemMenuIconWidgetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:81
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:82
 // [1] bool isShaded()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMdiSubWindow8isShadedEv(void *this_) {
@@ -630,7 +629,7 @@ bool C_ZNK13QMdiSubWindow8isShadedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:83
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:84
 // [-2] void setOption(QMdiSubWindow::SubWindowOption, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow9setOptionENS_15SubWindowOptionEb(void *this_, QMdiSubWindow::SubWindowOption option, bool on) {
@@ -638,7 +637,7 @@ void C_ZN13QMdiSubWindow9setOptionENS_15SubWindowOptionEb(void *this_, QMdiSubWi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:84
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:85
 // [1] bool testOption(QMdiSubWindow::SubWindowOption)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QMdiSubWindow10testOptionENS_15SubWindowOptionE(void *this_, QMdiSubWindow::SubWindowOption arg0) {
@@ -646,7 +645,7 @@ bool C_ZNK13QMdiSubWindow10testOptionENS_15SubWindowOptionE(void *this_, QMdiSub
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:86
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:87
 // [-2] void setKeyboardSingleStep(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow21setKeyboardSingleStepEi(void *this_, int step) {
@@ -654,7 +653,7 @@ void C_ZN13QMdiSubWindow21setKeyboardSingleStepEi(void *this_, int step) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:87
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:88
 // [4] int keyboardSingleStep()
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QMdiSubWindow18keyboardSingleStepEv(void *this_) {
@@ -662,7 +661,7 @@ int C_ZNK13QMdiSubWindow18keyboardSingleStepEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:89
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:90
 // [-2] void setKeyboardPageStep(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow19setKeyboardPageStepEi(void *this_, int step) {
@@ -670,7 +669,7 @@ void C_ZN13QMdiSubWindow19setKeyboardPageStepEi(void *this_, int step) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:90
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:91
 // [4] int keyboardPageStep()
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QMdiSubWindow16keyboardPageStepEv(void *this_) {
@@ -678,7 +677,7 @@ int C_ZNK13QMdiSubWindow16keyboardPageStepEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:93
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:94
 // [-2] void setSystemMenu(QMenu *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow13setSystemMenuEP5QMenu(void *this_, QMenu * systemMenu) {
@@ -686,7 +685,7 @@ void C_ZN13QMdiSubWindow13setSystemMenuEP5QMenu(void *this_, QMenu * systemMenu)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:94
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:95
 // [8] QMenu * systemMenu()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QMdiSubWindow10systemMenuEv(void *this_) {
@@ -695,7 +694,7 @@ void* C_ZNK13QMdiSubWindow10systemMenuEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:97
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:98
 // [8] QMdiArea * mdiArea()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -705,7 +704,7 @@ void* C_ZNK13QMdiSubWindow7mdiAreaEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:100
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:101
 // [-2] void windowStateChanged(Qt::WindowStates, Qt::WindowStates)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(void *this_, QFlags<Qt::WindowState> oldState, QFlags<Qt::WindowState> newState) {
@@ -713,7 +712,7 @@ void C_ZN13QMdiSubWindow18windowStateChangedE6QFlagsIN2Qt11WindowStateEES3_(void
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:101
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:102
 // [-2] void aboutToActivate()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow15aboutToActivateEv(void *this_) {
@@ -721,7 +720,7 @@ void C_ZN13QMdiSubWindow15aboutToActivateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:105
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:106
 // [-2] void showSystemMenu()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow14showSystemMenuEv(void *this_) {
@@ -729,7 +728,7 @@ void C_ZN13QMdiSubWindow14showSystemMenuEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdisubwindow.h:107
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:108
 // [-2] void showShaded()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QMdiSubWindow10showShadedEv(void *this_) {
@@ -752,5 +751,4 @@ void C_ZN13QMdiSubWindow10showShadedEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

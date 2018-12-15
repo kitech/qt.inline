@@ -117,20 +117,6 @@ int C_ZN11QMetaTypeIdI8QGeoPathE14qt_metatype_idEv(void* this_ ) {
    return rv;
 }
 
-// [8] const char * QTypeInfo<QGeoPolygon>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI11QGeoPolygonE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QGeoPolygon>*)this_)->name();
-   return (void*)rv;
-}
-
-// [4] int QMetaTypeId<QGeoPolygon>::qt_metatype_id()
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMetaTypeIdI11QGeoPolygonE14qt_metatype_idEv(void* this_ ) {
-   auto rv =  ((QMetaTypeId<QGeoPolygon>*)this_)->qt_metatype_id();
-   return rv;
-}
-
 //  body block end
 
 //  footer block begin

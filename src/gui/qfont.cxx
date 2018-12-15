@@ -59,7 +59,7 @@ MyQFont(const QFont & arg0) : QFont(arg0) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:170
+// /usr/include/qt/QtGui/qfont.h:162
 // [-2] void QFont()
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFontC2Ev() {
@@ -67,7 +67,7 @@ void* C_ZN5QFontC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:171
+// /usr/include/qt/QtGui/qfont.h:163
 // [-2] void QFont(const QString &, int, int, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFontC2ERK7QStringiib(QString* family, int pointSize, int weight, bool italic) {
@@ -75,7 +75,7 @@ void* C_ZN5QFontC2ERK7QStringiib(QString* family, int pointSize, int weight, boo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:172
+// /usr/include/qt/QtGui/qfont.h:164
 // [-2] void QFont(const QFont &, QPaintDevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFontC2ERKS_P12QPaintDevice(QFont* arg0, QPaintDevice * pd) {
@@ -83,7 +83,7 @@ void* C_ZN5QFontC2ERKS_P12QPaintDevice(QFont* arg0, QPaintDevice * pd) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:173
+// /usr/include/qt/QtGui/qfont.h:165
 // [-2] void QFont(const QFont &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFontC2ERKS_(QFont* arg0) {
@@ -91,7 +91,7 @@ void* C_ZN5QFontC2ERKS_(QFont* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:174
+// /usr/include/qt/QtGui/qfont.h:166
 // [-2] void ~QFont()
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFontD2Ev(void *this_) {
@@ -99,7 +99,7 @@ void C_ZN5QFontD2Ev(void *this_) {
 }
 // Public inline Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtGui/qfont.h:176
+// /usr/include/qt/QtGui/qfont.h:168
 // [-2] void swap(QFont &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -109,7 +109,7 @@ void C_ZN5QFont4swapERS_(void *this_, QFont* other) {
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:179
+// /usr/include/qt/QtGui/qfont.h:171
 // [8] QString family()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFont6familyEv(void *this_) {
@@ -118,7 +118,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:180
+// /usr/include/qt/QtGui/qfont.h:172
 // [-2] void setFamily(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont9setFamilyERK7QString(void *this_, QString* arg0) {
@@ -127,7 +127,7 @@ void C_ZN5QFont9setFamilyERK7QString(void *this_, QString* arg0) {
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qfont.h:182
+// /usr/include/qt/QtGui/qfont.h:174
 // [8] QString styleName()
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -139,7 +139,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qfont.h:183
+// /usr/include/qt/QtGui/qfont.h:175
 // [-2] void setStyleName(const QString &)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -149,7 +149,7 @@ void C_ZN5QFont12setStyleNameERK7QString(void *this_, QString* arg0) {
 #endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:185
+// /usr/include/qt/QtGui/qfont.h:177
 // [4] int pointSize()
 extern "C" Q_DECL_EXPORT
 int C_ZNK5QFont9pointSizeEv(void *this_) {
@@ -157,7 +157,7 @@ int C_ZNK5QFont9pointSizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:186
+// /usr/include/qt/QtGui/qfont.h:178
 // [-2] void setPointSize(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont12setPointSizeEi(void *this_, int arg0) {
@@ -165,7 +165,7 @@ void C_ZN5QFont12setPointSizeEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:187
+// /usr/include/qt/QtGui/qfont.h:179
 // [8] qreal pointSizeF()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK5QFont10pointSizeFEv(void *this_) {
@@ -173,7 +173,7 @@ qreal C_ZNK5QFont10pointSizeFEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:188
+// /usr/include/qt/QtGui/qfont.h:180
 // [-2] void setPointSizeF(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont13setPointSizeFEd(void *this_, qreal arg0) {
@@ -181,7 +181,7 @@ void C_ZN5QFont13setPointSizeFEd(void *this_, qreal arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:190
+// /usr/include/qt/QtGui/qfont.h:182
 // [4] int pixelSize()
 extern "C" Q_DECL_EXPORT
 int C_ZNK5QFont9pixelSizeEv(void *this_) {
@@ -189,7 +189,7 @@ int C_ZNK5QFont9pixelSizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:191
+// /usr/include/qt/QtGui/qfont.h:183
 // [-2] void setPixelSize(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont12setPixelSizeEi(void *this_, int arg0) {
@@ -197,7 +197,7 @@ void C_ZN5QFont12setPixelSizeEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:193
+// /usr/include/qt/QtGui/qfont.h:185
 // [4] int weight()
 extern "C" Q_DECL_EXPORT
 int C_ZNK5QFont6weightEv(void *this_) {
@@ -205,7 +205,7 @@ int C_ZNK5QFont6weightEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:194
+// /usr/include/qt/QtGui/qfont.h:186
 // [-2] void setWeight(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont9setWeightEi(void *this_, int arg0) {
@@ -213,7 +213,7 @@ void C_ZN5QFont9setWeightEi(void *this_, int arg0) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:196
+// /usr/include/qt/QtGui/qfont.h:188
 // [1] bool bold()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont4boldEv(void *this_) {
@@ -221,7 +221,7 @@ bool C_ZNK5QFont4boldEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:197
+// /usr/include/qt/QtGui/qfont.h:189
 // [-2] void setBold(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont7setBoldEb(void *this_, bool arg0) {
@@ -229,7 +229,7 @@ void C_ZN5QFont7setBoldEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:199
+// /usr/include/qt/QtGui/qfont.h:191
 // [-2] void setStyle(QFont::Style)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont8setStyleENS_5StyleE(void *this_, QFont::Style style) {
@@ -237,7 +237,7 @@ void C_ZN5QFont8setStyleENS_5StyleE(void *this_, QFont::Style style) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:200
+// /usr/include/qt/QtGui/qfont.h:192
 // [4] QFont::Style style()
 extern "C" Q_DECL_EXPORT
 QFont::Style C_ZNK5QFont5styleEv(void *this_) {
@@ -245,7 +245,7 @@ QFont::Style C_ZNK5QFont5styleEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:202
+// /usr/include/qt/QtGui/qfont.h:194
 // [1] bool italic()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont6italicEv(void *this_) {
@@ -253,7 +253,7 @@ bool C_ZNK5QFont6italicEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:203
+// /usr/include/qt/QtGui/qfont.h:195
 // [-2] void setItalic(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont9setItalicEb(void *this_, bool b) {
@@ -261,7 +261,7 @@ void C_ZN5QFont9setItalicEb(void *this_, bool b) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:205
+// /usr/include/qt/QtGui/qfont.h:197
 // [1] bool underline()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont9underlineEv(void *this_) {
@@ -269,7 +269,7 @@ bool C_ZNK5QFont9underlineEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:206
+// /usr/include/qt/QtGui/qfont.h:198
 // [-2] void setUnderline(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont12setUnderlineEb(void *this_, bool arg0) {
@@ -277,7 +277,7 @@ void C_ZN5QFont12setUnderlineEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:208
+// /usr/include/qt/QtGui/qfont.h:200
 // [1] bool overline()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont8overlineEv(void *this_) {
@@ -285,7 +285,7 @@ bool C_ZNK5QFont8overlineEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:209
+// /usr/include/qt/QtGui/qfont.h:201
 // [-2] void setOverline(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont11setOverlineEb(void *this_, bool arg0) {
@@ -293,7 +293,7 @@ void C_ZN5QFont11setOverlineEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:211
+// /usr/include/qt/QtGui/qfont.h:203
 // [1] bool strikeOut()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont9strikeOutEv(void *this_) {
@@ -301,7 +301,7 @@ bool C_ZNK5QFont9strikeOutEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:212
+// /usr/include/qt/QtGui/qfont.h:204
 // [-2] void setStrikeOut(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont12setStrikeOutEb(void *this_, bool arg0) {
@@ -309,7 +309,7 @@ void C_ZN5QFont12setStrikeOutEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:214
+// /usr/include/qt/QtGui/qfont.h:206
 // [1] bool fixedPitch()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont10fixedPitchEv(void *this_) {
@@ -317,7 +317,7 @@ bool C_ZNK5QFont10fixedPitchEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:215
+// /usr/include/qt/QtGui/qfont.h:207
 // [-2] void setFixedPitch(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont13setFixedPitchEb(void *this_, bool arg0) {
@@ -325,7 +325,7 @@ void C_ZN5QFont13setFixedPitchEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:217
+// /usr/include/qt/QtGui/qfont.h:209
 // [1] bool kerning()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont7kerningEv(void *this_) {
@@ -333,7 +333,7 @@ bool C_ZNK5QFont7kerningEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:218
+// /usr/include/qt/QtGui/qfont.h:210
 // [-2] void setKerning(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont10setKerningEb(void *this_, bool arg0) {
@@ -341,7 +341,7 @@ void C_ZN5QFont10setKerningEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:220
+// /usr/include/qt/QtGui/qfont.h:212
 // [4] QFont::StyleHint styleHint()
 extern "C" Q_DECL_EXPORT
 QFont::StyleHint C_ZNK5QFont9styleHintEv(void *this_) {
@@ -349,7 +349,7 @@ QFont::StyleHint C_ZNK5QFont9styleHintEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:221
+// /usr/include/qt/QtGui/qfont.h:213
 // [4] QFont::StyleStrategy styleStrategy()
 extern "C" Q_DECL_EXPORT
 QFont::StyleStrategy C_ZNK5QFont13styleStrategyEv(void *this_) {
@@ -357,7 +357,7 @@ QFont::StyleStrategy C_ZNK5QFont13styleStrategyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:222
+// /usr/include/qt/QtGui/qfont.h:214
 // [-2] void setStyleHint(QFont::StyleHint, QFont::StyleStrategy)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont12setStyleHintENS_9StyleHintENS_13StyleStrategyE(void *this_, QFont::StyleHint arg0, QFont::StyleStrategy arg1) {
@@ -365,7 +365,7 @@ void C_ZN5QFont12setStyleHintENS_9StyleHintENS_13StyleStrategyE(void *this_, QFo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:223
+// /usr/include/qt/QtGui/qfont.h:215
 // [-2] void setStyleStrategy(QFont::StyleStrategy)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont16setStyleStrategyENS_13StyleStrategyE(void *this_, QFont::StyleStrategy s) {
@@ -373,7 +373,7 @@ void C_ZN5QFont16setStyleStrategyENS_13StyleStrategyE(void *this_, QFont::StyleS
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:225
+// /usr/include/qt/QtGui/qfont.h:217
 // [4] int stretch()
 extern "C" Q_DECL_EXPORT
 int C_ZNK5QFont7stretchEv(void *this_) {
@@ -381,7 +381,7 @@ int C_ZNK5QFont7stretchEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:226
+// /usr/include/qt/QtGui/qfont.h:218
 // [-2] void setStretch(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont10setStretchEi(void *this_, int arg0) {
@@ -390,7 +390,7 @@ void C_ZN5QFont10setStretchEi(void *this_, int arg0) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtGui/qfont.h:228
+// /usr/include/qt/QtGui/qfont.h:220
 // [8] qreal letterSpacing()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -401,7 +401,7 @@ qreal C_ZNK5QFont13letterSpacingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtGui/qfont.h:229
+// /usr/include/qt/QtGui/qfont.h:221
 // [4] QFont::SpacingType letterSpacingType()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -411,7 +411,7 @@ QFont::SpacingType C_ZNK5QFont17letterSpacingTypeEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:230
+// /usr/include/qt/QtGui/qfont.h:222
 // [-2] void setLetterSpacing(QFont::SpacingType, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont16setLetterSpacingENS_11SpacingTypeEd(void *this_, QFont::SpacingType type_, qreal spacing) {
@@ -420,7 +420,7 @@ void C_ZN5QFont16setLetterSpacingENS_11SpacingTypeEd(void *this_, QFont::Spacing
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtGui/qfont.h:232
+// /usr/include/qt/QtGui/qfont.h:224
 // [8] qreal wordSpacing()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -431,7 +431,7 @@ qreal C_ZNK5QFont11wordSpacingEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtGui/qfont.h:233
+// /usr/include/qt/QtGui/qfont.h:225
 // [-2] void setWordSpacing(qreal)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -441,7 +441,7 @@ void C_ZN5QFont14setWordSpacingEd(void *this_, qreal spacing) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:235
+// /usr/include/qt/QtGui/qfont.h:227
 // [-2] void setCapitalization(QFont::Capitalization)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont17setCapitalizationENS_14CapitalizationE(void *this_, QFont::Capitalization arg0) {
@@ -450,7 +450,7 @@ void C_ZN5QFont17setCapitalizationENS_14CapitalizationE(void *this_, QFont::Capi
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtGui/qfont.h:236
+// /usr/include/qt/QtGui/qfont.h:228
 // [4] QFont::Capitalization capitalization()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -460,7 +460,7 @@ QFont::Capitalization C_ZNK5QFont14capitalizationEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:238
+// /usr/include/qt/QtGui/qfont.h:230
 // [-2] void setHintingPreference(QFont::HintingPreference)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont20setHintingPreferenceENS_17HintingPreferenceE(void *this_, QFont::HintingPreference hintingPreference) {
@@ -469,7 +469,7 @@ void C_ZN5QFont20setHintingPreferenceENS_17HintingPreferenceE(void *this_, QFont
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtGui/qfont.h:239
+// /usr/include/qt/QtGui/qfont.h:231
 // [4] QFont::HintingPreference hintingPreference()
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -479,7 +479,7 @@ QFont::HintingPreference C_ZNK5QFont17hintingPreferenceEv(void *this_) {
 #endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:242
+// /usr/include/qt/QtGui/qfont.h:234
 // [1] bool rawMode()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont7rawModeEv(void *this_) {
@@ -487,7 +487,7 @@ bool C_ZNK5QFont7rawModeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:243
+// /usr/include/qt/QtGui/qfont.h:235
 // [-2] void setRawMode(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont10setRawModeEb(void *this_, bool arg0) {
@@ -495,7 +495,7 @@ void C_ZN5QFont10setRawModeEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:247
+// /usr/include/qt/QtGui/qfont.h:239
 // [1] bool exactMatch()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont10exactMatchEv(void *this_) {
@@ -503,7 +503,7 @@ bool C_ZNK5QFont10exactMatchEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:249
+// /usr/include/qt/QtGui/qfont.h:241
 // [16] QFont & operator=(const QFont &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFontaSERKS_(void *this_, QFont* arg0) {
@@ -512,7 +512,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:250
+// /usr/include/qt/QtGui/qfont.h:242
 // [1] bool operator==(const QFont &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFonteqERKS_(void *this_, QFont* arg0) {
@@ -520,7 +520,7 @@ bool C_ZNK5QFonteqERKS_(void *this_, QFont* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:251
+// /usr/include/qt/QtGui/qfont.h:243
 // [1] bool operator!=(const QFont &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFontneERKS_(void *this_, QFont* arg0) {
@@ -528,7 +528,7 @@ bool C_ZNK5QFontneERKS_(void *this_, QFont* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:252
+// /usr/include/qt/QtGui/qfont.h:244
 // [1] bool operator<(const QFont &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFontltERKS_(void *this_, QFont* arg0) {
@@ -536,7 +536,7 @@ bool C_ZNK5QFontltERKS_(void *this_, QFont* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:254
+// /usr/include/qt/QtGui/qfont.h:246
 // [1] bool isCopyOf(const QFont &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QFont8isCopyOfERKS_(void *this_, QFont* arg0) {
@@ -544,7 +544,7 @@ bool C_ZNK5QFont8isCopyOfERKS_(void *this_, QFont* arg0) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:256
+// /usr/include/qt/QtGui/qfont.h:248
 // [16] QFont & operator=(QFont &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFontaSEOS_(void *this_, QFont && other) {
@@ -553,7 +553,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:262
+// /usr/include/qt/QtGui/qfont.h:254
 // [-2] void setRawName(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont10setRawNameERK7QString(void *this_, QString* arg0) {
@@ -561,7 +561,7 @@ void C_ZN5QFont10setRawNameERK7QString(void *this_, QString* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:263
+// /usr/include/qt/QtGui/qfont.h:255
 // [8] QString rawName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFont7rawNameEv(void *this_) {
@@ -570,7 +570,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:266
+// /usr/include/qt/QtGui/qfont.h:258
 // [8] QString key()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFont3keyEv(void *this_) {
@@ -579,7 +579,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:268
+// /usr/include/qt/QtGui/qfont.h:260
 // [8] QString toString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFont8toStringEv(void *this_) {
@@ -588,7 +588,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:269
+// /usr/include/qt/QtGui/qfont.h:261
 // [1] bool fromString(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QFont10fromStringERK7QString(void *this_, QString* arg0) {
@@ -596,7 +596,7 @@ bool C_ZN5QFont10fromStringERK7QString(void *this_, QString* arg0) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:271
+// /usr/include/qt/QtGui/qfont.h:263
 // [8] QString substitute(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFont10substituteERK7QString(QString* arg0) {
@@ -605,7 +605,7 @@ return new QString(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:272
+// /usr/include/qt/QtGui/qfont.h:264
 // [8] QStringList substitutes(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFont11substitutesERK7QString(QString* arg0) {
@@ -614,7 +614,7 @@ return new QStringList(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:273
+// /usr/include/qt/QtGui/qfont.h:265
 // [8] QStringList substitutions()
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QFont13substitutionsEv() {
@@ -623,7 +623,7 @@ return new QStringList(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:274
+// /usr/include/qt/QtGui/qfont.h:266
 // [-2] void insertSubstitution(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont18insertSubstitutionERK7QStringS2_(QString* arg0, QString* arg1) {
@@ -631,7 +631,7 @@ void C_ZN5QFont18insertSubstitutionERK7QStringS2_(QString* arg0, QString* arg1) 
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:275
+// /usr/include/qt/QtGui/qfont.h:267
 // [-2] void insertSubstitutions(const QString &, const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont19insertSubstitutionsERK7QStringRK11QStringList(QString* arg0, QStringList* arg1) {
@@ -640,7 +640,7 @@ void C_ZN5QFont19insertSubstitutionsERK7QStringRK11QStringList(QString* arg0, QS
 
 // Public static Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtGui/qfont.h:276
+// /usr/include/qt/QtGui/qfont.h:268
 // [-2] void removeSubstitutions(const QString &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -650,7 +650,7 @@ void C_ZN5QFont19removeSubstitutionsERK7QString(QString* arg0) {
 #endif // QT_VERSION >= 0x050000
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:280
+// /usr/include/qt/QtGui/qfont.h:272
 // [-2] void initialize()
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont10initializeEv() {
@@ -658,7 +658,7 @@ void C_ZN5QFont10initializeEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:281
+// /usr/include/qt/QtGui/qfont.h:273
 // [-2] void cleanup()
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont7cleanupEv() {
@@ -666,7 +666,7 @@ void C_ZN5QFont7cleanupEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:282
+// /usr/include/qt/QtGui/qfont.h:274
 // [-2] void cacheStatistics()
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont15cacheStatisticsEv() {
@@ -674,7 +674,7 @@ void C_ZN5QFont15cacheStatisticsEv() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:284
+// /usr/include/qt/QtGui/qfont.h:276
 // [8] QString defaultFamily()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFont13defaultFamilyEv(void *this_) {
@@ -683,7 +683,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:285
+// /usr/include/qt/QtGui/qfont.h:277
 // [8] QString lastResortFamily()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFont16lastResortFamilyEv(void *this_) {
@@ -692,7 +692,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:286
+// /usr/include/qt/QtGui/qfont.h:278
 // [8] QString lastResortFont()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFont14lastResortFontEv(void *this_) {
@@ -701,7 +701,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:288
+// /usr/include/qt/QtGui/qfont.h:280
 // [16] QFont resolve(const QFont &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QFont7resolveERKS_(void *this_, QFont* arg0) {
@@ -710,7 +710,7 @@ return new QFont(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:289
+// /usr/include/qt/QtGui/qfont.h:281
 // [4] uint resolve()
 extern "C" Q_DECL_EXPORT
 uint C_ZNK5QFont7resolveEv(void *this_) {
@@ -718,7 +718,7 @@ uint C_ZNK5QFont7resolveEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qfont.h:290
+// /usr/include/qt/QtGui/qfont.h:282
 // [-2] void resolve(uint)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QFont7resolveEj(void *this_, uint mask) {

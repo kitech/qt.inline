@@ -1,2 +1,2 @@
-export QTVER=v5.10
+export QTVER=v5.9
 export QTVERLONG=v5.10.106

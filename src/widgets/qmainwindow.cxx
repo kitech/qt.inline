@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qmainwindow.h
 #ifndef protected
 #define protected public
@@ -136,7 +135,7 @@ void* C_QMainWindow_init_staticMetaObject(void* this_, void* strdat, void* dat, 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:206
+// /usr/include/qt/QtWidgets/qmainwindow.h:205
 // [-2] void contextMenuEvent(QContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * event) {
@@ -144,7 +143,7 @@ void C_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent(void *this_, QCont
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:208
+// /usr/include/qt/QtWidgets/qmainwindow.h:207
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QMainWindow5eventEP6QEvent(void *this_, QEvent * event) {
@@ -152,7 +151,7 @@ bool C_ZN11QMainWindow5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:62
+// /usr/include/qt/QtWidgets/qmainwindow.h:61
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMainWindow10metaObjectEv(void *this_) {
@@ -160,7 +159,7 @@ void* C_ZNK11QMainWindow10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:62
+// /usr/include/qt/QtWidgets/qmainwindow.h:61
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMainWindow11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -168,7 +167,7 @@ void* C_ZN11QMainWindow11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:62
+// /usr/include/qt/QtWidgets/qmainwindow.h:61
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN11QMainWindow11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -176,7 +175,7 @@ int C_ZN11QMainWindow11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaOb
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:62
+// /usr/include/qt/QtWidgets/qmainwindow.h:61
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMainWindow2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -185,7 +184,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:62
+// /usr/include/qt/QtWidgets/qmainwindow.h:61
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMainWindow6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -194,7 +193,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:94
+// /usr/include/qt/QtWidgets/qmainwindow.h:93
 // [-2] void QMainWindow(QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMainWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
@@ -203,14 +202,14 @@ void* C_ZN11QMainWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:95
+// /usr/include/qt/QtWidgets/qmainwindow.h:94
 // [-2] void ~QMainWindow()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindowD2Ev(void *this_) {
   delete (QMainWindow*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:97
+// /usr/include/qt/QtWidgets/qmainwindow.h:96
 // [8] QSize iconSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMainWindow8iconSizeEv(void *this_) {
@@ -219,7 +218,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:98
+// /usr/include/qt/QtWidgets/qmainwindow.h:97
 // [-2] void setIconSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow11setIconSizeERK5QSize(void *this_, QSize* iconSize) {
@@ -227,7 +226,7 @@ void C_ZN11QMainWindow11setIconSizeERK5QSize(void *this_, QSize* iconSize) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:100
+// /usr/include/qt/QtWidgets/qmainwindow.h:99
 // [4] Qt::ToolButtonStyle toolButtonStyle()
 extern "C" Q_DECL_EXPORT
 Qt::ToolButtonStyle C_ZNK11QMainWindow15toolButtonStyleEv(void *this_) {
@@ -235,7 +234,7 @@ Qt::ToolButtonStyle C_ZNK11QMainWindow15toolButtonStyleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:101
+// /usr/include/qt/QtWidgets/qmainwindow.h:100
 // [-2] void setToolButtonStyle(Qt::ToolButtonStyle)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *this_, Qt::ToolButtonStyle toolButtonStyle) {
@@ -243,7 +242,7 @@ void C_ZN11QMainWindow18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:104
+// /usr/include/qt/QtWidgets/qmainwindow.h:103
 // [1] bool isAnimated()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QMainWindow10isAnimatedEv(void *this_) {
@@ -251,7 +250,7 @@ bool C_ZNK11QMainWindow10isAnimatedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:105
+// /usr/include/qt/QtWidgets/qmainwindow.h:104
 // [1] bool isDockNestingEnabled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QMainWindow20isDockNestingEnabledEv(void *this_) {
@@ -259,7 +258,7 @@ bool C_ZNK11QMainWindow20isDockNestingEnabledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:109
+// /usr/include/qt/QtWidgets/qmainwindow.h:108
 // [1] bool documentMode()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QMainWindow12documentModeEv(void *this_) {
@@ -267,7 +266,7 @@ bool C_ZNK11QMainWindow12documentModeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:110
+// /usr/include/qt/QtWidgets/qmainwindow.h:109
 // [-2] void setDocumentMode(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow15setDocumentModeEb(void *this_, bool enabled) {
@@ -275,7 +274,7 @@ void C_ZN11QMainWindow15setDocumentModeEb(void *this_, bool enabled) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:114
+// /usr/include/qt/QtWidgets/qmainwindow.h:113
 // [4] QTabWidget::TabShape tabShape()
 extern "C" Q_DECL_EXPORT
 QTabWidget::TabShape C_ZNK11QMainWindow8tabShapeEv(void *this_) {
@@ -283,7 +282,7 @@ QTabWidget::TabShape C_ZNK11QMainWindow8tabShapeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:115
+// /usr/include/qt/QtWidgets/qmainwindow.h:114
 // [-2] void setTabShape(QTabWidget::TabShape)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow11setTabShapeEN10QTabWidget8TabShapeE(void *this_, QTabWidget::TabShape tabShape) {
@@ -292,7 +291,7 @@ void C_ZN11QMainWindow11setTabShapeEN10QTabWidget8TabShapeE(void *this_, QTabWid
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtWidgets/qmainwindow.h:116
+// /usr/include/qt/QtWidgets/qmainwindow.h:115
 // [4] QTabWidget::TabPosition tabPosition(Qt::DockWidgetArea)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -303,7 +302,7 @@ QTabWidget::TabPosition C_ZNK11QMainWindow11tabPositionEN2Qt14DockWidgetAreaE(vo
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtWidgets/qmainwindow.h:117
+// /usr/include/qt/QtWidgets/qmainwindow.h:116
 // [-2] void setTabPosition(Qt::DockWidgetAreas, QTabWidget::TabPosition)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -313,7 +312,7 @@ void C_ZN11QMainWindow14setTabPositionE6QFlagsIN2Qt14DockWidgetAreaEEN10QTabWidg
 #endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:120
+// /usr/include/qt/QtWidgets/qmainwindow.h:119
 // [-2] void setDockOptions(QMainWindow::DockOptions)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow14setDockOptionsE6QFlagsINS_10DockOptionEE(void *this_, QFlags<QMainWindow::DockOption> options) {
@@ -321,7 +320,7 @@ void C_ZN11QMainWindow14setDockOptionsE6QFlagsINS_10DockOptionEE(void *this_, QF
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:121
+// /usr/include/qt/QtWidgets/qmainwindow.h:120
 // [4] QMainWindow::DockOptions dockOptions()
 extern "C" Q_DECL_EXPORT
 QMainWindow::DockOptions* C_ZNK11QMainWindow11dockOptionsEv(void *this_) {
@@ -330,7 +329,7 @@ return new QMainWindow::DockOptions(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:123
+// /usr/include/qt/QtWidgets/qmainwindow.h:122
 // [1] bool isSeparator(const QPoint &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QMainWindow11isSeparatorERK6QPoint(void *this_, QPoint* pos) {
@@ -338,7 +337,7 @@ bool C_ZNK11QMainWindow11isSeparatorERK6QPoint(void *this_, QPoint* pos) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:126
+// /usr/include/qt/QtWidgets/qmainwindow.h:125
 // [8] QMenuBar * menuBar()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMainWindow7menuBarEv(void *this_) {
@@ -346,7 +345,7 @@ void* C_ZNK11QMainWindow7menuBarEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:127
+// /usr/include/qt/QtWidgets/qmainwindow.h:126
 // [-2] void setMenuBar(QMenuBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow10setMenuBarEP8QMenuBar(void *this_, QMenuBar * menubar) {
@@ -355,7 +354,7 @@ void C_ZN11QMainWindow10setMenuBarEP8QMenuBar(void *this_, QMenuBar * menubar) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qmainwindow.h:129
+// /usr/include/qt/QtWidgets/qmainwindow.h:128
 // [8] QWidget * menuWidget()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -366,7 +365,7 @@ void* C_ZNK11QMainWindow10menuWidgetEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qmainwindow.h:130
+// /usr/include/qt/QtWidgets/qmainwindow.h:129
 // [-2] void setMenuWidget(QWidget *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -376,7 +375,7 @@ void C_ZN11QMainWindow13setMenuWidgetEP7QWidget(void *this_, QWidget * menubar) 
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:134
+// /usr/include/qt/QtWidgets/qmainwindow.h:133
 // [8] QStatusBar * statusBar()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMainWindow9statusBarEv(void *this_) {
@@ -384,7 +383,7 @@ void* C_ZNK11QMainWindow9statusBarEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:135
+// /usr/include/qt/QtWidgets/qmainwindow.h:134
 // [-2] void setStatusBar(QStatusBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow12setStatusBarEP10QStatusBar(void *this_, QStatusBar * statusbar) {
@@ -392,7 +391,7 @@ void C_ZN11QMainWindow12setStatusBarEP10QStatusBar(void *this_, QStatusBar * sta
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:138
+// /usr/include/qt/QtWidgets/qmainwindow.h:137
 // [8] QWidget * centralWidget()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMainWindow13centralWidgetEv(void *this_) {
@@ -400,7 +399,7 @@ void* C_ZNK11QMainWindow13centralWidgetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:139
+// /usr/include/qt/QtWidgets/qmainwindow.h:138
 // [-2] void setCentralWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow16setCentralWidgetEP7QWidget(void *this_, QWidget * widget) {
@@ -409,7 +408,7 @@ void C_ZN11QMainWindow16setCentralWidgetEP7QWidget(void *this_, QWidget * widget
 
 // Public Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtWidgets/qmainwindow.h:141
+// /usr/include/qt/QtWidgets/qmainwindow.h:140
 // [8] QWidget * takeCentralWidget()
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -419,7 +418,7 @@ void* C_ZN11QMainWindow17takeCentralWidgetEv(void *this_) {
 #endif // QT_VERSION >= 0x050200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:144
+// /usr/include/qt/QtWidgets/qmainwindow.h:143
 // [-2] void setCorner(Qt::Corner, Qt::DockWidgetArea)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow9setCornerEN2Qt6CornerENS0_14DockWidgetAreaE(void *this_, Qt::Corner corner, Qt::DockWidgetArea area) {
@@ -427,7 +426,7 @@ void C_ZN11QMainWindow9setCornerEN2Qt6CornerENS0_14DockWidgetAreaE(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:145
+// /usr/include/qt/QtWidgets/qmainwindow.h:144
 // [4] Qt::DockWidgetArea corner(Qt::Corner)
 extern "C" Q_DECL_EXPORT
 Qt::DockWidgetArea C_ZNK11QMainWindow6cornerEN2Qt6CornerE(void *this_, Qt::Corner corner) {
@@ -435,7 +434,7 @@ Qt::DockWidgetArea C_ZNK11QMainWindow6cornerEN2Qt6CornerE(void *this_, Qt::Corne
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:149
+// /usr/include/qt/QtWidgets/qmainwindow.h:148
 // [-2] void addToolBarBreak(Qt::ToolBarArea)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow15addToolBarBreakEN2Qt11ToolBarAreaE(void *this_, Qt::ToolBarArea area) {
@@ -443,7 +442,7 @@ void C_ZN11QMainWindow15addToolBarBreakEN2Qt11ToolBarAreaE(void *this_, Qt::Tool
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:150
+// /usr/include/qt/QtWidgets/qmainwindow.h:149
 // [-2] void insertToolBarBreak(QToolBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow18insertToolBarBreakEP8QToolBar(void *this_, QToolBar * before) {
@@ -451,7 +450,7 @@ void C_ZN11QMainWindow18insertToolBarBreakEP8QToolBar(void *this_, QToolBar * be
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:152
+// /usr/include/qt/QtWidgets/qmainwindow.h:151
 // [-2] void addToolBar(Qt::ToolBarArea, QToolBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow10addToolBarEN2Qt11ToolBarAreaEP8QToolBar(void *this_, Qt::ToolBarArea area, QToolBar * toolbar) {
@@ -459,7 +458,7 @@ void C_ZN11QMainWindow10addToolBarEN2Qt11ToolBarAreaEP8QToolBar(void *this_, Qt:
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:153
+// /usr/include/qt/QtWidgets/qmainwindow.h:152
 // [-2] void addToolBar(QToolBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow10addToolBarEP8QToolBar(void *this_, QToolBar * toolbar) {
@@ -467,7 +466,7 @@ void C_ZN11QMainWindow10addToolBarEP8QToolBar(void *this_, QToolBar * toolbar) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:154
+// /usr/include/qt/QtWidgets/qmainwindow.h:153
 // [8] QToolBar * addToolBar(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMainWindow10addToolBarERK7QString(void *this_, QString* title) {
@@ -475,7 +474,7 @@ void* C_ZN11QMainWindow10addToolBarERK7QString(void *this_, QString* title) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:155
+// /usr/include/qt/QtWidgets/qmainwindow.h:154
 // [-2] void insertToolBar(QToolBar *, QToolBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow13insertToolBarEP8QToolBarS1_(void *this_, QToolBar * before, QToolBar * toolbar) {
@@ -483,7 +482,7 @@ void C_ZN11QMainWindow13insertToolBarEP8QToolBarS1_(void *this_, QToolBar * befo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:156
+// /usr/include/qt/QtWidgets/qmainwindow.h:155
 // [-2] void removeToolBar(QToolBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow13removeToolBarEP8QToolBar(void *this_, QToolBar * toolbar) {
@@ -491,7 +490,7 @@ void C_ZN11QMainWindow13removeToolBarEP8QToolBar(void *this_, QToolBar * toolbar
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:157
+// /usr/include/qt/QtWidgets/qmainwindow.h:156
 // [-2] void removeToolBarBreak(QToolBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow18removeToolBarBreakEP8QToolBar(void *this_, QToolBar * before) {
@@ -499,7 +498,7 @@ void C_ZN11QMainWindow18removeToolBarBreakEP8QToolBar(void *this_, QToolBar * be
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:159
+// /usr/include/qt/QtWidgets/qmainwindow.h:158
 // [1] bool unifiedTitleAndToolBarOnMac()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QMainWindow27unifiedTitleAndToolBarOnMacEv(void *this_) {
@@ -507,7 +506,7 @@ bool C_ZNK11QMainWindow27unifiedTitleAndToolBarOnMacEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:161
+// /usr/include/qt/QtWidgets/qmainwindow.h:160
 // [4] Qt::ToolBarArea toolBarArea(QToolBar *)
 extern "C" Q_DECL_EXPORT
 Qt::ToolBarArea C_ZNK11QMainWindow11toolBarAreaEP8QToolBar(void *this_, QToolBar * toolbar) {
@@ -515,7 +514,7 @@ Qt::ToolBarArea C_ZNK11QMainWindow11toolBarAreaEP8QToolBar(void *this_, QToolBar
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:162
+// /usr/include/qt/QtWidgets/qmainwindow.h:161
 // [1] bool toolBarBreak(QToolBar *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QMainWindow12toolBarBreakEP8QToolBar(void *this_, QToolBar * toolbar) {
@@ -523,7 +522,7 @@ bool C_ZNK11QMainWindow12toolBarBreakEP8QToolBar(void *this_, QToolBar * toolbar
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:165
+// /usr/include/qt/QtWidgets/qmainwindow.h:164
 // [-2] void addDockWidget(Qt::DockWidgetArea, QDockWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow13addDockWidgetEN2Qt14DockWidgetAreaEP11QDockWidget(void *this_, Qt::DockWidgetArea area, QDockWidget * dockwidget) {
@@ -531,7 +530,7 @@ void C_ZN11QMainWindow13addDockWidgetEN2Qt14DockWidgetAreaEP11QDockWidget(void *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:166
+// /usr/include/qt/QtWidgets/qmainwindow.h:165
 // [-2] void addDockWidget(Qt::DockWidgetArea, QDockWidget *, Qt::Orientation)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow13addDockWidgetEN2Qt14DockWidgetAreaEP11QDockWidgetNS0_11OrientationE(void *this_, Qt::DockWidgetArea area, QDockWidget * dockwidget, Qt::Orientation orientation) {
@@ -539,7 +538,7 @@ void C_ZN11QMainWindow13addDockWidgetEN2Qt14DockWidgetAreaEP11QDockWidgetNS0_11O
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:168
+// /usr/include/qt/QtWidgets/qmainwindow.h:167
 // [-2] void splitDockWidget(QDockWidget *, QDockWidget *, Qt::Orientation)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow15splitDockWidgetEP11QDockWidgetS1_N2Qt11OrientationE(void *this_, QDockWidget * after, QDockWidget * dockwidget, Qt::Orientation orientation) {
@@ -547,7 +546,7 @@ void C_ZN11QMainWindow15splitDockWidgetEP11QDockWidgetS1_N2Qt11OrientationE(void
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:170
+// /usr/include/qt/QtWidgets/qmainwindow.h:169
 // [-2] void tabifyDockWidget(QDockWidget *, QDockWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow16tabifyDockWidgetEP11QDockWidgetS1_(void *this_, QDockWidget * first, QDockWidget * second) {
@@ -556,7 +555,7 @@ void C_ZN11QMainWindow16tabifyDockWidgetEP11QDockWidgetS1_(void *this_, QDockWid
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtWidgets/qmainwindow.h:171
+// /usr/include/qt/QtWidgets/qmainwindow.h:170
 // [-2] QList<QDockWidget *> tabifiedDockWidgets(QDockWidget *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -567,7 +566,7 @@ return new QList<QDockWidget *>(rv);
 #endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:172
+// /usr/include/qt/QtWidgets/qmainwindow.h:171
 // [-2] void removeDockWidget(QDockWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow16removeDockWidgetEP11QDockWidget(void *this_, QDockWidget * dockwidget) {
@@ -575,7 +574,7 @@ void C_ZN11QMainWindow16removeDockWidgetEP11QDockWidget(void *this_, QDockWidget
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:173
+// /usr/include/qt/QtWidgets/qmainwindow.h:172
 // [1] bool restoreDockWidget(QDockWidget *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QMainWindow17restoreDockWidgetEP11QDockWidget(void *this_, QDockWidget * dockwidget) {
@@ -583,7 +582,7 @@ bool C_ZN11QMainWindow17restoreDockWidgetEP11QDockWidget(void *this_, QDockWidge
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:175
+// /usr/include/qt/QtWidgets/qmainwindow.h:174
 // [4] Qt::DockWidgetArea dockWidgetArea(QDockWidget *)
 extern "C" Q_DECL_EXPORT
 Qt::DockWidgetArea C_ZNK11QMainWindow14dockWidgetAreaEP11QDockWidget(void *this_, QDockWidget * dockwidget) {
@@ -592,7 +591,7 @@ Qt::DockWidgetArea C_ZNK11QMainWindow14dockWidgetAreaEP11QDockWidget(void *this_
 
 // Public Visibility=Default Availability=Available
 // since 5.6
-// /usr/include/qt/QtWidgets/qmainwindow.h:177
+// /usr/include/qt/QtWidgets/qmainwindow.h:176
 // [-2] void resizeDocks(const QList<QDockWidget *> &, const QList<int> &, Qt::Orientation)
 #if QT_VERSION >= 0x050600
 extern "C" Q_DECL_EXPORT
@@ -602,7 +601,7 @@ void C_ZN11QMainWindow11resizeDocksERK5QListIP11QDockWidgetERKS0_IiEN2Qt11Orient
 #endif // QT_VERSION >= 0x050600
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:181
+// /usr/include/qt/QtWidgets/qmainwindow.h:180
 // [8] QByteArray saveState(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QMainWindow9saveStateEi(void *this_, int version) {
@@ -611,7 +610,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:182
+// /usr/include/qt/QtWidgets/qmainwindow.h:181
 // [1] bool restoreState(const QByteArray &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QMainWindow12restoreStateERK10QByteArrayi(void *this_, QByteArray* state, int version) {
@@ -619,7 +618,7 @@ bool C_ZN11QMainWindow12restoreStateERK10QByteArrayi(void *this_, QByteArray* st
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:185
+// /usr/include/qt/QtWidgets/qmainwindow.h:184
 // [8] QMenu * createPopupMenu()
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QMainWindow15createPopupMenuEv(void *this_) {
@@ -627,7 +626,7 @@ void* C_ZN11QMainWindow15createPopupMenuEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:190
+// /usr/include/qt/QtWidgets/qmainwindow.h:189
 // [-2] void setAnimated(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow11setAnimatedEb(void *this_, bool enabled) {
@@ -635,7 +634,7 @@ void C_ZN11QMainWindow11setAnimatedEb(void *this_, bool enabled) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:191
+// /usr/include/qt/QtWidgets/qmainwindow.h:190
 // [-2] void setDockNestingEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow21setDockNestingEnabledEb(void *this_, bool enabled) {
@@ -643,7 +642,7 @@ void C_ZN11QMainWindow21setDockNestingEnabledEb(void *this_, bool enabled) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:194
+// /usr/include/qt/QtWidgets/qmainwindow.h:193
 // [-2] void setUnifiedTitleAndToolBarOnMac(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow30setUnifiedTitleAndToolBarOnMacEb(void *this_, bool set) {
@@ -651,7 +650,7 @@ void C_ZN11QMainWindow30setUnifiedTitleAndToolBarOnMacEb(void *this_, bool set) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:198
+// /usr/include/qt/QtWidgets/qmainwindow.h:197
 // [-2] void iconSizeChanged(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow15iconSizeChangedERK5QSize(void *this_, QSize* iconSize) {
@@ -659,7 +658,7 @@ void C_ZN11QMainWindow15iconSizeChangedERK5QSize(void *this_, QSize* iconSize) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmainwindow.h:199
+// /usr/include/qt/QtWidgets/qmainwindow.h:198
 // [-2] void toolButtonStyleChanged(Qt::ToolButtonStyle)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *this_, Qt::ToolButtonStyle toolButtonStyle) {
@@ -668,7 +667,7 @@ void C_ZN11QMainWindow22toolButtonStyleChangedEN2Qt15ToolButtonStyleE(void *this
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtWidgets/qmainwindow.h:201
+// /usr/include/qt/QtWidgets/qmainwindow.h:200
 // [-2] void tabifiedDockWidgetActivated(QDockWidget *)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -693,5 +692,4 @@ void C_ZN11QMainWindow27tabifiedDockWidgetActivatedEP11QDockWidget(void *this_, 
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

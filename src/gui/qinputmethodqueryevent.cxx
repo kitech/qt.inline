@@ -54,7 +54,7 @@ MyQInputMethodQueryEvent(QFlags<Qt::InputMethodQuery> queries) : QInputMethodQue
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:581
+// /usr/include/qt/QtGui/qevent.h:574
 // [-2] void QInputMethodQueryEvent(Qt::InputMethodQueries)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QInputMethodQueryEventC2E6QFlagsIN2Qt16InputMethodQueryEE(QFlags<Qt::InputMethodQuery> queries) {
@@ -62,14 +62,14 @@ void* C_ZN22QInputMethodQueryEventC2E6QFlagsIN2Qt16InputMethodQueryEE(QFlags<Qt:
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:582
+// /usr/include/qt/QtGui/qevent.h:575
 // [-2] void ~QInputMethodQueryEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QInputMethodQueryEventD2Ev(void *this_) {
   delete (QInputMethodQueryEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:584
+// /usr/include/qt/QtGui/qevent.h:577
 // [4] Qt::InputMethodQueries queries()
 extern "C" Q_DECL_EXPORT
 Qt::InputMethodQueries C_ZNK22QInputMethodQueryEvent7queriesEv(void *this_) {
@@ -77,7 +77,7 @@ Qt::InputMethodQueries C_ZNK22QInputMethodQueryEvent7queriesEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:586
+// /usr/include/qt/QtGui/qevent.h:579
 // [-2] void setValue(Qt::InputMethodQuery, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QInputMethodQueryEvent8setValueEN2Qt16InputMethodQueryERK8QVariant(void *this_, Qt::InputMethodQuery query, QVariant* value) {
@@ -85,7 +85,7 @@ void C_ZN22QInputMethodQueryEvent8setValueEN2Qt16InputMethodQueryERK8QVariant(vo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:587
+// /usr/include/qt/QtGui/qevent.h:580
 // [16] QVariant value(Qt::InputMethodQuery)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QInputMethodQueryEvent5valueEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery query) {

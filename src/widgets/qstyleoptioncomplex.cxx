@@ -55,7 +55,7 @@ MyQStyleOptionComplex(const QStyleOptionComplex & other) : QStyleOptionComplex(o
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:509
+// /usr/include/qt/QtWidgets/qstyleoption.h:498
 // [-2] void QStyleOptionComplex(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionComplexC2Eii(int version, int type_) {
@@ -63,7 +63,7 @@ void* C_ZN19QStyleOptionComplexC2Eii(int version, int type_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:510
+// /usr/include/qt/QtWidgets/qstyleoption.h:499
 // [-2] void QStyleOptionComplex(const QStyleOptionComplex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionComplexC2ERKS_(QStyleOptionComplex* other) {

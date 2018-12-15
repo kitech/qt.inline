@@ -151,10 +151,10 @@ void* C_QIODevice_init_staticMetaObject(void* this_, void* strdat, void* dat, vo
 }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:166
+// /usr/include/qt/QtCore/qiodevice.h:165
 // [8] qint64 readData(char *, qint64)
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:167
+// /usr/include/qt/QtCore/qiodevice.h:166
 // [8] qint64 readLineData(char *, qint64)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN9QIODevice12readLineDataEPcx(void *this_, char * data, qint64 maxlen) {
@@ -162,7 +162,7 @@ qint64 C_ZN9QIODevice12readLineDataEPcx(void *this_, char * data, qint64 maxlen)
 }
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:168
+// /usr/include/qt/QtCore/qiodevice.h:167
 // [8] qint64 writeData(const char *, qint64)
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qiodevice.h:68
@@ -571,19 +571,8 @@ return new QByteArray(rv);
 }
 #endif // QT_VERSION >= 0x040100
 
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qiodevice.h:139
-// [8] qint64 skip(qint64)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-qint64 C_ZN9QIODevice4skipEx(void *this_, qint64 maxSize) {
-  return (qint64)((QIODevice*)this_)->skip(maxSize);
-}
-#endif // QT_VERSION >= 0x050a00
-
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:141
+// /usr/include/qt/QtCore/qiodevice.h:140
 // [1] bool waitForReadyRead(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice16waitForReadyReadEi(void *this_, int msecs) {
@@ -591,7 +580,7 @@ bool C_ZN9QIODevice16waitForReadyReadEi(void *this_, int msecs) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:142
+// /usr/include/qt/QtCore/qiodevice.h:141
 // [1] bool waitForBytesWritten(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice19waitForBytesWrittenEi(void *this_, int msecs) {
@@ -599,7 +588,7 @@ bool C_ZN9QIODevice19waitForBytesWrittenEi(void *this_, int msecs) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:144
+// /usr/include/qt/QtCore/qiodevice.h:143
 // [-2] void ungetChar(char)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice9ungetCharEc(void *this_, char c) {
@@ -607,7 +596,7 @@ void C_ZN9QIODevice9ungetCharEc(void *this_, char c) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:145
+// /usr/include/qt/QtCore/qiodevice.h:144
 // [1] bool putChar(char)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice7putCharEc(void *this_, char c) {
@@ -615,7 +604,7 @@ bool C_ZN9QIODevice7putCharEc(void *this_, char c) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:146
+// /usr/include/qt/QtCore/qiodevice.h:145
 // [1] bool getChar(char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QIODevice7getCharEPc(void *this_, char * c) {
@@ -623,7 +612,7 @@ bool C_ZN9QIODevice7getCharEPc(void *this_, char * c) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:148
+// /usr/include/qt/QtCore/qiodevice.h:147
 // [8] QString errorString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QIODevice11errorStringEv(void *this_) {
@@ -632,7 +621,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:152
+// /usr/include/qt/QtCore/qiodevice.h:151
 // [-2] void readyRead()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice9readyReadEv(void *this_) {
@@ -641,7 +630,7 @@ void C_ZN9QIODevice9readyReadEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.7
-// /usr/include/qt/QtCore/qiodevice.h:153
+// /usr/include/qt/QtCore/qiodevice.h:152
 // [-2] void channelReadyRead(int)
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
@@ -651,7 +640,7 @@ void C_ZN9QIODevice16channelReadyReadEi(void *this_, int channel) {
 #endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:154
+// /usr/include/qt/QtCore/qiodevice.h:153
 // [-2] void bytesWritten(qint64)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice12bytesWrittenEx(void *this_, qint64 bytes) {
@@ -660,7 +649,7 @@ void C_ZN9QIODevice12bytesWrittenEx(void *this_, qint64 bytes) {
 
 // Public Visibility=Default Availability=Available
 // since 5.7
-// /usr/include/qt/QtCore/qiodevice.h:155
+// /usr/include/qt/QtCore/qiodevice.h:154
 // [-2] void channelBytesWritten(int, qint64)
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
@@ -670,7 +659,7 @@ void C_ZN9QIODevice19channelBytesWrittenEix(void *this_, int channel, qint64 byt
 #endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:156
+// /usr/include/qt/QtCore/qiodevice.h:155
 // [-2] void aboutToClose()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QIODevice12aboutToCloseEv(void *this_) {
@@ -679,7 +668,7 @@ void C_ZN9QIODevice12aboutToCloseEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtCore/qiodevice.h:157
+// /usr/include/qt/QtCore/qiodevice.h:156
 // [-2] void readChannelFinished()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT

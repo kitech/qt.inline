@@ -1,11 +1,11 @@
 //  header block begin
 
-// /usr/include/qt/QtCore/qstringliteral.h
+// /usr/include/qt/QtCore/qstring.h
 #ifndef protected
 #define protected public
 #define private public
 #endif
-#include <qstringliteral.h>
+#include <qstring.h>
 #include <QtCore>
 #include "callback_inherit.h"
 

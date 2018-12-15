@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h
 #ifndef protected
 #define protected public
@@ -135,7 +134,7 @@ void* C_QGraphicsItemAnimation_init_staticMetaObject(void* this_, void* strdat, 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:102
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:103
 // [-2] void beforeAnimationStep(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation19beforeAnimationStepEd(void *this_, qreal step) {
@@ -143,7 +142,7 @@ void C_ZN22QGraphicsItemAnimation19beforeAnimationStepEd(void *this_, qreal step
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:103
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:104
 // [-2] void afterAnimationStep(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation18afterAnimationStepEd(void *this_, qreal step) {
@@ -151,7 +150,7 @@ void C_ZN22QGraphicsItemAnimation18afterAnimationStepEd(void *this_, qreal step)
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:59
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:60
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QGraphicsItemAnimation10metaObjectEv(void *this_) {
@@ -159,7 +158,7 @@ void* C_ZNK22QGraphicsItemAnimation10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:59
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:60
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QGraphicsItemAnimation11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -167,7 +166,7 @@ void* C_ZN22QGraphicsItemAnimation11qt_metacastEPKc(void *this_, const char * ar
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:59
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:60
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN22QGraphicsItemAnimation11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -175,7 +174,7 @@ int C_ZN22QGraphicsItemAnimation11qt_metacallEN11QMetaObject4CallEiPPv(void *thi
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:59
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:60
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QGraphicsItemAnimation2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -184,7 +183,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:59
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:60
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QGraphicsItemAnimation6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -193,7 +192,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:61
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:62
 // [-2] void QGraphicsItemAnimation(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QGraphicsItemAnimationC2EP7QObject(QObject * parent) {
@@ -202,14 +201,14 @@ void* C_ZN22QGraphicsItemAnimationC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:62
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:63
 // [-2] void ~QGraphicsItemAnimation()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimationD2Ev(void *this_) {
   delete (QGraphicsItemAnimation*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:64
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:65
 // [8] QGraphicsItem * item()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QGraphicsItemAnimation4itemEv(void *this_) {
@@ -217,7 +216,7 @@ void* C_ZNK22QGraphicsItemAnimation4itemEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:65
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:66
 // [-2] void setItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation7setItemEP13QGraphicsItem(void *this_, QGraphicsItem * item) {
@@ -225,7 +224,7 @@ void C_ZN22QGraphicsItemAnimation7setItemEP13QGraphicsItem(void *this_, QGraphic
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:67
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:68
 // [8] QTimeLine * timeLine()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QGraphicsItemAnimation8timeLineEv(void *this_) {
@@ -233,7 +232,7 @@ void* C_ZNK22QGraphicsItemAnimation8timeLineEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:68
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:69
 // [-2] void setTimeLine(QTimeLine *)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation11setTimeLineEP9QTimeLine(void *this_, QTimeLine * timeLine) {
@@ -241,7 +240,7 @@ void C_ZN22QGraphicsItemAnimation11setTimeLineEP9QTimeLine(void *this_, QTimeLin
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:70
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:71
 // [16] QPointF posAt(qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QGraphicsItemAnimation5posAtEd(void *this_, qreal step) {
@@ -250,7 +249,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:71
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:72
 // [-2] QList<QPair<qreal, QPointF> > posList()
 extern "C" Q_DECL_EXPORT
 QList<QPair<qreal, QPointF> >* C_ZNK22QGraphicsItemAnimation7posListEv(void *this_) {
@@ -259,7 +258,7 @@ return new QList<QPair<qreal, QPointF> >(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:72
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:73
 // [-2] void setPosAt(qreal, const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation8setPosAtEdRK7QPointF(void *this_, qreal step, QPointF* pos) {
@@ -267,7 +266,7 @@ void C_ZN22QGraphicsItemAnimation8setPosAtEdRK7QPointF(void *this_, qreal step, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:74
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:75
 // [48] QMatrix matrixAt(qreal)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QGraphicsItemAnimation8matrixAtEd(void *this_, qreal step) {
@@ -276,7 +275,7 @@ return new QMatrix(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:76
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:77
 // [8] qreal rotationAt(qreal)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK22QGraphicsItemAnimation10rotationAtEd(void *this_, qreal step) {
@@ -284,7 +283,7 @@ qreal C_ZNK22QGraphicsItemAnimation10rotationAtEd(void *this_, qreal step) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:77
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:78
 // [-2] QList<QPair<qreal, qreal> > rotationList()
 extern "C" Q_DECL_EXPORT
 QList<QPair<qreal, qreal> >* C_ZNK22QGraphicsItemAnimation12rotationListEv(void *this_) {
@@ -293,7 +292,7 @@ return new QList<QPair<qreal, qreal> >(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:78
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:79
 // [-2] void setRotationAt(qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation13setRotationAtEdd(void *this_, qreal step, qreal angle) {
@@ -301,7 +300,7 @@ void C_ZN22QGraphicsItemAnimation13setRotationAtEdd(void *this_, qreal step, qre
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:80
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:81
 // [8] qreal xTranslationAt(qreal)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK22QGraphicsItemAnimation14xTranslationAtEd(void *this_, qreal step) {
@@ -309,7 +308,7 @@ qreal C_ZNK22QGraphicsItemAnimation14xTranslationAtEd(void *this_, qreal step) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:81
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:82
 // [8] qreal yTranslationAt(qreal)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK22QGraphicsItemAnimation14yTranslationAtEd(void *this_, qreal step) {
@@ -317,7 +316,7 @@ qreal C_ZNK22QGraphicsItemAnimation14yTranslationAtEd(void *this_, qreal step) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:82
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:83
 // [-2] QList<QPair<qreal, QPointF> > translationList()
 extern "C" Q_DECL_EXPORT
 QList<QPair<qreal, QPointF> >* C_ZNK22QGraphicsItemAnimation15translationListEv(void *this_) {
@@ -326,7 +325,7 @@ return new QList<QPair<qreal, QPointF> >(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:83
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:84
 // [-2] void setTranslationAt(qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation16setTranslationAtEddd(void *this_, qreal step, qreal dx, qreal dy) {
@@ -334,7 +333,7 @@ void C_ZN22QGraphicsItemAnimation16setTranslationAtEddd(void *this_, qreal step,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:85
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:86
 // [8] qreal verticalScaleAt(qreal)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK22QGraphicsItemAnimation15verticalScaleAtEd(void *this_, qreal step) {
@@ -342,7 +341,7 @@ qreal C_ZNK22QGraphicsItemAnimation15verticalScaleAtEd(void *this_, qreal step) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:86
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:87
 // [8] qreal horizontalScaleAt(qreal)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK22QGraphicsItemAnimation17horizontalScaleAtEd(void *this_, qreal step) {
@@ -350,7 +349,7 @@ qreal C_ZNK22QGraphicsItemAnimation17horizontalScaleAtEd(void *this_, qreal step
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:87
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:88
 // [-2] QList<QPair<qreal, QPointF> > scaleList()
 extern "C" Q_DECL_EXPORT
 QList<QPair<qreal, QPointF> >* C_ZNK22QGraphicsItemAnimation9scaleListEv(void *this_) {
@@ -359,7 +358,7 @@ return new QList<QPair<qreal, QPointF> >(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:88
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:89
 // [-2] void setScaleAt(qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation10setScaleAtEddd(void *this_, qreal step, qreal sx, qreal sy) {
@@ -367,7 +366,7 @@ void C_ZN22QGraphicsItemAnimation10setScaleAtEddd(void *this_, qreal step, qreal
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:90
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:91
 // [8] qreal verticalShearAt(qreal)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK22QGraphicsItemAnimation15verticalShearAtEd(void *this_, qreal step) {
@@ -375,7 +374,7 @@ qreal C_ZNK22QGraphicsItemAnimation15verticalShearAtEd(void *this_, qreal step) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:91
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:92
 // [8] qreal horizontalShearAt(qreal)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK22QGraphicsItemAnimation17horizontalShearAtEd(void *this_, qreal step) {
@@ -383,7 +382,7 @@ qreal C_ZNK22QGraphicsItemAnimation17horizontalShearAtEd(void *this_, qreal step
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:92
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:93
 // [-2] QList<QPair<qreal, QPointF> > shearList()
 extern "C" Q_DECL_EXPORT
 QList<QPair<qreal, QPointF> >* C_ZNK22QGraphicsItemAnimation9shearListEv(void *this_) {
@@ -392,7 +391,7 @@ return new QList<QPair<qreal, QPointF> >(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:93
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:94
 // [-2] void setShearAt(qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation10setShearAtEddd(void *this_, qreal step, qreal sh, qreal sv) {
@@ -400,7 +399,7 @@ void C_ZN22QGraphicsItemAnimation10setShearAtEddd(void *this_, qreal step, qreal
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:95
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:96
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation5clearEv(void *this_) {
@@ -408,7 +407,7 @@ void C_ZN22QGraphicsItemAnimation5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:98
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:99
 // [-2] void setStep(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation7setStepEd(void *this_, qreal x) {
@@ -416,7 +415,7 @@ void C_ZN22QGraphicsItemAnimation7setStepEd(void *this_, qreal x) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:99
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:100
 // [-2] void reset()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QGraphicsItemAnimation5resetEv(void *this_) {
@@ -439,5 +438,4 @@ void C_ZN22QGraphicsItemAnimation5resetEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

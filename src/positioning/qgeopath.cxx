@@ -182,18 +182,7 @@ double C_ZNK8QGeoPath6lengthEii(void *this_, int indexFrom, int indexTo) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtPositioning/qgeopath.h:81
-// [4] int size()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-int C_ZNK8QGeoPath4sizeEv(void *this_) {
-  return (int)((QGeoPath*)this_)->size();
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopath.h:82
 // [-2] void addCoordinate(const QGeoCoordinate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QGeoPath13addCoordinateERK14QGeoCoordinate(void *this_, QGeoCoordinate* coordinate) {
@@ -201,7 +190,7 @@ void C_ZN8QGeoPath13addCoordinateERK14QGeoCoordinate(void *this_, QGeoCoordinate
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopath.h:83
+// /usr/include/qt/QtPositioning/qgeopath.h:82
 // [-2] void insertCoordinate(int, const QGeoCoordinate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QGeoPath16insertCoordinateEiRK14QGeoCoordinate(void *this_, int index, QGeoCoordinate* coordinate) {
@@ -209,7 +198,7 @@ void C_ZN8QGeoPath16insertCoordinateEiRK14QGeoCoordinate(void *this_, int index,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopath.h:84
+// /usr/include/qt/QtPositioning/qgeopath.h:83
 // [-2] void replaceCoordinate(int, const QGeoCoordinate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QGeoPath17replaceCoordinateEiRK14QGeoCoordinate(void *this_, int index, QGeoCoordinate* coordinate) {
@@ -217,7 +206,7 @@ void C_ZN8QGeoPath17replaceCoordinateEiRK14QGeoCoordinate(void *this_, int index
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopath.h:85
+// /usr/include/qt/QtPositioning/qgeopath.h:84
 // [8] QGeoCoordinate coordinateAt(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QGeoPath12coordinateAtEi(void *this_, int index) {
@@ -226,7 +215,7 @@ return new QGeoCoordinate(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopath.h:86
+// /usr/include/qt/QtPositioning/qgeopath.h:85
 // [1] bool containsCoordinate(const QGeoCoordinate &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QGeoPath18containsCoordinateERK14QGeoCoordinate(void *this_, QGeoCoordinate* coordinate) {
@@ -234,7 +223,7 @@ bool C_ZNK8QGeoPath18containsCoordinateERK14QGeoCoordinate(void *this_, QGeoCoor
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopath.h:87
+// /usr/include/qt/QtPositioning/qgeopath.h:86
 // [-2] void removeCoordinate(const QGeoCoordinate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QGeoPath16removeCoordinateERK14QGeoCoordinate(void *this_, QGeoCoordinate* coordinate) {
@@ -242,7 +231,7 @@ void C_ZN8QGeoPath16removeCoordinateERK14QGeoCoordinate(void *this_, QGeoCoordin
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopath.h:88
+// /usr/include/qt/QtPositioning/qgeopath.h:87
 // [-2] void removeCoordinate(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QGeoPath16removeCoordinateEi(void *this_, int index) {
@@ -250,7 +239,7 @@ void C_ZN8QGeoPath16removeCoordinateEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopath.h:90
+// /usr/include/qt/QtPositioning/qgeopath.h:89
 // [8] QString toString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QGeoPath8toStringEv(void *this_) {

@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qdatetimeedit.h
 #ifndef protected
 #define protected public
@@ -113,7 +112,7 @@ void* C_QDateEdit_init_staticMetaObject(void* this_, void* strdat, void* dat, vo
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:217
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:218
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QDateEdit10metaObjectEv(void *this_) {
@@ -121,7 +120,7 @@ void* C_ZNK9QDateEdit10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:217
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:218
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEdit11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -129,7 +128,7 @@ void* C_ZN9QDateEdit11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:217
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:218
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QDateEdit11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -137,7 +136,7 @@ int C_ZN9QDateEdit11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObjec
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:217
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:218
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEdit2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -146,7 +145,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:217
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:218
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEdit6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -155,7 +154,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:220
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:221
 // [-2] void QDateEdit(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEditC2EP7QWidget(QWidget * parent) {
@@ -163,7 +162,7 @@ void* C_ZN9QDateEditC2EP7QWidget(QWidget * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:221
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:222
 // [-2] void QDateEdit(const QDate &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QDateEditC2ERK5QDateP7QWidget(QDate* date, QWidget * parent) {
@@ -171,14 +170,14 @@ void* C_ZN9QDateEditC2ERK5QDateP7QWidget(QDate* date, QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:222
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:223
 // [-2] void ~QDateEdit()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateEditD2Ev(void *this_) {
   delete (QDateEdit*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:225
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:226
 // [-2] void userDateChanged(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QDateEdit15userDateChangedERK5QDate(void *this_, QDate* date) {
@@ -201,5 +200,4 @@ void C_ZN9QDateEdit15userDateChangedERK5QDate(void *this_, QDate* date) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

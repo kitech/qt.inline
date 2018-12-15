@@ -85,7 +85,7 @@ void* C_ZN13QBackingStore11paintDeviceEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:69
+// /usr/include/qt/QtGui/qbackingstore.h:71
 // [-2] void flush(const QRegion &, QWindow *, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QBackingStore5flushERK7QRegionP7QWindowRK6QPoint(void *this_, QRegion* region, QWindow * window, QPoint* offset) {
@@ -93,7 +93,7 @@ void C_ZN13QBackingStore5flushERK7QRegionP7QWindowRK6QPoint(void *this_, QRegion
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:71
+// /usr/include/qt/QtGui/qbackingstore.h:73
 // [-2] void resize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QBackingStore6resizeERK5QSize(void *this_, QSize* size) {
@@ -101,7 +101,7 @@ void C_ZN13QBackingStore6resizeERK5QSize(void *this_, QSize* size) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:72
+// /usr/include/qt/QtGui/qbackingstore.h:74
 // [8] QSize size()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QBackingStore4sizeEv(void *this_) {
@@ -110,7 +110,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:74
+// /usr/include/qt/QtGui/qbackingstore.h:76
 // [1] bool scroll(const QRegion &, int, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QBackingStore6scrollERK7QRegionii(void *this_, QRegion* area, int dx, int dy) {
@@ -118,7 +118,7 @@ bool C_ZN13QBackingStore6scrollERK7QRegionii(void *this_, QRegion* area, int dx,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:76
+// /usr/include/qt/QtGui/qbackingstore.h:78
 // [-2] void beginPaint(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QBackingStore10beginPaintERK7QRegion(void *this_, QRegion* arg0) {
@@ -126,7 +126,7 @@ void C_ZN13QBackingStore10beginPaintERK7QRegion(void *this_, QRegion* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:77
+// /usr/include/qt/QtGui/qbackingstore.h:79
 // [-2] void endPaint()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QBackingStore8endPaintEv(void *this_) {
@@ -134,7 +134,7 @@ void C_ZN13QBackingStore8endPaintEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:79
+// /usr/include/qt/QtGui/qbackingstore.h:81
 // [-2] void setStaticContents(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QBackingStore17setStaticContentsERK7QRegion(void *this_, QRegion* region) {
@@ -142,7 +142,7 @@ void C_ZN13QBackingStore17setStaticContentsERK7QRegion(void *this_, QRegion* reg
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:80
+// /usr/include/qt/QtGui/qbackingstore.h:82
 // [8] QRegion staticContents()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QBackingStore14staticContentsEv(void *this_) {
@@ -151,7 +151,7 @@ return new QRegion(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:81
+// /usr/include/qt/QtGui/qbackingstore.h:83
 // [1] bool hasStaticContents()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QBackingStore17hasStaticContentsEv(void *this_) {
@@ -159,7 +159,7 @@ bool C_ZNK13QBackingStore17hasStaticContentsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbackingstore.h:83
+// /usr/include/qt/QtGui/qbackingstore.h:85
 // [8] QPlatformBackingStore * handle()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QBackingStore6handleEv(void *this_) {

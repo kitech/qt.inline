@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
 #ifndef protected
@@ -80,20 +79,20 @@ public:
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:60
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:61
 // [8] QWidget * createWidget(QWidget *)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:61
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:62
 // [8] QByteArray valuePropertyName()
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:58
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:59
 // [-2] void ~QItemEditorCreatorBase()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QItemEditorCreatorBaseD2Ev(void *this_) {
   delete (QItemEditorCreatorBase*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:60
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:61
 // [8] QWidget * createWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QItemEditorCreatorBase12createWidgetEP7QWidget(void *this_, QWidget * parent) {
@@ -101,7 +100,7 @@ void* C_ZNK22QItemEditorCreatorBase12createWidgetEP7QWidget(void *this_, QWidget
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:61
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:62
 // [8] QByteArray valuePropertyName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QItemEditorCreatorBase17valuePropertyNameEv(void *this_) {
@@ -125,5 +124,4 @@ return new QByteArray(rv);
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

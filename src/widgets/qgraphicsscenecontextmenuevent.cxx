@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
@@ -55,7 +54,7 @@ MyQGraphicsSceneContextMenuEvent(QEvent::Type type_) : QGraphicsSceneContextMenu
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:174
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:175
 // [-2] void QGraphicsSceneContextMenuEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN30QGraphicsSceneContextMenuEventC2EN6QEvent4TypeE(QEvent::Type type_) {
@@ -63,14 +62,14 @@ void* C_ZN30QGraphicsSceneContextMenuEventC2EN6QEvent4TypeE(QEvent::Type type_) 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:175
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:176
 // [-2] void ~QGraphicsSceneContextMenuEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEventD2Ev(void *this_) {
   delete (QGraphicsSceneContextMenuEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:177
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:178
 // [16] QPointF pos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK30QGraphicsSceneContextMenuEvent3posEv(void *this_) {
@@ -79,7 +78,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:178
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:179
 // [-2] void setPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEvent6setPosERK7QPointF(void *this_, QPointF* pos) {
@@ -87,7 +86,7 @@ void C_ZN30QGraphicsSceneContextMenuEvent6setPosERK7QPointF(void *this_, QPointF
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:180
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:181
 // [16] QPointF scenePos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK30QGraphicsSceneContextMenuEvent8scenePosEv(void *this_) {
@@ -96,7 +95,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:181
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:182
 // [-2] void setScenePos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
@@ -104,7 +103,7 @@ void C_ZN30QGraphicsSceneContextMenuEvent11setScenePosERK7QPointF(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:183
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:184
 // [8] QPoint screenPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK30QGraphicsSceneContextMenuEvent9screenPosEv(void *this_) {
@@ -113,7 +112,7 @@ return new QPoint(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:184
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:185
 // [-2] void setScreenPos(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
@@ -121,7 +120,7 @@ void C_ZN30QGraphicsSceneContextMenuEvent12setScreenPosERK6QPoint(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:186
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:187
 // [4] Qt::KeyboardModifiers modifiers()
 extern "C" Q_DECL_EXPORT
 Qt::KeyboardModifiers C_ZNK30QGraphicsSceneContextMenuEvent9modifiersEv(void *this_) {
@@ -129,7 +128,7 @@ Qt::KeyboardModifiers C_ZNK30QGraphicsSceneContextMenuEvent9modifiersEv(void *th
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:187
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:188
 // [-2] void setModifiers(Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
@@ -137,7 +136,7 @@ void C_ZN30QGraphicsSceneContextMenuEvent12setModifiersE6QFlagsIN2Qt16KeyboardMo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:189
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:190
 // [4] QGraphicsSceneContextMenuEvent::Reason reason()
 extern "C" Q_DECL_EXPORT
 QGraphicsSceneContextMenuEvent::Reason C_ZNK30QGraphicsSceneContextMenuEvent6reasonEv(void *this_) {
@@ -145,7 +144,7 @@ QGraphicsSceneContextMenuEvent::Reason C_ZNK30QGraphicsSceneContextMenuEvent6rea
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:190
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:191
 // [-2] void setReason(QGraphicsSceneContextMenuEvent::Reason)
 extern "C" Q_DECL_EXPORT
 void C_ZN30QGraphicsSceneContextMenuEvent9setReasonENS_6ReasonE(void *this_, QGraphicsSceneContextMenuEvent::Reason reason) {
@@ -168,5 +167,4 @@ void C_ZN30QGraphicsSceneContextMenuEvent9setReasonENS_6ReasonE(void *this_, QGr
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -335,17 +335,6 @@ return new QPolygon(rv);
 }
 #endif // QT_VERSION >= 0x040300
 
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtGui/qpolygon.h:102
-// [1] bool intersects(const QPolygon &)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPolygon10intersectsERKS_(void *this_, QPolygon* r) {
-  return (bool)((QPolygon*)this_)->intersects(*r);
-}
-#endif // QT_VERSION >= 0x050a00
-
 //  main block end
 
 //  use block begin

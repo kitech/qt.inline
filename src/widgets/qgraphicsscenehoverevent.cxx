@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
@@ -55,7 +54,7 @@ MyQGraphicsSceneHoverEvent(QEvent::Type type_) : QGraphicsSceneHoverEvent(type_)
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:201
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:202
 // [-2] void QGraphicsSceneHoverEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QGraphicsSceneHoverEventC2EN6QEvent4TypeE(QEvent::Type type_) {
@@ -63,14 +62,14 @@ void* C_ZN24QGraphicsSceneHoverEventC2EN6QEvent4TypeE(QEvent::Type type_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:202
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:203
 // [-2] void ~QGraphicsSceneHoverEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneHoverEventD2Ev(void *this_) {
   delete (QGraphicsSceneHoverEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:204
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:205
 // [16] QPointF pos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneHoverEvent3posEv(void *this_) {
@@ -79,7 +78,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:205
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:206
 // [-2] void setPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneHoverEvent6setPosERK7QPointF(void *this_, QPointF* pos) {
@@ -87,7 +86,7 @@ void C_ZN24QGraphicsSceneHoverEvent6setPosERK7QPointF(void *this_, QPointF* pos)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:207
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:208
 // [16] QPointF scenePos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneHoverEvent8scenePosEv(void *this_) {
@@ -96,7 +95,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:208
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:209
 // [-2] void setScenePos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneHoverEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
@@ -104,7 +103,7 @@ void C_ZN24QGraphicsSceneHoverEvent11setScenePosERK7QPointF(void *this_, QPointF
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:210
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:211
 // [8] QPoint screenPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneHoverEvent9screenPosEv(void *this_) {
@@ -113,7 +112,7 @@ return new QPoint(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:211
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:212
 // [-2] void setScreenPos(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneHoverEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
@@ -122,7 +121,7 @@ void C_ZN24QGraphicsSceneHoverEvent12setScreenPosERK6QPoint(void *this_, QPoint*
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:213
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:214
 // [16] QPointF lastPos()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -133,7 +132,7 @@ return new QPointF(rv);
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:214
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:215
 // [-2] void setLastPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneHoverEvent10setLastPosERK7QPointF(void *this_, QPointF* pos) {
@@ -142,7 +141,7 @@ void C_ZN24QGraphicsSceneHoverEvent10setLastPosERK7QPointF(void *this_, QPointF*
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:216
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:217
 // [16] QPointF lastScenePos()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -153,7 +152,7 @@ return new QPointF(rv);
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:217
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:218
 // [-2] void setLastScenePos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneHoverEvent15setLastScenePosERK7QPointF(void *this_, QPointF* pos) {
@@ -162,7 +161,7 @@ void C_ZN24QGraphicsSceneHoverEvent15setLastScenePosERK7QPointF(void *this_, QPo
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:219
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:220
 // [8] QPoint lastScreenPos()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -173,7 +172,7 @@ return new QPoint(rv);
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:220
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:221
 // [-2] void setLastScreenPos(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneHoverEvent16setLastScreenPosERK6QPoint(void *this_, QPoint* pos) {
@@ -182,7 +181,7 @@ void C_ZN24QGraphicsSceneHoverEvent16setLastScreenPosERK6QPoint(void *this_, QPo
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:222
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:223
 // [4] Qt::KeyboardModifiers modifiers()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -192,7 +191,7 @@ Qt::KeyboardModifiers C_ZNK24QGraphicsSceneHoverEvent9modifiersEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:223
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:224
 // [-2] void setModifiers(Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneHoverEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
@@ -215,5 +214,4 @@ void C_ZN24QGraphicsSceneHoverEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifier
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
@@ -55,7 +54,7 @@ MyQGraphicsSceneResizeEvent() : QGraphicsSceneResizeEvent() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:297
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:298
 // [-2] void QGraphicsSceneResizeEvent()
 extern "C" Q_DECL_EXPORT
 void* C_ZN25QGraphicsSceneResizeEventC2Ev() {
@@ -63,14 +62,14 @@ void* C_ZN25QGraphicsSceneResizeEventC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:298
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:299
 // [-2] void ~QGraphicsSceneResizeEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsSceneResizeEventD2Ev(void *this_) {
   delete (QGraphicsSceneResizeEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:300
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:301
 // [16] QSizeF oldSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QGraphicsSceneResizeEvent7oldSizeEv(void *this_) {
@@ -79,7 +78,7 @@ return new QSizeF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:301
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:302
 // [-2] void setOldSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsSceneResizeEvent10setOldSizeERK6QSizeF(void *this_, QSizeF* size) {
@@ -87,7 +86,7 @@ void C_ZN25QGraphicsSceneResizeEvent10setOldSizeERK6QSizeF(void *this_, QSizeF* 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:303
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:304
 // [16] QSizeF newSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK25QGraphicsSceneResizeEvent7newSizeEv(void *this_) {
@@ -96,7 +95,7 @@ return new QSizeF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:304
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:305
 // [-2] void setNewSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN25QGraphicsSceneResizeEvent10setNewSizeERK6QSizeF(void *this_, QSizeF* size) {
@@ -119,5 +118,4 @@ void C_ZN25QGraphicsSceneResizeEvent10setNewSizeERK6QSizeF(void *this_, QSizeF* 
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

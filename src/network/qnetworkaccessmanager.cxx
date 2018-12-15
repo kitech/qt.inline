@@ -124,7 +124,7 @@ void* C_QNetworkAccessManager_init_staticMetaObject(void* this_, void* strdat, v
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:183
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:180
 // [8] QNetworkReply * createRequest(QNetworkAccessManager::Operation, const QNetworkRequest &, QIODevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager13createRequestENS_9OperationERK15QNetworkRequestP9QIODevice(void *this_, QNetworkAccessManager::Operation op, QNetworkRequest* request, QIODevice * outgoingData) {
@@ -132,7 +132,7 @@ void* C_ZN21QNetworkAccessManager13createRequestENS_9OperationERK15QNetworkReque
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:75
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QNetworkAccessManager10metaObjectEv(void *this_) {
@@ -140,7 +140,7 @@ void* C_ZNK21QNetworkAccessManager10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:75
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -148,7 +148,7 @@ void* C_ZN21QNetworkAccessManager11qt_metacastEPKc(void *this_, const char * arg
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:75
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN21QNetworkAccessManager11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -156,7 +156,7 @@ int C_ZN21QNetworkAccessManager11qt_metacallEN11QMetaObject4CallEiPPv(void *this
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:75
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -165,7 +165,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:76
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:75
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -174,7 +174,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:103
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:102
 // [-2] void QNetworkAccessManager(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManagerC2EP7QObject(QObject * parent) {
@@ -183,7 +183,7 @@ void* C_ZN21QNetworkAccessManagerC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:104
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:103
 // [-2] void ~QNetworkAccessManager()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManagerD2Ev(void *this_) {
@@ -191,7 +191,7 @@ void C_ZN21QNetworkAccessManagerD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:107
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:106
 // [8] QStringList supportedSchemes()
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -203,7 +203,7 @@ return new QStringList(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:109
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:108
 // [-2] void clearAccessCache()
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -214,7 +214,7 @@ void C_ZN21QNetworkAccessManager16clearAccessCacheEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:111
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:110
 // [-2] void clearConnectionCache()
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -224,7 +224,7 @@ void C_ZN21QNetworkAccessManager20clearConnectionCacheEv(void *this_) {
 #endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:114
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:113
 // [8] QNetworkProxy proxy()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QNetworkAccessManager5proxyEv(void *this_) {
@@ -233,7 +233,7 @@ return new QNetworkProxy(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:115
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:114
 // [-2] void setProxy(const QNetworkProxy &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManager8setProxyERK13QNetworkProxy(void *this_, QNetworkProxy* proxy) {
@@ -242,7 +242,7 @@ void C_ZN21QNetworkAccessManager8setProxyERK13QNetworkProxy(void *this_, QNetwor
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:116
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:115
 // [8] QNetworkProxyFactory * proxyFactory()
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -253,7 +253,7 @@ void* C_ZNK21QNetworkAccessManager12proxyFactoryEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:117
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:116
 // [-2] void setProxyFactory(QNetworkProxyFactory *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -264,7 +264,7 @@ void C_ZN21QNetworkAccessManager15setProxyFactoryEP20QNetworkProxyFactory(void *
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:120
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:119
 // [8] QAbstractNetworkCache * cache()
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -275,7 +275,7 @@ void* C_ZNK21QNetworkAccessManager5cacheEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:121
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:120
 // [-2] void setCache(QAbstractNetworkCache *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -285,7 +285,7 @@ void C_ZN21QNetworkAccessManager8setCacheEP21QAbstractNetworkCache(void *this_, 
 #endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:123
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:122
 // [8] QNetworkCookieJar * cookieJar()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QNetworkAccessManager9cookieJarEv(void *this_) {
@@ -293,7 +293,7 @@ void* C_ZNK21QNetworkAccessManager9cookieJarEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:124
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:123
 // [-2] void setCookieJar(QNetworkCookieJar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManager12setCookieJarEP17QNetworkCookieJar(void *this_, QNetworkCookieJar * cookieJar) {
@@ -302,7 +302,7 @@ void C_ZN21QNetworkAccessManager12setCookieJarEP17QNetworkCookieJar(void *this_,
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:126
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:125
 // [-2] void setStrictTransportSecurityEnabled(bool)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -313,7 +313,7 @@ void C_ZN21QNetworkAccessManager33setStrictTransportSecurityEnabledEb(void *this
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:127
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:126
 // [1] bool isStrictTransportSecurityEnabled()
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -323,30 +323,8 @@ bool C_ZNK21QNetworkAccessManager32isStrictTransportSecurityEnabledEv(void *this
 #endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:128
-// [-2] void enableStrictTransportSecurityStore(bool, const QString &)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkAccessManager34enableStrictTransportSecurityStoreEbRK7QString(void *this_, bool enabled, QString* storeDir) {
-  ((QNetworkAccessManager*)this_)->enableStrictTransportSecurityStore(enabled, *storeDir);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:129
-// [1] bool isStrictTransportSecurityStoreEnabled()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-bool C_ZNK21QNetworkAccessManager37isStrictTransportSecurityStoreEnabledEv(void *this_) {
-  return (bool)((QNetworkAccessManager*)this_)->isStrictTransportSecurityStoreEnabled();
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:130
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:127
 // [-2] void addStrictTransportSecurityHosts(const QVector<QHstsPolicy> &)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -357,7 +335,7 @@ void C_ZN21QNetworkAccessManager31addStrictTransportSecurityHostsERK7QVectorI11Q
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:131
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:128
 // [-2] QVector<QHstsPolicy> strictTransportSecurityHosts()
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -368,7 +346,7 @@ void C_ZNK21QNetworkAccessManager28strictTransportSecurityHostsEv(void *this_) {
 #endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:133
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:130
 // [8] QNetworkReply * head(const QNetworkRequest &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager4headERK15QNetworkRequest(void *this_, QNetworkRequest* request) {
@@ -376,7 +354,7 @@ void* C_ZN21QNetworkAccessManager4headERK15QNetworkRequest(void *this_, QNetwork
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:134
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:131
 // [8] QNetworkReply * get(const QNetworkRequest &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager3getERK15QNetworkRequest(void *this_, QNetworkRequest* request) {
@@ -384,7 +362,7 @@ void* C_ZN21QNetworkAccessManager3getERK15QNetworkRequest(void *this_, QNetworkR
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:135
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:132
 // [8] QNetworkReply * post(const QNetworkRequest &, QIODevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager4postERK15QNetworkRequestP9QIODevice(void *this_, QNetworkRequest* request, QIODevice * data) {
@@ -392,7 +370,7 @@ void* C_ZN21QNetworkAccessManager4postERK15QNetworkRequestP9QIODevice(void *this
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:136
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:133
 // [8] QNetworkReply * post(const QNetworkRequest &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager4postERK15QNetworkRequestRK10QByteArray(void *this_, QNetworkRequest* request, QByteArray* data) {
@@ -401,7 +379,7 @@ void* C_ZN21QNetworkAccessManager4postERK15QNetworkRequestRK10QByteArray(void *t
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:137
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:134
 // [8] QNetworkReply * post(const QNetworkRequest &, QHttpMultiPart *)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -411,7 +389,7 @@ void* C_ZN21QNetworkAccessManager4postERK15QNetworkRequestP14QHttpMultiPart(void
 #endif // QT_VERSION >= 0x040800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:138
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:135
 // [8] QNetworkReply * put(const QNetworkRequest &, QIODevice *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager3putERK15QNetworkRequestP9QIODevice(void *this_, QNetworkRequest* request, QIODevice * data) {
@@ -419,7 +397,7 @@ void* C_ZN21QNetworkAccessManager3putERK15QNetworkRequestP9QIODevice(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:139
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:136
 // [8] QNetworkReply * put(const QNetworkRequest &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QNetworkAccessManager3putERK15QNetworkRequestRK10QByteArray(void *this_, QNetworkRequest* request, QByteArray* data) {
@@ -428,7 +406,7 @@ void* C_ZN21QNetworkAccessManager3putERK15QNetworkRequestRK10QByteArray(void *th
 
 // Public Visibility=Default Availability=Available
 // since 4.8
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:140
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:137
 // [8] QNetworkReply * put(const QNetworkRequest &, QHttpMultiPart *)
 #if QT_VERSION >= 0x040800
 extern "C" Q_DECL_EXPORT
@@ -439,7 +417,7 @@ void* C_ZN21QNetworkAccessManager3putERK15QNetworkRequestP14QHttpMultiPart(void 
 
 // Public Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:141
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:138
 // [8] QNetworkReply * deleteResource(const QNetworkRequest &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
@@ -450,7 +428,7 @@ void* C_ZN21QNetworkAccessManager14deleteResourceERK15QNetworkRequest(void *this
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:142
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:139
 // [8] QNetworkReply * sendCustomRequest(const QNetworkRequest &, const QByteArray &, QIODevice *)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -461,7 +439,7 @@ void* C_ZN21QNetworkAccessManager17sendCustomRequestERK15QNetworkRequestRK10QByt
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:143
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:140
 // [8] QNetworkReply * sendCustomRequest(const QNetworkRequest &, const QByteArray &, const QByteArray &)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -472,7 +450,7 @@ void* C_ZN21QNetworkAccessManager17sendCustomRequestERK15QNetworkRequestRK10QByt
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:144
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:141
 // [8] QNetworkReply * sendCustomRequest(const QNetworkRequest &, const QByteArray &, QHttpMultiPart *)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -483,7 +461,7 @@ void* C_ZN21QNetworkAccessManager17sendCustomRequestERK15QNetworkRequestRK10QByt
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:147
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:144
 // [-2] void setConfiguration(const QNetworkConfiguration &)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -494,7 +472,7 @@ void C_ZN21QNetworkAccessManager16setConfigurationERK21QNetworkConfiguration(voi
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:148
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:145
 // [8] QNetworkConfiguration configuration()
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -506,7 +484,7 @@ return new QNetworkConfiguration(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:149
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:146
 // [8] QNetworkConfiguration activeConfiguration()
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -517,7 +495,7 @@ return new QNetworkConfiguration(rv);
 #endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:151
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:148
 // [-2] void setNetworkAccessible(QNetworkAccessManager::NetworkAccessibility)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManager20setNetworkAccessibleENS_20NetworkAccessibilityE(void *this_, QNetworkAccessManager::NetworkAccessibility accessible) {
@@ -526,7 +504,7 @@ void C_ZN21QNetworkAccessManager20setNetworkAccessibleENS_20NetworkAccessibility
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:152
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:149
 // [4] QNetworkAccessManager::NetworkAccessibility networkAccessible()
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -537,7 +515,7 @@ QNetworkAccessManager::NetworkAccessibility C_ZNK21QNetworkAccessManager17networ
 
 // Public Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:156
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:153
 // [-2] void connectToHostEncrypted(const QString &, quint16, const QSslConfiguration &)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -548,7 +526,7 @@ void C_ZN21QNetworkAccessManager22connectToHostEncryptedERK7QStringtRK17QSslConf
 
 // Public Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:159
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:156
 // [-2] void connectToHost(const QString &, quint16)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -559,7 +537,7 @@ void C_ZN21QNetworkAccessManager13connectToHostERK7QStringt(void *this_, QString
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:161
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:158
 // [-2] void setRedirectPolicy(QNetworkRequest::RedirectPolicy)
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -570,7 +548,7 @@ void C_ZN21QNetworkAccessManager17setRedirectPolicyEN15QNetworkRequest14Redirect
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:162
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:159
 // [4] QNetworkRequest::RedirectPolicy redirectPolicy()
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -580,7 +558,7 @@ QNetworkRequest::RedirectPolicy C_ZNK21QNetworkAccessManager14redirectPolicyEv(v
 #endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:166
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:163
 // [-2] void proxyAuthenticationRequired(const QNetworkProxy &, QAuthenticator *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManager27proxyAuthenticationRequiredERK13QNetworkProxyP14QAuthenticator(void *this_, QNetworkProxy* proxy, QAuthenticator * authenticator) {
@@ -588,7 +566,7 @@ void C_ZN21QNetworkAccessManager27proxyAuthenticationRequiredERK13QNetworkProxyP
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:168
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:165
 // [-2] void authenticationRequired(QNetworkReply *, QAuthenticator *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManager22authenticationRequiredEP13QNetworkReplyP14QAuthenticator(void *this_, QNetworkReply * reply, QAuthenticator * authenticator) {
@@ -596,7 +574,7 @@ void C_ZN21QNetworkAccessManager22authenticationRequiredEP13QNetworkReplyP14QAut
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:169
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:166
 // [-2] void finished(QNetworkReply *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManager8finishedEP13QNetworkReply(void *this_, QNetworkReply * reply) {
@@ -605,7 +583,7 @@ void C_ZN21QNetworkAccessManager8finishedEP13QNetworkReply(void *this_, QNetwork
 
 // Public Visibility=Default Availability=Available
 // since 5.1
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:171
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:168
 // [-2] void encrypted(QNetworkReply *)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
@@ -615,7 +593,7 @@ void C_ZN21QNetworkAccessManager9encryptedEP13QNetworkReply(void *this_, QNetwor
 #endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:172
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:169
 // [-2] void sslErrors(QNetworkReply *, const QList<QSslError> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManager9sslErrorsEP13QNetworkReplyRK5QListI9QSslErrorE(void *this_, QNetworkReply * reply, QList<QSslError>* errors) {
@@ -624,7 +602,7 @@ void C_ZN21QNetworkAccessManager9sslErrorsEP13QNetworkReplyRK5QListI9QSslErrorE(
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:173
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:170
 // [-2] void preSharedKeyAuthenticationRequired(QNetworkReply *, QSslPreSharedKeyAuthenticator *)
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -634,7 +612,7 @@ void C_ZN21QNetworkAccessManager34preSharedKeyAuthenticationRequiredEP13QNetwork
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:177
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:174
 // [-2] void networkSessionConnected()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManager23networkSessionConnectedEv(void *this_) {
@@ -642,7 +620,7 @@ void C_ZN21QNetworkAccessManager23networkSessionConnectedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:179
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:176
 // [-2] void networkAccessibleChanged(QNetworkAccessManager::NetworkAccessibility)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QNetworkAccessManager24networkAccessibleChangedENS_20NetworkAccessibilityE(void *this_, QNetworkAccessManager::NetworkAccessibility accessible) {

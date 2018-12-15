@@ -124,7 +124,7 @@ void* C_QQmlEngine_init_staticMetaObject(void* this_, void* strdat, void* dat, v
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:159
+// /usr/include/qt/QtQml/qqmlengine.h:155
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN10QQmlEngine5eventEP6QEvent(void *this_, QEvent * arg0) {
@@ -421,19 +421,8 @@ void C_ZN10QQmlEngine32setOutputWarningsToStandardErrorEb(void *this_, bool arg0
   ((QQmlEngine*)this_)->setOutputWarningsToStandardError(arg0);
 }
 
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtQml/qqmlengine.h:148
-// [-2] void retranslate()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN10QQmlEngine11retranslateEv(void *this_) {
-  ((QQmlEngine*)this_)->retranslate();
-}
-#endif // QT_VERSION >= 0x050a00
-
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:151
+// /usr/include/qt/QtQml/qqmlengine.h:147
 // [8] QQmlContext * contextForObject(const QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QQmlEngine16contextForObjectEPK7QObject(const QObject * arg0) {
@@ -441,7 +430,7 @@ void* C_ZN10QQmlEngine16contextForObjectEPK7QObject(const QObject * arg0) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:152
+// /usr/include/qt/QtQml/qqmlengine.h:148
 // [-2] void setContextForObject(QObject *, QQmlContext *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine19setContextForObjectEP7QObjectP11QQmlContext(QObject * arg0, QQmlContext * arg1) {
@@ -449,7 +438,7 @@ void C_ZN10QQmlEngine19setContextForObjectEP7QObjectP11QQmlContext(QObject * arg
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:155
+// /usr/include/qt/QtQml/qqmlengine.h:151
 // [-2] void setObjectOwnership(QObject *, QQmlEngine::ObjectOwnership)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine18setObjectOwnershipEP7QObjectNS_15ObjectOwnershipE(QObject * arg0, QQmlEngine::ObjectOwnership arg1) {
@@ -457,7 +446,7 @@ void C_ZN10QQmlEngine18setObjectOwnershipEP7QObjectNS_15ObjectOwnershipE(QObject
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:156
+// /usr/include/qt/QtQml/qqmlengine.h:152
 // [4] QQmlEngine::ObjectOwnership objectOwnership(QObject *)
 extern "C" Q_DECL_EXPORT
 QQmlEngine::ObjectOwnership C_ZN10QQmlEngine15objectOwnershipEP7QObject(QObject * arg0) {
@@ -465,7 +454,7 @@ QQmlEngine::ObjectOwnership C_ZN10QQmlEngine15objectOwnershipEP7QObject(QObject 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:162
+// /usr/include/qt/QtQml/qqmlengine.h:158
 // [-2] void quit()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine4quitEv(void *this_) {
@@ -474,7 +463,7 @@ void C_ZN10QQmlEngine4quitEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtQml/qqmlengine.h:163
+// /usr/include/qt/QtQml/qqmlengine.h:159
 // [-2] void exit(int)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -484,7 +473,7 @@ void C_ZN10QQmlEngine4exitEi(void *this_, int retCode) {
 #endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:164
+// /usr/include/qt/QtQml/qqmlengine.h:160
 // [-2] void warnings(const QList<QQmlError> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QQmlEngine8warningsERK5QListI9QQmlErrorE(void *this_, QList<QQmlError>* warnings) {

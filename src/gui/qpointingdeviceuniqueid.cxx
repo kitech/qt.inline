@@ -54,7 +54,7 @@ MyQPointingDeviceUniqueId() : QPointingDeviceUniqueId() {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:809
+// /usr/include/qt/QtGui/qevent.h:802
 // [-2] void QPointingDeviceUniqueId()
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QPointingDeviceUniqueIdC2Ev() {
@@ -62,7 +62,7 @@ void* C_ZN23QPointingDeviceUniqueIdC2Ev() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:813
+// /usr/include/qt/QtGui/qevent.h:806
 // [8] QPointingDeviceUniqueId fromNumericId(qint64)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QPointingDeviceUniqueId13fromNumericIdEx(qint64 id) {
@@ -71,7 +71,7 @@ return new QPointingDeviceUniqueId(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:815
+// /usr/include/qt/QtGui/qevent.h:808
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK23QPointingDeviceUniqueId7isValidEv(void *this_) {
@@ -79,7 +79,7 @@ bool C_ZNK23QPointingDeviceUniqueId7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:816
+// /usr/include/qt/QtGui/qevent.h:809
 // [8] qint64 numericId()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK23QPointingDeviceUniqueId9numericIdEv(void *this_) {

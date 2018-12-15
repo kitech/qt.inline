@@ -162,7 +162,7 @@ return new QTextOption::Flags(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:121
+// /usr/include/qt/QtGui/qtextoption.h:120
 // [-2] void setTabStop(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextOption10setTabStopEd(void *this_, qreal tabStop) {
@@ -170,37 +170,15 @@ void C_ZN11QTextOption10setTabStopEd(void *this_, qreal tabStop) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:122
+// /usr/include/qt/QtGui/qtextoption.h:121
 // [8] qreal tabStop()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK11QTextOption7tabStopEv(void *this_) {
   return (qreal)((QTextOption*)this_)->tabStop();
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtGui/qtextoption.h:125
-// [-2] void setTabStopDistance(qreal)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption18setTabStopDistanceEd(void *this_, qreal tabStopDistance) {
-  ((QTextOption*)this_)->setTabStopDistance(tabStopDistance);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public inline Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtGui/qtextoption.h:126
-// [8] qreal tabStopDistance()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK11QTextOption15tabStopDistanceEv(void *this_) {
-  return (qreal)((QTextOption*)this_)->tabStopDistance();
-}
-#endif // QT_VERSION >= 0x050a00
-
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:128
+// /usr/include/qt/QtGui/qtextoption.h:123
 // [-2] void setTabArray(const QList<qreal> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextOption11setTabArrayERK5QListIdE(void *this_, QList<double>* tabStops) {
@@ -208,7 +186,7 @@ void C_ZN11QTextOption11setTabArrayERK5QListIdE(void *this_, QList<double>* tabS
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:129
+// /usr/include/qt/QtGui/qtextoption.h:124
 // [-2] QList<qreal> tabArray()
 extern "C" Q_DECL_EXPORT
 QList<qreal>* C_ZNK11QTextOption8tabArrayEv(void *this_) {
@@ -217,7 +195,7 @@ return new QList<qreal>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:131
+// /usr/include/qt/QtGui/qtextoption.h:126
 // [-2] void setTabs(const QList<QTextOption::Tab> &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextOption7setTabsERK5QListINS_3TabEE(void *this_, QList<QTextOption::Tab>* tabStops) {
@@ -226,7 +204,7 @@ void C_ZN11QTextOption7setTabsERK5QListINS_3TabEE(void *this_, QList<QTextOption
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtGui/qtextoption.h:132
+// /usr/include/qt/QtGui/qtextoption.h:127
 // [-2] QList<QTextOption::Tab> tabs()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -237,7 +215,7 @@ return new QList<QTextOption::Tab>(rv);
 #endif // QT_VERSION >= 0x040400
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:134
+// /usr/include/qt/QtGui/qtextoption.h:129
 // [-2] void setUseDesignMetrics(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QTextOption19setUseDesignMetricsEb(void *this_, bool b) {
@@ -245,7 +223,7 @@ void C_ZN11QTextOption19setUseDesignMetricsEb(void *this_, bool b) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:135
+// /usr/include/qt/QtGui/qtextoption.h:130
 // [1] bool useDesignMetrics()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QTextOption16useDesignMetricsEv(void *this_) {

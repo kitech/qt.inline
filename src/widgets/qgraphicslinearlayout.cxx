@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h
 #ifndef protected
@@ -57,7 +56,7 @@ MyQGraphicsLinearLayout(Qt::Orientation orientation, QGraphicsLayoutItem * paren
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:56
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:57
 // [-2] void QGraphicsLinearLayout(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QGraphicsLinearLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
@@ -65,7 +64,7 @@ void* C_ZN21QGraphicsLinearLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:57
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:58
 // [-2] void QGraphicsLinearLayout(Qt::Orientation, QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QGraphicsLinearLayoutC2EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt::Orientation orientation, QGraphicsLayoutItem * parent) {
@@ -73,14 +72,14 @@ void* C_ZN21QGraphicsLinearLayoutC2EN2Qt11OrientationEP19QGraphicsLayoutItem(Qt:
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:58
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:59
 // [-2] void ~QGraphicsLinearLayout()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayoutD2Ev(void *this_) {
   delete (QGraphicsLinearLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:60
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:61
 // [-2] void setOrientation(Qt::Orientation)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation orientation) {
@@ -88,7 +87,7 @@ void C_ZN21QGraphicsLinearLayout14setOrientationEN2Qt11OrientationE(void *this_,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:61
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:62
 // [4] Qt::Orientation orientation()
 extern "C" Q_DECL_EXPORT
 Qt::Orientation C_ZNK21QGraphicsLinearLayout11orientationEv(void *this_) {
@@ -96,7 +95,7 @@ Qt::Orientation C_ZNK21QGraphicsLinearLayout11orientationEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:63
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:64
 // [-2] void addItem(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
@@ -104,7 +103,7 @@ void C_ZN21QGraphicsLinearLayout7addItemEP19QGraphicsLayoutItem(void *this_, QGr
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:64
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:65
 // [-2] void addStretch(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout10addStretchEi(void *this_, int stretch) {
@@ -112,7 +111,7 @@ void C_ZN21QGraphicsLinearLayout10addStretchEi(void *this_, int stretch) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:66
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:67
 // [-2] void insertItem(int, QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout10insertItemEiP19QGraphicsLayoutItem(void *this_, int index, QGraphicsLayoutItem * item) {
@@ -120,7 +119,7 @@ void C_ZN21QGraphicsLinearLayout10insertItemEiP19QGraphicsLayoutItem(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:67
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:68
 // [-2] void insertStretch(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout13insertStretchEii(void *this_, int index, int stretch) {
@@ -128,7 +127,7 @@ void C_ZN21QGraphicsLinearLayout13insertStretchEii(void *this_, int index, int s
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:69
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:70
 // [-2] void removeItem(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout10removeItemEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
@@ -136,7 +135,7 @@ void C_ZN21QGraphicsLinearLayout10removeItemEP19QGraphicsLayoutItem(void *this_,
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:70
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:71
 // [-2] void removeAt(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout8removeAtEi(void *this_, int index) {
@@ -144,7 +143,7 @@ void C_ZN21QGraphicsLinearLayout8removeAtEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:72
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:73
 // [-2] void setSpacing(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout10setSpacingEd(void *this_, qreal spacing) {
@@ -152,7 +151,7 @@ void C_ZN21QGraphicsLinearLayout10setSpacingEd(void *this_, qreal spacing) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:73
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:74
 // [8] qreal spacing()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK21QGraphicsLinearLayout7spacingEv(void *this_) {
@@ -160,7 +159,7 @@ qreal C_ZNK21QGraphicsLinearLayout7spacingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:74
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:75
 // [-2] void setItemSpacing(int, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout14setItemSpacingEid(void *this_, int index, qreal spacing) {
@@ -168,7 +167,7 @@ void C_ZN21QGraphicsLinearLayout14setItemSpacingEid(void *this_, int index, qrea
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:75
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:76
 // [8] qreal itemSpacing(int)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK21QGraphicsLinearLayout11itemSpacingEi(void *this_, int index) {
@@ -176,7 +175,7 @@ qreal C_ZNK21QGraphicsLinearLayout11itemSpacingEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:77
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:78
 // [-2] void setStretchFactor(QGraphicsLayoutItem *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout16setStretchFactorEP19QGraphicsLayoutItemi(void *this_, QGraphicsLayoutItem * item, int stretch) {
@@ -184,7 +183,7 @@ void C_ZN21QGraphicsLinearLayout16setStretchFactorEP19QGraphicsLayoutItemi(void 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:78
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:79
 // [4] int stretchFactor(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QGraphicsLinearLayout13stretchFactorEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
@@ -192,7 +191,7 @@ int C_ZNK21QGraphicsLinearLayout13stretchFactorEP19QGraphicsLayoutItem(void *thi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:80
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:81
 // [-2] void setAlignment(QGraphicsLayoutItem *, Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QGraphicsLayoutItem * item, QFlags<Qt::AlignmentFlag> alignment) {
@@ -200,7 +199,7 @@ void C_ZN21QGraphicsLinearLayout12setAlignmentEP19QGraphicsLayoutItem6QFlagsIN2Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:81
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:82
 // [4] Qt::Alignment alignment(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 Qt::Alignment C_ZNK21QGraphicsLinearLayout9alignmentEP19QGraphicsLayoutItem(void *this_, QGraphicsLayoutItem * item) {
@@ -208,7 +207,7 @@ Qt::Alignment C_ZNK21QGraphicsLinearLayout9alignmentEP19QGraphicsLayoutItem(void
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:83
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:84
 // [-2] void setGeometry(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout11setGeometryERK6QRectF(void *this_, QRectF* rect) {
@@ -216,7 +215,7 @@ void C_ZN21QGraphicsLinearLayout11setGeometryERK6QRectF(void *this_, QRectF* rec
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:85
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:86
 // [4] int count()
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QGraphicsLinearLayout5countEv(void *this_) {
@@ -224,7 +223,7 @@ int C_ZNK21QGraphicsLinearLayout5countEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:86
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:87
 // [8] QGraphicsLayoutItem * itemAt(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QGraphicsLinearLayout6itemAtEi(void *this_, int index) {
@@ -232,7 +231,7 @@ void* C_ZNK21QGraphicsLinearLayout6itemAtEi(void *this_, int index) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:88
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:89
 // [-2] void invalidate()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QGraphicsLinearLayout10invalidateEv(void *this_) {
@@ -240,7 +239,7 @@ void C_ZN21QGraphicsLinearLayout10invalidateEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:89
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:90
 // [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QGraphicsLinearLayout8sizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, QSizeF* constraint) {
@@ -249,7 +248,7 @@ return new QSizeF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:95
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:96
 // [-2] void dump(int)
 extern "C" Q_DECL_EXPORT
 void C_ZNK21QGraphicsLinearLayout4dumpEi(void *this_, int indent) {
@@ -272,5 +271,4 @@ void C_ZNK21QGraphicsLinearLayout4dumpEi(void *this_, int indent) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

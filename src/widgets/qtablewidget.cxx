@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qtablewidget.h
 #ifndef protected
 #define protected public
@@ -232,7 +231,7 @@ Qt::DropActions C_ZNK12QTableWidget20supportedDropActionsEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:343
+// /usr/include/qt/QtWidgets/qtablewidget.h:335
 // [-2] void dropEvent(QDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget9dropEventEP10QDropEvent(void *this_, QDropEvent * event) {
@@ -240,7 +239,7 @@ void C_ZN12QTableWidget9dropEventEP10QDropEvent(void *this_, QDropEvent * event)
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:216
+// /usr/include/qt/QtWidgets/qtablewidget.h:218
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTableWidget10metaObjectEv(void *this_) {
@@ -248,7 +247,7 @@ void* C_ZNK12QTableWidget10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:216
+// /usr/include/qt/QtWidgets/qtablewidget.h:218
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTableWidget11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -256,7 +255,7 @@ void* C_ZN12QTableWidget11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:216
+// /usr/include/qt/QtWidgets/qtablewidget.h:218
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN12QTableWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -264,7 +263,7 @@ int C_ZN12QTableWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaO
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:216
+// /usr/include/qt/QtWidgets/qtablewidget.h:218
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTableWidget2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -273,7 +272,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:216
+// /usr/include/qt/QtWidgets/qtablewidget.h:218
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTableWidget6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -282,7 +281,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:222
+// /usr/include/qt/QtWidgets/qtablewidget.h:224
 // [-2] void QTableWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTableWidgetC2EP7QWidget(QWidget * parent) {
@@ -291,7 +290,7 @@ void* C_ZN12QTableWidgetC2EP7QWidget(QWidget * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:223
+// /usr/include/qt/QtWidgets/qtablewidget.h:225
 // [-2] void QTableWidget(int, int, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTableWidgetC2EiiP7QWidget(int rows, int columns, QWidget * parent) {
@@ -300,14 +299,14 @@ void* C_ZN12QTableWidgetC2EiiP7QWidget(int rows, int columns, QWidget * parent) 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:224
+// /usr/include/qt/QtWidgets/qtablewidget.h:226
 // [-2] void ~QTableWidget()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidgetD2Ev(void *this_) {
   delete (QTableWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:226
+// /usr/include/qt/QtWidgets/qtablewidget.h:228
 // [-2] void setRowCount(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget11setRowCountEi(void *this_, int rows) {
@@ -315,7 +314,7 @@ void C_ZN12QTableWidget11setRowCountEi(void *this_, int rows) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:227
+// /usr/include/qt/QtWidgets/qtablewidget.h:229
 // [4] int rowCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QTableWidget8rowCountEv(void *this_) {
@@ -323,7 +322,7 @@ int C_ZNK12QTableWidget8rowCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:229
+// /usr/include/qt/QtWidgets/qtablewidget.h:231
 // [-2] void setColumnCount(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget14setColumnCountEi(void *this_, int columns) {
@@ -331,7 +330,7 @@ void C_ZN12QTableWidget14setColumnCountEi(void *this_, int columns) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:230
+// /usr/include/qt/QtWidgets/qtablewidget.h:232
 // [4] int columnCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QTableWidget11columnCountEv(void *this_) {
@@ -339,7 +338,7 @@ int C_ZNK12QTableWidget11columnCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:232
+// /usr/include/qt/QtWidgets/qtablewidget.h:234
 // [4] int row(const QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QTableWidget3rowEPK16QTableWidgetItem(void *this_, const QTableWidgetItem * item) {
@@ -347,7 +346,7 @@ int C_ZNK12QTableWidget3rowEPK16QTableWidgetItem(void *this_, const QTableWidget
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:233
+// /usr/include/qt/QtWidgets/qtablewidget.h:235
 // [4] int column(const QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QTableWidget6columnEPK16QTableWidgetItem(void *this_, const QTableWidgetItem * item) {
@@ -355,7 +354,7 @@ int C_ZNK12QTableWidget6columnEPK16QTableWidgetItem(void *this_, const QTableWid
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:235
+// /usr/include/qt/QtWidgets/qtablewidget.h:237
 // [8] QTableWidgetItem * item(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTableWidget4itemEii(void *this_, int row, int column) {
@@ -363,7 +362,7 @@ void* C_ZNK12QTableWidget4itemEii(void *this_, int row, int column) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:236
+// /usr/include/qt/QtWidgets/qtablewidget.h:238
 // [-2] void setItem(int, int, QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget7setItemEiiP16QTableWidgetItem(void *this_, int row, int column, QTableWidgetItem * item) {
@@ -371,7 +370,7 @@ void C_ZN12QTableWidget7setItemEiiP16QTableWidgetItem(void *this_, int row, int 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:237
+// /usr/include/qt/QtWidgets/qtablewidget.h:239
 // [8] QTableWidgetItem * takeItem(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTableWidget8takeItemEii(void *this_, int row, int column) {
@@ -379,7 +378,7 @@ void* C_ZN12QTableWidget8takeItemEii(void *this_, int row, int column) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:239
+// /usr/include/qt/QtWidgets/qtablewidget.h:241
 // [8] QTableWidgetItem * verticalHeaderItem(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTableWidget18verticalHeaderItemEi(void *this_, int row) {
@@ -387,7 +386,7 @@ void* C_ZNK12QTableWidget18verticalHeaderItemEi(void *this_, int row) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:240
+// /usr/include/qt/QtWidgets/qtablewidget.h:242
 // [-2] void setVerticalHeaderItem(int, QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget21setVerticalHeaderItemEiP16QTableWidgetItem(void *this_, int row, QTableWidgetItem * item) {
@@ -396,7 +395,7 @@ void C_ZN12QTableWidget21setVerticalHeaderItemEiP16QTableWidgetItem(void *this_,
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:241
+// /usr/include/qt/QtWidgets/qtablewidget.h:243
 // [8] QTableWidgetItem * takeVerticalHeaderItem(int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -406,7 +405,7 @@ void* C_ZN12QTableWidget22takeVerticalHeaderItemEi(void *this_, int row) {
 #endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:243
+// /usr/include/qt/QtWidgets/qtablewidget.h:245
 // [8] QTableWidgetItem * horizontalHeaderItem(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTableWidget20horizontalHeaderItemEi(void *this_, int column) {
@@ -414,7 +413,7 @@ void* C_ZNK12QTableWidget20horizontalHeaderItemEi(void *this_, int column) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:244
+// /usr/include/qt/QtWidgets/qtablewidget.h:246
 // [-2] void setHorizontalHeaderItem(int, QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget23setHorizontalHeaderItemEiP16QTableWidgetItem(void *this_, int column, QTableWidgetItem * item) {
@@ -423,7 +422,7 @@ void C_ZN12QTableWidget23setHorizontalHeaderItemEiP16QTableWidgetItem(void *this
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:245
+// /usr/include/qt/QtWidgets/qtablewidget.h:247
 // [8] QTableWidgetItem * takeHorizontalHeaderItem(int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -433,7 +432,7 @@ void* C_ZN12QTableWidget24takeHorizontalHeaderItemEi(void *this_, int column) {
 #endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:246
+// /usr/include/qt/QtWidgets/qtablewidget.h:248
 // [-2] void setVerticalHeaderLabels(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget23setVerticalHeaderLabelsERK11QStringList(void *this_, QStringList* labels) {
@@ -441,7 +440,7 @@ void C_ZN12QTableWidget23setVerticalHeaderLabelsERK11QStringList(void *this_, QS
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:247
+// /usr/include/qt/QtWidgets/qtablewidget.h:249
 // [-2] void setHorizontalHeaderLabels(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget25setHorizontalHeaderLabelsERK11QStringList(void *this_, QStringList* labels) {
@@ -449,7 +448,7 @@ void C_ZN12QTableWidget25setHorizontalHeaderLabelsERK11QStringList(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:249
+// /usr/include/qt/QtWidgets/qtablewidget.h:251
 // [4] int currentRow()
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QTableWidget10currentRowEv(void *this_) {
@@ -457,7 +456,7 @@ int C_ZNK12QTableWidget10currentRowEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:250
+// /usr/include/qt/QtWidgets/qtablewidget.h:252
 // [4] int currentColumn()
 extern "C" Q_DECL_EXPORT
 int C_ZNK12QTableWidget13currentColumnEv(void *this_) {
@@ -465,7 +464,7 @@ int C_ZNK12QTableWidget13currentColumnEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:251
+// /usr/include/qt/QtWidgets/qtablewidget.h:253
 // [8] QTableWidgetItem * currentItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTableWidget11currentItemEv(void *this_) {
@@ -473,7 +472,7 @@ void* C_ZNK12QTableWidget11currentItemEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:252
+// /usr/include/qt/QtWidgets/qtablewidget.h:254
 // [-2] void setCurrentItem(QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget14setCurrentItemEP16QTableWidgetItem(void *this_, QTableWidgetItem * item) {
@@ -482,7 +481,7 @@ void C_ZN12QTableWidget14setCurrentItemEP16QTableWidgetItem(void *this_, QTableW
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qtablewidget.h:253
+// /usr/include/qt/QtWidgets/qtablewidget.h:255
 // [-2] void setCurrentItem(QTableWidgetItem *, QItemSelectionModel::SelectionFlags)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -493,7 +492,7 @@ void C_ZN12QTableWidget14setCurrentItemEP16QTableWidgetItem6QFlagsIN19QItemSelec
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qtablewidget.h:254
+// /usr/include/qt/QtWidgets/qtablewidget.h:256
 // [-2] void setCurrentCell(int, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -504,7 +503,7 @@ void C_ZN12QTableWidget14setCurrentCellEii(void *this_, int row, int column) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qtablewidget.h:255
+// /usr/include/qt/QtWidgets/qtablewidget.h:257
 // [-2] void setCurrentCell(int, int, QItemSelectionModel::SelectionFlags)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -514,7 +513,7 @@ void C_ZN12QTableWidget14setCurrentCellEii6QFlagsIN19QItemSelectionModel13Select
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:257
+// /usr/include/qt/QtWidgets/qtablewidget.h:259
 // [-2] void sortItems(int, Qt::SortOrder)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget9sortItemsEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
@@ -522,7 +521,7 @@ void C_ZN12QTableWidget9sortItemsEiN2Qt9SortOrderE(void *this_, int column, Qt::
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:258
+// /usr/include/qt/QtWidgets/qtablewidget.h:260
 // [-2] void setSortingEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget17setSortingEnabledEb(void *this_, bool enable) {
@@ -530,7 +529,7 @@ void C_ZN12QTableWidget17setSortingEnabledEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:259
+// /usr/include/qt/QtWidgets/qtablewidget.h:261
 // [1] bool isSortingEnabled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QTableWidget16isSortingEnabledEv(void *this_) {
@@ -538,7 +537,7 @@ bool C_ZNK12QTableWidget16isSortingEnabledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:261
+// /usr/include/qt/QtWidgets/qtablewidget.h:263
 // [-2] void editItem(QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget8editItemEP16QTableWidgetItem(void *this_, QTableWidgetItem * item) {
@@ -546,7 +545,7 @@ void C_ZN12QTableWidget8editItemEP16QTableWidgetItem(void *this_, QTableWidgetIt
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:262
+// /usr/include/qt/QtWidgets/qtablewidget.h:264
 // [-2] void openPersistentEditor(QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget20openPersistentEditorEP16QTableWidgetItem(void *this_, QTableWidgetItem * item) {
@@ -554,23 +553,12 @@ void C_ZN12QTableWidget20openPersistentEditorEP16QTableWidgetItem(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtablewidget.h:263
+// /usr/include/qt/QtWidgets/qtablewidget.h:265
 // [-2] void closePersistentEditor(QTableWidgetItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTableWidget21closePersistentEditorEP16QTableWidgetItem(void *this_, QTableWidgetItem * item) {
   ((QTableWidget*)this_)->closePersistentEditor(item);
 }
-
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtWidgets/qtablewidget.h:265
-// [1] bool isPersistentEditorOpen(QTableWidgetItem *)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-bool C_ZNK12QTableWidget22isPersistentEditorOpenEP16QTableWidgetItem(void *this_, QTableWidgetItem * item) {
-  return (bool)((QTableWidget*)this_)->isPersistentEditorOpen(item);
-}
-#endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
 // since 4.1
@@ -929,5 +917,4 @@ void C_ZN12QTableWidget18currentCellChangedEiiii(void *this_, int currentRow, in
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

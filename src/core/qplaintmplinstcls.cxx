@@ -173,13 +173,6 @@ void* C_ZN9QTypeInfoI10QByteArrayE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
-// [8] const char * QTypeInfo<QStringView>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI11QStringViewE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QStringView>*)this_)->name();
-   return (void*)rv;
-}
-
 // [8] const char * QTypeInfo<QLatin1String>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI13QLatin1StringE4nameEv(void* this_ ) {
@@ -803,13 +796,6 @@ int C_ZN11QMetaTypeIdIN17QtMetaTypePrivate25QPairVariantInterfaceImplEE14qt_meta
    return rv;
 }
 
-// [8] const char * QTypeInfo<QAbstractEventDispatcher::TimerInfo>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoIN24QAbstractEventDispatcher9TimerInfoEE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QAbstractEventDispatcher::TimerInfo>*)this_)->name();
-   return (void*)rv;
-}
-
 // [8] const char * QTypeInfo<QHashDummyValue>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI15QHashDummyValueE4nameEv(void* this_ ) {
@@ -957,13 +943,6 @@ void* C_ZN9QTypeInfoI12QEasingCurveE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
-// [8] const char * QTypeInfo<QtPrivate::ResultItem>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoIN9QtPrivate10ResultItemEE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QtPrivate::ResultItem>*)this_)->name();
-   return (void*)rv;
-}
-
 // [8] const char * QTypeInfo<QItemSelectionRange>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI19QItemSelectionRangeE4nameEv(void* this_ ) {
@@ -990,34 +969,6 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaTypeIdI14QItemSelectionE14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId<QItemSelection>*)this_)->qt_metatype_id();
    return rv;
-}
-
-// [8] const char * QTypeInfo<QJsonValue>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI10QJsonValueE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QJsonValue>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QJsonArray>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI10QJsonArrayE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QJsonArray>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QJsonDocument>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI13QJsonDocumentE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QJsonDocument>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QJsonObject>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI11QJsonObjectE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QJsonObject>*)this_)->name();
-   return (void*)rv;
 }
 
 // [8] const char * QTypeInfo<QVersionNumber>::name()
@@ -1101,13 +1052,6 @@ void* C_ZN9QTypeInfoI14QMetaClassInfoE4nameEv(void* this_ ) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI9QMimeTypeE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QMimeType>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QOperatingSystemVersion>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI23QOperatingSystemVersionE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QOperatingSystemVersion>*)this_)->name();
    return (void*)rv;
 }
 

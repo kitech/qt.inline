@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qslider.h
 #ifndef protected
 #define protected public
@@ -161,7 +160,7 @@ void* C_QSlider_init_staticMetaObject(void* this_, void* strdat, void* dat, void
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:88
+// /usr/include/qt/QtWidgets/qslider.h:89
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider10paintEventEP11QPaintEvent(void *this_, QPaintEvent * ev) {
@@ -169,7 +168,7 @@ void C_ZN7QSlider10paintEventEP11QPaintEvent(void *this_, QPaintEvent * ev) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:89
+// /usr/include/qt/QtWidgets/qslider.h:90
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
@@ -177,7 +176,7 @@ void C_ZN7QSlider15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ev)
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:90
+// /usr/include/qt/QtWidgets/qslider.h:91
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
@@ -185,7 +184,7 @@ void C_ZN7QSlider17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * e
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:91
+// /usr/include/qt/QtWidgets/qslider.h:92
 // [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
@@ -193,7 +192,7 @@ void C_ZN7QSlider14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev) 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:55
+// /usr/include/qt/QtWidgets/qslider.h:56
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QSlider10metaObjectEv(void *this_) {
@@ -201,7 +200,7 @@ void* C_ZNK7QSlider10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:55
+// /usr/include/qt/QtWidgets/qslider.h:56
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSlider11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -209,7 +208,7 @@ void* C_ZN7QSlider11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:55
+// /usr/include/qt/QtWidgets/qslider.h:56
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN7QSlider11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -217,7 +216,7 @@ int C_ZN7QSlider11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject:
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:55
+// /usr/include/qt/QtWidgets/qslider.h:56
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSlider2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -226,7 +225,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:55
+// /usr/include/qt/QtWidgets/qslider.h:56
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSlider6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -235,7 +234,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:71
+// /usr/include/qt/QtWidgets/qslider.h:72
 // [-2] void QSlider(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSliderC2EP7QWidget(QWidget * parent) {
@@ -244,7 +243,7 @@ void* C_ZN7QSliderC2EP7QWidget(QWidget * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:72
+// /usr/include/qt/QtWidgets/qslider.h:73
 // [-2] void QSlider(Qt::Orientation, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QSliderC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QWidget * parent) {
@@ -253,14 +252,14 @@ void* C_ZN7QSliderC2EN2Qt11OrientationEP7QWidget(Qt::Orientation orientation, QW
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:74
+// /usr/include/qt/QtWidgets/qslider.h:75
 // [-2] void ~QSlider()
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSliderD2Ev(void *this_) {
   delete (QSlider*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:76
+// /usr/include/qt/QtWidgets/qslider.h:77
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QSlider8sizeHintEv(void *this_) {
@@ -269,7 +268,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:77
+// /usr/include/qt/QtWidgets/qslider.h:78
 // [8] QSize minimumSizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QSlider15minimumSizeHintEv(void *this_) {
@@ -278,7 +277,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:79
+// /usr/include/qt/QtWidgets/qslider.h:80
 // [-2] void setTickPosition(QSlider::TickPosition)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider15setTickPositionENS_12TickPositionE(void *this_, QSlider::TickPosition position) {
@@ -286,7 +285,7 @@ void C_ZN7QSlider15setTickPositionENS_12TickPositionE(void *this_, QSlider::Tick
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:80
+// /usr/include/qt/QtWidgets/qslider.h:81
 // [4] QSlider::TickPosition tickPosition()
 extern "C" Q_DECL_EXPORT
 QSlider::TickPosition C_ZNK7QSlider12tickPositionEv(void *this_) {
@@ -294,7 +293,7 @@ QSlider::TickPosition C_ZNK7QSlider12tickPositionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:82
+// /usr/include/qt/QtWidgets/qslider.h:83
 // [-2] void setTickInterval(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QSlider15setTickIntervalEi(void *this_, int ti) {
@@ -302,7 +301,7 @@ void C_ZN7QSlider15setTickIntervalEi(void *this_, int ti) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:83
+// /usr/include/qt/QtWidgets/qslider.h:84
 // [4] int tickInterval()
 extern "C" Q_DECL_EXPORT
 int C_ZNK7QSlider12tickIntervalEv(void *this_) {
@@ -310,7 +309,7 @@ int C_ZNK7QSlider12tickIntervalEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qslider.h:85
+// /usr/include/qt/QtWidgets/qslider.h:86
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QSlider5eventEP6QEvent(void *this_, QEvent * event) {
@@ -333,5 +332,4 @@ bool C_ZN7QSlider5eventEP6QEvent(void *this_, QEvent * event) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

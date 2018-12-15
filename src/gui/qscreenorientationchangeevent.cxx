@@ -53,7 +53,7 @@ MyQScreenOrientationChangeEvent(QScreen * screen, Qt::ScreenOrientation orientat
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1038
+// /usr/include/qt/QtGui/qevent.h:1031
 // [-2] void QScreenOrientationChangeEvent(QScreen *, Qt::ScreenOrientation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN29QScreenOrientationChangeEventC2EP7QScreenN2Qt17ScreenOrientationE(QScreen * screen, Qt::ScreenOrientation orientation) {
@@ -61,14 +61,14 @@ void* C_ZN29QScreenOrientationChangeEventC2EP7QScreenN2Qt17ScreenOrientationE(QS
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1039
+// /usr/include/qt/QtGui/qevent.h:1032
 // [-2] void ~QScreenOrientationChangeEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN29QScreenOrientationChangeEventD2Ev(void *this_) {
   delete (QScreenOrientationChangeEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1041
+// /usr/include/qt/QtGui/qevent.h:1034
 // [8] QScreen * screen()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK29QScreenOrientationChangeEvent6screenEv(void *this_) {
@@ -76,7 +76,7 @@ void* C_ZNK29QScreenOrientationChangeEvent6screenEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1042
+// /usr/include/qt/QtGui/qevent.h:1035
 // [4] Qt::ScreenOrientation orientation()
 extern "C" Q_DECL_EXPORT
 Qt::ScreenOrientation C_ZNK29QScreenOrientationChangeEvent11orientationEv(void *this_) {

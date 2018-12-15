@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
@@ -96,7 +95,7 @@ MyQGraphicsPixmapItem(const QPixmap & pixmap, QGraphicsItem * parent) : QGraphic
 };
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:855
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:856
 // [1] bool supportsExtension(QGraphicsItem::Extension)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void *this_, QGraphicsItem::Extension extension) {
@@ -104,7 +103,7 @@ bool C_ZNK19QGraphicsPixmapItem17supportsExtensionEN13QGraphicsItem9ExtensionE(v
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:856
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:857
 // [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void *this_, QGraphicsItem::Extension extension, QVariant* variant) {
@@ -112,7 +111,7 @@ void C_ZN19QGraphicsPixmapItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVari
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:857
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:858
 // [16] QVariant extension(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsPixmapItem9extensionERK8QVariant(void *this_, QVariant* variant) {
@@ -121,7 +120,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:825
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:826
 // [-2] void QGraphicsPixmapItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsPixmapItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
@@ -130,7 +129,7 @@ void* C_ZN19QGraphicsPixmapItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:826
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:827
 // [-2] void QGraphicsPixmapItem(const QPixmap &, QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsPixmapItemC2ERK7QPixmapP13QGraphicsItem(QPixmap* pixmap, QGraphicsItem * parent) {
@@ -139,14 +138,14 @@ void* C_ZN19QGraphicsPixmapItemC2ERK7QPixmapP13QGraphicsItem(QPixmap* pixmap, QG
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:827
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:828
 // [-2] void ~QGraphicsPixmapItem()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItemD2Ev(void *this_) {
   delete (QGraphicsPixmapItem*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:829
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:830
 // [32] QPixmap pixmap()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsPixmapItem6pixmapEv(void *this_) {
@@ -155,7 +154,7 @@ return new QPixmap(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:830
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:831
 // [-2] void setPixmap(const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem9setPixmapERK7QPixmap(void *this_, QPixmap* pixmap) {
@@ -163,7 +162,7 @@ void C_ZN19QGraphicsPixmapItem9setPixmapERK7QPixmap(void *this_, QPixmap* pixmap
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:832
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:833
 // [4] Qt::TransformationMode transformationMode()
 extern "C" Q_DECL_EXPORT
 Qt::TransformationMode C_ZNK19QGraphicsPixmapItem18transformationModeEv(void *this_) {
@@ -171,7 +170,7 @@ Qt::TransformationMode C_ZNK19QGraphicsPixmapItem18transformationModeEv(void *th
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:833
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:834
 // [-2] void setTransformationMode(Qt::TransformationMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem21setTransformationModeEN2Qt18TransformationModeE(void *this_, Qt::TransformationMode mode) {
@@ -179,7 +178,7 @@ void C_ZN19QGraphicsPixmapItem21setTransformationModeEN2Qt18TransformationModeE(
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:835
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:836
 // [16] QPointF offset()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsPixmapItem6offsetEv(void *this_) {
@@ -188,7 +187,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:836
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:837
 // [-2] void setOffset(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem9setOffsetERK7QPointF(void *this_, QPointF* offset) {
@@ -197,7 +196,7 @@ void C_ZN19QGraphicsPixmapItem9setOffsetERK7QPointF(void *this_, QPointF* offset
 
 // Public inline Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:837
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:838
 // [-2] void setOffset(qreal, qreal)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -207,7 +206,7 @@ void C_ZN19QGraphicsPixmapItem9setOffsetEdd(void *this_, qreal x, qreal y) {
 #endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:839
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:840
 // [32] QRectF boundingRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsPixmapItem12boundingRectEv(void *this_) {
@@ -216,7 +215,7 @@ return new QRectF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:840
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:841
 // [8] QPainterPath shape()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsPixmapItem5shapeEv(void *this_) {
@@ -225,7 +224,7 @@ return new QPainterPath(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:841
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:842
 // [1] bool contains(const QPointF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QGraphicsPixmapItem8containsERK7QPointF(void *this_, QPointF* point) {
@@ -233,7 +232,7 @@ bool C_ZNK19QGraphicsPixmapItem8containsERK7QPointF(void *this_, QPointF* point)
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:843
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:844
 // [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
@@ -241,7 +240,7 @@ void C_ZN19QGraphicsPixmapItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWi
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:845
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:846
 // [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QGraphicsPixmapItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
@@ -249,7 +248,7 @@ bool C_ZNK19QGraphicsPixmapItem12isObscuredByEPK13QGraphicsItem(void *this_, con
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:846
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:847
 // [8] QPainterPath opaqueArea()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsPixmapItem10opaqueAreaEv(void *this_) {
@@ -258,7 +257,7 @@ return new QPainterPath(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:849
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:850
 // [4] int type()
 extern "C" Q_DECL_EXPORT
 int C_ZNK19QGraphicsPixmapItem4typeEv(void *this_) {
@@ -266,7 +265,7 @@ int C_ZNK19QGraphicsPixmapItem4typeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:851
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:852
 // [4] QGraphicsPixmapItem::ShapeMode shapeMode()
 extern "C" Q_DECL_EXPORT
 QGraphicsPixmapItem::ShapeMode C_ZNK19QGraphicsPixmapItem9shapeModeEv(void *this_) {
@@ -274,7 +273,7 @@ QGraphicsPixmapItem::ShapeMode C_ZNK19QGraphicsPixmapItem9shapeModeEv(void *this
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:852
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:853
 // [-2] void setShapeMode(QGraphicsPixmapItem::ShapeMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsPixmapItem12setShapeModeENS_9ShapeModeE(void *this_, QGraphicsPixmapItem::ShapeMode mode) {
@@ -297,5 +296,4 @@ void C_ZN19QGraphicsPixmapItem12setShapeModeENS_9ShapeModeE(void *this_, QGraphi
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

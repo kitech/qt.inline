@@ -57,7 +57,7 @@ MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos) : QCon
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:511
+// /usr/include/qt/QtGui/qevent.h:504
 // [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &, Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_6QFlagsIN2Qt16KeyboardModifierEE(QContextMenuEvent::Reason reason, QPoint* pos, QPoint* globalPos, QFlags<Qt::KeyboardModifier> modifiers) {
@@ -65,7 +65,7 @@ void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_6QFlagsIN2Qt16KeyboardMod
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:513
+// /usr/include/qt/QtGui/qevent.h:506
 // [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_(QContextMenuEvent::Reason reason, QPoint* pos, QPoint* globalPos) {
@@ -73,7 +73,7 @@ void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_(QContextMenuEvent::Reaso
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:514
+// /usr/include/qt/QtGui/qevent.h:507
 // [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPoint(QContextMenuEvent::Reason reason, QPoint* pos) {
@@ -81,14 +81,14 @@ void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPoint(QContextMenuEvent::Reason r
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:515
+// /usr/include/qt/QtGui/qevent.h:508
 // [-2] void ~QContextMenuEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QContextMenuEventD2Ev(void *this_) {
   delete (QContextMenuEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:517
+// /usr/include/qt/QtGui/qevent.h:510
 // [4] int x()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QContextMenuEvent1xEv(void *this_) {
@@ -96,7 +96,7 @@ int C_ZNK17QContextMenuEvent1xEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:518
+// /usr/include/qt/QtGui/qevent.h:511
 // [4] int y()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QContextMenuEvent1yEv(void *this_) {
@@ -104,7 +104,7 @@ int C_ZNK17QContextMenuEvent1yEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:519
+// /usr/include/qt/QtGui/qevent.h:512
 // [4] int globalX()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QContextMenuEvent7globalXEv(void *this_) {
@@ -112,7 +112,7 @@ int C_ZNK17QContextMenuEvent7globalXEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:520
+// /usr/include/qt/QtGui/qevent.h:513
 // [4] int globalY()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QContextMenuEvent7globalYEv(void *this_) {
@@ -120,7 +120,7 @@ int C_ZNK17QContextMenuEvent7globalYEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:522
+// /usr/include/qt/QtGui/qevent.h:515
 // [8] const QPoint & pos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QContextMenuEvent3posEv(void *this_) {
@@ -129,7 +129,7 @@ return new QPoint(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:523
+// /usr/include/qt/QtGui/qevent.h:516
 // [8] const QPoint & globalPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QContextMenuEvent9globalPosEv(void *this_) {
@@ -138,7 +138,7 @@ return new QPoint(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:525
+// /usr/include/qt/QtGui/qevent.h:518
 // [4] QContextMenuEvent::Reason reason()
 extern "C" Q_DECL_EXPORT
 QContextMenuEvent::Reason C_ZNK17QContextMenuEvent6reasonEv(void *this_) {

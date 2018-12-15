@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040500
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h
 #ifndef protected
@@ -125,7 +124,7 @@ void* C_QNetworkDiskCache_init_staticMetaObject(void* this_, void* strdat, void*
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:79
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:80
 // [8] qint64 expire()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN17QNetworkDiskCache6expireEv(void *this_) {
@@ -133,7 +132,7 @@ qint64 C_ZN17QNetworkDiskCache6expireEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:53
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:54
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QNetworkDiskCache10metaObjectEv(void *this_) {
@@ -141,7 +140,7 @@ void* C_ZNK17QNetworkDiskCache10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:53
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:54
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -149,7 +148,7 @@ void* C_ZN17QNetworkDiskCache11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:53
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:54
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN17QNetworkDiskCache11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -157,7 +156,7 @@ int C_ZN17QNetworkDiskCache11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, Q
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:53
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:54
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -166,7 +165,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:53
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:54
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -175,7 +174,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:56
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:57
 // [-2] void QNetworkDiskCache(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCacheC2EP7QObject(QObject * parent) {
@@ -184,14 +183,14 @@ void* C_ZN17QNetworkDiskCacheC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:57
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:58
 // [-2] void ~QNetworkDiskCache()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkDiskCacheD2Ev(void *this_) {
   delete (QNetworkDiskCache*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:59
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:60
 // [8] QString cacheDirectory()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QNetworkDiskCache14cacheDirectoryEv(void *this_) {
@@ -200,7 +199,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:60
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:61
 // [-2] void setCacheDirectory(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkDiskCache17setCacheDirectoryERK7QString(void *this_, QString* cacheDir) {
@@ -208,7 +207,7 @@ void C_ZN17QNetworkDiskCache17setCacheDirectoryERK7QString(void *this_, QString*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:62
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:63
 // [8] qint64 maximumCacheSize()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK17QNetworkDiskCache16maximumCacheSizeEv(void *this_) {
@@ -216,7 +215,7 @@ qint64 C_ZNK17QNetworkDiskCache16maximumCacheSizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:63
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:64
 // [-2] void setMaximumCacheSize(qint64)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkDiskCache19setMaximumCacheSizeEx(void *this_, qint64 size) {
@@ -224,7 +223,7 @@ void C_ZN17QNetworkDiskCache19setMaximumCacheSizeEx(void *this_, qint64 size) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:65
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:66
 // [8] qint64 cacheSize()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK17QNetworkDiskCache9cacheSizeEv(void *this_) {
@@ -232,7 +231,7 @@ qint64 C_ZNK17QNetworkDiskCache9cacheSizeEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:66
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:67
 // [8] QNetworkCacheMetaData metaData(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache8metaDataERK4QUrl(void *this_, QUrl* url) {
@@ -241,7 +240,7 @@ return new QNetworkCacheMetaData(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:67
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:68
 // [-2] void updateMetaData(const QNetworkCacheMetaData &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkDiskCache14updateMetaDataERK21QNetworkCacheMetaData(void *this_, QNetworkCacheMetaData* metaData) {
@@ -249,7 +248,7 @@ void C_ZN17QNetworkDiskCache14updateMetaDataERK21QNetworkCacheMetaData(void *thi
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:68
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:69
 // [8] QIODevice * data(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache4dataERK4QUrl(void *this_, QUrl* url) {
@@ -257,7 +256,7 @@ void* C_ZN17QNetworkDiskCache4dataERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:69
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:70
 // [1] bool remove(const QUrl &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QNetworkDiskCache6removeERK4QUrl(void *this_, QUrl* url) {
@@ -265,7 +264,7 @@ bool C_ZN17QNetworkDiskCache6removeERK4QUrl(void *this_, QUrl* url) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:70
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:71
 // [8] QIODevice * prepare(const QNetworkCacheMetaData &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QNetworkDiskCache7prepareERK21QNetworkCacheMetaData(void *this_, QNetworkCacheMetaData* metaData) {
@@ -273,7 +272,7 @@ void* C_ZN17QNetworkDiskCache7prepareERK21QNetworkCacheMetaData(void *this_, QNe
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:71
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:72
 // [-2] void insert(QIODevice *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkDiskCache6insertEP9QIODevice(void *this_, QIODevice * device) {
@@ -281,7 +280,7 @@ void C_ZN17QNetworkDiskCache6insertEP9QIODevice(void *this_, QIODevice * device)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:73
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:74
 // [8] QNetworkCacheMetaData fileMetaData(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QNetworkDiskCache12fileMetaDataERK7QString(void *this_, QString* fileName) {
@@ -290,7 +289,7 @@ return new QNetworkCacheMetaData(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:76
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:77
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QNetworkDiskCache5clearEv(void *this_) {
@@ -313,5 +312,4 @@ void C_ZN17QNetworkDiskCache5clearEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

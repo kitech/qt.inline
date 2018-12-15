@@ -22,15 +22,7 @@ bool C_ZeqRK17QAndroidJniObjectS1_(QAndroidJniObject* obj1, QAndroidJniObject* o
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:107
-// [1] bool shouldShowRequestPermissionRationale(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtAndroid36shouldShowRequestPermissionRationaleERK7QString(QString* permission) {
-  return (bool)QtAndroid::shouldShowRequestPermissionRationale(*permission);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:93
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:71
 // [-2] void runOnAndroidThreadSync(const QtAndroid::Runnable &, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QtAndroid22runOnAndroidThreadSyncERKSt8functionIFvvEEi(const QtAndroid::Runnable & runnable, int timeoutMs) {
@@ -38,16 +30,7 @@ void C_ZN9QtAndroid22runOnAndroidThreadSyncERKSt8functionIFvvEEi(const QtAndroid
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:105
-// [-2] QtAndroid::PermissionResultMap requestPermissionsSync(const QStringList &, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QtAndroid22requestPermissionsSyncERK11QStringListi(QStringList* permissions, int timeoutMs) {
-  auto rv = QtAndroid::requestPermissionsSync(*permissions, timeoutMs);
-/*return rv;*/
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:92
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:70
 // [-2] void runOnAndroidThread(const QtAndroid::Runnable &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QtAndroid18runOnAndroidThreadERKSt8functionIFvvEE(const QtAndroid::Runnable & runnable) {
@@ -55,15 +38,7 @@ void C_ZN9QtAndroid18runOnAndroidThreadERKSt8functionIFvvEE(const QtAndroid::Run
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:104
-// [-2] void requestPermissions(const QStringList &, const QtAndroid::PermissionResultCallback &)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QtAndroid18requestPermissionsERK11QStringListRKSt8functionIFvRK5QHashI7QStringNS_16PermissionResultEEEE(QStringList* permissions, const QtAndroid::PermissionResultCallback & callbackFunc) {
-  QtAndroid::requestPermissions(*permissions, callbackFunc);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:65
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:62
 // [-2] void startIntentSender(const QAndroidJniObject &, int, QAndroidActivityResultReceiver *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QtAndroid17startIntentSenderERK17QAndroidJniObjectiP30QAndroidActivityResultReceiver(QAndroidJniObject* intentSender, int receiverRequestCode, QAndroidActivityResultReceiver * resultReceiver) {
@@ -71,7 +46,7 @@ void C_ZN9QtAndroid17startIntentSenderERK17QAndroidJniObjectiP30QAndroidActivity
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:63
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:60
 // [4] int androidSdkVersion()
 extern "C" Q_DECL_EXPORT
 int C_ZN9QtAndroid17androidSdkVersionEv() {
@@ -79,7 +54,7 @@ int C_ZN9QtAndroid17androidSdkVersionEv() {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:95
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:73
 // [-2] void hideSplashScreen()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QtAndroid16hideSplashScreenEv() {
@@ -87,23 +62,7 @@ void C_ZN9QtAndroid16hideSplashScreenEv() {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:96
-// [-2] void hideSplashScreen(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QtAndroid16hideSplashScreenEi_1(int duration) {
-  QtAndroid::hideSplashScreen(duration);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:106
-// [4] QtAndroid::PermissionResult checkPermission(const QString &)
-extern "C" Q_DECL_EXPORT
-QtAndroid::PermissionResult C_ZN9QtAndroid15checkPermissionERK7QString(QString* permission) {
-  return (QtAndroid::PermissionResult)QtAndroid::checkPermission(*permission);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:60
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:57
 // [16] QAndroidJniObject androidActivity()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtAndroid15androidActivityEv() {
@@ -112,7 +71,7 @@ return new QAndroidJniObject(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:61
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:58
 // [16] QAndroidJniObject androidService()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtAndroid14androidServiceEv() {
@@ -121,7 +80,7 @@ return new QAndroidJniObject(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:62
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:59
 // [16] QAndroidJniObject androidContext()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtAndroid14androidContextEv() {
@@ -130,19 +89,11 @@ return new QAndroidJniObject(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:68
+// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:65
 // [-2] void startActivity(const QAndroidJniObject &, int, QAndroidActivityResultReceiver *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QtAndroid13startActivityERK17QAndroidJniObjectiP30QAndroidActivityResultReceiver(QAndroidJniObject* intent, int receiverRequestCode, QAndroidActivityResultReceiver * resultReceiver) {
   QtAndroid::startActivity(*intent, receiverRequestCode, resultReceiver);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtAndroidExtras/qandroidfunctions.h:87
-// [1] bool bindService(const QAndroidIntent &, const QAndroidServiceConnection &, QtAndroid::BindFlags)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtAndroid11bindServiceERK14QAndroidIntentRK25QAndroidServiceConnection6QFlagsINS_8BindFlagEE(QAndroidIntent* serviceIntent, QAndroidServiceConnection* serviceConnection, QFlags<QtAndroid::BindFlag> flags) {
-  return (bool)QtAndroid::bindService(*serviceIntent, *serviceConnection, flags);
 }
 
 //  main block end

@@ -111,7 +111,7 @@ void* C_QOpenGLContext_init_staticMetaObject(void* this_, void* strdat, void* da
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:151
+// /usr/include/qt/QtGui/qopenglcontext.h:150
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext10metaObjectEv(void *this_) {
@@ -119,7 +119,7 @@ void* C_ZNK14QOpenGLContext10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:151
+// /usr/include/qt/QtGui/qopenglcontext.h:150
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QOpenGLContext11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -127,7 +127,7 @@ void* C_ZN14QOpenGLContext11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:151
+// /usr/include/qt/QtGui/qopenglcontext.h:150
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QOpenGLContext11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -135,7 +135,7 @@ int C_ZN14QOpenGLContext11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMet
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:151
+// /usr/include/qt/QtGui/qopenglcontext.h:150
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QOpenGLContext2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -144,7 +144,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:151
+// /usr/include/qt/QtGui/qopenglcontext.h:150
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QOpenGLContext6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -153,7 +153,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:154
+// /usr/include/qt/QtGui/qopenglcontext.h:153
 // [-2] void QOpenGLContext(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QOpenGLContextC2EP7QObject(QObject * parent) {
@@ -161,14 +161,14 @@ void* C_ZN14QOpenGLContextC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:155
+// /usr/include/qt/QtGui/qopenglcontext.h:154
 // [-2] void ~QOpenGLContext()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLContextD2Ev(void *this_) {
   delete (QOpenGLContext*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:157
+// /usr/include/qt/QtGui/qopenglcontext.h:156
 // [-2] void setFormat(const QSurfaceFormat &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLContext9setFormatERK14QSurfaceFormat(void *this_, QSurfaceFormat* format) {
@@ -176,7 +176,7 @@ void C_ZN14QOpenGLContext9setFormatERK14QSurfaceFormat(void *this_, QSurfaceForm
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:158
+// /usr/include/qt/QtGui/qopenglcontext.h:157
 // [-2] void setShareContext(QOpenGLContext *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLContext15setShareContextEPS_(void *this_, QOpenGLContext * shareContext) {
@@ -184,7 +184,7 @@ void C_ZN14QOpenGLContext15setShareContextEPS_(void *this_, QOpenGLContext * sha
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:159
+// /usr/include/qt/QtGui/qopenglcontext.h:158
 // [-2] void setScreen(QScreen *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLContext9setScreenEP7QScreen(void *this_, QScreen * screen) {
@@ -193,7 +193,7 @@ void C_ZN14QOpenGLContext9setScreenEP7QScreen(void *this_, QScreen * screen) {
 
 // Public Visibility=Default Availability=Available
 // since 5.4
-// /usr/include/qt/QtGui/qopenglcontext.h:160
+// /usr/include/qt/QtGui/qopenglcontext.h:159
 // [-2] void setNativeHandle(const QVariant &)
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
@@ -203,7 +203,7 @@ void C_ZN14QOpenGLContext15setNativeHandleERK8QVariant(void *this_, QVariant* ha
 #endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:162
+// /usr/include/qt/QtGui/qopenglcontext.h:161
 // [1] bool create()
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QOpenGLContext6createEv(void *this_) {
@@ -211,7 +211,7 @@ bool C_ZN14QOpenGLContext6createEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:163
+// /usr/include/qt/QtGui/qopenglcontext.h:162
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QOpenGLContext7isValidEv(void *this_) {
@@ -219,7 +219,7 @@ bool C_ZNK14QOpenGLContext7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:165
+// /usr/include/qt/QtGui/qopenglcontext.h:164
 // [8] QSurfaceFormat format()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext6formatEv(void *this_) {
@@ -228,7 +228,7 @@ return new QSurfaceFormat(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:166
+// /usr/include/qt/QtGui/qopenglcontext.h:165
 // [8] QOpenGLContext * shareContext()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext12shareContextEv(void *this_) {
@@ -236,7 +236,7 @@ void* C_ZNK14QOpenGLContext12shareContextEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:167
+// /usr/include/qt/QtGui/qopenglcontext.h:166
 // [8] QOpenGLContextGroup * shareGroup()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext10shareGroupEv(void *this_) {
@@ -244,7 +244,7 @@ void* C_ZNK14QOpenGLContext10shareGroupEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:168
+// /usr/include/qt/QtGui/qopenglcontext.h:167
 // [8] QScreen * screen()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext6screenEv(void *this_) {
@@ -253,7 +253,7 @@ void* C_ZNK14QOpenGLContext6screenEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.4
-// /usr/include/qt/QtGui/qopenglcontext.h:169
+// /usr/include/qt/QtGui/qopenglcontext.h:168
 // [16] QVariant nativeHandle()
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
@@ -264,7 +264,7 @@ return new QVariant(rv);
 #endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:171
+// /usr/include/qt/QtGui/qopenglcontext.h:170
 // [4] GLuint defaultFramebufferObject()
 extern "C" Q_DECL_EXPORT
 GLuint C_ZNK14QOpenGLContext24defaultFramebufferObjectEv(void *this_) {
@@ -272,7 +272,7 @@ GLuint C_ZNK14QOpenGLContext24defaultFramebufferObjectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:173
+// /usr/include/qt/QtGui/qopenglcontext.h:172
 // [1] bool makeCurrent(QSurface *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QOpenGLContext11makeCurrentEP8QSurface(void *this_, QSurface * surface) {
@@ -280,7 +280,7 @@ bool C_ZN14QOpenGLContext11makeCurrentEP8QSurface(void *this_, QSurface * surfac
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:174
+// /usr/include/qt/QtGui/qopenglcontext.h:173
 // [-2] void doneCurrent()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLContext11doneCurrentEv(void *this_) {
@@ -288,7 +288,7 @@ void C_ZN14QOpenGLContext11doneCurrentEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:176
+// /usr/include/qt/QtGui/qopenglcontext.h:175
 // [-2] void swapBuffers(QSurface *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLContext11swapBuffersEP8QSurface(void *this_, QSurface * surface) {
@@ -296,7 +296,7 @@ void C_ZN14QOpenGLContext11swapBuffersEP8QSurface(void *this_, QSurface * surfac
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:177
+// /usr/include/qt/QtGui/qopenglcontext.h:176
 // [8] QFunctionPointer getProcAddress(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QOpenGLContext14getProcAddressERK10QByteArray(void *this_, QByteArray* procName) {
@@ -306,7 +306,7 @@ void C_ZNK14QOpenGLContext14getProcAddressERK10QByteArray(void *this_, QByteArra
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtGui/qopenglcontext.h:178
+// /usr/include/qt/QtGui/qopenglcontext.h:177
 // [8] QFunctionPointer getProcAddress(const char *)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -317,7 +317,7 @@ void C_ZNK14QOpenGLContext14getProcAddressEPKc(void *this_, const char * procNam
 #endif // QT_VERSION >= 0x050800
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:180
+// /usr/include/qt/QtGui/qopenglcontext.h:179
 // [8] QSurface * surface()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext7surfaceEv(void *this_) {
@@ -325,7 +325,7 @@ void* C_ZNK14QOpenGLContext7surfaceEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:182
+// /usr/include/qt/QtGui/qopenglcontext.h:181
 // [8] QOpenGLContext * currentContext()
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QOpenGLContext14currentContextEv() {
@@ -333,7 +333,7 @@ void* C_ZN14QOpenGLContext14currentContextEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:183
+// /usr/include/qt/QtGui/qopenglcontext.h:182
 // [1] bool areSharing(QOpenGLContext *, QOpenGLContext *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QOpenGLContext10areSharingEPS_S0_(QOpenGLContext * first, QOpenGLContext * second) {
@@ -341,7 +341,7 @@ bool C_ZN14QOpenGLContext10areSharingEPS_S0_(QOpenGLContext * first, QOpenGLCont
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:185
+// /usr/include/qt/QtGui/qopenglcontext.h:184
 // [8] QPlatformOpenGLContext * handle()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext6handleEv(void *this_) {
@@ -349,7 +349,7 @@ void* C_ZNK14QOpenGLContext6handleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:186
+// /usr/include/qt/QtGui/qopenglcontext.h:185
 // [8] QPlatformOpenGLContext * shareHandle()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext11shareHandleEv(void *this_) {
@@ -357,7 +357,7 @@ void* C_ZNK14QOpenGLContext11shareHandleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:188
+// /usr/include/qt/QtGui/qopenglcontext.h:187
 // [8] QOpenGLFunctions * functions()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext9functionsEv(void *this_) {
@@ -365,7 +365,7 @@ void* C_ZNK14QOpenGLContext9functionsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:189
+// /usr/include/qt/QtGui/qopenglcontext.h:188
 // [8] QOpenGLExtraFunctions * extraFunctions()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext14extraFunctionsEv(void *this_) {
@@ -373,7 +373,7 @@ void* C_ZNK14QOpenGLContext14extraFunctionsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:191
+// /usr/include/qt/QtGui/qopenglcontext.h:190
 // [8] QAbstractOpenGLFunctions * versionFunctions(const QOpenGLVersionProfile &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLContext16versionFunctionsERK21QOpenGLVersionProfile(void *this_, QOpenGLVersionProfile* versionProfile) {
@@ -381,7 +381,7 @@ void* C_ZNK14QOpenGLContext16versionFunctionsERK21QOpenGLVersionProfile(void *th
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:200
+// /usr/include/qt/QtGui/qopenglcontext.h:199
 // [-2] QSet<QByteArray> extensions()
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QOpenGLContext10extensionsEv(void *this_) {
@@ -390,7 +390,7 @@ void C_ZNK14QOpenGLContext10extensionsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:201
+// /usr/include/qt/QtGui/qopenglcontext.h:200
 // [1] bool hasExtension(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QOpenGLContext12hasExtensionERK10QByteArray(void *this_, QByteArray* extension) {
@@ -399,7 +399,7 @@ bool C_ZNK14QOpenGLContext12hasExtensionERK10QByteArray(void *this_, QByteArray*
 
 // Public static Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglcontext.h:203
+// /usr/include/qt/QtGui/qopenglcontext.h:202
 // [8] void * openGLModuleHandle()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -410,7 +410,7 @@ void* C_ZN14QOpenGLContext18openGLModuleHandleEv() {
 
 // Public static Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglcontext.h:210
+// /usr/include/qt/QtGui/qopenglcontext.h:209
 // [4] QOpenGLContext::OpenGLModuleType openGLModuleType()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -421,7 +421,7 @@ QOpenGLContext::OpenGLModuleType C_ZN14QOpenGLContext16openGLModuleTypeEv() {
 
 // Public Visibility=Default Availability=Available
 // since 5.3
-// /usr/include/qt/QtGui/qopenglcontext.h:212
+// /usr/include/qt/QtGui/qopenglcontext.h:211
 // [1] bool isOpenGLES()
 #if QT_VERSION >= 0x050300
 extern "C" Q_DECL_EXPORT
@@ -432,7 +432,7 @@ bool C_ZNK14QOpenGLContext10isOpenGLESEv(void *this_) {
 
 // Public static Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtGui/qopenglcontext.h:214
+// /usr/include/qt/QtGui/qopenglcontext.h:213
 // [1] bool supportsThreadedOpenGL()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -443,7 +443,7 @@ bool C_ZN14QOpenGLContext22supportsThreadedOpenGLEv() {
 
 // Public static Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtGui/qopenglcontext.h:215
+// /usr/include/qt/QtGui/qopenglcontext.h:214
 // [8] QOpenGLContext * globalShareContext()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -453,7 +453,7 @@ void* C_ZN14QOpenGLContext18globalShareContextEv() {
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:218
+// /usr/include/qt/QtGui/qopenglcontext.h:217
 // [-2] void aboutToBeDestroyed()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLContext18aboutToBeDestroyedEv(void *this_) {

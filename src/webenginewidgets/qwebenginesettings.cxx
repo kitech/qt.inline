@@ -51,7 +51,7 @@ public:
 };
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:105
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:103
 // [8] QWebEngineSettings * globalSettings()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QWebEngineSettings14globalSettingsEv() {
@@ -59,7 +59,7 @@ void* C_ZN18QWebEngineSettings14globalSettingsEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:107
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:105
 // [8] QWebEngineSettings * defaultSettings()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QWebEngineSettings15defaultSettingsEv() {
@@ -67,7 +67,7 @@ void* C_ZN18QWebEngineSettings15defaultSettingsEv() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:109
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:107
 // [-2] void setFontFamily(QWebEngineSettings::FontFamily, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QWebEngineSettings13setFontFamilyENS_10FontFamilyERK7QString(void *this_, QWebEngineSettings::FontFamily which, QString* family) {
@@ -75,7 +75,7 @@ void C_ZN18QWebEngineSettings13setFontFamilyENS_10FontFamilyERK7QString(void *th
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:110
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:108
 // [8] QString fontFamily(QWebEngineSettings::FontFamily)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QWebEngineSettings10fontFamilyENS_10FontFamilyE(void *this_, QWebEngineSettings::FontFamily which) {
@@ -84,7 +84,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:111
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:109
 // [-2] void resetFontFamily(QWebEngineSettings::FontFamily)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QWebEngineSettings15resetFontFamilyENS_10FontFamilyE(void *this_, QWebEngineSettings::FontFamily which) {
@@ -92,7 +92,7 @@ void C_ZN18QWebEngineSettings15resetFontFamilyENS_10FontFamilyE(void *this_, QWe
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:113
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:111
 // [-2] void setFontSize(QWebEngineSettings::FontSize, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QWebEngineSettings11setFontSizeENS_8FontSizeEi(void *this_, QWebEngineSettings::FontSize type_, int size) {
@@ -100,7 +100,7 @@ void C_ZN18QWebEngineSettings11setFontSizeENS_8FontSizeEi(void *this_, QWebEngin
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:114
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:112
 // [4] int fontSize(QWebEngineSettings::FontSize)
 extern "C" Q_DECL_EXPORT
 int C_ZNK18QWebEngineSettings8fontSizeENS_8FontSizeE(void *this_, QWebEngineSettings::FontSize type_) {
@@ -108,7 +108,7 @@ int C_ZNK18QWebEngineSettings8fontSizeENS_8FontSizeE(void *this_, QWebEngineSett
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:115
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:113
 // [-2] void resetFontSize(QWebEngineSettings::FontSize)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QWebEngineSettings13resetFontSizeENS_8FontSizeE(void *this_, QWebEngineSettings::FontSize type_) {
@@ -116,7 +116,7 @@ void C_ZN18QWebEngineSettings13resetFontSizeENS_8FontSizeE(void *this_, QWebEngi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:117
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:115
 // [-2] void setAttribute(QWebEngineSettings::WebAttribute, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QWebEngineSettings12setAttributeENS_12WebAttributeEb(void *this_, QWebEngineSettings::WebAttribute attr, bool on) {
@@ -124,7 +124,7 @@ void C_ZN18QWebEngineSettings12setAttributeENS_12WebAttributeEb(void *this_, QWe
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:118
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:116
 // [1] bool testAttribute(QWebEngineSettings::WebAttribute)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK18QWebEngineSettings13testAttributeENS_12WebAttributeE(void *this_, QWebEngineSettings::WebAttribute attr) {
@@ -132,7 +132,7 @@ bool C_ZNK18QWebEngineSettings13testAttributeENS_12WebAttributeE(void *this_, QW
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:119
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:117
 // [-2] void resetAttribute(QWebEngineSettings::WebAttribute)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QWebEngineSettings14resetAttributeENS_12WebAttributeE(void *this_, QWebEngineSettings::WebAttribute attr) {
@@ -140,7 +140,7 @@ void C_ZN18QWebEngineSettings14resetAttributeENS_12WebAttributeE(void *this_, QW
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:121
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:119
 // [-2] void setDefaultTextEncoding(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QWebEngineSettings22setDefaultTextEncodingERK7QString(void *this_, QString* encoding) {
@@ -148,7 +148,7 @@ void C_ZN18QWebEngineSettings22setDefaultTextEncodingERK7QString(void *this_, QS
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:122
+// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:120
 // [8] QString defaultTextEncoding()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QWebEngineSettings19defaultTextEncodingEv(void *this_) {

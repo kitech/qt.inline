@@ -54,7 +54,7 @@ MyQDebugStateSaver(QDebug & dbg) : QDebugStateSaver(dbg) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:180
+// /usr/include/qt/QtCore/qdebug.h:177
 // [-2] void QDebugStateSaver(QDebug &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QDebugStateSaverC2ER6QDebug(QDebug* dbg) {
@@ -62,7 +62,7 @@ void* C_ZN16QDebugStateSaverC2ER6QDebug(QDebug* dbg) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:181
+// /usr/include/qt/QtCore/qdebug.h:178
 // [-2] void ~QDebugStateSaver()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QDebugStateSaverD2Ev(void *this_) {

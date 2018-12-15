@@ -310,24 +310,7 @@ bool C_ZNK6QMovie7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:108
-// [4] QImageReader::ImageReaderError lastError()
-extern "C" Q_DECL_EXPORT
-QImageReader::ImageReaderError C_ZNK6QMovie9lastErrorEv(void *this_) {
-  return (QImageReader::ImageReaderError)((QMovie*)this_)->lastError();
-}
-
-// Public Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmovie.h:109
-// [8] QString lastErrorString()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK6QMovie15lastErrorStringEv(void *this_) {
-  auto rv = ((QMovie*)this_)->lastErrorString();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:111
 // [1] bool jumpToFrame(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QMovie11jumpToFrameEi(void *this_, int frameNumber) {
@@ -335,7 +318,7 @@ bool C_ZN6QMovie11jumpToFrameEi(void *this_, int frameNumber) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:112
+// /usr/include/qt/QtGui/qmovie.h:110
 // [4] int loopCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QMovie9loopCountEv(void *this_) {
@@ -343,7 +326,7 @@ int C_ZNK6QMovie9loopCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:113
+// /usr/include/qt/QtGui/qmovie.h:111
 // [4] int frameCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QMovie10frameCountEv(void *this_) {
@@ -351,7 +334,7 @@ int C_ZNK6QMovie10frameCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:114
+// /usr/include/qt/QtGui/qmovie.h:112
 // [4] int nextFrameDelay()
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QMovie14nextFrameDelayEv(void *this_) {
@@ -359,7 +342,7 @@ int C_ZNK6QMovie14nextFrameDelayEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:115
+// /usr/include/qt/QtGui/qmovie.h:113
 // [4] int currentFrameNumber()
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QMovie18currentFrameNumberEv(void *this_) {
@@ -367,7 +350,7 @@ int C_ZNK6QMovie18currentFrameNumberEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:117
+// /usr/include/qt/QtGui/qmovie.h:115
 // [4] int speed()
 extern "C" Q_DECL_EXPORT
 int C_ZNK6QMovie5speedEv(void *this_) {
@@ -376,7 +359,7 @@ int C_ZNK6QMovie5speedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtGui/qmovie.h:119
+// /usr/include/qt/QtGui/qmovie.h:117
 // [8] QSize scaledSize()
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -388,7 +371,7 @@ return new QSize(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtGui/qmovie.h:120
+// /usr/include/qt/QtGui/qmovie.h:118
 // [-2] void setScaledSize(const QSize &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -398,7 +381,7 @@ void C_ZN6QMovie13setScaledSizeERK5QSize(void *this_, QSize* size) {
 #endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:122
+// /usr/include/qt/QtGui/qmovie.h:120
 // [4] QMovie::CacheMode cacheMode()
 extern "C" Q_DECL_EXPORT
 QMovie::CacheMode C_ZNK6QMovie9cacheModeEv(void *this_) {
@@ -406,7 +389,7 @@ QMovie::CacheMode C_ZNK6QMovie9cacheModeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:123
+// /usr/include/qt/QtGui/qmovie.h:121
 // [-2] void setCacheMode(QMovie::CacheMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie12setCacheModeENS_9CacheModeE(void *this_, QMovie::CacheMode mode) {
@@ -414,7 +397,7 @@ void C_ZN6QMovie12setCacheModeENS_9CacheModeE(void *this_, QMovie::CacheMode mod
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:126
+// /usr/include/qt/QtGui/qmovie.h:124
 // [-2] void started()
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie7startedEv(void *this_) {
@@ -422,7 +405,7 @@ void C_ZN6QMovie7startedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:127
+// /usr/include/qt/QtGui/qmovie.h:125
 // [-2] void resized(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie7resizedERK5QSize(void *this_, QSize* size) {
@@ -430,7 +413,7 @@ void C_ZN6QMovie7resizedERK5QSize(void *this_, QSize* size) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:128
+// /usr/include/qt/QtGui/qmovie.h:126
 // [-2] void updated(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie7updatedERK5QRect(void *this_, QRect* rect) {
@@ -438,7 +421,7 @@ void C_ZN6QMovie7updatedERK5QRect(void *this_, QRect* rect) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:129
+// /usr/include/qt/QtGui/qmovie.h:127
 // [-2] void stateChanged(QMovie::MovieState)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie12stateChangedENS_10MovieStateE(void *this_, QMovie::MovieState state) {
@@ -446,7 +429,7 @@ void C_ZN6QMovie12stateChangedENS_10MovieStateE(void *this_, QMovie::MovieState 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:130
+// /usr/include/qt/QtGui/qmovie.h:128
 // [-2] void error(QImageReader::ImageReaderError)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(void *this_, QImageReader::ImageReaderError error) {
@@ -454,7 +437,7 @@ void C_ZN6QMovie5errorEN12QImageReader16ImageReaderErrorE(void *this_, QImageRea
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:131
+// /usr/include/qt/QtGui/qmovie.h:129
 // [-2] void finished()
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie8finishedEv(void *this_) {
@@ -463,7 +446,7 @@ void C_ZN6QMovie8finishedEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtGui/qmovie.h:132
+// /usr/include/qt/QtGui/qmovie.h:130
 // [-2] void frameChanged(int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -473,7 +456,7 @@ void C_ZN6QMovie12frameChangedEi(void *this_, int frameNumber) {
 #endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:135
+// /usr/include/qt/QtGui/qmovie.h:133
 // [-2] void start()
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie5startEv(void *this_) {
@@ -481,7 +464,7 @@ void C_ZN6QMovie5startEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:136
+// /usr/include/qt/QtGui/qmovie.h:134
 // [1] bool jumpToNextFrame()
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QMovie15jumpToNextFrameEv(void *this_) {
@@ -489,7 +472,7 @@ bool C_ZN6QMovie15jumpToNextFrameEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:137
+// /usr/include/qt/QtGui/qmovie.h:135
 // [-2] void setPaused(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie9setPausedEb(void *this_, bool paused) {
@@ -497,7 +480,7 @@ void C_ZN6QMovie9setPausedEb(void *this_, bool paused) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:138
+// /usr/include/qt/QtGui/qmovie.h:136
 // [-2] void stop()
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie4stopEv(void *this_) {
@@ -505,7 +488,7 @@ void C_ZN6QMovie4stopEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmovie.h:139
+// /usr/include/qt/QtGui/qmovie.h:137
 // [-2] void setSpeed(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMovie8setSpeedEi(void *this_, int percentSpeed) {

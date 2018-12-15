@@ -55,7 +55,7 @@ MyQStyleOptionFocusRect(const QStyleOptionFocusRect & other) : QStyleOptionFocus
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:119
+// /usr/include/qt/QtWidgets/qstyleoption.h:108
 // [-2] void QStyleOptionFocusRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QStyleOptionFocusRectC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN21QStyleOptionFocusRectC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:120
+// /usr/include/qt/QtWidgets/qstyleoption.h:109
 // [-2] void QStyleOptionFocusRect(const QStyleOptionFocusRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QStyleOptionFocusRectC2ERKS_(QStyleOptionFocusRect* other) {

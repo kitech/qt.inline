@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qbuttongroup.h
 #ifndef protected
 #define protected public
@@ -111,7 +110,7 @@ void* C_QButtonGroup_init_staticMetaObject(void* this_, void* strdat, void* dat,
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:56
+// /usr/include/qt/QtWidgets/qbuttongroup.h:57
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QButtonGroup10metaObjectEv(void *this_) {
@@ -119,7 +118,7 @@ void* C_ZNK12QButtonGroup10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:56
+// /usr/include/qt/QtWidgets/qbuttongroup.h:57
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QButtonGroup11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -127,7 +126,7 @@ void* C_ZN12QButtonGroup11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:56
+// /usr/include/qt/QtWidgets/qbuttongroup.h:57
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN12QButtonGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -135,7 +134,7 @@ int C_ZN12QButtonGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaO
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:56
+// /usr/include/qt/QtWidgets/qbuttongroup.h:57
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QButtonGroup2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -144,7 +143,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:56
+// /usr/include/qt/QtWidgets/qbuttongroup.h:57
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QButtonGroup6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -153,7 +152,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:60
+// /usr/include/qt/QtWidgets/qbuttongroup.h:61
 // [-2] void QButtonGroup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QButtonGroupC2EP7QObject(QObject * parent) {
@@ -161,14 +160,14 @@ void* C_ZN12QButtonGroupC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:61
+// /usr/include/qt/QtWidgets/qbuttongroup.h:62
 // [-2] void ~QButtonGroup()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroupD2Ev(void *this_) {
   delete (QButtonGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:63
+// /usr/include/qt/QtWidgets/qbuttongroup.h:64
 // [-2] void setExclusive(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup12setExclusiveEb(void *this_, bool arg0) {
@@ -176,7 +175,7 @@ void C_ZN12QButtonGroup12setExclusiveEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:64
+// /usr/include/qt/QtWidgets/qbuttongroup.h:65
 // [1] bool exclusive()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QButtonGroup9exclusiveEv(void *this_) {
@@ -184,7 +183,7 @@ bool C_ZNK12QButtonGroup9exclusiveEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:66
+// /usr/include/qt/QtWidgets/qbuttongroup.h:67
 // [-2] void addButton(QAbstractButton *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup9addButtonEP15QAbstractButtoni(void *this_, QAbstractButton * arg0, int id) {
@@ -192,7 +191,7 @@ void C_ZN12QButtonGroup9addButtonEP15QAbstractButtoni(void *this_, QAbstractButt
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:67
+// /usr/include/qt/QtWidgets/qbuttongroup.h:68
 // [-2] void removeButton(QAbstractButton *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup12removeButtonEP15QAbstractButton(void *this_, QAbstractButton * arg0) {
@@ -200,7 +199,7 @@ void C_ZN12QButtonGroup12removeButtonEP15QAbstractButton(void *this_, QAbstractB
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:69
+// /usr/include/qt/QtWidgets/qbuttongroup.h:70
 // [-2] QList<QAbstractButton *> buttons()
 extern "C" Q_DECL_EXPORT
 QList<QAbstractButton *>* C_ZNK12QButtonGroup7buttonsEv(void *this_) {
@@ -209,7 +208,7 @@ return new QList<QAbstractButton *>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:71
+// /usr/include/qt/QtWidgets/qbuttongroup.h:72
 // [8] QAbstractButton * checkedButton()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QButtonGroup13checkedButtonEv(void *this_) {
@@ -218,7 +217,7 @@ void* C_ZNK12QButtonGroup13checkedButtonEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qbuttongroup.h:74
+// /usr/include/qt/QtWidgets/qbuttongroup.h:75
 // [8] QAbstractButton * button(int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -229,7 +228,7 @@ void* C_ZNK12QButtonGroup6buttonEi(void *this_, int id) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qbuttongroup.h:75
+// /usr/include/qt/QtWidgets/qbuttongroup.h:76
 // [-2] void setId(QAbstractButton *, int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -240,7 +239,7 @@ void C_ZN12QButtonGroup5setIdEP15QAbstractButtoni(void *this_, QAbstractButton *
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qbuttongroup.h:76
+// /usr/include/qt/QtWidgets/qbuttongroup.h:77
 // [4] int id(QAbstractButton *)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -251,7 +250,7 @@ int C_ZNK12QButtonGroup2idEP15QAbstractButton(void *this_, QAbstractButton * but
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qbuttongroup.h:77
+// /usr/include/qt/QtWidgets/qbuttongroup.h:78
 // [4] int checkedId()
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -261,7 +260,7 @@ int C_ZNK12QButtonGroup9checkedIdEv(void *this_) {
 #endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:80
+// /usr/include/qt/QtWidgets/qbuttongroup.h:81
 // [-2] void buttonClicked(QAbstractButton *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonClickedEP15QAbstractButton(void *this_, QAbstractButton * arg0) {
@@ -269,7 +268,7 @@ void C_ZN12QButtonGroup13buttonClickedEP15QAbstractButton(void *this_, QAbstract
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qbuttongroup.h:81
+// /usr/include/qt/QtWidgets/qbuttongroup.h:82
 // [-2] void buttonClicked(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QButtonGroup13buttonClickedEi(void *this_, int arg0) {
@@ -278,7 +277,7 @@ void C_ZN12QButtonGroup13buttonClickedEi(void *this_, int arg0) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qbuttongroup.h:82
+// /usr/include/qt/QtWidgets/qbuttongroup.h:83
 // [-2] void buttonPressed(QAbstractButton *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -289,7 +288,7 @@ void C_ZN12QButtonGroup13buttonPressedEP15QAbstractButton(void *this_, QAbstract
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qbuttongroup.h:83
+// /usr/include/qt/QtWidgets/qbuttongroup.h:84
 // [-2] void buttonPressed(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -300,7 +299,7 @@ void C_ZN12QButtonGroup13buttonPressedEi(void *this_, int arg0) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qbuttongroup.h:84
+// /usr/include/qt/QtWidgets/qbuttongroup.h:85
 // [-2] void buttonReleased(QAbstractButton *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -311,7 +310,7 @@ void C_ZN12QButtonGroup14buttonReleasedEP15QAbstractButton(void *this_, QAbstrac
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qbuttongroup.h:85
+// /usr/include/qt/QtWidgets/qbuttongroup.h:86
 // [-2] void buttonReleased(int)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -322,7 +321,7 @@ void C_ZN12QButtonGroup14buttonReleasedEi(void *this_, int arg0) {
 
 // Public Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtWidgets/qbuttongroup.h:86
+// /usr/include/qt/QtWidgets/qbuttongroup.h:87
 // [-2] void buttonToggled(QAbstractButton *, bool)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -333,7 +332,7 @@ void C_ZN12QButtonGroup13buttonToggledEP15QAbstractButtonb(void *this_, QAbstrac
 
 // Public Visibility=Default Availability=Available
 // since 5.2
-// /usr/include/qt/QtWidgets/qbuttongroup.h:87
+// /usr/include/qt/QtWidgets/qbuttongroup.h:88
 // [-2] void buttonToggled(int, bool)
 #if QT_VERSION >= 0x050200
 extern "C" Q_DECL_EXPORT
@@ -358,5 +357,4 @@ void C_ZN12QButtonGroup13buttonToggledEib(void *this_, int arg0, bool arg1) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

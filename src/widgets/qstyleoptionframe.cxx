@@ -55,7 +55,7 @@ MyQStyleOptionFrame(const QStyleOptionFrame & other) : QStyleOptionFrame(other) 
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:143
+// /usr/include/qt/QtWidgets/qstyleoption.h:132
 // [-2] void QStyleOptionFrame()
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QStyleOptionFrameC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN17QStyleOptionFrameC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:144
+// /usr/include/qt/QtWidgets/qstyleoption.h:133
 // [-2] void QStyleOptionFrame(const QStyleOptionFrame &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QStyleOptionFrameC2ERKS_(QStyleOptionFrame* other) {

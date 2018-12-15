@@ -5,7 +5,7 @@
 
 //  main block begin
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:360
+// /usr/include/qt/QtCore/qglobal.h:358
 // [8] const char * qVersion()
 extern "C" Q_DECL_EXPORT
 void* CqVersion() {
@@ -31,7 +31,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:181
+// /usr/include/qt/QtCore/qtimezone.h:173
 // [32] QDataStream & operator>>(QDataStream &, QTimeZone &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR9QTimeZone_2(QDataStream* ds, QTimeZone* tz) {
@@ -49,7 +49,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:401
+// /usr/include/qt/QtCore/qdatetime.h:388
 // [32] QDataStream & operator>>(QDataStream &, QDateTime &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR9QDateTime_4(QDataStream* arg0, QDateTime* arg1) {
@@ -85,7 +85,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1400
+// /usr/include/qt/QtCore/qstring.h:1363
 // [32] QDataStream & operator>>(QDataStream &, QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR7QString_8(QDataStream* arg0, QString* arg1) {
@@ -112,7 +112,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlocale.h:1120
+// /usr/include/qt/QtCore/qlocale.h:1088
 // [32] QDataStream & operator>>(QDataStream &, QLocale &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR7QLocale_11(QDataStream* arg0, QLocale* arg1) {
@@ -157,7 +157,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/quuid.h:228
+// /usr/include/qt/QtCore/quuid.h:225
 // [32] QDataStream & operator>>(QDataStream &, QUuid &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR5QUuid_16(QDataStream* arg0, QUuid* arg1) {
@@ -166,7 +166,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:399
+// /usr/include/qt/QtCore/qdatetime.h:386
 // [32] QDataStream & operator>>(QDataStream &, QTime &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR5QTime_17(QDataStream* arg0, QTime* arg1) {
@@ -202,7 +202,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:397
+// /usr/include/qt/QtCore/qdatetime.h:384
 // [32] QDataStream & operator>>(QDataStream &, QDate &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR5QDate_21(QDataStream* arg0, QDate* arg1) {
@@ -211,7 +211,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:606
+// /usr/include/qt/QtCore/qchar.h:599
 // [32] QDataStream & operator>>(QDataStream &, QChar &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR5QChar_22(QDataStream* arg0, QChar* arg1) {
@@ -229,7 +229,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:165
+// /usr/include/qt/QtCore/qregularexpression.h:163
 // [32] QDataStream & operator>>(QDataStream &, QRegularExpression &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR18QRegularExpression_24(QDataStream* in, QRegularExpression* re) {
@@ -256,7 +256,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:679
+// /usr/include/qt/QtCore/qbytearray.h:670
 // [32] QDataStream & operator>>(QDataStream &, QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZrsR11QDataStreamR10QByteArray_27(QDataStream* arg0, QByteArray* arg1) {
@@ -319,7 +319,7 @@ return new QMarginsF(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1344
+// /usr/include/qt/QtCore/qstring.h:1307
 // [8] const QString operator+(char, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplcRK7QString_6(char c, QString* s) {
@@ -328,7 +328,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:648
+// /usr/include/qt/QtCore/qbytearray.h:639
 // [8] const QByteArray operator+(char, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplcRK10QByteArray_7(char a1, QByteArray* a2) {
@@ -391,7 +391,7 @@ return new QRect(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1346
+// /usr/include/qt/QtCore/qstring.h:1309
 // [8] const QString operator+(const QString &, char)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK7QStringc_14(QString* s, char c) {
@@ -400,7 +400,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1333
+// /usr/include/qt/QtCore/qstring.h:1296
 // [8] const QString operator+(const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK7QStringS1__15(QString* s1, QString* s2) {
@@ -409,7 +409,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1825
+// /usr/include/qt/QtCore/qstring.h:1738
 // [8] QString operator+(const QString &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK7QStringRK10QStringRef_16(QString* s1, QStringRef* s2) {
@@ -418,7 +418,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1350
+// /usr/include/qt/QtCore/qstring.h:1313
 // [8] const QString operator+(const QString &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK7QStringRK10QByteArray_17(QString* s, QByteArray* ba) {
@@ -427,7 +427,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1340
+// /usr/include/qt/QtCore/qstring.h:1303
 // [8] const QString operator+(const QString &, const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK7QStringPKc_18(QString* s1, const char * s2) {
@@ -436,7 +436,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1335
+// /usr/include/qt/QtCore/qstring.h:1298
 // [8] const QString operator+(const QString &, QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK7QString5QChar_19(QString* s1, QChar* s2) {
@@ -499,7 +499,7 @@ return new QRect(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:238
+// /usr/include/qt/QtCore/qstringlist.h:231
 // [8] QStringList operator+(const QList<QString> &, const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK5QListI7QStringERK11QStringList_26(QList<QString>* one, QStringList* other) {
@@ -508,7 +508,7 @@ return new QStringList(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1833
+// /usr/include/qt/QtCore/qstring.h:1746
 // [8] QString operator+(const QStringRef &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK10QStringRefS1__27(QStringRef* s1, QStringRef* s2) {
@@ -517,7 +517,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1827
+// /usr/include/qt/QtCore/qstring.h:1740
 // [8] QString operator+(const QStringRef &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK10QStringRefRK7QString_28(QStringRef* s1, QString* s2) {
@@ -526,7 +526,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1835
+// /usr/include/qt/QtCore/qstring.h:1748
 // [8] QString operator+(const QStringRef &, QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK10QStringRef5QChar_29(QStringRef* s1, QChar* s2) {
@@ -535,7 +535,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1829
+// /usr/include/qt/QtCore/qstring.h:1742
 // [8] QString operator+(const QStringRef &, QLatin1String)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK10QStringRef13QLatin1String_30(QStringRef* s1, QLatin1String* s2) {
@@ -544,7 +544,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:644
+// /usr/include/qt/QtCore/qbytearray.h:635
 // [8] const QByteArray operator+(const QByteArray &, char)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK10QByteArrayc_31(QByteArray* a1, char a2) {
@@ -553,7 +553,7 @@ return new QByteArray(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:640
+// /usr/include/qt/QtCore/qbytearray.h:631
 // [8] const QByteArray operator+(const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK10QByteArrayS1__32(QByteArray* a1, QByteArray* a2) {
@@ -562,7 +562,7 @@ return new QByteArray(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1348
+// /usr/include/qt/QtCore/qstring.h:1311
 // [8] const QString operator+(const QByteArray &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK10QByteArrayRK7QString_33(QByteArray* ba, QString* s) {
@@ -571,7 +571,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:642
+// /usr/include/qt/QtCore/qbytearray.h:633
 // [8] const QByteArray operator+(const QByteArray &, const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZplRK10QByteArrayPKc_34(QByteArray* a1, const char * a2) {
@@ -580,7 +580,7 @@ return new QByteArray(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1342
+// /usr/include/qt/QtCore/qstring.h:1305
 // [8] const QString operator+(const char *, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplPKcRK7QString_35(const char * s1, QString* s2) {
@@ -589,7 +589,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:646
+// /usr/include/qt/QtCore/qbytearray.h:637
 // [8] const QByteArray operator+(const char *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZplPKcRK10QByteArray_36(const char * a1, QByteArray* a2) {
@@ -598,7 +598,7 @@ return new QByteArray(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1337
+// /usr/include/qt/QtCore/qstring.h:1300
 // [8] const QString operator+(QChar, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_Zpl5QCharRK7QString_37(QChar* s1, QString* s2) {
@@ -607,7 +607,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1837
+// /usr/include/qt/QtCore/qstring.h:1750
 // [8] QString operator+(QChar, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 void* C_Zpl5QCharRK10QStringRef_38(QChar* s1, QStringRef* s2) {
@@ -616,7 +616,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1831
+// /usr/include/qt/QtCore/qstring.h:1744
 // [8] QString operator+(QLatin1String, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 void* C_Zpl13QLatin1StringRK10QStringRef_39(QLatin1String* s1, QStringRef* s2) {
@@ -634,7 +634,7 @@ return new QBitArray(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:727
+// /usr/include/qt/QtCore/qmetatype.h:726
 // [4] QIncompatibleFlag operator|(QMetaType::TypeFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN9QMetaType8TypeFlagEi_1(QMetaType::TypeFlags::enum_type f1, int f2) {
@@ -643,7 +643,7 @@ void C_ZorN9QMetaType8TypeFlagEi_1(QMetaType::TypeFlags::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:727
+// /usr/include/qt/QtCore/qmetatype.h:726
 // [4] QFlags<QMetaType::TypeFlags::enum_type> operator|(QMetaType::TypeFlags::enum_type, QMetaType::TypeFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN9QMetaType8TypeFlagES0__2(QMetaType::TypeFlags::enum_type f1, QMetaType::TypeFlags::enum_type f2) {
@@ -652,7 +652,7 @@ void C_ZorN9QMetaType8TypeFlagES0__2(QMetaType::TypeFlags::enum_type f1, QMetaTy
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:727
+// /usr/include/qt/QtCore/qmetatype.h:726
 // [4] QFlags<QMetaType::TypeFlags::enum_type> operator|(QMetaType::TypeFlags::enum_type, QFlags<QMetaType::TypeFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN9QMetaType8TypeFlagE6QFlagsIS0_E_3(QMetaType::TypeFlags::enum_type f1, QFlags<QMetaType::TypeFlag> f2) {
@@ -661,7 +661,7 @@ void C_ZorN9QMetaType8TypeFlagE6QFlagsIS0_E_3(QMetaType::TypeFlags::enum_type f1
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:183
+// /usr/include/qt/QtCore/qiodevice.h:182
 // [4] QIncompatibleFlag operator|(QIODevice::OpenMode::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN9QIODevice12OpenModeFlagEi_4(QIODevice::OpenMode::enum_type f1, int f2) {
@@ -670,7 +670,7 @@ void C_ZorN9QIODevice12OpenModeFlagEi_4(QIODevice::OpenMode::enum_type f1, int f
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:183
+// /usr/include/qt/QtCore/qiodevice.h:182
 // [4] QFlags<QIODevice::OpenMode::enum_type> operator|(QIODevice::OpenMode::enum_type, QIODevice::OpenMode::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN9QIODevice12OpenModeFlagES0__5(QIODevice::OpenMode::enum_type f1, QIODevice::OpenMode::enum_type f2) {
@@ -679,7 +679,7 @@ void C_ZorN9QIODevice12OpenModeFlagES0__5(QIODevice::OpenMode::enum_type f1, QIO
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:183
+// /usr/include/qt/QtCore/qiodevice.h:182
 // [4] QFlags<QIODevice::OpenMode::enum_type> operator|(QIODevice::OpenMode::enum_type, QFlags<QIODevice::OpenMode::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN9QIODevice12OpenModeFlagE6QFlagsIS0_E_6(QIODevice::OpenMode::enum_type f1, QFlags<QIODevice::OpenModeFlag> f2) {
@@ -715,7 +715,7 @@ void C_ZorN8QLibrary8LoadHintE6QFlagsIS0_E_9(QLibrary::LoadHints::enum_type f1, 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1404
+// /usr/include/qt/QtCore/qstring.h:1367
 // [4] QIncompatibleFlag operator|(QString::SectionFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN7QString11SectionFlagEi_10(QString::SectionFlags::enum_type f1, int f2) {
@@ -724,7 +724,7 @@ void C_ZorN7QString11SectionFlagEi_10(QString::SectionFlags::enum_type f1, int f
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1404
+// /usr/include/qt/QtCore/qstring.h:1367
 // [4] QFlags<QString::SectionFlags::enum_type> operator|(QString::SectionFlags::enum_type, QString::SectionFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN7QString11SectionFlagES0__11(QString::SectionFlags::enum_type f1, QString::SectionFlags::enum_type f2) {
@@ -733,7 +733,7 @@ void C_ZorN7QString11SectionFlagES0__11(QString::SectionFlags::enum_type f1, QSt
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1404
+// /usr/include/qt/QtCore/qstring.h:1367
 // [4] QFlags<QString::SectionFlags::enum_type> operator|(QString::SectionFlags::enum_type, QFlags<QString::SectionFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN7QString11SectionFlagE6QFlagsIS0_E_12(QString::SectionFlags::enum_type f1, QFlags<QString::SectionFlag> f2) {
@@ -742,7 +742,7 @@ void C_ZorN7QString11SectionFlagE6QFlagsIS0_E_12(QString::SectionFlags::enum_typ
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlocale.h:1096
+// /usr/include/qt/QtCore/qlocale.h:1064
 // [4] QIncompatibleFlag operator|(QLocale::NumberOptions::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN7QLocale12NumberOptionEi_13(QLocale::NumberOptions::enum_type f1, int f2) {
@@ -751,7 +751,7 @@ void C_ZorN7QLocale12NumberOptionEi_13(QLocale::NumberOptions::enum_type f1, int
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlocale.h:1096
+// /usr/include/qt/QtCore/qlocale.h:1064
 // [4] QFlags<QLocale::NumberOptions::enum_type> operator|(QLocale::NumberOptions::enum_type, QLocale::NumberOptions::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN7QLocale12NumberOptionES0__14(QLocale::NumberOptions::enum_type f1, QLocale::NumberOptions::enum_type f2) {
@@ -760,7 +760,7 @@ void C_ZorN7QLocale12NumberOptionES0__14(QLocale::NumberOptions::enum_type f1, Q
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlocale.h:1096
+// /usr/include/qt/QtCore/qlocale.h:1064
 // [4] QFlags<QLocale::NumberOptions::enum_type> operator|(QLocale::NumberOptions::enum_type, QFlags<QLocale::NumberOptions::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN7QLocale12NumberOptionE6QFlagsIS0_E_15(QLocale::NumberOptions::enum_type f1, QFlags<QLocale::NumberOption> f2) {
@@ -907,7 +907,7 @@ void C_ZorN4QDir6FilterE6QFlagsIS0_E_31(QDir::Filters::enum_type f1, QFlags<QDir
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1783
+// /usr/include/qt/QtCore/qnamespace.h:1775
 // [4] QIncompatibleFlag operator|(Qt::MatchFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt9MatchFlagEi_32(Qt::MatchFlags::enum_type f1, int f2) {
@@ -916,7 +916,7 @@ void C_ZorN2Qt9MatchFlagEi_32(Qt::MatchFlags::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1783
+// /usr/include/qt/QtCore/qnamespace.h:1775
 // [4] QFlags<Qt::MatchFlags::enum_type> operator|(Qt::MatchFlags::enum_type, Qt::MatchFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt9MatchFlagES0__33(Qt::MatchFlags::enum_type f1, Qt::MatchFlags::enum_type f2) {
@@ -925,7 +925,7 @@ void C_ZorN2Qt9MatchFlagES0__33(Qt::MatchFlags::enum_type f1, Qt::MatchFlags::en
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1783
+// /usr/include/qt/QtCore/qnamespace.h:1775
 // [4] QFlags<Qt::MatchFlags::enum_type> operator|(Qt::MatchFlags::enum_type, QFlags<Qt::MatchFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt9MatchFlagE6QFlagsIS0_E_34(Qt::MatchFlags::enum_type f1, QFlags<Qt::MatchFlag> f2) {
@@ -934,7 +934,7 @@ void C_ZorN2Qt9MatchFlagE6QFlagsIS0_E_34(Qt::MatchFlags::enum_type f1, QFlags<Qt
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1782
+// /usr/include/qt/QtCore/qnamespace.h:1774
 // [4] QIncompatibleFlag operator|(Qt::ItemFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt8ItemFlagEi_35(Qt::ItemFlags::enum_type f1, int f2) {
@@ -943,7 +943,7 @@ void C_ZorN2Qt8ItemFlagEi_35(Qt::ItemFlags::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1782
+// /usr/include/qt/QtCore/qnamespace.h:1774
 // [4] QFlags<Qt::ItemFlags::enum_type> operator|(Qt::ItemFlags::enum_type, Qt::ItemFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt8ItemFlagES0__36(Qt::ItemFlags::enum_type f1, Qt::ItemFlags::enum_type f2) {
@@ -952,7 +952,7 @@ void C_ZorN2Qt8ItemFlagES0__36(Qt::ItemFlags::enum_type f1, Qt::ItemFlags::enum_
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1782
+// /usr/include/qt/QtCore/qnamespace.h:1774
 // [4] QFlags<Qt::ItemFlags::enum_type> operator|(Qt::ItemFlags::enum_type, QFlags<Qt::ItemFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt8ItemFlagE6QFlagsIS0_E_37(Qt::ItemFlags::enum_type f1, QFlags<Qt::ItemFlag> f2) {
@@ -961,7 +961,7 @@ void C_ZorN2Qt8ItemFlagE6QFlagsIS0_E_37(Qt::ItemFlags::enum_type f1, QFlags<Qt::
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1775
+// /usr/include/qt/QtCore/qnamespace.h:1767
 // [4] QIncompatibleFlag operator|(Qt::Edges::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt4EdgeEi_38(Qt::Edges::enum_type f1, int f2) {
@@ -970,7 +970,7 @@ void C_ZorN2Qt4EdgeEi_38(Qt::Edges::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1775
+// /usr/include/qt/QtCore/qnamespace.h:1767
 // [4] QFlags<Qt::Edges::enum_type> operator|(Qt::Edges::enum_type, Qt::Edges::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt4EdgeES0__39(Qt::Edges::enum_type f1, Qt::Edges::enum_type f2) {
@@ -979,7 +979,7 @@ void C_ZorN2Qt4EdgeES0__39(Qt::Edges::enum_type f1, Qt::Edges::enum_type f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1775
+// /usr/include/qt/QtCore/qnamespace.h:1767
 // [4] QFlags<Qt::Edges::enum_type> operator|(Qt::Edges::enum_type, QFlags<Qt::Edges::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt4EdgeE6QFlagsIS0_E_40(Qt::Edges::enum_type f1, QFlags<Qt::Edge> f2) {
@@ -988,7 +988,7 @@ void C_ZorN2Qt4EdgeE6QFlagsIS0_E_40(Qt::Edges::enum_type f1, QFlags<Qt::Edge> f2
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1784
+// /usr/include/qt/QtCore/qnamespace.h:1776
 // [4] QIncompatibleFlag operator|(Qt::TextInteractionFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt19TextInteractionFlagEi_41(Qt::TextInteractionFlags::enum_type f1, int f2) {
@@ -997,7 +997,7 @@ void C_ZorN2Qt19TextInteractionFlagEi_41(Qt::TextInteractionFlags::enum_type f1,
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1784
+// /usr/include/qt/QtCore/qnamespace.h:1776
 // [4] QFlags<Qt::TextInteractionFlags::enum_type> operator|(Qt::TextInteractionFlags::enum_type, Qt::TextInteractionFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt19TextInteractionFlagES0__42(Qt::TextInteractionFlags::enum_type f1, Qt::TextInteractionFlags::enum_type f2) {
@@ -1006,7 +1006,7 @@ void C_ZorN2Qt19TextInteractionFlagES0__42(Qt::TextInteractionFlags::enum_type f
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1784
+// /usr/include/qt/QtCore/qnamespace.h:1776
 // [4] QFlags<Qt::TextInteractionFlags::enum_type> operator|(Qt::TextInteractionFlags::enum_type, QFlags<Qt::TextInteractionFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt19TextInteractionFlagE6QFlagsIS0_E_43(Qt::TextInteractionFlags::enum_type f1, QFlags<Qt::TextInteractionFlag> f2) {
@@ -1015,7 +1015,7 @@ void C_ZorN2Qt19TextInteractionFlagE6QFlagsIS0_E_43(Qt::TextInteractionFlags::en
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1776
+// /usr/include/qt/QtCore/qnamespace.h:1768
 // [4] QIncompatibleFlag operator|(Qt::ImageConversionFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt19ImageConversionFlagEi_44(Qt::ImageConversionFlags::enum_type f1, int f2) {
@@ -1024,7 +1024,7 @@ void C_ZorN2Qt19ImageConversionFlagEi_44(Qt::ImageConversionFlags::enum_type f1,
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1776
+// /usr/include/qt/QtCore/qnamespace.h:1768
 // [4] QFlags<Qt::ImageConversionFlags::enum_type> operator|(Qt::ImageConversionFlags::enum_type, Qt::ImageConversionFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt19ImageConversionFlagES0__45(Qt::ImageConversionFlags::enum_type f1, Qt::ImageConversionFlags::enum_type f2) {
@@ -1033,7 +1033,7 @@ void C_ZorN2Qt19ImageConversionFlagES0__45(Qt::ImageConversionFlags::enum_type f
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1776
+// /usr/include/qt/QtCore/qnamespace.h:1768
 // [4] QFlags<Qt::ImageConversionFlags::enum_type> operator|(Qt::ImageConversionFlags::enum_type, QFlags<Qt::ImageConversionFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt19ImageConversionFlagE6QFlagsIS0_E_46(Qt::ImageConversionFlags::enum_type f1, QFlags<Qt::ImageConversionFlag> f2) {
@@ -1042,7 +1042,7 @@ void C_ZorN2Qt19ImageConversionFlagE6QFlagsIS0_E_46(Qt::ImageConversionFlags::en
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1780
+// /usr/include/qt/QtCore/qnamespace.h:1772
 // [4] QIncompatibleFlag operator|(Qt::ScreenOrientations::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt17ScreenOrientationEi_47(Qt::ScreenOrientations::enum_type f1, int f2) {
@@ -1051,7 +1051,7 @@ void C_ZorN2Qt17ScreenOrientationEi_47(Qt::ScreenOrientations::enum_type f1, int
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1780
+// /usr/include/qt/QtCore/qnamespace.h:1772
 // [4] QFlags<Qt::ScreenOrientations::enum_type> operator|(Qt::ScreenOrientations::enum_type, Qt::ScreenOrientations::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt17ScreenOrientationES0__48(Qt::ScreenOrientations::enum_type f1, Qt::ScreenOrientations::enum_type f2) {
@@ -1060,7 +1060,7 @@ void C_ZorN2Qt17ScreenOrientationES0__48(Qt::ScreenOrientations::enum_type f1, Q
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1780
+// /usr/include/qt/QtCore/qnamespace.h:1772
 // [4] QFlags<Qt::ScreenOrientations::enum_type> operator|(Qt::ScreenOrientations::enum_type, QFlags<Qt::ScreenOrientations::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt17ScreenOrientationE6QFlagsIS0_E_49(Qt::ScreenOrientations::enum_type f1, QFlags<Qt::ScreenOrientation> f2) {
@@ -1069,7 +1069,7 @@ void C_ZorN2Qt17ScreenOrientationE6QFlagsIS0_E_49(Qt::ScreenOrientations::enum_t
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1772
+// /usr/include/qt/QtCore/qnamespace.h:1764
 // [4] QIncompatibleFlag operator|(Qt::KeyboardModifiers::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt16KeyboardModifierEi_50(Qt::KeyboardModifiers::enum_type f1, int f2) {
@@ -1078,7 +1078,7 @@ void C_ZorN2Qt16KeyboardModifierEi_50(Qt::KeyboardModifiers::enum_type f1, int f
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1772
+// /usr/include/qt/QtCore/qnamespace.h:1764
 // [4] QFlags<Qt::KeyboardModifiers::enum_type> operator|(Qt::KeyboardModifiers::enum_type, Qt::KeyboardModifiers::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt16KeyboardModifierES0__51(Qt::KeyboardModifiers::enum_type f1, Qt::KeyboardModifiers::enum_type f2) {
@@ -1087,7 +1087,7 @@ void C_ZorN2Qt16KeyboardModifierES0__51(Qt::KeyboardModifiers::enum_type f1, Qt:
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1772
+// /usr/include/qt/QtCore/qnamespace.h:1764
 // [4] QFlags<Qt::KeyboardModifiers::enum_type> operator|(Qt::KeyboardModifiers::enum_type, QFlags<Qt::KeyboardModifiers::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt16KeyboardModifierE6QFlagsIS0_E_52(Qt::KeyboardModifiers::enum_type f1, QFlags<Qt::KeyboardModifier> f2) {
@@ -1096,7 +1096,7 @@ void C_ZorN2Qt16KeyboardModifierE6QFlagsIS0_E_52(Qt::KeyboardModifiers::enum_typ
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1785
+// /usr/include/qt/QtCore/qnamespace.h:1777
 // [4] QIncompatibleFlag operator|(Qt::InputMethodQueries::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt16InputMethodQueryEi_53(Qt::InputMethodQueries::enum_type f1, int f2) {
@@ -1105,7 +1105,7 @@ void C_ZorN2Qt16InputMethodQueryEi_53(Qt::InputMethodQueries::enum_type f1, int 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1785
+// /usr/include/qt/QtCore/qnamespace.h:1777
 // [4] QFlags<Qt::InputMethodQueries::enum_type> operator|(Qt::InputMethodQueries::enum_type, Qt::InputMethodQueries::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt16InputMethodQueryES0__54(Qt::InputMethodQueries::enum_type f1, Qt::InputMethodQueries::enum_type f2) {
@@ -1114,7 +1114,7 @@ void C_ZorN2Qt16InputMethodQueryES0__54(Qt::InputMethodQueries::enum_type f1, Qt
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1785
+// /usr/include/qt/QtCore/qnamespace.h:1777
 // [4] QFlags<Qt::InputMethodQueries::enum_type> operator|(Qt::InputMethodQueries::enum_type, QFlags<Qt::InputMethodQueries::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt16InputMethodQueryE6QFlagsIS0_E_55(Qt::InputMethodQueries::enum_type f1, QFlags<Qt::InputMethodQuery> f2) {
@@ -1123,7 +1123,7 @@ void C_ZorN2Qt16InputMethodQueryE6QFlagsIS0_E_55(Qt::InputMethodQueries::enum_ty
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1787
+// /usr/include/qt/QtCore/qnamespace.h:1779
 // [4] QIncompatibleFlag operator|(Qt::TouchPointStates::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt15TouchPointStateEi_56(Qt::TouchPointStates::enum_type f1, int f2) {
@@ -1132,7 +1132,7 @@ void C_ZorN2Qt15TouchPointStateEi_56(Qt::TouchPointStates::enum_type f1, int f2)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1787
+// /usr/include/qt/QtCore/qnamespace.h:1779
 // [4] QFlags<Qt::TouchPointStates::enum_type> operator|(Qt::TouchPointStates::enum_type, Qt::TouchPointStates::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt15TouchPointStateES0__57(Qt::TouchPointStates::enum_type f1, Qt::TouchPointStates::enum_type f2) {
@@ -1141,7 +1141,7 @@ void C_ZorN2Qt15TouchPointStateES0__57(Qt::TouchPointStates::enum_type f1, Qt::T
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1787
+// /usr/include/qt/QtCore/qnamespace.h:1779
 // [4] QFlags<Qt::TouchPointStates::enum_type> operator|(Qt::TouchPointStates::enum_type, QFlags<Qt::TouchPointStates::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt15TouchPointStateE6QFlagsIS0_E_58(Qt::TouchPointStates::enum_type f1, QFlags<Qt::TouchPointState> f2) {
@@ -1150,7 +1150,7 @@ void C_ZorN2Qt15TouchPointStateE6QFlagsIS0_E_58(Qt::TouchPointStates::enum_type 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1786
+// /usr/include/qt/QtCore/qnamespace.h:1778
 // [4] QIncompatibleFlag operator|(Qt::InputMethodHints::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt15InputMethodHintEi_59(Qt::InputMethodHints::enum_type f1, int f2) {
@@ -1159,7 +1159,7 @@ void C_ZorN2Qt15InputMethodHintEi_59(Qt::InputMethodHints::enum_type f1, int f2)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1786
+// /usr/include/qt/QtCore/qnamespace.h:1778
 // [4] QFlags<Qt::InputMethodHints::enum_type> operator|(Qt::InputMethodHints::enum_type, Qt::InputMethodHints::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt15InputMethodHintES0__60(Qt::InputMethodHints::enum_type f1, Qt::InputMethodHints::enum_type f2) {
@@ -1168,7 +1168,7 @@ void C_ZorN2Qt15InputMethodHintES0__60(Qt::InputMethodHints::enum_type f1, Qt::I
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1786
+// /usr/include/qt/QtCore/qnamespace.h:1778
 // [4] QFlags<Qt::InputMethodHints::enum_type> operator|(Qt::InputMethodHints::enum_type, QFlags<Qt::InputMethodHints::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt15InputMethodHintE6QFlagsIS0_E_61(Qt::InputMethodHints::enum_type f1, QFlags<Qt::InputMethodHint> f2) {
@@ -1177,7 +1177,7 @@ void C_ZorN2Qt15InputMethodHintE6QFlagsIS0_E_61(Qt::InputMethodHints::enum_type 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1788
+// /usr/include/qt/QtCore/qnamespace.h:1780
 // [4] QIncompatibleFlag operator|(Qt::MouseEventFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt14MouseEventFlagEi_62(Qt::MouseEventFlags::enum_type f1, int f2) {
@@ -1186,7 +1186,7 @@ void C_ZorN2Qt14MouseEventFlagEi_62(Qt::MouseEventFlags::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1788
+// /usr/include/qt/QtCore/qnamespace.h:1780
 // [4] QFlags<Qt::MouseEventFlags::enum_type> operator|(Qt::MouseEventFlags::enum_type, Qt::MouseEventFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt14MouseEventFlagES0__63(Qt::MouseEventFlags::enum_type f1, Qt::MouseEventFlags::enum_type f2) {
@@ -1195,7 +1195,7 @@ void C_ZorN2Qt14MouseEventFlagES0__63(Qt::MouseEventFlags::enum_type f1, Qt::Mou
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1788
+// /usr/include/qt/QtCore/qnamespace.h:1780
 // [4] QFlags<Qt::MouseEventFlags::enum_type> operator|(Qt::MouseEventFlags::enum_type, QFlags<Qt::MouseEventFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt14MouseEventFlagE6QFlagsIS0_E_64(Qt::MouseEventFlags::enum_type f1, QFlags<Qt::MouseEventFlag> f2) {
@@ -1204,7 +1204,7 @@ void C_ZorN2Qt14MouseEventFlagE6QFlagsIS0_E_64(Qt::MouseEventFlags::enum_type f1
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1777
+// /usr/include/qt/QtCore/qnamespace.h:1769
 // [4] QIncompatibleFlag operator|(Qt::DockWidgetAreas::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt14DockWidgetAreaEi_65(Qt::DockWidgetAreas::enum_type f1, int f2) {
@@ -1213,7 +1213,7 @@ void C_ZorN2Qt14DockWidgetAreaEi_65(Qt::DockWidgetAreas::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1777
+// /usr/include/qt/QtCore/qnamespace.h:1769
 // [4] QFlags<Qt::DockWidgetAreas::enum_type> operator|(Qt::DockWidgetAreas::enum_type, Qt::DockWidgetAreas::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt14DockWidgetAreaES0__66(Qt::DockWidgetAreas::enum_type f1, Qt::DockWidgetAreas::enum_type f2) {
@@ -1222,7 +1222,7 @@ void C_ZorN2Qt14DockWidgetAreaES0__66(Qt::DockWidgetAreas::enum_type f1, Qt::Doc
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1777
+// /usr/include/qt/QtCore/qnamespace.h:1769
 // [4] QFlags<Qt::DockWidgetAreas::enum_type> operator|(Qt::DockWidgetAreas::enum_type, QFlags<Qt::DockWidgetAreas::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt14DockWidgetAreaE6QFlagsIS0_E_67(Qt::DockWidgetAreas::enum_type f1, QFlags<Qt::DockWidgetArea> f2) {
@@ -1231,7 +1231,7 @@ void C_ZorN2Qt14DockWidgetAreaE6QFlagsIS0_E_67(Qt::DockWidgetAreas::enum_type f1
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1774
+// /usr/include/qt/QtCore/qnamespace.h:1766
 // [4] QIncompatibleFlag operator|(Qt::Alignment::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt13AlignmentFlagEi_68(Qt::Alignment::enum_type f1, int f2) {
@@ -1240,7 +1240,7 @@ void C_ZorN2Qt13AlignmentFlagEi_68(Qt::Alignment::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1774
+// /usr/include/qt/QtCore/qnamespace.h:1766
 // [4] QFlags<Qt::Alignment::enum_type> operator|(Qt::Alignment::enum_type, Qt::Alignment::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt13AlignmentFlagES0__69(Qt::Alignment::enum_type f1, Qt::Alignment::enum_type f2) {
@@ -1249,7 +1249,7 @@ void C_ZorN2Qt13AlignmentFlagES0__69(Qt::Alignment::enum_type f1, Qt::Alignment:
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1774
+// /usr/include/qt/QtCore/qnamespace.h:1766
 // [4] QFlags<Qt::Alignment::enum_type> operator|(Qt::Alignment::enum_type, QFlags<Qt::Alignment::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt13AlignmentFlagE6QFlagsIS0_E_70(Qt::Alignment::enum_type f1, QFlags<Qt::AlignmentFlag> f2) {
@@ -1258,7 +1258,7 @@ void C_ZorN2Qt13AlignmentFlagE6QFlagsIS0_E_70(Qt::Alignment::enum_type f1, QFlag
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1779
+// /usr/include/qt/QtCore/qnamespace.h:1771
 // [4] QIncompatibleFlag operator|(Qt::WindowStates::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11WindowStateEi_71(Qt::WindowStates::enum_type f1, int f2) {
@@ -1267,7 +1267,7 @@ void C_ZorN2Qt11WindowStateEi_71(Qt::WindowStates::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1779
+// /usr/include/qt/QtCore/qnamespace.h:1771
 // [4] QFlags<Qt::WindowStates::enum_type> operator|(Qt::WindowStates::enum_type, Qt::WindowStates::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11WindowStateES0__72(Qt::WindowStates::enum_type f1, Qt::WindowStates::enum_type f2) {
@@ -1276,7 +1276,7 @@ void C_ZorN2Qt11WindowStateES0__72(Qt::WindowStates::enum_type f1, Qt::WindowSta
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1779
+// /usr/include/qt/QtCore/qnamespace.h:1771
 // [4] QFlags<Qt::WindowStates::enum_type> operator|(Qt::WindowStates::enum_type, QFlags<Qt::WindowStates::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11WindowStateE6QFlagsIS0_E_73(Qt::WindowStates::enum_type f1, QFlags<Qt::WindowState> f2) {
@@ -1285,7 +1285,7 @@ void C_ZorN2Qt11WindowStateE6QFlagsIS0_E_73(Qt::WindowStates::enum_type f1, QFla
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1778
+// /usr/include/qt/QtCore/qnamespace.h:1770
 // [4] QIncompatibleFlag operator|(Qt::ToolBarAreas::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11ToolBarAreaEi_74(Qt::ToolBarAreas::enum_type f1, int f2) {
@@ -1294,7 +1294,7 @@ void C_ZorN2Qt11ToolBarAreaEi_74(Qt::ToolBarAreas::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1778
+// /usr/include/qt/QtCore/qnamespace.h:1770
 // [4] QFlags<Qt::ToolBarAreas::enum_type> operator|(Qt::ToolBarAreas::enum_type, Qt::ToolBarAreas::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11ToolBarAreaES0__75(Qt::ToolBarAreas::enum_type f1, Qt::ToolBarAreas::enum_type f2) {
@@ -1303,7 +1303,7 @@ void C_ZorN2Qt11ToolBarAreaES0__75(Qt::ToolBarAreas::enum_type f1, Qt::ToolBarAr
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1778
+// /usr/include/qt/QtCore/qnamespace.h:1770
 // [4] QFlags<Qt::ToolBarAreas::enum_type> operator|(Qt::ToolBarAreas::enum_type, QFlags<Qt::ToolBarAreas::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11ToolBarAreaE6QFlagsIS0_E_76(Qt::ToolBarAreas::enum_type f1, QFlags<Qt::ToolBarArea> f2) {
@@ -1312,7 +1312,7 @@ void C_ZorN2Qt11ToolBarAreaE6QFlagsIS0_E_76(Qt::ToolBarAreas::enum_type f1, QFla
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1771
+// /usr/include/qt/QtCore/qnamespace.h:1763
 // [4] QIncompatibleFlag operator|(Qt::Orientations::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11OrientationEi_77(Qt::Orientations::enum_type f1, int f2) {
@@ -1321,7 +1321,7 @@ void C_ZorN2Qt11OrientationEi_77(Qt::Orientations::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1771
+// /usr/include/qt/QtCore/qnamespace.h:1763
 // [4] QFlags<Qt::Orientations::enum_type> operator|(Qt::Orientations::enum_type, Qt::Orientations::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11OrientationES0__78(Qt::Orientations::enum_type f1, Qt::Orientations::enum_type f2) {
@@ -1330,7 +1330,7 @@ void C_ZorN2Qt11OrientationES0__78(Qt::Orientations::enum_type f1, Qt::Orientati
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1771
+// /usr/include/qt/QtCore/qnamespace.h:1763
 // [4] QFlags<Qt::Orientations::enum_type> operator|(Qt::Orientations::enum_type, QFlags<Qt::Orientations::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11OrientationE6QFlagsIS0_E_79(Qt::Orientations::enum_type f1, QFlags<Qt::Orientation> f2) {
@@ -1339,7 +1339,7 @@ void C_ZorN2Qt11OrientationE6QFlagsIS0_E_79(Qt::Orientations::enum_type f1, QFla
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1770
+// /usr/include/qt/QtCore/qnamespace.h:1762
 // [4] QIncompatibleFlag operator|(Qt::MouseButtons::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11MouseButtonEi_80(Qt::MouseButtons::enum_type f1, int f2) {
@@ -1348,7 +1348,7 @@ void C_ZorN2Qt11MouseButtonEi_80(Qt::MouseButtons::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1770
+// /usr/include/qt/QtCore/qnamespace.h:1762
 // [4] QFlags<Qt::MouseButtons::enum_type> operator|(Qt::MouseButtons::enum_type, Qt::MouseButtons::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11MouseButtonES0__81(Qt::MouseButtons::enum_type f1, Qt::MouseButtons::enum_type f2) {
@@ -1357,7 +1357,7 @@ void C_ZorN2Qt11MouseButtonES0__81(Qt::MouseButtons::enum_type f1, Qt::MouseButt
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1770
+// /usr/include/qt/QtCore/qnamespace.h:1762
 // [4] QFlags<Qt::MouseButtons::enum_type> operator|(Qt::MouseButtons::enum_type, QFlags<Qt::MouseButtons::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11MouseButtonE6QFlagsIS0_E_82(Qt::MouseButtons::enum_type f1, QFlags<Qt::MouseButton> f2) {
@@ -1366,7 +1366,7 @@ void C_ZorN2Qt11MouseButtonE6QFlagsIS0_E_82(Qt::MouseButtons::enum_type f1, QFla
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1790
+// /usr/include/qt/QtCore/qnamespace.h:1782
 // [4] QIncompatibleFlag operator|(Qt::GestureFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11GestureFlagEi_83(Qt::GestureFlags::enum_type f1, int f2) {
@@ -1375,7 +1375,7 @@ void C_ZorN2Qt11GestureFlagEi_83(Qt::GestureFlags::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1790
+// /usr/include/qt/QtCore/qnamespace.h:1782
 // [4] QFlags<Qt::GestureFlags::enum_type> operator|(Qt::GestureFlags::enum_type, Qt::GestureFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11GestureFlagES0__84(Qt::GestureFlags::enum_type f1, Qt::GestureFlags::enum_type f2) {
@@ -1384,7 +1384,7 @@ void C_ZorN2Qt11GestureFlagES0__84(Qt::GestureFlags::enum_type f1, Qt::GestureFl
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1790
+// /usr/include/qt/QtCore/qnamespace.h:1782
 // [4] QFlags<Qt::GestureFlags::enum_type> operator|(Qt::GestureFlags::enum_type, QFlags<Qt::GestureFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt11GestureFlagE6QFlagsIS0_E_85(Qt::GestureFlags::enum_type f1, QFlags<Qt::GestureFlag> f2) {
@@ -1393,7 +1393,7 @@ void C_ZorN2Qt11GestureFlagE6QFlagsIS0_E_85(Qt::GestureFlags::enum_type f1, QFla
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1773
+// /usr/include/qt/QtCore/qnamespace.h:1765
 // [4] QIncompatibleFlag operator|(Qt::WindowFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt10WindowTypeEi_86(Qt::WindowFlags::enum_type f1, int f2) {
@@ -1402,7 +1402,7 @@ void C_ZorN2Qt10WindowTypeEi_86(Qt::WindowFlags::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1773
+// /usr/include/qt/QtCore/qnamespace.h:1765
 // [4] QFlags<Qt::WindowFlags::enum_type> operator|(Qt::WindowFlags::enum_type, Qt::WindowFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt10WindowTypeES0__87(Qt::WindowFlags::enum_type f1, Qt::WindowFlags::enum_type f2) {
@@ -1411,7 +1411,7 @@ void C_ZorN2Qt10WindowTypeES0__87(Qt::WindowFlags::enum_type f1, Qt::WindowFlags
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1773
+// /usr/include/qt/QtCore/qnamespace.h:1765
 // [4] QFlags<Qt::WindowFlags::enum_type> operator|(Qt::WindowFlags::enum_type, QFlags<Qt::WindowFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt10WindowTypeE6QFlagsIS0_E_88(Qt::WindowFlags::enum_type f1, QFlags<Qt::WindowType> f2) {
@@ -1420,7 +1420,7 @@ void C_ZorN2Qt10WindowTypeE6QFlagsIS0_E_88(Qt::WindowFlags::enum_type f1, QFlags
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1781
+// /usr/include/qt/QtCore/qnamespace.h:1773
 // [4] QIncompatibleFlag operator|(Qt::DropActions::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt10DropActionEi_89(Qt::DropActions::enum_type f1, int f2) {
@@ -1429,7 +1429,7 @@ void C_ZorN2Qt10DropActionEi_89(Qt::DropActions::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1781
+// /usr/include/qt/QtCore/qnamespace.h:1773
 // [4] QFlags<Qt::DropActions::enum_type> operator|(Qt::DropActions::enum_type, Qt::DropActions::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt10DropActionES0__90(Qt::DropActions::enum_type f1, Qt::DropActions::enum_type f2) {
@@ -1438,7 +1438,7 @@ void C_ZorN2Qt10DropActionES0__90(Qt::DropActions::enum_type f1, Qt::DropActions
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1781
+// /usr/include/qt/QtCore/qnamespace.h:1773
 // [4] QFlags<Qt::DropActions::enum_type> operator|(Qt::DropActions::enum_type, QFlags<Qt::DropActions::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN2Qt10DropActionE6QFlagsIS0_E_91(Qt::DropActions::enum_type f1, QFlags<Qt::DropAction> f2) {
@@ -1474,7 +1474,7 @@ void C_ZorN19QTextBoundaryFinder14BoundaryReasonE6QFlagsIS0_E_94(QTextBoundaryFi
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:224
+// /usr/include/qt/QtCore/qitemselectionmodel.h:226
 // [4] QIncompatibleFlag operator|(QItemSelectionModel::SelectionFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN19QItemSelectionModel13SelectionFlagEi_95(QItemSelectionModel::SelectionFlags::enum_type f1, int f2) {
@@ -1483,7 +1483,7 @@ void C_ZorN19QItemSelectionModel13SelectionFlagEi_95(QItemSelectionModel::Select
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:224
+// /usr/include/qt/QtCore/qitemselectionmodel.h:226
 // [4] QFlags<QItemSelectionModel::SelectionFlags::enum_type> operator|(QItemSelectionModel::SelectionFlags::enum_type, QItemSelectionModel::SelectionFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN19QItemSelectionModel13SelectionFlagES0__96(QItemSelectionModel::SelectionFlags::enum_type f1, QItemSelectionModel::SelectionFlags::enum_type f2) {
@@ -1492,7 +1492,7 @@ void C_ZorN19QItemSelectionModel13SelectionFlagES0__96(QItemSelectionModel::Sele
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:224
+// /usr/include/qt/QtCore/qitemselectionmodel.h:226
 // [4] QFlags<QItemSelectionModel::SelectionFlags::enum_type> operator|(QItemSelectionModel::SelectionFlags::enum_type, QFlags<QItemSelectionModel::SelectionFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN19QItemSelectionModel13SelectionFlagE6QFlagsIS0_E_97(QItemSelectionModel::SelectionFlags::enum_type f1, QFlags<QItemSelectionModel::SelectionFlag> f2) {
@@ -1501,7 +1501,7 @@ void C_ZorN19QItemSelectionModel13SelectionFlagE6QFlagsIS0_E_97(QItemSelectionMo
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:160
+// /usr/include/qt/QtCore/qregularexpression.h:158
 // [4] QIncompatibleFlag operator|(QRegularExpression::PatternOptions::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN18QRegularExpression13PatternOptionEi_98(QRegularExpression::PatternOptions::enum_type f1, int f2) {
@@ -1510,7 +1510,7 @@ void C_ZorN18QRegularExpression13PatternOptionEi_98(QRegularExpression::PatternO
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:160
+// /usr/include/qt/QtCore/qregularexpression.h:158
 // [4] QFlags<QRegularExpression::PatternOptions::enum_type> operator|(QRegularExpression::PatternOptions::enum_type, QRegularExpression::PatternOptions::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN18QRegularExpression13PatternOptionES0__99(QRegularExpression::PatternOptions::enum_type f1, QRegularExpression::PatternOptions::enum_type f2) {
@@ -1519,7 +1519,7 @@ void C_ZorN18QRegularExpression13PatternOptionES0__99(QRegularExpression::Patter
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:160
+// /usr/include/qt/QtCore/qregularexpression.h:158
 // [4] QFlags<QRegularExpression::PatternOptions::enum_type> operator|(QRegularExpression::PatternOptions::enum_type, QFlags<QRegularExpression::PatternOptions::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN18QRegularExpression13PatternOptionE6QFlagsIS0_E_100(QRegularExpression::PatternOptions::enum_type f1, QFlags<QRegularExpression::PatternOption> f2) {
@@ -1528,7 +1528,7 @@ void C_ZorN18QRegularExpression13PatternOptionE6QFlagsIS0_E_100(QRegularExpressi
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:161
+// /usr/include/qt/QtCore/qregularexpression.h:159
 // [4] QIncompatibleFlag operator|(QRegularExpression::MatchOptions::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN18QRegularExpression11MatchOptionEi_101(QRegularExpression::MatchOptions::enum_type f1, int f2) {
@@ -1537,7 +1537,7 @@ void C_ZorN18QRegularExpression11MatchOptionEi_101(QRegularExpression::MatchOpti
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:161
+// /usr/include/qt/QtCore/qregularexpression.h:159
 // [4] QFlags<QRegularExpression::MatchOptions::enum_type> operator|(QRegularExpression::MatchOptions::enum_type, QRegularExpression::MatchOptions::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN18QRegularExpression11MatchOptionES0__102(QRegularExpression::MatchOptions::enum_type f1, QRegularExpression::MatchOptions::enum_type f2) {
@@ -1546,7 +1546,7 @@ void C_ZorN18QRegularExpression11MatchOptionES0__102(QRegularExpression::MatchOp
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:161
+// /usr/include/qt/QtCore/qregularexpression.h:159
 // [4] QFlags<QRegularExpression::MatchOptions::enum_type> operator|(QRegularExpression::MatchOptions::enum_type, QFlags<QRegularExpression::MatchOptions::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN18QRegularExpression11MatchOptionE6QFlagsIS0_E_103(QRegularExpression::MatchOptions::enum_type f1, QFlags<QRegularExpression::MatchOption> f2) {
@@ -1663,7 +1663,7 @@ void C_ZorN11QTextStream10NumberFlagE6QFlagsIS0_E_115(QTextStream::NumberFlags::
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfiledevice.h:150
+// /usr/include/qt/QtCore/qfiledevice.h:139
 // [4] QIncompatibleFlag operator|(QFileDevice::Permissions::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN11QFileDevice10PermissionEi_116(QFileDevice::Permissions::enum_type f1, int f2) {
@@ -1672,7 +1672,7 @@ void C_ZorN11QFileDevice10PermissionEi_116(QFileDevice::Permissions::enum_type f
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfiledevice.h:150
+// /usr/include/qt/QtCore/qfiledevice.h:139
 // [4] QFlags<QFileDevice::Permissions::enum_type> operator|(QFileDevice::Permissions::enum_type, QFileDevice::Permissions::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN11QFileDevice10PermissionES0__117(QFileDevice::Permissions::enum_type f1, QFileDevice::Permissions::enum_type f2) {
@@ -1681,7 +1681,7 @@ void C_ZorN11QFileDevice10PermissionES0__117(QFileDevice::Permissions::enum_type
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfiledevice.h:150
+// /usr/include/qt/QtCore/qfiledevice.h:139
 // [4] QFlags<QFileDevice::Permissions::enum_type> operator|(QFileDevice::Permissions::enum_type, QFlags<QFileDevice::Permissions::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN11QFileDevice10PermissionE6QFlagsIS0_E_118(QFileDevice::Permissions::enum_type f1, QFlags<QFileDevice::Permission> f2) {
@@ -1690,7 +1690,7 @@ void C_ZorN11QFileDevice10PermissionE6QFlagsIS0_E_118(QFileDevice::Permissions::
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:136
+// /usr/include/qt/QtCore/qtextcodec.h:130
 // [4] QIncompatibleFlag operator|(QTextCodec::ConversionFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QTextCodec14ConversionFlagEi_119(QTextCodec::ConversionFlags::enum_type f1, int f2) {
@@ -1699,7 +1699,7 @@ void C_ZorN10QTextCodec14ConversionFlagEi_119(QTextCodec::ConversionFlags::enum_
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:136
+// /usr/include/qt/QtCore/qtextcodec.h:130
 // [4] QFlags<QTextCodec::ConversionFlags::enum_type> operator|(QTextCodec::ConversionFlags::enum_type, QTextCodec::ConversionFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QTextCodec14ConversionFlagES0__120(QTextCodec::ConversionFlags::enum_type f1, QTextCodec::ConversionFlags::enum_type f2) {
@@ -1708,7 +1708,7 @@ void C_ZorN10QTextCodec14ConversionFlagES0__120(QTextCodec::ConversionFlags::enu
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:136
+// /usr/include/qt/QtCore/qtextcodec.h:130
 // [4] QFlags<QTextCodec::ConversionFlags::enum_type> operator|(QTextCodec::ConversionFlags::enum_type, QFlags<QTextCodec::ConversionFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QTextCodec14ConversionFlagE6QFlagsIS0_E_121(QTextCodec::ConversionFlags::enum_type f1, QFlags<QTextCodec::ConversionFlag> f2) {
@@ -1744,7 +1744,7 @@ void C_ZorN10QEventLoop17ProcessEventsFlagE6QFlagsIS0_E_124(QEventLoop::ProcessE
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:466
+// /usr/include/qt/QtCore/qbytearray.h:459
 // [4] QIncompatibleFlag operator|(QByteArray::Base64Options::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QByteArray12Base64OptionEi_125(QByteArray::Base64Options::enum_type f1, int f2) {
@@ -1753,7 +1753,7 @@ void C_ZorN10QByteArray12Base64OptionEi_125(QByteArray::Base64Options::enum_type
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:466
+// /usr/include/qt/QtCore/qbytearray.h:459
 // [4] QFlags<QByteArray::Base64Options::enum_type> operator|(QByteArray::Base64Options::enum_type, QByteArray::Base64Options::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QByteArray12Base64OptionES0__126(QByteArray::Base64Options::enum_type f1, QByteArray::Base64Options::enum_type f2) {
@@ -1762,7 +1762,7 @@ void C_ZorN10QByteArray12Base64OptionES0__126(QByteArray::Base64Options::enum_ty
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:466
+// /usr/include/qt/QtCore/qbytearray.h:459
 // [4] QFlags<QByteArray::Base64Options::enum_type> operator|(QByteArray::Base64Options::enum_type, QFlags<QByteArray::Base64Options::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QByteArray12Base64OptionE6QFlagsIS0_E_127(QByteArray::Base64Options::enum_type f1, QFlags<QByteArray::Base64Option> f2) {
@@ -1891,7 +1891,7 @@ bool C_ZneRK8QMarginsS1__3(QMargins* m1, QMargins* m2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1615
+// /usr/include/qt/QtCore/qstring.h:1566
 // [1] bool operator!=(const QString &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK7QStringRK10QStringRef_4(QString* lhs, QStringRef* rhs) {
@@ -1899,7 +1899,7 @@ bool C_ZneRK7QStringRK10QStringRef_4(QString* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1187
+// /usr/include/qt/QtCore/qstring.h:1150
 // [1] bool operator!=(const QString &, QString::Null)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK7QStringNS_4NullE_5(QString* s, QString::Null arg1) {
@@ -1907,7 +1907,7 @@ bool C_ZneRK7QStringNS_4NullE_5(QString* s, QString::Null arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1673
+// /usr/include/qt/QtCore/qstring.h:1624
 // [1] bool operator!=(const QString &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK7QString5QChar_6(QString* lhs, QChar* rhs) {
@@ -1963,7 +1963,7 @@ bool C_ZneRK5QRectS1__12(QRect* r1, QRect* r2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:317
+// /usr/include/qt/QtCore/qversionnumber.h:313
 // [1] bool operator!=(const QVersionNumber &, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK14QVersionNumberS1__13(QVersionNumber* lhs, QVersionNumber* rhs) {
@@ -1971,7 +1971,7 @@ bool C_ZneRK14QVersionNumberS1__13(QVersionNumber* lhs, QVersionNumber* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstorageinfo.h:110
+// /usr/include/qt/QtCore/qstorageinfo.h:107
 // [1] bool operator!=(const QStorageInfo &, const QStorageInfo &)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK12QStorageInfoS1__14(QStorageInfo* first, QStorageInfo* second) {
@@ -1987,7 +1987,7 @@ bool C_ZneRK11QMetaMethodS1__15(QMetaMethod* m1, QMetaMethod* m2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1603
+// /usr/include/qt/QtCore/qstring.h:1554
 // [1] bool operator!=(const QStringRef &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK10QStringRefS1__16(QStringRef* s1, QStringRef* s2) {
@@ -1995,7 +1995,7 @@ bool C_ZneRK10QStringRefS1__16(QStringRef* s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1622
+// /usr/include/qt/QtCore/qstring.h:1573
 // [1] bool operator!=(const QStringRef &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK10QStringRefRK7QString_17(QStringRef* lhs, QString* rhs) {
@@ -2003,7 +2003,7 @@ bool C_ZneRK10QStringRefRK7QString_17(QStringRef* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1758
+// /usr/include/qt/QtCore/qstring.h:1671
 // [1] bool operator!=(const QStringRef &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK10QStringRefRK10QByteArray_18(QStringRef* lhs, QByteArray* rhs) {
@@ -2011,7 +2011,7 @@ bool C_ZneRK10QStringRefRK10QByteArray_18(QStringRef* lhs, QByteArray* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1692
+// /usr/include/qt/QtCore/qstring.h:1643
 // [1] bool operator!=(const QStringRef &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK10QStringRef5QChar_19(QStringRef* lhs, QChar* rhs) {
@@ -2019,7 +2019,7 @@ bool C_ZneRK10QStringRef5QChar_19(QStringRef* lhs, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1654
+// /usr/include/qt/QtCore/qstring.h:1605
 // [1] bool operator!=(const QStringRef &, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK10QStringRef13QLatin1String_20(QStringRef* lhs, QLatin1String* rhs) {
@@ -2027,7 +2027,7 @@ bool C_ZneRK10QStringRef13QLatin1String_20(QStringRef* lhs, QLatin1String* rhs) 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:609
+// /usr/include/qt/QtCore/qbytearray.h:600
 // [1] bool operator!=(const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK10QByteArrayS1__21(QByteArray* a1, QByteArray* a2) {
@@ -2035,7 +2035,7 @@ bool C_ZneRK10QByteArrayS1__21(QByteArray* a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1765
+// /usr/include/qt/QtCore/qstring.h:1678
 // [1] bool operator!=(const QByteArray &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK10QByteArrayRK10QStringRef_22(QByteArray* lhs, QStringRef* rhs) {
@@ -2043,7 +2043,7 @@ bool C_ZneRK10QByteArrayRK10QStringRef_22(QByteArray* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:611
+// /usr/include/qt/QtCore/qbytearray.h:602
 // [1] bool operator!=(const QByteArray &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZneRK10QByteArrayPKc_23(QByteArray* a1, const char * a2) {
@@ -2051,7 +2051,7 @@ bool C_ZneRK10QByteArrayPKc_23(QByteArray* a1, const char * a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1236
+// /usr/include/qt/QtCore/qstring.h:1199
 // [1] bool operator!=(const char *, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZnePKcRK7QString_24(const char * s1, QString* s2) {
@@ -2059,7 +2059,7 @@ bool C_ZnePKcRK7QString_24(const char * s1, QString* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1787
+// /usr/include/qt/QtCore/qstring.h:1700
 // [1] bool operator!=(const char *, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZnePKcRK10QStringRef_25(const char * s1, QStringRef* s2) {
@@ -2067,7 +2067,7 @@ bool C_ZnePKcRK10QStringRef_25(const char * s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:613
+// /usr/include/qt/QtCore/qbytearray.h:604
 // [1] bool operator!=(const char *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZnePKcRK10QByteArray_26(const char * a1, QByteArray* a2) {
@@ -2075,7 +2075,7 @@ bool C_ZnePKcRK10QByteArray_26(const char * a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1249
+// /usr/include/qt/QtCore/qstring.h:1212
 // [1] bool operator!=(const char *, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZnePKc13QLatin1String_27(const char * s1, QLatin1String* s2) {
@@ -2083,7 +2083,7 @@ bool C_ZnePKc13QLatin1String_27(const char * s1, QLatin1String* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1183
+// /usr/include/qt/QtCore/qstring.h:1146
 // [1] bool operator!=(QString::Null, QString::Null)
 extern "C" Q_DECL_EXPORT
 bool C_ZneN7QString4NullES0__28(QString::Null arg0, QString::Null arg1) {
@@ -2091,7 +2091,7 @@ bool C_ZneN7QString4NullES0__28(QString::Null arg0, QString::Null arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1185
+// /usr/include/qt/QtCore/qstring.h:1148
 // [1] bool operator!=(QString::Null, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZneN7QString4NullERKS__29(QString::Null arg0, QString* s) {
@@ -2099,7 +2099,7 @@ bool C_ZneN7QString4NullERKS__29(QString::Null arg0, QString* s) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:599
+// /usr/include/qt/QtCore/qchar.h:592
 // [1] bool operator!=(std::nullptr_t, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZneDn5QChar_30(std::nullptr_t arg0, QChar* rhs) {
@@ -2107,7 +2107,7 @@ bool C_ZneDn5QChar_30(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:583
+// /usr/include/qt/QtCore/qchar.h:576
 // [1] bool operator!=(QChar, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_Zne5QCharS__31(QChar* c1, QChar* c2) {
@@ -2115,7 +2115,7 @@ bool C_Zne5QCharS__31(QChar* c1, QChar* c2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1668
+// /usr/include/qt/QtCore/qstring.h:1619
 // [1] bool operator!=(QChar, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_Zne5QCharRK7QString_32(QChar* lhs, QString* rhs) {
@@ -2123,7 +2123,7 @@ bool C_Zne5QCharRK7QString_32(QChar* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1687
+// /usr/include/qt/QtCore/qstring.h:1638
 // [1] bool operator!=(QChar, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_Zne5QCharRK10QStringRef_33(QChar* lhs, QStringRef* rhs) {
@@ -2131,7 +2131,7 @@ bool C_Zne5QCharRK10QStringRef_33(QChar* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:594
+// /usr/include/qt/QtCore/qchar.h:587
 // [1] bool operator!=(QChar, std::nullptr_t)
 extern "C" Q_DECL_EXPORT
 bool C_Zne5QCharDn_34(QChar* lhs, std::nullptr_t arg1) {
@@ -2139,7 +2139,7 @@ bool C_Zne5QCharDn_34(QChar* lhs, std::nullptr_t arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1706
+// /usr/include/qt/QtCore/qstring.h:1657
 // [1] bool operator!=(QChar, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_Zne5QChar13QLatin1String_35(QChar* lhs, QLatin1String* rhs) {
@@ -2147,66 +2147,26 @@ bool C_Zne5QChar13QLatin1String_35(QChar* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1734
-// [1] bool operator!=(QChar, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zne5QChar11QStringView_36(QChar* lhs, QStringView* rhs) {
-  return (bool)operator!=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1192
+// /usr/include/qt/QtCore/qstring.h:1155
 // [1] bool operator!=(QLatin1String, QLatin1String)
 extern "C" Q_DECL_EXPORT
-bool C_Zne13QLatin1StringS__37(QLatin1String* s1, QLatin1String* s2) {
+bool C_Zne13QLatin1StringS__36(QLatin1String* s1, QLatin1String* s2) {
   return (bool)operator!=(*s1, *s2);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1647
+// /usr/include/qt/QtCore/qstring.h:1598
 // [1] bool operator!=(QLatin1String, const QStringRef &)
 extern "C" Q_DECL_EXPORT
-bool C_Zne13QLatin1StringRK10QStringRef_38(QLatin1String* lhs, QStringRef* rhs) {
+bool C_Zne13QLatin1StringRK10QStringRef_37(QLatin1String* lhs, QStringRef* rhs) {
   return (bool)operator!=(*lhs, *rhs);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1711
+// /usr/include/qt/QtCore/qstring.h:1662
 // [1] bool operator!=(QLatin1String, QChar)
 extern "C" Q_DECL_EXPORT
-bool C_Zne13QLatin1String5QChar_39(QLatin1String* lhs, QChar* rhs) {
-  return (bool)operator!=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1749
-// [1] bool operator!=(QLatin1String, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zne13QLatin1String11QStringView_40(QLatin1String* lhs, QStringView* rhs) {
-  return (bool)operator!=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1719
-// [1] bool operator!=(QStringView, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zne11QStringViewS__41(QStringView* lhs, QStringView* rhs) {
-  return (bool)operator!=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1727
-// [1] bool operator!=(QStringView, QChar)
-extern "C" Q_DECL_EXPORT
-bool C_Zne11QStringView5QChar_42(QStringView* lhs, QChar* rhs) {
-  return (bool)operator!=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1742
-// [1] bool operator!=(QStringView, QLatin1String)
-extern "C" Q_DECL_EXPORT
-bool C_Zne11QStringView13QLatin1String_43(QStringView* lhs, QLatin1String* rhs) {
+bool C_Zne13QLatin1String5QChar_38(QLatin1String* lhs, QChar* rhs) {
   return (bool)operator!=(*lhs, *rhs);
 }
 
@@ -2463,7 +2423,7 @@ return new QRect(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1616
+// /usr/include/qt/QtCore/qstring.h:1567
 // [1] bool operator<(const QString &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK7QStringRK10QStringRef(QString* lhs, QStringRef* rhs) {
@@ -2471,7 +2431,7 @@ bool C_ZltRK7QStringRK10QStringRef(QString* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1674
+// /usr/include/qt/QtCore/qstring.h:1625
 // [1] bool operator<(const QString &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK7QString5QChar_1(QString* lhs, QChar* rhs) {
@@ -2487,7 +2447,7 @@ bool C_ZltRK16QCollatorSortKeyS1__2(QCollatorSortKey* lhs, QCollatorSortKey* rhs
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:308
+// /usr/include/qt/QtCore/qversionnumber.h:304
 // [1] bool operator<(const QVersionNumber &, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK14QVersionNumberS1__3(QVersionNumber* lhs, QVersionNumber* rhs) {
@@ -2495,7 +2455,7 @@ bool C_ZltRK14QVersionNumberS1__3(QVersionNumber* lhs, QVersionNumber* rhs) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1605
+// /usr/include/qt/QtCore/qstring.h:1556
 // [1] bool operator<(const QStringRef &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK10QStringRefS1__4(QStringRef* s1, QStringRef* s2) {
@@ -2503,7 +2463,7 @@ bool C_ZltRK10QStringRefS1__4(QStringRef* s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1623
+// /usr/include/qt/QtCore/qstring.h:1574
 // [1] bool operator<(const QStringRef &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK10QStringRefRK7QString_5(QStringRef* lhs, QString* rhs) {
@@ -2511,7 +2471,7 @@ bool C_ZltRK10QStringRefRK7QString_5(QStringRef* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1759
+// /usr/include/qt/QtCore/qstring.h:1672
 // [1] bool operator<(const QStringRef &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK10QStringRefRK10QByteArray_6(QStringRef* lhs, QByteArray* rhs) {
@@ -2519,7 +2479,7 @@ bool C_ZltRK10QStringRefRK10QByteArray_6(QStringRef* lhs, QByteArray* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1693
+// /usr/include/qt/QtCore/qstring.h:1644
 // [1] bool operator<(const QStringRef &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK10QStringRef5QChar_7(QStringRef* lhs, QChar* rhs) {
@@ -2527,7 +2487,7 @@ bool C_ZltRK10QStringRef5QChar_7(QStringRef* lhs, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1655
+// /usr/include/qt/QtCore/qstring.h:1606
 // [1] bool operator<(const QStringRef &, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK10QStringRef13QLatin1String_8(QStringRef* lhs, QLatin1String* rhs) {
@@ -2535,7 +2495,7 @@ bool C_ZltRK10QStringRef13QLatin1String_8(QStringRef* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:615
+// /usr/include/qt/QtCore/qbytearray.h:606
 // [1] bool operator<(const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK10QByteArrayS1__9(QByteArray* a1, QByteArray* a2) {
@@ -2543,7 +2503,7 @@ bool C_ZltRK10QByteArrayS1__9(QByteArray* a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1766
+// /usr/include/qt/QtCore/qstring.h:1679
 // [1] bool operator<(const QByteArray &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK10QByteArrayRK10QStringRef_10(QByteArray* lhs, QStringRef* rhs) {
@@ -2551,7 +2511,7 @@ bool C_ZltRK10QByteArrayRK10QStringRef_10(QByteArray* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:617
+// /usr/include/qt/QtCore/qbytearray.h:608
 // [1] bool operator<(const QByteArray &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZltRK10QByteArrayPKc_11(QByteArray* a1, const char * a2) {
@@ -2559,7 +2519,7 @@ bool C_ZltRK10QByteArrayPKc_11(QByteArray* a1, const char * a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1238
+// /usr/include/qt/QtCore/qstring.h:1201
 // [1] bool operator<(const char *, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltPKcRK7QString_12(const char * s1, QString* s2) {
@@ -2567,7 +2527,7 @@ bool C_ZltPKcRK7QString_12(const char * s1, QString* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1789
+// /usr/include/qt/QtCore/qstring.h:1702
 // [1] bool operator<(const char *, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltPKcRK10QStringRef_13(const char * s1, QStringRef* s2) {
@@ -2575,7 +2535,7 @@ bool C_ZltPKcRK10QStringRef_13(const char * s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:619
+// /usr/include/qt/QtCore/qbytearray.h:610
 // [1] bool operator<(const char *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZltPKcRK10QByteArray_14(const char * a1, QByteArray* a2) {
@@ -2583,7 +2543,7 @@ bool C_ZltPKcRK10QByteArray_14(const char * a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1251
+// /usr/include/qt/QtCore/qstring.h:1214
 // [1] bool operator<(const char *, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZltPKc13QLatin1String_15(const char * s1, QLatin1String* s2) {
@@ -2591,7 +2551,7 @@ bool C_ZltPKc13QLatin1String_15(const char * s1, QLatin1String* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:592
+// /usr/include/qt/QtCore/qchar.h:585
 // [1] bool operator<(std::nullptr_t, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZltDn5QChar_16(std::nullptr_t arg0, QChar* rhs) {
@@ -2599,7 +2559,7 @@ bool C_ZltDn5QChar_16(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:581
+// /usr/include/qt/QtCore/qchar.h:574
 // [1] bool operator<(QChar, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt5QCharS__17(QChar* c1, QChar* c2) {
@@ -2607,7 +2567,7 @@ bool C_Zlt5QCharS__17(QChar* c1, QChar* c2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1663
+// /usr/include/qt/QtCore/qstring.h:1614
 // [1] bool operator<(QChar, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt5QCharRK7QString_18(QChar* lhs, QString* rhs) {
@@ -2615,7 +2575,7 @@ bool C_Zlt5QCharRK7QString_18(QChar* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1682
+// /usr/include/qt/QtCore/qstring.h:1633
 // [1] bool operator<(QChar, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt5QCharRK10QStringRef_19(QChar* lhs, QStringRef* rhs) {
@@ -2623,7 +2583,7 @@ bool C_Zlt5QCharRK10QStringRef_19(QChar* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:590
+// /usr/include/qt/QtCore/qchar.h:583
 // [1] bool operator<(QChar, std::nullptr_t)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt5QCharDn_20(QChar* arg0, std::nullptr_t arg1) {
@@ -2631,7 +2591,7 @@ bool C_Zlt5QCharDn_20(QChar* arg0, std::nullptr_t arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1701
+// /usr/include/qt/QtCore/qstring.h:1652
 // [1] bool operator<(QChar, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt5QChar13QLatin1String_21(QChar* lhs, QLatin1String* rhs) {
@@ -2639,66 +2599,26 @@ bool C_Zlt5QChar13QLatin1String_21(QChar* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1735
-// [1] bool operator<(QChar, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zlt5QChar11QStringView_22(QChar* lhs, QStringView* rhs) {
-  return (bool)operator<(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1194
+// /usr/include/qt/QtCore/qstring.h:1157
 // [1] bool operator<(QLatin1String, QLatin1String)
 extern "C" Q_DECL_EXPORT
-bool C_Zlt13QLatin1StringS__23(QLatin1String* s1, QLatin1String* s2) {
+bool C_Zlt13QLatin1StringS__22(QLatin1String* s1, QLatin1String* s2) {
   return (bool)operator<(*s1, *s2);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1648
+// /usr/include/qt/QtCore/qstring.h:1599
 // [1] bool operator<(QLatin1String, const QStringRef &)
 extern "C" Q_DECL_EXPORT
-bool C_Zlt13QLatin1StringRK10QStringRef_24(QLatin1String* lhs, QStringRef* rhs) {
+bool C_Zlt13QLatin1StringRK10QStringRef_23(QLatin1String* lhs, QStringRef* rhs) {
   return (bool)operator<(*lhs, *rhs);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1712
+// /usr/include/qt/QtCore/qstring.h:1663
 // [1] bool operator<(QLatin1String, QChar)
 extern "C" Q_DECL_EXPORT
-bool C_Zlt13QLatin1String5QChar_25(QLatin1String* lhs, QChar* rhs) {
-  return (bool)operator<(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1750
-// [1] bool operator<(QLatin1String, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zlt13QLatin1String11QStringView_26(QLatin1String* lhs, QStringView* rhs) {
-  return (bool)operator<(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1720
-// [1] bool operator<(QStringView, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zlt11QStringViewS__27(QStringView* lhs, QStringView* rhs) {
-  return (bool)operator<(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1728
-// [1] bool operator<(QStringView, QChar)
-extern "C" Q_DECL_EXPORT
-bool C_Zlt11QStringView5QChar_28(QStringView* lhs, QChar* rhs) {
-  return (bool)operator<(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1743
-// [1] bool operator<(QStringView, QLatin1String)
-extern "C" Q_DECL_EXPORT
-bool C_Zlt11QStringView13QLatin1String_29(QStringView* lhs, QLatin1String* rhs) {
+bool C_Zlt13QLatin1String5QChar_24(QLatin1String* lhs, QChar* rhs) {
   return (bool)operator<(*lhs, *rhs);
 }
 
@@ -2721,7 +2641,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:180
+// /usr/include/qt/QtCore/qtimezone.h:172
 // [32] QDataStream & operator<<(QDataStream &, const QTimeZone &)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStreamRK9QTimeZone_2(QDataStream* ds, QTimeZone* tz) {
@@ -2739,7 +2659,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:400
+// /usr/include/qt/QtCore/qdatetime.h:387
 // [32] QDataStream & operator<<(QDataStream &, const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStreamRK9QDateTime_4(QDataStream* arg0, QDateTime* arg1) {
@@ -2775,7 +2695,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1399
+// /usr/include/qt/QtCore/qstring.h:1362
 // [32] QDataStream & operator<<(QDataStream &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStreamRK7QString_8(QDataStream* arg0, QString* arg1) {
@@ -2802,7 +2722,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlocale.h:1119
+// /usr/include/qt/QtCore/qlocale.h:1087
 // [32] QDataStream & operator<<(QDataStream &, const QLocale &)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStreamRK7QLocale_11(QDataStream* arg0, QLocale* arg1) {
@@ -2847,7 +2767,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/quuid.h:227
+// /usr/include/qt/QtCore/quuid.h:224
 // [32] QDataStream & operator<<(QDataStream &, const QUuid &)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStreamRK5QUuid_16(QDataStream* arg0, QUuid* arg1) {
@@ -2856,7 +2776,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:398
+// /usr/include/qt/QtCore/qdatetime.h:385
 // [32] QDataStream & operator<<(QDataStream &, const QTime &)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStreamRK5QTime_17(QDataStream* arg0, QTime* arg1) {
@@ -2892,7 +2812,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:396
+// /usr/include/qt/QtCore/qdatetime.h:383
 // [32] QDataStream & operator<<(QDataStream &, const QDate &)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStreamRK5QDate_21(QDataStream* arg0, QDate* arg1) {
@@ -2910,7 +2830,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:164
+// /usr/include/qt/QtCore/qregularexpression.h:162
 // [32] QDataStream & operator<<(QDataStream &, const QRegularExpression &)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStreamRK18QRegularExpression_23(QDataStream* out_, QRegularExpression* re) {
@@ -2937,7 +2857,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:678
+// /usr/include/qt/QtCore/qbytearray.h:669
 // [32] QDataStream & operator<<(QDataStream &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStreamRK10QByteArray_26(QDataStream* arg0, QByteArray* arg1) {
@@ -2955,7 +2875,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:605
+// /usr/include/qt/QtCore/qchar.h:598
 // [32] QDataStream & operator<<(QDataStream &, QChar)
 extern "C" Q_DECL_EXPORT
 void* C_ZlsR11QDataStream5QChar_28(QDataStream* arg0, QChar* arg1) {
@@ -2964,7 +2884,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:185
+// /usr/include/qt/QtCore/qtimezone.h:177
 // [8] QDebug operator<<(QDebug, const QTimeZone &)
 extern "C" Q_DECL_EXPORT
 void* C_Zls6QDebugRK9QTimeZone_29(QDebug* dbg, QTimeZone* tz) {
@@ -2973,7 +2893,7 @@ return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:133
+// /usr/include/qt/QtCore/qmimetype.h:117
 // [8] QDebug operator<<(QDebug, const QMimeType &)
 extern "C" Q_DECL_EXPORT
 void* C_Zls6QDebugRK9QMimeType_30(QDebug* debug, QMimeType* mime) {
@@ -2991,19 +2911,10 @@ return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfileinfo.h:162
-// [8] QDebug operator<<(QDebug, const QFileInfo &)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK9QFileInfo_32(QDebug* arg0, QFileInfo* arg1) {
-  auto rv = operator<<(*arg0, *arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:407
+// /usr/include/qt/QtCore/qdatetime.h:394
 // [8] QDebug operator<<(QDebug, const QDateTime &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK9QDateTime_33(QDebug* arg0, QDateTime* arg1) {
+void* C_Zls6QDebugRK9QDateTime_32(QDebug* arg0, QDateTime* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3012,7 +2923,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qbitarray.h:169
 // [8] QDebug operator<<(QDebug, const QBitArray &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK9QBitArray_34(QDebug* arg0, QBitArray* arg1) {
+void* C_Zls6QDebugRK9QBitArray_33(QDebug* arg0, QBitArray* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3021,7 +2932,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qvariant.h:858
 // [8] QDebug operator<<(QDebug, const QVariant &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK8QVariant_35(QDebug* arg0, QVariant* arg1) {
+void* C_Zls6QDebugRK8QVariant_34(QDebug* arg0, QVariant* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3030,7 +2941,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qmargins.h:278
 // [8] QDebug operator<<(QDebug, const QMargins &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK8QMargins_36(QDebug* arg0, QMargins* arg1) {
+void* C_Zls6QDebugRK8QMargins_35(QDebug* arg0, QMargins* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3039,7 +2950,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qregexp.h:129
 // [8] QDebug operator<<(QDebug, const QRegExp &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK7QRegExp_37(QDebug* arg0, QRegExp* arg1) {
+void* C_Zls6QDebugRK7QRegExp_36(QDebug* arg0, QRegExp* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3048,16 +2959,16 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qpoint.h:406
 // [8] QDebug operator<<(QDebug, const QPointF &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK7QPointF_38(QDebug* d, QPointF* p) {
+void* C_Zls6QDebugRK7QPointF_37(QDebug* d, QPointF* p) {
   auto rv = operator<<(*d, *p);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlocale.h:1124
+// /usr/include/qt/QtCore/qlocale.h:1092
 // [8] QDebug operator<<(QDebug, const QLocale &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK7QLocale_39(QDebug* arg0, QLocale* arg1) {
+void* C_Zls6QDebugRK7QLocale_38(QDebug* arg0, QLocale* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3066,7 +2977,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qsize.h:386
 // [8] QDebug operator<<(QDebug, const QSizeF &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK6QSizeF_40(QDebug* arg0, QSizeF* arg1) {
+void* C_Zls6QDebugRK6QSizeF_39(QDebug* arg0, QSizeF* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3075,7 +2986,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qrect.h:919
 // [8] QDebug operator<<(QDebug, const QRectF &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK6QRectF_41(QDebug* arg0, QRectF* arg1) {
+void* C_Zls6QDebugRK6QRectF_40(QDebug* arg0, QRectF* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3084,7 +2995,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qpoint.h:212
 // [8] QDebug operator<<(QDebug, const QPoint &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK6QPoint_42(QDebug* arg0, QPoint* arg1) {
+void* C_Zls6QDebugRK6QPoint_41(QDebug* arg0, QPoint* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3093,25 +3004,25 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qline.h:424
 // [8] QDebug operator<<(QDebug, const QLineF &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK6QLineF_43(QDebug* d, QLineF* p) {
+void* C_Zls6QDebugRK6QLineF_42(QDebug* d, QLineF* p) {
   auto rv = operator<<(*d, *p);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/quuid.h:232
+// /usr/include/qt/QtCore/quuid.h:229
 // [8] QDebug operator<<(QDebug, const QUuid &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK5QUuid_44(QDebug* arg0, QUuid* arg1) {
+void* C_Zls6QDebugRK5QUuid_43(QDebug* arg0, QUuid* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:406
+// /usr/include/qt/QtCore/qdatetime.h:393
 // [8] QDebug operator<<(QDebug, const QTime &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK5QTime_45(QDebug* arg0, QTime* arg1) {
+void* C_Zls6QDebugRK5QTime_44(QDebug* arg0, QTime* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3120,7 +3031,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qsize.h:211
 // [8] QDebug operator<<(QDebug, const QSize &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK5QSize_46(QDebug* arg0, QSize* arg1) {
+void* C_Zls6QDebugRK5QSize_45(QDebug* arg0, QSize* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3129,7 +3040,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qrect.h:507
 // [8] QDebug operator<<(QDebug, const QRect &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK5QRect_47(QDebug* arg0, QRect* arg1) {
+void* C_Zls6QDebugRK5QRect_46(QDebug* arg0, QRect* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3138,16 +3049,16 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qline.h:203
 // [8] QDebug operator<<(QDebug, const QLine &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK5QLine_48(QDebug* d, QLine* p) {
+void* C_Zls6QDebugRK5QLine_47(QDebug* d, QLine* p) {
   auto rv = operator<<(*d, *p);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:405
+// /usr/include/qt/QtCore/qdatetime.h:392
 // [8] QDebug operator<<(QDebug, const QDate &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK5QDate_49(QDebug* arg0, QDate* arg1) {
+void* C_Zls6QDebugRK5QDate_48(QDebug* arg0, QDate* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3156,7 +3067,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qurl.h:415
 // [8] QDebug operator<<(QDebug, const QUrl &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK4QUrl_50(QDebug* arg0, QUrl* arg1) {
+void* C_Zls6QDebugRK4QUrl_49(QDebug* arg0, QUrl* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
@@ -3165,26 +3076,17 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qdir.h:240
 // [8] QDebug operator<<(QDebug, const QDir &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK4QDir_51(QDebug* debug, QDir* dir) {
+void* C_Zls6QDebugRK4QDir_50(QDebug* debug, QDir* dir) {
   auto rv = operator<<(*debug, *dir);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:241
+// /usr/include/qt/QtCore/qregularexpression.h:226
 // [8] QDebug operator<<(QDebug, const QRegularExpressionMatch &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK23QRegularExpressionMatch_52(QDebug* debug, QRegularExpressionMatch* match_) {
+void* C_Zls6QDebugRK23QRegularExpressionMatch_51(QDebug* debug, QRegularExpressionMatch* match_) {
   auto rv = operator<<(*debug, *match_);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:152
-// [8] QDebug operator<<(QDebug, const QOperatingSystemVersion &)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK23QOperatingSystemVersion_53(QDebug* debug, QOperatingSystemVersion* ov) {
-  auto rv = operator<<(*debug, *ov);
 return new QDebug(rv);
 }
 
@@ -3192,53 +3094,44 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qabstractitemmodel.h:154
 // [8] QDebug operator<<(QDebug, const QPersistentModelIndex &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK21QPersistentModelIndex_54(QDebug* arg0, QPersistentModelIndex* arg1) {
+void* C_Zls6QDebugRK21QPersistentModelIndex_52(QDebug* arg0, QPersistentModelIndex* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:266
+// /usr/include/qt/QtCore/qitemselectionmodel.h:268
 // [8] QDebug operator<<(QDebug, const QItemSelectionRange &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK19QItemSelectionRange_55(QDebug* arg0, QItemSelectionRange* arg1) {
+void* C_Zls6QDebugRK19QItemSelectionRange_53(QDebug* arg0, QItemSelectionRange* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:169
+// /usr/include/qt/QtCore/qregularexpression.h:167
 // [8] QDebug operator<<(QDebug, const QRegularExpression &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK18QRegularExpression_56(QDebug* debug, QRegularExpression* re) {
+void* C_Zls6QDebugRK18QRegularExpression_54(QDebug* debug, QRegularExpression* re) {
   auto rv = operator<<(*debug, *re);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:299
+// /usr/include/qt/QtCore/qversionnumber.h:295
 // [8] QDebug operator<<(QDebug, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK14QVersionNumber_57(QDebug* arg0, QVersionNumber* version) {
+void* C_Zls6QDebugRK14QVersionNumber_55(QDebug* arg0, QVersionNumber* version) {
   auto rv = operator<<(*arg0, *version);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:174
+// /usr/include/qt/QtCore/qjsondocument.h:151
 // [8] QDebug operator<<(QDebug, const QJsonDocument &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK13QJsonDocument_58(QDebug* arg0, QJsonDocument* arg1) {
+void* C_Zls6QDebugRK13QJsonDocument_56(QDebug* arg0, QJsonDocument* arg1) {
   auto rv = operator<<(*arg0, *arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstorageinfo.h:121
-// [8] QDebug operator<<(QDebug, const QStorageInfo &)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK12QStorageInfo_59(QDebug* debug, QStorageInfo* arg1) {
-  auto rv = operator<<(*debug, *arg1);
 return new QDebug(rv);
 }
 
@@ -3246,7 +3139,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qeasingcurve.h:131
 // [8] QDebug operator<<(QDebug, const QEasingCurve &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK12QEasingCurve_60(QDebug* debug, QEasingCurve* item) {
+void* C_Zls6QDebugRK12QEasingCurve_57(QDebug* debug, QEasingCurve* item) {
   auto rv = operator<<(*debug, *item);
 return new QDebug(rv);
 }
@@ -3255,43 +3148,43 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qabstractitemmodel.h:96
 // [8] QDebug operator<<(QDebug, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK11QModelIndex_61(QDebug* arg0, QModelIndex* arg1) {
+void* C_Zls6QDebugRK11QModelIndex_58(QDebug* arg0, QModelIndex* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonobject.h:266
+// /usr/include/qt/QtCore/qjsonobject.h:245
 // [8] QDebug operator<<(QDebug, const QJsonObject &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK11QJsonObject_62(QDebug* arg0, QJsonObject* arg1) {
+void* C_Zls6QDebugRK11QJsonObject_59(QDebug* arg0, QJsonObject* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:250
+// /usr/include/qt/QtCore/qjsonvalue.h:221
 // [8] QDebug operator<<(QDebug, const QJsonValue &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK10QJsonValue_63(QDebug* arg0, QJsonValue* arg1) {
+void* C_Zls6QDebugRK10QJsonValue_60(QDebug* arg0, QJsonValue* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonarray.h:269
+// /usr/include/qt/QtCore/qjsonarray.h:247
 // [8] QDebug operator<<(QDebug, const QJsonArray &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK10QJsonArray_64(QDebug* arg0, QJsonArray* arg1) {
+void* C_Zls6QDebugRK10QJsonArray_61(QDebug* arg0, QJsonArray* arg1) {
   auto rv = operator<<(*arg0, *arg1);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:542
+// /usr/include/qt/QtCore/qobject.h:541
 // [8] QDebug operator<<(QDebug, const QObject *)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugPK7QObject_65(QDebug* arg0, const QObject * arg1) {
+void* C_Zls6QDebugPK7QObject_62(QDebug* arg0, const QObject * arg1) {
   auto rv = operator<<(*arg0, arg1);
 return new QDebug(rv);
 }
@@ -3300,16 +3193,16 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qvariant.h:859
 // [8] QDebug operator<<(QDebug, const QVariant::Type)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN8QVariant4TypeE_66(QDebug* arg0, const QVariant::Type arg1) {
+void* C_Zls6QDebugN8QVariant4TypeE_63(QDebug* arg0, const QVariant::Type arg1) {
   auto rv = operator<<(*arg0, arg1);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qiodevice.h:187
+// /usr/include/qt/QtCore/qiodevice.h:186
 // [8] QDebug operator<<(QDebug, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebug6QFlagsIN9QIODevice12OpenModeFlagEE_67(QDebug* debug, QFlags<QIODevice::OpenModeFlag> modes) {
+void* C_Zls6QDebug6QFlagsIN9QIODevice12OpenModeFlagEE_64(QDebug* debug, QFlags<QIODevice::OpenModeFlag> modes) {
   auto rv = operator<<(*debug, modes);
 return new QDebug(rv);
 }
@@ -3318,22 +3211,22 @@ return new QDebug(rv);
 // /usr/include/qt/QtCore/qdir.h:239
 // [8] QDebug operator<<(QDebug, QDir::Filters)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebug6QFlagsIN4QDir6FilterEE_68(QDebug* debug, QFlags<QDir::Filter> filters) {
+void* C_Zls6QDebug6QFlagsIN4QDir6FilterEE_65(QDebug* debug, QFlags<QDir::Filter> filters) {
   auto rv = operator<<(*debug, filters);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:170
+// /usr/include/qt/QtCore/qregularexpression.h:168
 // [8] QDebug operator<<(QDebug, QRegularExpression::PatternOptions)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebug6QFlagsIN18QRegularExpression13PatternOptionEE_69(QDebug* debug, QFlags<QRegularExpression::PatternOption> patternOptions) {
+void* C_Zls6QDebug6QFlagsIN18QRegularExpression13PatternOptionEE_66(QDebug* debug, QFlags<QRegularExpression::PatternOption> patternOptions) {
   auto rv = operator<<(*debug, patternOptions);
 return new QDebug(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1618
+// /usr/include/qt/QtCore/qstring.h:1569
 // [1] bool operator<=(const QString &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK7QStringRK10QStringRef(QString* lhs, QStringRef* rhs) {
@@ -3341,7 +3234,7 @@ bool C_ZleRK7QStringRK10QStringRef(QString* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1676
+// /usr/include/qt/QtCore/qstring.h:1627
 // [1] bool operator<=(const QString &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK7QString5QChar_1(QString* lhs, QChar* rhs) {
@@ -3349,7 +3242,7 @@ bool C_ZleRK7QString5QChar_1(QString* lhs, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/quuid.h:237
+// /usr/include/qt/QtCore/quuid.h:234
 // [1] bool operator<=(const QUuid &, const QUuid &)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK5QUuidS1__2(QUuid* lhs, QUuid* rhs) {
@@ -3357,7 +3250,7 @@ bool C_ZleRK5QUuidS1__2(QUuid* lhs, QUuid* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:311
+// /usr/include/qt/QtCore/qversionnumber.h:307
 // [1] bool operator<=(const QVersionNumber &, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK14QVersionNumberS1__3(QVersionNumber* lhs, QVersionNumber* rhs) {
@@ -3365,7 +3258,7 @@ bool C_ZleRK14QVersionNumberS1__3(QVersionNumber* lhs, QVersionNumber* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1608
+// /usr/include/qt/QtCore/qstring.h:1559
 // [1] bool operator<=(const QStringRef &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK10QStringRefS1__4(QStringRef* s1, QStringRef* s2) {
@@ -3373,7 +3266,7 @@ bool C_ZleRK10QStringRefS1__4(QStringRef* s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1625
+// /usr/include/qt/QtCore/qstring.h:1576
 // [1] bool operator<=(const QStringRef &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK10QStringRefRK7QString_5(QStringRef* lhs, QString* rhs) {
@@ -3381,7 +3274,7 @@ bool C_ZleRK10QStringRefRK7QString_5(QStringRef* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1761
+// /usr/include/qt/QtCore/qstring.h:1674
 // [1] bool operator<=(const QStringRef &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK10QStringRefRK10QByteArray_6(QStringRef* lhs, QByteArray* rhs) {
@@ -3389,7 +3282,7 @@ bool C_ZleRK10QStringRefRK10QByteArray_6(QStringRef* lhs, QByteArray* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1695
+// /usr/include/qt/QtCore/qstring.h:1646
 // [1] bool operator<=(const QStringRef &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK10QStringRef5QChar_7(QStringRef* lhs, QChar* rhs) {
@@ -3397,7 +3290,7 @@ bool C_ZleRK10QStringRef5QChar_7(QStringRef* lhs, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1657
+// /usr/include/qt/QtCore/qstring.h:1608
 // [1] bool operator<=(const QStringRef &, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK10QStringRef13QLatin1String_8(QStringRef* lhs, QLatin1String* rhs) {
@@ -3405,7 +3298,7 @@ bool C_ZleRK10QStringRef13QLatin1String_8(QStringRef* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:621
+// /usr/include/qt/QtCore/qbytearray.h:612
 // [1] bool operator<=(const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK10QByteArrayS1__9(QByteArray* a1, QByteArray* a2) {
@@ -3413,7 +3306,7 @@ bool C_ZleRK10QByteArrayS1__9(QByteArray* a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1768
+// /usr/include/qt/QtCore/qstring.h:1681
 // [1] bool operator<=(const QByteArray &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK10QByteArrayRK10QStringRef_10(QByteArray* lhs, QStringRef* rhs) {
@@ -3421,7 +3314,7 @@ bool C_ZleRK10QByteArrayRK10QStringRef_10(QByteArray* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:623
+// /usr/include/qt/QtCore/qbytearray.h:614
 // [1] bool operator<=(const QByteArray &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZleRK10QByteArrayPKc_11(QByteArray* a1, const char * a2) {
@@ -3429,7 +3322,7 @@ bool C_ZleRK10QByteArrayPKc_11(QByteArray* a1, const char * a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1242
+// /usr/include/qt/QtCore/qstring.h:1205
 // [1] bool operator<=(const char *, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZlePKcRK7QString_12(const char * s1, QString* s2) {
@@ -3437,7 +3330,7 @@ bool C_ZlePKcRK7QString_12(const char * s1, QString* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1791
+// /usr/include/qt/QtCore/qstring.h:1704
 // [1] bool operator<=(const char *, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZlePKcRK10QStringRef_13(const char * s1, QStringRef* s2) {
@@ -3445,7 +3338,7 @@ bool C_ZlePKcRK10QStringRef_13(const char * s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:625
+// /usr/include/qt/QtCore/qbytearray.h:616
 // [1] bool operator<=(const char *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZlePKcRK10QByteArray_14(const char * a1, QByteArray* a2) {
@@ -3453,7 +3346,7 @@ bool C_ZlePKcRK10QByteArray_14(const char * a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1255
+// /usr/include/qt/QtCore/qstring.h:1218
 // [1] bool operator<=(const char *, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZlePKc13QLatin1String_15(const char * s1, QLatin1String* s2) {
@@ -3461,7 +3354,7 @@ bool C_ZlePKc13QLatin1String_15(const char * s1, QLatin1String* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:602
+// /usr/include/qt/QtCore/qchar.h:595
 // [1] bool operator<=(std::nullptr_t, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZleDn5QChar_16(std::nullptr_t arg0, QChar* rhs) {
@@ -3469,7 +3362,7 @@ bool C_ZleDn5QChar_16(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:586
+// /usr/include/qt/QtCore/qchar.h:579
 // [1] bool operator<=(QChar, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_Zle5QCharS__17(QChar* c1, QChar* c2) {
@@ -3477,7 +3370,7 @@ bool C_Zle5QCharS__17(QChar* c1, QChar* c2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1669
+// /usr/include/qt/QtCore/qstring.h:1620
 // [1] bool operator<=(QChar, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_Zle5QCharRK7QString_18(QChar* lhs, QString* rhs) {
@@ -3485,7 +3378,7 @@ bool C_Zle5QCharRK7QString_18(QChar* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1688
+// /usr/include/qt/QtCore/qstring.h:1639
 // [1] bool operator<=(QChar, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_Zle5QCharRK10QStringRef_19(QChar* lhs, QStringRef* rhs) {
@@ -3493,7 +3386,7 @@ bool C_Zle5QCharRK10QStringRef_19(QChar* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:597
+// /usr/include/qt/QtCore/qchar.h:590
 // [1] bool operator<=(QChar, std::nullptr_t)
 extern "C" Q_DECL_EXPORT
 bool C_Zle5QCharDn_20(QChar* lhs, std::nullptr_t arg1) {
@@ -3501,7 +3394,7 @@ bool C_Zle5QCharDn_20(QChar* lhs, std::nullptr_t arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1707
+// /usr/include/qt/QtCore/qstring.h:1658
 // [1] bool operator<=(QChar, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_Zle5QChar13QLatin1String_21(QChar* lhs, QLatin1String* rhs) {
@@ -3509,71 +3402,31 @@ bool C_Zle5QChar13QLatin1String_21(QChar* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1736
-// [1] bool operator<=(QChar, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zle5QChar11QStringView_22(QChar* lhs, QStringView* rhs) {
-  return (bool)operator<=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1202
+// /usr/include/qt/QtCore/qstring.h:1165
 // [1] bool operator<=(QLatin1String, QLatin1String)
 extern "C" Q_DECL_EXPORT
-bool C_Zle13QLatin1StringS__23(QLatin1String* s1, QLatin1String* s2) {
+bool C_Zle13QLatin1StringS__22(QLatin1String* s1, QLatin1String* s2) {
   return (bool)operator<=(*s1, *s2);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1650
+// /usr/include/qt/QtCore/qstring.h:1601
 // [1] bool operator<=(QLatin1String, const QStringRef &)
 extern "C" Q_DECL_EXPORT
-bool C_Zle13QLatin1StringRK10QStringRef_24(QLatin1String* lhs, QStringRef* rhs) {
+bool C_Zle13QLatin1StringRK10QStringRef_23(QLatin1String* lhs, QStringRef* rhs) {
   return (bool)operator<=(*lhs, *rhs);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1714
+// /usr/include/qt/QtCore/qstring.h:1665
 // [1] bool operator<=(QLatin1String, QChar)
 extern "C" Q_DECL_EXPORT
-bool C_Zle13QLatin1String5QChar_25(QLatin1String* lhs, QChar* rhs) {
+bool C_Zle13QLatin1String5QChar_24(QLatin1String* lhs, QChar* rhs) {
   return (bool)operator<=(*lhs, *rhs);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1751
-// [1] bool operator<=(QLatin1String, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zle13QLatin1String11QStringView_26(QLatin1String* lhs, QStringView* rhs) {
-  return (bool)operator<=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1721
-// [1] bool operator<=(QStringView, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zle11QStringViewS__27(QStringView* lhs, QStringView* rhs) {
-  return (bool)operator<=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1729
-// [1] bool operator<=(QStringView, QChar)
-extern "C" Q_DECL_EXPORT
-bool C_Zle11QStringView5QChar_28(QStringView* lhs, QChar* rhs) {
-  return (bool)operator<=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1744
-// [1] bool operator<=(QStringView, QLatin1String)
-extern "C" Q_DECL_EXPORT
-bool C_Zle11QStringView13QLatin1String_29(QStringView* lhs, QLatin1String* rhs) {
-  return (bool)operator<=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1617
+// /usr/include/qt/QtCore/qstring.h:1568
 // [1] bool operator>(const QString &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK7QStringRK10QStringRef(QString* lhs, QStringRef* rhs) {
@@ -3581,7 +3434,7 @@ bool C_ZgtRK7QStringRK10QStringRef(QString* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1675
+// /usr/include/qt/QtCore/qstring.h:1626
 // [1] bool operator>(const QString &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK7QString5QChar_1(QString* lhs, QChar* rhs) {
@@ -3589,7 +3442,7 @@ bool C_ZgtRK7QString5QChar_1(QString* lhs, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:302
+// /usr/include/qt/QtCore/qversionnumber.h:298
 // [1] bool operator>(const QVersionNumber &, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK14QVersionNumberS1__2(QVersionNumber* lhs, QVersionNumber* rhs) {
@@ -3597,7 +3450,7 @@ bool C_ZgtRK14QVersionNumberS1__2(QVersionNumber* lhs, QVersionNumber* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1606
+// /usr/include/qt/QtCore/qstring.h:1557
 // [1] bool operator>(const QStringRef &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK10QStringRefS1__3(QStringRef* s1, QStringRef* s2) {
@@ -3605,7 +3458,7 @@ bool C_ZgtRK10QStringRefS1__3(QStringRef* s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1624
+// /usr/include/qt/QtCore/qstring.h:1575
 // [1] bool operator>(const QStringRef &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK10QStringRefRK7QString_4(QStringRef* lhs, QString* rhs) {
@@ -3613,7 +3466,7 @@ bool C_ZgtRK10QStringRefRK7QString_4(QStringRef* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1760
+// /usr/include/qt/QtCore/qstring.h:1673
 // [1] bool operator>(const QStringRef &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK10QStringRefRK10QByteArray_5(QStringRef* lhs, QByteArray* rhs) {
@@ -3621,7 +3474,7 @@ bool C_ZgtRK10QStringRefRK10QByteArray_5(QStringRef* lhs, QByteArray* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1694
+// /usr/include/qt/QtCore/qstring.h:1645
 // [1] bool operator>(const QStringRef &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK10QStringRef5QChar_6(QStringRef* lhs, QChar* rhs) {
@@ -3629,7 +3482,7 @@ bool C_ZgtRK10QStringRef5QChar_6(QStringRef* lhs, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1656
+// /usr/include/qt/QtCore/qstring.h:1607
 // [1] bool operator>(const QStringRef &, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK10QStringRef13QLatin1String_7(QStringRef* lhs, QLatin1String* rhs) {
@@ -3637,7 +3490,7 @@ bool C_ZgtRK10QStringRef13QLatin1String_7(QStringRef* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:627
+// /usr/include/qt/QtCore/qbytearray.h:618
 // [1] bool operator>(const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK10QByteArrayS1__8(QByteArray* a1, QByteArray* a2) {
@@ -3645,7 +3498,7 @@ bool C_ZgtRK10QByteArrayS1__8(QByteArray* a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1767
+// /usr/include/qt/QtCore/qstring.h:1680
 // [1] bool operator>(const QByteArray &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK10QByteArrayRK10QStringRef_9(QByteArray* lhs, QStringRef* rhs) {
@@ -3653,7 +3506,7 @@ bool C_ZgtRK10QByteArrayRK10QStringRef_9(QByteArray* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:629
+// /usr/include/qt/QtCore/qbytearray.h:620
 // [1] bool operator>(const QByteArray &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtRK10QByteArrayPKc_10(QByteArray* a1, const char * a2) {
@@ -3661,7 +3514,7 @@ bool C_ZgtRK10QByteArrayPKc_10(QByteArray* a1, const char * a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1240
+// /usr/include/qt/QtCore/qstring.h:1203
 // [1] bool operator>(const char *, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtPKcRK7QString_11(const char * s1, QString* s2) {
@@ -3669,7 +3522,7 @@ bool C_ZgtPKcRK7QString_11(const char * s1, QString* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1793
+// /usr/include/qt/QtCore/qstring.h:1706
 // [1] bool operator>(const char *, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtPKcRK10QStringRef_12(const char * s1, QStringRef* s2) {
@@ -3677,7 +3530,7 @@ bool C_ZgtPKcRK10QStringRef_12(const char * s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:631
+// /usr/include/qt/QtCore/qbytearray.h:622
 // [1] bool operator>(const char *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtPKcRK10QByteArray_13(const char * a1, QByteArray* a2) {
@@ -3685,7 +3538,7 @@ bool C_ZgtPKcRK10QByteArray_13(const char * a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1253
+// /usr/include/qt/QtCore/qstring.h:1216
 // [1] bool operator>(const char *, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtPKc13QLatin1String_14(const char * s1, QLatin1String* s2) {
@@ -3693,7 +3546,7 @@ bool C_ZgtPKc13QLatin1String_14(const char * s1, QLatin1String* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:601
+// /usr/include/qt/QtCore/qchar.h:594
 // [1] bool operator>(std::nullptr_t, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZgtDn5QChar_15(std::nullptr_t arg0, QChar* rhs) {
@@ -3701,7 +3554,7 @@ bool C_ZgtDn5QChar_15(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:585
+// /usr/include/qt/QtCore/qchar.h:578
 // [1] bool operator>(QChar, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt5QCharS__16(QChar* c1, QChar* c2) {
@@ -3709,7 +3562,7 @@ bool C_Zgt5QCharS__16(QChar* c1, QChar* c2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1665
+// /usr/include/qt/QtCore/qstring.h:1616
 // [1] bool operator>(QChar, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt5QCharRK7QString_17(QChar* lhs, QString* rhs) {
@@ -3717,7 +3570,7 @@ bool C_Zgt5QCharRK7QString_17(QChar* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1684
+// /usr/include/qt/QtCore/qstring.h:1635
 // [1] bool operator>(QChar, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt5QCharRK10QStringRef_18(QChar* lhs, QStringRef* rhs) {
@@ -3725,7 +3578,7 @@ bool C_Zgt5QCharRK10QStringRef_18(QChar* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:596
+// /usr/include/qt/QtCore/qchar.h:589
 // [1] bool operator>(QChar, std::nullptr_t)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt5QCharDn_19(QChar* lhs, std::nullptr_t arg1) {
@@ -3733,7 +3586,7 @@ bool C_Zgt5QCharDn_19(QChar* lhs, std::nullptr_t arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1703
+// /usr/include/qt/QtCore/qstring.h:1654
 // [1] bool operator>(QChar, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt5QChar13QLatin1String_20(QChar* lhs, QLatin1String* rhs) {
@@ -3741,71 +3594,31 @@ bool C_Zgt5QChar13QLatin1String_20(QChar* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1737
-// [1] bool operator>(QChar, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zgt5QChar11QStringView_21(QChar* lhs, QStringView* rhs) {
-  return (bool)operator>(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1200
+// /usr/include/qt/QtCore/qstring.h:1163
 // [1] bool operator>(QLatin1String, QLatin1String)
 extern "C" Q_DECL_EXPORT
-bool C_Zgt13QLatin1StringS__22(QLatin1String* s1, QLatin1String* s2) {
+bool C_Zgt13QLatin1StringS__21(QLatin1String* s1, QLatin1String* s2) {
   return (bool)operator>(*s1, *s2);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1649
+// /usr/include/qt/QtCore/qstring.h:1600
 // [1] bool operator>(QLatin1String, const QStringRef &)
 extern "C" Q_DECL_EXPORT
-bool C_Zgt13QLatin1StringRK10QStringRef_23(QLatin1String* lhs, QStringRef* rhs) {
+bool C_Zgt13QLatin1StringRK10QStringRef_22(QLatin1String* lhs, QStringRef* rhs) {
   return (bool)operator>(*lhs, *rhs);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1713
+// /usr/include/qt/QtCore/qstring.h:1664
 // [1] bool operator>(QLatin1String, QChar)
 extern "C" Q_DECL_EXPORT
-bool C_Zgt13QLatin1String5QChar_24(QLatin1String* lhs, QChar* rhs) {
+bool C_Zgt13QLatin1String5QChar_23(QLatin1String* lhs, QChar* rhs) {
   return (bool)operator>(*lhs, *rhs);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1752
-// [1] bool operator>(QLatin1String, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zgt13QLatin1String11QStringView_25(QLatin1String* lhs, QStringView* rhs) {
-  return (bool)operator>(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1722
-// [1] bool operator>(QStringView, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zgt11QStringViewS__26(QStringView* lhs, QStringView* rhs) {
-  return (bool)operator>(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1730
-// [1] bool operator>(QStringView, QChar)
-extern "C" Q_DECL_EXPORT
-bool C_Zgt11QStringView5QChar_27(QStringView* lhs, QChar* rhs) {
-  return (bool)operator>(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1745
-// [1] bool operator>(QStringView, QLatin1String)
-extern "C" Q_DECL_EXPORT
-bool C_Zgt11QStringView13QLatin1String_28(QStringView* lhs, QLatin1String* rhs) {
-  return (bool)operator>(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1619
+// /usr/include/qt/QtCore/qstring.h:1570
 // [1] bool operator>=(const QString &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK7QStringRK10QStringRef(QString* lhs, QStringRef* rhs) {
@@ -3813,7 +3626,7 @@ bool C_ZgeRK7QStringRK10QStringRef(QString* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1677
+// /usr/include/qt/QtCore/qstring.h:1628
 // [1] bool operator>=(const QString &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK7QString5QChar_1(QString* lhs, QChar* rhs) {
@@ -3821,7 +3634,7 @@ bool C_ZgeRK7QString5QChar_1(QString* lhs, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/quuid.h:239
+// /usr/include/qt/QtCore/quuid.h:236
 // [1] bool operator>=(const QUuid &, const QUuid &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK5QUuidS1__2(QUuid* lhs, QUuid* rhs) {
@@ -3829,7 +3642,7 @@ bool C_ZgeRK5QUuidS1__2(QUuid* lhs, QUuid* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:305
+// /usr/include/qt/QtCore/qversionnumber.h:301
 // [1] bool operator>=(const QVersionNumber &, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK14QVersionNumberS1__3(QVersionNumber* lhs, QVersionNumber* rhs) {
@@ -3837,7 +3650,7 @@ bool C_ZgeRK14QVersionNumberS1__3(QVersionNumber* lhs, QVersionNumber* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1610
+// /usr/include/qt/QtCore/qstring.h:1561
 // [1] bool operator>=(const QStringRef &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK10QStringRefS1__4(QStringRef* s1, QStringRef* s2) {
@@ -3845,7 +3658,7 @@ bool C_ZgeRK10QStringRefS1__4(QStringRef* s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1626
+// /usr/include/qt/QtCore/qstring.h:1577
 // [1] bool operator>=(const QStringRef &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK10QStringRefRK7QString_5(QStringRef* lhs, QString* rhs) {
@@ -3853,7 +3666,7 @@ bool C_ZgeRK10QStringRefRK7QString_5(QStringRef* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1762
+// /usr/include/qt/QtCore/qstring.h:1675
 // [1] bool operator>=(const QStringRef &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK10QStringRefRK10QByteArray_6(QStringRef* lhs, QByteArray* rhs) {
@@ -3861,7 +3674,7 @@ bool C_ZgeRK10QStringRefRK10QByteArray_6(QStringRef* lhs, QByteArray* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1696
+// /usr/include/qt/QtCore/qstring.h:1647
 // [1] bool operator>=(const QStringRef &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK10QStringRef5QChar_7(QStringRef* lhs, QChar* rhs) {
@@ -3869,7 +3682,7 @@ bool C_ZgeRK10QStringRef5QChar_7(QStringRef* lhs, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1658
+// /usr/include/qt/QtCore/qstring.h:1609
 // [1] bool operator>=(const QStringRef &, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK10QStringRef13QLatin1String_8(QStringRef* lhs, QLatin1String* rhs) {
@@ -3877,7 +3690,7 @@ bool C_ZgeRK10QStringRef13QLatin1String_8(QStringRef* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:633
+// /usr/include/qt/QtCore/qbytearray.h:624
 // [1] bool operator>=(const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK10QByteArrayS1__9(QByteArray* a1, QByteArray* a2) {
@@ -3885,7 +3698,7 @@ bool C_ZgeRK10QByteArrayS1__9(QByteArray* a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1769
+// /usr/include/qt/QtCore/qstring.h:1682
 // [1] bool operator>=(const QByteArray &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK10QByteArrayRK10QStringRef_10(QByteArray* lhs, QStringRef* rhs) {
@@ -3893,7 +3706,7 @@ bool C_ZgeRK10QByteArrayRK10QStringRef_10(QByteArray* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:635
+// /usr/include/qt/QtCore/qbytearray.h:626
 // [1] bool operator>=(const QByteArray &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeRK10QByteArrayPKc_11(QByteArray* a1, const char * a2) {
@@ -3901,7 +3714,7 @@ bool C_ZgeRK10QByteArrayPKc_11(QByteArray* a1, const char * a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1244
+// /usr/include/qt/QtCore/qstring.h:1207
 // [1] bool operator>=(const char *, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgePKcRK7QString_12(const char * s1, QString* s2) {
@@ -3909,7 +3722,7 @@ bool C_ZgePKcRK7QString_12(const char * s1, QString* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1795
+// /usr/include/qt/QtCore/qstring.h:1708
 // [1] bool operator>=(const char *, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgePKcRK10QStringRef_13(const char * s1, QStringRef* s2) {
@@ -3917,7 +3730,7 @@ bool C_ZgePKcRK10QStringRef_13(const char * s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:637
+// /usr/include/qt/QtCore/qbytearray.h:628
 // [1] bool operator>=(const char *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZgePKcRK10QByteArray_14(const char * a1, QByteArray* a2) {
@@ -3925,7 +3738,7 @@ bool C_ZgePKcRK10QByteArray_14(const char * a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1257
+// /usr/include/qt/QtCore/qstring.h:1220
 // [1] bool operator>=(const char *, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZgePKc13QLatin1String_15(const char * s1, QLatin1String* s2) {
@@ -3933,7 +3746,7 @@ bool C_ZgePKc13QLatin1String_15(const char * s1, QLatin1String* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:600
+// /usr/include/qt/QtCore/qchar.h:593
 // [1] bool operator>=(std::nullptr_t, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZgeDn5QChar_16(std::nullptr_t arg0, QChar* rhs) {
@@ -3941,7 +3754,7 @@ bool C_ZgeDn5QChar_16(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:584
+// /usr/include/qt/QtCore/qchar.h:577
 // [1] bool operator>=(QChar, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_Zge5QCharS__17(QChar* c1, QChar* c2) {
@@ -3949,7 +3762,7 @@ bool C_Zge5QCharS__17(QChar* c1, QChar* c2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1670
+// /usr/include/qt/QtCore/qstring.h:1621
 // [1] bool operator>=(QChar, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_Zge5QCharRK7QString_18(QChar* lhs, QString* rhs) {
@@ -3957,7 +3770,7 @@ bool C_Zge5QCharRK7QString_18(QChar* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1689
+// /usr/include/qt/QtCore/qstring.h:1640
 // [1] bool operator>=(QChar, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_Zge5QCharRK10QStringRef_19(QChar* lhs, QStringRef* rhs) {
@@ -3965,7 +3778,7 @@ bool C_Zge5QCharRK10QStringRef_19(QChar* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:595
+// /usr/include/qt/QtCore/qchar.h:588
 // [1] bool operator>=(QChar, std::nullptr_t)
 extern "C" Q_DECL_EXPORT
 bool C_Zge5QCharDn_20(QChar* lhs, std::nullptr_t arg1) {
@@ -3973,7 +3786,7 @@ bool C_Zge5QCharDn_20(QChar* lhs, std::nullptr_t arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1708
+// /usr/include/qt/QtCore/qstring.h:1659
 // [1] bool operator>=(QChar, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_Zge5QChar13QLatin1String_21(QChar* lhs, QLatin1String* rhs) {
@@ -3981,66 +3794,26 @@ bool C_Zge5QChar13QLatin1String_21(QChar* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1738
-// [1] bool operator>=(QChar, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zge5QChar11QStringView_22(QChar* lhs, QStringView* rhs) {
-  return (bool)operator>=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1204
+// /usr/include/qt/QtCore/qstring.h:1167
 // [1] bool operator>=(QLatin1String, QLatin1String)
 extern "C" Q_DECL_EXPORT
-bool C_Zge13QLatin1StringS__23(QLatin1String* s1, QLatin1String* s2) {
+bool C_Zge13QLatin1StringS__22(QLatin1String* s1, QLatin1String* s2) {
   return (bool)operator>=(*s1, *s2);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1651
+// /usr/include/qt/QtCore/qstring.h:1602
 // [1] bool operator>=(QLatin1String, const QStringRef &)
 extern "C" Q_DECL_EXPORT
-bool C_Zge13QLatin1StringRK10QStringRef_24(QLatin1String* lhs, QStringRef* rhs) {
+bool C_Zge13QLatin1StringRK10QStringRef_23(QLatin1String* lhs, QStringRef* rhs) {
   return (bool)operator>=(*lhs, *rhs);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1715
+// /usr/include/qt/QtCore/qstring.h:1666
 // [1] bool operator>=(QLatin1String, QChar)
 extern "C" Q_DECL_EXPORT
-bool C_Zge13QLatin1String5QChar_25(QLatin1String* lhs, QChar* rhs) {
-  return (bool)operator>=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1753
-// [1] bool operator>=(QLatin1String, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zge13QLatin1String11QStringView_26(QLatin1String* lhs, QStringView* rhs) {
-  return (bool)operator>=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1723
-// [1] bool operator>=(QStringView, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zge11QStringViewS__27(QStringView* lhs, QStringView* rhs) {
-  return (bool)operator>=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1731
-// [1] bool operator>=(QStringView, QChar)
-extern "C" Q_DECL_EXPORT
-bool C_Zge11QStringView5QChar_28(QStringView* lhs, QChar* rhs) {
-  return (bool)operator>=(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1746
-// [1] bool operator>=(QStringView, QLatin1String)
-extern "C" Q_DECL_EXPORT
-bool C_Zge11QStringView13QLatin1String_29(QStringView* lhs, QLatin1String* rhs) {
+bool C_Zge13QLatin1String5QChar_24(QLatin1String* lhs, QChar* rhs) {
   return (bool)operator>=(*lhs, *rhs);
 }
 
@@ -4069,7 +3842,7 @@ bool C_ZeqRK8QMarginsS1__3(QMargins* m1, QMargins* m2) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1614
+// /usr/include/qt/QtCore/qstring.h:1565
 // [1] bool operator==(const QString &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK7QStringRK10QStringRef_4(QString* lhs, QStringRef* rhs) {
@@ -4077,7 +3850,7 @@ bool C_ZeqRK7QStringRK10QStringRef_4(QString* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1182
+// /usr/include/qt/QtCore/qstring.h:1145
 // [1] bool operator==(const QString &, QString::Null)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK7QStringNS_4NullE_5(QString* s, QString::Null arg1) {
@@ -4085,7 +3858,7 @@ bool C_ZeqRK7QStringNS_4NullE_5(QString* s, QString::Null arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1672
+// /usr/include/qt/QtCore/qstring.h:1623
 // [1] bool operator==(const QString &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK7QString5QChar_6(QString* lhs, QChar* rhs) {
@@ -4149,7 +3922,7 @@ bool C_ZeqRK15QHashDummyValueS1__13(QHashDummyValue* arg0, QHashDummyValue* arg1
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:314
+// /usr/include/qt/QtCore/qversionnumber.h:310
 // [1] bool operator==(const QVersionNumber &, const QVersionNumber &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK14QVersionNumberS1__14(QVersionNumber* lhs, QVersionNumber* rhs) {
@@ -4157,7 +3930,7 @@ bool C_ZeqRK14QVersionNumberS1__14(QVersionNumber* lhs, QVersionNumber* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstorageinfo.h:103
+// /usr/include/qt/QtCore/qstorageinfo.h:100
 // [1] bool operator==(const QStorageInfo &, const QStorageInfo &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK12QStorageInfoS1__15(QStorageInfo* first, QStorageInfo* second) {
@@ -4173,7 +3946,7 @@ bool C_ZeqRK11QMetaMethodS1__16(QMetaMethod* m1, QMetaMethod* m2) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1602
+// /usr/include/qt/QtCore/qstring.h:1553
 // [1] bool operator==(const QStringRef &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK10QStringRefS1__17(QStringRef* s1, QStringRef* s2) {
@@ -4181,7 +3954,7 @@ bool C_ZeqRK10QStringRefS1__17(QStringRef* s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1621
+// /usr/include/qt/QtCore/qstring.h:1572
 // [1] bool operator==(const QStringRef &, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK10QStringRefRK7QString_18(QStringRef* lhs, QString* rhs) {
@@ -4189,7 +3962,7 @@ bool C_ZeqRK10QStringRefRK7QString_18(QStringRef* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1757
+// /usr/include/qt/QtCore/qstring.h:1670
 // [1] bool operator==(const QStringRef &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK10QStringRefRK10QByteArray_19(QStringRef* lhs, QByteArray* rhs) {
@@ -4197,7 +3970,7 @@ bool C_ZeqRK10QStringRefRK10QByteArray_19(QStringRef* lhs, QByteArray* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1691
+// /usr/include/qt/QtCore/qstring.h:1642
 // [1] bool operator==(const QStringRef &, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK10QStringRef5QChar_20(QStringRef* lhs, QChar* rhs) {
@@ -4205,7 +3978,7 @@ bool C_ZeqRK10QStringRef5QChar_20(QStringRef* lhs, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1653
+// /usr/include/qt/QtCore/qstring.h:1604
 // [1] bool operator==(const QStringRef &, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK10QStringRef13QLatin1String_21(QStringRef* lhs, QLatin1String* rhs) {
@@ -4213,7 +3986,7 @@ bool C_ZeqRK10QStringRef13QLatin1String_21(QStringRef* lhs, QLatin1String* rhs) 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:603
+// /usr/include/qt/QtCore/qbytearray.h:594
 // [1] bool operator==(const QByteArray &, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK10QByteArrayS1__22(QByteArray* a1, QByteArray* a2) {
@@ -4221,7 +3994,7 @@ bool C_ZeqRK10QByteArrayS1__22(QByteArray* a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1764
+// /usr/include/qt/QtCore/qstring.h:1677
 // [1] bool operator==(const QByteArray &, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK10QByteArrayRK10QStringRef_23(QByteArray* lhs, QStringRef* rhs) {
@@ -4229,7 +4002,7 @@ bool C_ZeqRK10QByteArrayRK10QStringRef_23(QByteArray* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:605
+// /usr/include/qt/QtCore/qbytearray.h:596
 // [1] bool operator==(const QByteArray &, const char *)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqRK10QByteArrayPKc_24(QByteArray* a1, const char * a2) {
@@ -4237,7 +4010,7 @@ bool C_ZeqRK10QByteArrayPKc_24(QByteArray* a1, const char * a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1234
+// /usr/include/qt/QtCore/qstring.h:1197
 // [1] bool operator==(const char *, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqPKcRK7QString_25(const char * s1, QString* s2) {
@@ -4245,7 +4018,7 @@ bool C_ZeqPKcRK7QString_25(const char * s1, QString* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1785
+// /usr/include/qt/QtCore/qstring.h:1698
 // [1] bool operator==(const char *, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqPKcRK10QStringRef_26(const char * s1, QStringRef* s2) {
@@ -4253,7 +4026,7 @@ bool C_ZeqPKcRK10QStringRef_26(const char * s1, QStringRef* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:607
+// /usr/include/qt/QtCore/qbytearray.h:598
 // [1] bool operator==(const char *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqPKcRK10QByteArray_27(const char * a1, QByteArray* a2) {
@@ -4261,7 +4034,7 @@ bool C_ZeqPKcRK10QByteArray_27(const char * a1, QByteArray* a2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1247
+// /usr/include/qt/QtCore/qstring.h:1210
 // [1] bool operator==(const char *, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqPKc13QLatin1String_28(const char * s1, QLatin1String* s2) {
@@ -4269,7 +4042,7 @@ bool C_ZeqPKc13QLatin1String_28(const char * s1, QLatin1String* s2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1178
+// /usr/include/qt/QtCore/qstring.h:1141
 // [1] bool operator==(QString::Null, QString::Null)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqN7QString4NullES0__29(QString::Null arg0, QString::Null arg1) {
@@ -4277,7 +4050,7 @@ bool C_ZeqN7QString4NullES0__29(QString::Null arg0, QString::Null arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1180
+// /usr/include/qt/QtCore/qstring.h:1143
 // [1] bool operator==(QString::Null, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqN7QString4NullERKS__30(QString::Null arg0, QString* s) {
@@ -4285,7 +4058,7 @@ bool C_ZeqN7QString4NullERKS__30(QString::Null arg0, QString* s) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:591
+// /usr/include/qt/QtCore/qchar.h:584
 // [1] bool operator==(std::nullptr_t, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_ZeqDn5QChar_31(std::nullptr_t arg0, QChar* rhs) {
@@ -4293,7 +4066,7 @@ bool C_ZeqDn5QChar_31(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:580
+// /usr/include/qt/QtCore/qchar.h:573
 // [1] bool operator==(QChar, QChar)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq5QCharS__32(QChar* c1, QChar* c2) {
@@ -4301,7 +4074,7 @@ bool C_Zeq5QCharS__32(QChar* c1, QChar* c2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1661
+// /usr/include/qt/QtCore/qstring.h:1612
 // [1] bool operator==(QChar, const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq5QCharRK7QString_33(QChar* lhs, QString* rhs) {
@@ -4309,7 +4082,7 @@ bool C_Zeq5QCharRK7QString_33(QChar* lhs, QString* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1680
+// /usr/include/qt/QtCore/qstring.h:1631
 // [1] bool operator==(QChar, const QStringRef &)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq5QCharRK10QStringRef_34(QChar* lhs, QStringRef* rhs) {
@@ -4317,7 +4090,7 @@ bool C_Zeq5QCharRK10QStringRef_34(QChar* lhs, QStringRef* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qchar.h:589
+// /usr/include/qt/QtCore/qchar.h:582
 // [1] bool operator==(QChar, std::nullptr_t)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq5QCharDn_35(QChar* lhs, std::nullptr_t arg1) {
@@ -4325,7 +4098,7 @@ bool C_Zeq5QCharDn_35(QChar* lhs, std::nullptr_t arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1699
+// /usr/include/qt/QtCore/qstring.h:1650
 // [1] bool operator==(QChar, QLatin1String)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq5QChar13QLatin1String_36(QChar* lhs, QLatin1String* rhs) {
@@ -4333,66 +4106,26 @@ bool C_Zeq5QChar13QLatin1String_36(QChar* lhs, QLatin1String* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1733
-// [1] bool operator==(QChar, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zeq5QChar11QStringView_37(QChar* lhs, QStringView* rhs) {
-  return (bool)operator==(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1190
+// /usr/include/qt/QtCore/qstring.h:1153
 // [1] bool operator==(QLatin1String, QLatin1String)
 extern "C" Q_DECL_EXPORT
-bool C_Zeq13QLatin1StringS__38(QLatin1String* s1, QLatin1String* s2) {
+bool C_Zeq13QLatin1StringS__37(QLatin1String* s1, QLatin1String* s2) {
   return (bool)operator==(*s1, *s2);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1646
+// /usr/include/qt/QtCore/qstring.h:1597
 // [1] bool operator==(QLatin1String, const QStringRef &)
 extern "C" Q_DECL_EXPORT
-bool C_Zeq13QLatin1StringRK10QStringRef_39(QLatin1String* lhs, QStringRef* rhs) {
+bool C_Zeq13QLatin1StringRK10QStringRef_38(QLatin1String* lhs, QStringRef* rhs) {
   return (bool)operator==(*lhs, *rhs);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1710
+// /usr/include/qt/QtCore/qstring.h:1661
 // [1] bool operator==(QLatin1String, QChar)
 extern "C" Q_DECL_EXPORT
-bool C_Zeq13QLatin1String5QChar_40(QLatin1String* lhs, QChar* rhs) {
-  return (bool)operator==(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1748
-// [1] bool operator==(QLatin1String, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zeq13QLatin1String11QStringView_41(QLatin1String* lhs, QStringView* rhs) {
-  return (bool)operator==(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1718
-// [1] bool operator==(QStringView, QStringView)
-extern "C" Q_DECL_EXPORT
-bool C_Zeq11QStringViewS__42(QStringView* lhs, QStringView* rhs) {
-  return (bool)operator==(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1726
-// [1] bool operator==(QStringView, QChar)
-extern "C" Q_DECL_EXPORT
-bool C_Zeq11QStringView5QChar_43(QStringView* lhs, QChar* rhs) {
-  return (bool)operator==(*lhs, *rhs);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1741
-// [1] bool operator==(QStringView, QLatin1String)
-extern "C" Q_DECL_EXPORT
-bool C_Zeq11QStringView13QLatin1String_44(QStringView* lhs, QLatin1String* rhs) {
+bool C_Zeq13QLatin1String5QChar_39(QLatin1String* lhs, QChar* rhs) {
   return (bool)operator==(*lhs, *rhs);
 }
 
@@ -4478,65 +4211,7 @@ return new QBitArray(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:58
-// [8] qsizetype qustrlen(const ushort *)
-extern "C" Q_DECL_EXPORT
-qsizetype C_ZN9QtPrivate8qustrlenEPKt(const ushort * str) {
-  return (qsizetype)QtPrivate::qustrlen(str);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:74
-// [1] bool endsWith(QLatin1String, QLatin1String, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtPrivate8endsWithE13QLatin1StringS0_N2Qt15CaseSensitivityE(QLatin1String* haystack, QLatin1String* needle, Qt::CaseSensitivity cs) {
-  return (bool)QtPrivate::endsWith(*haystack, *needle, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:73
-// [1] bool endsWith(QLatin1String, QStringView, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtPrivate8endsWithE13QLatin1String11QStringViewN2Qt15CaseSensitivityE_1(QLatin1String* haystack, QStringView* needle, Qt::CaseSensitivity cs) {
-  return (bool)QtPrivate::endsWith(*haystack, *needle, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:71
-// [1] bool endsWith(QStringView, QStringView, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtPrivate8endsWithE11QStringViewS0_N2Qt15CaseSensitivityE_2(QStringView* haystack, QStringView* needle, Qt::CaseSensitivity cs) {
-  return (bool)QtPrivate::endsWith(*haystack, *needle, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:72
-// [1] bool endsWith(QStringView, QLatin1String, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtPrivate8endsWithE11QStringView13QLatin1StringN2Qt15CaseSensitivityE_3(QStringView* haystack, QLatin1String* needle, Qt::CaseSensitivity cs) {
-  return (bool)QtPrivate::endsWith(*haystack, *needle, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:77
-// [16] QLatin1String trimmed(QLatin1String)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QtPrivate7trimmedE13QLatin1String(QLatin1String* s) {
-  auto rv = QtPrivate::trimmed(*s);
-return new QLatin1String(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:76
-// [16] QStringView trimmed(QStringView)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QtPrivate7trimmedE11QStringView_1(QStringView* s) {
-  auto rv = QtPrivate::trimmed(*s);
-return new QStringView(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:170
+// /usr/include/qt/QtCore/qstringlist.h:168
 // [-2] void QStringList_replaceInStrings(QStringList *, const QString &, const QString &, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QtPrivate28QStringList_replaceInStringsEP11QStringListRK7QStringS4_N2Qt15CaseSensitivityE(QStringList * that, QString* before, QString* after, Qt::CaseSensitivity cs) {
@@ -4544,7 +4219,7 @@ void C_ZN9QtPrivate28QStringList_replaceInStringsEP11QStringListRK7QStringS4_N2Q
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:174
+// /usr/include/qt/QtCore/qstringlist.h:172
 // [-2] void QStringList_replaceInStrings(QStringList *, const QRegExp &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QtPrivate28QStringList_replaceInStringsEP11QStringListRK7QRegExpRK7QString_1(QStringList * that, QRegExp* rx, QString* after) {
@@ -4552,7 +4227,7 @@ void C_ZN9QtPrivate28QStringList_replaceInStringsEP11QStringListRK7QRegExpRK7QSt
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:184
+// /usr/include/qt/QtCore/qstringlist.h:182
 // [-2] void QStringList_replaceInStrings(QStringList *, const QRegularExpression &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QtPrivate28QStringList_replaceInStringsEP11QStringListRK18QRegularExpressionRK7QString_2(QStringList * that, QRegularExpression* rx, QString* after) {
@@ -4560,7 +4235,7 @@ void C_ZN9QtPrivate28QStringList_replaceInStringsEP11QStringListRK18QRegularExpr
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:162
+// /usr/include/qt/QtCore/qstringlist.h:161
 // [4] int QStringList_removeDuplicates(QStringList *)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QtPrivate28QStringList_removeDuplicatesEP11QStringList(QStringList * that) {
@@ -4568,7 +4243,7 @@ int C_ZN9QtPrivate28QStringList_removeDuplicatesEP11QStringList(QStringList * th
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:177
+// /usr/include/qt/QtCore/qstringlist.h:175
 // [4] int QStringList_lastIndexOf(const QStringList *, const QRegExp &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QtPrivate23QStringList_lastIndexOfEPK11QStringListRK7QRegExpi(const QStringList * that, QRegExp* rx, int from) {
@@ -4576,7 +4251,7 @@ int C_ZN9QtPrivate23QStringList_lastIndexOfEPK11QStringListRK7QRegExpi(const QSt
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:187
+// /usr/include/qt/QtCore/qstringlist.h:185
 // [4] int QStringList_lastIndexOf(const QStringList *, const QRegularExpression &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QtPrivate23QStringList_lastIndexOfEPK11QStringListRK18QRegularExpressioni_1(const QStringList * that, QRegularExpression* re, int from) {
@@ -4584,7 +4259,7 @@ int C_ZN9QtPrivate23QStringList_lastIndexOfEPK11QStringListRK18QRegularExpressio
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:179
+// /usr/include/qt/QtCore/qstringlist.h:177
 // [4] int QStringList_lastIndexOf(const QStringList *, QRegExp &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QtPrivate23QStringList_lastIndexOfEPK11QStringListR7QRegExpi_2(const QStringList * that, QRegExp* rx, int from) {
@@ -4592,7 +4267,7 @@ int C_ZN9QtPrivate23QStringList_lastIndexOfEPK11QStringListR7QRegExpi_2(const QS
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:623
+// /usr/include/qt/QtCore/qobject.h:622
 // [16] QObject & deref_for_methodcall(QObject &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtPrivate20deref_for_methodcallER7QObject(QObject* o) {
@@ -4601,7 +4276,7 @@ return &rv;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:624
+// /usr/include/qt/QtCore/qobject.h:623
 // [16] QObject & deref_for_methodcall(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtPrivate20deref_for_methodcallEP7QObject_1(QObject * o) {
@@ -4610,7 +4285,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:168
+// /usr/include/qt/QtCore/qstringlist.h:167
 // [1] bool QStringList_contains(const QStringList *, const QString &, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QtPrivate20QStringList_containsEPK11QStringListRK7QStringN2Qt15CaseSensitivityE(const QStringList * that, QString* str, Qt::CaseSensitivity cs) {
@@ -4618,15 +4293,7 @@ bool C_ZN9QtPrivate20QStringList_containsEPK11QStringListRK7QStringN2Qt15CaseSen
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:169
-// [1] bool QStringList_contains(const QStringList *, QLatin1String, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtPrivate20QStringList_containsEPK11QStringList13QLatin1StringN2Qt15CaseSensitivityE_1(const QStringList * that, QLatin1String* str, Qt::CaseSensitivity cs) {
-  return (bool)QtPrivate::QStringList_contains(that, *str, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:176
+// /usr/include/qt/QtCore/qstringlist.h:174
 // [4] int QStringList_indexOf(const QStringList *, const QRegExp &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QtPrivate19QStringList_indexOfEPK11QStringListRK7QRegExpi(const QStringList * that, QRegExp* rx, int from) {
@@ -4634,7 +4301,7 @@ int C_ZN9QtPrivate19QStringList_indexOfEPK11QStringListRK7QRegExpi(const QString
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:186
+// /usr/include/qt/QtCore/qstringlist.h:184
 // [4] int QStringList_indexOf(const QStringList *, const QRegularExpression &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QtPrivate19QStringList_indexOfEPK11QStringListRK18QRegularExpressioni_1(const QStringList * that, QRegularExpression* re, int from) {
@@ -4642,7 +4309,7 @@ int C_ZN9QtPrivate19QStringList_indexOfEPK11QStringListRK18QRegularExpressioni_1
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:178
+// /usr/include/qt/QtCore/qstringlist.h:176
 // [4] int QStringList_indexOf(const QStringList *, QRegExp &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QtPrivate19QStringList_indexOfEPK11QStringListR7QRegExpi_2(const QStringList * that, QRegExp* rx, int from) {
@@ -4659,16 +4326,7 @@ return new QByteArray(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:81
-// [8] QByteArray convertToLocal8Bit(QStringView)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QtPrivate18convertToLocal8BitE11QStringView(QStringView* str) {
-  auto rv = QtPrivate::convertToLocal8Bit(*str);
-return new QByteArray(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:165
+// /usr/include/qt/QtCore/qstringlist.h:164
 // [8] QStringList QStringList_filter(const QStringList *, const QString &, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtPrivate18QStringList_filterEPK11QStringListRK7QStringN2Qt15CaseSensitivityE(const QStringList * that, QString* str, Qt::CaseSensitivity cs) {
@@ -4677,7 +4335,7 @@ return new QStringList(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:175
+// /usr/include/qt/QtCore/qstringlist.h:173
 // [8] QStringList QStringList_filter(const QStringList *, const QRegExp &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtPrivate18QStringList_filterEPK11QStringListRK7QRegExp_1(const QStringList * that, QRegExp* re) {
@@ -4686,7 +4344,7 @@ return new QStringList(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:185
+// /usr/include/qt/QtCore/qstringlist.h:183
 // [8] QStringList QStringList_filter(const QStringList *, const QRegularExpression &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtPrivate18QStringList_filterEPK11QStringListRK18QRegularExpression_2(const QStringList * that, QRegularExpression* re) {
@@ -4695,7 +4353,7 @@ return new QStringList(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:161
+// /usr/include/qt/QtCore/qstringlist.h:160
 // [-2] void QStringList_sort(QStringList *, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QtPrivate16QStringList_sortEP11QStringListN2Qt15CaseSensitivityE(QStringList * that, Qt::CaseSensitivity cs) {
@@ -4703,7 +4361,7 @@ void C_ZN9QtPrivate16QStringList_sortEP11QStringListN2Qt15CaseSensitivityE(QStri
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:164
+// /usr/include/qt/QtCore/qstringlist.h:163
 // [8] QString QStringList_join(const QStringList &, QLatin1String)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtPrivate16QStringList_joinERK11QStringList13QLatin1String(QStringList* list, QLatin1String* sep) {
@@ -4712,7 +4370,7 @@ return new QString(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:163
+// /usr/include/qt/QtCore/qstringlist.h:162
 // [8] QString QStringList_join(const QStringList *, const QChar *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QtPrivate16QStringList_joinEPK11QStringListPK5QChari_1(const QStringList * that, const QChar * sep, int seplen) {
@@ -4721,106 +4379,15 @@ return new QString(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:79
-// [8] QByteArray convertToLatin1(QStringView)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QtPrivate15convertToLatin1E11QStringView(QStringView* str) {
-  auto rv = QtPrivate::convertToLatin1(*str);
-return new QByteArray(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:63
-// [4] int compareStrings(QLatin1String, QLatin1String, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QtPrivate14compareStringsE13QLatin1StringS0_N2Qt15CaseSensitivityE(QLatin1String* lhs, QLatin1String* rhs, Qt::CaseSensitivity cs) {
-  return (int)QtPrivate::compareStrings(*lhs, *rhs, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:62
-// [4] int compareStrings(QLatin1String, QStringView, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QtPrivate14compareStringsE13QLatin1String11QStringViewN2Qt15CaseSensitivityE_1(QLatin1String* lhs, QStringView* rhs, Qt::CaseSensitivity cs) {
-  return (int)QtPrivate::compareStrings(*lhs, *rhs, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:60
-// [4] int compareStrings(QStringView, QStringView, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QtPrivate14compareStringsE11QStringViewS0_N2Qt15CaseSensitivityE_2(QStringView* lhs, QStringView* rhs, Qt::CaseSensitivity cs) {
-  return (int)QtPrivate::compareStrings(*lhs, *rhs, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:61
-// [4] int compareStrings(QStringView, QLatin1String, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QtPrivate14compareStringsE11QStringView13QLatin1StringN2Qt15CaseSensitivityE_3(QStringView* lhs, QLatin1String* rhs, Qt::CaseSensitivity cs) {
-  return (int)QtPrivate::compareStrings(*lhs, *rhs, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:1594
+// /usr/include/qt/QtCore/qmetatype.h:1575
 // [1] bool isBuiltinType(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QtPrivate13isBuiltinTypeERK10QByteArray(QByteArray* type_) {
   return (bool)QtPrivate::isBuiltinType(*type_);
 }
 
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:80
-// [8] QByteArray convertToUtf8(QStringView)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QtPrivate13convertToUtf8E11QStringView(QStringView* str) {
-  auto rv = QtPrivate::convertToUtf8(*str);
-return new QByteArray(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:82
-// [8] QVector<uint> convertToUcs4(QStringView)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QtPrivate13convertToUcs4E11QStringView(QStringView* str) {
-  auto rv = QtPrivate::convertToUcs4(*str);
-/*return rv;*/
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:69
-// [1] bool startsWith(QLatin1String, QLatin1String, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtPrivate10startsWithE13QLatin1StringS0_N2Qt15CaseSensitivityE(QLatin1String* haystack, QLatin1String* needle, Qt::CaseSensitivity cs) {
-  return (bool)QtPrivate::startsWith(*haystack, *needle, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:68
-// [1] bool startsWith(QLatin1String, QStringView, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtPrivate10startsWithE13QLatin1String11QStringViewN2Qt15CaseSensitivityE_1(QLatin1String* haystack, QStringView* needle, Qt::CaseSensitivity cs) {
-  return (bool)QtPrivate::startsWith(*haystack, *needle, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:66
-// [1] bool startsWith(QStringView, QStringView, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtPrivate10startsWithE11QStringViewS0_N2Qt15CaseSensitivityE_2(QStringView* haystack, QStringView* needle, Qt::CaseSensitivity cs) {
-  return (bool)QtPrivate::startsWith(*haystack, *needle, cs);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringalgorithms.h:67
-// [1] bool startsWith(QStringView, QLatin1String, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QtPrivate10startsWithE11QStringView13QLatin1StringN2Qt15CaseSensitivityE_3(QStringView* haystack, QLatin1String* needle, Qt::CaseSensitivity cs) {
-  return (bool)QtPrivate::startsWith(*haystack, *needle, cs);
-}
-
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1754
+// /usr/include/qt/QtCore/qnamespace.h:1746
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_9TimerTypeE(Qt::TimerType arg0) {
@@ -4828,7 +4395,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_9TimerTypeE(Qt::TimerType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1725
+// /usr/include/qt/QtCore/qnamespace.h:1717
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::SortOrder)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_9SortOrderE_1(Qt::SortOrder arg0) {
@@ -4836,7 +4403,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_9SortOrderE_1(Qt::SortOrder arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1710
+// /usr/include/qt/QtCore/qnamespace.h:1702
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::DayOfWeek)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_9DayOfWeekE_2(Qt::DayOfWeek arg0) {
@@ -4844,7 +4411,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_9DayOfWeekE_2(Qt::DayOfWeek arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1679
+// /usr/include/qt/QtCore/qnamespace.h:1671
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ArrowType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_9ArrowTypeE_3(Qt::ArrowType arg0) {
@@ -4852,7 +4419,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_9ArrowTypeE_3(Qt::ArrowType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1709
+// /usr/include/qt/QtCore/qnamespace.h:1701
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TimeSpec)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_8TimeSpecE_4(Qt::TimeSpec arg0) {
@@ -4860,7 +4427,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_8TimeSpecE_4(Qt::TimeSpec arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1698
+// /usr/include/qt/QtCore/qnamespace.h:1690
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TextFlag)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_8TextFlagE_5(Qt::TextFlag arg0) {
@@ -4868,7 +4435,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_8TextFlagE_5(Qt::TextFlag arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1689
+// /usr/include/qt/QtCore/qnamespace.h:1681
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::SizeMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_8SizeModeE_6(Qt::SizeMode arg0) {
@@ -4876,7 +4443,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_8SizeModeE_6(Qt::SizeMode arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1694
+// /usr/include/qt/QtCore/qnamespace.h:1686
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::SizeHint)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_8SizeHintE_7(Qt::SizeHint arg0) {
@@ -4884,7 +4451,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_8SizeHintE_7(Qt::SizeHint arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1681
+// /usr/include/qt/QtCore/qnamespace.h:1673
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::PenStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_8PenStyleE_8(Qt::PenStyle arg0) {
@@ -4892,7 +4459,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_8PenStyleE_8(Qt::PenStyle arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1686
+// /usr/include/qt/QtCore/qnamespace.h:1678
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::MaskMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_8MaskModeE_9(Qt::MaskMode arg0) {
@@ -4900,7 +4467,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_8MaskModeE_9(Qt::MaskMode arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1685
+// /usr/include/qt/QtCore/qnamespace.h:1677
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::FillRule)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_8FillRuleE_10(Qt::FillRule arg0) {
@@ -4908,7 +4475,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_8FillRuleE_10(Qt::FillRule arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1691
+// /usr/include/qt/QtCore/qnamespace.h:1683
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::Corner)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_6CornerE_11(Qt::Corner arg0) {
@@ -4916,7 +4483,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_6CornerE_11(Qt::Corner arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1687
+// /usr/include/qt/QtCore/qnamespace.h:1679
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::BGMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_6BGModeE_12(Qt::BGMode arg0) {
@@ -4924,7 +4491,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_6BGModeE_12(Qt::BGMode arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1692
+// /usr/include/qt/QtCore/qnamespace.h:1684
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::Edge)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_4EdgeE_13(Qt::Edge arg0) {
@@ -4932,7 +4499,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_4EdgeE_13(Qt::Edge arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1690
+// /usr/include/qt/QtCore/qnamespace.h:1682
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::Axis)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_4AxisE_14(Qt::Axis arg0) {
@@ -4940,7 +4507,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_4AxisE_14(Qt::Axis arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1716
+// /usr/include/qt/QtCore/qnamespace.h:1708
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::Key)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_3KeyE_15(Qt::Key arg0) {
@@ -4948,7 +4515,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_3KeyE_15(Qt::Key arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1721
+// /usr/include/qt/QtCore/qnamespace.h:1713
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ItemSelectionOperation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_22ItemSelectionOperationE_16(Qt::ItemSelectionOperation arg0) {
@@ -4956,7 +4523,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_22ItemSelectionOperationE_16(Qt::ItemSele
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1734
+// /usr/include/qt/QtCore/qnamespace.h:1726
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ApplicationAttribute)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_20ApplicationAttributeE_17(Qt::ApplicationAttribute arg0) {
@@ -4964,7 +4531,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_20ApplicationAttributeE_17(Qt::Applicatio
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1718
+// /usr/include/qt/QtCore/qnamespace.h:1710
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TextInteractionFlag)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_19TextInteractionFlagE_18(Qt::TextInteractionFlag arg0) {
@@ -4972,7 +4539,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_19TextInteractionFlagE_18(Qt::TextInterac
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1714
+// /usr/include/qt/QtCore/qnamespace.h:1706
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TransformationMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_18TransformationModeE_19(Qt::TransformationMode arg0) {
@@ -4980,7 +4547,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_18TransformationModeE_19(Qt::Transformati
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1744
+// /usr/include/qt/QtCore/qnamespace.h:1736
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ScreenOrientation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_17ScreenOrientationE_20(Qt::ScreenOrientation arg0) {
@@ -4988,7 +4555,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_17ScreenOrientationE_20(Qt::ScreenOrienta
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1751
+// /usr/include/qt/QtCore/qnamespace.h:1743
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::NativeGestureType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_17NativeGestureTypeE_21(Qt::NativeGestureType arg0) {
@@ -4996,7 +4563,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_17NativeGestureTypeE_21(Qt::NativeGesture
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1720
+// /usr/include/qt/QtCore/qnamespace.h:1712
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ItemSelectionMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_17ItemSelectionModeE_22(Qt::ItemSelectionMode arg0) {
@@ -5004,7 +4571,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_17ItemSelectionModeE_22(Qt::ItemSelection
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1678
+// /usr/include/qt/QtCore/qnamespace.h:1670
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ContextMenuPolicy)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_17ContextMenuPolicyE_23(Qt::ContextMenuPolicy arg0) {
@@ -5012,7 +4579,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_17ContextMenuPolicyE_23(Qt::ContextMenuPo
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1759
+// /usr/include/qt/QtCore/qnamespace.h:1751
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TabFocusBehavior)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_16TabFocusBehaviorE_24(Qt::TabFocusBehavior arg0) {
@@ -5020,7 +4587,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_16TabFocusBehaviorE_24(Qt::TabFocusBehavi
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1756
+// /usr/include/qt/QtCore/qnamespace.h:1748
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::MouseEventSource)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_16MouseEventSourceE_25(Qt::MouseEventSource arg0) {
@@ -5028,7 +4595,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_16MouseEventSourceE_25(Qt::MouseEventSour
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1739
+// /usr/include/qt/QtCore/qnamespace.h:1731
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::InputMethodQuery)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_16InputMethodQueryE_26(Qt::InputMethodQuery arg0) {
@@ -5036,7 +4603,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_16InputMethodQueryE_26(Qt::InputMethodQue
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1747
+// /usr/include/qt/QtCore/qnamespace.h:1739
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ApplicationState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_16ApplicationStateE_27(Qt::ApplicationState arg0) {
@@ -5044,7 +4611,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_16ApplicationStateE_27(Qt::ApplicationSta
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1733
+// /usr/include/qt/QtCore/qnamespace.h:1725
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::WidgetAttribute)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_15WidgetAttributeE_28(Qt::WidgetAttribute arg0) {
@@ -5052,7 +4619,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_15WidgetAttributeE_28(Qt::WidgetAttribute
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1680
+// /usr/include/qt/QtCore/qnamespace.h:1672
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ToolButtonStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_15ToolButtonStyleE_29(Qt::ToolButtonStyle arg0) {
@@ -5060,7 +4627,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_15ToolButtonStyleE_29(Qt::ToolButtonStyle
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1717
+// /usr/include/qt/QtCore/qnamespace.h:1709
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ShortcutContext)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_15ShortcutContextE_30(Qt::ShortcutContext arg0) {
@@ -5068,7 +4635,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_15ShortcutContextE_30(Qt::ShortcutContext
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1676
+// /usr/include/qt/QtCore/qnamespace.h:1668
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ScrollBarPolicy)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_15ScrollBarPolicyE_31(Qt::ScrollBarPolicy arg0) {
@@ -5076,7 +4643,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_15ScrollBarPolicyE_31(Qt::ScrollBarPolicy
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1693
+// /usr/include/qt/QtCore/qnamespace.h:1685
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::LayoutDirection)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_15LayoutDirectionE_32(Qt::LayoutDirection arg0) {
@@ -5084,7 +4651,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_15LayoutDirectionE_32(Qt::LayoutDirection
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1738
+// /usr/include/qt/QtCore/qnamespace.h:1730
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::InputMethodHint)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_15InputMethodHintE_33(Qt::InputMethodHint arg0) {
@@ -5092,7 +4659,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_15InputMethodHintE_33(Qt::InputMethodHint
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1753
+// /usr/include/qt/QtCore/qnamespace.h:1745
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::CursorMoveStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_15CursorMoveStyleE_34(Qt::CursorMoveStyle arg0) {
@@ -5100,7 +4667,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_15CursorMoveStyleE_34(Qt::CursorMoveStyle
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1726
+// /usr/include/qt/QtCore/qnamespace.h:1718
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_15CaseSensitivityE_35(Qt::CaseSensitivity arg0) {
@@ -5108,7 +4675,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_15CaseSensitivityE_35(Qt::CaseSensitivity
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1713
+// /usr/include/qt/QtCore/qnamespace.h:1705
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::AspectRatioMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_15AspectRatioModeE_36(Qt::AspectRatioMode arg0) {
@@ -5116,7 +4683,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_15AspectRatioModeE_36(Qt::AspectRatioMode
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1732
+// /usr/include/qt/QtCore/qnamespace.h:1724
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::WindowModality)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_14WindowModalityE_37(Qt::WindowModality arg0) {
@@ -5124,7 +4691,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_14WindowModalityE_37(Qt::WindowModality a
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1757
+// /usr/include/qt/QtCore/qnamespace.h:1749
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::MouseEventFlag)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_14MouseEventFlagE_38(Qt::MouseEventFlag arg0) {
@@ -5132,7 +4699,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_14MouseEventFlagE_38(Qt::MouseEventFlag a
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1704
+// /usr/include/qt/QtCore/qnamespace.h:1696
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::DockWidgetArea)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_14DockWidgetAreaE_39(Qt::DockWidgetArea arg0) {
@@ -5140,7 +4707,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_14DockWidgetAreaE_39(Qt::DockWidgetArea a
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1746
+// /usr/include/qt/QtCore/qnamespace.h:1738
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ConnectionType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_14ConnectionTypeE_40(Qt::ConnectionType arg0) {
@@ -5148,7 +4715,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_14ConnectionTypeE_40(Qt::ConnectionType a
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1707
+// /usr/include/qt/QtCore/qnamespace.h:1699
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TextElideMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_13TextElideModeE_41(Qt::TextElideMode arg0) {
@@ -5156,7 +4723,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_13TextElideModeE_41(Qt::TextElideMode arg
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1688
+// /usr/include/qt/QtCore/qnamespace.h:1680
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ClipOperation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_13ClipOperationE_42(Qt::ClipOperation arg0) {
@@ -5164,7 +4731,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_13ClipOperationE_42(Qt::ClipOperation arg
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1683
+// /usr/include/qt/QtCore/qnamespace.h:1675
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::PenJoinStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_12PenJoinStyleE_43(Qt::PenJoinStyle arg0) {
@@ -5172,7 +4739,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_12PenJoinStyleE_43(Qt::PenJoinStyle arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1724
+// /usr/include/qt/QtCore/qnamespace.h:1716
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ItemDataRole)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_12ItemDataRoleE_44(Qt::ItemDataRole arg0) {
@@ -5180,7 +4747,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_12ItemDataRoleE_44(Qt::ItemDataRole arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1749
+// /usr/include/qt/QtCore/qnamespace.h:1741
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::GestureState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_12GestureStateE_45(Qt::GestureState arg0) {
@@ -5188,7 +4755,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_12GestureStateE_45(Qt::GestureState arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1741
+// /usr/include/qt/QtCore/qnamespace.h:1733
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::EnterKeyType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_12EnterKeyTypeE_46(Qt::EnterKeyType arg0) {
@@ -5196,7 +4763,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_12EnterKeyTypeE_46(Qt::EnterKeyType arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1758
+// /usr/include/qt/QtCore/qnamespace.h:1750
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ChecksumType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_12ChecksumTypeE_47(Qt::ChecksumType arg0) {
@@ -5204,7 +4771,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_12ChecksumTypeE_47(Qt::ChecksumType arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1731
+// /usr/include/qt/QtCore/qnamespace.h:1723
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::WindowState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11WindowStateE_48(Qt::WindowState arg0) {
@@ -5212,7 +4779,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11WindowStateE_48(Qt::WindowState arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1705
+// /usr/include/qt/QtCore/qnamespace.h:1697
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ToolBarArea)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11ToolBarAreaE_49(Qt::ToolBarArea arg0) {
@@ -5220,7 +4787,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11ToolBarAreaE_49(Qt::ToolBarArea arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1755
+// /usr/include/qt/QtCore/qnamespace.h:1747
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ScrollPhase)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11ScrollPhaseE_50(Qt::ScrollPhase arg0) {
@@ -5228,7 +4795,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11ScrollPhaseE_50(Qt::ScrollPhase arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1682
+// /usr/include/qt/QtCore/qnamespace.h:1674
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::PenCapStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11PenCapStyleE_51(Qt::PenCapStyle arg0) {
@@ -5236,7 +4803,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11PenCapStyleE_51(Qt::PenCapStyle arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1695
+// /usr/include/qt/QtCore/qnamespace.h:1687
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::Orientation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11OrientationE_52(Qt::Orientation arg0) {
@@ -5244,7 +4811,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11OrientationE_52(Qt::Orientation arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1712
+// /usr/include/qt/QtCore/qnamespace.h:1704
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::GlobalColor)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11GlobalColorE_53(Qt::GlobalColor arg0) {
@@ -5252,7 +4819,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11GlobalColorE_53(Qt::GlobalColor arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1750
+// /usr/include/qt/QtCore/qnamespace.h:1742
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::GestureType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11GestureTypeE_54(Qt::GestureType arg0) {
@@ -5260,7 +4827,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11GestureTypeE_54(Qt::GestureType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1737
+// /usr/include/qt/QtCore/qnamespace.h:1729
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::FocusReason)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11FocusReasonE_55(Qt::FocusReason arg0) {
@@ -5268,7 +4835,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11FocusReasonE_55(Qt::FocusReason arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1677
+// /usr/include/qt/QtCore/qnamespace.h:1669
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::FocusPolicy)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11FocusPolicyE_56(Qt::FocusPolicy arg0) {
@@ -5276,7 +4843,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11FocusPolicyE_56(Qt::FocusPolicy arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1711
+// /usr/include/qt/QtCore/qnamespace.h:1703
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::CursorShape)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_11CursorShapeE_57(Qt::CursorShape arg0) {
@@ -5284,7 +4851,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_11CursorShapeE_57(Qt::CursorShape arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1730
+// /usr/include/qt/QtCore/qnamespace.h:1722
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::WindowType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_10WindowTypeE_58(Qt::WindowType arg0) {
@@ -5292,7 +4859,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_10WindowTypeE_58(Qt::WindowType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1706
+// /usr/include/qt/QtCore/qnamespace.h:1698
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TextFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_10TextFormatE_59(Qt::TextFormat arg0) {
@@ -5300,7 +4867,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_10TextFormatE_59(Qt::TextFormat arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1696
+// /usr/include/qt/QtCore/qnamespace.h:1688
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::DropAction)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_10DropActionE_60(Qt::DropAction arg0) {
@@ -5308,7 +4875,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_10DropActionE_60(Qt::DropAction arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1708
+// /usr/include/qt/QtCore/qnamespace.h:1700
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::DateFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_10DateFormatE_61(Qt::DateFormat arg0) {
@@ -5316,7 +4883,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_10DateFormatE_61(Qt::DateFormat arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1723
+// /usr/include/qt/QtCore/qnamespace.h:1715
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::CheckState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_10CheckStateE_62(Qt::CheckState arg0) {
@@ -5324,7 +4891,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_10CheckStateE_62(Qt::CheckState arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1684
+// /usr/include/qt/QtCore/qnamespace.h:1676
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::BrushStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectENS_10BrushStyleE_63(Qt::BrushStyle arg0) {
@@ -5332,7 +4899,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectENS_10BrushStyleE_63(Qt::BrushStyle arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1727
+// /usr/include/qt/QtCore/qnamespace.h:1719
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::MatchFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_9MatchFlagEE_64(QFlags<Qt::MatchFlag> arg0) {
@@ -5340,7 +4907,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_9MatchFlagEE_64(QFlags<Qt::MatchF
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1722
+// /usr/include/qt/QtCore/qnamespace.h:1714
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ItemFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_8ItemFlagEE_65(QFlags<Qt::ItemFlag> arg0) {
@@ -5348,7 +4915,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_8ItemFlagEE_65(QFlags<Qt::ItemFla
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1701
+// /usr/include/qt/QtCore/qnamespace.h:1693
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::Edges)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_4EdgeEE_66(QFlags<Qt::Edge> arg0) {
@@ -5356,7 +4923,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_4EdgeEE_66(QFlags<Qt::Edge> arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1719
+// /usr/include/qt/QtCore/qnamespace.h:1711
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TextInteractionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_19TextInteractionFlagEE_67(QFlags<Qt::TextInteractionFlag> arg0) {
@@ -5364,7 +4931,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_19TextInteractionFlagEE_67(QFlags
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1715
+// /usr/include/qt/QtCore/qnamespace.h:1707
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_19ImageConversionFlagEE_68(QFlags<Qt::ImageConversionFlag> arg0) {
@@ -5372,7 +4939,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_19ImageConversionFlagEE_68(QFlags
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1745
+// /usr/include/qt/QtCore/qnamespace.h:1737
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ScreenOrientations)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_17ScreenOrientationEE_69(QFlags<Qt::ScreenOrientation> arg0) {
@@ -5380,7 +4947,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_17ScreenOrientationEE_69(QFlags<Q
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1728
+// /usr/include/qt/QtCore/qnamespace.h:1720
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_16KeyboardModifierEE_70(QFlags<Qt::KeyboardModifier> arg0) {
@@ -5388,7 +4955,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_16KeyboardModifierEE_70(QFlags<Qt
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1742
+// /usr/include/qt/QtCore/qnamespace.h:1734
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::InputMethodQueries)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_16InputMethodQueryEE_71(QFlags<Qt::InputMethodQuery> arg0) {
@@ -5396,7 +4963,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_16InputMethodQueryEE_71(QFlags<Qt
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1743
+// /usr/include/qt/QtCore/qnamespace.h:1735
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::TouchPointStates)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_15TouchPointStateEE_72(QFlags<Qt::TouchPointState> arg0) {
@@ -5404,7 +4971,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_15TouchPointStateEE_72(QFlags<Qt:
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1740
+// /usr/include/qt/QtCore/qnamespace.h:1732
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::InputMethodHints)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_15InputMethodHintEE_73(QFlags<Qt::InputMethodHint> arg0) {
@@ -5412,7 +4979,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_15InputMethodHintEE_73(QFlags<Qt:
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1702
+// /usr/include/qt/QtCore/qnamespace.h:1694
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::DockWidgetAreas)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_14DockWidgetAreaEE_74(QFlags<Qt::DockWidgetArea> arg0) {
@@ -5420,7 +4987,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_14DockWidgetAreaEE_74(QFlags<Qt::
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1697
+// /usr/include/qt/QtCore/qnamespace.h:1689
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_13AlignmentFlagEE_75(QFlags<Qt::AlignmentFlag> arg0) {
@@ -5428,7 +4995,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_13AlignmentFlagEE_75(QFlags<Qt::A
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1736
+// /usr/include/qt/QtCore/qnamespace.h:1728
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::WindowStates)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11WindowStateEE_76(QFlags<Qt::WindowState> arg0) {
@@ -5436,7 +5003,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11WindowStateEE_76(QFlags<Qt::Win
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1703
+// /usr/include/qt/QtCore/qnamespace.h:1695
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::ToolBarAreas)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11ToolBarAreaEE_77(QFlags<Qt::ToolBarArea> arg0) {
@@ -5444,7 +5011,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11ToolBarAreaEE_77(QFlags<Qt::Too
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1699
+// /usr/include/qt/QtCore/qnamespace.h:1691
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::Orientations)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11OrientationEE_78(QFlags<Qt::Orientation> arg0) {
@@ -5452,7 +5019,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11OrientationEE_78(QFlags<Qt::Ori
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1729
+// /usr/include/qt/QtCore/qnamespace.h:1721
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::MouseButtons)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11MouseButtonEE_79(QFlags<Qt::MouseButton> arg0) {
@@ -5460,7 +5027,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_11MouseButtonEE_79(QFlags<Qt::Mou
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1735
+// /usr/include/qt/QtCore/qnamespace.h:1727
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_10WindowTypeEE_80(QFlags<Qt::WindowType> arg0) {
@@ -5468,7 +5035,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_10WindowTypeEE_80(QFlags<Qt::Wind
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1700
+// /usr/include/qt/QtCore/qnamespace.h:1692
 // [8] const QMetaObject * qt_getEnumMetaObject(Qt::DropActions)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_10DropActionEE_81(QFlags<Qt::DropAction> arg0) {
@@ -5476,7 +5043,7 @@ void* C_ZN2Qt20qt_getEnumMetaObjectE6QFlagsINS_10DropActionEE_81(QFlags<Qt::Drop
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1754
+// /usr/include/qt/QtCore/qnamespace.h:1746
 // [8] const char * qt_getEnumName(Qt::TimerType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_9TimerTypeE(Qt::TimerType arg0) {
@@ -5484,7 +5051,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_9TimerTypeE(Qt::TimerType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1725
+// /usr/include/qt/QtCore/qnamespace.h:1717
 // [8] const char * qt_getEnumName(Qt::SortOrder)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_9SortOrderE_1(Qt::SortOrder arg0) {
@@ -5492,7 +5059,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_9SortOrderE_1(Qt::SortOrder arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1710
+// /usr/include/qt/QtCore/qnamespace.h:1702
 // [8] const char * qt_getEnumName(Qt::DayOfWeek)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_9DayOfWeekE_2(Qt::DayOfWeek arg0) {
@@ -5500,7 +5067,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_9DayOfWeekE_2(Qt::DayOfWeek arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1679
+// /usr/include/qt/QtCore/qnamespace.h:1671
 // [8] const char * qt_getEnumName(Qt::ArrowType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_9ArrowTypeE_3(Qt::ArrowType arg0) {
@@ -5508,7 +5075,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_9ArrowTypeE_3(Qt::ArrowType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1709
+// /usr/include/qt/QtCore/qnamespace.h:1701
 // [8] const char * qt_getEnumName(Qt::TimeSpec)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_8TimeSpecE_4(Qt::TimeSpec arg0) {
@@ -5516,7 +5083,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_8TimeSpecE_4(Qt::TimeSpec arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1698
+// /usr/include/qt/QtCore/qnamespace.h:1690
 // [8] const char * qt_getEnumName(Qt::TextFlag)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_8TextFlagE_5(Qt::TextFlag arg0) {
@@ -5524,7 +5091,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_8TextFlagE_5(Qt::TextFlag arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1689
+// /usr/include/qt/QtCore/qnamespace.h:1681
 // [8] const char * qt_getEnumName(Qt::SizeMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_8SizeModeE_6(Qt::SizeMode arg0) {
@@ -5532,7 +5099,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_8SizeModeE_6(Qt::SizeMode arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1694
+// /usr/include/qt/QtCore/qnamespace.h:1686
 // [8] const char * qt_getEnumName(Qt::SizeHint)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_8SizeHintE_7(Qt::SizeHint arg0) {
@@ -5540,7 +5107,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_8SizeHintE_7(Qt::SizeHint arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1681
+// /usr/include/qt/QtCore/qnamespace.h:1673
 // [8] const char * qt_getEnumName(Qt::PenStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_8PenStyleE_8(Qt::PenStyle arg0) {
@@ -5548,7 +5115,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_8PenStyleE_8(Qt::PenStyle arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1686
+// /usr/include/qt/QtCore/qnamespace.h:1678
 // [8] const char * qt_getEnumName(Qt::MaskMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_8MaskModeE_9(Qt::MaskMode arg0) {
@@ -5556,7 +5123,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_8MaskModeE_9(Qt::MaskMode arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1685
+// /usr/include/qt/QtCore/qnamespace.h:1677
 // [8] const char * qt_getEnumName(Qt::FillRule)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_8FillRuleE_10(Qt::FillRule arg0) {
@@ -5564,7 +5131,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_8FillRuleE_10(Qt::FillRule arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1691
+// /usr/include/qt/QtCore/qnamespace.h:1683
 // [8] const char * qt_getEnumName(Qt::Corner)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_6CornerE_11(Qt::Corner arg0) {
@@ -5572,7 +5139,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_6CornerE_11(Qt::Corner arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1687
+// /usr/include/qt/QtCore/qnamespace.h:1679
 // [8] const char * qt_getEnumName(Qt::BGMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_6BGModeE_12(Qt::BGMode arg0) {
@@ -5580,7 +5147,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_6BGModeE_12(Qt::BGMode arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1692
+// /usr/include/qt/QtCore/qnamespace.h:1684
 // [8] const char * qt_getEnumName(Qt::Edge)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_4EdgeE_13(Qt::Edge arg0) {
@@ -5588,7 +5155,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_4EdgeE_13(Qt::Edge arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1690
+// /usr/include/qt/QtCore/qnamespace.h:1682
 // [8] const char * qt_getEnumName(Qt::Axis)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_4AxisE_14(Qt::Axis arg0) {
@@ -5596,7 +5163,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_4AxisE_14(Qt::Axis arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1716
+// /usr/include/qt/QtCore/qnamespace.h:1708
 // [8] const char * qt_getEnumName(Qt::Key)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_3KeyE_15(Qt::Key arg0) {
@@ -5604,7 +5171,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_3KeyE_15(Qt::Key arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1721
+// /usr/include/qt/QtCore/qnamespace.h:1713
 // [8] const char * qt_getEnumName(Qt::ItemSelectionOperation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_22ItemSelectionOperationE_16(Qt::ItemSelectionOperation arg0) {
@@ -5612,7 +5179,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_22ItemSelectionOperationE_16(Qt::ItemSelectionO
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1734
+// /usr/include/qt/QtCore/qnamespace.h:1726
 // [8] const char * qt_getEnumName(Qt::ApplicationAttribute)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_20ApplicationAttributeE_17(Qt::ApplicationAttribute arg0) {
@@ -5620,7 +5187,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_20ApplicationAttributeE_17(Qt::ApplicationAttri
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1718
+// /usr/include/qt/QtCore/qnamespace.h:1710
 // [8] const char * qt_getEnumName(Qt::TextInteractionFlag)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_19TextInteractionFlagE_18(Qt::TextInteractionFlag arg0) {
@@ -5628,7 +5195,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_19TextInteractionFlagE_18(Qt::TextInteractionFl
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1714
+// /usr/include/qt/QtCore/qnamespace.h:1706
 // [8] const char * qt_getEnumName(Qt::TransformationMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_18TransformationModeE_19(Qt::TransformationMode arg0) {
@@ -5636,7 +5203,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_18TransformationModeE_19(Qt::TransformationMode
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1744
+// /usr/include/qt/QtCore/qnamespace.h:1736
 // [8] const char * qt_getEnumName(Qt::ScreenOrientation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_17ScreenOrientationE_20(Qt::ScreenOrientation arg0) {
@@ -5644,7 +5211,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_17ScreenOrientationE_20(Qt::ScreenOrientation a
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1751
+// /usr/include/qt/QtCore/qnamespace.h:1743
 // [8] const char * qt_getEnumName(Qt::NativeGestureType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_17NativeGestureTypeE_21(Qt::NativeGestureType arg0) {
@@ -5652,7 +5219,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_17NativeGestureTypeE_21(Qt::NativeGestureType a
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1720
+// /usr/include/qt/QtCore/qnamespace.h:1712
 // [8] const char * qt_getEnumName(Qt::ItemSelectionMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_17ItemSelectionModeE_22(Qt::ItemSelectionMode arg0) {
@@ -5660,7 +5227,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_17ItemSelectionModeE_22(Qt::ItemSelectionMode a
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1678
+// /usr/include/qt/QtCore/qnamespace.h:1670
 // [8] const char * qt_getEnumName(Qt::ContextMenuPolicy)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_17ContextMenuPolicyE_23(Qt::ContextMenuPolicy arg0) {
@@ -5668,7 +5235,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_17ContextMenuPolicyE_23(Qt::ContextMenuPolicy a
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1759
+// /usr/include/qt/QtCore/qnamespace.h:1751
 // [8] const char * qt_getEnumName(Qt::TabFocusBehavior)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_16TabFocusBehaviorE_24(Qt::TabFocusBehavior arg0) {
@@ -5676,7 +5243,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_16TabFocusBehaviorE_24(Qt::TabFocusBehavior arg
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1756
+// /usr/include/qt/QtCore/qnamespace.h:1748
 // [8] const char * qt_getEnumName(Qt::MouseEventSource)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_16MouseEventSourceE_25(Qt::MouseEventSource arg0) {
@@ -5684,7 +5251,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_16MouseEventSourceE_25(Qt::MouseEventSource arg
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1739
+// /usr/include/qt/QtCore/qnamespace.h:1731
 // [8] const char * qt_getEnumName(Qt::InputMethodQuery)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_16InputMethodQueryE_26(Qt::InputMethodQuery arg0) {
@@ -5692,7 +5259,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_16InputMethodQueryE_26(Qt::InputMethodQuery arg
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1747
+// /usr/include/qt/QtCore/qnamespace.h:1739
 // [8] const char * qt_getEnumName(Qt::ApplicationState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_16ApplicationStateE_27(Qt::ApplicationState arg0) {
@@ -5700,7 +5267,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_16ApplicationStateE_27(Qt::ApplicationState arg
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1733
+// /usr/include/qt/QtCore/qnamespace.h:1725
 // [8] const char * qt_getEnumName(Qt::WidgetAttribute)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_15WidgetAttributeE_28(Qt::WidgetAttribute arg0) {
@@ -5708,7 +5275,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_15WidgetAttributeE_28(Qt::WidgetAttribute arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1680
+// /usr/include/qt/QtCore/qnamespace.h:1672
 // [8] const char * qt_getEnumName(Qt::ToolButtonStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_15ToolButtonStyleE_29(Qt::ToolButtonStyle arg0) {
@@ -5716,7 +5283,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_15ToolButtonStyleE_29(Qt::ToolButtonStyle arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1717
+// /usr/include/qt/QtCore/qnamespace.h:1709
 // [8] const char * qt_getEnumName(Qt::ShortcutContext)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_15ShortcutContextE_30(Qt::ShortcutContext arg0) {
@@ -5724,7 +5291,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_15ShortcutContextE_30(Qt::ShortcutContext arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1676
+// /usr/include/qt/QtCore/qnamespace.h:1668
 // [8] const char * qt_getEnumName(Qt::ScrollBarPolicy)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_15ScrollBarPolicyE_31(Qt::ScrollBarPolicy arg0) {
@@ -5732,7 +5299,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_15ScrollBarPolicyE_31(Qt::ScrollBarPolicy arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1693
+// /usr/include/qt/QtCore/qnamespace.h:1685
 // [8] const char * qt_getEnumName(Qt::LayoutDirection)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_15LayoutDirectionE_32(Qt::LayoutDirection arg0) {
@@ -5740,7 +5307,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_15LayoutDirectionE_32(Qt::LayoutDirection arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1738
+// /usr/include/qt/QtCore/qnamespace.h:1730
 // [8] const char * qt_getEnumName(Qt::InputMethodHint)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_15InputMethodHintE_33(Qt::InputMethodHint arg0) {
@@ -5748,7 +5315,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_15InputMethodHintE_33(Qt::InputMethodHint arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1753
+// /usr/include/qt/QtCore/qnamespace.h:1745
 // [8] const char * qt_getEnumName(Qt::CursorMoveStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_15CursorMoveStyleE_34(Qt::CursorMoveStyle arg0) {
@@ -5756,7 +5323,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_15CursorMoveStyleE_34(Qt::CursorMoveStyle arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1726
+// /usr/include/qt/QtCore/qnamespace.h:1718
 // [8] const char * qt_getEnumName(Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_15CaseSensitivityE_35(Qt::CaseSensitivity arg0) {
@@ -5764,7 +5331,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_15CaseSensitivityE_35(Qt::CaseSensitivity arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1713
+// /usr/include/qt/QtCore/qnamespace.h:1705
 // [8] const char * qt_getEnumName(Qt::AspectRatioMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_15AspectRatioModeE_36(Qt::AspectRatioMode arg0) {
@@ -5772,7 +5339,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_15AspectRatioModeE_36(Qt::AspectRatioMode arg0)
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1732
+// /usr/include/qt/QtCore/qnamespace.h:1724
 // [8] const char * qt_getEnumName(Qt::WindowModality)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_14WindowModalityE_37(Qt::WindowModality arg0) {
@@ -5780,7 +5347,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_14WindowModalityE_37(Qt::WindowModality arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1757
+// /usr/include/qt/QtCore/qnamespace.h:1749
 // [8] const char * qt_getEnumName(Qt::MouseEventFlag)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_14MouseEventFlagE_38(Qt::MouseEventFlag arg0) {
@@ -5788,7 +5355,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_14MouseEventFlagE_38(Qt::MouseEventFlag arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1704
+// /usr/include/qt/QtCore/qnamespace.h:1696
 // [8] const char * qt_getEnumName(Qt::DockWidgetArea)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_14DockWidgetAreaE_39(Qt::DockWidgetArea arg0) {
@@ -5796,7 +5363,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_14DockWidgetAreaE_39(Qt::DockWidgetArea arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1746
+// /usr/include/qt/QtCore/qnamespace.h:1738
 // [8] const char * qt_getEnumName(Qt::ConnectionType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_14ConnectionTypeE_40(Qt::ConnectionType arg0) {
@@ -5804,7 +5371,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_14ConnectionTypeE_40(Qt::ConnectionType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1707
+// /usr/include/qt/QtCore/qnamespace.h:1699
 // [8] const char * qt_getEnumName(Qt::TextElideMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_13TextElideModeE_41(Qt::TextElideMode arg0) {
@@ -5812,7 +5379,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_13TextElideModeE_41(Qt::TextElideMode arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1688
+// /usr/include/qt/QtCore/qnamespace.h:1680
 // [8] const char * qt_getEnumName(Qt::ClipOperation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_13ClipOperationE_42(Qt::ClipOperation arg0) {
@@ -5820,7 +5387,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_13ClipOperationE_42(Qt::ClipOperation arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1683
+// /usr/include/qt/QtCore/qnamespace.h:1675
 // [8] const char * qt_getEnumName(Qt::PenJoinStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_12PenJoinStyleE_43(Qt::PenJoinStyle arg0) {
@@ -5828,7 +5395,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_12PenJoinStyleE_43(Qt::PenJoinStyle arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1724
+// /usr/include/qt/QtCore/qnamespace.h:1716
 // [8] const char * qt_getEnumName(Qt::ItemDataRole)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_12ItemDataRoleE_44(Qt::ItemDataRole arg0) {
@@ -5836,7 +5403,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_12ItemDataRoleE_44(Qt::ItemDataRole arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1749
+// /usr/include/qt/QtCore/qnamespace.h:1741
 // [8] const char * qt_getEnumName(Qt::GestureState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_12GestureStateE_45(Qt::GestureState arg0) {
@@ -5844,7 +5411,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_12GestureStateE_45(Qt::GestureState arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1741
+// /usr/include/qt/QtCore/qnamespace.h:1733
 // [8] const char * qt_getEnumName(Qt::EnterKeyType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_12EnterKeyTypeE_46(Qt::EnterKeyType arg0) {
@@ -5852,7 +5419,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_12EnterKeyTypeE_46(Qt::EnterKeyType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1758
+// /usr/include/qt/QtCore/qnamespace.h:1750
 // [8] const char * qt_getEnumName(Qt::ChecksumType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_12ChecksumTypeE_47(Qt::ChecksumType arg0) {
@@ -5860,7 +5427,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_12ChecksumTypeE_47(Qt::ChecksumType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1731
+// /usr/include/qt/QtCore/qnamespace.h:1723
 // [8] const char * qt_getEnumName(Qt::WindowState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11WindowStateE_48(Qt::WindowState arg0) {
@@ -5868,7 +5435,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11WindowStateE_48(Qt::WindowState arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1705
+// /usr/include/qt/QtCore/qnamespace.h:1697
 // [8] const char * qt_getEnumName(Qt::ToolBarArea)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11ToolBarAreaE_49(Qt::ToolBarArea arg0) {
@@ -5876,7 +5443,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11ToolBarAreaE_49(Qt::ToolBarArea arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1755
+// /usr/include/qt/QtCore/qnamespace.h:1747
 // [8] const char * qt_getEnumName(Qt::ScrollPhase)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11ScrollPhaseE_50(Qt::ScrollPhase arg0) {
@@ -5884,7 +5451,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11ScrollPhaseE_50(Qt::ScrollPhase arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1682
+// /usr/include/qt/QtCore/qnamespace.h:1674
 // [8] const char * qt_getEnumName(Qt::PenCapStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11PenCapStyleE_51(Qt::PenCapStyle arg0) {
@@ -5892,7 +5459,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11PenCapStyleE_51(Qt::PenCapStyle arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1695
+// /usr/include/qt/QtCore/qnamespace.h:1687
 // [8] const char * qt_getEnumName(Qt::Orientation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11OrientationE_52(Qt::Orientation arg0) {
@@ -5900,7 +5467,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11OrientationE_52(Qt::Orientation arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1712
+// /usr/include/qt/QtCore/qnamespace.h:1704
 // [8] const char * qt_getEnumName(Qt::GlobalColor)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11GlobalColorE_53(Qt::GlobalColor arg0) {
@@ -5908,7 +5475,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11GlobalColorE_53(Qt::GlobalColor arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1750
+// /usr/include/qt/QtCore/qnamespace.h:1742
 // [8] const char * qt_getEnumName(Qt::GestureType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11GestureTypeE_54(Qt::GestureType arg0) {
@@ -5916,7 +5483,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11GestureTypeE_54(Qt::GestureType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1737
+// /usr/include/qt/QtCore/qnamespace.h:1729
 // [8] const char * qt_getEnumName(Qt::FocusReason)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11FocusReasonE_55(Qt::FocusReason arg0) {
@@ -5924,7 +5491,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11FocusReasonE_55(Qt::FocusReason arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1677
+// /usr/include/qt/QtCore/qnamespace.h:1669
 // [8] const char * qt_getEnumName(Qt::FocusPolicy)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11FocusPolicyE_56(Qt::FocusPolicy arg0) {
@@ -5932,7 +5499,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11FocusPolicyE_56(Qt::FocusPolicy arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1711
+// /usr/include/qt/QtCore/qnamespace.h:1703
 // [8] const char * qt_getEnumName(Qt::CursorShape)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_11CursorShapeE_57(Qt::CursorShape arg0) {
@@ -5940,7 +5507,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_11CursorShapeE_57(Qt::CursorShape arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1730
+// /usr/include/qt/QtCore/qnamespace.h:1722
 // [8] const char * qt_getEnumName(Qt::WindowType)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_10WindowTypeE_58(Qt::WindowType arg0) {
@@ -5948,7 +5515,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_10WindowTypeE_58(Qt::WindowType arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1706
+// /usr/include/qt/QtCore/qnamespace.h:1698
 // [8] const char * qt_getEnumName(Qt::TextFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_10TextFormatE_59(Qt::TextFormat arg0) {
@@ -5956,7 +5523,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_10TextFormatE_59(Qt::TextFormat arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1696
+// /usr/include/qt/QtCore/qnamespace.h:1688
 // [8] const char * qt_getEnumName(Qt::DropAction)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_10DropActionE_60(Qt::DropAction arg0) {
@@ -5964,7 +5531,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_10DropActionE_60(Qt::DropAction arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1708
+// /usr/include/qt/QtCore/qnamespace.h:1700
 // [8] const char * qt_getEnumName(Qt::DateFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_10DateFormatE_61(Qt::DateFormat arg0) {
@@ -5972,7 +5539,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_10DateFormatE_61(Qt::DateFormat arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1723
+// /usr/include/qt/QtCore/qnamespace.h:1715
 // [8] const char * qt_getEnumName(Qt::CheckState)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_10CheckStateE_62(Qt::CheckState arg0) {
@@ -5980,7 +5547,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_10CheckStateE_62(Qt::CheckState arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1684
+// /usr/include/qt/QtCore/qnamespace.h:1676
 // [8] const char * qt_getEnumName(Qt::BrushStyle)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameENS_10BrushStyleE_63(Qt::BrushStyle arg0) {
@@ -5988,7 +5555,7 @@ void* C_ZN2Qt14qt_getEnumNameENS_10BrushStyleE_63(Qt::BrushStyle arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1727
+// /usr/include/qt/QtCore/qnamespace.h:1719
 // [8] const char * qt_getEnumName(Qt::MatchFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_9MatchFlagEE_64(QFlags<Qt::MatchFlag> arg0) {
@@ -5996,7 +5563,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_9MatchFlagEE_64(QFlags<Qt::MatchFlag> a
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1722
+// /usr/include/qt/QtCore/qnamespace.h:1714
 // [8] const char * qt_getEnumName(Qt::ItemFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_8ItemFlagEE_65(QFlags<Qt::ItemFlag> arg0) {
@@ -6004,7 +5571,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_8ItemFlagEE_65(QFlags<Qt::ItemFlag> arg
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1701
+// /usr/include/qt/QtCore/qnamespace.h:1693
 // [8] const char * qt_getEnumName(Qt::Edges)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_4EdgeEE_66(QFlags<Qt::Edge> arg0) {
@@ -6012,7 +5579,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_4EdgeEE_66(QFlags<Qt::Edge> arg0) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1719
+// /usr/include/qt/QtCore/qnamespace.h:1711
 // [8] const char * qt_getEnumName(Qt::TextInteractionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_19TextInteractionFlagEE_67(QFlags<Qt::TextInteractionFlag> arg0) {
@@ -6020,7 +5587,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_19TextInteractionFlagEE_67(QFlags<Qt::T
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1715
+// /usr/include/qt/QtCore/qnamespace.h:1707
 // [8] const char * qt_getEnumName(Qt::ImageConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_19ImageConversionFlagEE_68(QFlags<Qt::ImageConversionFlag> arg0) {
@@ -6028,7 +5595,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_19ImageConversionFlagEE_68(QFlags<Qt::I
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1745
+// /usr/include/qt/QtCore/qnamespace.h:1737
 // [8] const char * qt_getEnumName(Qt::ScreenOrientations)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_17ScreenOrientationEE_69(QFlags<Qt::ScreenOrientation> arg0) {
@@ -6036,7 +5603,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_17ScreenOrientationEE_69(QFlags<Qt::Scr
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1728
+// /usr/include/qt/QtCore/qnamespace.h:1720
 // [8] const char * qt_getEnumName(Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_16KeyboardModifierEE_70(QFlags<Qt::KeyboardModifier> arg0) {
@@ -6044,7 +5611,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_16KeyboardModifierEE_70(QFlags<Qt::Keyb
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1742
+// /usr/include/qt/QtCore/qnamespace.h:1734
 // [8] const char * qt_getEnumName(Qt::InputMethodQueries)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_16InputMethodQueryEE_71(QFlags<Qt::InputMethodQuery> arg0) {
@@ -6052,7 +5619,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_16InputMethodQueryEE_71(QFlags<Qt::Inpu
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1743
+// /usr/include/qt/QtCore/qnamespace.h:1735
 // [8] const char * qt_getEnumName(Qt::TouchPointStates)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_15TouchPointStateEE_72(QFlags<Qt::TouchPointState> arg0) {
@@ -6060,7 +5627,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_15TouchPointStateEE_72(QFlags<Qt::Touch
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1740
+// /usr/include/qt/QtCore/qnamespace.h:1732
 // [8] const char * qt_getEnumName(Qt::InputMethodHints)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_15InputMethodHintEE_73(QFlags<Qt::InputMethodHint> arg0) {
@@ -6068,7 +5635,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_15InputMethodHintEE_73(QFlags<Qt::Input
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1702
+// /usr/include/qt/QtCore/qnamespace.h:1694
 // [8] const char * qt_getEnumName(Qt::DockWidgetAreas)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_14DockWidgetAreaEE_74(QFlags<Qt::DockWidgetArea> arg0) {
@@ -6076,7 +5643,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_14DockWidgetAreaEE_74(QFlags<Qt::DockWi
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1697
+// /usr/include/qt/QtCore/qnamespace.h:1689
 // [8] const char * qt_getEnumName(Qt::Alignment)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_13AlignmentFlagEE_75(QFlags<Qt::AlignmentFlag> arg0) {
@@ -6084,7 +5651,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_13AlignmentFlagEE_75(QFlags<Qt::Alignme
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1736
+// /usr/include/qt/QtCore/qnamespace.h:1728
 // [8] const char * qt_getEnumName(Qt::WindowStates)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11WindowStateEE_76(QFlags<Qt::WindowState> arg0) {
@@ -6092,7 +5659,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11WindowStateEE_76(QFlags<Qt::WindowSta
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1703
+// /usr/include/qt/QtCore/qnamespace.h:1695
 // [8] const char * qt_getEnumName(Qt::ToolBarAreas)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11ToolBarAreaEE_77(QFlags<Qt::ToolBarArea> arg0) {
@@ -6100,7 +5667,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11ToolBarAreaEE_77(QFlags<Qt::ToolBarAr
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1699
+// /usr/include/qt/QtCore/qnamespace.h:1691
 // [8] const char * qt_getEnumName(Qt::Orientations)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11OrientationEE_78(QFlags<Qt::Orientation> arg0) {
@@ -6108,7 +5675,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11OrientationEE_78(QFlags<Qt::Orientati
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1729
+// /usr/include/qt/QtCore/qnamespace.h:1721
 // [8] const char * qt_getEnumName(Qt::MouseButtons)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11MouseButtonEE_79(QFlags<Qt::MouseButton> arg0) {
@@ -6116,7 +5683,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_11MouseButtonEE_79(QFlags<Qt::MouseButt
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1735
+// /usr/include/qt/QtCore/qnamespace.h:1727
 // [8] const char * qt_getEnumName(Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_10WindowTypeEE_80(QFlags<Qt::WindowType> arg0) {
@@ -6124,7 +5691,7 @@ void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_10WindowTypeEE_80(QFlags<Qt::WindowType
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:1700
+// /usr/include/qt/QtCore/qnamespace.h:1692
 // [8] const char * qt_getEnumName(Qt::DropActions)
 extern "C" Q_DECL_EXPORT
 void* C_ZN2Qt14qt_getEnumNameE6QFlagsINS_10DropActionEE_81(QFlags<Qt::DropAction> arg0) {
@@ -6254,7 +5821,7 @@ int C_ZL7qstrcmpPKcRK10QByteArray(const char * str1, QByteArray* str2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:843
+// /usr/include/qt/QtCore/qglobal.h:819
 // [1] bool qIsNull(float)
 extern "C" Q_DECL_EXPORT
 bool C_ZL7qIsNullf(float f) {
@@ -6262,7 +5829,7 @@ bool C_ZL7qIsNullf(float f) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:827
+// /usr/include/qt/QtCore/qglobal.h:803
 // [1] bool qIsNull(double)
 extern "C" Q_DECL_EXPORT
 bool C_ZL7qIsNulld_1(double d) {
@@ -6270,7 +5837,7 @@ bool C_ZL7qIsNulld_1(double d) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:807
+// /usr/include/qt/QtCore/qglobal.h:783
 // [1] bool qFuzzyCompare(float, float)
 extern "C" Q_DECL_EXPORT
 bool C_ZL13qFuzzyCompareff(float p1, float p2) {
@@ -6278,7 +5845,7 @@ bool C_ZL13qFuzzyCompareff(float p1, float p2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:802
+// /usr/include/qt/QtCore/qglobal.h:778
 // [1] bool qFuzzyCompare(double, double)
 extern "C" Q_DECL_EXPORT
 bool C_ZL13qFuzzyComparedd_1(double p1, double p2) {
@@ -6286,7 +5853,7 @@ bool C_ZL13qFuzzyComparedd_1(double p1, double p2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:817
+// /usr/include/qt/QtCore/qglobal.h:793
 // [1] bool qFuzzyIsNull(float)
 extern "C" Q_DECL_EXPORT
 bool C_ZL12qFuzzyIsNullf(float f) {
@@ -6294,7 +5861,7 @@ bool C_ZL12qFuzzyIsNullf(float f) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:812
+// /usr/include/qt/QtCore/qglobal.h:788
 // [1] bool qFuzzyIsNull(double)
 extern "C" Q_DECL_EXPORT
 bool C_ZL12qFuzzyIsNulld_1(double d) {
@@ -6302,7 +5869,7 @@ bool C_ZL12qFuzzyIsNulld_1(double d) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1143
+// /usr/include/qt/QtCore/qglobal.h:1116
 // [1] bool qunsetenv(const char *)
 extern "C" Q_DECL_EXPORT
 bool C_Z9qunsetenvPKc(const char * varName) {
@@ -6310,7 +5877,7 @@ bool C_Z9qunsetenvPKc(const char * varName) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:732
+// /usr/include/qt/QtCore/qglobal.h:708
 // [-2] void qt_assert(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void C_Z9qt_assertPKcS0_i(const char * assertion, const char * file, int line) {
@@ -6358,7 +5925,7 @@ uint C_Z9qHashBitsPKvmj(const void * p, size_t size, uint seed) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:685
+// /usr/include/qt/QtCore/qbytearray.h:676
 // [8] QByteArray qCompress(const QByteArray &, int)
 extern "C" Q_DECL_EXPORT
 void* C_Z9qCompressRK10QByteArrayi(QByteArray* data, int compressionLevel) {
@@ -6367,7 +5934,7 @@ return new QByteArray(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:683
+// /usr/include/qt/QtCore/qbytearray.h:674
 // [8] QByteArray qCompress(const uchar *, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_Z9qCompressPKhii_1(const uchar * data, int nbytes, int compressionLevel) {
@@ -6392,7 +5959,7 @@ quint16 C_Z9qChecksumPKcj_1(const char * s, uint len_) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:781
+// /usr/include/qt/QtCore/qglobal.h:757
 // [-2] void qBadAlloc()
 extern "C" Q_DECL_EXPORT
 void C_Z9qBadAllocv() {
@@ -6450,7 +6017,7 @@ int C_Z8qstricmpPKcS0_(const char * arg0, const char * arg1) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:544
+// /usr/include/qt/QtCore/qglobal.h:532
 // [8] qint64 qRound64(float)
 extern "C" Q_DECL_EXPORT
 qint64 C_Z8qRound64f(float d) {
@@ -6458,7 +6025,7 @@ qint64 C_Z8qRound64f(float d) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:542
+// /usr/include/qt/QtCore/qglobal.h:530
 // [8] qint64 qRound64(double)
 extern "C" Q_DECL_EXPORT
 qint64 C_Z8qRound64d_1(double d) {
@@ -6466,7 +6033,7 @@ qint64 C_Z8qRound64d_1(double d) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1150
+// /usr/include/qt/QtCore/qglobal.h:1123
 // [4] int qIntCast(float)
 extern "C" Q_DECL_EXPORT
 int C_Z8qIntCastf(float f) {
@@ -6474,7 +6041,7 @@ int C_Z8qIntCastf(float f) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1149
+// /usr/include/qt/QtCore/qglobal.h:1122
 // [4] int qIntCast(double)
 extern "C" Q_DECL_EXPORT
 int C_Z8qIntCastd_1(double f) {
@@ -6482,7 +6049,7 @@ int C_Z8qIntCastd_1(double f) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:206
+// /usr/include/qt/QtCore/qmath.h:204
 // [8] qreal qFastSin(qreal)
 extern "C" Q_DECL_EXPORT
 qreal C_Z8qFastSind(qreal x) {
@@ -6490,7 +6057,7 @@ qreal C_Z8qFastSind(qreal x) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:216
+// /usr/include/qt/QtCore/qmath.h:214
 // [8] qreal qFastCos(qreal)
 extern "C" Q_DECL_EXPORT
 qreal C_Z8qFastCosd(qreal x) {
@@ -6498,7 +6065,7 @@ qreal C_Z8qFastCosd(qreal x) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreapplication.h:261
+// /usr/include/qt/QtCore/qcoreapplication.h:260
 // [8] QString qAppName()
 extern "C" Q_DECL_EXPORT
 void* C_Z8qAppNamev() {
@@ -6507,7 +6074,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:647
+// /usr/include/qt/QtCore/qglobal.h:623
 // [-2] void qt_noop()
 extern "C" Q_DECL_EXPORT
 void C_Z7qt_noopv() {
@@ -6515,11 +6082,19 @@ void C_Z7qt_noopv() {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhashfunctions.h:105
-// [4] uint qt_hash(QStringView, uint)
+// /usr/include/qt/QtCore/qhashfunctions.h:102
+// [4] uint qt_hash(const QString &)
 extern "C" Q_DECL_EXPORT
-uint C_Z7qt_hash11QStringViewj(QStringView* key, uint chained) {
-  return (uint)qt_hash(*key, chained);
+uint C_Z7qt_hashRK7QString(QString* key) {
+  return (uint)qt_hash(*key);
+}
+
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhashfunctions.h:103
+// [4] uint qt_hash(const QStringRef &)
+extern "C" Q_DECL_EXPORT
+uint C_Z7qt_hashRK10QStringRef_1(QStringRef* key) {
+  return (uint)qt_hash(*key);
 }
 
 // Invalid inline Visibility=Default Availability=Available
@@ -6571,7 +6146,7 @@ int C_Z7qstrcmpPKcS0__3(const char * str1, const char * str2) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1142
+// /usr/include/qt/QtCore/qglobal.h:1115
 // [1] bool qputenv(const char *, const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_Z7qputenvPKcRK10QByteArray(const char * varName, QByteArray* value) {
@@ -6579,7 +6154,7 @@ bool C_Z7qputenvPKcRK10QByteArray(const char * varName, QByteArray* value) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1134
+// /usr/include/qt/QtCore/qglobal.h:1114
 // [8] QByteArray qgetenv(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_Z7qgetenvPKc(const char * varName) {
@@ -6588,7 +6163,7 @@ return new QByteArray(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1051
+// /usr/include/qt/QtCore/qglobal.h:1031
 // [8] QString qtTrId(const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_Z6qtTrIdPKci(const char * id, int n) {
@@ -6597,7 +6172,7 @@ return new QString(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1155
+// /usr/include/qt/QtCore/qglobal.h:1128
 // [-2] void qsrand(uint)
 extern "C" Q_DECL_EXPORT
 void C_Z6qsrandj(uint seed) {
@@ -6605,7 +6180,7 @@ void C_Z6qsrandj(uint seed) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:539
+// /usr/include/qt/QtCore/qglobal.h:527
 // [4] int qRound(float)
 extern "C" Q_DECL_EXPORT
 int C_Z6qRoundf(float d) {
@@ -6613,7 +6188,7 @@ int C_Z6qRoundf(float d) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:537
+// /usr/include/qt/QtCore/qglobal.h:525
 // [4] int qRound(double)
 extern "C" Q_DECL_EXPORT
 int C_Z6qRoundd_1(double d) {
@@ -6696,7 +6271,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1156
+// /usr/include/qt/QtCore/qglobal.h:1129
 // [4] int qrand()
 extern "C" Q_DECL_EXPORT
 int C_Z5qrandv() {
@@ -6850,7 +6425,7 @@ uint C_Z5qHashRK9QUrlQueryj_14(QUrlQuery* key, uint seed) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:58
+// /usr/include/qt/QtCore/qmimetype.h:57
 // [4] uint qHash(const QMimeType &, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK9QMimeTypej_15(QMimeType* key, uint seed) {
@@ -6858,7 +6433,7 @@ uint C_Z5qHashRK9QMimeTypej_15(QMimeType* key, uint seed) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:412
+// /usr/include/qt/QtCore/qdatetime.h:399
 // [4] uint qHash(const QDateTime &, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK9QDateTimej_16(QDateTime* key, uint seed) {
@@ -6866,7 +6441,7 @@ uint C_Z5qHashRK9QDateTimej_16(QDateTime* key, uint seed) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhashfunctions.h:103
+// /usr/include/qt/QtCore/qhashfunctions.h:100
 // [4] uint qHash(const QBitArray &, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK9QBitArrayj_17(QBitArray* key, uint seed) {
@@ -6874,7 +6449,7 @@ uint C_Z5qHashRK9QBitArrayj_17(QBitArray* key, uint seed) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhashfunctions.h:99
+// /usr/include/qt/QtCore/qhashfunctions.h:98
 // [4] uint qHash(const QString &, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK7QStringj_18(QString* key, uint seed) {
@@ -6898,7 +6473,7 @@ uint C_Z5qHashRK7QLocalej_20(QLocale* key, uint seed) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/quuid.h:235
+// /usr/include/qt/QtCore/quuid.h:232
 // [4] uint qHash(const QUuid &, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK5QUuidj_21(QUuid* uuid, uint seed) {
@@ -6906,7 +6481,7 @@ uint C_Z5qHashRK5QUuidj_21(QUuid* uuid, uint seed) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:414
+// /usr/include/qt/QtCore/qdatetime.h:401
 // [4] uint qHash(const QTime &, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK5QTimej_22(QTime* key, uint seed) {
@@ -6914,7 +6489,7 @@ uint C_Z5qHashRK5QTimej_22(QTime* key, uint seed) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:413
+// /usr/include/qt/QtCore/qdatetime.h:400
 // [4] uint qHash(const QDate &, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK5QDatej_23(QDate* key, uint seed) {
@@ -6946,7 +6521,7 @@ uint C_Z5qHashRK21QPersistentModelIndexj_26(QPersistentModelIndex* index, uint s
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:227
+// /usr/include/qt/QtCore/qitemselectionmodel.h:229
 // [4] uint qHash(const QItemSelectionRange &)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK19QItemSelectionRange_27(QItemSelectionRange* arg0) {
@@ -6954,7 +6529,7 @@ uint C_Z5qHashRK19QItemSelectionRange_27(QItemSelectionRange* arg0) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:62
+// /usr/include/qt/QtCore/qregularexpression.h:60
 // [4] uint qHash(const QRegularExpression &, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK18QRegularExpressionj_28(QRegularExpression* key, uint seed) {
@@ -6978,7 +6553,7 @@ uint C_Z5qHashRK11QModelIndex_30(QModelIndex* index) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhashfunctions.h:100
+// /usr/include/qt/QtCore/qhashfunctions.h:99
 // [4] uint qHash(const QStringRef &, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHashRK10QStringRefj_31(QStringRef* key, uint seed) {
@@ -7002,18 +6577,10 @@ uint C_Z5qHash5QCharj_33(const QChar* key, uint seed) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhashfunctions.h:104
+// /usr/include/qt/QtCore/qhashfunctions.h:101
 // [4] uint qHash(QLatin1String, uint)
 extern "C" Q_DECL_EXPORT
 uint C_Z5qHash13QLatin1Stringj_34(QLatin1String* key, uint seed) {
-  return (uint)qHash(*key, seed);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhashfunctions.h:102
-// [4] uint qHash(QStringView, uint)
-extern "C" Q_DECL_EXPORT
-uint C_Z5qHash11QStringViewj_35(QStringView* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 
@@ -7084,7 +6651,7 @@ void C_Z4swapR9QUrlQueryS0_(QUrlQuery* value1, QUrlQuery* value2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:177
+// /usr/include/qt/QtCore/qtimezone.h:169
 // [-2] void swap(QTimeZone &, QTimeZone &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR9QTimeZoneS0__1(QTimeZone* value1, QTimeZone* value2) {
@@ -7092,7 +6659,7 @@ void C_Z4swapR9QTimeZoneS0__1(QTimeZone* value1, QTimeZone* value2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:129
+// /usr/include/qt/QtCore/qmimetype.h:113
 // [-2] void swap(QMimeType &, QMimeType &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR9QMimeTypeS0__2(QMimeType* value1, QMimeType* value2) {
@@ -7100,7 +6667,7 @@ void C_Z4swapR9QMimeTypeS0__2(QMimeType* value1, QMimeType* value2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfileinfo.h:157
+// /usr/include/qt/QtCore/qfileinfo.h:150
 // [-2] void swap(QFileInfo &, QFileInfo &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR9QFileInfoS0__3(QFileInfo* value1, QFileInfo* value2) {
@@ -7108,7 +6675,7 @@ void C_Z4swapR9QFileInfoS0__3(QFileInfo* value1, QFileInfo* value2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:393
+// /usr/include/qt/QtCore/qdatetime.h:380
 // [-2] void swap(QDateTime &, QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR9QDateTimeS0__4(QDateTime* value1, QDateTime* value2) {
@@ -7140,7 +6707,7 @@ void C_Z4swapR8QVariantS0__7(QVariant* value1, QVariant* value2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1403
+// /usr/include/qt/QtCore/qstring.h:1366
 // [-2] void swap(QString &, QString &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR7QStringS0__8(QString* value1, QString* value2) {
@@ -7148,7 +6715,7 @@ void C_Z4swapR7QStringS0__8(QString* value1, QString* value2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qlocale.h:1095
+// /usr/include/qt/QtCore/qlocale.h:1063
 // [-2] void swap(QLocale &, QLocale &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR7QLocaleS0__9(QLocale* value1, QLocale* value2) {
@@ -7156,7 +6723,7 @@ void C_Z4swapR7QLocaleS0__9(QLocale* value1, QLocale* value2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:174
+// /usr/include/qt/QtCore/qdebug.h:171
 // [-2] void swap(QDebug &, QDebug &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR6QDebugS0__10(QDebug* value1, QDebug* value2) {
@@ -7180,7 +6747,7 @@ void C_Z4swapR4QDirS0__12(QDir* value1, QDir* value2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:276
+// /usr/include/qt/QtCore/qregularexpression.h:261
 // [-2] void swap(QRegularExpressionMatchIterator &, QRegularExpressionMatchIterator &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR31QRegularExpressionMatchIteratorS0__13(QRegularExpressionMatchIterator* value1, QRegularExpressionMatchIterator* value2) {
@@ -7188,7 +6755,7 @@ void C_Z4swapR31QRegularExpressionMatchIteratorS0__13(QRegularExpressionMatchIte
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:238
+// /usr/include/qt/QtCore/qregularexpression.h:223
 // [-2] void swap(QRegularExpressionMatch &, QRegularExpressionMatch &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR23QRegularExpressionMatchS0__14(QRegularExpressionMatch* value1, QRegularExpressionMatch* value2) {
@@ -7220,7 +6787,7 @@ void C_Z4swapR19QProcessEnvironmentS0__17(QProcessEnvironment* value1, QProcessE
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:159
+// /usr/include/qt/QtCore/qregularexpression.h:157
 // [-2] void swap(QRegularExpression &, QRegularExpression &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR18QRegularExpressionS0__18(QRegularExpression* value1, QRegularExpression* value2) {
@@ -7244,7 +6811,7 @@ void C_Z4swapR16QCollatorSortKeyS0__20(QCollatorSortKey* value1, QCollatorSortKe
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:263
+// /usr/include/qt/QtCore/qitemselectionmodel.h:265
 // [-2] void swap(QItemSelection &, QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void C_Z4swapR14QItemSelectionS0__21(QItemSelection* value1, QItemSelection* value2) {
@@ -7260,18 +6827,10 @@ void C_Z4swapR14QDeadlineTimerS0__22(QDeadlineTimer* value1, QDeadlineTimer* val
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:171
-// [-2] void swap(QJsonDocument &, QJsonDocument &)
-extern "C" Q_DECL_EXPORT
-void C_Z4swapR13QJsonDocumentS0__23(QJsonDocument* value1, QJsonDocument* value2) {
-  swap(*value1, *value2);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstorageinfo.h:118
+// /usr/include/qt/QtCore/qstorageinfo.h:115
 // [-2] void swap(QStorageInfo &, QStorageInfo &)
 extern "C" Q_DECL_EXPORT
-void C_Z4swapR12QStorageInfoS0__24(QStorageInfo* value1, QStorageInfo* value2) {
+void C_Z4swapR12QStorageInfoS0__23(QStorageInfo* value1, QStorageInfo* value2) {
   swap(*value1, *value2);
 }
 
@@ -7279,39 +6838,15 @@ void C_Z4swapR12QStorageInfoS0__24(QStorageInfo* value1, QStorageInfo* value2) {
 // /usr/include/qt/QtCore/qeasingcurve.h:128
 // [-2] void swap(QEasingCurve &, QEasingCurve &)
 extern "C" Q_DECL_EXPORT
-void C_Z4swapR12QEasingCurveS0__25(QEasingCurve* value1, QEasingCurve* value2) {
+void C_Z4swapR12QEasingCurveS0__24(QEasingCurve* value1, QEasingCurve* value2) {
   swap(*value1, *value2);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonobject.h:263
-// [-2] void swap(QJsonObject &, QJsonObject &)
-extern "C" Q_DECL_EXPORT
-void C_Z4swapR11QJsonObjectS0__26(QJsonObject* value1, QJsonObject* value2) {
-  swap(*value1, *value2);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:247
-// [-2] void swap(QJsonValue &, QJsonValue &)
-extern "C" Q_DECL_EXPORT
-void C_Z4swapR10QJsonValueS0__27(QJsonValue* value1, QJsonValue* value2) {
-  swap(*value1, *value2);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonarray.h:266
-// [-2] void swap(QJsonArray &, QJsonArray &)
-extern "C" Q_DECL_EXPORT
-void C_Z4swapR10QJsonArrayS0__28(QJsonArray* value1, QJsonArray* value2) {
-  swap(*value1, *value2);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:691
+// /usr/include/qt/QtCore/qbytearray.h:682
 // [-2] void swap(QByteArray &, QByteArray &)
 extern "C" Q_DECL_EXPORT
-void C_Z4swapR10QByteArrayS0__29(QByteArray* value1, QByteArray* value2) {
+void C_Z4swapR10QByteArrayS0__25(QByteArray* value1, QByteArray* value2) {
   swap(*value1, *value2);
 }
 
@@ -7435,7 +6970,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:368
+// /usr/include/qt/QtCore/qdebug.h:365
 // [8] QDebug qt_QMetaEnum_flagDebugOperator(QDebug &, quint64, const QMetaObject *, const char *)
 extern "C" Q_DECL_EXPORT
 void* C_Z30qt_QMetaEnum_flagDebugOperatorR6QDebugyPK11QMetaObjectPKc(QDebug* dbg, quint64 value, const QMetaObject * meta, const char * name) {
@@ -7444,7 +6979,7 @@ return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:345
+// /usr/include/qt/QtCore/qdebug.h:342
 // [-2] void qt_QMetaEnum_flagDebugOperator(QDebug &, size_t, int)
 extern "C" Q_DECL_EXPORT
 void C_Z30qt_QMetaEnum_flagDebugOperatorR6QDebugmi_1(QDebug* debug, size_t sizeofT, int value) {
@@ -7469,7 +7004,7 @@ void C_Z29qRegisterStaticPluginFunction13QStaticPlugin(QStaticPlugin* staticPlug
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1147
+// /usr/include/qt/QtCore/qglobal.h:1120
 // [4] int qEnvironmentVariableIntValue(const char *, bool *)
 extern "C" Q_DECL_EXPORT
 int C_Z28qEnvironmentVariableIntValuePKcPb(const char * varName, bool * ok) {
@@ -7477,7 +7012,7 @@ int C_Z28qEnvironmentVariableIntValuePKcPb(const char * varName, bool * ok) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1145
+// /usr/include/qt/QtCore/qglobal.h:1118
 // [1] bool qEnvironmentVariableIsEmpty(const char *)
 extern "C" Q_DECL_EXPORT
 bool C_Z27qEnvironmentVariableIsEmptyPKc(const char * varName) {
@@ -7485,7 +7020,7 @@ bool C_Z27qEnvironmentVariableIsEmptyPKc(const char * varName) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:367
+// /usr/include/qt/QtCore/qdebug.h:364
 // [8] QDebug qt_QMetaEnum_debugOperator(QDebug &, int, const QMetaObject *, const char *)
 extern "C" Q_DECL_EXPORT
 void* C_Z26qt_QMetaEnum_debugOperatorR6QDebugiPK11QMetaObjectPKc(QDebug* arg0, int value, const QMetaObject * meta, const char * name) {
@@ -7494,7 +7029,7 @@ return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1146
+// /usr/include/qt/QtCore/qglobal.h:1119
 // [1] bool qEnvironmentVariableIsSet(const char *)
 extern "C" Q_DECL_EXPORT
 bool C_Z25qEnvironmentVariableIsSetPKc(const char * varName) {
@@ -7648,24 +7183,6 @@ void* C_Z20qt_qFindChild_helperPK7QObjectRK7QStringRK11QMetaObject6QFlagsIN2Qt15
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1140
-// [8] QString qEnvironmentVariable(const char *, const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_Z20qEnvironmentVariablePKcRK7QString(const char * varName, QString* defaultValue) {
-  auto rv = qEnvironmentVariable(varName, *defaultValue);
-return new QString(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:1139
-// [8] QString qEnvironmentVariable(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_Z20qEnvironmentVariablePKc_1(const char * varName) {
-  auto rv = qEnvironmentVariable(varName);
-return new QString(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhashfunctions.h:68
 // [-2] void qSetGlobalQHashSeed(int)
 extern "C" Q_DECL_EXPORT
@@ -7673,16 +7190,16 @@ void C_Z19qSetGlobalQHashSeedi(int newSeed) {
   qSetGlobalQHashSeed(newSeed);
 }
 
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:473
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:53
 // [8] const QMetaObject * qt_getQtMetaObject()
 extern "C" Q_DECL_EXPORT
 void* C_Z18qt_getQtMetaObjectv() {
   return (void*)qt_getQtMetaObject();
 }
 
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:53
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:472
 // [8] const QMetaObject * qt_getQtMetaObject()
 extern "C" Q_DECL_EXPORT
 void* C_Z18qt_getQtMetaObjectv_1() {
@@ -7698,7 +7215,7 @@ void C_Z18qSetMessagePatternRK7QString(QString* messagePattern) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreapplication.h:260
+// /usr/include/qt/QtCore/qcoreapplication.h:259
 // [-2] void qRemovePostRoutine(QtCleanUpFunction)
 extern "C" Q_DECL_EXPORT
 void C_Z18qRemovePostRoutinePFvvE(QtCleanUpFunction arg0) {
@@ -7714,7 +7231,7 @@ void C_Z17qt_message_output9QtMsgTypeRK18QMessageLogContextRK7QString(QtMsgType 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:236
+// /usr/include/qt/QtCore/qmath.h:234
 // [4] float qRadiansToDegrees(float)
 extern "C" Q_DECL_EXPORT
 float C_Z17qRadiansToDegreesf(float radians) {
@@ -7722,7 +7239,7 @@ float C_Z17qRadiansToDegreesf(float radians) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:241
+// /usr/include/qt/QtCore/qmath.h:239
 // [8] double qRadiansToDegrees(double)
 extern "C" Q_DECL_EXPORT
 double C_Z17qRadiansToDegreesd_1(double radians) {
@@ -7739,7 +7256,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:226
+// /usr/include/qt/QtCore/qmath.h:224
 // [4] float qDegreesToRadians(float)
 extern "C" Q_DECL_EXPORT
 float C_Z17qDegreesToRadiansf(float degrees) {
@@ -7747,7 +7264,7 @@ float C_Z17qDegreesToRadiansf(float degrees) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:231
+// /usr/include/qt/QtCore/qmath.h:229
 // [8] double qDegreesToRadians(double)
 extern "C" Q_DECL_EXPORT
 double C_Z17qDegreesToRadiansd_1(double degrees) {
@@ -7755,7 +7272,7 @@ double C_Z17qDegreesToRadiansd_1(double degrees) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:780
+// /usr/include/qt/QtCore/qglobal.h:756
 // [-2] void qt_check_pointer(const char *, int)
 extern "C" Q_DECL_EXPORT
 void C_Z16qt_check_pointerPKci(const char * arg0, int arg1) {
@@ -7820,7 +7337,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:727
+// /usr/include/qt/QtCore/qglobal.h:703
 // [8] QString qt_error_string(int)
 extern "C" Q_DECL_EXPORT
 void* C_Z15qt_error_stringi(int errorCode) {
@@ -7829,7 +7346,7 @@ return new QString(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:901
+// /usr/include/qt/QtCore/qglobal.h:877
 // [8] void * qReallocAligned(void *, size_t, size_t, size_t)
 extern "C" Q_DECL_EXPORT
 void* C_Z15qReallocAlignedPvmmm(void * ptr, size_t size, size_t oldsize, size_t alignment) {
@@ -7837,7 +7354,7 @@ void* C_Z15qReallocAlignedPvmmm(void * ptr, size_t size, size_t oldsize, size_t 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:264
+// /usr/include/qt/QtCore/qmath.h:266
 // [8] quint64 qNextPowerOfTwo(quint64)
 extern "C" Q_DECL_EXPORT
 quint64 C_Z15qNextPowerOfTwoy(quint64 v) {
@@ -7845,7 +7362,7 @@ quint64 C_Z15qNextPowerOfTwoy(quint64 v) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:287
+// /usr/include/qt/QtCore/qmath.h:291
 // [8] quint64 qNextPowerOfTwo(qint64)
 extern "C" Q_DECL_EXPORT
 quint64 C_Z15qNextPowerOfTwox_1(qint64 v) {
@@ -7853,7 +7370,7 @@ quint64 C_Z15qNextPowerOfTwox_1(qint64 v) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:247
+// /usr/include/qt/QtCore/qmath.h:246
 // [4] quint32 qNextPowerOfTwo(quint32)
 extern "C" Q_DECL_EXPORT
 quint32 C_Z15qNextPowerOfTwoj_2(quint32 v) {
@@ -7861,7 +7378,7 @@ quint32 C_Z15qNextPowerOfTwoj_2(quint32 v) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmath.h:282
+// /usr/include/qt/QtCore/qmath.h:286
 // [4] quint32 qNextPowerOfTwo(qint32)
 extern "C" Q_DECL_EXPORT
 quint32 C_Z15qNextPowerOfTwoi_3(qint32 v) {
@@ -7869,7 +7386,7 @@ quint32 C_Z15qNextPowerOfTwoi_3(qint32 v) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreapplication.h:259
+// /usr/include/qt/QtCore/qcoreapplication.h:258
 // [-2] void qAddPostRoutine(QtCleanUpFunction)
 extern "C" Q_DECL_EXPORT
 void C_Z15qAddPostRoutinePFvvE(QtCleanUpFunction arg0) {
@@ -7895,7 +7412,7 @@ void C_Z14qSetFieldWidthi(int width) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:900
+// /usr/include/qt/QtCore/qglobal.h:876
 // [8] void * qMallocAligned(size_t, size_t)
 extern "C" Q_DECL_EXPORT
 void* C_Z14qMallocAlignedmm(size_t size, size_t alignment) {
@@ -7919,7 +7436,7 @@ quint64 C_Z14qFloatDistancedd_1(double a, double b) {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreapplication.h:258
+// /usr/include/qt/QtCore/qcoreapplication.h:257
 // [-2] void qAddPreRoutine(QtStartUpFunction)
 extern "C" Q_DECL_EXPORT
 void C_Z14qAddPreRoutinePFvvE(QtStartUpFunction arg0) {
@@ -7969,7 +7486,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:687
+// /usr/include/qt/QtCore/qglobal.h:663
 // [1] bool qSharedBuild()
 extern "C" Q_DECL_EXPORT
 bool C_Z12qSharedBuildv() {
@@ -7977,7 +7494,7 @@ bool C_Z12qSharedBuildv() {
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:902
+// /usr/include/qt/QtCore/qglobal.h:878
 // [-2] void qFreeAligned(void *)
 extern "C" Q_DECL_EXPORT
 void C_Z12qFreeAlignedPv(void * ptr) {
@@ -7994,7 +7511,7 @@ return &rv;
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qglobal.h:749
+// /usr/include/qt/QtCore/qglobal.h:725
 // [-2] void qt_assert_x(const char *, const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void C_Z11qt_assert_xPKcS0_S0_i(const char * where, const char * what, const char * file, int line) {
@@ -8002,7 +7519,7 @@ void C_Z11qt_assert_xPKcS0_S0_i(const char * where, const char * what, const cha
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:687
+// /usr/include/qt/QtCore/qbytearray.h:678
 // [8] QByteArray qUncompress(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_Z11qUncompressRK10QByteArray(QByteArray* data) {
@@ -8011,7 +7528,7 @@ return new QByteArray(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbytearray.h:684
+// /usr/include/qt/QtCore/qbytearray.h:675
 // [8] QByteArray qUncompress(const uchar *, int)
 extern "C" Q_DECL_EXPORT
 void* C_Z11qUncompressPKhi_1(const uchar * data, int nbytes) {

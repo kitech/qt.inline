@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qtextbrowser.h
 #ifndef protected
 #define protected public
@@ -209,7 +208,7 @@ void* C_QTextBrowser_init_staticMetaObject(void* this_, void* strdat, void* dat,
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:107
+// /usr/include/qt/QtWidgets/qtextbrowser.h:108
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QTextBrowser5eventEP6QEvent(void *this_, QEvent * e) {
@@ -217,7 +216,7 @@ bool C_ZN12QTextBrowser5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:108
+// /usr/include/qt/QtWidgets/qtextbrowser.h:109
 // [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * ev) {
@@ -225,7 +224,7 @@ void C_ZN12QTextBrowser13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * ev) 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:109
+// /usr/include/qt/QtWidgets/qtextbrowser.h:110
 // [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
@@ -233,7 +232,7 @@ void C_ZN12QTextBrowser14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:110
+// /usr/include/qt/QtWidgets/qtextbrowser.h:111
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
@@ -241,7 +240,7 @@ void C_ZN12QTextBrowser15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:111
+// /usr/include/qt/QtWidgets/qtextbrowser.h:112
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * ev) {
@@ -249,7 +248,7 @@ void C_ZN12QTextBrowser17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEve
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:112
+// /usr/include/qt/QtWidgets/qtextbrowser.h:113
 // [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * ev) {
@@ -257,7 +256,7 @@ void C_ZN12QTextBrowser13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:113
+// /usr/include/qt/QtWidgets/qtextbrowser.h:114
 // [1] bool focusNextPrevChild(bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QTextBrowser18focusNextPrevChildEb(void *this_, bool next) {
@@ -265,7 +264,7 @@ bool C_ZN12QTextBrowser18focusNextPrevChildEb(void *this_, bool next) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:114
+// /usr/include/qt/QtWidgets/qtextbrowser.h:115
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
@@ -273,7 +272,7 @@ void C_ZN12QTextBrowser10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e)
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:55
+// /usr/include/qt/QtWidgets/qtextbrowser.h:56
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTextBrowser10metaObjectEv(void *this_) {
@@ -281,7 +280,7 @@ void* C_ZNK12QTextBrowser10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:55
+// /usr/include/qt/QtWidgets/qtextbrowser.h:56
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextBrowser11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -289,7 +288,7 @@ void* C_ZN12QTextBrowser11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:55
+// /usr/include/qt/QtWidgets/qtextbrowser.h:56
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN12QTextBrowser11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -297,7 +296,7 @@ int C_ZN12QTextBrowser11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaO
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:55
+// /usr/include/qt/QtWidgets/qtextbrowser.h:56
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextBrowser2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -306,7 +305,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:55
+// /usr/include/qt/QtWidgets/qtextbrowser.h:56
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextBrowser6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -315,7 +314,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:66
+// /usr/include/qt/QtWidgets/qtextbrowser.h:67
 // [-2] void QTextBrowser(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextBrowserC2EP7QWidget(QWidget * parent) {
@@ -324,14 +323,14 @@ void* C_ZN12QTextBrowserC2EP7QWidget(QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:67
+// /usr/include/qt/QtWidgets/qtextbrowser.h:68
 // [-2] void ~QTextBrowser()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowserD2Ev(void *this_) {
   delete (QTextBrowser*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:69
+// /usr/include/qt/QtWidgets/qtextbrowser.h:70
 // [8] QUrl source()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTextBrowser6sourceEv(void *this_) {
@@ -340,7 +339,7 @@ return new QUrl(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:71
+// /usr/include/qt/QtWidgets/qtextbrowser.h:72
 // [8] QStringList searchPaths()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QTextBrowser11searchPathsEv(void *this_) {
@@ -349,7 +348,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:72
+// /usr/include/qt/QtWidgets/qtextbrowser.h:73
 // [-2] void setSearchPaths(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser14setSearchPathsERK11QStringList(void *this_, QStringList* paths) {
@@ -357,7 +356,7 @@ void C_ZN12QTextBrowser14setSearchPathsERK11QStringList(void *this_, QStringList
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:74
+// /usr/include/qt/QtWidgets/qtextbrowser.h:75
 // [16] QVariant loadResource(int, const QUrl &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextBrowser12loadResourceEiRK4QUrl(void *this_, int type_, QUrl* name) {
@@ -367,7 +366,7 @@ return new QVariant(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qtextbrowser.h:76
+// /usr/include/qt/QtWidgets/qtextbrowser.h:77
 // [1] bool isBackwardAvailable()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -378,7 +377,7 @@ bool C_ZNK12QTextBrowser19isBackwardAvailableEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qtextbrowser.h:77
+// /usr/include/qt/QtWidgets/qtextbrowser.h:78
 // [1] bool isForwardAvailable()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -389,7 +388,7 @@ bool C_ZNK12QTextBrowser18isForwardAvailableEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qtextbrowser.h:78
+// /usr/include/qt/QtWidgets/qtextbrowser.h:79
 // [-2] void clearHistory()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -400,7 +399,7 @@ void C_ZN12QTextBrowser12clearHistoryEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qtextbrowser.h:79
+// /usr/include/qt/QtWidgets/qtextbrowser.h:80
 // [8] QString historyTitle(int)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -412,7 +411,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qtextbrowser.h:80
+// /usr/include/qt/QtWidgets/qtextbrowser.h:81
 // [8] QUrl historyUrl(int)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -424,7 +423,7 @@ return new QUrl(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qtextbrowser.h:81
+// /usr/include/qt/QtWidgets/qtextbrowser.h:82
 // [4] int backwardHistoryCount()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -435,7 +434,7 @@ int C_ZNK12QTextBrowser20backwardHistoryCountEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qtextbrowser.h:82
+// /usr/include/qt/QtWidgets/qtextbrowser.h:83
 // [4] int forwardHistoryCount()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -445,7 +444,7 @@ int C_ZNK12QTextBrowser19forwardHistoryCountEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:84
+// /usr/include/qt/QtWidgets/qtextbrowser.h:85
 // [1] bool openExternalLinks()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QTextBrowser17openExternalLinksEv(void *this_) {
@@ -453,7 +452,7 @@ bool C_ZNK12QTextBrowser17openExternalLinksEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:85
+// /usr/include/qt/QtWidgets/qtextbrowser.h:86
 // [-2] void setOpenExternalLinks(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser20setOpenExternalLinksEb(void *this_, bool open) {
@@ -461,7 +460,7 @@ void C_ZN12QTextBrowser20setOpenExternalLinksEb(void *this_, bool open) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:87
+// /usr/include/qt/QtWidgets/qtextbrowser.h:88
 // [1] bool openLinks()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QTextBrowser9openLinksEv(void *this_) {
@@ -469,7 +468,7 @@ bool C_ZNK12QTextBrowser9openLinksEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:88
+// /usr/include/qt/QtWidgets/qtextbrowser.h:89
 // [-2] void setOpenLinks(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser12setOpenLinksEb(void *this_, bool open) {
@@ -477,7 +476,7 @@ void C_ZN12QTextBrowser12setOpenLinksEb(void *this_, bool open) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:91
+// /usr/include/qt/QtWidgets/qtextbrowser.h:92
 // [-2] void setSource(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser9setSourceERK4QUrl(void *this_, QUrl* name) {
@@ -485,7 +484,7 @@ void C_ZN12QTextBrowser9setSourceERK4QUrl(void *this_, QUrl* name) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:92
+// /usr/include/qt/QtWidgets/qtextbrowser.h:93
 // [-2] void backward()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser8backwardEv(void *this_) {
@@ -493,7 +492,7 @@ void C_ZN12QTextBrowser8backwardEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:93
+// /usr/include/qt/QtWidgets/qtextbrowser.h:94
 // [-2] void forward()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser7forwardEv(void *this_) {
@@ -501,7 +500,7 @@ void C_ZN12QTextBrowser7forwardEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:94
+// /usr/include/qt/QtWidgets/qtextbrowser.h:95
 // [-2] void home()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser4homeEv(void *this_) {
@@ -509,7 +508,7 @@ void C_ZN12QTextBrowser4homeEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:95
+// /usr/include/qt/QtWidgets/qtextbrowser.h:96
 // [-2] void reload()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser6reloadEv(void *this_) {
@@ -517,7 +516,7 @@ void C_ZN12QTextBrowser6reloadEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:98
+// /usr/include/qt/QtWidgets/qtextbrowser.h:99
 // [-2] void backwardAvailable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser17backwardAvailableEb(void *this_, bool arg0) {
@@ -525,7 +524,7 @@ void C_ZN12QTextBrowser17backwardAvailableEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:99
+// /usr/include/qt/QtWidgets/qtextbrowser.h:100
 // [-2] void forwardAvailable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser16forwardAvailableEb(void *this_, bool arg0) {
@@ -534,7 +533,7 @@ void C_ZN12QTextBrowser16forwardAvailableEb(void *this_, bool arg0) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qtextbrowser.h:100
+// /usr/include/qt/QtWidgets/qtextbrowser.h:101
 // [-2] void historyChanged()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -544,7 +543,7 @@ void C_ZN12QTextBrowser14historyChangedEv(void *this_) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:101
+// /usr/include/qt/QtWidgets/qtextbrowser.h:102
 // [-2] void sourceChanged(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser13sourceChangedERK4QUrl(void *this_, QUrl* arg0) {
@@ -552,7 +551,7 @@ void C_ZN12QTextBrowser13sourceChangedERK4QUrl(void *this_, QUrl* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:102
+// /usr/include/qt/QtWidgets/qtextbrowser.h:103
 // [-2] void highlighted(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser11highlightedERK4QUrl(void *this_, QUrl* arg0) {
@@ -560,7 +559,7 @@ void C_ZN12QTextBrowser11highlightedERK4QUrl(void *this_, QUrl* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:103
+// /usr/include/qt/QtWidgets/qtextbrowser.h:104
 // [-2] void highlighted(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser11highlightedERK7QString(void *this_, QString* arg0) {
@@ -568,7 +567,7 @@ void C_ZN12QTextBrowser11highlightedERK7QString(void *this_, QString* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtextbrowser.h:104
+// /usr/include/qt/QtWidgets/qtextbrowser.h:105
 // [-2] void anchorClicked(const QUrl &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextBrowser13anchorClickedERK4QUrl(void *this_, QUrl* arg0) {
@@ -591,5 +590,4 @@ void C_ZN12QTextBrowser13anchorClickedERK4QUrl(void *this_, QUrl* arg0) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

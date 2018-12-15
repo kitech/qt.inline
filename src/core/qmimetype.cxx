@@ -58,7 +58,7 @@ MyQMimeType(const QMimeTypePrivate & dd) : QMimeType(dd) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:78
+// /usr/include/qt/QtCore/qmimetype.h:62
 // [-2] void QMimeType()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMimeTypeC2Ev() {
@@ -66,7 +66,7 @@ void* C_ZN9QMimeTypeC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:79
+// /usr/include/qt/QtCore/qmimetype.h:63
 // [-2] void QMimeType(const QMimeType &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMimeTypeC2ERKS_(QMimeType* other) {
@@ -74,7 +74,7 @@ void* C_ZN9QMimeTypeC2ERKS_(QMimeType* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:80
+// /usr/include/qt/QtCore/qmimetype.h:64
 // [8] QMimeType & operator=(const QMimeType &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMimeTypeaSERKS_(void *this_, QMimeType* other) {
@@ -83,7 +83,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:82
+// /usr/include/qt/QtCore/qmimetype.h:66
 // [8] QMimeType & operator=(QMimeType &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMimeTypeaSEOS_(void *this_, QMimeType && other) {
@@ -92,7 +92,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:84
+// /usr/include/qt/QtCore/qmimetype.h:68
 // [-2] void swap(QMimeType &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeType4swapERS_(void *this_, QMimeType* other) {
@@ -100,7 +100,7 @@ void C_ZN9QMimeType4swapERS_(void *this_, QMimeType* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:88
+// /usr/include/qt/QtCore/qmimetype.h:72
 // [-2] void QMimeType(const QMimeTypePrivate &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QMimeTypeC2ERK16QMimeTypePrivate(QMimeTypePrivate* dd) {
@@ -108,14 +108,14 @@ void* C_ZN9QMimeTypeC2ERK16QMimeTypePrivate(QMimeTypePrivate* dd) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:89
+// /usr/include/qt/QtCore/qmimetype.h:73
 // [-2] void ~QMimeType()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QMimeTypeD2Ev(void *this_) {
   delete (QMimeType*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:91
+// /usr/include/qt/QtCore/qmimetype.h:75
 // [1] bool operator==(const QMimeType &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMimeTypeeqERKS_(void *this_, QMimeType* other) {
@@ -123,7 +123,7 @@ bool C_ZNK9QMimeTypeeqERKS_(void *this_, QMimeType* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:93
+// /usr/include/qt/QtCore/qmimetype.h:77
 // [1] bool operator!=(const QMimeType &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMimeTypeneERKS_(void *this_, QMimeType* other) {
@@ -131,7 +131,7 @@ bool C_ZNK9QMimeTypeneERKS_(void *this_, QMimeType* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:98
+// /usr/include/qt/QtCore/qmimetype.h:82
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMimeType7isValidEv(void *this_) {
@@ -139,7 +139,7 @@ bool C_ZNK9QMimeType7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:100
+// /usr/include/qt/QtCore/qmimetype.h:84
 // [1] bool isDefault()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMimeType9isDefaultEv(void *this_) {
@@ -147,7 +147,7 @@ bool C_ZNK9QMimeType9isDefaultEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:102
+// /usr/include/qt/QtCore/qmimetype.h:86
 // [8] QString name()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType4nameEv(void *this_) {
@@ -156,7 +156,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:103
+// /usr/include/qt/QtCore/qmimetype.h:87
 // [8] QString comment()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType7commentEv(void *this_) {
@@ -165,7 +165,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:104
+// /usr/include/qt/QtCore/qmimetype.h:88
 // [8] QString genericIconName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType15genericIconNameEv(void *this_) {
@@ -174,7 +174,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:105
+// /usr/include/qt/QtCore/qmimetype.h:89
 // [8] QString iconName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType8iconNameEv(void *this_) {
@@ -183,7 +183,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:106
+// /usr/include/qt/QtCore/qmimetype.h:90
 // [8] QStringList globPatterns()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType12globPatternsEv(void *this_) {
@@ -192,7 +192,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:107
+// /usr/include/qt/QtCore/qmimetype.h:91
 // [8] QStringList parentMimeTypes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType15parentMimeTypesEv(void *this_) {
@@ -201,7 +201,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:108
+// /usr/include/qt/QtCore/qmimetype.h:92
 // [8] QStringList allAncestors()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType12allAncestorsEv(void *this_) {
@@ -210,7 +210,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:109
+// /usr/include/qt/QtCore/qmimetype.h:93
 // [8] QStringList aliases()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType7aliasesEv(void *this_) {
@@ -219,7 +219,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:110
+// /usr/include/qt/QtCore/qmimetype.h:94
 // [8] QStringList suffixes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType8suffixesEv(void *this_) {
@@ -228,7 +228,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:111
+// /usr/include/qt/QtCore/qmimetype.h:95
 // [8] QString preferredSuffix()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType15preferredSuffixEv(void *this_) {
@@ -237,7 +237,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:113
+// /usr/include/qt/QtCore/qmimetype.h:97
 // [1] bool inherits(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QMimeType8inheritsERK7QString(void *this_, QString* mimeTypeName) {
@@ -245,7 +245,7 @@ bool C_ZNK9QMimeType8inheritsERK7QString(void *this_, QString* mimeTypeName) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:115
+// /usr/include/qt/QtCore/qmimetype.h:99
 // [8] QString filterString()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QMimeType12filterStringEv(void *this_) {

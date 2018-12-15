@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040300
 // /usr/include/qt/QtWidgets/qwizard.h
 #ifndef protected
@@ -112,7 +111,7 @@ void* C_QWizardPage_init_staticMetaObject(void* this_, void* strdat, void* dat, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:213
+// /usr/include/qt/QtWidgets/qwizard.h:215
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWizardPage10metaObjectEv(void *this_) {
@@ -120,7 +119,7 @@ void* C_ZNK11QWizardPage10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:213
+// /usr/include/qt/QtWidgets/qwizard.h:215
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QWizardPage11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -128,7 +127,7 @@ void* C_ZN11QWizardPage11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:213
+// /usr/include/qt/QtWidgets/qwizard.h:215
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN11QWizardPage11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -136,7 +135,7 @@ int C_ZN11QWizardPage11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaOb
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:213
+// /usr/include/qt/QtWidgets/qwizard.h:215
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QWizardPage2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -145,7 +144,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:213
+// /usr/include/qt/QtWidgets/qwizard.h:215
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QWizardPage6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -154,7 +153,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:218
+// /usr/include/qt/QtWidgets/qwizard.h:220
 // [-2] void QWizardPage(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QWizardPageC2EP7QWidget(QWidget * parent) {
@@ -162,14 +161,14 @@ void* C_ZN11QWizardPageC2EP7QWidget(QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:219
+// /usr/include/qt/QtWidgets/qwizard.h:221
 // [-2] void ~QWizardPage()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPageD2Ev(void *this_) {
   delete (QWizardPage*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:221
+// /usr/include/qt/QtWidgets/qwizard.h:223
 // [-2] void setTitle(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage8setTitleERK7QString(void *this_, QString* title) {
@@ -177,7 +176,7 @@ void C_ZN11QWizardPage8setTitleERK7QString(void *this_, QString* title) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:222
+// /usr/include/qt/QtWidgets/qwizard.h:224
 // [8] QString title()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWizardPage5titleEv(void *this_) {
@@ -186,7 +185,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:223
+// /usr/include/qt/QtWidgets/qwizard.h:225
 // [-2] void setSubTitle(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage11setSubTitleERK7QString(void *this_, QString* subTitle) {
@@ -194,7 +193,7 @@ void C_ZN11QWizardPage11setSubTitleERK7QString(void *this_, QString* subTitle) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:224
+// /usr/include/qt/QtWidgets/qwizard.h:226
 // [8] QString subTitle()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWizardPage8subTitleEv(void *this_) {
@@ -203,7 +202,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:225
+// /usr/include/qt/QtWidgets/qwizard.h:227
 // [-2] void setPixmap(QWizard::WizardPixmap, const QPixmap &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage9setPixmapEN7QWizard12WizardPixmapERK7QPixmap(void *this_, QWizard::WizardPixmap which, QPixmap* pixmap) {
@@ -211,7 +210,7 @@ void C_ZN11QWizardPage9setPixmapEN7QWizard12WizardPixmapERK7QPixmap(void *this_,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:226
+// /usr/include/qt/QtWidgets/qwizard.h:228
 // [32] QPixmap pixmap(QWizard::WizardPixmap)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWizardPage6pixmapEN7QWizard12WizardPixmapE(void *this_, QWizard::WizardPixmap which) {
@@ -220,7 +219,7 @@ return new QPixmap(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:227
+// /usr/include/qt/QtWidgets/qwizard.h:229
 // [-2] void setFinalPage(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage12setFinalPageEb(void *this_, bool finalPage) {
@@ -228,7 +227,7 @@ void C_ZN11QWizardPage12setFinalPageEb(void *this_, bool finalPage) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:228
+// /usr/include/qt/QtWidgets/qwizard.h:230
 // [1] bool isFinalPage()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QWizardPage11isFinalPageEv(void *this_) {
@@ -236,7 +235,7 @@ bool C_ZNK11QWizardPage11isFinalPageEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:229
+// /usr/include/qt/QtWidgets/qwizard.h:231
 // [-2] void setCommitPage(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage13setCommitPageEb(void *this_, bool commitPage) {
@@ -244,7 +243,7 @@ void C_ZN11QWizardPage13setCommitPageEb(void *this_, bool commitPage) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:230
+// /usr/include/qt/QtWidgets/qwizard.h:232
 // [1] bool isCommitPage()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QWizardPage12isCommitPageEv(void *this_) {
@@ -252,7 +251,7 @@ bool C_ZNK11QWizardPage12isCommitPageEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:231
+// /usr/include/qt/QtWidgets/qwizard.h:233
 // [-2] void setButtonText(QWizard::WizardButton, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage13setButtonTextEN7QWizard12WizardButtonERK7QString(void *this_, QWizard::WizardButton which, QString* text) {
@@ -260,7 +259,7 @@ void C_ZN11QWizardPage13setButtonTextEN7QWizard12WizardButtonERK7QString(void *t
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:232
+// /usr/include/qt/QtWidgets/qwizard.h:234
 // [8] QString buttonText(QWizard::WizardButton)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QWizardPage10buttonTextEN7QWizard12WizardButtonE(void *this_, QWizard::WizardButton which) {
@@ -269,7 +268,7 @@ return new QString(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:234
+// /usr/include/qt/QtWidgets/qwizard.h:236
 // [-2] void initializePage()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage14initializePageEv(void *this_) {
@@ -277,7 +276,7 @@ void C_ZN11QWizardPage14initializePageEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:235
+// /usr/include/qt/QtWidgets/qwizard.h:237
 // [-2] void cleanupPage()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage11cleanupPageEv(void *this_) {
@@ -285,7 +284,7 @@ void C_ZN11QWizardPage11cleanupPageEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:236
+// /usr/include/qt/QtWidgets/qwizard.h:238
 // [1] bool validatePage()
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QWizardPage12validatePageEv(void *this_) {
@@ -293,7 +292,7 @@ bool C_ZN11QWizardPage12validatePageEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:237
+// /usr/include/qt/QtWidgets/qwizard.h:239
 // [1] bool isComplete()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QWizardPage10isCompleteEv(void *this_) {
@@ -301,7 +300,7 @@ bool C_ZNK11QWizardPage10isCompleteEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:238
+// /usr/include/qt/QtWidgets/qwizard.h:240
 // [4] int nextId()
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QWizardPage6nextIdEv(void *this_) {
@@ -309,7 +308,7 @@ int C_ZNK11QWizardPage6nextIdEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qwizard.h:241
+// /usr/include/qt/QtWidgets/qwizard.h:243
 // [-2] void completeChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QWizardPage15completeChangedEv(void *this_) {
@@ -332,5 +331,4 @@ void C_ZN11QWizardPage15completeChangedEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

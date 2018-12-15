@@ -63,7 +63,7 @@ MyQTimeZone(const QTimeZone & other) : QTimeZone(other) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:92
+// /usr/include/qt/QtCore/qtimezone.h:84
 // [-2] void QTimeZone()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneC2Ev() {
@@ -71,7 +71,7 @@ void* C_ZN9QTimeZoneC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:93
+// /usr/include/qt/QtCore/qtimezone.h:85
 // [-2] void QTimeZone(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneC2ERK10QByteArray(QByteArray* ianaId) {
@@ -79,7 +79,7 @@ void* C_ZN9QTimeZoneC2ERK10QByteArray(QByteArray* ianaId) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:94
+// /usr/include/qt/QtCore/qtimezone.h:86
 // [-2] void QTimeZone(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneC2Ei(int offsetSeconds) {
@@ -87,7 +87,7 @@ void* C_ZN9QTimeZoneC2Ei(int offsetSeconds) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:95
+// /usr/include/qt/QtCore/qtimezone.h:87
 // [-2] void QTimeZone(const QByteArray &, int, const QString &, const QString &, QLocale::Country, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneC2ERK10QByteArrayiRK7QStringS5_N7QLocale7CountryES5_(QByteArray* zoneId, int offsetSeconds, QString* name, QString* abbreviation, QLocale::Country country, QString* comment) {
@@ -95,7 +95,7 @@ void* C_ZN9QTimeZoneC2ERK10QByteArrayiRK7QStringS5_N7QLocale7CountryES5_(QByteAr
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:98
+// /usr/include/qt/QtCore/qtimezone.h:90
 // [-2] void QTimeZone(const QTimeZone &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneC2ERKS_(QTimeZone* other) {
@@ -103,14 +103,14 @@ void* C_ZN9QTimeZoneC2ERKS_(QTimeZone* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:99
+// /usr/include/qt/QtCore/qtimezone.h:91
 // [-2] void ~QTimeZone()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTimeZoneD2Ev(void *this_) {
   delete (QTimeZone*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:101
+// /usr/include/qt/QtCore/qtimezone.h:93
 // [8] QTimeZone & operator=(const QTimeZone &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneaSERKS_(void *this_, QTimeZone* other) {
@@ -119,7 +119,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:103
+// /usr/include/qt/QtCore/qtimezone.h:95
 // [8] QTimeZone & operator=(QTimeZone &&)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZoneaSEOS_(void *this_, QTimeZone && other) {
@@ -128,7 +128,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:106
+// /usr/include/qt/QtCore/qtimezone.h:98
 // [-2] void swap(QTimeZone &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QTimeZone4swapERS_(void *this_, QTimeZone* other) {
@@ -136,7 +136,7 @@ void C_ZN9QTimeZone4swapERS_(void *this_, QTimeZone* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:109
+// /usr/include/qt/QtCore/qtimezone.h:101
 // [1] bool operator==(const QTimeZone &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTimeZoneeqERKS_(void *this_, QTimeZone* other) {
@@ -144,7 +144,7 @@ bool C_ZNK9QTimeZoneeqERKS_(void *this_, QTimeZone* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:110
+// /usr/include/qt/QtCore/qtimezone.h:102
 // [1] bool operator!=(const QTimeZone &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTimeZoneneERKS_(void *this_, QTimeZone* other) {
@@ -152,7 +152,7 @@ bool C_ZNK9QTimeZoneneERKS_(void *this_, QTimeZone* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:112
+// /usr/include/qt/QtCore/qtimezone.h:104
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTimeZone7isValidEv(void *this_) {
@@ -160,7 +160,7 @@ bool C_ZNK9QTimeZone7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:114
+// /usr/include/qt/QtCore/qtimezone.h:106
 // [8] QByteArray id()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTimeZone2idEv(void *this_) {
@@ -169,7 +169,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:115
+// /usr/include/qt/QtCore/qtimezone.h:107
 // [4] QLocale::Country country()
 extern "C" Q_DECL_EXPORT
 QLocale::Country C_ZNK9QTimeZone7countryEv(void *this_) {
@@ -177,7 +177,7 @@ QLocale::Country C_ZNK9QTimeZone7countryEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:116
+// /usr/include/qt/QtCore/qtimezone.h:108
 // [8] QString comment()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTimeZone7commentEv(void *this_) {
@@ -186,7 +186,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:118
+// /usr/include/qt/QtCore/qtimezone.h:110
 // [8] QString displayName(const QDateTime &, QTimeZone::NameType, const QLocale &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTimeZone11displayNameERK9QDateTimeNS_8NameTypeERK7QLocale(void *this_, QDateTime* atDateTime, QTimeZone::NameType nameType, QLocale* locale) {
@@ -195,7 +195,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:121
+// /usr/include/qt/QtCore/qtimezone.h:113
 // [8] QString displayName(QTimeZone::TimeType, QTimeZone::NameType, const QLocale &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTimeZone11displayNameENS_8TimeTypeENS_8NameTypeERK7QLocale(void *this_, QTimeZone::TimeType timeType, QTimeZone::NameType nameType, QLocale* locale) {
@@ -204,7 +204,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:124
+// /usr/include/qt/QtCore/qtimezone.h:116
 // [8] QString abbreviation(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QTimeZone12abbreviationERK9QDateTime(void *this_, QDateTime* atDateTime) {
@@ -213,7 +213,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:126
+// /usr/include/qt/QtCore/qtimezone.h:118
 // [4] int offsetFromUtc(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTimeZone13offsetFromUtcERK9QDateTime(void *this_, QDateTime* atDateTime) {
@@ -221,7 +221,7 @@ int C_ZNK9QTimeZone13offsetFromUtcERK9QDateTime(void *this_, QDateTime* atDateTi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:127
+// /usr/include/qt/QtCore/qtimezone.h:119
 // [4] int standardTimeOffset(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTimeZone18standardTimeOffsetERK9QDateTime(void *this_, QDateTime* atDateTime) {
@@ -229,7 +229,7 @@ int C_ZNK9QTimeZone18standardTimeOffsetERK9QDateTime(void *this_, QDateTime* atD
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:128
+// /usr/include/qt/QtCore/qtimezone.h:120
 // [4] int daylightTimeOffset(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QTimeZone18daylightTimeOffsetERK9QDateTime(void *this_, QDateTime* atDateTime) {
@@ -237,7 +237,7 @@ int C_ZNK9QTimeZone18daylightTimeOffsetERK9QDateTime(void *this_, QDateTime* atD
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:130
+// /usr/include/qt/QtCore/qtimezone.h:122
 // [1] bool hasDaylightTime()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTimeZone15hasDaylightTimeEv(void *this_) {
@@ -245,7 +245,7 @@ bool C_ZNK9QTimeZone15hasDaylightTimeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:131
+// /usr/include/qt/QtCore/qtimezone.h:123
 // [1] bool isDaylightTime(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTimeZone14isDaylightTimeERK9QDateTime(void *this_, QDateTime* atDateTime) {
@@ -253,7 +253,7 @@ bool C_ZNK9QTimeZone14isDaylightTimeERK9QDateTime(void *this_, QDateTime* atDate
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:133
+// /usr/include/qt/QtCore/qtimezone.h:125
 // [32] QTimeZone::OffsetData offsetData(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QTimeZone10offsetDataERK9QDateTime(void *this_, QDateTime* forDateTime) {
@@ -262,7 +262,7 @@ void C_ZNK9QTimeZone10offsetDataERK9QDateTime(void *this_, QDateTime* forDateTim
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:135
+// /usr/include/qt/QtCore/qtimezone.h:127
 // [1] bool hasTransitions()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QTimeZone14hasTransitionsEv(void *this_) {
@@ -270,7 +270,7 @@ bool C_ZNK9QTimeZone14hasTransitionsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:136
+// /usr/include/qt/QtCore/qtimezone.h:128
 // [32] QTimeZone::OffsetData nextTransition(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QTimeZone14nextTransitionERK9QDateTime(void *this_, QDateTime* afterDateTime) {
@@ -279,7 +279,7 @@ void C_ZNK9QTimeZone14nextTransitionERK9QDateTime(void *this_, QDateTime* afterD
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:137
+// /usr/include/qt/QtCore/qtimezone.h:129
 // [32] QTimeZone::OffsetData previousTransition(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK9QTimeZone18previousTransitionERK9QDateTime(void *this_, QDateTime* beforeDateTime) {
@@ -288,7 +288,7 @@ void C_ZNK9QTimeZone18previousTransitionERK9QDateTime(void *this_, QDateTime* be
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:138
+// /usr/include/qt/QtCore/qtimezone.h:130
 // [-2] QTimeZone::OffsetDataList transitions(const QDateTime &, const QDateTime &)
 extern "C" Q_DECL_EXPORT
 QTimeZone::OffsetDataList* C_ZNK9QTimeZone11transitionsERK9QDateTimeS2_(void *this_, QDateTime* fromDateTime, QDateTime* toDateTime) {
@@ -297,7 +297,7 @@ return new QTimeZone::OffsetDataList(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:140
+// /usr/include/qt/QtCore/qtimezone.h:132
 // [8] QByteArray systemTimeZoneId()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZone16systemTimeZoneIdEv() {
@@ -307,7 +307,7 @@ return new QByteArray(rv);
 
 // Public static Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtCore/qtimezone.h:141
+// /usr/include/qt/QtCore/qtimezone.h:133
 // [8] QTimeZone systemTimeZone()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -319,7 +319,7 @@ return new QTimeZone(rv);
 
 // Public static Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtCore/qtimezone.h:142
+// /usr/include/qt/QtCore/qtimezone.h:134
 // [8] QTimeZone utc()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -330,7 +330,7 @@ return new QTimeZone(rv);
 #endif // QT_VERSION >= 0x050500
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:144
+// /usr/include/qt/QtCore/qtimezone.h:136
 // [1] bool isTimeZoneIdAvailable(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QTimeZone21isTimeZoneIdAvailableERK10QByteArray(QByteArray* ianaId) {
@@ -338,7 +338,7 @@ bool C_ZN9QTimeZone21isTimeZoneIdAvailableERK10QByteArray(QByteArray* ianaId) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:146
+// /usr/include/qt/QtCore/qtimezone.h:138
 // [8] QList<QByteArray> availableTimeZoneIds()
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZN9QTimeZone20availableTimeZoneIdsEv() {
@@ -347,7 +347,7 @@ return new QList<QByteArray>(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:147
+// /usr/include/qt/QtCore/qtimezone.h:139
 // [8] QList<QByteArray> availableTimeZoneIds(QLocale::Country)
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZN9QTimeZone20availableTimeZoneIdsEN7QLocale7CountryE(QLocale::Country country) {
@@ -356,7 +356,7 @@ return new QList<QByteArray>(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:148
+// /usr/include/qt/QtCore/qtimezone.h:140
 // [8] QList<QByteArray> availableTimeZoneIds(int)
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZN9QTimeZone20availableTimeZoneIdsEi(int offsetSeconds) {
@@ -365,7 +365,7 @@ return new QList<QByteArray>(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:150
+// /usr/include/qt/QtCore/qtimezone.h:142
 // [8] QByteArray ianaIdToWindowsId(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZone17ianaIdToWindowsIdERK10QByteArray(QByteArray* ianaId) {
@@ -374,7 +374,7 @@ return new QByteArray(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:151
+// /usr/include/qt/QtCore/qtimezone.h:143
 // [8] QByteArray windowsIdToDefaultIanaId(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArray(QByteArray* windowsId) {
@@ -383,7 +383,7 @@ return new QByteArray(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:152
+// /usr/include/qt/QtCore/qtimezone.h:144
 // [8] QByteArray windowsIdToDefaultIanaId(const QByteArray &, QLocale::Country)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTimeZone24windowsIdToDefaultIanaIdERK10QByteArrayN7QLocale7CountryE(QByteArray* windowsId, QLocale::Country country) {
@@ -392,7 +392,7 @@ return new QByteArray(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:154
+// /usr/include/qt/QtCore/qtimezone.h:146
 // [8] QList<QByteArray> windowsIdToIanaIds(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZN9QTimeZone18windowsIdToIanaIdsERK10QByteArray(QByteArray* windowsId) {
@@ -401,7 +401,7 @@ return new QList<QByteArray>(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimezone.h:155
+// /usr/include/qt/QtCore/qtimezone.h:147
 // [8] QList<QByteArray> windowsIdToIanaIds(const QByteArray &, QLocale::Country)
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZN9QTimeZone18windowsIdToIanaIdsERK10QByteArrayN7QLocale7CountryE(QByteArray* windowsId, QLocale::Country country) {

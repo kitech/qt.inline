@@ -53,7 +53,7 @@ MyQShortcutEvent(const QKeySequence & key, int id, bool ambiguous) : QShortcutEv
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:767
+// /usr/include/qt/QtGui/qevent.h:760
 // [-2] void QShortcutEvent(const QKeySequence &, int, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QShortcutEventC2ERK12QKeySequenceib(QKeySequence* key, int id, bool ambiguous) {
@@ -61,14 +61,14 @@ void* C_ZN14QShortcutEventC2ERK12QKeySequenceib(QKeySequence* key, int id, bool 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:768
+// /usr/include/qt/QtGui/qevent.h:761
 // [-2] void ~QShortcutEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QShortcutEventD2Ev(void *this_) {
   delete (QShortcutEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:770
+// /usr/include/qt/QtGui/qevent.h:763
 // [8] const QKeySequence & key()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QShortcutEvent3keyEv(void *this_) {
@@ -77,7 +77,7 @@ return new QKeySequence(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:771
+// /usr/include/qt/QtGui/qevent.h:764
 // [4] int shortcutId()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QShortcutEvent10shortcutIdEv(void *this_) {
@@ -85,7 +85,7 @@ int C_ZNK14QShortcutEvent10shortcutIdEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:772
+// /usr/include/qt/QtGui/qevent.h:765
 // [1] bool isAmbiguous()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QShortcutEvent11isAmbiguousEv(void *this_) {

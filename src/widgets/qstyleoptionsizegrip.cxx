@@ -56,7 +56,7 @@ MyQStyleOptionSizeGrip(const QStyleOptionSizeGrip & other) : QStyleOptionSizeGri
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:653
+// /usr/include/qt/QtWidgets/qstyleoption.h:642
 // [-2] void QStyleOptionSizeGrip()
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionSizeGripC2Ev() {
@@ -64,7 +64,7 @@ void* C_ZN20QStyleOptionSizeGripC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:654
+// /usr/include/qt/QtWidgets/qstyleoption.h:643
 // [-2] void QStyleOptionSizeGrip(const QStyleOptionSizeGrip &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionSizeGripC2ERKS_(QStyleOptionSizeGrip* other) {

@@ -55,8 +55,6 @@ MyQGeoPositionInfo() : QGeoPositionInfo() {}
 MyQGeoPositionInfo(const QGeoCoordinate & coordinate, const QDateTime & updateTime) : QGeoPositionInfo(coordinate, updateTime) {}
 // void QGeoPositionInfo(const QGeoPositionInfo &)
 MyQGeoPositionInfo(const QGeoPositionInfo & other) : QGeoPositionInfo(other) {}
-// void QGeoPositionInfo(QGeoPositionInfoPrivate &)
-MyQGeoPositionInfo(QGeoPositionInfoPrivate & dd) : QGeoPositionInfo(dd) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -85,21 +83,13 @@ void* C_ZN16QGeoPositionInfoC2ERKS_(QGeoPositionInfo* other) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeopositioninfo.h:67
-// [-2] void QGeoPositionInfo(QGeoPositionInfoPrivate &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QGeoPositionInfoC2ER23QGeoPositionInfoPrivate(QGeoPositionInfoPrivate* dd) {
-  return  new QGeoPositionInfo(*dd);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:68
 // [-2] void ~QGeoPositionInfo()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QGeoPositionInfoD2Ev(void *this_) {
   delete (QGeoPositionInfo*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:70
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:69
 // [8] QGeoPositionInfo & operator=(const QGeoPositionInfo &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QGeoPositionInfoaSERKS_(void *this_, QGeoPositionInfo* other) {
@@ -108,7 +98,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:72
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:71
 // [1] bool operator==(const QGeoPositionInfo &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QGeoPositionInfoeqERKS_(void *this_, QGeoPositionInfo* other) {
@@ -116,7 +106,7 @@ bool C_ZNK16QGeoPositionInfoeqERKS_(void *this_, QGeoPositionInfo* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:73
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:72
 // [1] bool operator!=(const QGeoPositionInfo &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QGeoPositionInfoneERKS_(void *this_, QGeoPositionInfo* other) {
@@ -124,7 +114,7 @@ bool C_ZNK16QGeoPositionInfoneERKS_(void *this_, QGeoPositionInfo* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:77
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:76
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QGeoPositionInfo7isValidEv(void *this_) {
@@ -132,7 +122,7 @@ bool C_ZNK16QGeoPositionInfo7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:79
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:78
 // [-2] void setTimestamp(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QGeoPositionInfo12setTimestampERK9QDateTime(void *this_, QDateTime* timestamp) {
@@ -140,7 +130,7 @@ void C_ZN16QGeoPositionInfo12setTimestampERK9QDateTime(void *this_, QDateTime* t
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:80
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:79
 // [8] QDateTime timestamp()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QGeoPositionInfo9timestampEv(void *this_) {
@@ -149,7 +139,7 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:82
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:81
 // [-2] void setCoordinate(const QGeoCoordinate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QGeoPositionInfo13setCoordinateERK14QGeoCoordinate(void *this_, QGeoCoordinate* coordinate) {
@@ -157,7 +147,7 @@ void C_ZN16QGeoPositionInfo13setCoordinateERK14QGeoCoordinate(void *this_, QGeoC
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:83
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:82
 // [8] QGeoCoordinate coordinate()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QGeoPositionInfo10coordinateEv(void *this_) {
@@ -166,7 +156,7 @@ return new QGeoCoordinate(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:85
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:84
 // [-2] void setAttribute(QGeoPositionInfo::Attribute, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QGeoPositionInfo12setAttributeENS_9AttributeEd(void *this_, QGeoPositionInfo::Attribute attribute, qreal value) {
@@ -174,7 +164,7 @@ void C_ZN16QGeoPositionInfo12setAttributeENS_9AttributeEd(void *this_, QGeoPosit
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:86
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:85
 // [8] qreal attribute(QGeoPositionInfo::Attribute)
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK16QGeoPositionInfo9attributeENS_9AttributeE(void *this_, QGeoPositionInfo::Attribute attribute) {
@@ -182,7 +172,7 @@ qreal C_ZNK16QGeoPositionInfo9attributeENS_9AttributeE(void *this_, QGeoPosition
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:87
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:86
 // [-2] void removeAttribute(QGeoPositionInfo::Attribute)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QGeoPositionInfo15removeAttributeENS_9AttributeE(void *this_, QGeoPositionInfo::Attribute attribute) {
@@ -190,7 +180,7 @@ void C_ZN16QGeoPositionInfo15removeAttributeENS_9AttributeE(void *this_, QGeoPos
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfo.h:88
+// /usr/include/qt/QtPositioning/qgeopositioninfo.h:87
 // [1] bool hasAttribute(QGeoPositionInfo::Attribute)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QGeoPositionInfo12hasAttributeENS_9AttributeE(void *this_, QGeoPositionInfo::Attribute attribute) {

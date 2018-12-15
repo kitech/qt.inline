@@ -79,7 +79,7 @@ void C_ZN9QGeoShapeD2Ev(void *this_) {
   delete (QGeoShape*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeoshape.h:73
+// /usr/include/qt/QtPositioning/qgeoshape.h:72
 // [4] QGeoShape::ShapeType type()
 extern "C" Q_DECL_EXPORT
 QGeoShape::ShapeType C_ZNK9QGeoShape4typeEv(void *this_) {
@@ -87,7 +87,7 @@ QGeoShape::ShapeType C_ZNK9QGeoShape4typeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeoshape.h:75
+// /usr/include/qt/QtPositioning/qgeoshape.h:74
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGeoShape7isValidEv(void *this_) {
@@ -95,7 +95,7 @@ bool C_ZNK9QGeoShape7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeoshape.h:76
+// /usr/include/qt/QtPositioning/qgeoshape.h:75
 // [1] bool isEmpty()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGeoShape7isEmptyEv(void *this_) {
@@ -103,7 +103,7 @@ bool C_ZNK9QGeoShape7isEmptyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeoshape.h:77
+// /usr/include/qt/QtPositioning/qgeoshape.h:76
 // [1] bool contains(const QGeoCoordinate &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGeoShape8containsERK14QGeoCoordinate(void *this_, QGeoCoordinate* coordinate) {
@@ -112,7 +112,7 @@ bool C_ZNK9QGeoShape8containsERK14QGeoCoordinate(void *this_, QGeoCoordinate* co
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtPositioning/qgeoshape.h:78
+// /usr/include/qt/QtPositioning/qgeoshape.h:77
 // [8] QGeoRectangle boundingGeoRectangle()
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -124,7 +124,7 @@ return new QGeoRectangle(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtPositioning/qgeoshape.h:79
+// /usr/include/qt/QtPositioning/qgeoshape.h:78
 // [8] QGeoCoordinate center()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -135,7 +135,7 @@ return new QGeoCoordinate(rv);
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeoshape.h:81
+// /usr/include/qt/QtPositioning/qgeoshape.h:80
 // [-2] void extendShape(const QGeoCoordinate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QGeoShape11extendShapeERK14QGeoCoordinate(void *this_, QGeoCoordinate* coordinate) {
@@ -143,7 +143,7 @@ void C_ZN9QGeoShape11extendShapeERK14QGeoCoordinate(void *this_, QGeoCoordinate*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeoshape.h:83
+// /usr/include/qt/QtPositioning/qgeoshape.h:82
 // [1] bool operator==(const QGeoShape &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGeoShapeeqERKS_(void *this_, QGeoShape* other) {
@@ -151,7 +151,7 @@ bool C_ZNK9QGeoShapeeqERKS_(void *this_, QGeoShape* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeoshape.h:84
+// /usr/include/qt/QtPositioning/qgeoshape.h:83
 // [1] bool operator!=(const QGeoShape &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QGeoShapeneERKS_(void *this_, QGeoShape* other) {
@@ -159,7 +159,7 @@ bool C_ZNK9QGeoShapeneERKS_(void *this_, QGeoShape* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeoshape.h:86
+// /usr/include/qt/QtPositioning/qgeoshape.h:85
 // [8] QGeoShape & operator=(const QGeoShape &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QGeoShapeaSERKS_(void *this_, QGeoShape* other) {
@@ -169,7 +169,7 @@ return &rv;
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtPositioning/qgeoshape.h:88
+// /usr/include/qt/QtPositioning/qgeoshape.h:87
 // [8] QString toString()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT

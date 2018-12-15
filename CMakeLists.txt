@@ -2,7 +2,7 @@
 # defines: -DANDROID=on, -DMINGW_NOIPBIZ=on, -DWITH_QT_STATIC=on, -DWINARCH=x32
 #          -DUSE_WEBENGINES=on
 cmake_minimum_required(VERSION 3.0)
-set(PROJSOVER "5.10")
+set(PROJSOVER "5.9")
 set(PROJVER_PATCH "106")
 set(PROJVERSTR "${PROJSOVER}.${PROJVER_PATCH}")
 project(qt5inline)

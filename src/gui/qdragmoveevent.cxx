@@ -53,7 +53,7 @@ MyQDragMoveEvent(const QPoint & pos, QFlags<Qt::DropAction> actions, const QMime
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:642
+// /usr/include/qt/QtGui/qevent.h:635
 // [-2] void QDragMoveEvent(const QPoint &, Qt::DropActions, const QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QDragMoveEventC2ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE(QPoint* pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type_) {
@@ -61,14 +61,14 @@ void* C_ZN14QDragMoveEventC2ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_I
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:644
+// /usr/include/qt/QtGui/qevent.h:637
 // [-2] void ~QDragMoveEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDragMoveEventD2Ev(void *this_) {
   delete (QDragMoveEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:646
+// /usr/include/qt/QtGui/qevent.h:639
 // [16] QRect answerRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QDragMoveEvent10answerRectEv(void *this_) {
@@ -77,7 +77,7 @@ return new QRect(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:648
+// /usr/include/qt/QtGui/qevent.h:641
 // [-2] void accept()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDragMoveEvent6acceptEv(void *this_) {
@@ -85,7 +85,7 @@ void C_ZN14QDragMoveEvent6acceptEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:649
+// /usr/include/qt/QtGui/qevent.h:642
 // [-2] void ignore()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDragMoveEvent6ignoreEv(void *this_) {
@@ -93,7 +93,7 @@ void C_ZN14QDragMoveEvent6ignoreEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:651
+// /usr/include/qt/QtGui/qevent.h:644
 // [-2] void accept(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDragMoveEvent6acceptERK5QRect(void *this_, QRect* r) {
@@ -101,7 +101,7 @@ void C_ZN14QDragMoveEvent6acceptERK5QRect(void *this_, QRect* r) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:652
+// /usr/include/qt/QtGui/qevent.h:645
 // [-2] void ignore(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QDragMoveEvent6ignoreERK5QRect(void *this_, QRect* r) {

@@ -53,7 +53,7 @@ MyQWhatsThisClickedEvent(const QString & href) : QWhatsThisClickedEvent(href) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:713
+// /usr/include/qt/QtGui/qevent.h:706
 // [-2] void QWhatsThisClickedEvent(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QWhatsThisClickedEventC2ERK7QString(QString* href) {
@@ -61,14 +61,14 @@ void* C_ZN22QWhatsThisClickedEventC2ERK7QString(QString* href) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:714
+// /usr/include/qt/QtGui/qevent.h:707
 // [-2] void ~QWhatsThisClickedEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QWhatsThisClickedEventD2Ev(void *this_) {
   delete (QWhatsThisClickedEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:716
+// /usr/include/qt/QtGui/qevent.h:709
 // [8] QString href()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK22QWhatsThisClickedEvent4hrefEv(void *this_) {

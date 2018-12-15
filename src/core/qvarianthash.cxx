@@ -273,22 +273,6 @@ QVariantHash::key_iterator* C_QVariantHash_keyEnd_0(void* this_ ) {
     return new decltype(rv)(rv);
 }
 
-// [-3] QHash::key_value_iterator keyValueBegin()
-extern "C" Q_DECL_EXPORT
-QVariantHash::key_value_iterator* C_QVariantHash_keyValueBegin_0(void* this_ ) {
-    // QVariantHash_keyValueBegin_0()
-    auto rv =  ((QVariantHash*)this_)->keyValueBegin();
-    return new decltype(rv)(rv);
-}
-
-// [-3] QHash::key_value_iterator keyValueEnd()
-extern "C" Q_DECL_EXPORT
-QVariantHash::key_value_iterator* C_QVariantHash_keyValueEnd_0(void* this_ ) {
-    // QVariantHash_keyValueEnd_0()
-    auto rv =  ((QVariantHash*)this_)->keyValueEnd();
-    return new decltype(rv)(rv);
-}
-
 // [-3] QPair<QHash::iterator, QHash::iterator> equal_range(const Key &)
 extern "C" Q_DECL_EXPORT
 void C_QVariantHash_equal_range_0(void* this_ , QString* key) {

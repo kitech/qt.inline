@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h
 #ifndef protected
 #define protected public
@@ -137,13 +136,13 @@ void* C_QAbstractItemDelegate_init_staticMetaObject(void* this_, void* strdat, v
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:76
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:77
 // [-2] void paint(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:80
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:81
 // [8] QSize sizeHint(const QStyleOptionViewItem &, const QModelIndex &)
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:61
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QAbstractItemDelegate10metaObjectEv(void *this_) {
@@ -151,7 +150,7 @@ void* C_ZNK21QAbstractItemDelegate10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:61
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QAbstractItemDelegate11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -159,7 +158,7 @@ void* C_ZN21QAbstractItemDelegate11qt_metacastEPKc(void *this_, const char * arg
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:61
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN21QAbstractItemDelegate11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -167,7 +166,7 @@ int C_ZN21QAbstractItemDelegate11qt_metacallEN11QMetaObject4CallEiPPv(void *this
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:61
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QAbstractItemDelegate2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -176,7 +175,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:60
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:61
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QAbstractItemDelegate6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -185,7 +184,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:72
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:73
 // [-2] void QAbstractItemDelegate(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QAbstractItemDelegateC2EP7QObject(QObject * parent) {
@@ -193,14 +192,14 @@ void* C_ZN21QAbstractItemDelegateC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:73
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:74
 // [-2] void ~QAbstractItemDelegate()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QAbstractItemDelegateD2Ev(void *this_) {
   delete (QAbstractItemDelegate*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:76
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:77
 // [-2] void paint(QPainter *, const QStyleOptionViewItem &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK21QAbstractItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QPainter * painter, QStyleOptionViewItem* option, QModelIndex* index) {
@@ -208,7 +207,7 @@ void C_ZNK21QAbstractItemDelegate5paintEP8QPainterRK20QStyleOptionViewItemRK11QM
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:80
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:81
 // [8] QSize sizeHint(const QStyleOptionViewItem &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QAbstractItemDelegate8sizeHintERK20QStyleOptionViewItemRK11QModelIndex(void *this_, QStyleOptionViewItem* option, QModelIndex* index) {
@@ -217,7 +216,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:84
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:85
 // [8] QWidget * createEditor(QWidget *, const QStyleOptionViewItem &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QAbstractItemDelegate12createEditorEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QWidget * parent, QStyleOptionViewItem* option, QModelIndex* index) {
@@ -226,7 +225,7 @@ void* C_ZNK21QAbstractItemDelegate12createEditorEP7QWidgetRK20QStyleOptionViewIt
 
 // Public virtual Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:88
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:89
 // [-2] void destroyEditor(QWidget *, const QModelIndex &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -236,7 +235,7 @@ void C_ZNK21QAbstractItemDelegate13destroyEditorEP7QWidgetRK11QModelIndex(void *
 #endif // QT_VERSION >= 0x050000
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:90
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:91
 // [-2] void setEditorData(QWidget *, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK21QAbstractItemDelegate13setEditorDataEP7QWidgetRK11QModelIndex(void *this_, QWidget * editor, QModelIndex* index) {
@@ -244,7 +243,7 @@ void C_ZNK21QAbstractItemDelegate13setEditorDataEP7QWidgetRK11QModelIndex(void *
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:92
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:93
 // [-2] void setModelData(QWidget *, QAbstractItemModel *, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK21QAbstractItemDelegate12setModelDataEP7QWidgetP18QAbstractItemModelRK11QModelIndex(void *this_, QWidget * editor, QAbstractItemModel * model, QModelIndex* index) {
@@ -252,7 +251,7 @@ void C_ZNK21QAbstractItemDelegate12setModelDataEP7QWidgetP18QAbstractItemModelRK
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:96
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:97
 // [-2] void updateEditorGeometry(QWidget *, const QStyleOptionViewItem &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK21QAbstractItemDelegate20updateEditorGeometryEP7QWidgetRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QWidget * editor, QStyleOptionViewItem* option, QModelIndex* index) {
@@ -260,7 +259,7 @@ void C_ZNK21QAbstractItemDelegate20updateEditorGeometryEP7QWidgetRK20QStyleOptio
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:101
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:102
 // [1] bool editorEvent(QEvent *, QAbstractItemModel *, const QStyleOptionViewItem &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QAbstractItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex(void *this_, QEvent * event, QAbstractItemModel * model, QStyleOptionViewItem* option, QModelIndex* index) {
@@ -268,7 +267,7 @@ bool C_ZN21QAbstractItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20Q
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:106
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:107
 // [8] QString elidedText(const QFontMetrics &, int, Qt::TextElideMode, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QAbstractItemDelegate10elidedTextERK12QFontMetricsiN2Qt13TextElideModeERK7QString(QFontMetrics* fontMetrics, int width, Qt::TextElideMode mode, QString* text) {
@@ -278,7 +277,7 @@ return new QString(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:109
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:110
 // [1] bool helpEvent(QHelpEvent *, QAbstractItemView *, const QStyleOptionViewItem &, const QModelIndex &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -288,7 +287,7 @@ bool C_ZN21QAbstractItemDelegate9helpEventEP10QHelpEventP17QAbstractItemViewRK20
 #endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:114
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:115
 // [8] QVector<int> paintingRoles()
 extern "C" Q_DECL_EXPORT
 void C_ZNK21QAbstractItemDelegate13paintingRolesEv(void *this_) {
@@ -297,7 +296,7 @@ void C_ZNK21QAbstractItemDelegate13paintingRolesEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:117
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:118
 // [-2] void commitData(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QAbstractItemDelegate10commitDataEP7QWidget(void *this_, QWidget * editor) {
@@ -305,7 +304,7 @@ void C_ZN21QAbstractItemDelegate10commitDataEP7QWidget(void *this_, QWidget * ed
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:118
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:119
 // [-2] void closeEditor(QWidget *, QAbstractItemDelegate::EndEditHint)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QAbstractItemDelegate11closeEditorEP7QWidgetNS_11EndEditHintE(void *this_, QWidget * editor, QAbstractItemDelegate::EndEditHint hint) {
@@ -314,7 +313,7 @@ void C_ZN21QAbstractItemDelegate11closeEditorEP7QWidgetNS_11EndEditHintE(void *t
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:119
+// /usr/include/qt/QtWidgets/qabstractitemdelegate.h:120
 // [-2] void sizeHintChanged(const QModelIndex &)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -339,5 +338,4 @@ void C_ZN21QAbstractItemDelegate15sizeHintChangedERK11QModelIndex(void *this_, Q
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

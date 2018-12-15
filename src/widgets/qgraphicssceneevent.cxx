@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
@@ -55,7 +54,7 @@ MyQGraphicsSceneEvent(QEvent::Type type_) : QGraphicsSceneEvent(type_) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:67
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:68
 // [-2] void QGraphicsSceneEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsSceneEventC2EN6QEvent4TypeE(QEvent::Type type_) {
@@ -63,14 +62,14 @@ void* C_ZN19QGraphicsSceneEventC2EN6QEvent4TypeE(QEvent::Type type_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:68
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:69
 // [-2] void ~QGraphicsSceneEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsSceneEventD2Ev(void *this_) {
   delete (QGraphicsSceneEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:70
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:71
 // [8] QWidget * widget()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsSceneEvent6widgetEv(void *this_) {
@@ -78,7 +77,7 @@ void* C_ZNK19QGraphicsSceneEvent6widgetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:71
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:72
 // [-2] void setWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsSceneEvent9setWidgetEP7QWidget(void *this_, QWidget * widget) {
@@ -101,5 +100,4 @@ void C_ZN19QGraphicsSceneEvent9setWidgetEP7QWidget(void *this_, QWidget * widget
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h
 #ifndef protected
 #define protected public
@@ -58,7 +57,7 @@ MyQTreeWidgetItemIterator(QTreeWidgetItem * item, QFlags<QTreeWidgetItemIterator
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:84
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:85
 // [-2] void QTreeWidgetItemIterator(const QTreeWidgetItemIterator &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorC2ERKS_(QTreeWidgetItemIterator* it) {
@@ -66,7 +65,7 @@ void* C_ZN23QTreeWidgetItemIteratorC2ERKS_(QTreeWidgetItemIterator* it) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:85
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:86
 // [-2] void QTreeWidgetItemIterator(QTreeWidget *, QTreeWidgetItemIterator::IteratorFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorC2EP11QTreeWidget6QFlagsINS_12IteratorFlagEE(QTreeWidget * widget, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) {
@@ -74,7 +73,7 @@ void* C_ZN23QTreeWidgetItemIteratorC2EP11QTreeWidget6QFlagsINS_12IteratorFlagEE(
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:86
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:87
 // [-2] void QTreeWidgetItemIterator(QTreeWidgetItem *, QTreeWidgetItemIterator::IteratorFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorC2EP15QTreeWidgetItem6QFlagsINS_12IteratorFlagEE(QTreeWidgetItem * item, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags) {
@@ -82,14 +81,14 @@ void* C_ZN23QTreeWidgetItemIteratorC2EP15QTreeWidgetItem6QFlagsINS_12IteratorFla
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:87
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:88
 // [-2] void ~QTreeWidgetItemIterator()
 extern "C" Q_DECL_EXPORT
 void C_ZN23QTreeWidgetItemIteratorD2Ev(void *this_) {
   delete (QTreeWidgetItemIterator*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:89
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:90
 // [24] QTreeWidgetItemIterator & operator=(const QTreeWidgetItemIterator &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratoraSERKS_(void *this_, QTreeWidgetItemIterator* it) {
@@ -98,7 +97,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:91
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:92
 // [24] QTreeWidgetItemIterator & operator++()
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorppEv(void *this_) {
@@ -107,7 +106,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:92
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:93
 // [24] const QTreeWidgetItemIterator operator++(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorppEi(void *this_, int arg0) {
@@ -116,7 +115,7 @@ return new QTreeWidgetItemIterator(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:93
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:94
 // [24] QTreeWidgetItemIterator & operator+=(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratorpLEi(void *this_, int n) {
@@ -125,7 +124,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:95
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:96
 // [24] QTreeWidgetItemIterator & operator--()
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratormmEv(void *this_) {
@@ -134,7 +133,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:96
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:97
 // [24] const QTreeWidgetItemIterator operator--(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratormmEi(void *this_, int arg0) {
@@ -143,7 +142,7 @@ return new QTreeWidgetItemIterator(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:97
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:98
 // [24] QTreeWidgetItemIterator & operator-=(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QTreeWidgetItemIteratormIEi(void *this_, int n) {
@@ -152,7 +151,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:99
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:100
 // [8] QTreeWidgetItem * operator*()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QTreeWidgetItemIteratordeEv(void *this_) {
@@ -175,5 +174,4 @@ void* C_ZNK23QTreeWidgetItemIteratordeEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

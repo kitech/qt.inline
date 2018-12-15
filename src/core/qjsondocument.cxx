@@ -57,8 +57,6 @@ MyQJsonDocument(const QJsonObject & object) : QJsonDocument(object) {}
 MyQJsonDocument(const QJsonArray & array) : QJsonDocument(array) {}
 // void QJsonDocument(const QJsonDocument &)
 MyQJsonDocument(const QJsonDocument & other) : QJsonDocument(other) {}
-// void QJsonDocument(QJsonDocument &&)
-MyQJsonDocument(QJsonDocument && other) : QJsonDocument(other) {}
 };
 
 // Public Visibility=Default Availability=Available
@@ -109,39 +107,8 @@ void* C_ZN13QJsonDocumentaSERKS_(void *this_, QJsonDocument* other) {
 return &rv;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qjsondocument.h:96
-// [-2] void QJsonDocument(QJsonDocument &&)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZN13QJsonDocumentC2EOS_(QJsonDocument && other) {
-  return  new QJsonDocument(other);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:102
-// [8] QJsonDocument & operator=(QJsonDocument &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN13QJsonDocumentaSEOS_(void *this_, QJsonDocument && other) {
-  auto& rv = ((QJsonDocument*)this_)->operator=(other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qjsondocument.h:108
-// [-2] void swap(QJsonDocument &)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN13QJsonDocument4swapERS_(void *this_, QJsonDocument* other) {
-  ((QJsonDocument*)this_)->swap(*other);
-}
-#endif // QT_VERSION >= 0x050a00
-
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:118
+// /usr/include/qt/QtCore/qjsondocument.h:101
 // [8] QJsonDocument fromRawData(const char *, int, QJsonDocument::DataValidation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonDocument11fromRawDataEPKciNS_14DataValidationE(const char * data, int size, QJsonDocument::DataValidation validation) {
@@ -150,7 +117,7 @@ return new QJsonDocument(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:119
+// /usr/include/qt/QtCore/qjsondocument.h:102
 // [8] const char * rawData(int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonDocument7rawDataEPi(void *this_, int * size) {
@@ -158,7 +125,7 @@ void* C_ZNK13QJsonDocument7rawDataEPi(void *this_, int * size) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:121
+// /usr/include/qt/QtCore/qjsondocument.h:104
 // [8] QJsonDocument fromBinaryData(const QByteArray &, QJsonDocument::DataValidation)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonDocument14fromBinaryDataERK10QByteArrayNS_14DataValidationE(QByteArray* data, QJsonDocument::DataValidation validation) {
@@ -167,7 +134,7 @@ return new QJsonDocument(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:122
+// /usr/include/qt/QtCore/qjsondocument.h:105
 // [8] QByteArray toBinaryData()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonDocument12toBinaryDataEv(void *this_) {
@@ -176,7 +143,7 @@ return new QByteArray(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:124
+// /usr/include/qt/QtCore/qjsondocument.h:107
 // [8] QJsonDocument fromVariant(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonDocument11fromVariantERK8QVariant(QVariant* variant) {
@@ -185,7 +152,7 @@ return new QJsonDocument(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:125
+// /usr/include/qt/QtCore/qjsondocument.h:108
 // [16] QVariant toVariant()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonDocument9toVariantEv(void *this_) {
@@ -194,7 +161,7 @@ return new QVariant(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:132
+// /usr/include/qt/QtCore/qjsondocument.h:115
 // [8] QJsonDocument fromJson(const QByteArray &, QJsonParseError *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QJsonDocument8fromJsonERK10QByteArrayP15QJsonParseError(QByteArray* json, QJsonParseError * error) {
@@ -203,7 +170,7 @@ return new QJsonDocument(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:137
+// /usr/include/qt/QtCore/qjsondocument.h:120
 // [8] QByteArray toJson()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonDocument6toJsonEv(void *this_) {
@@ -212,7 +179,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:138
+// /usr/include/qt/QtCore/qjsondocument.h:121
 // [8] QByteArray toJson(QJsonDocument::JsonFormat)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonDocument6toJsonENS_10JsonFormatE(void *this_, QJsonDocument::JsonFormat format) {
@@ -221,7 +188,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:141
+// /usr/include/qt/QtCore/qjsondocument.h:124
 // [1] bool isEmpty()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonDocument7isEmptyEv(void *this_) {
@@ -229,7 +196,7 @@ bool C_ZNK13QJsonDocument7isEmptyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:142
+// /usr/include/qt/QtCore/qjsondocument.h:125
 // [1] bool isArray()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonDocument7isArrayEv(void *this_) {
@@ -237,7 +204,7 @@ bool C_ZNK13QJsonDocument7isArrayEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:143
+// /usr/include/qt/QtCore/qjsondocument.h:126
 // [1] bool isObject()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonDocument8isObjectEv(void *this_) {
@@ -245,7 +212,7 @@ bool C_ZNK13QJsonDocument8isObjectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:145
+// /usr/include/qt/QtCore/qjsondocument.h:128
 // [16] QJsonObject object()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonDocument6objectEv(void *this_) {
@@ -254,7 +221,7 @@ return new QJsonObject(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:146
+// /usr/include/qt/QtCore/qjsondocument.h:129
 // [16] QJsonArray array()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QJsonDocument5arrayEv(void *this_) {
@@ -263,7 +230,7 @@ return new QJsonArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:148
+// /usr/include/qt/QtCore/qjsondocument.h:131
 // [-2] void setObject(const QJsonObject &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QJsonDocument9setObjectERK11QJsonObject(void *this_, QJsonObject* object) {
@@ -271,7 +238,7 @@ void C_ZN13QJsonDocument9setObjectERK11QJsonObject(void *this_, QJsonObject* obj
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:149
+// /usr/include/qt/QtCore/qjsondocument.h:132
 // [-2] void setArray(const QJsonArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QJsonDocument8setArrayERK10QJsonArray(void *this_, QJsonArray* array) {
@@ -279,34 +246,7 @@ void C_ZN13QJsonDocument8setArrayERK10QJsonArray(void *this_, QJsonArray* array)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:151
-// [24] const QJsonValue operator[](const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QJsonDocumentixERK7QString(void *this_, QString* key) {
-  auto rv = ((QJsonDocument*)this_)->operator[](*key);
-return new QJsonValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:152
-// [24] const QJsonValue operator[](QLatin1String)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QJsonDocumentixE13QLatin1String(void *this_, QLatin1String* key) {
-  auto rv = ((QJsonDocument*)this_)->operator[](*key);
-return new QJsonValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:153
-// [24] const QJsonValue operator[](int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QJsonDocumentixEi(void *this_, int i) {
-  auto rv = ((QJsonDocument*)this_)->operator[](i);
-return new QJsonValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:155
+// /usr/include/qt/QtCore/qjsondocument.h:134
 // [1] bool operator==(const QJsonDocument &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonDocumenteqERKS_(void *this_, QJsonDocument* other) {
@@ -314,7 +254,7 @@ bool C_ZNK13QJsonDocumenteqERKS_(void *this_, QJsonDocument* other) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:156
+// /usr/include/qt/QtCore/qjsondocument.h:135
 // [1] bool operator!=(const QJsonDocument &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonDocumentneERKS_(void *this_, QJsonDocument* other) {
@@ -322,7 +262,7 @@ bool C_ZNK13QJsonDocumentneERKS_(void *this_, QJsonDocument* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:158
+// /usr/include/qt/QtCore/qjsondocument.h:137
 // [1] bool isNull()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QJsonDocument6isNullEv(void *this_) {

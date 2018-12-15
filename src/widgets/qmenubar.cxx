@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qmenubar.h
 #ifndef protected
 #define protected public
@@ -281,7 +280,7 @@ void* C_QMenuBar_init_staticMetaObject(void* this_, void* strdat, void* dat, voi
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:113
+// /usr/include/qt/QtWidgets/qmenubar.h:114
 // [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar11changeEventEP6QEvent(void *this_, QEvent * arg0) {
@@ -289,7 +288,7 @@ void C_ZN8QMenuBar11changeEventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:114
+// /usr/include/qt/QtWidgets/qmenubar.h:115
 // [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
@@ -297,7 +296,7 @@ void C_ZN8QMenuBar13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:115
+// /usr/include/qt/QtWidgets/qmenubar.h:116
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -305,7 +304,7 @@ void C_ZN8QMenuBar17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:116
+// /usr/include/qt/QtWidgets/qmenubar.h:117
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -313,7 +312,7 @@ void C_ZN8QMenuBar15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * ar
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:117
+// /usr/include/qt/QtWidgets/qmenubar.h:118
 // [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -321,7 +320,7 @@ void C_ZN8QMenuBar14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * arg
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:118
+// /usr/include/qt/QtWidgets/qmenubar.h:119
 // [-2] void leaveEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar10leaveEventEP6QEvent(void *this_, QEvent * arg0) {
@@ -329,7 +328,7 @@ void C_ZN8QMenuBar10leaveEventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:119
+// /usr/include/qt/QtWidgets/qmenubar.h:120
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
@@ -337,7 +336,7 @@ void C_ZN8QMenuBar10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:120
+// /usr/include/qt/QtWidgets/qmenubar.h:121
 // [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
@@ -345,7 +344,7 @@ void C_ZN8QMenuBar11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:121
+// /usr/include/qt/QtWidgets/qmenubar.h:122
 // [-2] void actionEvent(QActionEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar11actionEventEP12QActionEvent(void *this_, QActionEvent * arg0) {
@@ -353,7 +352,7 @@ void C_ZN8QMenuBar11actionEventEP12QActionEvent(void *this_, QActionEvent * arg0
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:122
+// /usr/include/qt/QtWidgets/qmenubar.h:123
 // [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
@@ -361,7 +360,7 @@ void C_ZN8QMenuBar13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * arg0
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:123
+// /usr/include/qt/QtWidgets/qmenubar.h:124
 // [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * arg0) {
@@ -369,7 +368,7 @@ void C_ZN8QMenuBar12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * arg0)
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:124
+// /usr/include/qt/QtWidgets/qmenubar.h:125
 // [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
@@ -377,7 +376,7 @@ void C_ZN8QMenuBar10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:125
+// /usr/include/qt/QtWidgets/qmenubar.h:126
 // [1] bool eventFilter(QObject *, QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
@@ -385,7 +384,7 @@ bool C_ZN8QMenuBar11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, Q
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:126
+// /usr/include/qt/QtWidgets/qmenubar.h:127
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QMenuBar5eventEP6QEvent(void *this_, QEvent * arg0) {
@@ -393,7 +392,7 @@ bool C_ZN8QMenuBar5eventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:57
+// /usr/include/qt/QtWidgets/qmenubar.h:58
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMenuBar10metaObjectEv(void *this_) {
@@ -401,7 +400,7 @@ void* C_ZNK8QMenuBar10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:57
+// /usr/include/qt/QtWidgets/qmenubar.h:58
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -409,7 +408,7 @@ void* C_ZN8QMenuBar11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:57
+// /usr/include/qt/QtWidgets/qmenubar.h:58
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN8QMenuBar11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -417,7 +416,7 @@ int C_ZN8QMenuBar11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:57
+// /usr/include/qt/QtWidgets/qmenubar.h:58
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -426,7 +425,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:57
+// /usr/include/qt/QtWidgets/qmenubar.h:58
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -435,7 +434,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:63
+// /usr/include/qt/QtWidgets/qmenubar.h:64
 // [-2] void QMenuBar(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBarC2EP7QWidget(QWidget * parent) {
@@ -444,14 +443,14 @@ void* C_ZN8QMenuBarC2EP7QWidget(QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:64
+// /usr/include/qt/QtWidgets/qmenubar.h:65
 // [-2] void ~QMenuBar()
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBarD2Ev(void *this_) {
   delete (QMenuBar*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:67
+// /usr/include/qt/QtWidgets/qmenubar.h:68
 // [8] QAction * addAction(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar9addActionERK7QString(void *this_, QString* text) {
@@ -459,7 +458,7 @@ void* C_ZN8QMenuBar9addActionERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:68
+// /usr/include/qt/QtWidgets/qmenubar.h:69
 // [8] QAction * addAction(const QString &, const QObject *, const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar9addActionERK7QStringPK7QObjectPKc(void *this_, QString* text, const QObject * receiver, const char * member) {
@@ -467,7 +466,7 @@ void* C_ZN8QMenuBar9addActionERK7QStringPK7QObjectPKc(void *this_, QString* text
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:70
+// /usr/include/qt/QtWidgets/qmenubar.h:71
 // [8] QAction * addMenu(QMenu *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar7addMenuEP5QMenu(void *this_, QMenu * menu) {
@@ -475,7 +474,7 @@ void* C_ZN8QMenuBar7addMenuEP5QMenu(void *this_, QMenu * menu) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:71
+// /usr/include/qt/QtWidgets/qmenubar.h:72
 // [8] QMenu * addMenu(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar7addMenuERK7QString(void *this_, QString* title) {
@@ -483,7 +482,7 @@ void* C_ZN8QMenuBar7addMenuERK7QString(void *this_, QString* title) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:72
+// /usr/include/qt/QtWidgets/qmenubar.h:73
 // [8] QMenu * addMenu(const QIcon &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar7addMenuERK5QIconRK7QString(void *this_, QIcon* icon, QString* title) {
@@ -491,7 +490,7 @@ void* C_ZN8QMenuBar7addMenuERK5QIconRK7QString(void *this_, QIcon* icon, QString
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:75
+// /usr/include/qt/QtWidgets/qmenubar.h:76
 // [8] QAction * addSeparator()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar12addSeparatorEv(void *this_) {
@@ -499,7 +498,7 @@ void* C_ZN8QMenuBar12addSeparatorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:76
+// /usr/include/qt/QtWidgets/qmenubar.h:77
 // [8] QAction * insertSeparator(QAction *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar15insertSeparatorEP7QAction(void *this_, QAction * before) {
@@ -507,7 +506,7 @@ void* C_ZN8QMenuBar15insertSeparatorEP7QAction(void *this_, QAction * before) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:78
+// /usr/include/qt/QtWidgets/qmenubar.h:79
 // [8] QAction * insertMenu(QAction *, QMenu *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar10insertMenuEP7QActionP5QMenu(void *this_, QAction * before, QMenu * menu) {
@@ -515,7 +514,7 @@ void* C_ZN8QMenuBar10insertMenuEP7QActionP5QMenu(void *this_, QAction * before, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:80
+// /usr/include/qt/QtWidgets/qmenubar.h:81
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar5clearEv(void *this_) {
@@ -523,7 +522,7 @@ void C_ZN8QMenuBar5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:82
+// /usr/include/qt/QtWidgets/qmenubar.h:83
 // [8] QAction * activeAction()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMenuBar12activeActionEv(void *this_) {
@@ -532,7 +531,7 @@ void* C_ZNK8QMenuBar12activeActionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qmenubar.h:83
+// /usr/include/qt/QtWidgets/qmenubar.h:84
 // [-2] void setActiveAction(QAction *)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -542,7 +541,7 @@ void C_ZN8QMenuBar15setActiveActionEP7QAction(void *this_, QAction * action) {
 #endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:85
+// /usr/include/qt/QtWidgets/qmenubar.h:86
 // [-2] void setDefaultUp(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar12setDefaultUpEb(void *this_, bool arg0) {
@@ -550,7 +549,7 @@ void C_ZN8QMenuBar12setDefaultUpEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:86
+// /usr/include/qt/QtWidgets/qmenubar.h:87
 // [1] bool isDefaultUp()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QMenuBar11isDefaultUpEv(void *this_) {
@@ -558,7 +557,7 @@ bool C_ZNK8QMenuBar11isDefaultUpEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:88
+// /usr/include/qt/QtWidgets/qmenubar.h:89
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMenuBar8sizeHintEv(void *this_) {
@@ -567,7 +566,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:89
+// /usr/include/qt/QtWidgets/qmenubar.h:90
 // [8] QSize minimumSizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMenuBar15minimumSizeHintEv(void *this_) {
@@ -576,7 +575,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:90
+// /usr/include/qt/QtWidgets/qmenubar.h:91
 // [4] int heightForWidth(int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QMenuBar14heightForWidthEi(void *this_, int arg0) {
@@ -584,7 +583,7 @@ int C_ZNK8QMenuBar14heightForWidthEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:92
+// /usr/include/qt/QtWidgets/qmenubar.h:93
 // [16] QRect actionGeometry(QAction *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMenuBar14actionGeometryEP7QAction(void *this_, QAction * arg0) {
@@ -593,7 +592,7 @@ return new QRect(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:93
+// /usr/include/qt/QtWidgets/qmenubar.h:94
 // [8] QAction * actionAt(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMenuBar8actionAtERK6QPoint(void *this_, QPoint* arg0) {
@@ -601,7 +600,7 @@ void* C_ZNK8QMenuBar8actionAtERK6QPoint(void *this_, QPoint* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:95
+// /usr/include/qt/QtWidgets/qmenubar.h:96
 // [-2] void setCornerWidget(QWidget *, Qt::Corner)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar15setCornerWidgetEP7QWidgetN2Qt6CornerE(void *this_, QWidget * w, Qt::Corner corner) {
@@ -609,7 +608,7 @@ void C_ZN8QMenuBar15setCornerWidgetEP7QWidgetN2Qt6CornerE(void *this_, QWidget *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:96
+// /usr/include/qt/QtWidgets/qmenubar.h:97
 // [8] QWidget * cornerWidget(Qt::Corner)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QMenuBar12cornerWidgetEN2Qt6CornerE(void *this_, Qt::Corner corner) {
@@ -617,7 +616,7 @@ void* C_ZNK8QMenuBar12cornerWidgetEN2Qt6CornerE(void *this_, Qt::Corner corner) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:102
+// /usr/include/qt/QtWidgets/qmenubar.h:103
 // [1] bool isNativeMenuBar()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK8QMenuBar15isNativeMenuBarEv(void *this_) {
@@ -625,7 +624,7 @@ bool C_ZNK8QMenuBar15isNativeMenuBarEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:103
+// /usr/include/qt/QtWidgets/qmenubar.h:104
 // [-2] void setNativeMenuBar(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar16setNativeMenuBarEb(void *this_, bool nativeMenuBar) {
@@ -633,7 +632,7 @@ void C_ZN8QMenuBar16setNativeMenuBarEb(void *this_, bool nativeMenuBar) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:104
+// /usr/include/qt/QtWidgets/qmenubar.h:105
 // [8] QPlatformMenuBar * platformMenuBar()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QMenuBar15platformMenuBarEv(void *this_) {
@@ -641,7 +640,7 @@ void* C_ZN8QMenuBar15platformMenuBarEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:106
+// /usr/include/qt/QtWidgets/qmenubar.h:107
 // [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar10setVisibleEb(void *this_, bool visible) {
@@ -649,7 +648,7 @@ void C_ZN8QMenuBar10setVisibleEb(void *this_, bool visible) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:109
+// /usr/include/qt/QtWidgets/qmenubar.h:110
 // [-2] void triggered(QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar9triggeredEP7QAction(void *this_, QAction * action) {
@@ -657,7 +656,7 @@ void C_ZN8QMenuBar9triggeredEP7QAction(void *this_, QAction * action) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmenubar.h:110
+// /usr/include/qt/QtWidgets/qmenubar.h:111
 // [-2] void hovered(QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QMenuBar7hoveredEP7QAction(void *this_, QAction * action) {
@@ -680,5 +679,4 @@ void C_ZN8QMenuBar7hoveredEP7QAction(void *this_, QAction * action) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

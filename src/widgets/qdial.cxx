@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qdial.h
 #ifndef protected
 #define protected public
@@ -196,7 +195,7 @@ void* C_QDial_init_staticMetaObject(void* this_, void* strdat, void* dat, void* 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:84
+// /usr/include/qt/QtWidgets/qdial.h:85
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN5QDial5eventEP6QEvent(void *this_, QEvent * e) {
@@ -204,7 +203,7 @@ bool C_ZN5QDial5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:85
+// /usr/include/qt/QtWidgets/qdial.h:86
 // [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * re) {
@@ -212,7 +211,7 @@ void C_ZN5QDial11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * re) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:86
+// /usr/include/qt/QtWidgets/qdial.h:87
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial10paintEventEP11QPaintEvent(void *this_, QPaintEvent * pe) {
@@ -220,7 +219,7 @@ void C_ZN5QDial10paintEventEP11QPaintEvent(void *this_, QPaintEvent * pe) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:88
+// /usr/include/qt/QtWidgets/qdial.h:89
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
@@ -228,7 +227,7 @@ void C_ZN5QDial15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:89
+// /usr/include/qt/QtWidgets/qdial.h:90
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
@@ -236,7 +235,7 @@ void C_ZN5QDial17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * me)
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:90
+// /usr/include/qt/QtWidgets/qdial.h:91
 // [-2] void mouseMoveEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
@@ -244,7 +243,7 @@ void C_ZN5QDial14mouseMoveEventEP11QMouseEvent(void *this_, QMouseEvent * me) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:92
+// /usr/include/qt/QtWidgets/qdial.h:93
 // [-2] void sliderChange(QAbstractSlider::SliderChange)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial12sliderChangeEN15QAbstractSlider12SliderChangeE(void *this_, QAbstractSlider::SliderChange change) {
@@ -252,7 +251,7 @@ void C_ZN5QDial12sliderChangeEN15QAbstractSlider12SliderChangeE(void *this_, QAb
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:57
+// /usr/include/qt/QtWidgets/qdial.h:58
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QDial10metaObjectEv(void *this_) {
@@ -260,7 +259,7 @@ void* C_ZNK5QDial10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:57
+// /usr/include/qt/QtWidgets/qdial.h:58
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QDial11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -268,7 +267,7 @@ void* C_ZN5QDial11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:57
+// /usr/include/qt/QtWidgets/qdial.h:58
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN5QDial11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -276,7 +275,7 @@ int C_ZN5QDial11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::C
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:57
+// /usr/include/qt/QtWidgets/qdial.h:58
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QDial2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -285,7 +284,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:57
+// /usr/include/qt/QtWidgets/qdial.h:58
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QDial6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -294,7 +293,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:64
+// /usr/include/qt/QtWidgets/qdial.h:65
 // [-2] void QDial(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN5QDialC2EP7QWidget(QWidget * parent) {
@@ -303,14 +302,14 @@ void* C_ZN5QDialC2EP7QWidget(QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:66
+// /usr/include/qt/QtWidgets/qdial.h:67
 // [-2] void ~QDial()
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDialD2Ev(void *this_) {
   delete (QDial*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:68
+// /usr/include/qt/QtWidgets/qdial.h:69
 // [1] bool wrapping()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QDial8wrappingEv(void *this_) {
@@ -318,7 +317,7 @@ bool C_ZNK5QDial8wrappingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:70
+// /usr/include/qt/QtWidgets/qdial.h:71
 // [4] int notchSize()
 extern "C" Q_DECL_EXPORT
 int C_ZNK5QDial9notchSizeEv(void *this_) {
@@ -326,7 +325,7 @@ int C_ZNK5QDial9notchSizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:72
+// /usr/include/qt/QtWidgets/qdial.h:73
 // [-2] void setNotchTarget(double)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial14setNotchTargetEd(void *this_, double target) {
@@ -334,7 +333,7 @@ void C_ZN5QDial14setNotchTargetEd(void *this_, double target) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:73
+// /usr/include/qt/QtWidgets/qdial.h:74
 // [8] qreal notchTarget()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK5QDial11notchTargetEv(void *this_) {
@@ -342,7 +341,7 @@ qreal C_ZNK5QDial11notchTargetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:74
+// /usr/include/qt/QtWidgets/qdial.h:75
 // [1] bool notchesVisible()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK5QDial14notchesVisibleEv(void *this_) {
@@ -350,7 +349,7 @@ bool C_ZNK5QDial14notchesVisibleEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:76
+// /usr/include/qt/QtWidgets/qdial.h:77
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QDial8sizeHintEv(void *this_) {
@@ -359,7 +358,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:77
+// /usr/include/qt/QtWidgets/qdial.h:78
 // [8] QSize minimumSizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK5QDial15minimumSizeHintEv(void *this_) {
@@ -368,7 +367,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:80
+// /usr/include/qt/QtWidgets/qdial.h:81
 // [-2] void setNotchesVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial17setNotchesVisibleEb(void *this_, bool visible) {
@@ -376,7 +375,7 @@ void C_ZN5QDial17setNotchesVisibleEb(void *this_, bool visible) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdial.h:81
+// /usr/include/qt/QtWidgets/qdial.h:82
 // [-2] void setWrapping(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN5QDial11setWrappingEb(void *this_, bool on) {
@@ -399,5 +398,4 @@ void C_ZN5QDial11setWrappingEb(void *this_, bool on) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -68,7 +68,7 @@ MyQPicture(const QPicture & arg0) : QPicture(arg0) {}
 };
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpicture.h:106
+// /usr/include/qt/QtGui/qpicture.h:104
 // [4] int metric(QPaintDevice::PaintDeviceMetric)
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QPicture6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric m) {
@@ -243,7 +243,7 @@ bool C_ZNK8QPicture10isDetachedEv(void *this_) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpicture.h:94
+// /usr/include/qt/QtGui/qpicture.h:93
 // [8] const char * pictureFormat(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPicture13pictureFormatERK7QString(QString* fileName) {
@@ -251,7 +251,7 @@ void* C_ZN8QPicture13pictureFormatERK7QString(QString* fileName) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpicture.h:95
+// /usr/include/qt/QtGui/qpicture.h:94
 // [8] QList<QByteArray> inputFormats()
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZN8QPicture12inputFormatsEv() {
@@ -260,7 +260,7 @@ return new QList<QByteArray>(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpicture.h:96
+// /usr/include/qt/QtGui/qpicture.h:95
 // [8] QList<QByteArray> outputFormats()
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZN8QPicture13outputFormatsEv() {
@@ -269,7 +269,7 @@ return new QList<QByteArray>(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpicture.h:97
+// /usr/include/qt/QtGui/qpicture.h:96
 // [8] QStringList inputFormatList()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPicture15inputFormatListEv() {
@@ -278,7 +278,7 @@ return new QStringList(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpicture.h:98
+// /usr/include/qt/QtGui/qpicture.h:97
 // [8] QStringList outputFormatList()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPicture16outputFormatListEv() {
@@ -287,7 +287,7 @@ return new QStringList(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpicture.h:101
+// /usr/include/qt/QtGui/qpicture.h:99
 // [8] QPaintEngine * paintEngine()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QPicture11paintEngineEv(void *this_) {
@@ -295,7 +295,7 @@ void* C_ZNK8QPicture11paintEngineEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpicture.h:118
+// /usr/include/qt/QtGui/qpicture.h:116
 // [8] QPicture::DataPtr & data_ptr()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QPicture8data_ptrEv(void *this_) {

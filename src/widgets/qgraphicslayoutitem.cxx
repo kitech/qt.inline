@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicslayoutitem.h
 #ifndef protected
@@ -69,10 +68,10 @@ MyQGraphicsLayoutItem(QGraphicsLayoutItem * parent, bool isLayout) : QGraphicsLa
 };
 
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:110
 // [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:57
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:58
 // [-2] void QGraphicsLayoutItem(QGraphicsLayoutItem *, bool)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QGraphicsLayoutItemC2EPS_b(QGraphicsLayoutItem * parent, bool isLayout) {
@@ -81,14 +80,14 @@ void* C_ZN19QGraphicsLayoutItemC2EPS_b(QGraphicsLayoutItem * parent, bool isLayo
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:58
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:59
 // [-2] void ~QGraphicsLayoutItem()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItemD2Ev(void *this_) {
   delete (QGraphicsLayoutItem*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:60
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:61
 // [-2] void setSizePolicy(const QSizePolicy &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem13setSizePolicyERK11QSizePolicy(void *this_, QSizePolicy* policy) {
@@ -96,7 +95,7 @@ void C_ZN19QGraphicsLayoutItem13setSizePolicyERK11QSizePolicy(void *this_, QSize
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:61
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:62
 // [-2] void setSizePolicy(QSizePolicy::Policy, QSizePolicy::Policy, QSizePolicy::ControlType)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem13setSizePolicyEN11QSizePolicy6PolicyES1_NS0_11ControlTypeE(void *this_, QSizePolicy::Policy hPolicy, QSizePolicy::Policy vPolicy, QSizePolicy::ControlType controlType) {
@@ -104,7 +103,7 @@ void C_ZN19QGraphicsLayoutItem13setSizePolicyEN11QSizePolicy6PolicyES1_NS0_11Con
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:62
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:63
 // [4] QSizePolicy sizePolicy()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem10sizePolicyEv(void *this_) {
@@ -113,7 +112,7 @@ return new QSizePolicy(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:64
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:65
 // [-2] void setMinimumSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem14setMinimumSizeERK6QSizeF(void *this_, QSizeF* size) {
@@ -121,7 +120,7 @@ void C_ZN19QGraphicsLayoutItem14setMinimumSizeERK6QSizeF(void *this_, QSizeF* si
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:65
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:66
 // [-2] void setMinimumSize(qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem14setMinimumSizeEdd(void *this_, qreal w, qreal h) {
@@ -129,7 +128,7 @@ void C_ZN19QGraphicsLayoutItem14setMinimumSizeEdd(void *this_, qreal w, qreal h)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:66
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:67
 // [16] QSizeF minimumSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem11minimumSizeEv(void *this_) {
@@ -138,7 +137,7 @@ return new QSizeF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:67
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:68
 // [-2] void setMinimumWidth(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem15setMinimumWidthEd(void *this_, qreal width) {
@@ -146,7 +145,7 @@ void C_ZN19QGraphicsLayoutItem15setMinimumWidthEd(void *this_, qreal width) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:68
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:69
 // [8] qreal minimumWidth()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QGraphicsLayoutItem12minimumWidthEv(void *this_) {
@@ -154,7 +153,7 @@ qreal C_ZNK19QGraphicsLayoutItem12minimumWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:69
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:70
 // [-2] void setMinimumHeight(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem16setMinimumHeightEd(void *this_, qreal height) {
@@ -162,7 +161,7 @@ void C_ZN19QGraphicsLayoutItem16setMinimumHeightEd(void *this_, qreal height) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:70
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:71
 // [8] qreal minimumHeight()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QGraphicsLayoutItem13minimumHeightEv(void *this_) {
@@ -170,7 +169,7 @@ qreal C_ZNK19QGraphicsLayoutItem13minimumHeightEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:72
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:73
 // [-2] void setPreferredSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem16setPreferredSizeERK6QSizeF(void *this_, QSizeF* size) {
@@ -178,7 +177,7 @@ void C_ZN19QGraphicsLayoutItem16setPreferredSizeERK6QSizeF(void *this_, QSizeF* 
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:73
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:74
 // [-2] void setPreferredSize(qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem16setPreferredSizeEdd(void *this_, qreal w, qreal h) {
@@ -186,7 +185,7 @@ void C_ZN19QGraphicsLayoutItem16setPreferredSizeEdd(void *this_, qreal w, qreal 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:74
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:75
 // [16] QSizeF preferredSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem13preferredSizeEv(void *this_) {
@@ -195,7 +194,7 @@ return new QSizeF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:75
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:76
 // [-2] void setPreferredWidth(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem17setPreferredWidthEd(void *this_, qreal width) {
@@ -203,7 +202,7 @@ void C_ZN19QGraphicsLayoutItem17setPreferredWidthEd(void *this_, qreal width) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:76
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:77
 // [8] qreal preferredWidth()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QGraphicsLayoutItem14preferredWidthEv(void *this_) {
@@ -211,7 +210,7 @@ qreal C_ZNK19QGraphicsLayoutItem14preferredWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:77
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:78
 // [-2] void setPreferredHeight(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem18setPreferredHeightEd(void *this_, qreal height) {
@@ -219,7 +218,7 @@ void C_ZN19QGraphicsLayoutItem18setPreferredHeightEd(void *this_, qreal height) 
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:78
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:79
 // [8] qreal preferredHeight()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QGraphicsLayoutItem15preferredHeightEv(void *this_) {
@@ -227,7 +226,7 @@ qreal C_ZNK19QGraphicsLayoutItem15preferredHeightEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:80
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:81
 // [-2] void setMaximumSize(const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem14setMaximumSizeERK6QSizeF(void *this_, QSizeF* size) {
@@ -235,7 +234,7 @@ void C_ZN19QGraphicsLayoutItem14setMaximumSizeERK6QSizeF(void *this_, QSizeF* si
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:81
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:82
 // [-2] void setMaximumSize(qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem14setMaximumSizeEdd(void *this_, qreal w, qreal h) {
@@ -243,7 +242,7 @@ void C_ZN19QGraphicsLayoutItem14setMaximumSizeEdd(void *this_, qreal w, qreal h)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:82
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:83
 // [16] QSizeF maximumSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem11maximumSizeEv(void *this_) {
@@ -252,7 +251,7 @@ return new QSizeF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:83
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:84
 // [-2] void setMaximumWidth(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem15setMaximumWidthEd(void *this_, qreal width) {
@@ -260,7 +259,7 @@ void C_ZN19QGraphicsLayoutItem15setMaximumWidthEd(void *this_, qreal width) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:84
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:85
 // [8] qreal maximumWidth()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QGraphicsLayoutItem12maximumWidthEv(void *this_) {
@@ -268,7 +267,7 @@ qreal C_ZNK19QGraphicsLayoutItem12maximumWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:85
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:86
 // [-2] void setMaximumHeight(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem16setMaximumHeightEd(void *this_, qreal height) {
@@ -276,7 +275,7 @@ void C_ZN19QGraphicsLayoutItem16setMaximumHeightEd(void *this_, qreal height) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:86
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:87
 // [8] qreal maximumHeight()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK19QGraphicsLayoutItem13maximumHeightEv(void *this_) {
@@ -284,7 +283,7 @@ qreal C_ZNK19QGraphicsLayoutItem13maximumHeightEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:88
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:89
 // [-2] void setGeometry(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem11setGeometryERK6QRectF(void *this_, QRectF* rect) {
@@ -292,7 +291,7 @@ void C_ZN19QGraphicsLayoutItem11setGeometryERK6QRectF(void *this_, QRectF* rect)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:89
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:90
 // [32] QRectF geometry()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem8geometryEv(void *this_) {
@@ -301,7 +300,7 @@ return new QRectF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:90
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:91
 // [-2] void getContentsMargins(qreal *, qreal *, qreal *, qreal *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK19QGraphicsLayoutItem18getContentsMarginsEPdS0_S0_S0_(void *this_, qreal * left, qreal * top, qreal * right, qreal * bottom) {
@@ -309,7 +308,7 @@ void C_ZNK19QGraphicsLayoutItem18getContentsMarginsEPdS0_S0_S0_(void *this_, qre
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:91
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:92
 // [32] QRectF contentsRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem12contentsRectEv(void *this_) {
@@ -318,7 +317,7 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:93
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:94
 // [16] QSizeF effectiveSizeHint(Qt::SizeHint, const QSizeF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem17effectiveSizeHintEN2Qt8SizeHintERK6QSizeF(void *this_, Qt::SizeHint which, QSizeF* constraint) {
@@ -327,7 +326,7 @@ return new QSizeF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:95
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:96
 // [-2] void updateGeometry()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem14updateGeometryEv(void *this_) {
@@ -335,7 +334,7 @@ void C_ZN19QGraphicsLayoutItem14updateGeometryEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:97
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:98
 // [8] QGraphicsLayoutItem * parentLayoutItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem16parentLayoutItemEv(void *this_) {
@@ -343,7 +342,7 @@ void* C_ZNK19QGraphicsLayoutItem16parentLayoutItemEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:98
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:99
 // [-2] void setParentLayoutItem(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void C_ZN19QGraphicsLayoutItem19setParentLayoutItemEPS_(void *this_, QGraphicsLayoutItem * parent) {
@@ -351,7 +350,7 @@ void C_ZN19QGraphicsLayoutItem19setParentLayoutItemEPS_(void *this_, QGraphicsLa
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:100
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:101
 // [1] bool isLayout()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK19QGraphicsLayoutItem8isLayoutEv(void *this_) {
@@ -359,7 +358,7 @@ bool C_ZNK19QGraphicsLayoutItem8isLayoutEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:101
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:102
 // [8] QGraphicsItem * graphicsItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QGraphicsLayoutItem12graphicsItemEv(void *this_) {
@@ -368,7 +367,7 @@ void* C_ZNK19QGraphicsLayoutItem12graphicsItemEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:102
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:103
 // [1] bool ownedByLayout()
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT
@@ -393,5 +392,4 @@ bool C_ZNK19QGraphicsLayoutItem13ownedByLayoutEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

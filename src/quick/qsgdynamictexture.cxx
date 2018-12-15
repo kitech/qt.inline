@@ -186,25 +186,25 @@ void* C_QSGDynamicTexture_init_staticMetaObject(void* this_, void* strdat, void*
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:133
+// /usr/include/qt/QtQuick/qsgtexture.h:132
 // [1] bool updateTexture()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:79
+// /usr/include/qt/QtQuick/qsgtexture.h:78
 // [4] int textureId()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:80
+// /usr/include/qt/QtQuick/qsgtexture.h:79
 // [8] QSize textureSize()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:81
+// /usr/include/qt/QtQuick/qsgtexture.h:80
 // [1] bool hasAlphaChannel()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:82
+// /usr/include/qt/QtQuick/qsgtexture.h:81
 // [1] bool hasMipmaps()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:90
+// /usr/include/qt/QtQuick/qsgtexture.h:89
 // [-2] void bind()
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:131
+// /usr/include/qt/QtQuick/qsgtexture.h:130
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QSGDynamicTexture10metaObjectEv(void *this_) {
@@ -212,7 +212,7 @@ void* C_ZNK17QSGDynamicTexture10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:131
+// /usr/include/qt/QtQuick/qsgtexture.h:130
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSGDynamicTexture11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -220,7 +220,7 @@ void* C_ZN17QSGDynamicTexture11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:131
+// /usr/include/qt/QtQuick/qsgtexture.h:130
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN17QSGDynamicTexture11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -228,7 +228,7 @@ int C_ZN17QSGDynamicTexture11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, Q
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:131
+// /usr/include/qt/QtQuick/qsgtexture.h:130
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSGDynamicTexture2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -237,7 +237,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:131
+// /usr/include/qt/QtQuick/qsgtexture.h:130
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSGDynamicTexture6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -246,7 +246,7 @@ return new QString(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:133
+// /usr/include/qt/QtQuick/qsgtexture.h:132
 // [1] bool updateTexture()
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QSGDynamicTexture13updateTextureEv(void *this_) {

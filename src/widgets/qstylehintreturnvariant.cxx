@@ -54,7 +54,7 @@ MyQStyleHintReturnVariant() : QStyleHintReturnVariant() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:733
+// /usr/include/qt/QtWidgets/qstyleoption.h:722
 // [-2] void QStyleHintReturnVariant()
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QStyleHintReturnVariantC2Ev() {
@@ -62,7 +62,7 @@ void* C_ZN23QStyleHintReturnVariantC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:734
+// /usr/include/qt/QtWidgets/qstyleoption.h:723
 // [-2] void ~QStyleHintReturnVariant()
 extern "C" Q_DECL_EXPORT
 void C_ZN23QStyleHintReturnVariantD2Ev(void *this_) {

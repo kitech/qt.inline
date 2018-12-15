@@ -56,7 +56,7 @@ MyQStyleOptionGraphicsItem(const QStyleOptionGraphicsItem & other) : QStyleOptio
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:669
+// /usr/include/qt/QtWidgets/qstyleoption.h:658
 // [-2] void QStyleOptionGraphicsItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QStyleOptionGraphicsItemC2Ev() {
@@ -64,7 +64,7 @@ void* C_ZN24QStyleOptionGraphicsItemC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:670
+// /usr/include/qt/QtWidgets/qstyleoption.h:659
 // [-2] void QStyleOptionGraphicsItem(const QStyleOptionGraphicsItem &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QStyleOptionGraphicsItemC2ERKS_(QStyleOptionGraphicsItem* other) {
@@ -73,7 +73,7 @@ void* C_ZN24QStyleOptionGraphicsItemC2ERKS_(QStyleOptionGraphicsItem* other) {
 
 // Public static Visibility=Default Availability=Available
 // since 4.6
-// /usr/include/qt/QtWidgets/qstyleoption.h:671
+// /usr/include/qt/QtWidgets/qstyleoption.h:660
 // [8] qreal levelOfDetailFromTransform(const QTransform &)
 #if QT_VERSION >= 0x040600
 extern "C" Q_DECL_EXPORT

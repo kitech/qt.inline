@@ -150,7 +150,7 @@ void* C_QSortFilterProxyModel_init_staticMetaObject(void* this_, void* strdat, v
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:122
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:118
 // [1] bool filterAcceptsRow(int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex(void *this_, int source_row, QModelIndex* source_parent) {
@@ -158,7 +158,7 @@ bool C_ZNK21QSortFilterProxyModel16filterAcceptsRowEiRK11QModelIndex(void *this_
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:123
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:119
 // [1] bool filterAcceptsColumn(int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex(void *this_, int source_column, QModelIndex* source_parent) {
@@ -166,7 +166,7 @@ bool C_ZNK21QSortFilterProxyModel19filterAcceptsColumnEiRK11QModelIndex(void *th
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:124
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:120
 // [1] bool lessThan(const QModelIndex &, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QSortFilterProxyModel8lessThanERK11QModelIndexS2_(void *this_, QModelIndex* source_left, QModelIndex* source_right) {
@@ -216,7 +216,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:73
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:72
 // [-2] void QSortFilterProxyModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QSortFilterProxyModelC2EP7QObject(QObject * parent) {
@@ -225,14 +225,14 @@ void* C_ZN21QSortFilterProxyModelC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:74
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:73
 // [-2] void ~QSortFilterProxyModel()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModelD2Ev(void *this_) {
   delete (QSortFilterProxyModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:76
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:75
 // [-2] void setSourceModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel14setSourceModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * sourceModel) {
@@ -240,7 +240,7 @@ void C_ZN21QSortFilterProxyModel14setSourceModelEP18QAbstractItemModel(void *thi
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:78
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:77
 // [24] QModelIndex mapToSource(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel11mapToSourceERK11QModelIndex(void *this_, QModelIndex* proxyIndex) {
@@ -249,7 +249,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:79
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:78
 // [24] QModelIndex mapFromSource(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel13mapFromSourceERK11QModelIndex(void *this_, QModelIndex* sourceIndex) {
@@ -258,7 +258,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:81
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:80
 // [8] QItemSelection mapSelectionToSource(const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel20mapSelectionToSourceERK14QItemSelection(void *this_, QItemSelection* proxySelection) {
@@ -267,7 +267,7 @@ return new QItemSelection(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:82
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:81
 // [8] QItemSelection mapSelectionFromSource(const QItemSelection &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel22mapSelectionFromSourceERK14QItemSelection(void *this_, QItemSelection* sourceSelection) {
@@ -276,7 +276,7 @@ return new QItemSelection(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:84
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:83
 // [8] QRegExp filterRegExp()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel12filterRegExpEv(void *this_) {
@@ -285,7 +285,7 @@ return new QRegExp(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:85
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:84
 // [-2] void setFilterRegExp(const QRegExp &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel15setFilterRegExpERK7QRegExp(void *this_, QRegExp* regExp) {
@@ -293,7 +293,7 @@ void C_ZN21QSortFilterProxyModel15setFilterRegExpERK7QRegExp(void *this_, QRegEx
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:87
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:86
 // [4] int filterKeyColumn()
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QSortFilterProxyModel15filterKeyColumnEv(void *this_) {
@@ -301,7 +301,7 @@ int C_ZNK21QSortFilterProxyModel15filterKeyColumnEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:88
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:87
 // [-2] void setFilterKeyColumn(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel18setFilterKeyColumnEi(void *this_, int column) {
@@ -309,7 +309,7 @@ void C_ZN21QSortFilterProxyModel18setFilterKeyColumnEi(void *this_, int column) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:90
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:89
 // [4] Qt::CaseSensitivity filterCaseSensitivity()
 extern "C" Q_DECL_EXPORT
 Qt::CaseSensitivity C_ZNK21QSortFilterProxyModel21filterCaseSensitivityEv(void *this_) {
@@ -317,7 +317,7 @@ Qt::CaseSensitivity C_ZNK21QSortFilterProxyModel21filterCaseSensitivityEv(void *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:91
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:90
 // [-2] void setFilterCaseSensitivity(Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel24setFilterCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity cs) {
@@ -325,7 +325,7 @@ void C_ZN21QSortFilterProxyModel24setFilterCaseSensitivityEN2Qt15CaseSensitivity
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:93
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:92
 // [4] Qt::CaseSensitivity sortCaseSensitivity()
 extern "C" Q_DECL_EXPORT
 Qt::CaseSensitivity C_ZNK21QSortFilterProxyModel19sortCaseSensitivityEv(void *this_) {
@@ -333,7 +333,7 @@ Qt::CaseSensitivity C_ZNK21QSortFilterProxyModel19sortCaseSensitivityEv(void *th
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:94
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:93
 // [-2] void setSortCaseSensitivity(Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel22setSortCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity cs) {
@@ -341,7 +341,7 @@ void C_ZN21QSortFilterProxyModel22setSortCaseSensitivityEN2Qt15CaseSensitivityE(
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:96
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:95
 // [1] bool isSortLocaleAware()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QSortFilterProxyModel17isSortLocaleAwareEv(void *this_) {
@@ -349,7 +349,7 @@ bool C_ZNK21QSortFilterProxyModel17isSortLocaleAwareEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:97
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:96
 // [-2] void setSortLocaleAware(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel18setSortLocaleAwareEb(void *this_, bool on) {
@@ -358,7 +358,7 @@ void C_ZN21QSortFilterProxyModel18setSortLocaleAwareEb(void *this_, bool on) {
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:99
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:98
 // [4] int sortColumn()
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -369,7 +369,7 @@ int C_ZNK21QSortFilterProxyModel10sortColumnEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:100
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:99
 // [4] Qt::SortOrder sortOrder()
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -379,7 +379,7 @@ Qt::SortOrder C_ZNK21QSortFilterProxyModel9sortOrderEv(void *this_) {
 #endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:102
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:101
 // [1] bool dynamicSortFilter()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QSortFilterProxyModel17dynamicSortFilterEv(void *this_) {
@@ -387,7 +387,7 @@ bool C_ZNK21QSortFilterProxyModel17dynamicSortFilterEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:103
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:102
 // [-2] void setDynamicSortFilter(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel20setDynamicSortFilterEb(void *this_, bool enable) {
@@ -395,7 +395,7 @@ void C_ZN21QSortFilterProxyModel20setDynamicSortFilterEb(void *this_, bool enabl
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:105
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:104
 // [4] int sortRole()
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QSortFilterProxyModel8sortRoleEv(void *this_) {
@@ -403,7 +403,7 @@ int C_ZNK21QSortFilterProxyModel8sortRoleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:106
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:105
 // [-2] void setSortRole(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel11setSortRoleEi(void *this_, int role) {
@@ -411,7 +411,7 @@ void C_ZN21QSortFilterProxyModel11setSortRoleEi(void *this_, int role) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:108
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:107
 // [4] int filterRole()
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QSortFilterProxyModel10filterRoleEv(void *this_) {
@@ -419,7 +419,7 @@ int C_ZNK21QSortFilterProxyModel10filterRoleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:109
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:108
 // [-2] void setFilterRole(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel13setFilterRoleEi(void *this_, int role) {
@@ -428,22 +428,6 @@ void C_ZN21QSortFilterProxyModel13setFilterRoleEi(void *this_, int role) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h:111
-// [1] bool isRecursiveFilteringEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK21QSortFilterProxyModel27isRecursiveFilteringEnabledEv(void *this_) {
-  return (bool)((QSortFilterProxyModel*)this_)->isRecursiveFilteringEnabled();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:112
-// [-2] void setRecursiveFilteringEnabled(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QSortFilterProxyModel28setRecursiveFilteringEnabledEb(void *this_, bool recursive) {
-  ((QSortFilterProxyModel*)this_)->setRecursiveFilteringEnabled(recursive);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:115
 // [-2] void setFilterRegExp(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel15setFilterRegExpERK7QString(void *this_, QString* pattern) {
@@ -451,7 +435,7 @@ void C_ZN21QSortFilterProxyModel15setFilterRegExpERK7QString(void *this_, QStrin
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:116
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:112
 // [-2] void setFilterWildcard(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel17setFilterWildcardERK7QString(void *this_, QString* pattern) {
@@ -459,7 +443,7 @@ void C_ZN21QSortFilterProxyModel17setFilterWildcardERK7QString(void *this_, QStr
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:117
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:113
 // [-2] void setFilterFixedString(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel20setFilterFixedStringERK7QString(void *this_, QString* pattern) {
@@ -467,7 +451,7 @@ void C_ZN21QSortFilterProxyModel20setFilterFixedStringERK7QString(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:118
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:114
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel5clearEv(void *this_) {
@@ -476,7 +460,7 @@ void C_ZN21QSortFilterProxyModel5clearEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:119
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:115
 // [-2] void invalidate()
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -486,7 +470,7 @@ void C_ZN21QSortFilterProxyModel10invalidateEv(void *this_) {
 #endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:132
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:128
 // [24] QModelIndex index(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel5indexEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* parent) {
@@ -495,7 +479,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:133
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:129
 // [24] QModelIndex parent(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel6parentERK11QModelIndex(void *this_, QModelIndex* child) {
@@ -504,7 +488,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:134
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:130
 // [24] QModelIndex sibling(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* idx) {
@@ -513,7 +497,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:136
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:132
 // [4] int rowCount(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QSortFilterProxyModel8rowCountERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -521,7 +505,7 @@ int C_ZNK21QSortFilterProxyModel8rowCountERK11QModelIndex(void *this_, QModelInd
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:137
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:133
 // [4] int columnCount(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK21QSortFilterProxyModel11columnCountERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -529,7 +513,7 @@ int C_ZNK21QSortFilterProxyModel11columnCountERK11QModelIndex(void *this_, QMode
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:138
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:134
 // [1] bool hasChildren(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QSortFilterProxyModel11hasChildrenERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -537,7 +521,7 @@ bool C_ZNK21QSortFilterProxyModel11hasChildrenERK11QModelIndex(void *this_, QMod
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:140
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:136
 // [16] QVariant data(const QModelIndex &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel4dataERK11QModelIndexi(void *this_, QModelIndex* index, int role) {
@@ -546,7 +530,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:141
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:137
 // [1] bool setData(const QModelIndex &, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QSortFilterProxyModel7setDataERK11QModelIndexRK8QVarianti(void *this_, QModelIndex* index, QVariant* value, int role) {
@@ -554,7 +538,7 @@ bool C_ZN21QSortFilterProxyModel7setDataERK11QModelIndexRK8QVarianti(void *this_
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:143
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:139
 // [16] QVariant headerData(int, Qt::Orientation, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel10headerDataEiN2Qt11OrientationEi(void *this_, int section, Qt::Orientation orientation, int role) {
@@ -563,7 +547,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:144
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:140
 // [1] bool setHeaderData(int, Qt::Orientation, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QSortFilterProxyModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(void *this_, int section, Qt::Orientation orientation, QVariant* value, int role) {
@@ -571,7 +555,7 @@ bool C_ZN21QSortFilterProxyModel13setHeaderDataEiN2Qt11OrientationERK8QVarianti(
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:147
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:143
 // [8] QMimeData * mimeData(const QModelIndexList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel8mimeDataERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
@@ -579,7 +563,7 @@ void* C_ZNK21QSortFilterProxyModel8mimeDataERK5QListI11QModelIndexE(void *this_,
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:148
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:144
 // [1] bool dropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QSortFilterProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
@@ -587,7 +571,7 @@ bool C_ZN21QSortFilterProxyModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:151
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:147
 // [1] bool insertRows(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QSortFilterProxyModel10insertRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
@@ -595,7 +579,7 @@ bool C_ZN21QSortFilterProxyModel10insertRowsEiiRK11QModelIndex(void *this_, int 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:152
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:148
 // [1] bool insertColumns(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QSortFilterProxyModel13insertColumnsEiiRK11QModelIndex(void *this_, int column, int count, QModelIndex* parent) {
@@ -603,7 +587,7 @@ bool C_ZN21QSortFilterProxyModel13insertColumnsEiiRK11QModelIndex(void *this_, i
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:153
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:149
 // [1] bool removeRows(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QSortFilterProxyModel10removeRowsEiiRK11QModelIndex(void *this_, int row, int count, QModelIndex* parent) {
@@ -611,7 +595,7 @@ bool C_ZN21QSortFilterProxyModel10removeRowsEiiRK11QModelIndex(void *this_, int 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:154
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:150
 // [1] bool removeColumns(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN21QSortFilterProxyModel13removeColumnsEiiRK11QModelIndex(void *this_, int column, int count, QModelIndex* parent) {
@@ -619,7 +603,7 @@ bool C_ZN21QSortFilterProxyModel13removeColumnsEiiRK11QModelIndex(void *this_, i
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:156
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:152
 // [-2] void fetchMore(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel9fetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -627,7 +611,7 @@ void C_ZN21QSortFilterProxyModel9fetchMoreERK11QModelIndex(void *this_, QModelIn
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:157
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:153
 // [1] bool canFetchMore(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QSortFilterProxyModel12canFetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -635,7 +619,7 @@ bool C_ZNK21QSortFilterProxyModel12canFetchMoreERK11QModelIndex(void *this_, QMo
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:158
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:154
 // [4] Qt::ItemFlags flags(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 Qt::ItemFlags C_ZNK21QSortFilterProxyModel5flagsERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -643,7 +627,7 @@ Qt::ItemFlags C_ZNK21QSortFilterProxyModel5flagsERK11QModelIndex(void *this_, QM
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:160
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:156
 // [24] QModelIndex buddy(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel5buddyERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -652,7 +636,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:161
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:157
 // [8] QModelIndexList match(const QModelIndex &, int, const QVariant &, int, Qt::MatchFlags)
 extern "C" Q_DECL_EXPORT
 QModelIndexList* C_ZNK21QSortFilterProxyModel5matchERK11QModelIndexiRK8QVarianti6QFlagsIN2Qt9MatchFlagEE(void *this_, QModelIndex* start, int role, QVariant* value, int hits, QFlags<Qt::MatchFlag> flags) {
@@ -661,7 +645,7 @@ return new QModelIndexList(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:165
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:161
 // [8] QSize span(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel4spanERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -670,7 +654,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:166
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:162
 // [-2] void sort(int, Qt::SortOrder)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QSortFilterProxyModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
@@ -678,7 +662,7 @@ void C_ZN21QSortFilterProxyModel4sortEiN2Qt9SortOrderE(void *this_, int column, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:168
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:164
 // [8] QStringList mimeTypes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK21QSortFilterProxyModel9mimeTypesEv(void *this_) {
@@ -687,7 +671,7 @@ return new QStringList(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsortfilterproxymodel.h:169
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:165
 // [4] Qt::DropActions supportedDropActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK21QSortFilterProxyModel20supportedDropActionsEv(void *this_) {

@@ -532,7 +532,7 @@ qint64 C_ZNK9QFileInfo4sizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfileinfo.h:135
+// /usr/include/qt/QtCore/qfileinfo.h:132
 // [8] QDateTime created()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFileInfo7createdEv(void *this_) {
@@ -541,31 +541,7 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qfileinfo.h:137
-// [8] QDateTime birthTime()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QFileInfo9birthTimeEv(void *this_) {
-  auto rv = ((QFileInfo*)this_)->birthTime();
-return new QDateTime(rv);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qfileinfo.h:138
-// [8] QDateTime metadataChangeTime()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QFileInfo18metadataChangeTimeEv(void *this_) {
-  auto rv = ((QFileInfo*)this_)->metadataChangeTime();
-return new QDateTime(rv);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfileinfo.h:139
+// /usr/include/qt/QtCore/qfileinfo.h:133
 // [8] QDateTime lastModified()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFileInfo12lastModifiedEv(void *this_) {
@@ -574,7 +550,7 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfileinfo.h:140
+// /usr/include/qt/QtCore/qfileinfo.h:134
 // [8] QDateTime lastRead()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QFileInfo8lastReadEv(void *this_) {
@@ -583,19 +559,7 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qfileinfo.h:141
-// [8] QDateTime fileTime(QFile::FileTime)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QFileInfo8fileTimeEN11QFileDevice8FileTimeE(void *this_, QFile::FileTime time) {
-  auto rv = ((QFileInfo*)this_)->fileTime(time);
-return new QDateTime(rv);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfileinfo.h:143
+// /usr/include/qt/QtCore/qfileinfo.h:136
 // [1] bool caching()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QFileInfo7cachingEv(void *this_) {
@@ -603,7 +567,7 @@ bool C_ZNK9QFileInfo7cachingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfileinfo.h:144
+// /usr/include/qt/QtCore/qfileinfo.h:137
 // [-2] void setCaching(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QFileInfo10setCachingEb(void *this_, bool on) {

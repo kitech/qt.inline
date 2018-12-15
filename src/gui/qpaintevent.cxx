@@ -55,7 +55,7 @@ MyQPaintEvent(const QRect & paintRect) : QPaintEvent(paintRect) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:405
+// /usr/include/qt/QtGui/qevent.h:398
 // [-2] void QPaintEvent(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPaintEventC2ERK7QRegion(QRegion* paintRegion) {
@@ -63,7 +63,7 @@ void* C_ZN11QPaintEventC2ERK7QRegion(QRegion* paintRegion) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:406
+// /usr/include/qt/QtGui/qevent.h:399
 // [-2] void QPaintEvent(const QRect &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QPaintEventC2ERK5QRect(QRect* paintRect) {
@@ -71,14 +71,14 @@ void* C_ZN11QPaintEventC2ERK5QRect(QRect* paintRect) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:407
+// /usr/include/qt/QtGui/qevent.h:400
 // [-2] void ~QPaintEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QPaintEventD2Ev(void *this_) {
   delete (QPaintEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:409
+// /usr/include/qt/QtGui/qevent.h:402
 // [16] const QRect & rect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QPaintEvent4rectEv(void *this_) {
@@ -87,7 +87,7 @@ return new QRect(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:410
+// /usr/include/qt/QtGui/qevent.h:403
 // [8] const QRegion & region()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QPaintEvent6regionEv(void *this_) {

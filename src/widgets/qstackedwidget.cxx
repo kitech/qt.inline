@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qstackedwidget.h
 #ifndef protected
 #define protected public
@@ -124,7 +123,7 @@ void* C_QStackedWidget_init_staticMetaObject(void* this_, void* strdat, void* da
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:82
+// /usr/include/qt/QtWidgets/qstackedwidget.h:83
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QStackedWidget5eventEP6QEvent(void *this_, QEvent * e) {
@@ -132,7 +131,7 @@ bool C_ZN14QStackedWidget5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:54
+// /usr/include/qt/QtWidgets/qstackedwidget.h:55
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QStackedWidget10metaObjectEv(void *this_) {
@@ -140,7 +139,7 @@ void* C_ZNK14QStackedWidget10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:54
+// /usr/include/qt/QtWidgets/qstackedwidget.h:55
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedWidget11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -148,7 +147,7 @@ void* C_ZN14QStackedWidget11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:54
+// /usr/include/qt/QtWidgets/qstackedwidget.h:55
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QStackedWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -156,7 +155,7 @@ int C_ZN14QStackedWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMet
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:54
+// /usr/include/qt/QtWidgets/qstackedwidget.h:55
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedWidget2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -165,7 +164,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:54
+// /usr/include/qt/QtWidgets/qstackedwidget.h:55
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedWidget6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -174,7 +173,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:59
+// /usr/include/qt/QtWidgets/qstackedwidget.h:60
 // [-2] void QStackedWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QStackedWidgetC2EP7QWidget(QWidget * parent) {
@@ -183,14 +182,14 @@ void* C_ZN14QStackedWidgetC2EP7QWidget(QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:60
+// /usr/include/qt/QtWidgets/qstackedwidget.h:61
 // [-2] void ~QStackedWidget()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidgetD2Ev(void *this_) {
   delete (QStackedWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:62
+// /usr/include/qt/QtWidgets/qstackedwidget.h:63
 // [4] int addWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QStackedWidget9addWidgetEP7QWidget(void *this_, QWidget * w) {
@@ -198,7 +197,7 @@ int C_ZN14QStackedWidget9addWidgetEP7QWidget(void *this_, QWidget * w) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:63
+// /usr/include/qt/QtWidgets/qstackedwidget.h:64
 // [4] int insertWidget(int, QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZN14QStackedWidget12insertWidgetEiP7QWidget(void *this_, int index, QWidget * w) {
@@ -206,7 +205,7 @@ int C_ZN14QStackedWidget12insertWidgetEiP7QWidget(void *this_, int index, QWidge
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:64
+// /usr/include/qt/QtWidgets/qstackedwidget.h:65
 // [-2] void removeWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget12removeWidgetEP7QWidget(void *this_, QWidget * w) {
@@ -214,7 +213,7 @@ void C_ZN14QStackedWidget12removeWidgetEP7QWidget(void *this_, QWidget * w) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:66
+// /usr/include/qt/QtWidgets/qstackedwidget.h:67
 // [8] QWidget * currentWidget()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QStackedWidget13currentWidgetEv(void *this_) {
@@ -222,7 +221,7 @@ void* C_ZNK14QStackedWidget13currentWidgetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:67
+// /usr/include/qt/QtWidgets/qstackedwidget.h:68
 // [4] int currentIndex()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QStackedWidget12currentIndexEv(void *this_) {
@@ -230,7 +229,7 @@ int C_ZNK14QStackedWidget12currentIndexEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:69
+// /usr/include/qt/QtWidgets/qstackedwidget.h:70
 // [4] int indexOf(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QStackedWidget7indexOfEP7QWidget(void *this_, QWidget * arg0) {
@@ -238,7 +237,7 @@ int C_ZNK14QStackedWidget7indexOfEP7QWidget(void *this_, QWidget * arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:70
+// /usr/include/qt/QtWidgets/qstackedwidget.h:71
 // [8] QWidget * widget(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QStackedWidget6widgetEi(void *this_, int arg0) {
@@ -246,7 +245,7 @@ void* C_ZNK14QStackedWidget6widgetEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:71
+// /usr/include/qt/QtWidgets/qstackedwidget.h:72
 // [4] int count()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QStackedWidget5countEv(void *this_) {
@@ -254,7 +253,7 @@ int C_ZNK14QStackedWidget5countEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:74
+// /usr/include/qt/QtWidgets/qstackedwidget.h:75
 // [-2] void setCurrentIndex(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget15setCurrentIndexEi(void *this_, int index) {
@@ -262,7 +261,7 @@ void C_ZN14QStackedWidget15setCurrentIndexEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:75
+// /usr/include/qt/QtWidgets/qstackedwidget.h:76
 // [-2] void setCurrentWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget16setCurrentWidgetEP7QWidget(void *this_, QWidget * w) {
@@ -270,7 +269,7 @@ void C_ZN14QStackedWidget16setCurrentWidgetEP7QWidget(void *this_, QWidget * w) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:78
+// /usr/include/qt/QtWidgets/qstackedwidget.h:79
 // [-2] void currentChanged(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget14currentChangedEi(void *this_, int arg0) {
@@ -278,7 +277,7 @@ void C_ZN14QStackedWidget14currentChangedEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstackedwidget.h:79
+// /usr/include/qt/QtWidgets/qstackedwidget.h:80
 // [-2] void widgetRemoved(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QStackedWidget13widgetRemovedEi(void *this_, int index) {
@@ -301,5 +300,4 @@ void C_ZN14QStackedWidget13widgetRemovedEi(void *this_, int index) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qinputdialog.h
 #ifndef protected
 #define protected public
@@ -111,7 +110,7 @@ void* C_QInputDialog_init_staticMetaObject(void* this_, void* strdat, void* dat,
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:57
+// /usr/include/qt/QtWidgets/qinputdialog.h:58
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QInputDialog10metaObjectEv(void *this_) {
@@ -119,7 +118,7 @@ void* C_ZNK12QInputDialog10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:57
+// /usr/include/qt/QtWidgets/qinputdialog.h:58
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialog11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -127,7 +126,7 @@ void* C_ZN12QInputDialog11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:57
+// /usr/include/qt/QtWidgets/qinputdialog.h:58
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN12QInputDialog11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -135,7 +134,7 @@ int C_ZN12QInputDialog11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaO
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:57
+// /usr/include/qt/QtWidgets/qinputdialog.h:58
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialog2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -144,7 +143,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:57
+// /usr/include/qt/QtWidgets/qinputdialog.h:58
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QInputDialog6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -567,32 +566,8 @@ double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10Wi
   return (double)QInputDialog::getDouble(parent, *title, *label, value, minValue, maxValue, decimals, ok, flags);
 }
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:183
-// [8] double getDouble(QWidget *, const QString &, const QString &, double, double, double, int, bool *, Qt::WindowFlags, double)
-extern "C" Q_DECL_EXPORT
-double C_ZN12QInputDialog9getDoubleEP7QWidgetRK7QStringS4_dddiPb6QFlagsIN2Qt10WindowTypeEEd(QWidget * parent, QString* title, QString* label, double value, double minValue, double maxValue, int decimals, bool * ok, QFlags<Qt::WindowType> flags, double step) {
-  return (double)QInputDialog::getDouble(parent, *title, *label, value, minValue, maxValue, decimals, ok, flags, step);
-}
-
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:196
-// [-2] void setDoubleStep(double)
-extern "C" Q_DECL_EXPORT
-void C_ZN12QInputDialog13setDoubleStepEd(void *this_, double step) {
-  ((QInputDialog*)this_)->setDoubleStep(step);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:197
-// [8] double doubleStep()
-extern "C" Q_DECL_EXPORT
-double C_ZNK12QInputDialog10doubleStepEv(void *this_) {
-  return (double)((QInputDialog*)this_)->doubleStep();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:201
+// /usr/include/qt/QtWidgets/qinputdialog.h:194
 // [-2] void textValueChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog16textValueChangedERK7QString(void *this_, QString* text) {
@@ -600,7 +575,7 @@ void C_ZN12QInputDialog16textValueChangedERK7QString(void *this_, QString* text)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:202
+// /usr/include/qt/QtWidgets/qinputdialog.h:195
 // [-2] void textValueSelected(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog17textValueSelectedERK7QString(void *this_, QString* text) {
@@ -608,7 +583,7 @@ void C_ZN12QInputDialog17textValueSelectedERK7QString(void *this_, QString* text
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:203
+// /usr/include/qt/QtWidgets/qinputdialog.h:196
 // [-2] void intValueChanged(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog15intValueChangedEi(void *this_, int value) {
@@ -616,7 +591,7 @@ void C_ZN12QInputDialog15intValueChangedEi(void *this_, int value) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:204
+// /usr/include/qt/QtWidgets/qinputdialog.h:197
 // [-2] void intValueSelected(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog16intValueSelectedEi(void *this_, int value) {
@@ -624,7 +599,7 @@ void C_ZN12QInputDialog16intValueSelectedEi(void *this_, int value) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:205
+// /usr/include/qt/QtWidgets/qinputdialog.h:198
 // [-2] void doubleValueChanged(double)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog18doubleValueChangedEd(void *this_, double value) {
@@ -632,7 +607,7 @@ void C_ZN12QInputDialog18doubleValueChangedEd(void *this_, double value) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:206
+// /usr/include/qt/QtWidgets/qinputdialog.h:199
 // [-2] void doubleValueSelected(double)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog19doubleValueSelectedEd(void *this_, double value) {
@@ -640,7 +615,7 @@ void C_ZN12QInputDialog19doubleValueSelectedEd(void *this_, double value) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qinputdialog.h:209
+// /usr/include/qt/QtWidgets/qinputdialog.h:202
 // [-2] void done(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QInputDialog4doneEi(void *this_, int result) {
@@ -663,5 +638,4 @@ void C_ZN12QInputDialog4doneEi(void *this_, int result) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -53,7 +53,7 @@ MyQShowEvent() : QShowEvent() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:493
+// /usr/include/qt/QtGui/qevent.h:486
 // [-2] void QShowEvent()
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QShowEventC2Ev() {
@@ -61,7 +61,7 @@ void* C_ZN10QShowEventC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:494
+// /usr/include/qt/QtGui/qevent.h:487
 // [-2] void ~QShowEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QShowEventD2Ev(void *this_) {

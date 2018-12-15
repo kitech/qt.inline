@@ -127,7 +127,7 @@ void* C_QAction_init_staticMetaObject(void* this_, void* strdat, void* dat, void
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:183
+// /usr/include/qt/QtWidgets/qaction.h:180
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QAction5eventEP6QEvent(void *this_, QEvent * arg0) {
@@ -177,7 +177,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:95
+// /usr/include/qt/QtWidgets/qaction.h:94
 // [-2] void QAction(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QActionC2EP7QObject(QObject * parent) {
@@ -186,7 +186,7 @@ void* C_ZN7QActionC2EP7QObject(QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:96
+// /usr/include/qt/QtWidgets/qaction.h:95
 // [-2] void QAction(const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QActionC2ERK7QStringP7QObject(QString* text, QObject * parent) {
@@ -195,7 +195,7 @@ void* C_ZN7QActionC2ERK7QStringP7QObject(QString* text, QObject * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:97
+// /usr/include/qt/QtWidgets/qaction.h:96
 // [-2] void QAction(const QIcon &, const QString &, QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN7QActionC2ERK5QIconRK7QStringP7QObject(QIcon* icon, QString* text, QObject * parent) {
@@ -204,14 +204,14 @@ void* C_ZN7QActionC2ERK5QIconRK7QStringP7QObject(QIcon* icon, QString* text, QOb
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:99
+// /usr/include/qt/QtWidgets/qaction.h:98
 // [-2] void ~QAction()
 extern "C" Q_DECL_EXPORT
 void C_ZN7QActionD2Ev(void *this_) {
   delete (QAction*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:101
+// /usr/include/qt/QtWidgets/qaction.h:100
 // [-2] void setActionGroup(QActionGroup *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction14setActionGroupEP12QActionGroup(void *this_, QActionGroup * group) {
@@ -219,7 +219,7 @@ void C_ZN7QAction14setActionGroupEP12QActionGroup(void *this_, QActionGroup * gr
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:102
+// /usr/include/qt/QtWidgets/qaction.h:101
 // [8] QActionGroup * actionGroup()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction11actionGroupEv(void *this_) {
@@ -227,7 +227,7 @@ void* C_ZNK7QAction11actionGroupEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:103
+// /usr/include/qt/QtWidgets/qaction.h:102
 // [-2] void setIcon(const QIcon &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction7setIconERK5QIcon(void *this_, QIcon* icon) {
@@ -235,7 +235,7 @@ void C_ZN7QAction7setIconERK5QIcon(void *this_, QIcon* icon) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:104
+// /usr/include/qt/QtWidgets/qaction.h:103
 // [8] QIcon icon()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction4iconEv(void *this_) {
@@ -244,7 +244,7 @@ return new QIcon(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:106
+// /usr/include/qt/QtWidgets/qaction.h:105
 // [-2] void setText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction7setTextERK7QString(void *this_, QString* text) {
@@ -252,7 +252,7 @@ void C_ZN7QAction7setTextERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:107
+// /usr/include/qt/QtWidgets/qaction.h:106
 // [8] QString text()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction4textEv(void *this_) {
@@ -261,7 +261,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:109
+// /usr/include/qt/QtWidgets/qaction.h:108
 // [-2] void setIconText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction11setIconTextERK7QString(void *this_, QString* text) {
@@ -269,7 +269,7 @@ void C_ZN7QAction11setIconTextERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:110
+// /usr/include/qt/QtWidgets/qaction.h:109
 // [8] QString iconText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction8iconTextEv(void *this_) {
@@ -278,7 +278,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:112
+// /usr/include/qt/QtWidgets/qaction.h:111
 // [-2] void setToolTip(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction10setToolTipERK7QString(void *this_, QString* tip) {
@@ -286,7 +286,7 @@ void C_ZN7QAction10setToolTipERK7QString(void *this_, QString* tip) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:113
+// /usr/include/qt/QtWidgets/qaction.h:112
 // [8] QString toolTip()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction7toolTipEv(void *this_) {
@@ -295,7 +295,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:115
+// /usr/include/qt/QtWidgets/qaction.h:114
 // [-2] void setStatusTip(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction12setStatusTipERK7QString(void *this_, QString* statusTip) {
@@ -303,7 +303,7 @@ void C_ZN7QAction12setStatusTipERK7QString(void *this_, QString* statusTip) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:116
+// /usr/include/qt/QtWidgets/qaction.h:115
 // [8] QString statusTip()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction9statusTipEv(void *this_) {
@@ -312,7 +312,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:118
+// /usr/include/qt/QtWidgets/qaction.h:117
 // [-2] void setWhatsThis(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction12setWhatsThisERK7QString(void *this_, QString* what) {
@@ -320,7 +320,7 @@ void C_ZN7QAction12setWhatsThisERK7QString(void *this_, QString* what) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:119
+// /usr/include/qt/QtWidgets/qaction.h:118
 // [8] QString whatsThis()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction9whatsThisEv(void *this_) {
@@ -329,7 +329,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:121
+// /usr/include/qt/QtWidgets/qaction.h:120
 // [-2] void setPriority(QAction::Priority)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction11setPriorityENS_8PriorityE(void *this_, QAction::Priority priority) {
@@ -337,7 +337,7 @@ void C_ZN7QAction11setPriorityENS_8PriorityE(void *this_, QAction::Priority prio
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:122
+// /usr/include/qt/QtWidgets/qaction.h:121
 // [4] QAction::Priority priority()
 extern "C" Q_DECL_EXPORT
 QAction::Priority C_ZNK7QAction8priorityEv(void *this_) {
@@ -345,7 +345,7 @@ QAction::Priority C_ZNK7QAction8priorityEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:125
+// /usr/include/qt/QtWidgets/qaction.h:124
 // [8] QMenu * menu()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction4menuEv(void *this_) {
@@ -353,7 +353,7 @@ void* C_ZNK7QAction4menuEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:126
+// /usr/include/qt/QtWidgets/qaction.h:125
 // [-2] void setMenu(QMenu *)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction7setMenuEP5QMenu(void *this_, QMenu * menu) {
@@ -361,7 +361,7 @@ void C_ZN7QAction7setMenuEP5QMenu(void *this_, QMenu * menu) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:129
+// /usr/include/qt/QtWidgets/qaction.h:128
 // [-2] void setSeparator(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction12setSeparatorEb(void *this_, bool b) {
@@ -369,7 +369,7 @@ void C_ZN7QAction12setSeparatorEb(void *this_, bool b) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:130
+// /usr/include/qt/QtWidgets/qaction.h:129
 // [1] bool isSeparator()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QAction11isSeparatorEv(void *this_) {
@@ -377,7 +377,7 @@ bool C_ZNK7QAction11isSeparatorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:133
+// /usr/include/qt/QtWidgets/qaction.h:132
 // [-2] void setShortcut(const QKeySequence &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction11setShortcutERK12QKeySequence(void *this_, QKeySequence* shortcut) {
@@ -385,7 +385,7 @@ void C_ZN7QAction11setShortcutERK12QKeySequence(void *this_, QKeySequence* short
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:134
+// /usr/include/qt/QtWidgets/qaction.h:133
 // [8] QKeySequence shortcut()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction8shortcutEv(void *this_) {
@@ -395,7 +395,7 @@ return new QKeySequence(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qaction.h:136
+// /usr/include/qt/QtWidgets/qaction.h:135
 // [-2] void setShortcuts(const QList<QKeySequence> &)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -406,7 +406,7 @@ void C_ZN7QAction12setShortcutsERK5QListI12QKeySequenceE(void *this_, QList<QKey
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qaction.h:137
+// /usr/include/qt/QtWidgets/qaction.h:136
 // [-2] void setShortcuts(QKeySequence::StandardKey)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -417,7 +417,7 @@ void C_ZN7QAction12setShortcutsEN12QKeySequence11StandardKeyE(void *this_, QKeyS
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qaction.h:138
+// /usr/include/qt/QtWidgets/qaction.h:137
 // [-2] QList<QKeySequence> shortcuts()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -428,7 +428,7 @@ return new QList<QKeySequence>(rv);
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:140
+// /usr/include/qt/QtWidgets/qaction.h:139
 // [-2] void setShortcutContext(Qt::ShortcutContext)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction18setShortcutContextEN2Qt15ShortcutContextE(void *this_, Qt::ShortcutContext context) {
@@ -436,7 +436,7 @@ void C_ZN7QAction18setShortcutContextEN2Qt15ShortcutContextE(void *this_, Qt::Sh
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:141
+// /usr/include/qt/QtWidgets/qaction.h:140
 // [4] Qt::ShortcutContext shortcutContext()
 extern "C" Q_DECL_EXPORT
 Qt::ShortcutContext C_ZNK7QAction15shortcutContextEv(void *this_) {
@@ -444,7 +444,7 @@ Qt::ShortcutContext C_ZNK7QAction15shortcutContextEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:143
+// /usr/include/qt/QtWidgets/qaction.h:142
 // [-2] void setAutoRepeat(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction13setAutoRepeatEb(void *this_, bool arg0) {
@@ -452,7 +452,7 @@ void C_ZN7QAction13setAutoRepeatEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:144
+// /usr/include/qt/QtWidgets/qaction.h:143
 // [1] bool autoRepeat()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QAction10autoRepeatEv(void *this_) {
@@ -460,7 +460,7 @@ bool C_ZNK7QAction10autoRepeatEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:147
+// /usr/include/qt/QtWidgets/qaction.h:146
 // [-2] void setFont(const QFont &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction7setFontERK5QFont(void *this_, QFont* font) {
@@ -468,7 +468,7 @@ void C_ZN7QAction7setFontERK5QFont(void *this_, QFont* font) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:148
+// /usr/include/qt/QtWidgets/qaction.h:147
 // [16] QFont font()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction4fontEv(void *this_) {
@@ -477,7 +477,7 @@ return new QFont(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:150
+// /usr/include/qt/QtWidgets/qaction.h:149
 // [-2] void setCheckable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction12setCheckableEb(void *this_, bool arg0) {
@@ -485,7 +485,7 @@ void C_ZN7QAction12setCheckableEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:151
+// /usr/include/qt/QtWidgets/qaction.h:150
 // [1] bool isCheckable()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QAction11isCheckableEv(void *this_) {
@@ -493,7 +493,7 @@ bool C_ZNK7QAction11isCheckableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:153
+// /usr/include/qt/QtWidgets/qaction.h:152
 // [16] QVariant data()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction4dataEv(void *this_) {
@@ -502,7 +502,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:154
+// /usr/include/qt/QtWidgets/qaction.h:153
 // [-2] void setData(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction7setDataERK8QVariant(void *this_, QVariant* var_) {
@@ -510,7 +510,7 @@ void C_ZN7QAction7setDataERK8QVariant(void *this_, QVariant* var_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:156
+// /usr/include/qt/QtWidgets/qaction.h:155
 // [1] bool isChecked()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QAction9isCheckedEv(void *this_) {
@@ -518,7 +518,7 @@ bool C_ZNK7QAction9isCheckedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:158
+// /usr/include/qt/QtWidgets/qaction.h:157
 // [1] bool isEnabled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QAction9isEnabledEv(void *this_) {
@@ -526,7 +526,7 @@ bool C_ZNK7QAction9isEnabledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:160
+// /usr/include/qt/QtWidgets/qaction.h:159
 // [1] bool isVisible()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QAction9isVisibleEv(void *this_) {
@@ -534,7 +534,7 @@ bool C_ZNK7QAction9isVisibleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:163
+// /usr/include/qt/QtWidgets/qaction.h:162
 // [-2] void activate(QAction::ActionEvent)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction8activateENS_11ActionEventE(void *this_, QAction::ActionEvent event) {
@@ -542,7 +542,7 @@ void C_ZN7QAction8activateENS_11ActionEventE(void *this_, QAction::ActionEvent e
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:164
+// /usr/include/qt/QtWidgets/qaction.h:163
 // [1] bool showStatusText(QWidget *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN7QAction14showStatusTextEP7QWidget(void *this_, QWidget * widget) {
@@ -550,7 +550,7 @@ bool C_ZN7QAction14showStatusTextEP7QWidget(void *this_, QWidget * widget) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:166
+// /usr/include/qt/QtWidgets/qaction.h:165
 // [-2] void setMenuRole(QAction::MenuRole)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction11setMenuRoleENS_8MenuRoleE(void *this_, QAction::MenuRole menuRole) {
@@ -558,7 +558,7 @@ void C_ZN7QAction11setMenuRoleENS_8MenuRoleE(void *this_, QAction::MenuRole menu
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:167
+// /usr/include/qt/QtWidgets/qaction.h:166
 // [4] QAction::MenuRole menuRole()
 extern "C" Q_DECL_EXPORT
 QAction::MenuRole C_ZNK7QAction8menuRoleEv(void *this_) {
@@ -566,7 +566,7 @@ QAction::MenuRole C_ZNK7QAction8menuRoleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:169
+// /usr/include/qt/QtWidgets/qaction.h:168
 // [-2] void setIconVisibleInMenu(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction20setIconVisibleInMenuEb(void *this_, bool visible) {
@@ -574,7 +574,7 @@ void C_ZN7QAction20setIconVisibleInMenuEb(void *this_, bool visible) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:170
+// /usr/include/qt/QtWidgets/qaction.h:169
 // [1] bool isIconVisibleInMenu()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK7QAction19isIconVisibleInMenuEv(void *this_) {
@@ -583,22 +583,6 @@ bool C_ZNK7QAction19isIconVisibleInMenuEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:172
-// [-2] void setShortcutVisibleInContextMenu(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QAction31setShortcutVisibleInContextMenuEb(void *this_, bool show) {
-  ((QAction*)this_)->setShortcutVisibleInContextMenu(show);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:173
-// [1] bool isShortcutVisibleInContextMenu()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK7QAction30isShortcutVisibleInContextMenuEv(void *this_) {
-  return (bool)((QAction*)this_)->isShortcutVisibleInContextMenu();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:175
 // [8] QWidget * parentWidget()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK7QAction12parentWidgetEv(void *this_) {
@@ -607,7 +591,7 @@ void* C_ZNK7QAction12parentWidgetEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qaction.h:177
+// /usr/include/qt/QtWidgets/qaction.h:174
 // [-2] QList<QWidget *> associatedWidgets()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -619,7 +603,7 @@ return new QList<QWidget *>(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtWidgets/qaction.h:179
+// /usr/include/qt/QtWidgets/qaction.h:176
 // [-2] QList<QGraphicsWidget *> associatedGraphicsWidgets()
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -630,7 +614,7 @@ return new QList<QGraphicsWidget *>(rv);
 #endif // QT_VERSION >= 0x040500
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:187
+// /usr/include/qt/QtWidgets/qaction.h:184
 // [-2] void trigger()
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction7triggerEv(void *this_) {
@@ -638,7 +622,7 @@ void C_ZN7QAction7triggerEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:188
+// /usr/include/qt/QtWidgets/qaction.h:185
 // [-2] void hover()
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction5hoverEv(void *this_) {
@@ -646,7 +630,7 @@ void C_ZN7QAction5hoverEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:189
+// /usr/include/qt/QtWidgets/qaction.h:186
 // [-2] void setChecked(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction10setCheckedEb(void *this_, bool arg0) {
@@ -654,7 +638,7 @@ void C_ZN7QAction10setCheckedEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:190
+// /usr/include/qt/QtWidgets/qaction.h:187
 // [-2] void toggle()
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction6toggleEv(void *this_) {
@@ -662,7 +646,7 @@ void C_ZN7QAction6toggleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:191
+// /usr/include/qt/QtWidgets/qaction.h:188
 // [-2] void setEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction10setEnabledEb(void *this_, bool arg0) {
@@ -670,7 +654,7 @@ void C_ZN7QAction10setEnabledEb(void *this_, bool arg0) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:192
+// /usr/include/qt/QtWidgets/qaction.h:189
 // [-2] void setDisabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction11setDisabledEb(void *this_, bool b) {
@@ -678,7 +662,7 @@ void C_ZN7QAction11setDisabledEb(void *this_, bool b) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:193
+// /usr/include/qt/QtWidgets/qaction.h:190
 // [-2] void setVisible(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction10setVisibleEb(void *this_, bool arg0) {
@@ -686,7 +670,7 @@ void C_ZN7QAction10setVisibleEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:196
+// /usr/include/qt/QtWidgets/qaction.h:193
 // [-2] void changed()
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction7changedEv(void *this_) {
@@ -694,7 +678,7 @@ void C_ZN7QAction7changedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:197
+// /usr/include/qt/QtWidgets/qaction.h:194
 // [-2] void triggered(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction9triggeredEb(void *this_, bool checked) {
@@ -702,7 +686,7 @@ void C_ZN7QAction9triggeredEb(void *this_, bool checked) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:198
+// /usr/include/qt/QtWidgets/qaction.h:195
 // [-2] void hovered()
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction7hoveredEv(void *this_) {
@@ -710,7 +694,7 @@ void C_ZN7QAction7hoveredEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qaction.h:199
+// /usr/include/qt/QtWidgets/qaction.h:196
 // [-2] void toggled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN7QAction7toggledEb(void *this_, bool arg0) {

@@ -53,7 +53,7 @@ MyQMoveEvent(const QPoint & pos, const QPoint & oldPos) : QMoveEvent(pos, oldPos
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:421
+// /usr/include/qt/QtGui/qevent.h:414
 // [-2] void QMoveEvent(const QPoint &, const QPoint &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QMoveEventC2ERK6QPointS2_(QPoint* pos, QPoint* oldPos) {
@@ -61,14 +61,14 @@ void* C_ZN10QMoveEventC2ERK6QPointS2_(QPoint* pos, QPoint* oldPos) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:422
+// /usr/include/qt/QtGui/qevent.h:415
 // [-2] void ~QMoveEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QMoveEventD2Ev(void *this_) {
   delete (QMoveEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:424
+// /usr/include/qt/QtGui/qevent.h:417
 // [8] const QPoint & pos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QMoveEvent3posEv(void *this_) {
@@ -77,7 +77,7 @@ return new QPoint(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:425
+// /usr/include/qt/QtGui/qevent.h:418
 // [8] const QPoint & oldPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QMoveEvent6oldPosEv(void *this_) {

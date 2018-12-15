@@ -58,7 +58,7 @@ void C_ZN11QObjectDataD2Ev(void *this_) {
   delete (QObjectData*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:113
+// /usr/include/qt/QtCore/qobject.h:112
 // [8] QMetaObject * dynamicMetaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QObjectData17dynamicMetaObjectEv(void *this_) {

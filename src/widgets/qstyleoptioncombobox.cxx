@@ -55,7 +55,7 @@ MyQStyleOptionComboBox(const QStyleOptionComboBox & other) : QStyleOptionComboBo
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:601
+// /usr/include/qt/QtWidgets/qstyleoption.h:590
 // [-2] void QStyleOptionComboBox()
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionComboBoxC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN20QStyleOptionComboBoxC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:602
+// /usr/include/qt/QtWidgets/qstyleoption.h:591
 // [-2] void QStyleOptionComboBox(const QStyleOptionComboBox &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionComboBoxC2ERKS_(QStyleOptionComboBox* other) {

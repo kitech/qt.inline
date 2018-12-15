@@ -53,7 +53,7 @@ MyQFocusEvent(QEvent::Type type_, Qt::FocusReason reason) : QFocusEvent(type_, r
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:389
+// /usr/include/qt/QtGui/qevent.h:382
 // [-2] void QFocusEvent(QEvent::Type, Qt::FocusReason)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QFocusEventC2EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type type_, Qt::FocusReason reason) {
@@ -61,14 +61,14 @@ void* C_ZN11QFocusEventC2EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type type_, Q
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:390
+// /usr/include/qt/QtGui/qevent.h:383
 // [-2] void ~QFocusEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QFocusEventD2Ev(void *this_) {
   delete (QFocusEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:392
+// /usr/include/qt/QtGui/qevent.h:385
 // [1] bool gotFocus()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QFocusEvent8gotFocusEv(void *this_) {
@@ -76,7 +76,7 @@ bool C_ZNK11QFocusEvent8gotFocusEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:393
+// /usr/include/qt/QtGui/qevent.h:386
 // [1] bool lostFocus()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QFocusEvent9lostFocusEv(void *this_) {
@@ -84,7 +84,7 @@ bool C_ZNK11QFocusEvent9lostFocusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:395
+// /usr/include/qt/QtGui/qevent.h:388
 // [4] Qt::FocusReason reason()
 extern "C" Q_DECL_EXPORT
 Qt::FocusReason C_ZNK11QFocusEvent6reasonEv(void *this_) {

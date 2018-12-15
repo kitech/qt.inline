@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qdatetimeedit.h
 #ifndef protected
 #define protected public
@@ -256,7 +255,7 @@ void* C_QDateTimeEdit_init_staticMetaObject(void* this_, void* strdat, void* dat
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:178
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:179
 // [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
@@ -264,7 +263,7 @@ void C_ZN13QDateTimeEdit13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * eve
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:180
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:181
 // [-2] void wheelEvent(QWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * event) {
@@ -272,7 +271,7 @@ void C_ZN13QDateTimeEdit10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * e
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:182
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:183
 // [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
@@ -280,7 +279,7 @@ void C_ZN13QDateTimeEdit12focusInEventEP11QFocusEvent(void *this_, QFocusEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:183
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:184
 // [1] bool focusNextPrevChild(bool)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QDateTimeEdit18focusNextPrevChildEb(void *this_, bool next) {
@@ -288,7 +287,7 @@ bool C_ZN13QDateTimeEdit18focusNextPrevChildEb(void *this_, bool next) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:184
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:185
 // [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK13QDateTimeEdit8validateER7QStringRi(void *this_, QString* input, int & pos) {
@@ -296,7 +295,7 @@ QValidator::State C_ZNK13QDateTimeEdit8validateER7QStringRi(void *this_, QString
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:185
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:186
 // [-2] void fixup(QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK13QDateTimeEdit5fixupER7QString(void *this_, QString* input) {
@@ -304,7 +303,7 @@ void C_ZNK13QDateTimeEdit5fixupER7QString(void *this_, QString* input) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:187
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:188
 // [8] QDateTime dateTimeFromText(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit16dateTimeFromTextERK7QString(void *this_, QString* text) {
@@ -313,7 +312,7 @@ return new QDateTime(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:188
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:189
 // [8] QString textFromDateTime(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit16textFromDateTimeERK9QDateTime(void *this_, QDateTime* dt) {
@@ -322,7 +321,7 @@ return new QString(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:189
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:190
 // [4] QAbstractSpinBox::StepEnabled stepEnabled()
 extern "C" Q_DECL_EXPORT
 QAbstractSpinBox::StepEnabled* C_ZNK13QDateTimeEdit11stepEnabledEv(void *this_) {
@@ -331,7 +330,7 @@ return new QAbstractSpinBox::StepEnabled(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:190
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:191
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * event) {
@@ -339,7 +338,7 @@ void C_ZN13QDateTimeEdit15mousePressEventEP11QMouseEvent(void *this_, QMouseEven
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:191
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:192
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
@@ -347,7 +346,7 @@ void C_ZN13QDateTimeEdit10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:58
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:59
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit10metaObjectEv(void *this_) {
@@ -355,7 +354,7 @@ void* C_ZNK13QDateTimeEdit10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:58
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:59
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QDateTimeEdit11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -363,7 +362,7 @@ void* C_ZN13QDateTimeEdit11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:58
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:59
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN13QDateTimeEdit11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -371,7 +370,7 @@ int C_ZN13QDateTimeEdit11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMeta
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:58
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:59
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QDateTimeEdit2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -380,7 +379,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:58
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:59
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QDateTimeEdit6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -389,7 +388,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:95
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:96
 // [-2] void QDateTimeEdit(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QDateTimeEditC2EP7QWidget(QWidget * parent) {
@@ -398,7 +397,7 @@ void* C_ZN13QDateTimeEditC2EP7QWidget(QWidget * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:96
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:97
 // [-2] void QDateTimeEdit(const QDateTime &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QDateTimeEditC2ERK9QDateTimeP7QWidget(QDateTime* dt, QWidget * parent) {
@@ -407,7 +406,7 @@ void* C_ZN13QDateTimeEditC2ERK9QDateTimeP7QWidget(QDateTime* dt, QWidget * paren
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:97
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:98
 // [-2] void QDateTimeEdit(const QDate &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QDateTimeEditC2ERK5QDateP7QWidget(QDate* d, QWidget * parent) {
@@ -416,7 +415,7 @@ void* C_ZN13QDateTimeEditC2ERK5QDateP7QWidget(QDate* d, QWidget * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:98
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:99
 // [-2] void QDateTimeEdit(const QTime &, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QDateTimeEditC2ERK5QTimeP7QWidget(QTime* t, QWidget * parent) {
@@ -425,14 +424,14 @@ void* C_ZN13QDateTimeEditC2ERK5QTimeP7QWidget(QTime* t, QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:99
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:100
 // [-2] void ~QDateTimeEdit()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEditD2Ev(void *this_) {
   delete (QDateTimeEdit*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:101
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:102
 // [8] QDateTime dateTime()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit8dateTimeEv(void *this_) {
@@ -441,7 +440,7 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:102
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:103
 // [8] QDate date()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit4dateEv(void *this_) {
@@ -450,7 +449,7 @@ return new QDate(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:103
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:104
 // [4] QTime time()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit4timeEv(void *this_) {
@@ -459,7 +458,7 @@ return new QTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:105
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:106
 // [8] QDateTime minimumDateTime()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit15minimumDateTimeEv(void *this_) {
@@ -468,7 +467,7 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:106
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:107
 // [-2] void clearMinimumDateTime()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit20clearMinimumDateTimeEv(void *this_) {
@@ -476,7 +475,7 @@ void C_ZN13QDateTimeEdit20clearMinimumDateTimeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:107
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:108
 // [-2] void setMinimumDateTime(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit18setMinimumDateTimeERK9QDateTime(void *this_, QDateTime* dt) {
@@ -484,7 +483,7 @@ void C_ZN13QDateTimeEdit18setMinimumDateTimeERK9QDateTime(void *this_, QDateTime
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:109
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:110
 // [8] QDateTime maximumDateTime()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit15maximumDateTimeEv(void *this_) {
@@ -493,7 +492,7 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:110
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:111
 // [-2] void clearMaximumDateTime()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit20clearMaximumDateTimeEv(void *this_) {
@@ -501,7 +500,7 @@ void C_ZN13QDateTimeEdit20clearMaximumDateTimeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:111
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:112
 // [-2] void setMaximumDateTime(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit18setMaximumDateTimeERK9QDateTime(void *this_, QDateTime* dt) {
@@ -510,7 +509,7 @@ void C_ZN13QDateTimeEdit18setMaximumDateTimeERK9QDateTime(void *this_, QDateTime
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:113
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:114
 // [-2] void setDateTimeRange(const QDateTime &, const QDateTime &)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -520,7 +519,7 @@ void C_ZN13QDateTimeEdit16setDateTimeRangeERK9QDateTimeS2_(void *this_, QDateTim
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:115
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:116
 // [8] QDate minimumDate()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit11minimumDateEv(void *this_) {
@@ -529,7 +528,7 @@ return new QDate(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:116
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:117
 // [-2] void setMinimumDate(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit14setMinimumDateERK5QDate(void *this_, QDate* min) {
@@ -537,7 +536,7 @@ void C_ZN13QDateTimeEdit14setMinimumDateERK5QDate(void *this_, QDate* min) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:117
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:118
 // [-2] void clearMinimumDate()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit16clearMinimumDateEv(void *this_) {
@@ -545,7 +544,7 @@ void C_ZN13QDateTimeEdit16clearMinimumDateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:119
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:120
 // [8] QDate maximumDate()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit11maximumDateEv(void *this_) {
@@ -554,7 +553,7 @@ return new QDate(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:120
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:121
 // [-2] void setMaximumDate(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit14setMaximumDateERK5QDate(void *this_, QDate* max) {
@@ -562,7 +561,7 @@ void C_ZN13QDateTimeEdit14setMaximumDateERK5QDate(void *this_, QDate* max) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:121
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:122
 // [-2] void clearMaximumDate()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit16clearMaximumDateEv(void *this_) {
@@ -570,7 +569,7 @@ void C_ZN13QDateTimeEdit16clearMaximumDateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:123
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:124
 // [-2] void setDateRange(const QDate &, const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit12setDateRangeERK5QDateS2_(void *this_, QDate* min, QDate* max) {
@@ -578,7 +577,7 @@ void C_ZN13QDateTimeEdit12setDateRangeERK5QDateS2_(void *this_, QDate* min, QDat
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:125
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:126
 // [4] QTime minimumTime()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit11minimumTimeEv(void *this_) {
@@ -587,7 +586,7 @@ return new QTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:126
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:127
 // [-2] void setMinimumTime(const QTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit14setMinimumTimeERK5QTime(void *this_, QTime* min) {
@@ -595,7 +594,7 @@ void C_ZN13QDateTimeEdit14setMinimumTimeERK5QTime(void *this_, QTime* min) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:127
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:128
 // [-2] void clearMinimumTime()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit16clearMinimumTimeEv(void *this_) {
@@ -603,7 +602,7 @@ void C_ZN13QDateTimeEdit16clearMinimumTimeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:129
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:130
 // [4] QTime maximumTime()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit11maximumTimeEv(void *this_) {
@@ -612,7 +611,7 @@ return new QTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:130
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:131
 // [-2] void setMaximumTime(const QTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit14setMaximumTimeERK5QTime(void *this_, QTime* max) {
@@ -620,7 +619,7 @@ void C_ZN13QDateTimeEdit14setMaximumTimeERK5QTime(void *this_, QTime* max) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:131
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:132
 // [-2] void clearMaximumTime()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit16clearMaximumTimeEv(void *this_) {
@@ -628,7 +627,7 @@ void C_ZN13QDateTimeEdit16clearMaximumTimeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:133
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:134
 // [-2] void setTimeRange(const QTime &, const QTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit12setTimeRangeERK5QTimeS2_(void *this_, QTime* min, QTime* max) {
@@ -636,7 +635,7 @@ void C_ZN13QDateTimeEdit12setTimeRangeERK5QTimeS2_(void *this_, QTime* min, QTim
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:135
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:136
 // [4] QDateTimeEdit::Sections displayedSections()
 extern "C" Q_DECL_EXPORT
 QDateTimeEdit::Sections* C_ZNK13QDateTimeEdit17displayedSectionsEv(void *this_) {
@@ -645,7 +644,7 @@ return new QDateTimeEdit::Sections(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:136
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:137
 // [4] QDateTimeEdit::Section currentSection()
 extern "C" Q_DECL_EXPORT
 QDateTimeEdit::Section C_ZNK13QDateTimeEdit14currentSectionEv(void *this_) {
@@ -654,7 +653,7 @@ QDateTimeEdit::Section C_ZNK13QDateTimeEdit14currentSectionEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:137
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:138
 // [4] QDateTimeEdit::Section sectionAt(int)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -664,7 +663,7 @@ QDateTimeEdit::Section C_ZNK13QDateTimeEdit9sectionAtEi(void *this_, int index) 
 #endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:138
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:139
 // [-2] void setCurrentSection(QDateTimeEdit::Section)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit17setCurrentSectionENS_7SectionE(void *this_, QDateTimeEdit::Section section) {
@@ -672,7 +671,7 @@ void C_ZN13QDateTimeEdit17setCurrentSectionENS_7SectionE(void *this_, QDateTimeE
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:140
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:141
 // [4] int currentSectionIndex()
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QDateTimeEdit19currentSectionIndexEv(void *this_) {
@@ -680,7 +679,7 @@ int C_ZNK13QDateTimeEdit19currentSectionIndexEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:141
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:142
 // [-2] void setCurrentSectionIndex(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit22setCurrentSectionIndexEi(void *this_, int index) {
@@ -689,7 +688,7 @@ void C_ZN13QDateTimeEdit22setCurrentSectionIndexEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:143
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:144
 // [8] QCalendarWidget * calendarWidget()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -700,7 +699,7 @@ void* C_ZNK13QDateTimeEdit14calendarWidgetEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:144
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:145
 // [-2] void setCalendarWidget(QCalendarWidget *)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -710,7 +709,7 @@ void C_ZN13QDateTimeEdit17setCalendarWidgetEP15QCalendarWidget(void *this_, QCal
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:146
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:147
 // [4] int sectionCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QDateTimeEdit12sectionCountEv(void *this_) {
@@ -718,7 +717,7 @@ int C_ZNK13QDateTimeEdit12sectionCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:148
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:149
 // [-2] void setSelectedSection(QDateTimeEdit::Section)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit18setSelectedSectionENS_7SectionE(void *this_, QDateTimeEdit::Section section) {
@@ -726,7 +725,7 @@ void C_ZN13QDateTimeEdit18setSelectedSectionENS_7SectionE(void *this_, QDateTime
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:150
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:151
 // [8] QString sectionText(QDateTimeEdit::Section)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit11sectionTextENS_7SectionE(void *this_, QDateTimeEdit::Section section) {
@@ -735,7 +734,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:152
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:153
 // [8] QString displayFormat()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit13displayFormatEv(void *this_) {
@@ -744,7 +743,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:153
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:154
 // [-2] void setDisplayFormat(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit16setDisplayFormatERK7QString(void *this_, QString* format) {
@@ -752,7 +751,7 @@ void C_ZN13QDateTimeEdit16setDisplayFormatERK7QString(void *this_, QString* form
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:155
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:156
 // [1] bool calendarPopup()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QDateTimeEdit13calendarPopupEv(void *this_) {
@@ -760,7 +759,7 @@ bool C_ZNK13QDateTimeEdit13calendarPopupEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:156
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:157
 // [-2] void setCalendarPopup(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit16setCalendarPopupEb(void *this_, bool enable) {
@@ -768,7 +767,7 @@ void C_ZN13QDateTimeEdit16setCalendarPopupEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:158
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:159
 // [4] Qt::TimeSpec timeSpec()
 extern "C" Q_DECL_EXPORT
 Qt::TimeSpec C_ZNK13QDateTimeEdit8timeSpecEv(void *this_) {
@@ -776,7 +775,7 @@ Qt::TimeSpec C_ZNK13QDateTimeEdit8timeSpecEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:159
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:160
 // [-2] void setTimeSpec(Qt::TimeSpec)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit11setTimeSpecEN2Qt8TimeSpecE(void *this_, Qt::TimeSpec spec) {
@@ -784,7 +783,7 @@ void C_ZN13QDateTimeEdit11setTimeSpecEN2Qt8TimeSpecE(void *this_, Qt::TimeSpec s
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:161
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:162
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QDateTimeEdit8sizeHintEv(void *this_) {
@@ -793,7 +792,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:163
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:164
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit5clearEv(void *this_) {
@@ -801,7 +800,7 @@ void C_ZN13QDateTimeEdit5clearEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:164
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:165
 // [-2] void stepBy(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit6stepByEi(void *this_, int steps) {
@@ -809,7 +808,7 @@ void C_ZN13QDateTimeEdit6stepByEi(void *this_, int steps) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:166
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:167
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QDateTimeEdit5eventEP6QEvent(void *this_, QEvent * event) {
@@ -817,7 +816,7 @@ bool C_ZN13QDateTimeEdit5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:168
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:169
 // [-2] void dateTimeChanged(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit15dateTimeChangedERK9QDateTime(void *this_, QDateTime* dateTime) {
@@ -825,7 +824,7 @@ void C_ZN13QDateTimeEdit15dateTimeChangedERK9QDateTime(void *this_, QDateTime* d
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:169
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:170
 // [-2] void timeChanged(const QTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit11timeChangedERK5QTime(void *this_, QTime* time) {
@@ -833,7 +832,7 @@ void C_ZN13QDateTimeEdit11timeChangedERK5QTime(void *this_, QTime* time) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:170
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:171
 // [-2] void dateChanged(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit11dateChangedERK5QDate(void *this_, QDate* date) {
@@ -841,7 +840,7 @@ void C_ZN13QDateTimeEdit11dateChangedERK5QDate(void *this_, QDate* date) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:173
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:174
 // [-2] void setDateTime(const QDateTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit11setDateTimeERK9QDateTime(void *this_, QDateTime* dateTime) {
@@ -849,7 +848,7 @@ void C_ZN13QDateTimeEdit11setDateTimeERK9QDateTime(void *this_, QDateTime* dateT
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:174
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:175
 // [-2] void setDate(const QDate &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit7setDateERK5QDate(void *this_, QDate* date) {
@@ -857,7 +856,7 @@ void C_ZN13QDateTimeEdit7setDateERK5QDate(void *this_, QDate* date) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatetimeedit.h:175
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:176
 // [-2] void setTime(const QTime &)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QDateTimeEdit7setTimeERK5QTime(void *this_, QTime* time) {
@@ -880,5 +879,4 @@ void C_ZN13QDateTimeEdit7setTimeERK5QTime(void *this_, QTime* time) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

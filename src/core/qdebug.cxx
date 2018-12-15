@@ -381,7 +381,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:155
+// /usr/include/qt/QtCore/qdebug.h:154
 // [8] QDebug & operator<<(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QDebuglsERK7QString(void *this_, QString* t) {
@@ -390,7 +390,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:156
+// /usr/include/qt/QtCore/qdebug.h:155
 // [8] QDebug & operator<<(const QStringRef &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QDebuglsERK10QStringRef(void *this_, QStringRef* t) {
@@ -399,16 +399,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:158
-// [8] QDebug & operator<<(QStringView)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QDebuglsE11QStringView(void *this_, QStringView* s) {
-  auto& rv = ((QDebug*)this_)->operator<<(*s);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:159
+// /usr/include/qt/QtCore/qdebug.h:156
 // [8] QDebug & operator<<(QLatin1String)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QDebuglsE13QLatin1String(void *this_, QLatin1String* t) {
@@ -417,7 +408,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:160
+// /usr/include/qt/QtCore/qdebug.h:157
 // [8] QDebug & operator<<(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QDebuglsERK10QByteArray(void *this_, QByteArray* t) {
@@ -426,7 +417,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:161
+// /usr/include/qt/QtCore/qdebug.h:158
 // [8] QDebug & operator<<(const void *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QDebuglsEPKv(void *this_, const void * t) {
@@ -435,7 +426,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:163
+// /usr/include/qt/QtCore/qdebug.h:160
 // [8] QDebug & operator<<(std::nullptr_t)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QDebuglsEDn(void *this_, std::nullptr_t arg0) {
@@ -444,7 +435,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:165
+// /usr/include/qt/QtCore/qdebug.h:162
 // [8] QDebug & operator<<(QTextStreamFunction)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QDebuglsEPFR11QTextStreamS1_E(void *this_, QTextStreamFunction f) {
@@ -453,7 +444,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:170
+// /usr/include/qt/QtCore/qdebug.h:167
 // [8] QDebug & operator<<(QTextStreamManipulator)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QDebuglsE22QTextStreamManipulator(void *this_, QTextStreamManipulator* m) {

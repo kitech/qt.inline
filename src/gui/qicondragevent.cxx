@@ -53,7 +53,7 @@ MyQIconDragEvent() : QIconDragEvent() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:485
+// /usr/include/qt/QtGui/qevent.h:478
 // [-2] void QIconDragEvent()
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QIconDragEventC2Ev() {
@@ -61,7 +61,7 @@ void* C_ZN14QIconDragEventC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:486
+// /usr/include/qt/QtGui/qevent.h:479
 // [-2] void ~QIconDragEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QIconDragEventD2Ev(void *this_) {

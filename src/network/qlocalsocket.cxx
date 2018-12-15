@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040400
 // /usr/include/qt/QtNetwork/qlocalsocket.h
 #ifndef protected
@@ -138,7 +137,7 @@ void* C_QLocalSocket_init_staticMetaObject(void* this_, void* strdat, void* dat,
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:124
+// /usr/include/qt/QtNetwork/qlocalsocket.h:125
 // [8] qint64 readData(char *, qint64)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN12QLocalSocket8readDataEPcx(void *this_, char * arg0, qint64 arg1) {
@@ -146,7 +145,7 @@ qint64 C_ZN12QLocalSocket8readDataEPcx(void *this_, char * arg0, qint64 arg1) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:125
+// /usr/include/qt/QtNetwork/qlocalsocket.h:126
 // [8] qint64 writeData(const char *, qint64)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZN12QLocalSocket9writeDataEPKcx(void *this_, const char * arg0, qint64 arg1) {
@@ -154,7 +153,7 @@ qint64 C_ZN12QLocalSocket9writeDataEPKcx(void *this_, const char * arg0, qint64 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:55
+// /usr/include/qt/QtNetwork/qlocalsocket.h:56
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QLocalSocket10metaObjectEv(void *this_) {
@@ -162,7 +161,7 @@ void* C_ZNK12QLocalSocket10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:55
+// /usr/include/qt/QtNetwork/qlocalsocket.h:56
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QLocalSocket11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -170,7 +169,7 @@ void* C_ZN12QLocalSocket11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:55
+// /usr/include/qt/QtNetwork/qlocalsocket.h:56
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN12QLocalSocket11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -178,7 +177,7 @@ int C_ZN12QLocalSocket11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaO
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:55
+// /usr/include/qt/QtNetwork/qlocalsocket.h:56
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QLocalSocket2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -187,7 +186,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:55
+// /usr/include/qt/QtNetwork/qlocalsocket.h:56
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QLocalSocket6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -196,7 +195,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:82
+// /usr/include/qt/QtNetwork/qlocalsocket.h:83
 // [-2] void QLocalSocket(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QLocalSocketC2EP7QObject(QObject * parent) {
@@ -205,14 +204,14 @@ void* C_ZN12QLocalSocketC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:83
+// /usr/include/qt/QtNetwork/qlocalsocket.h:84
 // [-2] void ~QLocalSocket()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocketD2Ev(void *this_) {
   delete (QLocalSocket*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:85
+// /usr/include/qt/QtNetwork/qlocalsocket.h:86
 // [-2] void connectToServer(QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket15connectToServerE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> openMode) {
@@ -220,7 +219,7 @@ void C_ZN12QLocalSocket15connectToServerE6QFlagsIN9QIODevice12OpenModeFlagEE(voi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:86
+// /usr/include/qt/QtNetwork/qlocalsocket.h:87
 // [-2] void connectToServer(const QString &, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket15connectToServerERK7QString6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QString* name, QFlags<QIODevice::OpenModeFlag> openMode) {
@@ -228,7 +227,7 @@ void C_ZN12QLocalSocket15connectToServerERK7QString6QFlagsIN9QIODevice12OpenMode
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:87
+// /usr/include/qt/QtNetwork/qlocalsocket.h:88
 // [-2] void disconnectFromServer()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket20disconnectFromServerEv(void *this_) {
@@ -237,7 +236,7 @@ void C_ZN12QLocalSocket20disconnectFromServerEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 5.1
-// /usr/include/qt/QtNetwork/qlocalsocket.h:89
+// /usr/include/qt/QtNetwork/qlocalsocket.h:90
 // [-2] void setServerName(const QString &)
 #if QT_VERSION >= 0x050100
 extern "C" Q_DECL_EXPORT
@@ -247,7 +246,7 @@ void C_ZN12QLocalSocket13setServerNameERK7QString(void *this_, QString* name) {
 #endif // QT_VERSION >= 0x050100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:90
+// /usr/include/qt/QtNetwork/qlocalsocket.h:91
 // [8] QString serverName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QLocalSocket10serverNameEv(void *this_) {
@@ -256,7 +255,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:91
+// /usr/include/qt/QtNetwork/qlocalsocket.h:92
 // [8] QString fullServerName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QLocalSocket14fullServerNameEv(void *this_) {
@@ -265,7 +264,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:93
+// /usr/include/qt/QtNetwork/qlocalsocket.h:94
 // [-2] void abort()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket5abortEv(void *this_) {
@@ -273,7 +272,7 @@ void C_ZN12QLocalSocket5abortEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:94
+// /usr/include/qt/QtNetwork/qlocalsocket.h:95
 // [1] bool isSequential()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QLocalSocket12isSequentialEv(void *this_) {
@@ -281,7 +280,7 @@ bool C_ZNK12QLocalSocket12isSequentialEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:95
+// /usr/include/qt/QtNetwork/qlocalsocket.h:96
 // [8] qint64 bytesAvailable()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK12QLocalSocket14bytesAvailableEv(void *this_) {
@@ -289,7 +288,7 @@ qint64 C_ZNK12QLocalSocket14bytesAvailableEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:96
+// /usr/include/qt/QtNetwork/qlocalsocket.h:97
 // [8] qint64 bytesToWrite()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK12QLocalSocket12bytesToWriteEv(void *this_) {
@@ -297,7 +296,7 @@ qint64 C_ZNK12QLocalSocket12bytesToWriteEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:97
+// /usr/include/qt/QtNetwork/qlocalsocket.h:98
 // [1] bool canReadLine()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QLocalSocket11canReadLineEv(void *this_) {
@@ -305,7 +304,7 @@ bool C_ZNK12QLocalSocket11canReadLineEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:98
+// /usr/include/qt/QtNetwork/qlocalsocket.h:99
 // [1] bool open(QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalSocket4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> openMode) {
@@ -313,7 +312,7 @@ bool C_ZN12QLocalSocket4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QF
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:99
+// /usr/include/qt/QtNetwork/qlocalsocket.h:100
 // [-2] void close()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket5closeEv(void *this_) {
@@ -321,7 +320,7 @@ void C_ZN12QLocalSocket5closeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:100
+// /usr/include/qt/QtNetwork/qlocalsocket.h:101
 // [4] QLocalSocket::LocalSocketError error()
 extern "C" Q_DECL_EXPORT
 QLocalSocket::LocalSocketError C_ZNK12QLocalSocket5errorEv(void *this_) {
@@ -329,7 +328,7 @@ QLocalSocket::LocalSocketError C_ZNK12QLocalSocket5errorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:101
+// /usr/include/qt/QtNetwork/qlocalsocket.h:102
 // [1] bool flush()
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalSocket5flushEv(void *this_) {
@@ -337,7 +336,7 @@ bool C_ZN12QLocalSocket5flushEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:102
+// /usr/include/qt/QtNetwork/qlocalsocket.h:103
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QLocalSocket7isValidEv(void *this_) {
@@ -345,7 +344,7 @@ bool C_ZNK12QLocalSocket7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:103
+// /usr/include/qt/QtNetwork/qlocalsocket.h:104
 // [8] qint64 readBufferSize()
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK12QLocalSocket14readBufferSizeEv(void *this_) {
@@ -353,7 +352,7 @@ qint64 C_ZNK12QLocalSocket14readBufferSizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:104
+// /usr/include/qt/QtNetwork/qlocalsocket.h:105
 // [-2] void setReadBufferSize(qint64)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket17setReadBufferSizeEx(void *this_, qint64 size) {
@@ -361,7 +360,7 @@ void C_ZN12QLocalSocket17setReadBufferSizeEx(void *this_, qint64 size) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:106
+// /usr/include/qt/QtNetwork/qlocalsocket.h:107
 // [1] bool setSocketDescriptor(qintptr, QLocalSocket::LocalSocketState, QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalSocket19setSocketDescriptorExNS_16LocalSocketStateE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, qintptr socketDescriptor, QLocalSocket::LocalSocketState socketState, QFlags<QIODevice::OpenModeFlag> openMode) {
@@ -369,7 +368,7 @@ bool C_ZN12QLocalSocket19setSocketDescriptorExNS_16LocalSocketStateE6QFlagsIN9QI
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:109
+// /usr/include/qt/QtNetwork/qlocalsocket.h:110
 // [8] qintptr socketDescriptor()
 extern "C" Q_DECL_EXPORT
 qintptr C_ZNK12QLocalSocket16socketDescriptorEv(void *this_) {
@@ -377,7 +376,7 @@ qintptr C_ZNK12QLocalSocket16socketDescriptorEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:111
+// /usr/include/qt/QtNetwork/qlocalsocket.h:112
 // [4] QLocalSocket::LocalSocketState state()
 extern "C" Q_DECL_EXPORT
 QLocalSocket::LocalSocketState C_ZNK12QLocalSocket5stateEv(void *this_) {
@@ -385,7 +384,7 @@ QLocalSocket::LocalSocketState C_ZNK12QLocalSocket5stateEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:112
+// /usr/include/qt/QtNetwork/qlocalsocket.h:113
 // [1] bool waitForBytesWritten(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalSocket19waitForBytesWrittenEi(void *this_, int msecs) {
@@ -393,7 +392,7 @@ bool C_ZN12QLocalSocket19waitForBytesWrittenEi(void *this_, int msecs) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:113
+// /usr/include/qt/QtNetwork/qlocalsocket.h:114
 // [1] bool waitForConnected(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalSocket16waitForConnectedEi(void *this_, int msecs) {
@@ -401,7 +400,7 @@ bool C_ZN12QLocalSocket16waitForConnectedEi(void *this_, int msecs) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:114
+// /usr/include/qt/QtNetwork/qlocalsocket.h:115
 // [1] bool waitForDisconnected(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalSocket19waitForDisconnectedEi(void *this_, int msecs) {
@@ -409,7 +408,7 @@ bool C_ZN12QLocalSocket19waitForDisconnectedEi(void *this_, int msecs) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:115
+// /usr/include/qt/QtNetwork/qlocalsocket.h:116
 // [1] bool waitForReadyRead(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN12QLocalSocket16waitForReadyReadEi(void *this_, int msecs) {
@@ -417,7 +416,7 @@ bool C_ZN12QLocalSocket16waitForReadyReadEi(void *this_, int msecs) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:118
+// /usr/include/qt/QtNetwork/qlocalsocket.h:119
 // [-2] void connected()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket9connectedEv(void *this_) {
@@ -425,7 +424,7 @@ void C_ZN12QLocalSocket9connectedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:119
+// /usr/include/qt/QtNetwork/qlocalsocket.h:120
 // [-2] void disconnected()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket12disconnectedEv(void *this_) {
@@ -433,7 +432,7 @@ void C_ZN12QLocalSocket12disconnectedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:120
+// /usr/include/qt/QtNetwork/qlocalsocket.h:121
 // [-2] void error(QLocalSocket::LocalSocketError)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket5errorENS_16LocalSocketErrorE(void *this_, QLocalSocket::LocalSocketError socketError) {
@@ -441,7 +440,7 @@ void C_ZN12QLocalSocket5errorENS_16LocalSocketErrorE(void *this_, QLocalSocket::
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qlocalsocket.h:121
+// /usr/include/qt/QtNetwork/qlocalsocket.h:122
 // [-2] void stateChanged(QLocalSocket::LocalSocketState)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QLocalSocket12stateChangedENS_16LocalSocketStateE(void *this_, QLocalSocket::LocalSocketState socketState) {
@@ -464,5 +463,4 @@ void C_ZN12QLocalSocket12stateChangedENS_16LocalSocketStateE(void *this_, QLocal
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

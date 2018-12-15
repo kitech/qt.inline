@@ -58,7 +58,7 @@ MyQOpenGLVersionProfile(const QOpenGLVersionProfile & other) : QOpenGLVersionPro
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:87
+// /usr/include/qt/QtGui/qopenglcontext.h:86
 // [-2] void QOpenGLVersionProfile()
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QOpenGLVersionProfileC2Ev() {
@@ -66,7 +66,7 @@ void* C_ZN21QOpenGLVersionProfileC2Ev() {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:88
+// /usr/include/qt/QtGui/qopenglcontext.h:87
 // [-2] void QOpenGLVersionProfile(const QSurfaceFormat &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QOpenGLVersionProfileC2ERK14QSurfaceFormat(QSurfaceFormat* format) {
@@ -74,7 +74,7 @@ void* C_ZN21QOpenGLVersionProfileC2ERK14QSurfaceFormat(QSurfaceFormat* format) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:89
+// /usr/include/qt/QtGui/qopenglcontext.h:88
 // [-2] void QOpenGLVersionProfile(const QOpenGLVersionProfile &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QOpenGLVersionProfileC2ERKS_(QOpenGLVersionProfile* other) {
@@ -82,14 +82,14 @@ void* C_ZN21QOpenGLVersionProfileC2ERKS_(QOpenGLVersionProfile* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:90
+// /usr/include/qt/QtGui/qopenglcontext.h:89
 // [-2] void ~QOpenGLVersionProfile()
 extern "C" Q_DECL_EXPORT
 void C_ZN21QOpenGLVersionProfileD2Ev(void *this_) {
   delete (QOpenGLVersionProfile*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:92
+// /usr/include/qt/QtGui/qopenglcontext.h:91
 // [8] QOpenGLVersionProfile & operator=(const QOpenGLVersionProfile &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN21QOpenGLVersionProfileaSERKS_(void *this_, QOpenGLVersionProfile* rhs) {
@@ -98,7 +98,7 @@ return &rv;
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:94
+// /usr/include/qt/QtGui/qopenglcontext.h:93
 // [8] QPair<int, int> version()
 extern "C" Q_DECL_EXPORT
 void C_ZNK21QOpenGLVersionProfile7versionEv(void *this_) {
@@ -107,7 +107,7 @@ void C_ZNK21QOpenGLVersionProfile7versionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:95
+// /usr/include/qt/QtGui/qopenglcontext.h:94
 // [-2] void setVersion(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QOpenGLVersionProfile10setVersionEii(void *this_, int majorVersion, int minorVersion) {
@@ -115,7 +115,7 @@ void C_ZN21QOpenGLVersionProfile10setVersionEii(void *this_, int majorVersion, i
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:97
+// /usr/include/qt/QtGui/qopenglcontext.h:96
 // [4] QSurfaceFormat::OpenGLContextProfile profile()
 extern "C" Q_DECL_EXPORT
 QSurfaceFormat::OpenGLContextProfile C_ZNK21QOpenGLVersionProfile7profileEv(void *this_) {
@@ -123,7 +123,7 @@ QSurfaceFormat::OpenGLContextProfile C_ZNK21QOpenGLVersionProfile7profileEv(void
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:98
+// /usr/include/qt/QtGui/qopenglcontext.h:97
 // [-2] void setProfile(QSurfaceFormat::OpenGLContextProfile)
 extern "C" Q_DECL_EXPORT
 void C_ZN21QOpenGLVersionProfile10setProfileEN14QSurfaceFormat20OpenGLContextProfileE(void *this_, QSurfaceFormat::OpenGLContextProfile profile) {
@@ -131,7 +131,7 @@ void C_ZN21QOpenGLVersionProfile10setProfileEN14QSurfaceFormat20OpenGLContextPro
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:100
+// /usr/include/qt/QtGui/qopenglcontext.h:99
 // [1] bool hasProfiles()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QOpenGLVersionProfile11hasProfilesEv(void *this_) {
@@ -139,7 +139,7 @@ bool C_ZNK21QOpenGLVersionProfile11hasProfilesEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:101
+// /usr/include/qt/QtGui/qopenglcontext.h:100
 // [1] bool isLegacyVersion()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QOpenGLVersionProfile15isLegacyVersionEv(void *this_) {
@@ -147,7 +147,7 @@ bool C_ZNK21QOpenGLVersionProfile15isLegacyVersionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:102
+// /usr/include/qt/QtGui/qopenglcontext.h:101
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK21QOpenGLVersionProfile7isValidEv(void *this_) {

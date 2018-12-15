@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
@@ -55,7 +54,7 @@ MyQGraphicsSceneDragDropEvent(QEvent::Type type_) : QGraphicsSceneDragDropEvent(
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:252
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:253
 // [-2] void QGraphicsSceneDragDropEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN27QGraphicsSceneDragDropEventC2EN6QEvent4TypeE(QEvent::Type type_) {
@@ -63,14 +62,14 @@ void* C_ZN27QGraphicsSceneDragDropEventC2EN6QEvent4TypeE(QEvent::Type type_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:253
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:254
 // [-2] void ~QGraphicsSceneDragDropEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEventD2Ev(void *this_) {
   delete (QGraphicsSceneDragDropEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:255
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:256
 // [16] QPointF pos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QGraphicsSceneDragDropEvent3posEv(void *this_) {
@@ -79,7 +78,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:256
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:257
 // [-2] void setPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent6setPosERK7QPointF(void *this_, QPointF* pos) {
@@ -87,7 +86,7 @@ void C_ZN27QGraphicsSceneDragDropEvent6setPosERK7QPointF(void *this_, QPointF* p
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:258
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:259
 // [16] QPointF scenePos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QGraphicsSceneDragDropEvent8scenePosEv(void *this_) {
@@ -96,7 +95,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:259
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:260
 // [-2] void setScenePos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
@@ -104,7 +103,7 @@ void C_ZN27QGraphicsSceneDragDropEvent11setScenePosERK7QPointF(void *this_, QPoi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:261
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:262
 // [8] QPoint screenPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QGraphicsSceneDragDropEvent9screenPosEv(void *this_) {
@@ -113,7 +112,7 @@ return new QPoint(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:262
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:263
 // [-2] void setScreenPos(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
@@ -121,7 +120,7 @@ void C_ZN27QGraphicsSceneDragDropEvent12setScreenPosERK6QPoint(void *this_, QPoi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:264
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:265
 // [4] Qt::MouseButtons buttons()
 extern "C" Q_DECL_EXPORT
 Qt::MouseButtons C_ZNK27QGraphicsSceneDragDropEvent7buttonsEv(void *this_) {
@@ -129,7 +128,7 @@ Qt::MouseButtons C_ZNK27QGraphicsSceneDragDropEvent7buttonsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:265
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:266
 // [-2] void setButtons(Qt::MouseButtons)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent10setButtonsE6QFlagsIN2Qt11MouseButtonEE(void *this_, QFlags<Qt::MouseButton> buttons) {
@@ -137,7 +136,7 @@ void C_ZN27QGraphicsSceneDragDropEvent10setButtonsE6QFlagsIN2Qt11MouseButtonEE(v
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:267
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:268
 // [4] Qt::KeyboardModifiers modifiers()
 extern "C" Q_DECL_EXPORT
 Qt::KeyboardModifiers C_ZNK27QGraphicsSceneDragDropEvent9modifiersEv(void *this_) {
@@ -145,7 +144,7 @@ Qt::KeyboardModifiers C_ZNK27QGraphicsSceneDragDropEvent9modifiersEv(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:268
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:269
 // [-2] void setModifiers(Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
@@ -153,7 +152,7 @@ void C_ZN27QGraphicsSceneDragDropEvent12setModifiersE6QFlagsIN2Qt16KeyboardModif
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:270
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:271
 // [4] Qt::DropActions possibleActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK27QGraphicsSceneDragDropEvent15possibleActionsEv(void *this_) {
@@ -161,7 +160,7 @@ Qt::DropActions C_ZNK27QGraphicsSceneDragDropEvent15possibleActionsEv(void *this
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:271
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:272
 // [-2] void setPossibleActions(Qt::DropActions)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent18setPossibleActionsE6QFlagsIN2Qt10DropActionEE(void *this_, QFlags<Qt::DropAction> actions) {
@@ -169,7 +168,7 @@ void C_ZN27QGraphicsSceneDragDropEvent18setPossibleActionsE6QFlagsIN2Qt10DropAct
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:273
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:274
 // [4] Qt::DropAction proposedAction()
 extern "C" Q_DECL_EXPORT
 Qt::DropAction C_ZNK27QGraphicsSceneDragDropEvent14proposedActionEv(void *this_) {
@@ -177,7 +176,7 @@ Qt::DropAction C_ZNK27QGraphicsSceneDragDropEvent14proposedActionEv(void *this_)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:274
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:275
 // [-2] void setProposedAction(Qt::DropAction)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent17setProposedActionEN2Qt10DropActionE(void *this_, Qt::DropAction action) {
@@ -185,7 +184,7 @@ void C_ZN27QGraphicsSceneDragDropEvent17setProposedActionEN2Qt10DropActionE(void
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:275
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:276
 // [-2] void acceptProposedAction()
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent20acceptProposedActionEv(void *this_) {
@@ -193,7 +192,7 @@ void C_ZN27QGraphicsSceneDragDropEvent20acceptProposedActionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:277
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:278
 // [4] Qt::DropAction dropAction()
 extern "C" Q_DECL_EXPORT
 Qt::DropAction C_ZNK27QGraphicsSceneDragDropEvent10dropActionEv(void *this_) {
@@ -201,7 +200,7 @@ Qt::DropAction C_ZNK27QGraphicsSceneDragDropEvent10dropActionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:278
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:279
 // [-2] void setDropAction(Qt::DropAction)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent13setDropActionEN2Qt10DropActionE(void *this_, Qt::DropAction action) {
@@ -209,7 +208,7 @@ void C_ZN27QGraphicsSceneDragDropEvent13setDropActionEN2Qt10DropActionE(void *th
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:280
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:281
 // [8] QWidget * source()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QGraphicsSceneDragDropEvent6sourceEv(void *this_) {
@@ -217,7 +216,7 @@ void* C_ZNK27QGraphicsSceneDragDropEvent6sourceEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:281
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:282
 // [-2] void setSource(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent9setSourceEP7QWidget(void *this_, QWidget * source) {
@@ -225,7 +224,7 @@ void C_ZN27QGraphicsSceneDragDropEvent9setSourceEP7QWidget(void *this_, QWidget 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:283
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:284
 // [8] const QMimeData * mimeData()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK27QGraphicsSceneDragDropEvent8mimeDataEv(void *this_) {
@@ -233,7 +232,7 @@ void* C_ZNK27QGraphicsSceneDragDropEvent8mimeDataEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:284
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:285
 // [-2] void setMimeData(const QMimeData *)
 extern "C" Q_DECL_EXPORT
 void C_ZN27QGraphicsSceneDragDropEvent11setMimeDataEPK9QMimeData(void *this_, const QMimeData * data) {
@@ -256,5 +255,4 @@ void C_ZN27QGraphicsSceneDragDropEvent11setMimeDataEPK9QMimeData(void *this_, co
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -55,7 +55,7 @@ MyQStyleOptionSpinBox(const QStyleOptionSpinBox & other) : QStyleOptionSpinBox(o
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:552
+// /usr/include/qt/QtWidgets/qstyleoption.h:541
 // [-2] void QStyleOptionSpinBox()
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionSpinBoxC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN19QStyleOptionSpinBoxC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:553
+// /usr/include/qt/QtWidgets/qstyleoption.h:542
 // [-2] void QStyleOptionSpinBox(const QStyleOptionSpinBox &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionSpinBoxC2ERKS_(QStyleOptionSpinBox* other) {

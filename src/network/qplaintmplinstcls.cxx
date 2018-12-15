@@ -103,13 +103,6 @@ void* C_ZN9QTypeInfoI12QHostAddressE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
-// [8] const char * QTypeInfo<QHostInfo>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI9QHostInfoE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QHostInfo>*)this_)->name();
-   return (void*)rv;
-}
-
 // [4] int QMetaTypeId<QHostInfo>::qt_metatype_id()
 extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaTypeIdI9QHostInfoE14qt_metatype_idEv(void* this_ ) {

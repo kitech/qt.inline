@@ -51,7 +51,7 @@ public:
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:190
+// /usr/include/qt/QtCore/qdebug.h:187
 // [1] QNoDebug & operator<<(QTextStreamFunction)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QNoDebuglsEPFR11QTextStreamS1_E(void *this_, QTextStreamFunction arg0) {
@@ -60,7 +60,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:191
+// /usr/include/qt/QtCore/qdebug.h:188
 // [1] QNoDebug & operator<<(QTextStreamManipulator)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QNoDebuglsE22QTextStreamManipulator(void *this_, QTextStreamManipulator* arg0) {
@@ -69,7 +69,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:192
+// /usr/include/qt/QtCore/qdebug.h:189
 // [1] QNoDebug & space()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QNoDebug5spaceEv(void *this_) {
@@ -78,7 +78,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:193
+// /usr/include/qt/QtCore/qdebug.h:190
 // [1] QNoDebug & nospace()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QNoDebug7nospaceEv(void *this_) {
@@ -87,7 +87,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:194
+// /usr/include/qt/QtCore/qdebug.h:191
 // [1] QNoDebug & maybeSpace()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QNoDebug10maybeSpaceEv(void *this_) {
@@ -96,7 +96,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:195
+// /usr/include/qt/QtCore/qdebug.h:192
 // [1] QNoDebug & quote()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QNoDebug5quoteEv(void *this_) {
@@ -105,7 +105,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:196
+// /usr/include/qt/QtCore/qdebug.h:193
 // [1] QNoDebug & noquote()
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QNoDebug7noquoteEv(void *this_) {
@@ -114,7 +114,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:197
+// /usr/include/qt/QtCore/qdebug.h:194
 // [1] QNoDebug & maybeQuote(const char)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QNoDebug10maybeQuoteEc(void *this_, const char arg0) {

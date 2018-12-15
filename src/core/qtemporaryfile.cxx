@@ -129,7 +129,7 @@ void* C_QTemporaryFile_init_staticMetaObject(void* this_, void* strdat, void* da
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtemporaryfile.h:98
+// /usr/include/qt/QtCore/qtemporaryfile.h:94
 // [1] bool open(QIODevice::OpenMode)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QTemporaryFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFlags<QIODevice::OpenModeFlag> flags) {
@@ -271,16 +271,8 @@ void C_ZN14QTemporaryFile15setFileTemplateERK7QString(void *this_, QString* name
   ((QTemporaryFile*)this_)->setFileTemplate(*name);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtemporaryfile.h:85
-// [1] bool rename(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QTemporaryFile6renameERK7QString(void *this_, QString* newName) {
-  return (bool)((QTemporaryFile*)this_)->rename(*newName);
-}
-
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtemporaryfile.h:88
+// /usr/include/qt/QtCore/qtemporaryfile.h:84
 // [8] QTemporaryFile * createLocalFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFile15createLocalFileERK7QString(QString* fileName) {
@@ -288,7 +280,7 @@ void* C_ZN14QTemporaryFile15createLocalFileERK7QString(QString* fileName) {
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtemporaryfile.h:90
+// /usr/include/qt/QtCore/qtemporaryfile.h:86
 // [8] QTemporaryFile * createLocalFile(QFile &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFile15createLocalFileER5QFile(QFile* file) {
@@ -296,7 +288,7 @@ void* C_ZN14QTemporaryFile15createLocalFileER5QFile(QFile* file) {
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtemporaryfile.h:93
+// /usr/include/qt/QtCore/qtemporaryfile.h:89
 // [8] QTemporaryFile * createNativeFile(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFile16createNativeFileERK7QString(QString* fileName) {
@@ -304,7 +296,7 @@ void* C_ZN14QTemporaryFile16createNativeFileERK7QString(QString* fileName) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtemporaryfile.h:95
+// /usr/include/qt/QtCore/qtemporaryfile.h:91
 // [8] QTemporaryFile * createNativeFile(QFile &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QTemporaryFile16createNativeFileER5QFile(QFile* file) {

@@ -55,7 +55,7 @@ MyQStyleOptionRubberBand(const QStyleOptionRubberBand & other) : QStyleOptionRub
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:491
+// /usr/include/qt/QtWidgets/qstyleoption.h:480
 // [-2] void QStyleOptionRubberBand()
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionRubberBandC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN22QStyleOptionRubberBandC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:492
+// /usr/include/qt/QtWidgets/qstyleoption.h:481
 // [-2] void QStyleOptionRubberBand(const QStyleOptionRubberBand &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionRubberBandC2ERKS_(QStyleOptionRubberBand* other) {

@@ -109,7 +109,7 @@ void* C_QOpenGLContextGroup_init_staticMetaObject(void* this_, void* strdat, voi
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:128
+// /usr/include/qt/QtGui/qopenglcontext.h:127
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK19QOpenGLContextGroup10metaObjectEv(void *this_) {
@@ -117,7 +117,7 @@ void* C_ZNK19QOpenGLContextGroup10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:128
+// /usr/include/qt/QtGui/qopenglcontext.h:127
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QOpenGLContextGroup11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -125,7 +125,7 @@ void* C_ZN19QOpenGLContextGroup11qt_metacastEPKc(void *this_, const char * arg0)
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:128
+// /usr/include/qt/QtGui/qopenglcontext.h:127
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN19QOpenGLContextGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -133,7 +133,7 @@ int C_ZN19QOpenGLContextGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_,
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:128
+// /usr/include/qt/QtGui/qopenglcontext.h:127
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QOpenGLContextGroup2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -142,7 +142,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:128
+// /usr/include/qt/QtGui/qopenglcontext.h:127
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QOpenGLContextGroup6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -151,14 +151,14 @@ return new QString(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:131
+// /usr/include/qt/QtGui/qopenglcontext.h:130
 // [-2] void ~QOpenGLContextGroup()
 extern "C" Q_DECL_EXPORT
 void C_ZN19QOpenGLContextGroupD2Ev(void *this_) {
   delete (QOpenGLContextGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:133
+// /usr/include/qt/QtGui/qopenglcontext.h:132
 // [-2] QList<QOpenGLContext *> shares()
 extern "C" Q_DECL_EXPORT
 QList<QOpenGLContext *>* C_ZNK19QOpenGLContextGroup6sharesEv(void *this_) {
@@ -167,7 +167,7 @@ return new QList<QOpenGLContext *>(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglcontext.h:135
+// /usr/include/qt/QtGui/qopenglcontext.h:134
 // [8] QOpenGLContextGroup * currentContextGroup()
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QOpenGLContextGroup19currentContextGroupEv() {

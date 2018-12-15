@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040400
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h
 #ifndef protected
@@ -137,7 +136,7 @@ void* C_QFileSystemModel_init_staticMetaObject(void* this_, void* strdat, void* 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:148
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:149
 // [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel10timerEventEP11QTimerEvent(void *this_, QTimerEvent * event) {
@@ -145,7 +144,7 @@ void C_ZN16QFileSystemModel10timerEventEP11QTimerEvent(void *this_, QTimerEvent 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:149
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:150
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QFileSystemModel5eventEP6QEvent(void *this_, QEvent * event) {
@@ -153,7 +152,7 @@ bool C_ZN16QFileSystemModel5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:60
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:61
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel10metaObjectEv(void *this_) {
@@ -161,7 +160,7 @@ void* C_ZNK16QFileSystemModel10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:60
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:61
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QFileSystemModel11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -169,7 +168,7 @@ void* C_ZN16QFileSystemModel11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:60
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:61
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN16QFileSystemModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -177,7 +176,7 @@ int C_ZN16QFileSystemModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QM
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:60
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:61
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QFileSystemModel2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -186,7 +185,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:60
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:61
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QFileSystemModel6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -195,7 +194,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:66
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:67
 // [-2] void rootPathChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel15rootPathChangedERK7QString(void *this_, QString* newPath) {
@@ -203,7 +202,7 @@ void C_ZN16QFileSystemModel15rootPathChangedERK7QString(void *this_, QString* ne
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:67
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:68
 // [-2] void fileRenamed(const QString &, const QString &, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_(void *this_, QString* path, QString* oldName, QString* newName) {
@@ -212,7 +211,7 @@ void C_ZN16QFileSystemModel11fileRenamedERK7QStringS2_S2_(void *this_, QString* 
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:68
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:69
 // [-2] void directoryLoaded(const QString &)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -222,7 +221,7 @@ void C_ZN16QFileSystemModel15directoryLoadedERK7QString(void *this_, QString* pa
 #endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:78
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:79
 // [-2] void QFileSystemModel(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QFileSystemModelC2EP7QObject(QObject * parent) {
@@ -231,14 +230,14 @@ void* C_ZN16QFileSystemModelC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:79
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:80
 // [-2] void ~QFileSystemModel()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModelD2Ev(void *this_) {
   delete (QFileSystemModel*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:81
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:82
 // [24] QModelIndex index(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel5indexEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* parent) {
@@ -247,7 +246,7 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:82
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:83
 // [24] QModelIndex index(const QString &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel5indexERK7QStringi(void *this_, QString* path, int column) {
@@ -256,7 +255,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:83
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:84
 // [24] QModelIndex parent(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel6parentERK11QModelIndex(void *this_, QModelIndex* child) {
@@ -265,7 +264,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:85
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:86
 // [24] QModelIndex sibling(int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* idx) {
@@ -274,7 +273,7 @@ return new QModelIndex(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:86
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:87
 // [1] bool hasChildren(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QFileSystemModel11hasChildrenERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -282,7 +281,7 @@ bool C_ZNK16QFileSystemModel11hasChildrenERK11QModelIndex(void *this_, QModelInd
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:87
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:88
 // [1] bool canFetchMore(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QFileSystemModel12canFetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -290,7 +289,7 @@ bool C_ZNK16QFileSystemModel12canFetchMoreERK11QModelIndex(void *this_, QModelIn
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:88
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:89
 // [-2] void fetchMore(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel9fetchMoreERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -298,7 +297,7 @@ void C_ZN16QFileSystemModel9fetchMoreERK11QModelIndex(void *this_, QModelIndex* 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:90
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:91
 // [4] int rowCount(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK16QFileSystemModel8rowCountERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -306,7 +305,7 @@ int C_ZNK16QFileSystemModel8rowCountERK11QModelIndex(void *this_, QModelIndex* p
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:91
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:92
 // [4] int columnCount(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK16QFileSystemModel11columnCountERK11QModelIndex(void *this_, QModelIndex* parent) {
@@ -314,7 +313,7 @@ int C_ZNK16QFileSystemModel11columnCountERK11QModelIndex(void *this_, QModelInde
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:93
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:94
 // [16] QVariant myComputer(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel10myComputerEi(void *this_, int role) {
@@ -323,7 +322,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:94
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:95
 // [16] QVariant data(const QModelIndex &, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel4dataERK11QModelIndexi(void *this_, QModelIndex* index, int role) {
@@ -332,7 +331,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:95
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:96
 // [1] bool setData(const QModelIndex &, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QFileSystemModel7setDataERK11QModelIndexRK8QVarianti(void *this_, QModelIndex* index, QVariant* value, int role) {
@@ -340,7 +339,7 @@ bool C_ZN16QFileSystemModel7setDataERK11QModelIndexRK8QVarianti(void *this_, QMo
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:97
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:98
 // [16] QVariant headerData(int, Qt::Orientation, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel10headerDataEiN2Qt11OrientationEi(void *this_, int section, Qt::Orientation orientation, int role) {
@@ -349,7 +348,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:99
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:100
 // [4] Qt::ItemFlags flags(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 Qt::ItemFlags C_ZNK16QFileSystemModel5flagsERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -357,7 +356,7 @@ Qt::ItemFlags C_ZNK16QFileSystemModel5flagsERK11QModelIndex(void *this_, QModelI
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:101
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:102
 // [-2] void sort(int, Qt::SortOrder)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
@@ -365,7 +364,7 @@ void C_ZN16QFileSystemModel4sortEiN2Qt9SortOrderE(void *this_, int column, Qt::S
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:103
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:104
 // [8] QStringList mimeTypes()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel9mimeTypesEv(void *this_) {
@@ -374,7 +373,7 @@ return new QStringList(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:104
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:105
 // [8] QMimeData * mimeData(const QModelIndexList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel8mimeDataERK5QListI11QModelIndexE(void *this_, const QModelIndexList & indexes) {
@@ -382,7 +381,7 @@ void* C_ZNK16QFileSystemModel8mimeDataERK5QListI11QModelIndexE(void *this_, cons
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:105
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:106
 // [1] bool dropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QFileSystemModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
@@ -390,7 +389,7 @@ bool C_ZN16QFileSystemModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QMo
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:107
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:108
 // [4] Qt::DropActions supportedDropActions()
 extern "C" Q_DECL_EXPORT
 Qt::DropActions C_ZNK16QFileSystemModel20supportedDropActionsEv(void *this_) {
@@ -398,7 +397,7 @@ Qt::DropActions C_ZNK16QFileSystemModel20supportedDropActionsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:110
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:111
 // [24] QModelIndex setRootPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QFileSystemModel11setRootPathERK7QString(void *this_, QString* path) {
@@ -407,7 +406,7 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:111
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:112
 // [8] QString rootPath()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel8rootPathEv(void *this_) {
@@ -416,7 +415,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:112
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:113
 // [8] QDir rootDirectory()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel13rootDirectoryEv(void *this_) {
@@ -425,7 +424,7 @@ return new QDir(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:114
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:115
 // [-2] void setIconProvider(QFileIconProvider *)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel15setIconProviderEP17QFileIconProvider(void *this_, QFileIconProvider * provider) {
@@ -433,7 +432,7 @@ void C_ZN16QFileSystemModel15setIconProviderEP17QFileIconProvider(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:115
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:116
 // [8] QFileIconProvider * iconProvider()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel12iconProviderEv(void *this_) {
@@ -441,7 +440,7 @@ void* C_ZNK16QFileSystemModel12iconProviderEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:117
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:118
 // [-2] void setFilter(QDir::Filters)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel9setFilterE6QFlagsIN4QDir6FilterEE(void *this_, QFlags<QDir::Filter> filters) {
@@ -449,7 +448,7 @@ void C_ZN16QFileSystemModel9setFilterE6QFlagsIN4QDir6FilterEE(void *this_, QFlag
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:118
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:119
 // [4] QDir::Filters filter()
 extern "C" Q_DECL_EXPORT
 QDir::Filters C_ZNK16QFileSystemModel6filterEv(void *this_) {
@@ -457,7 +456,7 @@ QDir::Filters C_ZNK16QFileSystemModel6filterEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:120
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:121
 // [-2] void setResolveSymlinks(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel18setResolveSymlinksEb(void *this_, bool enable) {
@@ -465,7 +464,7 @@ void C_ZN16QFileSystemModel18setResolveSymlinksEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:121
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:122
 // [1] bool resolveSymlinks()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QFileSystemModel15resolveSymlinksEv(void *this_) {
@@ -473,7 +472,7 @@ bool C_ZNK16QFileSystemModel15resolveSymlinksEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:123
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:124
 // [-2] void setReadOnly(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel11setReadOnlyEb(void *this_, bool enable) {
@@ -481,7 +480,7 @@ void C_ZN16QFileSystemModel11setReadOnlyEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:124
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:125
 // [1] bool isReadOnly()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QFileSystemModel10isReadOnlyEv(void *this_) {
@@ -489,7 +488,7 @@ bool C_ZNK16QFileSystemModel10isReadOnlyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:126
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:127
 // [-2] void setNameFilterDisables(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel21setNameFilterDisablesEb(void *this_, bool enable) {
@@ -497,7 +496,7 @@ void C_ZN16QFileSystemModel21setNameFilterDisablesEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:127
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:128
 // [1] bool nameFilterDisables()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QFileSystemModel18nameFilterDisablesEv(void *this_) {
@@ -505,7 +504,7 @@ bool C_ZNK16QFileSystemModel18nameFilterDisablesEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:129
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:130
 // [-2] void setNameFilters(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN16QFileSystemModel14setNameFiltersERK11QStringList(void *this_, QStringList* filters) {
@@ -513,7 +512,7 @@ void C_ZN16QFileSystemModel14setNameFiltersERK11QStringList(void *this_, QString
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:130
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:131
 // [8] QStringList nameFilters()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel11nameFiltersEv(void *this_) {
@@ -522,7 +521,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:132
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:133
 // [8] QString filePath(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel8filePathERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -531,7 +530,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:133
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:134
 // [1] bool isDir(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK16QFileSystemModel5isDirERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -539,7 +538,7 @@ bool C_ZNK16QFileSystemModel5isDirERK11QModelIndex(void *this_, QModelIndex* ind
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:134
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:135
 // [8] qint64 size(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 qint64 C_ZNK16QFileSystemModel4sizeERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -547,7 +546,7 @@ qint64 C_ZNK16QFileSystemModel4sizeERK11QModelIndex(void *this_, QModelIndex* in
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:135
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:136
 // [8] QString type(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel4typeERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -556,7 +555,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:136
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:137
 // [8] QDateTime lastModified(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel12lastModifiedERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -565,7 +564,7 @@ return new QDateTime(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:138
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:139
 // [24] QModelIndex mkdir(const QModelIndex &, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QFileSystemModel5mkdirERK11QModelIndexRK7QString(void *this_, QModelIndex* parent, QString* name) {
@@ -574,7 +573,7 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:139
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:140
 // [1] bool rmdir(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QFileSystemModel5rmdirERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -582,7 +581,7 @@ bool C_ZN16QFileSystemModel5rmdirERK11QModelIndex(void *this_, QModelIndex* inde
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:140
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:141
 // [8] QString fileName(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel8fileNameERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -591,7 +590,7 @@ return new QString(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:141
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:142
 // [8] QIcon fileIcon(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel8fileIconERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -600,7 +599,7 @@ return new QIcon(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:142
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:143
 // [4] QFile::Permissions permissions(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 QFile::Permissions C_ZNK16QFileSystemModel11permissionsERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -608,7 +607,7 @@ QFile::Permissions C_ZNK16QFileSystemModel11permissionsERK11QModelIndex(void *th
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:143
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:144
 // [8] QFileInfo fileInfo(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK16QFileSystemModel8fileInfoERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -617,7 +616,7 @@ return new QFileInfo(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qfilesystemmodel.h:144
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:145
 // [1] bool remove(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 bool C_ZN16QFileSystemModel6removeERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -640,5 +639,4 @@ bool C_ZN16QFileSystemModel6removeERK11QModelIndex(void *this_, QModelIndex* ind
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -55,7 +55,7 @@ MyQStyleOptionSlider(const QStyleOptionSlider & other) : QStyleOptionSlider(othe
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:533
+// /usr/include/qt/QtWidgets/qstyleoption.h:522
 // [-2] void QStyleOptionSlider()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStyleOptionSliderC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN18QStyleOptionSliderC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:534
+// /usr/include/qt/QtWidgets/qstyleoption.h:523
 // [-2] void QStyleOptionSlider(const QStyleOptionSlider &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStyleOptionSliderC2ERKS_(QStyleOptionSlider* other) {

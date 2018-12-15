@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicslayout.h
 #ifndef protected
@@ -107,19 +106,19 @@ MyQGraphicsLayout(QGraphicsLayoutItem * parent) : QGraphicsLayout(parent) {}
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:70
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:71
 // [4] int count()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:71
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:72
 // [8] QGraphicsLayoutItem * itemAt(int)
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:72
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:73
 // [-2] void removeAt(int)
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:109
+// /usr/include/qt/QtWidgets/qgraphicslayoutitem.h:110
 // [16] QSizeF sizeHint(Qt::SizeHint, const QSizeF &)
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:57
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:58
 // [-2] void QGraphicsLayout(QGraphicsLayoutItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGraphicsLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * parent) {
@@ -128,14 +127,14 @@ void* C_ZN15QGraphicsLayoutC2EP19QGraphicsLayoutItem(QGraphicsLayoutItem * paren
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:58
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:59
 // [-2] void ~QGraphicsLayout()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayoutD2Ev(void *this_) {
   delete (QGraphicsLayout*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:60
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:61
 // [-2] void setContentsMargins(qreal, qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout18setContentsMarginsEdddd(void *this_, qreal left, qreal top, qreal right, qreal bottom) {
@@ -143,7 +142,7 @@ void C_ZN15QGraphicsLayout18setContentsMarginsEdddd(void *this_, qreal left, qre
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:61
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:62
 // [-2] void getContentsMargins(qreal *, qreal *, qreal *, qreal *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK15QGraphicsLayout18getContentsMarginsEPdS0_S0_S0_(void *this_, qreal * left, qreal * top, qreal * right, qreal * bottom) {
@@ -151,7 +150,7 @@ void C_ZNK15QGraphicsLayout18getContentsMarginsEPdS0_S0_S0_(void *this_, qreal *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:63
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:64
 // [-2] void activate()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout8activateEv(void *this_) {
@@ -159,7 +158,7 @@ void C_ZN15QGraphicsLayout8activateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:64
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:65
 // [1] bool isActivated()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QGraphicsLayout11isActivatedEv(void *this_) {
@@ -167,7 +166,7 @@ bool C_ZNK15QGraphicsLayout11isActivatedEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:65
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:66
 // [-2] void invalidate()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout10invalidateEv(void *this_) {
@@ -175,7 +174,7 @@ void C_ZN15QGraphicsLayout10invalidateEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:66
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:67
 // [-2] void updateGeometry()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout14updateGeometryEv(void *this_) {
@@ -183,7 +182,7 @@ void C_ZN15QGraphicsLayout14updateGeometryEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:68
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:69
 // [-2] void widgetEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout11widgetEventEP6QEvent(void *this_, QEvent * e) {
@@ -191,7 +190,7 @@ void C_ZN15QGraphicsLayout11widgetEventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:70
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:71
 // [4] int count()
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QGraphicsLayout5countEv(void *this_) {
@@ -199,7 +198,7 @@ int C_ZNK15QGraphicsLayout5countEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:71
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:72
 // [8] QGraphicsLayoutItem * itemAt(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGraphicsLayout6itemAtEi(void *this_, int i) {
@@ -207,7 +206,7 @@ void* C_ZNK15QGraphicsLayout6itemAtEi(void *this_, int i) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:72
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:73
 // [-2] void removeAt(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout8removeAtEi(void *this_, int index) {
@@ -215,7 +214,7 @@ void C_ZN15QGraphicsLayout8removeAtEi(void *this_, int index) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:74
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:75
 // [-2] void setInstantInvalidatePropagation(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsLayout31setInstantInvalidatePropagationEb(bool enable) {
@@ -223,7 +222,7 @@ void C_ZN15QGraphicsLayout31setInstantInvalidatePropagationEb(bool enable) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicslayout.h:75
+// /usr/include/qt/QtWidgets/qgraphicslayout.h:76
 // [1] bool instantInvalidatePropagation()
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QGraphicsLayout28instantInvalidatePropagationEv() {
@@ -246,5 +245,4 @@ bool C_ZN15QGraphicsLayout28instantInvalidatePropagationEv() {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -133,18 +133,7 @@ bool C_ZNK11QStringList8containsERK7QStringN2Qt15CaseSensitivityE(void *this_, Q
 }
 
 // Public inline Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qstringlist.h:123
-// [1] bool contains(QLatin1String, Qt::CaseSensitivity)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QStringList8containsE13QLatin1StringN2Qt15CaseSensitivityE(void *this_, QLatin1String* str, Qt::CaseSensitivity cs) {
-  return (bool)((QStringList*)this_)->contains(*str, cs);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:125
+// /usr/include/qt/QtCore/qstringlist.h:124
 // [8] QStringList operator+(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QStringListplERKS_(void *this_, QStringList* other) {
@@ -153,7 +142,7 @@ return new QStringList(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:127
+// /usr/include/qt/QtCore/qstringlist.h:126
 // [8] QStringList & operator<<(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListlsERK7QString(void *this_, QString* str) {
@@ -162,7 +151,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:129
+// /usr/include/qt/QtCore/qstringlist.h:128
 // [8] QStringList & operator<<(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListlsERKS_(void *this_, QStringList* l) {
@@ -171,7 +160,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:131
+// /usr/include/qt/QtCore/qstringlist.h:130
 // [8] QStringList & operator<<(const QList<QString> &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QStringListlsERK5QListI7QStringE(void *this_, QList<QString>* l) {
@@ -180,7 +169,7 @@ return &rv;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:135
+// /usr/include/qt/QtCore/qstringlist.h:134
 // [4] int indexOf(const QRegExp &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QStringList7indexOfERK7QRegExpi(void *this_, QRegExp* rx, int from) {
@@ -188,7 +177,7 @@ int C_ZNK11QStringList7indexOfERK7QRegExpi(void *this_, QRegExp* rx, int from) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:136
+// /usr/include/qt/QtCore/qstringlist.h:135
 // [4] int lastIndexOf(const QRegExp &, int)
 extern "C" Q_DECL_EXPORT
 int C_ZNK11QStringList11lastIndexOfERK7QRegExpi(void *this_, QRegExp* rx, int from) {
@@ -197,7 +186,7 @@ int C_ZNK11QStringList11lastIndexOfERK7QRegExpi(void *this_, QRegExp* rx, int fr
 
 // Public inline Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qstringlist.h:137
+// /usr/include/qt/QtCore/qstringlist.h:136
 // [4] int indexOf(QRegExp &, int)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -208,7 +197,7 @@ int C_ZNK11QStringList7indexOfER7QRegExpi(void *this_, QRegExp* rx, int from) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qstringlist.h:138
+// /usr/include/qt/QtCore/qstringlist.h:137
 // [4] int lastIndexOf(QRegExp &, int)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -219,7 +208,7 @@ int C_ZNK11QStringList11lastIndexOfER7QRegExpi(void *this_, QRegExp* rx, int fro
 
 // Public inline Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qstringlist.h:143
+// /usr/include/qt/QtCore/qstringlist.h:142
 // [4] int indexOf(const QRegularExpression &, int)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -230,7 +219,7 @@ int C_ZNK11QStringList7indexOfERK18QRegularExpressioni(void *this_, QRegularExpr
 
 // Public inline Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qstringlist.h:144
+// /usr/include/qt/QtCore/qstringlist.h:143
 // [4] int lastIndexOf(const QRegularExpression &, int)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT

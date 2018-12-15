@@ -56,7 +56,7 @@ MyQSignalBlocker(QObject & o) : QSignalBlocker(o) {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:548
+// /usr/include/qt/QtCore/qobject.h:547
 // [-2] void QSignalBlocker(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QSignalBlockerC2EP7QObject(QObject * o) {
@@ -64,7 +64,7 @@ void* C_ZN14QSignalBlockerC2EP7QObject(QObject * o) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:549
+// /usr/include/qt/QtCore/qobject.h:548
 // [-2] void QSignalBlocker(QObject &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QSignalBlockerC2ER7QObject(QObject* o) {
@@ -72,14 +72,14 @@ void* C_ZN14QSignalBlockerC2ER7QObject(QObject* o) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:550
+// /usr/include/qt/QtCore/qobject.h:549
 // [-2] void ~QSignalBlocker()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSignalBlockerD2Ev(void *this_) {
   delete (QSignalBlocker*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:557
+// /usr/include/qt/QtCore/qobject.h:556
 // [-2] void reblock()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSignalBlocker7reblockEv(void *this_) {
@@ -87,7 +87,7 @@ void C_ZN14QSignalBlocker7reblockEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:558
+// /usr/include/qt/QtCore/qobject.h:557
 // [-2] void unblock()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QSignalBlocker7unblockEv(void *this_) {

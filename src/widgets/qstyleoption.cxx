@@ -55,7 +55,7 @@ MyQStyleOption(const QStyleOption & other) : QStyleOption(other) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:102
+// /usr/include/qt/QtWidgets/qstyleoption.h:91
 // [-2] void QStyleOption(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStyleOptionC2Eii(int version, int type_) {
@@ -63,7 +63,7 @@ void* C_ZN12QStyleOptionC2Eii(int version, int type_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:103
+// /usr/include/qt/QtWidgets/qstyleoption.h:92
 // [-2] void QStyleOption(const QStyleOption &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStyleOptionC2ERKS_(QStyleOption* other) {
@@ -71,14 +71,14 @@ void* C_ZN12QStyleOptionC2ERKS_(QStyleOption* other) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:104
+// /usr/include/qt/QtWidgets/qstyleoption.h:93
 // [-2] void ~QStyleOption()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QStyleOptionD2Ev(void *this_) {
   delete (QStyleOption*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:106
+// /usr/include/qt/QtWidgets/qstyleoption.h:95
 // [-2] void init(const QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QStyleOption4initEPK7QWidget(void *this_, const QWidget * w) {
@@ -87,7 +87,7 @@ void C_ZN12QStyleOption4initEPK7QWidget(void *this_, const QWidget * w) {
 
 // Public inline Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qstyleoption.h:107
+// /usr/include/qt/QtWidgets/qstyleoption.h:96
 // [-2] void initFrom(const QWidget *)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -97,7 +97,7 @@ void C_ZN12QStyleOption8initFromEPK7QWidget(void *this_, const QWidget * w) {
 #endif // QT_VERSION >= 0x040100
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:108
+// /usr/include/qt/QtWidgets/qstyleoption.h:97
 // [64] QStyleOption & operator=(const QStyleOption &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QStyleOptionaSERKS_(void *this_, QStyleOption* other) {

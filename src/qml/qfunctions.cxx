@@ -64,7 +64,7 @@ void C_ZorN21QQmlImageProviderBase4FlagE6QFlagsIS0_E_250(QQmlImageProviderBase::
 // /usr/include/qt/QtQml/qqmlerror.h:81
 // [8] QDebug operator<<(QDebug, const QQmlError &)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK9QQmlError_222(QDebug* debug, QQmlError* error) {
+void* C_Zls6QDebugRK9QQmlError_215(QDebug* debug, QQmlError* error) {
   auto rv = operator<<(*debug, *error);
 return new QDebug(rv);
 }
@@ -218,7 +218,7 @@ void* C_Z9qjsEnginePK7QObject(const QObject * arg0) {
 // /usr/include/qt/QtQml/qqmlproperty.h:130
 // [4] uint qHash(const QQmlProperty &)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK12QQmlProperty_51(QQmlProperty* key) {
+uint C_Z5qHashRK12QQmlProperty_50(QQmlProperty* key) {
   return (uint)qHash(*key);
 }
 

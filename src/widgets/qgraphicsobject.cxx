@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
@@ -149,13 +148,13 @@ void* C_QGraphicsObject_init_staticMetaObject(void* this_, void* strdat, void* d
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:324
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:325
 // [32] QRectF boundingRect()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:344
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:345
 // [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:591
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:592
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN15QGraphicsObject5eventEP6QEvent(void *this_, QEvent * ev) {
@@ -163,7 +162,7 @@ bool C_ZN15QGraphicsObject5eventEP6QEvent(void *this_, QEvent * ev) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:540
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:541
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QGraphicsObject10metaObjectEv(void *this_) {
@@ -171,7 +170,7 @@ void* C_ZNK15QGraphicsObject10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:540
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:541
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGraphicsObject11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -179,7 +178,7 @@ void* C_ZN15QGraphicsObject11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:540
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:541
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN15QGraphicsObject11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -187,7 +186,7 @@ int C_ZN15QGraphicsObject11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMe
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:540
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:541
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGraphicsObject2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -196,7 +195,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:540
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:541
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QGraphicsObject6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -205,14 +204,14 @@ return new QString(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:562
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:563
 // [-2] void ~QGraphicsObject()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObjectD2Ev(void *this_) {
   delete (QGraphicsObject*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:567
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:568
 // [-2] void grabGesture(Qt::GestureType, Qt::GestureFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject11grabGestureEN2Qt11GestureTypeE6QFlagsINS0_11GestureFlagEE(void *this_, Qt::GestureType type_, QFlags<Qt::GestureFlag> flags) {
@@ -220,7 +219,7 @@ void C_ZN15QGraphicsObject11grabGestureEN2Qt11GestureTypeE6QFlagsINS0_11GestureF
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:568
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:569
 // [-2] void ungrabGesture(Qt::GestureType)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject13ungrabGestureEN2Qt11GestureTypeE(void *this_, Qt::GestureType type_) {
@@ -228,7 +227,7 @@ void C_ZN15QGraphicsObject13ungrabGestureEN2Qt11GestureTypeE(void *this_, Qt::Ge
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:575
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:576
 // [-2] void parentChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject13parentChangedEv(void *this_) {
@@ -236,7 +235,7 @@ void C_ZN15QGraphicsObject13parentChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:576
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:577
 // [-2] void opacityChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject14opacityChangedEv(void *this_) {
@@ -244,7 +243,7 @@ void C_ZN15QGraphicsObject14opacityChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:577
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:578
 // [-2] void visibleChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject14visibleChangedEv(void *this_) {
@@ -252,7 +251,7 @@ void C_ZN15QGraphicsObject14visibleChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:578
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:579
 // [-2] void enabledChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject14enabledChangedEv(void *this_) {
@@ -260,7 +259,7 @@ void C_ZN15QGraphicsObject14enabledChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:579
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:580
 // [-2] void xChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject8xChangedEv(void *this_) {
@@ -268,7 +267,7 @@ void C_ZN15QGraphicsObject8xChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:580
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:581
 // [-2] void yChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject8yChangedEv(void *this_) {
@@ -276,7 +275,7 @@ void C_ZN15QGraphicsObject8yChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:581
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:582
 // [-2] void zChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject8zChangedEv(void *this_) {
@@ -284,7 +283,7 @@ void C_ZN15QGraphicsObject8zChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:582
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:583
 // [-2] void rotationChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject15rotationChangedEv(void *this_) {
@@ -292,7 +291,7 @@ void C_ZN15QGraphicsObject15rotationChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:583
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:584
 // [-2] void scaleChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject12scaleChangedEv(void *this_) {
@@ -300,7 +299,7 @@ void C_ZN15QGraphicsObject12scaleChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:584
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:585
 // [-2] void childrenChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject15childrenChangedEv(void *this_) {
@@ -308,7 +307,7 @@ void C_ZN15QGraphicsObject15childrenChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:585
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:586
 // [-2] void widthChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject12widthChangedEv(void *this_) {
@@ -316,7 +315,7 @@ void C_ZN15QGraphicsObject12widthChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:586
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:587
 // [-2] void heightChanged()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QGraphicsObject13heightChangedEv(void *this_) {
@@ -339,5 +338,4 @@ void C_ZN15QGraphicsObject13heightChangedEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

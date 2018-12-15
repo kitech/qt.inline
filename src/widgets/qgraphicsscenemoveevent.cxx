@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
@@ -55,7 +54,7 @@ MyQGraphicsSceneMoveEvent() : QGraphicsSceneMoveEvent() {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:313
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:314
 // [-2] void QGraphicsSceneMoveEvent()
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QGraphicsSceneMoveEventC2Ev() {
@@ -63,14 +62,14 @@ void* C_ZN23QGraphicsSceneMoveEventC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:314
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:315
 // [-2] void ~QGraphicsSceneMoveEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsSceneMoveEventD2Ev(void *this_) {
   delete (QGraphicsSceneMoveEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:316
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:317
 // [16] QPointF oldPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QGraphicsSceneMoveEvent6oldPosEv(void *this_) {
@@ -79,7 +78,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:317
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:318
 // [-2] void setOldPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsSceneMoveEvent9setOldPosERK7QPointF(void *this_, QPointF* pos) {
@@ -87,7 +86,7 @@ void C_ZN23QGraphicsSceneMoveEvent9setOldPosERK7QPointF(void *this_, QPointF* po
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:319
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:320
 // [16] QPointF newPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QGraphicsSceneMoveEvent6newPosEv(void *this_) {
@@ -96,7 +95,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:320
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:321
 // [-2] void setNewPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN23QGraphicsSceneMoveEvent9setNewPosERK7QPointF(void *this_, QPointF* pos) {
@@ -119,5 +118,4 @@ void C_ZN23QGraphicsSceneMoveEvent9setNewPosERK7QPointF(void *this_, QPointF* po
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

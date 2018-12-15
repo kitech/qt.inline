@@ -105,16 +105,16 @@ public:
 };
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:122
+// /usr/include/qt/QtCore/qtextcodec.h:116
 // [8] QByteArray name()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:124
+// /usr/include/qt/QtCore/qtextcodec.h:118
 // [4] int mibEnum()
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:127
+// /usr/include/qt/QtCore/qtextcodec.h:121
 // [8] QString convertToUnicode(const char *, int, QTextCodec::ConverterState *)
 // Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:128
+// /usr/include/qt/QtCore/qtextcodec.h:122
 // [8] QByteArray convertFromUnicode(const QChar *, int, QTextCodec::ConverterState *)
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:61
@@ -221,7 +221,7 @@ bool C_ZNK10QTextCodec9canEncodeE5QChar(void *this_, QChar* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:83
+// /usr/include/qt/QtCore/qtextcodec.h:82
 // [1] bool canEncode(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QTextCodec9canEncodeERK7QString(void *this_, QString* arg0) {
@@ -229,18 +229,7 @@ bool C_ZNK10QTextCodec9canEncodeERK7QString(void *this_, QString* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qtextcodec.h:85
-// [1] bool canEncode(QStringView)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QTextCodec9canEncodeE11QStringView(void *this_, QStringView* arg0) {
-  return (bool)((QTextCodec*)this_)->canEncode(*arg0);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:87
+// /usr/include/qt/QtCore/qtextcodec.h:84
 // [8] QString toUnicode(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec9toUnicodeERK10QByteArray(void *this_, QByteArray* arg0) {
@@ -249,7 +238,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:88
+// /usr/include/qt/QtCore/qtextcodec.h:85
 // [8] QString toUnicode(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec9toUnicodeEPKc(void *this_, const char * chars) {
@@ -258,7 +247,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:90
+// /usr/include/qt/QtCore/qtextcodec.h:86
 // [8] QByteArray fromUnicode(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec11fromUnicodeERK7QString(void *this_, QString* uc) {
@@ -266,20 +255,8 @@ void* C_ZNK10QTextCodec11fromUnicodeERK7QString(void *this_, QString* uc) {
 return new QByteArray(rv);
 }
 
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qtextcodec.h:92
-// [8] QByteArray fromUnicode(QStringView)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QTextCodec11fromUnicodeE11QStringView(void *this_, QStringView* uc) {
-  auto rv = ((QTextCodec*)this_)->fromUnicode(*uc);
-return new QByteArray(rv);
-}
-#endif // QT_VERSION >= 0x050a00
-
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:114
+// /usr/include/qt/QtCore/qtextcodec.h:108
 // [8] QString toUnicode(const char *, int, QTextCodec::ConverterState *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec9toUnicodeEPKciPNS_14ConverterStateE(void *this_, const char * in, int length, QTextCodec::ConverterState * state) {
@@ -288,7 +265,7 @@ return new QString(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:116
+// /usr/include/qt/QtCore/qtextcodec.h:110
 // [8] QByteArray fromUnicode(const QChar *, int, QTextCodec::ConverterState *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec11fromUnicodeEPK5QChariPNS_14ConverterStateE(void *this_, const QChar * in, int length, QTextCodec::ConverterState * state) {
@@ -297,7 +274,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:119
+// /usr/include/qt/QtCore/qtextcodec.h:113
 // [8] QTextDecoder * makeDecoder(QTextCodec::ConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec11makeDecoderE6QFlagsINS_14ConversionFlagEE(void *this_, QFlags<QTextCodec::ConversionFlag> flags) {
@@ -305,7 +282,7 @@ void* C_ZNK10QTextCodec11makeDecoderE6QFlagsINS_14ConversionFlagEE(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:120
+// /usr/include/qt/QtCore/qtextcodec.h:114
 // [8] QTextEncoder * makeEncoder(QTextCodec::ConversionFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec11makeEncoderE6QFlagsINS_14ConversionFlagEE(void *this_, QFlags<QTextCodec::ConversionFlag> flags) {
@@ -313,7 +290,7 @@ void* C_ZNK10QTextCodec11makeEncoderE6QFlagsINS_14ConversionFlagEE(void *this_, 
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:122
+// /usr/include/qt/QtCore/qtextcodec.h:116
 // [8] QByteArray name()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QTextCodec4nameEv(void *this_) {
@@ -322,7 +299,7 @@ return new QByteArray(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:123
+// /usr/include/qt/QtCore/qtextcodec.h:117
 // [8] QList<QByteArray> aliases()
 extern "C" Q_DECL_EXPORT
 QList<QByteArray>* C_ZNK10QTextCodec7aliasesEv(void *this_) {
@@ -331,7 +308,7 @@ return new QList<QByteArray>(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:124
+// /usr/include/qt/QtCore/qtextcodec.h:118
 // [4] int mibEnum()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QTextCodec7mibEnumEv(void *this_) {

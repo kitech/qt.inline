@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qcombobox.h
 #ifndef protected
 #define protected public
@@ -279,7 +278,7 @@ void* C_QComboBox_init_staticMetaObject(void* this_, void* strdat, void* dat, vo
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:227
+// /usr/include/qt/QtWidgets/qcombobox.h:226
 // [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * e) {
@@ -287,7 +286,7 @@ void C_ZN9QComboBox12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:228
+// /usr/include/qt/QtWidgets/qcombobox.h:227
 // [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * e) {
@@ -295,7 +294,7 @@ void C_ZN9QComboBox13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * e) 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:229
+// /usr/include/qt/QtWidgets/qcombobox.h:228
 // [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11changeEventEP6QEvent(void *this_, QEvent * e) {
@@ -303,7 +302,7 @@ void C_ZN9QComboBox11changeEventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:230
+// /usr/include/qt/QtWidgets/qcombobox.h:229
 // [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * e) {
@@ -311,7 +310,7 @@ void C_ZN9QComboBox11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * e) 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:231
+// /usr/include/qt/QtWidgets/qcombobox.h:230
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
@@ -319,7 +318,7 @@ void C_ZN9QComboBox10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:232
+// /usr/include/qt/QtWidgets/qcombobox.h:231
 // [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox9showEventEP10QShowEvent(void *this_, QShowEvent * e) {
@@ -327,7 +326,7 @@ void C_ZN9QComboBox9showEventEP10QShowEvent(void *this_, QShowEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:233
+// /usr/include/qt/QtWidgets/qcombobox.h:232
 // [-2] void hideEvent(QHideEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox9hideEventEP10QHideEvent(void *this_, QHideEvent * e) {
@@ -335,7 +334,7 @@ void C_ZN9QComboBox9hideEventEP10QHideEvent(void *this_, QHideEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:234
+// /usr/include/qt/QtWidgets/qcombobox.h:233
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
@@ -343,7 +342,7 @@ void C_ZN9QComboBox15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * e
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:235
+// /usr/include/qt/QtWidgets/qcombobox.h:234
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * e) {
@@ -351,7 +350,7 @@ void C_ZN9QComboBox17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:236
+// /usr/include/qt/QtWidgets/qcombobox.h:235
 // [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * e) {
@@ -359,7 +358,7 @@ void C_ZN9QComboBox13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:237
+// /usr/include/qt/QtWidgets/qcombobox.h:236
 // [-2] void keyReleaseEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * e) {
@@ -367,7 +366,7 @@ void C_ZN9QComboBox15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:239
+// /usr/include/qt/QtWidgets/qcombobox.h:238
 // [-2] void wheelEvent(QWheelEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * e) {
@@ -375,7 +374,7 @@ void C_ZN9QComboBox10wheelEventEP11QWheelEvent(void *this_, QWheelEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:242
+// /usr/include/qt/QtWidgets/qcombobox.h:241
 // [-2] void contextMenuEvent(QContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox16contextMenuEventEP17QContextMenuEvent(void *this_, QContextMenuEvent * e) {
@@ -383,7 +382,7 @@ void C_ZN9QComboBox16contextMenuEventEP17QContextMenuEvent(void *this_, QContext
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:244
+// /usr/include/qt/QtWidgets/qcombobox.h:243
 // [-2] void inputMethodEvent(QInputMethodEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * arg0) {
@@ -391,7 +390,7 @@ void C_ZN9QComboBox16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMe
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:61
+// /usr/include/qt/QtWidgets/qcombobox.h:60
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox10metaObjectEv(void *this_) {
@@ -399,7 +398,7 @@ void* C_ZNK9QComboBox10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:61
+// /usr/include/qt/QtWidgets/qcombobox.h:60
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QComboBox11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -407,7 +406,7 @@ void* C_ZN9QComboBox11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:61
+// /usr/include/qt/QtWidgets/qcombobox.h:60
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QComboBox11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -415,7 +414,7 @@ int C_ZN9QComboBox11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObjec
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:61
+// /usr/include/qt/QtWidgets/qcombobox.h:60
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QComboBox2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -424,7 +423,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:61
+// /usr/include/qt/QtWidgets/qcombobox.h:60
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QComboBox6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -433,7 +432,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:85
+// /usr/include/qt/QtWidgets/qcombobox.h:84
 // [-2] void QComboBox(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QComboBoxC2EP7QWidget(QWidget * parent) {
@@ -442,14 +441,14 @@ void* C_ZN9QComboBoxC2EP7QWidget(QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:86
+// /usr/include/qt/QtWidgets/qcombobox.h:85
 // [-2] void ~QComboBox()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBoxD2Ev(void *this_) {
   delete (QComboBox*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:88
+// /usr/include/qt/QtWidgets/qcombobox.h:87
 // [4] int maxVisibleItems()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QComboBox15maxVisibleItemsEv(void *this_) {
@@ -457,7 +456,7 @@ int C_ZNK9QComboBox15maxVisibleItemsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:89
+// /usr/include/qt/QtWidgets/qcombobox.h:88
 // [-2] void setMaxVisibleItems(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox18setMaxVisibleItemsEi(void *this_, int maxItems) {
@@ -465,7 +464,7 @@ void C_ZN9QComboBox18setMaxVisibleItemsEi(void *this_, int maxItems) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:91
+// /usr/include/qt/QtWidgets/qcombobox.h:90
 // [4] int count()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QComboBox5countEv(void *this_) {
@@ -473,7 +472,7 @@ int C_ZNK9QComboBox5countEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:92
+// /usr/include/qt/QtWidgets/qcombobox.h:91
 // [-2] void setMaxCount(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11setMaxCountEi(void *this_, int max) {
@@ -481,7 +480,7 @@ void C_ZN9QComboBox11setMaxCountEi(void *this_, int max) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:93
+// /usr/include/qt/QtWidgets/qcombobox.h:92
 // [4] int maxCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QComboBox8maxCountEv(void *this_) {
@@ -489,7 +488,7 @@ int C_ZNK9QComboBox8maxCountEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:96
+// /usr/include/qt/QtWidgets/qcombobox.h:95
 // [1] bool autoCompletion()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QComboBox14autoCompletionEv(void *this_) {
@@ -497,7 +496,7 @@ bool C_ZNK9QComboBox14autoCompletionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:97
+// /usr/include/qt/QtWidgets/qcombobox.h:96
 // [-2] void setAutoCompletion(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox17setAutoCompletionEb(void *this_, bool enable) {
@@ -505,7 +504,7 @@ void C_ZN9QComboBox17setAutoCompletionEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:99
+// /usr/include/qt/QtWidgets/qcombobox.h:98
 // [4] Qt::CaseSensitivity autoCompletionCaseSensitivity()
 extern "C" Q_DECL_EXPORT
 Qt::CaseSensitivity C_ZNK9QComboBox29autoCompletionCaseSensitivityEv(void *this_) {
@@ -513,7 +512,7 @@ Qt::CaseSensitivity C_ZNK9QComboBox29autoCompletionCaseSensitivityEv(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:100
+// /usr/include/qt/QtWidgets/qcombobox.h:99
 // [-2] void setAutoCompletionCaseSensitivity(Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox32setAutoCompletionCaseSensitivityEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity sensitivity) {
@@ -521,7 +520,7 @@ void C_ZN9QComboBox32setAutoCompletionCaseSensitivityEN2Qt15CaseSensitivityE(voi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:103
+// /usr/include/qt/QtWidgets/qcombobox.h:102
 // [1] bool duplicatesEnabled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QComboBox17duplicatesEnabledEv(void *this_) {
@@ -529,7 +528,7 @@ bool C_ZNK9QComboBox17duplicatesEnabledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:104
+// /usr/include/qt/QtWidgets/qcombobox.h:103
 // [-2] void setDuplicatesEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox20setDuplicatesEnabledEb(void *this_, bool enable) {
@@ -537,7 +536,7 @@ void C_ZN9QComboBox20setDuplicatesEnabledEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:106
+// /usr/include/qt/QtWidgets/qcombobox.h:105
 // [-2] void setFrame(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox8setFrameEb(void *this_, bool arg0) {
@@ -545,7 +544,7 @@ void C_ZN9QComboBox8setFrameEb(void *this_, bool arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:107
+// /usr/include/qt/QtWidgets/qcombobox.h:106
 // [1] bool hasFrame()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QComboBox8hasFrameEv(void *this_) {
@@ -553,7 +552,7 @@ bool C_ZNK9QComboBox8hasFrameEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:109
+// /usr/include/qt/QtWidgets/qcombobox.h:108
 // [4] int findText(const QString &, Qt::MatchFlags)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QComboBox8findTextERK7QString6QFlagsIN2Qt9MatchFlagEE(void *this_, QString* text, QFlags<Qt::MatchFlag> flags) {
@@ -561,7 +560,7 @@ int C_ZNK9QComboBox8findTextERK7QString6QFlagsIN2Qt9MatchFlagEE(void *this_, QSt
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:112
+// /usr/include/qt/QtWidgets/qcombobox.h:111
 // [4] int findData(const QVariant &, int, Qt::MatchFlags)
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QComboBox8findDataERK8QVarianti6QFlagsIN2Qt9MatchFlagEE(void *this_, QVariant* data, int role, QFlags<Qt::MatchFlag> flags) {
@@ -569,7 +568,7 @@ int C_ZNK9QComboBox8findDataERK8QVarianti6QFlagsIN2Qt9MatchFlagEE(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:126
+// /usr/include/qt/QtWidgets/qcombobox.h:125
 // [4] QComboBox::InsertPolicy insertPolicy()
 extern "C" Q_DECL_EXPORT
 QComboBox::InsertPolicy C_ZNK9QComboBox12insertPolicyEv(void *this_) {
@@ -577,7 +576,7 @@ QComboBox::InsertPolicy C_ZNK9QComboBox12insertPolicyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:127
+// /usr/include/qt/QtWidgets/qcombobox.h:126
 // [-2] void setInsertPolicy(QComboBox::InsertPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox15setInsertPolicyENS_12InsertPolicyE(void *this_, QComboBox::InsertPolicy policy) {
@@ -585,7 +584,7 @@ void C_ZN9QComboBox15setInsertPolicyENS_12InsertPolicyE(void *this_, QComboBox::
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:137
+// /usr/include/qt/QtWidgets/qcombobox.h:136
 // [4] QComboBox::SizeAdjustPolicy sizeAdjustPolicy()
 extern "C" Q_DECL_EXPORT
 QComboBox::SizeAdjustPolicy C_ZNK9QComboBox16sizeAdjustPolicyEv(void *this_) {
@@ -593,7 +592,7 @@ QComboBox::SizeAdjustPolicy C_ZNK9QComboBox16sizeAdjustPolicyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:138
+// /usr/include/qt/QtWidgets/qcombobox.h:137
 // [-2] void setSizeAdjustPolicy(QComboBox::SizeAdjustPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox19setSizeAdjustPolicyENS_16SizeAdjustPolicyE(void *this_, QComboBox::SizeAdjustPolicy policy) {
@@ -601,7 +600,7 @@ void C_ZN9QComboBox19setSizeAdjustPolicyENS_16SizeAdjustPolicyE(void *this_, QCo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:139
+// /usr/include/qt/QtWidgets/qcombobox.h:138
 // [4] int minimumContentsLength()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QComboBox21minimumContentsLengthEv(void *this_) {
@@ -609,7 +608,7 @@ int C_ZNK9QComboBox21minimumContentsLengthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:140
+// /usr/include/qt/QtWidgets/qcombobox.h:139
 // [-2] void setMinimumContentsLength(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox24setMinimumContentsLengthEi(void *this_, int characters) {
@@ -617,7 +616,7 @@ void C_ZN9QComboBox24setMinimumContentsLengthEi(void *this_, int characters) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:141
+// /usr/include/qt/QtWidgets/qcombobox.h:140
 // [8] QSize iconSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox8iconSizeEv(void *this_) {
@@ -626,7 +625,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:142
+// /usr/include/qt/QtWidgets/qcombobox.h:141
 // [-2] void setIconSize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11setIconSizeERK5QSize(void *this_, QSize* size) {
@@ -634,7 +633,7 @@ void C_ZN9QComboBox11setIconSizeERK5QSize(void *this_, QSize* size) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:144
+// /usr/include/qt/QtWidgets/qcombobox.h:143
 // [1] bool isEditable()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QComboBox10isEditableEv(void *this_) {
@@ -642,7 +641,7 @@ bool C_ZNK9QComboBox10isEditableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:145
+// /usr/include/qt/QtWidgets/qcombobox.h:144
 // [-2] void setEditable(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11setEditableEb(void *this_, bool editable) {
@@ -650,7 +649,7 @@ void C_ZN9QComboBox11setEditableEb(void *this_, bool editable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:146
+// /usr/include/qt/QtWidgets/qcombobox.h:145
 // [-2] void setLineEdit(QLineEdit *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11setLineEditEP9QLineEdit(void *this_, QLineEdit * edit) {
@@ -658,7 +657,7 @@ void C_ZN9QComboBox11setLineEditEP9QLineEdit(void *this_, QLineEdit * edit) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:147
+// /usr/include/qt/QtWidgets/qcombobox.h:146
 // [8] QLineEdit * lineEdit()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox8lineEditEv(void *this_) {
@@ -666,7 +665,7 @@ void* C_ZNK9QComboBox8lineEditEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:149
+// /usr/include/qt/QtWidgets/qcombobox.h:148
 // [-2] void setValidator(const QValidator *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox12setValidatorEPK10QValidator(void *this_, const QValidator * v) {
@@ -674,7 +673,7 @@ void C_ZN9QComboBox12setValidatorEPK10QValidator(void *this_, const QValidator *
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:150
+// /usr/include/qt/QtWidgets/qcombobox.h:149
 // [8] const QValidator * validator()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox9validatorEv(void *this_) {
@@ -683,7 +682,7 @@ void* C_ZNK9QComboBox9validatorEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qcombobox.h:154
+// /usr/include/qt/QtWidgets/qcombobox.h:153
 // [-2] void setCompleter(QCompleter *)
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -694,7 +693,7 @@ void C_ZN9QComboBox12setCompleterEP10QCompleter(void *this_, QCompleter * c) {
 
 // Public Visibility=Default Availability=Available
 // since 4.2
-// /usr/include/qt/QtWidgets/qcombobox.h:155
+// /usr/include/qt/QtWidgets/qcombobox.h:154
 // [8] QCompleter * completer()
 #if QT_VERSION >= 0x040200
 extern "C" Q_DECL_EXPORT
@@ -704,7 +703,7 @@ void* C_ZNK9QComboBox9completerEv(void *this_) {
 #endif // QT_VERSION >= 0x040200
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:158
+// /usr/include/qt/QtWidgets/qcombobox.h:157
 // [8] QAbstractItemDelegate * itemDelegate()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox12itemDelegateEv(void *this_) {
@@ -712,7 +711,7 @@ void* C_ZNK9QComboBox12itemDelegateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:159
+// /usr/include/qt/QtWidgets/qcombobox.h:158
 // [-2] void setItemDelegate(QAbstractItemDelegate *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox15setItemDelegateEP21QAbstractItemDelegate(void *this_, QAbstractItemDelegate * delegate) {
@@ -720,7 +719,7 @@ void C_ZN9QComboBox15setItemDelegateEP21QAbstractItemDelegate(void *this_, QAbst
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:161
+// /usr/include/qt/QtWidgets/qcombobox.h:160
 // [8] QAbstractItemModel * model()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox5modelEv(void *this_) {
@@ -728,7 +727,7 @@ void* C_ZNK9QComboBox5modelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:162
+// /usr/include/qt/QtWidgets/qcombobox.h:161
 // [-2] void setModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {
@@ -736,7 +735,7 @@ void C_ZN9QComboBox8setModelEP18QAbstractItemModel(void *this_, QAbstractItemMod
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:164
+// /usr/include/qt/QtWidgets/qcombobox.h:163
 // [24] QModelIndex rootModelIndex()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox14rootModelIndexEv(void *this_) {
@@ -745,7 +744,7 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:165
+// /usr/include/qt/QtWidgets/qcombobox.h:164
 // [-2] void setRootModelIndex(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox17setRootModelIndexERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -753,7 +752,7 @@ void C_ZN9QComboBox17setRootModelIndexERK11QModelIndex(void *this_, QModelIndex*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:167
+// /usr/include/qt/QtWidgets/qcombobox.h:166
 // [4] int modelColumn()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QComboBox11modelColumnEv(void *this_) {
@@ -761,7 +760,7 @@ int C_ZNK9QComboBox11modelColumnEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:168
+// /usr/include/qt/QtWidgets/qcombobox.h:167
 // [-2] void setModelColumn(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox14setModelColumnEi(void *this_, int visibleColumn) {
@@ -769,7 +768,7 @@ void C_ZN9QComboBox14setModelColumnEi(void *this_, int visibleColumn) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:170
+// /usr/include/qt/QtWidgets/qcombobox.h:169
 // [4] int currentIndex()
 extern "C" Q_DECL_EXPORT
 int C_ZNK9QComboBox12currentIndexEv(void *this_) {
@@ -777,7 +776,7 @@ int C_ZNK9QComboBox12currentIndexEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:171
+// /usr/include/qt/QtWidgets/qcombobox.h:170
 // [8] QString currentText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox11currentTextEv(void *this_) {
@@ -786,7 +785,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:172
+// /usr/include/qt/QtWidgets/qcombobox.h:171
 // [16] QVariant currentData(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox11currentDataEi(void *this_, int role) {
@@ -795,7 +794,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:174
+// /usr/include/qt/QtWidgets/qcombobox.h:173
 // [8] QString itemText(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox8itemTextEi(void *this_, int index) {
@@ -804,7 +803,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:175
+// /usr/include/qt/QtWidgets/qcombobox.h:174
 // [8] QIcon itemIcon(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox8itemIconEi(void *this_, int index) {
@@ -813,7 +812,7 @@ return new QIcon(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:176
+// /usr/include/qt/QtWidgets/qcombobox.h:175
 // [16] QVariant itemData(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox8itemDataEii(void *this_, int index, int role) {
@@ -822,7 +821,7 @@ return new QVariant(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:178
+// /usr/include/qt/QtWidgets/qcombobox.h:177
 // [-2] void addItem(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox7addItemERK7QStringRK8QVariant(void *this_, QString* text, QVariant* userData) {
@@ -830,7 +829,7 @@ void C_ZN9QComboBox7addItemERK7QStringRK8QVariant(void *this_, QString* text, QV
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:179
+// /usr/include/qt/QtWidgets/qcombobox.h:178
 // [-2] void addItem(const QIcon &, const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox7addItemERK5QIconRK7QStringRK8QVariant(void *this_, QIcon* icon, QString* text, QVariant* userData) {
@@ -838,7 +837,7 @@ void C_ZN9QComboBox7addItemERK5QIconRK7QStringRK8QVariant(void *this_, QIcon* ic
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:181
+// /usr/include/qt/QtWidgets/qcombobox.h:180
 // [-2] void addItems(const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox8addItemsERK11QStringList(void *this_, QStringList* texts) {
@@ -846,7 +845,7 @@ void C_ZN9QComboBox8addItemsERK11QStringList(void *this_, QStringList* texts) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:184
+// /usr/include/qt/QtWidgets/qcombobox.h:183
 // [-2] void insertItem(int, const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox10insertItemEiRK7QStringRK8QVariant(void *this_, int index, QString* text, QVariant* userData) {
@@ -854,7 +853,7 @@ void C_ZN9QComboBox10insertItemEiRK7QStringRK8QVariant(void *this_, int index, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:185
+// /usr/include/qt/QtWidgets/qcombobox.h:184
 // [-2] void insertItem(int, const QIcon &, const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox10insertItemEiRK5QIconRK7QStringRK8QVariant(void *this_, int index, QIcon* icon, QString* text, QVariant* userData) {
@@ -862,7 +861,7 @@ void C_ZN9QComboBox10insertItemEiRK5QIconRK7QStringRK8QVariant(void *this_, int 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:187
+// /usr/include/qt/QtWidgets/qcombobox.h:186
 // [-2] void insertItems(int, const QStringList &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11insertItemsEiRK11QStringList(void *this_, int index, QStringList* texts) {
@@ -871,7 +870,7 @@ void C_ZN9QComboBox11insertItemsEiRK11QStringList(void *this_, int index, QStrin
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtWidgets/qcombobox.h:188
+// /usr/include/qt/QtWidgets/qcombobox.h:187
 // [-2] void insertSeparator(int)
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -881,7 +880,7 @@ void C_ZN9QComboBox15insertSeparatorEi(void *this_, int index) {
 #endif // QT_VERSION >= 0x040400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:190
+// /usr/include/qt/QtWidgets/qcombobox.h:189
 // [-2] void removeItem(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox10removeItemEi(void *this_, int index) {
@@ -889,7 +888,7 @@ void C_ZN9QComboBox10removeItemEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:192
+// /usr/include/qt/QtWidgets/qcombobox.h:191
 // [-2] void setItemText(int, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11setItemTextEiRK7QString(void *this_, int index, QString* text) {
@@ -897,7 +896,7 @@ void C_ZN9QComboBox11setItemTextEiRK7QString(void *this_, int index, QString* te
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:193
+// /usr/include/qt/QtWidgets/qcombobox.h:192
 // [-2] void setItemIcon(int, const QIcon &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11setItemIconEiRK5QIcon(void *this_, int index, QIcon* icon) {
@@ -905,7 +904,7 @@ void C_ZN9QComboBox11setItemIconEiRK5QIcon(void *this_, int index, QIcon* icon) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:194
+// /usr/include/qt/QtWidgets/qcombobox.h:193
 // [-2] void setItemData(int, const QVariant &, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11setItemDataEiRK8QVarianti(void *this_, int index, QVariant* value, int role) {
@@ -913,7 +912,7 @@ void C_ZN9QComboBox11setItemDataEiRK8QVarianti(void *this_, int index, QVariant*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:196
+// /usr/include/qt/QtWidgets/qcombobox.h:195
 // [8] QAbstractItemView * view()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox4viewEv(void *this_) {
@@ -921,7 +920,7 @@ void* C_ZNK9QComboBox4viewEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:197
+// /usr/include/qt/QtWidgets/qcombobox.h:196
 // [-2] void setView(QAbstractItemView *)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox7setViewEP17QAbstractItemView(void *this_, QAbstractItemView * itemView) {
@@ -929,7 +928,7 @@ void C_ZN9QComboBox7setViewEP17QAbstractItemView(void *this_, QAbstractItemView 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:199
+// /usr/include/qt/QtWidgets/qcombobox.h:198
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox8sizeHintEv(void *this_) {
@@ -938,7 +937,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:200
+// /usr/include/qt/QtWidgets/qcombobox.h:199
 // [8] QSize minimumSizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox15minimumSizeHintEv(void *this_) {
@@ -947,7 +946,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:202
+// /usr/include/qt/QtWidgets/qcombobox.h:201
 // [-2] void showPopup()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox9showPopupEv(void *this_) {
@@ -955,7 +954,7 @@ void C_ZN9QComboBox9showPopupEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:203
+// /usr/include/qt/QtWidgets/qcombobox.h:202
 // [-2] void hidePopup()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox9hidePopupEv(void *this_) {
@@ -963,7 +962,7 @@ void C_ZN9QComboBox9hidePopupEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:205
+// /usr/include/qt/QtWidgets/qcombobox.h:204
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QComboBox5eventEP6QEvent(void *this_, QEvent * event) {
@@ -971,7 +970,7 @@ bool C_ZN9QComboBox5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:206
+// /usr/include/qt/QtWidgets/qcombobox.h:205
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery arg0) {
@@ -980,7 +979,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:207
+// /usr/include/qt/QtWidgets/qcombobox.h:206
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QComboBox16inputMethodQueryEN2Qt16InputMethodQueryERK8QVariant(void *this_, Qt::InputMethodQuery query, QVariant* argument) {
@@ -989,7 +988,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:210
+// /usr/include/qt/QtWidgets/qcombobox.h:209
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox5clearEv(void *this_) {
@@ -997,7 +996,7 @@ void C_ZN9QComboBox5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:211
+// /usr/include/qt/QtWidgets/qcombobox.h:210
 // [-2] void clearEditText()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox13clearEditTextEv(void *this_) {
@@ -1005,7 +1004,7 @@ void C_ZN9QComboBox13clearEditTextEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:212
+// /usr/include/qt/QtWidgets/qcombobox.h:211
 // [-2] void setEditText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11setEditTextERK7QString(void *this_, QString* text) {
@@ -1013,7 +1012,7 @@ void C_ZN9QComboBox11setEditTextERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:213
+// /usr/include/qt/QtWidgets/qcombobox.h:212
 // [-2] void setCurrentIndex(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox15setCurrentIndexEi(void *this_, int index) {
@@ -1021,7 +1020,7 @@ void C_ZN9QComboBox15setCurrentIndexEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:214
+// /usr/include/qt/QtWidgets/qcombobox.h:213
 // [-2] void setCurrentText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox14setCurrentTextERK7QString(void *this_, QString* text) {
@@ -1029,7 +1028,7 @@ void C_ZN9QComboBox14setCurrentTextERK7QString(void *this_, QString* text) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:217
+// /usr/include/qt/QtWidgets/qcombobox.h:216
 // [-2] void editTextChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox15editTextChangedERK7QString(void *this_, QString* arg0) {
@@ -1037,7 +1036,7 @@ void C_ZN9QComboBox15editTextChangedERK7QString(void *this_, QString* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:218
+// /usr/include/qt/QtWidgets/qcombobox.h:217
 // [-2] void activated(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox9activatedEi(void *this_, int index) {
@@ -1045,7 +1044,7 @@ void C_ZN9QComboBox9activatedEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:219
+// /usr/include/qt/QtWidgets/qcombobox.h:218
 // [-2] void activated(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox9activatedERK7QString(void *this_, QString* arg0) {
@@ -1053,7 +1052,7 @@ void C_ZN9QComboBox9activatedERK7QString(void *this_, QString* arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:220
+// /usr/include/qt/QtWidgets/qcombobox.h:219
 // [-2] void highlighted(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11highlightedEi(void *this_, int index) {
@@ -1061,7 +1060,7 @@ void C_ZN9QComboBox11highlightedEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qcombobox.h:221
+// /usr/include/qt/QtWidgets/qcombobox.h:220
 // [-2] void highlighted(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QComboBox11highlightedERK7QString(void *this_, QString* arg0) {
@@ -1070,7 +1069,7 @@ void C_ZN9QComboBox11highlightedERK7QString(void *this_, QString* arg0) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qcombobox.h:222
+// /usr/include/qt/QtWidgets/qcombobox.h:221
 // [-2] void currentIndexChanged(int)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -1081,7 +1080,7 @@ void C_ZN9QComboBox19currentIndexChangedEi(void *this_, int index) {
 
 // Public Visibility=Default Availability=Available
 // since 4.1
-// /usr/include/qt/QtWidgets/qcombobox.h:223
+// /usr/include/qt/QtWidgets/qcombobox.h:222
 // [-2] void currentIndexChanged(const QString &)
 #if QT_VERSION >= 0x040100
 extern "C" Q_DECL_EXPORT
@@ -1092,7 +1091,7 @@ void C_ZN9QComboBox19currentIndexChangedERK7QString(void *this_, QString* arg0) 
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtWidgets/qcombobox.h:224
+// /usr/include/qt/QtWidgets/qcombobox.h:223
 // [-2] void currentTextChanged(const QString &)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -1117,5 +1116,4 @@ void C_ZN9QComboBox18currentTextChangedERK7QString(void *this_, QString* arg0) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

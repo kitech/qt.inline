@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
@@ -384,7 +383,7 @@ void* C_QGraphicsTextItem_init_staticMetaObject(void* this_, void* strdat, void*
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:930
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:931
 // [1] bool sceneEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QGraphicsTextItem10sceneEventEP6QEvent(void *this_, QEvent * event) {
@@ -392,7 +391,7 @@ bool C_ZN17QGraphicsTextItem10sceneEventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:931
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:932
 // [-2] void mousePressEvent(QGraphicsSceneMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent(void *this_, QGraphicsSceneMouseEvent * event) {
@@ -400,7 +399,7 @@ void C_ZN17QGraphicsTextItem15mousePressEventEP24QGraphicsSceneMouseEvent(void *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:932
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:933
 // [-2] void mouseMoveEvent(QGraphicsSceneMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent(void *this_, QGraphicsSceneMouseEvent * event) {
@@ -408,7 +407,7 @@ void C_ZN17QGraphicsTextItem14mouseMoveEventEP24QGraphicsSceneMouseEvent(void *t
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:933
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:934
 // [-2] void mouseReleaseEvent(QGraphicsSceneMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent(void *this_, QGraphicsSceneMouseEvent * event) {
@@ -416,7 +415,7 @@ void C_ZN17QGraphicsTextItem17mouseReleaseEventEP24QGraphicsSceneMouseEvent(void
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:934
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:935
 // [-2] void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent(void *this_, QGraphicsSceneMouseEvent * event) {
@@ -424,7 +423,7 @@ void C_ZN17QGraphicsTextItem21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent(
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:935
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:936
 // [-2] void contextMenuEvent(QGraphicsSceneContextMenuEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent(void *this_, QGraphicsSceneContextMenuEvent * event) {
@@ -432,7 +431,7 @@ void C_ZN17QGraphicsTextItem16contextMenuEventEP30QGraphicsSceneContextMenuEvent
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:936
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:937
 // [-2] void keyPressEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
@@ -440,7 +439,7 @@ void C_ZN17QGraphicsTextItem13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:937
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:938
 // [-2] void keyReleaseEvent(QKeyEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
@@ -448,7 +447,7 @@ void C_ZN17QGraphicsTextItem15keyReleaseEventEP9QKeyEvent(void *this_, QKeyEvent
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:938
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:939
 // [-2] void focusInEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
@@ -456,7 +455,7 @@ void C_ZN17QGraphicsTextItem12focusInEventEP11QFocusEvent(void *this_, QFocusEve
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:939
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:940
 // [-2] void focusOutEvent(QFocusEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent(void *this_, QFocusEvent * event) {
@@ -464,7 +463,7 @@ void C_ZN17QGraphicsTextItem13focusOutEventEP11QFocusEvent(void *this_, QFocusEv
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:940
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:941
 // [-2] void dragEnterEvent(QGraphicsSceneDragDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent(void *this_, QGraphicsSceneDragDropEvent * event) {
@@ -472,7 +471,7 @@ void C_ZN17QGraphicsTextItem14dragEnterEventEP27QGraphicsSceneDragDropEvent(void
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:941
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:942
 // [-2] void dragLeaveEvent(QGraphicsSceneDragDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent(void *this_, QGraphicsSceneDragDropEvent * event) {
@@ -480,7 +479,7 @@ void C_ZN17QGraphicsTextItem14dragLeaveEventEP27QGraphicsSceneDragDropEvent(void
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:942
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:943
 // [-2] void dragMoveEvent(QGraphicsSceneDragDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent(void *this_, QGraphicsSceneDragDropEvent * event) {
@@ -488,7 +487,7 @@ void C_ZN17QGraphicsTextItem13dragMoveEventEP27QGraphicsSceneDragDropEvent(void 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:943
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:944
 // [-2] void dropEvent(QGraphicsSceneDragDropEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent(void *this_, QGraphicsSceneDragDropEvent * event) {
@@ -496,7 +495,7 @@ void C_ZN17QGraphicsTextItem9dropEventEP27QGraphicsSceneDragDropEvent(void *this
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:944
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:945
 // [-2] void inputMethodEvent(QInputMethodEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent(void *this_, QInputMethodEvent * event) {
@@ -504,7 +503,7 @@ void C_ZN17QGraphicsTextItem16inputMethodEventEP17QInputMethodEvent(void *this_,
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:945
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:946
 // [-2] void hoverEnterEvent(QGraphicsSceneHoverEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent(void *this_, QGraphicsSceneHoverEvent * event) {
@@ -512,7 +511,7 @@ void C_ZN17QGraphicsTextItem15hoverEnterEventEP24QGraphicsSceneHoverEvent(void *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:946
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:947
 // [-2] void hoverMoveEvent(QGraphicsSceneHoverEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent(void *this_, QGraphicsSceneHoverEvent * event) {
@@ -520,7 +519,7 @@ void C_ZN17QGraphicsTextItem14hoverMoveEventEP24QGraphicsSceneHoverEvent(void *t
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:947
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:948
 // [-2] void hoverLeaveEvent(QGraphicsSceneHoverEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent(void *this_, QGraphicsSceneHoverEvent * event) {
@@ -528,7 +527,7 @@ void C_ZN17QGraphicsTextItem15hoverLeaveEventEP24QGraphicsSceneHoverEvent(void *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:949
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:950
 // [16] QVariant inputMethodQuery(Qt::InputMethodQuery)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem16inputMethodQueryEN2Qt16InputMethodQueryE(void *this_, Qt::InputMethodQuery query) {
@@ -537,7 +536,7 @@ return new QVariant(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:951
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:952
 // [1] bool supportsExtension(QGraphicsItem::Extension)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void *this_, QGraphicsItem::Extension extension) {
@@ -545,7 +544,7 @@ bool C_ZNK17QGraphicsTextItem17supportsExtensionEN13QGraphicsItem9ExtensionE(voi
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:952
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:953
 // [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void *this_, QGraphicsItem::Extension extension, QVariant* variant) {
@@ -553,7 +552,7 @@ void C_ZN17QGraphicsTextItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVarian
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:953
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:954
 // [16] QVariant extension(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem9extensionERK8QVariant(void *this_, QVariant* variant) {
@@ -562,7 +561,7 @@ return new QVariant(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:872
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:873
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem10metaObjectEv(void *this_) {
@@ -570,7 +569,7 @@ void* C_ZNK17QGraphicsTextItem10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:872
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:873
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsTextItem11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -578,7 +577,7 @@ void* C_ZN17QGraphicsTextItem11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:872
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:873
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN17QGraphicsTextItem11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -586,7 +585,7 @@ int C_ZN17QGraphicsTextItem11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, Q
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:872
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:873
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsTextItem2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -595,7 +594,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:872
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:873
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsTextItem6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -604,7 +603,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:877
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:878
 // [-2] void QGraphicsTextItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsTextItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
@@ -613,7 +612,7 @@ void* C_ZN17QGraphicsTextItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:878
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:879
 // [-2] void QGraphicsTextItem(const QString &, QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsTextItemC2ERK7QStringP13QGraphicsItem(QString* text, QGraphicsItem * parent) {
@@ -622,14 +621,14 @@ void* C_ZN17QGraphicsTextItemC2ERK7QStringP13QGraphicsItem(QString* text, QGraph
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:879
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:880
 // [-2] void ~QGraphicsTextItem()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItemD2Ev(void *this_) {
   delete (QGraphicsTextItem*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:881
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:882
 // [8] QString toHtml()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem6toHtmlEv(void *this_) {
@@ -638,7 +637,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:882
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:883
 // [-2] void setHtml(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem7setHtmlERK7QString(void *this_, QString* html) {
@@ -646,7 +645,7 @@ void C_ZN17QGraphicsTextItem7setHtmlERK7QString(void *this_, QString* html) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:884
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:885
 // [8] QString toPlainText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem11toPlainTextEv(void *this_) {
@@ -655,7 +654,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:885
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:886
 // [-2] void setPlainText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem12setPlainTextERK7QString(void *this_, QString* text) {
@@ -663,7 +662,7 @@ void C_ZN17QGraphicsTextItem12setPlainTextERK7QString(void *this_, QString* text
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:887
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:888
 // [16] QFont font()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem4fontEv(void *this_) {
@@ -672,7 +671,7 @@ return new QFont(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:888
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:889
 // [-2] void setFont(const QFont &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem7setFontERK5QFont(void *this_, QFont* font) {
@@ -680,7 +679,7 @@ void C_ZN17QGraphicsTextItem7setFontERK5QFont(void *this_, QFont* font) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:890
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:891
 // [-2] void setDefaultTextColor(const QColor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem19setDefaultTextColorERK6QColor(void *this_, QColor* c) {
@@ -688,7 +687,7 @@ void C_ZN17QGraphicsTextItem19setDefaultTextColorERK6QColor(void *this_, QColor*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:891
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:892
 // [16] QColor defaultTextColor()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem16defaultTextColorEv(void *this_) {
@@ -697,7 +696,7 @@ return new QColor(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:893
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:894
 // [32] QRectF boundingRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem12boundingRectEv(void *this_) {
@@ -706,7 +705,7 @@ return new QRectF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:894
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:895
 // [8] QPainterPath shape()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem5shapeEv(void *this_) {
@@ -715,7 +714,7 @@ return new QPainterPath(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:895
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:896
 // [1] bool contains(const QPointF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsTextItem8containsERK7QPointF(void *this_, QPointF* point) {
@@ -723,7 +722,7 @@ bool C_ZNK17QGraphicsTextItem8containsERK7QPointF(void *this_, QPointF* point) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:897
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:898
 // [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
@@ -731,7 +730,7 @@ void C_ZN17QGraphicsTextItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidg
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:899
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:900
 // [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsTextItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
@@ -739,7 +738,7 @@ bool C_ZNK17QGraphicsTextItem12isObscuredByEPK13QGraphicsItem(void *this_, const
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:900
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:901
 // [8] QPainterPath opaqueArea()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem10opaqueAreaEv(void *this_) {
@@ -748,7 +747,7 @@ return new QPainterPath(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:903
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:904
 // [4] int type()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QGraphicsTextItem4typeEv(void *this_) {
@@ -756,7 +755,7 @@ int C_ZNK17QGraphicsTextItem4typeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:905
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:906
 // [-2] void setTextWidth(qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem12setTextWidthEd(void *this_, qreal width) {
@@ -764,7 +763,7 @@ void C_ZN17QGraphicsTextItem12setTextWidthEd(void *this_, qreal width) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:906
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:907
 // [8] qreal textWidth()
 extern "C" Q_DECL_EXPORT
 qreal C_ZNK17QGraphicsTextItem9textWidthEv(void *this_) {
@@ -772,7 +771,7 @@ qreal C_ZNK17QGraphicsTextItem9textWidthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:908
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:909
 // [-2] void adjustSize()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem10adjustSizeEv(void *this_) {
@@ -780,7 +779,7 @@ void C_ZN17QGraphicsTextItem10adjustSizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:910
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:911
 // [-2] void setDocument(QTextDocument *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem11setDocumentEP13QTextDocument(void *this_, QTextDocument * document) {
@@ -788,7 +787,7 @@ void C_ZN17QGraphicsTextItem11setDocumentEP13QTextDocument(void *this_, QTextDoc
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:911
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:912
 // [8] QTextDocument * document()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem8documentEv(void *this_) {
@@ -796,7 +795,7 @@ void* C_ZNK17QGraphicsTextItem8documentEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:913
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:914
 // [-2] void setTextInteractionFlags(Qt::TextInteractionFlags)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem23setTextInteractionFlagsE6QFlagsIN2Qt19TextInteractionFlagEE(void *this_, QFlags<Qt::TextInteractionFlag> flags) {
@@ -804,7 +803,7 @@ void C_ZN17QGraphicsTextItem23setTextInteractionFlagsE6QFlagsIN2Qt19TextInteract
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:914
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:915
 // [4] Qt::TextInteractionFlags textInteractionFlags()
 extern "C" Q_DECL_EXPORT
 Qt::TextInteractionFlags C_ZNK17QGraphicsTextItem20textInteractionFlagsEv(void *this_) {
@@ -813,7 +812,7 @@ Qt::TextInteractionFlags C_ZNK17QGraphicsTextItem20textInteractionFlagsEv(void *
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:916
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:917
 // [-2] void setTabChangesFocus(bool)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -824,7 +823,7 @@ void C_ZN17QGraphicsTextItem18setTabChangesFocusEb(void *this_, bool b) {
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:917
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:918
 // [1] bool tabChangesFocus()
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -834,7 +833,7 @@ bool C_ZNK17QGraphicsTextItem15tabChangesFocusEv(void *this_) {
 #endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:919
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:920
 // [-2] void setOpenExternalLinks(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem20setOpenExternalLinksEb(void *this_, bool open) {
@@ -842,7 +841,7 @@ void C_ZN17QGraphicsTextItem20setOpenExternalLinksEb(void *this_, bool open) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:920
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:921
 // [1] bool openExternalLinks()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsTextItem17openExternalLinksEv(void *this_) {
@@ -850,7 +849,7 @@ bool C_ZNK17QGraphicsTextItem17openExternalLinksEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:922
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:923
 // [-2] void setTextCursor(const QTextCursor &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem13setTextCursorERK11QTextCursor(void *this_, QTextCursor* cursor) {
@@ -858,7 +857,7 @@ void C_ZN17QGraphicsTextItem13setTextCursorERK11QTextCursor(void *this_, QTextCu
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:923
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:924
 // [8] QTextCursor textCursor()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsTextItem10textCursorEv(void *this_) {
@@ -867,7 +866,7 @@ return new QTextCursor(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:926
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:927
 // [-2] void linkActivated(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem13linkActivatedERK7QString(void *this_, QString* arg0) {
@@ -875,7 +874,7 @@ void C_ZN17QGraphicsTextItem13linkActivatedERK7QString(void *this_, QString* arg
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:927
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:928
 // [-2] void linkHovered(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsTextItem11linkHoveredERK7QString(void *this_, QString* arg0) {
@@ -898,5 +897,4 @@ void C_ZN17QGraphicsTextItem11linkHoveredERK7QString(void *this_, QString* arg0)
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

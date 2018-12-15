@@ -56,7 +56,7 @@ MyQStyleOptionGroupBox(const QStyleOptionGroupBox & other) : QStyleOptionGroupBo
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:639
+// /usr/include/qt/QtWidgets/qstyleoption.h:628
 // [-2] void QStyleOptionGroupBox()
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionGroupBoxC2Ev() {
@@ -64,7 +64,7 @@ void* C_ZN20QStyleOptionGroupBoxC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:640
+// /usr/include/qt/QtWidgets/qstyleoption.h:629
 // [-2] void QStyleOptionGroupBox(const QStyleOptionGroupBox &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QStyleOptionGroupBoxC2ERKS_(QStyleOptionGroupBox* other) {

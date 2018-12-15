@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qspinbox.h
 #ifndef protected
 #define protected public
@@ -176,7 +175,7 @@ void* C_QSpinBox_init_staticMetaObject(void* this_, void* strdat, void* dat, voi
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:93
+// /usr/include/qt/QtWidgets/qspinbox.h:94
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN8QSpinBox5eventEP6QEvent(void *this_, QEvent * event) {
@@ -184,7 +183,7 @@ bool C_ZN8QSpinBox5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:94
+// /usr/include/qt/QtWidgets/qspinbox.h:95
 // [4] QValidator::State validate(QString &, int &)
 extern "C" Q_DECL_EXPORT
 QValidator::State C_ZNK8QSpinBox8validateER7QStringRi(void *this_, QString* input, int & pos) {
@@ -192,7 +191,7 @@ QValidator::State C_ZNK8QSpinBox8validateER7QStringRi(void *this_, QString* inpu
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:95
+// /usr/include/qt/QtWidgets/qspinbox.h:96
 // [4] int valueFromText(const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QSpinBox13valueFromTextERK7QString(void *this_, QString* text) {
@@ -200,7 +199,7 @@ int C_ZNK8QSpinBox13valueFromTextERK7QString(void *this_, QString* text) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:96
+// /usr/include/qt/QtWidgets/qspinbox.h:97
 // [8] QString textFromValue(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QSpinBox13textFromValueEi(void *this_, int val) {
@@ -209,7 +208,7 @@ return new QString(rv);
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:97
+// /usr/include/qt/QtWidgets/qspinbox.h:98
 // [-2] void fixup(QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZNK8QSpinBox5fixupER7QString(void *this_, QString* str) {
@@ -217,7 +216,7 @@ void C_ZNK8QSpinBox5fixupER7QString(void *this_, QString* str) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:53
+// /usr/include/qt/QtWidgets/qspinbox.h:54
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QSpinBox10metaObjectEv(void *this_) {
@@ -225,7 +224,7 @@ void* C_ZNK8QSpinBox10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:53
+// /usr/include/qt/QtWidgets/qspinbox.h:54
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QSpinBox11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -233,7 +232,7 @@ void* C_ZN8QSpinBox11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:53
+// /usr/include/qt/QtWidgets/qspinbox.h:54
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN8QSpinBox11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -241,7 +240,7 @@ int C_ZN8QSpinBox11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:53
+// /usr/include/qt/QtWidgets/qspinbox.h:54
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QSpinBox2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -250,7 +249,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:53
+// /usr/include/qt/QtWidgets/qspinbox.h:54
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QSpinBox6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -259,7 +258,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:65
+// /usr/include/qt/QtWidgets/qspinbox.h:66
 // [-2] void QSpinBox(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN8QSpinBoxC2EP7QWidget(QWidget * parent) {
@@ -268,14 +267,14 @@ void* C_ZN8QSpinBoxC2EP7QWidget(QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:66
+// /usr/include/qt/QtWidgets/qspinbox.h:67
 // [-2] void ~QSpinBox()
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBoxD2Ev(void *this_) {
   delete (QSpinBox*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:68
+// /usr/include/qt/QtWidgets/qspinbox.h:69
 // [4] int value()
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QSpinBox5valueEv(void *this_) {
@@ -283,7 +282,7 @@ int C_ZNK8QSpinBox5valueEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:70
+// /usr/include/qt/QtWidgets/qspinbox.h:71
 // [8] QString prefix()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QSpinBox6prefixEv(void *this_) {
@@ -292,7 +291,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:71
+// /usr/include/qt/QtWidgets/qspinbox.h:72
 // [-2] void setPrefix(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox9setPrefixERK7QString(void *this_, QString* prefix) {
@@ -300,7 +299,7 @@ void C_ZN8QSpinBox9setPrefixERK7QString(void *this_, QString* prefix) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:73
+// /usr/include/qt/QtWidgets/qspinbox.h:74
 // [8] QString suffix()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QSpinBox6suffixEv(void *this_) {
@@ -309,7 +308,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:74
+// /usr/include/qt/QtWidgets/qspinbox.h:75
 // [-2] void setSuffix(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox9setSuffixERK7QString(void *this_, QString* suffix) {
@@ -317,7 +316,7 @@ void C_ZN8QSpinBox9setSuffixERK7QString(void *this_, QString* suffix) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:76
+// /usr/include/qt/QtWidgets/qspinbox.h:77
 // [8] QString cleanText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK8QSpinBox9cleanTextEv(void *this_) {
@@ -326,7 +325,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:78
+// /usr/include/qt/QtWidgets/qspinbox.h:79
 // [4] int singleStep()
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QSpinBox10singleStepEv(void *this_) {
@@ -334,7 +333,7 @@ int C_ZNK8QSpinBox10singleStepEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:79
+// /usr/include/qt/QtWidgets/qspinbox.h:80
 // [-2] void setSingleStep(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox13setSingleStepEi(void *this_, int val) {
@@ -342,7 +341,7 @@ void C_ZN8QSpinBox13setSingleStepEi(void *this_, int val) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:81
+// /usr/include/qt/QtWidgets/qspinbox.h:82
 // [4] int minimum()
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QSpinBox7minimumEv(void *this_) {
@@ -350,7 +349,7 @@ int C_ZNK8QSpinBox7minimumEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:82
+// /usr/include/qt/QtWidgets/qspinbox.h:83
 // [-2] void setMinimum(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox10setMinimumEi(void *this_, int min) {
@@ -358,7 +357,7 @@ void C_ZN8QSpinBox10setMinimumEi(void *this_, int min) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:84
+// /usr/include/qt/QtWidgets/qspinbox.h:85
 // [4] int maximum()
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QSpinBox7maximumEv(void *this_) {
@@ -366,7 +365,7 @@ int C_ZNK8QSpinBox7maximumEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:85
+// /usr/include/qt/QtWidgets/qspinbox.h:86
 // [-2] void setMaximum(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox10setMaximumEi(void *this_, int max) {
@@ -374,7 +373,7 @@ void C_ZN8QSpinBox10setMaximumEi(void *this_, int max) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:87
+// /usr/include/qt/QtWidgets/qspinbox.h:88
 // [-2] void setRange(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox8setRangeEii(void *this_, int min, int max) {
@@ -382,7 +381,7 @@ void C_ZN8QSpinBox8setRangeEii(void *this_, int min, int max) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:89
+// /usr/include/qt/QtWidgets/qspinbox.h:90
 // [4] int displayIntegerBase()
 extern "C" Q_DECL_EXPORT
 int C_ZNK8QSpinBox18displayIntegerBaseEv(void *this_) {
@@ -390,7 +389,7 @@ int C_ZNK8QSpinBox18displayIntegerBaseEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:90
+// /usr/include/qt/QtWidgets/qspinbox.h:91
 // [-2] void setDisplayIntegerBase(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox21setDisplayIntegerBaseEi(void *this_, int base) {
@@ -398,7 +397,7 @@ void C_ZN8QSpinBox21setDisplayIntegerBaseEi(void *this_, int base) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:101
+// /usr/include/qt/QtWidgets/qspinbox.h:102
 // [-2] void setValue(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox8setValueEi(void *this_, int val) {
@@ -406,7 +405,7 @@ void C_ZN8QSpinBox8setValueEi(void *this_, int val) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:104
+// /usr/include/qt/QtWidgets/qspinbox.h:105
 // [-2] void valueChanged(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox12valueChangedEi(void *this_, int arg0) {
@@ -414,7 +413,7 @@ void C_ZN8QSpinBox12valueChangedEi(void *this_, int arg0) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qspinbox.h:105
+// /usr/include/qt/QtWidgets/qspinbox.h:106
 // [-2] void valueChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN8QSpinBox12valueChangedERK7QString(void *this_, QString* arg0) {
@@ -437,5 +436,4 @@ void C_ZN8QSpinBox12valueChangedERK7QString(void *this_, QString* arg0) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -55,7 +55,7 @@ MyQStyleOptionToolButton(const QStyleOptionToolButton & other) : QStyleOptionToo
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:579
+// /usr/include/qt/QtWidgets/qstyleoption.h:568
 // [-2] void QStyleOptionToolButton()
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionToolButtonC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN22QStyleOptionToolButtonC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:580
+// /usr/include/qt/QtWidgets/qstyleoption.h:569
 // [-2] void QStyleOptionToolButton(const QStyleOptionToolButton &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN22QStyleOptionToolButtonC2ERKS_(QStyleOptionToolButton* other) {

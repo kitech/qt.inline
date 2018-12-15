@@ -56,7 +56,7 @@ MyQOpenGLTexture(const QImage & image, QOpenGLTexture::MipMapGeneration genMipMa
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:407
+// /usr/include/qt/QtGui/qopengltexture.h:406
 // [-2] void QOpenGLTexture(QOpenGLTexture::Target)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QOpenGLTextureC2ENS_6TargetE(QOpenGLTexture::Target target) {
@@ -64,7 +64,7 @@ void* C_ZN14QOpenGLTextureC2ENS_6TargetE(QOpenGLTexture::Target target) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:408
+// /usr/include/qt/QtGui/qopengltexture.h:407
 // [-2] void QOpenGLTexture(const QImage &, QOpenGLTexture::MipMapGeneration)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QOpenGLTextureC2ERK6QImageNS_16MipMapGenerationE(QImage* image, QOpenGLTexture::MipMapGeneration genMipMaps) {
@@ -72,7 +72,7 @@ void* C_ZN14QOpenGLTextureC2ERK6QImageNS_16MipMapGenerationE(QImage* image, QOpe
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:409
+// /usr/include/qt/QtGui/qopengltexture.h:408
 // [-2] void ~QOpenGLTexture()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTextureD2Ev(void *this_) {
@@ -80,7 +80,7 @@ void C_ZN14QOpenGLTextureD2Ev(void *this_) {
 }
 // Public Visibility=Default Availability=Available
 // since 5.4
-// /usr/include/qt/QtGui/qopengltexture.h:411
+// /usr/include/qt/QtGui/qopengltexture.h:410
 // [4] QOpenGLTexture::Target target()
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
@@ -90,7 +90,7 @@ QOpenGLTexture::Target C_ZNK14QOpenGLTexture6targetEv(void *this_) {
 #endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:414
+// /usr/include/qt/QtGui/qopengltexture.h:413
 // [1] bool create()
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QOpenGLTexture6createEv(void *this_) {
@@ -98,7 +98,7 @@ bool C_ZN14QOpenGLTexture6createEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:415
+// /usr/include/qt/QtGui/qopengltexture.h:414
 // [-2] void destroy()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7destroyEv(void *this_) {
@@ -106,7 +106,7 @@ void C_ZN14QOpenGLTexture7destroyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:416
+// /usr/include/qt/QtGui/qopengltexture.h:415
 // [1] bool isCreated()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QOpenGLTexture9isCreatedEv(void *this_) {
@@ -114,7 +114,7 @@ bool C_ZNK14QOpenGLTexture9isCreatedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:417
+// /usr/include/qt/QtGui/qopengltexture.h:416
 // [4] GLuint textureId()
 extern "C" Q_DECL_EXPORT
 GLuint C_ZNK14QOpenGLTexture9textureIdEv(void *this_) {
@@ -122,7 +122,7 @@ GLuint C_ZNK14QOpenGLTexture9textureIdEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:420
+// /usr/include/qt/QtGui/qopengltexture.h:419
 // [-2] void bind()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture4bindEv(void *this_) {
@@ -130,7 +130,7 @@ void C_ZN14QOpenGLTexture4bindEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:421
+// /usr/include/qt/QtGui/qopengltexture.h:420
 // [-2] void bind(uint, QOpenGLTexture::TextureUnitReset)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture4bindEjNS_16TextureUnitResetE(void *this_, uint unit, QOpenGLTexture::TextureUnitReset reset) {
@@ -138,7 +138,7 @@ void C_ZN14QOpenGLTexture4bindEjNS_16TextureUnitResetE(void *this_, uint unit, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:422
+// /usr/include/qt/QtGui/qopengltexture.h:421
 // [-2] void release()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7releaseEv(void *this_) {
@@ -146,7 +146,7 @@ void C_ZN14QOpenGLTexture7releaseEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:423
+// /usr/include/qt/QtGui/qopengltexture.h:422
 // [-2] void release(uint, QOpenGLTexture::TextureUnitReset)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7releaseEjNS_16TextureUnitResetE(void *this_, uint unit, QOpenGLTexture::TextureUnitReset reset) {
@@ -154,7 +154,7 @@ void C_ZN14QOpenGLTexture7releaseEjNS_16TextureUnitResetE(void *this_, uint unit
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:425
+// /usr/include/qt/QtGui/qopengltexture.h:424
 // [1] bool isBound()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QOpenGLTexture7isBoundEv(void *this_) {
@@ -162,7 +162,7 @@ bool C_ZNK14QOpenGLTexture7isBoundEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:426
+// /usr/include/qt/QtGui/qopengltexture.h:425
 // [1] bool isBound(uint)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QOpenGLTexture7isBoundEj(void *this_, uint unit) {
@@ -170,7 +170,7 @@ bool C_ZN14QOpenGLTexture7isBoundEj(void *this_, uint unit) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:427
+// /usr/include/qt/QtGui/qopengltexture.h:426
 // [4] GLuint boundTextureId(QOpenGLTexture::BindingTarget)
 extern "C" Q_DECL_EXPORT
 GLuint C_ZN14QOpenGLTexture14boundTextureIdENS_13BindingTargetE(QOpenGLTexture::BindingTarget target) {
@@ -178,7 +178,7 @@ GLuint C_ZN14QOpenGLTexture14boundTextureIdENS_13BindingTargetE(QOpenGLTexture::
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:428
+// /usr/include/qt/QtGui/qopengltexture.h:427
 // [4] GLuint boundTextureId(uint, QOpenGLTexture::BindingTarget)
 extern "C" Q_DECL_EXPORT
 GLuint C_ZN14QOpenGLTexture14boundTextureIdEjNS_13BindingTargetE(uint unit, QOpenGLTexture::BindingTarget target) {
@@ -186,7 +186,7 @@ GLuint C_ZN14QOpenGLTexture14boundTextureIdEjNS_13BindingTargetE(uint unit, QOpe
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:431
+// /usr/include/qt/QtGui/qopengltexture.h:430
 // [-2] void setFormat(QOpenGLTexture::TextureFormat)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture9setFormatENS_13TextureFormatE(void *this_, QOpenGLTexture::TextureFormat format) {
@@ -194,7 +194,7 @@ void C_ZN14QOpenGLTexture9setFormatENS_13TextureFormatE(void *this_, QOpenGLText
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:432
+// /usr/include/qt/QtGui/qopengltexture.h:431
 // [4] QOpenGLTexture::TextureFormat format()
 extern "C" Q_DECL_EXPORT
 QOpenGLTexture::TextureFormat C_ZNK14QOpenGLTexture6formatEv(void *this_) {
@@ -202,7 +202,7 @@ QOpenGLTexture::TextureFormat C_ZNK14QOpenGLTexture6formatEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:433
+// /usr/include/qt/QtGui/qopengltexture.h:432
 // [-2] void setSize(int, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setSizeEiii(void *this_, int width, int height, int depth) {
@@ -210,7 +210,7 @@ void C_ZN14QOpenGLTexture7setSizeEiii(void *this_, int width, int height, int de
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:434
+// /usr/include/qt/QtGui/qopengltexture.h:433
 // [4] int width()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture5widthEv(void *this_) {
@@ -218,7 +218,7 @@ int C_ZNK14QOpenGLTexture5widthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:435
+// /usr/include/qt/QtGui/qopengltexture.h:434
 // [4] int height()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture6heightEv(void *this_) {
@@ -226,7 +226,7 @@ int C_ZNK14QOpenGLTexture6heightEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:436
+// /usr/include/qt/QtGui/qopengltexture.h:435
 // [4] int depth()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture5depthEv(void *this_) {
@@ -234,7 +234,7 @@ int C_ZNK14QOpenGLTexture5depthEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:437
+// /usr/include/qt/QtGui/qopengltexture.h:436
 // [-2] void setMipLevels(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture12setMipLevelsEi(void *this_, int levels) {
@@ -242,7 +242,7 @@ void C_ZN14QOpenGLTexture12setMipLevelsEi(void *this_, int levels) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:438
+// /usr/include/qt/QtGui/qopengltexture.h:437
 // [4] int mipLevels()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture9mipLevelsEv(void *this_) {
@@ -250,7 +250,7 @@ int C_ZNK14QOpenGLTexture9mipLevelsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:439
+// /usr/include/qt/QtGui/qopengltexture.h:438
 // [4] int maximumMipLevels()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture16maximumMipLevelsEv(void *this_) {
@@ -258,7 +258,7 @@ int C_ZNK14QOpenGLTexture16maximumMipLevelsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:440
+// /usr/include/qt/QtGui/qopengltexture.h:439
 // [-2] void setLayers(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture9setLayersEi(void *this_, int layers) {
@@ -266,7 +266,7 @@ void C_ZN14QOpenGLTexture9setLayersEi(void *this_, int layers) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:441
+// /usr/include/qt/QtGui/qopengltexture.h:440
 // [4] int layers()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture6layersEv(void *this_) {
@@ -274,7 +274,7 @@ int C_ZNK14QOpenGLTexture6layersEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:442
+// /usr/include/qt/QtGui/qopengltexture.h:441
 // [4] int faces()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture5facesEv(void *this_) {
@@ -282,7 +282,7 @@ int C_ZNK14QOpenGLTexture5facesEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:443
+// /usr/include/qt/QtGui/qopengltexture.h:442
 // [-2] void setSamples(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture10setSamplesEi(void *this_, int samples) {
@@ -290,7 +290,7 @@ void C_ZN14QOpenGLTexture10setSamplesEi(void *this_, int samples) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:444
+// /usr/include/qt/QtGui/qopengltexture.h:443
 // [4] int samples()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture7samplesEv(void *this_) {
@@ -298,7 +298,7 @@ int C_ZNK14QOpenGLTexture7samplesEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:445
+// /usr/include/qt/QtGui/qopengltexture.h:444
 // [-2] void setFixedSamplePositions(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture23setFixedSamplePositionsEb(void *this_, bool fixed) {
@@ -306,7 +306,7 @@ void C_ZN14QOpenGLTexture23setFixedSamplePositionsEb(void *this_, bool fixed) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:446
+// /usr/include/qt/QtGui/qopengltexture.h:445
 // [1] bool isFixedSamplePositions()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QOpenGLTexture22isFixedSamplePositionsEv(void *this_) {
@@ -314,7 +314,7 @@ bool C_ZNK14QOpenGLTexture22isFixedSamplePositionsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:447
+// /usr/include/qt/QtGui/qopengltexture.h:446
 // [-2] void allocateStorage()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture15allocateStorageEv(void *this_) {
@@ -322,7 +322,7 @@ void C_ZN14QOpenGLTexture15allocateStorageEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:448
+// /usr/include/qt/QtGui/qopengltexture.h:447
 // [-2] void allocateStorage(QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture15allocateStorageENS_11PixelFormatENS_9PixelTypeE(void *this_, QOpenGLTexture::PixelFormat pixelFormat, QOpenGLTexture::PixelType pixelType) {
@@ -330,7 +330,7 @@ void C_ZN14QOpenGLTexture15allocateStorageENS_11PixelFormatENS_9PixelTypeE(void 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:449
+// /usr/include/qt/QtGui/qopengltexture.h:448
 // [1] bool isStorageAllocated()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QOpenGLTexture18isStorageAllocatedEv(void *this_) {
@@ -338,7 +338,7 @@ bool C_ZNK14QOpenGLTexture18isStorageAllocatedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:451
+// /usr/include/qt/QtGui/qopengltexture.h:450
 // [8] QOpenGLTexture * createTextureView(QOpenGLTexture::Target, QOpenGLTexture::TextureFormat, int, int, int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLTexture17createTextureViewENS_6TargetENS_13TextureFormatEiiii(void *this_, QOpenGLTexture::Target target, QOpenGLTexture::TextureFormat viewFormat, int minimumMipmapLevel, int maximumMipmapLevel, int minimumLayer, int maximumLayer) {
@@ -346,7 +346,7 @@ void* C_ZNK14QOpenGLTexture17createTextureViewENS_6TargetENS_13TextureFormatEiii
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:455
+// /usr/include/qt/QtGui/qopengltexture.h:454
 // [1] bool isTextureView()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QOpenGLTexture13isTextureViewEv(void *this_) {
@@ -354,7 +354,7 @@ bool C_ZNK14QOpenGLTexture13isTextureViewEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:460
+// /usr/include/qt/QtGui/qopengltexture.h:459
 // [-2] void setData(int, int, QOpenGLTexture::CubeMapFace, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiiNS_11CubeMapFaceENS_11PixelFormatENS_9PixelTypeEPvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, QOpenGLTexture::CubeMapFace cubeFace, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -362,7 +362,7 @@ void C_ZN14QOpenGLTexture7setDataEiiNS_11CubeMapFaceENS_11PixelFormatENS_9PixelT
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:463
+// /usr/include/qt/QtGui/qopengltexture.h:462
 // [-2] void setData(int, int, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiiNS_11PixelFormatENS_9PixelTypeEPvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -370,7 +370,7 @@ void C_ZN14QOpenGLTexture7setDataEiiNS_11PixelFormatENS_9PixelTypeEPvPK27QOpenGL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:466
+// /usr/include/qt/QtGui/qopengltexture.h:465
 // [-2] void setData(int, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiNS_11PixelFormatENS_9PixelTypeEPvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -378,7 +378,7 @@ void C_ZN14QOpenGLTexture7setDataEiNS_11PixelFormatENS_9PixelTypeEPvPK27QOpenGLP
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:469
+// /usr/include/qt/QtGui/qopengltexture.h:468
 // [-2] void setData(QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataENS_11PixelFormatENS_9PixelTypeEPvPK27QOpenGLPixelTransferOptions(void *this_, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -386,7 +386,7 @@ void C_ZN14QOpenGLTexture7setDataENS_11PixelFormatENS_9PixelTypeEPvPK27QOpenGLPi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:473
+// /usr/include/qt/QtGui/qopengltexture.h:472
 // [-2] void setData(int, int, QOpenGLTexture::CubeMapFace, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiiNS_11CubeMapFaceENS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, QOpenGLTexture::CubeMapFace cubeFace, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -394,7 +394,7 @@ void C_ZN14QOpenGLTexture7setDataEiiNS_11CubeMapFaceENS_11PixelFormatENS_9PixelT
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:476
+// /usr/include/qt/QtGui/qopengltexture.h:475
 // [-2] void setData(int, int, int, QOpenGLTexture::CubeMapFace, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiiiNS_11CubeMapFaceENS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, int layerCount, QOpenGLTexture::CubeMapFace cubeFace, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -402,7 +402,7 @@ void C_ZN14QOpenGLTexture7setDataEiiiNS_11CubeMapFaceENS_11PixelFormatENS_9Pixel
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:479
+// /usr/include/qt/QtGui/qopengltexture.h:478
 // [-2] void setData(int, int, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiiNS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -410,7 +410,7 @@ void C_ZN14QOpenGLTexture7setDataEiiNS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenG
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:482
+// /usr/include/qt/QtGui/qopengltexture.h:481
 // [-2] void setData(int, QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataEiNS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -418,7 +418,7 @@ void C_ZN14QOpenGLTexture7setDataEiNS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:485
+// /usr/include/qt/QtGui/qopengltexture.h:484
 // [-2] void setData(QOpenGLTexture::PixelFormat, QOpenGLTexture::PixelType, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataENS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLPixelTransferOptions(void *this_, QOpenGLTexture::PixelFormat sourceFormat, QOpenGLTexture::PixelType sourceType, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -426,7 +426,7 @@ void C_ZN14QOpenGLTexture7setDataENS_11PixelFormatENS_9PixelTypeEPKvPK27QOpenGLP
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:491
+// /usr/include/qt/QtGui/qopengltexture.h:490
 // [-2] void setCompressedData(int, int, QOpenGLTexture::CubeMapFace, int, void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiiNS_11CubeMapFaceEiPvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, QOpenGLTexture::CubeMapFace cubeFace, int dataSize, void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -434,7 +434,7 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiiNS_11CubeMapFaceEiPvPK27QOpenGLPi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:494
+// /usr/include/qt/QtGui/qopengltexture.h:493
 // [-2] void setCompressedData(int, int, int, void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiiiPvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, int dataSize, void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -442,7 +442,7 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiiiPvPK27QOpenGLPixelTransferOption
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:497
+// /usr/include/qt/QtGui/qopengltexture.h:496
 // [-2] void setCompressedData(int, int, void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiiPvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int dataSize, void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -450,7 +450,7 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiiPvPK27QOpenGLPixelTransferOptions
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:499
+// /usr/include/qt/QtGui/qopengltexture.h:498
 // [-2] void setCompressedData(int, void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiPvPK27QOpenGLPixelTransferOptions(void *this_, int dataSize, void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -458,7 +458,7 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiPvPK27QOpenGLPixelTransferOptions(
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:503
+// /usr/include/qt/QtGui/qopengltexture.h:502
 // [-2] void setCompressedData(int, int, QOpenGLTexture::CubeMapFace, int, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiiNS_11CubeMapFaceEiPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, QOpenGLTexture::CubeMapFace cubeFace, int dataSize, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -466,7 +466,7 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiiNS_11CubeMapFaceEiPKvPK27QOpenGLP
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:506
+// /usr/include/qt/QtGui/qopengltexture.h:505
 // [-2] void setCompressedData(int, int, int, QOpenGLTexture::CubeMapFace, int, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiiiNS_11CubeMapFaceEiPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, int layerCount, QOpenGLTexture::CubeMapFace cubeFace, int dataSize, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -474,7 +474,7 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiiiNS_11CubeMapFaceEiPKvPK27QOpenGL
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:509
+// /usr/include/qt/QtGui/qopengltexture.h:508
 // [-2] void setCompressedData(int, int, int, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiiiPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int layer, int dataSize, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -482,7 +482,7 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiiiPKvPK27QOpenGLPixelTransferOptio
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:512
+// /usr/include/qt/QtGui/qopengltexture.h:511
 // [-2] void setCompressedData(int, int, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiiPKvPK27QOpenGLPixelTransferOptions(void *this_, int mipLevel, int dataSize, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -490,7 +490,7 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiiPKvPK27QOpenGLPixelTransferOption
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:514
+// /usr/include/qt/QtGui/qopengltexture.h:513
 // [-2] void setCompressedData(int, const void *, const QOpenGLPixelTransferOptions *const)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setCompressedDataEiPKvPK27QOpenGLPixelTransferOptions(void *this_, int dataSize, const void * data, const QOpenGLPixelTransferOptions *const options) {
@@ -498,7 +498,7 @@ void C_ZN14QOpenGLTexture17setCompressedDataEiPKvPK27QOpenGLPixelTransferOptions
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:518
+// /usr/include/qt/QtGui/qopengltexture.h:517
 // [-2] void setData(const QImage &, QOpenGLTexture::MipMapGeneration)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture7setDataERK6QImageNS_16MipMapGenerationE(void *this_, QImage* image, QOpenGLTexture::MipMapGeneration genMipMaps) {
@@ -506,7 +506,7 @@ void C_ZN14QOpenGLTexture7setDataERK6QImageNS_16MipMapGenerationE(void *this_, Q
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:520
+// /usr/include/qt/QtGui/qopengltexture.h:519
 // [1] bool hasFeature(QOpenGLTexture::Feature)
 extern "C" Q_DECL_EXPORT
 bool C_ZN14QOpenGLTexture10hasFeatureENS_7FeatureE(QOpenGLTexture::Feature feature) {
@@ -514,7 +514,7 @@ bool C_ZN14QOpenGLTexture10hasFeatureENS_7FeatureE(QOpenGLTexture::Feature featu
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:523
+// /usr/include/qt/QtGui/qopengltexture.h:522
 // [-2] void setMipBaseLevel(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture15setMipBaseLevelEi(void *this_, int baseLevel) {
@@ -522,7 +522,7 @@ void C_ZN14QOpenGLTexture15setMipBaseLevelEi(void *this_, int baseLevel) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:524
+// /usr/include/qt/QtGui/qopengltexture.h:523
 // [4] int mipBaseLevel()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture12mipBaseLevelEv(void *this_) {
@@ -530,7 +530,7 @@ int C_ZNK14QOpenGLTexture12mipBaseLevelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:525
+// /usr/include/qt/QtGui/qopengltexture.h:524
 // [-2] void setMipMaxLevel(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture14setMipMaxLevelEi(void *this_, int maxLevel) {
@@ -538,7 +538,7 @@ void C_ZN14QOpenGLTexture14setMipMaxLevelEi(void *this_, int maxLevel) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:526
+// /usr/include/qt/QtGui/qopengltexture.h:525
 // [4] int mipMaxLevel()
 extern "C" Q_DECL_EXPORT
 int C_ZNK14QOpenGLTexture11mipMaxLevelEv(void *this_) {
@@ -546,7 +546,7 @@ int C_ZNK14QOpenGLTexture11mipMaxLevelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:527
+// /usr/include/qt/QtGui/qopengltexture.h:526
 // [-2] void setMipLevelRange(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture16setMipLevelRangeEii(void *this_, int baseLevel, int maxLevel) {
@@ -554,7 +554,7 @@ void C_ZN14QOpenGLTexture16setMipLevelRangeEii(void *this_, int baseLevel, int m
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:528
+// /usr/include/qt/QtGui/qopengltexture.h:527
 // [8] QPair<int, int> mipLevelRange()
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QOpenGLTexture13mipLevelRangeEv(void *this_) {
@@ -563,7 +563,7 @@ void C_ZNK14QOpenGLTexture13mipLevelRangeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:530
+// /usr/include/qt/QtGui/qopengltexture.h:529
 // [-2] void setAutoMipMapGenerationEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture30setAutoMipMapGenerationEnabledEb(void *this_, bool enabled) {
@@ -571,7 +571,7 @@ void C_ZN14QOpenGLTexture30setAutoMipMapGenerationEnabledEb(void *this_, bool en
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:531
+// /usr/include/qt/QtGui/qopengltexture.h:530
 // [1] bool isAutoMipMapGenerationEnabled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK14QOpenGLTexture29isAutoMipMapGenerationEnabledEv(void *this_) {
@@ -579,7 +579,7 @@ bool C_ZNK14QOpenGLTexture29isAutoMipMapGenerationEnabledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:533
+// /usr/include/qt/QtGui/qopengltexture.h:532
 // [-2] void generateMipMaps()
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture15generateMipMapsEv(void *this_) {
@@ -587,7 +587,7 @@ void C_ZN14QOpenGLTexture15generateMipMapsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:534
+// /usr/include/qt/QtGui/qopengltexture.h:533
 // [-2] void generateMipMaps(int, bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture15generateMipMapsEib(void *this_, int baseLevel, bool resetBaseLevel) {
@@ -595,7 +595,7 @@ void C_ZN14QOpenGLTexture15generateMipMapsEib(void *this_, int baseLevel, bool r
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:536
+// /usr/include/qt/QtGui/qopengltexture.h:535
 // [-2] void setSwizzleMask(QOpenGLTexture::SwizzleComponent, QOpenGLTexture::SwizzleValue)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture14setSwizzleMaskENS_16SwizzleComponentENS_12SwizzleValueE(void *this_, QOpenGLTexture::SwizzleComponent component, QOpenGLTexture::SwizzleValue value) {
@@ -603,7 +603,7 @@ void C_ZN14QOpenGLTexture14setSwizzleMaskENS_16SwizzleComponentENS_12SwizzleValu
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:537
+// /usr/include/qt/QtGui/qopengltexture.h:536
 // [-2] void setSwizzleMask(QOpenGLTexture::SwizzleValue, QOpenGLTexture::SwizzleValue, QOpenGLTexture::SwizzleValue, QOpenGLTexture::SwizzleValue)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture14setSwizzleMaskENS_12SwizzleValueES0_S0_S0_(void *this_, QOpenGLTexture::SwizzleValue r, QOpenGLTexture::SwizzleValue g, QOpenGLTexture::SwizzleValue b, QOpenGLTexture::SwizzleValue a) {
@@ -611,7 +611,7 @@ void C_ZN14QOpenGLTexture14setSwizzleMaskENS_12SwizzleValueES0_S0_S0_(void *this
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:539
+// /usr/include/qt/QtGui/qopengltexture.h:538
 // [4] QOpenGLTexture::SwizzleValue swizzleMask(QOpenGLTexture::SwizzleComponent)
 extern "C" Q_DECL_EXPORT
 QOpenGLTexture::SwizzleValue C_ZNK14QOpenGLTexture11swizzleMaskENS_16SwizzleComponentE(void *this_, QOpenGLTexture::SwizzleComponent component) {
@@ -619,7 +619,7 @@ QOpenGLTexture::SwizzleValue C_ZNK14QOpenGLTexture11swizzleMaskENS_16SwizzleComp
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:547
+// /usr/include/qt/QtGui/qopengltexture.h:546
 // [-2] void setDepthStencilMode(QOpenGLTexture::DepthStencilMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture19setDepthStencilModeENS_16DepthStencilModeE(void *this_, QOpenGLTexture::DepthStencilMode mode) {
@@ -628,7 +628,7 @@ void C_ZN14QOpenGLTexture19setDepthStencilModeENS_16DepthStencilModeE(void *this
 
 // Public Visibility=Default Availability=Available
 // since 5.4
-// /usr/include/qt/QtGui/qopengltexture.h:548
+// /usr/include/qt/QtGui/qopengltexture.h:547
 // [4] QOpenGLTexture::DepthStencilMode depthStencilMode()
 #if QT_VERSION >= 0x050400
 extern "C" Q_DECL_EXPORT
@@ -638,7 +638,7 @@ QOpenGLTexture::DepthStencilMode C_ZNK14QOpenGLTexture16depthStencilModeEv(void 
 #endif // QT_VERSION >= 0x050400
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:562
+// /usr/include/qt/QtGui/qopengltexture.h:561
 // [-2] void setComparisonFunction(QOpenGLTexture::ComparisonFunction)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture21setComparisonFunctionENS_18ComparisonFunctionE(void *this_, QOpenGLTexture::ComparisonFunction function) {
@@ -647,7 +647,7 @@ void C_ZN14QOpenGLTexture21setComparisonFunctionENS_18ComparisonFunctionE(void *
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtGui/qopengltexture.h:563
+// /usr/include/qt/QtGui/qopengltexture.h:562
 // [4] QOpenGLTexture::ComparisonFunction comparisonFunction()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -657,7 +657,7 @@ QOpenGLTexture::ComparisonFunction C_ZNK14QOpenGLTexture18comparisonFunctionEv(v
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:570
+// /usr/include/qt/QtGui/qopengltexture.h:569
 // [-2] void setComparisonMode(QOpenGLTexture::ComparisonMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture17setComparisonModeENS_14ComparisonModeE(void *this_, QOpenGLTexture::ComparisonMode mode) {
@@ -666,7 +666,7 @@ void C_ZN14QOpenGLTexture17setComparisonModeENS_14ComparisonModeE(void *this_, Q
 
 // Public Visibility=Default Availability=Available
 // since 5.5
-// /usr/include/qt/QtGui/qopengltexture.h:571
+// /usr/include/qt/QtGui/qopengltexture.h:570
 // [4] QOpenGLTexture::ComparisonMode comparisonMode()
 #if QT_VERSION >= 0x050500
 extern "C" Q_DECL_EXPORT
@@ -676,7 +676,7 @@ QOpenGLTexture::ComparisonMode C_ZNK14QOpenGLTexture14comparisonModeEv(void *thi
 #endif // QT_VERSION >= 0x050500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:584
+// /usr/include/qt/QtGui/qopengltexture.h:583
 // [-2] void setMinificationFilter(QOpenGLTexture::Filter)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture21setMinificationFilterENS_6FilterE(void *this_, QOpenGLTexture::Filter filter) {
@@ -684,7 +684,7 @@ void C_ZN14QOpenGLTexture21setMinificationFilterENS_6FilterE(void *this_, QOpenG
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:585
+// /usr/include/qt/QtGui/qopengltexture.h:584
 // [4] QOpenGLTexture::Filter minificationFilter()
 extern "C" Q_DECL_EXPORT
 QOpenGLTexture::Filter C_ZNK14QOpenGLTexture18minificationFilterEv(void *this_) {
@@ -692,7 +692,7 @@ QOpenGLTexture::Filter C_ZNK14QOpenGLTexture18minificationFilterEv(void *this_) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:586
+// /usr/include/qt/QtGui/qopengltexture.h:585
 // [-2] void setMagnificationFilter(QOpenGLTexture::Filter)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture22setMagnificationFilterENS_6FilterE(void *this_, QOpenGLTexture::Filter filter) {
@@ -700,7 +700,7 @@ void C_ZN14QOpenGLTexture22setMagnificationFilterENS_6FilterE(void *this_, QOpen
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:587
+// /usr/include/qt/QtGui/qopengltexture.h:586
 // [4] QOpenGLTexture::Filter magnificationFilter()
 extern "C" Q_DECL_EXPORT
 QOpenGLTexture::Filter C_ZNK14QOpenGLTexture19magnificationFilterEv(void *this_) {
@@ -708,7 +708,7 @@ QOpenGLTexture::Filter C_ZNK14QOpenGLTexture19magnificationFilterEv(void *this_)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:588
+// /usr/include/qt/QtGui/qopengltexture.h:587
 // [-2] void setMinMagFilters(QOpenGLTexture::Filter, QOpenGLTexture::Filter)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture16setMinMagFiltersENS_6FilterES0_(void *this_, QOpenGLTexture::Filter minificationFilter, QOpenGLTexture::Filter magnificationFilter) {
@@ -716,7 +716,7 @@ void C_ZN14QOpenGLTexture16setMinMagFiltersENS_6FilterES0_(void *this_, QOpenGLT
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:590
+// /usr/include/qt/QtGui/qopengltexture.h:589
 // [-2] QPair<QOpenGLTexture::Filter, QOpenGLTexture::Filter> minMagFilters()
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QOpenGLTexture13minMagFiltersEv(void *this_) {
@@ -725,7 +725,7 @@ void C_ZNK14QOpenGLTexture13minMagFiltersEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:591
+// /usr/include/qt/QtGui/qopengltexture.h:590
 // [-2] void setMaximumAnisotropy(float)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture20setMaximumAnisotropyEf(void *this_, float anisotropy) {
@@ -733,7 +733,7 @@ void C_ZN14QOpenGLTexture20setMaximumAnisotropyEf(void *this_, float anisotropy)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:592
+// /usr/include/qt/QtGui/qopengltexture.h:591
 // [4] float maximumAnisotropy()
 extern "C" Q_DECL_EXPORT
 float C_ZNK14QOpenGLTexture17maximumAnisotropyEv(void *this_) {
@@ -741,7 +741,7 @@ float C_ZNK14QOpenGLTexture17maximumAnisotropyEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:594
+// /usr/include/qt/QtGui/qopengltexture.h:593
 // [-2] void setWrapMode(QOpenGLTexture::WrapMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture11setWrapModeENS_8WrapModeE(void *this_, QOpenGLTexture::WrapMode mode) {
@@ -749,7 +749,7 @@ void C_ZN14QOpenGLTexture11setWrapModeENS_8WrapModeE(void *this_, QOpenGLTexture
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:595
+// /usr/include/qt/QtGui/qopengltexture.h:594
 // [-2] void setWrapMode(QOpenGLTexture::CoordinateDirection, QOpenGLTexture::WrapMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture11setWrapModeENS_19CoordinateDirectionENS_8WrapModeE(void *this_, QOpenGLTexture::CoordinateDirection direction, QOpenGLTexture::WrapMode mode) {
@@ -757,7 +757,7 @@ void C_ZN14QOpenGLTexture11setWrapModeENS_19CoordinateDirectionENS_8WrapModeE(vo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:596
+// /usr/include/qt/QtGui/qopengltexture.h:595
 // [4] QOpenGLTexture::WrapMode wrapMode(QOpenGLTexture::CoordinateDirection)
 extern "C" Q_DECL_EXPORT
 QOpenGLTexture::WrapMode C_ZNK14QOpenGLTexture8wrapModeENS_19CoordinateDirectionE(void *this_, QOpenGLTexture::CoordinateDirection direction) {
@@ -765,7 +765,7 @@ QOpenGLTexture::WrapMode C_ZNK14QOpenGLTexture8wrapModeENS_19CoordinateDirection
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:598
+// /usr/include/qt/QtGui/qopengltexture.h:597
 // [-2] void setBorderColor(QColor)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture14setBorderColorE6QColor(void *this_, QColor* color) {
@@ -773,7 +773,7 @@ void C_ZN14QOpenGLTexture14setBorderColorE6QColor(void *this_, QColor* color) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:599
+// /usr/include/qt/QtGui/qopengltexture.h:598
 // [-2] void setBorderColor(float, float, float, float)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture14setBorderColorEffff(void *this_, float r, float g, float b, float a) {
@@ -781,7 +781,7 @@ void C_ZN14QOpenGLTexture14setBorderColorEffff(void *this_, float r, float g, fl
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:600
+// /usr/include/qt/QtGui/qopengltexture.h:599
 // [-2] void setBorderColor(int, int, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture14setBorderColorEiiii(void *this_, int r, int g, int b, int a) {
@@ -789,7 +789,7 @@ void C_ZN14QOpenGLTexture14setBorderColorEiiii(void *this_, int r, int g, int b,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:601
+// /usr/include/qt/QtGui/qopengltexture.h:600
 // [-2] void setBorderColor(uint, uint, uint, uint)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture14setBorderColorEjjjj(void *this_, uint r, uint g, uint b, uint a) {
@@ -797,7 +797,7 @@ void C_ZN14QOpenGLTexture14setBorderColorEjjjj(void *this_, uint r, uint g, uint
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:603
+// /usr/include/qt/QtGui/qopengltexture.h:602
 // [16] QColor borderColor()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK14QOpenGLTexture11borderColorEv(void *this_) {
@@ -806,7 +806,7 @@ return new QColor(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:604
+// /usr/include/qt/QtGui/qopengltexture.h:603
 // [-2] void borderColor(float *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QOpenGLTexture11borderColorEPf(void *this_, float * border) {
@@ -814,7 +814,7 @@ void C_ZNK14QOpenGLTexture11borderColorEPf(void *this_, float * border) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:605
+// /usr/include/qt/QtGui/qopengltexture.h:604
 // [-2] void borderColor(int *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QOpenGLTexture11borderColorEPi(void *this_, int * border) {
@@ -822,7 +822,7 @@ void C_ZNK14QOpenGLTexture11borderColorEPi(void *this_, int * border) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:606
+// /usr/include/qt/QtGui/qopengltexture.h:605
 // [-2] void borderColor(unsigned int *)
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QOpenGLTexture11borderColorEPj(void *this_, unsigned int * border) {
@@ -830,7 +830,7 @@ void C_ZNK14QOpenGLTexture11borderColorEPj(void *this_, unsigned int * border) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:608
+// /usr/include/qt/QtGui/qopengltexture.h:607
 // [-2] void setMinimumLevelOfDetail(float)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture23setMinimumLevelOfDetailEf(void *this_, float value) {
@@ -838,7 +838,7 @@ void C_ZN14QOpenGLTexture23setMinimumLevelOfDetailEf(void *this_, float value) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:609
+// /usr/include/qt/QtGui/qopengltexture.h:608
 // [4] float minimumLevelOfDetail()
 extern "C" Q_DECL_EXPORT
 float C_ZNK14QOpenGLTexture20minimumLevelOfDetailEv(void *this_) {
@@ -846,7 +846,7 @@ float C_ZNK14QOpenGLTexture20minimumLevelOfDetailEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:610
+// /usr/include/qt/QtGui/qopengltexture.h:609
 // [-2] void setMaximumLevelOfDetail(float)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture23setMaximumLevelOfDetailEf(void *this_, float value) {
@@ -854,7 +854,7 @@ void C_ZN14QOpenGLTexture23setMaximumLevelOfDetailEf(void *this_, float value) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:611
+// /usr/include/qt/QtGui/qopengltexture.h:610
 // [4] float maximumLevelOfDetail()
 extern "C" Q_DECL_EXPORT
 float C_ZNK14QOpenGLTexture20maximumLevelOfDetailEv(void *this_) {
@@ -862,7 +862,7 @@ float C_ZNK14QOpenGLTexture20maximumLevelOfDetailEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:612
+// /usr/include/qt/QtGui/qopengltexture.h:611
 // [-2] void setLevelOfDetailRange(float, float)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture21setLevelOfDetailRangeEff(void *this_, float min, float max) {
@@ -870,7 +870,7 @@ void C_ZN14QOpenGLTexture21setLevelOfDetailRangeEff(void *this_, float min, floa
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:613
+// /usr/include/qt/QtGui/qopengltexture.h:612
 // [-2] QPair<float, float> levelOfDetailRange()
 extern "C" Q_DECL_EXPORT
 void C_ZNK14QOpenGLTexture18levelOfDetailRangeEv(void *this_) {
@@ -879,7 +879,7 @@ void C_ZNK14QOpenGLTexture18levelOfDetailRangeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:614
+// /usr/include/qt/QtGui/qopengltexture.h:613
 // [-2] void setLevelofDetailBias(float)
 extern "C" Q_DECL_EXPORT
 void C_ZN14QOpenGLTexture20setLevelofDetailBiasEf(void *this_, float bias) {
@@ -887,7 +887,7 @@ void C_ZN14QOpenGLTexture20setLevelofDetailBiasEf(void *this_, float bias) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopengltexture.h:615
+// /usr/include/qt/QtGui/qopengltexture.h:614
 // [4] float levelofDetailBias()
 extern "C" Q_DECL_EXPORT
 float C_ZNK14QOpenGLTexture17levelofDetailBiasEv(void *this_) {

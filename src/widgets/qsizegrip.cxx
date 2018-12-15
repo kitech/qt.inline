@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qsizegrip.h
 #ifndef protected
 #define protected public
@@ -383,5 +382,4 @@ void C_ZN9QSizeGrip10setVisibleEb(void *this_, bool arg0) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

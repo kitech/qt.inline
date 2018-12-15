@@ -230,37 +230,13 @@ return new QString(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:284
+// /usr/include/qt/QtCore/qversionnumber.h:283
 // [8] QVersionNumber fromString(const QString &, int *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN14QVersionNumber10fromStringERK7QStringPi(QString* string, int * suffixIndex) {
   auto rv = QVersionNumber::fromString(*string, suffixIndex);
 return new QVersionNumber(rv);
 }
-
-// Public static Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qversionnumber.h:286
-// [8] QVersionNumber fromString(QLatin1String, int *)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumber10fromStringE13QLatin1StringPi(QLatin1String* string, int * suffixIndex) {
-  auto rv = QVersionNumber::fromString(*string, suffixIndex);
-return new QVersionNumber(rv);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public static Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qversionnumber.h:287
-// [8] QVersionNumber fromString(QStringView, int *)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumber10fromStringE11QStringViewPi(QStringView* string, int * suffixIndex) {
-  auto rv = QVersionNumber::fromString(*string, suffixIndex);
-return new QVersionNumber(rv);
-}
-#endif // QT_VERSION >= 0x050a00
 
 
 extern "C" Q_DECL_EXPORT

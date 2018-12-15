@@ -55,7 +55,7 @@ MyQStyleOptionHeader(const QStyleOptionHeader & other) : QStyleOptionHeader(othe
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:226
+// /usr/include/qt/QtWidgets/qstyleoption.h:215
 // [-2] void QStyleOptionHeader()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStyleOptionHeaderC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN18QStyleOptionHeaderC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:227
+// /usr/include/qt/QtWidgets/qstyleoption.h:216
 // [-2] void QStyleOptionHeader(const QStyleOptionHeader &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QStyleOptionHeaderC2ERKS_(QStyleOptionHeader* other) {

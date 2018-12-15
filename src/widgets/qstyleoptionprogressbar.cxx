@@ -55,7 +55,7 @@ MyQStyleOptionProgressBar(const QStyleOptionProgressBar & other) : QStyleOptionP
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:342
+// /usr/include/qt/QtWidgets/qstyleoption.h:331
 // [-2] void QStyleOptionProgressBar()
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QStyleOptionProgressBarC2Ev() {
@@ -63,7 +63,7 @@ void* C_ZN23QStyleOptionProgressBarC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:343
+// /usr/include/qt/QtWidgets/qstyleoption.h:332
 // [-2] void QStyleOptionProgressBar(const QStyleOptionProgressBar &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN23QStyleOptionProgressBarC2ERKS_(QStyleOptionProgressBar* other) {

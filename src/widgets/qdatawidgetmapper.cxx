@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h
 #ifndef protected
@@ -112,7 +111,7 @@ void* C_QDataWidgetMapper_init_staticMetaObject(void* this_, void* strdat, void*
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:58
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QDataWidgetMapper10metaObjectEv(void *this_) {
@@ -120,7 +119,7 @@ void* C_ZNK17QDataWidgetMapper10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:58
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QDataWidgetMapper11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -128,7 +127,7 @@ void* C_ZN17QDataWidgetMapper11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:58
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN17QDataWidgetMapper11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -136,7 +135,7 @@ int C_ZN17QDataWidgetMapper11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, Q
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:58
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QDataWidgetMapper2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -145,7 +144,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:57
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:58
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QDataWidgetMapper6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -154,7 +153,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:64
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:65
 // [-2] void QDataWidgetMapper(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QDataWidgetMapperC2EP7QObject(QObject * parent) {
@@ -162,14 +161,14 @@ void* C_ZN17QDataWidgetMapperC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:65
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:66
 // [-2] void ~QDataWidgetMapper()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapperD2Ev(void *this_) {
   delete (QDataWidgetMapper*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:67
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:68
 // [-2] void setModel(QAbstractItemModel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper8setModelEP18QAbstractItemModel(void *this_, QAbstractItemModel * model) {
@@ -177,7 +176,7 @@ void C_ZN17QDataWidgetMapper8setModelEP18QAbstractItemModel(void *this_, QAbstra
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:68
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:69
 // [8] QAbstractItemModel * model()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QDataWidgetMapper5modelEv(void *this_) {
@@ -185,7 +184,7 @@ void* C_ZNK17QDataWidgetMapper5modelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:70
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:71
 // [-2] void setItemDelegate(QAbstractItemDelegate *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper15setItemDelegateEP21QAbstractItemDelegate(void *this_, QAbstractItemDelegate * delegate) {
@@ -193,7 +192,7 @@ void C_ZN17QDataWidgetMapper15setItemDelegateEP21QAbstractItemDelegate(void *thi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:71
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:72
 // [8] QAbstractItemDelegate * itemDelegate()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QDataWidgetMapper12itemDelegateEv(void *this_) {
@@ -201,7 +200,7 @@ void* C_ZNK17QDataWidgetMapper12itemDelegateEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:73
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:74
 // [-2] void setRootIndex(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -209,7 +208,7 @@ void C_ZN17QDataWidgetMapper12setRootIndexERK11QModelIndex(void *this_, QModelIn
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:74
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:75
 // [24] QModelIndex rootIndex()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QDataWidgetMapper9rootIndexEv(void *this_) {
@@ -218,7 +217,7 @@ return new QModelIndex(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:76
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:77
 // [-2] void setOrientation(Qt::Orientation)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation aOrientation) {
@@ -226,7 +225,7 @@ void C_ZN17QDataWidgetMapper14setOrientationEN2Qt11OrientationE(void *this_, Qt:
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:77
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:78
 // [4] Qt::Orientation orientation()
 extern "C" Q_DECL_EXPORT
 Qt::Orientation C_ZNK17QDataWidgetMapper11orientationEv(void *this_) {
@@ -234,7 +233,7 @@ Qt::Orientation C_ZNK17QDataWidgetMapper11orientationEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:81
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:82
 // [-2] void setSubmitPolicy(QDataWidgetMapper::SubmitPolicy)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper15setSubmitPolicyENS_12SubmitPolicyE(void *this_, QDataWidgetMapper::SubmitPolicy policy) {
@@ -242,7 +241,7 @@ void C_ZN17QDataWidgetMapper15setSubmitPolicyENS_12SubmitPolicyE(void *this_, QD
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:82
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:83
 // [4] QDataWidgetMapper::SubmitPolicy submitPolicy()
 extern "C" Q_DECL_EXPORT
 QDataWidgetMapper::SubmitPolicy C_ZNK17QDataWidgetMapper12submitPolicyEv(void *this_) {
@@ -250,7 +249,7 @@ QDataWidgetMapper::SubmitPolicy C_ZNK17QDataWidgetMapper12submitPolicyEv(void *t
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:84
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:85
 // [-2] void addMapping(QWidget *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper10addMappingEP7QWidgeti(void *this_, QWidget * widget, int section) {
@@ -259,7 +258,7 @@ void C_ZN17QDataWidgetMapper10addMappingEP7QWidgeti(void *this_, QWidget * widge
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:85
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:86
 // [-2] void addMapping(QWidget *, int, const QByteArray &)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -269,7 +268,7 @@ void C_ZN17QDataWidgetMapper10addMappingEP7QWidgetiRK10QByteArray(void *this_, Q
 #endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:86
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:87
 // [-2] void removeMapping(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper13removeMappingEP7QWidget(void *this_, QWidget * widget) {
@@ -277,7 +276,7 @@ void C_ZN17QDataWidgetMapper13removeMappingEP7QWidget(void *this_, QWidget * wid
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:87
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:88
 // [4] int mappedSection(QWidget *)
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QDataWidgetMapper13mappedSectionEP7QWidget(void *this_, QWidget * widget) {
@@ -286,7 +285,7 @@ int C_ZNK17QDataWidgetMapper13mappedSectionEP7QWidget(void *this_, QWidget * wid
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:88
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:89
 // [8] QByteArray mappedPropertyName(QWidget *)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -297,7 +296,7 @@ return new QByteArray(rv);
 #endif // QT_VERSION >= 0x040300
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:89
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:90
 // [8] QWidget * mappedWidgetAt(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QDataWidgetMapper14mappedWidgetAtEi(void *this_, int section) {
@@ -305,7 +304,7 @@ void* C_ZNK17QDataWidgetMapper14mappedWidgetAtEi(void *this_, int section) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:90
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:91
 // [-2] void clearMapping()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper12clearMappingEv(void *this_) {
@@ -313,7 +312,7 @@ void C_ZN17QDataWidgetMapper12clearMappingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:92
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:93
 // [4] int currentIndex()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QDataWidgetMapper12currentIndexEv(void *this_) {
@@ -321,7 +320,7 @@ int C_ZNK17QDataWidgetMapper12currentIndexEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:95
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:96
 // [-2] void revert()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper6revertEv(void *this_) {
@@ -329,7 +328,7 @@ void C_ZN17QDataWidgetMapper6revertEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:96
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:97
 // [1] bool submit()
 extern "C" Q_DECL_EXPORT
 bool C_ZN17QDataWidgetMapper6submitEv(void *this_) {
@@ -337,7 +336,7 @@ bool C_ZN17QDataWidgetMapper6submitEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:98
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:99
 // [-2] void toFirst()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper7toFirstEv(void *this_) {
@@ -345,7 +344,7 @@ void C_ZN17QDataWidgetMapper7toFirstEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:99
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:100
 // [-2] void toLast()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper6toLastEv(void *this_) {
@@ -353,7 +352,7 @@ void C_ZN17QDataWidgetMapper6toLastEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:100
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:101
 // [-2] void toNext()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper6toNextEv(void *this_) {
@@ -361,7 +360,7 @@ void C_ZN17QDataWidgetMapper6toNextEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:101
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:102
 // [-2] void toPrevious()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper10toPreviousEv(void *this_) {
@@ -369,7 +368,7 @@ void C_ZN17QDataWidgetMapper10toPreviousEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:102
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:103
 // [-2] void setCurrentIndex(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper15setCurrentIndexEi(void *this_, int index) {
@@ -377,7 +376,7 @@ void C_ZN17QDataWidgetMapper15setCurrentIndexEi(void *this_, int index) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:103
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:104
 // [-2] void setCurrentModelIndex(const QModelIndex &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper20setCurrentModelIndexERK11QModelIndex(void *this_, QModelIndex* index) {
@@ -385,7 +384,7 @@ void C_ZN17QDataWidgetMapper20setCurrentModelIndexERK11QModelIndex(void *this_, 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:106
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:107
 // [-2] void currentIndexChanged(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QDataWidgetMapper19currentIndexChangedEi(void *this_, int index) {
@@ -408,5 +407,4 @@ void C_ZN17QDataWidgetMapper19currentIndexChangedEi(void *this_, int index) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

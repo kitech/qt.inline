@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicseffect.h
 #ifndef protected
@@ -336,5 +335,4 @@ void C_ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor(void *this_, QColor
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

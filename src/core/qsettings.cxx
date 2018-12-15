@@ -131,7 +131,7 @@ void* C_QSettings_init_staticMetaObject(void* this_, void* strdat, void* dat, vo
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:202
+// /usr/include/qt/QtCore/qsettings.h:200
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN9QSettings5eventEP6QEvent(void *this_, QEvent * event) {
@@ -257,29 +257,7 @@ QSettings::Status C_ZNK9QSettings6statusEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qsettings.h:149
-// [1] bool isAtomicSyncRequired()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QSettings20isAtomicSyncRequiredEv(void *this_) {
-  return (bool)((QSettings*)this_)->isAtomicSyncRequired();
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtCore/qsettings.h:150
-// [-2] void setAtomicSyncRequired(bool)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN9QSettings21setAtomicSyncRequiredEb(void *this_, bool enable) {
-  ((QSettings*)this_)->setAtomicSyncRequired(enable);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:152
 // [-2] void beginGroup(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings10beginGroupERK7QString(void *this_, QString* prefix) {
@@ -287,7 +265,7 @@ void C_ZN9QSettings10beginGroupERK7QString(void *this_, QString* prefix) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:153
+// /usr/include/qt/QtCore/qsettings.h:151
 // [-2] void endGroup()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings8endGroupEv(void *this_) {
@@ -295,7 +273,7 @@ void C_ZN9QSettings8endGroupEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:154
+// /usr/include/qt/QtCore/qsettings.h:152
 // [8] QString group()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings5groupEv(void *this_) {
@@ -304,7 +282,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:156
+// /usr/include/qt/QtCore/qsettings.h:154
 // [4] int beginReadArray(const QString &)
 extern "C" Q_DECL_EXPORT
 int C_ZN9QSettings14beginReadArrayERK7QString(void *this_, QString* prefix) {
@@ -312,7 +290,7 @@ int C_ZN9QSettings14beginReadArrayERK7QString(void *this_, QString* prefix) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:157
+// /usr/include/qt/QtCore/qsettings.h:155
 // [-2] void beginWriteArray(const QString &, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings15beginWriteArrayERK7QStringi(void *this_, QString* prefix, int size) {
@@ -320,7 +298,7 @@ void C_ZN9QSettings15beginWriteArrayERK7QStringi(void *this_, QString* prefix, i
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:158
+// /usr/include/qt/QtCore/qsettings.h:156
 // [-2] void endArray()
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings8endArrayEv(void *this_) {
@@ -328,7 +306,7 @@ void C_ZN9QSettings8endArrayEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:159
+// /usr/include/qt/QtCore/qsettings.h:157
 // [-2] void setArrayIndex(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings13setArrayIndexEi(void *this_, int i) {
@@ -336,7 +314,7 @@ void C_ZN9QSettings13setArrayIndexEi(void *this_, int i) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:161
+// /usr/include/qt/QtCore/qsettings.h:159
 // [8] QStringList allKeys()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings7allKeysEv(void *this_) {
@@ -345,7 +323,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:162
+// /usr/include/qt/QtCore/qsettings.h:160
 // [8] QStringList childKeys()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings9childKeysEv(void *this_) {
@@ -354,7 +332,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:163
+// /usr/include/qt/QtCore/qsettings.h:161
 // [8] QStringList childGroups()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings11childGroupsEv(void *this_) {
@@ -363,7 +341,7 @@ return new QStringList(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:164
+// /usr/include/qt/QtCore/qsettings.h:162
 // [1] bool isWritable()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QSettings10isWritableEv(void *this_) {
@@ -371,7 +349,7 @@ bool C_ZNK9QSettings10isWritableEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:166
+// /usr/include/qt/QtCore/qsettings.h:164
 // [-2] void setValue(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings8setValueERK7QStringRK8QVariant(void *this_, QString* key, QVariant* value) {
@@ -379,7 +357,7 @@ void C_ZN9QSettings8setValueERK7QStringRK8QVariant(void *this_, QString* key, QV
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:167
+// /usr/include/qt/QtCore/qsettings.h:165
 // [16] QVariant value(const QString &, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings5valueERK7QStringRK8QVariant(void *this_, QString* key, QVariant* defaultValue) {
@@ -388,7 +366,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:169
+// /usr/include/qt/QtCore/qsettings.h:167
 // [-2] void remove(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings6removeERK7QString(void *this_, QString* key) {
@@ -396,7 +374,7 @@ void C_ZN9QSettings6removeERK7QString(void *this_, QString* key) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:170
+// /usr/include/qt/QtCore/qsettings.h:168
 // [1] bool contains(const QString &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QSettings8containsERK7QString(void *this_, QString* key) {
@@ -404,7 +382,7 @@ bool C_ZNK9QSettings8containsERK7QString(void *this_, QString* key) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:172
+// /usr/include/qt/QtCore/qsettings.h:170
 // [-2] void setFallbacksEnabled(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings19setFallbacksEnabledEb(void *this_, bool b) {
@@ -412,7 +390,7 @@ void C_ZN9QSettings19setFallbacksEnabledEb(void *this_, bool b) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:173
+// /usr/include/qt/QtCore/qsettings.h:171
 // [1] bool fallbacksEnabled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK9QSettings16fallbacksEnabledEv(void *this_) {
@@ -420,7 +398,7 @@ bool C_ZNK9QSettings16fallbacksEnabledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:175
+// /usr/include/qt/QtCore/qsettings.h:173
 // [8] QString fileName()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK9QSettings8fileNameEv(void *this_) {
@@ -430,7 +408,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtCore/qsettings.h:176
+// /usr/include/qt/QtCore/qsettings.h:174
 // [4] QSettings::Format format()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -441,7 +419,7 @@ QSettings::Format C_ZNK9QSettings6formatEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtCore/qsettings.h:177
+// /usr/include/qt/QtCore/qsettings.h:175
 // [4] QSettings::Scope scope()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -452,7 +430,7 @@ QSettings::Scope C_ZNK9QSettings5scopeEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtCore/qsettings.h:178
+// /usr/include/qt/QtCore/qsettings.h:176
 // [8] QString organizationName()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -464,7 +442,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtCore/qsettings.h:179
+// /usr/include/qt/QtCore/qsettings.h:177
 // [8] QString applicationName()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -476,7 +454,7 @@ return new QString(rv);
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qsettings.h:182
+// /usr/include/qt/QtCore/qsettings.h:180
 // [-2] void setIniCodec(QTextCodec *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -487,7 +465,7 @@ void C_ZN9QSettings11setIniCodecEP10QTextCodec(void *this_, QTextCodec * codec) 
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qsettings.h:183
+// /usr/include/qt/QtCore/qsettings.h:181
 // [-2] void setIniCodec(const char *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -498,7 +476,7 @@ void C_ZN9QSettings11setIniCodecEPKc(void *this_, const char * codecName) {
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtCore/qsettings.h:184
+// /usr/include/qt/QtCore/qsettings.h:182
 // [8] QTextCodec * iniCodec()
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -508,7 +486,7 @@ void* C_ZNK9QSettings8iniCodecEv(void *this_) {
 #endif // QT_VERSION >= 0x040500
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:187
+// /usr/include/qt/QtCore/qsettings.h:185
 // [-2] void setDefaultFormat(QSettings::Format)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings16setDefaultFormatENS_6FormatE(QSettings::Format format) {
@@ -517,7 +495,7 @@ void C_ZN9QSettings16setDefaultFormatENS_6FormatE(QSettings::Format format) {
 
 // Public static Visibility=Default Availability=Available
 // since 4.4
-// /usr/include/qt/QtCore/qsettings.h:188
+// /usr/include/qt/QtCore/qsettings.h:186
 // [4] QSettings::Format defaultFormat()
 #if QT_VERSION >= 0x040400
 extern "C" Q_DECL_EXPORT
@@ -527,7 +505,7 @@ QSettings::Format C_ZN9QSettings13defaultFormatEv() {
 #endif // QT_VERSION >= 0x040400
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:189
+// /usr/include/qt/QtCore/qsettings.h:187
 // [-2] void setSystemIniPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings16setSystemIniPathERK7QString(QString* dir) {
@@ -535,7 +513,7 @@ void C_ZN9QSettings16setSystemIniPathERK7QString(QString* dir) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:190
+// /usr/include/qt/QtCore/qsettings.h:188
 // [-2] void setUserIniPath(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings14setUserIniPathERK7QString(QString* dir) {
@@ -543,7 +521,7 @@ void C_ZN9QSettings14setUserIniPathERK7QString(QString* dir) {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:191
+// /usr/include/qt/QtCore/qsettings.h:189
 // [-2] void setPath(QSettings::Format, QSettings::Scope, const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString(QSettings::Format format, QSettings::Scope scope, QString* path) {
@@ -551,7 +529,7 @@ void C_ZN9QSettings7setPathENS_6FormatENS_5ScopeERK7QString(QSettings::Format fo
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsettings.h:197
+// /usr/include/qt/QtCore/qsettings.h:195
 // [4] QSettings::Format registerFormat(const QString &, QSettings::ReadFunc, QSettings::WriteFunc, Qt::CaseSensitivity)
 extern "C" Q_DECL_EXPORT
 QSettings::Format C_ZN9QSettings14registerFormatERK7QStringPFbR9QIODeviceR4QMapIS0_8QVariantEEPFbS4_RKS7_EN2Qt15CaseSensitivityE(QString* extension, QSettings::ReadFunc readFunc, QSettings::WriteFunc writeFunc, Qt::CaseSensitivity caseSensitivity) {

@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
@@ -55,7 +54,7 @@ MyQGraphicsSceneWheelEvent(QEvent::Type type_) : QGraphicsSceneWheelEvent(type_)
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:139
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:140
 // [-2] void QGraphicsSceneWheelEvent(QEvent::Type)
 extern "C" Q_DECL_EXPORT
 void* C_ZN24QGraphicsSceneWheelEventC2EN6QEvent4TypeE(QEvent::Type type_) {
@@ -63,14 +62,14 @@ void* C_ZN24QGraphicsSceneWheelEventC2EN6QEvent4TypeE(QEvent::Type type_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:140
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:141
 // [-2] void ~QGraphicsSceneWheelEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneWheelEventD2Ev(void *this_) {
   delete (QGraphicsSceneWheelEvent*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:142
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:143
 // [16] QPointF pos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneWheelEvent3posEv(void *this_) {
@@ -79,7 +78,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:143
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:144
 // [-2] void setPos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneWheelEvent6setPosERK7QPointF(void *this_, QPointF* pos) {
@@ -87,7 +86,7 @@ void C_ZN24QGraphicsSceneWheelEvent6setPosERK7QPointF(void *this_, QPointF* pos)
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:145
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:146
 // [16] QPointF scenePos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneWheelEvent8scenePosEv(void *this_) {
@@ -96,7 +95,7 @@ return new QPointF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:146
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:147
 // [-2] void setScenePos(const QPointF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneWheelEvent11setScenePosERK7QPointF(void *this_, QPointF* pos) {
@@ -104,7 +103,7 @@ void C_ZN24QGraphicsSceneWheelEvent11setScenePosERK7QPointF(void *this_, QPointF
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:148
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:149
 // [8] QPoint screenPos()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK24QGraphicsSceneWheelEvent9screenPosEv(void *this_) {
@@ -113,7 +112,7 @@ return new QPoint(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:149
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:150
 // [-2] void setScreenPos(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneWheelEvent12setScreenPosERK6QPoint(void *this_, QPoint* pos) {
@@ -121,7 +120,7 @@ void C_ZN24QGraphicsSceneWheelEvent12setScreenPosERK6QPoint(void *this_, QPoint*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:151
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:152
 // [4] Qt::MouseButtons buttons()
 extern "C" Q_DECL_EXPORT
 Qt::MouseButtons C_ZNK24QGraphicsSceneWheelEvent7buttonsEv(void *this_) {
@@ -129,7 +128,7 @@ Qt::MouseButtons C_ZNK24QGraphicsSceneWheelEvent7buttonsEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:152
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:153
 // [-2] void setButtons(Qt::MouseButtons)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneWheelEvent10setButtonsE6QFlagsIN2Qt11MouseButtonEE(void *this_, QFlags<Qt::MouseButton> buttons) {
@@ -137,7 +136,7 @@ void C_ZN24QGraphicsSceneWheelEvent10setButtonsE6QFlagsIN2Qt11MouseButtonEE(void
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:154
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:155
 // [4] Qt::KeyboardModifiers modifiers()
 extern "C" Q_DECL_EXPORT
 Qt::KeyboardModifiers C_ZNK24QGraphicsSceneWheelEvent9modifiersEv(void *this_) {
@@ -145,7 +144,7 @@ Qt::KeyboardModifiers C_ZNK24QGraphicsSceneWheelEvent9modifiersEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:155
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:156
 // [-2] void setModifiers(Qt::KeyboardModifiers)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneWheelEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> modifiers) {
@@ -153,7 +152,7 @@ void C_ZN24QGraphicsSceneWheelEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifier
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:157
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:158
 // [4] int delta()
 extern "C" Q_DECL_EXPORT
 int C_ZNK24QGraphicsSceneWheelEvent5deltaEv(void *this_) {
@@ -161,7 +160,7 @@ int C_ZNK24QGraphicsSceneWheelEvent5deltaEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:158
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:159
 // [-2] void setDelta(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneWheelEvent8setDeltaEi(void *this_, int delta) {
@@ -169,7 +168,7 @@ void C_ZN24QGraphicsSceneWheelEvent8setDeltaEi(void *this_, int delta) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:160
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:161
 // [4] Qt::Orientation orientation()
 extern "C" Q_DECL_EXPORT
 Qt::Orientation C_ZNK24QGraphicsSceneWheelEvent11orientationEv(void *this_) {
@@ -177,7 +176,7 @@ Qt::Orientation C_ZNK24QGraphicsSceneWheelEvent11orientationEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:161
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:162
 // [-2] void setOrientation(Qt::Orientation)
 extern "C" Q_DECL_EXPORT
 void C_ZN24QGraphicsSceneWheelEvent14setOrientationEN2Qt11OrientationE(void *this_, Qt::Orientation orientation) {
@@ -200,5 +199,4 @@ void C_ZN24QGraphicsSceneWheelEvent14setOrientationEN2Qt11OrientationE(void *thi
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

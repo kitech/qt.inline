@@ -55,7 +55,7 @@ MyQTextDecoder(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flag
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:158
+// /usr/include/qt/QtCore/qtextcodec.h:149
 // [-2] void QTextDecoder(const QTextCodec *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextDecoderC2EPK10QTextCodec(const QTextCodec * codec) {
@@ -64,7 +64,7 @@ void* C_ZN12QTextDecoderC2EPK10QTextCodec(const QTextCodec * codec) {
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtCore/qtextcodec.h:159
+// /usr/include/qt/QtCore/qtextcodec.h:150
 // [-2] void QTextDecoder(const QTextCodec *, QTextCodec::ConversionFlags)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -74,14 +74,14 @@ void* C_ZN12QTextDecoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QT
 #endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:160
+// /usr/include/qt/QtCore/qtextcodec.h:151
 // [-2] void ~QTextDecoder()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextDecoderD2Ev(void *this_) {
   delete (QTextDecoder*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:161
+// /usr/include/qt/QtCore/qtextcodec.h:152
 // [8] QString toUnicode(const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextDecoder9toUnicodeEPKci(void *this_, const char * chars, int len_) {
@@ -90,7 +90,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:162
+// /usr/include/qt/QtCore/qtextcodec.h:153
 // [8] QString toUnicode(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextDecoder9toUnicodeERK10QByteArray(void *this_, QByteArray* ba) {
@@ -99,7 +99,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:163
+// /usr/include/qt/QtCore/qtextcodec.h:154
 // [-2] void toUnicode(QString *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextDecoder9toUnicodeEP7QStringPKci(void *this_, QString * target, const char * chars, int len_) {
@@ -107,7 +107,7 @@ void C_ZN12QTextDecoder9toUnicodeEP7QStringPKci(void *this_, QString * target, c
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:164
+// /usr/include/qt/QtCore/qtextcodec.h:155
 // [1] bool hasFailure()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QTextDecoder10hasFailureEv(void *this_) {

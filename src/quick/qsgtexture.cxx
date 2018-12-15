@@ -175,19 +175,19 @@ void* C_QSGTexture_init_staticMetaObject(void* this_, void* strdat, void* dat, v
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:79
+// /usr/include/qt/QtQuick/qsgtexture.h:78
 // [4] int textureId()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:80
+// /usr/include/qt/QtQuick/qsgtexture.h:79
 // [8] QSize textureSize()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:81
+// /usr/include/qt/QtQuick/qsgtexture.h:80
 // [1] bool hasAlphaChannel()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:82
+// /usr/include/qt/QtQuick/qsgtexture.h:81
 // [1] bool hasMipmaps()
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:90
+// /usr/include/qt/QtQuick/qsgtexture.h:89
 // [-2] void bind()
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:52
@@ -247,7 +247,7 @@ void C_ZN10QSGTextureD2Ev(void *this_) {
   delete (QSGTexture*)(this_);
 }
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:79
+// /usr/include/qt/QtQuick/qsgtexture.h:78
 // [4] int textureId()
 extern "C" Q_DECL_EXPORT
 int C_ZNK10QSGTexture9textureIdEv(void *this_) {
@@ -255,7 +255,7 @@ int C_ZNK10QSGTexture9textureIdEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:80
+// /usr/include/qt/QtQuick/qsgtexture.h:79
 // [8] QSize textureSize()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSGTexture11textureSizeEv(void *this_) {
@@ -264,7 +264,7 @@ return new QSize(rv);
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:81
+// /usr/include/qt/QtQuick/qsgtexture.h:80
 // [1] bool hasAlphaChannel()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSGTexture15hasAlphaChannelEv(void *this_) {
@@ -272,7 +272,7 @@ bool C_ZNK10QSGTexture15hasAlphaChannelEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:82
+// /usr/include/qt/QtQuick/qsgtexture.h:81
 // [1] bool hasMipmaps()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSGTexture10hasMipmapsEv(void *this_) {
@@ -280,7 +280,7 @@ bool C_ZNK10QSGTexture10hasMipmapsEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:84
+// /usr/include/qt/QtQuick/qsgtexture.h:83
 // [32] QRectF normalizedTextureSubRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSGTexture24normalizedTextureSubRectEv(void *this_) {
@@ -289,7 +289,7 @@ return new QRectF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:86
+// /usr/include/qt/QtQuick/qsgtexture.h:85
 // [1] bool isAtlasTexture()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QSGTexture14isAtlasTextureEv(void *this_) {
@@ -297,7 +297,7 @@ bool C_ZNK10QSGTexture14isAtlasTextureEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:88
+// /usr/include/qt/QtQuick/qsgtexture.h:87
 // [8] QSGTexture * removedFromAtlas()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSGTexture16removedFromAtlasEv(void *this_) {
@@ -305,7 +305,7 @@ void* C_ZNK10QSGTexture16removedFromAtlasEv(void *this_) {
 }
 
 // Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:90
+// /usr/include/qt/QtQuick/qsgtexture.h:89
 // [-2] void bind()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture4bindEv(void *this_) {
@@ -313,7 +313,7 @@ void C_ZN10QSGTexture4bindEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:91
+// /usr/include/qt/QtQuick/qsgtexture.h:90
 // [-2] void updateBindOptions(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture17updateBindOptionsEb(void *this_, bool force) {
@@ -321,7 +321,7 @@ void C_ZN10QSGTexture17updateBindOptionsEb(void *this_, bool force) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:93
+// /usr/include/qt/QtQuick/qsgtexture.h:92
 // [-2] void setMipmapFiltering(QSGTexture::Filtering)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture18setMipmapFilteringENS_9FilteringE(void *this_, QSGTexture::Filtering filter) {
@@ -329,7 +329,7 @@ void C_ZN10QSGTexture18setMipmapFilteringENS_9FilteringE(void *this_, QSGTexture
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:94
+// /usr/include/qt/QtQuick/qsgtexture.h:93
 // [4] QSGTexture::Filtering mipmapFiltering()
 extern "C" Q_DECL_EXPORT
 QSGTexture::Filtering C_ZNK10QSGTexture15mipmapFilteringEv(void *this_) {
@@ -337,7 +337,7 @@ QSGTexture::Filtering C_ZNK10QSGTexture15mipmapFilteringEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:96
+// /usr/include/qt/QtQuick/qsgtexture.h:95
 // [-2] void setFiltering(QSGTexture::Filtering)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture12setFilteringENS_9FilteringE(void *this_, QSGTexture::Filtering filter) {
@@ -345,7 +345,7 @@ void C_ZN10QSGTexture12setFilteringENS_9FilteringE(void *this_, QSGTexture::Filt
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:97
+// /usr/include/qt/QtQuick/qsgtexture.h:96
 // [4] QSGTexture::Filtering filtering()
 extern "C" Q_DECL_EXPORT
 QSGTexture::Filtering C_ZNK10QSGTexture9filteringEv(void *this_) {
@@ -353,7 +353,7 @@ QSGTexture::Filtering C_ZNK10QSGTexture9filteringEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:99
+// /usr/include/qt/QtQuick/qsgtexture.h:98
 // [-2] void setAnisotropyLevel(QSGTexture::AnisotropyLevel)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture18setAnisotropyLevelENS_15AnisotropyLevelE(void *this_, QSGTexture::AnisotropyLevel level) {
@@ -362,7 +362,7 @@ void C_ZN10QSGTexture18setAnisotropyLevelENS_15AnisotropyLevelE(void *this_, QSG
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtQuick/qsgtexture.h:100
+// /usr/include/qt/QtQuick/qsgtexture.h:99
 // [4] QSGTexture::AnisotropyLevel anisotropyLevel()
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -372,7 +372,7 @@ QSGTexture::AnisotropyLevel C_ZNK10QSGTexture15anisotropyLevelEv(void *this_) {
 #endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:102
+// /usr/include/qt/QtQuick/qsgtexture.h:101
 // [-2] void setHorizontalWrapMode(QSGTexture::WrapMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture21setHorizontalWrapModeENS_8WrapModeE(void *this_, QSGTexture::WrapMode hwrap) {
@@ -380,7 +380,7 @@ void C_ZN10QSGTexture21setHorizontalWrapModeENS_8WrapModeE(void *this_, QSGTextu
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:103
+// /usr/include/qt/QtQuick/qsgtexture.h:102
 // [4] QSGTexture::WrapMode horizontalWrapMode()
 extern "C" Q_DECL_EXPORT
 QSGTexture::WrapMode C_ZNK10QSGTexture18horizontalWrapModeEv(void *this_) {
@@ -388,7 +388,7 @@ QSGTexture::WrapMode C_ZNK10QSGTexture18horizontalWrapModeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:105
+// /usr/include/qt/QtQuick/qsgtexture.h:104
 // [-2] void setVerticalWrapMode(QSGTexture::WrapMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QSGTexture19setVerticalWrapModeENS_8WrapModeE(void *this_, QSGTexture::WrapMode vwrap) {
@@ -396,7 +396,7 @@ void C_ZN10QSGTexture19setVerticalWrapModeENS_8WrapModeE(void *this_, QSGTexture
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:106
+// /usr/include/qt/QtQuick/qsgtexture.h:105
 // [4] QSGTexture::WrapMode verticalWrapMode()
 extern "C" Q_DECL_EXPORT
 QSGTexture::WrapMode C_ZNK10QSGTexture16verticalWrapModeEv(void *this_) {
@@ -404,7 +404,7 @@ QSGTexture::WrapMode C_ZNK10QSGTexture16verticalWrapModeEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:108
+// /usr/include/qt/QtQuick/qsgtexture.h:107
 // [32] QRectF convertToNormalizedSourceRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QSGTexture29convertToNormalizedSourceRectERK6QRectF(void *this_, QRectF* rect) {

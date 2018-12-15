@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qdockwidget.h
 #ifndef protected
 #define protected public
@@ -162,7 +161,7 @@ void* C_QDockWidget_init_staticMetaObject(void* this_, void* strdat, void* dat, 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:116
+// /usr/include/qt/QtWidgets/qdockwidget.h:117
 // [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget11changeEventEP6QEvent(void *this_, QEvent * event) {
@@ -170,7 +169,7 @@ void C_ZN11QDockWidget11changeEventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:117
+// /usr/include/qt/QtWidgets/qdockwidget.h:118
 // [-2] void closeEvent(QCloseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget10closeEventEP11QCloseEvent(void *this_, QCloseEvent * event) {
@@ -178,7 +177,7 @@ void C_ZN11QDockWidget10closeEventEP11QCloseEvent(void *this_, QCloseEvent * eve
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:118
+// /usr/include/qt/QtWidgets/qdockwidget.h:119
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
@@ -186,7 +185,7 @@ void C_ZN11QDockWidget10paintEventEP11QPaintEvent(void *this_, QPaintEvent * eve
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:119
+// /usr/include/qt/QtWidgets/qdockwidget.h:120
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QDockWidget5eventEP6QEvent(void *this_, QEvent * event) {
@@ -194,7 +193,7 @@ bool C_ZN11QDockWidget5eventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:57
+// /usr/include/qt/QtWidgets/qdockwidget.h:58
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QDockWidget10metaObjectEv(void *this_) {
@@ -202,7 +201,7 @@ void* C_ZNK11QDockWidget10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:57
+// /usr/include/qt/QtWidgets/qdockwidget.h:58
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDockWidget11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -210,7 +209,7 @@ void* C_ZN11QDockWidget11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:57
+// /usr/include/qt/QtWidgets/qdockwidget.h:58
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN11QDockWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -218,7 +217,7 @@ int C_ZN11QDockWidget11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaOb
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:57
+// /usr/include/qt/QtWidgets/qdockwidget.h:58
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDockWidget2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -227,7 +226,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:57
+// /usr/include/qt/QtWidgets/qdockwidget.h:58
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDockWidget6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -236,7 +235,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:66
+// /usr/include/qt/QtWidgets/qdockwidget.h:67
 // [-2] void QDockWidget(const QString &, QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDockWidgetC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(QString* title, QWidget * parent, QFlags<Qt::WindowType> flags) {
@@ -245,7 +244,7 @@ void* C_ZN11QDockWidgetC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE(QString*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:68
+// /usr/include/qt/QtWidgets/qdockwidget.h:69
 // [-2] void QDockWidget(QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QDockWidgetC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
@@ -254,14 +253,14 @@ void* C_ZN11QDockWidgetC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:69
+// /usr/include/qt/QtWidgets/qdockwidget.h:70
 // [-2] void ~QDockWidget()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidgetD2Ev(void *this_) {
   delete (QDockWidget*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:71
+// /usr/include/qt/QtWidgets/qdockwidget.h:72
 // [8] QWidget * widget()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QDockWidget6widgetEv(void *this_) {
@@ -269,7 +268,7 @@ void* C_ZNK11QDockWidget6widgetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:72
+// /usr/include/qt/QtWidgets/qdockwidget.h:73
 // [-2] void setWidget(QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget9setWidgetEP7QWidget(void *this_, QWidget * widget) {
@@ -277,7 +276,7 @@ void C_ZN11QDockWidget9setWidgetEP7QWidget(void *this_, QWidget * widget) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:89
+// /usr/include/qt/QtWidgets/qdockwidget.h:90
 // [-2] void setFeatures(QDockWidget::DockWidgetFeatures)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget11setFeaturesE6QFlagsINS_17DockWidgetFeatureEE(void *this_, QFlags<QDockWidget::DockWidgetFeature> features) {
@@ -285,7 +284,7 @@ void C_ZN11QDockWidget11setFeaturesE6QFlagsINS_17DockWidgetFeatureEE(void *this_
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:90
+// /usr/include/qt/QtWidgets/qdockwidget.h:91
 // [4] QDockWidget::DockWidgetFeatures features()
 extern "C" Q_DECL_EXPORT
 QDockWidget::DockWidgetFeatures* C_ZNK11QDockWidget8featuresEv(void *this_) {
@@ -294,7 +293,7 @@ return new QDockWidget::DockWidgetFeatures(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:92
+// /usr/include/qt/QtWidgets/qdockwidget.h:93
 // [-2] void setFloating(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget11setFloatingEb(void *this_, bool floating) {
@@ -302,7 +301,7 @@ void C_ZN11QDockWidget11setFloatingEb(void *this_, bool floating) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:93
+// /usr/include/qt/QtWidgets/qdockwidget.h:94
 // [1] bool isFloating()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QDockWidget10isFloatingEv(void *this_) {
@@ -310,7 +309,7 @@ bool C_ZNK11QDockWidget10isFloatingEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:95
+// /usr/include/qt/QtWidgets/qdockwidget.h:96
 // [-2] void setAllowedAreas(Qt::DockWidgetAreas)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget15setAllowedAreasE6QFlagsIN2Qt14DockWidgetAreaEE(void *this_, QFlags<Qt::DockWidgetArea> areas) {
@@ -318,7 +317,7 @@ void C_ZN11QDockWidget15setAllowedAreasE6QFlagsIN2Qt14DockWidgetAreaEE(void *thi
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:96
+// /usr/include/qt/QtWidgets/qdockwidget.h:97
 // [4] Qt::DockWidgetAreas allowedAreas()
 extern "C" Q_DECL_EXPORT
 Qt::DockWidgetAreas C_ZNK11QDockWidget12allowedAreasEv(void *this_) {
@@ -327,7 +326,7 @@ Qt::DockWidgetAreas C_ZNK11QDockWidget12allowedAreasEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qdockwidget.h:98
+// /usr/include/qt/QtWidgets/qdockwidget.h:99
 // [-2] void setTitleBarWidget(QWidget *)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -338,7 +337,7 @@ void C_ZN11QDockWidget17setTitleBarWidgetEP7QWidget(void *this_, QWidget * widge
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qdockwidget.h:99
+// /usr/include/qt/QtWidgets/qdockwidget.h:100
 // [8] QWidget * titleBarWidget()
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -348,7 +347,7 @@ void* C_ZNK11QDockWidget14titleBarWidgetEv(void *this_) {
 #endif // QT_VERSION >= 0x040300
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:101
+// /usr/include/qt/QtWidgets/qdockwidget.h:102
 // [1] bool isAreaAllowed(Qt::DockWidgetArea)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE(void *this_, Qt::DockWidgetArea area) {
@@ -356,7 +355,7 @@ bool C_ZNK11QDockWidget13isAreaAllowedEN2Qt14DockWidgetAreaE(void *this_, Qt::Do
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:105
+// /usr/include/qt/QtWidgets/qdockwidget.h:106
 // [8] QAction * toggleViewAction()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QDockWidget16toggleViewActionEv(void *this_) {
@@ -364,7 +363,7 @@ void* C_ZNK11QDockWidget16toggleViewActionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:109
+// /usr/include/qt/QtWidgets/qdockwidget.h:110
 // [-2] void featuresChanged(QDockWidget::DockWidgetFeatures)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(void *this_, QFlags<QDockWidget::DockWidgetFeature> features) {
@@ -372,7 +371,7 @@ void C_ZN11QDockWidget15featuresChangedE6QFlagsINS_17DockWidgetFeatureEE(void *t
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:110
+// /usr/include/qt/QtWidgets/qdockwidget.h:111
 // [-2] void topLevelChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget15topLevelChangedEb(void *this_, bool topLevel) {
@@ -380,7 +379,7 @@ void C_ZN11QDockWidget15topLevelChangedEb(void *this_, bool topLevel) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qdockwidget.h:111
+// /usr/include/qt/QtWidgets/qdockwidget.h:112
 // [-2] void allowedAreasChanged(Qt::DockWidgetAreas)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(void *this_, QFlags<Qt::DockWidgetArea> allowedAreas) {
@@ -389,7 +388,7 @@ void C_ZN11QDockWidget19allowedAreasChangedE6QFlagsIN2Qt14DockWidgetAreaEE(void 
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qdockwidget.h:112
+// /usr/include/qt/QtWidgets/qdockwidget.h:113
 // [-2] void visibilityChanged(bool)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -400,7 +399,7 @@ void C_ZN11QDockWidget17visibilityChangedEb(void *this_, bool visible) {
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qdockwidget.h:113
+// /usr/include/qt/QtWidgets/qdockwidget.h:114
 // [-2] void dockLocationChanged(Qt::DockWidgetArea)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -425,5 +424,4 @@ void C_ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(void *this_, Q
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

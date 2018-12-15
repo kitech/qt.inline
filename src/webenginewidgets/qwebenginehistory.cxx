@@ -51,7 +51,7 @@ public:
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:87
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:89
 // [-2] void clear()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineHistory5clearEv(void *this_) {
@@ -59,7 +59,7 @@ void C_ZN17QWebEngineHistory5clearEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:89
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:91
 // [-2] QList<QWebEngineHistoryItem> items()
 extern "C" Q_DECL_EXPORT
 QList<QWebEngineHistoryItem>* C_ZNK17QWebEngineHistory5itemsEv(void *this_) {
@@ -68,7 +68,7 @@ return new QList<QWebEngineHistoryItem>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:90
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:92
 // [-2] QList<QWebEngineHistoryItem> backItems(int)
 extern "C" Q_DECL_EXPORT
 QList<QWebEngineHistoryItem>* C_ZNK17QWebEngineHistory9backItemsEi(void *this_, int maxItems) {
@@ -77,7 +77,7 @@ return new QList<QWebEngineHistoryItem>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:91
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:93
 // [-2] QList<QWebEngineHistoryItem> forwardItems(int)
 extern "C" Q_DECL_EXPORT
 QList<QWebEngineHistoryItem>* C_ZNK17QWebEngineHistory12forwardItemsEi(void *this_, int maxItems) {
@@ -86,7 +86,7 @@ return new QList<QWebEngineHistoryItem>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:93
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:95
 // [1] bool canGoBack()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QWebEngineHistory9canGoBackEv(void *this_) {
@@ -94,7 +94,7 @@ bool C_ZNK17QWebEngineHistory9canGoBackEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:94
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:96
 // [1] bool canGoForward()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QWebEngineHistory12canGoForwardEv(void *this_) {
@@ -102,7 +102,7 @@ bool C_ZNK17QWebEngineHistory12canGoForwardEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:96
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:98
 // [-2] void back()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineHistory4backEv(void *this_) {
@@ -110,7 +110,7 @@ void C_ZN17QWebEngineHistory4backEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:97
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:99
 // [-2] void forward()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineHistory7forwardEv(void *this_) {
@@ -118,7 +118,7 @@ void C_ZN17QWebEngineHistory7forwardEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:98
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:100
 // [-2] void goToItem(const QWebEngineHistoryItem &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QWebEngineHistory8goToItemERK21QWebEngineHistoryItem(void *this_, QWebEngineHistoryItem* item) {
@@ -126,7 +126,7 @@ void C_ZN17QWebEngineHistory8goToItemERK21QWebEngineHistoryItem(void *this_, QWe
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:100
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:102
 // [8] QWebEngineHistoryItem backItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QWebEngineHistory8backItemEv(void *this_) {
@@ -135,7 +135,7 @@ return new QWebEngineHistoryItem(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:101
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:103
 // [8] QWebEngineHistoryItem currentItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QWebEngineHistory11currentItemEv(void *this_) {
@@ -144,7 +144,7 @@ return new QWebEngineHistoryItem(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:102
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:104
 // [8] QWebEngineHistoryItem forwardItem()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QWebEngineHistory11forwardItemEv(void *this_) {
@@ -153,7 +153,7 @@ return new QWebEngineHistoryItem(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:103
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:105
 // [8] QWebEngineHistoryItem itemAt(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QWebEngineHistory6itemAtEi(void *this_, int i) {
@@ -162,7 +162,7 @@ return new QWebEngineHistoryItem(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:105
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:107
 // [4] int currentItemIndex()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QWebEngineHistory16currentItemIndexEv(void *this_) {
@@ -170,7 +170,7 @@ int C_ZNK17QWebEngineHistory16currentItemIndexEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:107
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:109
 // [4] int count()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QWebEngineHistory5countEv(void *this_) {

@@ -122,7 +122,7 @@ void* C_QTimer_init_staticMetaObject(void* this_, void* strdat, void* dat, void*
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:200
+// /usr/include/qt/QtCore/qtimer.h:206
 // [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QTimer10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
@@ -308,7 +308,7 @@ void C_ZN6QTimer7timeoutENS_14QPrivateSignalE(void *this_, QTimer::QPrivateSigna
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:168
+// /usr/include/qt/QtCore/qtimer.h:169
 // [-2] void setInterval(std::chrono::milliseconds)
 extern "C" Q_DECL_EXPORT
 void C_ZN6QTimer11setIntervalENSt6chrono8durationIlSt5ratioILl1ELl1000EEEE(void *this_, std::chrono::milliseconds value) {
@@ -317,7 +317,7 @@ void C_ZN6QTimer11setIntervalENSt6chrono8durationIlSt5ratioILl1ELl1000EEEE(void 
 
 // Public inline Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtCore/qtimer.h:173
+// /usr/include/qt/QtCore/qtimer.h:175
 // [8] std::chrono::milliseconds intervalAsDuration()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -328,7 +328,7 @@ std::chrono::milliseconds C_ZNK6QTimer18intervalAsDurationEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtCore/qtimer.h:178
+// /usr/include/qt/QtCore/qtimer.h:181
 // [8] std::chrono::milliseconds remainingTimeAsDuration()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -339,7 +339,7 @@ std::chrono::milliseconds C_ZNK6QTimer23remainingTimeAsDurationEv(void *this_) {
 
 // Public static inline Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtCore/qtimer.h:183
+// /usr/include/qt/QtCore/qtimer.h:187
 // [-2] void singleShot(std::chrono::milliseconds, const QObject *, const char *)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -350,7 +350,7 @@ void C_ZN6QTimer10singleShotENSt6chrono8durationIlSt5ratioILl1ELl1000EEEEPK7QObj
 
 // Public static inline Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtCore/qtimer.h:188
+// /usr/include/qt/QtCore/qtimer.h:193
 // [-2] void singleShot(std::chrono::milliseconds, Qt::TimerType, const QObject *, const char *)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -361,7 +361,7 @@ void C_ZN6QTimer10singleShotENSt6chrono8durationIlSt5ratioILl1ELl1000EEEEN2Qt9Ti
 
 // Public inline Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtCore/qtimer.h:193
+// /usr/include/qt/QtCore/qtimer.h:199
 // [-2] void start(std::chrono::milliseconds)
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT

@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qundogroup.h
 #ifndef protected
@@ -112,7 +111,7 @@ void* C_QUndoGroup_init_staticMetaObject(void* this_, void* strdat, void* dat, v
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:57
+// /usr/include/qt/QtWidgets/qundogroup.h:58
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QUndoGroup10metaObjectEv(void *this_) {
@@ -120,7 +119,7 @@ void* C_ZNK10QUndoGroup10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:57
+// /usr/include/qt/QtWidgets/qundogroup.h:58
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QUndoGroup11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -128,7 +127,7 @@ void* C_ZN10QUndoGroup11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:57
+// /usr/include/qt/QtWidgets/qundogroup.h:58
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN10QUndoGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -136,7 +135,7 @@ int C_ZN10QUndoGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObj
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:57
+// /usr/include/qt/QtWidgets/qundogroup.h:58
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QUndoGroup2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -145,7 +144,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:57
+// /usr/include/qt/QtWidgets/qundogroup.h:58
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QUndoGroup6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -154,7 +153,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:61
+// /usr/include/qt/QtWidgets/qundogroup.h:62
 // [-2] void QUndoGroup(QObject *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN10QUndoGroupC2EP7QObject(QObject * parent) {
@@ -162,14 +161,14 @@ void* C_ZN10QUndoGroupC2EP7QObject(QObject * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:62
+// /usr/include/qt/QtWidgets/qundogroup.h:63
 // [-2] void ~QUndoGroup()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroupD2Ev(void *this_) {
   delete (QUndoGroup*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:64
+// /usr/include/qt/QtWidgets/qundogroup.h:65
 // [-2] void addStack(QUndoStack *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup8addStackEP10QUndoStack(void *this_, QUndoStack * stack) {
@@ -177,7 +176,7 @@ void C_ZN10QUndoGroup8addStackEP10QUndoStack(void *this_, QUndoStack * stack) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:65
+// /usr/include/qt/QtWidgets/qundogroup.h:66
 // [-2] void removeStack(QUndoStack *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup11removeStackEP10QUndoStack(void *this_, QUndoStack * stack) {
@@ -185,7 +184,7 @@ void C_ZN10QUndoGroup11removeStackEP10QUndoStack(void *this_, QUndoStack * stack
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:66
+// /usr/include/qt/QtWidgets/qundogroup.h:67
 // [-2] QList<QUndoStack *> stacks()
 extern "C" Q_DECL_EXPORT
 QList<QUndoStack *>* C_ZNK10QUndoGroup6stacksEv(void *this_) {
@@ -194,7 +193,7 @@ return new QList<QUndoStack *>(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:67
+// /usr/include/qt/QtWidgets/qundogroup.h:68
 // [8] QUndoStack * activeStack()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QUndoGroup11activeStackEv(void *this_) {
@@ -202,7 +201,7 @@ void* C_ZNK10QUndoGroup11activeStackEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:70
+// /usr/include/qt/QtWidgets/qundogroup.h:71
 // [8] QAction * createUndoAction(QObject *, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QUndoGroup16createUndoActionEP7QObjectRK7QString(void *this_, QObject * parent, QString* prefix) {
@@ -210,7 +209,7 @@ void* C_ZNK10QUndoGroup16createUndoActionEP7QObjectRK7QString(void *this_, QObje
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:72
+// /usr/include/qt/QtWidgets/qundogroup.h:73
 // [8] QAction * createRedoAction(QObject *, const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QUndoGroup16createRedoActionEP7QObjectRK7QString(void *this_, QObject * parent, QString* prefix) {
@@ -218,7 +217,7 @@ void* C_ZNK10QUndoGroup16createRedoActionEP7QObjectRK7QString(void *this_, QObje
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:75
+// /usr/include/qt/QtWidgets/qundogroup.h:76
 // [1] bool canUndo()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QUndoGroup7canUndoEv(void *this_) {
@@ -226,7 +225,7 @@ bool C_ZNK10QUndoGroup7canUndoEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:76
+// /usr/include/qt/QtWidgets/qundogroup.h:77
 // [1] bool canRedo()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QUndoGroup7canRedoEv(void *this_) {
@@ -234,7 +233,7 @@ bool C_ZNK10QUndoGroup7canRedoEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:77
+// /usr/include/qt/QtWidgets/qundogroup.h:78
 // [8] QString undoText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QUndoGroup8undoTextEv(void *this_) {
@@ -243,7 +242,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:78
+// /usr/include/qt/QtWidgets/qundogroup.h:79
 // [8] QString redoText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK10QUndoGroup8redoTextEv(void *this_) {
@@ -252,7 +251,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:79
+// /usr/include/qt/QtWidgets/qundogroup.h:80
 // [1] bool isClean()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK10QUndoGroup7isCleanEv(void *this_) {
@@ -260,7 +259,7 @@ bool C_ZNK10QUndoGroup7isCleanEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:82
+// /usr/include/qt/QtWidgets/qundogroup.h:83
 // [-2] void undo()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup4undoEv(void *this_) {
@@ -268,7 +267,7 @@ void C_ZN10QUndoGroup4undoEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:83
+// /usr/include/qt/QtWidgets/qundogroup.h:84
 // [-2] void redo()
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup4redoEv(void *this_) {
@@ -276,7 +275,7 @@ void C_ZN10QUndoGroup4redoEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:84
+// /usr/include/qt/QtWidgets/qundogroup.h:85
 // [-2] void setActiveStack(QUndoStack *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup14setActiveStackEP10QUndoStack(void *this_, QUndoStack * stack) {
@@ -284,7 +283,7 @@ void C_ZN10QUndoGroup14setActiveStackEP10QUndoStack(void *this_, QUndoStack * st
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:87
+// /usr/include/qt/QtWidgets/qundogroup.h:88
 // [-2] void activeStackChanged(QUndoStack *)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup18activeStackChangedEP10QUndoStack(void *this_, QUndoStack * stack) {
@@ -292,7 +291,7 @@ void C_ZN10QUndoGroup18activeStackChangedEP10QUndoStack(void *this_, QUndoStack 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:88
+// /usr/include/qt/QtWidgets/qundogroup.h:89
 // [-2] void indexChanged(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup12indexChangedEi(void *this_, int idx) {
@@ -300,7 +299,7 @@ void C_ZN10QUndoGroup12indexChangedEi(void *this_, int idx) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:89
+// /usr/include/qt/QtWidgets/qundogroup.h:90
 // [-2] void cleanChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup12cleanChangedEb(void *this_, bool clean) {
@@ -308,7 +307,7 @@ void C_ZN10QUndoGroup12cleanChangedEb(void *this_, bool clean) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:90
+// /usr/include/qt/QtWidgets/qundogroup.h:91
 // [-2] void canUndoChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup14canUndoChangedEb(void *this_, bool canUndo) {
@@ -316,7 +315,7 @@ void C_ZN10QUndoGroup14canUndoChangedEb(void *this_, bool canUndo) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:91
+// /usr/include/qt/QtWidgets/qundogroup.h:92
 // [-2] void canRedoChanged(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup14canRedoChangedEb(void *this_, bool canRedo) {
@@ -324,7 +323,7 @@ void C_ZN10QUndoGroup14canRedoChangedEb(void *this_, bool canRedo) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:92
+// /usr/include/qt/QtWidgets/qundogroup.h:93
 // [-2] void undoTextChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup15undoTextChangedERK7QString(void *this_, QString* undoText) {
@@ -332,7 +331,7 @@ void C_ZN10QUndoGroup15undoTextChangedERK7QString(void *this_, QString* undoText
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qundogroup.h:93
+// /usr/include/qt/QtWidgets/qundogroup.h:94
 // [-2] void redoTextChanged(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN10QUndoGroup15redoTextChangedERK7QString(void *this_, QString* redoText) {
@@ -355,5 +354,4 @@ void C_ZN10QUndoGroup15redoTextChangedERK7QString(void *this_, QString* redoText
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
 #ifndef protected
@@ -55,7 +54,7 @@ MyQItemEditorFactory() : QItemEditorFactory() {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:98
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:99
 // [-2] void QItemEditorFactory()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QItemEditorFactoryC2Ev() {
@@ -63,14 +62,14 @@ void* C_ZN18QItemEditorFactoryC2Ev() {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:99
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:100
 // [-2] void ~QItemEditorFactory()
 extern "C" Q_DECL_EXPORT
 void C_ZN18QItemEditorFactoryD2Ev(void *this_) {
   delete (QItemEditorFactory*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:101
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:102
 // [8] QWidget * createEditor(int, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QItemEditorFactory12createEditorEiP7QWidget(void *this_, int userType, QWidget * parent) {
@@ -78,7 +77,7 @@ void* C_ZNK18QItemEditorFactory12createEditorEiP7QWidget(void *this_, int userTy
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:102
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:103
 // [8] QByteArray valuePropertyName(int)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QItemEditorFactory17valuePropertyNameEi(void *this_, int userType) {
@@ -87,7 +86,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:104
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:105
 // [-2] void registerEditor(int, QItemEditorCreatorBase *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QItemEditorFactory14registerEditorEiP22QItemEditorCreatorBase(void *this_, int userType, QItemEditorCreatorBase * creator) {
@@ -95,7 +94,7 @@ void C_ZN18QItemEditorFactory14registerEditorEiP22QItemEditorCreatorBase(void *t
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:106
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:107
 // [8] const QItemEditorFactory * defaultFactory()
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QItemEditorFactory14defaultFactoryEv() {
@@ -103,7 +102,7 @@ void* C_ZN18QItemEditorFactory14defaultFactoryEv() {
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:107
+// /usr/include/qt/QtWidgets/qitemeditorfactory.h:108
 // [-2] void setDefaultFactory(QItemEditorFactory *)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QItemEditorFactory17setDefaultFactoryEPS_(QItemEditorFactory * factory) {
@@ -126,5 +125,4 @@ void C_ZN18QItemEditorFactory17setDefaultFactoryEPS_(QItemEditorFactory * factor
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

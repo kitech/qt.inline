@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qprogressdialog.h
 #ifndef protected
 #define protected public
@@ -161,7 +160,7 @@ void* C_QProgressDialog_init_staticMetaObject(void* this_, void* strdat, void* d
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:116
+// /usr/include/qt/QtWidgets/qprogressdialog.h:117
 // [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
@@ -169,7 +168,7 @@ void C_ZN15QProgressDialog11resizeEventEP12QResizeEvent(void *this_, QResizeEven
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:117
+// /usr/include/qt/QtWidgets/qprogressdialog.h:118
 // [-2] void closeEvent(QCloseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog10closeEventEP11QCloseEvent(void *this_, QCloseEvent * event) {
@@ -177,7 +176,7 @@ void C_ZN15QProgressDialog10closeEventEP11QCloseEvent(void *this_, QCloseEvent *
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:118
+// /usr/include/qt/QtWidgets/qprogressdialog.h:119
 // [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog11changeEventEP6QEvent(void *this_, QEvent * event) {
@@ -185,7 +184,7 @@ void C_ZN15QProgressDialog11changeEventEP6QEvent(void *this_, QEvent * event) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:119
+// /usr/include/qt/QtWidgets/qprogressdialog.h:120
 // [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
@@ -193,7 +192,7 @@ void C_ZN15QProgressDialog9showEventEP10QShowEvent(void *this_, QShowEvent * eve
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:59
+// /usr/include/qt/QtWidgets/qprogressdialog.h:60
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QProgressDialog10metaObjectEv(void *this_) {
@@ -201,7 +200,7 @@ void* C_ZNK15QProgressDialog10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:59
+// /usr/include/qt/QtWidgets/qprogressdialog.h:60
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QProgressDialog11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -209,7 +208,7 @@ void* C_ZN15QProgressDialog11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:59
+// /usr/include/qt/QtWidgets/qprogressdialog.h:60
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN15QProgressDialog11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -217,7 +216,7 @@ int C_ZN15QProgressDialog11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMe
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:59
+// /usr/include/qt/QtWidgets/qprogressdialog.h:60
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QProgressDialog2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -226,7 +225,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:59
+// /usr/include/qt/QtWidgets/qprogressdialog.h:60
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QProgressDialog6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -235,7 +234,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:71
+// /usr/include/qt/QtWidgets/qprogressdialog.h:72
 // [-2] void QProgressDialog(QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QProgressDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * parent, QFlags<Qt::WindowType> flags) {
@@ -244,7 +243,7 @@ void* C_ZN15QProgressDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE(QWidget * pare
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:72
+// /usr/include/qt/QtWidgets/qprogressdialog.h:73
 // [-2] void QProgressDialog(const QString &, const QString &, int, int, QWidget *, Qt::WindowFlags)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QProgressDialogC2ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE(QString* labelText, QString* cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags) {
@@ -253,14 +252,14 @@ void* C_ZN15QProgressDialogC2ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:75
+// /usr/include/qt/QtWidgets/qprogressdialog.h:76
 // [-2] void ~QProgressDialog()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialogD2Ev(void *this_) {
   delete (QProgressDialog*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:77
+// /usr/include/qt/QtWidgets/qprogressdialog.h:78
 // [-2] void setLabel(QLabel *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog8setLabelEP6QLabel(void *this_, QLabel * label) {
@@ -268,7 +267,7 @@ void C_ZN15QProgressDialog8setLabelEP6QLabel(void *this_, QLabel * label) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:78
+// /usr/include/qt/QtWidgets/qprogressdialog.h:79
 // [-2] void setCancelButton(QPushButton *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog15setCancelButtonEP11QPushButton(void *this_, QPushButton * button) {
@@ -276,7 +275,7 @@ void C_ZN15QProgressDialog15setCancelButtonEP11QPushButton(void *this_, QPushBut
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:79
+// /usr/include/qt/QtWidgets/qprogressdialog.h:80
 // [-2] void setBar(QProgressBar *)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog6setBarEP12QProgressBar(void *this_, QProgressBar * bar) {
@@ -284,7 +283,7 @@ void C_ZN15QProgressDialog6setBarEP12QProgressBar(void *this_, QProgressBar * ba
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:81
+// /usr/include/qt/QtWidgets/qprogressdialog.h:82
 // [1] bool wasCanceled()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QProgressDialog11wasCanceledEv(void *this_) {
@@ -292,7 +291,7 @@ bool C_ZNK15QProgressDialog11wasCanceledEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:83
+// /usr/include/qt/QtWidgets/qprogressdialog.h:84
 // [4] int minimum()
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QProgressDialog7minimumEv(void *this_) {
@@ -300,7 +299,7 @@ int C_ZNK15QProgressDialog7minimumEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:84
+// /usr/include/qt/QtWidgets/qprogressdialog.h:85
 // [4] int maximum()
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QProgressDialog7maximumEv(void *this_) {
@@ -308,7 +307,7 @@ int C_ZNK15QProgressDialog7maximumEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:86
+// /usr/include/qt/QtWidgets/qprogressdialog.h:87
 // [4] int value()
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QProgressDialog5valueEv(void *this_) {
@@ -316,7 +315,7 @@ int C_ZNK15QProgressDialog5valueEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:88
+// /usr/include/qt/QtWidgets/qprogressdialog.h:89
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QProgressDialog8sizeHintEv(void *this_) {
@@ -325,7 +324,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:90
+// /usr/include/qt/QtWidgets/qprogressdialog.h:91
 // [8] QString labelText()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK15QProgressDialog9labelTextEv(void *this_) {
@@ -334,7 +333,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:91
+// /usr/include/qt/QtWidgets/qprogressdialog.h:92
 // [4] int minimumDuration()
 extern "C" Q_DECL_EXPORT
 int C_ZNK15QProgressDialog15minimumDurationEv(void *this_) {
@@ -342,7 +341,7 @@ int C_ZNK15QProgressDialog15minimumDurationEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:93
+// /usr/include/qt/QtWidgets/qprogressdialog.h:94
 // [-2] void setAutoReset(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog12setAutoResetEb(void *this_, bool reset) {
@@ -350,7 +349,7 @@ void C_ZN15QProgressDialog12setAutoResetEb(void *this_, bool reset) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:94
+// /usr/include/qt/QtWidgets/qprogressdialog.h:95
 // [1] bool autoReset()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QProgressDialog9autoResetEv(void *this_) {
@@ -358,7 +357,7 @@ bool C_ZNK15QProgressDialog9autoResetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:95
+// /usr/include/qt/QtWidgets/qprogressdialog.h:96
 // [-2] void setAutoClose(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog12setAutoCloseEb(void *this_, bool close) {
@@ -366,7 +365,7 @@ void C_ZN15QProgressDialog12setAutoCloseEb(void *this_, bool close) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:96
+// /usr/include/qt/QtWidgets/qprogressdialog.h:97
 // [1] bool autoClose()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK15QProgressDialog9autoCloseEv(void *this_) {
@@ -375,7 +374,7 @@ bool C_ZNK15QProgressDialog9autoCloseEv(void *this_) {
 
 // Public Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtWidgets/qprogressdialog.h:99
+// /usr/include/qt/QtWidgets/qprogressdialog.h:100
 // [-2] void open(QObject *, const char *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
@@ -385,7 +384,7 @@ void C_ZN15QProgressDialog4openEP7QObjectPKc(void *this_, QObject * receiver, co
 #endif // QT_VERSION >= 0x040500
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:102
+// /usr/include/qt/QtWidgets/qprogressdialog.h:103
 // [-2] void cancel()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog6cancelEv(void *this_) {
@@ -393,7 +392,7 @@ void C_ZN15QProgressDialog6cancelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:103
+// /usr/include/qt/QtWidgets/qprogressdialog.h:104
 // [-2] void reset()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog5resetEv(void *this_) {
@@ -401,7 +400,7 @@ void C_ZN15QProgressDialog5resetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:104
+// /usr/include/qt/QtWidgets/qprogressdialog.h:105
 // [-2] void setMaximum(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog10setMaximumEi(void *this_, int maximum) {
@@ -409,7 +408,7 @@ void C_ZN15QProgressDialog10setMaximumEi(void *this_, int maximum) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:105
+// /usr/include/qt/QtWidgets/qprogressdialog.h:106
 // [-2] void setMinimum(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog10setMinimumEi(void *this_, int minimum) {
@@ -417,7 +416,7 @@ void C_ZN15QProgressDialog10setMinimumEi(void *this_, int minimum) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:106
+// /usr/include/qt/QtWidgets/qprogressdialog.h:107
 // [-2] void setRange(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog8setRangeEii(void *this_, int minimum, int maximum) {
@@ -425,7 +424,7 @@ void C_ZN15QProgressDialog8setRangeEii(void *this_, int minimum, int maximum) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:107
+// /usr/include/qt/QtWidgets/qprogressdialog.h:108
 // [-2] void setValue(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog8setValueEi(void *this_, int progress) {
@@ -433,7 +432,7 @@ void C_ZN15QProgressDialog8setValueEi(void *this_, int progress) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:108
+// /usr/include/qt/QtWidgets/qprogressdialog.h:109
 // [-2] void setLabelText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog12setLabelTextERK7QString(void *this_, QString* text) {
@@ -441,7 +440,7 @@ void C_ZN15QProgressDialog12setLabelTextERK7QString(void *this_, QString* text) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:109
+// /usr/include/qt/QtWidgets/qprogressdialog.h:110
 // [-2] void setCancelButtonText(const QString &)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog19setCancelButtonTextERK7QString(void *this_, QString* text) {
@@ -449,7 +448,7 @@ void C_ZN15QProgressDialog19setCancelButtonTextERK7QString(void *this_, QString*
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:110
+// /usr/include/qt/QtWidgets/qprogressdialog.h:111
 // [-2] void setMinimumDuration(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog18setMinimumDurationEi(void *this_, int ms) {
@@ -457,7 +456,7 @@ void C_ZN15QProgressDialog18setMinimumDurationEi(void *this_, int ms) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qprogressdialog.h:113
+// /usr/include/qt/QtWidgets/qprogressdialog.h:114
 // [-2] void canceled()
 extern "C" Q_DECL_EXPORT
 void C_ZN15QProgressDialog8canceledEv(void *this_) {
@@ -480,5 +479,4 @@ void C_ZN15QProgressDialog8canceledEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

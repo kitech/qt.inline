@@ -53,7 +53,7 @@ MyQMutex(QMutex::RecursionMode mode) : QMutex(mode) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:130
+// /usr/include/qt/QtCore/qmutex.h:124
 // [-2] void QMutex(QMutex::RecursionMode)
 extern "C" Q_DECL_EXPORT
 void* C_ZN6QMutexC2ENS_13RecursionModeE(QMutex::RecursionMode mode) {
@@ -61,14 +61,14 @@ void* C_ZN6QMutexC2ENS_13RecursionModeE(QMutex::RecursionMode mode) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:131
+// /usr/include/qt/QtCore/qmutex.h:125
 // [-2] void ~QMutex()
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMutexD2Ev(void *this_) {
   delete (QMutex*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:134
+// /usr/include/qt/QtCore/qmutex.h:128
 // [-2] void lock()
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMutex4lockEv(void *this_) {
@@ -76,7 +76,7 @@ void C_ZN6QMutex4lockEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:135
+// /usr/include/qt/QtCore/qmutex.h:129
 // [1] bool tryLock(int)
 extern "C" Q_DECL_EXPORT
 bool C_ZN6QMutex7tryLockEi(void *this_, int timeout) {
@@ -84,7 +84,7 @@ bool C_ZN6QMutex7tryLockEi(void *this_, int timeout) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:137
+// /usr/include/qt/QtCore/qmutex.h:131
 // [-2] void unlock()
 extern "C" Q_DECL_EXPORT
 void C_ZN6QMutex6unlockEv(void *this_) {
@@ -93,7 +93,7 @@ void C_ZN6QMutex6unlockEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtCore/qmutex.h:140
+// /usr/include/qt/QtCore/qmutex.h:134
 // [1] bool try_lock()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -104,7 +104,7 @@ bool C_ZN6QMutex8try_lockEv(void *this_) {
 
 // Public inline Visibility=Default Availability=Available
 // since 5.7
-// /usr/include/qt/QtCore/qmutex.h:161
+// /usr/include/qt/QtCore/qmutex.h:155
 // [1] bool isRecursive()
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT

@@ -333,7 +333,7 @@ void C_ZorN11QSGMaterial4FlagE6QFlagsIS0_E_286(QSGMaterial::Flags::enum_type f1,
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:464
+// /usr/include/qt/QtQuick/qquickitem.h:459
 // [4] QIncompatibleFlag operator|(QQuickItem::Flags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QQuickItem4FlagEi_287(QQuickItem::Flags::enum_type f1, int f2) {
@@ -342,7 +342,7 @@ void C_ZorN10QQuickItem4FlagEi_287(QQuickItem::Flags::enum_type f1, int f2) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:464
+// /usr/include/qt/QtQuick/qquickitem.h:459
 // [4] QFlags<QQuickItem::Flags::enum_type> operator|(QQuickItem::Flags::enum_type, QQuickItem::Flags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QQuickItem4FlagES0__288(QQuickItem::Flags::enum_type f1, QQuickItem::Flags::enum_type f2) {
@@ -351,7 +351,7 @@ void C_ZorN10QQuickItem4FlagES0__288(QQuickItem::Flags::enum_type f1, QQuickItem
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:464
+// /usr/include/qt/QtQuick/qquickitem.h:459
 // [4] QFlags<QQuickItem::Flags::enum_type> operator|(QQuickItem::Flags::enum_type, QFlags<QQuickItem::Flags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QQuickItem4FlagE6QFlagsIS0_E_289(QQuickItem::Flags::enum_type f1, QFlags<QQuickItem::Flag> f2) {
@@ -363,7 +363,7 @@ void C_ZorN10QQuickItem4FlagE6QFlagsIS0_E_289(QQuickItem::Flags::enum_type f1, Q
 // /usr/include/qt/QtQuick/qsgnode.h:353
 // [8] QDebug operator<<(QDebug, const QSGNode *)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugPK7QSGNode_223(QDebug* arg0, const QSGNode * n) {
+void* C_Zls6QDebugPK7QSGNode_216(QDebug* arg0, const QSGNode * n) {
   auto rv = operator<<(*arg0, n);
 return new QDebug(rv);
 }
@@ -372,7 +372,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtQuick/qsgnode.h:355
 // [8] QDebug operator<<(QDebug, const QSGTransformNode *)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugPK16QSGTransformNode_224(QDebug* arg0, const QSGTransformNode * n) {
+void* C_Zls6QDebugPK16QSGTransformNode_217(QDebug* arg0, const QSGTransformNode * n) {
   auto rv = operator<<(*arg0, n);
 return new QDebug(rv);
 }
@@ -381,7 +381,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtQuick/qsgnode.h:354
 // [8] QDebug operator<<(QDebug, const QSGGeometryNode *)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugPK15QSGGeometryNode_225(QDebug* arg0, const QSGGeometryNode * n) {
+void* C_Zls6QDebugPK15QSGGeometryNode_218(QDebug* arg0, const QSGGeometryNode * n) {
   auto rv = operator<<(*arg0, n);
 return new QDebug(rv);
 }
@@ -390,17 +390,8 @@ return new QDebug(rv);
 // /usr/include/qt/QtQuick/qsgnode.h:356
 // [8] QDebug operator<<(QDebug, const QSGOpacityNode *)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugPK14QSGOpacityNode_226(QDebug* arg0, const QSGOpacityNode * n) {
+void* C_Zls6QDebugPK14QSGOpacityNode_219(QDebug* arg0, const QSGOpacityNode * n) {
   auto rv = operator<<(*arg0, n);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickwindow.h:245
-// [8] QDebug operator<<(QDebug, const QQuickWindow *)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugPK12QQuickWindow_227(QDebug* debug, const QQuickWindow * item) {
-  auto rv = operator<<(*debug, item);
 return new QDebug(rv);
 }
 
@@ -408,16 +399,16 @@ return new QDebug(rv);
 // /usr/include/qt/QtQuick/qsgnode.h:357
 // [8] QDebug operator<<(QDebug, const QSGRootNode *)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugPK11QSGRootNode_228(QDebug* arg0, const QSGRootNode * n) {
+void* C_Zls6QDebugPK11QSGRootNode_220(QDebug* arg0, const QSGRootNode * n) {
   auto rv = operator<<(*arg0, n);
 return new QDebug(rv);
 }
 
 // Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitem.h:467
+// /usr/include/qt/QtQuick/qquickitem.h:462
 // [8] QDebug operator<<(QDebug, QQuickItem *)
 extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugP10QQuickItem_229(QDebug* debug, QQuickItem * item) {
+void* C_Zls6QDebugP10QQuickItem_221(QDebug* debug, QQuickItem * item) {
   auto rv = operator<<(*debug, item);
 return new QDebug(rv);
 }

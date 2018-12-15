@@ -54,7 +54,7 @@ MyQCryptographicHash(QCryptographicHash::Algorithm method) : QCryptographicHash(
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:92
+// /usr/include/qt/QtCore/qcryptographichash.h:76
 // [-2] void QCryptographicHash(QCryptographicHash::Algorithm)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCryptographicHashC2ENS_9AlgorithmE(QCryptographicHash::Algorithm method) {
@@ -62,14 +62,14 @@ void* C_ZN18QCryptographicHashC2ENS_9AlgorithmE(QCryptographicHash::Algorithm me
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:93
+// /usr/include/qt/QtCore/qcryptographichash.h:77
 // [-2] void ~QCryptographicHash()
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCryptographicHashD2Ev(void *this_) {
   delete (QCryptographicHash*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:95
+// /usr/include/qt/QtCore/qcryptographichash.h:79
 // [-2] void reset()
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCryptographicHash5resetEv(void *this_) {
@@ -77,7 +77,7 @@ void C_ZN18QCryptographicHash5resetEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:97
+// /usr/include/qt/QtCore/qcryptographichash.h:81
 // [-2] void addData(const char *, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCryptographicHash7addDataEPKci(void *this_, const char * data, int length) {
@@ -85,7 +85,7 @@ void C_ZN18QCryptographicHash7addDataEPKci(void *this_, const char * data, int l
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:98
+// /usr/include/qt/QtCore/qcryptographichash.h:82
 // [-2] void addData(const QByteArray &)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QCryptographicHash7addDataERK10QByteArray(void *this_, QByteArray* data) {
@@ -94,7 +94,7 @@ void C_ZN18QCryptographicHash7addDataERK10QByteArray(void *this_, QByteArray* da
 
 // Public Visibility=Default Availability=Available
 // since 5.0
-// /usr/include/qt/QtCore/qcryptographichash.h:99
+// /usr/include/qt/QtCore/qcryptographichash.h:83
 // [1] bool addData(QIODevice *)
 #if QT_VERSION >= 0x050000
 extern "C" Q_DECL_EXPORT
@@ -104,7 +104,7 @@ bool C_ZN18QCryptographicHash7addDataEP9QIODevice(void *this_, QIODevice * devic
 #endif // QT_VERSION >= 0x050000
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:101
+// /usr/include/qt/QtCore/qcryptographichash.h:85
 // [8] QByteArray result()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK18QCryptographicHash6resultEv(void *this_) {
@@ -113,7 +113,7 @@ return new QByteArray(rv);
 }
 
 // Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:103
+// /usr/include/qt/QtCore/qcryptographichash.h:87
 // [8] QByteArray hash(const QByteArray &, QCryptographicHash::Algorithm)
 extern "C" Q_DECL_EXPORT
 void* C_ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE(QByteArray* data, QCryptographicHash::Algorithm method) {

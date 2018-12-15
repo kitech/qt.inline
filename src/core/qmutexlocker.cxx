@@ -53,7 +53,7 @@ MyQMutexLocker(QBasicMutex * m) : QMutexLocker(m) {}
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:199
+// /usr/include/qt/QtCore/qmutex.h:193
 // [-2] void QMutexLocker(QBasicMutex *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QMutexLockerC2EP11QBasicMutex(QBasicMutex * m) {
@@ -61,14 +61,14 @@ void* C_ZN12QMutexLockerC2EP11QBasicMutex(QBasicMutex * m) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:213
+// /usr/include/qt/QtCore/qmutex.h:207
 // [-2] void ~QMutexLocker()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMutexLockerD2Ev(void *this_) {
   delete (QMutexLocker*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:215
+// /usr/include/qt/QtCore/qmutex.h:209
 // [-2] void unlock()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMutexLocker6unlockEv(void *this_) {
@@ -76,7 +76,7 @@ void C_ZN12QMutexLocker6unlockEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:223
+// /usr/include/qt/QtCore/qmutex.h:217
 // [-2] void relock()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QMutexLocker6relockEv(void *this_) {
@@ -84,7 +84,7 @@ void C_ZN12QMutexLocker6relockEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:238
+// /usr/include/qt/QtCore/qmutex.h:232
 // [8] QMutex * mutex()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QMutexLocker5mutexEv(void *this_) {

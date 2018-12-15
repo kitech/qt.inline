@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qrubberband.h
 #ifndef protected
 #define protected public
@@ -184,7 +183,7 @@ void* C_QRubberBand_init_staticMetaObject(void* this_, void* strdat, void* dat, 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:76
+// /usr/include/qt/QtWidgets/qrubberband.h:77
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QRubberBand5eventEP6QEvent(void *this_, QEvent * e) {
@@ -192,7 +191,7 @@ bool C_ZN11QRubberBand5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:77
+// /usr/include/qt/QtWidgets/qrubberband.h:78
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
@@ -200,7 +199,7 @@ void C_ZN11QRubberBand10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:78
+// /usr/include/qt/QtWidgets/qrubberband.h:79
 // [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand11changeEventEP6QEvent(void *this_, QEvent * arg0) {
@@ -208,7 +207,7 @@ void C_ZN11QRubberBand11changeEventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:79
+// /usr/include/qt/QtWidgets/qrubberband.h:80
 // [-2] void showEvent(QShowEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand9showEventEP10QShowEvent(void *this_, QShowEvent * arg0) {
@@ -216,7 +215,7 @@ void C_ZN11QRubberBand9showEventEP10QShowEvent(void *this_, QShowEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:80
+// /usr/include/qt/QtWidgets/qrubberband.h:81
 // [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
@@ -224,7 +223,7 @@ void C_ZN11QRubberBand11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:81
+// /usr/include/qt/QtWidgets/qrubberband.h:82
 // [-2] void moveEvent(QMoveEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand9moveEventEP10QMoveEvent(void *this_, QMoveEvent * arg0) {
@@ -232,7 +231,7 @@ void C_ZN11QRubberBand9moveEventEP10QMoveEvent(void *this_, QMoveEvent * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:55
+// /usr/include/qt/QtWidgets/qrubberband.h:56
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QRubberBand10metaObjectEv(void *this_) {
@@ -240,7 +239,7 @@ void* C_ZNK11QRubberBand10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:55
+// /usr/include/qt/QtWidgets/qrubberband.h:56
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QRubberBand11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -248,7 +247,7 @@ void* C_ZN11QRubberBand11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:55
+// /usr/include/qt/QtWidgets/qrubberband.h:56
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN11QRubberBand11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -256,7 +255,7 @@ int C_ZN11QRubberBand11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaOb
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:55
+// /usr/include/qt/QtWidgets/qrubberband.h:56
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QRubberBand2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -265,7 +264,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:55
+// /usr/include/qt/QtWidgets/qrubberband.h:56
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QRubberBand6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -274,7 +273,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:59
+// /usr/include/qt/QtWidgets/qrubberband.h:60
 // [-2] void QRubberBand(QRubberBand::Shape, QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QRubberBandC2ENS_5ShapeEP7QWidget(QRubberBand::Shape arg0, QWidget * arg1) {
@@ -283,14 +282,14 @@ void* C_ZN11QRubberBandC2ENS_5ShapeEP7QWidget(QRubberBand::Shape arg0, QWidget *
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:60
+// /usr/include/qt/QtWidgets/qrubberband.h:61
 // [-2] void ~QRubberBand()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBandD2Ev(void *this_) {
   delete (QRubberBand*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:62
+// /usr/include/qt/QtWidgets/qrubberband.h:63
 // [4] QRubberBand::Shape shape()
 extern "C" Q_DECL_EXPORT
 QRubberBand::Shape C_ZNK11QRubberBand5shapeEv(void *this_) {
@@ -298,7 +297,7 @@ QRubberBand::Shape C_ZNK11QRubberBand5shapeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:64
+// /usr/include/qt/QtWidgets/qrubberband.h:65
 // [-2] void setGeometry(const QRect &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand11setGeometryERK5QRect(void *this_, QRect* r) {
@@ -306,7 +305,7 @@ void C_ZN11QRubberBand11setGeometryERK5QRect(void *this_, QRect* r) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:66
+// /usr/include/qt/QtWidgets/qrubberband.h:67
 // [-2] void setGeometry(int, int, int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand11setGeometryEiiii(void *this_, int x, int y, int w, int h) {
@@ -314,7 +313,7 @@ void C_ZN11QRubberBand11setGeometryEiiii(void *this_, int x, int y, int w, int h
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:67
+// /usr/include/qt/QtWidgets/qrubberband.h:68
 // [-2] void move(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand4moveEii(void *this_, int x, int y) {
@@ -322,7 +321,7 @@ void C_ZN11QRubberBand4moveEii(void *this_, int x, int y) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:68
+// /usr/include/qt/QtWidgets/qrubberband.h:69
 // [-2] void move(const QPoint &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand4moveERK6QPoint(void *this_, QPoint* p) {
@@ -330,7 +329,7 @@ void C_ZN11QRubberBand4moveERK6QPoint(void *this_, QPoint* p) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:70
+// /usr/include/qt/QtWidgets/qrubberband.h:71
 // [-2] void resize(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand6resizeEii(void *this_, int w, int h) {
@@ -338,7 +337,7 @@ void C_ZN11QRubberBand6resizeEii(void *this_, int w, int h) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qrubberband.h:72
+// /usr/include/qt/QtWidgets/qrubberband.h:73
 // [-2] void resize(const QSize &)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QRubberBand6resizeERK5QSize(void *this_, QSize* s) {
@@ -361,5 +360,4 @@ void C_ZN11QRubberBand6resizeERK5QSize(void *this_, QSize* s) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

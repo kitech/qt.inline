@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
@@ -98,7 +97,7 @@ MyQGraphicsEllipseItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * paren
 };
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:727
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:728
 // [1] bool supportsExtension(QGraphicsItem::Extension)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void *this_, QGraphicsItem::Extension extension) {
@@ -106,7 +105,7 @@ bool C_ZNK20QGraphicsEllipseItem17supportsExtensionEN13QGraphicsItem9ExtensionE(
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:728
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:729
 // [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void *this_, QGraphicsItem::Extension extension, QVariant* variant) {
@@ -114,7 +113,7 @@ void C_ZN20QGraphicsEllipseItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVar
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:729
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:730
 // [16] QVariant extension(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QGraphicsEllipseItem9extensionERK8QVariant(void *this_, QVariant* variant) {
@@ -123,7 +122,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:699
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:700
 // [-2] void QGraphicsEllipseItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsEllipseItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
@@ -132,7 +131,7 @@ void* C_ZN20QGraphicsEllipseItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:700
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:701
 // [-2] void QGraphicsEllipseItem(const QRectF &, QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN20QGraphicsEllipseItemC2ERK6QRectFP13QGraphicsItem(QRectF* rect, QGraphicsItem * parent) {
@@ -142,7 +141,7 @@ void* C_ZN20QGraphicsEllipseItemC2ERK6QRectFP13QGraphicsItem(QRectF* rect, QGrap
 
 // Public Visibility=Default Availability=Available
 // since 4.3
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:701
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:702
 // [-2] void QGraphicsEllipseItem(qreal, qreal, qreal, qreal, QGraphicsItem *)
 #if QT_VERSION >= 0x040300
 extern "C" Q_DECL_EXPORT
@@ -153,14 +152,14 @@ void* C_ZN20QGraphicsEllipseItemC2EddddP13QGraphicsItem(qreal x, qreal y, qreal 
 #endif // QT_VERSION >= 0x040300
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:702
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:703
 // [-2] void ~QGraphicsEllipseItem()
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsEllipseItemD2Ev(void *this_) {
   delete (QGraphicsEllipseItem*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:704
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:705
 // [32] QRectF rect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QGraphicsEllipseItem4rectEv(void *this_) {
@@ -169,7 +168,7 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:705
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:706
 // [-2] void setRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsEllipseItem7setRectERK6QRectF(void *this_, QRectF* rect) {
@@ -177,7 +176,7 @@ void C_ZN20QGraphicsEllipseItem7setRectERK6QRectF(void *this_, QRectF* rect) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:706
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:707
 // [-2] void setRect(qreal, qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsEllipseItem7setRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
@@ -185,7 +184,7 @@ void C_ZN20QGraphicsEllipseItem7setRectEdddd(void *this_, qreal x, qreal y, qrea
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:708
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:709
 // [4] int startAngle()
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QGraphicsEllipseItem10startAngleEv(void *this_) {
@@ -193,7 +192,7 @@ int C_ZNK20QGraphicsEllipseItem10startAngleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:709
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:710
 // [-2] void setStartAngle(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsEllipseItem13setStartAngleEi(void *this_, int angle) {
@@ -201,7 +200,7 @@ void C_ZN20QGraphicsEllipseItem13setStartAngleEi(void *this_, int angle) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:711
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:712
 // [4] int spanAngle()
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QGraphicsEllipseItem9spanAngleEv(void *this_) {
@@ -209,7 +208,7 @@ int C_ZNK20QGraphicsEllipseItem9spanAngleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:712
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:713
 // [-2] void setSpanAngle(int)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsEllipseItem12setSpanAngleEi(void *this_, int angle) {
@@ -217,7 +216,7 @@ void C_ZN20QGraphicsEllipseItem12setSpanAngleEi(void *this_, int angle) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:714
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:715
 // [32] QRectF boundingRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QGraphicsEllipseItem12boundingRectEv(void *this_) {
@@ -226,7 +225,7 @@ return new QRectF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:715
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:716
 // [8] QPainterPath shape()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QGraphicsEllipseItem5shapeEv(void *this_) {
@@ -235,7 +234,7 @@ return new QPainterPath(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:716
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:717
 // [1] bool contains(const QPointF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QGraphicsEllipseItem8containsERK7QPointF(void *this_, QPointF* point) {
@@ -243,7 +242,7 @@ bool C_ZNK20QGraphicsEllipseItem8containsERK7QPointF(void *this_, QPointF* point
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:718
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:719
 // [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN20QGraphicsEllipseItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
@@ -251,7 +250,7 @@ void C_ZN20QGraphicsEllipseItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QW
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:720
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:721
 // [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK20QGraphicsEllipseItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
@@ -259,7 +258,7 @@ bool C_ZNK20QGraphicsEllipseItem12isObscuredByEPK13QGraphicsItem(void *this_, co
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:721
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:722
 // [8] QPainterPath opaqueArea()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK20QGraphicsEllipseItem10opaqueAreaEv(void *this_) {
@@ -268,7 +267,7 @@ return new QPainterPath(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:724
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:725
 // [4] int type()
 extern "C" Q_DECL_EXPORT
 int C_ZNK20QGraphicsEllipseItem4typeEv(void *this_) {
@@ -291,5 +290,4 @@ int C_ZNK20QGraphicsEllipseItem4typeEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

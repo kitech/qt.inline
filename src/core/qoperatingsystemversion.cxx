@@ -49,9 +49,19 @@ static const uint qt_meta_data_MyQOperatingSystemVersion[] = {
 class Q_DECL_EXPORT MyQOperatingSystemVersion : public QOperatingSystemVersion {
 public:
   virtual ~MyQOperatingSystemVersion() {}
+// void QOperatingSystemVersion(const QOperatingSystemVersion &)
+MyQOperatingSystemVersion(const QOperatingSystemVersion & other) : QOperatingSystemVersion(other) {}
 // void QOperatingSystemVersion(QOperatingSystemVersion::OSType, int, int, int)
 MyQOperatingSystemVersion(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) : QOperatingSystemVersion(osType, vmajor, vminor, vmicro) {}
 };
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:84
+// [-2] void QOperatingSystemVersion(const QOperatingSystemVersion &)
+extern "C" Q_DECL_EXPORT
+void* C_ZN23QOperatingSystemVersionC2ERKS_(QOperatingSystemVersion* other) {
+  return  new QOperatingSystemVersion(*other);
+}
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:85
@@ -65,21 +75,13 @@ void* C_ZN23QOperatingSystemVersionC2ENS_6OSTypeEiii(QOperatingSystemVersion::OS
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:93
 // [16] QOperatingSystemVersion current()
 extern "C" Q_DECL_EXPORT
-void C_ZN23QOperatingSystemVersion7currentEv() {
+void* C_ZN23QOperatingSystemVersion7currentEv() {
   auto rv = QOperatingSystemVersion::current();
-/*return rv;*/
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:95
-// [4] QOperatingSystemVersion::OSType currentType()
-extern "C" Q_DECL_EXPORT
-QOperatingSystemVersion::OSType C_ZN23QOperatingSystemVersion11currentTypeEv() {
-  return (QOperatingSystemVersion::OSType)QOperatingSystemVersion::currentType();
+return new QOperatingSystemVersion(rv);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:114
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:95
 // [4] int majorVersion()
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QOperatingSystemVersion12majorVersionEv(void *this_) {
@@ -87,7 +89,7 @@ int C_ZNK23QOperatingSystemVersion12majorVersionEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:115
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:96
 // [4] int minorVersion()
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QOperatingSystemVersion12minorVersionEv(void *this_) {
@@ -95,7 +97,7 @@ int C_ZNK23QOperatingSystemVersion12minorVersionEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:116
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:97
 // [4] int microVersion()
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QOperatingSystemVersion12microVersionEv(void *this_) {
@@ -103,7 +105,7 @@ int C_ZNK23QOperatingSystemVersion12microVersionEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:118
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:99
 // [4] int segmentCount()
 extern "C" Q_DECL_EXPORT
 int C_ZNK23QOperatingSystemVersion12segmentCountEv(void *this_) {
@@ -111,7 +113,7 @@ int C_ZNK23QOperatingSystemVersion12segmentCountEv(void *this_) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:124
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:103
 // [4] QOperatingSystemVersion::OSType type()
 extern "C" Q_DECL_EXPORT
 QOperatingSystemVersion::OSType C_ZNK23QOperatingSystemVersion4typeEv(void *this_) {
@@ -119,7 +121,7 @@ QOperatingSystemVersion::OSType C_ZNK23QOperatingSystemVersion4typeEv(void *this
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:125
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:104
 // [8] QString name()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK23QOperatingSystemVersion4nameEv(void *this_) {

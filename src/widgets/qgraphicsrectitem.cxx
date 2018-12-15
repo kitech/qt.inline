@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
@@ -98,7 +97,7 @@ MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) 
 };
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:683
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:684
 // [1] bool supportsExtension(QGraphicsItem::Extension)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void *this_, QGraphicsItem::Extension extension) {
@@ -106,7 +105,7 @@ bool C_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE(voi
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:684
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:685
 // [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void *this_, QGraphicsItem::Extension extension, QVariant* variant) {
@@ -114,7 +113,7 @@ void C_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVarian
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:685
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:686
 // [16] QVariant extension(const QVariant &)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsRectItem9extensionERK8QVariant(void *this_, QVariant* variant) {
@@ -123,7 +122,7 @@ return new QVariant(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:661
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:662
 // [-2] void QGraphicsRectItem(QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsRectItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
@@ -132,7 +131,7 @@ void* C_ZN17QGraphicsRectItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:662
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:663
 // [-2] void QGraphicsRectItem(const QRectF &, QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsRectItemC2ERK6QRectFP13QGraphicsItem(QRectF* rect, QGraphicsItem * parent) {
@@ -141,7 +140,7 @@ void* C_ZN17QGraphicsRectItemC2ERK6QRectFP13QGraphicsItem(QRectF* rect, QGraphic
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:663
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:664
 // [-2] void QGraphicsRectItem(qreal, qreal, qreal, qreal, QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QGraphicsRectItemC2EddddP13QGraphicsItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) {
@@ -150,14 +149,14 @@ void* C_ZN17QGraphicsRectItemC2EddddP13QGraphicsItem(qreal x, qreal y, qreal w, 
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:664
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:665
 // [-2] void ~QGraphicsRectItem()
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsRectItemD2Ev(void *this_) {
   delete (QGraphicsRectItem*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:666
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:667
 // [32] QRectF rect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsRectItem4rectEv(void *this_) {
@@ -166,7 +165,7 @@ return new QRectF(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:667
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:668
 // [-2] void setRect(const QRectF &)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsRectItem7setRectERK6QRectF(void *this_, QRectF* rect) {
@@ -174,7 +173,7 @@ void C_ZN17QGraphicsRectItem7setRectERK6QRectF(void *this_, QRectF* rect) {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:668
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:669
 // [-2] void setRect(qreal, qreal, qreal, qreal)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsRectItem7setRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
@@ -182,7 +181,7 @@ void C_ZN17QGraphicsRectItem7setRectEdddd(void *this_, qreal x, qreal y, qreal w
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:670
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:671
 // [32] QRectF boundingRect()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsRectItem12boundingRectEv(void *this_) {
@@ -191,7 +190,7 @@ return new QRectF(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:671
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:672
 // [8] QPainterPath shape()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsRectItem5shapeEv(void *this_) {
@@ -200,7 +199,7 @@ return new QPainterPath(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:672
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:673
 // [1] bool contains(const QPointF &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsRectItem8containsERK7QPointF(void *this_, QPointF* point) {
@@ -208,7 +207,7 @@ bool C_ZNK17QGraphicsRectItem8containsERK7QPointF(void *this_, QPointF* point) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:674
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:675
 // [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QGraphicsRectItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
@@ -216,7 +215,7 @@ void C_ZN17QGraphicsRectItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidg
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:676
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:677
 // [1] bool isObscuredBy(const QGraphicsItem *)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QGraphicsRectItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
@@ -224,7 +223,7 @@ bool C_ZNK17QGraphicsRectItem12isObscuredByEPK13QGraphicsItem(void *this_, const
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:677
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:678
 // [8] QPainterPath opaqueArea()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK17QGraphicsRectItem10opaqueAreaEv(void *this_) {
@@ -233,7 +232,7 @@ return new QPainterPath(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:680
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:681
 // [4] int type()
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QGraphicsRectItem4typeEv(void *this_) {
@@ -256,5 +255,4 @@ int C_ZNK17QGraphicsRectItem4typeEv(void *this_) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -56,7 +56,7 @@ MyQStyleOptionToolBar(const QStyleOptionToolBar & other) : QStyleOptionToolBar(o
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:315
+// /usr/include/qt/QtWidgets/qstyleoption.h:304
 // [-2] void QStyleOptionToolBar()
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionToolBarC2Ev() {
@@ -64,7 +64,7 @@ void* C_ZN19QStyleOptionToolBarC2Ev() {
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:316
+// /usr/include/qt/QtWidgets/qstyleoption.h:305
 // [-2] void QStyleOptionToolBar(const QStyleOptionToolBar &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN19QStyleOptionToolBarC2ERKS_(QStyleOptionToolBar* other) {

@@ -1,6 +1,5 @@
 //  header block begin
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qtoolbutton.h
 #ifndef protected
 #define protected public
@@ -245,7 +244,7 @@ void* C_QToolButton_init_staticMetaObject(void* this_, void* strdat, void* dat, 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:109
+// /usr/include/qt/QtWidgets/qtoolbutton.h:110
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN11QToolButton5eventEP6QEvent(void *this_, QEvent * e) {
@@ -253,7 +252,7 @@ bool C_ZN11QToolButton5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:110
+// /usr/include/qt/QtWidgets/qtoolbutton.h:111
 // [-2] void mousePressEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -261,7 +260,7 @@ void C_ZN11QToolButton15mousePressEventEP11QMouseEvent(void *this_, QMouseEvent 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:111
+// /usr/include/qt/QtWidgets/qtoolbutton.h:112
 // [-2] void mouseReleaseEvent(QMouseEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEvent * arg0) {
@@ -269,7 +268,7 @@ void C_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent(void *this_, QMouseEven
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:112
+// /usr/include/qt/QtWidgets/qtoolbutton.h:113
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg0) {
@@ -277,7 +276,7 @@ void C_ZN11QToolButton10paintEventEP11QPaintEvent(void *this_, QPaintEvent * arg
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:113
+// /usr/include/qt/QtWidgets/qtoolbutton.h:114
 // [-2] void actionEvent(QActionEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton11actionEventEP12QActionEvent(void *this_, QActionEvent * arg0) {
@@ -285,7 +284,7 @@ void C_ZN11QToolButton11actionEventEP12QActionEvent(void *this_, QActionEvent * 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:115
+// /usr/include/qt/QtWidgets/qtoolbutton.h:116
 // [-2] void enterEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton10enterEventEP6QEvent(void *this_, QEvent * arg0) {
@@ -293,7 +292,7 @@ void C_ZN11QToolButton10enterEventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:116
+// /usr/include/qt/QtWidgets/qtoolbutton.h:117
 // [-2] void leaveEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton10leaveEventEP6QEvent(void *this_, QEvent * arg0) {
@@ -301,7 +300,7 @@ void C_ZN11QToolButton10leaveEventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:117
+// /usr/include/qt/QtWidgets/qtoolbutton.h:118
 // [-2] void timerEvent(QTimerEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
@@ -309,7 +308,7 @@ void C_ZN11QToolButton10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:118
+// /usr/include/qt/QtWidgets/qtoolbutton.h:119
 // [-2] void changeEvent(QEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton11changeEventEP6QEvent(void *this_, QEvent * arg0) {
@@ -317,7 +316,7 @@ void C_ZN11QToolButton11changeEventEP6QEvent(void *this_, QEvent * arg0) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:120
+// /usr/include/qt/QtWidgets/qtoolbutton.h:121
 // [1] bool hitButton(const QPoint &)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QToolButton9hitButtonERK6QPoint(void *this_, QPoint* pos) {
@@ -325,7 +324,7 @@ bool C_ZNK11QToolButton9hitButtonERK6QPoint(void *this_, QPoint* pos) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:121
+// /usr/include/qt/QtWidgets/qtoolbutton.h:122
 // [-2] void nextCheckState()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton14nextCheckStateEv(void *this_) {
@@ -333,7 +332,7 @@ void C_ZN11QToolButton14nextCheckStateEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:57
+// /usr/include/qt/QtWidgets/qtoolbutton.h:58
 // [8] const QMetaObject * metaObject()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QToolButton10metaObjectEv(void *this_) {
@@ -341,7 +340,7 @@ void* C_ZNK11QToolButton10metaObjectEv(void *this_) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:57
+// /usr/include/qt/QtWidgets/qtoolbutton.h:58
 // [8] void * qt_metacast(const char *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QToolButton11qt_metacastEPKc(void *this_, const char * arg0) {
@@ -349,7 +348,7 @@ void* C_ZN11QToolButton11qt_metacastEPKc(void *this_, const char * arg0) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:57
+// /usr/include/qt/QtWidgets/qtoolbutton.h:58
 // [4] int qt_metacall(QMetaObject::Call, int, void **)
 extern "C" Q_DECL_EXPORT
 int C_ZN11QToolButton11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
@@ -357,7 +356,7 @@ int C_ZN11QToolButton11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaOb
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:57
+// /usr/include/qt/QtWidgets/qtoolbutton.h:58
 // [8] QString tr(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QToolButton2trEPKcS1_i(const char * s, const char * c, int n) {
@@ -366,7 +365,7 @@ return new QString(rv);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:57
+// /usr/include/qt/QtWidgets/qtoolbutton.h:58
 // [8] QString trUtf8(const char *, const char *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QToolButton6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
@@ -375,7 +374,7 @@ return new QString(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:74
+// /usr/include/qt/QtWidgets/qtoolbutton.h:75
 // [-2] void QToolButton(QWidget *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN11QToolButtonC2EP7QWidget(QWidget * parent) {
@@ -384,14 +383,14 @@ void* C_ZN11QToolButtonC2EP7QWidget(QWidget * parent) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:75
+// /usr/include/qt/QtWidgets/qtoolbutton.h:76
 // [-2] void ~QToolButton()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButtonD2Ev(void *this_) {
   delete (QToolButton*)(this_);
 }
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:77
+// /usr/include/qt/QtWidgets/qtoolbutton.h:78
 // [8] QSize sizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QToolButton8sizeHintEv(void *this_) {
@@ -400,7 +399,7 @@ return new QSize(rv);
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:78
+// /usr/include/qt/QtWidgets/qtoolbutton.h:79
 // [8] QSize minimumSizeHint()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QToolButton15minimumSizeHintEv(void *this_) {
@@ -409,7 +408,7 @@ return new QSize(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:80
+// /usr/include/qt/QtWidgets/qtoolbutton.h:81
 // [4] Qt::ToolButtonStyle toolButtonStyle()
 extern "C" Q_DECL_EXPORT
 Qt::ToolButtonStyle C_ZNK11QToolButton15toolButtonStyleEv(void *this_) {
@@ -417,7 +416,7 @@ Qt::ToolButtonStyle C_ZNK11QToolButton15toolButtonStyleEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:82
+// /usr/include/qt/QtWidgets/qtoolbutton.h:83
 // [4] Qt::ArrowType arrowType()
 extern "C" Q_DECL_EXPORT
 Qt::ArrowType C_ZNK11QToolButton9arrowTypeEv(void *this_) {
@@ -425,7 +424,7 @@ Qt::ArrowType C_ZNK11QToolButton9arrowTypeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:83
+// /usr/include/qt/QtWidgets/qtoolbutton.h:84
 // [-2] void setArrowType(Qt::ArrowType)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton12setArrowTypeEN2Qt9ArrowTypeE(void *this_, Qt::ArrowType type_) {
@@ -433,7 +432,7 @@ void C_ZN11QToolButton12setArrowTypeEN2Qt9ArrowTypeE(void *this_, Qt::ArrowType 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:86
+// /usr/include/qt/QtWidgets/qtoolbutton.h:87
 // [-2] void setMenu(QMenu *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton7setMenuEP5QMenu(void *this_, QMenu * menu) {
@@ -441,7 +440,7 @@ void C_ZN11QToolButton7setMenuEP5QMenu(void *this_, QMenu * menu) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:87
+// /usr/include/qt/QtWidgets/qtoolbutton.h:88
 // [8] QMenu * menu()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QToolButton4menuEv(void *this_) {
@@ -449,7 +448,7 @@ void* C_ZNK11QToolButton4menuEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:89
+// /usr/include/qt/QtWidgets/qtoolbutton.h:90
 // [-2] void setPopupMode(QToolButton::ToolButtonPopupMode)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton12setPopupModeENS_19ToolButtonPopupModeE(void *this_, QToolButton::ToolButtonPopupMode mode) {
@@ -457,7 +456,7 @@ void C_ZN11QToolButton12setPopupModeENS_19ToolButtonPopupModeE(void *this_, QToo
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:90
+// /usr/include/qt/QtWidgets/qtoolbutton.h:91
 // [4] QToolButton::ToolButtonPopupMode popupMode()
 extern "C" Q_DECL_EXPORT
 QToolButton::ToolButtonPopupMode C_ZNK11QToolButton9popupModeEv(void *this_) {
@@ -465,7 +464,7 @@ QToolButton::ToolButtonPopupMode C_ZNK11QToolButton9popupModeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:93
+// /usr/include/qt/QtWidgets/qtoolbutton.h:94
 // [8] QAction * defaultAction()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK11QToolButton13defaultActionEv(void *this_) {
@@ -473,7 +472,7 @@ void* C_ZNK11QToolButton13defaultActionEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:95
+// /usr/include/qt/QtWidgets/qtoolbutton.h:96
 // [-2] void setAutoRaise(bool)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton12setAutoRaiseEb(void *this_, bool enable) {
@@ -481,7 +480,7 @@ void C_ZN11QToolButton12setAutoRaiseEb(void *this_, bool enable) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:96
+// /usr/include/qt/QtWidgets/qtoolbutton.h:97
 // [1] bool autoRaise()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK11QToolButton9autoRaiseEv(void *this_) {
@@ -489,7 +488,7 @@ bool C_ZNK11QToolButton9autoRaiseEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:100
+// /usr/include/qt/QtWidgets/qtoolbutton.h:101
 // [-2] void showMenu()
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton8showMenuEv(void *this_) {
@@ -497,7 +496,7 @@ void C_ZN11QToolButton8showMenuEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:102
+// /usr/include/qt/QtWidgets/qtoolbutton.h:103
 // [-2] void setToolButtonStyle(Qt::ToolButtonStyle)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *this_, Qt::ToolButtonStyle style) {
@@ -505,7 +504,7 @@ void C_ZN11QToolButton18setToolButtonStyleEN2Qt15ToolButtonStyleE(void *this_, Q
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:103
+// /usr/include/qt/QtWidgets/qtoolbutton.h:104
 // [-2] void setDefaultAction(QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton16setDefaultActionEP7QAction(void *this_, QAction * arg0) {
@@ -513,7 +512,7 @@ void C_ZN11QToolButton16setDefaultActionEP7QAction(void *this_, QAction * arg0) 
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qtoolbutton.h:106
+// /usr/include/qt/QtWidgets/qtoolbutton.h:107
 // [-2] void triggered(QAction *)
 extern "C" Q_DECL_EXPORT
 void C_ZN11QToolButton9triggeredEP7QAction(void *this_, QAction * arg0) {
@@ -536,5 +535,4 @@ void C_ZN11QToolButton9triggeredEP7QAction(void *this_, QAction * arg0) {
 
 //  footer block begin
 
-#endif // #ifndef QT_MINIMAL
 //  footer block end

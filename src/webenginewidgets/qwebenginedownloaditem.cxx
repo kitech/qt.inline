@@ -236,16 +236,8 @@ bool C_ZNK22QWebEngineDownloadItem10isFinishedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:123
-// [1] bool isPaused()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK22QWebEngineDownloadItem8isPausedEv(void *this_) {
-  return (bool)((QWebEngineDownloadItem*)this_)->isPaused();
-}
-
-// Public Visibility=Default Availability=Available
 // since 5.7
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:124
+// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:123
 // [4] QWebEngineDownloadItem::SavePageFormat savePageFormat()
 #if QT_VERSION >= 0x050700
 extern "C" Q_DECL_EXPORT
@@ -255,7 +247,7 @@ QWebEngineDownloadItem::SavePageFormat C_ZNK22QWebEngineDownloadItem14savePageFo
 #endif // QT_VERSION >= 0x050700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:125
+// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:124
 // [-2] void setSavePageFormat(QWebEngineDownloadItem::SavePageFormat)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QWebEngineDownloadItem17setSavePageFormatENS_14SavePageFormatE(void *this_, QWebEngineDownloadItem::SavePageFormat format) {
@@ -264,7 +256,7 @@ void C_ZN22QWebEngineDownloadItem17setSavePageFormatENS_14SavePageFormatE(void *
 
 // Public Visibility=Default Availability=Available
 // since 5.8
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:126
+// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:125
 // [4] QWebEngineDownloadItem::DownloadType type()
 #if QT_VERSION >= 0x050800
 extern "C" Q_DECL_EXPORT
@@ -275,7 +267,7 @@ QWebEngineDownloadItem::DownloadType C_ZNK22QWebEngineDownloadItem4typeEv(void *
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:127
+// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:126
 // [4] QWebEngineDownloadItem::DownloadInterruptReason interruptReason()
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -286,7 +278,7 @@ QWebEngineDownloadItem::DownloadInterruptReason C_ZNK22QWebEngineDownloadItem15i
 
 // Public Visibility=Default Availability=Available
 // since 5.9
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:128
+// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:127
 // [8] QString interruptReasonString()
 #if QT_VERSION >= 0x050900
 extern "C" Q_DECL_EXPORT
@@ -297,7 +289,7 @@ return new QString(rv);
 #endif // QT_VERSION >= 0x050900
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:131
+// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:130
 // [-2] void accept()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QWebEngineDownloadItem6acceptEv(void *this_) {
@@ -305,7 +297,7 @@ void C_ZN22QWebEngineDownloadItem6acceptEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:132
+// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:131
 // [-2] void cancel()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QWebEngineDownloadItem6cancelEv(void *this_) {
@@ -313,29 +305,7 @@ void C_ZN22QWebEngineDownloadItem6cancelEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:133
-// [-2] void pause()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN22QWebEngineDownloadItem5pauseEv(void *this_) {
-  ((QWebEngineDownloadItem*)this_)->pause();
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:134
-// [-2] void resume()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN22QWebEngineDownloadItem6resumeEv(void *this_) {
-  ((QWebEngineDownloadItem*)this_)->resume();
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:137
 // [-2] void finished()
 extern "C" Q_DECL_EXPORT
 void C_ZN22QWebEngineDownloadItem8finishedEv(void *this_) {
@@ -343,7 +313,7 @@ void C_ZN22QWebEngineDownloadItem8finishedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:138
+// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:135
 // [-2] void stateChanged(QWebEngineDownloadItem::DownloadState)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QWebEngineDownloadItem12stateChangedENS_13DownloadStateE(void *this_, QWebEngineDownloadItem::DownloadState state) {
@@ -351,23 +321,12 @@ void C_ZN22QWebEngineDownloadItem12stateChangedENS_13DownloadStateE(void *this_,
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:139
+// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:136
 // [-2] void downloadProgress(qint64, qint64)
 extern "C" Q_DECL_EXPORT
 void C_ZN22QWebEngineDownloadItem16downloadProgressExx(void *this_, qint64 bytesReceived, qint64 bytesTotal) {
   ((QWebEngineDownloadItem*)this_)->downloadProgress(bytesReceived, bytesTotal);
 }
-
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtWebEngineWidgets/qwebenginedownloaditem.h:140
-// [-2] void isPausedChanged(bool)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN22QWebEngineDownloadItem15isPausedChangedEb(void *this_, bool isPaused) {
-  ((QWebEngineDownloadItem*)this_)->isPausedChanged(isPaused);
-}
-#endif // QT_VERSION >= 0x050a00
 
 //  main block end
 

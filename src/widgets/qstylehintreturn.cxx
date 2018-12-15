@@ -53,7 +53,7 @@ MyQStyleHintReturn(int version, int type_) : QStyleHintReturn(version, type_) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:710
+// /usr/include/qt/QtWidgets/qstyleoption.h:699
 // [-2] void QStyleHintReturn(int, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN16QStyleHintReturnC2Eii(int version, int type_) {
@@ -61,7 +61,7 @@ void* C_ZN16QStyleHintReturnC2Eii(int version, int type_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:711
+// /usr/include/qt/QtWidgets/qstyleoption.h:700
 // [-2] void ~QStyleHintReturn()
 extern "C" Q_DECL_EXPORT
 void C_ZN16QStyleHintReturnD2Ev(void *this_) {

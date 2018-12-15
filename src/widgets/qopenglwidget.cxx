@@ -223,7 +223,7 @@ void* C_QOpenGLWidget_init_staticMetaObject(void* this_, void* strdat, void* dat
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:95
+// /usr/include/qt/QtWidgets/qopenglwidget.h:92
 // [-2] void initializeGL()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget12initializeGLEv(void *this_) {
@@ -231,7 +231,7 @@ void C_ZN13QOpenGLWidget12initializeGLEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:96
+// /usr/include/qt/QtWidgets/qopenglwidget.h:93
 // [-2] void resizeGL(int, int)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget8resizeGLEii(void *this_, int w, int h) {
@@ -239,7 +239,7 @@ void C_ZN13QOpenGLWidget8resizeGLEii(void *this_, int w, int h) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:97
+// /usr/include/qt/QtWidgets/qopenglwidget.h:94
 // [-2] void paintGL()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget7paintGLEv(void *this_) {
@@ -247,7 +247,7 @@ void C_ZN13QOpenGLWidget7paintGLEv(void *this_) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:99
+// /usr/include/qt/QtWidgets/qopenglwidget.h:96
 // [-2] void paintEvent(QPaintEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e) {
@@ -255,7 +255,7 @@ void C_ZN13QOpenGLWidget10paintEventEP11QPaintEvent(void *this_, QPaintEvent * e
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:100
+// /usr/include/qt/QtWidgets/qopenglwidget.h:97
 // [-2] void resizeEvent(QResizeEvent *)
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * e) {
@@ -263,7 +263,7 @@ void C_ZN13QOpenGLWidget11resizeEventEP12QResizeEvent(void *this_, QResizeEvent 
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:101
+// /usr/include/qt/QtWidgets/qopenglwidget.h:98
 // [1] bool event(QEvent *)
 extern "C" Q_DECL_EXPORT
 bool C_ZN13QOpenGLWidget5eventEP6QEvent(void *this_, QEvent * e) {
@@ -271,7 +271,7 @@ bool C_ZN13QOpenGLWidget5eventEP6QEvent(void *this_, QEvent * e) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:103
+// /usr/include/qt/QtWidgets/qopenglwidget.h:100
 // [4] int metric(QPaintDevice::PaintDeviceMetric)
 extern "C" Q_DECL_EXPORT
 int C_ZNK13QOpenGLWidget6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric metric) {
@@ -279,7 +279,7 @@ int C_ZNK13QOpenGLWidget6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_,
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:104
+// /usr/include/qt/QtWidgets/qopenglwidget.h:101
 // [8] QPaintDevice * redirected(QPoint *)
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QOpenGLWidget10redirectedEP6QPoint(void *this_, QPoint * p) {
@@ -287,7 +287,7 @@ void* C_ZNK13QOpenGLWidget10redirectedEP6QPoint(void *this_, QPoint * p) {
 }
 
 // Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:105
+// /usr/include/qt/QtWidgets/qopenglwidget.h:102
 // [8] QPaintEngine * paintEngine()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QOpenGLWidget11paintEngineEv(void *this_) {
@@ -389,29 +389,7 @@ return new QSurfaceFormat(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// since 5.10
 // /usr/include/qt/QtWidgets/qopenglwidget.h:75
-// [4] GLenum textureFormat()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-GLenum C_ZNK13QOpenGLWidget13textureFormatEv(void *this_) {
-  return (GLenum)((QOpenGLWidget*)this_)->textureFormat();
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtWidgets/qopenglwidget.h:76
-// [-2] void setTextureFormat(GLenum)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN13QOpenGLWidget16setTextureFormatEj(void *this_, GLenum texFormat) {
-  ((QOpenGLWidget*)this_)->setTextureFormat(texFormat);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:78
 // [1] bool isValid()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK13QOpenGLWidget7isValidEv(void *this_) {
@@ -419,7 +397,7 @@ bool C_ZNK13QOpenGLWidget7isValidEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:80
+// /usr/include/qt/QtWidgets/qopenglwidget.h:77
 // [-2] void makeCurrent()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget11makeCurrentEv(void *this_) {
@@ -427,7 +405,7 @@ void C_ZN13QOpenGLWidget11makeCurrentEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:81
+// /usr/include/qt/QtWidgets/qopenglwidget.h:78
 // [-2] void doneCurrent()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget11doneCurrentEv(void *this_) {
@@ -435,7 +413,7 @@ void C_ZN13QOpenGLWidget11doneCurrentEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:83
+// /usr/include/qt/QtWidgets/qopenglwidget.h:80
 // [8] QOpenGLContext * context()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK13QOpenGLWidget7contextEv(void *this_) {
@@ -443,7 +421,7 @@ void* C_ZNK13QOpenGLWidget7contextEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:84
+// /usr/include/qt/QtWidgets/qopenglwidget.h:81
 // [4] GLuint defaultFramebufferObject()
 extern "C" Q_DECL_EXPORT
 GLuint C_ZNK13QOpenGLWidget24defaultFramebufferObjectEv(void *this_) {
@@ -451,7 +429,7 @@ GLuint C_ZNK13QOpenGLWidget24defaultFramebufferObjectEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:86
+// /usr/include/qt/QtWidgets/qopenglwidget.h:83
 // [32] QImage grabFramebuffer()
 extern "C" Q_DECL_EXPORT
 void* C_ZN13QOpenGLWidget15grabFramebufferEv(void *this_) {
@@ -460,7 +438,7 @@ return new QImage(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:89
+// /usr/include/qt/QtWidgets/qopenglwidget.h:86
 // [-2] void aboutToCompose()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget14aboutToComposeEv(void *this_) {
@@ -468,7 +446,7 @@ void C_ZN13QOpenGLWidget14aboutToComposeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:90
+// /usr/include/qt/QtWidgets/qopenglwidget.h:87
 // [-2] void frameSwapped()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget12frameSwappedEv(void *this_) {
@@ -476,7 +454,7 @@ void C_ZN13QOpenGLWidget12frameSwappedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:91
+// /usr/include/qt/QtWidgets/qopenglwidget.h:88
 // [-2] void aboutToResize()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget13aboutToResizeEv(void *this_) {
@@ -484,7 +462,7 @@ void C_ZN13QOpenGLWidget13aboutToResizeEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qopenglwidget.h:92
+// /usr/include/qt/QtWidgets/qopenglwidget.h:89
 // [-2] void resized()
 extern "C" Q_DECL_EXPORT
 void C_ZN13QOpenGLWidget7resizedEv(void *this_) {

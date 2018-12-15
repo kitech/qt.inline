@@ -1,5 +1,4 @@
 
-#ifndef QT_MINIMAL
 // /usr/include/qt/QtWidgets/qmdisubwindow.h
 #ifndef protected
 #define protected public
@@ -15,10 +14,6 @@ typedef QList<QMdiSubWindow *> QMdiSubWindowList;
 #endif
 #endif
 //  header block end
-
-//  footer block begin
-#endif // #ifndef QT_MINIMAL
-//  footer block end
 
 //  body block begin
 // [-3] QList<T> & operator=(const QList<T> &)

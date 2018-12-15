@@ -289,22 +289,6 @@ QVariantMap::key_iterator* C_QVariantMap_keyEnd_0(void* this_ ) {
     return new decltype(rv)(rv);
 }
 
-// [-3] QMap::key_value_iterator keyValueBegin()
-extern "C" Q_DECL_EXPORT
-QVariantMap::key_value_iterator* C_QVariantMap_keyValueBegin_0(void* this_ ) {
-    // QVariantMap_keyValueBegin_0()
-    auto rv =  ((QVariantMap*)this_)->keyValueBegin();
-    return new decltype(rv)(rv);
-}
-
-// [-3] QMap::key_value_iterator keyValueEnd()
-extern "C" Q_DECL_EXPORT
-QVariantMap::key_value_iterator* C_QVariantMap_keyValueEnd_0(void* this_ ) {
-    // QVariantMap_keyValueEnd_0()
-    auto rv =  ((QVariantMap*)this_)->keyValueEnd();
-    return new decltype(rv)(rv);
-}
-
 // [-3] QMap::iterator erase(QMap::iterator)
 extern "C" Q_DECL_EXPORT
 QVariantMap::iterator* C_QVariantMap_erase_0(void* this_ , QVariantMap::iterator* it) {

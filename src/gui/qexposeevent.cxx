@@ -54,7 +54,7 @@ MyQExposeEvent(const QRegion & rgn) : QExposeEvent(rgn) {}
 };
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:434
+// /usr/include/qt/QtGui/qevent.h:427
 // [-2] void QExposeEvent(const QRegion &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QExposeEventC2ERK7QRegion(QRegion* rgn) {
@@ -62,14 +62,14 @@ void* C_ZN12QExposeEventC2ERK7QRegion(QRegion* rgn) {
 }
 
 // Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:435
+// /usr/include/qt/QtGui/qevent.h:428
 // [-2] void ~QExposeEvent()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QExposeEventD2Ev(void *this_) {
   delete (QExposeEvent*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:437
+// /usr/include/qt/QtGui/qevent.h:430
 // [8] const QRegion & region()
 extern "C" Q_DECL_EXPORT
 void* C_ZNK12QExposeEvent6regionEv(void *this_) {
