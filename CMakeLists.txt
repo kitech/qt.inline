@@ -201,6 +201,7 @@ if(WITH_QT_STATIC)
       ${Qt5Core_DIR}/../../libQt5EventDispatcherSupport.a
       ${Qt5Core_DIR}/../../libQt5FontDatabaseSupport.a
       ${Qt5Core_DIR}/../../libQt5ThemeSupport.a
+      ${Qt5Core_DIR}/../../libQt5QuickTemplates2.a
       ${FreeType2_LIBRARIES} ${OpenSSL_LIBRARIES} -ldnsapi -liphlpapi)
   elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD})
