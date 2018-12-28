@@ -5,18 +5,26 @@ set -e -o pipefail
 
 set -x
 
-if [[ $JOB = "ubuntu16" ]]; then
+if [[ $JOB = "ubuntu16" ]] || [[ $JOB = "ubuntu18" ]]; then
     apt-get -qq update
-    apt-get install -y software-properties-common python-software-properties
+    if [[ $JOB = "ubuntu18" ]]; then
+        apt-get install -y software-properties-common
+        add-apt-repository ppa:beineri/opt-qt-5.11.2-bionic
+    elif [[ $JOB = "ubuntu16" ]]; then
+        apt-get install -y software-properties-common python-software-properties
+        add-apt-repository ppa:beineri/opt-qt-5.11.2-xenial
+    else
+        true;
+    fi
     add-apt-repository ppa:gophers/archive
-    add-apt-repository ppa:beineri/opt-qt-5.10.0-xenial
+
     apt-get -qq update
     apt-cache search golang-
     GOVER=1.9
     apt-get install -y "golang-$GOVER"
     apt-get install -y libffi-dev make gcc git curl cmake
     apt-get install -y mesa-common-dev libglu1-mesa-dev freeglut3-dev
-    apt-get install -y qt510base qt510quickcontrols2 qt510multimedia qt510svg
+    apt-get install -y qt511base qt511quickcontrols2 qt511multimedia qt511svg
 else
     pacman -Suyy --noconfirm
     pacman -S --noconfirm cmake gcc clang base-devel git libffi

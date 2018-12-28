@@ -13,7 +13,7 @@ env
 cd /root/
 ls && ls src/
 
-if [[ $JOB = "archlinux" ]] || [[ $JOB = "ubuntu16" ]]; then
+if [[ $JOB = "archlinux" ]] || [[ $JOB = "ubuntu16" ]] || [[ $JOB = "ubuntu18" ]]; then
     ./.travis/run-arch-ubuntu16.sh
 else # mingw
     ./.travis/run-$JOB-mxe.sh "$WINARCH" "$WITH_QT_STATIC"

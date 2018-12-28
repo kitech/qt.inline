@@ -11,6 +11,8 @@ MXEDIR=/opt/mxe2
 if [[ $ISINDK != "y" ]]; then
     cp -va $0 $MXEDIR/
     docker run -it -e ISINDK=y -v $MXEDIR:$MXEDIR ubuntu:16.04 $MXEDIR/dkmxeqt.sh
+    # already exit
+    # docker start -a -i 55da8531cdf3
     exit
 fi
 
@@ -28,6 +30,7 @@ cd $MXEDIR
 
 git checkout -b lockver
 git reset --hard aaaaa
+# 5.12.0 git:mxe:ed88c4c
 # 5.10.1 git:mxe:97c0fbf
 # 5.9.3 git:mxe:60b66c7
 

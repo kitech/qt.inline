@@ -44,6 +44,16 @@ matrix:
         - WITH_QT_STATIC=on
       services:
         - docker
+    - stage: Ubuntu18-gcc
+      os: linux
+      env: JOB=ubuntu18
+      services:
+        - docker
+    - stage: Ubuntu16-gcc
+      os: linux
+      env: JOB=ubuntu16
+      services:
+        - docker
     - stage: Ubuntu14-clang
       os: linux
       env: JOB=ubuntu14
@@ -52,14 +62,17 @@ matrix:
       env:
         - JOB=ubuntu14
         - WITH_QT_STATIC=on
-    - stage: Ubuntu16-gcc
-      os: linux
-      env: JOB=ubuntu16
-      services:
-        - docker
+    - stage: MacOS-Xcode10.1
+      os: osx
+      osx_image: xcode10.1
+      env: JOB=osx
+    - stage: MacOS-Xcode9.4
+      os: osx
+      osx_image: xcode9.4
+      env: JOB=osx
     - stage: MacOS-Xcode9.3
       os: osx
-      osx_image: xcode9.3beta
+      osx_image: xcode9.3
       env: JOB=osx
     - stage: MacOS-Xcode8.3
       os: osx

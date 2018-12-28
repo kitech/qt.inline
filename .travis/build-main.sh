@@ -9,10 +9,12 @@ echo "WINARCH=$WINARCH" >> travis.env
 echo "WITH_QT_STATIC=$WITH_QT_STATIC" >> travis.env
 
 # for dockers
-if [[ $JOB = "archlinux" ]] || [[ $JOB = "mingw" ]] || [[ $JOB = "ubuntu16" ]]; then
+if [[ $JOB = "archlinux" ]] || [[ $JOB = "mingw" ]] || [[ $JOB = "ubuntu16" ]] || [[ $JOB = "ubuntu18" ]]; then
     dkname=$JOB
     dkfile=Dockerfile.gen
-    if [[ $JOB = "ubuntu16" ]]; then
+    if [[ $JOB = "ubuntu18" ]]; then
+        echo "FROM ubuntu:18.04" > $dkfile
+    elif [[ $JOB = "ubuntu16" ]]; then
         echo "FROM ubuntu:16.04" > $dkfile
     else
         echo "FROM base/archlinux" > $dkfile
