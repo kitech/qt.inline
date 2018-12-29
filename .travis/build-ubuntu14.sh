@@ -24,17 +24,27 @@ export CC=clang CXX=clang++
 if [ x"$WITH_QT_STATIC" == x"" ]; then
     WITH_QT_STATIC=off
 fi
+qtverdir=$(echo "$QTVER"|sed 's/v//'|sed 's/\.//')  # v5.10 => 510
 if [ x"$WITH_QT_STATIC" == x"on" ]; then
-    git clone https://github.com/qtchina/qtlib510_linux_x64_static.git
-    sudo cp -a qtlib510_linux_x64_static /opt/qt510st
-    export PATH=/opt/qt510st/bin:$PATH
+    if [[ $QTVER = "v5.9" ]] || [[ $QTVER = "v5.10" ]]; then
+        git clone https://github.com/qtchina/qtlib510_linux_x64_static.git
+        sudo cp -a qtlib510_linux_x64_static /opt/qt510st
+        export PATH=/opt/qt510st/bin:$PATH
+    else # master
+        git clone https://github.com/qtchina/qtlib512_linux_x64_static.git
+        sudo cp -a qtlib512_linux_x64_static /opt/qt512st
+        export PATH=/opt/qt512st/bin:$PATH
+    fi
 else
     if [[ $QTVER = "v5.9" ]]; then
         git clone https://github.com/qtchina/qt59_linux_gcc64.git
         export PATH=`pwd`/qt59_linux_gcc64/bin:$PATH
-    else # master
+    elif [[ $QTVER = "v5.10" ]]; then
         git clone https://github.com/qtchina/qt510_linux_gcc64.git
         export PATH=`pwd`/qt510_linux_gcc64/bin:$PATH
+    else # master
+        git clone https://github.com/qtchina/qt512_linux_gcc64.git
+        export PATH=`pwd`/qt512_linux_gcc64/bin:$PATH
     fi
 fi
 cmake -DWITH_QT_STATIC=$WITH_QT_STATIC .
