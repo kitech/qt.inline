@@ -3,7 +3,7 @@
 #          -DUSE_WEBENGINES=on
 cmake_minimum_required(VERSION 3.0)
 set(PROJSOVER "5.12")
-set(PROJVER_PATCH "106")
+set(PROJVER_PATCH "107")
 set(PROJVERSTR "${PROJSOVER}.${PROJVER_PATCH}")
 project(qt5inline)
 
