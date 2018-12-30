@@ -210,7 +210,7 @@ if(WITH_QT_STATIC)
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD log)
   else(MINGW_NOIPBIZ)
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_LINUX_STATIC_BUILD})
-    link_directories(/opt/qt510st/lib/ /opt/qt510st/plugins/platforms/)
+    link_directories(${Qt5Core_DIR}/../../ ${Qt5Core_DIR}/../../../plugins/platforms/)
   endif(MINGW_NOIPBIZ)
 endif(WITH_QT_STATIC)
 
