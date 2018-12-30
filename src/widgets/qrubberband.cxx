@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(rubberband)
 // /usr/include/qt/QtWidgets/qrubberband.h
 #ifndef protected
 #define protected public
@@ -361,5 +362,6 @@ void C_ZN11QRubberBand6resizeERK5QSize(void *this_, QSize* s) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(rubberband)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

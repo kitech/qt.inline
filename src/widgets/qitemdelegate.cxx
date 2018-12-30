@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(itemviews)
 // /usr/include/qt/QtWidgets/qitemdelegate.h
 #ifndef protected
 #define protected public
@@ -387,5 +388,6 @@ void C_ZN13QItemDelegate20setItemEditorFactoryEP18QItemEditorFactory(void *this_
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(itemviews)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

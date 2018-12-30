@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(standarditemmodel)
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected
 #define protected public
@@ -755,5 +756,6 @@ void C_ZN18QStandardItemModel11itemChangedEP13QStandardItem(void *this_, QStanda
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(standarditemmodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

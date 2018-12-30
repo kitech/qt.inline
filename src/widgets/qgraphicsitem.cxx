@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(graphicsview)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
@@ -2417,5 +2418,6 @@ void C_ZN13QGraphicsItem22removeSceneEventFilterEPS_(void *this_, QGraphicsItem 
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(graphicsview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

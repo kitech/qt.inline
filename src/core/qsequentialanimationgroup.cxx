@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(animation)
 // since 0x040600
 // /usr/include/qt/QtCore/qsequentialanimationgroup.h
 #ifndef protected
@@ -306,5 +307,6 @@ void C_ZN25QSequentialAnimationGroup23currentAnimationChangedEP18QAbstractAnimat
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(animation)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

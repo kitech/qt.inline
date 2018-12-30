@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(radiobutton)
 // /usr/include/qt/QtWidgets/qradiobutton.h
 #ifndef protected
 #define protected public
@@ -295,5 +296,6 @@ return new QSize(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(radiobutton)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

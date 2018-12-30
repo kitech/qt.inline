@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(lcdnumber)
 // /usr/include/qt/QtWidgets/qlcdnumber.h
 #ifndef protected
 #define protected public
@@ -405,5 +406,6 @@ void C_ZN10QLCDNumber8overflowEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(lcdnumber)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

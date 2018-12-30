@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(splashscreen)
 // /usr/include/qt/QtWidgets/qsplashscreen.h
 #ifndef protected
 #define protected public
@@ -325,5 +326,6 @@ void C_ZN13QSplashScreen14messageChangedERK7QString(void *this_, QString* messag
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(splashscreen)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

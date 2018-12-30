@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(formlayout)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qformlayout.h
 #ifndef protected
@@ -631,5 +632,6 @@ int C_ZNK11QFormLayout8rowCountEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(formlayout)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

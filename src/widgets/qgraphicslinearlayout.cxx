@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(graphicsview)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h
 #ifndef protected
@@ -272,5 +273,6 @@ void C_ZNK21QGraphicsLinearLayout4dumpEi(void *this_, int indent) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(graphicsview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

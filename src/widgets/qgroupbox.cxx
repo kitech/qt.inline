@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(groupbox)
 // /usr/include/qt/QtWidgets/qgroupbox.h
 #ifndef protected
 #define protected public
@@ -485,5 +486,6 @@ void C_ZN9QGroupBox7toggledEb(void *this_, bool arg0) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(groupbox)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(qeventtransition)
 // since 0x040600
 // /usr/include/qt/QtWidgets/qmouseeventtransition.h
 #ifndef protected
@@ -286,5 +287,6 @@ void C_ZN21QMouseEventTransition14setHitTestPathERK12QPainterPath(void *this_, Q
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(qeventtransition)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

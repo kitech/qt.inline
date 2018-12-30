@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(buttongroup)
 // /usr/include/qt/QtWidgets/qbuttongroup.h
 #ifndef protected
 #define protected public
@@ -358,5 +359,6 @@ void C_ZN12QButtonGroup13buttonToggledEib(void *this_, int arg0, bool arg1) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(buttongroup)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

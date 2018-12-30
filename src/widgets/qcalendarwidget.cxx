@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(calendarwidget)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qcalendarwidget.h
 #ifndef protected
@@ -676,5 +677,6 @@ void C_ZN15QCalendarWidget18currentPageChangedEii(void *this_, int year, int mon
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(calendarwidget)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

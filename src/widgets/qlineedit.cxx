@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(lineedit)
 // /usr/include/qt/QtWidgets/qlineedit.h
 #ifndef protected
 #define protected public
@@ -1151,5 +1152,6 @@ bool C_ZN9QLineEdit5eventEP6QEvent(void *this_, QEvent * arg0) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(lineedit)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

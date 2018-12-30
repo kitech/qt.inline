@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(animation)
 // since 0x040600
 // /usr/include/qt/QtCore/qparallelanimationgroup.h
 #ifndef protected
@@ -274,5 +275,6 @@ int C_ZNK23QParallelAnimationGroup8durationEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(animation)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

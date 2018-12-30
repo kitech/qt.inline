@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(graphicsview)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicsproxywidget.h
 #ifndef protected
@@ -837,5 +838,6 @@ void* C_ZN20QGraphicsProxyWidget25createProxyForChildWidgetEP7QWidget(void *this
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(graphicsview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

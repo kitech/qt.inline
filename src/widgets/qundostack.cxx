@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(undocommand)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qundostack.h
 #ifndef protected
@@ -441,5 +442,6 @@ void C_ZN10QUndoStack15redoTextChangedERK7QString(void *this_, QString* redoText
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(undocommand)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

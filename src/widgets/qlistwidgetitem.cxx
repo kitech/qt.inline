@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(listwidget)
 // /usr/include/qt/QtWidgets/qlistwidget.h
 #ifndef protected
 #define protected public
@@ -488,5 +489,6 @@ int C_ZNK15QListWidgetItem4typeEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(listwidget)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

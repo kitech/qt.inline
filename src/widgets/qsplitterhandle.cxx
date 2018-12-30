@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(splitter)
 // /usr/include/qt/QtWidgets/qsplitter.h
 #ifndef protected
 #define protected public
@@ -346,5 +347,6 @@ return new QSize(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(splitter)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

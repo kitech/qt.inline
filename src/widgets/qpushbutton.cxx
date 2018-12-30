@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(pushbutton)
 // /usr/include/qt/QtWidgets/qpushbutton.h
 #ifndef protected
 #define protected public
@@ -397,5 +398,6 @@ void C_ZN11QPushButton8showMenuEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(pushbutton)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

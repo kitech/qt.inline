@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(toolbox)
 // /usr/include/qt/QtWidgets/qtoolbox.h
 #ifndef protected
 #define protected public
@@ -456,5 +457,6 @@ void C_ZN8QToolBox14currentChangedEi(void *this_, int index) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(toolbox)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

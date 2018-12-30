@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(treeview)
 // /usr/include/qt/QtWidgets/qtreeview.h
 #ifndef protected
 #define protected public
@@ -1303,5 +1304,6 @@ void C_ZN9QTreeView13expandToDepthEi(void *this_, int depth) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(treeview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

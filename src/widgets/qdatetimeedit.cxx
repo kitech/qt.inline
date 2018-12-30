@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(datetimeedit)
 // /usr/include/qt/QtWidgets/qdatetimeedit.h
 #ifndef protected
 #define protected public
@@ -883,5 +884,6 @@ void C_ZN13QDateTimeEdit7setTimeERK5QTime(void *this_, QTime* time) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(datetimeedit)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

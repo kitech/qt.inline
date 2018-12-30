@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(undogroup)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qundogroup.h
 #ifndef protected
@@ -355,5 +356,6 @@ void C_ZN10QUndoGroup15redoTextChangedERK7QString(void *this_, QString* redoText
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(undogroup)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

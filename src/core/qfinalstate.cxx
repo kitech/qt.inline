@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(statemachine)
 // since 0x040600
 // /usr/include/qt/QtCore/qfinalstate.h
 #ifndef protected
@@ -246,5 +247,6 @@ void C_ZN11QFinalStateD2Ev(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(statemachine)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

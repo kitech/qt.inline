@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(graphicsview)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsscene.h
 #ifndef protected
@@ -1393,5 +1394,6 @@ void C_ZN14QGraphicsScene16focusItemChangedEP13QGraphicsItemS1_N2Qt11FocusReason
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(graphicsview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

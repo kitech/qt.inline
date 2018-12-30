@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(undocommand)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qundostack.h
 #ifndef protected
@@ -200,5 +201,6 @@ void* C_ZNK12QUndoCommand5childEi(void *this_, int index) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(undocommand)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

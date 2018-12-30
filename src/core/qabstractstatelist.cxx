@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(statemachine)
 // /usr/include/qt/QtCore/qabstractstate.h
 #ifndef protected
 #define protected public
@@ -17,6 +18,7 @@ typedef QList<QAbstractState *> QAbstractStateList;
 //  header block end
 
 //  footer block begin
+#endif // #if QT_CONFIG(statemachine)
 #endif // #ifndef QT_MINIMAL
 //  footer block end
 

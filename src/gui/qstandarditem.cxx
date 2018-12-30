@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(standarditemmodel)
 // since 0x040200
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected
@@ -825,5 +826,6 @@ bool C_ZNK13QStandardItemltERKS_(void *this_, QStandardItem* other) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(standarditemmodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

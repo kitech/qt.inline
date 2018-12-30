@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dirmodel)
 // /usr/include/qt/QtWidgets/qdirmodel.h
 #ifndef protected
 #define protected public
@@ -509,5 +510,6 @@ void C_ZN9QDirModel7refreshERK11QModelIndex(void *this_, QModelIndex* parent) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dirmodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

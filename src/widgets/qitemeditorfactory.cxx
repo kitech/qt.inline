@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(itemviews)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
 #ifndef protected
@@ -126,5 +127,6 @@ void C_ZN18QItemEditorFactory17setDefaultFactoryEPS_(QItemEditorFactory * factor
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(itemviews)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(tablewidget)
 // /usr/include/qt/QtWidgets/qtablewidget.h
 #ifndef protected
 #define protected public
@@ -929,5 +930,6 @@ void C_ZN12QTableWidget18currentCellChangedEiiii(void *this_, int currentRow, in
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(tablewidget)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

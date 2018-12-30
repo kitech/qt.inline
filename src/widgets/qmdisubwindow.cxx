@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(mdiarea)
 // since 0x040300
 // /usr/include/qt/QtWidgets/qmdisubwindow.h
 #ifndef protected
@@ -752,5 +753,6 @@ void C_ZN13QMdiSubWindow10showShadedEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(mdiarea)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

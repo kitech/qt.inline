@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(thread)
 // since 0x050a00
 // /usr/include/qt/QtCore/qsemaphore.h
 #ifndef protected
@@ -129,5 +130,6 @@ void* C_ZN18QSemaphoreReleaser6cancelEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(thread)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

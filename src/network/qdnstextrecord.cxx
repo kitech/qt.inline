@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dnslookup)
 // /usr/include/qt/QtNetwork/qdnslookup.h
 #ifndef protected
 #define protected public
@@ -146,5 +147,6 @@ return new QList<QByteArray>(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dnslookup)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(animation)
 // /usr/include/qt/QtCore/qabstractanimation.h
 #ifndef protected
 #define protected public
@@ -296,5 +297,6 @@ void C_ZN16QAnimationDriver7stoppedEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(animation)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

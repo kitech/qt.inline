@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(abstractbutton)
 // /usr/include/qt/QtWidgets/qabstractbutton.h
 #ifndef protected
 #define protected public
@@ -705,5 +706,6 @@ void C_ZN15QAbstractButton7toggledEb(void *this_, bool checked) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(abstractbutton)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

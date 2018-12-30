@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(mdiarea)
 // since 0x040300
 // /usr/include/qt/QtWidgets/qmdiarea.h
 #ifndef protected
@@ -656,5 +657,6 @@ void C_ZN8QMdiArea25activatePreviousSubWindowEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(mdiarea)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

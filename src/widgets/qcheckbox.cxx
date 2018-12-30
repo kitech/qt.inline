@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(checkbox)
 // /usr/include/qt/QtWidgets/qcheckbox.h
 #ifndef protected
 #define protected public
@@ -375,5 +376,6 @@ void C_ZN9QCheckBox12stateChangedEi(void *this_, int arg0) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(checkbox)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

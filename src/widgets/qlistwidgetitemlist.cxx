@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(listwidget)
 // /usr/include/qt/QtWidgets/qlistwidget.h
 #ifndef protected
 #define protected public
@@ -17,6 +18,7 @@ typedef QList<QListWidgetItem *> QListWidgetItemList;
 //  header block end
 
 //  footer block begin
+#endif // #if QT_CONFIG(listwidget)
 #endif // #ifndef QT_MINIMAL
 //  footer block end
 

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(textedit)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qplaintextedit.h
 #ifndef protected
@@ -288,5 +289,6 @@ void C_ZN24QPlainTextDocumentLayout13requestUpdateEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(textedit)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(statusbar)
 // /usr/include/qt/QtWidgets/qstatusbar.h
 #ifndef protected
 #define protected public
@@ -360,5 +361,6 @@ void C_ZN10QStatusBar14messageChangedERK7QString(void *this_, QString* text) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(statusbar)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

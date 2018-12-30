@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(future)
 // since 0x040400
 // /usr/include/qt/QtCore/qfuture.h
 #ifndef protected
@@ -238,5 +239,6 @@ void C_ZN7QFutureD2Ev(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(future)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(itemmodel)
 // /usr/include/qt/QtCore/qitemselectionmodel.h
 #ifndef protected
 #define protected public
@@ -133,5 +134,6 @@ void C_ZN14QItemSelectionD2Ev(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(itemmodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

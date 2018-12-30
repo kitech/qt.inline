@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(toolbutton)
 // /usr/include/qt/QtWidgets/qtoolbutton.h
 #ifndef protected
 #define protected public
@@ -536,5 +537,6 @@ void C_ZN11QToolButton9triggeredEP7QAction(void *this_, QAction * arg0) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(toolbutton)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

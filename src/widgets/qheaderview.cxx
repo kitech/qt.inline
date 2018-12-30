@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(itemviews)
 // /usr/include/qt/QtWidgets/qheaderview.h
 #ifndef protected
 #define protected public
@@ -1350,5 +1351,6 @@ void C_ZN11QHeaderView20sortIndicatorChangedEiN2Qt9SortOrderE(void *this_, int l
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(itemviews)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

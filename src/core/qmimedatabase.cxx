@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(mimetype)
 // since 0x050000
 // /usr/include/qt/QtCore/qmimedatabase.h
 #ifndef protected
@@ -184,5 +185,6 @@ return new QList<QMimeType>(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(mimetype)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

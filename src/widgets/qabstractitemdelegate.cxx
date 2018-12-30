@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(itemviews)
 // /usr/include/qt/QtWidgets/qabstractitemdelegate.h
 #ifndef protected
 #define protected public
@@ -339,5 +340,6 @@ void C_ZN21QAbstractItemDelegate15sizeHintChangedERK11QModelIndex(void *this_, Q
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(itemviews)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(networkdiskcache)
 // since 0x040500
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h
 #ifndef protected
@@ -313,5 +314,6 @@ void C_ZN17QNetworkDiskCache5clearEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(networkdiskcache)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

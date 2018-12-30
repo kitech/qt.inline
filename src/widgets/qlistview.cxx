@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(listview)
 // /usr/include/qt/QtWidgets/qlistview.h
 #ifndef protected
 #define protected public
@@ -1052,5 +1053,6 @@ void C_ZN9QListView12indexesMovedERK5QListI11QModelIndexE(void *this_, const QMo
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(listview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

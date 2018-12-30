@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(processenvironment)
 // since 0x040600
 // /usr/include/qt/QtCore/qprocess.h
 #ifndef protected
@@ -233,5 +234,6 @@ return new QProcessEnvironment(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(processenvironment)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

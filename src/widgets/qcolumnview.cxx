@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(columnview)
 // since 0x040300
 // /usr/include/qt/QtWidgets/qcolumnview.h
 #ifndef protected
@@ -539,5 +540,6 @@ return new QList<int>(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(columnview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

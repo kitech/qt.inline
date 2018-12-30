@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(mainwindow)
 // /usr/include/qt/QtWidgets/qmainwindow.h
 #ifndef protected
 #define protected public
@@ -693,5 +694,6 @@ void C_ZN11QMainWindow27tabifiedDockWidgetActivatedEP11QDockWidget(void *this_, 
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(mainwindow)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(animation)
 // since 0x040600
 // /usr/include/qt/QtCore/qvariantanimation.h
 #ifndef protected
@@ -407,5 +408,6 @@ void C_ZN17QVariantAnimation12valueChangedERK8QVariant(void *this_, QVariant* va
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(animation)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(future)
 // since 0x040400
 // /usr/include/qt/QtCore/qfuturewatcher.h
 #ifndef protected
@@ -159,5 +160,6 @@ return new QFuture<void>(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(future)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

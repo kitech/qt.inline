@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(slider)
 // /usr/include/qt/QtWidgets/qslider.h
 #ifndef protected
 #define protected public
@@ -333,5 +334,6 @@ bool C_ZN7QSlider5eventEP6QEvent(void *this_, QEvent * event) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(slider)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

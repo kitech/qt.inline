@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(itemviews)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qstyleditemdelegate.h
 #ifndef protected
@@ -321,5 +322,6 @@ return new QString(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(itemviews)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

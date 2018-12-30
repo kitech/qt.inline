@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(undoview)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qundoview.h
 #ifndef protected
@@ -270,5 +271,6 @@ void C_ZN9QUndoView8setGroupEP10QUndoGroup(void *this_, QUndoGroup * group) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(undoview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

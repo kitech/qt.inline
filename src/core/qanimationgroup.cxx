@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(animation)
 // since 0x040600
 // /usr/include/qt/QtCore/qanimationgroup.h
 #ifndef protected
@@ -301,5 +302,6 @@ void C_ZN15QAnimationGroup5clearEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(animation)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

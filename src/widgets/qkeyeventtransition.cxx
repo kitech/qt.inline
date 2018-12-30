@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(qeventtransition)
 // since 0x040600
 // /usr/include/qt/QtWidgets/qkeyeventtransition.h
 #ifndef protected
@@ -269,5 +270,6 @@ void C_ZN19QKeyEventTransition15setModifierMaskE6QFlagsIN2Qt16KeyboardModifierEE
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(qeventtransition)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

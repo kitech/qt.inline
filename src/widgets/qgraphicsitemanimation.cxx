@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(graphicsview)
 // /usr/include/qt/QtWidgets/qgraphicsitemanimation.h
 #ifndef protected
 #define protected public
@@ -439,5 +440,6 @@ void C_ZN22QGraphicsItemAnimation5resetEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(graphicsview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

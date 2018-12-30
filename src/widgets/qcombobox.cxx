@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(combobox)
 // /usr/include/qt/QtWidgets/qcombobox.h
 #ifndef protected
 #define protected public
@@ -1117,5 +1118,6 @@ void C_ZN9QComboBox18currentTextChangedERK7QString(void *this_, QString* arg0) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(combobox)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

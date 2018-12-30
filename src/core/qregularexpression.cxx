@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(regularexpression)
 // since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
 #ifndef protected
@@ -312,5 +313,6 @@ bool C_ZNK18QRegularExpressionneERKS_(void *this_, QRegularExpression* re) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(regularexpression)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

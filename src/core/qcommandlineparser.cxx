@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(commandlineparser)
 // since 0x050200
 // /usr/include/qt/QtCore/qcommandlineparser.h
 #ifndef protected
@@ -332,5 +333,6 @@ return new QString(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(commandlineparser)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

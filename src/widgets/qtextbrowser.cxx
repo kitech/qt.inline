@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(textbrowser)
 // /usr/include/qt/QtWidgets/qtextbrowser.h
 #ifndef protected
 #define protected public
@@ -591,5 +592,6 @@ void C_ZN12QTextBrowser13anchorClickedERK4QUrl(void *this_, QUrl* arg0) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(textbrowser)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

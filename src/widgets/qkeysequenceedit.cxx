@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(keysequenceedit)
 // since 0x050200
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h
 #ifndef protected
@@ -318,5 +319,6 @@ void C_ZN16QKeySequenceEdit18keySequenceChangedERK12QKeySequence(void *this_, QK
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(keysequenceedit)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

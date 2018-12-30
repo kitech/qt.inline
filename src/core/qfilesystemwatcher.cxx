@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(filesystemwatcher)
 // since 0x040200
 // /usr/include/qt/QtCore/qfilesystemwatcher.h
 #ifndef protected
@@ -262,5 +263,6 @@ void C_ZN18QFileSystemWatcher16directoryChangedERK7QStringNS_14QPrivateSignalE(v
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(filesystemwatcher)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

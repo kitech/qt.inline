@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(filesystemmodel)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h
 #ifndef protected
@@ -640,5 +641,6 @@ bool C_ZN16QFileSystemModel6removeERK11QModelIndex(void *this_, QModelIndex* ind
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(filesystemmodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

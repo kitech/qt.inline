@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(textedit)
 // /usr/include/qt/QtWidgets/qtextedit.h
 #ifndef protected
 #define protected public
@@ -1570,5 +1571,6 @@ void C_ZN9QTextEdit21cursorPositionChangedEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(textedit)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

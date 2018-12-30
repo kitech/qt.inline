@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(datawidgetmapper)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qdatawidgetmapper.h
 #ifndef protected
@@ -408,5 +409,6 @@ void C_ZN17QDataWidgetMapper19currentIndexChangedEi(void *this_, int index) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(datawidgetmapper)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

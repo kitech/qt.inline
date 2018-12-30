@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(listwidget)
 // /usr/include/qt/QtWidgets/qlistwidget.h
 #ifndef protected
 #define protected public
@@ -704,5 +705,6 @@ void C_ZN11QListWidget20itemSelectionChangedEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(listwidget)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

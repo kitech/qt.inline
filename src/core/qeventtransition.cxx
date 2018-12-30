@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(qeventtransition)
 // since 0x040600
 // /usr/include/qt/QtCore/qeventtransition.h
 #ifndef protected
@@ -290,5 +291,6 @@ void C_ZN16QEventTransition12setEventTypeEN6QEvent4TypeE(void *this_, QEvent::Ty
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(qeventtransition)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

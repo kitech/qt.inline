@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(commandlinkbutton)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qcommandlinkbutton.h
 #ifndef protected
@@ -332,5 +333,6 @@ void C_ZN18QCommandLinkButton14setDescriptionERK7QString(void *this_, QString* d
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(commandlinkbutton)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

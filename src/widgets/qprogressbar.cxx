@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(progressbar)
 // /usr/include/qt/QtWidgets/qprogressbar.h
 #ifndef protected
 #define protected public
@@ -429,5 +430,6 @@ void C_ZN12QProgressBar12valueChangedEi(void *this_, int value) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(progressbar)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

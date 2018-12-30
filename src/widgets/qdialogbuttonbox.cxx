@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dialogbuttonbox)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qdialogbuttonbox.h
 #ifndef protected
@@ -416,5 +417,6 @@ void C_ZN16QDialogButtonBox8rejectedEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dialogbuttonbox)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

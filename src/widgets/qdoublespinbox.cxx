@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(spinbox)
 // /usr/include/qt/QtWidgets/qspinbox.h
 #ifndef protected
 #define protected public
@@ -382,5 +383,6 @@ void C_ZN14QDoubleSpinBox12valueChangedERK7QString(void *this_, QString* arg0) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(spinbox)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

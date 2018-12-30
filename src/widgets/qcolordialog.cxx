@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(colordialog)
 // /usr/include/qt/QtWidgets/qcolordialog.h
 #ifndef protected
 #define protected public
@@ -406,5 +407,6 @@ void C_ZN12QColorDialog13colorSelectedERK6QColor(void *this_, QColor* color) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(colordialog)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

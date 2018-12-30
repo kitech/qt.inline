@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(movie)
 // /usr/include/qt/QtGui/qmovie.h
 #ifndef protected
 #define protected public
@@ -528,5 +529,6 @@ void C_ZN6QMovie8setSpeedEi(void *this_, int percentSpeed) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(movie)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

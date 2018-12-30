@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(stringlistmodel)
 // /usr/include/qt/QtCore/qstringlistmodel.h
 #ifndef protected
 #define protected public
@@ -282,5 +283,6 @@ void C_ZN16QStringListModelD2Ev(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(stringlistmodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

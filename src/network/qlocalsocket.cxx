@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(localserver)
 // since 0x040400
 // /usr/include/qt/QtNetwork/qlocalsocket.h
 #ifndef protected
@@ -467,5 +468,6 @@ void C_ZN12QLocalSocket12stateChangedENS_16LocalSocketStateE(void *this_, QLocal
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(localserver)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

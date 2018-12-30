@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dial)
 // /usr/include/qt/QtWidgets/qdial.h
 #ifndef protected
 #define protected public
@@ -399,5 +400,6 @@ void C_ZN5QDial11setWrappingEb(void *this_, bool on) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dial)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

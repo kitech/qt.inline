@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(graphicsview)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicswidget.h
 #ifndef protected
@@ -1198,5 +1199,6 @@ bool C_ZN15QGraphicsWidget5closeEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(graphicsview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

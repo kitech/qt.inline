@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(itemviews)
 // /usr/include/qt/QtWidgets/qabstractitemview.h
 #ifndef protected
 #define protected public
@@ -1781,5 +1782,6 @@ void C_ZN17QAbstractItemView15iconSizeChangedERK5QSize(void *this_, QSize* size)
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(itemviews)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(filedialog)
 // /usr/include/qt/QtWidgets/qfiledialog.h
 #ifndef protected
 #define protected public
@@ -977,5 +978,6 @@ return new QList<QUrl>(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(filedialog)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

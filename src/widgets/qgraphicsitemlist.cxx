@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(graphicsview)
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -17,6 +18,7 @@ typedef QList<QGraphicsItem *> QGraphicsItemList;
 //  header block end
 
 //  footer block begin
+#endif // #if QT_CONFIG(graphicsview)
 #endif // #ifndef QT_MINIMAL
 //  footer block end
 

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(toolbar)
 // /usr/include/qt/QtWidgets/qtoolbar.h
 #ifndef protected
 #define protected public
@@ -575,5 +576,6 @@ void C_ZN8QToolBar17visibilityChangedEb(void *this_, bool visible) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(toolbar)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

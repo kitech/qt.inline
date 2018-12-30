@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(label)
 // /usr/include/qt/QtWidgets/qlabel.h
 #ifndef protected
 #define protected public
@@ -737,5 +738,6 @@ void C_ZN6QLabel11linkHoveredERK7QString(void *this_, QString* link) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(label)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(completer)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qcompleter.h
 #ifndef protected
@@ -550,5 +551,6 @@ void C_ZN10QCompleter11highlightedERK11QModelIndex(void *this_, QModelIndex* ind
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(completer)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(scrollarea)
 // /usr/include/qt/QtWidgets/qscrollarea.h
 #ifndef protected
 #define protected public
@@ -381,5 +382,6 @@ void C_ZN11QScrollArea19ensureWidgetVisibleEP7QWidgetii(void *this_, QWidget * c
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(scrollarea)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

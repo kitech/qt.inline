@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(processenvironment)
 // /usr/include/qt/QtCore/qprocess.h
 #ifndef protected
 #define protected public
@@ -830,5 +831,6 @@ void C_ZN8QProcess22readyReadStandardErrorENS_14QPrivateSignalE(void *this_, QPr
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(processenvironment)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

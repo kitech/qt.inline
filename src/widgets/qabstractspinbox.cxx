@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(spinbox)
 // /usr/include/qt/QtWidgets/qabstractspinbox.h
 #ifndef protected
 #define protected public
@@ -811,5 +812,6 @@ void C_ZN16QAbstractSpinBox15editingFinishedEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(spinbox)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

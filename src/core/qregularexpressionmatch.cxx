@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(regularexpression)
 // since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
 #ifndef protected
@@ -355,5 +356,6 @@ int C_ZNK23QRegularExpressionMatch11capturedEndE11QStringView(void *this_, QStri
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(regularexpression)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

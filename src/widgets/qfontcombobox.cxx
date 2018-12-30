@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(fontcombobox)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qfontcombobox.h
 #ifndef protected
@@ -273,5 +274,6 @@ void C_ZN13QFontComboBox18currentFontChangedERK5QFont(void *this_, QFont* f) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(fontcombobox)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

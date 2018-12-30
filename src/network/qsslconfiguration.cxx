@@ -532,35 +532,43 @@ void C_ZN17QSslConfiguration23setDefaultConfigurationERKS_(QSslConfiguration* co
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:166
 // [1] bool dtlsCookieVerificationEnabled()
+#if QT_CONFIG(dtls)
 extern "C" Q_DECL_EXPORT
 bool C_ZNK17QSslConfiguration29dtlsCookieVerificationEnabledEv(void *this_) {
   return (bool)((QSslConfiguration*)this_)->dtlsCookieVerificationEnabled();
 }
+#endif // QT_CONFIG(dtls)
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:167
 // [-2] void setDtlsCookieVerificationEnabled(bool)
+#if QT_CONFIG(dtls)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration32setDtlsCookieVerificationEnabledEb(void *this_, bool enable) {
   ((QSslConfiguration*)this_)->setDtlsCookieVerificationEnabled(enable);
 }
+#endif // QT_CONFIG(dtls)
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:169
 // [8] QSslConfiguration defaultDtlsConfiguration()
+#if QT_CONFIG(dtls)
 extern "C" Q_DECL_EXPORT
 void* C_ZN17QSslConfiguration24defaultDtlsConfigurationEv() {
   auto rv = QSslConfiguration::defaultDtlsConfiguration();
 return new QSslConfiguration(rv);
 }
+#endif // QT_CONFIG(dtls)
 
 // Public static Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:170
 // [-2] void setDefaultDtlsConfiguration(const QSslConfiguration &)
+#if QT_CONFIG(dtls)
 extern "C" Q_DECL_EXPORT
 void C_ZN17QSslConfiguration27setDefaultDtlsConfigurationERKS_(QSslConfiguration* configuration) {
   QSslConfiguration::setDefaultDtlsConfiguration(*configuration);
 }
+#endif // QT_CONFIG(dtls)
 
 // Public Visibility=Default Availability=Available
 // since 5.3

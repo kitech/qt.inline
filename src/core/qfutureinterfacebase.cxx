@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(future)
 // /usr/include/qt/QtCore/qfutureinterface.h
 #ifndef protected
 #define protected public
@@ -427,5 +428,6 @@ return &rv;
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(future)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

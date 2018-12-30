@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(proxymodel)
 // since 0x040100
 // /usr/include/qt/QtCore/qabstractproxymodel.h
 #ifndef protected
@@ -530,5 +531,6 @@ void C_ZN19QAbstractProxyModel18sourceModelChangedENS_14QPrivateSignalE(void *th
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(proxymodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

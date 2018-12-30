@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(errormessage)
 // /usr/include/qt/QtWidgets/qerrormessage.h
 #ifndef protected
 #define protected public
@@ -251,5 +252,6 @@ void C_ZN13QErrorMessage11showMessageERK7QStringS2_(void *this_, QString* messag
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(errormessage)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

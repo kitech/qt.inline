@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(scroller)
 // /usr/include/qt/QtWidgets/qscroller.h
 #ifndef protected
 #define protected public
@@ -17,6 +18,7 @@ typedef QList<QScroller *> QScrollerList;
 //  header block end
 
 //  footer block begin
+#endif // #if QT_CONFIG(scroller)
 #endif // #ifndef QT_MINIMAL
 //  footer block end
 

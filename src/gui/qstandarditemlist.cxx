@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(standarditemmodel)
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected
 #define protected public
@@ -17,6 +18,7 @@ typedef QList<QStandardItem *> QStandardItemList;
 //  header block end
 
 //  footer block begin
+#endif // #if QT_CONFIG(standarditemmodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end
 

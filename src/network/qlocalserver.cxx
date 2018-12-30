@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(localserver)
 // since 0x040400
 // /usr/include/qt/QtNetwork/qlocalserver.h
 #ifndef protected
@@ -365,5 +366,6 @@ qintptr C_ZNK12QLocalServer16socketDescriptorEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(localserver)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(itemmodel)
 // /usr/include/qt/QtCore/qabstractitemmodel.h
 #ifndef protected
 #define protected public
@@ -290,5 +291,6 @@ bool C_ZNK21QPersistentModelIndex7isValidEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(itemmodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

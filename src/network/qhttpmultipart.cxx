@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(http)
 // since 0x040800
 // /usr/include/qt/QtNetwork/qhttpmultipart.h
 #ifndef protected
@@ -227,5 +228,6 @@ void C_ZN14QHttpMultiPart11setBoundaryERK10QByteArray(void *this_, QByteArray* b
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(http)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

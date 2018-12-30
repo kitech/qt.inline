@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(identityproxymodel)
 // since 0x040800
 // /usr/include/qt/QtCore/qidentityproxymodel.h
 #ifndef protected
@@ -329,5 +330,6 @@ bool C_ZN19QIdentityProxyModel10removeRowsEiiRK11QModelIndex(void *this_, int ro
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(identityproxymodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

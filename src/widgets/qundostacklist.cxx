@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(undocommand)
 // /usr/include/qt/QtWidgets/qundostack.h
 #ifndef protected
 #define protected public
@@ -17,6 +18,7 @@ typedef QList<QUndoStack *> QUndoStackList;
 //  header block end
 
 //  footer block begin
+#endif // #if QT_CONFIG(undocommand)
 #endif // #ifndef QT_MINIMAL
 //  footer block end
 

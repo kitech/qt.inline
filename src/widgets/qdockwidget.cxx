@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dockwidget)
 // /usr/include/qt/QtWidgets/qdockwidget.h
 #ifndef protected
 #define protected public
@@ -425,5 +426,6 @@ void C_ZN11QDockWidget19dockLocationChangedEN2Qt14DockWidgetAreaE(void *this_, Q
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dockwidget)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

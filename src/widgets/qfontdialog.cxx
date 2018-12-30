@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(fontdialog)
 // /usr/include/qt/QtWidgets/qfontdialog.h
 #ifndef protected
 #define protected public
@@ -386,5 +387,6 @@ void C_ZN11QFontDialog12fontSelectedERK5QFont(void *this_, QFont* font) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(fontdialog)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

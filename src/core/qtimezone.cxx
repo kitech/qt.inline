@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(timezone)
 // since 0x050200
 // /usr/include/qt/QtCore/qtimezone.h
 #ifndef protected
@@ -425,5 +426,6 @@ return new QList<QByteArray>(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(timezone)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

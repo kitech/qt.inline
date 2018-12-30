@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(tabbar)
 // /usr/include/qt/QtWidgets/qtabbar.h
 #ifndef protected
 #define protected public
@@ -1052,5 +1053,6 @@ void C_ZN7QTabBar19tabBarDoubleClickedEi(void *this_, int index) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(tabbar)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

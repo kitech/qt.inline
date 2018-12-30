@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dnslookup)
 // /usr/include/qt/QtNetwork/qdnslookup.h
 #ifndef protected
 #define protected public
@@ -154,5 +155,6 @@ quint32 C_ZNK22QDnsMailExchangeRecord10timeToLiveEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dnslookup)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

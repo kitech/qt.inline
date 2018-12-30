@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(thread)
 // /usr/include/qt/QtCore/qsemaphore.h
 #ifndef protected
 #define protected public
@@ -124,5 +125,6 @@ int C_ZNK10QSemaphore9availableEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(thread)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(ssl)
 // since 0x050500
 // /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h
 #ifndef protected
@@ -180,5 +181,6 @@ int C_ZNK29QSslPreSharedKeyAuthenticator25maximumPreSharedKeyLengthEv(void *this
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(ssl)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

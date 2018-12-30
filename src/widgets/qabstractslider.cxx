@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(abstractslider)
 // /usr/include/qt/QtWidgets/qabstractslider.h
 #ifndef protected
 #define protected public
@@ -545,5 +546,6 @@ void C_ZN15QAbstractSlider15actionTriggeredEi(void *this_, int action) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(abstractslider)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

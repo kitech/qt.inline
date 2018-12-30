@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(commandlineparser)
 // since 0x050200
 // /usr/include/qt/QtCore/qcommandlineoption.h
 #ifndef protected
@@ -258,5 +259,6 @@ bool C_ZNK18QCommandLineOption8isHiddenEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(commandlineparser)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

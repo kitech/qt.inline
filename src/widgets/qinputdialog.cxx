@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(inputdialog)
 // /usr/include/qt/QtWidgets/qinputdialog.h
 #ifndef protected
 #define protected public
@@ -663,5 +664,6 @@ void C_ZN12QInputDialog4doneEi(void *this_, int result) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(inputdialog)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

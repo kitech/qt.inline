@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(mdiarea)
 // /usr/include/qt/QtWidgets/qmdisubwindow.h
 #ifndef protected
 #define protected public
@@ -17,6 +18,7 @@ typedef QList<QMdiSubWindow *> QMdiSubWindowList;
 //  header block end
 
 //  footer block begin
+#endif // #if QT_CONFIG(mdiarea)
 #endif // #ifndef QT_MINIMAL
 //  footer block end
 

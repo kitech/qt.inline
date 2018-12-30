@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dtls)
 // since 0x050c00
 // /usr/include/qt/QtNetwork/qdtls.h
 #ifndef protected
@@ -235,5 +236,6 @@ return new QString(rv);
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dtls)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

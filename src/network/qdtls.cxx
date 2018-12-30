@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dtls)
 // since 0x050c00
 // /usr/include/qt/QtNetwork/qdtls.h
 #ifndef protected
@@ -424,5 +425,6 @@ void C_ZN5QDtls16handshakeTimeoutEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dtls)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

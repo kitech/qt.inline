@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dialog)
 // /usr/include/qt/QtWidgets/qdialog.h
 #ifndef protected
 #define protected public
@@ -487,5 +488,6 @@ void C_ZN7QDialog13showExtensionEb(void *this_, bool arg0) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dialog)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

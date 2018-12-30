@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(messagebox)
 // /usr/include/qt/QtWidgets/qmessagebox.h
 #ifndef protected
 #define protected public
@@ -868,5 +869,6 @@ void C_ZN11QMessageBox13buttonClickedEP15QAbstractButton(void *this_, QAbstractB
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(messagebox)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

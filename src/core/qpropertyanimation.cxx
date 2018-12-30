@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(animation)
 // since 0x040600
 // /usr/include/qt/QtCore/qpropertyanimation.h
 #ifndef protected
@@ -290,5 +291,6 @@ void C_ZN18QPropertyAnimation15setPropertyNameERK10QByteArray(void *this_, QByte
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(animation)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

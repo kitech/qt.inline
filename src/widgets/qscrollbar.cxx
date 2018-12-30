@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(scrollbar)
 // /usr/include/qt/QtWidgets/qscrollbar.h
 #ifndef protected
 #define protected public
@@ -372,5 +373,6 @@ bool C_ZN10QScrollBar5eventEP6QEvent(void *this_, QEvent * event) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(scrollbar)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

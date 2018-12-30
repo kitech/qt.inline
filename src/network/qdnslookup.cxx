@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(dnslookup)
 // since 0x050000
 // /usr/include/qt/QtNetwork/qdnslookup.h
 #ifndef protected
@@ -393,5 +394,6 @@ void C_ZN10QDnsLookup17nameserverChangedERK12QHostAddress(void *this_, QHostAddr
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(dnslookup)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

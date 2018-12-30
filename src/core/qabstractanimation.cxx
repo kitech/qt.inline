@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(animation)
 // since 0x040600
 // /usr/include/qt/QtCore/qabstractanimation.h
 #ifndef protected
@@ -445,5 +446,6 @@ void C_ZN18QAbstractAnimation14setCurrentTimeEi(void *this_, int msecs) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(animation)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

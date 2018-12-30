@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(itemmodel)
 // /usr/include/qt/QtCore/qabstractitemmodel.h
 #ifndef protected
 #define protected public
@@ -266,5 +267,6 @@ Qt::ItemFlags C_ZNK19QAbstractTableModel5flagsERK11QModelIndex(void *this_, QMod
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(itemmodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

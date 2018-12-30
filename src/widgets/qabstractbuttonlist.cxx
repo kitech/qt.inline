@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(abstractbutton)
 // /usr/include/qt/QtWidgets/qabstractbutton.h
 #ifndef protected
 #define protected public
@@ -17,6 +18,7 @@ typedef QList<QAbstractButton *> QAbstractButtonList;
 //  header block end
 
 //  footer block begin
+#endif // #if QT_CONFIG(abstractbutton)
 #endif // #ifndef QT_MINIMAL
 //  footer block end
 

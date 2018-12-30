@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(thread)
 // since 0x040400
 // /usr/include/qt/QtCore/qthreadpool.h
 #ifndef protected
@@ -318,5 +319,6 @@ bool C_ZN11QThreadPool7tryTakeEP9QRunnable(void *this_, QRunnable * runnable) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(thread)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

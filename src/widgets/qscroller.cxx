@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(scroller)
 // since 0x050000
 // /usr/include/qt/QtWidgets/qscroller.h
 #ifndef protected
@@ -297,5 +298,6 @@ void C_ZN9QScroller25scrollerPropertiesChangedERK19QScrollerProperties(void *thi
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(scroller)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

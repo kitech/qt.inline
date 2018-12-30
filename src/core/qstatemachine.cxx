@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(statemachine)
 // since 0x040600
 // /usr/include/qt/QtCore/qstatemachine.h
 #ifndef protected
@@ -538,5 +539,6 @@ void C_ZN13QStateMachine14runningChangedEb(void *this_, bool running) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(statemachine)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

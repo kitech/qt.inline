@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(menu)
 // /usr/include/qt/QtWidgets/qmenu.h
 #ifndef protected
 #define protected public
@@ -897,5 +898,6 @@ void C_ZN5QMenu7hoveredEP7QAction(void *this_, QAction * action) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(menu)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

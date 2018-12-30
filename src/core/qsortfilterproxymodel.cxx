@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(sortfilterproxymodel)
 // since 0x040100
 // /usr/include/qt/QtCore/qsortfilterproxymodel.h
 #ifndef protected
@@ -739,5 +740,6 @@ Qt::DropActions C_ZNK21QSortFilterProxyModel20supportedDropActionsEv(void *this_
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(sortfilterproxymodel)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

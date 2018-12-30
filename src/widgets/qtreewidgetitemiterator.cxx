@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(treewidget)
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h
 #ifndef protected
 #define protected public
@@ -175,5 +176,6 @@ void* C_ZNK23QTreeWidgetItemIteratordeEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(treewidget)
 #endif // #ifndef QT_MINIMAL
 //  footer block end

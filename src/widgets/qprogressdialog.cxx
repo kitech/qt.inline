@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#if QT_CONFIG(progressdialog)
 // /usr/include/qt/QtWidgets/qprogressdialog.h
 #ifndef protected
 #define protected public
@@ -480,5 +481,6 @@ void C_ZN15QProgressDialog8canceledEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(progressdialog)
 #endif // #ifndef QT_MINIMAL
 //  footer block end
