@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(itemmodel)
 // /usr/include/qt/QtCore/qabstractitemmodel.h
 #ifndef protected

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtNetwork/qtnetworkglobal.h>
 #if QT_CONFIG(networkdiskcache)
 // since 0x040500
 // /usr/include/qt/QtNetwork/qnetworkdiskcache.h

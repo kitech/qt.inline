@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtGui/qtguiglobal.h>
 #if QT_CONFIG(standarditemmodel)
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected

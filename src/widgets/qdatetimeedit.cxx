@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(datetimeedit)
 // /usr/include/qt/QtWidgets/qdatetimeedit.h
 #ifndef protected

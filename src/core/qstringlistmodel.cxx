@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(stringlistmodel)
 // /usr/include/qt/QtCore/qstringlistmodel.h
 #ifndef protected

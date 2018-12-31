@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(undogroup)
 // since 0x040200
 // /usr/include/qt/QtWidgets/qundogroup.h

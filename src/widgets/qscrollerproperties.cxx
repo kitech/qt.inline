@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(scroller)
 // since 0x040800
 // /usr/include/qt/QtWidgets/qscrollerproperties.h

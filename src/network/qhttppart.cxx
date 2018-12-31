@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtNetwork/qtnetworkglobal.h>
 #if QT_CONFIG(http)
 // since 0x040800
 // /usr/include/qt/QtNetwork/qhttpmultipart.h

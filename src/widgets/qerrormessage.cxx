@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(errormessage)
 // /usr/include/qt/QtWidgets/qerrormessage.h
 #ifndef protected

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(identityproxymodel)
 // since 0x040800
 // /usr/include/qt/QtCore/qidentityproxymodel.h

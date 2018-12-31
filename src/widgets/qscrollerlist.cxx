@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(scroller)
 // /usr/include/qt/QtWidgets/qscroller.h
 #ifndef protected

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtGui/qtguiglobal.h>
 #if QT_CONFIG(draganddrop)
 // /usr/include/qt/QtGui/qdrag.h
 #ifndef protected

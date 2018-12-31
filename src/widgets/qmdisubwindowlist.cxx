@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(mdiarea)
 // /usr/include/qt/QtWidgets/qmdisubwindow.h
 #ifndef protected

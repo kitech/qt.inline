@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(scrollbar)
 // /usr/include/qt/QtWidgets/qscrollbar.h
 #ifndef protected

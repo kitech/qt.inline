@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtNetwork/qtnetworkglobal.h>
 #if QT_CONFIG(dnslookup)
 // since 0x050000
 // /usr/include/qt/QtNetwork/qdnslookup.h

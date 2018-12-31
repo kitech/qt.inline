@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtNetwork/qtnetworkglobal.h>
 #if QT_CONFIG(localserver)
 // since 0x040400
 // /usr/include/qt/QtNetwork/qlocalsocket.h

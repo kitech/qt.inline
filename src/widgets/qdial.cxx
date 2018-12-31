@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(dial)
 // /usr/include/qt/QtWidgets/qdial.h
 #ifndef protected

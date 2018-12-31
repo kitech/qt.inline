@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtNetwork/qtnetworkglobal.h>
 #if QT_CONFIG(dtls)
 // since 0x050c00
 // /usr/include/qt/QtNetwork/qdtls.h

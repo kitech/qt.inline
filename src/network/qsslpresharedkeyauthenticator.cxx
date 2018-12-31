@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtNetwork/qtnetworkglobal.h>
 #if QT_CONFIG(ssl)
 // since 0x050500
 // /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(future)
 // /usr/include/qt/QtCore/qfutureinterface.h
 #ifndef protected

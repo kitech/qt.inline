@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(graphicsview)
 // /usr/include/qt/QtWidgets/qgraphicswidget.h
 #ifndef protected

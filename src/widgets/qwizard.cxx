@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(wizard)
 // since 0x040300
 // /usr/include/qt/QtWidgets/qwizard.h

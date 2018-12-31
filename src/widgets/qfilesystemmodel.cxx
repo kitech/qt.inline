@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(filesystemmodel)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h

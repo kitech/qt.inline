@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtGui/qtguiglobal.h>
 #if QT_CONFIG(movie)
 // /usr/include/qt/QtGui/qmovie.h
 #ifndef protected

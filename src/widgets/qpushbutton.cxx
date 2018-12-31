@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(pushbutton)
 // /usr/include/qt/QtWidgets/qpushbutton.h
 #ifndef protected

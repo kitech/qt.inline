@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(dirmodel)
 // /usr/include/qt/QtWidgets/qdirmodel.h
 #ifndef protected

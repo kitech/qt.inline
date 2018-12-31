@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(proxymodel)
 // since 0x040100
 // /usr/include/qt/QtCore/qabstractproxymodel.h

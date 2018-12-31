@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(dockwidget)
 // /usr/include/qt/QtWidgets/qdockwidget.h
 #ifndef protected

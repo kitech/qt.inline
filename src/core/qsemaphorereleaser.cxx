@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(thread)
 // since 0x050a00
 // /usr/include/qt/QtCore/qsemaphore.h

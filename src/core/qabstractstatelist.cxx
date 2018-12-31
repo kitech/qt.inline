@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(statemachine)
 // /usr/include/qt/QtCore/qabstractstate.h
 #ifndef protected

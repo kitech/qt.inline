@@ -1,5 +1,6 @@
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(undocommand)
 // /usr/include/qt/QtWidgets/qundostack.h
 #ifndef protected

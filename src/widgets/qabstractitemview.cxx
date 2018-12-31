@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(itemviews)
 // /usr/include/qt/QtWidgets/qabstractitemview.h
 #ifndef protected

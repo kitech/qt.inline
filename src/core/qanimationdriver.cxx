@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(animation)
 // /usr/include/qt/QtCore/qabstractanimation.h
 #ifndef protected

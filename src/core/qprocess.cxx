@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(processenvironment)
 // /usr/include/qt/QtCore/qprocess.h
 #ifndef protected

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(filesystemwatcher)
 // since 0x040200
 // /usr/include/qt/QtCore/qfilesystemwatcher.h

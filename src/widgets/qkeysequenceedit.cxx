@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(keysequenceedit)
 // since 0x050200
 // /usr/include/qt/QtWidgets/qkeysequenceedit.h

@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(graphicsview)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicswidget.h

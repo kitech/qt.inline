@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(textedit)
 // since 0x040400
 // /usr/include/qt/QtWidgets/qplaintextedit.h

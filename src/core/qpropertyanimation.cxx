@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(animation)
 // since 0x040600
 // /usr/include/qt/QtCore/qpropertyanimation.h

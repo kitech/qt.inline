@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(processenvironment)
 // since 0x040600
 // /usr/include/qt/QtCore/qprocess.h

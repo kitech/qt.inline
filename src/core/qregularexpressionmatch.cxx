@@ -1,6 +1,7 @@
 //  header block begin
 
 #ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
 #if QT_CONFIG(regularexpression)
 // since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
