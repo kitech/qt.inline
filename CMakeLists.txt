@@ -30,11 +30,11 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_GLIBCXX_USE_CXX11_ABI=1 -fno-inline")
 if(ANDROID)
   set(ANDNDK_DIR "/opt/andndk16")  # standalone ndk arm/x86
 
-  # if ndk <= 17 then gcc, ndk >= 18 then clang
+  # if ndk <= 16 then gcc, ndk > 16 then clang
   set(ANDCC "clang")
   set(ANDCXX "clang++")
-  if(EXISTS ${ANDNDK_DIR}/bin/clang50
-      OR EXISTS ${ANDNDK_DIR}/bin/clang60)
+  if(EXISTS ${ANDNDK_DIR}/bin/clang40
+      OR EXISTS ${ANDNDK_DIR}/bin/clang50)
     set(ANDCC "gcc")
     set(ANDCXX "g++")
     # ndk16=y|n, ndk17=y, ndk18=n
@@ -58,8 +58,11 @@ if(ANDROID)
   set(CMAKE_SYSROOT "${ANDNDK_DIR}/sysroot")
   # 这个参数可以设置多个值
   set(CMAKE_FIND_ROOT_PATH  ${QT_INSTALL_DIR} "${QT_INSTALL_DIR}")
-  set(CMAKE_SHARED_LINKER_FLAGS "--sysroot=${ANDNDK_DIR}/sysroot")
-  set(CMAKE_EXE_LINKER_FLAGS "--sysroot=${ANDNDK_DIR}/sysroot")
+  set(CMAKE_SHARED_LINKER_FLAGS "--sysroot=${ANDNDK_DIR}/sysroot -lGLESv2")
+  set(CMAKE_EXE_LINKER_FLAGS "--sysroot=${ANDNDK_DIR}/sysroot -lGLESv2")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D__ANDROID_API=16 -DAPP_PLATFORM=16")
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D__ANDROID_API=16 -DAPP_PLATFORM=16")
+  SET(CMAKE_SKIP_BUILD_RPATH TRUE)
 elseif(MINGW_NOIPBIZ)
   include(tc-mingw-noipbiz.cmake)
 endif(ANDROID)
@@ -231,7 +234,9 @@ endif(ANDROID)
 target_link_libraries(Qt5Inline ${LibFFI_LDFLAGS})
 
 # version and install
-set_target_properties(Qt5Inline PROPERTIES VERSION ${PROJVERSTR} SOVERSION ${PROJSOVER})
+if(!ANDROID)
+  set_target_properties(Qt5Inline PROPERTIES VERSION ${PROJVERSTR} SOVERSION ${PROJSOVER})
+endif()
 configure_file(Qt5Inline.pc.in Qt5Inline.pc @ONLY)
 install(TARGETS Qt5Inline
     RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
