@@ -230,4 +230,19 @@ void C_JNIEnv_ExceptionClear(void* this_) {
     return ((JNIEnv*)this_)->ExceptionClear();
 }
 
+extern "C" Q_DECL_EXPORT
+jint JNICALL JNI_OnLoad(JavaVM *vm, void *)
+{
+    JNIEnv *env;
+    if (vm->GetEnv(reinterpret_cast<void **>(&env), JNI_VERSION_1_4) != JNI_OK) {
+        qFatal("Couldn't initialize environment!");
+        return -1;
+    }
+
+    jclass clazz = env->FindClass("java/lang/String");
+    if (clazz == 0) {
+        //
+    }
+    return JNI_VERSION_1_4;
+}
 

@@ -17,7 +17,7 @@ if [[ $JOB = "archlinux" ]] || [[ $JOB = "mingw" ]] || [[ $JOB = "ubuntu16" ]] |
     elif [[ $JOB = "ubuntu16" ]]; then
         echo "FROM ubuntu:16.04" > $dkfile
     else
-        echo "FROM base/archlinux" > $dkfile
+        echo "FROM archlinux/base" > $dkfile
     fi
     echo "ADD . /root/" >> $dkfile
     echo "ENTRYPOINT [\"/root/.travis/run-main.sh\"]" >> $dkfile
