@@ -661,8 +661,8 @@ return &rv;
 // /usr/include/qt/QtCore/qstring.h:324
 // [8] QString & sprintf(const char *, ...)
 extern "C" Q_DECL_EXPORT
-void* C_ZN7QString7sprintfEPKcz(void *this_, const char * format) {
-  auto& rv = ((QString*)this_)->sprintf(format);
+void* C_ZN7QString7sprintfEPKcz(void *this_, const char * format,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  auto& rv = ((QString*)this_)->sprintf(format,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 return &rv;
 }
 
@@ -682,8 +682,8 @@ return new QString(rv);
 // /usr/include/qt/QtCore/qstring.h:326
 // [8] QString asprintf(const char *, ...)
 extern "C" Q_DECL_EXPORT
-void* C_ZN7QString8asprintfEPKcz(const char * format) {
-  auto rv = QString::asprintf(format);
+void* C_ZN7QString8asprintfEPKcz(const char * format,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  auto rv = QString::asprintf(format,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 return new QString(rv);
 }
 

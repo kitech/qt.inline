@@ -7429,7 +7429,7 @@ int C_Z9qstrnicmpPKcS0_j_1(const char * arg0, const char * arg1, uint len_) {
 // /usr/include/qt/QtCore/qbytearray.h:106
 // [4] int qsnprintf(char *, size_t, const char *, ...)
 extern "C" Q_DECL_EXPORT
-int C_Z9qsnprintfPcmPKcz(char * str, size_t n, const char * fmt_) {
+int C_Z9qsnprintfPcmPKcz(char * str, size_t n, const char * fmt_,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
   return (int)qsnprintf(str, n, fmt_);
 }
 
@@ -9215,16 +9215,16 @@ void* C_Z13qFlagLocationPKc(const char * method) {
 // /usr/include/qt/QtCore/qlogging.h:189
 // [-2] void qErrnoWarning(int, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_Z13qErrnoWarningiPKcz(int code, const char * msg) {
-  qErrnoWarning(code, msg);
+void C_Z13qErrnoWarningiPKcz(int code, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  qErrnoWarning(code, msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:190
 // [-2] void qErrnoWarning(const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_Z13qErrnoWarningPKcz_1(const char * msg) {
-  qErrnoWarning(msg);
+void C_Z13qErrnoWarningPKcz_1(const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  qErrnoWarning(msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Invalid Visibility=Default Availability=Available

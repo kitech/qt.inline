@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdint.h>
 #include "ffi.h"
 
@@ -81,6 +82,31 @@ void ffi_call_var_ex(void*fn, int retype, uint64_t* retval, int fixedargc, int t
         ffi_call(&cif, (void(*)(void))(fn), retval, ffivals);
     }
 }
+
+    void* ffi_call_var_fwd(int caller_alloc_retval, void*fn, int fixedargc, int totalargc,
+                           uint8_t* argtys, uint64_t* argvals) {
+        ffi_cif cif;
+        uint8_t newargtys[20] = {0};
+        uint64_t newargvals[20] = {0};
+
+        void*retval = 0;
+        int prepend1 = caller_alloc_retval > 0 ? 1 : 0;
+        if (prepend1 == 1) {
+            retval = calloc(1, caller_alloc_retval);
+            newargtys[0] = FFI_TYPE_POINTER;
+            newargvals[0] = (uint64_t)(void*)&retval;
+        }
+        for (int i = 0; i < totalargc; i++) {
+            int idx = i + prepend1;
+            newargtys[idx] = argtys[i];
+            newargvals[idx] = argvals[i];
+        }
+
+        uint64_t oretval = 0;
+        ffi_call_var_ex(fn, FFI_TYPE_POINTER, &oretval,
+                        fixedargc+prepend1, totalargc+prepend1, newargtys, newargvals);
+        return prepend1 == 1 ? retval : (void*)oretval;
+    }
 
 #ifdef __cplusplus
 };

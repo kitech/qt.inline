@@ -85,112 +85,112 @@ void* C_ZN14QMessageLoggerC2EPKciS1_S1_(const char * file, int line, const char 
 // /usr/include/qt/QtCore/qlogging.h:96
 // [-2] void debug(const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger5debugEPKcz(void *this_, const char * msg) {
-  ((QMessageLogger*)this_)->debug(msg);
+void C_ZNK14QMessageLogger5debugEPKcz(void *this_, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->debug(msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:97
 // [-2] void noDebug(const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger7noDebugEPKcz(void *this_, const char * arg0) {
-  ((QMessageLogger*)this_)->noDebug(arg0);
+void C_ZNK14QMessageLogger7noDebugEPKcz(void *this_, const char * arg0,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->noDebug(arg0,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:99
 // [-2] void info(const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger4infoEPKcz(void *this_, const char * msg) {
-  ((QMessageLogger*)this_)->info(msg);
+void C_ZNK14QMessageLogger4infoEPKcz(void *this_, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->info(msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:101
 // [-2] void warning(const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger7warningEPKcz(void *this_, const char * msg) {
-  ((QMessageLogger*)this_)->warning(msg);
+void C_ZNK14QMessageLogger7warningEPKcz(void *this_, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->warning(msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:103
 // [-2] void critical(const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger8criticalEPKcz(void *this_, const char * msg) {
-  ((QMessageLogger*)this_)->critical(msg);
+void C_ZNK14QMessageLogger8criticalEPKcz(void *this_, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->critical(msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:107
 // [-2] void debug(const QLoggingCategory &, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger5debugERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg) {
-  ((QMessageLogger*)this_)->debug(*cat, msg);
+void C_ZNK14QMessageLogger5debugERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->debug(*cat, msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:108
 // [-2] void debug(QMessageLogger::CategoryFunction, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger5debugEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg) {
-  ((QMessageLogger*)this_)->debug(catFunc, msg);
+void C_ZNK14QMessageLogger5debugEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->debug(catFunc, msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:109
 // [-2] void info(const QLoggingCategory &, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger4infoERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg) {
-  ((QMessageLogger*)this_)->info(*cat, msg);
+void C_ZNK14QMessageLogger4infoERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->info(*cat, msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:110
 // [-2] void info(QMessageLogger::CategoryFunction, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger4infoEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg) {
-  ((QMessageLogger*)this_)->info(catFunc, msg);
+void C_ZNK14QMessageLogger4infoEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->info(catFunc, msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:112
 // [-2] void warning(const QLoggingCategory &, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger7warningERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg) {
-  ((QMessageLogger*)this_)->warning(*cat, msg);
+void C_ZNK14QMessageLogger7warningERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->warning(*cat, msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:114
 // [-2] void warning(QMessageLogger::CategoryFunction, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger7warningEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg) {
-  ((QMessageLogger*)this_)->warning(catFunc, msg);
+void C_ZNK14QMessageLogger7warningEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->warning(catFunc, msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:116
 // [-2] void critical(const QLoggingCategory &, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger8criticalERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg) {
-  ((QMessageLogger*)this_)->critical(*cat, msg);
+void C_ZNK14QMessageLogger8criticalERK16QLoggingCategoryPKcz(void *this_, QLoggingCategory* cat, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->critical(*cat, msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:118
 // [-2] void critical(QMessageLogger::CategoryFunction, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger8criticalEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg) {
-  ((QMessageLogger*)this_)->critical(catFunc, msg);
+void C_ZNK14QMessageLogger8criticalEPFRK16QLoggingCategoryvEPKcz(void *this_, QMessageLogger::CategoryFunction catFunc, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->critical(catFunc, msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:124
 // [-2] void fatal(const char *, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZNK14QMessageLogger5fatalEPKcz(void *this_, const char * msg) {
-  ((QMessageLogger*)this_)->fatal(msg);
+void C_ZNK14QMessageLogger5fatalEPKcz(void *this_, const char * msg,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QMessageLogger*)this_)->fatal(msg,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available

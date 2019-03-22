@@ -260,8 +260,8 @@ void C_ZN8QPolygon9setPointsEiPKi(void *this_, int nPoints, const int * points) 
 // /usr/include/qt/QtGui/qpolygon.h:91
 // [-2] void setPoints(int, int, int, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon9setPointsEiiiz(void *this_, int nPoints, int firstx, int firsty) {
-  ((QPolygon*)this_)->setPoints(nPoints, firstx, firsty);
+void C_ZN8QPolygon9setPointsEiiiz(void *this_, int nPoints, int firstx, int firsty,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QPolygon*)this_)->setPoints(nPoints, firstx, firsty,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available
@@ -276,8 +276,8 @@ void C_ZN8QPolygon9putPointsEiiPKi(void *this_, int index, int nPoints, const in
 // /usr/include/qt/QtGui/qpolygon.h:93
 // [-2] void putPoints(int, int, int, int, ...)
 extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon9putPointsEiiiiz(void *this_, int index, int nPoints, int firstx, int firsty) {
-  ((QPolygon*)this_)->putPoints(index, nPoints, firstx, firsty);
+void C_ZN8QPolygon9putPointsEiiiiz(void *this_, int index, int nPoints, int firstx, int firsty,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  ((QPolygon*)this_)->putPoints(index, nPoints, firstx, firsty,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 }
 
 // Public Visibility=Default Availability=Available

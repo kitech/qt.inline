@@ -21,197 +21,165 @@ void* C_ZNK17QAndroidJniObject16callObjectMethodEPKcS1_z(void* this_, const char
 */
 
 extern "C" Q_DECL_EXPORT
-void C_ZNK17QAndroidJniObject10callMethodIvEET_PKcS3_z(void* this_, const char *methodName, const char *signature, ...) {
-    // C variadic parameters forward
-    va_list args;
-    va_start(args, signature);
-    ((QAndroidJniObject*)this_)->callMethod<void>(methodName, signature, args);
-    va_end(args);
+void C_ZNK17QAndroidJniObject10callMethodIvEET_PKcS3_z(void* this_, const char *methodName, const char *signature, 
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    ((QAndroidJniObject*)this_)->callMethod<void>(methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
 }
 
 
 extern "C" Q_DECL_EXPORT
 unsigned char C_ZNK17QAndroidJniObject10callMethodIhEET_PKcS3_z(void* this_, const char *methodName, const char *signature,
-...) {
-    va_list args;
-    va_start(args, signature);
-    unsigned char rv = ((QAndroidJniObject*)this_)->callMethod<unsigned char>(methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    unsigned char rv = ((QAndroidJniObject*)this_)->callMethod<unsigned char>(methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 signed char C_ZNK17QAndroidJniObject10callMethodIaEET_PKcS3_z(void* this_, const char *methodName, const char *signature,
-...) {
-    va_list args;
-    va_start(args, signature);
-    signed char rv = ((QAndroidJniObject*)this_)->callMethod<signed char>(methodName, signature, args);
-    va_end(args);
+void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    signed char rv = ((QAndroidJniObject*)this_)->callMethod<signed char>(methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 unsigned char C_ZNK17QAndroidJniObject10callMethodItEET_PKcS3_z(void* this_, const char *methodName, const char *signature,
-...) {
-    va_list args;
-    va_start(args, signature);
-    unsigned short rv = ((QAndroidJniObject*)this_)->callMethod<unsigned short>(methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    unsigned short rv = ((QAndroidJniObject*)this_)->callMethod<unsigned short>(methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 short C_ZNK17QAndroidJniObject10callMethodIsEET_PKcS3_z(void* this_, const char *methodName, const char *signature,
-...) {
-    va_list args;
-    va_start(args, signature);
-    jshort rv = ((QAndroidJniObject*)this_)->callMethod<short>(methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    jshort rv = ((QAndroidJniObject*)this_)->callMethod<short>(methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 int C_ZNK17QAndroidJniObject10callMethodIiEET_PKcS3_z(void* this_, const char *methodName, const char *signature,
-...) {
-    va_list args;
-    va_start(args, signature);
-    jint rv = ((QAndroidJniObject*)this_)->callMethod<int>(methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    jint rv = ((QAndroidJniObject*)this_)->callMethod<int>(methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 long long C_ZNK17QAndroidJniObject10callMethodIxEET_PKcS3_z(void* this_, const char *methodName, const char *signature,
-...) {
-    va_list args;
-    va_start(args, signature);
-    long long rv = ((QAndroidJniObject*)this_)->callMethod<long long>(methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    long long rv = ((QAndroidJniObject*)this_)->callMethod<long long>(methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 float C_ZNK17QAndroidJniObject10callMethodIfEET_PKcS3_z(void* this_, const char *methodName, const char *signature,
-...) {
-    va_list args;
-    va_start(args, signature);
-    jfloat rv = ((QAndroidJniObject*)this_)->callMethod<float>(methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    jfloat rv = ((QAndroidJniObject*)this_)->callMethod<float>(methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 double C_ZNK17QAndroidJniObject10callMethodIdEET_PKcS3_z(void* this_, const char *methodName, const char *signature,
-...) {
-    va_list args;
-    va_start(args, signature);
-    jdouble rv = ((QAndroidJniObject*)this_)->callMethod<double>(methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9 ) {
+    jdouble rv = ((QAndroidJniObject*)this_)->callMethod<double>(methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
+
 
 // static
 extern "C" Q_DECL_EXPORT
 void C_ZN17QAndroidJniObject16callStaticMethodIvEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
-                                                         ...) {
-    va_list args;
-    va_start(args, signature);
-    QAndroidJniObject::callStaticMethod<void>(className, methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    QAndroidJniObject::callStaticMethod<void>(className, methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
 }
 
 extern "C" Q_DECL_EXPORT
 unsigned char C_ZN17QAndroidJniObject16callStaticMethodIhEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
-                                                         ...) {
-    va_list args;
-    va_start(args, signature);
-    unsigned char rv = QAndroidJniObject::callStaticMethod<unsigned char>(className, methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    unsigned char rv = QAndroidJniObject::callStaticMethod<unsigned char>(className, methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 signed char C_ZN17QAndroidJniObject16callStaticMethodIaEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
-      ...) {
-    va_list args;
-    va_start(args, signature);
-    signed char rv = QAndroidJniObject::callStaticMethod<signed char>(className, methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    signed char rv = QAndroidJniObject::callStaticMethod<signed char>(className, methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 unsigned short C_ZN17QAndroidJniObject16callStaticMethodItEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
-      ...) {
-    va_list args;
-    va_start(args, signature);
-    unsigned short rv = QAndroidJniObject::callStaticMethod<unsigned short>(className, methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    unsigned short rv = QAndroidJniObject::callStaticMethod<unsigned short>(className, methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 short C_ZN17QAndroidJniObject16callStaticMethodIsEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
-      ...) {
-    va_list args;
-    va_start(args, signature);
-    short rv = QAndroidJniObject::callStaticMethod<short>(className, methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    short rv = QAndroidJniObject::callStaticMethod<short>(className, methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 int C_ZN17QAndroidJniObject16callStaticMethodIiEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
-      ...) {
-    va_list args;
-    va_start(args, signature);
-    jint rv = QAndroidJniObject::callStaticMethod<int>(className, methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    jint rv = QAndroidJniObject::callStaticMethod<int>(className, methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 long long C_ZN17QAndroidJniObject16callStaticMethodIxEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
-      ...) {
-    va_list args;
-    va_start(args, signature);
-    long long rv = QAndroidJniObject::callStaticMethod<long long>(className, methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    long long rv = QAndroidJniObject::callStaticMethod<long long>(className, methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 float C_ZN17QAndroidJniObject16callStaticMethodIfEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
-      ...) {
-    va_list args;
-    va_start(args, signature);
-    jfloat rv = QAndroidJniObject::callStaticMethod<float>(className, methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    jfloat rv = QAndroidJniObject::callStaticMethod<float>(className, methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
 
 extern "C" Q_DECL_EXPORT
 double C_ZN17QAndroidJniObject16callStaticMethodIdEET_PKcS3_S3_z(const char *className, const char *methodName, const char *signature,
-      ...) {
-    va_list args;
-    va_start(args, signature);
-    jdouble rv = QAndroidJniObject::callStaticMethod<double>(className, methodName, signature, args);
-    va_end(args);
+    void*a0, void*a1, void*a2, void*a3, void*a4, void*a5, void*a6, void*a7, void*a8, void*a9) {
+
+    jdouble rv = QAndroidJniObject::callStaticMethod<double>(className, methodName, signature, a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
+
     return rv;
 }
-
-/*
-extern "C" Q_DECL_EXPORT
-QAndroidJniObject* C_ZN17QAndroidJniObject22callStaticObjectMethodEPKcS1_S1_z(const char *className, const char *methodName, const char *signature,
-                                                                 ...) {
-    va_list args;
-    va_start(args, signature);
-    QAndroidJniObject rv = QAndroidJniObject::callStaticObjectMethod(className, methodName, signature, args);
-    va_end(args);
-    return new QAndroidJniObject(rv);
-}
-*/
-
 
 /////
 extern "C" Q_DECL_EXPORT

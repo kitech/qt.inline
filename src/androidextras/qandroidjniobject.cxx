@@ -131,8 +131,8 @@ return rv;
 // /usr/include/qt/QtAndroidExtras/qandroidjniobject.h:75
 // [16] QAndroidJniObject callObjectMethod(const char *, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void* C_ZNK17QAndroidJniObject16callObjectMethodEPKcS1_z(void *this_, const char * methodName, const char * sig) {
-  auto rv = ((QAndroidJniObject*)this_)->callObjectMethod(methodName, sig);
+void* C_ZNK17QAndroidJniObject16callObjectMethodEPKcS1_z(void *this_, const char * methodName, const char * sig,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  auto rv = ((QAndroidJniObject*)this_)->callObjectMethod(methodName, sig,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 return new QAndroidJniObject(rv);
 }
 
@@ -140,8 +140,8 @@ return new QAndroidJniObject(rv);
 // /usr/include/qt/QtAndroidExtras/qandroidjniobject.h:85
 // [16] QAndroidJniObject callStaticObjectMethod(const char *, const char *, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void* C_ZN17QAndroidJniObject22callStaticObjectMethodEPKcS1_S1_z(const char * className, const char * methodName, const char * sig) {
-  auto rv = QAndroidJniObject::callStaticObjectMethod(className, methodName, sig);
+void* C_ZN17QAndroidJniObject22callStaticObjectMethodEPKcS1_S1_z(const char * className, const char * methodName, const char * sig,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  auto rv = QAndroidJniObject::callStaticObjectMethod(className, methodName, sig,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 return new QAndroidJniObject(rv);
 }
 
@@ -149,8 +149,8 @@ return new QAndroidJniObject(rv);
 // /usr/include/qt/QtAndroidExtras/qandroidjniobject.h:94
 // [16] QAndroidJniObject callStaticObjectMethod(jclass, const char *, const char *, ...)
 extern "C" Q_DECL_EXPORT
-void* C_ZN17QAndroidJniObject22callStaticObjectMethodEP7_jclassPKcS3_z(jclass clazz, const char * methodName, const char * sig) {
-  auto rv = QAndroidJniObject::callStaticObjectMethod(clazz, methodName, sig);
+void* C_ZN17QAndroidJniObject22callStaticObjectMethodEP7_jclassPKcS3_z(jclass clazz, const char * methodName, const char * sig,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
+  auto rv = QAndroidJniObject::callStaticObjectMethod(clazz, methodName, sig,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
 return new QAndroidJniObject(rv);
 }
 
