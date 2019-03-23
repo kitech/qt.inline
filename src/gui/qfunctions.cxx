@@ -2271,7 +2271,7 @@ QRgb C_Z5qRgbaiiii(int r, int g, int b, int a) {
 // /usr/include/qt/QtGui/qrawfont.h:161
 // [4] uint qHash(const QRawFont &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK8QRawFontj_43(QRawFont* font, uint seed) {
+uint C_Z5qHashRK8QRawFontj_45(QRawFont* font, uint seed) {
   return (uint)qHash(*font, seed);
 }
 
@@ -2279,7 +2279,7 @@ uint C_Z5qHashRK8QRawFontj_43(QRawFont* font, uint seed) {
 // /usr/include/qt/QtGui/qmatrix.h:143
 // [4] uint qHash(const QMatrix &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK7QMatrixj_44(QMatrix* key, uint seed) {
+uint C_Z5qHashRK7QMatrixj_46(QMatrix* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 
@@ -2287,7 +2287,7 @@ uint C_Z5qHashRK7QMatrixj_44(QMatrix* key, uint seed) {
 // /usr/include/qt/QtGui/qfont.h:335
 // [4] uint qHash(const QFont &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK5QFontj_45(QFont* font, uint seed) {
+uint C_Z5qHashRK5QFontj_47(QFont* font, uint seed) {
   return (uint)qHash(*font, seed);
 }
 
@@ -2295,7 +2295,7 @@ uint C_Z5qHashRK5QFontj_45(QFont* font, uint seed) {
 // /usr/include/qt/QtGui/qopenglcontext.h:108
 // [4] uint qHash(const QOpenGLVersionProfile &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK21QOpenGLVersionProfilej_46(QOpenGLVersionProfile* v, uint seed) {
+uint C_Z5qHashRK21QOpenGLVersionProfilej_48(QOpenGLVersionProfile* v, uint seed) {
   return (uint)qHash(*v, seed);
 }
 
@@ -2303,7 +2303,7 @@ uint C_Z5qHashRK21QOpenGLVersionProfilej_46(QOpenGLVersionProfile* v, uint seed)
 // /usr/include/qt/QtGui/qopenglversionfunctions.h:100
 // [4] uint qHash(const QOpenGLVersionStatus &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK20QOpenGLVersionStatusj_47(QOpenGLVersionStatus* v, uint seed) {
+uint C_Z5qHashRK20QOpenGLVersionStatusj_49(QOpenGLVersionStatus* v, uint seed) {
   return (uint)qHash(*v, seed);
 }
 
@@ -2311,7 +2311,7 @@ uint C_Z5qHashRK20QOpenGLVersionStatusj_47(QOpenGLVersionStatus* v, uint seed) {
 // /usr/include/qt/QtGui/qkeysequence.h:69
 // [4] uint qHash(const QKeySequence &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK12QKeySequencej_48(QKeySequence* key, uint seed) {
+uint C_Z5qHashRK12QKeySequencej_50(QKeySequence* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 
@@ -2319,7 +2319,7 @@ uint C_Z5qHashRK12QKeySequencej_48(QKeySequence* key, uint seed) {
 // /usr/include/qt/QtGui/qtransform.h:202
 // [4] uint qHash(const QTransform &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK10QTransformj_49(QTransform* key, uint seed) {
+uint C_Z5qHashRK10QTransformj_51(QTransform* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 
@@ -2327,7 +2327,7 @@ uint C_Z5qHashRK10QTransformj_49(QTransform* key, uint seed) {
 // /usr/include/qt/QtGui/qevent.h:835
 // [4] uint qHash(QPointingDeviceUniqueId, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHash23QPointingDeviceUniqueIdj_50(QPointingDeviceUniqueId* key, uint seed) {
+uint C_Z5qHash23QPointingDeviceUniqueIdj_52(QPointingDeviceUniqueId* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 

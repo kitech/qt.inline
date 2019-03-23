@@ -1,5 +1,8 @@
 //  header block begin
 
+#ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
+#if QT_CONFIG(textcodec)
 // /usr/include/qt/QtCore/qtextcodec.h
 #ifndef protected
 #define protected public
@@ -55,7 +58,7 @@ MyQTextEncoder(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flag
 };
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:141
+// /usr/include/qt/QtCore/qtextcodec.h:140
 // [-2] void QTextEncoder(const QTextCodec *)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoderC2EPK10QTextCodec(const QTextCodec * codec) {
@@ -64,7 +67,7 @@ void* C_ZN12QTextEncoderC2EPK10QTextCodec(const QTextCodec * codec) {
 
 // Public Visibility=Default Availability=Available
 // since 4.7
-// /usr/include/qt/QtCore/qtextcodec.h:142
+// /usr/include/qt/QtCore/qtextcodec.h:141
 // [-2] void QTextEncoder(const QTextCodec *, QTextCodec::ConversionFlags)
 #if QT_VERSION >= 0x040700
 extern "C" Q_DECL_EXPORT
@@ -74,14 +77,14 @@ void* C_ZN12QTextEncoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QT
 #endif // QT_VERSION >= 0x040700
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:143
+// /usr/include/qt/QtCore/qtextcodec.h:142
 // [-2] void ~QTextEncoder()
 extern "C" Q_DECL_EXPORT
 void C_ZN12QTextEncoderD2Ev(void *this_) {
   delete (QTextEncoder*)(this_);
 }
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:145
+// /usr/include/qt/QtCore/qtextcodec.h:144
 // [8] QByteArray fromUnicode(const QString &)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoder11fromUnicodeERK7QString(void *this_, QString* str) {
@@ -91,7 +94,7 @@ return new QByteArray(rv);
 
 // Public Visibility=Default Availability=Available
 // since 5.10
-// /usr/include/qt/QtCore/qtextcodec.h:147
+// /usr/include/qt/QtCore/qtextcodec.h:146
 // [8] QByteArray fromUnicode(QStringView)
 #if QT_VERSION >= 0x050a00
 extern "C" Q_DECL_EXPORT
@@ -102,7 +105,7 @@ return new QByteArray(rv);
 #endif // QT_VERSION >= 0x050a00
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:148
+// /usr/include/qt/QtCore/qtextcodec.h:147
 // [8] QByteArray fromUnicode(const QChar *, int)
 extern "C" Q_DECL_EXPORT
 void* C_ZN12QTextEncoder11fromUnicodeEPK5QChari(void *this_, const QChar * uc, int len_) {
@@ -111,7 +114,7 @@ return new QByteArray(rv);
 }
 
 // Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:149
+// /usr/include/qt/QtCore/qtextcodec.h:148
 // [1] bool hasFailure()
 extern "C" Q_DECL_EXPORT
 bool C_ZNK12QTextEncoder10hasFailureEv(void *this_) {
@@ -134,4 +137,6 @@ bool C_ZNK12QTextEncoder10hasFailureEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(textcodec)
+#endif // #ifndef QT_MINIMAL
 //  footer block end

@@ -189,7 +189,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtPositioning/qgeocoordinate.h:125
 // [4] uint qHash(const QGeoCoordinate &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK14QGeoCoordinatej_57(QGeoCoordinate* coordinate, uint seed) {
+uint C_Z5qHashRK14QGeoCoordinatej_59(QGeoCoordinate* coordinate, uint seed) {
   return (uint)qHash(*coordinate, seed);
 }
 

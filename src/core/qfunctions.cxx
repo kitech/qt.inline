@@ -310,7 +310,7 @@ return new QMargins(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:202
+// /usr/include/qt/QtCore/qfloat16.h:204
 // [8] double operator+(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 double C_Zpli8qfloat16_5(int lhs, qfloat16* rhs) {
@@ -318,7 +318,7 @@ double C_Zpli8qfloat16_5(int lhs, qfloat16* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [4] float operator+(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 float C_Zplf8qfloat16_6(float lhs, qfloat16* rhs) {
@@ -327,7 +327,7 @@ float C_Zplf8qfloat16_6(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [16] long double operator+(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 void C_Zple8qfloat16_7(long double lhs, qfloat16* rhs) {
@@ -346,7 +346,7 @@ return new QMarginsF(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [8] double operator+(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 double C_Zpld8qfloat16_9(double lhs, qfloat16* rhs) {
@@ -633,7 +633,7 @@ return new QByteArray(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:202
+// /usr/include/qt/QtCore/qfloat16.h:204
 // [8] double operator+(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 double C_Zpl8qfloat16i_41(qfloat16* lhs, int rhs) {
@@ -641,7 +641,7 @@ double C_Zpl8qfloat16i_41(qfloat16* lhs, int rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [4] float operator+(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 float C_Zpl8qfloat16f_42(qfloat16* lhs, float rhs) {
@@ -650,7 +650,7 @@ float C_Zpl8qfloat16f_42(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [16] long double operator+(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 void C_Zpl8qfloat16e_43(qfloat16* lhs, long double rhs) {
@@ -660,7 +660,7 @@ void C_Zpl8qfloat16e_43(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [8] double operator+(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 double C_Zpl8qfloat16d_44(qfloat16* lhs, double rhs) {
@@ -668,7 +668,7 @@ double C_Zpl8qfloat16d_44(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:173
+// /usr/include/qt/QtCore/qfloat16.h:175
 // [2] qfloat16 operator+(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 void* C_Zpl8qfloat16S__45(qfloat16* a, qfloat16* b) {
@@ -704,7 +704,7 @@ return new QString(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [2] qfloat16 & operator+=(qfloat16 &, float)
 extern "C" Q_DECL_EXPORT
 void* C_ZpLR8qfloat16f(qfloat16* lhs, float rhs) {
@@ -714,7 +714,7 @@ return &rv;
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [2] qfloat16 & operator+=(qfloat16 &, long double)
 extern "C" Q_DECL_EXPORT
 void* C_ZpLR8qfloat16e_1(qfloat16* lhs, long double rhs) {
@@ -724,7 +724,7 @@ return &rv;
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [2] qfloat16 & operator+=(qfloat16 &, double)
 extern "C" Q_DECL_EXPORT
 void* C_ZpLR8qfloat16d_2(qfloat16* lhs, double rhs) {
@@ -1285,7 +1285,7 @@ void C_ZorN11QFileDevice10PermissionE6QFlagsIS0_E_61(QFileDevice::Permissions::e
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:136
+// /usr/include/qt/QtCore/qtextcodec.h:135
 // [4] QIncompatibleFlag operator|(QTextCodec::ConversionFlags::enum_type, int)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QTextCodec14ConversionFlagEi_62(QTextCodec::ConversionFlags::enum_type f1, int f2) {
@@ -1294,7 +1294,7 @@ void C_ZorN10QTextCodec14ConversionFlagEi_62(QTextCodec::ConversionFlags::enum_t
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:136
+// /usr/include/qt/QtCore/qtextcodec.h:135
 // [4] QFlags<QTextCodec::ConversionFlags::enum_type> operator|(QTextCodec::ConversionFlags::enum_type, QTextCodec::ConversionFlags::enum_type)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QTextCodec14ConversionFlagES0__63(QTextCodec::ConversionFlags::enum_type f1, QTextCodec::ConversionFlags::enum_type f2) {
@@ -1303,7 +1303,7 @@ void C_ZorN10QTextCodec14ConversionFlagES0__63(QTextCodec::ConversionFlags::enum
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:136
+// /usr/include/qt/QtCore/qtextcodec.h:135
 // [4] QFlags<QTextCodec::ConversionFlags::enum_type> operator|(QTextCodec::ConversionFlags::enum_type, QFlags<QTextCodec::ConversionFlags::enum_type>)
 extern "C" Q_DECL_EXPORT
 void C_ZorN10QTextCodec14ConversionFlagE6QFlagsIS0_E_64(QTextCodec::ConversionFlags::enum_type f1, QFlags<QTextCodec::ConversionFlag> f2) {
@@ -1462,7 +1462,7 @@ return new QPoint(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:166
+// /usr/include/qt/QtCore/qfloat16.h:168
 // [2] qfloat16 operator-(qfloat16)
 extern "C" Q_DECL_EXPORT
 void* C_Zng8qfloat16_4(qfloat16* a) {
@@ -1471,7 +1471,7 @@ return new qfloat16(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:243
+// /usr/include/qt/QtCore/qfloat16.h:245
 // [1] bool operator!=(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Znei8qfloat16_1(int a, qfloat16* b) {
@@ -1479,7 +1479,7 @@ bool C_Znei8qfloat16_1(int a, qfloat16* b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator!=(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Znef8qfloat16_2(float lhs, qfloat16* rhs) {
@@ -1488,7 +1488,7 @@ bool C_Znef8qfloat16_2(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator!=(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Znee8qfloat16_3(long double lhs, qfloat16* rhs) {
@@ -1497,7 +1497,7 @@ bool C_Znee8qfloat16_3(long double lhs, qfloat16* rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator!=(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zned8qfloat16_4(double lhs, qfloat16* rhs) {
@@ -1745,7 +1745,7 @@ bool C_ZneDn5QChar_34(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:243
+// /usr/include/qt/QtCore/qfloat16.h:245
 // [1] bool operator!=(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 bool C_Zne8qfloat16i_35(qfloat16* a, int b) {
@@ -1753,7 +1753,7 @@ bool C_Zne8qfloat16i_35(qfloat16* a, int b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator!=(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 bool C_Zne8qfloat16f_36(qfloat16* lhs, float rhs) {
@@ -1762,7 +1762,7 @@ bool C_Zne8qfloat16f_36(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator!=(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 bool C_Zne8qfloat16e_37(qfloat16* lhs, long double rhs) {
@@ -1771,7 +1771,7 @@ bool C_Zne8qfloat16e_37(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator!=(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 bool C_Zne8qfloat16d_38(qfloat16* lhs, double rhs) {
@@ -1779,7 +1779,7 @@ bool C_Zne8qfloat16d_38(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:217
+// /usr/include/qt/QtCore/qfloat16.h:219
 // [1] bool operator!=(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zne8qfloat16S__39(qfloat16* a, qfloat16* b) {
@@ -1925,7 +1925,7 @@ return new QPoint(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:204
+// /usr/include/qt/QtCore/qfloat16.h:206
 // [8] double operator*(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 double C_Zmli8qfloat16_2(int lhs, qfloat16* rhs) {
@@ -1942,7 +1942,7 @@ return new QPoint(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [4] float operator*(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 float C_Zmlf8qfloat16_4(float lhs, qfloat16* rhs) {
@@ -1951,7 +1951,7 @@ float C_Zmlf8qfloat16_4(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [16] long double operator*(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 void C_Zmle8qfloat16_5(long double lhs, qfloat16* rhs) {
@@ -2015,7 +2015,7 @@ return new QSize(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [8] double operator*(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 double C_Zmld8qfloat16_12(double lhs, qfloat16* rhs) {
@@ -2104,7 +2104,7 @@ return new QSize(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:204
+// /usr/include/qt/QtCore/qfloat16.h:206
 // [8] double operator*(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 double C_Zml8qfloat16i_22(qfloat16* lhs, int rhs) {
@@ -2112,7 +2112,7 @@ double C_Zml8qfloat16i_22(qfloat16* lhs, int rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [4] float operator*(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 float C_Zml8qfloat16f_23(qfloat16* lhs, float rhs) {
@@ -2121,7 +2121,7 @@ float C_Zml8qfloat16f_23(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [16] long double operator*(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 void C_Zml8qfloat16e_24(qfloat16* lhs, long double rhs) {
@@ -2131,7 +2131,7 @@ void C_Zml8qfloat16e_24(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [8] double operator*(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 double C_Zml8qfloat16d_25(qfloat16* lhs, double rhs) {
@@ -2139,7 +2139,7 @@ double C_Zml8qfloat16d_25(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:175
+// /usr/include/qt/QtCore/qfloat16.h:177
 // [2] qfloat16 operator*(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 void* C_Zml8qfloat16S__26(qfloat16* a, qfloat16* b) {
@@ -2148,7 +2148,7 @@ return new qfloat16(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:203
+// /usr/include/qt/QtCore/qfloat16.h:205
 // [8] double operator-(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 double C_Zmii8qfloat16_5(int lhs, qfloat16* rhs) {
@@ -2156,7 +2156,7 @@ double C_Zmii8qfloat16_5(int lhs, qfloat16* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [4] float operator-(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 float C_Zmif8qfloat16_6(float lhs, qfloat16* rhs) {
@@ -2165,7 +2165,7 @@ float C_Zmif8qfloat16_6(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [16] long double operator-(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 void C_Zmie8qfloat16_7(long double lhs, qfloat16* rhs) {
@@ -2175,7 +2175,7 @@ void C_Zmie8qfloat16_7(long double lhs, qfloat16* rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [8] double operator-(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 double C_Zmid8qfloat16_8(double lhs, qfloat16* rhs) {
@@ -2273,7 +2273,7 @@ return new QRect(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:203
+// /usr/include/qt/QtCore/qfloat16.h:205
 // [8] double operator-(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 double C_Zmi8qfloat16i_19(qfloat16* lhs, int rhs) {
@@ -2281,7 +2281,7 @@ double C_Zmi8qfloat16i_19(qfloat16* lhs, int rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [4] float operator-(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 float C_Zmi8qfloat16f_20(qfloat16* lhs, float rhs) {
@@ -2290,7 +2290,7 @@ float C_Zmi8qfloat16f_20(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [16] long double operator-(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 void C_Zmi8qfloat16e_21(qfloat16* lhs, long double rhs) {
@@ -2300,7 +2300,7 @@ void C_Zmi8qfloat16e_21(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [8] double operator-(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 double C_Zmi8qfloat16d_22(qfloat16* lhs, double rhs) {
@@ -2308,7 +2308,7 @@ double C_Zmi8qfloat16d_22(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:174
+// /usr/include/qt/QtCore/qfloat16.h:176
 // [2] qfloat16 operator-(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 void* C_Zmi8qfloat16S__23(qfloat16* a, qfloat16* b) {
@@ -2317,7 +2317,7 @@ return new qfloat16(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [2] qfloat16 & operator*=(qfloat16 &, float)
 extern "C" Q_DECL_EXPORT
 void* C_ZmLR8qfloat16f(qfloat16* lhs, float rhs) {
@@ -2327,7 +2327,7 @@ return &rv;
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [2] qfloat16 & operator*=(qfloat16 &, long double)
 extern "C" Q_DECL_EXPORT
 void* C_ZmLR8qfloat16e_1(qfloat16* lhs, long double rhs) {
@@ -2337,7 +2337,7 @@ return &rv;
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [2] qfloat16 & operator*=(qfloat16 &, double)
 extern "C" Q_DECL_EXPORT
 void* C_ZmLR8qfloat16d_2(qfloat16* lhs, double rhs) {
@@ -2346,7 +2346,7 @@ return &rv;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [2] qfloat16 & operator-=(qfloat16 &, float)
 extern "C" Q_DECL_EXPORT
 void* C_ZmIR8qfloat16f(qfloat16* lhs, float rhs) {
@@ -2356,7 +2356,7 @@ return &rv;
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [2] qfloat16 & operator-=(qfloat16 &, long double)
 extern "C" Q_DECL_EXPORT
 void* C_ZmIR8qfloat16e_1(qfloat16* lhs, long double rhs) {
@@ -2366,7 +2366,7 @@ return &rv;
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [2] qfloat16 & operator-=(qfloat16 &, double)
 extern "C" Q_DECL_EXPORT
 void* C_ZmIR8qfloat16d_2(qfloat16* lhs, double rhs) {
@@ -2375,7 +2375,7 @@ return &rv;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:239
+// /usr/include/qt/QtCore/qfloat16.h:241
 // [1] bool operator<(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zlti8qfloat16(int a, qfloat16* b) {
@@ -2383,7 +2383,7 @@ bool C_Zlti8qfloat16(int a, qfloat16* b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator<(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zltf8qfloat16_1(float lhs, qfloat16* rhs) {
@@ -2392,7 +2392,7 @@ bool C_Zltf8qfloat16_1(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator<(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zlte8qfloat16_2(long double lhs, qfloat16* rhs) {
@@ -2401,7 +2401,7 @@ bool C_Zlte8qfloat16_2(long double lhs, qfloat16* rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator<(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zltd8qfloat16_3(double lhs, qfloat16* rhs) {
@@ -2545,7 +2545,7 @@ bool C_ZltDn5QChar_20(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:239
+// /usr/include/qt/QtCore/qfloat16.h:241
 // [1] bool operator<(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt8qfloat16i_21(qfloat16* a, int b) {
@@ -2553,7 +2553,7 @@ bool C_Zlt8qfloat16i_21(qfloat16* a, int b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator<(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt8qfloat16f_22(qfloat16* lhs, float rhs) {
@@ -2562,7 +2562,7 @@ bool C_Zlt8qfloat16f_22(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator<(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt8qfloat16e_23(qfloat16* lhs, long double rhs) {
@@ -2571,7 +2571,7 @@ bool C_Zlt8qfloat16e_23(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator<(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt8qfloat16d_24(qfloat16* lhs, double rhs) {
@@ -2579,7 +2579,7 @@ bool C_Zlt8qfloat16d_24(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:213
+// /usr/include/qt/QtCore/qfloat16.h:215
 // [1] bool operator<(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zlt8qfloat16S__25(qfloat16* a, qfloat16* b) {
@@ -3375,7 +3375,7 @@ return new QDebug(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:241
+// /usr/include/qt/QtCore/qfloat16.h:243
 // [1] bool operator<=(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zlei8qfloat16(int a, qfloat16* b) {
@@ -3383,7 +3383,7 @@ bool C_Zlei8qfloat16(int a, qfloat16* b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator<=(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zlef8qfloat16_1(float lhs, qfloat16* rhs) {
@@ -3392,7 +3392,7 @@ bool C_Zlef8qfloat16_1(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator<=(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zlee8qfloat16_2(long double lhs, qfloat16* rhs) {
@@ -3401,7 +3401,7 @@ bool C_Zlee8qfloat16_2(long double lhs, qfloat16* rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator<=(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zled8qfloat16_3(double lhs, qfloat16* rhs) {
@@ -3545,7 +3545,7 @@ bool C_ZleDn5QChar_20(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:241
+// /usr/include/qt/QtCore/qfloat16.h:243
 // [1] bool operator<=(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 bool C_Zle8qfloat16i_21(qfloat16* a, int b) {
@@ -3553,7 +3553,7 @@ bool C_Zle8qfloat16i_21(qfloat16* a, int b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator<=(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 bool C_Zle8qfloat16f_22(qfloat16* lhs, float rhs) {
@@ -3562,7 +3562,7 @@ bool C_Zle8qfloat16f_22(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator<=(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 bool C_Zle8qfloat16e_23(qfloat16* lhs, long double rhs) {
@@ -3571,7 +3571,7 @@ bool C_Zle8qfloat16e_23(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator<=(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 bool C_Zle8qfloat16d_24(qfloat16* lhs, double rhs) {
@@ -3579,7 +3579,7 @@ bool C_Zle8qfloat16d_24(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:215
+// /usr/include/qt/QtCore/qfloat16.h:217
 // [1] bool operator<=(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zle8qfloat16S__25(qfloat16* a, qfloat16* b) {
@@ -3691,7 +3691,7 @@ bool C_Zle11QStringView13QLatin1String_38(QStringView* lhs, QLatin1String* rhs) 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:238
+// /usr/include/qt/QtCore/qfloat16.h:240
 // [1] bool operator>(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zgti8qfloat16(int a, qfloat16* b) {
@@ -3699,7 +3699,7 @@ bool C_Zgti8qfloat16(int a, qfloat16* b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator>(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zgtf8qfloat16_1(float lhs, qfloat16* rhs) {
@@ -3708,7 +3708,7 @@ bool C_Zgtf8qfloat16_1(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator>(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zgte8qfloat16_2(long double lhs, qfloat16* rhs) {
@@ -3717,7 +3717,7 @@ bool C_Zgte8qfloat16_2(long double lhs, qfloat16* rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator>(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zgtd8qfloat16_3(double lhs, qfloat16* rhs) {
@@ -3853,7 +3853,7 @@ bool C_ZgtDn5QChar_19(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:238
+// /usr/include/qt/QtCore/qfloat16.h:240
 // [1] bool operator>(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt8qfloat16i_20(qfloat16* a, int b) {
@@ -3861,7 +3861,7 @@ bool C_Zgt8qfloat16i_20(qfloat16* a, int b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator>(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt8qfloat16f_21(qfloat16* lhs, float rhs) {
@@ -3870,7 +3870,7 @@ bool C_Zgt8qfloat16f_21(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator>(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt8qfloat16e_22(qfloat16* lhs, long double rhs) {
@@ -3879,7 +3879,7 @@ bool C_Zgt8qfloat16e_22(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator>(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt8qfloat16d_23(qfloat16* lhs, double rhs) {
@@ -3887,7 +3887,7 @@ bool C_Zgt8qfloat16d_23(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:212
+// /usr/include/qt/QtCore/qfloat16.h:214
 // [1] bool operator>(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zgt8qfloat16S__24(qfloat16* a, qfloat16* b) {
@@ -3999,7 +3999,7 @@ bool C_Zgt11QStringView13QLatin1String_37(QStringView* lhs, QLatin1String* rhs) 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:240
+// /usr/include/qt/QtCore/qfloat16.h:242
 // [1] bool operator>=(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zgei8qfloat16(int a, qfloat16* b) {
@@ -4007,7 +4007,7 @@ bool C_Zgei8qfloat16(int a, qfloat16* b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator>=(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zgef8qfloat16_1(float lhs, qfloat16* rhs) {
@@ -4016,7 +4016,7 @@ bool C_Zgef8qfloat16_1(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator>=(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zgee8qfloat16_2(long double lhs, qfloat16* rhs) {
@@ -4025,7 +4025,7 @@ bool C_Zgee8qfloat16_2(long double lhs, qfloat16* rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator>=(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zged8qfloat16_3(double lhs, qfloat16* rhs) {
@@ -4169,7 +4169,7 @@ bool C_ZgeDn5QChar_20(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:240
+// /usr/include/qt/QtCore/qfloat16.h:242
 // [1] bool operator>=(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 bool C_Zge8qfloat16i_21(qfloat16* a, int b) {
@@ -4177,7 +4177,7 @@ bool C_Zge8qfloat16i_21(qfloat16* a, int b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator>=(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 bool C_Zge8qfloat16f_22(qfloat16* lhs, float rhs) {
@@ -4186,7 +4186,7 @@ bool C_Zge8qfloat16f_22(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator>=(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 bool C_Zge8qfloat16e_23(qfloat16* lhs, long double rhs) {
@@ -4195,7 +4195,7 @@ bool C_Zge8qfloat16e_23(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator>=(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 bool C_Zge8qfloat16d_24(qfloat16* lhs, double rhs) {
@@ -4203,7 +4203,7 @@ bool C_Zge8qfloat16d_24(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:214
+// /usr/include/qt/QtCore/qfloat16.h:216
 // [1] bool operator>=(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zge8qfloat16S__25(qfloat16* a, qfloat16* b) {
@@ -4315,7 +4315,7 @@ bool C_Zge11QStringView13QLatin1String_38(QStringView* lhs, QLatin1String* rhs) 
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:242
+// /usr/include/qt/QtCore/qfloat16.h:244
 // [1] bool operator==(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zeqi8qfloat16_1(int a, qfloat16* b) {
@@ -4323,7 +4323,7 @@ bool C_Zeqi8qfloat16_1(int a, qfloat16* b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator==(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zeqf8qfloat16_2(float lhs, qfloat16* rhs) {
@@ -4332,7 +4332,7 @@ bool C_Zeqf8qfloat16_2(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator==(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zeqe8qfloat16_3(long double lhs, qfloat16* rhs) {
@@ -4341,7 +4341,7 @@ bool C_Zeqe8qfloat16_3(long double lhs, qfloat16* rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator==(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zeqd8qfloat16_4(double lhs, qfloat16* rhs) {
@@ -4597,7 +4597,7 @@ bool C_ZeqDn5QChar_35(std::nullptr_t arg0, QChar* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:242
+// /usr/include/qt/QtCore/qfloat16.h:244
 // [1] bool operator==(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq8qfloat16i_36(qfloat16* a, int b) {
@@ -4605,7 +4605,7 @@ bool C_Zeq8qfloat16i_36(qfloat16* a, int b) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:231
+// /usr/include/qt/QtCore/qfloat16.h:233
 // [1] bool operator==(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq8qfloat16f_37(qfloat16* lhs, float rhs) {
@@ -4614,7 +4614,7 @@ bool C_Zeq8qfloat16f_37(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:229
+// /usr/include/qt/QtCore/qfloat16.h:231
 // [1] bool operator==(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq8qfloat16e_38(qfloat16* lhs, long double rhs) {
@@ -4623,7 +4623,7 @@ bool C_Zeq8qfloat16e_38(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:230
+// /usr/include/qt/QtCore/qfloat16.h:232
 // [1] bool operator==(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq8qfloat16d_39(qfloat16* lhs, double rhs) {
@@ -4631,7 +4631,7 @@ bool C_Zeq8qfloat16d_39(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:216
+// /usr/include/qt/QtCore/qfloat16.h:218
 // [1] bool operator==(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Zeq8qfloat16S__40(qfloat16* a, qfloat16* b) {
@@ -4768,7 +4768,7 @@ return new QBitArray(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:205
+// /usr/include/qt/QtCore/qfloat16.h:207
 // [8] double operator/(int, qfloat16)
 extern "C" Q_DECL_EXPORT
 double C_Zdvi8qfloat16(int lhs, qfloat16* rhs) {
@@ -4776,7 +4776,7 @@ double C_Zdvi8qfloat16(int lhs, qfloat16* rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [4] float operator/(float, qfloat16)
 extern "C" Q_DECL_EXPORT
 float C_Zdvf8qfloat16_1(float lhs, qfloat16* rhs) {
@@ -4785,7 +4785,7 @@ float C_Zdvf8qfloat16_1(float lhs, qfloat16* rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [16] long double operator/(long double, qfloat16)
 extern "C" Q_DECL_EXPORT
 void C_Zdve8qfloat16_2(long double lhs, qfloat16* rhs) {
@@ -4795,7 +4795,7 @@ void C_Zdve8qfloat16_2(long double lhs, qfloat16* rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [8] double operator/(double, qfloat16)
 extern "C" Q_DECL_EXPORT
 double C_Zdvd8qfloat16_3(double lhs, qfloat16* rhs) {
@@ -4866,7 +4866,7 @@ return new QSize(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:205
+// /usr/include/qt/QtCore/qfloat16.h:207
 // [8] double operator/(qfloat16, int)
 extern "C" Q_DECL_EXPORT
 double C_Zdv8qfloat16i_11(qfloat16* lhs, int rhs) {
@@ -4874,7 +4874,7 @@ double C_Zdv8qfloat16i_11(qfloat16* lhs, int rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [4] float operator/(qfloat16, float)
 extern "C" Q_DECL_EXPORT
 float C_Zdv8qfloat16f_12(qfloat16* lhs, float rhs) {
@@ -4883,7 +4883,7 @@ float C_Zdv8qfloat16f_12(qfloat16* lhs, float rhs) {
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [16] long double operator/(qfloat16, long double)
 extern "C" Q_DECL_EXPORT
 void C_Zdv8qfloat16e_13(qfloat16* lhs, long double rhs) {
@@ -4893,7 +4893,7 @@ void C_Zdv8qfloat16e_13(qfloat16* lhs, long double rhs) {
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [8] double operator/(qfloat16, double)
 extern "C" Q_DECL_EXPORT
 double C_Zdv8qfloat16d_14(qfloat16* lhs, double rhs) {
@@ -4901,7 +4901,7 @@ double C_Zdv8qfloat16d_14(qfloat16* lhs, double rhs) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:176
+// /usr/include/qt/QtCore/qfloat16.h:178
 // [2] qfloat16 operator/(qfloat16, qfloat16)
 extern "C" Q_DECL_EXPORT
 void* C_Zdv8qfloat16S__15(qfloat16* a, qfloat16* b) {
@@ -4910,7 +4910,7 @@ return new qfloat16(rv);
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:195
+// /usr/include/qt/QtCore/qfloat16.h:197
 // [2] qfloat16 & operator/=(qfloat16 &, float)
 extern "C" Q_DECL_EXPORT
 void* C_ZdVR8qfloat16f(qfloat16* lhs, float rhs) {
@@ -4920,7 +4920,7 @@ return &rv;
 
 #ifndef Q_OS_DARWIN
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:193
+// /usr/include/qt/QtCore/qfloat16.h:195
 // [2] qfloat16 & operator/=(qfloat16 &, long double)
 extern "C" Q_DECL_EXPORT
 void* C_ZdVR8qfloat16e_1(qfloat16* lhs, long double rhs) {
@@ -4930,7 +4930,7 @@ return &rv;
 #endif
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:194
+// /usr/include/qt/QtCore/qfloat16.h:196
 // [2] qfloat16 & operator/=(qfloat16 &, double)
 extern "C" Q_DECL_EXPORT
 void* C_ZdVR8qfloat16d_2(qfloat16* lhs, double rhs) {
@@ -7737,6 +7737,31 @@ void C_Z6qsrandj(uint seed) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qendian.h:170
+// [4] float qbswap(float)
+extern "C" Q_DECL_EXPORT
+float C_Z6qbswapf(float source) {
+  return (float)qbswap(source);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qendian.h:175
+// [8] double qbswap(double)
+extern "C" Q_DECL_EXPORT
+double C_Z6qbswapd_1(double source) {
+  return (double)qbswap(source);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qendian.h:165
+// [2] qfloat16 qbswap(qfloat16)
+extern "C" Q_DECL_EXPORT
+void* C_Z6qbswap8qfloat16_2(qfloat16* source) {
+  auto rv = qbswap(*source);
+return new qfloat16(rv);
+}
+
+// Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qglobal.h:585
 // [4] int qRound(float)
 extern "C" Q_DECL_EXPORT
@@ -8206,18 +8231,34 @@ uint C_Z5qHashDnj_39(std::nullptr_t arg0, uint seed) {
 }
 
 // Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborcommon.h:141
+// [4] uint qHash(QCborTag, uint)
+extern "C" Q_DECL_EXPORT
+uint C_Z5qHash8QCborTagj_40(QCborTag tag, uint seed) {
+  return (uint)qHash(tag, seed);
+}
+
+// Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhashfunctions.h:96
 // [4] uint qHash(const QChar, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHash5QCharj_40(const QChar* key, uint seed) {
+uint C_Z5qHash5QCharj_41(const QChar* key, uint seed) {
   return (uint)qHash(*key, seed);
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborcommon.h:136
+// [4] uint qHash(QCborSimpleType, uint)
+extern "C" Q_DECL_EXPORT
+uint C_Z5qHash15QCborSimpleTypej_42(QCborSimpleType tag, uint seed) {
+  return (uint)qHash(tag, seed);
 }
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhashfunctions.h:104
 // [4] uint qHash(QLatin1String, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHash13QLatin1Stringj_41(QLatin1String* key, uint seed) {
+uint C_Z5qHash13QLatin1Stringj_43(QLatin1String* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 
@@ -8225,7 +8266,7 @@ uint C_Z5qHash13QLatin1Stringj_41(QLatin1String* key, uint seed) {
 // /usr/include/qt/QtCore/qhashfunctions.h:102
 // [4] uint qHash(QStringView, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHash11QStringViewj_42(QStringView* key, uint seed) {
+uint C_Z5qHash11QStringViewj_44(QStringView* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 
@@ -8917,16 +8958,16 @@ void C_Z19qSetGlobalQHashSeedi(int newSeed) {
   qSetGlobalQHashSeed(newSeed);
 }
 
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:467
+// Invalid Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qnamespace.h:53
 // [8] const QMetaObject * qt_getQtMetaObject()
 extern "C" Q_DECL_EXPORT
 void* C_Z18qt_getQtMetaObjectv() {
   return (void*)qt_getQtMetaObject();
 }
 
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qnamespace.h:53
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:467
 // [8] const QMetaObject * qt_getQtMetaObject()
 extern "C" Q_DECL_EXPORT
 void* C_Z18qt_getQtMetaObjectv_1() {
@@ -9245,7 +9286,7 @@ bool C_Z12qSharedBuildv() {
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfloat16.h:251
+// /usr/include/qt/QtCore/qfloat16.h:253
 // [1] bool qFuzzyIsNull(qfloat16)
 extern "C" Q_DECL_EXPORT
 bool C_Z12qFuzzyIsNull8qfloat16_2(qfloat16* f) {

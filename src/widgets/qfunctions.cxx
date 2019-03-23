@@ -1198,7 +1198,7 @@ return new QDebug(rv);
 // /usr/include/qt/QtWidgets/qsizepolicy.h:68
 // [4] uint qHash(QSizePolicy, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHash11QSizePolicyj_59(QSizePolicy* key, uint seed) {
+uint C_Z5qHash11QSizePolicyj_61(QSizePolicy* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 

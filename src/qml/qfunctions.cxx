@@ -226,7 +226,7 @@ void* C_Z9qjsEnginePK7QObject(const QObject * arg0) {
 // /usr/include/qt/QtQml/qqmlproperty.h:130
 // [4] uint qHash(const QQmlProperty &)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK12QQmlProperty_58(QQmlProperty* key) {
+uint C_Z5qHashRK12QQmlProperty_60(QQmlProperty* key) {
   return (uint)qHash(*key);
 }
 

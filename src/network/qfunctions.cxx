@@ -531,7 +531,7 @@ return new QByteArray(rv);
 // /usr/include/qt/QtNetwork/qsslerror.h:115
 // [4] uint qHash(const QSslError &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK9QSslErrorj_51(QSslError* key, uint seed) {
+uint C_Z5qHashRK9QSslErrorj_53(QSslError* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 
@@ -539,7 +539,7 @@ uint C_Z5qHashRK9QSslErrorj_51(QSslError* key, uint seed) {
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:59
 // [4] uint qHash(const QSslDiffieHellmanParameters &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK27QSslDiffieHellmanParametersj_52(QSslDiffieHellmanParameters* dhparam, uint seed) {
+uint C_Z5qHashRK27QSslDiffieHellmanParametersj_54(QSslDiffieHellmanParameters* dhparam, uint seed) {
   return (uint)qHash(*dhparam, seed);
 }
 
@@ -547,7 +547,7 @@ uint C_Z5qHashRK27QSslDiffieHellmanParametersj_52(QSslDiffieHellmanParameters* d
 // /usr/include/qt/QtNetwork/qsslcertificate.h:69
 // [4] uint qHash(const QSslCertificate &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK15QSslCertificatej_53(QSslCertificate* key, uint seed) {
+uint C_Z5qHashRK15QSslCertificatej_55(QSslCertificate* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 
@@ -555,7 +555,7 @@ uint C_Z5qHashRK15QSslCertificatej_53(QSslCertificate* key, uint seed) {
 // /usr/include/qt/QtNetwork/qhostaddress.h:69
 // [4] uint qHash(const QHostAddress &, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHashRK12QHostAddressj_54(QHostAddress* key, uint seed) {
+uint C_Z5qHashRK12QHostAddressj_56(QHostAddress* key, uint seed) {
   return (uint)qHash(*key, seed);
 }
 
@@ -563,7 +563,7 @@ uint C_Z5qHashRK12QHostAddressj_54(QHostAddress* key, uint seed) {
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:55
 // [4] uint qHash(QSslEllipticCurve, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHash17QSslEllipticCurvej_55(QSslEllipticCurve* curve, uint seed) {
+uint C_Z5qHash17QSslEllipticCurvej_57(QSslEllipticCurve* curve, uint seed) {
   return (uint)qHash(*curve, seed);
 }
 
@@ -571,7 +571,7 @@ uint C_Z5qHash17QSslEllipticCurvej_55(QSslEllipticCurve* curve, uint seed) {
 // /usr/include/qt/QtNetwork/qsslellipticcurve.h:90
 // [4] uint qHash(QSslEllipticCurve, uint)
 extern "C" Q_DECL_EXPORT
-uint C_Z5qHash17QSslEllipticCurvej_56(QSslEllipticCurve* curve, uint seed) {
+uint C_Z5qHash17QSslEllipticCurvej_58(QSslEllipticCurve* curve, uint seed) {
   return (uint)qHash(*curve, seed);
 }
 

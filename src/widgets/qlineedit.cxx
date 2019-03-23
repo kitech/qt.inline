@@ -1104,12 +1104,15 @@ void C_ZN9QLineEdit16selectionChangedEv(void *this_) {
 }
 
 // Public Visibility=Default Availability=Available
+// since 5.12
 // /usr/include/qt/QtWidgets/qlineedit.h:210
 // [-2] void inputRejected()
+#if QT_VERSION >= 0x050c00
 extern "C" Q_DECL_EXPORT
 void C_ZN9QLineEdit13inputRejectedEv(void *this_) {
   ((QLineEdit*)this_)->inputRejected();
 }
+#endif // QT_VERSION >= 0x050c00
 
 // Public virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlineedit.h:235

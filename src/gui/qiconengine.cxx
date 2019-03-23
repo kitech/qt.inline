@@ -235,7 +235,7 @@ return new QPixmap(rv);
 
 // Public virtual Visibility=Default Availability=Available
 // since 4.5
-// /usr/include/qt/QtGui/qiconengine.h:93
+// /usr/include/qt/QtGui/qiconengine.h:94
 // [-2] void virtual_hook(int, void *)
 #if QT_VERSION >= 0x040500
 extern "C" Q_DECL_EXPORT
