@@ -196,16 +196,19 @@ set(LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD ${_QT_STATIC_PFX}Qt5::QWindowsIntegratio
 set(LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD Qt5::QCocoaIntegrationPlugin)
 set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD "")
 if(WITH_QT_STATIC)
+  set(Qt5TopDir ${Qt5Core_DIR}/../../..)
+  set(Qt5LibDir ${Qt5TopDir}/lib)
+  set(Qt5PluginDir ${Qt5TopDir}/plugins)
   if(MINGW_NOIPBIZ)
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD})
   elseif(MINGW_MXE)
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_WIN_STATIC_BUILD}
-      ${Qt5Core_DIR}/../../libQt5AccessibilitySupport.a
-      ${Qt5Core_DIR}/../../libQt5EventDispatcherSupport.a
-      ${Qt5Core_DIR}/../../libQt5FontDatabaseSupport.a
-      ${Qt5Core_DIR}/../../libQt5ThemeSupport.a
+      ${Qt5LibDir}/libQt5AccessibilitySupport.a
+      ${Qt5LibDir}/libQt5EventDispatcherSupport.a
+      ${Qt5LibDir}/libQt5FontDatabaseSupport.a
+      ${Qt5LibDir}/libQt5ThemeSupport.a
       ${FreeType2_LIBRARIES} ${OpenSSL_LIBRARIES} -ldnsapi -liphlpapi
-      ${Qt5Core_DIR}/../../libQt5WindowsUIAutomationSupport.a -lwtsapi32 # qt5.12
+      ${Qt5LibDir}/libQt5WindowsUIAutomationSupport.a -lwtsapi32 # qt5.12
       )
   elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_MAC_STATIC_BUILD})
@@ -213,8 +216,13 @@ if(WITH_QT_STATIC)
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD log)
   else(MINGW_NOIPBIZ)
     set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_LINUX_STATIC_BUILD})
-    link_directories(${Qt5Core_DIR}/../../ ${Qt5Core_DIR}/../../../plugins/platforms/)
+    link_directories(${Qt5LibDir} ${Qt5PluginDir}/platforms/)
   endif(MINGW_NOIPBIZ)
+  set(LDFLAGS_FOR_CUSTOM_STATIC_BUILD ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD}
+      ${Qt5PluginDir}/imageformats/libqgif.a
+      ${Qt5PluginDir}/imageformats/libqjpeg.a
+      -ljpeg
+      )
 endif(WITH_QT_STATIC)
 
 add_library(Qt5Inline SHARED ${all_qt5_inline_srcs})
