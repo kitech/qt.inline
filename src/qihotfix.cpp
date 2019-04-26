@@ -19,6 +19,9 @@ Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin)
 Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin)
 #endif
 
+Q_IMPORT_PLUGIN(QGifPlugin)
+Q_IMPORT_PLUGIN(QJpegPlugin)
+
 #endif // defined(QT_STATIC)
 
 /*
