@@ -240,6 +240,7 @@ if(ANDROID)
   target_link_libraries(Qt5Inline log)
 endif(ANDROID)
 target_link_libraries(Qt5Inline ${LibFFI_LDFLAGS})
+add_dependencies(Qt5Inline vtmoc_cpp_files)
 
 # version and install
 if(!ANDROID)
