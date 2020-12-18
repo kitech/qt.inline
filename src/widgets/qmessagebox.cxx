@@ -12,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QMessageBox is pure virtual: false
+// QMessageBox is pure virtual: false false
 // QMessageBox has virtual projected: true
 //  header block end
 
@@ -102,7 +102,7 @@ MyQMessageBox(QWidget * parent) : QMessageBox(parent) {}
 MyQMessageBox(QMessageBox::Icon icon, const QString & title, const QString & text, QFlags<QMessageBox::StandardButton> buttons, QWidget * parent, QFlags<Qt::WindowType> flags) : QMessageBox(icon, title, text, buttons, parent, flags) {}
 // void QMessageBox(const QString &, const QString &, QMessageBox::Icon, int, int, int, QWidget *, Qt::WindowFlags)
 MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon icon, int button0, int button1, int button2, QWidget * parent, QFlags<Qt::WindowType> f) : QMessageBox(title, text, icon, button0, button1, button2, parent, f) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * e)  override {
     int handled = 0;
@@ -115,7 +115,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * event)  override {
     int handled = 0;
@@ -127,7 +127,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * event)  override {
     int handled = 0;
@@ -139,7 +139,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void closeEvent(QCloseEvent *)
   virtual void closeEvent(QCloseEvent * event)  override {
     int handled = 0;
@@ -151,7 +151,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void keyPressEvent(QKeyEvent *)
   virtual void keyPressEvent(QKeyEvent * event)  override {
     int handled = 0;
@@ -163,7 +163,7 @@ MyQMessageBox(const QString & title, const QString & text, QMessageBox::Icon ico
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void changeEvent(QEvent *)
   virtual void changeEvent(QEvent * event)  override {
     int handled = 0;
@@ -189,671 +189,76 @@ void* C_QMessageBox_init_staticMetaObject(void* this_, void* strdat, void* dat, 
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:293
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QMessageBox5eventEP6QEvent(void *this_, QEvent * e) {
-  return (bool)((QMessageBox*)this_)->QMessageBox::event(e);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmessagebox(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:294
-// [-2] void resizeEvent(QResizeEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * event) {
-  ((QMessageBox*)this_)->QMessageBox::resizeEvent(event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:295
-// [-2] void showEvent(QShowEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox9showEventEP10QShowEvent(void *this_, QShowEvent * event) {
-  ((QMessageBox*)this_)->QMessageBox::showEvent(event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:296
-// [-2] void closeEvent(QCloseEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox10closeEventEP11QCloseEvent(void *this_, QCloseEvent * event) {
-  ((QMessageBox*)this_)->QMessageBox::closeEvent(event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:297
-// [-2] void keyPressEvent(QKeyEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox13keyPressEventEP9QKeyEvent(void *this_, QKeyEvent * event) {
-  ((QMessageBox*)this_)->QMessageBox::keyPressEvent(event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:298
-// [-2] void changeEvent(QEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox11changeEventEP6QEvent(void *this_, QEvent * event) {
-  ((QMessageBox*)this_)->QMessageBox::changeEvent(event);
-}
-
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:58
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox10metaObjectEv(void *this_) {
-  return (void*)((QMessageBox*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3750852778 (27)_ZN11QMessageBox2trEPKcS1_i
+//static
+/*void qm3750852778(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QMessageBox::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QMessageBox::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:58
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMessageBox11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QMessageBox*)this_)->qt_metacast(arg0);
+// Public static inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:217
+// [4] QMessageBox::StandardButton information(QWidget *, const QString &, const QString &, QMessageBox::StandardButton, QMessageBox::StandardButton) 
+// (12)qm1253014805 (75)_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_
+//static
+/*void qm1253014805(QWidget * parent, const QString & title, const QString & text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1)*/ {
+  QWidget * parent = *(QWidget **)this_; const QString & title = *(const QString *)this_; const QString & text = *(const QString *)this_; QMessageBox::StandardButton button0 = *(QMessageBox::StandardButton*)this_; QMessageBox::StandardButton button1 = *(QMessageBox::StandardButton*)this_;
+  (void) QMessageBox::information(parent, title, text, button0, button1);
+   auto xptr = (QMessageBox::StandardButton (*)(QWidget*, QString const&, QString const&, QMessageBox::StandardButton, QMessageBox::StandardButton) ) &QMessageBox::information;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:58
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QMessageBox*)this_)->qt_metacall(arg0, arg1, arg2);
+// Public static inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:232
+// [4] int question(QWidget *, const QString &, const QString &, QMessageBox::StandardButton, QMessageBox::StandardButton) 
+// (12)qm2244031201 (71)_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_
+//static
+/*void qm2244031201(QWidget * parent, const QString & title, const QString & text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1)*/ {
+  QWidget * parent = *(QWidget **)this_; const QString & title = *(const QString *)this_; const QString & text = *(const QString *)this_; QMessageBox::StandardButton button0 = *(QMessageBox::StandardButton*)this_; QMessageBox::StandardButton button1 = *(QMessageBox::StandardButton*)this_;
+  (void) QMessageBox::question(parent, title, text, button0, button1);
+   auto xptr = (int (*)(QWidget*, QString const&, QString const&, QMessageBox::StandardButton, QMessageBox::StandardButton) ) &QMessageBox::question;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:58
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMessageBox2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMessageBox::tr(s, c, n);
-return new QString(rv);
+// Public static inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:247
+// [4] int warning(QWidget *, const QString &, const QString &, QMessageBox::StandardButton, QMessageBox::StandardButton) 
+// (11)qm648591063 (70)_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_
+//static
+/*void qm648591063(QWidget * parent, const QString & title, const QString & text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1)*/ {
+  QWidget * parent = *(QWidget **)this_; const QString & title = *(const QString *)this_; const QString & text = *(const QString *)this_; QMessageBox::StandardButton button0 = *(QMessageBox::StandardButton*)this_; QMessageBox::StandardButton button1 = *(QMessageBox::StandardButton*)this_;
+  (void) QMessageBox::warning(parent, title, text, button0, button1);
+   auto xptr = (int (*)(QWidget*, QString const&, QString const&, QMessageBox::StandardButton, QMessageBox::StandardButton) ) &QMessageBox::warning;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:58
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMessageBox6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMessageBox::trUtf8(s, c, n);
-return new QString(rv);
+// Public static inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:262
+// [4] int critical(QWidget *, const QString &, const QString &, QMessageBox::StandardButton, QMessageBox::StandardButton) 
+// (12)qm2150372017 (71)_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_
+//static
+/*void qm2150372017(QWidget * parent, const QString & title, const QString & text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1)*/ {
+  QWidget * parent = *(QWidget **)this_; const QString & title = *(const QString *)this_; const QString & text = *(const QString *)this_; QMessageBox::StandardButton button0 = *(QMessageBox::StandardButton*)this_; QMessageBox::StandardButton button1 = *(QMessageBox::StandardButton*)this_;
+  (void) QMessageBox::critical(parent, title, text, button0, button1);
+   auto xptr = (int (*)(QWidget*, QString const&, QString const&, QMessageBox::StandardButton, QMessageBox::StandardButton) ) &QMessageBox::critical;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:135
-// [-2] void QMessageBox(QWidget *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMessageBoxC2EP7QWidget(QWidget * parent) {
-  auto _nilp = (MyQMessageBox*)(0);
-  return  new MyQMessageBox(parent);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:136
-// [-2] void QMessageBox(QMessageBox::Icon, const QString &, const QString &, QMessageBox::StandardButtons, QWidget *, Qt::WindowFlags)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMessageBoxC2ENS_4IconERK7QStringS3_6QFlagsINS_14StandardButtonEEP7QWidgetS4_IN2Qt10WindowTypeEE(QMessageBox::Icon icon, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QWidget * parent, QFlags<Qt::WindowType> flags) {
-  auto _nilp = (MyQMessageBox*)(0);
-  return  new MyQMessageBox(icon, *title, *text, buttons, parent, flags);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:139
-// [-2] void ~QMessageBox()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBoxD2Ev(void *this_) {
+/*void C_ZN11QMessageBoxD2Ev(void *this_)*/ {
   delete (QMessageBox*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:141
-// [-2] void addButton(QAbstractButton *, QMessageBox::ButtonRole)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox9addButtonEP15QAbstractButtonNS_10ButtonRoleE(void *this_, QAbstractButton * button, QMessageBox::ButtonRole role) {
-  ((QMessageBox*)this_)->addButton(button, role);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:142
-// [8] QPushButton * addButton(const QString &, QMessageBox::ButtonRole)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMessageBox9addButtonERK7QStringNS_10ButtonRoleE(void *this_, QString* text, QMessageBox::ButtonRole role) {
-  return (void*)((QMessageBox*)this_)->addButton(*text, role);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:143
-// [8] QPushButton * addButton(QMessageBox::StandardButton)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMessageBox9addButtonENS_14StandardButtonE(void *this_, QMessageBox::StandardButton button) {
-  return (void*)((QMessageBox*)this_)->addButton(button);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:144
-// [-2] void removeButton(QAbstractButton *)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox12removeButtonEP15QAbstractButton(void *this_, QAbstractButton * button) {
-  ((QMessageBox*)this_)->removeButton(button);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:147
-// [-2] void open(QObject *, const char *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox4openEP7QObjectPKc(void *this_, QObject * receiver, const char * member) {
-  ((QMessageBox*)this_)->open(receiver, member);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtWidgets/qmessagebox.h:149
-// [-2] QList<QAbstractButton *> buttons()
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-QList<QAbstractButton *>* C_ZNK11QMessageBox7buttonsEv(void *this_) {
-  auto rv = ((QMessageBox*)this_)->buttons();
-return new QList<QAbstractButton *>(rv);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtWidgets/qmessagebox.h:150
-// [4] QMessageBox::ButtonRole buttonRole(QAbstractButton *)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-QMessageBox::ButtonRole C_ZNK11QMessageBox10buttonRoleEP15QAbstractButton(void *this_, QAbstractButton * button) {
-  return (QMessageBox::ButtonRole)((QMessageBox*)this_)->buttonRole(button);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:152
-// [-2] void setStandardButtons(QMessageBox::StandardButtons)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox18setStandardButtonsE6QFlagsINS_14StandardButtonEE(void *this_, QFlags<QMessageBox::StandardButton> buttons) {
-  ((QMessageBox*)this_)->setStandardButtons(buttons);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:153
-// [4] QMessageBox::StandardButtons standardButtons()
-extern "C" Q_DECL_EXPORT
-QMessageBox::StandardButtons* C_ZNK11QMessageBox15standardButtonsEv(void *this_) {
-  auto rv = ((QMessageBox*)this_)->standardButtons();
-return new QMessageBox::StandardButtons(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:154
-// [4] QMessageBox::StandardButton standardButton(QAbstractButton *)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-QMessageBox::StandardButton C_ZNK11QMessageBox14standardButtonEP15QAbstractButton(void *this_, QAbstractButton * button) {
-  return (QMessageBox::StandardButton)((QMessageBox*)this_)->standardButton(button);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:155
-// [8] QAbstractButton * button(QMessageBox::StandardButton)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox6buttonENS_14StandardButtonE(void *this_, QMessageBox::StandardButton which) {
-  return (void*)((QMessageBox*)this_)->button(which);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:157
-// [8] QPushButton * defaultButton()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox13defaultButtonEv(void *this_) {
-  return (void*)((QMessageBox*)this_)->defaultButton();
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:158
-// [-2] void setDefaultButton(QPushButton *)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox16setDefaultButtonEP11QPushButton(void *this_, QPushButton * button) {
-  ((QMessageBox*)this_)->setDefaultButton(button);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtWidgets/qmessagebox.h:159
-// [-2] void setDefaultButton(QMessageBox::StandardButton)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox16setDefaultButtonENS_14StandardButtonE(void *this_, QMessageBox::StandardButton button) {
-  ((QMessageBox*)this_)->setDefaultButton(button);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:161
-// [8] QAbstractButton * escapeButton()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox12escapeButtonEv(void *this_) {
-  return (void*)((QMessageBox*)this_)->escapeButton();
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:162
-// [-2] void setEscapeButton(QAbstractButton *)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox15setEscapeButtonEP15QAbstractButton(void *this_, QAbstractButton * button) {
-  ((QMessageBox*)this_)->setEscapeButton(button);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtWidgets/qmessagebox.h:163
-// [-2] void setEscapeButton(QMessageBox::StandardButton)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox15setEscapeButtonENS_14StandardButtonE(void *this_, QMessageBox::StandardButton button) {
-  ((QMessageBox*)this_)->setEscapeButton(button);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:165
-// [8] QAbstractButton * clickedButton()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox13clickedButtonEv(void *this_) {
-  return (void*)((QMessageBox*)this_)->clickedButton();
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:167
-// [8] QString text()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox4textEv(void *this_) {
-  auto rv = ((QMessageBox*)this_)->text();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:168
-// [-2] void setText(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox7setTextERK7QString(void *this_, QString* text) {
-  ((QMessageBox*)this_)->setText(*text);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:170
-// [4] QMessageBox::Icon icon()
-extern "C" Q_DECL_EXPORT
-QMessageBox::Icon C_ZNK11QMessageBox4iconEv(void *this_) {
-  return (QMessageBox::Icon)((QMessageBox*)this_)->icon();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:171
-// [-2] void setIcon(QMessageBox::Icon)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox7setIconENS_4IconE(void *this_, QMessageBox::Icon arg0) {
-  ((QMessageBox*)this_)->setIcon(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:173
-// [32] QPixmap iconPixmap()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox10iconPixmapEv(void *this_) {
-  auto rv = ((QMessageBox*)this_)->iconPixmap();
-return new QPixmap(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:174
-// [-2] void setIconPixmap(const QPixmap &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox13setIconPixmapERK7QPixmap(void *this_, QPixmap* pixmap) {
-  ((QMessageBox*)this_)->setIconPixmap(*pixmap);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:176
-// [4] Qt::TextFormat textFormat()
-extern "C" Q_DECL_EXPORT
-Qt::TextFormat C_ZNK11QMessageBox10textFormatEv(void *this_) {
-  return (Qt::TextFormat)((QMessageBox*)this_)->textFormat();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:177
-// [-2] void setTextFormat(Qt::TextFormat)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox13setTextFormatEN2Qt10TextFormatE(void *this_, Qt::TextFormat format) {
-  ((QMessageBox*)this_)->setTextFormat(format);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:179
-// [-2] void setTextInteractionFlags(Qt::TextInteractionFlags)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox23setTextInteractionFlagsE6QFlagsIN2Qt19TextInteractionFlagEE(void *this_, QFlags<Qt::TextInteractionFlag> flags) {
-  ((QMessageBox*)this_)->setTextInteractionFlags(flags);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:180
-// [4] Qt::TextInteractionFlags textInteractionFlags()
-extern "C" Q_DECL_EXPORT
-Qt::TextInteractionFlags C_ZNK11QMessageBox20textInteractionFlagsEv(void *this_) {
-  return (Qt::TextInteractionFlags)((QMessageBox*)this_)->textInteractionFlags();
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:182
-// [-2] void setCheckBox(QCheckBox *)
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox11setCheckBoxEP9QCheckBox(void *this_, QCheckBox * cb) {
-  ((QMessageBox*)this_)->setCheckBox(cb);
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:183
-// [8] QCheckBox * checkBox()
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox8checkBoxEv(void *this_) {
-  return (void*)((QMessageBox*)this_)->checkBox();
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public static Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:185
-// [4] QMessageBox::StandardButton information(QWidget *, const QString &, const QString &, QMessageBox::StandardButtons, QMessageBox::StandardButton)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-QMessageBox::StandardButton C_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
-  return (QMessageBox::StandardButton)QMessageBox::information(parent, *title, *text, buttons, defaultButton);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public static Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:188
-// [4] QMessageBox::StandardButton question(QWidget *, const QString &, const QString &, QMessageBox::StandardButtons, QMessageBox::StandardButton)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-QMessageBox::StandardButton C_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
-  return (QMessageBox::StandardButton)QMessageBox::question(parent, *title, *text, buttons, defaultButton);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public static Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:191
-// [4] QMessageBox::StandardButton warning(QWidget *, const QString &, const QString &, QMessageBox::StandardButtons, QMessageBox::StandardButton)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-QMessageBox::StandardButton C_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
-  return (QMessageBox::StandardButton)QMessageBox::warning(parent, *title, *text, buttons, defaultButton);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public static Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:194
-// [4] QMessageBox::StandardButton critical(QWidget *, const QString &, const QString &, QMessageBox::StandardButtons, QMessageBox::StandardButton)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-QMessageBox::StandardButton C_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_(QWidget * parent, QString* title, QString* text, QFlags<QMessageBox::StandardButton> buttons, QMessageBox::StandardButton defaultButton) {
-  return (QMessageBox::StandardButton)QMessageBox::critical(parent, *title, *text, buttons, defaultButton);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:197
-// [-2] void about(QWidget *, const QString &, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox5aboutEP7QWidgetRK7QStringS4_(QWidget * parent, QString* title, QString* text) {
-  QMessageBox::about(parent, *title, *text);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:198
-// [-2] void aboutQt(QWidget *, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox7aboutQtEP7QWidgetRK7QString(QWidget * parent, QString* title) {
-  QMessageBox::aboutQt(parent, *title);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:202
-// [-2] void QMessageBox(const QString &, const QString &, QMessageBox::Icon, int, int, int, QWidget *, Qt::WindowFlags)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMessageBoxC2ERK7QStringS2_NS_4IconEiiiP7QWidget6QFlagsIN2Qt10WindowTypeEE(QString* title, QString* text, QMessageBox::Icon icon, int button0, int button1, int button2, QWidget * parent, QFlags<Qt::WindowType> f) {
-  auto _nilp = (MyQMessageBox*)(0);
-  return  new MyQMessageBox(*title, *text, icon, button0, button1, button2, parent, f);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:207
-// [4] int information(QWidget *, const QString &, const QString &, int, int, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_iii(QWidget * parent, QString* title, QString* text, int button0, int button1, int button2) {
-  return (int)QMessageBox::information(parent, *title, *text, button0, button1, button2);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:210
-// [4] int information(QWidget *, const QString &, const QString &, const QString &, const QString &, const QString &, int, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_S4_S4_S4_ii(QWidget * parent, QString* title, QString* text, QString* button0Text, QString* button1Text, QString* button2Text, int defaultButtonNumber, int escapeButtonNumber) {
-  return (int)QMessageBox::information(parent, *title, *text, *button0Text, *button1Text, *button2Text, defaultButtonNumber, escapeButtonNumber);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:217
-// [4] QMessageBox::StandardButton information(QWidget *, const QString &, const QString &, QMessageBox::StandardButton, QMessageBox::StandardButton)
-extern "C" Q_DECL_EXPORT
-QMessageBox::StandardButton C_ZN11QMessageBox11informationEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_(QWidget * parent, QString* title, QString* text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1) {
-  return (QMessageBox::StandardButton)QMessageBox::information(parent, *title, *text, button0, button1);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:222
-// [4] int question(QWidget *, const QString &, const QString &, int, int, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_iii(QWidget * parent, QString* title, QString* text, int button0, int button1, int button2) {
-  return (int)QMessageBox::question(parent, *title, *text, button0, button1, button2);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:225
-// [4] int question(QWidget *, const QString &, const QString &, const QString &, const QString &, const QString &, int, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_S4_S4_S4_ii(QWidget * parent, QString* title, QString* text, QString* button0Text, QString* button1Text, QString* button2Text, int defaultButtonNumber, int escapeButtonNumber) {
-  return (int)QMessageBox::question(parent, *title, *text, *button0Text, *button1Text, *button2Text, defaultButtonNumber, escapeButtonNumber);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:232
-// [4] int question(QWidget *, const QString &, const QString &, QMessageBox::StandardButton, QMessageBox::StandardButton)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox8questionEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_(QWidget * parent, QString* title, QString* text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1) {
-  return (int)QMessageBox::question(parent, *title, *text, button0, button1);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:237
-// [4] int warning(QWidget *, const QString &, const QString &, int, int, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_iii(QWidget * parent, QString* title, QString* text, int button0, int button1, int button2) {
-  return (int)QMessageBox::warning(parent, *title, *text, button0, button1, button2);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:240
-// [4] int warning(QWidget *, const QString &, const QString &, const QString &, const QString &, const QString &, int, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_S4_S4_S4_ii(QWidget * parent, QString* title, QString* text, QString* button0Text, QString* button1Text, QString* button2Text, int defaultButtonNumber, int escapeButtonNumber) {
-  return (int)QMessageBox::warning(parent, *title, *text, *button0Text, *button1Text, *button2Text, defaultButtonNumber, escapeButtonNumber);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:247
-// [4] int warning(QWidget *, const QString &, const QString &, QMessageBox::StandardButton, QMessageBox::StandardButton)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_(QWidget * parent, QString* title, QString* text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1) {
-  return (int)QMessageBox::warning(parent, *title, *text, button0, button1);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:252
-// [4] int critical(QWidget *, const QString &, const QString &, int, int, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_iii(QWidget * parent, QString* title, QString* text, int button0, int button1, int button2) {
-  return (int)QMessageBox::critical(parent, *title, *text, button0, button1, button2);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:255
-// [4] int critical(QWidget *, const QString &, const QString &, const QString &, const QString &, const QString &, int, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_S4_S4_S4_ii(QWidget * parent, QString* title, QString* text, QString* button0Text, QString* button1Text, QString* button2Text, int defaultButtonNumber, int escapeButtonNumber) {
-  return (int)QMessageBox::critical(parent, *title, *text, *button0Text, *button1Text, *button2Text, defaultButtonNumber, escapeButtonNumber);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:262
-// [4] int critical(QWidget *, const QString &, const QString &, QMessageBox::StandardButton, QMessageBox::StandardButton)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMessageBox8criticalEP7QWidgetRK7QStringS4_NS_14StandardButtonES5_(QWidget * parent, QString* title, QString* text, QMessageBox::StandardButton button0, QMessageBox::StandardButton button1) {
-  return (int)QMessageBox::critical(parent, *title, *text, button0, button1);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:267
-// [8] QString buttonText(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox10buttonTextEi(void *this_, int button) {
-  auto rv = ((QMessageBox*)this_)->buttonText(button);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:268
-// [-2] void setButtonText(int, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox13setButtonTextEiRK7QString(void *this_, int button, QString* text) {
-  ((QMessageBox*)this_)->setButtonText(button, *text);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:270
-// [8] QString informativeText()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox15informativeTextEv(void *this_) {
-  auto rv = ((QMessageBox*)this_)->informativeText();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:271
-// [-2] void setInformativeText(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox18setInformativeTextERK7QString(void *this_, QString* text) {
-  ((QMessageBox*)this_)->setInformativeText(*text);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:274
-// [8] QString detailedText()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMessageBox12detailedTextEv(void *this_) {
-  auto rv = ((QMessageBox*)this_)->detailedText();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:275
-// [-2] void setDetailedText(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox15setDetailedTextERK7QString(void *this_, QString* text) {
-  ((QMessageBox*)this_)->setDetailedText(*text);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:278
-// [-2] void setWindowTitle(const QString &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox14setWindowTitleERK7QString(void *this_, QString* title) {
-  ((QMessageBox*)this_)->setWindowTitle(*title);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qmessagebox.h:279
-// [-2] void setWindowModality(Qt::WindowModality)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox17setWindowModalityEN2Qt14WindowModalityE(void *this_, Qt::WindowModality windowModality) {
-  ((QMessageBox*)this_)->setWindowModality(windowModality);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:282
-// [32] QPixmap standardIcon(QMessageBox::Icon)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMessageBox12standardIconENS_4IconE(QMessageBox::Icon icon) {
-  auto rv = QMessageBox::standardIcon(icon);
-return new QPixmap(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmessagebox.h:285
-// [-2] void buttonClicked(QAbstractButton *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMessageBox13buttonClickedEP15QAbstractButton(void *this_, QAbstractButton * button) {
-  ((QMessageBox*)this_)->buttonClicked(button);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmessagebox
 //  main block end
 
 //  use block begin

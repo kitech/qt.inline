@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionFrame is pure virtual: false
+// QStyleOptionFrame is pure virtual: false false
 // QStyleOptionFrame has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionFrame() : QStyleOptionFrame() {}
 MyQStyleOptionFrame(const QStyleOptionFrame & other) : QStyleOptionFrame(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:143
-// [-2] void QStyleOptionFrame()
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QStyleOptionFrameC2Ev() {
-  return  new QStyleOptionFrame();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptionframe(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:144
-// [-2] void QStyleOptionFrame(const QStyleOptionFrame &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QStyleOptionFrameC2ERKS_(QStyleOptionFrame* other) {
-  return  new QStyleOptionFrame(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:145
+// [-2] void QStyleOptionFrame(const QStyleOptionFrame &) 
+// (12)qm1371095002 (29)_ZN17QStyleOptionFrameC2ERKS_
+/*void* qm1371095002(const QStyleOptionFrame & other)*/{
+  const QStyleOptionFrame & other = *(const QStyleOptionFrame *)this_;
+  this_ =  new QStyleOptionFrame(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:146
+// [80] QStyleOptionFrame & operator=(const QStyleOptionFrame &) 
+// (12)qm3392392080 (29)_ZN17QStyleOptionFrameaSERKS_
+//static
+/*void qm3392392080(const QStyleOptionFrame & arg0)*/ {
+  const QStyleOptionFrame & arg0 = *(const QStyleOptionFrame *)this_;
+  (void) ((QStyleOptionFrame*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionFrame & (QStyleOptionFrame::*)(QStyleOptionFrame const&) ) &QStyleOptionFrame::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN17QStyleOptionFrameD2Ev(void *this_) {
+/*void C_ZN17QStyleOptionFrameD2Ev(void *this_)*/ {
   delete (QStyleOptionFrame*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptionframe
 //  main block end
 
 //  use block begin

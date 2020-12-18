@@ -9,30 +9,30 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleHintReturnVariant is pure virtual: false false
-// QStyleHintReturnVariant has virtual projected: false
+// QStyleOptionTabV4 is pure virtual: false false
+// QStyleOptionTabV4 has virtual projected: false
 //  header block end
 
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQStyleHintReturnVariant_t {
+struct qt_meta_stringdata_MyQStyleOptionTabV4_t {
   QByteArrayData data[1];
-  char stringdata0[26];
+  char stringdata0[20];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
   Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQStyleHintReturnVariant_t, stringdata0) + ofs \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQStyleOptionTabV4_t, stringdata0) + ofs \
   - idx * sizeof(QByteArrayData)) \
   )
-static const qt_meta_stringdata_MyQStyleHintReturnVariant_t qt_meta_stringdata_MyQStyleHintReturnVariant = {
+static const qt_meta_stringdata_MyQStyleOptionTabV4_t qt_meta_stringdata_MyQStyleOptionTabV4 = {
    {
-  QT_MOC_LITERAL(0, 0, 25), // "MyQStyleHintReturnVariant"
+  QT_MOC_LITERAL(0, 0, 19), // "MyQStyleOptionTabV4"
   },
-  "MyQStyleHintReturnVariant"
+  "MyQStyleOptionTabV4"
 };
 #undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQStyleHintReturnVariant[] = {
+static const uint qt_meta_data_MyQStyleOptionTabV4[] = {
   // content:
   7,       // revision
   0,       // classname
@@ -45,23 +45,23 @@ static const uint qt_meta_data_MyQStyleHintReturnVariant[] = {
   0,       // signalCount
   0        // eod
 };
-class Q_DECL_EXPORT MyQStyleHintReturnVariant : public QStyleHintReturnVariant {
+class Q_DECL_EXPORT MyQStyleOptionTabV4 : public QStyleOptionTabV4 {
 public:
-  virtual ~MyQStyleHintReturnVariant() {}
-// void QStyleHintReturnVariant()
-MyQStyleHintReturnVariant() : QStyleHintReturnVariant() {}
+  virtual ~MyQStyleOptionTabV4() {}
+// void QStyleOptionTabV4()
+MyQStyleOptionTabV4() : QStyleOptionTabV4() {}
 };
 
 extern "C" // Q_DECL_EXPORT
-uint64_t ensure_inline_symbol_qstylehintreturnvariant(void* this_) {
+uint64_t ensure_inline_symbol_qstyleoptiontabv4(void* this_) {
   uint64_t fnptrsumval = 0;
 
 
-/*void C_ZN23QStyleHintReturnVariantD2Ev(void *this_)*/ {
-  delete (QStyleHintReturnVariant*)(this_);
+/*void C_ZN17QStyleOptionTabV4D2Ev(void *this_)*/ {
+  delete (QStyleOptionTabV4*)(this_);
 }
   return fnptrsumval;
-} // end ensure_inline_symbol_qstylehintreturnvariant
+} // end ensure_inline_symbol_qstyleoptiontabv4
 //  main block end
 
 //  use block begin

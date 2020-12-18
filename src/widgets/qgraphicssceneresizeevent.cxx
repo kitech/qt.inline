@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(graphicsview)
-// since 0x040400
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QGraphicsSceneResizeEvent is pure virtual: false
+// QGraphicsSceneResizeEvent is pure virtual: false false
 // QGraphicsSceneResizeEvent has virtual projected: false
 //  header block end
 
@@ -56,55 +55,16 @@ public:
 MyQGraphicsSceneResizeEvent() : QGraphicsSceneResizeEvent() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:297
-// [-2] void QGraphicsSceneResizeEvent()
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QGraphicsSceneResizeEventC2Ev() {
-  return  new QGraphicsSceneResizeEvent();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qgraphicssceneresizeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:298
-// [-2] void ~QGraphicsSceneResizeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN25QGraphicsSceneResizeEventD2Ev(void *this_) {
+
+/*void C_ZN25QGraphicsSceneResizeEventD2Ev(void *this_)*/ {
   delete (QGraphicsSceneResizeEvent*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:300
-// [16] QSizeF oldSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK25QGraphicsSceneResizeEvent7oldSizeEv(void *this_) {
-  auto rv = ((QGraphicsSceneResizeEvent*)this_)->oldSize();
-return new QSizeF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:301
-// [-2] void setOldSize(const QSizeF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN25QGraphicsSceneResizeEvent10setOldSizeERK6QSizeF(void *this_, QSizeF* size) {
-  ((QGraphicsSceneResizeEvent*)this_)->setOldSize(*size);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:303
-// [16] QSizeF newSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK25QGraphicsSceneResizeEvent7newSizeEv(void *this_) {
-  auto rv = ((QGraphicsSceneResizeEvent*)this_)->newSize();
-return new QSizeF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:304
-// [-2] void setNewSize(const QSizeF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN25QGraphicsSceneResizeEvent10setNewSizeERK6QSizeF(void *this_, QSizeF* size) {
-  ((QGraphicsSceneResizeEvent*)this_)->setNewSize(*size);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qgraphicssceneresizeevent
 //  main block end
 
 //  use block begin

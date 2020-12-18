@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(graphicsview)
-// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicssceneevent.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QGraphicsSceneEvent is pure virtual: false
+// QGraphicsSceneEvent is pure virtual: false false
 // QGraphicsSceneEvent has virtual projected: false
 //  header block end
 
@@ -56,37 +55,16 @@ public:
 MyQGraphicsSceneEvent(QEvent::Type type_) : QGraphicsSceneEvent(type_) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:67
-// [-2] void QGraphicsSceneEvent(QEvent::Type)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QGraphicsSceneEventC2EN6QEvent4TypeE(QEvent::Type type_) {
-  return  new QGraphicsSceneEvent(type_);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qgraphicssceneevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:68
-// [-2] void ~QGraphicsSceneEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QGraphicsSceneEventD2Ev(void *this_) {
+
+/*void C_ZN19QGraphicsSceneEventD2Ev(void *this_)*/ {
   delete (QGraphicsSceneEvent*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:70
-// [8] QWidget * widget()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QGraphicsSceneEvent6widgetEv(void *this_) {
-  return (void*)((QGraphicsSceneEvent*)this_)->widget();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:71
-// [-2] void setWidget(QWidget *)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QGraphicsSceneEvent9setWidgetEP7QWidget(void *this_, QWidget * widget) {
-  ((QGraphicsSceneEvent*)this_)->setWidget(widget);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qgraphicssceneevent
 //  main block end
 
 //  use block begin

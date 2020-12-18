@@ -12,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QListWidgetItem is pure virtual: false
+// QListWidgetItem is pure virtual: false false
 // QListWidgetItem has virtual projected: false
 //  header block end
 
@@ -52,428 +52,349 @@ class Q_DECL_EXPORT MyQListWidgetItem : public QListWidgetItem {
 public:
   virtual ~MyQListWidgetItem() {}
 // void QListWidgetItem(QListWidget *, int)
-MyQListWidgetItem(QListWidget * view, int type_) : QListWidgetItem(view, type_) {}
+MyQListWidgetItem(QListWidget * listview, int type_) : QListWidgetItem(listview, type_) {}
 // void QListWidgetItem(const QString &, QListWidget *, int)
-MyQListWidgetItem(const QString & text, QListWidget * view, int type_) : QListWidgetItem(text, view, type_) {}
+MyQListWidgetItem(const QString & text, QListWidget * listview, int type_) : QListWidgetItem(text, listview, type_) {}
 // void QListWidgetItem(const QIcon &, const QString &, QListWidget *, int)
-MyQListWidgetItem(const QIcon & icon, const QString & text, QListWidget * view, int type_) : QListWidgetItem(icon, text, view, type_) {}
+MyQListWidgetItem(const QIcon & icon, const QString & text, QListWidget * listview, int type_) : QListWidgetItem(icon, text, listview, type_) {}
 // void QListWidgetItem(const QListWidgetItem &)
 MyQListWidgetItem(const QListWidgetItem & other) : QListWidgetItem(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:64
-// [-2] void QListWidgetItem(QListWidget *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QListWidgetItemC2EP11QListWidgeti(QListWidget * view, int type_) {
-  return  new QListWidgetItem(view, type_);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qlistwidgetitem(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:65
-// [-2] void QListWidgetItem(const QString &, QListWidget *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QListWidgetItemC2ERK7QStringP11QListWidgeti(QString* text, QListWidget * view, int type_) {
-  return  new QListWidgetItem(*text, view, type_);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:66
-// [-2] void QListWidgetItem(const QIcon &, const QString &, QListWidget *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QListWidgetItemC2ERK5QIconRK7QStringP11QListWidgeti(QIcon* icon, QString* text, QListWidget * view, int type_) {
-  return  new QListWidgetItem(*icon, *text, view, type_);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.1
-// /usr/include/qt/QtWidgets/qlistwidget.h:68
-// [-2] void QListWidgetItem(const QListWidgetItem &)
-#if QT_VERSION >= 0x040100
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QListWidgetItemC2ERKS_(QListWidgetItem* other) {
-  return  new QListWidgetItem(*other);
-}
-#endif // QT_VERSION >= 0x040100
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:69
-// [-2] void ~QListWidgetItem()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItemD2Ev(void *this_) {
-  delete (QListWidgetItem*)(this_);
-}
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:71
-// [8] QListWidgetItem * clone()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem5cloneEv(void *this_) {
-  return (void*)((QListWidgetItem*)this_)->clone();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:73
-// [8] QListWidget * listWidget()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem10listWidgetEv(void *this_) {
-  return (void*)((QListWidgetItem*)this_)->listWidget();
+// [8] QListWidget * listWidget() const
+// (12)qm3052211783 (35)_ZNK15QListWidgetItem10listWidgetEv
+//static
+/*void qm3052211783()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->listWidget();
+   auto xptr = (QListWidget * (QListWidgetItem::*)() const ) &QListWidgetItem::listWidget;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qlistwidget.h:75
-// [-2] void setSelected(bool)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem11setSelectedEb(void *this_, bool select_) {
-  ((QListWidgetItem*)this_)->setSelected(select_);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public inline Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qlistwidget.h:76
-// [1] bool isSelected()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-bool C_ZNK15QListWidgetItem10isSelectedEv(void *this_) {
-  return (bool)((QListWidgetItem*)this_)->isSelected();
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public inline Visibility=Default Availability=Available
-// since 4.2
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:78
-// [-2] void setHidden(bool)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem9setHiddenEb(void *this_, bool hide) {
-  ((QListWidgetItem*)this_)->setHidden(hide);
+// [-2] void setHidden(bool) 
+// (12)qm4190663705 (32)_ZN15QListWidgetItem9setHiddenEb
+//static
+/*void qm4190663705(bool hide)*/ {
+  bool hide = *(bool*)this_;
+  (void) ((QListWidgetItem*)this_)->setHidden(hide);
+   auto xptr = (void (QListWidgetItem::*)(bool) ) &QListWidgetItem::setHidden;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040200
 
-// Public inline Visibility=Default Availability=Available
-// since 4.2
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:79
-// [1] bool isHidden()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-bool C_ZNK15QListWidgetItem8isHiddenEv(void *this_) {
-  return (bool)((QListWidgetItem*)this_)->isHidden();
+// [1] bool isHidden() const
+// (12)qm3920022062 (32)_ZNK15QListWidgetItem8isHiddenEv
+//static
+/*void qm3920022062()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->isHidden();
+   auto xptr = (bool (QListWidgetItem::*)() const ) &QListWidgetItem::isHidden;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040200
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:81
-// [4] Qt::ItemFlags flags()
-extern "C" Q_DECL_EXPORT
-Qt::ItemFlags C_ZNK15QListWidgetItem5flagsEv(void *this_) {
-  return (Qt::ItemFlags)((QListWidgetItem*)this_)->flags();
+// [4] Qt::ItemFlags flags() const
+// (12)qm3201683146 (29)_ZNK15QListWidgetItem5flagsEv
+//static
+/*void qm3201683146()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->flags();
+   auto xptr = (QFlags<Qt::ItemFlag> (QListWidgetItem::*)() const ) &QListWidgetItem::flags;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:82
-// [-2] void setFlags(Qt::ItemFlags)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem8setFlagsE6QFlagsIN2Qt8ItemFlagEE(void *this_, QFlags<Qt::ItemFlag> flags) {
-  ((QListWidgetItem*)this_)->setFlags(flags);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:84
-// [8] QString text()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem4textEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->text();
-return new QString(rv);
+// [8] QString text() const
+// (11)qm829461800 (28)_ZNK15QListWidgetItem4textEv
+//static
+/*void qm829461800()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->text();
+   auto xptr = (QString (QListWidgetItem::*)() const ) &QListWidgetItem::text;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:86
-// [-2] void setText(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem7setTextERK7QString(void *this_, QString* text) {
-  ((QListWidgetItem*)this_)->setText(*text);
+// [-2] void setText(const QString &) 
+// (12)qm3423457056 (39)_ZN15QListWidgetItem7setTextERK7QString
+//static
+/*void qm3423457056(const QString & text)*/ {
+  const QString & text = *(const QString *)this_;
+  (void) ((QListWidgetItem*)this_)->setText(text);
+   auto xptr = (void (QListWidgetItem::*)(QString const&) ) &QListWidgetItem::setText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:88
-// [8] QIcon icon()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem4iconEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->icon();
-return new QIcon(rv);
+// [8] QIcon icon() const
+// (12)qm3708237901 (28)_ZNK15QListWidgetItem4iconEv
+//static
+/*void qm3708237901()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->icon();
+   auto xptr = (QIcon (QListWidgetItem::*)() const ) &QListWidgetItem::icon;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:90
-// [-2] void setIcon(const QIcon &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem7setIconERK5QIcon(void *this_, QIcon* icon) {
-  ((QListWidgetItem*)this_)->setIcon(*icon);
+// [-2] void setIcon(const QIcon &) 
+// (12)qm2810007255 (37)_ZN15QListWidgetItem7setIconERK5QIcon
+//static
+/*void qm2810007255(const QIcon & icon)*/ {
+  const QIcon & icon = *(const QIcon *)this_;
+  (void) ((QListWidgetItem*)this_)->setIcon(icon);
+   auto xptr = (void (QListWidgetItem::*)(QIcon const&) ) &QListWidgetItem::setIcon;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:92
-// [8] QString statusTip()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem9statusTipEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->statusTip();
-return new QString(rv);
+// [8] QString statusTip() const
+// (12)qm1135609159 (33)_ZNK15QListWidgetItem9statusTipEv
+//static
+/*void qm1135609159()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->statusTip();
+   auto xptr = (QString (QListWidgetItem::*)() const ) &QListWidgetItem::statusTip;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:94
-// [-2] void setStatusTip(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem12setStatusTipERK7QString(void *this_, QString* statusTip) {
-  ((QListWidgetItem*)this_)->setStatusTip(*statusTip);
+// [-2] void setStatusTip(const QString &) 
+// (12)qm3700517868 (45)_ZN15QListWidgetItem12setStatusTipERK7QString
+//static
+/*void qm3700517868(const QString & statusTip)*/ {
+  const QString & statusTip = *(const QString *)this_;
+  (void) ((QListWidgetItem*)this_)->setStatusTip(statusTip);
+   auto xptr = (void (QListWidgetItem::*)(QString const&) ) &QListWidgetItem::setStatusTip;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:97
-// [8] QString toolTip()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem7toolTipEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->toolTip();
-return new QString(rv);
+// [8] QString toolTip() const
+// (12)qm2537863815 (31)_ZNK15QListWidgetItem7toolTipEv
+//static
+/*void qm2537863815()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->toolTip();
+   auto xptr = (QString (QListWidgetItem::*)() const ) &QListWidgetItem::toolTip;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:99
-// [-2] void setToolTip(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem10setToolTipERK7QString(void *this_, QString* toolTip) {
-  ((QListWidgetItem*)this_)->setToolTip(*toolTip);
+// [-2] void setToolTip(const QString &) 
+// (12)qm1903500272 (43)_ZN15QListWidgetItem10setToolTipERK7QString
+//static
+/*void qm1903500272(const QString & toolTip)*/ {
+  const QString & toolTip = *(const QString *)this_;
+  (void) ((QListWidgetItem*)this_)->setToolTip(toolTip);
+   auto xptr = (void (QListWidgetItem::*)(QString const&) ) &QListWidgetItem::setToolTip;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:103
-// [8] QString whatsThis()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem9whatsThisEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->whatsThis();
-return new QString(rv);
+// [8] QString whatsThis() const
+// (12)qm3507879113 (33)_ZNK15QListWidgetItem9whatsThisEv
+//static
+/*void qm3507879113()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->whatsThis();
+   auto xptr = (QString (QListWidgetItem::*)() const ) &QListWidgetItem::whatsThis;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:105
-// [-2] void setWhatsThis(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem12setWhatsThisERK7QString(void *this_, QString* whatsThis) {
-  ((QListWidgetItem*)this_)->setWhatsThis(*whatsThis);
+// [-2] void setWhatsThis(const QString &) 
+// (12)qm3609195729 (45)_ZN15QListWidgetItem12setWhatsThisERK7QString
+//static
+/*void qm3609195729(const QString & whatsThis)*/ {
+  const QString & whatsThis = *(const QString *)this_;
+  (void) ((QListWidgetItem*)this_)->setWhatsThis(whatsThis);
+   auto xptr = (void (QListWidgetItem::*)(QString const&) ) &QListWidgetItem::setWhatsThis;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:108
-// [16] QFont font()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem4fontEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->font();
-return new QFont(rv);
+// [16] QFont font() const
+// (12)qm1085023834 (28)_ZNK15QListWidgetItem4fontEv
+//static
+/*void qm1085023834()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->font();
+   auto xptr = (QFont (QListWidgetItem::*)() const ) &QListWidgetItem::font;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:110
-// [-2] void setFont(const QFont &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem7setFontERK5QFont(void *this_, QFont* font) {
-  ((QListWidgetItem*)this_)->setFont(*font);
+// [-2] void setFont(const QFont &) 
+// (12)qm3238345099 (37)_ZN15QListWidgetItem7setFontERK5QFont
+//static
+/*void qm3238345099(const QFont & font)*/ {
+  const QFont & font = *(const QFont *)this_;
+  (void) ((QListWidgetItem*)this_)->setFont(font);
+   auto xptr = (void (QListWidgetItem::*)(QFont const&) ) &QListWidgetItem::setFont;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:112
-// [4] int textAlignment()
-extern "C" Q_DECL_EXPORT
-int C_ZNK15QListWidgetItem13textAlignmentEv(void *this_) {
-  return (int)((QListWidgetItem*)this_)->textAlignment();
+// [4] int textAlignment() const
+// (12)qm3786728094 (38)_ZNK15QListWidgetItem13textAlignmentEv
+//static
+/*void qm3786728094()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->textAlignment();
+   auto xptr = (int (QListWidgetItem::*)() const ) &QListWidgetItem::textAlignment;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:114
-// [-2] void setTextAlignment(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem16setTextAlignmentEi(void *this_, int alignment) {
-  ((QListWidgetItem*)this_)->setTextAlignment(alignment);
+// [-2] void setTextAlignment(int) 
+// (12)qm1266951520 (40)_ZN15QListWidgetItem16setTextAlignmentEi
+//static
+/*void qm1266951520(int alignment)*/ {
+  int alignment = *(int*)this_;
+  (void) ((QListWidgetItem*)this_)->setTextAlignment(alignment);
+   auto xptr = (void (QListWidgetItem::*)(int) ) &QListWidgetItem::setTextAlignment;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:117
-// [16] QColor backgroundColor()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem15backgroundColorEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->backgroundColor();
-return new QColor(rv);
-}
-
-// Public inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:119
-// [-2] void setBackgroundColor(const QColor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem18setBackgroundColorERK6QColor(void *this_, QColor* color) {
-  ((QListWidgetItem*)this_)->setBackgroundColor(*color);
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qlistwidget.h:122
-// [8] QBrush background()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem10backgroundEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->background();
-return new QBrush(rv);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public inline Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qlistwidget.h:124
-// [-2] void setBackground(const QBrush &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem13setBackgroundERK6QBrush(void *this_, QBrush* brush) {
-  ((QListWidgetItem*)this_)->setBackground(*brush);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:127
-// [16] QColor textColor()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem9textColorEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->textColor();
-return new QColor(rv);
+// [8] QBrush background() const
+// (12)qm3910974285 (35)_ZNK15QListWidgetItem10backgroundEv
+//static
+/*void qm3910974285()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->background();
+   auto xptr = (QBrush (QListWidgetItem::*)() const ) &QListWidgetItem::background;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:129
-// [-2] void setTextColor(const QColor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem12setTextColorERK6QColor(void *this_, QColor* color) {
-  ((QListWidgetItem*)this_)->setTextColor(*color);
+// [-2] void setBackground(const QBrush &) 
+// (12)qm4168579088 (45)_ZN15QListWidgetItem13setBackgroundERK6QBrush
+//static
+/*void qm4168579088(const QBrush & brush)*/ {
+  const QBrush & brush = *(const QBrush *)this_;
+  (void) ((QListWidgetItem*)this_)->setBackground(brush);
+   auto xptr = (void (QListWidgetItem::*)(QBrush const&) ) &QListWidgetItem::setBackground;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qlistwidget.h:132
-// [8] QBrush foreground()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem10foregroundEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->foreground();
-return new QBrush(rv);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public inline Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qlistwidget.h:134
-// [-2] void setForeground(const QBrush &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem13setForegroundERK6QBrush(void *this_, QBrush* brush) {
-  ((QListWidgetItem*)this_)->setForeground(*brush);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:137
-// [4] Qt::CheckState checkState()
-extern "C" Q_DECL_EXPORT
-Qt::CheckState C_ZNK15QListWidgetItem10checkStateEv(void *this_) {
-  return (Qt::CheckState)((QListWidgetItem*)this_)->checkState();
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:141
+// [8] QBrush foreground() const
+// (12)qm3099761264 (35)_ZNK15QListWidgetItem10foregroundEv
+//static
+/*void qm3099761264()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->foreground();
+   auto xptr = (QBrush (QListWidgetItem::*)() const ) &QListWidgetItem::foreground;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:139
-// [-2] void setCheckState(Qt::CheckState)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem13setCheckStateEN2Qt10CheckStateE(void *this_, Qt::CheckState state) {
-  ((QListWidgetItem*)this_)->setCheckState(state);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:143
+// [-2] void setForeground(const QBrush &) 
+// (12)qm2721224624 (45)_ZN15QListWidgetItem13setForegroundERK6QBrush
+//static
+/*void qm2721224624(const QBrush & brush)*/ {
+  const QBrush & brush = *(const QBrush *)this_;
+  (void) ((QListWidgetItem*)this_)->setForeground(brush);
+   auto xptr = (void (QListWidgetItem::*)(QBrush const&) ) &QListWidgetItem::setForeground;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 4.1
-// /usr/include/qt/QtWidgets/qlistwidget.h:142
-// [8] QSize sizeHint()
-#if QT_VERSION >= 0x040100
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem8sizeHintEv(void *this_) {
-  auto rv = ((QListWidgetItem*)this_)->sizeHint();
-return new QSize(rv);
-}
-#endif // QT_VERSION >= 0x040100
-
-// Public inline Visibility=Default Availability=Available
-// since 4.1
-// /usr/include/qt/QtWidgets/qlistwidget.h:144
-// [-2] void setSizeHint(const QSize &)
-#if QT_VERSION >= 0x040100
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem11setSizeHintERK5QSize(void *this_, QSize* size) {
-  ((QListWidgetItem*)this_)->setSizeHint(*size);
-}
-#endif // QT_VERSION >= 0x040100
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:147
-// [16] QVariant data(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QListWidgetItem4dataEi(void *this_, int role) {
-  auto rv = ((QListWidgetItem*)this_)->data(role);
-return new QVariant(rv);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:146
+// [4] Qt::CheckState checkState() const
+// (12)qm1128276553 (35)_ZNK15QListWidgetItem10checkStateEv
+//static
+/*void qm1128276553()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->checkState();
+   auto xptr = (Qt::CheckState (QListWidgetItem::*)() const ) &QListWidgetItem::checkState;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:148
-// [-2] void setData(int, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem7setDataEiRK8QVariant(void *this_, int role, QVariant* value) {
-  ((QListWidgetItem*)this_)->setData(role, *value);
+// [-2] void setCheckState(Qt::CheckState) 
+// (12)qm2662988816 (53)_ZN15QListWidgetItem13setCheckStateEN2Qt10CheckStateE
+//static
+/*void qm2662988816(Qt::CheckState state)*/ {
+  Qt::CheckState state = *(Qt::CheckState*)this_;
+  (void) ((QListWidgetItem*)this_)->setCheckState(state);
+   auto xptr = (void (QListWidgetItem::*)(Qt::CheckState) ) &QListWidgetItem::setCheckState;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:150
-// [1] bool operator<(const QListWidgetItem &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK15QListWidgetItemltERKS_(void *this_, QListWidgetItem* other) {
-  return (bool)((QListWidgetItem*)this_)->operator<(*other);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:151
+// [8] QSize sizeHint() const
+// (12)qm2931985871 (32)_ZNK15QListWidgetItem8sizeHintEv
+//static
+/*void qm2931985871()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->sizeHint();
+   auto xptr = (QSize (QListWidgetItem::*)() const ) &QListWidgetItem::sizeHint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:153
-// [-2] void read(QDataStream &)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QListWidgetItem4readER11QDataStream(void *this_, QDataStream* in) {
-  ((QListWidgetItem*)this_)->read(*in);
+// [-2] void setSizeHint(const QSize &) 
+// (11)qm419543709 (42)_ZN15QListWidgetItem11setSizeHintERK5QSize
+//static
+/*void qm419543709(const QSize & size)*/ {
+  const QSize & size = *(const QSize *)this_;
+  (void) ((QListWidgetItem*)this_)->setSizeHint(size);
+   auto xptr = (void (QListWidgetItem::*)(QSize const&) ) &QListWidgetItem::setSizeHint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:154
-// [-2] void write(QDataStream &)
-extern "C" Q_DECL_EXPORT
-void C_ZNK15QListWidgetItem5writeER11QDataStream(void *this_, QDataStream* out_) {
-  ((QListWidgetItem*)this_)->write(*out_);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:167
+// [4] int type() const
+// (12)qm1278217731 (28)_ZNK15QListWidgetItem4typeEv
+//static
+/*void qm1278217731()*/ {
+  ;
+  (void) ((QListWidgetItem*)this_)->type();
+   auto xptr = (int (QListWidgetItem::*)() const ) &QListWidgetItem::type;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:156
-// [48] QListWidgetItem & operator=(const QListWidgetItem &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QListWidgetItemaSERKS_(void *this_, QListWidgetItem* other) {
-  auto& rv = ((QListWidgetItem*)this_)->operator=(*other);
-return &rv;
-}
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlistwidget.h:158
-// [4] int type()
-extern "C" Q_DECL_EXPORT
-int C_ZNK15QListWidgetItem4typeEv(void *this_) {
-  return (int)((QListWidgetItem*)this_)->type();
+/*void C_ZN15QListWidgetItemD2Ev(void *this_)*/ {
+  delete (QListWidgetItem*)(this_);
 }
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qlistwidgetitem
 //  main block end
 
 //  use block begin

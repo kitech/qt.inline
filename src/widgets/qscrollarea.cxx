@@ -12,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QScrollArea is pure virtual: false
+// QScrollArea is pure virtual: false false
 // QScrollArea has virtual projected: true
 //  header block end
 
@@ -98,7 +98,7 @@ public:
   virtual ~MyQScrollArea() {}
 // void QScrollArea(QWidget *)
 MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * arg0)  override {
     int handled = 0;
@@ -111,7 +111,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * arg0, QEvent * arg1)  override {
     int handled = 0;
@@ -124,7 +124,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * arg0)  override {
     int handled = 0;
@@ -136,7 +136,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
@@ -148,7 +148,7 @@ MyQScrollArea(QWidget * parent) : QScrollArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Direct Visibility=Default Availability=Available
 // [8] QSize viewportSizeHint()
   virtual QSize viewportSizeHint() const override {
     int handled = 0;
@@ -176,197 +176,28 @@ void* C_QScrollArea_init_staticMetaObject(void* this_, void* strdat, void* dat, 
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:81
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QScrollArea5eventEP6QEvent(void *this_, QEvent * arg0) {
-  return (bool)((QScrollArea*)this_)->QScrollArea::event(arg0);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qscrollarea(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:82
-// [1] bool eventFilter(QObject *, QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QScrollArea11eventFilterEP7QObjectP6QEvent(void *this_, QObject * arg0, QEvent * arg1) {
-  return (bool)((QScrollArea*)this_)->QScrollArea::eventFilter(arg0, arg1);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:83
-// [-2] void resizeEvent(QResizeEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QScrollArea11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * arg0) {
-  ((QScrollArea*)this_)->QScrollArea::resizeEvent(arg0);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:84
-// [-2] void scrollContentsBy(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QScrollArea16scrollContentsByEii(void *this_, int dx, int dy) {
-  ((QScrollArea*)this_)->QScrollArea::scrollContentsBy(dx, dy);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:86
-// [8] QSize viewportSizeHint()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QScrollArea16viewportSizeHintEv(void *this_) {
-  auto rv = ((QScrollArea*)this_)->QScrollArea::viewportSizeHint();
-return new QSize(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qscrollarea.h:54
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QScrollArea10metaObjectEv(void *this_) {
-  return (void*)((QScrollArea*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1824880836 (27)_ZN11QScrollArea2trEPKcS1_i
+//static
+/*void qm1824880836(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QScrollArea::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QScrollArea::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:54
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QScrollArea11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QScrollArea*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:54
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QScrollArea11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QScrollArea*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:54
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QScrollArea2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QScrollArea::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:54
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QScrollArea6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QScrollArea::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:59
-// [-2] void QScrollArea(QWidget *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QScrollAreaC2EP7QWidget(QWidget * parent) {
-  auto _nilp = (MyQScrollArea*)(0);
-  return  new MyQScrollArea(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:60
-// [-2] void ~QScrollArea()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QScrollAreaD2Ev(void *this_) {
+/*void C_ZN11QScrollAreaD2Ev(void *this_)*/ {
   delete (QScrollArea*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:62
-// [8] QWidget * widget()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QScrollArea6widgetEv(void *this_) {
-  return (void*)((QScrollArea*)this_)->widget();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:63
-// [-2] void setWidget(QWidget *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QScrollArea9setWidgetEP7QWidget(void *this_, QWidget * widget) {
-  ((QScrollArea*)this_)->setWidget(widget);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:64
-// [8] QWidget * takeWidget()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QScrollArea10takeWidgetEv(void *this_) {
-  return (void*)((QScrollArea*)this_)->takeWidget();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:66
-// [1] bool widgetResizable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QScrollArea15widgetResizableEv(void *this_) {
-  return (bool)((QScrollArea*)this_)->widgetResizable();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:67
-// [-2] void setWidgetResizable(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QScrollArea18setWidgetResizableEb(void *this_, bool resizable) {
-  ((QScrollArea*)this_)->setWidgetResizable(resizable);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:69
-// [8] QSize sizeHint()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QScrollArea8sizeHintEv(void *this_) {
-  auto rv = ((QScrollArea*)this_)->sizeHint();
-return new QSize(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:71
-// [1] bool focusNextPrevChild(bool)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QScrollArea18focusNextPrevChildEb(void *this_, bool next) {
-  return (bool)((QScrollArea*)this_)->focusNextPrevChild(next);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:73
-// [4] Qt::Alignment alignment()
-extern "C" Q_DECL_EXPORT
-Qt::Alignment C_ZNK11QScrollArea9alignmentEv(void *this_) {
-  return (Qt::Alignment)((QScrollArea*)this_)->alignment();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:74
-// [-2] void setAlignment(Qt::Alignment)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QScrollArea12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> arg0) {
-  ((QScrollArea*)this_)->setAlignment(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollarea.h:76
-// [-2] void ensureVisible(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QScrollArea13ensureVisibleEiiii(void *this_, int x, int y, int xmargin, int ymargin) {
-  ((QScrollArea*)this_)->ensureVisible(x, y, xmargin, ymargin);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtWidgets/qscrollarea.h:77
-// [-2] void ensureWidgetVisible(QWidget *, int, int)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN11QScrollArea19ensureWidgetVisibleEP7QWidgetii(void *this_, QWidget * childWidget, int xmargin, int ymargin) {
-  ((QScrollArea*)this_)->ensureWidgetVisible(childWidget, xmargin, ymargin);
-}
-#endif // QT_VERSION >= 0x040200
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qscrollarea
 //  main block end
 
 //  use block begin

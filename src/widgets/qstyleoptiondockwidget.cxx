@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionDockWidget is pure virtual: false
+// QStyleOptionDockWidget is pure virtual: false false
 // QStyleOptionDockWidget has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionDockWidget() : QStyleOptionDockWidget() {}
 MyQStyleOptionDockWidget(const QStyleOptionDockWidget & other) : QStyleOptionDockWidget(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:391
-// [-2] void QStyleOptionDockWidget()
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QStyleOptionDockWidgetC2Ev() {
-  return  new QStyleOptionDockWidget();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptiondockwidget(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:392
-// [-2] void QStyleOptionDockWidget(const QStyleOptionDockWidget &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QStyleOptionDockWidgetC2ERKS_(QStyleOptionDockWidget* other) {
-  return  new QStyleOptionDockWidget(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:410
+// [-2] void QStyleOptionDockWidget(const QStyleOptionDockWidget &) 
+// (11)qm499999440 (34)_ZN22QStyleOptionDockWidgetC2ERKS_
+/*void* qm499999440(const QStyleOptionDockWidget & other)*/{
+  const QStyleOptionDockWidget & other = *(const QStyleOptionDockWidget *)this_;
+  this_ =  new QStyleOptionDockWidget(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:411
+// [80] QStyleOptionDockWidget & operator=(const QStyleOptionDockWidget &) 
+// (12)qm2252838554 (34)_ZN22QStyleOptionDockWidgetaSERKS_
+//static
+/*void qm2252838554(const QStyleOptionDockWidget & arg0)*/ {
+  const QStyleOptionDockWidget & arg0 = *(const QStyleOptionDockWidget *)this_;
+  (void) ((QStyleOptionDockWidget*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionDockWidget & (QStyleOptionDockWidget::*)(QStyleOptionDockWidget const&) ) &QStyleOptionDockWidget::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN22QStyleOptionDockWidgetD2Ev(void *this_) {
+/*void C_ZN22QStyleOptionDockWidgetD2Ev(void *this_)*/ {
   delete (QStyleOptionDockWidget*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptiondockwidget
 //  main block end
 
 //  use block begin

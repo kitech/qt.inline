@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(graphicsview)
-// since 0x040200
 // /usr/include/qt/QtWidgets/qgraphicsitem.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QGraphicsRectItem is pure virtual: false
+// QGraphicsRectItem is pure virtual: false false
 // QGraphicsRectItem has virtual projected: true
 //  header block end
 
@@ -58,7 +57,7 @@ MyQGraphicsRectItem(QGraphicsItem * parent) : QGraphicsRectItem(parent) {}
 MyQGraphicsRectItem(const QRectF & rect, QGraphicsItem * parent) : QGraphicsRectItem(rect, parent) {}
 // void QGraphicsRectItem(qreal, qreal, qreal, qreal, QGraphicsItem *)
 MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) : QGraphicsRectItem(x, y, w, h, parent) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool supportsExtension(QGraphicsItem::Extension)
   virtual bool supportsExtension(QGraphicsItem::Extension extension) const override {
     int handled = 0;
@@ -71,7 +70,7 @@ MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) 
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
   virtual void setExtension(QGraphicsItem::Extension extension, const QVariant & variant)  override {
     int handled = 0;
@@ -83,7 +82,7 @@ MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) 
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Indirect Visibility=Default Availability=Available
 // [16] QVariant extension(const QVariant &)
   virtual QVariant extension(const QVariant & variant) const override {
     int handled = 0;
@@ -99,149 +98,28 @@ MyQGraphicsRectItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) 
 
 };
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:683
-// [1] bool supportsExtension(QGraphicsItem::Extension)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QGraphicsRectItem17supportsExtensionEN13QGraphicsItem9ExtensionE(void *this_, QGraphicsItem::Extension extension) {
-  return (bool)((QGraphicsRectItem*)this_)->QGraphicsRectItem::supportsExtension(extension);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qgraphicsrectitem(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:678
+// [-2] void setRect(qreal, qreal, qreal, qreal) 
+// (12)qm1857192220 (35)_ZN17QGraphicsRectItem7setRectEdddd
+//static
+/*void qm1857192220(double x, double y, double w, double h)*/ {
+  double x = *(double*)this_; double y = *(double*)this_; double w = *(double*)this_; double h = *(double*)this_;
+  (void) ((QGraphicsRectItem*)this_)->setRect(x, y, w, h);
+   auto xptr = (void (QGraphicsRectItem::*)(double, double, double, double) ) &QGraphicsRectItem::setRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:684
-// [-2] void setExtension(QGraphicsItem::Extension, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRectItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant(void *this_, QGraphicsItem::Extension extension, QVariant* variant) {
-  ((QGraphicsRectItem*)this_)->QGraphicsRectItem::setExtension(extension, *variant);
-}
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:685
-// [16] QVariant extension(const QVariant &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QGraphicsRectItem9extensionERK8QVariant(void *this_, QVariant* variant) {
-  auto rv = ((QGraphicsRectItem*)this_)->QGraphicsRectItem::extension(*variant);
-return new QVariant(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:661
-// [-2] void QGraphicsRectItem(QGraphicsItem *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QGraphicsRectItemC2EP13QGraphicsItem(QGraphicsItem * parent) {
-  auto _nilp = (MyQGraphicsRectItem*)(0);
-  return  new MyQGraphicsRectItem(parent);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:662
-// [-2] void QGraphicsRectItem(const QRectF &, QGraphicsItem *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QGraphicsRectItemC2ERK6QRectFP13QGraphicsItem(QRectF* rect, QGraphicsItem * parent) {
-  auto _nilp = (MyQGraphicsRectItem*)(0);
-  return  new MyQGraphicsRectItem(*rect, parent);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:663
-// [-2] void QGraphicsRectItem(qreal, qreal, qreal, qreal, QGraphicsItem *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QGraphicsRectItemC2EddddP13QGraphicsItem(qreal x, qreal y, qreal w, qreal h, QGraphicsItem * parent) {
-  auto _nilp = (MyQGraphicsRectItem*)(0);
-  return  new MyQGraphicsRectItem(x, y, w, h, parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:664
-// [-2] void ~QGraphicsRectItem()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRectItemD2Ev(void *this_) {
+/*void C_ZN17QGraphicsRectItemD2Ev(void *this_)*/ {
   delete (QGraphicsRectItem*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:666
-// [32] QRectF rect()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QGraphicsRectItem4rectEv(void *this_) {
-  auto rv = ((QGraphicsRectItem*)this_)->rect();
-return new QRectF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:667
-// [-2] void setRect(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRectItem7setRectERK6QRectF(void *this_, QRectF* rect) {
-  ((QGraphicsRectItem*)this_)->setRect(*rect);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:668
-// [-2] void setRect(qreal, qreal, qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRectItem7setRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
-  ((QGraphicsRectItem*)this_)->setRect(x, y, w, h);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:670
-// [32] QRectF boundingRect()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QGraphicsRectItem12boundingRectEv(void *this_) {
-  auto rv = ((QGraphicsRectItem*)this_)->boundingRect();
-return new QRectF(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:671
-// [8] QPainterPath shape()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QGraphicsRectItem5shapeEv(void *this_) {
-  auto rv = ((QGraphicsRectItem*)this_)->shape();
-return new QPainterPath(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:672
-// [1] bool contains(const QPointF &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QGraphicsRectItem8containsERK7QPointF(void *this_, QPointF* point) {
-  return (bool)((QGraphicsRectItem*)this_)->contains(*point);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:674
-// [-2] void paint(QPainter *, const QStyleOptionGraphicsItem *, QWidget *)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRectItem5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget(void *this_, QPainter * painter, const QStyleOptionGraphicsItem * option, QWidget * widget) {
-  ((QGraphicsRectItem*)this_)->paint(painter, option, widget);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:676
-// [1] bool isObscuredBy(const QGraphicsItem *)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QGraphicsRectItem12isObscuredByEPK13QGraphicsItem(void *this_, const QGraphicsItem * item) {
-  return (bool)((QGraphicsRectItem*)this_)->isObscuredBy(item);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:677
-// [8] QPainterPath opaqueArea()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QGraphicsRectItem10opaqueAreaEv(void *this_) {
-  auto rv = ((QGraphicsRectItem*)this_)->opaqueArea();
-return new QPainterPath(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsitem.h:680
-// [4] int type()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QGraphicsRectItem4typeEv(void *this_) {
-  return (int)((QGraphicsRectItem*)this_)->type();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qgraphicsrectitem
 //  main block end
 
 //  use block begin

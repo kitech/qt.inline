@@ -243,6 +243,13 @@ void C_QMdiSubWindowList_move_0(void* this_ , int from, int to) {
      ((QMdiSubWindowList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QMdiSubWindowList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QMdiSubWindowList_swapItemsAt_0()
+     ((QMdiSubWindowList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QMdiSubWindowList_swap_1(void* this_ , int i, int j) {

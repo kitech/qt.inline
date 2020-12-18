@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040200
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionGraphicsItem is pure virtual: false
+// QStyleOptionGraphicsItem is pure virtual: false false
 // QStyleOptionGraphicsItem has virtual projected: false
 //  header block end
 
@@ -55,38 +54,37 @@ MyQStyleOptionGraphicsItem() : QStyleOptionGraphicsItem() {}
 MyQStyleOptionGraphicsItem(const QStyleOptionGraphicsItem & other) : QStyleOptionGraphicsItem(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:669
-// [-2] void QStyleOptionGraphicsItem()
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QStyleOptionGraphicsItemC2Ev() {
-  return  new QStyleOptionGraphicsItem();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptiongraphicsitem(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:670
-// [-2] void QStyleOptionGraphicsItem(const QStyleOptionGraphicsItem &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QStyleOptionGraphicsItemC2ERKS_(QStyleOptionGraphicsItem* other) {
-  return  new QStyleOptionGraphicsItem(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:700
+// [-2] void QStyleOptionGraphicsItem(const QStyleOptionGraphicsItem &) 
+// (11)qm979391014 (36)_ZN24QStyleOptionGraphicsItemC2ERKS_
+/*void* qm979391014(const QStyleOptionGraphicsItem & other)*/{
+  const QStyleOptionGraphicsItem & other = *(const QStyleOptionGraphicsItem *)this_;
+  this_ =  new QStyleOptionGraphicsItem(other);
 }
 
-// Public static Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtWidgets/qstyleoption.h:671
-// [8] qreal levelOfDetailFromTransform(const QTransform &)
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-qreal C_ZN24QStyleOptionGraphicsItem26levelOfDetailFromTransformERK10QTransform(QTransform* worldTransform) {
-  return (qreal)QStyleOptionGraphicsItem::levelOfDetailFromTransform(*worldTransform);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:701
+// [152] QStyleOptionGraphicsItem & operator=(const QStyleOptionGraphicsItem &) 
+// (12)qm2716509804 (36)_ZN24QStyleOptionGraphicsItemaSERKS_
+//static
+/*void qm2716509804(const QStyleOptionGraphicsItem & arg0)*/ {
+  const QStyleOptionGraphicsItem & arg0 = *(const QStyleOptionGraphicsItem *)this_;
+  (void) ((QStyleOptionGraphicsItem*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionGraphicsItem & (QStyleOptionGraphicsItem::*)(QStyleOptionGraphicsItem const&) ) &QStyleOptionGraphicsItem::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040600
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN24QStyleOptionGraphicsItemD2Ev(void *this_) {
+/*void C_ZN24QStyleOptionGraphicsItemD2Ev(void *this_)*/ {
   delete (QStyleOptionGraphicsItem*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptiongraphicsitem
 //  main block end
 
 //  use block begin

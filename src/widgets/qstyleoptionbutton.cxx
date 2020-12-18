@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionButton is pure virtual: false
+// QStyleOptionButton is pure virtual: false false
 // QStyleOptionButton has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionButton() : QStyleOptionButton() {}
 MyQStyleOptionButton(const QStyleOptionButton & other) : QStyleOptionButton(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:248
-// [-2] void QStyleOptionButton()
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QStyleOptionButtonC2Ev() {
-  return  new QStyleOptionButton();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptionbutton(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:249
-// [-2] void QStyleOptionButton(const QStyleOptionButton &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QStyleOptionButtonC2ERKS_(QStyleOptionButton* other) {
-  return  new QStyleOptionButton(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:254
+// [-2] void QStyleOptionButton(const QStyleOptionButton &) 
+// (12)qm2556740489 (30)_ZN18QStyleOptionButtonC2ERKS_
+/*void* qm2556740489(const QStyleOptionButton & other)*/{
+  const QStyleOptionButton & other = *(const QStyleOptionButton *)this_;
+  this_ =  new QStyleOptionButton(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:255
+// [96] QStyleOptionButton & operator=(const QStyleOptionButton &) 
+// (10)qm65943491 (30)_ZN18QStyleOptionButtonaSERKS_
+//static
+/*void qm65943491(const QStyleOptionButton & arg0)*/ {
+  const QStyleOptionButton & arg0 = *(const QStyleOptionButton *)this_;
+  (void) ((QStyleOptionButton*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionButton & (QStyleOptionButton::*)(QStyleOptionButton const&) ) &QStyleOptionButton::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN18QStyleOptionButtonD2Ev(void *this_) {
+/*void C_ZN18QStyleOptionButtonD2Ev(void *this_)*/ {
   delete (QStyleOptionButton*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptionbutton
 //  main block end
 
 //  use block begin

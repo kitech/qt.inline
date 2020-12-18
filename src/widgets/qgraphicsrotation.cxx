@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(graphicsview)
-// since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicstransform.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QGraphicsRotation is pure virtual: false
+// QGraphicsRotation is pure virtual: false false
 // QGraphicsRotation has virtual projected: false
 //  header block end
 
@@ -113,153 +112,28 @@ void* C_QGraphicsRotation_init_staticMetaObject(void* this_, void* strdat, void*
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qgraphicsrotation(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicstransform.h:120
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QGraphicsRotation10metaObjectEv(void *this_) {
-  return (void*)((QGraphicsRotation*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3039879022 (33)_ZN17QGraphicsRotation2trEPKcS1_i
+//static
+/*void qm3039879022(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QGraphicsRotation::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QGraphicsRotation::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:120
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QGraphicsRotation11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QGraphicsRotation*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:120
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN17QGraphicsRotation11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QGraphicsRotation*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:120
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QGraphicsRotation2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QGraphicsRotation::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:120
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QGraphicsRotation6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QGraphicsRotation::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:126
-// [-2] void QGraphicsRotation(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QGraphicsRotationC2EP7QObject(QObject * parent) {
-  return  new MyQGraphicsRotation(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:127
-// [-2] void ~QGraphicsRotation()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRotationD2Ev(void *this_) {
+/*void C_ZN17QGraphicsRotationD2Ev(void *this_)*/ {
   delete (QGraphicsRotation*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:129
-// [12] QVector3D origin()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QGraphicsRotation6originEv(void *this_) {
-  auto rv = ((QGraphicsRotation*)this_)->origin();
-return new QVector3D(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:130
-// [-2] void setOrigin(const QVector3D &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRotation9setOriginERK9QVector3D(void *this_, QVector3D* point) {
-  ((QGraphicsRotation*)this_)->setOrigin(*point);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:132
-// [8] qreal angle()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK17QGraphicsRotation5angleEv(void *this_) {
-  return (qreal)((QGraphicsRotation*)this_)->angle();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:133
-// [-2] void setAngle(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRotation8setAngleEd(void *this_, qreal arg0) {
-  ((QGraphicsRotation*)this_)->setAngle(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:135
-// [12] QVector3D axis()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QGraphicsRotation4axisEv(void *this_) {
-  auto rv = ((QGraphicsRotation*)this_)->axis();
-return new QVector3D(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:136
-// [-2] void setAxis(const QVector3D &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRotation7setAxisERK9QVector3D(void *this_, QVector3D* axis) {
-  ((QGraphicsRotation*)this_)->setAxis(*axis);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:137
-// [-2] void setAxis(Qt::Axis)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRotation7setAxisEN2Qt4AxisE(void *this_, Qt::Axis axis) {
-  ((QGraphicsRotation*)this_)->setAxis(axis);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:139
-// [-2] void applyTo(QMatrix4x4 *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK17QGraphicsRotation7applyToEP10QMatrix4x4(void *this_, QMatrix4x4 * matrix) {
-  ((QGraphicsRotation*)this_)->applyTo(matrix);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:142
-// [-2] void originChanged()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRotation13originChangedEv(void *this_) {
-  ((QGraphicsRotation*)this_)->originChanged();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:143
-// [-2] void angleChanged()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRotation12angleChangedEv(void *this_) {
-  ((QGraphicsRotation*)this_)->angleChanged();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicstransform.h:144
-// [-2] void axisChanged()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QGraphicsRotation11axisChangedEv(void *this_) {
-  ((QGraphicsRotation*)this_)->axisChanged();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qgraphicsrotation
 //  main block end
 
 //  use block begin

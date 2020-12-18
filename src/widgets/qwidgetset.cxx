@@ -346,18 +346,18 @@ QWidgetSet* C_QWidgetSet_operator_minus_0(void* this_ , QWidgetSet* other) {
     return (QWidgetSet*)this_;
 }
 
-// [-3] QList<T> toList()
-extern "C" Q_DECL_EXPORT
-void C_QWidgetSet_toList_0(void* this_ ) {
-    // QWidgetSet_toList_0()
-    auto rv =  ((QWidgetSet*)this_)->toList();
-}
-
 // [-3] QList<T> values()
 extern "C" Q_DECL_EXPORT
 void C_QWidgetSet_values_0(void* this_ ) {
     // QWidgetSet_values_0()
     auto rv =  ((QWidgetSet*)this_)->values();
+}
+
+// [-3] QList<T> toList()
+extern "C" Q_DECL_EXPORT
+void C_QWidgetSet_toList_0(void* this_ ) {
+    // QWidgetSet_toList_0()
+    auto rv =  ((QWidgetSet*)this_)->toList();
 }
 
 //  body block end

@@ -243,6 +243,13 @@ void C_QDockWidgetList_move_0(void* this_ , int from, int to) {
      ((QDockWidgetList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QDockWidgetList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QDockWidgetList_swapItemsAt_0()
+     ((QDockWidgetList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QDockWidgetList_swap_1(void* this_ , int i, int j) {

@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionComboBox is pure virtual: false
+// QStyleOptionComboBox is pure virtual: false false
 // QStyleOptionComboBox has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionComboBox() : QStyleOptionComboBox() {}
 MyQStyleOptionComboBox(const QStyleOptionComboBox & other) : QStyleOptionComboBox(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:601
-// [-2] void QStyleOptionComboBox()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QStyleOptionComboBoxC2Ev() {
-  return  new QStyleOptionComboBox();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptioncombobox(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:602
-// [-2] void QStyleOptionComboBox(const QStyleOptionComboBox &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QStyleOptionComboBoxC2ERKS_(QStyleOptionComboBox* other) {
-  return  new QStyleOptionComboBox(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:628
+// [-2] void QStyleOptionComboBox(const QStyleOptionComboBox &) 
+// (12)qm1218938576 (32)_ZN20QStyleOptionComboBoxC2ERKS_
+/*void* qm1218938576(const QStyleOptionComboBox & other)*/{
+  const QStyleOptionComboBox & other = *(const QStyleOptionComboBox *)this_;
+  this_ =  new QStyleOptionComboBox(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:629
+// [120] QStyleOptionComboBox & operator=(const QStyleOptionComboBox &) 
+// (12)qm3542971034 (32)_ZN20QStyleOptionComboBoxaSERKS_
+//static
+/*void qm3542971034(const QStyleOptionComboBox & arg0)*/ {
+  const QStyleOptionComboBox & arg0 = *(const QStyleOptionComboBox *)this_;
+  (void) ((QStyleOptionComboBox*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionComboBox & (QStyleOptionComboBox::*)(QStyleOptionComboBox const&) ) &QStyleOptionComboBox::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN20QStyleOptionComboBoxD2Ev(void *this_) {
+/*void C_ZN20QStyleOptionComboBoxD2Ev(void *this_)*/ {
   delete (QStyleOptionComboBox*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptioncombobox
 //  main block end
 
 //  use block begin

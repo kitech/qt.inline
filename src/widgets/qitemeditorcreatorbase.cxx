@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(itemviews)
-// since 0x040200
 // /usr/include/qt/QtWidgets/qitemeditorfactory.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QItemEditorCreatorBase is pure virtual: true
+// QItemEditorCreatorBase is pure virtual: true true
 // QItemEditorCreatorBase has virtual projected: false
 //  header block end
 
@@ -52,7 +51,7 @@ static const uint qt_meta_data_MyQItemEditorCreatorBase[] = {
 class Q_DECL_EXPORT MyQItemEditorCreatorBase : public QItemEditorCreatorBase {
 public:
   virtual ~MyQItemEditorCreatorBase() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QWidget * createWidget(QWidget *)
   virtual QWidget * createWidget(QWidget * parent) const override {
     int handled = 0;
@@ -65,7 +64,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QByteArray valuePropertyName()
   virtual QByteArray valuePropertyName() const override {
     int handled = 0;
@@ -81,36 +80,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:60
-// [8] QWidget * createWidget(QWidget *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:61
-// [8] QByteArray valuePropertyName()
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:58
-// [-2] void ~QItemEditorCreatorBase()
-extern "C" Q_DECL_EXPORT
-void C_ZN22QItemEditorCreatorBaseD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qitemeditorcreatorbase(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN22QItemEditorCreatorBaseD2Ev(void *this_)*/ {
   delete (QItemEditorCreatorBase*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:60
-// [8] QWidget * createWidget(QWidget *)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QItemEditorCreatorBase12createWidgetEP7QWidget(void *this_, QWidget * parent) {
-  return (void*)((QItemEditorCreatorBase*)this_)->createWidget(parent);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qitemeditorfactory.h:61
-// [8] QByteArray valuePropertyName()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QItemEditorCreatorBase17valuePropertyNameEv(void *this_) {
-  auto rv = ((QItemEditorCreatorBase*)this_)->valuePropertyName();
-return new QByteArray(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qitemeditorcreatorbase
 //  main block end
 
 //  use block begin

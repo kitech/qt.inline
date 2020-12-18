@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionTabBarBase is pure virtual: false
+// QStyleOptionTabBarBase is pure virtual: false false
 // QStyleOptionTabBarBase has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionTabBarBase() : QStyleOptionTabBarBase() {}
 MyQStyleOptionTabBarBase(const QStyleOptionTabBarBase & other) : QStyleOptionTabBarBase(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:195
-// [-2] void QStyleOptionTabBarBase()
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QStyleOptionTabBarBaseC2Ev() {
-  return  new QStyleOptionTabBarBase();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptiontabbarbase(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:196
-// [-2] void QStyleOptionTabBarBase(const QStyleOptionTabBarBase &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QStyleOptionTabBarBaseC2ERKS_(QStyleOptionTabBarBase* other) {
-  return  new QStyleOptionTabBarBase(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:199
+// [-2] void QStyleOptionTabBarBase(const QStyleOptionTabBarBase &) 
+// (11)qm641537515 (34)_ZN22QStyleOptionTabBarBaseC2ERKS_
+/*void* qm641537515(const QStyleOptionTabBarBase & other)*/{
+  const QStyleOptionTabBarBase & other = *(const QStyleOptionTabBarBase *)this_;
+  this_ =  new QStyleOptionTabBarBase(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:200
+// [104] QStyleOptionTabBarBase & operator=(const QStyleOptionTabBarBase &) 
+// (12)qm3182944673 (34)_ZN22QStyleOptionTabBarBaseaSERKS_
+//static
+/*void qm3182944673(const QStyleOptionTabBarBase & arg0)*/ {
+  const QStyleOptionTabBarBase & arg0 = *(const QStyleOptionTabBarBase *)this_;
+  (void) ((QStyleOptionTabBarBase*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionTabBarBase & (QStyleOptionTabBarBase::*)(QStyleOptionTabBarBase const&) ) &QStyleOptionTabBarBase::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN22QStyleOptionTabBarBaseD2Ev(void *this_) {
+/*void C_ZN22QStyleOptionTabBarBaseD2Ev(void *this_)*/ {
   delete (QStyleOptionTabBarBase*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptiontabbarbase
 //  main block end
 
 //  use block begin

@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040200
 // /usr/include/qt/QtWidgets/qstyleoption.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionSizeGrip is pure virtual: false
+// QStyleOptionSizeGrip is pure virtual: false false
 // QStyleOptionSizeGrip has virtual projected: false
 //  header block end
 
@@ -55,27 +54,37 @@ MyQStyleOptionSizeGrip() : QStyleOptionSizeGrip() {}
 MyQStyleOptionSizeGrip(const QStyleOptionSizeGrip & other) : QStyleOptionSizeGrip(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:653
-// [-2] void QStyleOptionSizeGrip()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QStyleOptionSizeGripC2Ev() {
-  return  new QStyleOptionSizeGrip();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptionsizegrip(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:654
-// [-2] void QStyleOptionSizeGrip(const QStyleOptionSizeGrip &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QStyleOptionSizeGripC2ERKS_(QStyleOptionSizeGrip* other) {
-  return  new QStyleOptionSizeGrip(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:683
+// [-2] void QStyleOptionSizeGrip(const QStyleOptionSizeGrip &) 
+// (12)qm3182990769 (32)_ZN20QStyleOptionSizeGripC2ERKS_
+/*void* qm3182990769(const QStyleOptionSizeGrip & other)*/{
+  const QStyleOptionSizeGrip & other = *(const QStyleOptionSizeGrip *)this_;
+  this_ =  new QStyleOptionSizeGrip(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:684
+// [80] QStyleOptionSizeGrip & operator=(const QStyleOptionSizeGrip &) 
+// (11)qm640836091 (32)_ZN20QStyleOptionSizeGripaSERKS_
+//static
+/*void qm640836091(const QStyleOptionSizeGrip & arg0)*/ {
+  const QStyleOptionSizeGrip & arg0 = *(const QStyleOptionSizeGrip *)this_;
+  (void) ((QStyleOptionSizeGrip*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionSizeGrip & (QStyleOptionSizeGrip::*)(QStyleOptionSizeGrip const&) ) &QStyleOptionSizeGrip::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN20QStyleOptionSizeGripD2Ev(void *this_) {
+/*void C_ZN20QStyleOptionSizeGripD2Ev(void *this_)*/ {
   delete (QStyleOptionSizeGrip*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptionsizegrip
 //  main block end
 
 //  use block begin

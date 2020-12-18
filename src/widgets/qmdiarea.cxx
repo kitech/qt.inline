@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(mdiarea)
-// since 0x040300
 // /usr/include/qt/QtWidgets/qmdiarea.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QMdiArea is pure virtual: false
+// QMdiArea is pure virtual: false false
 // QMdiArea has virtual projected: true
 //  header block end
 
@@ -99,7 +98,7 @@ public:
   virtual ~MyQMdiArea() {}
 // void QMdiArea(QWidget *)
 MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void setupViewport(QWidget *)
   virtual void setupViewport(QWidget * viewport)  override {
     int handled = 0;
@@ -111,7 +110,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {
     int handled = 0;
@@ -124,7 +123,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool eventFilter(QObject *, QEvent *)
   virtual bool eventFilter(QObject * object, QEvent * event)  override {
     int handled = 0;
@@ -137,7 +136,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * paintEvent)  override {
     int handled = 0;
@@ -149,7 +148,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void childEvent(QChildEvent *)
   virtual void childEvent(QChildEvent * childEvent)  override {
     int handled = 0;
@@ -161,7 +160,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void resizeEvent(QResizeEvent *)
   virtual void resizeEvent(QResizeEvent * resizeEvent)  override {
     int handled = 0;
@@ -173,7 +172,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * timerEvent)  override {
     int handled = 0;
@@ -185,7 +184,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void showEvent(QShowEvent *)
   virtual void showEvent(QShowEvent * showEvent)  override {
     int handled = 0;
@@ -197,7 +196,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool viewportEvent(QEvent *)
   virtual bool viewportEvent(QEvent * event)  override {
     int handled = 0;
@@ -210,7 +209,7 @@ MyQMdiArea(QWidget * parent) : QMdiArea(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void scrollContentsBy(int, int)
   virtual void scrollContentsBy(int dx, int dy)  override {
     int handled = 0;
@@ -236,412 +235,28 @@ void* C_QMdiArea_init_staticMetaObject(void* this_, void* strdat, void* dat, voi
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:146
-// [-2] void setupViewport(QWidget *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea13setupViewportEP7QWidget(void *this_, QWidget * viewport) {
-  ((QMdiArea*)this_)->QMdiArea::setupViewport(viewport);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmdiarea(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:149
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN8QMdiArea5eventEP6QEvent(void *this_, QEvent * event) {
-  return (bool)((QMdiArea*)this_)->QMdiArea::event(event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:150
-// [1] bool eventFilter(QObject *, QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN8QMdiArea11eventFilterEP7QObjectP6QEvent(void *this_, QObject * object, QEvent * event) {
-  return (bool)((QMdiArea*)this_)->QMdiArea::eventFilter(object, event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:151
-// [-2] void paintEvent(QPaintEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea10paintEventEP11QPaintEvent(void *this_, QPaintEvent * paintEvent) {
-  ((QMdiArea*)this_)->QMdiArea::paintEvent(paintEvent);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:152
-// [-2] void childEvent(QChildEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea10childEventEP11QChildEvent(void *this_, QChildEvent * childEvent) {
-  ((QMdiArea*)this_)->QMdiArea::childEvent(childEvent);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:153
-// [-2] void resizeEvent(QResizeEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea11resizeEventEP12QResizeEvent(void *this_, QResizeEvent * resizeEvent) {
-  ((QMdiArea*)this_)->QMdiArea::resizeEvent(resizeEvent);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:154
-// [-2] void timerEvent(QTimerEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea10timerEventEP11QTimerEvent(void *this_, QTimerEvent * timerEvent) {
-  ((QMdiArea*)this_)->QMdiArea::timerEvent(timerEvent);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:155
-// [-2] void showEvent(QShowEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea9showEventEP10QShowEvent(void *this_, QShowEvent * showEvent) {
-  ((QMdiArea*)this_)->QMdiArea::showEvent(showEvent);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:156
-// [1] bool viewportEvent(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN8QMdiArea13viewportEventEP6QEvent(void *this_, QEvent * event) {
-  return (bool)((QMdiArea*)this_)->QMdiArea::viewportEvent(event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:157
-// [-2] void scrollContentsBy(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea16scrollContentsByEii(void *this_, int dx, int dy) {
-  ((QMdiArea*)this_)->QMdiArea::scrollContentsBy(dx, dy);
-}
-
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmdiarea.h:58
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QMdiArea10metaObjectEv(void *this_) {
-  return (void*)((QMdiArea*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (11)qm352736953 (23)_ZN8QMdiArea2trEPKcS1_i
+//static
+/*void qm352736953(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QMdiArea::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QMdiArea::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:58
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QMdiArea11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QMdiArea*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:58
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN8QMdiArea11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QMdiArea*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:58
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QMdiArea2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMdiArea::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:58
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QMdiArea6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMdiArea::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:90
-// [-2] void QMdiArea(QWidget *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QMdiAreaC2EP7QWidget(QWidget * parent) {
-  auto _nilp = (MyQMdiArea*)(0);
-  return  new MyQMdiArea(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:91
-// [-2] void ~QMdiArea()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiAreaD2Ev(void *this_) {
+/*void C_ZN8QMdiAreaD2Ev(void *this_)*/ {
   delete (QMdiArea*)(this_);
 }
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:93
-// [8] QSize sizeHint()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QMdiArea8sizeHintEv(void *this_) {
-  auto rv = ((QMdiArea*)this_)->sizeHint();
-return new QSize(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:94
-// [8] QSize minimumSizeHint()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QMdiArea15minimumSizeHintEv(void *this_) {
-  auto rv = ((QMdiArea*)this_)->minimumSizeHint();
-return new QSize(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:96
-// [8] QMdiSubWindow * currentSubWindow()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QMdiArea16currentSubWindowEv(void *this_) {
-  return (void*)((QMdiArea*)this_)->currentSubWindow();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:97
-// [8] QMdiSubWindow * activeSubWindow()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QMdiArea15activeSubWindowEv(void *this_) {
-  return (void*)((QMdiArea*)this_)->activeSubWindow();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:98
-// [-2] QList<QMdiSubWindow *> subWindowList(QMdiArea::WindowOrder)
-extern "C" Q_DECL_EXPORT
-QList<QMdiSubWindow *>* C_ZNK8QMdiArea13subWindowListENS_11WindowOrderE(void *this_, QMdiArea::WindowOrder order) {
-  auto rv = ((QMdiArea*)this_)->subWindowList(order);
-return new QList<QMdiSubWindow *>(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:100
-// [8] QMdiSubWindow * addSubWindow(QWidget *, Qt::WindowFlags)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QMdiArea12addSubWindowEP7QWidget6QFlagsIN2Qt10WindowTypeEE(void *this_, QWidget * widget, QFlags<Qt::WindowType> flags) {
-  return (void*)((QMdiArea*)this_)->addSubWindow(widget, flags);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:101
-// [-2] void removeSubWindow(QWidget *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea15removeSubWindowEP7QWidget(void *this_, QWidget * widget) {
-  ((QMdiArea*)this_)->removeSubWindow(widget);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:103
-// [8] QBrush background()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QMdiArea10backgroundEv(void *this_) {
-  auto rv = ((QMdiArea*)this_)->background();
-return new QBrush(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:104
-// [-2] void setBackground(const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea13setBackgroundERK6QBrush(void *this_, QBrush* background) {
-  ((QMdiArea*)this_)->setBackground(*background);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:106
-// [4] QMdiArea::WindowOrder activationOrder()
-extern "C" Q_DECL_EXPORT
-QMdiArea::WindowOrder C_ZNK8QMdiArea15activationOrderEv(void *this_) {
-  return (QMdiArea::WindowOrder)((QMdiArea*)this_)->activationOrder();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:107
-// [-2] void setActivationOrder(QMdiArea::WindowOrder)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea18setActivationOrderENS_11WindowOrderE(void *this_, QMdiArea::WindowOrder order) {
-  ((QMdiArea*)this_)->setActivationOrder(order);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:109
-// [-2] void setOption(QMdiArea::AreaOption, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea9setOptionENS_10AreaOptionEb(void *this_, QMdiArea::AreaOption option, bool on) {
-  ((QMdiArea*)this_)->setOption(option, on);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:110
-// [1] bool testOption(QMdiArea::AreaOption)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QMdiArea10testOptionENS_10AreaOptionE(void *this_, QMdiArea::AreaOption opton) {
-  return (bool)((QMdiArea*)this_)->testOption(opton);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:112
-// [-2] void setViewMode(QMdiArea::ViewMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea11setViewModeENS_8ViewModeE(void *this_, QMdiArea::ViewMode mode) {
-  ((QMdiArea*)this_)->setViewMode(mode);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:113
-// [4] QMdiArea::ViewMode viewMode()
-extern "C" Q_DECL_EXPORT
-QMdiArea::ViewMode C_ZNK8QMdiArea8viewModeEv(void *this_) {
-  return (QMdiArea::ViewMode)((QMdiArea*)this_)->viewMode();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:116
-// [1] bool documentMode()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QMdiArea12documentModeEv(void *this_) {
-  return (bool)((QMdiArea*)this_)->documentMode();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:117
-// [-2] void setDocumentMode(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea15setDocumentModeEb(void *this_, bool enabled) {
-  ((QMdiArea*)this_)->setDocumentMode(enabled);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:119
-// [-2] void setTabsClosable(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea15setTabsClosableEb(void *this_, bool closable) {
-  ((QMdiArea*)this_)->setTabsClosable(closable);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:120
-// [1] bool tabsClosable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QMdiArea12tabsClosableEv(void *this_) {
-  return (bool)((QMdiArea*)this_)->tabsClosable();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:122
-// [-2] void setTabsMovable(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea14setTabsMovableEb(void *this_, bool movable) {
-  ((QMdiArea*)this_)->setTabsMovable(movable);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:123
-// [1] bool tabsMovable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QMdiArea11tabsMovableEv(void *this_) {
-  return (bool)((QMdiArea*)this_)->tabsMovable();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:126
-// [-2] void setTabShape(QTabWidget::TabShape)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea11setTabShapeEN10QTabWidget8TabShapeE(void *this_, QTabWidget::TabShape shape) {
-  ((QMdiArea*)this_)->setTabShape(shape);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:127
-// [4] QTabWidget::TabShape tabShape()
-extern "C" Q_DECL_EXPORT
-QTabWidget::TabShape C_ZNK8QMdiArea8tabShapeEv(void *this_) {
-  return (QTabWidget::TabShape)((QMdiArea*)this_)->tabShape();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:129
-// [-2] void setTabPosition(QTabWidget::TabPosition)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea14setTabPositionEN10QTabWidget11TabPositionE(void *this_, QTabWidget::TabPosition position) {
-  ((QMdiArea*)this_)->setTabPosition(position);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:130
-// [4] QTabWidget::TabPosition tabPosition()
-extern "C" Q_DECL_EXPORT
-QTabWidget::TabPosition C_ZNK8QMdiArea11tabPositionEv(void *this_) {
-  return (QTabWidget::TabPosition)((QMdiArea*)this_)->tabPosition();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:134
-// [-2] void subWindowActivated(QMdiSubWindow *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea18subWindowActivatedEP13QMdiSubWindow(void *this_, QMdiSubWindow * arg0) {
-  ((QMdiArea*)this_)->subWindowActivated(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:137
-// [-2] void setActiveSubWindow(QMdiSubWindow *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea18setActiveSubWindowEP13QMdiSubWindow(void *this_, QMdiSubWindow * window) {
-  ((QMdiArea*)this_)->setActiveSubWindow(window);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:138
-// [-2] void tileSubWindows()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea14tileSubWindowsEv(void *this_) {
-  ((QMdiArea*)this_)->tileSubWindows();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:139
-// [-2] void cascadeSubWindows()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea17cascadeSubWindowsEv(void *this_) {
-  ((QMdiArea*)this_)->cascadeSubWindows();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:140
-// [-2] void closeActiveSubWindow()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea20closeActiveSubWindowEv(void *this_) {
-  ((QMdiArea*)this_)->closeActiveSubWindow();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:141
-// [-2] void closeAllSubWindows()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea18closeAllSubWindowsEv(void *this_) {
-  ((QMdiArea*)this_)->closeAllSubWindows();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:142
-// [-2] void activateNextSubWindow()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea21activateNextSubWindowEv(void *this_) {
-  ((QMdiArea*)this_)->activateNextSubWindow();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qmdiarea.h:143
-// [-2] void activatePreviousSubWindow()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QMdiArea25activatePreviousSubWindowEv(void *this_) {
-  ((QMdiArea*)this_)->activatePreviousSubWindow();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmdiarea
 //  main block end
 
 //  use block begin

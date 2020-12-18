@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionTab is pure virtual: false
+// QStyleOptionTab is pure virtual: false false
 // QStyleOptionTab has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionTab() : QStyleOptionTab() {}
 MyQStyleOptionTab(const QStyleOptionTab & other) : QStyleOptionTab(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:285
-// [-2] void QStyleOptionTab()
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QStyleOptionTabC2Ev() {
-  return  new QStyleOptionTab();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptiontab(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:286
-// [-2] void QStyleOptionTab(const QStyleOptionTab &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QStyleOptionTabC2ERKS_(QStyleOptionTab* other) {
-  return  new QStyleOptionTab(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:292
+// [-2] void QStyleOptionTab(const QStyleOptionTab &) 
+// (12)qm1635158999 (27)_ZN15QStyleOptionTabC2ERKS_
+/*void* qm1635158999(const QStyleOptionTab & other)*/{
+  const QStyleOptionTab & other = *(const QStyleOptionTab *)this_;
+  this_ =  new QStyleOptionTab(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:293
+// [136] QStyleOptionTab & operator=(const QStyleOptionTab &) 
+// (12)qm4210851741 (27)_ZN15QStyleOptionTabaSERKS_
+//static
+/*void qm4210851741(const QStyleOptionTab & arg0)*/ {
+  const QStyleOptionTab & arg0 = *(const QStyleOptionTab *)this_;
+  (void) ((QStyleOptionTab*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionTab & (QStyleOptionTab::*)(QStyleOptionTab const&) ) &QStyleOptionTab::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN15QStyleOptionTabD2Ev(void *this_) {
+/*void C_ZN15QStyleOptionTabD2Ev(void *this_)*/ {
   delete (QStyleOptionTab*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptiontab
 //  main block end
 
 //  use block begin

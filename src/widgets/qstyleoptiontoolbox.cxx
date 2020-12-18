@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionToolBox is pure virtual: false
+// QStyleOptionToolBox is pure virtual: false false
 // QStyleOptionToolBox has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionToolBox() : QStyleOptionToolBox() {}
 MyQStyleOptionToolBox(const QStyleOptionToolBox & other) : QStyleOptionToolBox(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:472
-// [-2] void QStyleOptionToolBox()
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QStyleOptionToolBoxC2Ev() {
-  return  new QStyleOptionToolBox();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptiontoolbox(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:473
-// [-2] void QStyleOptionToolBox(const QStyleOptionToolBox &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QStyleOptionToolBoxC2ERKS_(QStyleOptionToolBox* other) {
-  return  new QStyleOptionToolBox(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:493
+// [-2] void QStyleOptionToolBox(const QStyleOptionToolBox &) 
+// (12)qm3257394969 (31)_ZN19QStyleOptionToolBoxC2ERKS_
+/*void* qm3257394969(const QStyleOptionToolBox & other)*/{
+  const QStyleOptionToolBox & other = *(const QStyleOptionToolBox *)this_;
+  this_ =  new QStyleOptionToolBox(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:494
+// [88] QStyleOptionToolBox & operator=(const QStyleOptionToolBox &) 
+// (12)qm1504514899 (31)_ZN19QStyleOptionToolBoxaSERKS_
+//static
+/*void qm1504514899(const QStyleOptionToolBox & arg0)*/ {
+  const QStyleOptionToolBox & arg0 = *(const QStyleOptionToolBox *)this_;
+  (void) ((QStyleOptionToolBox*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionToolBox & (QStyleOptionToolBox::*)(QStyleOptionToolBox const&) ) &QStyleOptionToolBox::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN19QStyleOptionToolBoxD2Ev(void *this_) {
+/*void C_ZN19QStyleOptionToolBoxD2Ev(void *this_)*/ {
   delete (QStyleOptionToolBox*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptiontoolbox
 //  main block end
 
 //  use block begin

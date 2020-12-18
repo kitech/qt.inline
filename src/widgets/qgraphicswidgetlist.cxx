@@ -243,6 +243,13 @@ void C_QGraphicsWidgetList_move_0(void* this_ , int from, int to) {
      ((QGraphicsWidgetList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QGraphicsWidgetList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QGraphicsWidgetList_swapItemsAt_0()
+     ((QGraphicsWidgetList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QGraphicsWidgetList_swap_1(void* this_ , int i, int j) {

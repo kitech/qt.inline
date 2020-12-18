@@ -235,6 +235,13 @@ void C_QGestureList_move_0(void* this_ , int from, int to) {
      ((QGestureList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QGestureList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QGestureList_swapItemsAt_0()
+     ((QGestureList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QGestureList_swap_1(void* this_ , int i, int j) {

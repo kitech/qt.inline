@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleHintReturn is pure virtual: false
+// QStyleHintReturn is pure virtual: false false
 // QStyleHintReturn has virtual projected: false
 //  header block end
 
@@ -52,21 +52,16 @@ public:
 MyQStyleHintReturn(int version, int type_) : QStyleHintReturn(version, type_) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:710
-// [-2] void QStyleHintReturn(int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QStyleHintReturnC2Eii(int version, int type_) {
-  return  new QStyleHintReturn(version, type_);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstylehintreturn(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:711
-// [-2] void ~QStyleHintReturn()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QStyleHintReturnD2Ev(void *this_) {
+
+/*void C_ZN16QStyleHintReturnD2Ev(void *this_)*/ {
   delete (QStyleHintReturn*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstylehintreturn
 //  main block end
 
 //  use block begin

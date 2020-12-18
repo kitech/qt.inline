@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionSpinBox is pure virtual: false
+// QStyleOptionSpinBox is pure virtual: false false
 // QStyleOptionSpinBox has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionSpinBox() : QStyleOptionSpinBox() {}
 MyQStyleOptionSpinBox(const QStyleOptionSpinBox & other) : QStyleOptionSpinBox(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:552
-// [-2] void QStyleOptionSpinBox()
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QStyleOptionSpinBoxC2Ev() {
-  return  new QStyleOptionSpinBox();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptionspinbox(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:553
-// [-2] void QStyleOptionSpinBox(const QStyleOptionSpinBox &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QStyleOptionSpinBoxC2ERKS_(QStyleOptionSpinBox* other) {
-  return  new QStyleOptionSpinBox(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:577
+// [-2] void QStyleOptionSpinBox(const QStyleOptionSpinBox &) 
+// (12)qm2211193367 (31)_ZN19QStyleOptionSpinBoxC2ERKS_
+/*void* qm2211193367(const QStyleOptionSpinBox & other)*/{
+  const QStyleOptionSpinBox & other = *(const QStyleOptionSpinBox *)this_;
+  this_ =  new QStyleOptionSpinBox(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:578
+// [88] QStyleOptionSpinBox & operator=(const QStyleOptionSpinBox &) 
+// (11)qm407295581 (31)_ZN19QStyleOptionSpinBoxaSERKS_
+//static
+/*void qm407295581(const QStyleOptionSpinBox & arg0)*/ {
+  const QStyleOptionSpinBox & arg0 = *(const QStyleOptionSpinBox *)this_;
+  (void) ((QStyleOptionSpinBox*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionSpinBox & (QStyleOptionSpinBox::*)(QStyleOptionSpinBox const&) ) &QStyleOptionSpinBox::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN19QStyleOptionSpinBoxD2Ev(void *this_) {
+/*void C_ZN19QStyleOptionSpinBoxD2Ev(void *this_)*/ {
   delete (QStyleOptionSpinBox*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptionspinbox
 //  main block end
 
 //  use block begin

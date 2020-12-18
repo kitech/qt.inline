@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionHeader is pure virtual: false
+// QStyleOptionHeader is pure virtual: false false
 // QStyleOptionHeader has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionHeader() : QStyleOptionHeader() {}
 MyQStyleOptionHeader(const QStyleOptionHeader & other) : QStyleOptionHeader(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:226
-// [-2] void QStyleOptionHeader()
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QStyleOptionHeaderC2Ev() {
-  return  new QStyleOptionHeader();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptionheader(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:227
-// [-2] void QStyleOptionHeader(const QStyleOptionHeader &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QStyleOptionHeaderC2ERKS_(QStyleOptionHeader* other) {
-  return  new QStyleOptionHeader(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:231
+// [-2] void QStyleOptionHeader(const QStyleOptionHeader &) 
+// (12)qm3893759944 (30)_ZN18QStyleOptionHeaderC2ERKS_
+/*void* qm3893759944(const QStyleOptionHeader & other)*/{
+  const QStyleOptionHeader & other = *(const QStyleOptionHeader *)this_;
+  this_ =  new QStyleOptionHeader(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:232
+// [120] QStyleOptionHeader & operator=(const QStyleOptionHeader &) 
+// (12)qm1939667842 (30)_ZN18QStyleOptionHeaderaSERKS_
+//static
+/*void qm1939667842(const QStyleOptionHeader & arg0)*/ {
+  const QStyleOptionHeader & arg0 = *(const QStyleOptionHeader *)this_;
+  (void) ((QStyleOptionHeader*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionHeader & (QStyleOptionHeader::*)(QStyleOptionHeader const&) ) &QStyleOptionHeader::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN18QStyleOptionHeaderD2Ev(void *this_) {
+/*void C_ZN18QStyleOptionHeaderD2Ev(void *this_)*/ {
   delete (QStyleOptionHeader*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptionheader
 //  main block end
 
 //  use block begin

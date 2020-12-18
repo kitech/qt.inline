@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleHintReturnMask is pure virtual: false
+// QStyleHintReturnMask is pure virtual: false false
 // QStyleHintReturnMask has virtual projected: false
 //  header block end
 
@@ -52,21 +52,16 @@ public:
 MyQStyleHintReturnMask() : QStyleHintReturnMask() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:722
-// [-2] void QStyleHintReturnMask()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QStyleHintReturnMaskC2Ev() {
-  return  new QStyleHintReturnMask();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstylehintreturnmask(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:723
-// [-2] void ~QStyleHintReturnMask()
-extern "C" Q_DECL_EXPORT
-void C_ZN20QStyleHintReturnMaskD2Ev(void *this_) {
+
+/*void C_ZN20QStyleHintReturnMaskD2Ev(void *this_)*/ {
   delete (QStyleHintReturnMask*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstylehintreturnmask
 //  main block end
 
 //  use block begin

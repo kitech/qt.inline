@@ -9,7 +9,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QStyleOptionTabWidgetFrame is pure virtual: false
+// QStyleOptionTabWidgetFrame is pure virtual: false false
 // QStyleOptionTabWidgetFrame has virtual projected: false
 //  header block end
 
@@ -54,27 +54,37 @@ MyQStyleOptionTabWidgetFrame() : QStyleOptionTabWidgetFrame() {}
 MyQStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame & other) : QStyleOptionTabWidgetFrame(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:171
-// [-2] void QStyleOptionTabWidgetFrame()
-extern "C" Q_DECL_EXPORT
-void* C_ZN26QStyleOptionTabWidgetFrameC2Ev() {
-  return  new QStyleOptionTabWidgetFrame();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstyleoptiontabwidgetframe(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qstyleoption.h:172
-// [-2] void QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN26QStyleOptionTabWidgetFrameC2ERKS_(QStyleOptionTabWidgetFrame* other) {
-  return  new QStyleOptionTabWidgetFrame(*other);
+// /usr/include/qt/QtWidgets/qstyleoption.h:174
+// [-2] void QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame &) 
+// (12)qm2576285033 (38)_ZN26QStyleOptionTabWidgetFrameC2ERKS_
+/*void* qm2576285033(const QStyleOptionTabWidgetFrame & other)*/{
+  const QStyleOptionTabWidgetFrame & other = *(const QStyleOptionTabWidgetFrame *)this_;
+  this_ =  new QStyleOptionTabWidgetFrame(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:176
+// [136] QStyleOptionTabWidgetFrame & operator=(const QStyleOptionTabWidgetFrame &) 
+// (10)qm33818915 (38)_ZN26QStyleOptionTabWidgetFrameaSERKS_
+//static
+/*void qm33818915(const QStyleOptionTabWidgetFrame & arg0)*/ {
+  const QStyleOptionTabWidgetFrame & arg0 = *(const QStyleOptionTabWidgetFrame *)this_;
+  (void) ((QStyleOptionTabWidgetFrame*)this_)->operator=(arg0);
+  // auto xptr = (QStyleOptionTabWidgetFrame & (QStyleOptionTabWidgetFrame::*)(QStyleOptionTabWidgetFrame const&) ) &QStyleOptionTabWidgetFrame::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN26QStyleOptionTabWidgetFrameD2Ev(void *this_) {
+/*void C_ZN26QStyleOptionTabWidgetFrameD2Ev(void *this_)*/ {
   delete (QStyleOptionTabWidgetFrame*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstyleoptiontabwidgetframe
 //  main block end
 
 //  use block begin

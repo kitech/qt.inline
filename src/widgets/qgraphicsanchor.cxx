@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(graphicsview)
-// since 0x040600
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QGraphicsAnchor is pure virtual: false
+// QGraphicsAnchor is pure virtual: false false
 // QGraphicsAnchor has virtual projected: false
 //  header block end
 
@@ -111,95 +110,28 @@ void* C_QGraphicsAnchor_init_staticMetaObject(void* this_, void* strdat, void* d
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qgraphicsanchor(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:57
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QGraphicsAnchor10metaObjectEv(void *this_) {
-  return (void*)((QGraphicsAnchor*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1811266399 (31)_ZN15QGraphicsAnchor2trEPKcS1_i
+//static
+/*void qm1811266399(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QGraphicsAnchor::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QGraphicsAnchor::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:57
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QGraphicsAnchor11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QGraphicsAnchor*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:57
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN15QGraphicsAnchor11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QGraphicsAnchor*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:57
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QGraphicsAnchor2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QGraphicsAnchor::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:57
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QGraphicsAnchor6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QGraphicsAnchor::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:61
-// [-2] void setSpacing(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QGraphicsAnchor10setSpacingEd(void *this_, qreal spacing) {
-  ((QGraphicsAnchor*)this_)->setSpacing(spacing);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:62
-// [-2] void unsetSpacing()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QGraphicsAnchor12unsetSpacingEv(void *this_) {
-  ((QGraphicsAnchor*)this_)->unsetSpacing();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:63
-// [8] qreal spacing()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK15QGraphicsAnchor7spacingEv(void *this_) {
-  return (qreal)((QGraphicsAnchor*)this_)->spacing();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:64
-// [-2] void setSizePolicy(QSizePolicy::Policy)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QGraphicsAnchor13setSizePolicyEN11QSizePolicy6PolicyE(void *this_, QSizePolicy::Policy policy) {
-  ((QGraphicsAnchor*)this_)->setSizePolicy(policy);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:65
-// [4] QSizePolicy::Policy sizePolicy()
-extern "C" Q_DECL_EXPORT
-QSizePolicy::Policy C_ZNK15QGraphicsAnchor10sizePolicyEv(void *this_) {
-  return (QSizePolicy::Policy)((QGraphicsAnchor*)this_)->sizePolicy();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:66
-// [-2] void ~QGraphicsAnchor()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QGraphicsAnchorD2Ev(void *this_) {
+/*void C_ZN15QGraphicsAnchorD2Ev(void *this_)*/ {
   delete (QGraphicsAnchor*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qgraphicsanchor
 //  main block end
 
 //  use block begin

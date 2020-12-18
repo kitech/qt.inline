@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtWidgets/qtwidgetsglobal.h>
 #if QT_CONFIG(scroller)
-// since 0x040800
 // /usr/include/qt/QtWidgets/qscrollerproperties.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtWidgets>
 #include "callback_inherit.h"
 
-// QScrollerProperties is pure virtual: false
+// QScrollerProperties is pure virtual: false false
 // QScrollerProperties has virtual projected: false
 //  header block end
 
@@ -58,87 +57,16 @@ MyQScrollerProperties() : QScrollerProperties() {}
 MyQScrollerProperties(const QScrollerProperties & sp) : QScrollerProperties(sp) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:60
-// [-2] void QScrollerProperties()
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QScrollerPropertiesC2Ev() {
-  return  new QScrollerProperties();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qscrollerproperties(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:61
-// [-2] void QScrollerProperties(const QScrollerProperties &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QScrollerPropertiesC2ERKS_(QScrollerProperties* sp) {
-  return  new QScrollerProperties(*sp);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:62
-// [16] QScrollerProperties & operator=(const QScrollerProperties &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QScrollerPropertiesaSERKS_(void *this_, QScrollerProperties* sp) {
-  auto& rv = ((QScrollerProperties*)this_)->operator=(*sp);
-return &rv;
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:63
-// [-2] void ~QScrollerProperties()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QScrollerPropertiesD2Ev(void *this_) {
+/*void C_ZN19QScrollerPropertiesD2Ev(void *this_)*/ {
   delete (QScrollerProperties*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:65
-// [1] bool operator==(const QScrollerProperties &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QScrollerPropertieseqERKS_(void *this_, QScrollerProperties* sp) {
-  return (bool)((QScrollerProperties*)this_)->operator==(*sp);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:66
-// [1] bool operator!=(const QScrollerProperties &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QScrollerPropertiesneERKS_(void *this_, QScrollerProperties* sp) {
-  return (bool)((QScrollerProperties*)this_)->operator!=(*sp);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:68
-// [-2] void setDefaultScrollerProperties(const QScrollerProperties &)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QScrollerProperties28setDefaultScrollerPropertiesERKS_(QScrollerProperties* sp) {
-  QScrollerProperties::setDefaultScrollerProperties(*sp);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:69
-// [-2] void unsetDefaultScrollerProperties()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QScrollerProperties30unsetDefaultScrollerPropertiesEv() {
-  QScrollerProperties::unsetDefaultScrollerProperties();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:117
-// [16] QVariant scrollMetric(QScrollerProperties::ScrollMetric)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QScrollerProperties12scrollMetricENS_12ScrollMetricE(void *this_, QScrollerProperties::ScrollMetric metric) {
-  auto rv = ((QScrollerProperties*)this_)->scrollMetric(metric);
-return new QVariant(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qscrollerproperties.h:118
-// [-2] void setScrollMetric(QScrollerProperties::ScrollMetric, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QScrollerProperties15setScrollMetricENS_12ScrollMetricERK8QVariant(void *this_, QScrollerProperties::ScrollMetric metric, QVariant* value) {
-  ((QScrollerProperties*)this_)->setScrollMetric(metric, *value);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qscrollerproperties
 //  main block end
 
 //  use block begin
