@@ -12,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QTextEncoder is pure virtual: false
+// QTextEncoder is pure virtual: false false
 // QTextEncoder has virtual projected: false
 //  header block end
 
@@ -57,70 +57,25 @@ MyQTextEncoder(const QTextCodec * codec) : QTextEncoder(codec) {}
 MyQTextEncoder(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) : QTextEncoder(codec, flags) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtextencoder(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextcodec.h:140
-// [-2] void QTextEncoder(const QTextCodec *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QTextEncoderC2EPK10QTextCodec(const QTextCodec * codec) {
-  return  new QTextEncoder(codec);
+// [-2] void QTextEncoder(const QTextCodec *) 
+// (12)qm1182899304 (34)_ZN12QTextEncoderC2EPK10QTextCodec
+/*void* qm1182899304(const QTextCodec * codec)*/{
+  const QTextCodec * codec = *(const QTextCodec **)this_;
+  this_ =  new QTextEncoder(codec);
 }
 
-// Public Visibility=Default Availability=Available
-// since 4.7
-// /usr/include/qt/QtCore/qtextcodec.h:141
-// [-2] void QTextEncoder(const QTextCodec *, QTextCodec::ConversionFlags)
-#if QT_VERSION >= 0x040700
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QTextEncoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags) {
-  return  new QTextEncoder(codec, flags);
-}
-#endif // QT_VERSION >= 0x040700
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:142
-// [-2] void ~QTextEncoder()
-extern "C" Q_DECL_EXPORT
-void C_ZN12QTextEncoderD2Ev(void *this_) {
+/*void C_ZN12QTextEncoderD2Ev(void *this_)*/ {
   delete (QTextEncoder*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:144
-// [8] QByteArray fromUnicode(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QTextEncoder11fromUnicodeERK7QString(void *this_, QString* str) {
-  auto rv = ((QTextEncoder*)this_)->fromUnicode(*str);
-return new QByteArray(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qtextcodec.h:146
-// [8] QByteArray fromUnicode(QStringView)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QTextEncoder11fromUnicodeE11QStringView(void *this_, QStringView* str) {
-  auto rv = ((QTextEncoder*)this_)->fromUnicode(*str);
-return new QByteArray(rv);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:147
-// [8] QByteArray fromUnicode(const QChar *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QTextEncoder11fromUnicodeEPK5QChari(void *this_, const QChar * uc, int len_) {
-  auto rv = ((QTextEncoder*)this_)->fromUnicode(uc, len_);
-return new QByteArray(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtextcodec.h:148
-// [1] bool hasFailure()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK12QTextEncoder10hasFailureEv(void *this_) {
-  return (bool)((QTextEncoder*)this_)->hasFailure();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtextencoder
 //  main block end
 
 //  use block begin

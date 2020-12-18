@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(statemachine)
-// since 0x040600
 // /usr/include/qt/QtCore/qfinalstate.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QFinalState is pure virtual: false
+// QFinalState is pure virtual: false false
 // QFinalState has virtual projected: true
 //  header block end
 
@@ -99,7 +98,7 @@ public:
   virtual ~MyQFinalState() {}
 // void QFinalState(QState *)
 MyQFinalState(QState * parent) : QFinalState(parent) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void onEntry(QEvent *)
   virtual void onEntry(QEvent * event)  override {
     int handled = 0;
@@ -111,7 +110,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void onExit(QEvent *)
   virtual void onExit(QEvent * event)  override {
     int handled = 0;
@@ -123,7 +122,7 @@ MyQFinalState(QState * parent) : QFinalState(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * e)  override {
     int handled = 0;
@@ -150,88 +149,28 @@ void* C_QFinalState_init_staticMetaObject(void* this_, void* strdat, void* dat, 
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:58
-// [-2] void onEntry(QEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QFinalState7onEntryEP6QEvent(void *this_, QEvent * event) {
-  ((QFinalState*)this_)->QFinalState::onEntry(event);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qfinalstate(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:59
-// [-2] void onExit(QEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QFinalState6onExitEP6QEvent(void *this_, QEvent * event) {
-  ((QFinalState*)this_)->QFinalState::onExit(event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:61
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QFinalState5eventEP6QEvent(void *this_, QEvent * e) {
-  return (bool)((QFinalState*)this_)->QFinalState::event(e);
-}
-
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfinalstate.h:52
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QFinalState10metaObjectEv(void *this_) {
-  return (void*)((QFinalState*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3878098115 (27)_ZN11QFinalState2trEPKcS1_i
+//static
+/*void qm3878098115(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QFinalState::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QFinalState::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:52
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QFinalState11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QFinalState*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:52
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QFinalState11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QFinalState*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:52
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QFinalState2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QFinalState::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:52
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QFinalState6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QFinalState::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:54
-// [-2] void QFinalState(QState *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QFinalStateC2EP6QState(QState * parent) {
-  auto _nilp = (MyQFinalState*)(0);
-  return  new MyQFinalState(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfinalstate.h:55
-// [-2] void ~QFinalState()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QFinalStateD2Ev(void *this_) {
+/*void C_ZN11QFinalStateD2Ev(void *this_)*/ {
   delete (QFinalState*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qfinalstate
 //  main block end
 
 //  use block begin

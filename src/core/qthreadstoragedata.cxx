@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QThreadStorageData is pure virtual: false
+// QThreadStorageData is pure virtual: false false
 // QThreadStorageData has virtual projected: false
 //  header block end
 
@@ -52,45 +52,16 @@ public:
 MyQThreadStorageData(void (*func_)(void *)) : QThreadStorageData(func_) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qthreadstorage.h:53
-// [-2] void QThreadStorageData(void (*)(void *))
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QThreadStorageDataC2EPFvPvE(void (*func_)(void *)) {
-  return  new QThreadStorageData(func_);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qthreadstoragedata(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qthreadstorage.h:54
-// [-2] void ~QThreadStorageData()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QThreadStorageDataD2Ev(void *this_) {
+
+/*void C_ZN18QThreadStorageDataD2Ev(void *this_)*/ {
   delete (QThreadStorageData*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qthreadstorage.h:56
-// [8] void ** get()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QThreadStorageData3getEv(void *this_) {
-  return (void*)((QThreadStorageData*)this_)->get();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qthreadstorage.h:57
-// [8] void ** set(void *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QThreadStorageData3setEPv(void *this_, void * p) {
-  return (void*)((QThreadStorageData*)this_)->set(p);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qthreadstorage.h:59
-// [-2] void finish(void **)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QThreadStorageData6finishEPPv(void ** arg0) {
-  QThreadStorageData::finish(arg0);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qthreadstoragedata
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QBasicTimer is pure virtual: false
+// QBasicTimer is pure virtual: false false
 // QBasicTimer has virtual projected: false
 //  header block end
 
@@ -48,65 +48,93 @@ static const uint qt_meta_data_MyQBasicTimer[] = {
 class Q_DECL_EXPORT MyQBasicTimer : public QBasicTimer {
 public:
   virtual ~MyQBasicTimer() {}
+// void QBasicTimer(const QBasicTimer &)
+MyQBasicTimer(const QBasicTimer & arg0) : QBasicTimer(arg0) {}
 // void QBasicTimer()
 MyQBasicTimer() : QBasicTimer() {}
+// void QBasicTimer(QBasicTimer &&)
+MyQBasicTimer(QBasicTimer && other) : QBasicTimer(other) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qbasictimer(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbasictimer.h:55
-// [-2] void QBasicTimer()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QBasicTimerC2Ev() {
-  return  new QBasicTimer();
+// /usr/include/qt/QtCore/qbasictimer.h:66
+// [-2] void QBasicTimer() 
+// (12)qm2325001196 (20)_ZN11QBasicTimerC2Ev
+/*void* qm2325001196()*/{
+  ;
+  this_ =  new QBasicTimer();
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbasictimer.h:56
-// [-2] void ~QBasicTimer()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QBasicTimerD2Ev(void *this_) {
+// /usr/include/qt/QtCore/qbasictimer.h:67
+// [-2] void ~QBasicTimer() 
+// (11)qm390302549 (20)_ZN11QBasicTimerD2Ev
+/*void qm390302549 (void *this_)*/ {
   delete (QBasicTimer*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbasictimer.h:58
-// [1] bool isActive()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QBasicTimer8isActiveEv(void *this_) {
-  return (bool)((QBasicTimer*)this_)->isActive();
+// /usr/include/qt/QtCore/qbasictimer.h:69
+// [-2] void QBasicTimer(QBasicTimer &&) 
+// (12)qm2692897360 (22)_ZN11QBasicTimerC2EOS_
+/*void* qm2692897360(QBasicTimer && other)*/{
+  QBasicTimer && other =  static_cast<QBasicTimer &&>(*(QBasicTimer *)this_);
+  this_ =  new QBasicTimer(other);
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbasictimer.h:59
-// [4] int timerId()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QBasicTimer7timerIdEv(void *this_) {
-  return (int)((QBasicTimer*)this_)->timerId();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbasictimer.h:73
+// [4] QBasicTimer & operator=(QBasicTimer &&) 
+// (12)qm1320460432 (22)_ZN11QBasicTimeraSEOS_
+//static
+/*void qm1320460432(QBasicTimer && other)*/ {
+  QBasicTimer && other =  static_cast<QBasicTimer &&>(*(QBasicTimer *)this_);
+  (void) ((QBasicTimer*)this_)->operator=(other);
+  // auto xptr = (QBasicTimer & (QBasicTimer::*)(QBasicTimer&&) ) &QBasicTimer::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbasictimer.h:61
-// [-2] void start(int, QObject *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QBasicTimer5startEiP7QObject(void *this_, int msec, QObject * obj) {
-  ((QBasicTimer*)this_)->start(msec, obj);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbasictimer.h:79
+// [-2] void swap(QBasicTimer &) 
+// (11)qm521094785 (25)_ZN11QBasicTimer4swapERS_
+//static
+/*void qm521094785(QBasicTimer & other)*/ {
+  QBasicTimer & other = *(QBasicTimer *)this_;
+  (void) ((QBasicTimer*)this_)->swap(other);
+   auto xptr = (void (QBasicTimer::*)(QBasicTimer&) ) &QBasicTimer::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbasictimer.h:62
-// [-2] void start(int, Qt::TimerType, QObject *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QBasicTimer5startEiN2Qt9TimerTypeEP7QObject(void *this_, int msec, Qt::TimerType timerType, QObject * obj) {
-  ((QBasicTimer*)this_)->start(msec, timerType, obj);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbasictimer.h:81
+// [1] bool isActive() const
+// (12)qm2480583690 (28)_ZNK11QBasicTimer8isActiveEv
+//static
+/*void qm2480583690()*/ {
+  ;
+  (void) ((QBasicTimer*)this_)->isActive();
+   auto xptr = (bool (QBasicTimer::*)() const ) &QBasicTimer::isActive;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbasictimer.h:63
-// [-2] void stop()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QBasicTimer4stopEv(void *this_) {
-  ((QBasicTimer*)this_)->stop();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbasictimer.h:82
+// [4] int timerId() const
+// (12)qm1495198804 (27)_ZNK11QBasicTimer7timerIdEv
+//static
+/*void qm1495198804()*/ {
+  ;
+  (void) ((QBasicTimer*)this_)->timerId();
+   auto xptr = (int (QBasicTimer::*)() const ) &QBasicTimer::timerId;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+  return fnptrsumval;
+} // end ensure_inline_symbol_qbasictimer
 //  main block end
 
 //  use block begin

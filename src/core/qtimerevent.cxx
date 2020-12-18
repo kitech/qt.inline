@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QTimerEvent is pure virtual: false
+// QTimerEvent is pure virtual: false false
 // QTimerEvent has virtual projected: false
 //  header block end
 
@@ -52,29 +52,28 @@ public:
 MyQTimerEvent(int timerId) : QTimerEvent(timerId) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreevent.h:340
-// [-2] void QTimerEvent(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QTimerEventC2Ei(int timerId) {
-  return  new QTimerEvent(timerId);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtimerevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:342
+// [4] int timerId() const
+// (12)qm3491250163 (27)_ZNK11QTimerEvent7timerIdEv
+//static
+/*void qm3491250163()*/ {
+  ;
+  (void) ((QTimerEvent*)this_)->timerId();
+   auto xptr = (int (QTimerEvent::*)() const ) &QTimerEvent::timerId;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreevent.h:341
-// [-2] void ~QTimerEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTimerEventD2Ev(void *this_) {
+
+/*void C_ZN11QTimerEventD2Ev(void *this_)*/ {
   delete (QTimerEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreevent.h:342
-// [4] int timerId()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QTimerEvent7timerIdEv(void *this_) {
-  return (int)((QTimerEvent*)this_)->timerId();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtimerevent
 //  main block end
 
 //  use block begin

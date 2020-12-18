@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QCharRef is pure virtual: false
+// QCharRef is pure virtual: false false
 // QCharRef has virtual projected: false
 //  header block end
 
@@ -48,363 +48,521 @@ static const uint qt_meta_data_MyQCharRef[] = {
 class Q_DECL_EXPORT MyQCharRef : public QCharRef {
 public:
   virtual ~MyQCharRef() {}
+// void QCharRef(const QCharRef &)
+MyQCharRef(const QCharRef & arg0) : QCharRef(arg0) {}
 };
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1052
-// [16] QCharRef & operator=(QChar)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QCharRefaSE5QChar(void *this_, QChar* c) {
-  auto& rv = ((QCharRef*)this_)->operator=(*c);
-return &rv;
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcharref(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1058
-// [16] QCharRef & operator=(char)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QCharRefaSEc(void *this_, char c) {
-  auto& rv = ((QCharRef*)this_)->operator=(c);
-return &rv;
+// /usr/include/qt/QtCore/qstring.h:1194
+// [-2] void QCharRef(const QCharRef &) 
+// (12)qm4072065807 (19)_ZN8QCharRefC2ERKS_
+/*void* qm4072065807(const QCharRef & arg0)*/{
+  const QCharRef & arg0 = *(const QCharRef *)this_;
+  this_ =  new QCharRef(arg0);
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1060
-// [16] QCharRef & operator=(uchar)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QCharRefaSEh(void *this_, uchar c) {
-  auto& rv = ((QCharRef*)this_)->operator=(c);
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1209
+// [16] QCharRef & operator=(QChar) 
+// (12)qm4139823875 (21)_ZN8QCharRefaSE5QChar
+//static
+/*void qm4139823875(QChar c)*/ {
+  QChar c = *(QChar*)this_;
+  (void) ((QCharRef*)this_)->operator=(c);
+  // auto xptr = (QCharRef & (QCharRef::*)(QChar) ) &QCharRef::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1063
-// [16] QCharRef & operator=(const QCharRef &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QCharRefaSERKS_(void *this_, QCharRef* c) {
-  auto& rv = ((QCharRef*)this_)->operator=(*c);
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1230
+// [16] QCharRef & operator=(char) 
+// (12)qm1429971112 (16)_ZN8QCharRefaSEc
+//static
+/*void qm1429971112(char c)*/ {
+  char c = *(char*)this_;
+  (void) ((QCharRef*)this_)->operator=(c);
+  // auto xptr = (QCharRef & (QCharRef::*)(char) ) &QCharRef::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1064
-// [16] QCharRef & operator=(ushort)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QCharRefaSEt(void *this_, ushort rc) {
-  auto& rv = ((QCharRef*)this_)->operator=(rc);
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1232
+// [16] QCharRef & operator=(uchar) 
+// (12)qm3270080800 (16)_ZN8QCharRefaSEh
+//static
+/*void qm3270080800(unsigned char c)*/ {
+  unsigned char c = *(unsigned char*)this_;
+  (void) ((QCharRef*)this_)->operator=(c);
+  // auto xptr = (QCharRef & (QCharRef::*)(unsigned char) ) &QCharRef::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1065
-// [16] QCharRef & operator=(short)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QCharRefaSEs(void *this_, short rc) {
-  auto& rv = ((QCharRef*)this_)->operator=(rc);
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1235
+// [16] QCharRef & operator=(const QCharRef &) 
+// (12)qm1765556037 (19)_ZN8QCharRefaSERKS_
+//static
+/*void qm1765556037(const QCharRef & c)*/ {
+  const QCharRef & c = *(const QCharRef *)this_;
+  (void) ((QCharRef*)this_)->operator=(c);
+  // auto xptr = (QCharRef & (QCharRef::*)(QCharRef const&) ) &QCharRef::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1066
-// [16] QCharRef & operator=(uint)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QCharRefaSEj(void *this_, uint rc) {
-  auto& rv = ((QCharRef*)this_)->operator=(rc);
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1236
+// [16] QCharRef & operator=(ushort) 
+// (12)qm3605538159 (16)_ZN8QCharRefaSEt
+//static
+/*void qm3605538159(unsigned short rc)*/ {
+  unsigned short rc = *(unsigned short*)this_;
+  (void) ((QCharRef*)this_)->operator=(rc);
+  // auto xptr = (QCharRef & (QCharRef::*)(unsigned short) ) &QCharRef::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1067
-// [16] QCharRef & operator=(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QCharRefaSEi(void *this_, int rc) {
-  auto& rv = ((QCharRef*)this_)->operator=(rc);
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1237
+// [16] QCharRef & operator=(short) 
+// (12)qm1217179852 (16)_ZN8QCharRefaSEs
+//static
+/*void qm1217179852(short rc)*/ {
+  short rc = *(short*)this_;
+  (void) ((QCharRef*)this_)->operator=(rc);
+  // auto xptr = (QCharRef & (QCharRef::*)(short) ) &QCharRef::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1070
-// [1] bool isNull()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef6isNullEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isNull();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1238
+// [16] QCharRef & operator=(uint) 
+// (11)qm753342476 (16)_ZN8QCharRefaSEj
+//static
+/*void qm753342476(unsigned int rc)*/ {
+  unsigned int rc = *(unsigned int*)this_;
+  (void) ((QCharRef*)this_)->operator=(rc);
+  // auto xptr = (QCharRef & (QCharRef::*)(unsigned int) ) &QCharRef::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1071
-// [1] bool isPrint()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef7isPrintEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isPrint();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1239
+// [16] QCharRef & operator=(int) 
+// (12)qm3052292534 (16)_ZN8QCharRefaSEi
+//static
+/*void qm3052292534(int rc)*/ {
+  int rc = *(int*)this_;
+  (void) ((QCharRef*)this_)->operator=(rc);
+  // auto xptr = (QCharRef & (QCharRef::*)(int) ) &QCharRef::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1072
-// [1] bool isPunct()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef7isPunctEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isPunct();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1242
+// [1] bool isNull() const
+// (11)qm683166178 (22)_ZNK8QCharRef6isNullEv
+//static
+/*void qm683166178()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isNull();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1073
-// [1] bool isSpace()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef7isSpaceEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isSpace();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1243
+// [1] bool isPrint() const
+// (12)qm1397035488 (23)_ZNK8QCharRef7isPrintEv
+//static
+/*void qm1397035488()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isPrint();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isPrint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1074
-// [1] bool isMark()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef6isMarkEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isMark();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1244
+// [1] bool isPunct() const
+// (11)qm235546005 (23)_ZNK8QCharRef7isPunctEv
+//static
+/*void qm235546005()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isPunct();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isPunct;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1075
-// [1] bool isLetter()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef8isLetterEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isLetter();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1245
+// [1] bool isSpace() const
+// (12)qm4036751405 (23)_ZNK8QCharRef7isSpaceEv
+//static
+/*void qm4036751405()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isSpace();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isSpace;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1076
-// [1] bool isNumber()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef8isNumberEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isNumber();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1246
+// [1] bool isMark() const
+// (12)qm2395290663 (22)_ZNK8QCharRef6isMarkEv
+//static
+/*void qm2395290663()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isMark();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isMark;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1077
-// [1] bool isLetterOrNumber()
-extern "C" Q_DECL_EXPORT
-bool C_ZN8QCharRef16isLetterOrNumberEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isLetterOrNumber();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1247
+// [1] bool isLetter() const
+// (12)qm2035996342 (24)_ZNK8QCharRef8isLetterEv
+//static
+/*void qm2035996342()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isLetter();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isLetter;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1078
-// [1] bool isDigit()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef7isDigitEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isDigit();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1248
+// [1] bool isNumber() const
+// (12)qm2547547252 (24)_ZNK8QCharRef8isNumberEv
+//static
+/*void qm2547547252()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isNumber();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isNumber;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1079
-// [1] bool isLower()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef7isLowerEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isLower();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1249
+// [1] bool isLetterOrNumber() 
+// (12)qm1488929665 (32)_ZN8QCharRef16isLetterOrNumberEv
+//static
+/*void qm1488929665()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isLetterOrNumber();
+   auto xptr = (bool (QCharRef::*)() ) &QCharRef::isLetterOrNumber;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1080
-// [1] bool isUpper()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef7isUpperEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isUpper();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1250
+// [1] bool isDigit() const
+// (12)qm2334318013 (23)_ZNK8QCharRef7isDigitEv
+//static
+/*void qm2334318013()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isDigit();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isDigit;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1081
-// [1] bool isTitleCase()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef11isTitleCaseEv(void *this_) {
-  return (bool)((QCharRef*)this_)->isTitleCase();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1251
+// [1] bool isLower() const
+// (12)qm1076831311 (23)_ZNK8QCharRef7isLowerEv
+//static
+/*void qm1076831311()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isLower();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isLower;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1083
-// [4] int digitValue()
-extern "C" Q_DECL_EXPORT
-int C_ZNK8QCharRef10digitValueEv(void *this_) {
-  return (int)((QCharRef*)this_)->digitValue();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1252
+// [1] bool isUpper() const
+// (12)qm4073296140 (23)_ZNK8QCharRef7isUpperEv
+//static
+/*void qm4073296140()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isUpper();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isUpper;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1084
-// [2] QChar toLower()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QCharRef7toLowerEv(void *this_) {
-  auto rv = ((QCharRef*)this_)->toLower();
-return new QChar(rv);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1253
+// [1] bool isTitleCase() const
+// (12)qm4076123715 (28)_ZNK8QCharRef11isTitleCaseEv
+//static
+/*void qm4076123715()*/ {
+  ;
+  (void) ((QCharRef*)this_)->isTitleCase();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::isTitleCase;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1085
-// [2] QChar toUpper()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QCharRef7toUpperEv(void *this_) {
-  auto rv = ((QCharRef*)this_)->toUpper();
-return new QChar(rv);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1255
+// [4] int digitValue() const
+// (11)qm753883773 (27)_ZNK8QCharRef10digitValueEv
+//static
+/*void qm753883773()*/ {
+  ;
+  (void) ((QCharRef*)this_)->digitValue();
+   auto xptr = (int (QCharRef::*)() const ) &QCharRef::digitValue;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1086
-// [2] QChar toTitleCase()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QCharRef11toTitleCaseEv(void *this_) {
-  auto rv = ((QCharRef*)this_)->toTitleCase();
-return new QChar(rv);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1256
+// [2] QChar toLower() const
+// (11)qm917808397 (23)_ZNK8QCharRef7toLowerEv
+//static
+/*void qm917808397()*/ {
+  ;
+  (void) ((QCharRef*)this_)->toLower();
+   auto xptr = (QChar (QCharRef::*)() const ) &QCharRef::toLower;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1088
-// [4] QChar::Category category()
-extern "C" Q_DECL_EXPORT
-QChar::Category C_ZNK8QCharRef8categoryEv(void *this_) {
-  return (QChar::Category)((QCharRef*)this_)->category();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1257
+// [2] QChar toUpper() const
+// (12)qm2219970638 (23)_ZNK8QCharRef7toUpperEv
+//static
+/*void qm2219970638()*/ {
+  ;
+  (void) ((QCharRef*)this_)->toUpper();
+   auto xptr = (QChar (QCharRef::*)() const ) &QCharRef::toUpper;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1089
-// [4] QChar::Direction direction()
-extern "C" Q_DECL_EXPORT
-QChar::Direction C_ZNK8QCharRef9directionEv(void *this_) {
-  return (QChar::Direction)((QCharRef*)this_)->direction();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1258
+// [2] QChar toTitleCase() const
+// (11)qm147706010 (28)_ZNK8QCharRef11toTitleCaseEv
+//static
+/*void qm147706010()*/ {
+  ;
+  (void) ((QCharRef*)this_)->toTitleCase();
+   auto xptr = (QChar (QCharRef::*)() const ) &QCharRef::toTitleCase;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1090
-// [4] QChar::JoiningType joiningType()
-extern "C" Q_DECL_EXPORT
-QChar::JoiningType C_ZNK8QCharRef11joiningTypeEv(void *this_) {
-  return (QChar::JoiningType)((QCharRef*)this_)->joiningType();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1260
+// [4] QChar::Category category() const
+// (12)qm3918475809 (24)_ZNK8QCharRef8categoryEv
+//static
+/*void qm3918475809()*/ {
+  ;
+  (void) ((QCharRef*)this_)->category();
+   auto xptr = (QChar::Category (QCharRef::*)() const ) &QCharRef::category;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1092
-// [4] QChar::Joining joining()
-extern "C" Q_DECL_EXPORT
-QChar::Joining C_ZNK8QCharRef7joiningEv(void *this_) {
-  return (QChar::Joining)((QCharRef*)this_)->joining();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1261
+// [4] QChar::Direction direction() const
+// (12)qm3403182288 (25)_ZNK8QCharRef9directionEv
+//static
+/*void qm3403182288()*/ {
+  ;
+  (void) ((QCharRef*)this_)->direction();
+   auto xptr = (QChar::Direction (QCharRef::*)() const ) &QCharRef::direction;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1105
-// [1] bool hasMirrored()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QCharRef11hasMirroredEv(void *this_) {
-  return (bool)((QCharRef*)this_)->hasMirrored();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1262
+// [4] QChar::JoiningType joiningType() const
+// (12)qm2479723886 (28)_ZNK8QCharRef11joiningTypeEv
+//static
+/*void qm2479723886()*/ {
+  ;
+  (void) ((QCharRef*)this_)->joiningType();
+   auto xptr = (QChar::JoiningType (QCharRef::*)() const ) &QCharRef::joiningType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1106
-// [2] QChar mirroredChar()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QCharRef12mirroredCharEv(void *this_) {
-  auto rv = ((QCharRef*)this_)->mirroredChar();
-return new QChar(rv);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1277
+// [1] bool hasMirrored() const
+// (12)qm2466859855 (28)_ZNK8QCharRef11hasMirroredEv
+//static
+/*void qm2466859855()*/ {
+  ;
+  (void) ((QCharRef*)this_)->hasMirrored();
+   auto xptr = (bool (QCharRef::*)() const ) &QCharRef::hasMirrored;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1107
-// [8] QString decomposition()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QCharRef13decompositionEv(void *this_) {
-  auto rv = ((QCharRef*)this_)->decomposition();
-return new QString(rv);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1278
+// [2] QChar mirroredChar() const
+// (12)qm3460177955 (29)_ZNK8QCharRef12mirroredCharEv
+//static
+/*void qm3460177955()*/ {
+  ;
+  (void) ((QCharRef*)this_)->mirroredChar();
+   auto xptr = (QChar (QCharRef::*)() const ) &QCharRef::mirroredChar;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1108
-// [4] QChar::Decomposition decompositionTag()
-extern "C" Q_DECL_EXPORT
-QChar::Decomposition C_ZNK8QCharRef16decompositionTagEv(void *this_) {
-  return (QChar::Decomposition)((QCharRef*)this_)->decompositionTag();
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1279
+// [8] QString decomposition() const
+// (11)qm845449112 (30)_ZNK8QCharRef13decompositionEv
+//static
+/*void qm845449112()*/ {
+  ;
+  (void) ((QCharRef*)this_)->decomposition();
+   auto xptr = (QString (QCharRef::*)() const ) &QCharRef::decomposition;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1109
-// [1] uchar combiningClass()
-extern "C" Q_DECL_EXPORT
-uchar C_ZNK8QCharRef14combiningClassEv(void *this_) {
-  return (uchar)((QCharRef*)this_)->combiningClass();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1280
+// [4] QChar::Decomposition decompositionTag() const
+// (12)qm3848828391 (33)_ZNK8QCharRef16decompositionTagEv
+//static
+/*void qm3848828391()*/ {
+  ;
+  (void) ((QCharRef*)this_)->decompositionTag();
+   auto xptr = (QChar::Decomposition (QCharRef::*)() const ) &QCharRef::decompositionTag;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1111
-// [4] QChar::Script script()
-extern "C" Q_DECL_EXPORT
-QChar::Script C_ZNK8QCharRef6scriptEv(void *this_) {
-  return (QChar::Script)((QCharRef*)this_)->script();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1281
+// [1] uchar combiningClass() const
+// (12)qm3976944668 (31)_ZNK8QCharRef14combiningClassEv
+//static
+/*void qm3976944668()*/ {
+  ;
+  (void) ((QCharRef*)this_)->combiningClass();
+   auto xptr = (unsigned char (QCharRef::*)() const ) &QCharRef::combiningClass;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1113
-// [4] QChar::UnicodeVersion unicodeVersion()
-extern "C" Q_DECL_EXPORT
-QChar::UnicodeVersion C_ZNK8QCharRef14unicodeVersionEv(void *this_) {
-  return (QChar::UnicodeVersion)((QCharRef*)this_)->unicodeVersion();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1283
+// [4] QChar::Script script() const
+// (12)qm2085576565 (22)_ZNK8QCharRef6scriptEv
+//static
+/*void qm2085576565()*/ {
+  ;
+  (void) ((QCharRef*)this_)->script();
+   auto xptr = (QChar::Script (QCharRef::*)() const ) &QCharRef::script;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1115
-// [1] uchar cell()
-extern "C" Q_DECL_EXPORT
-uchar C_ZNK8QCharRef4cellEv(void *this_) {
-  return (uchar)((QCharRef*)this_)->cell();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1285
+// [4] QChar::UnicodeVersion unicodeVersion() const
+// (11)qm667644704 (31)_ZNK8QCharRef14unicodeVersionEv
+//static
+/*void qm667644704()*/ {
+  ;
+  (void) ((QCharRef*)this_)->unicodeVersion();
+   auto xptr = (QChar::UnicodeVersion (QCharRef::*)() const ) &QCharRef::unicodeVersion;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1116
-// [1] uchar row()
-extern "C" Q_DECL_EXPORT
-uchar C_ZNK8QCharRef3rowEv(void *this_) {
-  return (uchar)((QCharRef*)this_)->row();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1287
+// [1] uchar cell() const
+// (12)qm1038475368 (20)_ZNK8QCharRef4cellEv
+//static
+/*void qm1038475368()*/ {
+  ;
+  (void) ((QCharRef*)this_)->cell();
+   auto xptr = (unsigned char (QCharRef::*)() const ) &QCharRef::cell;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1117
-// [-2] void setCell(uchar)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QCharRef7setCellEh(void *this_, uchar cell) {
-  ((QCharRef*)this_)->setCell(cell);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1288
+// [1] uchar row() const
+// (12)qm4139914167 (19)_ZNK8QCharRef3rowEv
+//static
+/*void qm4139914167()*/ {
+  ;
+  (void) ((QCharRef*)this_)->row();
+   auto xptr = (unsigned char (QCharRef::*)() const ) &QCharRef::row;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1118
-// [-2] void setRow(uchar)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QCharRef6setRowEh(void *this_, uchar row) {
-  ((QCharRef*)this_)->setRow(row);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1289
+// [-2] void setCell(uchar) 
+// (11)qm843522781 (22)_ZN8QCharRef7setCellEh
+//static
+/*void qm843522781(unsigned char cell)*/ {
+  unsigned char cell = *(unsigned char*)this_;
+  (void) ((QCharRef*)this_)->setCell(cell);
+   auto xptr = (void (QCharRef::*)(unsigned char) ) &QCharRef::setCell;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1123
-// [1] char toLatin1()
-extern "C" Q_DECL_EXPORT
-char C_ZNK8QCharRef8toLatin1Ev(void *this_) {
-  return (char)((QCharRef*)this_)->toLatin1();
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1290
+// [-2] void setRow(uchar) 
+// (12)qm2760412024 (21)_ZN8QCharRef6setRowEh
+//static
+/*void qm2760412024(unsigned char row)*/ {
+  unsigned char row = *(unsigned char*)this_;
+  (void) ((QCharRef*)this_)->setRow(row);
+   auto xptr = (void (QCharRef::*)(unsigned char) ) &QCharRef::setRow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1124
-// [2] ushort unicode()
-extern "C" Q_DECL_EXPORT
-ushort C_ZNK8QCharRef7unicodeEv(void *this_) {
-  return (ushort)((QCharRef*)this_)->unicode();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1295
+// [1] char toLatin1() const
+// (11)qm672968243 (24)_ZNK8QCharRef8toLatin1Ev
+//static
+/*void qm672968243()*/ {
+  ;
+  (void) ((QCharRef*)this_)->toLatin1();
+   auto xptr = (char (QCharRef::*)() const ) &QCharRef::toLatin1;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstring.h:1125
-// [2] ushort & unicode()
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QCharRef7unicodeEv(void *this_) {
-  auto& rv = ((QCharRef*)this_)->unicode();
-return &rv;
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1296
+// [2] ushort unicode() const
+// (12)qm4133972291 (23)_ZNK8QCharRef7unicodeEv
+//static
+/*void qm4133972291()*/ {
+  ;
+  (void) ((QCharRef*)this_)->unicode();
+   auto xptr = (unsigned short (QCharRef::*)() const ) &QCharRef::unicode;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:1297
+// [2] ushort & unicode() 
+// (12)qm1732807067 (22)_ZN8QCharRef7unicodeEv
+//static
+/*void qm1732807067()*/ {
+  ;
+  (void) ((QCharRef*)this_)->unicode();
+   auto xptr = (unsigned short & (QCharRef::*)() ) &QCharRef::unicode;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN8QCharRefD2Ev(void *this_) {
+/*void C_ZN8QCharRefD2Ev(void *this_)*/ {
   delete (QCharRef*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcharref
 //  main block end
 
 //  use block begin

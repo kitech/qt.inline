@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QFactoryInterface is pure virtual: true
+// QFactoryInterface is pure virtual: true true
 // QFactoryInterface has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQFactoryInterface[] = {
 class Q_DECL_EXPORT MyQFactoryInterface : public QFactoryInterface {
 public:
   virtual ~MyQFactoryInterface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QStringList keys()
   virtual QStringList keys() const override {
     int handled = 0;
@@ -64,25 +64,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfactoryinterface.h:52
-// [8] QStringList keys()
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfactoryinterface.h:51
-// [-2] void ~QFactoryInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QFactoryInterfaceD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qfactoryinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN17QFactoryInterfaceD2Ev(void *this_)*/ {
   delete (QFactoryInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfactoryinterface.h:52
-// [8] QStringList keys()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QFactoryInterface4keysEv(void *this_) {
-  auto rv = ((QFactoryInterface*)this_)->keys();
-return new QStringList(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qfactoryinterface
 //  main block end
 
 //  use block begin

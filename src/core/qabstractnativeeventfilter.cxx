@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtCore/qabstractnativeeventfilter.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QAbstractNativeEventFilter is pure virtual: true
+// QAbstractNativeEventFilter is pure virtual: true true
 // QAbstractNativeEventFilter has virtual projected: false
 //  header block end
 
@@ -49,7 +48,7 @@ static const uint qt_meta_data_MyQAbstractNativeEventFilter[] = {
 class Q_DECL_EXPORT MyQAbstractNativeEventFilter : public QAbstractNativeEventFilter {
 public:
   virtual ~MyQAbstractNativeEventFilter() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool nativeEventFilter(const QByteArray &, void *, long *)
   virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result)  override {
     int handled = 0;
@@ -66,32 +65,16 @@ public:
 MyQAbstractNativeEventFilter() : QAbstractNativeEventFilter() {}
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractnativeeventfilter.h:55
-// [1] bool nativeEventFilter(const QByteArray &, void *, long *)
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractnativeeventfilter.h:52
-// [-2] void QAbstractNativeEventFilter()
-extern "C" Q_DECL_EXPORT
-void* C_ZN26QAbstractNativeEventFilterC2Ev() {
-  return 0; // new QAbstractNativeEventFilter();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qabstractnativeeventfilter(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractnativeeventfilter.h:53
-// [-2] void ~QAbstractNativeEventFilter()
-extern "C" Q_DECL_EXPORT
-void C_ZN26QAbstractNativeEventFilterD2Ev(void *this_) {
+
+/*void C_ZN26QAbstractNativeEventFilterD2Ev(void *this_)*/ {
   delete (QAbstractNativeEventFilter*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractnativeeventfilter.h:55
-// [1] bool nativeEventFilter(const QByteArray &, void *, long *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN26QAbstractNativeEventFilter17nativeEventFilterERK10QByteArrayPvPl(void *this_, QByteArray* eventType, void * message, long * result) {
-  return (bool)((QAbstractNativeEventFilter*)this_)->nativeEventFilter(*eventType, message, result);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qabstractnativeeventfilter
 //  main block end
 
 //  use block begin

@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050100
 // /usr/include/qt/QtCore/qdebug.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QDebugStateSaver is pure virtual: false
+// QDebugStateSaver is pure virtual: false false
 // QDebugStateSaver has virtual projected: false
 //  header block end
 
@@ -53,21 +52,16 @@ public:
 MyQDebugStateSaver(QDebug & dbg) : QDebugStateSaver(dbg) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:180
-// [-2] void QDebugStateSaver(QDebug &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QDebugStateSaverC2ER6QDebug(QDebug* dbg) {
-  return  new QDebugStateSaver(*dbg);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qdebugstatesaver(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:181
-// [-2] void ~QDebugStateSaver()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QDebugStateSaverD2Ev(void *this_) {
+
+/*void C_ZN16QDebugStateSaverD2Ev(void *this_)*/ {
   delete (QDebugStateSaver*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qdebugstatesaver
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QHashDummyValue is pure virtual: false
+// QHashDummyValue is pure virtual: false false
 // QHashDummyValue has virtual projected: false
 //  header block end
 
@@ -50,11 +50,16 @@ public:
   virtual ~MyQHashDummyValue() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qhashdummyvalue(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-extern "C" Q_DECL_EXPORT
-void C_ZN15QHashDummyValueD2Ev(void *this_) {
+
+/*void C_ZN15QHashDummyValueD2Ev(void *this_)*/ {
   delete (QHashDummyValue*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qhashdummyvalue
 //  main block end
 
 //  use block begin

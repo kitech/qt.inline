@@ -1,285 +1,147 @@
 //  header block begin
 
-// since 0x050c00
-// /usr/include/qt/QtCore/qcborstream.h
+#ifndef QT_MINIMAL
+#include <QtCore/qglobal.h>
+#if QT_CONFIG(cborstreamwriter)
+// /usr/include/qt/QtCore/qcborstreamwriter.h
 #ifndef protected
 #define protected public
 #define private public
 #endif
-#include <qcborstream.h>
+#include <qcborstreamwriter.h>
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QCborStreamWriter is pure virtual: false
+// QCborStreamWriter is pure virtual: false false
 // QCborStreamWriter has virtual projected: false
 //  header block end
 
 //  main block begin
 
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:66
-// [-2] void QCborStreamWriter(QIODevice *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QCborStreamWriterC2EP9QIODevice(QIODevice * device) {
-  return 0; // new QCborStreamWriter(device);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcborstreamwriter(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:67
-// [-2] void QCborStreamWriter(QByteArray *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QCborStreamWriterC2EP10QByteArray(QByteArray * data) {
-  return 0; // new QCborStreamWriter(data);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:68
-// [-2] void ~QCborStreamWriter()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriterD2Ev(void *this_) {
-  delete (QCborStreamWriter*)(this_);
-}
 // Public inline Visibility=Default Availability=NotAvailable
-// /usr/include/qt/QtCore/qcborstream.h:69
-// [-2] void QCborStreamWriter(const QCborStreamWriter &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QCborStreamWriterC2ERKS_(QCborStreamWriter* arg0) {
-  return 0; // new QCborStreamWriter(*arg0);
+// /usr/include/qt/QtCore/qcborstreamwriter.h:71
+// [-2] void QCborStreamWriter(const QCborStreamWriter &) 
+// (12)qm1302577443 (29)_ZN17QCborStreamWriterC2ERKS_
+/*void* qm1302577443(const QCborStreamWriter & arg0)*/{
+  const QCborStreamWriter & arg0 = *(const QCborStreamWriter *)this_;
+  this_ = 0; // new QCborStreamWriter(arg0);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:71
-// [-2] void setDevice(QIODevice *)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter9setDeviceEP9QIODevice(void *this_, QIODevice * device) {
-  ((QCborStreamWriter*)this_)->setDevice(device);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:79
+// [-2] void append(const QByteArray &) 
+// (10)qm59480320 (44)_ZN17QCborStreamWriter6appendERK10QByteArray
+//static
+/*void qm59480320(const QByteArray & ba)*/ {
+  const QByteArray & ba = *(const QByteArray *)this_;
+  (void) ((QCborStreamWriter*)this_)->append(ba);
+   auto xptr = (void (QCborStreamWriter::*)(QByteArray const&) ) &QCborStreamWriter::append;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:72
-// [8] QIODevice * device()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QCborStreamWriter6deviceEv(void *this_) {
-  return (void*)((QCborStreamWriter*)this_)->device();
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:83
+// [-2] void append(QCborKnownTags) 
+// (11)qm656852345 (46)_ZN17QCborStreamWriter6appendE14QCborKnownTags
+//static
+/*void qm656852345(QCborKnownTags tag)*/ {
+  QCborKnownTags tag = *(QCborKnownTags*)this_;
+  (void) ((QCborStreamWriter*)this_)->append(tag);
+   auto xptr = (void (QCborStreamWriter::*)(QCborKnownTags) ) &QCborStreamWriter::append;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:74
-// [-2] void append(quint64)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendEy(void *this_, quint64 u) {
-  ((QCborStreamWriter*)this_)->append(u);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:85
+// [-2] void append(std::nullptr_t) 
+// (12)qm2646056412 (32)_ZN17QCborStreamWriter6appendEDn
+//static
+/*void qm2646056412(nullptr_t arg0)*/ {
+  nullptr_t arg0 = *(nullptr_t*)this_;
+  (void) ((QCborStreamWriter*)this_)->append(arg0);
+   auto xptr = (void (QCborStreamWriter::*)(decltype(nullptr)) ) &QCborStreamWriter::append;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:75
-// [-2] void append(qint64)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendEx(void *this_, qint64 i) {
-  ((QCborStreamWriter*)this_)->append(i);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:96
+// [-2] void append(bool) 
+// (12)qm3096282672 (31)_ZN17QCborStreamWriter6appendEb
+//static
+/*void qm3096282672(bool b)*/ {
+  bool b = *(bool*)this_;
+  (void) ((QCborStreamWriter*)this_)->append(b);
+   auto xptr = (void (QCborStreamWriter::*)(bool) ) &QCborStreamWriter::append;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:76
-// [-2] void append(QCborNegativeInteger)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendE20QCborNegativeInteger(void *this_, QCborNegativeInteger n) {
-  ((QCborStreamWriter*)this_)->append(n);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:97
+// [-2] void appendNull() 
+// (12)qm2994580077 (36)_ZN17QCborStreamWriter10appendNullEv
+//static
+/*void qm2994580077()*/ {
+  ;
+  (void) ((QCborStreamWriter*)this_)->appendNull();
+   auto xptr = (void (QCborStreamWriter::*)() ) &QCborStreamWriter::appendNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:77
-// [-2] void append(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendERK10QByteArray(void *this_, QByteArray* ba) {
-  ((QCborStreamWriter*)this_)->append(*ba);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:98
+// [-2] void appendUndefined() 
+// (12)qm1088502298 (41)_ZN17QCborStreamWriter15appendUndefinedEv
+//static
+/*void qm1088502298()*/ {
+  ;
+  (void) ((QCborStreamWriter*)this_)->appendUndefined();
+   auto xptr = (void (QCborStreamWriter::*)() ) &QCborStreamWriter::appendUndefined;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:78
-// [-2] void append(QLatin1String)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendE13QLatin1String(void *this_, QLatin1String* str) {
-  ((QCborStreamWriter*)this_)->append(*str);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:102
+// [-2] void append(int) 
+// (11)qm794779576 (31)_ZN17QCborStreamWriter6appendEi
+//static
+/*void qm794779576(int i)*/ {
+  int i = *(int*)this_;
+  (void) ((QCborStreamWriter*)this_)->append(i);
+   auto xptr = (void (QCborStreamWriter::*)(int) ) &QCborStreamWriter::append;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:79
-// [-2] void append(QStringView)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendE11QStringView(void *this_, QStringView* str) {
-  ((QCborStreamWriter*)this_)->append(*str);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:103
+// [-2] void append(uint) 
+// (12)qm3059092994 (31)_ZN17QCborStreamWriter6appendEj
+//static
+/*void qm3059092994(unsigned int u)*/ {
+  unsigned int u = *(unsigned int*)this_;
+  (void) ((QCborStreamWriter*)this_)->append(u);
+   auto xptr = (void (QCborStreamWriter::*)(unsigned int) ) &QCborStreamWriter::append;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:80
-// [-2] void append(QCborTag)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendE8QCborTag(void *this_, QCborTag tag) {
-  ((QCborStreamWriter*)this_)->append(tag);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:106
+// [-2] void append(const char *, qsizetype) 
+// (11)qm320433931 (34)_ZN17QCborStreamWriter6appendEPKcx
+//static
+/*void qm320433931(const char * str, long long size)*/ {
+  const char * str = *(const char **)this_; long long size = *(long long*)this_;
+  (void) ((QCborStreamWriter*)this_)->append(str, size);
+   auto xptr = (void (QCborStreamWriter::*)(char const*, long long) ) &QCborStreamWriter::append;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:81
-// [-2] void append(QCborKnownTags)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendE14QCborKnownTags(void *this_, QCborKnownTags tag) {
-  ((QCborStreamWriter*)this_)->append(tag);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:82
-// [-2] void append(QCborSimpleType)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendE15QCborSimpleType(void *this_, QCborSimpleType st) {
-  ((QCborStreamWriter*)this_)->append(st);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:83
-// [-2] void append(std::nullptr_t)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendEDn(void *this_, std::nullptr_t arg0) {
-  ((QCborStreamWriter*)this_)->append(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:84
-// [-2] void append(qfloat16)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendE8qfloat16(void *this_, qfloat16* f) {
-  ((QCborStreamWriter*)this_)->append(*f);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:85
-// [-2] void append(float)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendEf(void *this_, float f) {
-  ((QCborStreamWriter*)this_)->append(f);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:86
-// [-2] void append(double)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendEd(void *this_, double d) {
-  ((QCborStreamWriter*)this_)->append(d);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:88
-// [-2] void appendByteString(const char *, qsizetype)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter16appendByteStringEPKcx(void *this_, const char * data, qsizetype len_) {
-  ((QCborStreamWriter*)this_)->appendByteString(data, len_);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:89
-// [-2] void appendTextString(const char *, qsizetype)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter16appendTextStringEPKcx(void *this_, const char * utf8, qsizetype len_) {
-  ((QCborStreamWriter*)this_)->appendTextString(utf8, len_);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:92
-// [-2] void append(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendEb(void *this_, bool b) {
-  ((QCborStreamWriter*)this_)->append(b);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:93
-// [-2] void appendNull()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter10appendNullEv(void *this_) {
-  ((QCborStreamWriter*)this_)->appendNull();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:94
-// [-2] void appendUndefined()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter15appendUndefinedEv(void *this_) {
-  ((QCborStreamWriter*)this_)->appendUndefined();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:98
-// [-2] void append(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendEi(void *this_, int i) {
-  ((QCborStreamWriter*)this_)->append(i);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:99
-// [-2] void append(uint)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendEj(void *this_, uint u) {
-  ((QCborStreamWriter*)this_)->append(u);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:102
-// [-2] void append(const char *, qsizetype)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter6appendEPKcx(void *this_, const char * str, qsizetype size) {
-  ((QCborStreamWriter*)this_)->append(str, size);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:106
-// [-2] void startArray()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter10startArrayEv(void *this_) {
-  ((QCborStreamWriter*)this_)->startArray();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:107
-// [-2] void startArray(quint64)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter10startArrayEy(void *this_, quint64 count) {
-  ((QCborStreamWriter*)this_)->startArray(count);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:108
-// [1] bool endArray()
-extern "C" Q_DECL_EXPORT
-bool C_ZN17QCborStreamWriter8endArrayEv(void *this_) {
-  return (bool)((QCborStreamWriter*)this_)->endArray();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:109
-// [-2] void startMap()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter8startMapEv(void *this_) {
-  ((QCborStreamWriter*)this_)->startMap();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:110
-// [-2] void startMap(quint64)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QCborStreamWriter8startMapEy(void *this_, quint64 count) {
-  ((QCborStreamWriter*)this_)->startMap(count);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborstream.h:111
-// [1] bool endMap()
-extern "C" Q_DECL_EXPORT
-bool C_ZN17QCborStreamWriter6endMapEv(void *this_) {
-  return (bool)((QCborStreamWriter*)this_)->endMap();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcborstreamwriter
 //  main block end
 
 //  use block begin
@@ -296,4 +158,6 @@ bool C_ZN17QCborStreamWriter6endMapEv(void *this_) {
 
 //  footer block begin
 
+#endif // #if QT_CONFIG(cborstreamwriter)
+#endif // #ifndef QT_MINIMAL
 //  footer block end

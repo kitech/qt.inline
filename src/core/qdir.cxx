@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QDir is pure virtual: false
+// QDir is pure virtual: false false
 // QDir has virtual projected: false
 //  header block end
 
@@ -56,642 +56,136 @@ MyQDir(const QString & path) : QDir(path) {}
 MyQDir(const QString & path, const QString & nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter) : QDir(path, nameFilter, sort, filter) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:101
-// [-2] void QDir(const QDir &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDirC2ERKS_(QDir* arg0) {
-  return  new QDir(*arg0);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qdir(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:112
+// [8] QDir & operator=(QDir &&) 
+// (12)qm2998830976 (14)_ZN4QDiraSEOS_
+//static
+/*void qm2998830976(QDir && other)*/ {
+  QDir && other =  static_cast<QDir &&>(*(QDir *)this_);
+  (void) ((QDir*)this_)->operator=(other);
+  // auto xptr = (QDir & (QDir::*)(QDir&&) ) &QDir::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:102
-// [-2] void QDir(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDirC2ERK7QString(QString* path) {
-  return  new QDir(*path);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:114
+// [-2] void swap(QDir &) 
+// (11)qm960085622 (17)_ZN4QDir4swapERS_
+//static
+/*void qm960085622(QDir & other)*/ {
+  QDir & other = *(QDir *)this_;
+  (void) ((QDir*)this_)->swap(other);
+   auto xptr = (void (QDir::*)(QDir&) ) &QDir::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:103
-// [-2] void QDir(const QString &, const QString &, QDir::SortFlags, QDir::Filters)
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDirC2ERK7QStringS2_6QFlagsINS_8SortFlagEES3_INS_6FilterEE(QString* path, QString* nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter) {
-  return  new QDir(*path, *nameFilter, sort, filter);
+// Public static inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:177
+// [1] bool isAbsolutePath(const QString &) 
+// (12)qm1252128851 (35)_ZN4QDir14isAbsolutePathERK7QString
+//static
+/*void qm1252128851(const QString & path)*/ {
+  const QString & path = *(const QString *)this_;
+  (void) QDir::isAbsolutePath(path);
+   auto xptr = (bool (*)(QString const&) ) &QDir::isAbsolutePath;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:105
-// [-2] void ~QDir()
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDirD2Ev(void *this_) {
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:179
+// [1] bool isAbsolute() const
+// (12)qm2014337073 (23)_ZNK4QDir10isAbsoluteEv
+//static
+/*void qm2014337073()*/ {
+  ;
+  (void) ((QDir*)this_)->isAbsolute();
+   auto xptr = (bool (QDir::*)() const ) &QDir::isAbsolute;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:183
+// [1] bool operator!=(const QDir &) const
+// (12)qm3492372883 (16)_ZNK4QDirneERKS_
+//static
+/*void qm3492372883(const QDir & dir)*/ {
+  const QDir & dir = *(const QDir *)this_;
+  (void) ((QDir*)this_)->operator!=(dir);
+  // auto xptr = (bool (QDir::*)(QDir const&) const ) &QDir::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public static inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:191
+// [2] QChar listSeparator() 
+// (12)qm3765795709 (25)_ZN4QDir13listSeparatorEv
+//static
+/*void qm3765795709()*/ {
+  ;
+  (void) QDir::listSeparator();
+   auto xptr = (QChar (*)() ) &QDir::listSeparator;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:203
+// [8] QDir current() 
+// (11)qm973393351 (18)_ZN4QDir7currentEv
+//static
+/*void qm973393351()*/ {
+  ;
+  (void) QDir::current();
+   auto xptr = (QDir (*)() ) &QDir::current;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:206
+// [8] QDir home() 
+// (12)qm2294219956 (15)_ZN4QDir4homeEv
+//static
+/*void qm2294219956()*/ {
+  ;
+  (void) QDir::home();
+   auto xptr = (QDir (*)() ) &QDir::home;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:208
+// [8] QDir root() 
+// (12)qm2636063877 (15)_ZN4QDir4rootEv
+//static
+/*void qm2636063877()*/ {
+  ;
+  (void) QDir::root();
+   auto xptr = (QDir (*)() ) &QDir::root;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:210
+// [8] QDir temp() 
+// (12)qm2901852014 (15)_ZN4QDir4tempEv
+//static
+/*void qm2901852014()*/ {
+  ;
+  (void) QDir::temp();
+   auto xptr = (QDir (*)() ) &QDir::temp;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN4QDirD2Ev(void *this_)*/ {
   delete (QDir*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:107
-// [8] QDir & operator=(const QDir &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDiraSERKS_(void *this_, QDir* arg0) {
-  auto& rv = ((QDir*)this_)->operator=(*arg0);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:108
-// [8] QDir & operator=(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDiraSERK7QString(void *this_, QString* path) {
-  auto& rv = ((QDir*)this_)->operator=(*path);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:110
-// [8] QDir & operator=(QDir &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDiraSEOS_(void *this_, QDir && other) {
-  auto& rv = ((QDir*)this_)->operator=(other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qdir.h:113
-// [-2] void swap(QDir &)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDir4swapERS_(void *this_, QDir* other) {
-  ((QDir*)this_)->swap(*other);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:116
-// [-2] void setPath(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDir7setPathERK7QString(void *this_, QString* path) {
-  ((QDir*)this_)->setPath(*path);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:117
-// [8] QString path()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir4pathEv(void *this_) {
-  auto rv = ((QDir*)this_)->path();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:118
-// [8] QString absolutePath()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir12absolutePathEv(void *this_) {
-  auto rv = ((QDir*)this_)->absolutePath();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:119
-// [8] QString canonicalPath()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir13canonicalPathEv(void *this_) {
-  auto rv = ((QDir*)this_)->canonicalPath();
-return new QString(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:121
-// [-2] void addResourceSearchPath(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDir21addResourceSearchPathERK7QString(QString* path) {
-  QDir::addResourceSearchPath(*path);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtCore/qdir.h:123
-// [-2] void setSearchPaths(const QString &, const QStringList &)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDir14setSearchPathsERK7QStringRK11QStringList(QString* prefix, QStringList* searchPaths) {
-  QDir::setSearchPaths(*prefix, *searchPaths);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public static Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtCore/qdir.h:124
-// [-2] void addSearchPath(const QString &, const QString &)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDir13addSearchPathERK7QStringS2_(QString* prefix, QString* path) {
-  QDir::addSearchPath(*prefix, *path);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public static Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtCore/qdir.h:125
-// [8] QStringList searchPaths(const QString &)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir11searchPathsERK7QString(QString* prefix) {
-  auto rv = QDir::searchPaths(*prefix);
-return new QStringList(rv);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:127
-// [8] QString dirName()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir7dirNameEv(void *this_) {
-  auto rv = ((QDir*)this_)->dirName();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:128
-// [8] QString filePath(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir8filePathERK7QString(void *this_, QString* fileName) {
-  auto rv = ((QDir*)this_)->filePath(*fileName);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:129
-// [8] QString absoluteFilePath(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir16absoluteFilePathERK7QString(void *this_, QString* fileName) {
-  auto rv = ((QDir*)this_)->absoluteFilePath(*fileName);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:130
-// [8] QString relativeFilePath(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir16relativeFilePathERK7QString(void *this_, QString* fileName) {
-  auto rv = ((QDir*)this_)->relativeFilePath(*fileName);
-return new QString(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtCore/qdir.h:132
-// [8] QString toNativeSeparators(const QString &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir18toNativeSeparatorsERK7QString(QString* pathName) {
-  auto rv = QDir::toNativeSeparators(*pathName);
-return new QString(rv);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public static Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtCore/qdir.h:133
-// [8] QString fromNativeSeparators(const QString &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir20fromNativeSeparatorsERK7QString(QString* pathName) {
-  auto rv = QDir::fromNativeSeparators(*pathName);
-return new QString(rv);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:135
-// [1] bool cd(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir2cdERK7QString(void *this_, QString* dirName) {
-  return (bool)((QDir*)this_)->cd(*dirName);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:136
-// [1] bool cdUp()
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir4cdUpEv(void *this_) {
-  return (bool)((QDir*)this_)->cdUp();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:138
-// [8] QStringList nameFilters()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir11nameFiltersEv(void *this_) {
-  auto rv = ((QDir*)this_)->nameFilters();
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:139
-// [-2] void setNameFilters(const QStringList &)
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDir14setNameFiltersERK11QStringList(void *this_, QStringList* nameFilters) {
-  ((QDir*)this_)->setNameFilters(*nameFilters);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:141
-// [4] QDir::Filters filter()
-extern "C" Q_DECL_EXPORT
-QDir::Filters* C_ZNK4QDir6filterEv(void *this_) {
-  auto rv = ((QDir*)this_)->filter();
-return new QDir::Filters(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:142
-// [-2] void setFilter(QDir::Filters)
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDir9setFilterE6QFlagsINS_6FilterEE(void *this_, QFlags<QDir::Filter> filter) {
-  ((QDir*)this_)->setFilter(filter);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:143
-// [4] QDir::SortFlags sorting()
-extern "C" Q_DECL_EXPORT
-QDir::SortFlags* C_ZNK4QDir7sortingEv(void *this_) {
-  auto rv = ((QDir*)this_)->sorting();
-return new QDir::SortFlags(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:144
-// [-2] void setSorting(QDir::SortFlags)
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDir10setSortingE6QFlagsINS_8SortFlagEE(void *this_, QFlags<QDir::SortFlag> sort) {
-  ((QDir*)this_)->setSorting(sort);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:146
-// [4] uint count()
-extern "C" Q_DECL_EXPORT
-uint C_ZNK4QDir5countEv(void *this_) {
-  return (uint)((QDir*)this_)->count();
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.9
-// /usr/include/qt/QtCore/qdir.h:147
-// [1] bool isEmpty(QDir::Filters)
-#if QT_VERSION >= 0x050900
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir7isEmptyE6QFlagsINS_6FilterEE(void *this_, QFlags<QDir::Filter> filters) {
-  return (bool)((QDir*)this_)->isEmpty(filters);
-}
-#endif // QT_VERSION >= 0x050900
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:149
-// [8] QString operator[](int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDirixEi(void *this_, int arg0) {
-  auto rv = ((QDir*)this_)->operator[](arg0);
-return new QString(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:151
-// [8] QStringList nameFiltersFromString(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir21nameFiltersFromStringERK7QString(QString* nameFilter) {
-  auto rv = QDir::nameFiltersFromString(*nameFilter);
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:153
-// [8] QStringList entryList(QDir::Filters, QDir::SortFlags)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir9entryListE6QFlagsINS_6FilterEES0_INS_8SortFlagEE(void *this_, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort) {
-  auto rv = ((QDir*)this_)->entryList(filters, sort);
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:154
-// [8] QStringList entryList(const QStringList &, QDir::Filters, QDir::SortFlags)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK4QDir9entryListERK11QStringList6QFlagsINS_6FilterEES3_INS_8SortFlagEE(void *this_, QStringList* nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort) {
-  auto rv = ((QDir*)this_)->entryList(*nameFilters, filters, sort);
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:157
-// [-2] QFileInfoList entryInfoList(QDir::Filters, QDir::SortFlags)
-extern "C" Q_DECL_EXPORT
-QFileInfoList* C_ZNK4QDir13entryInfoListE6QFlagsINS_6FilterEES0_INS_8SortFlagEE(void *this_, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort) {
-  auto rv = ((QDir*)this_)->entryInfoList(filters, sort);
-return new QFileInfoList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:158
-// [-2] QFileInfoList entryInfoList(const QStringList &, QDir::Filters, QDir::SortFlags)
-extern "C" Q_DECL_EXPORT
-QFileInfoList* C_ZNK4QDir13entryInfoListERK11QStringList6QFlagsINS_6FilterEES3_INS_8SortFlagEE(void *this_, QStringList* nameFilters, QFlags<QDir::Filter> filters, QFlags<QDir::SortFlag> sort) {
-  auto rv = ((QDir*)this_)->entryInfoList(*nameFilters, filters, sort);
-return new QFileInfoList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:161
-// [1] bool mkdir(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir5mkdirERK7QString(void *this_, QString* dirName) {
-  return (bool)((QDir*)this_)->mkdir(*dirName);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:162
-// [1] bool rmdir(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir5rmdirERK7QString(void *this_, QString* dirName) {
-  return (bool)((QDir*)this_)->rmdir(*dirName);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:163
-// [1] bool mkpath(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir6mkpathERK7QString(void *this_, QString* dirPath) {
-  return (bool)((QDir*)this_)->mkpath(*dirPath);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:164
-// [1] bool rmpath(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir6rmpathERK7QString(void *this_, QString* dirPath) {
-  return (bool)((QDir*)this_)->rmpath(*dirPath);
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qdir.h:166
-// [1] bool removeRecursively()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir17removeRecursivelyEv(void *this_) {
-  return (bool)((QDir*)this_)->removeRecursively();
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:168
-// [1] bool isReadable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir10isReadableEv(void *this_) {
-  return (bool)((QDir*)this_)->isReadable();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:169
-// [1] bool exists()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir6existsEv(void *this_) {
-  return (bool)((QDir*)this_)->exists();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:170
-// [1] bool isRoot()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir6isRootEv(void *this_) {
-  return (bool)((QDir*)this_)->isRoot();
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:172
-// [1] bool isRelativePath(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir14isRelativePathERK7QString(QString* path) {
-  return (bool)QDir::isRelativePath(*path);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:173
-// [1] bool isAbsolutePath(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir14isAbsolutePathERK7QString(QString* path) {
-  return (bool)QDir::isAbsolutePath(*path);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:174
-// [1] bool isRelative()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir10isRelativeEv(void *this_) {
-  return (bool)((QDir*)this_)->isRelative();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:175
-// [1] bool isAbsolute()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir10isAbsoluteEv(void *this_) {
-  return (bool)((QDir*)this_)->isAbsolute();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:176
-// [1] bool makeAbsolute()
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir12makeAbsoluteEv(void *this_) {
-  return (bool)((QDir*)this_)->makeAbsolute();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:178
-// [1] bool operator==(const QDir &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDireqERKS_(void *this_, QDir* dir) {
-  return (bool)((QDir*)this_)->operator==(*dir);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:179
-// [1] bool operator!=(const QDir &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDirneERKS_(void *this_, QDir* dir) {
-  return (bool)((QDir*)this_)->operator!=(*dir);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:181
-// [1] bool remove(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir6removeERK7QString(void *this_, QString* fileName) {
-  return (bool)((QDir*)this_)->remove(*fileName);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:182
-// [1] bool rename(const QString &, const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir6renameERK7QStringS2_(void *this_, QString* oldName, QString* newName) {
-  return (bool)((QDir*)this_)->rename(*oldName, *newName);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:183
-// [1] bool exists(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK4QDir6existsERK7QString(void *this_, QString* name) {
-  return (bool)((QDir*)this_)->exists(*name);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:185
-// [-2] QFileInfoList drives()
-extern "C" Q_DECL_EXPORT
-void C_ZN4QDir6drivesEv() {
-  auto rv = QDir::drives();
-/*return rv;*/
-}
-
-// Public static inline Visibility=Default Availability=Available
-// since 5.6
-// /usr/include/qt/QtCore/qdir.h:187
-// [2] QChar listSeparator()
-#if QT_VERSION >= 0x050600
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir13listSeparatorEv() {
-  auto rv = QDir::listSeparator();
-return new QChar(rv);
-}
-#endif // QT_VERSION >= 0x050600
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:196
-// [2] QChar separator()
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir9separatorEv() {
-  auto rv = QDir::separator();
-return new QChar(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:198
-// [1] bool setCurrent(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir10setCurrentERK7QString(QString* path) {
-  return (bool)QDir::setCurrent(*path);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:199
-// [8] QDir current()
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir7currentEv() {
-  auto rv = QDir::current();
-return new QDir(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:200
-// [8] QString currentPath()
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir11currentPathEv() {
-  auto rv = QDir::currentPath();
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:202
-// [8] QDir home()
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir4homeEv() {
-  auto rv = QDir::home();
-return new QDir(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:203
-// [8] QString homePath()
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir8homePathEv() {
-  auto rv = QDir::homePath();
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:204
-// [8] QDir root()
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir4rootEv() {
-  auto rv = QDir::root();
-return new QDir(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:205
-// [8] QString rootPath()
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir8rootPathEv() {
-  auto rv = QDir::rootPath();
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:206
-// [8] QDir temp()
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir4tempEv() {
-  auto rv = QDir::temp();
-return new QDir(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:207
-// [8] QString tempPath()
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir8tempPathEv() {
-  auto rv = QDir::tempPath();
-return new QString(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:210
-// [1] bool match(const QStringList &, const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir5matchERK11QStringListRK7QString(QStringList* filters, QString* fileName) {
-  return (bool)QDir::match(*filters, *fileName);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:211
-// [1] bool match(const QString &, const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN4QDir5matchERK7QStringS2_(QString* filter, QString* fileName) {
-  return (bool)QDir::match(*filter, *fileName);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:214
-// [8] QString cleanPath(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN4QDir9cleanPathERK7QString(QString* path) {
-  auto rv = QDir::cleanPath(*path);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdir.h:215
-// [-2] void refresh()
-extern "C" Q_DECL_EXPORT
-void C_ZNK4QDir7refreshEv(void *this_) {
-  ((QDir*)this_)->refresh();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qdir
 //  main block end
 
 //  use block begin

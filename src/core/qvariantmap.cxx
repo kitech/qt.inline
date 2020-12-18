@@ -168,13 +168,6 @@ QVariant* C_QVariantMap_operator_get_index_1(void* this_ , QString* key) {
     return new decltype(rv)(rv);
 }
 
-// [-3] QList<Key> uniqueKeys()
-extern "C" Q_DECL_EXPORT
-void C_QVariantMap_uniqueKeys_0(void* this_ ) {
-    // QVariantMap_uniqueKeys_0()
-    auto rv =  ((QVariantMap*)this_)->uniqueKeys();
-}
-
 // [-3] QList<Key> keys()
 extern "C" Q_DECL_EXPORT
 void C_QVariantMap_keys_0(void* this_ ) {
@@ -194,6 +187,13 @@ extern "C" Q_DECL_EXPORT
 void C_QVariantMap_values_0(void* this_ ) {
     // QVariantMap_values_0()
     auto rv =  ((QVariantMap*)this_)->values();
+}
+
+// [-3] QList<Key> uniqueKeys()
+extern "C" Q_DECL_EXPORT
+void C_QVariantMap_uniqueKeys_0(void* this_ ) {
+    // QVariantMap_uniqueKeys_0()
+    auto rv =  ((QVariantMap*)this_)->uniqueKeys();
 }
 
 // [-3] QList<T> values(const Key &)
@@ -359,6 +359,13 @@ QVariantMap::iterator* C_QVariantMap_insert_1(void* this_ , QVariantMap::const_i
     // QVariantMap_insert_1()
     auto rv =  ((QVariantMap*)this_)->insert(*pos, *key, *value);
     return new decltype(rv)(rv);
+}
+
+// [-2] void insert(const QMap<Key, T> &)
+extern "C" Q_DECL_EXPORT
+void C_QVariantMap_insert_2(void* this_ , QVariantMap* map) {
+    // QVariantMap_insert_2()
+     ((QVariantMap*)this_)->insert(*map);
 }
 
 // [-3] QMap::iterator insertMulti(const Key &, const T &)

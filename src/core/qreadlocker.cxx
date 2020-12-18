@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QReadLocker is pure virtual: false
+// QReadLocker is pure virtual: false false
 // QReadLocker has virtual projected: false
 //  header block end
 
@@ -52,45 +52,64 @@ public:
 MyQReadLocker(QReadWriteLock * readWriteLock) : QReadLocker(readWriteLock) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qreadlocker(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:87
-// [-2] void QReadLocker(QReadWriteLock *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QReadLockerC2EP14QReadWriteLock(QReadWriteLock * readWriteLock) {
-  return  new QReadLocker(readWriteLock);
+// [-2] void QReadLocker(QReadWriteLock *) 
+// (12)qm2809922547 (36)_ZN11QReadLockerC2EP14QReadWriteLock
+/*void* qm2809922547(QReadWriteLock * readWriteLock)*/{
+  QReadWriteLock * readWriteLock = *(QReadWriteLock **)this_;
+  this_ =  new QReadLocker(readWriteLock);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:89
-// [-2] void ~QReadLocker()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QReadLockerD2Ev(void *this_) {
+// [-2] void ~QReadLocker() 
+// (12)qm2061356139 (20)_ZN11QReadLockerD2Ev
+/*void qm2061356139 (void *this_)*/ {
   delete (QReadLocker*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:92
-// [-2] void unlock()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QReadLocker6unlockEv(void *this_) {
-  ((QReadLocker*)this_)->unlock();
+// [-2] void unlock() 
+// (12)qm2486913061 (25)_ZN11QReadLocker6unlockEv
+//static
+/*void qm2486913061()*/ {
+  ;
+  (void) ((QReadLocker*)this_)->unlock();
+   auto xptr = (void (QReadLocker::*)() ) &QReadLocker::unlock;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:102
-// [-2] void relock()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QReadLocker6relockEv(void *this_) {
-  ((QReadLocker*)this_)->relock();
+// [-2] void relock() 
+// (12)qm2633569734 (25)_ZN11QReadLocker6relockEv
+//static
+/*void qm2633569734()*/ {
+  ;
+  (void) ((QReadLocker*)this_)->relock();
+   auto xptr = (void (QReadLocker::*)() ) &QReadLocker::relock;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qreadwritelock.h:112
-// [8] QReadWriteLock * readWriteLock()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QReadLocker13readWriteLockEv(void *this_) {
-  return (void*)((QReadLocker*)this_)->readWriteLock();
+// [8] QReadWriteLock * readWriteLock() const
+// (12)qm3112616980 (34)_ZNK11QReadLocker13readWriteLockEv
+//static
+/*void qm3112616980()*/ {
+  ;
+  (void) ((QReadLocker*)this_)->readWriteLock();
+   auto xptr = (QReadWriteLock * (QReadLocker::*)() const ) &QReadLocker::readWriteLock;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+  return fnptrsumval;
+} // end ensure_inline_symbol_qreadlocker
 //  main block end
 
 //  use block begin

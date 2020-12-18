@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(thread)
-// since 0x050a00
 // /usr/include/qt/QtCore/qsemaphore.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QSemaphoreReleaser is pure virtual: false
+// QSemaphoreReleaser is pure virtual: false false
 // QSemaphoreReleaser has virtual projected: false
 //  header block end
 
@@ -60,61 +59,82 @@ MyQSemaphoreReleaser(QSemaphore & sem, int n) : QSemaphoreReleaser(sem, n) {}
 MyQSemaphoreReleaser(QSemaphore * sem, int n) : QSemaphoreReleaser(sem, n) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsemaphorereleaser(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:77
-// [-2] void QSemaphoreReleaser()
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QSemaphoreReleaserC2Ev() {
-  return  new QSemaphoreReleaser();
+// [-2] void QSemaphoreReleaser() 
+// (12)qm1271734568 (27)_ZN18QSemaphoreReleaserC2Ev
+/*void* qm1271734568()*/{
+  ;
+  this_ =  new QSemaphoreReleaser();
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:78
-// [-2] void QSemaphoreReleaser(QSemaphore &, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QSemaphoreReleaserC2ER10QSemaphorei(QSemaphore* sem, int n) {
-  return  new QSemaphoreReleaser(*sem, n);
+// [-2] void QSemaphoreReleaser(QSemaphore &, int) 
+// (12)qm1384645767 (40)_ZN18QSemaphoreReleaserC2ER10QSemaphorei
+/*void* qm1384645767(QSemaphore & sem, int n)*/{
+  QSemaphore & sem = *(QSemaphore *)this_; int n = *(int*)this_;
+  this_ =  new QSemaphoreReleaser(sem, n);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsemaphore.h:80
-// [-2] void QSemaphoreReleaser(QSemaphore *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QSemaphoreReleaserC2EP10QSemaphorei(QSemaphore * sem, int n) {
-  return  new QSemaphoreReleaser(sem, n);
+// [-2] void QSemaphoreReleaser(QSemaphore *, int) 
+// (12)qm3018244138 (40)_ZN18QSemaphoreReleaserC2EP10QSemaphorei
+/*void* qm3018244138(QSemaphore * sem, int n)*/{
+  QSemaphore * sem = *(QSemaphore **)this_; int n = *(int*)this_;
+  this_ =  new QSemaphoreReleaser(sem, n);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:88
-// [-2] void ~QSemaphoreReleaser()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QSemaphoreReleaserD2Ev(void *this_) {
+// /usr/include/qt/QtCore/qsemaphore.h:87
+// [-2] void ~QSemaphoreReleaser() 
+// (12)qm3592034705 (27)_ZN18QSemaphoreReleaserD2Ev
+/*void qm3592034705 (void *this_)*/ {
   delete (QSemaphoreReleaser*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:94
-// [-2] void swap(QSemaphoreReleaser &)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QSemaphoreReleaser4swapERS_(void *this_, QSemaphoreReleaser* other) {
-  ((QSemaphoreReleaser*)this_)->swap(*other);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsemaphore.h:93
+// [-2] void swap(QSemaphoreReleaser &) 
+// (12)qm2774520453 (32)_ZN18QSemaphoreReleaser4swapERS_
+//static
+/*void qm2774520453(QSemaphoreReleaser & other)*/ {
+  QSemaphoreReleaser & other = *(QSemaphoreReleaser *)this_;
+  (void) ((QSemaphoreReleaser*)this_)->swap(other);
+   auto xptr = (void (QSemaphoreReleaser::*)(QSemaphoreReleaser&) ) &QSemaphoreReleaser::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:100
-// [8] QSemaphore * semaphore()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QSemaphoreReleaser9semaphoreEv(void *this_) {
-  return (void*)((QSemaphoreReleaser*)this_)->semaphore();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsemaphore.h:99
+// [8] QSemaphore * semaphore() const
+// (11)qm680053059 (36)_ZNK18QSemaphoreReleaser9semaphoreEv
+//static
+/*void qm680053059()*/ {
+  ;
+  (void) ((QSemaphoreReleaser*)this_)->semaphore();
+   auto xptr = (QSemaphore * (QSemaphoreReleaser::*)() const ) &QSemaphoreReleaser::semaphore;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsemaphore.h:103
-// [8] QSemaphore * cancel()
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QSemaphoreReleaser6cancelEv(void *this_) {
-  return (void*)((QSemaphoreReleaser*)this_)->cancel();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsemaphore.h:102
+// [8] QSemaphore * cancel() 
+// (12)qm4125587268 (32)_ZN18QSemaphoreReleaser6cancelEv
+//static
+/*void qm4125587268()*/ {
+  ;
+  (void) ((QSemaphoreReleaser*)this_)->cancel();
+   auto xptr = (QSemaphore * (QSemaphoreReleaser::*)() ) &QSemaphoreReleaser::cancel;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsemaphorereleaser
 //  main block end
 
 //  use block begin

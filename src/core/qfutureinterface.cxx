@@ -12,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QFutureInterface is pure virtual: false
+// QFutureInterface is pure virtual: false false
 // QFutureInterface has virtual projected: false
 //  header block end
 
@@ -55,61 +55,85 @@ public:
 MyQFutureInterface(QFutureInterfaceBase::State initialState) : QFutureInterface<void>(initialState) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qfutureinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:281
-// [-2] void QFutureInterface(QFutureInterfaceBase::State)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QFutureInterfaceIvEC2EN20QFutureInterfaceBase5StateE(QFutureInterfaceBase::State initialState) {
-  return  new QFutureInterface<void>(initialState);
+// /usr/include/qt/QtCore/qfutureinterface.h:284
+// [-2] void QFutureInterface(QFutureInterfaceBase::State) 
+// (11)qm399392165 (57)_ZN16QFutureInterfaceIvEC2EN20QFutureInterfaceBase5StateE
+/*void* qm399392165(QFutureInterfaceBase::State initialState)*/{
+  QFutureInterfaceBase::State initialState = *(QFutureInterfaceBase::State*)this_;
+  this_ =  new QFutureInterface<void>(initialState);
 }
 
 // Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:285
-// [16] QFutureInterface<void> canceledResult()
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QFutureInterfaceIvE14canceledResultEv() {
-  auto rv = QFutureInterface<void>::canceledResult();
-return new QFutureInterface<void>(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:289
-// [16] QFuture<void> future()
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QFutureInterfaceIvE6futureEv(void *this_) {
-  auto rv = ((QFutureInterface<void>*)this_)->future();
-return new QFuture<void>(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:291
-// [-2] void reportResult(const void *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QFutureInterfaceIvE12reportResultEPKvi(void *this_, const void * arg0, int arg1) {
-  ((QFutureInterface<void>*)this_)->reportResult(arg0, arg1);
+// /usr/include/qt/QtCore/qfutureinterface.h:288
+// [16] QFutureInterface<void> canceledResult() 
+// (12)qm2410503837 (42)_ZN16QFutureInterfaceIvE14canceledResultEv
+//static
+/*void qm2410503837()*/ {
+  ;
+  (void) QFutureInterface<void>::canceledResult();
+   auto xptr = (QFutureInterface<void> (*)() ) &QFutureInterface<void>::canceledResult;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:292
-// [-2] void reportResults(const QVector<void> &, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QFutureInterfaceIvE13reportResultsERK7QVectorIvEi(void *this_, QVector<void>* arg0, int arg1) {
-  ((QFutureInterface<void>*)this_)->reportResults(*arg0, arg1);
+// [16] QFuture<void> future() 
+// (12)qm1537791808 (33)_ZN16QFutureInterfaceIvE6futureEv
+//static
+/*void qm1537791808()*/ {
+  ;
+  (void) ((QFutureInterface<void>*)this_)->future();
+   auto xptr = (QFuture<void> (QFutureInterface<void>::*)() ) &QFutureInterface<void>::future;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:293
-// [-2] void reportFinished(const void *)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QFutureInterfaceIvE14reportFinishedEPKv(void *this_, const void * arg0) {
-  ((QFutureInterface<void>*)this_)->reportFinished(arg0);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfutureinterface.h:294
+// [-2] void reportResult(const void *, int) 
+// (12)qm3591638659 (43)_ZN16QFutureInterfaceIvE12reportResultEPKvi
+//static
+/*void qm3591638659(const void * arg0, int arg1)*/ {
+  const void * arg0 = *(const void **)this_; int arg1 = *(int*)this_;
+  (void) ((QFutureInterface<void>*)this_)->reportResult(arg0, arg1);
+   auto xptr = (void (QFutureInterface<void>::*)(void const*, int) ) &QFutureInterface<void>::reportResult;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfutureinterface.h:295
+// [-2] void reportResults(const QVector<void> &, int) 
+// (12)qm1774100742 (54)_ZN16QFutureInterfaceIvE13reportResultsERK7QVectorIvEi
+//static
+/*void qm1774100742(const QVector<void> & arg0, int arg1)*/ {
+  const QVector<void> & arg0 = *(const QVector<void> *)this_; int arg1 = *(int*)this_;
+  (void) ((QFutureInterface<void>*)this_)->reportResults(arg0, arg1);
+   auto xptr = (void (QFutureInterface<void>::*)(QVector<void> const&, int) ) &QFutureInterface<void>::reportResults;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfutureinterface.h:296
+// [-2] void reportFinished(const void *) 
+// (11)qm842714230 (44)_ZN16QFutureInterfaceIvE14reportFinishedEPKv
+//static
+/*void qm842714230(const void * arg0)*/ {
+  const void * arg0 = *(const void **)this_;
+  (void) ((QFutureInterface<void>*)this_)->reportFinished(arg0);
+   auto xptr = (void (QFutureInterface<void>::*)(void const*) ) &QFutureInterface<void>::reportFinished;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN16QFutureInterfaceD2Ev(void *this_) {
+/*void C_ZN16QFutureInterfaceD2Ev(void *this_)*/ {
   delete (QFutureInterface<void>*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qfutureinterface
 //  main block end
 
 //  use block begin

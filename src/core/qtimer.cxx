@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QTimer is pure virtual: false
+// QTimer is pure virtual: false false
 // QTimer has virtual projected: true
 //  header block end
 
@@ -95,7 +95,7 @@ public:
   virtual ~MyQTimer() {}
 // void QTimer(QObject *)
 MyQTimer(QObject * parent) : QTimer(parent) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void timerEvent(QTimerEvent *)
   virtual void timerEvent(QTimerEvent * arg0)  override {
     int handled = 0;
@@ -121,255 +121,184 @@ void* C_QTimer_init_staticMetaObject(void* this_, void* strdat, void* dat, void*
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:213
-// [-2] void timerEvent(QTimerEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer10timerEventEP11QTimerEvent(void *this_, QTimerEvent * arg0) {
-  ((QTimer*)this_)->QTimer::timerEvent(arg0);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtimer(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:59
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK6QTimer10metaObjectEv(void *this_) {
-  return (void*)((QTimer*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3435408827 (21)_ZN6QTimer2trEPKcS1_i
+//static
+/*void qm3435408827(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QTimer::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QTimer::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:59
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QTimer11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QTimer*)this_)->qt_metacast(arg0);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:59
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN6QTimer11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QTimer*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:59
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QTimer2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QTimer::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:59
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QTimer6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QTimer::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:66
-// [-2] void QTimer(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QTimerC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQTimer*)(0);
-  return  new MyQTimer(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:67
-// [-2] void ~QTimer()
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimerD2Ev(void *this_) {
-  delete (QTimer*)(this_);
-}
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:69
-// [1] bool isActive()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK6QTimer8isActiveEv(void *this_) {
-  return (bool)((QTimer*)this_)->isActive();
+// [1] bool isActive() const
+// (12)qm3287094984 (22)_ZNK6QTimer8isActiveEv
+//static
+/*void qm3287094984()*/ {
+  ;
+  (void) ((QTimer*)this_)->isActive();
+   auto xptr = (bool (QTimer::*)() const ) &QTimer::isActive;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:70
-// [4] int timerId()
-extern "C" Q_DECL_EXPORT
-int C_ZNK6QTimer7timerIdEv(void *this_) {
-  return (int)((QTimer*)this_)->timerId();
+// [4] int timerId() const
+// (12)qm1808601636 (21)_ZNK6QTimer7timerIdEv
+//static
+/*void qm1808601636()*/ {
+  ;
+  (void) ((QTimer*)this_)->timerId();
+   auto xptr = (int (QTimer::*)() const ) &QTimer::timerId;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:72
-// [-2] void setInterval(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer11setIntervalEi(void *this_, int msec) {
-  ((QTimer*)this_)->setInterval(msec);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:73
-// [4] int interval()
-extern "C" Q_DECL_EXPORT
-int C_ZNK6QTimer8intervalEv(void *this_) {
-  return (int)((QTimer*)this_)->interval();
+// [4] int interval() const
+// (12)qm3328797738 (22)_ZNK6QTimer8intervalEv
+//static
+/*void qm3328797738()*/ {
+  ;
+  (void) ((QTimer*)this_)->interval();
+   auto xptr = (int (QTimer::*)() const ) &QTimer::interval;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:75
-// [4] int remainingTime()
-extern "C" Q_DECL_EXPORT
-int C_ZNK6QTimer13remainingTimeEv(void *this_) {
-  return (int)((QTimer*)this_)->remainingTime();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:77
-// [-2] void setTimerType(Qt::TimerType)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer12setTimerTypeEN2Qt9TimerTypeE(void *this_, Qt::TimerType atype) {
-  ((QTimer*)this_)->setTimerType(atype);
+// [-2] void setTimerType(Qt::TimerType) 
+// (12)qm3962326318 (40)_ZN6QTimer12setTimerTypeEN2Qt9TimerTypeE
+//static
+/*void qm3962326318(Qt::TimerType atype)*/ {
+  Qt::TimerType atype = *(Qt::TimerType*)this_;
+  (void) ((QTimer*)this_)->setTimerType(atype);
+   auto xptr = (void (QTimer::*)(Qt::TimerType) ) &QTimer::setTimerType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:78
-// [4] Qt::TimerType timerType()
-extern "C" Q_DECL_EXPORT
-Qt::TimerType C_ZNK6QTimer9timerTypeEv(void *this_) {
-  return (Qt::TimerType)((QTimer*)this_)->timerType();
+// [4] Qt::TimerType timerType() const
+// (12)qm1618739783 (23)_ZNK6QTimer9timerTypeEv
+//static
+/*void qm1618739783()*/ {
+  ;
+  (void) ((QTimer*)this_)->timerType();
+   auto xptr = (Qt::TimerType (QTimer::*)() const ) &QTimer::timerType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:80
-// [-2] void setSingleShot(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer13setSingleShotEb(void *this_, bool singleShot) {
-  ((QTimer*)this_)->setSingleShot(singleShot);
+// [-2] void setSingleShot(bool) 
+// (12)qm2601156269 (27)_ZN6QTimer13setSingleShotEb
+//static
+/*void qm2601156269(bool singleShot)*/ {
+  bool singleShot = *(bool*)this_;
+  (void) ((QTimer*)this_)->setSingleShot(singleShot);
+   auto xptr = (void (QTimer::*)(bool) ) &QTimer::setSingleShot;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:81
-// [1] bool isSingleShot()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK6QTimer12isSingleShotEv(void *this_) {
-  return (bool)((QTimer*)this_)->isSingleShot();
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:83
-// [-2] void singleShot(int, const QObject *, const char *)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer10singleShotEiPK7QObjectPKc(int msec, const QObject * receiver, const char * member) {
-  QTimer::singleShot(msec, receiver, member);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:84
-// [-2] void singleShot(int, Qt::TimerType, const QObject *, const char *)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer10singleShotEiN2Qt9TimerTypeEPK7QObjectPKc(int msec, Qt::TimerType timerType, const QObject * receiver, const char * member) {
-  QTimer::singleShot(msec, timerType, receiver, member);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:171
-// [-2] void start(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer5startEi(void *this_, int msec) {
-  ((QTimer*)this_)->start(msec);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:173
-// [-2] void start()
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer5startEv(void *this_) {
-  ((QTimer*)this_)->start();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:174
-// [-2] void stop()
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer4stopEv(void *this_) {
-  ((QTimer*)this_)->stop();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qtimer.h:177
-// [-2] void timeout(QTimer::QPrivateSignal)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer7timeoutENS_14QPrivateSignalE(void *this_, QTimer::QPrivateSignal* arg0) {
-  ((QTimer*)this_)->timeout(*arg0);
+// [1] bool isSingleShot() const
+// (12)qm2001099030 (27)_ZNK6QTimer12isSingleShotEv
+//static
+/*void qm2001099030()*/ {
+  ;
+  (void) ((QTimer*)this_)->isSingleShot();
+   auto xptr = (bool (QTimer::*)() const ) &QTimer::isSingleShot;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:181
-// [-2] void setInterval(std::chrono::milliseconds)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer11setIntervalENSt6chrono8durationIlSt5ratioILl1ELl1000EEEE(void *this_, std::chrono::milliseconds value) {
-  ((QTimer*)this_)->setInterval(value);
+// [-2] void setInterval(std::chrono::milliseconds) 
+// (12)qm2613152838 (68)_ZN6QTimer11setIntervalENSt6chrono8durationIlSt5ratioILl1ELl1000EEEE
+//static
+/*void qm2613152838(std::chrono::duration<long, std::ratio<1, 1000>> value)*/ {
+  std::chrono::duration<long, std::ratio<1, 1000>> value = *(std::chrono::duration<long, std::ratio<1, 1000>>*)this_;
+  (void) ((QTimer*)this_)->setInterval(value);
+   auto xptr = (void (QTimer::*)(std::chrono::duration<long, std::ratio<1l, 1000l> >) ) &QTimer::setInterval;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
-// since 5.8
 // /usr/include/qt/QtCore/qtimer.h:186
-// [8] std::chrono::milliseconds intervalAsDuration()
-#if QT_VERSION >= 0x050800
-extern "C" Q_DECL_EXPORT
-std::chrono::milliseconds C_ZNK6QTimer18intervalAsDurationEv(void *this_) {
-  return (std::chrono::milliseconds)((QTimer*)this_)->intervalAsDuration();
+// [8] std::chrono::milliseconds intervalAsDuration() const
+// (11)qm266677923 (33)_ZNK6QTimer18intervalAsDurationEv
+//static
+/*void qm266677923()*/ {
+  ;
+  (void) ((QTimer*)this_)->intervalAsDuration();
+   auto xptr = (std::chrono::duration<long, std::ratio<1, 1000>> (QTimer::*)() const ) &QTimer::intervalAsDuration;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public inline Visibility=Default Availability=Available
-// since 5.8
 // /usr/include/qt/QtCore/qtimer.h:191
-// [8] std::chrono::milliseconds remainingTimeAsDuration()
-#if QT_VERSION >= 0x050800
-extern "C" Q_DECL_EXPORT
-std::chrono::milliseconds C_ZNK6QTimer23remainingTimeAsDurationEv(void *this_) {
-  return (std::chrono::milliseconds)((QTimer*)this_)->remainingTimeAsDuration();
+// [8] std::chrono::milliseconds remainingTimeAsDuration() const
+// (10)qm27407793 (38)_ZNK6QTimer23remainingTimeAsDurationEv
+//static
+/*void qm27407793()*/ {
+  ;
+  (void) ((QTimer*)this_)->remainingTimeAsDuration();
+   auto xptr = (std::chrono::duration<long, std::ratio<1, 1000>> (QTimer::*)() const ) &QTimer::remainingTimeAsDuration;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public static inline Visibility=Default Availability=Available
-// since 5.8
 // /usr/include/qt/QtCore/qtimer.h:196
-// [-2] void singleShot(std::chrono::milliseconds, const QObject *, const char *)
-#if QT_VERSION >= 0x050800
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer10singleShotENSt6chrono8durationIlSt5ratioILl1ELl1000EEEEPK7QObjectPKc(std::chrono::milliseconds value, const QObject * receiver, const char * member) {
-  QTimer::singleShot(value, receiver, member);
+// [-2] void singleShot(std::chrono::milliseconds, const QObject *, const char *) 
+// (12)qm2113894416 (80)_ZN6QTimer10singleShotENSt6chrono8durationIlSt5ratioILl1ELl1000EEEEPK7QObjectPKc
+//static
+/*void qm2113894416(std::chrono::duration<long, std::ratio<1, 1000>> value, const QObject * receiver, const char * member)*/ {
+  std::chrono::duration<long, std::ratio<1, 1000>> value = *(std::chrono::duration<long, std::ratio<1, 1000>>*)this_; const QObject * receiver = *(const QObject **)this_; const char * member = *(const char **)this_;
+  (void) QTimer::singleShot(value, receiver, member);
+   auto xptr = (void (*)(std::chrono::duration<long, std::ratio<1l, 1000l> >, QObject const*, char const*) ) &QTimer::singleShot;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public static inline Visibility=Default Availability=Available
-// since 5.8
 // /usr/include/qt/QtCore/qtimer.h:201
-// [-2] void singleShot(std::chrono::milliseconds, Qt::TimerType, const QObject *, const char *)
-#if QT_VERSION >= 0x050800
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer10singleShotENSt6chrono8durationIlSt5ratioILl1ELl1000EEEEN2Qt9TimerTypeEPK7QObjectPKc(std::chrono::milliseconds value, Qt::TimerType timerType, const QObject * receiver, const char * member) {
-  QTimer::singleShot(value, timerType, receiver, member);
+// [-2] void singleShot(std::chrono::milliseconds, Qt::TimerType, const QObject *, const char *) 
+// (12)qm2747542502 (95)_ZN6QTimer10singleShotENSt6chrono8durationIlSt5ratioILl1ELl1000EEEEN2Qt9TimerTypeEPK7QObjectPKc
+//static
+/*void qm2747542502(std::chrono::duration<long, std::ratio<1, 1000>> value, Qt::TimerType timerType, const QObject * receiver, const char * member)*/ {
+  std::chrono::duration<long, std::ratio<1, 1000>> value = *(std::chrono::duration<long, std::ratio<1, 1000>>*)this_; Qt::TimerType timerType = *(Qt::TimerType*)this_; const QObject * receiver = *(const QObject **)this_; const char * member = *(const char **)this_;
+  (void) QTimer::singleShot(value, timerType, receiver, member);
+   auto xptr = (void (*)(std::chrono::duration<long, std::ratio<1l, 1000l> >, Qt::TimerType, QObject const*, char const*) ) &QTimer::singleShot;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050800
 
 // Public inline Visibility=Default Availability=Available
-// since 5.8
 // /usr/include/qt/QtCore/qtimer.h:206
-// [-2] void start(std::chrono::milliseconds)
-#if QT_VERSION >= 0x050800
-extern "C" Q_DECL_EXPORT
-void C_ZN6QTimer5startENSt6chrono8durationIlSt5ratioILl1ELl1000EEEE(void *this_, std::chrono::milliseconds value) {
-  ((QTimer*)this_)->start(value);
+// [-2] void start(std::chrono::milliseconds) 
+// (12)qm2015982606 (61)_ZN6QTimer5startENSt6chrono8durationIlSt5ratioILl1ELl1000EEEE
+//static
+/*void qm2015982606(std::chrono::duration<long, std::ratio<1, 1000>> value)*/ {
+  std::chrono::duration<long, std::ratio<1, 1000>> value = *(std::chrono::duration<long, std::ratio<1, 1000>>*)this_;
+  (void) ((QTimer*)this_)->start(value);
+   auto xptr = (void (QTimer::*)(std::chrono::duration<long, std::ratio<1l, 1000l> >) ) &QTimer::start;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050800
 
+
+/*void C_ZN6QTimerD2Ev(void *this_)*/ {
+  delete (QTimer*)(this_);
+}
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtimer
 //  main block end
 
 //  use block begin

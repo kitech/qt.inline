@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(mimetype)
-// since 0x050000
 // /usr/include/qt/QtCore/qmimetype.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QMimeType is pure virtual: false
+// QMimeType is pure virtual: false false
 // QMimeType has virtual projected: false
 //  header block end
 
@@ -60,202 +59,52 @@ MyQMimeType(const QMimeType & other) : QMimeType(other) {}
 MyQMimeType(const QMimeTypePrivate & dd) : QMimeType(dd) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:78
-// [-2] void QMimeType()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMimeTypeC2Ev() {
-  return  new QMimeType();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmimetype(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:81
+// [8] QMimeType & operator=(QMimeType &&) 
+// (11)qm909795579 (19)_ZN9QMimeTypeaSEOS_
+//static
+/*void qm909795579(QMimeType && other)*/ {
+  QMimeType && other =  static_cast<QMimeType &&>(*(QMimeType *)this_);
+  (void) ((QMimeType*)this_)->operator=(other);
+  // auto xptr = (QMimeType & (QMimeType::*)(QMimeType&&) ) &QMimeType::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:79
-// [-2] void QMimeType(const QMimeType &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMimeTypeC2ERKS_(QMimeType* other) {
-  return  new QMimeType(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:80
-// [8] QMimeType & operator=(const QMimeType &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMimeTypeaSERKS_(void *this_, QMimeType* other) {
-  auto& rv = ((QMimeType*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:82
-// [8] QMimeType & operator=(QMimeType &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMimeTypeaSEOS_(void *this_, QMimeType && other) {
-  auto& rv = ((QMimeType*)this_)->operator=(other);
-return &rv;
+// [-2] void swap(QMimeType &) 
+// (12)qm2591497041 (22)_ZN9QMimeType4swapERS_
+//static
+/*void qm2591497041(QMimeType & other)*/ {
+  QMimeType & other = *(QMimeType *)this_;
+  (void) ((QMimeType*)this_)->swap(other);
+   auto xptr = (void (QMimeType::*)(QMimeType&) ) &QMimeType::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:84
-// [-2] void swap(QMimeType &)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QMimeType4swapERS_(void *this_, QMimeType* other) {
-  ((QMimeType*)this_)->swap(*other);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:91
+// [1] bool operator!=(const QMimeType &) const
+// (12)qm3012304358 (21)_ZNK9QMimeTypeneERKS_
+//static
+/*void qm3012304358(const QMimeType & other)*/ {
+  const QMimeType & other = *(const QMimeType *)this_;
+  (void) ((QMimeType*)this_)->operator!=(other);
+  // auto xptr = (bool (QMimeType::*)(QMimeType const&) const ) &QMimeType::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:88
-// [-2] void QMimeType(const QMimeTypePrivate &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMimeTypeC2ERK16QMimeTypePrivate(QMimeTypePrivate* dd) {
-  return  new QMimeType(*dd);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:89
-// [-2] void ~QMimeType()
-extern "C" Q_DECL_EXPORT
-void C_ZN9QMimeTypeD2Ev(void *this_) {
+/*void C_ZN9QMimeTypeD2Ev(void *this_)*/ {
   delete (QMimeType*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:91
-// [1] bool operator==(const QMimeType &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QMimeTypeeqERKS_(void *this_, QMimeType* other) {
-  return (bool)((QMimeType*)this_)->operator==(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:93
-// [1] bool operator!=(const QMimeType &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QMimeTypeneERKS_(void *this_, QMimeType* other) {
-  return (bool)((QMimeType*)this_)->operator!=(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:98
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QMimeType7isValidEv(void *this_) {
-  return (bool)((QMimeType*)this_)->isValid();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:100
-// [1] bool isDefault()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QMimeType9isDefaultEv(void *this_) {
-  return (bool)((QMimeType*)this_)->isDefault();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:102
-// [8] QString name()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType4nameEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->name();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:103
-// [8] QString comment()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType7commentEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->comment();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:104
-// [8] QString genericIconName()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType15genericIconNameEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->genericIconName();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:105
-// [8] QString iconName()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType8iconNameEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->iconName();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:106
-// [8] QStringList globPatterns()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType12globPatternsEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->globPatterns();
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:107
-// [8] QStringList parentMimeTypes()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType15parentMimeTypesEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->parentMimeTypes();
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:108
-// [8] QStringList allAncestors()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType12allAncestorsEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->allAncestors();
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:109
-// [8] QStringList aliases()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType7aliasesEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->aliases();
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:110
-// [8] QStringList suffixes()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType8suffixesEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->suffixes();
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:111
-// [8] QString preferredSuffix()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType15preferredSuffixEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->preferredSuffix();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:113
-// [1] bool inherits(const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QMimeType8inheritsERK7QString(void *this_, QString* mimeTypeName) {
-  return (bool)((QMimeType*)this_)->inherits(*mimeTypeName);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmimetype.h:115
-// [8] QString filterString()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMimeType12filterStringEv(void *this_) {
-  auto rv = ((QMimeType*)this_)->filterString();
-return new QString(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmimetype
 //  main block end
 
 //  use block begin

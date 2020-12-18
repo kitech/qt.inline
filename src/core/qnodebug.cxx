@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QNoDebug is pure virtual: false
+// QNoDebug is pure virtual: false false
 // QNoDebug has virtual projected: false
 //  header block end
 
@@ -50,83 +50,124 @@ public:
   virtual ~MyQNoDebug() {}
 };
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:190
-// [1] QNoDebug & operator<<(QTextStreamFunction)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QNoDebuglsEPFR11QTextStreamS1_E(void *this_, QTextStreamFunction arg0) {
-  auto& rv = ((QNoDebug*)this_)->operator<<(arg0);
-return &rv;
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qnodebug(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:191
-// [1] QNoDebug & operator<<(QTextStreamManipulator)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QNoDebuglsE22QTextStreamManipulator(void *this_, QTextStreamManipulator* arg0) {
-  auto& rv = ((QNoDebug*)this_)->operator<<(*arg0);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:192
-// [1] QNoDebug & space()
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QNoDebug5spaceEv(void *this_) {
-  auto& rv = ((QNoDebug*)this_)->space();
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdebug.h:193
-// [1] QNoDebug & nospace()
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QNoDebug7nospaceEv(void *this_) {
-  auto& rv = ((QNoDebug*)this_)->nospace();
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdebug.h:194
-// [1] QNoDebug & maybeSpace()
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QNoDebug10maybeSpaceEv(void *this_) {
-  auto& rv = ((QNoDebug*)this_)->maybeSpace();
-return &rv;
+// [1] QNoDebug & operator<<(QTextStreamFunction) 
+// (12)qm3648916213 (35)_ZN8QNoDebuglsEPFR11QTextStreamS1_E
+//static
+/*void qm3648916213(QTextStreamFunction arg0)*/ {
+  QTextStreamFunction arg0 = *(QTextStreamFunction*)this_;
+  (void) ((QNoDebug*)this_)->operator<<(arg0);
+  // auto xptr = (QNoDebug & (QNoDebug::*)(QTextStream& (*)(QTextStream&)) ) &QNoDebug::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdebug.h:195
-// [1] QNoDebug & quote()
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QNoDebug5quoteEv(void *this_) {
-  auto& rv = ((QNoDebug*)this_)->quote();
-return &rv;
+// [1] QNoDebug & operator<<(QTextStreamManipulator) 
+// (12)qm3073361236 (39)_ZN8QNoDebuglsE22QTextStreamManipulator
+//static
+/*void qm3073361236(QTextStreamManipulator arg0)*/ {
+  QTextStreamManipulator arg0 = *(QTextStreamManipulator*)this_;
+  (void) ((QNoDebug*)this_)->operator<<(arg0);
+  // auto xptr = (QNoDebug & (QNoDebug::*)(QTextStreamManipulator) ) &QNoDebug::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdebug.h:196
-// [1] QNoDebug & noquote()
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QNoDebug7noquoteEv(void *this_) {
-  auto& rv = ((QNoDebug*)this_)->noquote();
-return &rv;
+// [1] QNoDebug & space() 
+// (12)qm1673280650 (20)_ZN8QNoDebug5spaceEv
+//static
+/*void qm1673280650()*/ {
+  ;
+  (void) ((QNoDebug*)this_)->space();
+   auto xptr = (QNoDebug & (QNoDebug::*)() ) &QNoDebug::space;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdebug.h:197
-// [1] QNoDebug & maybeQuote(const char)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QNoDebug10maybeQuoteEc(void *this_, const char arg0) {
-  auto& rv = ((QNoDebug*)this_)->maybeQuote(arg0);
-return &rv;
+// [1] QNoDebug & nospace() 
+// (12)qm2095706633 (22)_ZN8QNoDebug7nospaceEv
+//static
+/*void qm2095706633()*/ {
+  ;
+  (void) ((QNoDebug*)this_)->nospace();
+   auto xptr = (QNoDebug & (QNoDebug::*)() ) &QNoDebug::nospace;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdebug.h:198
+// [1] QNoDebug & maybeSpace() 
+// (11)qm819510395 (26)_ZN8QNoDebug10maybeSpaceEv
+//static
+/*void qm819510395()*/ {
+  ;
+  (void) ((QNoDebug*)this_)->maybeSpace();
+   auto xptr = (QNoDebug & (QNoDebug::*)() ) &QNoDebug::maybeSpace;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdebug.h:199
+// [1] QNoDebug & quote() 
+// (12)qm3591400791 (20)_ZN8QNoDebug5quoteEv
+//static
+/*void qm3591400791()*/ {
+  ;
+  (void) ((QNoDebug*)this_)->quote();
+   auto xptr = (QNoDebug & (QNoDebug::*)() ) &QNoDebug::quote;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdebug.h:200
+// [1] QNoDebug & noquote() 
+// (12)qm3376784340 (22)_ZN8QNoDebug7noquoteEv
+//static
+/*void qm3376784340()*/ {
+  ;
+  (void) ((QNoDebug*)this_)->noquote();
+   auto xptr = (QNoDebug & (QNoDebug::*)() ) &QNoDebug::noquote;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdebug.h:201
+// [1] QNoDebug & maybeQuote(const char) 
+// (12)qm3903392077 (26)_ZN8QNoDebug10maybeQuoteEc
+//static
+/*void qm3903392077(const char arg0)*/ {
+  const char arg0 = *(const char*)this_;
+  (void) ((QNoDebug*)this_)->maybeQuote(arg0);
+   auto xptr = (QNoDebug & (QNoDebug::*)(char) ) &QNoDebug::maybeQuote;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdebug.h:202
+// [1] QNoDebug & verbosity(int) 
+// (12)qm1826172065 (24)_ZN8QNoDebug9verbosityEi
+//static
+/*void qm1826172065(int arg0)*/ {
+  int arg0 = *(int*)this_;
+  (void) ((QNoDebug*)this_)->verbosity(arg0);
+   auto xptr = (QNoDebug & (QNoDebug::*)(int) ) &QNoDebug::verbosity;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN8QNoDebugD2Ev(void *this_) {
+/*void C_ZN8QNoDebugD2Ev(void *this_)*/ {
   delete (QNoDebug*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qnodebug
 //  main block end
 
 //  use block begin

@@ -198,13 +198,6 @@ QVariant* C_QVariantHash_operator_get_index_1(void* this_ , QString* key) {
     return new decltype(rv)(rv);
 }
 
-// [-3] QList<Key> uniqueKeys()
-extern "C" Q_DECL_EXPORT
-void C_QVariantHash_uniqueKeys_0(void* this_ ) {
-    // QVariantHash_uniqueKeys_0()
-    auto rv =  ((QVariantHash*)this_)->uniqueKeys();
-}
-
 // [-3] QList<Key> keys()
 extern "C" Q_DECL_EXPORT
 void C_QVariantHash_keys_0(void* this_ ) {
@@ -224,6 +217,13 @@ extern "C" Q_DECL_EXPORT
 void C_QVariantHash_values_0(void* this_ ) {
     // QVariantHash_values_0()
     auto rv =  ((QVariantHash*)this_)->values();
+}
+
+// [-3] QList<Key> uniqueKeys()
+extern "C" Q_DECL_EXPORT
+void C_QVariantHash_uniqueKeys_0(void* this_ ) {
+    // QVariantHash_uniqueKeys_0()
+    auto rv =  ((QVariantHash*)this_)->uniqueKeys();
 }
 
 // [-3] QList<T> values(const Key &)
@@ -334,6 +334,13 @@ QVariantHash::iterator* C_QVariantHash_insert_0(void* this_ , QString* key, QStr
     // QVariantHash_insert_0()
     auto rv =  ((QVariantHash*)this_)->insert(*key, *value);
     return new decltype(rv)(rv);
+}
+
+// [-2] void insert(const QHash<K, V> &)
+extern "C" Q_DECL_EXPORT
+void C_QVariantHash_insert_1(void* this_ , QVariantHash* hash) {
+    // QVariantHash_insert_1()
+     ((QVariantHash*)this_)->insert(*hash);
 }
 
 // [-3] QHash::iterator insertMulti(const Key &, const T &)

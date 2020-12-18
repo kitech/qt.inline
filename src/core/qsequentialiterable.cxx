@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050200
 // /usr/include/qt/QtCore/qvariant.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QSequentialIterable is pure virtual: false
+// QSequentialIterable is pure virtual: false false
 // QSequentialIterable has virtual projected: false
 //  header block end
 
@@ -53,62 +52,16 @@ public:
 MyQSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl impl) : QSequentialIterable(impl) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:642
-// [-2] void QSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QSequentialIterableC2EN17QtMetaTypePrivate23QSequentialIterableImplE(QtMetaTypePrivate::QSequentialIterableImpl impl) {
-  return  new QSequentialIterable(impl);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:647
-// [112] QSequentialIterable::const_iterator begin()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QSequentialIterable5beginEv(void *this_) {
-  auto rv = ((QSequentialIterable*)this_)->begin();
-return new QSequentialIterable::const_iterator(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:648
-// [112] QSequentialIterable::const_iterator end()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QSequentialIterable3endEv(void *this_) {
-  auto rv = ((QSequentialIterable*)this_)->end();
-return new QSequentialIterable::const_iterator(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:650
-// [16] QVariant at(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QSequentialIterable2atEi(void *this_, int idx) {
-  auto rv = ((QSequentialIterable*)this_)->at(idx);
-return new QVariant(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:651
-// [4] int size()
-extern "C" Q_DECL_EXPORT
-int C_ZNK19QSequentialIterable4sizeEv(void *this_) {
-  return (int)((QSequentialIterable*)this_)->size();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qvariant.h:653
-// [1] bool canReverseIterate()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QSequentialIterable17canReverseIterateEv(void *this_) {
-  return (bool)((QSequentialIterable*)this_)->canReverseIterate();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsequentialiterable(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN19QSequentialIterableD2Ev(void *this_) {
+/*void C_ZN19QSequentialIterableD2Ev(void *this_)*/ {
   delete (QSequentialIterable*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsequentialiterable
 //  main block end
 
 //  use block begin

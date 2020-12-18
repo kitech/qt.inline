@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QSizeF is pure virtual: false
+// QSizeF is pure virtual: false false
 // QSizeF has virtual projected: false
 //  header block end
 
@@ -56,232 +56,307 @@ MyQSizeF(const QSize & sz) : QSizeF(sz) {}
 MyQSizeF(qreal w, qreal h) : QSizeF(w, h) {}
 };
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsize.h:218
-// [-2] void QSizeF()
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QSizeFC2Ev() {
-  return  new QSizeF();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsize.h:219
-// [-2] void QSizeF(const QSize &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QSizeFC2ERK5QSize(QSize* sz) {
-  return  new QSizeF(*sz);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsize.h:220
-// [-2] void QSizeF(qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QSizeFC2Edd(qreal w, qreal h) {
-  return  new QSizeF(w, h);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsize.h:222
-// [1] bool isNull()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK6QSizeF6isNullEv(void *this_) {
-  return (bool)((QSizeF*)this_)->isNull();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsize.h:223
-// [1] bool isEmpty()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK6QSizeF7isEmptyEv(void *this_) {
-  return (bool)((QSizeF*)this_)->isEmpty();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsizef(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:224
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK6QSizeF7isValidEv(void *this_) {
-  return (bool)((QSizeF*)this_)->isValid();
+// [-2] void QSizeF() 
+// (10)qm90541086 (14)_ZN6QSizeFC2Ev
+/*void* qm90541086()*/{
+  ;
+  this_ =  new QSizeF();
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:225
+// [-2] void QSizeF(const QSize &) 
+// (12)qm3115420995 (21)_ZN6QSizeFC2ERK5QSize
+/*void* qm3115420995(const QSize & sz)*/{
+  const QSize & sz = *(const QSize *)this_;
+  this_ =  new QSizeF(sz);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:226
-// [8] qreal width()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK6QSizeF5widthEv(void *this_) {
-  return (qreal)((QSizeF*)this_)->width();
+// [-2] void QSizeF(qreal, qreal) 
+// (11)qm438526704 (15)_ZN6QSizeFC2Edd
+/*void* qm438526704(double w, double h)*/{
+  double w = *(double*)this_; double h = *(double*)this_;
+  this_ =  new QSizeF(w, h);
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsize.h:227
-// [8] qreal height()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK6QSizeF6heightEv(void *this_) {
-  return (qreal)((QSizeF*)this_)->height();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:228
-// [-2] void setWidth(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QSizeF8setWidthEd(void *this_, qreal w) {
-  ((QSizeF*)this_)->setWidth(w);
+// [1] bool isNull() const
+// (12)qm3133206400 (20)_ZNK6QSizeF6isNullEv
+//static
+/*void qm3133206400()*/ {
+  ;
+  (void) ((QSizeF*)this_)->isNull();
+   auto xptr = (bool (QSizeF::*)() const ) &QSizeF::isNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:229
-// [-2] void setHeight(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QSizeF9setHeightEd(void *this_, qreal h) {
-  ((QSizeF*)this_)->setHeight(h);
+// [1] bool isEmpty() const
+// (12)qm1837218638 (21)_ZNK6QSizeF7isEmptyEv
+//static
+/*void qm1837218638()*/ {
+  ;
+  (void) ((QSizeF*)this_)->isEmpty();
+   auto xptr = (bool (QSizeF::*)() const ) &QSizeF::isEmpty;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:230
-// [-2] void transpose()
-extern "C" Q_DECL_EXPORT
-void C_ZN6QSizeF9transposeEv(void *this_) {
-  ((QSizeF*)this_)->transpose();
+// [1] bool isValid() const
+// (12)qm1609054340 (21)_ZNK6QSizeF7isValidEv
+//static
+/*void qm1609054340()*/ {
+  ;
+  (void) ((QSizeF*)this_)->isValid();
+   auto xptr = (bool (QSizeF::*)() const ) &QSizeF::isValid;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qsize.h:231
-// [16] QSizeF transposed()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZNK6QSizeF10transposedEv(void *this_) {
-  auto rv = ((QSizeF*)this_)->transposed();
-return new QSizeF(rv);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:232
+// [8] qreal width() const
+// (12)qm3418501832 (19)_ZNK6QSizeF5widthEv
+//static
+/*void qm3418501832()*/ {
+  ;
+  (void) ((QSizeF*)this_)->width();
+   auto xptr = (double (QSizeF::*)() const ) &QSizeF::width;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050000
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:233
-// [-2] void scale(qreal, qreal, Qt::AspectRatioMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QSizeF5scaleEddN2Qt15AspectRatioModeE(void *this_, qreal w, qreal h, Qt::AspectRatioMode mode) {
-  ((QSizeF*)this_)->scale(w, h, mode);
+// [8] qreal height() const
+// (12)qm4021998105 (20)_ZNK6QSizeF6heightEv
+//static
+/*void qm4021998105()*/ {
+  ;
+  (void) ((QSizeF*)this_)->height();
+   auto xptr = (double (QSizeF::*)() const ) &QSizeF::height;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:234
-// [-2] void scale(const QSizeF &, Qt::AspectRatioMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QSizeF5scaleERKS_N2Qt15AspectRatioModeE(void *this_, QSizeF* s, Qt::AspectRatioMode mode) {
-  ((QSizeF*)this_)->scale(*s, mode);
+// [-2] void setWidth(qreal) 
+// (11)qm154088386 (21)_ZN6QSizeF8setWidthEd
+//static
+/*void qm154088386(double w)*/ {
+  double w = *(double*)this_;
+  (void) ((QSizeF*)this_)->setWidth(w);
+   auto xptr = (void (QSizeF::*)(double) ) &QSizeF::setWidth;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 5.0
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:235
-// [16] QSizeF scaled(qreal, qreal, Qt::AspectRatioMode)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZNK6QSizeF6scaledEddN2Qt15AspectRatioModeE(void *this_, qreal w, qreal h, Qt::AspectRatioMode mode) {
-  auto rv = ((QSizeF*)this_)->scaled(w, h, mode);
-return new QSizeF(rv);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qsize.h:236
-// [16] QSizeF scaled(const QSizeF &, Qt::AspectRatioMode)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZNK6QSizeF6scaledERKS_N2Qt15AspectRatioModeE(void *this_, QSizeF* s, Qt::AspectRatioMode mode) {
-  auto rv = ((QSizeF*)this_)->scaled(*s, mode);
-return new QSizeF(rv);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsize.h:238
-// [16] QSizeF expandedTo(const QSizeF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK6QSizeF10expandedToERKS_(void *this_, QSizeF* arg0) {
-  auto rv = ((QSizeF*)this_)->expandedTo(*arg0);
-return new QSizeF(rv);
+// [-2] void setHeight(qreal) 
+// (11)qm650684215 (22)_ZN6QSizeF9setHeightEd
+//static
+/*void qm650684215(double h)*/ {
+  double h = *(double*)this_;
+  (void) ((QSizeF*)this_)->setHeight(h);
+   auto xptr = (void (QSizeF::*)(double) ) &QSizeF::setHeight;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:237
+// [16] QSizeF transposed() const
+// (12)qm2045838128 (25)_ZNK6QSizeF10transposedEv
+//static
+/*void qm2045838128()*/ {
+  ;
+  (void) ((QSizeF*)this_)->transposed();
+   auto xptr = (QSizeF (QSizeF::*)() const ) &QSizeF::transposed;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:239
-// [16] QSizeF boundedTo(const QSizeF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK6QSizeF9boundedToERKS_(void *this_, QSizeF* arg0) {
-  auto rv = ((QSizeF*)this_)->boundedTo(*arg0);
-return new QSizeF(rv);
+// [-2] void scale(qreal, qreal, Qt::AspectRatioMode) 
+// (12)qm3808736656 (41)_ZN6QSizeF5scaleEddN2Qt15AspectRatioModeE
+//static
+/*void qm3808736656(double w, double h, Qt::AspectRatioMode mode)*/ {
+  double w = *(double*)this_; double h = *(double*)this_; Qt::AspectRatioMode mode = *(Qt::AspectRatioMode*)this_;
+  (void) ((QSizeF*)this_)->scale(w, h, mode);
+   auto xptr = (void (QSizeF::*)(double, double, Qt::AspectRatioMode) ) &QSizeF::scale;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:240
+// [-2] void scale(const QSizeF &, Qt::AspectRatioMode) 
+// (12)qm2531716871 (43)_ZN6QSizeF5scaleERKS_N2Qt15AspectRatioModeE
+//static
+/*void qm2531716871(const QSizeF & s, Qt::AspectRatioMode mode)*/ {
+  const QSizeF & s = *(const QSizeF *)this_; Qt::AspectRatioMode mode = *(Qt::AspectRatioMode*)this_;
+  (void) ((QSizeF*)this_)->scale(s, mode);
+   auto xptr = (void (QSizeF::*)(QSizeF const&, Qt::AspectRatioMode) ) &QSizeF::scale;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:241
-// [8] qreal & rwidth()
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QSizeF6rwidthEv(void *this_) {
-  auto& rv = ((QSizeF*)this_)->rwidth();
-return &rv;
+// [16] QSizeF scaled(qreal, qreal, Qt::AspectRatioMode) const
+// (10)qm75450441 (43)_ZNK6QSizeF6scaledEddN2Qt15AspectRatioModeE
+//static
+/*void qm75450441(double w, double h, Qt::AspectRatioMode mode)*/ {
+  double w = *(double*)this_; double h = *(double*)this_; Qt::AspectRatioMode mode = *(Qt::AspectRatioMode*)this_;
+  (void) ((QSizeF*)this_)->scaled(w, h, mode);
+   auto xptr = (QSizeF (QSizeF::*)(double, double, Qt::AspectRatioMode) const ) &QSizeF::scaled;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsize.h:242
-// [8] qreal & rheight()
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QSizeF7rheightEv(void *this_) {
-  auto& rv = ((QSizeF*)this_)->rheight();
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:244
-// [16] QSizeF & operator+=(const QSizeF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QSizeFpLERKS_(void *this_, QSizeF* arg0) {
-  auto& rv = ((QSizeF*)this_)->operator+=(*arg0);
-return &rv;
+// [16] QSizeF expandedTo(const QSizeF &) const
+// (12)qm4218392525 (28)_ZNK6QSizeF10expandedToERKS_
+//static
+/*void qm4218392525(const QSizeF & arg0)*/ {
+  const QSizeF & arg0 = *(const QSizeF *)this_;
+  (void) ((QSizeF*)this_)->expandedTo(arg0);
+   auto xptr = (QSizeF (QSizeF::*)(QSizeF const&) const ) &QSizeF::expandedTo;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:245
-// [16] QSizeF & operator-=(const QSizeF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QSizeFmIERKS_(void *this_, QSizeF* arg0) {
-  auto& rv = ((QSizeF*)this_)->operator-=(*arg0);
-return &rv;
+// [16] QSizeF boundedTo(const QSizeF &) const
+// (12)qm2862708735 (26)_ZNK6QSizeF9boundedToERKS_
+//static
+/*void qm2862708735(const QSizeF & arg0)*/ {
+  const QSizeF & arg0 = *(const QSizeF *)this_;
+  (void) ((QSizeF*)this_)->boundedTo(arg0);
+   auto xptr = (QSizeF (QSizeF::*)(QSizeF const&) const ) &QSizeF::boundedTo;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsize.h:246
-// [16] QSizeF & operator*=(qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QSizeFmLEd(void *this_, qreal c) {
-  auto& rv = ((QSizeF*)this_)->operator*=(c);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:247
-// [16] QSizeF & operator/=(qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QSizeFdVEd(void *this_, qreal c) {
-  auto& rv = ((QSizeF*)this_)->operator/=(c);
-return &rv;
+// [16] QSizeF grownBy(QMarginsF) const
+// (12)qm3538048005 (30)_ZNK6QSizeF7grownByE9QMarginsF
+//static
+/*void qm3538048005(QMarginsF m)*/ {
+  QMarginsF m = *(QMarginsF*)this_;
+  (void) ((QSizeF*)this_)->grownBy(m);
+   auto xptr = (QSizeF (QSizeF::*)(QMarginsF) const ) &QSizeF::grownBy;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:249
+// [16] QSizeF shrunkBy(QMarginsF) const
+// (12)qm3562557642 (31)_ZNK6QSizeF8shrunkByE9QMarginsF
+//static
+/*void qm3562557642(QMarginsF m)*/ {
+  QMarginsF m = *(QMarginsF*)this_;
+  (void) ((QSizeF*)this_)->shrunkBy(m);
+   auto xptr = (QSizeF (QSizeF::*)(QMarginsF) const ) &QSizeF::shrunkBy;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:252
+// [8] qreal & rwidth() 
+// (11)qm696285478 (19)_ZN6QSizeF6rwidthEv
+//static
+/*void qm696285478()*/ {
+  ;
+  (void) ((QSizeF*)this_)->rwidth();
+   auto xptr = (double & (QSizeF::*)() ) &QSizeF::rwidth;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:253
+// [8] qreal & rheight() 
+// (12)qm2124744918 (20)_ZN6QSizeF7rheightEv
+//static
+/*void qm2124744918()*/ {
+  ;
+  (void) ((QSizeF*)this_)->rheight();
+   auto xptr = (double & (QSizeF::*)() ) &QSizeF::rheight;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:255
+// [16] QSizeF & operator+=(const QSizeF &) 
+// (12)qm3530153529 (17)_ZN6QSizeFpLERKS_
+//static
+/*void qm3530153529(const QSizeF & arg0)*/ {
+  const QSizeF & arg0 = *(const QSizeF *)this_;
+  (void) ((QSizeF*)this_)->operator+=(arg0);
+  // auto xptr = (QSizeF & (QSizeF::*)(QSizeF const&) ) &QSizeF::operator+=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:256
+// [16] QSizeF & operator-=(const QSizeF &) 
+// (12)qm2225975940 (17)_ZN6QSizeFmIERKS_
+//static
+/*void qm2225975940(const QSizeF & arg0)*/ {
+  const QSizeF & arg0 = *(const QSizeF *)this_;
+  (void) ((QSizeF*)this_)->operator-=(arg0);
+  // auto xptr = (QSizeF & (QSizeF::*)(QSizeF const&) ) &QSizeF::operator-=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsize.h:257
-// [8] QSize toSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK6QSizeF6toSizeEv(void *this_) {
-  auto rv = ((QSizeF*)this_)->toSize();
-return new QSize(rv);
+// [16] QSizeF & operator*=(qreal) 
+// (12)qm3898499073 (14)_ZN6QSizeFmLEd
+//static
+/*void qm3898499073(double c)*/ {
+  double c = *(double*)this_;
+  (void) ((QSizeF*)this_)->operator*=(c);
+  // auto xptr = (QSizeF & (QSizeF::*)(double) ) &QSizeF::operator*=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:258
+// [16] QSizeF & operator/=(qreal) 
+// (12)qm2229733677 (14)_ZN6QSizeFdVEd
+//static
+/*void qm2229733677(double c)*/ {
+  double c = *(double*)this_;
+  (void) ((QSizeF*)this_)->operator/=(c);
+  // auto xptr = (QSizeF & (QSizeF::*)(double) ) &QSizeF::operator/=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsize.h:268
+// [8] QSize toSize() const
+// (12)qm2650498506 (20)_ZNK6QSizeF6toSizeEv
+//static
+/*void qm2650498506()*/ {
+  ;
+  (void) ((QSizeF*)this_)->toSize();
+   auto xptr = (QSize (QSizeF::*)() const ) &QSizeF::toSize;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN6QSizeFD2Ev(void *this_) {
+/*void C_ZN6QSizeFD2Ev(void *this_)*/ {
   delete (QSizeF*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsizef
 //  main block end
 
 //  use block begin

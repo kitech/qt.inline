@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QLinkedListData is pure virtual: false
+// QLinkedListData is pure virtual: false false
 // QLinkedListData has virtual projected: false
 //  header block end
 
@@ -50,11 +50,16 @@ public:
   virtual ~MyQLinkedListData() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qlinkedlistdata(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-extern "C" Q_DECL_EXPORT
-void C_ZN15QLinkedListDataD2Ev(void *this_) {
+
+/*void C_ZN15QLinkedListDataD2Ev(void *this_)*/ {
   delete (QLinkedListData*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qlinkedlistdata
 //  main block end
 
 //  use block begin

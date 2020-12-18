@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QDeferredDeleteEvent is pure virtual: false
+// QDeferredDeleteEvent is pure virtual: false false
 // QDeferredDeleteEvent has virtual projected: false
 //  header block end
 
@@ -52,29 +52,28 @@ public:
 MyQDeferredDeleteEvent() : QDeferredDeleteEvent() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreevent.h:377
-// [-2] void QDeferredDeleteEvent()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QDeferredDeleteEventC2Ev() {
-  return  new QDeferredDeleteEvent();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qdeferreddeleteevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:379
+// [4] int loopLevel() const
+// (12)qm1878449921 (38)_ZNK20QDeferredDeleteEvent9loopLevelEv
+//static
+/*void qm1878449921()*/ {
+  ;
+  (void) ((QDeferredDeleteEvent*)this_)->loopLevel();
+   auto xptr = (int (QDeferredDeleteEvent::*)() const ) &QDeferredDeleteEvent::loopLevel;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreevent.h:378
-// [-2] void ~QDeferredDeleteEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN20QDeferredDeleteEventD2Ev(void *this_) {
+
+/*void C_ZN20QDeferredDeleteEventD2Ev(void *this_)*/ {
   delete (QDeferredDeleteEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreevent.h:379
-// [4] int loopLevel()
-extern "C" Q_DECL_EXPORT
-int C_ZNK20QDeferredDeleteEvent9loopLevelEv(void *this_) {
-  return (int)((QDeferredDeleteEvent*)this_)->loopLevel();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qdeferreddeleteevent
 //  main block end
 
 //  use block begin

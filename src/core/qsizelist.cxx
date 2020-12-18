@@ -235,6 +235,13 @@ void C_QSizeList_move_0(void* this_ , int from, int to) {
      ((QSizeList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QSizeList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QSizeList_swapItemsAt_0()
+     ((QSizeList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QSizeList_swap_1(void* this_ , int i, int j) {

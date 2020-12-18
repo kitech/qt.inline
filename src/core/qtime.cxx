@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QTime is pure virtual: false
+// QTime is pure virtual: false false
 // QTime has virtual projected: false
 //  header block end
 
@@ -54,268 +54,133 @@ MyQTime() : QTime() {}
 MyQTime(int h, int m, int s, int ms) : QTime(h, m, s, ms) {}
 };
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:159
-// [-2] void QTime()
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QTimeC2Ev() {
-  return  new QTime();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:161
-// [-2] void QTime(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QTimeC2Eiiii(int h, int m, int s, int ms) {
-  return  new QTime(h, m, s, ms);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:163
-// [1] bool isNull()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK5QTime6isNullEv(void *this_) {
-  return (bool)((QTime*)this_)->isNull();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:164
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK5QTime7isValidEv(void *this_) {
-  return (bool)((QTime*)this_)->isValid();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:166
-// [4] int hour()
-extern "C" Q_DECL_EXPORT
-int C_ZNK5QTime4hourEv(void *this_) {
-  return (int)((QTime*)this_)->hour();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:167
-// [4] int minute()
-extern "C" Q_DECL_EXPORT
-int C_ZNK5QTime6minuteEv(void *this_) {
-  return (int)((QTime*)this_)->minute();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:168
-// [4] int second()
-extern "C" Q_DECL_EXPORT
-int C_ZNK5QTime6secondEv(void *this_) {
-  return (int)((QTime*)this_)->second();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:169
-// [4] int msec()
-extern "C" Q_DECL_EXPORT
-int C_ZNK5QTime4msecEv(void *this_) {
-  return (int)((QTime*)this_)->msec();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:171
-// [8] QString toString(Qt::DateFormat)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK5QTime8toStringEN2Qt10DateFormatE(void *this_, Qt::DateFormat f) {
-  auto rv = ((QTime*)this_)->toString(f);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:173
-// [8] QString toString(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK5QTime8toStringERK7QString(void *this_, QString* format) {
-  auto rv = ((QTime*)this_)->toString(*format);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:175
-// [8] QString toString(QStringView)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK5QTime8toStringE11QStringView(void *this_, QStringView* format) {
-  auto rv = ((QTime*)this_)->toString(*format);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:177
-// [1] bool setHMS(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-bool C_ZN5QTime6setHMSEiiii(void *this_, int h, int m, int s, int ms) {
-  return (bool)((QTime*)this_)->setHMS(h, m, s, ms);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:179
-// [4] QTime addSecs(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK5QTime7addSecsEi(void *this_, int secs) {
-  auto rv = ((QTime*)this_)->addSecs(secs);
-return new QTime(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:180
-// [4] int secsTo(const QTime &)
-extern "C" Q_DECL_EXPORT
-int C_ZNK5QTime6secsToERKS_(void *this_, QTime* arg0) {
-  return (int)((QTime*)this_)->secsTo(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:181
-// [4] QTime addMSecs(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK5QTime8addMSecsEi(void *this_, int ms) {
-  auto rv = ((QTime*)this_)->addMSecs(ms);
-return new QTime(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:182
-// [4] int msecsTo(const QTime &)
-extern "C" Q_DECL_EXPORT
-int C_ZNK5QTime7msecsToERKS_(void *this_, QTime* arg0) {
-  return (int)((QTime*)this_)->msecsTo(*arg0);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:184
-// [1] bool operator==(const QTime &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK5QTimeeqERKS_(void *this_, QTime* other) {
-  return (bool)((QTime*)this_)->operator==(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:185
-// [1] bool operator!=(const QTime &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK5QTimeneERKS_(void *this_, QTime* other) {
-  return (bool)((QTime*)this_)->operator!=(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:186
-// [1] bool operator<(const QTime &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK5QTimeltERKS_(void *this_, QTime* other) {
-  return (bool)((QTime*)this_)->operator<(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:187
-// [1] bool operator<=(const QTime &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK5QTimeleERKS_(void *this_, QTime* other) {
-  return (bool)((QTime*)this_)->operator<=(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:188
-// [1] bool operator>(const QTime &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK5QTimegtERKS_(void *this_, QTime* other) {
-  return (bool)((QTime*)this_)->operator>(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:189
-// [1] bool operator>=(const QTime &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK5QTimegeERKS_(void *this_, QTime* other) {
-  return (bool)((QTime*)this_)->operator>=(*other);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:191
-// [4] QTime fromMSecsSinceStartOfDay(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QTime24fromMSecsSinceStartOfDayEi(int msecs) {
-  auto rv = QTime::fromMSecsSinceStartOfDay(msecs);
-return new QTime(rv);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtime(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:192
-// [4] int msecsSinceStartOfDay()
-extern "C" Q_DECL_EXPORT
-int C_ZNK5QTime20msecsSinceStartOfDayEv(void *this_) {
-  return (int)((QTime*)this_)->msecsSinceStartOfDay();
+// [-2] void QTime() 
+// (11)qm684949980 (13)_ZN5QTimeC2Ev
+/*void* qm684949980()*/{
+  ;
+  this_ =  new QTime();
 }
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:194
-// [4] QTime currentTime()
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QTime11currentTimeEv() {
-  auto rv = QTime::currentTime();
-return new QTime(rv);
-}
-
-// Public static Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:196
-// [4] QTime fromString(const QString &, Qt::DateFormat)
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QTime10fromStringERK7QStringN2Qt10DateFormatE(QString* s, Qt::DateFormat f) {
-  auto rv = QTime::fromString(*s, f);
-return new QTime(rv);
+// [1] bool isNull() const
+// (12)qm4092187390 (19)_ZNK5QTime6isNullEv
+//static
+/*void qm4092187390()*/ {
+  ;
+  (void) ((QTime*)this_)->isNull();
+   auto xptr = (bool (QTime::*)() const ) &QTime::isNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:197
-// [4] QTime fromString(const QString &, const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QTime10fromStringERK7QStringS2_(QString* s, QString* format) {
-  auto rv = QTime::fromString(*s, *format);
-return new QTime(rv);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:217
+// [1] bool operator==(const QTime &) const
+// (12)qm3284758327 (17)_ZNK5QTimeeqERKS_
+//static
+/*void qm3284758327(const QTime & other)*/ {
+  const QTime & other = *(const QTime *)this_;
+  (void) ((QTime*)this_)->operator==(other);
+  // auto xptr = (bool (QTime::*)(QTime const&) const ) &QTime::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:199
-// [1] bool isValid(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-bool C_ZN5QTime7isValidEiiii(int h, int m, int s, int ms) {
-  return (bool)QTime::isValid(h, m, s, ms);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:218
+// [1] bool operator!=(const QTime &) const
+// (12)qm1502182208 (17)_ZNK5QTimeneERKS_
+//static
+/*void qm1502182208(const QTime & other)*/ {
+  const QTime & other = *(const QTime *)this_;
+  (void) ((QTime*)this_)->operator!=(other);
+  // auto xptr = (bool (QTime::*)(QTime const&) const ) &QTime::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:201
-// [-2] void start()
-extern "C" Q_DECL_EXPORT
-void C_ZN5QTime5startEv(void *this_) {
-  ((QTime*)this_)->start();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:219
+// [1] bool operator<(const QTime &) const
+// (11)qm110934871 (17)_ZNK5QTimeltERKS_
+//static
+/*void qm110934871(const QTime & other)*/ {
+  const QTime & other = *(const QTime *)this_;
+  (void) ((QTime*)this_)->operator<(other);
+  // auto xptr = (bool (QTime::*)(QTime const&) const ) &QTime::operator<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:202
-// [4] int restart()
-extern "C" Q_DECL_EXPORT
-int C_ZN5QTime7restartEv(void *this_) {
-  return (int)((QTime*)this_)->restart();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:220
+// [1] bool operator<=(const QTime &) const
+// (12)qm3457575529 (17)_ZNK5QTimeleERKS_
+//static
+/*void qm3457575529(const QTime & other)*/ {
+  const QTime & other = *(const QTime *)this_;
+  (void) ((QTime*)this_)->operator<=(other);
+  // auto xptr = (bool (QTime::*)(QTime const&) const ) &QTime::operator<=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qdatetime.h:203
-// [4] int elapsed()
-extern "C" Q_DECL_EXPORT
-int C_ZNK5QTime7elapsedEv(void *this_) {
-  return (int)((QTime*)this_)->elapsed();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:221
+// [1] bool operator>(const QTime &) const
+// (10)qm77328301 (17)_ZNK5QTimegtERKS_
+//static
+/*void qm77328301(const QTime & other)*/ {
+  const QTime & other = *(const QTime *)this_;
+  (void) ((QTime*)this_)->operator>(other);
+  // auto xptr = (bool (QTime::*)(QTime const&) const ) &QTime::operator>;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:222
+// [1] bool operator>=(const QTime &) const
+// (12)qm3423682195 (17)_ZNK5QTimegeERKS_
+//static
+/*void qm3423682195(const QTime & other)*/ {
+  const QTime & other = *(const QTime *)this_;
+  (void) ((QTime*)this_)->operator>=(other);
+  // auto xptr = (bool (QTime::*)(QTime const&) const ) &QTime::operator>=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public static inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:224
+// [4] QTime fromMSecsSinceStartOfDay(int) 
+// (11)qm676535615 (37)_ZN5QTime24fromMSecsSinceStartOfDayEi
+//static
+/*void qm676535615(int msecs)*/ {
+  int msecs = *(int*)this_;
+  (void) QTime::fromMSecsSinceStartOfDay(msecs);
+   auto xptr = (QTime (*)(int) ) &QTime::fromMSecsSinceStartOfDay;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:225
+// [4] int msecsSinceStartOfDay() const
+// (12)qm3263502930 (34)_ZNK5QTime20msecsSinceStartOfDayEv
+//static
+/*void qm3263502930()*/ {
+  ;
+  (void) ((QTime*)this_)->msecsSinceStartOfDay();
+   auto xptr = (int (QTime::*)() const ) &QTime::msecsSinceStartOfDay;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN5QTimeD2Ev(void *this_) {
+/*void C_ZN5QTimeD2Ev(void *this_)*/ {
   delete (QTime*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtime
 //  main block end
 
 //  use block begin

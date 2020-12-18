@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(future)
-// since 0x040400
 // /usr/include/qt/QtCore/qfuturewatcher.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QFutureWatcher is pure virtual: false
+// QFutureWatcher is pure virtual: false false
 // QFutureWatcher has virtual projected: false
 //  header block end
 
@@ -113,38 +112,52 @@ void* C_QFutureWatcher_init_staticMetaObject(void* this_, void* strdat, void* da
   return qmo;
 }
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qfuturewatcher(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:187
-// [-2] void QFutureWatcher(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QFutureWatcherIvEC2EP7QObject(QObject * _parent) {
-  return  new QFutureWatcher<void>(_parent);
+// [-2] void QFutureWatcher(QObject *) 
+// (12)qm2284928351 (34)_ZN14QFutureWatcherIvEC2EP7QObject
+/*void* qm2284928351(QObject * _parent)*/{
+  QObject * _parent = *(QObject **)this_;
+  this_ =  new QFutureWatcher<void>(_parent);
 }
 
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:190
-// [-2] void ~QFutureWatcher()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QFutureWatcherIvED2Ev(void *this_) {
+// [-2] void ~QFutureWatcher() 
+// (12)qm3231647004 (26)_ZN14QFutureWatcherIvED2Ev
+/*void qm3231647004 (void *this_)*/ {
   delete (QFutureWatcher<void>*)(this_);
 }
-// Public Visibility=Default Availability=Available
+// Public Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:193
-// [-2] void setFuture(const QFuture<void> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QFutureWatcherIvE9setFutureERK7QFutureIvE(void *this_, QFuture<void>* future) {
-  ((QFutureWatcher<void>*)this_)->setFuture(*future);
+// [-2] void setFuture(const QFuture<void> &) 
+// (12)qm1333636778 (46)_ZN14QFutureWatcherIvE9setFutureERK7QFutureIvE
+//static
+/*void qm1333636778(const QFuture<void> & future)*/ {
+  const QFuture<void> & future = *(const QFuture<void> *)this_;
+  (void) ((QFutureWatcher<void>*)this_)->setFuture(future);
+   auto xptr = (void (QFutureWatcher<void>::*)(QFuture<void> const&) ) &QFutureWatcher<void>::setFuture;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:194
-// [16] QFuture<void> future()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QFutureWatcherIvE6futureEv(void *this_) {
-  auto rv = ((QFutureWatcher<void>*)this_)->future();
-return new QFuture<void>(rv);
+// [16] QFuture<void> future() const
+// (12)qm3397086432 (32)_ZNK14QFutureWatcherIvE6futureEv
+//static
+/*void qm3397086432()*/ {
+  ;
+  (void) ((QFutureWatcher<void>*)this_)->future();
+   auto xptr = (QFuture<void> (QFutureWatcher<void>::*)() const ) &QFutureWatcher<void>::future;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+  return fnptrsumval;
+} // end ensure_inline_symbol_qfuturewatcher
 //  main block end
 
 //  use block begin

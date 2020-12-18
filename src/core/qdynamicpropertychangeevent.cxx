@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040200
 // /usr/include/qt/QtCore/qcoreevent.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QDynamicPropertyChangeEvent is pure virtual: false
+// QDynamicPropertyChangeEvent is pure virtual: false false
 // QDynamicPropertyChangeEvent has virtual projected: false
 //  header block end
 
@@ -53,30 +52,28 @@ public:
 MyQDynamicPropertyChangeEvent(const QByteArray & name) : QDynamicPropertyChangeEvent(name) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreevent.h:365
-// [-2] void QDynamicPropertyChangeEvent(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QDynamicPropertyChangeEventC2ERK10QByteArray(QByteArray* name) {
-  return  new QDynamicPropertyChangeEvent(*name);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qdynamicpropertychangeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:368
+// [8] QByteArray propertyName() const
+// (12)qm3727286847 (49)_ZNK27QDynamicPropertyChangeEvent12propertyNameEv
+//static
+/*void qm3727286847()*/ {
+  ;
+  (void) ((QDynamicPropertyChangeEvent*)this_)->propertyName();
+   auto xptr = (QByteArray (QDynamicPropertyChangeEvent::*)() const ) &QDynamicPropertyChangeEvent::propertyName;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreevent.h:366
-// [-2] void ~QDynamicPropertyChangeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QDynamicPropertyChangeEventD2Ev(void *this_) {
+
+/*void C_ZN27QDynamicPropertyChangeEventD2Ev(void *this_)*/ {
   delete (QDynamicPropertyChangeEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcoreevent.h:368
-// [8] QByteArray propertyName()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QDynamicPropertyChangeEvent12propertyNameEv(void *this_) {
-  auto rv = ((QDynamicPropertyChangeEvent*)this_)->propertyName();
-return new QByteArray(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qdynamicpropertychangeevent
 //  main block end
 
 //  use block begin

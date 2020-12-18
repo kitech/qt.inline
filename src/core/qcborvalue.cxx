@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050c00
 // /usr/include/qt/QtCore/qcborvalue.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QCborValue is pure virtual: false
+// QCborValue is pure virtual: false false
 // QCborValue has virtual projected: false
 //  header block end
 
@@ -71,6 +70,8 @@ MyQCborValue(QCborSimpleType st) : QCborValue(st) {}
 MyQCborValue(const QByteArray & ba) : QCborValue(ba) {}
 // void QCborValue(const QString &)
 MyQCborValue(const QString & s) : QCborValue(s) {}
+// void QCborValue(QStringView)
+MyQCborValue(QStringView s) : QCborValue(s) {}
 // void QCborValue(QLatin1String)
 MyQCborValue(QLatin1String s) : QCborValue(s) {}
 // void QCborValue(const char *)
@@ -101,703 +102,529 @@ MyQCborValue(const QCborValue & other) : QCborValue(other) {}
 MyQCborValue(QCborValue && other) : QCborValue(other) {}
 };
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:129
-// [-2] void QCborValue()
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2Ev() {
-  return  new QCborValue();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:130
-// [-2] void QCborValue(QCborValue::Type)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ENS_4TypeE(QCborValue::Type t_) {
-  return  new QCborValue(t_);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:131
-// [-2] void QCborValue(std::nullptr_t)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2EDn(std::nullptr_t arg0) {
-  return  new QCborValue(arg0);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:132
-// [-2] void QCborValue(bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2Eb(bool b_) {
-  return  new QCborValue(b_);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:134
-// [-2] void QCborValue(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2Ei(int i) {
-  return  new QCborValue(i);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:135
-// [-2] void QCborValue(unsigned int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2Ej(unsigned int u) {
-  return  new QCborValue(u);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:137
-// [-2] void QCborValue(qint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2Ex(qint64 i) {
-  return  new QCborValue(i);
+// [-2] void QCborValue() 
+// (12)qm1081993364 (19)_ZN10QCborValueC2Ev
+/*void* qm1081993364()*/{
+  ;
+  this_ =  new QCborValue();
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:138
-// [-2] void QCborValue(double)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2Ed(double v) {
-  return  new QCborValue(v);
+// [-2] void QCborValue(QCborValue::Type) 
+// (12)qm2226603518 (27)_ZN10QCborValueC2ENS_4TypeE
+/*void* qm2226603518(QCborValue::Type t_)*/{
+  QCborValue::Type t_ = *(QCborValue::Type*)this_;
+  this_ =  new QCborValue(t_);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:139
-// [-2] void QCborValue(QCborSimpleType)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2E15QCborSimpleType(QCborSimpleType st) {
-  return  new QCborValue(st);
+// [-2] void QCborValue(std::nullptr_t) 
+// (12)qm1650122006 (20)_ZN10QCborValueC2EDn
+/*void* qm1650122006(nullptr_t arg0)*/{
+  nullptr_t arg0 = *(nullptr_t*)this_;
+  this_ =  new QCborValue(arg0);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:141
-// [-2] void QCborValue(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ERK10QByteArray(QByteArray* ba) {
-  return  new QCborValue(*ba);
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:140
+// [-2] void QCborValue(bool) 
+// (12)qm1520909545 (19)_ZN10QCborValueC2Eb
+/*void* qm1520909545(bool b_)*/{
+  bool b_ = *(bool*)this_;
+  this_ =  new QCborValue(b_);
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:142
-// [-2] void QCborValue(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ERK7QString(QString* s) {
-  return  new QCborValue(*s);
+// [-2] void QCborValue(int) 
+// (12)qm3447055713 (19)_ZN10QCborValueC2Ei
+/*void* qm3447055713(int i)*/{
+  int i = *(int*)this_;
+  this_ =  new QCborValue(i);
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:143
-// [-2] void QCborValue(QLatin1String)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2E13QLatin1String(QLatin1String* s) {
-  return  new QCborValue(*s);
+// [-2] void QCborValue(unsigned int) 
+// (12)qm1417458907 (19)_ZN10QCborValueC2Ej
+/*void* qm1417458907(unsigned int u)*/{
+  unsigned int u = *(unsigned int*)this_;
+  this_ =  new QCborValue(u);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:145
-// [-2] void QCborValue(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2EPKc(const char * s) {
-  return  new QCborValue(s);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:147
-// [-2] void QCborValue(const QCborArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ERK10QCborArray(QCborArray* a) {
-  return  new QCborValue(*a);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:148
-// [-2] void QCborValue(QCborArray &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2EO10QCborArray(QCborArray && a) {
-  return  new QCborValue(a);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:149
-// [-2] void QCborValue(const QCborMap &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ERK8QCborMap(QCborMap* m) {
-  return  new QCborValue(*m);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:150
-// [-2] void QCborValue(QCborMap &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2EO8QCborMap(QCborMap && m) {
-  return  new QCborValue(m);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:151
-// [-2] void QCborValue(QCborTag, const QCborValue &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2E8QCborTagRKS_(QCborTag tag, QCborValue* taggedValue) {
-  return  new QCborValue(tag, *taggedValue);
+// [-2] void QCborValue(qint64) 
+// (12)qm2814756243 (19)_ZN10QCborValueC2Ex
+/*void* qm2814756243(long long i)*/{
+  long long i = *(long long*)this_;
+  this_ =  new QCborValue(i);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:152
-// [-2] void QCborValue(QCborKnownTags, const QCborValue &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2E14QCborKnownTagsRKS_(QCborKnownTags t_, QCborValue* tv) {
-  return  new QCborValue(t_, *tv);
+// /usr/include/qt/QtCore/qcborvalue.h:146
+// [-2] void QCborValue(double) 
+// (12)qm3016006108 (19)_ZN10QCborValueC2Ed
+/*void* qm3016006108(double v)*/{
+  double v = *(double*)this_;
+  this_ =  new QCborValue(v);
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:147
+// [-2] void QCborValue(QCborSimpleType) 
+// (12)qm3914963924 (35)_ZN10QCborValueC2E15QCborSimpleType
+/*void* qm3914963924(QCborSimpleType st)*/{
+  QCborSimpleType st = *(QCborSimpleType*)this_;
+  this_ =  new QCborValue(st);
+}
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:156
-// [-2] void QCborValue(const QDateTime &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ERK9QDateTime(QDateTime* dt) {
-  return  new QCborValue(*dt);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:157
-// [-2] void QCborValue(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ERK4QUrl(QUrl* url) {
-  return  new QCborValue(*url);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:158
-// [-2] void QCborValue(const QRegularExpression &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ERK18QRegularExpression(QRegularExpression* rx) {
-  return  new QCborValue(*rx);
+// [-2] void QCborValue(const char *) 
+// (10)qm30665640 (21)_ZN10QCborValueC2EPKc
+/*void* qm30665640(const char * s)*/{
+  const char * s = *(const char **)this_;
+  this_ =  new QCborValue(s);
 }
 
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:159
-// [-2] void QCborValue(const QUuid &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ERK5QUuid(QUuid* uuid) {
-  return  new QCborValue(*uuid);
+// [-2] void QCborValue(QCborArray &&) 
+// (12)qm3442029931 (31)_ZN10QCborValueC2EO10QCborArray
+/*void* qm3442029931(QCborArray && a)*/{
+  QCborArray && a =  static_cast<QCborArray &&>(*(QCborArray *)this_);
+  this_ =  new QCborValue(a);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:161
+// [-2] void QCborValue(QCborMap &&) 
+// (12)qm2232141528 (28)_ZN10QCborValueC2EO8QCborMap
+/*void* qm2232141528(QCborMap && m)*/{
+  QCborMap && m =  static_cast<QCborMap &&>(*(QCborMap *)this_);
+  this_ =  new QCborValue(m);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:161
-// [-2] void ~QCborValue()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QCborValueD2Ev(void *this_) {
+// /usr/include/qt/QtCore/qcborvalue.h:163
+// [-2] void QCborValue(QCborKnownTags, const QCborValue &) 
+// (12)qm2596948014 (38)_ZN10QCborValueC2E14QCborKnownTagsRKS_
+/*void* qm2596948014(QCborKnownTags t_, const QCborValue & tv)*/{
+  QCborKnownTags t_ = *(QCborKnownTags*)this_; const QCborValue & tv = *(const QCborValue *)this_;
+  this_ =  new QCborValue(t_, tv);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:176
+// [-2] void ~QCborValue() 
+// (12)qm3718959149 (19)_ZN10QCborValueD2Ev
+/*void qm3718959149 (void *this_)*/ {
   delete (QCborValue*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:166
-// [-2] void QCborValue(const QCborValue &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2ERKS_(QCborValue* other) {
-  return  new QCborValue(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:167
-// [-2] void QCborValue(QCborValue &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueC2EOS_(QCborValue && other) {
-  return  new QCborValue(other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:173
-// [24] QCborValue & operator=(const QCborValue &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueaSERKS_(void *this_, QCborValue* other) {
-  auto& rv = ((QCborValue*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:174
-// [24] QCborValue & operator=(QCborValue &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValueaSEOS_(void *this_, QCborValue && other) {
-  auto& rv = ((QCborValue*)this_)->operator=(other);
-return &rv;
-}
-
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:182
-// [-2] void swap(QCborValue &)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QCborValue4swapERS_(void *this_, QCborValue* other) {
-  ((QCborValue*)this_)->swap(*other);
+// [-2] void QCborValue(QCborValue &&) 
+// (12)qm3151883067 (21)_ZN10QCborValueC2EOS_
+/*void* qm3151883067(QCborValue && other)*/{
+  QCborValue && other =  static_cast<QCborValue &&>(*(QCborValue *)this_);
+  this_ =  new QCborValue(other);
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:189
-// [4] QCborValue::Type type()
-extern "C" Q_DECL_EXPORT
-QCborValue::Type C_ZNK10QCborValue4typeEv(void *this_) {
-  return (QCborValue::Type)((QCborValue*)this_)->type();
+// [24] QCborValue & operator=(QCborValue &&) 
+// (12)qm1441468923 (21)_ZN10QCborValueaSEOS_
+//static
+/*void qm1441468923(QCborValue && other)*/ {
+  QCborValue && other =  static_cast<QCborValue &&>(*(QCborValue *)this_);
+  (void) ((QCborValue*)this_)->operator=(other);
+  // auto xptr = (QCborValue & (QCborValue::*)(QCborValue&&) ) &QCborValue::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:190
-// [1] bool isInteger()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue9isIntegerEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isInteger();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:191
-// [1] bool isByteArray()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue11isByteArrayEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isByteArray();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:192
-// [1] bool isString()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue8isStringEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isString();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:193
-// [1] bool isArray()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue7isArrayEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isArray();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:194
-// [1] bool isMap()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue5isMapEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isMap();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:195
-// [1] bool isTag()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue5isTagEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isTag();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:196
-// [1] bool isFalse()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue7isFalseEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isFalse();
+// [-2] void swap(QCborValue &) 
+// (12)qm1569173959 (24)_ZN10QCborValue4swapERS_
+//static
+/*void qm1569173959(QCborValue & other)*/ {
+  QCborValue & other = *(QCborValue *)this_;
+  (void) ((QCborValue*)this_)->swap(other);
+   auto xptr = (void (QCborValue::*)(QCborValue&) ) &QCborValue::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:197
-// [1] bool isTrue()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue6isTrueEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isTrue();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:198
-// [1] bool isBool()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue6isBoolEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isBool();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:199
-// [1] bool isNull()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue6isNullEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isNull();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:200
-// [1] bool isUndefined()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue11isUndefinedEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isUndefined();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:201
-// [1] bool isDouble()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue8isDoubleEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isDouble();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:202
-// [1] bool isDateTime()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue10isDateTimeEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isDateTime();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:203
-// [1] bool isUrl()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue5isUrlEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isUrl();
+// [4] QCborValue::Type type() const
+// (12)qm3882301134 (23)_ZNK10QCborValue4typeEv
+//static
+/*void qm3882301134()*/ {
+  ;
+  (void) ((QCborValue*)this_)->type();
+   auto xptr = (QCborValue::Type (QCborValue::*)() const ) &QCborValue::type;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:204
-// [1] bool isRegularExpression()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue19isRegularExpressionEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isRegularExpression();
+// [1] bool isInteger() const
+// (12)qm3847646632 (28)_ZNK10QCborValue9isIntegerEv
+//static
+/*void qm3847646632()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isInteger();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isInteger;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:205
-// [1] bool isUuid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue6isUuidEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isUuid();
+// [1] bool isByteArray() const
+// (12)qm3682590455 (31)_ZNK10QCborValue11isByteArrayEv
+//static
+/*void qm3682590455()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isByteArray();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isByteArray;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:206
-// [1] bool isInvalid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue9isInvalidEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isInvalid();
+// [1] bool isString() const
+// (11)qm554741988 (27)_ZNK10QCborValue8isStringEv
+//static
+/*void qm554741988()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isString();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isString;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:207
-// [1] bool isContainer()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue11isContainerEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isContainer();
+// [1] bool isArray() const
+// (12)qm3095572031 (26)_ZNK10QCborValue7isArrayEv
+//static
+/*void qm3095572031()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isArray();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isArray;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:208
+// [1] bool isMap() const
+// (12)qm2088748248 (24)_ZNK10QCborValue5isMapEv
+//static
+/*void qm2088748248()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isMap();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isMap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:209
-// [1] bool isSimpleType()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue12isSimpleTypeEv(void *this_) {
-  return (bool)((QCborValue*)this_)->isSimpleType();
+// [1] bool isTag() const
+// (11)qm149325022 (24)_ZNK10QCborValue5isTagEv
+//static
+/*void qm149325022()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isTag();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isTag;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:210
+// [1] bool isFalse() const
+// (12)qm3365604455 (26)_ZNK10QCborValue7isFalseEv
+//static
+/*void qm3365604455()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isFalse();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isFalse;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:211
+// [1] bool isTrue() const
+// (11)qm586960768 (25)_ZNK10QCborValue6isTrueEv
+//static
+/*void qm586960768()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isTrue();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isTrue;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:212
+// [1] bool isBool() const
+// (12)qm1601597761 (25)_ZNK10QCborValue6isBoolEv
+//static
+/*void qm1601597761()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isBool();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isBool;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:213
-// [1] bool isSimpleType(QCborSimpleType)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue12isSimpleTypeE15QCborSimpleType(void *this_, QCborSimpleType st) {
-  return (bool)((QCborValue*)this_)->isSimpleType(st);
+// [1] bool isNull() const
+// (11)qm273781239 (25)_ZNK10QCborValue6isNullEv
+//static
+/*void qm273781239()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isNull();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:214
+// [1] bool isUndefined() const
+// (12)qm1753743330 (31)_ZNK10QCborValue11isUndefinedEv
+//static
+/*void qm1753743330()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isUndefined();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isUndefined;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:215
+// [1] bool isDouble() const
+// (12)qm4058996142 (27)_ZNK10QCborValue8isDoubleEv
+//static
+/*void qm4058996142()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isDouble();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isDouble;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:216
+// [1] bool isDateTime() const
+// (12)qm2341919382 (30)_ZNK10QCborValue10isDateTimeEv
+//static
+/*void qm2341919382()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isDateTime();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isDateTime;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:217
-// [1] QCborSimpleType toSimpleType(QCborSimpleType)
-extern "C" Q_DECL_EXPORT
-QCborSimpleType C_ZNK10QCborValue12toSimpleTypeE15QCborSimpleType(void *this_, QCborSimpleType defaultValue) {
-  return (QCborSimpleType)((QCborValue*)this_)->toSimpleType(defaultValue);
+// [1] bool isUrl() const
+// (12)qm2071968510 (24)_ZNK10QCborValue5isUrlEv
+//static
+/*void qm2071968510()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isUrl();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isUrl;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:222
-// [8] qint64 toInteger(qint64)
-extern "C" Q_DECL_EXPORT
-qint64 C_ZNK10QCborValue9toIntegerEx(void *this_, qint64 defaultValue) {
-  return (qint64)((QCborValue*)this_)->toInteger(defaultValue);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:218
+// [1] bool isRegularExpression() const
+// (12)qm2071633183 (39)_ZNK10QCborValue19isRegularExpressionEv
+//static
+/*void qm2071633183()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isRegularExpression();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isRegularExpression;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:224
-// [1] bool toBool(bool)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValue6toBoolEb(void *this_, bool defaultValue) {
-  return (bool)((QCborValue*)this_)->toBool(defaultValue);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:219
+// [1] bool isUuid() const
+// (12)qm1083032101 (25)_ZNK10QCborValue6isUuidEv
+//static
+/*void qm1083032101()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isUuid();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isUuid;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:226
-// [8] double toDouble(double)
-extern "C" Q_DECL_EXPORT
-double C_ZNK10QCborValue8toDoubleEd(void *this_, double defaultValue) {
-  return (double)((QCborValue*)this_)->toDouble(defaultValue);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:220
+// [1] bool isInvalid() const
+// (12)qm3438637052 (28)_ZNK10QCborValue9isInvalidEv
+//static
+/*void qm3438637052()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isInvalid();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isInvalid;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:229
-// [8] QCborTag tag(QCborTag)
-extern "C" Q_DECL_EXPORT
-QCborTag C_ZNK10QCborValue3tagE8QCborTag(void *this_, QCborTag defaultValue) {
-  return (QCborTag)((QCborValue*)this_)->tag(defaultValue);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:221
+// [1] bool isContainer() const
+// (11)qm959823923 (31)_ZNK10QCborValue11isContainerEv
+//static
+/*void qm959823923()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isContainer();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isContainer;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:230
-// [24] QCborValue taggedValue(const QCborValue &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue11taggedValueERKS_(void *this_, QCborValue* defaultValue) {
-  auto rv = ((QCborValue*)this_)->taggedValue(*defaultValue);
-return new QCborValue(rv);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:223
+// [1] bool isSimpleType() const
+// (12)qm2919039533 (32)_ZNK10QCborValue12isSimpleTypeEv
+//static
+/*void qm2919039533()*/ {
+  ;
+  (void) ((QCborValue*)this_)->isSimpleType();
+   auto xptr = (bool (QCborValue::*)() const ) &QCborValue::isSimpleType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:232
-// [8] QByteArray toByteArray(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue11toByteArrayERK10QByteArray(void *this_, QByteArray* defaultValue) {
-  auto rv = ((QCborValue*)this_)->toByteArray(*defaultValue);
-return new QByteArray(rv);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:227
+// [1] bool isSimpleType(QCborSimpleType) const
+// (12)qm2562164102 (48)_ZNK10QCborValue12isSimpleTypeE15QCborSimpleType
+//static
+/*void qm2562164102(QCborSimpleType st)*/ {
+  QCborSimpleType st = *(QCborSimpleType*)this_;
+  (void) ((QCborValue*)this_)->isSimpleType(st);
+   auto xptr = (bool (QCborValue::*)(QCborSimpleType) const ) &QCborValue::isSimpleType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:233
-// [8] QString toString(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue8toStringERK7QString(void *this_, QString* defaultValue) {
-  auto rv = ((QCborValue*)this_)->toString(*defaultValue);
-return new QString(rv);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:231
+// [1] QCborSimpleType toSimpleType(QCborSimpleType) const
+// (12)qm1656021723 (48)_ZNK10QCborValue12toSimpleTypeE15QCborSimpleType
+//static
+/*void qm1656021723(QCborSimpleType defaultValue)*/ {
+  QCborSimpleType defaultValue = *(QCborSimpleType*)this_;
+  (void) ((QCborValue*)this_)->toSimpleType(defaultValue);
+   auto xptr = (QCborSimpleType (QCborValue::*)(QCborSimpleType) const ) &QCborValue::toSimpleType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:234
-// [8] QDateTime toDateTime(const QDateTime &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue10toDateTimeERK9QDateTime(void *this_, QDateTime* defaultValue) {
-  auto rv = ((QCborValue*)this_)->toDateTime(*defaultValue);
-return new QDateTime(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:235
-// [8] QUrl toUrl(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue5toUrlERK4QUrl(void *this_, QUrl* defaultValue) {
-  auto rv = ((QCborValue*)this_)->toUrl(*defaultValue);
-return new QUrl(rv);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:236
-// [8] QRegularExpression toRegularExpression(const QRegularExpression &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue19toRegularExpressionERK18QRegularExpression(void *this_, QRegularExpression* defaultValue) {
-  auto rv = ((QCborValue*)this_)->toRegularExpression(*defaultValue);
-return new QRegularExpression(rv);
+// [8] qint64 toInteger(qint64) const
+// (12)qm1511958533 (28)_ZNK10QCborValue9toIntegerEx
+//static
+/*void qm1511958533(long long defaultValue)*/ {
+  long long defaultValue = *(long long*)this_;
+  (void) ((QCborValue*)this_)->toInteger(defaultValue);
+   auto xptr = (long long (QCborValue::*)(long long) const ) &QCborValue::toInteger;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:237
-// [16] QUuid toUuid(const QUuid &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue6toUuidERK5QUuid(void *this_, QUuid* defaultValue) {
-  auto rv = ((QCborValue*)this_)->toUuid(*defaultValue);
-return new QUuid(rv);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:238
+// [1] bool toBool(bool) const
+// (10)qm40662908 (25)_ZNK10QCborValue6toBoolEb
+//static
+/*void qm40662908(bool defaultValue)*/ {
+  bool defaultValue = *(bool*)this_;
+  (void) ((QCborValue*)this_)->toBool(defaultValue);
+   auto xptr = (bool (QCborValue::*)(bool) const ) &QCborValue::toBool;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:244
-// [8] QCborArray toArray()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue7toArrayEv(void *this_) {
-  auto rv = ((QCborValue*)this_)->toArray();
-return new QCborArray(rv);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:240
+// [8] double toDouble(double) const
+// (12)qm2599589851 (27)_ZNK10QCborValue8toDoubleEd
+//static
+/*void qm2599589851(double defaultValue)*/ {
+  double defaultValue = *(double*)this_;
+  (void) ((QCborValue*)this_)->toDouble(defaultValue);
+   auto xptr = (double (QCborValue::*)(double) const ) &QCborValue::toDouble;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:245
-// [8] QCborArray toArray(const QCborArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue7toArrayERK10QCborArray(void *this_, QCborArray* defaultValue) {
-  auto rv = ((QCborValue*)this_)->toArray(*defaultValue);
-return new QCborArray(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:246
-// [8] QCborMap toMap()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue5toMapEv(void *this_) {
-  auto rv = ((QCborValue*)this_)->toMap();
-return new QCborMap(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:247
-// [8] QCborMap toMap(const QCborMap &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue5toMapERK8QCborMap(void *this_, QCborMap* defaultValue) {
-  auto rv = ((QCborValue*)this_)->toMap(*defaultValue);
-return new QCborMap(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:250
-// [24] const QCborValue operator[](const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValueixERK7QString(void *this_, QString* key) {
-  auto rv = ((QCborValue*)this_)->operator[](*key);
-return new QCborValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:251
-// [24] const QCborValue operator[](QLatin1String)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValueixE13QLatin1String(void *this_, QLatin1String* key) {
-  auto rv = ((QCborValue*)this_)->operator[](*key);
-return new QCborValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:252
-// [24] const QCborValue operator[](qint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValueixEx(void *this_, qint64 key) {
-  auto rv = ((QCborValue*)this_)->operator[](key);
-return new QCborValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:254
-// [4] int compare(const QCborValue &)
-extern "C" Q_DECL_EXPORT
-int C_ZNK10QCborValue7compareERKS_(void *this_, QCborValue* other) {
-  return (int)((QCborValue*)this_)->compare(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:264
-// [1] bool operator==(const QCborValue &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValueeqERKS_(void *this_, QCborValue* other) {
-  return (bool)((QCborValue*)this_)->operator==(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:266
-// [1] bool operator!=(const QCborValue &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValueneERKS_(void *this_, QCborValue* other) {
-  return (bool)((QCborValue*)this_)->operator!=(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:268
-// [1] bool operator<(const QCborValue &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QCborValueltERKS_(void *this_, QCborValue* other) {
-  return (bool)((QCborValue*)this_)->operator<(*other);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:272
-// [24] QCborValue fromVariant(const QVariant &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValue11fromVariantERK8QVariant(QVariant* variant) {
-  auto rv = QCborValue::fromVariant(*variant);
-return new QCborValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:273
-// [16] QVariant toVariant()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue9toVariantEv(void *this_) {
-  auto rv = ((QCborValue*)this_)->toVariant();
-return new QVariant(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:274
-// [24] QCborValue fromJsonValue(const QJsonValue &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValue13fromJsonValueERK10QJsonValue(QJsonValue* v) {
-  auto rv = QCborValue::fromJsonValue(*v);
-return new QCborValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:275
-// [24] QJsonValue toJsonValue()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue11toJsonValueEv(void *this_) {
-  auto rv = ((QCborValue*)this_)->toJsonValue();
-return new QJsonValue(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:277
-// [24] QCborValue fromCbor(QCborStreamReader &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValue8fromCborER17QCborStreamReader(QCborStreamReader* reader) {
-  auto rv = QCborValue::fromCbor(*reader);
-return new QCborValue(rv);
-}
-
-// Public static Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:278
-// [24] QCborValue fromCbor(const QByteArray &, QCborParserError *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValue8fromCborERK10QByteArrayP16QCborParserError(QByteArray* ba, QCborParserError * error) {
-  auto rv = QCborValue::fromCbor(*ba, error);
-return new QCborValue(rv);
+// [1] bool operator==(const QCborValue &) const
+// (11)qm807088413 (23)_ZNK10QCborValueeqERKS_
+//static
+/*void qm807088413(const QCborValue & other)*/ {
+  const QCborValue & other = *(const QCborValue *)this_;
+  (void) ((QCborValue*)this_)->operator==(other);
+  // auto xptr = (bool (QCborValue::*)(QCborValue const&) const ) &QCborValue::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:279
-// [24] QCborValue fromCbor(const char *, qsizetype, QCborParserError *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValue8fromCborEPKcxP16QCborParserError(const char * data, qsizetype len_, QCborParserError * error) {
-  auto rv = QCborValue::fromCbor(data, len_, error);
-return new QCborValue(rv);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:280
+// [1] bool operator!=(const QCborValue &) const
+// (12)qm2858100074 (23)_ZNK10QCborValueneERKS_
+//static
+/*void qm2858100074(const QCborValue & other)*/ {
+  const QCborValue & other = *(const QCborValue *)this_;
+  (void) ((QCborValue*)this_)->operator!=(other);
+  // auto xptr = (bool (QCborValue::*)(QCborValue const&) const ) &QCborValue::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:281
-// [24] QCborValue fromCbor(const quint8 *, qsizetype, QCborParserError *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValue8fromCborEPKhxP16QCborParserError(const quint8 * data, qsizetype len_, QCborParserError * error) {
-  auto rv = QCborValue::fromCbor(data, len_, error);
-return new QCborValue(rv);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:282
+// [1] bool operator<(const QCborValue &) const
+// (12)qm4115588477 (23)_ZNK10QCborValueltERKS_
+//static
+/*void qm4115588477(const QCborValue & other)*/ {
+  const QCborValue & other = *(const QCborValue *)this_;
+  (void) ((QCborValue*)this_)->operator<(other);
+  // auto xptr = (bool (QCborValue::*)(QCborValue const&) const ) &QCborValue::operator<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:283
-// [8] QByteArray toCbor(QCborValue::EncodingOptions)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QCborValue6toCborE6QFlagsINS_14EncodingOptionEE(void *this_, QFlags<QCborValue::EncodingOption> opt) {
-  auto rv = ((QCborValue*)this_)->toCbor(opt);
-return new QByteArray(rv);
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:294
+// [24] QCborValue fromCbor(const char *, qsizetype, QCborParserError *) 
+// (12)qm1118391018 (48)_ZN10QCborValue8fromCborEPKcxP16QCborParserError
+//static
+/*void qm1118391018(const char * data, long long len_, QCborParserError * error)*/ {
+  const char * data = *(const char **)this_; long long len_ = *(long long*)this_; QCborParserError * error = *(QCborParserError **)this_;
+  (void) QCborValue::fromCbor(data, len_, error);
+   auto xptr = (QCborValue (*)(char const*, long long, QCborParserError*) ) &QCborValue::fromCbor;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:284
-// [-2] void toCbor(QCborStreamWriter &, QCborValue::EncodingOptions)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QCborValue6toCborER17QCborStreamWriter6QFlagsINS_14EncodingOptionEE(void *this_, QCborStreamWriter* writer, QFlags<QCborValue::EncodingOption> opt) {
-  ((QCborValue*)this_)->toCbor(*writer, opt);
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:296
+// [24] QCborValue fromCbor(const quint8 *, qsizetype, QCborParserError *) 
+// (11)qm474333567 (48)_ZN10QCborValue8fromCborEPKhxP16QCborParserError
+//static
+/*void qm474333567(const unsigned char * data, long long len_, QCborParserError * error)*/ {
+  const unsigned char * data = *(const unsigned char **)this_; long long len_ = *(long long*)this_; QCborParserError * error = *(QCborParserError **)this_;
+  (void) QCborValue::fromCbor(data, len_, error);
+   auto xptr = (QCborValue (*)(unsigned char const*, long long, QCborParserError*) ) &QCborValue::fromCbor;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborvalue.h:286
-// [8] QString toDiagnosticNotation(QCborValue::DiagnosticNotationOptions)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborValue20toDiagnosticNotationE6QFlagsINS_24DiagnosticNotationOptionEE(void *this_, QFlags<QCborValue::DiagnosticNotationOption> opts) {
-  auto rv = ((QCborValue*)this_)->toDiagnosticNotation(opts);
-return new QString(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcborvalue
 //  main block end
 
 //  use block begin

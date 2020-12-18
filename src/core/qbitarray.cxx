@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QBitArray is pure virtual: false
+// QBitArray is pure virtual: false false
 // QBitArray has virtual projected: false
 //  header block end
 
@@ -58,337 +58,355 @@ MyQBitArray(const QBitArray & other) : QBitArray(other) {}
 MyQBitArray(QBitArray && other) : QBitArray(other) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qbitarray(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:57
-// [-2] void QBitArray()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArrayC2Ev() {
-  return  new QBitArray();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:58
-// [-2] void QBitArray(int, bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArrayC2Eib(int size, bool val) {
-  return  new QBitArray(size, val);
+// [-2] void QBitArray() 
+// (12)qm1992321311 (17)_ZN9QBitArrayC2Ev
+/*void* qm1992321311()*/{
+  ;
+  this_ =  new QBitArray();
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:59
-// [-2] void QBitArray(const QBitArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArrayC2ERKS_(QBitArray* other) {
-  return  new QBitArray(*other);
+// [-2] void QBitArray(const QBitArray &) 
+// (12)qm4273813453 (20)_ZN9QBitArrayC2ERKS_
+/*void* qm4273813453(const QBitArray & other)*/{
+  const QBitArray & other = *(const QBitArray *)this_;
+  this_ =  new QBitArray(other);
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:60
-// [8] QBitArray & operator=(const QBitArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArrayaSERKS_(void *this_, QBitArray* other) {
-  auto& rv = ((QBitArray*)this_)->operator=(*other);
-return &rv;
+// [8] QBitArray & operator=(const QBitArray &) 
+// (12)qm1698153351 (20)_ZN9QBitArrayaSERKS_
+//static
+/*void qm1698153351(const QBitArray & other)*/ {
+  const QBitArray & other = *(const QBitArray *)this_;
+  (void) ((QBitArray*)this_)->operator=(other);
+  // auto xptr = (QBitArray & (QBitArray::*)(QBitArray const&) ) &QBitArray::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
-// since 5.2
+// /usr/include/qt/QtCore/qbitarray.h:61
+// [-2] void QBitArray(QBitArray &&) 
+// (12)qm4178915248 (19)_ZN9QBitArrayC2EOS_
+/*void* qm4178915248(QBitArray && other)*/{
+  QBitArray && other =  static_cast<QBitArray &&>(*(QBitArray *)this_);
+  this_ =  new QBitArray(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:62
-// [-2] void QBitArray(QBitArray &&)
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArrayC2EOS_(QBitArray && other) {
-  return  new QBitArray(other);
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:63
-// [8] QBitArray & operator=(QBitArray &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArrayaSEOS_(void *this_, QBitArray && other) {
-  auto& rv = ((QBitArray*)this_)->operator=(other);
-return &rv;
+// [8] QBitArray & operator=(QBitArray &&) 
+// (11)qm388224368 (19)_ZN9QBitArrayaSEOS_
+//static
+/*void qm388224368(QBitArray && other)*/ {
+  QBitArray && other =  static_cast<QBitArray &&>(*(QBitArray *)this_);
+  (void) ((QBitArray*)this_)->operator=(other);
+  // auto xptr = (QBitArray & (QBitArray::*)(QBitArray&&) ) &QBitArray::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 4.8
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:65
+// [-2] void swap(QBitArray &) 
+// (12)qm2328763692 (22)_ZN9QBitArray4swapERS_
+//static
+/*void qm2328763692(QBitArray & other)*/ {
+  QBitArray & other = *(QBitArray *)this_;
+  (void) ((QBitArray*)this_)->swap(other);
+   auto xptr = (void (QBitArray::*)(QBitArray&) ) &QBitArray::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:67
-// [-2] void swap(QBitArray &)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArray4swapERS_(void *this_, QBitArray* other) {
-  ((QBitArray*)this_)->swap(*other);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:69
-// [4] int size()
-extern "C" Q_DECL_EXPORT
-int C_ZNK9QBitArray4sizeEv(void *this_) {
-  return (int)((QBitArray*)this_)->size();
+// [4] int size() const
+// (12)qm2527267329 (21)_ZNK9QBitArray4sizeEv
+//static
+/*void qm2527267329()*/ {
+  ;
+  (void) ((QBitArray*)this_)->size();
+   auto xptr = (int (QBitArray::*)() const ) &QBitArray::size;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:70
-// [4] int count()
-extern "C" Q_DECL_EXPORT
-int C_ZNK9QBitArray5countEv(void *this_) {
-  return (int)((QBitArray*)this_)->count();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:68
+// [4] int count() const
+// (12)qm3846909202 (22)_ZNK9QBitArray5countEv
+//static
+/*void qm3846909202()*/ {
+  ;
+  (void) ((QBitArray*)this_)->count();
+   auto xptr = (int (QBitArray::*)() const ) &QBitArray::count;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:71
-// [4] int count(bool)
-extern "C" Q_DECL_EXPORT
-int C_ZNK9QBitArray5countEb(void *this_, bool on) {
-  return (int)((QBitArray*)this_)->count(on);
+// [1] bool isEmpty() const
+// (12)qm1793680217 (24)_ZNK9QBitArray7isEmptyEv
+//static
+/*void qm1793680217()*/ {
+  ;
+  (void) ((QBitArray*)this_)->isEmpty();
+   auto xptr = (bool (QBitArray::*)() const ) &QBitArray::isEmpty;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:73
-// [1] bool isEmpty()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QBitArray7isEmptyEv(void *this_) {
-  return (bool)((QBitArray*)this_)->isEmpty();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:72
+// [1] bool isNull() const
+// (12)qm3218923908 (23)_ZNK9QBitArray6isNullEv
+//static
+/*void qm3218923908()*/ {
+  ;
+  (void) ((QBitArray*)this_)->isNull();
+   auto xptr = (bool (QBitArray::*)() const ) &QBitArray::isNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:74
-// [1] bool isNull()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QBitArray6isNullEv(void *this_) {
-  return (bool)((QBitArray*)this_)->isNull();
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:76
-// [-2] void resize(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArray6resizeEi(void *this_, int size) {
-  ((QBitArray*)this_)->resize(size);
+// [-2] void detach() 
+// (12)qm3725791354 (22)_ZN9QBitArray6detachEv
+//static
+/*void qm3725791354()*/ {
+  ;
+  (void) ((QBitArray*)this_)->detach();
+   auto xptr = (void (QBitArray::*)() ) &QBitArray::detach;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:77
+// [1] bool isDetached() const
+// (12)qm3613647234 (28)_ZNK9QBitArray10isDetachedEv
+//static
+/*void qm3613647234()*/ {
+  ;
+  (void) ((QBitArray*)this_)->isDetached();
+   auto xptr = (bool (QBitArray::*)() const ) &QBitArray::isDetached;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:78
-// [-2] void detach()
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArray6detachEv(void *this_) {
-  ((QBitArray*)this_)->detach();
+// [-2] void clear() 
+// (11)qm341699476 (21)_ZN9QBitArray5clearEv
+//static
+/*void qm341699476()*/ {
+  ;
+  (void) ((QBitArray*)this_)->clear();
+   auto xptr = (void (QBitArray::*)() ) &QBitArray::clear;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:79
-// [1] bool isDetached()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QBitArray10isDetachedEv(void *this_) {
-  return (bool)((QBitArray*)this_)->isDetached();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:80
-// [-2] void clear()
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArray5clearEv(void *this_) {
-  ((QBitArray*)this_)->clear();
+// [1] bool testBit(int) const
+// (12)qm2660943850 (24)_ZNK9QBitArray7testBitEi
+//static
+/*void qm2660943850(int i)*/ {
+  int i = *(int*)this_;
+  (void) ((QBitArray*)this_)->testBit(i);
+   auto xptr = (bool (QBitArray::*)(int) const ) &QBitArray::testBit;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:81
+// [-2] void setBit(int) 
+// (12)qm3649423897 (22)_ZN9QBitArray6setBitEi
+//static
+/*void qm3649423897(int i)*/ {
+  int i = *(int*)this_;
+  (void) ((QBitArray*)this_)->setBit(i);
+   auto xptr = (void (QBitArray::*)(int) ) &QBitArray::setBit;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:82
-// [1] bool testBit(int)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QBitArray7testBitEi(void *this_, int i) {
-  return (bool)((QBitArray*)this_)->testBit(i);
+// [-2] void setBit(int, bool) 
+// (11)qm353157875 (23)_ZN9QBitArray6setBitEib
+//static
+/*void qm353157875(int i, bool val)*/ {
+  int i = *(int*)this_; bool val = *(bool*)this_;
+  (void) ((QBitArray*)this_)->setBit(i, val);
+   auto xptr = (void (QBitArray::*)(int, bool) ) &QBitArray::setBit;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:83
-// [-2] void setBit(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArray6setBitEi(void *this_, int i) {
-  ((QBitArray*)this_)->setBit(i);
+// [-2] void clearBit(int) 
+// (11)qm912112298 (24)_ZN9QBitArray8clearBitEi
+//static
+/*void qm912112298(int i)*/ {
+  int i = *(int*)this_;
+  (void) ((QBitArray*)this_)->clearBit(i);
+   auto xptr = (void (QBitArray::*)(int) ) &QBitArray::clearBit;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:84
-// [-2] void setBit(int, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArray6setBitEib(void *this_, int i, bool val) {
-  ((QBitArray*)this_)->setBit(i, val);
+// [1] bool toggleBit(int) 
+// (12)qm3928850779 (25)_ZN9QBitArray9toggleBitEi
+//static
+/*void qm3928850779(int i)*/ {
+  int i = *(int*)this_;
+  (void) ((QBitArray*)this_)->toggleBit(i);
+   auto xptr = (bool (QBitArray::*)(int) ) &QBitArray::toggleBit;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:85
-// [-2] void clearBit(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArray8clearBitEi(void *this_, int i) {
-  ((QBitArray*)this_)->clearBit(i);
-}
-
-// Public Visibility=Default Availability=Available
+// Public Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:86
-// [1] bool toggleBit(int)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QBitArray9toggleBitEi(void *this_, int i) {
-  return (bool)((QBitArray*)this_)->toggleBit(i);
+// [1] bool at(int) const
+// (12)qm4259724740 (19)_ZNK9QBitArray2atEi
+//static
+/*void qm4259724740(int i)*/ {
+  int i = *(int*)this_;
+  (void) ((QBitArray*)this_)->at(i);
+   auto xptr = (bool (QBitArray::*)(int) const ) &QBitArray::at;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:87
+// [16] QBitRef operator[](int) 
+// (12)qm1229595558 (17)_ZN9QBitArrayixEi
+//static
+/*void qm1229595558(int i)*/ {
+  int i = *(int*)this_;
+  (void) ((QBitArray*)this_)->operator[](i);
+  // auto xptr = (QBitRef (QBitArray::*)(int) ) &QBitArray::operator[];
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:88
-// [1] bool at(int)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QBitArray2atEi(void *this_, int i) {
-  return (bool)((QBitArray*)this_)->at(i);
+// [1] bool operator[](int) const
+// (12)qm1892726104 (18)_ZNK9QBitArrayixEi
+//static
+/*void qm1892726104(int i)*/ {
+  int i = *(int*)this_;
+  (void) ((QBitArray*)this_)->operator[](i);
+  // auto xptr = (bool (QBitArray::*)(int) const ) &QBitArray::operator[];
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:89
-// [16] QBitRef operator[](int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArrayixEi(void *this_, int i) {
-  auto rv = ((QBitArray*)this_)->operator[](i);
-/*return rv;*/
+// [16] QBitRef operator[](uint) 
+// (12)qm3494081052 (17)_ZN9QBitArrayixEj
+//static
+/*void qm3494081052(unsigned int i)*/ {
+  unsigned int i = *(unsigned int*)this_;
+  (void) ((QBitArray*)this_)->operator[](i);
+  // auto xptr = (QBitRef (QBitArray::*)(unsigned int) ) &QBitArray::operator[];
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:90
-// [1] bool operator[](int)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QBitArrayixEi(void *this_, int i) {
-  return (bool)((QBitArray*)this_)->operator[](i);
+// [1] bool operator[](uint) const
+// (12)qm3923371234 (18)_ZNK9QBitArrayixEj
+//static
+/*void qm3923371234(unsigned int i)*/ {
+  unsigned int i = *(unsigned int*)this_;
+  (void) ((QBitArray*)this_)->operator[](i);
+  // auto xptr = (bool (QBitArray::*)(unsigned int) const ) &QBitArray::operator[];
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:91
-// [16] QBitRef operator[](uint)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArrayixEj(void *this_, uint i) {
-  auto rv = ((QBitArray*)this_)->operator[](i);
-/*return rv;*/
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:92
-// [1] bool operator[](uint)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QBitArrayixEj(void *this_, uint i) {
-  return (bool)((QBitArray*)this_)->operator[](i);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:94
-// [8] QBitArray & operator&=(const QBitArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArrayaNERKS_(void *this_, QBitArray* arg0) {
-  auto& rv = ((QBitArray*)this_)->operator&=(*arg0);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:95
-// [8] QBitArray & operator|=(const QBitArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArrayoRERKS_(void *this_, QBitArray* arg0) {
-  auto& rv = ((QBitArray*)this_)->operator|=(*arg0);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:96
-// [8] QBitArray & operator^=(const QBitArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArrayeOERKS_(void *this_, QBitArray* arg0) {
-  auto& rv = ((QBitArray*)this_)->operator^=(*arg0);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:97
-// [8] QBitArray operator~()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QBitArraycoEv(void *this_) {
-  auto rv = ((QBitArray*)this_)->operator~();
-return new QBitArray(rv);
+// [1] bool operator==(const QBitArray &) const
+// (12)qm1401375372 (21)_ZNK9QBitArrayeqERKS_
+//static
+/*void qm1401375372(const QBitArray & other)*/ {
+  const QBitArray & other = *(const QBitArray *)this_;
+  (void) ((QBitArray*)this_)->operator==(other);
+  // auto xptr = (bool (QBitArray::*)(QBitArray const&) const ) &QBitArray::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:99
-// [1] bool operator==(const QBitArray &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QBitArrayeqERKS_(void *this_, QBitArray* other) {
-  return (bool)((QBitArray*)this_)->operator==(*other);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:98
+// [1] bool operator!=(const QBitArray &) const
+// (12)qm3385286395 (21)_ZNK9QBitArrayneERKS_
+//static
+/*void qm3385286395(const QBitArray & other)*/ {
+  const QBitArray & other = *(const QBitArray *)this_;
+  (void) ((QBitArray*)this_)->operator!=(other);
+  // auto xptr = (bool (QBitArray::*)(QBitArray const&) const ) &QBitArray::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:100
-// [1] bool operator!=(const QBitArray &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QBitArrayneERKS_(void *this_, QBitArray* other) {
-  return (bool)((QBitArray*)this_)->operator!=(*other);
+// [1] bool fill(bool, int) 
+// (12)qm1402053431 (21)_ZN9QBitArray4fillEbi
+//static
+/*void qm1402053431(bool val, int size)*/ {
+  bool val = *(bool*)this_; int size = *(int*)this_;
+  (void) ((QBitArray*)this_)->fill(val, size);
+   auto xptr = (bool (QBitArray::*)(bool, int) ) &QBitArray::fill;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:102
-// [1] bool fill(bool, int)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QBitArray4fillEbi(void *this_, bool val, int size) {
-  return (bool)((QBitArray*)this_)->fill(val, size);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:103
-// [-2] void fill(bool, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArray4fillEbii(void *this_, bool val, int first, int last) {
-  ((QBitArray*)this_)->fill(val, first, last);
+// [-2] void truncate(int) 
+// (12)qm3970054901 (24)_ZN9QBitArray8truncateEi
+//static
+/*void qm3970054901(int pos)*/ {
+  int pos = *(int*)this_;
+  (void) ((QBitArray*)this_)->truncate(pos);
+   auto xptr = (void (QBitArray::*)(int) ) &QBitArray::truncate;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbitarray.h:105
-// [-2] void truncate(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArray8truncateEi(void *this_, int pos) {
-  ((QBitArray*)this_)->truncate(pos);
+// [8] const char * bits() const
+// (12)qm2791142350 (21)_ZNK9QBitArray4bitsEv
+//static
+/*void qm2791142350()*/ {
+  ;
+  (void) ((QBitArray*)this_)->bits();
+   auto xptr = (const char * (QBitArray::*)() const ) &QBitArray::bits;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 5.11
-// /usr/include/qt/QtCore/qbitarray.h:107
-// [8] const char * bits()
-#if QT_VERSION >= 0x050b00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QBitArray4bitsEv(void *this_) {
-  return (void*)((QBitArray*)this_)->bits();
-}
-#endif // QT_VERSION >= 0x050b00
-
-// Public static Visibility=Default Availability=Available
-// since 5.11
-// /usr/include/qt/QtCore/qbitarray.h:108
-// [8] QBitArray fromBits(const char *, qsizetype)
-#if QT_VERSION >= 0x050b00
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArray8fromBitsEPKcx(const char * data, qsizetype len_) {
-  auto rv = QBitArray::fromBits(data, len_);
-return new QBitArray(rv);
-}
-#endif // QT_VERSION >= 0x050b00
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qbitarray.h:112
-// [8] QBitArray::DataPtr & data_ptr()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QBitArray8data_ptrEv(void *this_) {
-  auto& rv = ((QBitArray*)this_)->data_ptr();
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:110
+// [8] QBitArray::DataPtr & data_ptr() 
+// (12)qm3740955706 (24)_ZN9QBitArray8data_ptrEv
+//static
+/*void qm3740955706()*/ {
+  ;
+  (void) ((QBitArray*)this_)->data_ptr();
+   auto xptr = (QTypedArrayData<char> *& (QBitArray::*)() ) &QBitArray::data_ptr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN9QBitArrayD2Ev(void *this_) {
+/*void C_ZN9QBitArrayD2Ev(void *this_)*/ {
   delete (QBitArray*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qbitarray
 //  main block end
 
 //  use block begin

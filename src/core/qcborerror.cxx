@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050c00
 // /usr/include/qt/QtCore/qcborcommon.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QCborError is pure virtual: false
+// QCborError is pure virtual: false false
 // QCborError has virtual projected: false
 //  header block end
 
@@ -51,20 +50,16 @@ public:
   virtual ~MyQCborError() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcborcommon.h:127
-// [8] QString toString()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QCborError8toStringEv(void *this_) {
-  auto rv = ((QCborError*)this_)->toString();
-return new QString(rv);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcborerror(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN10QCborErrorD2Ev(void *this_) {
+/*void C_ZN10QCborErrorD2Ev(void *this_)*/ {
   delete (QCborError*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcborerror
 //  main block end
 
 //  use block begin

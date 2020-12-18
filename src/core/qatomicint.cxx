@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040400
 // /usr/include/qt/QtCore/qatomic.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QAtomicInt is pure virtual: false
+// QAtomicInt is pure virtual: false false
 // QAtomicInt has virtual projected: false
 //  header block end
 
@@ -53,19 +52,25 @@ public:
 MyQAtomicInt(int value) : QAtomicInt(value) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qatomicint(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qatomic.h:162
-// [-2] void QAtomicInt(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QAtomicIntC2Ei(int value) {
-  return  new QAtomicInt(value);
+// /usr/include/qt/QtCore/qatomic.h:168
+// [-2] void QAtomicInt(int) 
+// (12)qm2182123644 (19)_ZN10QAtomicIntC2Ei
+/*void* qm2182123644(int value)*/{
+  int value = *(int*)this_;
+  this_ =  new QAtomicInt(value);
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN10QAtomicIntD2Ev(void *this_) {
+/*void C_ZN10QAtomicIntD2Ev(void *this_)*/ {
   delete (QAtomicInt*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qatomicint
 //  main block end
 
 //  use block begin

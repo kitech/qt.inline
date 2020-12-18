@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QJsonValueRefPtr is pure virtual: false
+// QJsonValueRefPtr is pure virtual: false false
 // QJsonValueRefPtr has virtual projected: false
 //  header block end
 
@@ -54,44 +54,58 @@ MyQJsonValueRefPtr(QJsonArray * array, int idx) : QJsonValueRefPtr(array, idx) {
 MyQJsonValueRefPtr(QJsonObject * object, int idx) : QJsonValueRefPtr(object, idx) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qjsonvaluerefptr(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:238
-// [-2] void QJsonValueRefPtr(QJsonArray *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QJsonValueRefPtrC2EP10QJsonArrayi(QJsonArray * array, int idx) {
-  return  new QJsonValueRefPtr(array, idx);
+// /usr/include/qt/QtCore/qjsonvalue.h:224
+// [-2] void QJsonValueRefPtr(QJsonArray *, int) 
+// (11)qm525575146 (38)_ZN16QJsonValueRefPtrC2EP10QJsonArrayi
+/*void* qm525575146(QJsonArray * array, int idx)*/{
+  QJsonArray * array = *(QJsonArray **)this_; int idx = *(int*)this_;
+  this_ =  new QJsonValueRefPtr(array, idx);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:240
-// [-2] void QJsonValueRefPtr(QJsonObject *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QJsonValueRefPtrC2EP11QJsonObjecti(QJsonObject * object, int idx) {
-  return  new QJsonValueRefPtr(object, idx);
+// /usr/include/qt/QtCore/qjsonvalue.h:226
+// [-2] void QJsonValueRefPtr(QJsonObject *, int) 
+// (11)qm435998553 (39)_ZN16QJsonValueRefPtrC2EP11QJsonObjecti
+/*void* qm435998553(QJsonObject * object, int idx)*/{
+  QJsonObject * object = *(QJsonObject **)this_; int idx = *(int*)this_;
+  this_ =  new QJsonValueRefPtr(object, idx);
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:243
-// [16] QJsonValueRef & operator*()
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QJsonValueRefPtrdeEv(void *this_) {
-  auto& rv = ((QJsonValueRefPtr*)this_)->operator*();
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:229
+// [16] QJsonValueRef & operator*() 
+// (12)qm3062777353 (25)_ZN16QJsonValueRefPtrdeEv
+//static
+/*void qm3062777353()*/ {
+  ;
+  (void) ((QJsonValueRefPtr*)this_)->operator*();
+  // auto xptr = (QJsonValueRef & (QJsonValueRefPtr::*)() ) &QJsonValueRefPtr::operator*;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:244
-// [8] QJsonValueRef * operator->()
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QJsonValueRefPtrptEv(void *this_) {
-  return (void*)((QJsonValueRefPtr*)this_)->operator->();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:230
+// [8] QJsonValueRef * operator->() 
+// (12)qm1947291526 (25)_ZN16QJsonValueRefPtrptEv
+//static
+/*void qm1947291526()*/ {
+  ;
+  (void) ((QJsonValueRefPtr*)this_)->operator->();
+  // auto xptr = (QJsonValueRef * (QJsonValueRefPtr::*)() ) &QJsonValueRefPtr::operator->;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN16QJsonValueRefPtrD2Ev(void *this_) {
+/*void C_ZN16QJsonValueRefPtrD2Ev(void *this_)*/ {
   delete (QJsonValueRefPtr*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qjsonvaluerefptr
 //  main block end
 
 //  use block begin

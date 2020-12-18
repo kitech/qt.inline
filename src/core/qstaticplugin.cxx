@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050200
 // /usr/include/qt/QtCore/qplugin.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QStaticPlugin is pure virtual: false
+// QStaticPlugin is pure virtual: false false
 // QStaticPlugin has virtual projected: false
 //  header block end
 
@@ -51,20 +50,16 @@ public:
   virtual ~MyQStaticPlugin() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qplugin.h:89
-// [16] QJsonObject metaData()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStaticPlugin8metaDataEv(void *this_) {
-  auto rv = ((QStaticPlugin*)this_)->metaData();
-return new QJsonObject(rv);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstaticplugin(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStaticPluginD2Ev(void *this_) {
+/*void C_ZN13QStaticPluginD2Ev(void *this_)*/ {
   delete (QStaticPlugin*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstaticplugin
 //  main block end
 
 //  use block begin

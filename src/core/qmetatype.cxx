@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QMetaType is pure virtual: false
+// QMetaType is pure virtual: false false
 // QMetaType has virtual projected: false
 //  header block end
 
@@ -52,409 +52,139 @@ public:
 MyQMetaType(const int type_) : QMetaType(type_) {}
 };
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:506
-// [-2] void registerStreamOperators(const char *, QMetaType::SaveOperator, QMetaType::LoadOperator)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QMetaType23registerStreamOperatorsEPKcPFvR11QDataStreamPKvEPFvS3_PvE(const char * typeName, QMetaType::SaveOperator saveOp, QMetaType::LoadOperator loadOp) {
-  QMetaType::registerStreamOperators(typeName, saveOp, loadOp);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:508
-// [-2] void registerStreamOperators(int, QMetaType::SaveOperator, QMetaType::LoadOperator)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QMetaType23registerStreamOperatorsEiPFvR11QDataStreamPKvEPFvS1_PvE(int type_, QMetaType::SaveOperator saveOp, QMetaType::LoadOperator loadOp) {
-  QMetaType::registerStreamOperators(type_, saveOp, loadOp);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:511
-// [4] int registerType(const char *, QMetaType::Deleter, QMetaType::Creator)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType12registerTypeEPKcPFvPvEPFS2_PKvE(const char * typeName, QMetaType::Deleter deleter, QMetaType::Creator creator) {
-  return (int)QMetaType::registerType(typeName, deleter, creator);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:513
-// [4] int registerType(const char *, QMetaType::Deleter, QMetaType::Creator, QMetaType::Destructor, QMetaType::Constructor, int, QMetaType::TypeFlags, const QMetaObject *)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType12registerTypeEPKcPFvPvEPFS2_PKvES4_PFS2_S2_S6_Ei6QFlagsINS_8TypeFlagEEPK11QMetaObject(const char * typeName, QMetaType::Deleter deleter, QMetaType::Creator creator, QMetaType::Destructor destructor, QMetaType::Constructor constructor, int size, QFlags<QMetaType::TypeFlag> flags, const QMetaObject * metaObject) {
-  return (int)QMetaType::registerType(typeName, deleter, creator, destructor, constructor, size, flags, metaObject);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:520
-// [4] int registerType(const char *, QMetaType::TypedDestructor, QMetaType::TypedConstructor, int, QMetaType::TypeFlags, const QMetaObject *)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType12registerTypeEPKcPFviPvEPFS2_iS2_PKvEi6QFlagsINS_8TypeFlagEEPK11QMetaObject(const char * typeName, QMetaType::TypedDestructor destructor, QMetaType::TypedConstructor constructor, int size, QFlags<QMetaType::TypeFlag> flags, const QMetaObject * metaObject) {
-  return (int)QMetaType::registerType(typeName, destructor, constructor, size, flags, metaObject);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:526
-// [1] bool unregisterType(int)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType14unregisterTypeEi(int type_) {
-  return (bool)QMetaType::unregisterType(type_);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:527
-// [4] int registerNormalizedType(const ::QByteArray &, QMetaType::Deleter, QMetaType::Creator, QMetaType::Destructor, QMetaType::Constructor, int, QMetaType::TypeFlags, const QMetaObject *)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType22registerNormalizedTypeERK10QByteArrayPFvPvEPFS3_PKvES5_PFS3_S3_S7_Ei6QFlagsINS_8TypeFlagEEPK11QMetaObject(const ::QByteArray & normalizedTypeName, QMetaType::Deleter deleter, QMetaType::Creator creator, QMetaType::Destructor destructor, QMetaType::Constructor constructor, int size, QFlags<QMetaType::TypeFlag> flags, const QMetaObject * metaObject) {
-  return (int)QMetaType::registerNormalizedType(normalizedTypeName, deleter, creator, destructor, constructor, size, flags, metaObject);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:534
-// [4] int registerNormalizedType(const ::QByteArray &, QMetaType::Destructor, QMetaType::Constructor, int, QMetaType::TypeFlags, const QMetaObject *)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType22registerNormalizedTypeERK10QByteArrayPFvPvEPFS3_S3_PKvEi6QFlagsINS_8TypeFlagEEPK11QMetaObject(const ::QByteArray & normalizedTypeName, QMetaType::Destructor destructor, QMetaType::Constructor constructor, int size, QFlags<QMetaType::TypeFlag> flags, const QMetaObject * metaObject) {
-  return (int)QMetaType::registerNormalizedType(normalizedTypeName, destructor, constructor, size, flags, metaObject);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:539
-// [4] int registerNormalizedType(const ::QByteArray &, QMetaType::TypedDestructor, QMetaType::TypedConstructor, int, QMetaType::TypeFlags, const QMetaObject *)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType22registerNormalizedTypeERK10QByteArrayPFviPvEPFS3_iS3_PKvEi6QFlagsINS_8TypeFlagEEPK11QMetaObject(const ::QByteArray & normalizedTypeName, QMetaType::TypedDestructor destructor, QMetaType::TypedConstructor constructor, int size, QFlags<QMetaType::TypeFlag> flags, const QMetaObject * metaObject) {
-  return (int)QMetaType::registerNormalizedType(normalizedTypeName, destructor, constructor, size, flags, metaObject);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:544
-// [4] int registerTypedef(const char *, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType15registerTypedefEPKci(const char * typeName, int aliasId) {
-  return (int)QMetaType::registerTypedef(typeName, aliasId);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:545
-// [4] int registerNormalizedTypedef(const ::QByteArray &, int)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType25registerNormalizedTypedefERK10QByteArrayi(const ::QByteArray & normalizedTypeName, int aliasId) {
-  return (int)QMetaType::registerNormalizedTypedef(normalizedTypeName, aliasId);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:546
-// [4] int type(const char *)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType4typeEPKc(const char * typeName) {
-  return (int)QMetaType::type(typeName);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtCore/qmetatype.h:548
-// [4] int type(const ::QByteArray &)
-#if QT_VERSION >= 0x050500
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType4typeERK10QByteArray(const ::QByteArray & typeName) {
-  return (int)QMetaType::type(typeName);
-}
-#endif // QT_VERSION >= 0x050500
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:549
-// [8] const char * typeName(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMetaType8typeNameEi(int type_) {
-  return (void*)QMetaType::typeName(type_);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:550
-// [4] int sizeOf(int)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-int C_ZN9QMetaType6sizeOfEi(int type_) {
-  return (int)QMetaType::sizeOf(type_);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public static Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:551
-// [4] QMetaType::TypeFlags typeFlags(int)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void C_ZN9QMetaType9typeFlagsEi(int type_) {
-  auto rv = QMetaType::typeFlags(type_);
-/*return rv;*/
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public static Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:552
-// [8] const QMetaObject * metaObjectForType(int)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMetaType17metaObjectForTypeEi(int type_) {
-  return (void*)QMetaType::metaObjectForType(type_);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:553
-// [1] bool isRegistered(int)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType12isRegisteredEi(int type_) {
-  return (bool)QMetaType::isRegistered(type_);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:554
-// [8] void * create(int, const void *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMetaType6createEiPKv(int type_, const void * copy) {
-  return (void*)QMetaType::create(type_, copy);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:559
-// [-2] void destroy(int, void *)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QMetaType7destroyEiPv(int type_, void * data) {
-  QMetaType::destroy(type_, data);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:560
-// [8] void * construct(int, void *, const void *)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMetaType9constructEiPvPKv(int type_, void * where, const void * copy) {
-  return (void*)QMetaType::construct(type_, where, copy);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public static Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:561
-// [-2] void destruct(int, void *)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void C_ZN9QMetaType8destructEiPv(int type_, void * where) {
-  QMetaType::destruct(type_, where);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:564
-// [1] bool save(QDataStream &, int, const void *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType4saveER11QDataStreamiPKv(QDataStream* stream, int type_, const void * data) {
-  return (bool)QMetaType::save(*stream, type_, data);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:565
-// [1] bool load(QDataStream &, int, void *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType4loadER11QDataStreamiPv(QDataStream* stream, int type_, void * data) {
-  return (bool)QMetaType::load(*stream, type_, data);
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:568
-// [-2] void QMetaType(const int)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QMetaTypeC2Ei(const int type_) {
-  return  new QMetaType(type_);
-}
-#endif // QT_VERSION >= 0x050000
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmetatype(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:569
-// [-2] void ~QMetaType()
-extern "C" Q_DECL_EXPORT
-void C_ZN9QMetaTypeD2Ev(void *this_) {
+// /usr/include/qt/QtCore/qmetatype.h:577
+// [-2] void ~QMetaType() 
+// (12)qm1106004517 (17)_ZN9QMetaTypeD2Ev
+/*void qm1106004517 (void *this_)*/ {
   delete (QMetaType*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:571
-// [1] bool isValid()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QMetaType7isValidEv(void *this_) {
-  return (bool)((QMetaType*)this_)->isValid();
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:572
-// [1] bool isRegistered()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QMetaType12isRegisteredEv(void *this_) {
-  return (bool)((QMetaType*)this_)->isRegistered();
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:573
-// [4] int sizeOf()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-int C_ZNK9QMetaType6sizeOfEv(void *this_) {
-  return (int)((QMetaType*)this_)->sizeOf();
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:574
-// [4] QMetaType::TypeFlags flags()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-QMetaType::TypeFlags* C_ZNK9QMetaType5flagsEv(void *this_) {
-  auto rv = ((QMetaType*)this_)->flags();
-return new QMetaType::TypeFlags(rv);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public inline Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtCore/qmetatype.h:575
-// [8] const QMetaObject * metaObject()
-#if QT_VERSION >= 0x050500
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMetaType10metaObjectEv(void *this_) {
-  return (void*)((QMetaType*)this_)->metaObject();
-}
-#endif // QT_VERSION >= 0x050500
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:577
-// [8] void * create(const void *)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMetaType6createEPKv(void *this_, const void * copy) {
-  return (void*)((QMetaType*)this_)->create(copy);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:578
-// [-2] void destroy(void *)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void C_ZNK9QMetaType7destroyEPv(void *this_, void * data) {
-  ((QMetaType*)this_)->destroy(data);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetatype.h:579
-// [8] void * construct(void *, const void *)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QMetaType9constructEPvPKv(void *this_, void * where, const void * copy) {
-  return (void*)((QMetaType*)this_)->construct(where, copy);
+// [1] bool isValid() const
+// (12)qm1377593702 (24)_ZNK9QMetaType7isValidEv
+//static
+/*void qm1377593702()*/ {
+  ;
+  (void) ((QMetaType*)this_)->isValid();
+   auto xptr = (bool (QMetaType::*)() const ) &QMetaType::isValid;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050000
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetatype.h:580
+// [1] bool isRegistered() const
+// (11)qm414588828 (30)_ZNK9QMetaType12isRegisteredEv
+//static
+/*void qm414588828()*/ {
+  ;
+  (void) ((QMetaType*)this_)->isRegistered();
+   auto xptr = (bool (QMetaType::*)() const ) &QMetaType::isRegistered;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetatype.h:581
+// [4] int id() const
+// (12)qm3714552367 (19)_ZNK9QMetaType2idEv
+//static
+/*void qm3714552367()*/ {
+  ;
+  (void) ((QMetaType*)this_)->id();
+   auto xptr = (int (QMetaType::*)() const ) &QMetaType::id;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetatype.h:582
+// [4] int sizeOf() const
+// (12)qm1295354454 (23)_ZNK9QMetaType6sizeOfEv
+//static
+/*void qm1295354454()*/ {
+  ;
+  (void) ((QMetaType*)this_)->sizeOf();
+   auto xptr = (int (QMetaType::*)() const ) &QMetaType::sizeOf;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
 
 // Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qmetatype.h:580
-// [-2] void destruct(void *)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void C_ZNK9QMetaType8destructEPv(void *this_, void * data) {
-  ((QMetaType*)this_)->destruct(data);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public static Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtCore/qmetatype.h:608
-// [1] bool hasRegisteredComparators(int)
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType24hasRegisteredComparatorsEi(int typeId) {
-  return (bool)QMetaType::hasRegisteredComparators(typeId);
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmetatype.h:627
-// [1] bool hasRegisteredDebugStreamOperator(int)
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType32hasRegisteredDebugStreamOperatorEi(int typeId) {
-  return (bool)QMetaType::hasRegisteredDebugStreamOperator(typeId);
+// /usr/include/qt/QtCore/qmetatype.h:583
+// [4] QMetaType::TypeFlags flags() const
+// (12)qm4061413266 (22)_ZNK9QMetaType5flagsEv
+//static
+/*void qm4061413266()*/ {
+  ;
+  (void) ((QMetaType*)this_)->flags();
+   auto xptr = (QFlags<QMetaType::TypeFlag> (QMetaType::*)() const ) &QMetaType::flags;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtCore/qmetatype.h:685
-// [1] bool convert(const void *, int, void *, int)
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType7convertEPKviPvi(const void * from, int fromTypeId, void * to, int toTypeId) {
-  return (bool)QMetaType::convert(from, fromTypeId, to, toTypeId);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetatype.h:584
+// [8] const QMetaObject * metaObject() const
+// (12)qm3403272624 (28)_ZNK9QMetaType10metaObjectEv
+//static
+/*void qm3403272624()*/ {
+  ;
+  (void) ((QMetaType*)this_)->metaObject();
+   auto xptr = (const QMetaObject * (QMetaType::*)() const ) &QMetaType::metaObject;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050200
 
-// Public static Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtCore/qmetatype.h:686
-// [1] bool compare(const void *, const void *, int, int *)
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType7compareEPKvS1_iPi(const void * lhs, const void * rhs, int typeId, int * result) {
-  return (bool)QMetaType::compare(lhs, rhs, typeId, result);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetatype.h:587
+// [8] void * create(const void *) const
+// (12)qm1200382173 (25)_ZNK9QMetaType6createEPKv
+//static
+/*void qm1200382173(const void * copy)*/ {
+  const void * copy = *(const void **)this_;
+  (void) ((QMetaType*)this_)->create(copy);
+   auto xptr = (void * (QMetaType::*)(void const*) const ) &QMetaType::create;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050200
 
-// Public static Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtCore/qmetatype.h:687
-// [1] bool equals(const void *, const void *, int, int *)
-#if QT_VERSION >= 0x050500
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType6equalsEPKvS1_iPi(const void * lhs, const void * rhs, int typeId, int * result) {
-  return (bool)QMetaType::equals(lhs, rhs, typeId, result);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetatype.h:588
+// [-2] void destroy(void *) const
+// (12)qm3061978813 (25)_ZNK9QMetaType7destroyEPv
+//static
+/*void qm3061978813(void * data)*/ {
+  void * data = *(void **)this_;
+  (void) ((QMetaType*)this_)->destroy(data);
+   auto xptr = (void (QMetaType::*)(void*) const ) &QMetaType::destroy;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050500
 
-// Public static Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtCore/qmetatype.h:688
-// [1] bool debugStream(QDebug &, const void *, int)
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType11debugStreamER6QDebugPKvi(QDebug* dbg, const void * rhs, int typeId) {
-  return (bool)QMetaType::debugStream(*dbg, rhs, typeId);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetatype.h:589
+// [8] void * construct(void *, const void *) const
+// (11)qm267031940 (30)_ZNK9QMetaType9constructEPvPKv
+//static
+/*void qm267031940(void * where, const void * copy)*/ {
+  void * where = *(void **)this_; const void * copy = *(const void **)this_;
+  (void) ((QMetaType*)this_)->construct(where, copy);
+   auto xptr = (void * (QMetaType::*)(void*, void const*) const ) &QMetaType::construct;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050200
 
-// Public static Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtCore/qmetatype.h:696
-// [1] bool hasRegisteredConverterFunction(int, int)
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QMetaType30hasRegisteredConverterFunctionEii(int fromTypeId, int toTypeId) {
-  return (bool)QMetaType::hasRegisteredConverterFunction(fromTypeId, toTypeId);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetatype.h:590
+// [-2] void destruct(void *) const
+// (12)qm3039771255 (26)_ZNK9QMetaType8destructEPv
+//static
+/*void qm3039771255(void * data)*/ {
+  void * data = *(void **)this_;
+  (void) ((QMetaType*)this_)->destruct(data);
+   auto xptr = (void (QMetaType::*)(void*) const ) &QMetaType::destruct;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050200
 
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmetatype
 //  main block end
 
 //  use block begin

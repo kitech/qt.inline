@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QScopedPointerPodDeleter is pure virtual: false
+// QScopedPointerPodDeleter is pure virtual: false false
 // QScopedPointerPodDeleter has virtual projected: false
 //  header block end
 
@@ -50,19 +50,28 @@ public:
   virtual ~MyQScopedPointerPodDeleter() {}
 };
 
-// Public static inline Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qscopedpointerpoddeleter(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qscopedpointer.h:81
-// [-2] void cleanup(void *)
-extern "C" Q_DECL_EXPORT
-void C_ZN24QScopedPointerPodDeleter7cleanupEPv(void * pointer) {
-  QScopedPointerPodDeleter::cleanup(pointer);
+// [-2] void cleanup(void *) 
+// (11)qm789873826 (40)_ZN24QScopedPointerPodDeleter7cleanupEPv
+//static
+/*void qm789873826(void * pointer)*/ {
+  void * pointer = *(void **)this_;
+  (void) QScopedPointerPodDeleter::cleanup(pointer);
+   auto xptr = (void (*)(void*) ) &QScopedPointerPodDeleter::cleanup;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN24QScopedPointerPodDeleterD2Ev(void *this_) {
+/*void C_ZN24QScopedPointerPodDeleterD2Ev(void *this_)*/ {
   delete (QScopedPointerPodDeleter*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qscopedpointerpoddeleter
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QStringBuilder is pure virtual: false
+// QStringBuilder is pure virtual: false false
 // QStringBuilder has virtual projected: false
 //  header block end
 
@@ -54,27 +54,34 @@ MyQStringBuilder(const QByteArray & a_, const QByteArray & b_) : QStringBuilder<
 MyQStringBuilder(const QStringBuilder<QByteArray, QByteArray> & other) : QStringBuilder<QByteArray, QByteArray>(other) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstringbuilder(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:160
-// [-2] void QStringBuilder(const QByteArray &, const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QStringBuilderI10QByteArrayS0_EC2ERKS0_S3_(QByteArray* a_, QByteArray* b_) {
-  return  new QStringBuilder<QByteArray, QByteArray>(*a_, *b_);
+// [-2] void QStringBuilder(const QByteArray &, const QByteArray &) 
+// (12)qm3794655262 (47)_ZN14QStringBuilderI10QByteArrayS0_EC2ERKS0_S3_
+/*void* qm3794655262(const QByteArray & a_, const QByteArray & b_)*/{
+  const QByteArray & a_ = *(const QByteArray *)this_; const QByteArray & b_ = *(const QByteArray *)this_;
+  this_ =  new QStringBuilder<QByteArray, QByteArray>(a_, b_);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:161
-// [-2] void QStringBuilder(const QStringBuilder<QByteArray, QByteArray> &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QStringBuilderI10QByteArrayS0_EC2ERKS1_(const QStringBuilder<QByteArray, QByteArray>* other) {
-  return  new QStringBuilder<QByteArray, QByteArray>(*other);
+// [-2] void QStringBuilder(const QStringBuilder<QByteArray, QByteArray> &) 
+// (12)qm2999875452 (44)_ZN14QStringBuilderI10QByteArrayS0_EC2ERKS1_
+/*void* qm2999875452(const QStringBuilder<QByteArray, QByteArray> & other)*/{
+  const QStringBuilder<QByteArray, QByteArray> & other = *(const QStringBuilder<QByteArray, QByteArray> *)this_;
+  this_ =  new QStringBuilder<QByteArray, QByteArray>(other);
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN14QStringBuilderD2Ev(void *this_) {
+/*void C_ZN14QStringBuilderD2Ev(void *this_)*/ {
   delete (QStringBuilder<QByteArray, QByteArray>*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstringbuilder
 //  main block end
 
 //  use block begin

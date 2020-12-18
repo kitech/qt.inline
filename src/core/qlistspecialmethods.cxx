@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QListSpecialMethods is pure virtual: false
+// QListSpecialMethods is pure virtual: false false
 // QListSpecialMethods has virtual projected: false
 //  header block end
 
@@ -50,108 +50,148 @@ public:
   virtual ~MyQListSpecialMethods() {}
 };
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:72
-// [-2] void sort(Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QListSpecialMethodsI7QStringE4sortEN2Qt15CaseSensitivityE(void *this_, Qt::CaseSensitivity cs) {
-  ((QListSpecialMethods<QString>*)this_)->sort(cs);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qlistspecialmethods(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:73
-// [4] int removeDuplicates()
-extern "C" Q_DECL_EXPORT
-int C_ZN19QListSpecialMethodsI7QStringE16removeDuplicatesEv(void *this_) {
-  return (int)((QListSpecialMethods<QString>*)this_)->removeDuplicates();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:75
-// [8] QString join(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QListSpecialMethodsI7QStringE4joinERKS0_(void *this_, QString* sep) {
-  auto rv = ((QListSpecialMethods<QString>*)this_)->join(*sep);
-return new QString(rv);
+// [-2] void sort(Qt::CaseSensitivity) 
+// (12)qm3892568130 (62)_ZN19QListSpecialMethodsI7QStringE4sortEN2Qt15CaseSensitivityE
+//static
+/*void qm3892568130(Qt::CaseSensitivity cs)*/ {
+  Qt::CaseSensitivity cs = *(Qt::CaseSensitivity*)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->sort(cs);
+   auto xptr = (void (QListSpecialMethods<QString>::*)(Qt::CaseSensitivity) ) &QListSpecialMethods<QString>::sort;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:76
-// [8] QString join(QLatin1String)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QListSpecialMethodsI7QStringE4joinE13QLatin1String(void *this_, QLatin1String* sep) {
-  auto rv = ((QListSpecialMethods<QString>*)this_)->join(*sep);
-return new QString(rv);
+// [4] int removeDuplicates() 
+// (12)qm3318800487 (54)_ZN19QListSpecialMethodsI7QStringE16removeDuplicatesEv
+//static
+/*void qm3318800487()*/ {
+  ;
+  (void) ((QListSpecialMethods<QString>*)this_)->removeDuplicates();
+   auto xptr = (int (QListSpecialMethods<QString>::*)() ) &QListSpecialMethods<QString>::removeDuplicates;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:77
-// [8] QString join(QChar)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QListSpecialMethodsI7QStringE4joinE5QChar(void *this_, QChar* sep) {
-  auto rv = ((QListSpecialMethods<QString>*)this_)->join(*sep);
-return new QString(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:79
-// [8] QStringList filter(const QString &, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QListSpecialMethodsI7QStringE6filterERKS0_N2Qt15CaseSensitivityE(void *this_, QString* str, Qt::CaseSensitivity cs) {
-  auto rv = ((QListSpecialMethods<QString>*)this_)->filter(*str, cs);
-return new QStringList(rv);
+// [8] QString join(const QString &) const
+// (12)qm1918567913 (46)_ZNK19QListSpecialMethodsI7QStringE4joinERKS0_
+//static
+/*void qm1918567913(const QString & sep)*/ {
+  const QString & sep = *(const QString *)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->join(sep);
+   auto xptr = (QString (QListSpecialMethods<QString>::*)(QString const&) const ) &QListSpecialMethods<QString>::join;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:80
-// [8] QStringList & replaceInStrings(const QString &, const QString &, Qt::CaseSensitivity)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QListSpecialMethodsI7QStringE16replaceInStringsERKS0_S3_N2Qt15CaseSensitivityE(void *this_, QString* before, QString* after, Qt::CaseSensitivity cs) {
-  auto& rv = ((QListSpecialMethods<QString>*)this_)->replaceInStrings(*before, *after, cs);
-return &rv;
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:82
+// [8] QString join(QLatin1String) const
+// (12)qm1289987731 (56)_ZNK19QListSpecialMethodsI7QStringE4joinE13QLatin1String
+//static
+/*void qm1289987731(QLatin1String sep)*/ {
+  QLatin1String sep = *(QLatin1String*)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->join(sep);
+   auto xptr = (QString (QListSpecialMethods<QString>::*)(QLatin1String) const ) &QListSpecialMethods<QString>::join;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:83
-// [8] QStringList filter(const QRegExp &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QListSpecialMethodsI7QStringE6filterERK7QRegExp(void *this_, QRegExp* rx) {
-  auto rv = ((QListSpecialMethods<QString>*)this_)->filter(*rx);
-return new QStringList(rv);
+// [8] QString join(QChar) const
+// (12)qm4185881967 (47)_ZNK19QListSpecialMethodsI7QStringE4joinE5QChar
+//static
+/*void qm4185881967(QChar sep)*/ {
+  QChar sep = *(QChar*)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->join(sep);
+   auto xptr = (QString (QListSpecialMethods<QString>::*)(QChar) const ) &QListSpecialMethods<QString>::join;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qstringlist.h:84
-// [8] QStringList & replaceInStrings(const QRegExp &, const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QListSpecialMethodsI7QStringE16replaceInStringsERK7QRegExpRKS0_(void *this_, QRegExp* rx, QString* after) {
-  auto& rv = ((QListSpecialMethods<QString>*)this_)->replaceInStrings(*rx, *after);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:88
-// [8] QStringList filter(const QRegularExpression &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QListSpecialMethodsI7QStringE6filterERK18QRegularExpression(void *this_, QRegularExpression* re) {
-  auto rv = ((QListSpecialMethods<QString>*)this_)->filter(*re);
-return new QStringList(rv);
+// [8] QStringList filter(const QString &, Qt::CaseSensitivity) const
+// (12)qm1185893804 (70)_ZNK19QListSpecialMethodsI7QStringE6filterERKS0_N2Qt15CaseSensitivityE
+//static
+/*void qm1185893804(const QString & str, Qt::CaseSensitivity cs)*/ {
+  const QString & str = *(const QString *)this_; Qt::CaseSensitivity cs = *(Qt::CaseSensitivity*)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->filter(str, cs);
+   auto xptr = (QStringList (QListSpecialMethods<QString>::*)(QString const&, Qt::CaseSensitivity) const ) &QListSpecialMethods<QString>::filter;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringlist.h:89
-// [8] QStringList & replaceInStrings(const QRegularExpression &, const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QListSpecialMethodsI7QStringE16replaceInStringsERK18QRegularExpressionRKS0_(void *this_, QRegularExpression* re, QString* after) {
-  auto& rv = ((QListSpecialMethods<QString>*)this_)->replaceInStrings(*re, *after);
-return &rv;
+// [8] QStringList & replaceInStrings(const QString &, const QString &, Qt::CaseSensitivity) 
+// (12)qm2811309233 (83)_ZN19QListSpecialMethodsI7QStringE16replaceInStringsERKS0_S3_N2Qt15CaseSensitivityE
+//static
+/*void qm2811309233(const QString & before, const QString & after, Qt::CaseSensitivity cs)*/ {
+  const QString & before = *(const QString *)this_; const QString & after = *(const QString *)this_; Qt::CaseSensitivity cs = *(Qt::CaseSensitivity*)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->replaceInStrings(before, after, cs);
+   auto xptr = (QStringList & (QListSpecialMethods<QString>::*)(QString const&, QString const&, Qt::CaseSensitivity) ) &QListSpecialMethods<QString>::replaceInStrings;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:95
+// [8] QStringList filter(const QRegExp &) const
+// (10)qm71667244 (53)_ZNK19QListSpecialMethodsI7QStringE6filterERK7QRegExp
+//static
+/*void qm71667244(const QRegExp & rx)*/ {
+  const QRegExp & rx = *(const QRegExp *)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->filter(rx);
+   auto xptr = (QStringList (QListSpecialMethods<QString>::*)(QRegExp const&) const ) &QListSpecialMethods<QString>::filter;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:96
+// [8] QStringList & replaceInStrings(const QRegExp &, const QString &) 
+// (12)qm3495618036 (68)_ZN19QListSpecialMethodsI7QStringE16replaceInStringsERK7QRegExpRKS0_
+//static
+/*void qm3495618036(const QRegExp & rx, const QString & after)*/ {
+  const QRegExp & rx = *(const QRegExp *)this_; const QString & after = *(const QString *)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->replaceInStrings(rx, after);
+   auto xptr = (QStringList & (QListSpecialMethods<QString>::*)(QRegExp const&, QString const&) ) &QListSpecialMethods<QString>::replaceInStrings;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:100
+// [8] QStringList filter(const QRegularExpression &) const
+// (12)qm4227231769 (65)_ZNK19QListSpecialMethodsI7QStringE6filterERK18QRegularExpression
+//static
+/*void qm4227231769(const QRegularExpression & re)*/ {
+  const QRegularExpression & re = *(const QRegularExpression *)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->filter(re);
+   auto xptr = (QStringList (QListSpecialMethods<QString>::*)(QRegularExpression const&) const ) &QListSpecialMethods<QString>::filter;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlist.h:101
+// [8] QStringList & replaceInStrings(const QRegularExpression &, const QString &) 
+// (11)qm217191617 (80)_ZN19QListSpecialMethodsI7QStringE16replaceInStringsERK18QRegularExpressionRKS0_
+//static
+/*void qm217191617(const QRegularExpression & re, const QString & after)*/ {
+  const QRegularExpression & re = *(const QRegularExpression *)this_; const QString & after = *(const QString *)this_;
+  (void) ((QListSpecialMethods<QString>*)this_)->replaceInStrings(re, after);
+   auto xptr = (QStringList & (QListSpecialMethods<QString>::*)(QRegularExpression const&, QString const&) ) &QListSpecialMethods<QString>::replaceInStrings;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN19QListSpecialMethodsD2Ev(void *this_) {
+/*void C_ZN19QListSpecialMethodsD2Ev(void *this_)*/ {
   delete (QListSpecialMethods<QString>*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qlistspecialmethods
 //  main block end
 
 //  use block begin

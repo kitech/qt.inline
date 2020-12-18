@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QHashData is pure virtual: false
+// QHashData is pure virtual: false false
 // QHashData has virtual projected: false
 //  header block end
 
@@ -50,91 +50,52 @@ public:
   virtual ~MyQHashData() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhash.h:84
-// [8] void * allocateNode(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QHashData12allocateNodeEi(void *this_, int nodeAlign) {
-  return (void*)((QHashData*)this_)->allocateNode(nodeAlign);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qhashdata(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhash.h:85
-// [-2] void freeNode(void *)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHashData8freeNodeEPv(void *this_, void * node) {
-  ((QHashData*)this_)->freeNode(node);
-}
-
-// Public Visibility=Default Availability=Available
+// Public Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhash.h:86
-// [8] QHashData * detach_helper(void (*)(QHashData::Node *, void *), void (*)(QHashData::Node *), int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QHashData13detach_helperEPFvPNS_4NodeEPvEPFvS1_Eii(void *this_, void (*node_duplicate)(QHashData::Node *, void *), void (*node_delete)(QHashData::Node *), int nodeSize, int nodeAlign) {
-  return (void*)((QHashData*)this_)->detach_helper(node_duplicate, node_delete, nodeSize, nodeAlign);
+// [1] bool willGrow() 
+// (12)qm2760128699 (24)_ZN9QHashData8willGrowEv
+//static
+/*void qm2760128699()*/ {
+  ;
+  (void) ((QHashData*)this_)->willGrow();
+   auto xptr = (bool (QHashData::*)() ) &QHashData::willGrow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhash.h:88
-// [1] bool willGrow()
-extern "C" Q_DECL_EXPORT
-bool C_ZN9QHashData8willGrowEv(void *this_) {
-  return (bool)((QHashData*)this_)->willGrow();
+// Public Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhash.h:87
+// [-2] void hasShrunk() 
+// (12)qm1436022214 (25)_ZN9QHashData9hasShrunkEv
+//static
+/*void qm1436022214()*/ {
+  ;
+  (void) ((QHashData*)this_)->hasShrunk();
+   auto xptr = (void (QHashData::*)() ) &QHashData::hasShrunk;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhash.h:89
-// [-2] void hasShrunk()
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHashData9hasShrunkEv(void *this_) {
-  ((QHashData*)this_)->hasShrunk();
-}
-
-// Public Visibility=Default Availability=Available
+// Public Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qhash.h:90
-// [-2] void rehash(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHashData6rehashEi(void *this_, int hint) {
-  ((QHashData*)this_)->rehash(hint);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhash.h:91
-// [-2] void free_helper(void (*)(QHashData::Node *))
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHashData11free_helperEPFvPNS_4NodeEE(void *this_, void (*node_delete)(QHashData::Node *)) {
-  ((QHashData*)this_)->free_helper(node_delete);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhash.h:92
-// [8] QHashData::Node * firstNode()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QHashData9firstNodeEv(void *this_) {
-  return (void*)((QHashData*)this_)->firstNode();
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhash.h:97
-// [8] QHashData::Node * nextNode(QHashData::Node *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QHashData8nextNodeEPNS_4NodeE(QHashData::Node * node) {
-  return (void*)QHashData::nextNode(node);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qhash.h:98
-// [8] QHashData::Node * previousNode(QHashData::Node *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QHashData12previousNodeEPNS_4NodeE(QHashData::Node * node) {
-  return (void*)QHashData::previousNode(node);
+// [8] QHashData::Node * firstNode() 
+// (12)qm1720621824 (25)_ZN9QHashData9firstNodeEv
+//static
+/*void qm1720621824()*/ {
+  ;
+  (void) ((QHashData*)this_)->firstNode();
+   auto xptr = (QHashData::Node * (QHashData::*)() ) &QHashData::firstNode;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHashDataD2Ev(void *this_) {
+/*void C_ZN9QHashDataD2Ev(void *this_)*/ {
   delete (QHashData*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qhashdata
 //  main block end
 
 //  use block begin

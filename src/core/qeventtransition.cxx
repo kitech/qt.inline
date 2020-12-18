@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(qeventtransition)
-// since 0x040600
 // /usr/include/qt/QtCore/qeventtransition.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QEventTransition is pure virtual: false
+// QEventTransition is pure virtual: false false
 // QEventTransition has virtual projected: true
 //  header block end
 
@@ -101,7 +100,7 @@ public:
 MyQEventTransition(QState * sourceState) : QEventTransition(sourceState) {}
 // void QEventTransition(QObject *, QEvent::Type, QState *)
 MyQEventTransition(QObject * object, QEvent::Type type_, QState * sourceState) : QEventTransition(object, type_, sourceState) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool eventTest(QEvent *)
   virtual bool eventTest(QEvent * event)  override {
     int handled = 0;
@@ -114,7 +113,7 @@ MyQEventTransition(QObject * object, QEvent::Type type_, QState * sourceState) :
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void onTransition(QEvent *)
   virtual void onTransition(QEvent * event)  override {
     int handled = 0;
@@ -126,7 +125,7 @@ MyQEventTransition(QObject * object, QEvent::Type type_, QState * sourceState) :
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * e)  override {
     int handled = 0;
@@ -153,129 +152,28 @@ void* C_QEventTransition_init_staticMetaObject(void* this_, void* strdat, void* 
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:68
-// [1] bool eventTest(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN16QEventTransition9eventTestEP6QEvent(void *this_, QEvent * event) {
-  return (bool)((QEventTransition*)this_)->QEventTransition::eventTest(event);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qeventtransition(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:69
-// [-2] void onTransition(QEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QEventTransition12onTransitionEP6QEvent(void *this_, QEvent * event) {
-  ((QEventTransition*)this_)->QEventTransition::onTransition(event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:71
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN16QEventTransition5eventEP6QEvent(void *this_, QEvent * e) {
-  return (bool)((QEventTransition*)this_)->QEventTransition::event(e);
-}
-
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeventtransition.h:53
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK16QEventTransition10metaObjectEv(void *this_) {
-  return (void*)((QEventTransition*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm4290639171 (32)_ZN16QEventTransition2trEPKcS1_i
+//static
+/*void qm4290639171(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QEventTransition::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QEventTransition::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:53
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QEventTransition11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QEventTransition*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:53
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN16QEventTransition11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QEventTransition*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:53
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QEventTransition2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QEventTransition::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:53
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QEventTransition6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QEventTransition::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:57
-// [-2] void QEventTransition(QState *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QEventTransitionC2EP6QState(QState * sourceState) {
-  auto _nilp = (MyQEventTransition*)(0);
-  return  new MyQEventTransition(sourceState);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:58
-// [-2] void QEventTransition(QObject *, QEvent::Type, QState *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QEventTransitionC2EP7QObjectN6QEvent4TypeEP6QState(QObject * object, QEvent::Type type_, QState * sourceState) {
-  auto _nilp = (MyQEventTransition*)(0);
-  return  new MyQEventTransition(object, type_, sourceState);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:59
-// [-2] void ~QEventTransition()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QEventTransitionD2Ev(void *this_) {
+/*void C_ZN16QEventTransitionD2Ev(void *this_)*/ {
   delete (QEventTransition*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:61
-// [8] QObject * eventSource()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK16QEventTransition11eventSourceEv(void *this_) {
-  return (void*)((QEventTransition*)this_)->eventSource();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:62
-// [-2] void setEventSource(QObject *)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QEventTransition14setEventSourceEP7QObject(void *this_, QObject * object) {
-  ((QEventTransition*)this_)->setEventSource(object);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:64
-// [4] QEvent::Type eventType()
-extern "C" Q_DECL_EXPORT
-QEvent::Type C_ZNK16QEventTransition9eventTypeEv(void *this_) {
-  return (QEvent::Type)((QEventTransition*)this_)->eventType();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventtransition.h:65
-// [-2] void setEventType(QEvent::Type)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QEventTransition12setEventTypeEN6QEvent4TypeE(void *this_, QEvent::Type type_) {
-  ((QEventTransition*)this_)->setEventType(type_);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qeventtransition
 //  main block end
 
 //  use block begin

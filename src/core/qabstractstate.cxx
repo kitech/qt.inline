@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(statemachine)
-// since 0x040600
 // /usr/include/qt/QtCore/qabstractstate.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QAbstractState is pure virtual: true
+// QAbstractState is pure virtual: true true
 // QAbstractState has virtual projected: true
 //  header block end
 
@@ -97,7 +96,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQAbstractState() {}
-// Protected purevirtual virtual Visibility=Default Availability=Available
+// Protected purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void onEntry(QEvent *)
   virtual void onEntry(QEvent * event)  override {
     int handled = 0;
@@ -109,7 +108,7 @@ public:
   }
   }
 
-// Protected purevirtual virtual Visibility=Default Availability=Available
+// Protected purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void onExit(QEvent *)
   virtual void onExit(QEvent * event)  override {
     int handled = 0;
@@ -121,7 +120,7 @@ public:
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * e)  override {
     int handled = 0;
@@ -148,120 +147,28 @@ void* C_QAbstractState_init_staticMetaObject(void* this_, void* strdat, void* da
   return qmo;
 }
 
-// Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:73
-// [-2] void onEntry(QEvent *)
-// Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:74
-// [-2] void onExit(QEvent *)
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:76
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QAbstractState5eventEP6QEvent(void *this_, QEvent * e) {
-  return (bool)((QAbstractState*)this_)->QAbstractState::event(e);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qabstractstate(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractstate.h:55
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QAbstractState10metaObjectEv(void *this_) {
-  return (void*)((QAbstractState*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (11)qm812044863 (30)_ZN14QAbstractState2trEPKcS1_i
+//static
+/*void qm812044863(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QAbstractState::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QAbstractState::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:55
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QAbstractState11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QAbstractState*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:55
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN14QAbstractState11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QAbstractState*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:55
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QAbstractState2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAbstractState::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:55
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QAbstractState6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAbstractState::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:58
-// [-2] void ~QAbstractState()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QAbstractStateD2Ev(void *this_) {
+/*void C_ZN14QAbstractStateD2Ev(void *this_)*/ {
   delete (QAbstractState*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:60
-// [8] QState * parentState()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QAbstractState11parentStateEv(void *this_) {
-  return (void*)((QAbstractState*)this_)->parentState();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:61
-// [8] QStateMachine * machine()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QAbstractState7machineEv(void *this_) {
-  return (void*)((QAbstractState*)this_)->machine();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:63
-// [1] bool active()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QAbstractState6activeEv(void *this_) {
-  return (bool)((QAbstractState*)this_)->active();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:66
-// [-2] void entered(QAbstractState::QPrivateSignal)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QAbstractState7enteredENS_14QPrivateSignalE(void *this_, QAbstractState::QPrivateSignal* arg0) {
-  ((QAbstractState*)this_)->entered(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractstate.h:67
-// [-2] void exited(QAbstractState::QPrivateSignal)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QAbstractState6exitedENS_14QPrivateSignalE(void *this_, QAbstractState::QPrivateSignal* arg0) {
-  ((QAbstractState*)this_)->exited(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.4
-// /usr/include/qt/QtCore/qabstractstate.h:68
-// [-2] void activeChanged(bool)
-#if QT_VERSION >= 0x050400
-extern "C" Q_DECL_EXPORT
-void C_ZN14QAbstractState13activeChangedEb(void *this_, bool active) {
-  ((QAbstractState*)this_)->activeChanged(active);
-}
-#endif // QT_VERSION >= 0x050400
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qabstractstate
 //  main block end
 
 //  use block begin

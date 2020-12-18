@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040300
 // /usr/include/qt/QtCore/qxmlstream.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QXmlStreamEntityDeclaration is pure virtual: false
+// QXmlStreamEntityDeclaration is pure virtual: false false
 // QXmlStreamEntityDeclaration has virtual projected: false
 //  header block end
 
@@ -57,116 +56,121 @@ MyQXmlStreamEntityDeclaration(const QXmlStreamEntityDeclaration & arg0) : QXmlSt
 MyQXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration && other) : QXmlStreamEntityDeclaration(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:286
-// [-2] void QXmlStreamEntityDeclaration()
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QXmlStreamEntityDeclarationC2Ev() {
-  return  new QXmlStreamEntityDeclaration();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qxmlstreamentitydeclaration(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:284
+// [-2] void QXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration &&) 
+// (12)qm2115136773 (38)_ZN27QXmlStreamEntityDeclarationC2EOS_
+/*void* qm2115136773(QXmlStreamEntityDeclaration && other)*/{
+  QXmlStreamEntityDeclaration && other =  static_cast<QXmlStreamEntityDeclaration &&>(*(QXmlStreamEntityDeclaration *)this_);
+  this_ =  new QXmlStreamEntityDeclaration(other);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:288
-// [-2] void ~QXmlStreamEntityDeclaration()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QXmlStreamEntityDeclarationD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:295
+// [88] QXmlStreamEntityDeclaration & operator=(QXmlStreamEntityDeclaration &&) 
+// (12)qm2418317253 (38)_ZN27QXmlStreamEntityDeclarationaSEOS_
+//static
+/*void qm2418317253(QXmlStreamEntityDeclaration && other)*/ {
+  QXmlStreamEntityDeclaration && other =  static_cast<QXmlStreamEntityDeclaration &&>(*(QXmlStreamEntityDeclaration *)this_);
+  (void) ((QXmlStreamEntityDeclaration*)this_)->operator=(other);
+  // auto xptr = (QXmlStreamEntityDeclaration & (QXmlStreamEntityDeclaration::*)(QXmlStreamEntityDeclaration&&) ) &QXmlStreamEntityDeclaration::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:307
+// [16] QStringRef name() const
+// (11)qm821469616 (40)_ZNK27QXmlStreamEntityDeclaration4nameEv
+//static
+/*void qm821469616()*/ {
+  ;
+  (void) ((QXmlStreamEntityDeclaration*)this_)->name();
+   auto xptr = (QStringRef (QXmlStreamEntityDeclaration::*)() const ) &QXmlStreamEntityDeclaration::name;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:308
+// [16] QStringRef notationName() const
+// (12)qm3910461700 (49)_ZNK27QXmlStreamEntityDeclaration12notationNameEv
+//static
+/*void qm3910461700()*/ {
+  ;
+  (void) ((QXmlStreamEntityDeclaration*)this_)->notationName();
+   auto xptr = (QStringRef (QXmlStreamEntityDeclaration::*)() const ) &QXmlStreamEntityDeclaration::notationName;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:309
+// [16] QStringRef systemId() const
+// (12)qm1783604340 (44)_ZNK27QXmlStreamEntityDeclaration8systemIdEv
+//static
+/*void qm1783604340()*/ {
+  ;
+  (void) ((QXmlStreamEntityDeclaration*)this_)->systemId();
+   auto xptr = (QStringRef (QXmlStreamEntityDeclaration::*)() const ) &QXmlStreamEntityDeclaration::systemId;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:310
+// [16] QStringRef publicId() const
+// (12)qm1268674917 (44)_ZNK27QXmlStreamEntityDeclaration8publicIdEv
+//static
+/*void qm1268674917()*/ {
+  ;
+  (void) ((QXmlStreamEntityDeclaration*)this_)->publicId();
+   auto xptr = (QStringRef (QXmlStreamEntityDeclaration::*)() const ) &QXmlStreamEntityDeclaration::publicId;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:311
+// [16] QStringRef value() const
+// (12)qm2582770017 (41)_ZNK27QXmlStreamEntityDeclaration5valueEv
+//static
+/*void qm2582770017()*/ {
+  ;
+  (void) ((QXmlStreamEntityDeclaration*)this_)->value();
+   auto xptr = (QStringRef (QXmlStreamEntityDeclaration::*)() const ) &QXmlStreamEntityDeclaration::value;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:312
+// [1] bool operator==(const QXmlStreamEntityDeclaration &) const
+// (12)qm3072644255 (40)_ZNK27QXmlStreamEntityDeclarationeqERKS_
+//static
+/*void qm3072644255(const QXmlStreamEntityDeclaration & other)*/ {
+  const QXmlStreamEntityDeclaration & other = *(const QXmlStreamEntityDeclaration *)this_;
+  (void) ((QXmlStreamEntityDeclaration*)this_)->operator==(other);
+  // auto xptr = (bool (QXmlStreamEntityDeclaration::*)(QXmlStreamEntityDeclaration const&) const ) &QXmlStreamEntityDeclaration::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:319
+// [1] bool operator!=(const QXmlStreamEntityDeclaration &) const
+// (11)qm761577704 (40)_ZNK27QXmlStreamEntityDeclarationneERKS_
+//static
+/*void qm761577704(const QXmlStreamEntityDeclaration & other)*/ {
+  const QXmlStreamEntityDeclaration & other = *(const QXmlStreamEntityDeclaration *)this_;
+  (void) ((QXmlStreamEntityDeclaration*)this_)->operator!=(other);
+  // auto xptr = (bool (QXmlStreamEntityDeclaration::*)(QXmlStreamEntityDeclaration const&) const ) &QXmlStreamEntityDeclaration::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN27QXmlStreamEntityDeclarationD2Ev(void *this_)*/ {
   delete (QXmlStreamEntityDeclaration*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:289
-// [-2] void QXmlStreamEntityDeclaration(const QXmlStreamEntityDeclaration &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QXmlStreamEntityDeclarationC2ERKS_(QXmlStreamEntityDeclaration* arg0) {
-  return  new QXmlStreamEntityDeclaration(*arg0);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:290
-// [-2] void QXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QXmlStreamEntityDeclarationC2EOS_(QXmlStreamEntityDeclaration && other) {
-  return  new QXmlStreamEntityDeclaration(other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:300
-// [88] QXmlStreamEntityDeclaration & operator=(const QXmlStreamEntityDeclaration &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QXmlStreamEntityDeclarationaSERKS_(void *this_, QXmlStreamEntityDeclaration* arg0) {
-  auto& rv = ((QXmlStreamEntityDeclaration*)this_)->operator=(*arg0);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:301
-// [88] QXmlStreamEntityDeclaration & operator=(QXmlStreamEntityDeclaration &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QXmlStreamEntityDeclarationaSEOS_(void *this_, QXmlStreamEntityDeclaration && other) {
-  auto& rv = ((QXmlStreamEntityDeclaration*)this_)->operator=(other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:313
-// [16] QStringRef name()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QXmlStreamEntityDeclaration4nameEv(void *this_) {
-  auto rv = ((QXmlStreamEntityDeclaration*)this_)->name();
-return new QStringRef(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:314
-// [16] QStringRef notationName()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QXmlStreamEntityDeclaration12notationNameEv(void *this_) {
-  auto rv = ((QXmlStreamEntityDeclaration*)this_)->notationName();
-return new QStringRef(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:315
-// [16] QStringRef systemId()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QXmlStreamEntityDeclaration8systemIdEv(void *this_) {
-  auto rv = ((QXmlStreamEntityDeclaration*)this_)->systemId();
-return new QStringRef(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:316
-// [16] QStringRef publicId()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QXmlStreamEntityDeclaration8publicIdEv(void *this_) {
-  auto rv = ((QXmlStreamEntityDeclaration*)this_)->publicId();
-return new QStringRef(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:317
-// [16] QStringRef value()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QXmlStreamEntityDeclaration5valueEv(void *this_) {
-  auto rv = ((QXmlStreamEntityDeclaration*)this_)->value();
-return new QStringRef(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:318
-// [1] bool operator==(const QXmlStreamEntityDeclaration &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK27QXmlStreamEntityDeclarationeqERKS_(void *this_, QXmlStreamEntityDeclaration* other) {
-  return (bool)((QXmlStreamEntityDeclaration*)this_)->operator==(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qxmlstream.h:325
-// [1] bool operator!=(const QXmlStreamEntityDeclaration &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK27QXmlStreamEntityDeclarationneERKS_(void *this_, QXmlStreamEntityDeclaration* other) {
-  return (bool)((QXmlStreamEntityDeclaration*)this_)->operator!=(*other);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qxmlstreamentitydeclaration
 //  main block end
 
 //  use block begin

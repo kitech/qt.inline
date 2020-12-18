@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QFlag is pure virtual: false
+// QFlag is pure virtual: false false
 // QFlag has virtual projected: false
 //  header block end
 
@@ -58,52 +58,52 @@ MyQFlag(short value) : QFlag(value) {}
 MyQFlag(ushort value) : QFlag(value) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qflag(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qflags.h:57
-// [-2] void QFlag(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QFlagC2Ei(int value) {
-  return  new QFlag(value);
+// /usr/include/qt/QtCore/qflags.h:55
+// [-2] void QFlag(int) 
+// (12)qm3296659139 (13)_ZN5QFlagC2Ei
+/*void* qm3296659139(int value)*/{
+  int value = *(int*)this_;
+  this_ =  new QFlag(value);
 }
 
 // Public inline Visibility=Default Availability=Available
-// since 5.3
+// /usr/include/qt/QtCore/qflags.h:66
+// [-2] void QFlag(uint) 
+// (12)qm1568036729 (13)_ZN5QFlagC2Ej
+/*void* qm1568036729(unsigned int value)*/{
+  unsigned int value = *(unsigned int*)this_;
+  this_ =  new QFlag(value);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qflags.h:67
+// [-2] void QFlag(short) 
+// (11)qm958267321 (13)_ZN5QFlagC2Es
+/*void* qm958267321(short value)*/{
+  short value = *(short*)this_;
+  this_ =  new QFlag(value);
+}
+
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qflags.h:68
-// [-2] void QFlag(uint)
-#if QT_VERSION >= 0x050300
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QFlagC2Ej(uint value) {
-  return  new QFlag(value);
+// [-2] void QFlag(ushort) 
+// (12)qm2809752090 (13)_ZN5QFlagC2Et
+/*void* qm2809752090(unsigned short value)*/{
+  unsigned short value = *(unsigned short*)this_;
+  this_ =  new QFlag(value);
 }
-#endif // QT_VERSION >= 0x050300
-
-// Public inline Visibility=Default Availability=Available
-// since 5.3
-// /usr/include/qt/QtCore/qflags.h:69
-// [-2] void QFlag(short)
-#if QT_VERSION >= 0x050300
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QFlagC2Es(short value) {
-  return  new QFlag(value);
-}
-#endif // QT_VERSION >= 0x050300
-
-// Public inline Visibility=Default Availability=Available
-// since 5.3
-// /usr/include/qt/QtCore/qflags.h:70
-// [-2] void QFlag(ushort)
-#if QT_VERSION >= 0x050300
-extern "C" Q_DECL_EXPORT
-void* C_ZN5QFlagC2Et(ushort value) {
-  return  new QFlag(value);
-}
-#endif // QT_VERSION >= 0x050300
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN5QFlagD2Ev(void *this_) {
+/*void C_ZN5QFlagD2Ev(void *this_)*/ {
   delete (QFlag*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qflag
 //  main block end
 
 //  use block begin

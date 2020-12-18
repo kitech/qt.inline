@@ -12,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QItemSelectionRange is pure virtual: false
+// QItemSelectionRange is pure virtual: false false
 // QItemSelectionRange has virtual projected: false
 //  header block end
 
@@ -63,251 +63,277 @@ MyQItemSelectionRange(const QModelIndex & topL, const QModelIndex & bottomR) : Q
 MyQItemSelectionRange(const QModelIndex & index) : QItemSelectionRange(index) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:58
-// [-2] void QItemSelectionRange()
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QItemSelectionRangeC2Ev() {
-  return  new QItemSelectionRange();
+// [-2] void QItemSelectionRange() 
+// (12)qm3558485819 (28)_ZN19QItemSelectionRangeC2Ev
+/*void* qm3558485819()*/{
+  ;
+  this_ =  new QItemSelectionRange();
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:61
-// [-2] void QItemSelectionRange(const QItemSelectionRange &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QItemSelectionRangeC2ERKS_(QItemSelectionRange* other) {
-  return  new QItemSelectionRange(*other);
+// [-2] void QItemSelectionRange(const QItemSelectionRange &) 
+// (10)qm31197722 (31)_ZN19QItemSelectionRangeC2ERKS_
+/*void* qm31197722(const QItemSelectionRange & other)*/{
+  const QItemSelectionRange & other = *(const QItemSelectionRange *)this_;
+  this_ =  new QItemSelectionRange(other);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:64
-// [-2] void QItemSelectionRange(QItemSelectionRange &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QItemSelectionRangeC2EOS_(QItemSelectionRange && other) {
-  return  new QItemSelectionRange(other);
+// /usr/include/qt/QtCore/qitemselectionmodel.h:63
+// [-2] void QItemSelectionRange(QItemSelectionRange &&) 
+// (12)qm2537719913 (30)_ZN19QItemSelectionRangeC2EOS_
+/*void* qm2537719913(QItemSelectionRange && other)*/{
+  QItemSelectionRange && other =  static_cast<QItemSelectionRange &&>(*(QItemSelectionRange *)this_);
+  this_ =  new QItemSelectionRange(other);
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:65
+// [16] QItemSelectionRange & operator=(QItemSelectionRange &&) 
+// (12)qm2037674665 (30)_ZN19QItemSelectionRangeaSEOS_
+//static
+/*void qm2037674665(QItemSelectionRange && other)*/ {
+  QItemSelectionRange && other =  static_cast<QItemSelectionRange &&>(*(QItemSelectionRange *)this_);
+  (void) ((QItemSelectionRange*)this_)->operator=(other);
+  // auto xptr = (QItemSelectionRange & (QItemSelectionRange::*)(QItemSelectionRange&&) ) &QItemSelectionRange::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:67
+// [16] QItemSelectionRange & operator=(const QItemSelectionRange &) 
+// (12)qm2589392464 (31)_ZN19QItemSelectionRangeaSERKS_
+//static
+/*void qm2589392464(const QItemSelectionRange & other)*/ {
+  const QItemSelectionRange & other = *(const QItemSelectionRange *)this_;
+  (void) ((QItemSelectionRange*)this_)->operator=(other);
+  // auto xptr = (QItemSelectionRange & (QItemSelectionRange::*)(QItemSelectionRange const&) ) &QItemSelectionRange::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:66
-// [16] QItemSelectionRange & operator=(QItemSelectionRange &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QItemSelectionRangeaSEOS_(void *this_, QItemSelectionRange && other) {
-  auto& rv = ((QItemSelectionRange*)this_)->operator=(other);
-return &rv;
+// /usr/include/qt/QtCore/qitemselectionmodel.h:70
+// [-2] void QItemSelectionRange(const QModelIndex &, const QModelIndex &) 
+// (12)qm1480294449 (45)_ZN19QItemSelectionRangeC2ERK11QModelIndexS2_
+/*void* qm1480294449(const QModelIndex & topL, const QModelIndex & bottomR)*/{
+  const QModelIndex & topL = *(const QModelIndex *)this_; const QModelIndex & bottomR = *(const QModelIndex *)this_;
+  this_ =  new QItemSelectionRange(topL, bottomR);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:69
-// [16] QItemSelectionRange & operator=(const QItemSelectionRange &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QItemSelectionRangeaSERKS_(void *this_, QItemSelectionRange* other) {
-  auto& rv = ((QItemSelectionRange*)this_)->operator=(*other);
-return &rv;
+// /usr/include/qt/QtCore/qitemselectionmodel.h:71
+// [-2] void QItemSelectionRange(const QModelIndex &) 
+// (12)qm2240717409 (42)_ZN19QItemSelectionRangeC2ERK11QModelIndex
+/*void* qm2240717409(const QModelIndex & index)*/{
+  const QModelIndex & index = *(const QModelIndex *)this_;
+  this_ =  new QItemSelectionRange(index);
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:72
-// [-2] void QItemSelectionRange(const QModelIndex &, const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QItemSelectionRangeC2ERK11QModelIndexS2_(QModelIndex* topL, QModelIndex* bottomR) {
-  return  new QItemSelectionRange(*topL, *bottomR);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:73
-// [-2] void QItemSelectionRange(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QItemSelectionRangeC2ERK11QModelIndex(QModelIndex* index) {
-  return  new QItemSelectionRange(*index);
+// [-2] void swap(QItemSelectionRange &) 
+// (11)qm484441476 (33)_ZN19QItemSelectionRange4swapERS_
+//static
+/*void qm484441476(QItemSelectionRange & other)*/ {
+  QItemSelectionRange & other = *(QItemSelectionRange *)this_;
+  (void) ((QItemSelectionRange*)this_)->swap(other);
+   auto xptr = (void (QItemSelectionRange::*)(QItemSelectionRange&) ) &QItemSelectionRange::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 5.6
-// /usr/include/qt/QtCore/qitemselectionmodel.h:75
-// [-2] void swap(QItemSelectionRange &)
-#if QT_VERSION >= 0x050600
-extern "C" Q_DECL_EXPORT
-void C_ZN19QItemSelectionRange4swapERS_(void *this_, QItemSelectionRange* other) {
-  ((QItemSelectionRange*)this_)->swap(*other);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:79
+// [4] int top() const
+// (11)qm965057264 (31)_ZNK19QItemSelectionRange3topEv
+//static
+/*void qm965057264()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->top();
+   auto xptr = (int (QItemSelectionRange::*)() const ) &QItemSelectionRange::top;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050600
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:80
+// [4] int left() const
+// (11)qm314705935 (32)_ZNK19QItemSelectionRange4leftEv
+//static
+/*void qm314705935()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->left();
+   auto xptr = (int (QItemSelectionRange::*)() const ) &QItemSelectionRange::left;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:81
-// [4] int top()
-extern "C" Q_DECL_EXPORT
-int C_ZNK19QItemSelectionRange3topEv(void *this_) {
-  return (int)((QItemSelectionRange*)this_)->top();
+// [4] int bottom() const
+// (12)qm4061937192 (34)_ZNK19QItemSelectionRange6bottomEv
+//static
+/*void qm4061937192()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->bottom();
+   auto xptr = (int (QItemSelectionRange::*)() const ) &QItemSelectionRange::bottom;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:82
-// [4] int left()
-extern "C" Q_DECL_EXPORT
-int C_ZNK19QItemSelectionRange4leftEv(void *this_) {
-  return (int)((QItemSelectionRange*)this_)->left();
+// [4] int right() const
+// (12)qm2167269483 (33)_ZNK19QItemSelectionRange5rightEv
+//static
+/*void qm2167269483()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->right();
+   auto xptr = (int (QItemSelectionRange::*)() const ) &QItemSelectionRange::right;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:83
-// [4] int bottom()
-extern "C" Q_DECL_EXPORT
-int C_ZNK19QItemSelectionRange6bottomEv(void *this_) {
-  return (int)((QItemSelectionRange*)this_)->bottom();
+// [4] int width() const
+// (12)qm2605059887 (33)_ZNK19QItemSelectionRange5widthEv
+//static
+/*void qm2605059887()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->width();
+   auto xptr = (int (QItemSelectionRange::*)() const ) &QItemSelectionRange::width;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:84
-// [4] int right()
-extern "C" Q_DECL_EXPORT
-int C_ZNK19QItemSelectionRange5rightEv(void *this_) {
-  return (int)((QItemSelectionRange*)this_)->right();
+// [4] int height() const
+// (12)qm3515097599 (34)_ZNK19QItemSelectionRange6heightEv
+//static
+/*void qm3515097599()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->height();
+   auto xptr = (int (QItemSelectionRange::*)() const ) &QItemSelectionRange::height;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:85
-// [4] int width()
-extern "C" Q_DECL_EXPORT
-int C_ZNK19QItemSelectionRange5widthEv(void *this_) {
-  return (int)((QItemSelectionRange*)this_)->width();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:86
-// [4] int height()
-extern "C" Q_DECL_EXPORT
-int C_ZNK19QItemSelectionRange6heightEv(void *this_) {
-  return (int)((QItemSelectionRange*)this_)->height();
+// [8] const QPersistentModelIndex & topLeft() const
+// (12)qm1043204961 (35)_ZNK19QItemSelectionRange7topLeftEv
+//static
+/*void qm1043204961()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->topLeft();
+   auto xptr = (const QPersistentModelIndex & (QItemSelectionRange::*)() const ) &QItemSelectionRange::topLeft;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:87
+// [8] const QPersistentModelIndex & bottomRight() const
+// (12)qm1868305477 (40)_ZNK19QItemSelectionRange11bottomRightEv
+//static
+/*void qm1868305477()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->bottomRight();
+   auto xptr = (const QPersistentModelIndex & (QItemSelectionRange::*)() const ) &QItemSelectionRange::bottomRight;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:88
-// [8] const QPersistentModelIndex & topLeft()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QItemSelectionRange7topLeftEv(void *this_) {
-  auto& rv = ((QItemSelectionRange*)this_)->topLeft();
-return new QPersistentModelIndex(rv);
+// [24] QModelIndex parent() const
+// (12)qm3157250454 (34)_ZNK19QItemSelectionRange6parentEv
+//static
+/*void qm3157250454()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->parent();
+   auto xptr = (QModelIndex (QItemSelectionRange::*)() const ) &QItemSelectionRange::parent;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:89
-// [8] const QPersistentModelIndex & bottomRight()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QItemSelectionRange11bottomRightEv(void *this_) {
-  auto& rv = ((QItemSelectionRange*)this_)->bottomRight();
-return new QPersistentModelIndex(rv);
+// [8] const QAbstractItemModel * model() const
+// (12)qm1629337492 (33)_ZNK19QItemSelectionRange5modelEv
+//static
+/*void qm1629337492()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->model();
+   auto xptr = (const QAbstractItemModel * (QItemSelectionRange::*)() const ) &QItemSelectionRange::model;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:90
-// [24] QModelIndex parent()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QItemSelectionRange6parentEv(void *this_) {
-  auto rv = ((QItemSelectionRange*)this_)->parent();
-return new QModelIndex(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:91
-// [8] const QAbstractItemModel * model()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QItemSelectionRange5modelEv(void *this_) {
-  return (void*)((QItemSelectionRange*)this_)->model();
+// [1] bool contains(const QModelIndex &) const
+// (12)qm3464857811 (50)_ZNK19QItemSelectionRange8containsERK11QModelIndex
+//static
+/*void qm3464857811(const QModelIndex & index)*/ {
+  const QModelIndex & index = *(const QModelIndex *)this_;
+  (void) ((QItemSelectionRange*)this_)->contains(index);
+   auto xptr = (bool (QItemSelectionRange::*)(QModelIndex const&) const ) &QItemSelectionRange::contains;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:93
-// [1] bool contains(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QItemSelectionRange8containsERK11QModelIndex(void *this_, QModelIndex* index) {
-  return (bool)((QItemSelectionRange*)this_)->contains(*index);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:98
+// [1] bool contains(int, int, const QModelIndex &) const
+// (11)qm663915484 (52)_ZNK19QItemSelectionRange8containsEiiRK11QModelIndex
+//static
+/*void qm663915484(int row, int column, const QModelIndex & parentIndex)*/ {
+  int row = *(int*)this_; int column = *(int*)this_; const QModelIndex & parentIndex = *(const QModelIndex *)this_;
+  (void) ((QItemSelectionRange*)this_)->contains(row, column, parentIndex);
+   auto xptr = (bool (QItemSelectionRange::*)(int, int, QModelIndex const&) const ) &QItemSelectionRange::contains;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:100
-// [1] bool contains(int, int, const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QItemSelectionRange8containsEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* parentIndex) {
-  return (bool)((QItemSelectionRange*)this_)->contains(row, column, *parentIndex);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:113
+// [1] bool operator==(const QItemSelectionRange &) const
+// (12)qm3887936685 (32)_ZNK19QItemSelectionRangeeqERKS_
+//static
+/*void qm3887936685(const QItemSelectionRange & other)*/ {
+  const QItemSelectionRange & other = *(const QItemSelectionRange *)this_;
+  (void) ((QItemSelectionRange*)this_)->operator==(other);
+  // auto xptr = (bool (QItemSelectionRange::*)(QItemSelectionRange const&) const ) &QItemSelectionRange::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:107
-// [1] bool intersects(const QItemSelectionRange &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QItemSelectionRange10intersectsERKS_(void *this_, QItemSelectionRange* other) {
-  return (bool)((QItemSelectionRange*)this_)->intersects(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtCore/qitemselectionmodel.h:112
-// [16] QItemSelectionRange intersected(const QItemSelectionRange &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QItemSelectionRange11intersectedERKS_(void *this_, QItemSelectionRange* other) {
-  auto rv = ((QItemSelectionRange*)this_)->intersected(*other);
-return new QItemSelectionRange(rv);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:115
-// [1] bool operator==(const QItemSelectionRange &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QItemSelectionRangeeqERKS_(void *this_, QItemSelectionRange* other) {
-  return (bool)((QItemSelectionRange*)this_)->operator==(*other);
+// [1] bool operator!=(const QItemSelectionRange &) const
+// (12)qm2113741018 (32)_ZNK19QItemSelectionRangeneERKS_
+//static
+/*void qm2113741018(const QItemSelectionRange & other)*/ {
+  const QItemSelectionRange & other = *(const QItemSelectionRange *)this_;
+  (void) ((QItemSelectionRange*)this_)->operator!=(other);
+  // auto xptr = (bool (QItemSelectionRange::*)(QItemSelectionRange const&) const ) &QItemSelectionRange::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:117
-// [1] bool operator!=(const QItemSelectionRange &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QItemSelectionRangeneERKS_(void *this_, QItemSelectionRange* other) {
-  return (bool)((QItemSelectionRange*)this_)->operator!=(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:119
-// [1] bool operator<(const QItemSelectionRange &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QItemSelectionRangeltERKS_(void *this_, QItemSelectionRange* other) {
-  return (bool)((QItemSelectionRange*)this_)->operator<(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qitemselectionmodel.h:121
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QItemSelectionRange7isValidEv(void *this_) {
-  return (bool)((QItemSelectionRange*)this_)->isValid();
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.7
-// /usr/include/qt/QtCore/qitemselectionmodel.h:127
-// [1] bool isEmpty()
-#if QT_VERSION >= 0x040700
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QItemSelectionRange7isEmptyEv(void *this_) {
-  return (bool)((QItemSelectionRange*)this_)->isEmpty();
-}
-#endif // QT_VERSION >= 0x040700
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qitemselectionmodel.h:129
-// [8] QModelIndexList indexes()
-extern "C" Q_DECL_EXPORT
-QModelIndexList* C_ZNK19QItemSelectionRange7indexesEv(void *this_) {
-  auto rv = ((QItemSelectionRange*)this_)->indexes();
-return new QModelIndexList(rv);
+// [1] bool isValid() const
+// (11)qm381632826 (35)_ZNK19QItemSelectionRange7isValidEv
+//static
+/*void qm381632826()*/ {
+  ;
+  (void) ((QItemSelectionRange*)this_)->isValid();
+   auto xptr = (bool (QItemSelectionRange::*)() const ) &QItemSelectionRange::isValid;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN19QItemSelectionRangeD2Ev(void *this_) {
+/*void C_ZN19QItemSelectionRangeD2Ev(void *this_)*/ {
   delete (QItemSelectionRange*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qitemselectionrange
 //  main block end
 
 //  use block begin

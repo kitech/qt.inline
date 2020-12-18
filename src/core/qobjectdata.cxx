@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QObjectData is pure virtual: true
+// QObjectData is pure virtual: true true
 // QObjectData has virtual projected: false
 //  header block end
 
@@ -48,23 +48,29 @@ static const uint qt_meta_data_MyQObjectData[] = {
 class Q_DECL_EXPORT MyQObjectData : public QObjectData {
 public:
   virtual ~MyQObjectData() {}
+// void QObjectData()
+MyQObjectData() : QObjectData() {}
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:97
-// [-2] void ~QObjectData()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QObjectDataD2Ev(void *this_) {
-  delete (QObjectData*)(this_);
-}
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:113
-// [8] QMetaObject * dynamicMetaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QObjectData17dynamicMetaObjectEv(void *this_) {
-  return (void*)((QObjectData*)this_)->dynamicMetaObject();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qobjectdata(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:102
+// [-2] void QObjectData() 
+// (12)qm3555150319 (20)_ZN11QObjectDataC2Ev
+/*void* qm3555150319()*/{
+  ;
+  this_ = 0; // new QObjectData();
 }
 
+
+/*void C_ZN11QObjectDataD2Ev(void *this_)*/ {
+  delete (QObjectData*)(this_);
+}
+  return fnptrsumval;
+} // end ensure_inline_symbol_qobjectdata
 //  main block end
 
 //  use block begin

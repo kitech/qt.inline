@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QConcatenable is pure virtual: false
+// QConcatenable is pure virtual: false false
 // QConcatenable has virtual projected: false
 //  header block end
 
@@ -50,35 +50,52 @@ public:
   virtual ~MyQConcatenable() {}
 };
 
-// Public static inline Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qconcatenable(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:399
-// [4] int size(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-int C_ZN13QConcatenableI10QByteArrayE4sizeERKS0_(QByteArray* ba) {
-  return (int)QConcatenable<QByteArray>::size(*ba);
+// [4] int size(const QByteArray &) 
+// (12)qm2275045381 (43)_ZN13QConcatenableI10QByteArrayE4sizeERKS0_
+//static
+/*void qm2275045381(const QByteArray & ba)*/ {
+  const QByteArray & ba = *(const QByteArray *)this_;
+  (void) QConcatenable<QByteArray>::size(ba);
+   auto xptr = (int (*)(QByteArray const&) ) &QConcatenable<QByteArray>::size;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
+// Public static inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:401
-// [-2] void appendTo(const QByteArray &, QChar *&)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QConcatenableI10QByteArrayE8appendToERKS0_RP5QChar(QByteArray* ba, QChar *& out_) {
-  QConcatenable<QByteArray>::appendTo(*ba, out_);
+// [-2] void appendTo(const QByteArray &, QChar *&) 
+// (11)qm326441698 (55)_ZN13QConcatenableI10QByteArrayE8appendToERKS0_RP5QChar
+//static
+/*void qm326441698(const QByteArray & ba, QChar *& out_)*/ {
+  const QByteArray & ba = *(const QByteArray *)this_; QChar *& out_ = *(QChar **)this_;
+  (void) QConcatenable<QByteArray>::appendTo(ba, out_);
+   auto xptr = (void (*)(QByteArray const&, QChar*&) ) &QConcatenable<QByteArray>::appendTo;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
+// Public static inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstringbuilder.h:406
-// [-2] void appendTo(const QByteArray &, char *&)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QConcatenableI10QByteArrayE8appendToERKS0_RPc(QByteArray* ba, char *& out_) {
-  QConcatenable<QByteArray>::appendTo(*ba, out_);
+// [-2] void appendTo(const QByteArray &, char *&) 
+// (12)qm2461776975 (50)_ZN13QConcatenableI10QByteArrayE8appendToERKS0_RPc
+//static
+/*void qm2461776975(const QByteArray & ba, char *& out_)*/ {
+  const QByteArray & ba = *(const QByteArray *)this_; char *& out_ = *(char **)this_;
+  (void) QConcatenable<QByteArray>::appendTo(ba, out_);
+   auto xptr = (void (*)(QByteArray const&, char*&) ) &QConcatenable<QByteArray>::appendTo;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN13QConcatenableD2Ev(void *this_) {
+/*void C_ZN13QConcatenableD2Ev(void *this_)*/ {
   delete (QConcatenable<QByteArray>*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qconcatenable
 //  main block end
 
 //  use block begin

@@ -243,6 +243,13 @@ void C_QModelIndexList_move_0(void* this_ , int from, int to) {
      ((QModelIndexList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QModelIndexList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QModelIndexList_swapItemsAt_0()
+     ((QModelIndexList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QModelIndexList_swap_1(void* this_ , int i, int j) {

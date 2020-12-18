@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050600
 // /usr/include/qt/QtCore/qversionnumber.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QVersionNumber is pure virtual: false
+// QVersionNumber is pure virtual: false false
 // QVersionNumber has virtual projected: false
 //  header block end
 
@@ -65,208 +64,163 @@ MyQVersionNumber(int maj, int min) : QVersionNumber(maj, min) {}
 MyQVersionNumber(int maj, int min, int mic) : QVersionNumber(maj, min, mic) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:221
-// [-2] void QVersionNumber()
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumberC2Ev() {
-  return  new QVersionNumber();
+// /usr/include/qt/QtCore/qversionnumber.h:217
+// [-2] void QVersionNumber() 
+// (12)qm2155026613 (23)_ZN14QVersionNumberC2Ev
+/*void* qm2155026613()*/{
+  ;
+  this_ =  new QVersionNumber();
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:224
-// [-2] void QVersionNumber(const QVector<int> &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumberC2ERK7QVectorIiE(QVector<int>* seg) {
-  return  new QVersionNumber(*seg);
+// /usr/include/qt/QtCore/qversionnumber.h:220
+// [-2] void QVersionNumber(const QVector<int> &) 
+// (11)qm957326860 (35)_ZN14QVersionNumberC2ERK7QVectorIiE
+/*void* qm957326860(const QVector<int> & seg)*/{
+  const QVector<int> & seg = *(const QVector<int> *)this_;
+  this_ =  new QVersionNumber(seg);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:231
-// [-2] void QVersionNumber(QVector<int> &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumberC2EO7QVectorIiE(QVector<int> && seg) {
-  return  new QVersionNumber(seg);
+// /usr/include/qt/QtCore/qversionnumber.h:226
+// [-2] void QVersionNumber(QVector<int> &&) 
+// (12)qm2433266494 (34)_ZN14QVersionNumberC2EO7QVectorIiE
+/*void* qm2433266494(QVector<int> && seg)*/{
+  QVector<int> && seg =  static_cast<QVector<int> &&>(*(QVector<int> *)this_);
+  this_ =  new QVersionNumber(seg);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:230
+// [-2] void QVersionNumber(std::initializer_list<int>) 
+// (12)qm3522872855 (45)_ZN14QVersionNumberC2ESt16initializer_listIiE
+/*void* qm3522872855(std::initializer_list<int> args)*/{
+  std::initializer_list<int> args = *(std::initializer_list<int>*)this_;
+  this_ =  new QVersionNumber(args);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:234
+// [-2] void QVersionNumber(int) 
+// (11)qm226170176 (23)_ZN14QVersionNumberC2Ei
+/*void* qm226170176(int maj)*/{
+  int maj = *(int*)this_;
+  this_ =  new QVersionNumber(maj);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qversionnumber.h:237
-// [-2] void QVersionNumber(std::initializer_list<int>)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumberC2ESt16initializer_listIiE(std::initializer_list<int> args) {
-  return  new QVersionNumber(args);
+// [-2] void QVersionNumber(int, int) 
+// (12)qm2428308724 (24)_ZN14QVersionNumberC2Eii
+/*void* qm2428308724(int maj, int min)*/{
+  int maj = *(int*)this_; int min = *(int*)this_;
+  this_ =  new QVersionNumber(maj, min);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:242
-// [-2] void QVersionNumber(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumberC2Ei(int maj) {
-  return  new QVersionNumber(maj);
+// /usr/include/qt/QtCore/qversionnumber.h:240
+// [-2] void QVersionNumber(int, int, int) 
+// (12)qm1546435960 (25)_ZN14QVersionNumberC2Eiii
+/*void* qm1546435960(int maj, int min, int mic)*/{
+  int maj = *(int*)this_; int min = *(int*)this_; int mic = *(int*)this_;
+  this_ =  new QVersionNumber(maj, min, mic);
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:245
-// [-2] void QVersionNumber(int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumberC2Eii(int maj, int min) {
-  return  new QVersionNumber(maj, min);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:243
+// [1] bool isNull() const
+// (12)qm2418045906 (29)_ZNK14QVersionNumber6isNullEv
+//static
+/*void qm2418045906()*/ {
+  ;
+  (void) ((QVersionNumber*)this_)->isNull();
+   auto xptr = (bool (QVersionNumber::*)() const ) &QVersionNumber::isNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:248
-// [-2] void QVersionNumber(int, int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumberC2Eiii(int maj, int min, int mic) {
-  return  new QVersionNumber(maj, min, mic);
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:246
+// [1] bool isNormalized() const
+// (11)qm619412466 (36)_ZNK14QVersionNumber12isNormalizedEv
+//static
+/*void qm619412466()*/ {
+  ;
+  (void) ((QVersionNumber*)this_)->isNormalized();
+   auto xptr = (bool (QVersionNumber::*)() const ) &QVersionNumber::isNormalized;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:251
-// [1] bool isNull()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QVersionNumber6isNullEv(void *this_) {
-  return (bool)((QVersionNumber*)this_)->isNull();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:249
+// [4] int majorVersion() const
+// (11)qm180558212 (36)_ZNK14QVersionNumber12majorVersionEv
+//static
+/*void qm180558212()*/ {
+  ;
+  (void) ((QVersionNumber*)this_)->majorVersion();
+   auto xptr = (int (QVersionNumber::*)() const ) &QVersionNumber::majorVersion;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:254
-// [1] bool isNormalized()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QVersionNumber12isNormalizedEv(void *this_) {
-  return (bool)((QVersionNumber*)this_)->isNormalized();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:252
+// [4] int minorVersion() const
+// (12)qm1405546902 (36)_ZNK14QVersionNumber12minorVersionEv
+//static
+/*void qm1405546902()*/ {
+  ;
+  (void) ((QVersionNumber*)this_)->minorVersion();
+   auto xptr = (int (QVersionNumber::*)() const ) &QVersionNumber::minorVersion;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:257
-// [4] int majorVersion()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QVersionNumber12majorVersionEv(void *this_) {
-  return (int)((QVersionNumber*)this_)->majorVersion();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:255
+// [4] int microVersion() const
+// (12)qm2052813804 (36)_ZNK14QVersionNumber12microVersionEv
+//static
+/*void qm2052813804()*/ {
+  ;
+  (void) ((QVersionNumber*)this_)->microVersion();
+   auto xptr = (int (QVersionNumber::*)() const ) &QVersionNumber::microVersion;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:260
-// [4] int minorVersion()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QVersionNumber12minorVersionEv(void *this_) {
-  return (int)((QVersionNumber*)this_)->minorVersion();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:262
+// [4] int segmentAt(int) const
+// (11)qm406112528 (32)_ZNK14QVersionNumber9segmentAtEi
+//static
+/*void qm406112528(int index)*/ {
+  int index = *(int*)this_;
+  (void) ((QVersionNumber*)this_)->segmentAt(index);
+   auto xptr = (int (QVersionNumber::*)(int) const ) &QVersionNumber::segmentAt;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:263
-// [4] int microVersion()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QVersionNumber12microVersionEv(void *this_) {
-  return (int)((QVersionNumber*)this_)->microVersion();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qversionnumber.h:265
+// [4] int segmentCount() const
+// (11)qm923221113 (36)_ZNK14QVersionNumber12segmentCountEv
+//static
+/*void qm923221113()*/ {
+  ;
+  (void) ((QVersionNumber*)this_)->segmentCount();
+   auto xptr = (int (QVersionNumber::*)() const ) &QVersionNumber::segmentCount;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:266
-// [8] QVersionNumber normalized()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QVersionNumber10normalizedEv(void *this_) {
-  auto rv = ((QVersionNumber*)this_)->normalized();
-return new QVersionNumber(rv);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:268
-// [8] QVector<int> segments()
-extern "C" Q_DECL_EXPORT
-void C_ZNK14QVersionNumber8segmentsEv(void *this_) {
-  auto rv = ((QVersionNumber*)this_)->segments();
-/*return rv;*/
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:270
-// [4] int segmentAt(int)
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QVersionNumber9segmentAtEi(void *this_, int index) {
-  return (int)((QVersionNumber*)this_)->segmentAt(index);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:273
-// [4] int segmentCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QVersionNumber12segmentCountEv(void *this_) {
-  return (int)((QVersionNumber*)this_)->segmentCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:276
-// [1] bool isPrefixOf(const QVersionNumber &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QVersionNumber10isPrefixOfERKS_(void *this_, QVersionNumber* other) {
-  return (bool)((QVersionNumber*)this_)->isPrefixOf(*other);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:278
-// [4] int compare(const QVersionNumber &, const QVersionNumber &)
-extern "C" Q_DECL_EXPORT
-int C_ZN14QVersionNumber7compareERKS_S1_(QVersionNumber* v1, QVersionNumber* v2) {
-  return (int)QVersionNumber::compare(*v1, *v2);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:280
-// [8] QVersionNumber commonPrefix(const QVersionNumber &, const QVersionNumber &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumber12commonPrefixERKS_S1_(QVersionNumber* v1, QVersionNumber* v2) {
-  auto rv = QVersionNumber::commonPrefix(*v1, *v2);
-return new QVersionNumber(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:282
-// [8] QString toString()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QVersionNumber8toStringEv(void *this_) {
-  auto rv = ((QVersionNumber*)this_)->toString();
-return new QString(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qversionnumber.h:284
-// [8] QVersionNumber fromString(const QString &, int *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumber10fromStringERK7QStringPi(QString* string, int * suffixIndex) {
-  auto rv = QVersionNumber::fromString(*string, suffixIndex);
-return new QVersionNumber(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qversionnumber.h:286
-// [8] QVersionNumber fromString(QLatin1String, int *)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumber10fromStringE13QLatin1StringPi(QLatin1String* string, int * suffixIndex) {
-  auto rv = QVersionNumber::fromString(*string, suffixIndex);
-return new QVersionNumber(rv);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public static Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qversionnumber.h:287
-// [8] QVersionNumber fromString(QStringView, int *)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QVersionNumber10fromStringE11QStringViewPi(QStringView* string, int * suffixIndex) {
-  auto rv = QVersionNumber::fromString(*string, suffixIndex);
-return new QVersionNumber(rv);
-}
-#endif // QT_VERSION >= 0x050a00
-
-
-extern "C" Q_DECL_EXPORT
-void C_ZN14QVersionNumberD2Ev(void *this_) {
+/*void C_ZN14QVersionNumberD2Ev(void *this_)*/ {
   delete (QVersionNumber*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qversionnumber
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// NormalDeleter is pure virtual: false
+// NormalDeleter is pure virtual: false false
 // NormalDeleter has virtual projected: false
 //  header block end
 
@@ -50,11 +50,16 @@ public:
   virtual ~MyNormalDeleter() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_normaldeleter(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-extern "C" Q_DECL_EXPORT
-void C_ZN13NormalDeleterD2Ev(void *this_) {
+
+/*void C_ZN13NormalDeleterD2Ev(void *this_)*/ {
   delete (QtSharedPointer::NormalDeleter*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_normaldeleter
 //  main block end
 
 //  use block begin

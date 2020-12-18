@@ -12,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QAbstractTableModel is pure virtual: true
+// QAbstractTableModel is pure virtual: true true
 // QAbstractTableModel has virtual projected: false
 //  header block end
 
@@ -96,7 +96,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQAbstractTableModel() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int rowCount(const QModelIndex &)
   virtual int rowCount(const QModelIndex & parent) const override {
     int handled = 0;
@@ -109,7 +109,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int columnCount(const QModelIndex &)
   virtual int columnCount(const QModelIndex & parent) const override {
     int handled = 0;
@@ -122,7 +122,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [16] QVariant data(const QModelIndex &, int)
   virtual QVariant data(const QModelIndex & index, int role) const override {
     int handled = 0;
@@ -152,106 +152,28 @@ void* C_QAbstractTableModel_init_staticMetaObject(void* this_, void* strdat, voi
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:187
-// [4] int rowCount(const QModelIndex &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:188
-// [4] int columnCount(const QModelIndex &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:191
-// [16] QVariant data(const QModelIndex &, int)
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:387
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QAbstractTableModel10metaObjectEv(void *this_) {
-  return (void*)((QAbstractTableModel*)this_)->metaObject();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qabstracttablemodel(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:389
+// [8] QString tr(const char *, const char *, int) 
+// (11)qm486709099 (35)_ZN19QAbstractTableModel2trEPKcS1_i
+//static
+/*void qm486709099(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QAbstractTableModel::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QAbstractTableModel::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:387
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QAbstractTableModel11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QAbstractTableModel*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:387
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN19QAbstractTableModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QAbstractTableModel*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:387
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QAbstractTableModel2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAbstractTableModel::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:387
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QAbstractTableModel6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAbstractTableModel::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:390
-// [-2] void QAbstractTableModel(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QAbstractTableModelC2EP7QObject(QObject * parent) {
-  return  new MyQAbstractTableModel(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:391
-// [-2] void ~QAbstractTableModel()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QAbstractTableModelD2Ev(void *this_) {
+/*void C_ZN19QAbstractTableModelD2Ev(void *this_)*/ {
   delete (QAbstractTableModel*)(this_);
 }
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:393
-// [24] QModelIndex index(int, int, const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QAbstractTableModel5indexEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* parent) {
-  auto rv = ((QAbstractTableModel*)this_)->index(row, column, *parent);
-return new QModelIndex(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:394
-// [24] QModelIndex sibling(int, int, const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QAbstractTableModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* idx) {
-  auto rv = ((QAbstractTableModel*)this_)->sibling(row, column, *idx);
-return new QModelIndex(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:395
-// [1] bool dropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN19QAbstractTableModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
-  return (bool)((QAbstractTableModel*)this_)->dropMimeData(data, action, row, column, *parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:398
-// [4] Qt::ItemFlags flags(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-Qt::ItemFlags C_ZNK19QAbstractTableModel5flagsERK11QModelIndex(void *this_, QModelIndex* index) {
-  return (Qt::ItemFlags)((QAbstractTableModel*)this_)->flags(*index);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qabstracttablemodel
 //  main block end
 
 //  use block begin

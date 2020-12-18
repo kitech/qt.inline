@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(animation)
-// since 0x040600
 // /usr/include/qt/QtCore/qanimationgroup.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QAnimationGroup is pure virtual: true
+// QAnimationGroup is pure virtual: true true
 // QAnimationGroup has virtual projected: true
 //  header block end
 
@@ -97,7 +96,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQAnimationGroup() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int duration()
   virtual int duration() const override {
     int handled = 0;
@@ -110,7 +109,7 @@ public:
   }
   }
 
-// Protected purevirtual virtual Visibility=Default Availability=Available
+// Protected purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void updateCurrentTime(int)
   virtual void updateCurrentTime(int currentTime)  override {
     int handled = 0;
@@ -124,7 +123,7 @@ public:
 
 // void QAnimationGroup(QObject *)
 MyQAnimationGroup(QObject * parent) : QAnimationGroup(parent) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {
     int handled = 0;
@@ -151,142 +150,28 @@ void* C_QAnimationGroup_init_staticMetaObject(void* this_, void* strdat, void* d
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:101
-// [4] int duration()
-// Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractanimation.h:122
-// [-2] void updateCurrentTime(int)
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:69
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN15QAnimationGroup5eventEP6QEvent(void *this_, QEvent * event) {
-  return (bool)((QAnimationGroup*)this_)->QAnimationGroup::event(event);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qanimationgroup(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qanimationgroup.h:52
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QAnimationGroup10metaObjectEv(void *this_) {
-  return (void*)((QAnimationGroup*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3832024844 (31)_ZN15QAnimationGroup2trEPKcS1_i
+//static
+/*void qm3832024844(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QAnimationGroup::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QAnimationGroup::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:52
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QAnimationGroup11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QAnimationGroup*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:52
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN15QAnimationGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QAnimationGroup*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:52
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QAnimationGroup2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAnimationGroup::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:52
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QAnimationGroup6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAnimationGroup::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:55
-// [-2] void QAnimationGroup(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QAnimationGroupC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQAnimationGroup*)(0);
-  return  new MyQAnimationGroup(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:56
-// [-2] void ~QAnimationGroup()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QAnimationGroupD2Ev(void *this_) {
+/*void C_ZN15QAnimationGroupD2Ev(void *this_)*/ {
   delete (QAnimationGroup*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:58
-// [8] QAbstractAnimation * animationAt(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QAnimationGroup11animationAtEi(void *this_, int index) {
-  return (void*)((QAnimationGroup*)this_)->animationAt(index);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:59
-// [4] int animationCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK15QAnimationGroup14animationCountEv(void *this_) {
-  return (int)((QAnimationGroup*)this_)->animationCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:60
-// [4] int indexOfAnimation(QAbstractAnimation *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK15QAnimationGroup16indexOfAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
-  return (int)((QAnimationGroup*)this_)->indexOfAnimation(animation);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:61
-// [-2] void addAnimation(QAbstractAnimation *)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QAnimationGroup12addAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
-  ((QAnimationGroup*)this_)->addAnimation(animation);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:62
-// [-2] void insertAnimation(int, QAbstractAnimation *)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QAnimationGroup15insertAnimationEiP18QAbstractAnimation(void *this_, int index, QAbstractAnimation * animation) {
-  ((QAnimationGroup*)this_)->insertAnimation(index, animation);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:63
-// [-2] void removeAnimation(QAbstractAnimation *)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QAnimationGroup15removeAnimationEP18QAbstractAnimation(void *this_, QAbstractAnimation * animation) {
-  ((QAnimationGroup*)this_)->removeAnimation(animation);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:64
-// [8] QAbstractAnimation * takeAnimation(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QAnimationGroup13takeAnimationEi(void *this_, int index) {
-  return (void*)((QAnimationGroup*)this_)->takeAnimation(index);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qanimationgroup.h:65
-// [-2] void clear()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QAnimationGroup5clearEv(void *this_) {
-  ((QAnimationGroup*)this_)->clear();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qanimationgroup
 //  main block end
 
 //  use block begin

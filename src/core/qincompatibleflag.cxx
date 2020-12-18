@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QIncompatibleFlag is pure virtual: false
+// QIncompatibleFlag is pure virtual: false false
 // QIncompatibleFlag has virtual projected: false
 //  header block end
 
@@ -52,19 +52,25 @@ public:
 MyQIncompatibleFlag(int i) : QIncompatibleFlag(i) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qincompatibleflag(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qflags.h:80
-// [-2] void QIncompatibleFlag(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QIncompatibleFlagC2Ei(int i) {
-  return  new QIncompatibleFlag(i);
+// /usr/include/qt/QtCore/qflags.h:78
+// [-2] void QIncompatibleFlag(int) 
+// (12)qm1089776055 (26)_ZN17QIncompatibleFlagC2Ei
+/*void* qm1089776055(int i)*/{
+  int i = *(int*)this_;
+  this_ =  new QIncompatibleFlag(i);
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN17QIncompatibleFlagD2Ev(void *this_) {
+/*void C_ZN17QIncompatibleFlagD2Ev(void *this_)*/ {
   delete (QIncompatibleFlag*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qincompatibleflag
 //  main block end
 
 //  use block begin

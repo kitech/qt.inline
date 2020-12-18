@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtCore/qjsonvalue.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QJsonValue is pure virtual: false
+// QJsonValue is pure virtual: false false
 // QJsonValue has virtual projected: false
 //  header block end
 
@@ -58,7 +57,7 @@ MyQJsonValue(double n) : QJsonValue(n) {}
 // void QJsonValue(int)
 MyQJsonValue(int n) : QJsonValue(n) {}
 // void QJsonValue(qint64)
-MyQJsonValue(qint64 n) : QJsonValue(n) {}
+MyQJsonValue(qint64 v) : QJsonValue(v) {}
 // void QJsonValue(const QString &)
 MyQJsonValue(const QString & s) : QJsonValue(s) {}
 // void QJsonValue(QLatin1String)
@@ -75,350 +74,121 @@ MyQJsonValue(const QJsonValue & other) : QJsonValue(other) {}
 MyQJsonValue(QJsonValue && other) : QJsonValue(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:76
-// [-2] void QJsonValue(QJsonValue::Type)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2ENS_4TypeE(QJsonValue::Type arg0) {
-  return  new QJsonValue(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:77
-// [-2] void QJsonValue(bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2Eb(bool b) {
-  return  new QJsonValue(b);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:78
-// [-2] void QJsonValue(double)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2Ed(double n) {
-  return  new QJsonValue(n);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:79
-// [-2] void QJsonValue(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2Ei(int n) {
-  return  new QJsonValue(n);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:80
-// [-2] void QJsonValue(qint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2Ex(qint64 n) {
-  return  new QJsonValue(n);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:81
-// [-2] void QJsonValue(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2ERK7QString(QString* s) {
-  return  new QJsonValue(*s);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:82
-// [-2] void QJsonValue(QLatin1String)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2E13QLatin1String(QLatin1String* s) {
-  return  new QJsonValue(*s);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qjsonvalue(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// since 5.3
-// /usr/include/qt/QtCore/qjsonvalue.h:84
-// [-2] void QJsonValue(const char *)
-#if QT_VERSION >= 0x050300
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2EPKc(const char * s) {
-  return  new QJsonValue(s);
-}
-#endif // QT_VERSION >= 0x050300
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:87
-// [-2] void QJsonValue(const QJsonArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2ERK10QJsonArray(QJsonArray* a) {
-  return  new QJsonValue(*a);
+// /usr/include/qt/QtCore/qjsonvalue.h:80
+// [-2] void QJsonValue(const char *) 
+// (12)qm2232320416 (21)_ZN10QJsonValueC2EPKc
+/*void* qm2232320416(const char * s)*/{
+  const char * s = *(const char **)this_;
+  this_ =  new QJsonValue(s);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:88
-// [-2] void QJsonValue(const QJsonObject &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2ERK11QJsonObject(QJsonObject* o) {
-  return  new QJsonValue(*o);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:93
+// [24] QJsonValue & operator=(QJsonValue &&) 
+// (12)qm3510008819 (21)_ZN10QJsonValueaSEOS_
+//static
+/*void qm3510008819(QJsonValue && other)*/ {
+  QJsonValue && other =  static_cast<QJsonValue &&>(*(QJsonValue *)this_);
+  (void) ((QJsonValue*)this_)->operator=(other);
+  // auto xptr = (QJsonValue & (QJsonValue::*)(QJsonValue&&) ) &QJsonValue::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:90
-// [-2] void ~QJsonValue()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QJsonValueD2Ev(void *this_) {
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:105
+// [1] bool isNull() const
+// (12)qm2033380751 (25)_ZNK10QJsonValue6isNullEv
+//static
+/*void qm2033380751()*/ {
+  ;
+  (void) ((QJsonValue*)this_)->isNull();
+   auto xptr = (bool (QJsonValue::*)() const ) &QJsonValue::isNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:106
+// [1] bool isBool() const
+// (11)qm907349305 (25)_ZNK10QJsonValue6isBoolEv
+//static
+/*void qm907349305()*/ {
+  ;
+  (void) ((QJsonValue*)this_)->isBool();
+   auto xptr = (bool (QJsonValue::*)() const ) &QJsonValue::isBool;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:107
+// [1] bool isDouble() const
+// (12)qm1337653796 (27)_ZNK10QJsonValue8isDoubleEv
+//static
+/*void qm1337653796()*/ {
+  ;
+  (void) ((QJsonValue*)this_)->isDouble();
+   auto xptr = (bool (QJsonValue::*)() const ) &QJsonValue::isDouble;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:108
+// [1] bool isString() const
+// (12)qm2672105326 (27)_ZNK10QJsonValue8isStringEv
+//static
+/*void qm2672105326()*/ {
+  ;
+  (void) ((QJsonValue*)this_)->isString();
+   auto xptr = (bool (QJsonValue::*)() const ) &QJsonValue::isString;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:109
+// [1] bool isArray() const
+// (12)qm3862246477 (26)_ZNK10QJsonValue7isArrayEv
+//static
+/*void qm3862246477()*/ {
+  ;
+  (void) ((QJsonValue*)this_)->isArray();
+   auto xptr = (bool (QJsonValue::*)() const ) &QJsonValue::isArray;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:110
+// [1] bool isObject() const
+// (12)qm1981821693 (27)_ZNK10QJsonValue8isObjectEv
+//static
+/*void qm1981821693()*/ {
+  ;
+  (void) ((QJsonValue*)this_)->isObject();
+   auto xptr = (bool (QJsonValue::*)() const ) &QJsonValue::isObject;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:111
+// [1] bool isUndefined() const
+// (12)qm3712079298 (31)_ZNK10QJsonValue11isUndefinedEv
+//static
+/*void qm3712079298()*/ {
+  ;
+  (void) ((QJsonValue*)this_)->isUndefined();
+   auto xptr = (bool (QJsonValue::*)() const ) &QJsonValue::isUndefined;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN10QJsonValueD2Ev(void *this_)*/ {
   delete (QJsonValue*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:92
-// [-2] void QJsonValue(const QJsonValue &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2ERKS_(QJsonValue* other) {
-  return  new QJsonValue(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:93
-// [24] QJsonValue & operator=(const QJsonValue &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueaSERKS_(void *this_, QJsonValue* other) {
-  auto& rv = ((QJsonValue*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qjsonvalue.h:95
-// [-2] void QJsonValue(QJsonValue &&)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueC2EOS_(QJsonValue && other) {
-  return  new QJsonValue(other);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:105
-// [24] QJsonValue & operator=(QJsonValue &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValueaSEOS_(void *this_, QJsonValue && other) {
-  auto& rv = ((QJsonValue*)this_)->operator=(other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtCore/qjsonvalue.h:111
-// [-2] void swap(QJsonValue &)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN10QJsonValue4swapERS_(void *this_, QJsonValue* other) {
-  ((QJsonValue*)this_)->swap(*other);
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:118
-// [24] QJsonValue fromVariant(const QVariant &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QJsonValue11fromVariantERK8QVariant(QVariant* variant) {
-  auto rv = QJsonValue::fromVariant(*variant);
-return new QJsonValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:119
-// [16] QVariant toVariant()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValue9toVariantEv(void *this_) {
-  auto rv = ((QJsonValue*)this_)->toVariant();
-return new QVariant(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:121
-// [4] QJsonValue::Type type()
-extern "C" Q_DECL_EXPORT
-QJsonValue::Type C_ZNK10QJsonValue4typeEv(void *this_) {
-  return (QJsonValue::Type)((QJsonValue*)this_)->type();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:122
-// [1] bool isNull()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValue6isNullEv(void *this_) {
-  return (bool)((QJsonValue*)this_)->isNull();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:123
-// [1] bool isBool()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValue6isBoolEv(void *this_) {
-  return (bool)((QJsonValue*)this_)->isBool();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:124
-// [1] bool isDouble()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValue8isDoubleEv(void *this_) {
-  return (bool)((QJsonValue*)this_)->isDouble();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:125
-// [1] bool isString()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValue8isStringEv(void *this_) {
-  return (bool)((QJsonValue*)this_)->isString();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:126
-// [1] bool isArray()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValue7isArrayEv(void *this_) {
-  return (bool)((QJsonValue*)this_)->isArray();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:127
-// [1] bool isObject()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValue8isObjectEv(void *this_) {
-  return (bool)((QJsonValue*)this_)->isObject();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:128
-// [1] bool isUndefined()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValue11isUndefinedEv(void *this_) {
-  return (bool)((QJsonValue*)this_)->isUndefined();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:130
-// [1] bool toBool(bool)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValue6toBoolEb(void *this_, bool defaultValue) {
-  return (bool)((QJsonValue*)this_)->toBool(defaultValue);
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtCore/qjsonvalue.h:131
-// [4] int toInt(int)
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-int C_ZNK10QJsonValue5toIntEi(void *this_, int defaultValue) {
-  return (int)((QJsonValue*)this_)->toInt(defaultValue);
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:132
-// [8] double toDouble(double)
-extern "C" Q_DECL_EXPORT
-double C_ZNK10QJsonValue8toDoubleEd(void *this_, double defaultValue) {
-  return (double)((QJsonValue*)this_)->toDouble(defaultValue);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:133
-// [8] QString toString()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValue8toStringEv(void *this_) {
-  auto rv = ((QJsonValue*)this_)->toString();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:134
-// [8] QString toString(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValue8toStringERK7QString(void *this_, QString* defaultValue) {
-  auto rv = ((QJsonValue*)this_)->toString(*defaultValue);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:135
-// [16] QJsonArray toArray()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValue7toArrayEv(void *this_) {
-  auto rv = ((QJsonValue*)this_)->toArray();
-return new QJsonArray(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:136
-// [16] QJsonArray toArray(const QJsonArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValue7toArrayERK10QJsonArray(void *this_, QJsonArray* defaultValue) {
-  auto rv = ((QJsonValue*)this_)->toArray(*defaultValue);
-return new QJsonArray(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:137
-// [16] QJsonObject toObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValue8toObjectEv(void *this_) {
-  auto rv = ((QJsonValue*)this_)->toObject();
-return new QJsonObject(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:138
-// [16] QJsonObject toObject(const QJsonObject &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValue8toObjectERK11QJsonObject(void *this_, QJsonObject* defaultValue) {
-  auto rv = ((QJsonValue*)this_)->toObject(*defaultValue);
-return new QJsonObject(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:140
-// [24] const QJsonValue operator[](const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValueixERK7QString(void *this_, QString* key) {
-  auto rv = ((QJsonValue*)this_)->operator[](*key);
-return new QJsonValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:141
-// [24] const QJsonValue operator[](QLatin1String)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValueixE13QLatin1String(void *this_, QLatin1String* key) {
-  auto rv = ((QJsonValue*)this_)->operator[](*key);
-return new QJsonValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:142
-// [24] const QJsonValue operator[](int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QJsonValueixEi(void *this_, int i) {
-  auto rv = ((QJsonValue*)this_)->operator[](i);
-return new QJsonValue(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:144
-// [1] bool operator==(const QJsonValue &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValueeqERKS_(void *this_, QJsonValue* other) {
-  return (bool)((QJsonValue*)this_)->operator==(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsonvalue.h:145
-// [1] bool operator!=(const QJsonValue &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QJsonValueneERKS_(void *this_, QJsonValue* other) {
-  return (bool)((QJsonValue*)this_)->operator!=(*other);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qjsonvalue
 //  main block end
 
 //  use block begin

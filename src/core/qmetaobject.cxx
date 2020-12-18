@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QMetaObject is pure virtual: false
+// QMetaObject is pure virtual: false false
 // QMetaObject has virtual projected: false
 //  header block end
 
@@ -50,413 +50,64 @@ public:
   virtual ~MyQMetaObject() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:340
-// [8] const char * className()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject9classNameEv(void *this_) {
-  return (void*)((QMetaObject*)this_)->className();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmetaobject(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
+// Public Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:341
-// [8] const QMetaObject * superClass()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject10superClassEv(void *this_) {
-  return (void*)((QMetaObject*)this_)->superClass();
+// [8] const QMetaObject * superClass() const
+// (12)qm4180358434 (31)_ZNK11QMetaObject10superClassEv
+//static
+/*void qm4180358434()*/ {
+  ;
+  (void) ((QMetaObject*)this_)->superClass();
+   auto xptr = (const QMetaObject * (QMetaObject::*)() const ) &QMetaObject::superClass;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 5.7
-// /usr/include/qt/QtCore/qobjectdefs.h:343
-// [1] bool inherits(const QMetaObject *)
-#if QT_VERSION >= 0x050700
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QMetaObject8inheritsEPKS_(void *this_, const QMetaObject * metaObject) {
-  return (bool)((QMetaObject*)this_)->inherits(metaObject);
-}
-#endif // QT_VERSION >= 0x050700
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:344
-// [8] QObject * cast(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject4castEP7QObject(void *this_, QObject * obj) {
-  return (void*)((QMetaObject*)this_)->cast(obj);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:345
-// [8] const QObject * cast(const QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject4castEPK7QObject(void *this_, const QObject * obj) {
-  return (void*)((QMetaObject*)this_)->cast(obj);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:348
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject2trEPKcS1_i(void *this_, const char * s, const char * c, int n) {
-  auto rv = ((QMetaObject*)this_)->tr(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:351
-// [4] int methodOffset()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject12methodOffsetEv(void *this_) {
-  return (int)((QMetaObject*)this_)->methodOffset();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:352
-// [4] int enumeratorOffset()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject16enumeratorOffsetEv(void *this_) {
-  return (int)((QMetaObject*)this_)->enumeratorOffset();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:353
-// [4] int propertyOffset()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject14propertyOffsetEv(void *this_) {
-  return (int)((QMetaObject*)this_)->propertyOffset();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:354
-// [4] int classInfoOffset()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject15classInfoOffsetEv(void *this_) {
-  return (int)((QMetaObject*)this_)->classInfoOffset();
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtCore/qobjectdefs.h:356
-// [4] int constructorCount()
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject16constructorCountEv(void *this_) {
-  return (int)((QMetaObject*)this_)->constructorCount();
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:357
-// [4] int methodCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject11methodCountEv(void *this_) {
-  return (int)((QMetaObject*)this_)->methodCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:358
-// [4] int enumeratorCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject15enumeratorCountEv(void *this_) {
-  return (int)((QMetaObject*)this_)->enumeratorCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:359
-// [4] int propertyCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject13propertyCountEv(void *this_) {
-  return (int)((QMetaObject*)this_)->propertyCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:360
-// [4] int classInfoCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject14classInfoCountEv(void *this_) {
-  return (int)((QMetaObject*)this_)->classInfoCount();
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtCore/qobjectdefs.h:362
-// [4] int indexOfConstructor(const char *)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject18indexOfConstructorEPKc(void *this_, const char * constructor) {
-  return (int)((QMetaObject*)this_)->indexOfConstructor(constructor);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:363
-// [4] int indexOfMethod(const char *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject13indexOfMethodEPKc(void *this_, const char * method) {
-  return (int)((QMetaObject*)this_)->indexOfMethod(method);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:364
-// [4] int indexOfSignal(const char *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject13indexOfSignalEPKc(void *this_, const char * signal) {
-  return (int)((QMetaObject*)this_)->indexOfSignal(signal);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:365
-// [4] int indexOfSlot(const char *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject11indexOfSlotEPKc(void *this_, const char * slot) {
-  return (int)((QMetaObject*)this_)->indexOfSlot(slot);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:366
-// [4] int indexOfEnumerator(const char *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject17indexOfEnumeratorEPKc(void *this_, const char * name) {
-  return (int)((QMetaObject*)this_)->indexOfEnumerator(name);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:367
-// [4] int indexOfProperty(const char *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject15indexOfPropertyEPKc(void *this_, const char * name) {
-  return (int)((QMetaObject*)this_)->indexOfProperty(name);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:368
-// [4] int indexOfClassInfo(const char *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject16indexOfClassInfoEPKc(void *this_, const char * name) {
-  return (int)((QMetaObject*)this_)->indexOfClassInfo(name);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtCore/qobjectdefs.h:370
-// [16] QMetaMethod constructor(int)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject11constructorEi(void *this_, int index) {
-  auto rv = ((QMetaObject*)this_)->constructor(index);
-return new QMetaMethod(rv);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:371
-// [16] QMetaMethod method(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject6methodEi(void *this_, int index) {
-  auto rv = ((QMetaObject*)this_)->method(index);
-return new QMetaMethod(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:372
-// [16] QMetaEnum enumerator(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject10enumeratorEi(void *this_, int index) {
-  auto rv = ((QMetaObject*)this_)->enumerator(index);
-return new QMetaEnum(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:373
-// [32] QMetaProperty property(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject8propertyEi(void *this_, int index) {
-  auto rv = ((QMetaObject*)this_)->property(index);
-return new QMetaProperty(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:374
-// [16] QMetaClassInfo classInfo(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject9classInfoEi(void *this_, int index) {
-  auto rv = ((QMetaObject*)this_)->classInfo(index);
-return new QMetaClassInfo(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtCore/qobjectdefs.h:375
-// [32] QMetaProperty userProperty()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject12userPropertyEv(void *this_) {
-  auto rv = ((QMetaObject*)this_)->userProperty();
-return new QMetaProperty(rv);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:377
-// [1] bool checkConnectArgs(const char *, const char *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QMetaObject16checkConnectArgsEPKcS1_(const char * signal, const char * method) {
-  return (bool)QMetaObject::checkConnectArgs(signal, method);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qobjectdefs.h:378
-// [1] bool checkConnectArgs(const QMetaMethod &, const QMetaMethod &)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QMetaObject16checkConnectArgsERK11QMetaMethodS2_(QMetaMethod* signal, QMetaMethod* method) {
-  return (bool)QMetaObject::checkConnectArgs(*signal, *method);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:380
-// [8] QByteArray normalizedSignature(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMetaObject19normalizedSignatureEPKc(const char * method) {
-  auto rv = QMetaObject::normalizedSignature(method);
-return new QByteArray(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtCore/qobjectdefs.h:381
-// [8] QByteArray normalizedType(const char *)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMetaObject14normalizedTypeEPKc(const char * type_) {
-  auto rv = QMetaObject::normalizedType(type_);
-return new QByteArray(rv);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:384
-// [8] QMetaObject::Connection connect(const QObject *, int, const QObject *, int, int, int *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMetaObject7connectEPK7QObjectiS2_iiPi(const QObject * sender, int signal_index, const QObject * receiver, int method_index, int type_, int * types) {
-  auto rv = QMetaObject::connect(sender, signal_index, receiver, method_index, type_, types);
-return new QMetaObject::Connection(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:388
-// [1] bool disconnect(const QObject *, int, const QObject *, int)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QMetaObject10disconnectEPK7QObjectiS2_i(const QObject * sender, int signal_index, const QObject * receiver, int method_index) {
-  return (bool)QMetaObject::disconnect(sender, signal_index, receiver, method_index);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:390
-// [1] bool disconnectOne(const QObject *, int, const QObject *, int)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QMetaObject13disconnectOneEPK7QObjectiS2_i(const QObject * sender, int signal_index, const QObject * receiver, int method_index) {
-  return (bool)QMetaObject::disconnectOne(sender, signal_index, receiver, method_index);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:393
-// [-2] void connectSlotsByName(QObject *)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMetaObject18connectSlotsByNameEP7QObject(QObject * o) {
-  QMetaObject::connectSlotsByName(o);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:396
-// [-2] void activate(QObject *, int, void **)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMetaObject8activateEP7QObjectiPPv(QObject * sender, int signal_index, void ** argv) {
-  QMetaObject::activate(sender, signal_index, argv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:397
-// [-2] void activate(QObject *, const QMetaObject *, int, void **)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMetaObject8activateEP7QObjectPKS_iPPv(QObject * sender, const QMetaObject * arg1, int local_signal_index, void ** argv) {
-  QMetaObject::activate(sender, arg1, local_signal_index, argv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:398
-// [-2] void activate(QObject *, int, int, void **)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMetaObject8activateEP7QObjectiiPPv(QObject * sender, int signal_offset, int local_signal_index, void ** argv) {
-  QMetaObject::activate(sender, signal_offset, local_signal_index, argv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:400
-// [1] bool invokeMethod(QObject *, const char *, Qt::ConnectionType, QGenericReturnArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QMetaObject12invokeMethodEP7QObjectPKcN2Qt14ConnectionTypeE22QGenericReturnArgument16QGenericArgumentS7_S7_S7_S7_S7_S7_S7_S7_S7_(QObject * obj, const char * member, Qt::ConnectionType arg2, QGenericReturnArgument* ret, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
-  return (bool)QMetaObject::invokeMethod(obj, member, arg2, *ret, *val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
-}
-
-// Public static inline Visibility=Default Availability=Available
+// Public static inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:414
-// [1] bool invokeMethod(QObject *, const char *, QGenericReturnArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QMetaObject12invokeMethodEP7QObjectPKc22QGenericReturnArgument16QGenericArgumentS5_S5_S5_S5_S5_S5_S5_S5_S5_(QObject * obj, const char * member, QGenericReturnArgument* ret, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
-  return (bool)QMetaObject::invokeMethod(obj, member, *ret, *val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
+// [1] bool invokeMethod(QObject *, const char *, QGenericReturnArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) 
+// (12)qm3685245834 (112)_ZN11QMetaObject12invokeMethodEP7QObjectPKc22QGenericReturnArgument16QGenericArgumentS5_S5_S5_S5_S5_S5_S5_S5_S5_
+//static
+/*void qm3685245834(QObject * obj, const char * member, QGenericReturnArgument ret, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9)*/ {
+  QObject * obj = *(QObject **)this_; const char * member = *(const char **)this_; QGenericReturnArgument ret = *(QGenericReturnArgument*)this_; QGenericArgument val0 = *(QGenericArgument*)this_; QGenericArgument val1 = *(QGenericArgument*)this_; QGenericArgument val2 = *(QGenericArgument*)this_; QGenericArgument val3 = *(QGenericArgument*)this_; QGenericArgument val4 = *(QGenericArgument*)this_; QGenericArgument val5 = *(QGenericArgument*)this_; QGenericArgument val6 = *(QGenericArgument*)this_; QGenericArgument val7 = *(QGenericArgument*)this_; QGenericArgument val8 = *(QGenericArgument*)this_; QGenericArgument val9 = *(QGenericArgument*)this_;
+  (void) QMetaObject::invokeMethod(obj, member, ret, val0, val1, val2, val3, val4, val5, val6, val7, val8, val9);
+   auto xptr = (bool (*)(QObject*, char const*, QGenericReturnArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) ) &QMetaObject::invokeMethod;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
+// Public static inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:431
-// [1] bool invokeMethod(QObject *, const char *, Qt::ConnectionType, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QMetaObject12invokeMethodEP7QObjectPKcN2Qt14ConnectionTypeE16QGenericArgumentS6_S6_S6_S6_S6_S6_S6_S6_S6_(QObject * obj, const char * member, Qt::ConnectionType type_, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
-  return (bool)QMetaObject::invokeMethod(obj, member, type_, *val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
+// [1] bool invokeMethod(QObject *, const char *, Qt::ConnectionType, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) 
+// (12)qm2299027512 (109)_ZN11QMetaObject12invokeMethodEP7QObjectPKcN2Qt14ConnectionTypeE16QGenericArgumentS6_S6_S6_S6_S6_S6_S6_S6_S6_
+//static
+/*void qm2299027512(QObject * obj, const char * member, Qt::ConnectionType type_, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9)*/ {
+  QObject * obj = *(QObject **)this_; const char * member = *(const char **)this_; Qt::ConnectionType type_ = *(Qt::ConnectionType*)this_; QGenericArgument val0 = *(QGenericArgument*)this_; QGenericArgument val1 = *(QGenericArgument*)this_; QGenericArgument val2 = *(QGenericArgument*)this_; QGenericArgument val3 = *(QGenericArgument*)this_; QGenericArgument val4 = *(QGenericArgument*)this_; QGenericArgument val5 = *(QGenericArgument*)this_; QGenericArgument val6 = *(QGenericArgument*)this_; QGenericArgument val7 = *(QGenericArgument*)this_; QGenericArgument val8 = *(QGenericArgument*)this_; QGenericArgument val9 = *(QGenericArgument*)this_;
+  (void) QMetaObject::invokeMethod(obj, member, type_, val0, val1, val2, val3, val4, val5, val6, val7, val8, val9);
+   auto xptr = (bool (*)(QObject*, char const*, Qt::ConnectionType, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) ) &QMetaObject::invokeMethod;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
+// Public static inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:448
-// [1] bool invokeMethod(QObject *, const char *, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument)
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QMetaObject12invokeMethodEP7QObjectPKc16QGenericArgumentS4_S4_S4_S4_S4_S4_S4_S4_S4_(QObject * obj, const char * member, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
-  return (bool)QMetaObject::invokeMethod(obj, member, *val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtCore/qobjectdefs.h:545
-// [8] QObject * newInstance(QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMetaObject11newInstanceE16QGenericArgumentS0_S0_S0_S0_S0_S0_S0_S0_S0_(void *this_, QGenericArgument* val0, QGenericArgument* val1, QGenericArgument* val2, QGenericArgument* val3, QGenericArgument* val4, QGenericArgument* val5, QGenericArgument* val6, QGenericArgument* val7, QGenericArgument* val8, QGenericArgument* val9) {
-  return (void*)((QMetaObject*)this_)->newInstance(*val0, *val1, *val2, *val3, *val4, *val5, *val6, *val7, *val8, *val9);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:572
-// [4] int static_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMetaObject15static_metacallENS_4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QMetaObject*)this_)->static_metacall(arg0, arg1, arg2);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobjectdefs.h:573
-// [4] int metacall(QObject *, QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN11QMetaObject8metacallEP7QObjectNS_4CallEiPPv(QObject * arg0, QMetaObject::Call arg1, int arg2, void ** arg3) {
-  return (int)QMetaObject::metacall(arg0, arg1, arg2, arg3);
+// [1] bool invokeMethod(QObject *, const char *, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) 
+// (12)qm1576196759 (88)_ZN11QMetaObject12invokeMethodEP7QObjectPKc16QGenericArgumentS4_S4_S4_S4_S4_S4_S4_S4_S4_
+//static
+/*void qm1576196759(QObject * obj, const char * member, QGenericArgument val0, QGenericArgument val1, QGenericArgument val2, QGenericArgument val3, QGenericArgument val4, QGenericArgument val5, QGenericArgument val6, QGenericArgument val7, QGenericArgument val8, QGenericArgument val9)*/ {
+  QObject * obj = *(QObject **)this_; const char * member = *(const char **)this_; QGenericArgument val0 = *(QGenericArgument*)this_; QGenericArgument val1 = *(QGenericArgument*)this_; QGenericArgument val2 = *(QGenericArgument*)this_; QGenericArgument val3 = *(QGenericArgument*)this_; QGenericArgument val4 = *(QGenericArgument*)this_; QGenericArgument val5 = *(QGenericArgument*)this_; QGenericArgument val6 = *(QGenericArgument*)this_; QGenericArgument val7 = *(QGenericArgument*)this_; QGenericArgument val8 = *(QGenericArgument*)this_; QGenericArgument val9 = *(QGenericArgument*)this_;
+  (void) QMetaObject::invokeMethod(obj, member, val0, val1, val2, val3, val4, val5, val6, val7, val8, val9);
+   auto xptr = (bool (*)(QObject*, char const*, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument, QGenericArgument) ) &QMetaObject::invokeMethod;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMetaObjectD2Ev(void *this_) {
+/*void C_ZN11QMetaObjectD2Ev(void *this_)*/ {
   delete (QMetaObject*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmetaobject
 //  main block end
 
 //  use block begin

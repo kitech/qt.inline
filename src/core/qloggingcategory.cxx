@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050200
 // /usr/include/qt/QtCore/qloggingcategory.h
 #ifndef protected
 #define protected public
@@ -10,132 +9,91 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QLoggingCategory is pure virtual: false
+// QLoggingCategory is pure virtual: false false
 // QLoggingCategory has virtual projected: false
 //  header block end
 
 //  main block begin
 
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qloggingcategory.h:53
-// [-2] void QLoggingCategory(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QLoggingCategoryC2EPKc(const char * category) {
-  return 0; // new QLoggingCategory(category);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qloggingcategory(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// since 5.4
-// /usr/include/qt/QtCore/qloggingcategory.h:54
-// [-2] void QLoggingCategory(const char *, QtMsgType)
-#if QT_VERSION >= 0x050400
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QLoggingCategoryC2EPKc9QtMsgType(const char * category, QtMsgType severityLevel) {
-  return 0; // new QLoggingCategory(category, severityLevel);
-}
-#endif // QT_VERSION >= 0x050400
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qloggingcategory.h:55
-// [-2] void ~QLoggingCategory()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QLoggingCategoryD2Ev(void *this_) {
-  delete (QLoggingCategory*)(this_);
-}
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qloggingcategory.h:57
-// [1] bool isEnabled(QtMsgType)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK16QLoggingCategory9isEnabledE9QtMsgType(void *this_, QtMsgType type_) {
-  return (bool)((QLoggingCategory*)this_)->isEnabled(type_);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qloggingcategory.h:58
-// [-2] void setEnabled(QtMsgType, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QLoggingCategory10setEnabledE9QtMsgTypeb(void *this_, QtMsgType type_, bool enable) {
-  ((QLoggingCategory*)this_)->setEnabled(type_, enable);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:61
-// [1] bool isDebugEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK16QLoggingCategory14isDebugEnabledEv(void *this_) {
-  return (bool)((QLoggingCategory*)this_)->isDebugEnabled();
+// [1] bool isDebugEnabled() const
+// (12)qm2899630919 (40)_ZNK16QLoggingCategory14isDebugEnabledEv
+//static
+/*void qm2899630919()*/ {
+  ;
+  (void) ((QLoggingCategory*)this_)->isDebugEnabled();
+   auto xptr = (bool (QLoggingCategory::*)() const ) &QLoggingCategory::isDebugEnabled;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 5.5
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:62
-// [1] bool isInfoEnabled()
-#if QT_VERSION >= 0x050500
-extern "C" Q_DECL_EXPORT
-bool C_ZNK16QLoggingCategory13isInfoEnabledEv(void *this_) {
-  return (bool)((QLoggingCategory*)this_)->isInfoEnabled();
+// [1] bool isInfoEnabled() const
+// (12)qm2754089110 (39)_ZNK16QLoggingCategory13isInfoEnabledEv
+//static
+/*void qm2754089110()*/ {
+  ;
+  (void) ((QLoggingCategory*)this_)->isInfoEnabled();
+   auto xptr = (bool (QLoggingCategory::*)() const ) &QLoggingCategory::isInfoEnabled;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050500
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:63
-// [1] bool isWarningEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK16QLoggingCategory16isWarningEnabledEv(void *this_) {
-  return (bool)((QLoggingCategory*)this_)->isWarningEnabled();
+// [1] bool isWarningEnabled() const
+// (11)qm348797737 (42)_ZNK16QLoggingCategory16isWarningEnabledEv
+//static
+/*void qm348797737()*/ {
+  ;
+  (void) ((QLoggingCategory*)this_)->isWarningEnabled();
+   auto xptr = (bool (QLoggingCategory::*)() const ) &QLoggingCategory::isWarningEnabled;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:64
-// [1] bool isCriticalEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK16QLoggingCategory17isCriticalEnabledEv(void *this_) {
-  return (bool)((QLoggingCategory*)this_)->isCriticalEnabled();
+// [1] bool isCriticalEnabled() const
+// (12)qm2793169782 (43)_ZNK16QLoggingCategory17isCriticalEnabledEv
+//static
+/*void qm2793169782()*/ {
+  ;
+  (void) ((QLoggingCategory*)this_)->isCriticalEnabled();
+   auto xptr = (bool (QLoggingCategory::*)() const ) &QLoggingCategory::isCriticalEnabled;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:71
-// [8] const char * categoryName()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK16QLoggingCategory12categoryNameEv(void *this_) {
-  return (void*)((QLoggingCategory*)this_)->categoryName();
+// [8] const char * categoryName() const
+// (11)qm412378307 (38)_ZNK16QLoggingCategory12categoryNameEv
+//static
+/*void qm412378307()*/ {
+  ;
+  (void) ((QLoggingCategory*)this_)->categoryName();
+   auto xptr = (const char * (QLoggingCategory::*)() const ) &QLoggingCategory::categoryName;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:74
-// [24] QLoggingCategory & operator()()
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QLoggingCategoryclEv(void *this_) {
-  auto& rv = ((QLoggingCategory*)this_)->operator()();
-return &rv;
+// [24] QLoggingCategory & operator()() 
+// (12)qm2744244159 (25)_ZN16QLoggingCategoryclEv
+//static
+/*void qm2744244159()*/ {
+  ;
+  (void) ((QLoggingCategory*)this_)->operator()();
+  // auto xptr = (QLoggingCategory & (QLoggingCategory::*)()() ) &QLoggingCategory::operator;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qloggingcategory.h:77
-// [8] QLoggingCategory * defaultCategory()
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QLoggingCategory15defaultCategoryEv() {
-  return (void*)QLoggingCategory::defaultCategory();
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qloggingcategory.h:80
-// [8] QLoggingCategory::CategoryFilter installFilter(QLoggingCategory::CategoryFilter)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QLoggingCategory13installFilterEPFvPS_E(QLoggingCategory::CategoryFilter arg0) {
-  auto rv = QLoggingCategory::installFilter(arg0);
-/*return rv;*/
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qloggingcategory.h:82
-// [-2] void setFilterRules(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QLoggingCategory14setFilterRulesERK7QString(QString* rules) {
-  QLoggingCategory::setFilterRules(*rules);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qloggingcategory
 //  main block end
 
 //  use block begin

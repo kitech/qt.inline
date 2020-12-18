@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050900
 // /usr/include/qt/QtCore/qoperatingsystemversion.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QOperatingSystemVersion is pure virtual: false
+// QOperatingSystemVersion is pure virtual: false false
 // QOperatingSystemVersion has virtual projected: false
 //  header block end
 
@@ -53,85 +52,97 @@ public:
 MyQOperatingSystemVersion(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) : QOperatingSystemVersion(osType, vmajor, vminor, vmicro) {}
 };
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:86
-// [-2] void QOperatingSystemVersion(QOperatingSystemVersion::OSType, int, int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QOperatingSystemVersionC2ENS_6OSTypeEiii(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) {
-  return  new QOperatingSystemVersion(osType, vmajor, vminor, vmicro);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:94
-// [16] QOperatingSystemVersion current()
-extern "C" Q_DECL_EXPORT
-void C_ZN23QOperatingSystemVersion7currentEv() {
-  auto rv = QOperatingSystemVersion::current();
-/*return rv;*/
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:96
-// [4] QOperatingSystemVersion::OSType currentType()
-extern "C" Q_DECL_EXPORT
-QOperatingSystemVersion::OSType C_ZN23QOperatingSystemVersion11currentTypeEv() {
-  return (QOperatingSystemVersion::OSType)QOperatingSystemVersion::currentType();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qoperatingsystemversion(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:115
-// [4] int majorVersion()
-extern "C" Q_DECL_EXPORT
-int C_ZNK23QOperatingSystemVersion12majorVersionEv(void *this_) {
-  return (int)((QOperatingSystemVersion*)this_)->majorVersion();
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:88
+// [-2] void QOperatingSystemVersion(QOperatingSystemVersion::OSType, int, int, int) 
+// (12)qm3511452327 (45)_ZN23QOperatingSystemVersionC2ENS_6OSTypeEiii
+/*void* qm3511452327(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro)*/{
+  QOperatingSystemVersion::OSType osType = *(QOperatingSystemVersion::OSType*)this_; int vmajor = *(int*)this_; int vminor = *(int*)this_; int vmicro = *(int*)this_;
+  this_ =  new QOperatingSystemVersion(osType, vmajor, vminor, vmicro);
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:116
-// [4] int minorVersion()
-extern "C" Q_DECL_EXPORT
-int C_ZNK23QOperatingSystemVersion12minorVersionEv(void *this_) {
-  return (int)((QOperatingSystemVersion*)this_)->minorVersion();
+// Public static inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:98
+// [4] QOperatingSystemVersion::OSType currentType() 
+// (12)qm1121548221 (43)_ZN23QOperatingSystemVersion11currentTypeEv
+//static
+/*void qm1121548221()*/ {
+  ;
+  (void) QOperatingSystemVersion::currentType();
+   auto xptr = (QOperatingSystemVersion::OSType (*)() ) &QOperatingSystemVersion::currentType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:117
-// [4] int microVersion()
-extern "C" Q_DECL_EXPORT
-int C_ZNK23QOperatingSystemVersion12microVersionEv(void *this_) {
-  return (int)((QOperatingSystemVersion*)this_)->microVersion();
+// [4] int majorVersion() const
+// (12)qm3435482074 (45)_ZNK23QOperatingSystemVersion12majorVersionEv
+//static
+/*void qm3435482074()*/ {
+  ;
+  (void) ((QOperatingSystemVersion*)this_)->majorVersion();
+   auto xptr = (int (QOperatingSystemVersion::*)() const ) &QOperatingSystemVersion::majorVersion;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:118
+// [4] int minorVersion() const
+// (12)qm2512430024 (45)_ZNK23QOperatingSystemVersion12minorVersionEv
+//static
+/*void qm2512430024()*/ {
+  ;
+  (void) ((QOperatingSystemVersion*)this_)->minorVersion();
+   auto xptr = (int (QOperatingSystemVersion::*)() const ) &QOperatingSystemVersion::minorVersion;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:119
-// [4] int segmentCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK23QOperatingSystemVersion12segmentCountEv(void *this_) {
-  return (int)((QOperatingSystemVersion*)this_)->segmentCount();
+// [4] int microVersion() const
+// (12)qm3160220082 (45)_ZNK23QOperatingSystemVersion12microVersionEv
+//static
+/*void qm3160220082()*/ {
+  ;
+  (void) ((QOperatingSystemVersion*)this_)->microVersion();
+   auto xptr = (int (QOperatingSystemVersion::*)() const ) &QOperatingSystemVersion::microVersion;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qoperatingsystemversion.h:121
+// [4] int segmentCount() const
+// (12)qm4043402791 (45)_ZNK23QOperatingSystemVersion12segmentCountEv
+//static
+/*void qm4043402791()*/ {
+  ;
+  (void) ((QOperatingSystemVersion*)this_)->segmentCount();
+   auto xptr = (int (QOperatingSystemVersion::*)() const ) &QOperatingSystemVersion::segmentCount;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qoperatingsystemversion.h:125
-// [4] QOperatingSystemVersion::OSType type()
-extern "C" Q_DECL_EXPORT
-QOperatingSystemVersion::OSType C_ZNK23QOperatingSystemVersion4typeEv(void *this_) {
-  return (QOperatingSystemVersion::OSType)((QOperatingSystemVersion*)this_)->type();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qoperatingsystemversion.h:126
-// [8] QString name()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK23QOperatingSystemVersion4nameEv(void *this_) {
-  auto rv = ((QOperatingSystemVersion*)this_)->name();
-return new QString(rv);
+// [4] QOperatingSystemVersion::OSType type() const
+// (12)qm2422311540 (36)_ZNK23QOperatingSystemVersion4typeEv
+//static
+/*void qm2422311540()*/ {
+  ;
+  (void) ((QOperatingSystemVersion*)this_)->type();
+   auto xptr = (QOperatingSystemVersion::OSType (QOperatingSystemVersion::*)() const ) &QOperatingSystemVersion::type;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN23QOperatingSystemVersionD2Ev(void *this_) {
+/*void C_ZN23QOperatingSystemVersionD2Ev(void *this_)*/ {
   delete (QOperatingSystemVersion*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qoperatingsystemversion
 //  main block end
 
 //  use block begin

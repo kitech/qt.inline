@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QByteArrayDataPtr is pure virtual: false
+// QByteArrayDataPtr is pure virtual: false false
 // QByteArrayDataPtr has virtual projected: false
 //  header block end
 
@@ -50,11 +50,16 @@ public:
   virtual ~MyQByteArrayDataPtr() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qbytearraydataptr(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-extern "C" Q_DECL_EXPORT
-void C_ZN17QByteArrayDataPtrD2Ev(void *this_) {
+
+/*void C_ZN17QByteArrayDataPtrD2Ev(void *this_)*/ {
   delete (QByteArrayDataPtr*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qbytearraydataptr
 //  main block end
 
 //  use block begin

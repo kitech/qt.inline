@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(animation)
-// since 0x040600
 // /usr/include/qt/QtCore/qparallelanimationgroup.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QParallelAnimationGroup is pure virtual: false
+// QParallelAnimationGroup is pure virtual: false false
 // QParallelAnimationGroup has virtual projected: true
 //  header block end
 
@@ -99,7 +98,7 @@ public:
   virtual ~MyQParallelAnimationGroup() {}
 // void QParallelAnimationGroup(QObject *)
 MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {
     int handled = 0;
@@ -112,7 +111,7 @@ MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void updateCurrentTime(int)
   virtual void updateCurrentTime(int currentTime)  override {
     int handled = 0;
@@ -124,7 +123,7 @@ MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
   virtual void updateState(QAbstractAnimation::State newState, QAbstractAnimation::State oldState)  override {
     int handled = 0;
@@ -136,7 +135,7 @@ MyQParallelAnimationGroup(QObject * parent) : QParallelAnimationGroup(parent) {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void updateDirection(QAbstractAnimation::Direction)
   virtual void updateDirection(QAbstractAnimation::Direction direction)  override {
     int handled = 0;
@@ -162,104 +161,28 @@ void* C_QParallelAnimationGroup_init_staticMetaObject(void* this_, void* strdat,
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:62
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN23QParallelAnimationGroup5eventEP6QEvent(void *this_, QEvent * event) {
-  return (bool)((QParallelAnimationGroup*)this_)->QParallelAnimationGroup::event(event);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qparallelanimationgroup(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:64
-// [-2] void updateCurrentTime(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN23QParallelAnimationGroup17updateCurrentTimeEi(void *this_, int currentTime) {
-  ((QParallelAnimationGroup*)this_)->QParallelAnimationGroup::updateCurrentTime(currentTime);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:65
-// [-2] void updateState(QAbstractAnimation::State, QAbstractAnimation::State)
-extern "C" Q_DECL_EXPORT
-void C_ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_(void *this_, QAbstractAnimation::State newState, QAbstractAnimation::State oldState) {
-  ((QParallelAnimationGroup*)this_)->QParallelAnimationGroup::updateState(newState, oldState);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:66
-// [-2] void updateDirection(QAbstractAnimation::Direction)
-extern "C" Q_DECL_EXPORT
-void C_ZN23QParallelAnimationGroup15updateDirectionEN18QAbstractAnimation9DirectionE(void *this_, QAbstractAnimation::Direction direction) {
-  ((QParallelAnimationGroup*)this_)->QParallelAnimationGroup::updateDirection(direction);
-}
-
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qparallelanimationgroup.h:52
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK23QParallelAnimationGroup10metaObjectEv(void *this_) {
-  return (void*)((QParallelAnimationGroup*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1864647551 (39)_ZN23QParallelAnimationGroup2trEPKcS1_i
+//static
+/*void qm1864647551(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QParallelAnimationGroup::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QParallelAnimationGroup::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:52
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QParallelAnimationGroup11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QParallelAnimationGroup*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:52
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN23QParallelAnimationGroup11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QParallelAnimationGroup*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:52
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QParallelAnimationGroup2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QParallelAnimationGroup::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:52
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QParallelAnimationGroup6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QParallelAnimationGroup::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:55
-// [-2] void QParallelAnimationGroup(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QParallelAnimationGroupC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQParallelAnimationGroup*)(0);
-  return  new MyQParallelAnimationGroup(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:56
-// [-2] void ~QParallelAnimationGroup()
-extern "C" Q_DECL_EXPORT
-void C_ZN23QParallelAnimationGroupD2Ev(void *this_) {
+/*void C_ZN23QParallelAnimationGroupD2Ev(void *this_)*/ {
   delete (QParallelAnimationGroup*)(this_);
 }
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qparallelanimationgroup.h:58
-// [4] int duration()
-extern "C" Q_DECL_EXPORT
-int C_ZNK23QParallelAnimationGroup8durationEv(void *this_) {
-  return (int)((QParallelAnimationGroup*)this_)->duration();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qparallelanimationgroup
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QPoint is pure virtual: false
+// QPoint is pure virtual: false false
 // QPoint has virtual projected: false
 //  header block end
 
@@ -54,158 +54,226 @@ MyQPoint() : QPoint() {}
 MyQPoint(int xpos, int ypos) : QPoint(xpos, ypos) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qpoint(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:55
-// [-2] void QPoint()
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPointC2Ev() {
-  return  new QPoint();
+// [-2] void QPoint() 
+// (11)qm496444458 (14)_ZN6QPointC2Ev
+/*void* qm496444458()*/{
+  ;
+  this_ =  new QPoint();
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:56
-// [-2] void QPoint(int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPointC2Eii(int xpos, int ypos) {
-  return  new QPoint(xpos, ypos);
+// [-2] void QPoint(int, int) 
+// (12)qm4035995165 (15)_ZN6QPointC2Eii
+/*void* qm4035995165(int xpos, int ypos)*/{
+  int xpos = *(int*)this_; int ypos = *(int*)this_;
+  this_ =  new QPoint(xpos, ypos);
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:58
-// [1] bool isNull()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK6QPoint6isNullEv(void *this_) {
-  return (bool)((QPoint*)this_)->isNull();
+// [1] bool isNull() const
+// (12)qm1390804939 (20)_ZNK6QPoint6isNullEv
+//static
+/*void qm1390804939()*/ {
+  ;
+  (void) ((QPoint*)this_)->isNull();
+   auto xptr = (bool (QPoint::*)() const ) &QPoint::isNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:60
-// [4] int x()
-extern "C" Q_DECL_EXPORT
-int C_ZNK6QPoint1xEv(void *this_) {
-  return (int)((QPoint*)this_)->x();
+// [4] int x() const
+// (11)qm359386261 (15)_ZNK6QPoint1xEv
+//static
+/*void qm359386261()*/ {
+  ;
+  (void) ((QPoint*)this_)->x();
+   auto xptr = (int (QPoint::*)() const ) &QPoint::x;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:61
-// [4] int y()
-extern "C" Q_DECL_EXPORT
-int C_ZNK6QPoint1yEv(void *this_) {
-  return (int)((QPoint*)this_)->y();
+// [4] int y() const
+// (11)qm346662562 (15)_ZNK6QPoint1yEv
+//static
+/*void qm346662562()*/ {
+  ;
+  (void) ((QPoint*)this_)->y();
+   auto xptr = (int (QPoint::*)() const ) &QPoint::y;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:62
-// [-2] void setX(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QPoint4setXEi(void *this_, int x) {
-  ((QPoint*)this_)->setX(x);
+// [-2] void setX(int) 
+// (11)qm148123695 (17)_ZN6QPoint4setXEi
+//static
+/*void qm148123695(int x)*/ {
+  int x = *(int*)this_;
+  (void) ((QPoint*)this_)->setX(x);
+   auto xptr = (void (QPoint::*)(int) ) &QPoint::setX;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:63
-// [-2] void setY(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN6QPoint4setYEi(void *this_, int y) {
-  ((QPoint*)this_)->setY(y);
+// [-2] void setY(int) 
+// (11)qm152459800 (17)_ZN6QPoint4setYEi
+//static
+/*void qm152459800(int y)*/ {
+  int y = *(int*)this_;
+  (void) ((QPoint*)this_)->setY(y);
+   auto xptr = (void (QPoint::*)(int) ) &QPoint::setY;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:65
-// [4] int manhattanLength()
-extern "C" Q_DECL_EXPORT
-int C_ZNK6QPoint15manhattanLengthEv(void *this_) {
-  return (int)((QPoint*)this_)->manhattanLength();
+// [4] int manhattanLength() const
+// (12)qm3380245230 (30)_ZNK6QPoint15manhattanLengthEv
+//static
+/*void qm3380245230()*/ {
+  ;
+  (void) ((QPoint*)this_)->manhattanLength();
+   auto xptr = (int (QPoint::*)() const ) &QPoint::manhattanLength;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:67
-// [4] int & rx()
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPoint2rxEv(void *this_) {
-  auto& rv = ((QPoint*)this_)->rx();
-return &rv;
+// [8] QPoint transposed() const
+// (12)qm2934620184 (25)_ZNK6QPoint10transposedEv
+//static
+/*void qm2934620184()*/ {
+  ;
+  (void) ((QPoint*)this_)->transposed();
+   auto xptr = (QPoint (QPoint::*)() const ) &QPoint::transposed;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpoint.h:68
-// [4] int & ry()
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPoint2ryEv(void *this_) {
-  auto& rv = ((QPoint*)this_)->ry();
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:69
+// [4] int & rx() 
+// (11)qm935126983 (15)_ZN6QPoint2rxEv
+//static
+/*void qm935126983()*/ {
+  ;
+  (void) ((QPoint*)this_)->rx();
+   auto xptr = (int & (QPoint::*)() ) &QPoint::rx;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:70
-// [8] QPoint & operator+=(const QPoint &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPointpLERKS_(void *this_, QPoint* p) {
-  auto& rv = ((QPoint*)this_)->operator+=(*p);
-return &rv;
+// [4] int & ry() 
+// (11)qm914263536 (15)_ZN6QPoint2ryEv
+//static
+/*void qm914263536()*/ {
+  ;
+  (void) ((QPoint*)this_)->ry();
+   auto xptr = (int & (QPoint::*)() ) &QPoint::ry;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpoint.h:71
-// [8] QPoint & operator-=(const QPoint &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPointmIERKS_(void *this_, QPoint* p) {
-  auto& rv = ((QPoint*)this_)->operator-=(*p);
-return &rv;
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:72
+// [8] QPoint & operator+=(const QPoint &) 
+// (12)qm3295033020 (17)_ZN6QPointpLERKS_
+//static
+/*void qm3295033020(const QPoint & p)*/ {
+  const QPoint & p = *(const QPoint *)this_;
+  (void) ((QPoint*)this_)->operator+=(p);
+  // auto xptr = (QPoint & (QPoint::*)(QPoint const&) ) &QPoint::operator+=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:73
-// [8] QPoint & operator*=(float)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPointmLEf(void *this_, float factor) {
-  auto& rv = ((QPoint*)this_)->operator*=(factor);
-return &rv;
+// [8] QPoint & operator-=(const QPoint &) 
+// (12)qm2460113409 (17)_ZN6QPointmIERKS_
+//static
+/*void qm2460113409(const QPoint & p)*/ {
+  const QPoint & p = *(const QPoint *)this_;
+  (void) ((QPoint*)this_)->operator-=(p);
+  // auto xptr = (QPoint & (QPoint::*)(QPoint const&) ) &QPoint::operator-=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qpoint.h:74
-// [8] QPoint & operator*=(double)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPointmLEd(void *this_, double factor) {
-  auto& rv = ((QPoint*)this_)->operator*=(factor);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:75
-// [8] QPoint & operator*=(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPointmLEi(void *this_, int factor) {
-  auto& rv = ((QPoint*)this_)->operator*=(factor);
-return &rv;
+// [8] QPoint & operator*=(float) 
+// (11)qm513976601 (14)_ZN6QPointmLEf
+//static
+/*void qm513976601(float factor)*/ {
+  float factor = *(float*)this_;
+  (void) ((QPoint*)this_)->operator*=(factor);
+  // auto xptr = (QPoint & (QPoint::*)(float) ) &QPoint::operator*=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:76
+// [8] QPoint & operator*=(double) 
+// (12)qm4037855285 (14)_ZN6QPointmLEd
+//static
+/*void qm4037855285(double factor)*/ {
+  double factor = *(double*)this_;
+  (void) ((QPoint*)this_)->operator*=(factor);
+  // auto xptr = (QPoint & (QPoint::*)(double) ) &QPoint::operator*=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:77
-// [8] QPoint & operator/=(qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN6QPointdVEd(void *this_, qreal divisor) {
-  auto& rv = ((QPoint*)this_)->operator/=(divisor);
-return &rv;
+// [8] QPoint & operator*=(int) 
+// (12)qm2384311432 (14)_ZN6QPointmLEi
+//static
+/*void qm2384311432(int factor)*/ {
+  int factor = *(int*)this_;
+  (void) ((QPoint*)this_)->operator*=(factor);
+  // auto xptr = (QPoint & (QPoint::*)(int) ) &QPoint::operator*=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
-// since 5.1
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qpoint.h:79
-// [4] int dotProduct(const QPoint &, const QPoint &)
-#if QT_VERSION >= 0x050100
-extern "C" Q_DECL_EXPORT
-int C_ZN6QPoint10dotProductERKS_S1_(QPoint* p1, QPoint* p2) {
-  return (int)QPoint::dotProduct(*p1, *p2);
+// [8] QPoint & operator/=(qreal) 
+// (12)qm2618663193 (14)_ZN6QPointdVEd
+//static
+/*void qm2618663193(double divisor)*/ {
+  double divisor = *(double*)this_;
+  (void) ((QPoint*)this_)->operator/=(divisor);
+  // auto xptr = (QPoint & (QPoint::*)(double) ) &QPoint::operator/=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050100
+
+// Public static inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpoint.h:81
+// [4] int dotProduct(const QPoint &, const QPoint &) 
+// (12)qm1343622669 (30)_ZN6QPoint10dotProductERKS_S1_
+//static
+/*void qm1343622669(const QPoint & p1, const QPoint & p2)*/ {
+  const QPoint & p1 = *(const QPoint *)this_; const QPoint & p2 = *(const QPoint *)this_;
+  (void) QPoint::dotProduct(p1, p2);
+   auto xptr = (int (*)(QPoint const&, QPoint const&) ) &QPoint::dotProduct;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN6QPointD2Ev(void *this_) {
+/*void C_ZN6QPointD2Ev(void *this_)*/ {
   delete (QPoint*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qpoint
 //  main block end
 
 //  use block begin

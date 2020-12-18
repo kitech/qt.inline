@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QBasicMutex is pure virtual: false
+// QBasicMutex is pure virtual: false false
 // QBasicMutex has virtual projected: false
 //  header block end
 
@@ -52,67 +52,73 @@ public:
 MyQBasicMutex() : QBasicMutex() {}
 };
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:71
-// [-2] void QBasicMutex()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QBasicMutexC2Ev() {
-  return  new QBasicMutex();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qbasicmutex(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:77
-// [-2] void lock()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QBasicMutex4lockEv(void *this_) {
-  ((QBasicMutex*)this_)->lock();
+// /usr/include/qt/QtCore/qmutex.h:73
+// [-2] void QBasicMutex() 
+// (11)qm420848158 (20)_ZN11QBasicMutexC2Ev
+/*void* qm420848158()*/{
+  ;
+  this_ =  new QBasicMutex();
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:83
-// [-2] void unlock()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QBasicMutex6unlockEv(void *this_) {
-  ((QBasicMutex*)this_)->unlock();
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:79
+// [-2] void lock() 
+// (12)qm2600612179 (23)_ZN11QBasicMutex4lockEv
+//static
+/*void qm2600612179()*/ {
+  ;
+  (void) ((QBasicMutex*)this_)->lock();
+   auto xptr = (void (QBasicMutex::*)() ) &QBasicMutex::lock;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:89
-// [1] bool tryLock()
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QBasicMutex7tryLockEv(void *this_) {
-  return (bool)((QBasicMutex*)this_)->tryLock();
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:85
+// [-2] void unlock() 
+// (12)qm3422369279 (25)_ZN11QBasicMutex6unlockEv
+//static
+/*void qm3422369279()*/ {
+  ;
+  (void) ((QBasicMutex*)this_)->unlock();
+   auto xptr = (void (QBasicMutex::*)() ) &QBasicMutex::unlock;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:94
-// [1] bool try_lock()
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QBasicMutex8try_lockEv(void *this_) {
-  return (bool)((QBasicMutex*)this_)->try_lock();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:91
+// [1] bool tryLock() 
+// (12)qm3877797344 (26)_ZN11QBasicMutex7tryLockEv
+//static
+/*void qm3877797344()*/ {
+  ;
+  (void) ((QBasicMutex*)this_)->tryLock();
+   auto xptr = (bool (QBasicMutex::*)() ) &QBasicMutex::tryLock;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmutex.h:96
-// [1] bool isRecursive()
-extern "C" Q_DECL_EXPORT
-bool C_ZN11QBasicMutex11isRecursiveEv(void *this_) {
-  return (bool)((QBasicMutex*)this_)->isRecursive();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:97
-// [1] bool isRecursive()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QBasicMutex11isRecursiveEv(void *this_) {
-  return (bool)((QBasicMutex*)this_)->isRecursive();
+// [1] bool try_lock() 
+// (12)qm1311715470 (27)_ZN11QBasicMutex8try_lockEv
+//static
+/*void qm1311715470()*/ {
+  ;
+  (void) ((QBasicMutex*)this_)->try_lock();
+   auto xptr = (bool (QBasicMutex::*)() ) &QBasicMutex::try_lock;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN11QBasicMutexD2Ev(void *this_) {
+/*void C_ZN11QBasicMutexD2Ev(void *this_)*/ {
   delete (QBasicMutex*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qbasicmutex
 //  main block end
 
 //  use block begin

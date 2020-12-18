@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QObjectUserData is pure virtual: false
+// QObjectUserData is pure virtual: false false
 // QObjectUserData has virtual projected: false
 //  header block end
 
@@ -48,15 +48,29 @@ static const uint qt_meta_data_MyQObjectUserData[] = {
 class Q_DECL_EXPORT MyQObjectUserData : public QObjectUserData {
 public:
   virtual ~MyQObjectUserData() {}
+// void QObjectUserData()
+MyQObjectUserData() : QObjectUserData() {}
 };
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:473
-// [-2] void ~QObjectUserData()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QObjectUserDataD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qobjectuserdata(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:492
+// [-2] void QObjectUserData() 
+// (11)qm858108183 (24)_ZN15QObjectUserDataC2Ev
+/*void* qm858108183()*/{
+  ;
+  this_ =  new QObjectUserData();
+}
+
+
+/*void C_ZN15QObjectUserDataD2Ev(void *this_)*/ {
   delete (QObjectUserData*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qobjectuserdata
 //  main block end
 
 //  use block begin

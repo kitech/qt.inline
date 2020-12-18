@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtCore/qeventloop.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QEventLoopLocker is pure virtual: false
+// QEventLoopLocker is pure virtual: false false
 // QEventLoopLocker has virtual projected: false
 //  header block end
 
@@ -57,37 +56,16 @@ MyQEventLoopLocker(QEventLoop * loop) : QEventLoopLocker(loop) {}
 MyQEventLoopLocker(QThread * thread) : QEventLoopLocker(thread) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventloop.h:93
-// [-2] void QEventLoopLocker()
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QEventLoopLockerC2Ev() {
-  return  new QEventLoopLocker();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qeventlooplocker(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventloop.h:94
-// [-2] void QEventLoopLocker(QEventLoop *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QEventLoopLockerC2EP10QEventLoop(QEventLoop * loop) {
-  return  new QEventLoopLocker(loop);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventloop.h:95
-// [-2] void QEventLoopLocker(QThread *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QEventLoopLockerC2EP7QThread(QThread * thread) {
-  return  new QEventLoopLocker(thread);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qeventloop.h:96
-// [-2] void ~QEventLoopLocker()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QEventLoopLockerD2Ev(void *this_) {
+/*void C_ZN16QEventLoopLockerD2Ev(void *this_)*/ {
   delete (QEventLoopLocker*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qeventlooplocker
 //  main block end
 
 //  use block begin

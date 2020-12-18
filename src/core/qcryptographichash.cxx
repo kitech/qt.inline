@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040300
 // /usr/include/qt/QtCore/qcryptographichash.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QCryptographicHash is pure virtual: false
+// QCryptographicHash is pure virtual: false false
 // QCryptographicHash has virtual projected: false
 //  header block end
 
@@ -53,85 +52,16 @@ public:
 MyQCryptographicHash(QCryptographicHash::Algorithm method) : QCryptographicHash(method) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:92
-// [-2] void QCryptographicHash(QCryptographicHash::Algorithm)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QCryptographicHashC2ENS_9AlgorithmE(QCryptographicHash::Algorithm method) {
-  return  new QCryptographicHash(method);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcryptographichash(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:93
-// [-2] void ~QCryptographicHash()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QCryptographicHashD2Ev(void *this_) {
+
+/*void C_ZN18QCryptographicHashD2Ev(void *this_)*/ {
   delete (QCryptographicHash*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:95
-// [-2] void reset()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QCryptographicHash5resetEv(void *this_) {
-  ((QCryptographicHash*)this_)->reset();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:97
-// [-2] void addData(const char *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QCryptographicHash7addDataEPKci(void *this_, const char * data, int length) {
-  ((QCryptographicHash*)this_)->addData(data, length);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:98
-// [-2] void addData(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QCryptographicHash7addDataERK10QByteArray(void *this_, QByteArray* data) {
-  ((QCryptographicHash*)this_)->addData(*data);
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtCore/qcryptographichash.h:99
-// [1] bool addData(QIODevice *)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-bool C_ZN18QCryptographicHash7addDataEP9QIODevice(void *this_, QIODevice * device) {
-  return (bool)((QCryptographicHash*)this_)->addData(device);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:101
-// [8] QByteArray result()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QCryptographicHash6resultEv(void *this_) {
-  auto rv = ((QCryptographicHash*)this_)->result();
-return new QByteArray(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qcryptographichash.h:103
-// [8] QByteArray hash(const QByteArray &, QCryptographicHash::Algorithm)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QCryptographicHash4hashERK10QByteArrayNS_9AlgorithmE(QByteArray* data, QCryptographicHash::Algorithm method) {
-  auto rv = QCryptographicHash::hash(*data, method);
-return new QByteArray(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 5.12
-// /usr/include/qt/QtCore/qcryptographichash.h:104
-// [4] int hashLength(QCryptographicHash::Algorithm)
-#if QT_VERSION >= 0x050c00
-extern "C" Q_DECL_EXPORT
-int C_ZN18QCryptographicHash10hashLengthENS_9AlgorithmE(QCryptographicHash::Algorithm method) {
-  return (int)QCryptographicHash::hashLength(method);
-}
-#endif // QT_VERSION >= 0x050c00
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcryptographichash
 //  main block end
 
 //  use block begin

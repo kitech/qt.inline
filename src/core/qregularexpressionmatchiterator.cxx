@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(regularexpression)
-// since 0x050000
 // /usr/include/qt/QtCore/qregularexpression.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QRegularExpressionMatchIterator is pure virtual: false
+// QRegularExpressionMatchIterator is pure virtual: false false
 // QRegularExpressionMatchIterator has virtual projected: false
 //  header block end
 
@@ -58,117 +57,40 @@ MyQRegularExpressionMatchIterator() : QRegularExpressionMatchIterator() {}
 MyQRegularExpressionMatchIterator(const QRegularExpressionMatchIterator & iterator) : QRegularExpressionMatchIterator(iterator) {}
 };
 
-// Public Visibility=Default Availability=Available
-// since 5.1
-// /usr/include/qt/QtCore/qregularexpression.h:256
-// [-2] void QRegularExpressionMatchIterator()
-#if QT_VERSION >= 0x050100
-extern "C" Q_DECL_EXPORT
-void* C_ZN31QRegularExpressionMatchIteratorC2Ev() {
-  return  new QRegularExpressionMatchIterator();
-}
-#endif // QT_VERSION >= 0x050100
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qregularexpressionmatchiterator(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:257
-// [-2] void ~QRegularExpressionMatchIterator()
-extern "C" Q_DECL_EXPORT
-void C_ZN31QRegularExpressionMatchIteratorD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:268
+// [8] QRegularExpressionMatchIterator & operator=(QRegularExpressionMatchIterator &&) 
+// (12)qm3468675379 (42)_ZN31QRegularExpressionMatchIteratoraSEOS_
+//static
+/*void qm3468675379(QRegularExpressionMatchIterator && iterator)*/ {
+  QRegularExpressionMatchIterator && iterator =  static_cast<QRegularExpressionMatchIterator &&>(*(QRegularExpressionMatchIterator *)this_);
+  (void) ((QRegularExpressionMatchIterator*)this_)->operator=(iterator);
+  // auto xptr = (QRegularExpressionMatchIterator & (QRegularExpressionMatchIterator::*)(QRegularExpressionMatchIterator&&) ) &QRegularExpressionMatchIterator::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:270
+// [-2] void swap(QRegularExpressionMatchIterator &) 
+// (12)qm3889998942 (45)_ZN31QRegularExpressionMatchIterator4swapERS_
+//static
+/*void qm3889998942(QRegularExpressionMatchIterator & other)*/ {
+  QRegularExpressionMatchIterator & other = *(QRegularExpressionMatchIterator *)this_;
+  (void) ((QRegularExpressionMatchIterator*)this_)->swap(other);
+   auto xptr = (void (QRegularExpressionMatchIterator::*)(QRegularExpressionMatchIterator&) ) &QRegularExpressionMatchIterator::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN31QRegularExpressionMatchIteratorD2Ev(void *this_)*/ {
   delete (QRegularExpressionMatchIterator*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:258
-// [-2] void QRegularExpressionMatchIterator(const QRegularExpressionMatchIterator &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN31QRegularExpressionMatchIteratorC2ERKS_(QRegularExpressionMatchIterator* iterator) {
-  return  new QRegularExpressionMatchIterator(*iterator);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:259
-// [8] QRegularExpressionMatchIterator & operator=(const QRegularExpressionMatchIterator &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN31QRegularExpressionMatchIteratoraSERKS_(void *this_, QRegularExpressionMatchIterator* iterator) {
-  auto& rv = ((QRegularExpressionMatchIterator*)this_)->operator=(*iterator);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:261
-// [8] QRegularExpressionMatchIterator & operator=(QRegularExpressionMatchIterator &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN31QRegularExpressionMatchIteratoraSEOS_(void *this_, QRegularExpressionMatchIterator && iterator) {
-  auto& rv = ((QRegularExpressionMatchIterator*)this_)->operator=(iterator);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:264
-// [-2] void swap(QRegularExpressionMatchIterator &)
-extern "C" Q_DECL_EXPORT
-void C_ZN31QRegularExpressionMatchIterator4swapERS_(void *this_, QRegularExpressionMatchIterator* other) {
-  ((QRegularExpressionMatchIterator*)this_)->swap(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:266
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK31QRegularExpressionMatchIterator7isValidEv(void *this_) {
-  return (bool)((QRegularExpressionMatchIterator*)this_)->isValid();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:268
-// [1] bool hasNext()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK31QRegularExpressionMatchIterator7hasNextEv(void *this_) {
-  return (bool)((QRegularExpressionMatchIterator*)this_)->hasNext();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:269
-// [8] QRegularExpressionMatch next()
-extern "C" Q_DECL_EXPORT
-void* C_ZN31QRegularExpressionMatchIterator4nextEv(void *this_) {
-  auto rv = ((QRegularExpressionMatchIterator*)this_)->next();
-return new QRegularExpressionMatch(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:270
-// [8] QRegularExpressionMatch peekNext()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK31QRegularExpressionMatchIterator8peekNextEv(void *this_) {
-  auto rv = ((QRegularExpressionMatchIterator*)this_)->peekNext();
-return new QRegularExpressionMatch(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:272
-// [8] QRegularExpression regularExpression()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK31QRegularExpressionMatchIterator17regularExpressionEv(void *this_) {
-  auto rv = ((QRegularExpressionMatchIterator*)this_)->regularExpression();
-return new QRegularExpression(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:273
-// [4] QRegularExpression::MatchType matchType()
-extern "C" Q_DECL_EXPORT
-QRegularExpression::MatchType C_ZNK31QRegularExpressionMatchIterator9matchTypeEv(void *this_) {
-  return (QRegularExpression::MatchType)((QRegularExpressionMatchIterator*)this_)->matchType();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qregularexpression.h:274
-// [4] QRegularExpression::MatchOptions matchOptions()
-extern "C" Q_DECL_EXPORT
-QRegularExpression::MatchOptions C_ZNK31QRegularExpressionMatchIterator12matchOptionsEv(void *this_) {
-  return (QRegularExpression::MatchOptions)((QRegularExpressionMatchIterator*)this_)->matchOptions();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qregularexpressionmatchiterator
 //  main block end
 
 //  use block begin

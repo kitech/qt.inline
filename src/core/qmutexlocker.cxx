@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QMutexLocker is pure virtual: false
+// QMutexLocker is pure virtual: false false
 // QMutexLocker has virtual projected: false
 //  header block end
 
@@ -50,47 +50,77 @@ public:
   virtual ~MyQMutexLocker() {}
 // void QMutexLocker(QBasicMutex *)
 MyQMutexLocker(QBasicMutex * m) : QMutexLocker(m) {}
+// void QMutexLocker(QRecursiveMutex *)
+MyQMutexLocker(QRecursiveMutex * m) : QMutexLocker(m) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmutexlocker(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:199
-// [-2] void QMutexLocker(QBasicMutex *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QMutexLockerC2EP11QBasicMutex(QBasicMutex * m) {
-  return  new QMutexLocker(m);
+// /usr/include/qt/QtCore/qmutex.h:226
+// [-2] void QMutexLocker(QBasicMutex *) 
+// (12)qm3182476505 (34)_ZN12QMutexLockerC2EP11QBasicMutex
+/*void* qm3182476505(QBasicMutex * m)*/{
+  QBasicMutex * m = *(QBasicMutex **)this_;
+  this_ =  new QMutexLocker(m);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:213
-// [-2] void ~QMutexLocker()
-extern "C" Q_DECL_EXPORT
-void C_ZN12QMutexLockerD2Ev(void *this_) {
+// /usr/include/qt/QtCore/qmutex.h:237
+// [-2] void QMutexLocker(QRecursiveMutex *) 
+// (12)qm2401233820 (38)_ZN12QMutexLockerC2EP15QRecursiveMutex
+/*void* qm2401233820(QRecursiveMutex * m)*/{
+  QRecursiveMutex * m = *(QRecursiveMutex **)this_;
+  this_ =  new QMutexLocker(m);
+}
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:243
+// [-2] void ~QMutexLocker() 
+// (11)qm607499285 (21)_ZN12QMutexLockerD2Ev
+/*void qm607499285 (void *this_)*/ {
   delete (QMutexLocker*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:215
-// [-2] void unlock()
-extern "C" Q_DECL_EXPORT
-void C_ZN12QMutexLocker6unlockEv(void *this_) {
-  ((QMutexLocker*)this_)->unlock();
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:245
+// [-2] void unlock() 
+// (12)qm4288376634 (26)_ZN12QMutexLocker6unlockEv
+//static
+/*void qm4288376634()*/ {
+  ;
+  (void) ((QMutexLocker*)this_)->unlock();
+   auto xptr = (void (QMutexLocker::*)() ) &QMutexLocker::unlock;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:223
-// [-2] void relock()
-extern "C" Q_DECL_EXPORT
-void C_ZN12QMutexLocker6relockEv(void *this_) {
-  ((QMutexLocker*)this_)->relock();
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:253
+// [-2] void relock() 
+// (12)qm4149818073 (26)_ZN12QMutexLocker6relockEv
+//static
+/*void qm4149818073()*/ {
+  ;
+  (void) ((QMutexLocker*)this_)->relock();
+   auto xptr = (void (QMutexLocker::*)() ) &QMutexLocker::relock;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qmutex.h:238
-// [8] QMutex * mutex()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QMutexLocker5mutexEv(void *this_) {
-  return (void*)((QMutexLocker*)this_)->mutex();
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:268
+// [8] QMutex * mutex() const
+// (12)qm3313283003 (26)_ZNK12QMutexLocker5mutexEv
+//static
+/*void qm3313283003()*/ {
+  ;
+  (void) ((QMutexLocker*)this_)->mutex();
+   auto xptr = (QMutex * (QMutexLocker::*)() const ) &QMutexLocker::mutex;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmutexlocker
 //  main block end
 
 //  use block begin

@@ -12,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QAbstractListModel is pure virtual: true
+// QAbstractListModel is pure virtual: true true
 // QAbstractListModel has virtual projected: false
 //  header block end
 
@@ -96,7 +96,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQAbstractListModel() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int rowCount(const QModelIndex &)
   virtual int rowCount(const QModelIndex & parent) const override {
     int handled = 0;
@@ -109,7 +109,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [16] QVariant data(const QModelIndex &, int)
   virtual QVariant data(const QModelIndex & index, int role) const override {
     int handled = 0;
@@ -139,103 +139,28 @@ void* C_QAbstractListModel_init_staticMetaObject(void* this_, void* strdat, void
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:187
-// [4] int rowCount(const QModelIndex &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:191
-// [16] QVariant data(const QModelIndex &, int)
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:413
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QAbstractListModel10metaObjectEv(void *this_) {
-  return (void*)((QAbstractListModel*)this_)->metaObject();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qabstractlistmodel(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:415
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm4000170011 (34)_ZN18QAbstractListModel2trEPKcS1_i
+//static
+/*void qm4000170011(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QAbstractListModel::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QAbstractListModel::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:413
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QAbstractListModel11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QAbstractListModel*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:413
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN18QAbstractListModel11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QAbstractListModel*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:413
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QAbstractListModel2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAbstractListModel::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:413
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QAbstractListModel6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAbstractListModel::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:416
-// [-2] void QAbstractListModel(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QAbstractListModelC2EP7QObject(QObject * parent) {
-  return  new MyQAbstractListModel(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:417
-// [-2] void ~QAbstractListModel()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QAbstractListModelD2Ev(void *this_) {
+/*void C_ZN18QAbstractListModelD2Ev(void *this_)*/ {
   delete (QAbstractListModel*)(this_);
 }
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:419
-// [24] QModelIndex index(int, int, const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QAbstractListModel5indexEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* parent) {
-  auto rv = ((QAbstractListModel*)this_)->index(row, column, *parent);
-return new QModelIndex(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:420
-// [24] QModelIndex sibling(int, int, const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QAbstractListModel7siblingEiiRK11QModelIndex(void *this_, int row, int column, QModelIndex* idx) {
-  auto rv = ((QAbstractListModel*)this_)->sibling(row, column, *idx);
-return new QModelIndex(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:421
-// [1] bool dropMimeData(const QMimeData *, Qt::DropAction, int, int, const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN18QAbstractListModel12dropMimeDataEPK9QMimeDataN2Qt10DropActionEiiRK11QModelIndex(void *this_, const QMimeData * data, Qt::DropAction action, int row, int column, QModelIndex* parent) {
-  return (bool)((QAbstractListModel*)this_)->dropMimeData(data, action, row, column, *parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:424
-// [4] Qt::ItemFlags flags(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-Qt::ItemFlags C_ZNK18QAbstractListModel5flagsERK11QModelIndex(void *this_, QModelIndex* index) {
-  return (Qt::ItemFlags)((QAbstractListModel*)this_)->flags(*index);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qabstractlistmodel
 //  main block end
 
 //  use block begin

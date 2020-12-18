@@ -12,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QModelIndex is pure virtual: false
+// QModelIndex is pure virtual: false false
 // QModelIndex has virtual projected: false
 //  header block end
 
@@ -55,162 +55,205 @@ public:
 MyQModelIndex() : QModelIndex() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmodelindex(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:60
-// [-2] void QModelIndex()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QModelIndexC2Ev() {
-  return  new QModelIndex();
+// [-2] void QModelIndex() 
+// (11)qm756365278 (20)_ZN11QModelIndexC2Ev
+/*void* qm756365278()*/{
+  ;
+  this_ =  new QModelIndex();
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:62
-// [4] int row()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QModelIndex3rowEv(void *this_) {
-  return (int)((QModelIndex*)this_)->row();
+// [4] int row() const
+// (12)qm3724840192 (23)_ZNK11QModelIndex3rowEv
+//static
+/*void qm3724840192()*/ {
+  ;
+  (void) ((QModelIndex*)this_)->row();
+   auto xptr = (int (QModelIndex::*)() const ) &QModelIndex::row;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:63
-// [4] int column()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QModelIndex6columnEv(void *this_) {
-  return (int)((QModelIndex*)this_)->column();
+// [4] int column() const
+// (12)qm3046022154 (26)_ZNK11QModelIndex6columnEv
+//static
+/*void qm3046022154()*/ {
+  ;
+  (void) ((QModelIndex*)this_)->column();
+   auto xptr = (int (QModelIndex::*)() const ) &QModelIndex::column;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:64
-// [8] quintptr internalId()
-extern "C" Q_DECL_EXPORT
-quintptr C_ZNK11QModelIndex10internalIdEv(void *this_) {
-  return (quintptr)((QModelIndex*)this_)->internalId();
+// [8] quintptr internalId() const
+// (10)qm47055808 (31)_ZNK11QModelIndex10internalIdEv
+//static
+/*void qm47055808()*/ {
+  ;
+  (void) ((QModelIndex*)this_)->internalId();
+   auto xptr = (unsigned long long (QModelIndex::*)() const ) &QModelIndex::internalId;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:65
-// [8] void * internalPointer()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QModelIndex15internalPointerEv(void *this_) {
-  return (void*)((QModelIndex*)this_)->internalPointer();
+// [8] void * internalPointer() const
+// (12)qm2841223468 (36)_ZNK11QModelIndex15internalPointerEv
+//static
+/*void qm2841223468()*/ {
+  ;
+  (void) ((QModelIndex*)this_)->internalPointer();
+   auto xptr = (void * (QModelIndex::*)() const ) &QModelIndex::internalPointer;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:66
-// [24] QModelIndex parent()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QModelIndex6parentEv(void *this_) {
-  auto rv = ((QModelIndex*)this_)->parent();
-return new QModelIndex(rv);
+// [24] QModelIndex parent() const
+// (12)qm1304276158 (26)_ZNK11QModelIndex6parentEv
+//static
+/*void qm1304276158()*/ {
+  ;
+  (void) ((QModelIndex*)this_)->parent();
+   auto xptr = (QModelIndex (QModelIndex::*)() const ) &QModelIndex::parent;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:67
-// [24] QModelIndex sibling(int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QModelIndex7siblingEii(void *this_, int row, int column) {
-  auto rv = ((QModelIndex*)this_)->sibling(row, column);
-return new QModelIndex(rv);
+// [24] QModelIndex sibling(int, int) const
+// (11)qm128912225 (28)_ZNK11QModelIndex7siblingEii
+//static
+/*void qm128912225(int row, int column)*/ {
+  int row = *(int*)this_; int column = *(int*)this_;
+  (void) ((QModelIndex*)this_)->sibling(row, column);
+   auto xptr = (QModelIndex (QModelIndex::*)(int, int) const ) &QModelIndex::sibling;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 5.11
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:68
-// [24] QModelIndex siblingAtColumn(int)
-#if QT_VERSION >= 0x050b00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QModelIndex15siblingAtColumnEi(void *this_, int column) {
-  auto rv = ((QModelIndex*)this_)->siblingAtColumn(column);
-return new QModelIndex(rv);
+// [24] QModelIndex siblingAtColumn(int) const
+// (12)qm2281150179 (36)_ZNK11QModelIndex15siblingAtColumnEi
+//static
+/*void qm2281150179(int column)*/ {
+  int column = *(int*)this_;
+  (void) ((QModelIndex*)this_)->siblingAtColumn(column);
+   auto xptr = (QModelIndex (QModelIndex::*)(int) const ) &QModelIndex::siblingAtColumn;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050b00
 
-// Public inline Visibility=Default Availability=Available
-// since 5.11
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:69
-// [24] QModelIndex siblingAtRow(int)
-#if QT_VERSION >= 0x050b00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QModelIndex12siblingAtRowEi(void *this_, int row) {
-  auto rv = ((QModelIndex*)this_)->siblingAtRow(row);
-return new QModelIndex(rv);
-}
-#endif // QT_VERSION >= 0x050b00
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qabstractitemmodel.h:71
-// [24] QModelIndex child(int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QModelIndex5childEii(void *this_, int row, int column) {
-  auto rv = ((QModelIndex*)this_)->child(row, column);
-return new QModelIndex(rv);
+// [24] QModelIndex siblingAtRow(int) const
+// (12)qm3167847458 (33)_ZNK11QModelIndex12siblingAtRowEi
+//static
+/*void qm3167847458(int row)*/ {
+  int row = *(int*)this_;
+  (void) ((QModelIndex*)this_)->siblingAtRow(row);
+   auto xptr = (QModelIndex (QModelIndex::*)(int) const ) &QModelIndex::siblingAtRow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:73
-// [16] QVariant data(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QModelIndex4dataEi(void *this_, int role) {
-  auto rv = ((QModelIndex*)this_)->data(role);
-return new QVariant(rv);
+// [16] QVariant data(int) const
+// (12)qm2419095415 (24)_ZNK11QModelIndex4dataEi
+//static
+/*void qm2419095415(int role)*/ {
+  int role = *(int*)this_;
+  (void) ((QModelIndex*)this_)->data(role);
+   auto xptr = (QVariant (QModelIndex::*)(int) const ) &QModelIndex::data;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
-// since 4.2
 // /usr/include/qt/QtCore/qabstractitemmodel.h:74
-// [4] Qt::ItemFlags flags()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-Qt::ItemFlags C_ZNK11QModelIndex5flagsEv(void *this_) {
-  return (Qt::ItemFlags)((QModelIndex*)this_)->flags();
+// [4] Qt::ItemFlags flags() const
+// (12)qm3598866599 (25)_ZNK11QModelIndex5flagsEv
+//static
+/*void qm3598866599()*/ {
+  ;
+  (void) ((QModelIndex*)this_)->flags();
+   auto xptr = (QFlags<Qt::ItemFlag> (QModelIndex::*)() const ) &QModelIndex::flags;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040200
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:75
-// [8] const QAbstractItemModel * model()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QModelIndex5modelEv(void *this_) {
-  return (void*)((QModelIndex*)this_)->model();
+// [8] const QAbstractItemModel * model() const
+// (11)qm662887749 (25)_ZNK11QModelIndex5modelEv
+//static
+/*void qm662887749()*/ {
+  ;
+  (void) ((QModelIndex*)this_)->model();
+   auto xptr = (const QAbstractItemModel * (QModelIndex::*)() const ) &QModelIndex::model;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:76
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QModelIndex7isValidEv(void *this_) {
-  return (bool)((QModelIndex*)this_)->isValid();
+// [1] bool isValid() const
+// (11)qm603683773 (27)_ZNK11QModelIndex7isValidEv
+//static
+/*void qm603683773()*/ {
+  ;
+  (void) ((QModelIndex*)this_)->isValid();
+   auto xptr = (bool (QModelIndex::*)() const ) &QModelIndex::isValid;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:77
-// [1] bool operator==(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QModelIndexeqERKS_(void *this_, QModelIndex* other) {
-  return (bool)((QModelIndex*)this_)->operator==(*other);
+// [1] bool operator==(const QModelIndex &) const
+// (11)qm292133890 (24)_ZNK11QModelIndexeqERKS_
+//static
+/*void qm292133890(const QModelIndex & other)*/ {
+  const QModelIndex & other = *(const QModelIndex *)this_;
+  (void) ((QModelIndex*)this_)->operator==(other);
+  // auto xptr = (bool (QModelIndex::*)(QModelIndex const&) const ) &QModelIndex::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:79
-// [1] bool operator!=(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QModelIndexneERKS_(void *this_, QModelIndex* other) {
-  return (bool)((QModelIndex*)this_)->operator!=(*other);
+// [1] bool operator!=(const QModelIndex &) const
+// (12)qm2334754933 (24)_ZNK11QModelIndexneERKS_
+//static
+/*void qm2334754933(const QModelIndex & other)*/ {
+  const QModelIndex & other = *(const QModelIndex *)this_;
+  (void) ((QModelIndex*)this_)->operator!=(other);
+  // auto xptr = (bool (QModelIndex::*)(QModelIndex const&) const ) &QModelIndex::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:81
-// [1] bool operator<(const QModelIndex &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QModelIndexltERKS_(void *this_, QModelIndex* other) {
-  return (bool)((QModelIndex*)this_)->operator<(*other);
+// [1] bool operator<(const QModelIndex &) const
+// (12)qm3560720482 (24)_ZNK11QModelIndexltERKS_
+//static
+/*void qm3560720482(const QModelIndex & other)*/ {
+  const QModelIndex & other = *(const QModelIndex *)this_;
+  (void) ((QModelIndex*)this_)->operator<(other);
+  // auto xptr = (bool (QModelIndex::*)(QModelIndex const&) const ) &QModelIndex::operator<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN11QModelIndexD2Ev(void *this_) {
+/*void C_ZN11QModelIndexD2Ev(void *this_)*/ {
   delete (QModelIndex*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmodelindex
 //  main block end
 
 //  use block begin

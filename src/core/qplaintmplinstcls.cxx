@@ -173,6 +173,13 @@ void* C_ZN9QTypeInfoI10QByteArrayE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
+// [8] const char * QTypeInfo<QByteArray::FromBase64Result>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoIN10QByteArray16FromBase64ResultEE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QByteArray::FromBase64Result>*)this_)->name();
+   return (void*)rv;
+}
+
 // [8] const char * QTypeInfo<QStringView>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI11QStringViewE4nameEv(void* this_ ) {
@@ -208,6 +215,48 @@ void* C_ZN9QTypeInfoI10QStringRefE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
+// [8] std::size_t hash< ::QString>::operator()(const std::hash<QString>::argument_type &)
+extern "C" Q_DECL_EXPORT
+void C_ZNKSt4hashI7QStringEclERKS0_(void* this_ , const QString & s) {
+   auto rv =  ((std::hash< ::QString>*)this_)->operator()(s);
+   /*return rv;*/
+}
+
+// [8] std::size_t hash< ::QStringRef>::operator()(const std::hash<QStringRef>::argument_type &)
+extern "C" Q_DECL_EXPORT
+void C_ZNKSt4hashI10QStringRefEclERKS0_(void* this_ , const QStringRef & s) {
+   auto rv =  ((std::hash< ::QStringRef>*)this_)->operator()(s);
+   /*return rv;*/
+}
+
+// [8] std::size_t hash< ::QStringView>::operator()(std::hash<QStringView>::argument_type)
+extern "C" Q_DECL_EXPORT
+void C_ZNKSt4hashI11QStringViewEclES0_(void* this_ , QStringView s) {
+   auto rv =  ((std::hash< ::QStringView>*)this_)->operator()(s);
+   /*return rv;*/
+}
+
+// [8] std::size_t hash< ::QLatin1String>::operator()(std::hash<QLatin1String>::argument_type)
+extern "C" Q_DECL_EXPORT
+void C_ZNKSt4hashI13QLatin1StringEclES0_(void* this_ , QLatin1String s) {
+   auto rv =  ((std::hash< ::QLatin1String>*)this_)->operator()(s);
+   /*return rv;*/
+}
+
+// [8] std::size_t hash< ::QByteArray>::operator()(const std::hash<QByteArray>::argument_type &)
+extern "C" Q_DECL_EXPORT
+void C_ZNKSt4hashI10QByteArrayEclERKS0_(void* this_ , const QByteArray & s) {
+   auto rv =  ((std::hash< ::QByteArray>*)this_)->operator()(s);
+   /*return rv;*/
+}
+
+// [8] std::size_t hash< ::QBitArray>::operator()(const std::hash<QBitArray>::argument_type &)
+extern "C" Q_DECL_EXPORT
+void C_ZNKSt4hashI9QBitArrayEclERKS0_(void* this_ , const QBitArray & s) {
+   auto rv =  ((std::hash< ::QBitArray>*)this_)->operator()(s);
+   /*return rv;*/
+}
+
 // [8] const char * QTypeInfo<QRegExp>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI7QRegExpE4nameEv(void* this_ ) {
@@ -231,7 +280,7 @@ void* C_ZN17QtMetaTypePrivate13IteratorOwnerISt19_Bit_const_iteratorE7getDataEPK
 
 // [8] const void * IteratorOwner<std::vector<bool>::const_iterator>::getData(const std::vector<bool>::const_iterator &)
 extern "C" Q_DECL_EXPORT
-void* C_ZN17QtMetaTypePrivate13IteratorOwnerISt19_Bit_const_iteratorE7getDataERKS1_(void* this_ , const std::vector<bool>::const_iterator & it) {
+void* C_ZN17QtMetaTypePrivate13IteratorOwnerISt19_Bit_const_iteratorE7getDataERKS1_(void* this_ , const std::_Bit_const_iterator & it) {
    auto rv =  ((QtMetaTypePrivate::IteratorOwner<std::vector<bool>::const_iterator>*)this_)->getData(it);
    return (void*)rv;
 }
@@ -803,6 +852,13 @@ int C_ZN12QMetaTypeId2I9QPolygonFE14qt_metatype_idEv(void* this_ ) {
    return rv;
 }
 
+// [4] int QMetaTypeId2<QColorSpace>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN12QMetaTypeId2I11QColorSpaceE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId2<QColorSpace>*)this_)->qt_metatype_id();
+   return rv;
+}
+
 // [4] int QMetaTypeId2<QSizePolicy>::qt_metatype_id()
 extern "C" Q_DECL_EXPORT
 int C_ZN12QMetaTypeId2I11QSizePolicyE14qt_metatype_idEv(void* this_ ) {
@@ -887,6 +943,13 @@ void* C_ZN9QTypeInfoI9QBitArrayE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
+// [8] const char * QTypeInfo<QLocale>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI7QLocaleE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QLocale>*)this_)->name();
+   return (void*)rv;
+}
+
 // [8] const char * QTypeInfo<QDate>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI5QDateE4nameEv(void* this_ ) {
@@ -905,13 +968,6 @@ void* C_ZN9QTypeInfoI5QTimeE4nameEv(void* this_ ) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI9QDateTimeE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QDateTime>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QLocale>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI7QLocaleE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QLocale>*)this_)->name();
    return (void*)rv;
 }
 
@@ -997,6 +1053,62 @@ extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaTypeIdI8qfloat16E14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId<qfloat16>*)this_)->qt_metatype_id();
    return rv;
+}
+
+// [2] ::qfloat16 numeric_limits< ::qfloat16>::epsilon()
+extern "C" Q_DECL_EXPORT
+void C_ZNSt14numeric_limitsI8qfloat16E7epsilonEv(void* this_ ) {
+   auto rv =  ((std::numeric_limits< ::qfloat16>*)this_)->epsilon();
+   /*return rv;*/
+}
+
+// [2] ::qfloat16 numeric_limits< ::qfloat16>::min()
+extern "C" Q_DECL_EXPORT
+void C_ZNSt14numeric_limitsI8qfloat16E3minEv(void* this_ ) {
+   auto rv =  ((std::numeric_limits< ::qfloat16>*)this_)->min();
+   /*return rv;*/
+}
+
+// [2] ::qfloat16 numeric_limits< ::qfloat16>::denorm_min()
+extern "C" Q_DECL_EXPORT
+void C_ZNSt14numeric_limitsI8qfloat16E10denorm_minEv(void* this_ ) {
+   auto rv =  ((std::numeric_limits< ::qfloat16>*)this_)->denorm_min();
+   /*return rv;*/
+}
+
+// [2] ::qfloat16 numeric_limits< ::qfloat16>::max()
+extern "C" Q_DECL_EXPORT
+void C_ZNSt14numeric_limitsI8qfloat16E3maxEv(void* this_ ) {
+   auto rv =  ((std::numeric_limits< ::qfloat16>*)this_)->max();
+   /*return rv;*/
+}
+
+// [2] ::qfloat16 numeric_limits< ::qfloat16>::lowest()
+extern "C" Q_DECL_EXPORT
+void C_ZNSt14numeric_limitsI8qfloat16E6lowestEv(void* this_ ) {
+   auto rv =  ((std::numeric_limits< ::qfloat16>*)this_)->lowest();
+   /*return rv;*/
+}
+
+// [2] ::qfloat16 numeric_limits< ::qfloat16>::infinity()
+extern "C" Q_DECL_EXPORT
+void C_ZNSt14numeric_limitsI8qfloat16E8infinityEv(void* this_ ) {
+   auto rv =  ((std::numeric_limits< ::qfloat16>*)this_)->infinity();
+   /*return rv;*/
+}
+
+// [2] ::qfloat16 numeric_limits< ::qfloat16>::quiet_NaN()
+extern "C" Q_DECL_EXPORT
+void C_ZNSt14numeric_limitsI8qfloat16E9quiet_NaNEv(void* this_ ) {
+   auto rv =  ((std::numeric_limits< ::qfloat16>*)this_)->quiet_NaN();
+   /*return rv;*/
+}
+
+// [2] ::qfloat16 numeric_limits< ::qfloat16>::signaling_NaN()
+extern "C" Q_DECL_EXPORT
+void C_ZNSt14numeric_limitsI8qfloat16E13signaling_NaNEv(void* this_ ) {
+   auto rv =  ((std::numeric_limits< ::qfloat16>*)this_)->signaling_NaN();
+   /*return rv;*/
 }
 
 // [8] const char * QTypeInfo<QCollatorSortKey>::name()
@@ -1256,6 +1368,20 @@ extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI6QRectFE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QRectF>*)this_)->name();
    return (void*)rv;
+}
+
+// [4] int QMetaTypeId<QSocketNotifier::Type>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN11QMetaTypeIdIN15QSocketNotifier4TypeEE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId<QSocketNotifier::Type>*)this_)->qt_metatype_id();
+   return rv;
+}
+
+// [4] int QMetaTypeId<QSocketDescriptor>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN11QMetaTypeIdI17QSocketDescriptorE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId<QSocketDescriptor>*)this_)->qt_metatype_id();
+   return rv;
 }
 
 // [8] const char * QTypeInfo<QStorageInfo>::name()

@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtCore/qjsondocument.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QJsonParseError is pure virtual: false
+// QJsonParseError is pure virtual: false false
 // QJsonParseError has virtual projected: false
 //  header block end
 
@@ -51,20 +50,16 @@ public:
   virtual ~MyQJsonParseError() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qjsondocument.h:73
-// [8] QString errorString()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QJsonParseError11errorStringEv(void *this_) {
-  auto rv = ((QJsonParseError*)this_)->errorString();
-return new QString(rv);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qjsonparseerror(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN15QJsonParseErrorD2Ev(void *this_) {
+/*void C_ZN15QJsonParseErrorD2Ev(void *this_)*/ {
   delete (QJsonParseError*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qjsonparseerror
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QStringDataPtr is pure virtual: false
+// QStringDataPtr is pure virtual: false false
 // QStringDataPtr has virtual projected: false
 //  header block end
 
@@ -50,11 +50,16 @@ public:
   virtual ~MyQStringDataPtr() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstringdataptr(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-extern "C" Q_DECL_EXPORT
-void C_ZN14QStringDataPtrD2Ev(void *this_) {
+
+/*void C_ZN14QStringDataPtrD2Ev(void *this_)*/ {
   delete (QStringDataPtr*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstringdataptr
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// ExternalRefCountData is pure virtual: false
+// ExternalRefCountData is pure virtual: false false
 // ExternalRefCountData has virtual projected: false
 //  header block end
 
@@ -54,93 +54,61 @@ MyExternalRefCountData(QtSharedPointer::ExternalRefCountData::DestroyerFn d) : Q
 MyExternalRefCountData(Qt::Initialization arg0) : QtSharedPointer::ExternalRefCountData(arg0) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_externalrefcountdata(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:148
-// [-2] void ExternalRefCountData(QtSharedPointer::ExternalRefCountData::DestroyerFn)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QtSharedPointer20ExternalRefCountDataC2EPFvPS0_E(QtSharedPointer::ExternalRefCountData::DestroyerFn d) {
-  return  new QtSharedPointer::ExternalRefCountData(d);
+// /usr/include/qt/QtCore/qsharedpointer_impl.h:140
+// [-2] void ExternalRefCountData(QtSharedPointer::ExternalRefCountData::DestroyerFn) 
+// (11)qm135352767 (53)_ZN15QtSharedPointer20ExternalRefCountDataC2EPFvPS0_E
+/*void* qm135352767(QtSharedPointer::ExternalRefCountData::DestroyerFn d)*/{
+  QtSharedPointer::ExternalRefCountData::DestroyerFn d = *(QtSharedPointer::ExternalRefCountData::DestroyerFn*)this_;
+ this_ =  new QtSharedPointer::ExternalRefCountData(d);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:154
-// [-2] void ExternalRefCountData(Qt::Initialization)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QtSharedPointer20ExternalRefCountDataC2EN2Qt14InitializationE(Qt::Initialization arg0) {
-  return  new QtSharedPointer::ExternalRefCountData(arg0);
+// /usr/include/qt/QtCore/qsharedpointer_impl.h:146
+// [-2] void ExternalRefCountData(Qt::Initialization) 
+// (12)qm1374691160 (66)_ZN15QtSharedPointer20ExternalRefCountDataC2EN2Qt14InitializationE
+/*void* qm1374691160(Qt::Initialization arg0)*/{
+  Qt::Initialization arg0 = *(Qt::Initialization*)this_;
+ this_ =  new QtSharedPointer::ExternalRefCountData(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:155
-// [-2] void ~ExternalRefCountData()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QtSharedPointer20ExternalRefCountDataD2Ev(void *this_) {
+// /usr/include/qt/QtCore/qsharedpointer_impl.h:147
+// [-2] void ~ExternalRefCountData() 
+// (12)qm3495872856 (46)_ZN15QtSharedPointer20ExternalRefCountDataD2Ev
+/*void qm3495872856 (void *this_)*/ {
   delete (QtSharedPointer::ExternalRefCountData*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:157
-// [-2] void destroy()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QtSharedPointer20ExternalRefCountData7destroyEv(void *this_) {
-  ((QtSharedPointer::ExternalRefCountData*)this_)->destroy();
+// Public static inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsharedpointer_impl.h:159
+// [-2] void operator delete(void *) 
+// (11)qm667510842 (47)_ZN15QtSharedPointer20ExternalRefCountDatadlEPv
+//static
+/*void qm667510842(void * ptr)*/ {
+  void * ptr = *(void **)this_;
+  (void) QtSharedPointer::ExternalRefCountData::operator delete(ptr);
+  // auto xptr = (void (*)(void*) ) &QtSharedPointer::ExternalRefCountData::operator delete;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static Visibility=Default Availability=Available
+// Public static inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:160
-// [8] QtSharedPointer::ExternalRefCountData * getAndRef(const QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QtSharedPointer20ExternalRefCountData9getAndRefEPK7QObject(const QObject * arg0) {
-  return (void*)QtSharedPointer::ExternalRefCountData::getAndRef(arg0);
+// [-2] void operator delete(void *, void *) 
+// (12)qm3394435574 (50)_ZN15QtSharedPointer20ExternalRefCountDatadlEPvS1_
+//static
+/*void qm3394435574(void * arg0, void * arg1)*/ {
+  void * arg0 = *(void **)this_; void * arg1 = *(void **)this_;
+  (void) QtSharedPointer::ExternalRefCountData::operator delete(arg0, arg1);
+  // auto xptr = (void (*)(void*, void*) ) &QtSharedPointer::ExternalRefCountData::operator delete;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:161
-// [-2] void setQObjectShared(const QObject *, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QtSharedPointer20ExternalRefCountData16setQObjectSharedEPK7QObjectb(void *this_, const QObject * arg0, bool enable) {
-  ((QtSharedPointer::ExternalRefCountData*)this_)->setQObjectShared(arg0, enable);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:162
-// [-2] void checkQObjectShared(const QObject *)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QtSharedPointer20ExternalRefCountData18checkQObjectSharedEPK7QObject(void *this_, const QObject * arg0) {
-  ((QtSharedPointer::ExternalRefCountData*)this_)->checkQObjectShared(arg0);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:164
-// [-2] void checkQObjectShared(...)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QtSharedPointer20ExternalRefCountData18checkQObjectSharedEz(void *this_) {
-  ((QtSharedPointer::ExternalRefCountData*)this_)->checkQObjectShared();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:165
-// [-2] void setQObjectShared(...)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QtSharedPointer20ExternalRefCountData16setQObjectSharedEz(void *this_) {
-  ((QtSharedPointer::ExternalRefCountData*)this_)->setQObjectShared();
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:167
-// [-2] void operator delete(void *)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QtSharedPointer20ExternalRefCountDatadlEPv(void * ptr) {
-  QtSharedPointer::ExternalRefCountData::operator delete(ptr);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsharedpointer_impl.h:168
-// [-2] void operator delete(void *, void *)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QtSharedPointer20ExternalRefCountDatadlEPvS1_(void * arg0, void * arg1) {
-  QtSharedPointer::ExternalRefCountData::operator delete(arg0, arg1);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_externalrefcountdata
 //  main block end
 
 //  use block begin

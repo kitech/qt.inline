@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QArrayData is pure virtual: false
+// QArrayData is pure virtual: false false
 // QArrayData has virtual projected: false
 //  header block end
 
@@ -50,93 +50,100 @@ public:
   virtual ~MyQArrayData() {}
 };
 
-// Public inline Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qarraydata(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:57
-// [8] void * data()
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QArrayData4dataEv(void *this_) {
-  return (void*)((QArrayData*)this_)->data();
+// [8] void * data() 
+// (12)qm1300495711 (22)_ZN10QArrayData4dataEv
+//static
+/*void qm1300495711()*/ {
+  ;
+  (void) ((QArrayData*)this_)->data();
+   auto xptr = (void * (QArrayData::*)() ) &QArrayData::data;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:64
-// [8] const void * data()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QArrayData4dataEv(void *this_) {
-  return (void*)((QArrayData*)this_)->data();
+// [8] const void * data() const
+// (12)qm3702267271 (23)_ZNK10QArrayData4dataEv
+//static
+/*void qm3702267271()*/ {
+  ;
+  (void) ((QArrayData*)this_)->data();
+   auto xptr = (const void * (QArrayData::*)() const ) &QArrayData::data;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:74
-// [1] bool isMutable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QArrayData9isMutableEv(void *this_) {
-  return (bool)((QArrayData*)this_)->isMutable();
+// [1] bool isMutable() const
+// (12)qm1858795647 (28)_ZNK10QArrayData9isMutableEv
+//static
+/*void qm1858795647()*/ {
+  ;
+  (void) ((QArrayData*)this_)->isMutable();
+   auto xptr = (bool (QArrayData::*)() const ) &QArrayData::isMutable;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:92
-// [8] size_t detachCapacity(size_t)
-extern "C" Q_DECL_EXPORT
-size_t C_ZNK10QArrayData14detachCapacityEm(void *this_, size_t newSize) {
-  return (size_t)((QArrayData*)this_)->detachCapacity(newSize);
+// [8] size_t detachCapacity(size_t) const
+// (12)qm3595454163 (34)_ZNK10QArrayData14detachCapacityEm
+//static
+/*void qm3595454163(unsigned long newSize)*/ {
+  unsigned long newSize = *(unsigned long*)this_;
+  (void) ((QArrayData*)this_)->detachCapacity(newSize);
+   auto xptr = (unsigned long (QArrayData::*)(unsigned long) const ) &QArrayData::detachCapacity;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:99
-// [4] QArrayData::AllocationOptions detachFlags()
-extern "C" Q_DECL_EXPORT
-QArrayData::AllocationOptions* C_ZNK10QArrayData11detachFlagsEv(void *this_) {
-  auto rv = ((QArrayData*)this_)->detachFlags();
-return new QArrayData::AllocationOptions(rv);
+// [4] QArrayData::AllocationOptions detachFlags() const
+// (12)qm1181496548 (31)_ZNK10QArrayData11detachFlagsEv
+//static
+/*void qm1181496548()*/ {
+  ;
+  (void) ((QArrayData*)this_)->detachFlags();
+   auto xptr = (QFlags<QArrayData::AllocationOption> (QArrayData::*)() const ) &QArrayData::detachFlags;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:107
-// [4] QArrayData::AllocationOptions cloneFlags()
-extern "C" Q_DECL_EXPORT
-QArrayData::AllocationOptions* C_ZNK10QArrayData10cloneFlagsEv(void *this_) {
-  auto rv = ((QArrayData*)this_)->cloneFlags();
-return new QArrayData::AllocationOptions(rv);
+// [4] QArrayData::AllocationOptions cloneFlags() const
+// (12)qm3616955146 (30)_ZNK10QArrayData10cloneFlagsEv
+//static
+/*void qm3616955146()*/ {
+  ;
+  (void) ((QArrayData*)this_)->cloneFlags();
+   auto xptr = (QFlags<QArrayData::AllocationOption> (QArrayData::*)() const ) &QArrayData::cloneFlags;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qarraydata.h:115
-// [8] QArrayData * allocate(size_t, size_t, size_t, QArrayData::AllocationOptions)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QArrayData8allocateEmmm6QFlagsINS_16AllocationOptionEE(size_t objectSize, size_t alignment, size_t capacity, QFlags<QArrayData::AllocationOption> options) {
-  return (void*)QArrayData::allocate(objectSize, alignment, capacity, options);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qarraydata.h:117
-// [8] QArrayData * reallocateUnaligned(QArrayData *, size_t, size_t, QArrayData::AllocationOptions)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QArrayData19reallocateUnalignedEPS_mm6QFlagsINS_16AllocationOptionEE(QArrayData * data, size_t objectSize, size_t newCapacity, QFlags<QArrayData::AllocationOption> newOptions) {
-  return (void*)QArrayData::reallocateUnaligned(data, objectSize, newCapacity, newOptions);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qarraydata.h:119
-// [-2] void deallocate(QArrayData *, size_t, size_t)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QArrayData10deallocateEPS_mm(QArrayData * data, size_t objectSize, size_t alignment) {
-  QArrayData::deallocate(data, objectSize, alignment);
-}
-
-// Public static inline Visibility=Default Availability=Available
+// Public static inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qarraydata.h:123
-// [8] QArrayData * sharedNull()
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QArrayData10sharedNullEv() {
-  return (void*)QArrayData::sharedNull();
+// [8] QArrayData * sharedNull() 
+// (12)qm2956128912 (29)_ZN10QArrayData10sharedNullEv
+//static
+/*void qm2956128912()*/ {
+  ;
+  (void) QArrayData::sharedNull();
+   auto xptr = (QArrayData * (*)() ) &QArrayData::sharedNull;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN10QArrayDataD2Ev(void *this_) {
+/*void C_ZN10QArrayDataD2Ev(void *this_)*/ {
   delete (QArrayData*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qarraydata
 //  main block end
 
 //  use block begin

@@ -235,6 +235,13 @@ void C_QFileInfoList_move_0(void* this_ , int from, int to) {
      ((QFileInfoList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QFileInfoList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QFileInfoList_swapItemsAt_0()
+     ((QFileInfoList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QFileInfoList_swap_1(void* this_ , int i, int j) {

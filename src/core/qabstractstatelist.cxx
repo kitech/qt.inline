@@ -243,6 +243,13 @@ void C_QAbstractStateList_move_0(void* this_ , int from, int to) {
      ((QAbstractStateList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QAbstractStateList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QAbstractStateList_swapItemsAt_0()
+     ((QAbstractStateList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QAbstractStateList_swap_1(void* this_ , int i, int j) {

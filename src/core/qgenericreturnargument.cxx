@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QGenericReturnArgument is pure virtual: false
+// QGenericReturnArgument is pure virtual: false false
 // QGenericReturnArgument has virtual projected: false
 //  header block end
 
@@ -52,19 +52,25 @@ public:
 MyQGenericReturnArgument(const char * aName, void * aData) : QGenericReturnArgument(aName, aData) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qgenericreturnargument(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobjectdefs.h:305
-// [-2] void QGenericReturnArgument(const char *, void *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QGenericReturnArgumentC2EPKcPv(const char * aName, void * aData) {
-  return  new QGenericReturnArgument(aName, aData);
+// [-2] void QGenericReturnArgument(const char *, void *) 
+// (11)qm685887590 (35)_ZN22QGenericReturnArgumentC2EPKcPv
+/*void* qm685887590(const char * aName, void * aData)*/{
+  const char * aName = *(const char **)this_; void * aData = *(void **)this_;
+  this_ =  new QGenericReturnArgument(aName, aData);
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN22QGenericReturnArgumentD2Ev(void *this_) {
+/*void C_ZN22QGenericReturnArgumentD2Ev(void *this_)*/ {
   delete (QGenericReturnArgument*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qgenericreturnargument
 //  main block end
 
 //  use block begin

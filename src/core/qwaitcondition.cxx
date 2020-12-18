@@ -9,7 +9,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QWaitCondition is pure virtual: false
+// QWaitCondition is pure virtual: false false
 // QWaitCondition has virtual projected: false
 //  header block end
 
@@ -52,94 +52,40 @@ public:
 MyQWaitCondition() : QWaitCondition() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qwaitcondition.h:59
-// [-2] void QWaitCondition()
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWaitConditionC2Ev() {
-  return  new QWaitCondition();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwaitcondition(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qwaitcondition.h:70
+// [-2] void notify_one() 
+// (11)qm901202472 (33)_ZN14QWaitCondition10notify_oneEv
+//static
+/*void qm901202472()*/ {
+  ;
+  (void) ((QWaitCondition*)this_)->notify_one();
+   auto xptr = (void (QWaitCondition::*)() ) &QWaitCondition::notify_one;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qwaitcondition.h:60
-// [-2] void ~QWaitCondition()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWaitConditionD2Ev(void *this_) {
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qwaitcondition.h:71
+// [-2] void notify_all() 
+// (11)qm794758989 (33)_ZN14QWaitCondition10notify_allEv
+//static
+/*void qm794758989()*/ {
+  ;
+  (void) ((QWaitCondition*)this_)->notify_all();
+   auto xptr = (void (QWaitCondition::*)() ) &QWaitCondition::notify_all;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN14QWaitConditionD2Ev(void *this_)*/ {
   delete (QWaitCondition*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qwaitcondition.h:63
-// [1] bool wait(QMutex *, unsigned long)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QWaitCondition4waitEP6QMutexm(void *this_, QMutex * lockedMutex, unsigned long time) {
-  return (bool)((QWaitCondition*)this_)->wait(lockedMutex, time);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qwaitcondition.h:64
-// [1] bool wait(QMutex *, QDeadlineTimer)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QWaitCondition4waitEP6QMutex14QDeadlineTimer(void *this_, QMutex * lockedMutex, QDeadlineTimer* deadline) {
-  return (bool)((QWaitCondition*)this_)->wait(lockedMutex, *deadline);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtCore/qwaitcondition.h:65
-// [1] bool wait(QReadWriteLock *, unsigned long)
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QWaitCondition4waitEP14QReadWriteLockm(void *this_, QReadWriteLock * lockedReadWriteLock, unsigned long time) {
-  return (bool)((QWaitCondition*)this_)->wait(lockedReadWriteLock, time);
-}
-#endif // QT_VERSION >= 0x040400
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qwaitcondition.h:66
-// [1] bool wait(QReadWriteLock *, QDeadlineTimer)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QWaitCondition4waitEP14QReadWriteLock14QDeadlineTimer(void *this_, QReadWriteLock * lockedReadWriteLock, QDeadlineTimer* deadline) {
-  return (bool)((QWaitCondition*)this_)->wait(lockedReadWriteLock, *deadline);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qwaitcondition.h:68
-// [-2] void wakeOne()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWaitCondition7wakeOneEv(void *this_) {
-  ((QWaitCondition*)this_)->wakeOne();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qwaitcondition.h:69
-// [-2] void wakeAll()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWaitCondition7wakeAllEv(void *this_) {
-  ((QWaitCondition*)this_)->wakeAll();
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.8
-// /usr/include/qt/QtCore/qwaitcondition.h:71
-// [-2] void notify_one()
-#if QT_VERSION >= 0x050800
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWaitCondition10notify_oneEv(void *this_) {
-  ((QWaitCondition*)this_)->notify_one();
-}
-#endif // QT_VERSION >= 0x050800
-
-// Public inline Visibility=Default Availability=Available
-// since 5.8
-// /usr/include/qt/QtCore/qwaitcondition.h:72
-// [-2] void notify_all()
-#if QT_VERSION >= 0x050800
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWaitCondition10notify_allEv(void *this_) {
-  ((QWaitCondition*)this_)->notify_all();
-}
-#endif // QT_VERSION >= 0x050800
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwaitcondition
 //  main block end
 
 //  use block begin

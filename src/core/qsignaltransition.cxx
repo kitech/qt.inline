@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtCore/qglobal.h>
 #if QT_CONFIG(statemachine)
-// since 0x040600
 // /usr/include/qt/QtCore/qsignaltransition.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtCore>
 #include "callback_inherit.h"
 
-// QSignalTransition is pure virtual: false
+// QSignalTransition is pure virtual: false false
 // QSignalTransition has virtual projected: true
 //  header block end
 
@@ -101,7 +100,7 @@ public:
 MyQSignalTransition(QState * sourceState) : QSignalTransition(sourceState) {}
 // void QSignalTransition(const QObject *, const char *, QState *)
 MyQSignalTransition(const QObject * sender, const char * signal, QState * sourceState) : QSignalTransition(sender, signal, sourceState) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool eventTest(QEvent *)
   virtual bool eventTest(QEvent * event)  override {
     int handled = 0;
@@ -114,7 +113,7 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void onTransition(QEvent *)
   virtual void onTransition(QEvent * event)  override {
     int handled = 0;
@@ -126,7 +125,7 @@ MyQSignalTransition(const QObject * sender, const char * signal, QState * source
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * e)  override {
     int handled = 0;
@@ -153,146 +152,28 @@ void* C_QSignalTransition_init_staticMetaObject(void* this_, void* strdat, void*
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:83
-// [1] bool eventTest(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN17QSignalTransition9eventTestEP6QEvent(void *this_, QEvent * event) {
-  return (bool)((QSignalTransition*)this_)->QSignalTransition::eventTest(event);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsignaltransition(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:84
-// [-2] void onTransition(QEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSignalTransition12onTransitionEP6QEvent(void *this_, QEvent * event) {
-  ((QSignalTransition*)this_)->QSignalTransition::onTransition(event);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:86
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN17QSignalTransition5eventEP6QEvent(void *this_, QEvent * e) {
-  return (bool)((QSignalTransition*)this_)->QSignalTransition::event(e);
-}
-
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsignaltransition.h:53
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QSignalTransition10metaObjectEv(void *this_) {
-  return (void*)((QSignalTransition*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3674583933 (33)_ZN17QSignalTransition2trEPKcS1_i
+//static
+/*void qm3674583933(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QSignalTransition::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QSignalTransition::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:53
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QSignalTransition11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QSignalTransition*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:53
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN17QSignalTransition11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QSignalTransition*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:53
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QSignalTransition2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QSignalTransition::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:53
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QSignalTransition6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QSignalTransition::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:58
-// [-2] void QSignalTransition(QState *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QSignalTransitionC2EP6QState(QState * sourceState) {
-  auto _nilp = (MyQSignalTransition*)(0);
-  return  new MyQSignalTransition(sourceState);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:59
-// [-2] void QSignalTransition(const QObject *, const char *, QState *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QSignalTransitionC2EPK7QObjectPKcP6QState(const QObject * sender, const char * signal, QState * sourceState) {
-  auto _nilp = (MyQSignalTransition*)(0);
-  return  new MyQSignalTransition(sender, signal, sourceState);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:74
-// [-2] void ~QSignalTransition()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSignalTransitionD2Ev(void *this_) {
+/*void C_ZN17QSignalTransitionD2Ev(void *this_)*/ {
   delete (QSignalTransition*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:76
-// [8] QObject * senderObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QSignalTransition12senderObjectEv(void *this_) {
-  return (void*)((QSignalTransition*)this_)->senderObject();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:77
-// [-2] void setSenderObject(const QObject *)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSignalTransition15setSenderObjectEPK7QObject(void *this_, const QObject * sender) {
-  ((QSignalTransition*)this_)->setSenderObject(sender);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:79
-// [8] QByteArray signal()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QSignalTransition6signalEv(void *this_) {
-  auto rv = ((QSignalTransition*)this_)->signal();
-return new QByteArray(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:80
-// [-2] void setSignal(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSignalTransition9setSignalERK10QByteArray(void *this_, QByteArray* signal) {
-  ((QSignalTransition*)this_)->setSignal(*signal);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:89
-// [-2] void senderObjectChanged(QSignalTransition::QPrivateSignal)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSignalTransition19senderObjectChangedENS_14QPrivateSignalE(void *this_, QSignalTransition::QPrivateSignal* arg0) {
-  ((QSignalTransition*)this_)->senderObjectChanged(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qsignaltransition.h:90
-// [-2] void signalChanged(QSignalTransition::QPrivateSignal)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSignalTransition13signalChangedENS_14QPrivateSignalE(void *this_, QSignalTransition::QPrivateSignal* arg0) {
-  ((QSignalTransition*)this_)->signalChanged(*arg0);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsignaltransition
 //  main block end
 
 //  use block begin
