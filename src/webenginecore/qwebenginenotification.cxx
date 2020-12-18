@@ -1,38 +1,38 @@
 //  header block begin
 
-// /usr/include/qt/QtWebEngine/qquickwebenginescript.h
+// /usr/include/qt/QtWebEngineCore/qwebenginenotification.h
 #ifndef protected
 #define protected public
 #define private public
 #endif
-#include <qquickwebenginescript.h>
-#include <QtWebEngine>
+#include <qwebenginenotification.h>
+#include <QtWebEngineCore>
 #include "callback_inherit.h"
 
-// QQuickWebEngineScript is pure virtual: false false
-// QQuickWebEngineScript has virtual projected: true
+// QWebEngineNotification is pure virtual: false false
+// QWebEngineNotification has virtual projected: false
 //  header block end
 
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQQuickWebEngineScript_t {
+struct qt_meta_stringdata_MyQWebEngineNotification_t {
   QByteArrayData data[1];
-  char stringdata0[24];
+  char stringdata0[25];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
   Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQQuickWebEngineScript_t, stringdata0) + ofs \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQWebEngineNotification_t, stringdata0) + ofs \
   - idx * sizeof(QByteArrayData)) \
   )
-static const qt_meta_stringdata_MyQQuickWebEngineScript_t qt_meta_stringdata_MyQQuickWebEngineScript = {
+static const qt_meta_stringdata_MyQWebEngineNotification_t qt_meta_stringdata_MyQWebEngineNotification = {
    {
-  QT_MOC_LITERAL(0, 0, 23), // "MyQQuickWebEngineScript"
+  QT_MOC_LITERAL(0, 0, 24), // "MyQWebEngineNotification"
   },
-  "MyQQuickWebEngineScript"
+  "MyQWebEngineNotification"
 };
 #undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQQuickWebEngineScript[] = {
+static const uint qt_meta_data_MyQWebEngineNotification[] = {
   // content:
   7,       // revision
   0,       // classname
@@ -45,11 +45,11 @@ static const uint qt_meta_data_MyQQuickWebEngineScript[] = {
   0,       // signalCount
   0        // eod
 };
-class Q_DECL_EXPORT MyQQuickWebEngineScript : public QQuickWebEngineScript {
+class Q_DECL_EXPORT MyQWebEngineNotification : public QWebEngineNotification {
 public: // Q_OBJECT
-/*static*/ QMetaObject staticMetaObject = {{&QQuickWebEngineScript::staticMetaObject,
-  qt_meta_stringdata_MyQQuickWebEngineScript.data,
-  qt_meta_data_MyQQuickWebEngineScript,
+/*static*/ QMetaObject staticMetaObject = {{&QWebEngineNotification::staticMetaObject,
+  qt_meta_stringdata_MyQWebEngineNotification.data,
+  qt_meta_data_MyQWebEngineNotification,
   qt_static_metacall, nullptr, nullptr
 }};
 virtual const QMetaObject *metaObject() const override {
@@ -63,12 +63,12 @@ virtual void *qt_metacast(const char *_clname) override {
   auto irv = callbackAllInherits_fnptr((void*)this, (char*)"qt_metacast", &handled, 1, (uint64_t)_clname, 0, 0, 0, 0, 0, 0, 0, 0, 0);
    if (handled) { return (void*)irv; }
   if (!_clname) return nullptr;
-  if (!strcmp(_clname, qt_meta_stringdata_MyQQuickWebEngineScript.stringdata0))
+  if (!strcmp(_clname, qt_meta_stringdata_MyQWebEngineNotification.stringdata0))
       return static_cast<void*>(this);
-  return QQuickWebEngineScript::qt_metacast(_clname);
+  return QWebEngineNotification::qt_metacast(_clname);
 }
 virtual int qt_metacall(QMetaObject::Call _c, int _id, void **_a) override {
-   _id = QQuickWebEngineScript::qt_metacall(_c, _id, _a);
+   _id = QWebEngineNotification::qt_metacall(_c, _id, _a);
    if (_id < 0 ) return _id;
    if (qt_metacall_fnptr != 0) {
       return qt_metacall_fnptr(this, _c, _id, _a);
@@ -92,26 +92,12 @@ public:
   void* (*qt_metacast_fnptr)(void*, char*) = nullptr;
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
-  virtual ~MyQQuickWebEngineScript() {}
-// void QQuickWebEngineScript(QObject *)
-MyQQuickWebEngineScript(QObject * parent) : QQuickWebEngineScript(parent) {}
-// Protected virtual Ignore Visibility=Default Availability=Available
-// [-2] void timerEvent(QTimerEvent *)
-  virtual void timerEvent(QTimerEvent * e)  override {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"timerEvent", &handled, 1, (uint64_t)e, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    QQuickWebEngineScript::timerEvent(e);
-  }
-  }
-
+  virtual ~MyQWebEngineNotification() {}
 };
 
 extern "C" Q_DECL_EXPORT
-void* C_QQuickWebEngineScript_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
-  MyQQuickWebEngineScript* qo = (MyQQuickWebEngineScript*)(this_);
+void* C_QWebEngineNotification_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+  MyQWebEngineNotification* qo = (MyQWebEngineNotification*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
   qmo->d.data = decltype(qmo->d.data)(dat);
@@ -122,27 +108,27 @@ void* C_QQuickWebEngineScript_init_staticMetaObject(void* this_, void* strdat, v
 }
 
 extern "C" // Q_DECL_EXPORT
-uint64_t ensure_inline_symbol_qquickwebenginescript(void* this_) {
+uint64_t ensure_inline_symbol_qwebenginenotification(void* this_) {
   uint64_t fnptrsumval = 0;
 
 // Public static inline Indirect Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngine/qquickwebenginescript.h:53
+// /usr/include/qt/QtWebEngineCore/qwebenginenotification.h:59
 // [8] QString tr(const char *, const char *, int) 
-// (11)qm340190380 (37)_ZN21QQuickWebEngineScript2trEPKcS1_i
+// (12)qm3984063206 (38)_ZN22QWebEngineNotification2trEPKcS1_i
 //static
-/*void qm340190380(const char * s, const char * c, int n)*/ {
+/*void qm3984063206(const char * s, const char * c, int n)*/ {
   const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
-  (void) QQuickWebEngineScript::tr(s, c, n);
-   auto xptr = (QString (*)(char const*, char const*, int) ) &QQuickWebEngineScript::tr;
+  (void) QWebEngineNotification::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QWebEngineNotification::tr;
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-/*void C_ZN21QQuickWebEngineScriptD2Ev(void *this_)*/ {
-  delete (QQuickWebEngineScript*)(this_);
+/*void C_ZN22QWebEngineNotificationD2Ev(void *this_)*/ {
+  delete (QWebEngineNotification*)(this_);
 }
   return fnptrsumval;
-} // end ensure_inline_symbol_qquickwebenginescript
+} // end ensure_inline_symbol_qwebenginenotification
 //  main block end
 
 //  use block begin

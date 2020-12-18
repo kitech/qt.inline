@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050600
 // /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtWebEngineCore>
 #include "callback_inherit.h"
 
-// QWebEngineUrlRequestJob is pure virtual: false
+// QWebEngineUrlRequestJob is pure virtual: false false
 // QWebEngineUrlRequestJob has virtual projected: false
 //  header block end
 
@@ -108,109 +107,28 @@ void* C_QWebEngineUrlRequestJob_init_staticMetaObject(void* this_, void* strdat,
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwebengineurlrequestjob(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:59
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK23QWebEngineUrlRequestJob10metaObjectEv(void *this_) {
-  return (void*)((QWebEngineUrlRequestJob*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm2921924596 (39)_ZN23QWebEngineUrlRequestJob2trEPKcS1_i
+//static
+/*void qm2921924596(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QWebEngineUrlRequestJob::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QWebEngineUrlRequestJob::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:59
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QWebEngineUrlRequestJob11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QWebEngineUrlRequestJob*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:59
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN23QWebEngineUrlRequestJob11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QWebEngineUrlRequestJob*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:59
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QWebEngineUrlRequestJob2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QWebEngineUrlRequestJob::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:59
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QWebEngineUrlRequestJob6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QWebEngineUrlRequestJob::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:61
-// [-2] void ~QWebEngineUrlRequestJob()
-extern "C" Q_DECL_EXPORT
-void C_ZN23QWebEngineUrlRequestJobD2Ev(void *this_) {
+/*void C_ZN23QWebEngineUrlRequestJobD2Ev(void *this_)*/ {
   delete (QWebEngineUrlRequestJob*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:73
-// [8] QUrl requestUrl()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK23QWebEngineUrlRequestJob10requestUrlEv(void *this_) {
-  auto rv = ((QWebEngineUrlRequestJob*)this_)->requestUrl();
-return new QUrl(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:74
-// [8] QByteArray requestMethod()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK23QWebEngineUrlRequestJob13requestMethodEv(void *this_) {
-  auto rv = ((QWebEngineUrlRequestJob*)this_)->requestMethod();
-return new QByteArray(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.11
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:75
-// [8] QUrl initiator()
-#if QT_VERSION >= 0x050b00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK23QWebEngineUrlRequestJob9initiatorEv(void *this_) {
-  auto rv = ((QWebEngineUrlRequestJob*)this_)->initiator();
-return new QUrl(rv);
-}
-#endif // QT_VERSION >= 0x050b00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:77
-// [-2] void reply(const QByteArray &, QIODevice *)
-extern "C" Q_DECL_EXPORT
-void C_ZN23QWebEngineUrlRequestJob5replyERK10QByteArrayP9QIODevice(void *this_, QByteArray* contentType, QIODevice * device) {
-  ((QWebEngineUrlRequestJob*)this_)->reply(*contentType, device);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:78
-// [-2] void fail(QWebEngineUrlRequestJob::Error)
-extern "C" Q_DECL_EXPORT
-void C_ZN23QWebEngineUrlRequestJob4failENS_5ErrorE(void *this_, QWebEngineUrlRequestJob::Error error) {
-  ((QWebEngineUrlRequestJob*)this_)->fail(error);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestjob.h:79
-// [-2] void redirect(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN23QWebEngineUrlRequestJob8redirectERK4QUrl(void *this_, QUrl* url) {
-  ((QWebEngineUrlRequestJob*)this_)->redirect(*url);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwebengineurlrequestjob
 //  main block end
 
 //  use block begin

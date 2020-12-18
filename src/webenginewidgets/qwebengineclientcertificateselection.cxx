@@ -9,7 +9,7 @@
 #include <QtWebEngineWidgets>
 #include "callback_inherit.h"
 
-// QWebEngineClientCertificateSelection is pure virtual: false
+// QWebEngineClientCertificateSelection is pure virtual: false false
 // QWebEngineClientCertificateSelection has virtual projected: false
 //  header block end
 
@@ -52,64 +52,16 @@ public:
 MyQWebEngineClientCertificateSelection(const QWebEngineClientCertificateSelection & arg0) : QWebEngineClientCertificateSelection(arg0) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h:57
-// [-2] void QWebEngineClientCertificateSelection(const QWebEngineClientCertificateSelection &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN36QWebEngineClientCertificateSelectionC2ERKS_(QWebEngineClientCertificateSelection* arg0) {
-  return  new QWebEngineClientCertificateSelection(*arg0);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwebengineclientcertificateselection(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h:58
-// [-2] void ~QWebEngineClientCertificateSelection()
-extern "C" Q_DECL_EXPORT
-void C_ZN36QWebEngineClientCertificateSelectionD2Ev(void *this_) {
+
+/*void C_ZN36QWebEngineClientCertificateSelectionD2Ev(void *this_)*/ {
   delete (QWebEngineClientCertificateSelection*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h:60
-// [16] QWebEngineClientCertificateSelection & operator=(const QWebEngineClientCertificateSelection &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN36QWebEngineClientCertificateSelectionaSERKS_(void *this_, QWebEngineClientCertificateSelection* arg0) {
-  auto& rv = ((QWebEngineClientCertificateSelection*)this_)->operator=(*arg0);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h:62
-// [8] QUrl host()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK36QWebEngineClientCertificateSelection4hostEv(void *this_) {
-  auto rv = ((QWebEngineClientCertificateSelection*)this_)->host();
-return new QUrl(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h:64
-// [-2] void select(const QSslCertificate &)
-extern "C" Q_DECL_EXPORT
-void C_ZN36QWebEngineClientCertificateSelection6selectERK15QSslCertificate(void *this_, QSslCertificate* certificate) {
-  ((QWebEngineClientCertificateSelection*)this_)->select(*certificate);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h:65
-// [-2] void selectNone()
-extern "C" Q_DECL_EXPORT
-void C_ZN36QWebEngineClientCertificateSelection10selectNoneEv(void *this_) {
-  ((QWebEngineClientCertificateSelection*)this_)->selectNone();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h:66
-// [-2] QVector<QSslCertificate> certificates()
-extern "C" Q_DECL_EXPORT
-void C_ZNK36QWebEngineClientCertificateSelection12certificatesEv(void *this_) {
-  auto rv = ((QWebEngineClientCertificateSelection*)this_)->certificates();
-/*return rv;*/
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwebengineclientcertificateselection
 //  main block end
 
 //  use block begin

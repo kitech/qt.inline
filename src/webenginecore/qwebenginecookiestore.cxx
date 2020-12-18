@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050600
 // /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtWebEngineCore>
 #include "callback_inherit.h"
 
-// QWebEngineCookieStore is pure virtual: false
+// QWebEngineCookieStore is pure virtual: false false
 // QWebEngineCookieStore has virtual projected: false
 //  header block end
 
@@ -108,133 +107,28 @@ void* C_QWebEngineCookieStore_init_staticMetaObject(void* this_, void* strdat, v
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:61
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK21QWebEngineCookieStore10metaObjectEv(void *this_) {
-  return (void*)((QWebEngineCookieStore*)this_)->metaObject();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwebenginecookiestore(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:63
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm2244981872 (37)_ZN21QWebEngineCookieStore2trEPKcS1_i
+//static
+/*void qm2244981872(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QWebEngineCookieStore::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QWebEngineCookieStore::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:61
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QWebEngineCookieStore11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QWebEngineCookieStore*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:61
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN21QWebEngineCookieStore11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QWebEngineCookieStore*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:61
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QWebEngineCookieStore2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QWebEngineCookieStore::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:61
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QWebEngineCookieStore6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QWebEngineCookieStore::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:71
-// [-2] void ~QWebEngineCookieStore()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStoreD2Ev(void *this_) {
+/*void C_ZN21QWebEngineCookieStoreD2Ev(void *this_)*/ {
   delete (QWebEngineCookieStore*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// since 5.11
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:73
-// [-2] void setCookieFilter(const std::function<bool (const FilterRequest &)> &)
-#if QT_VERSION >= 0x050b00
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStore15setCookieFilterERKSt8functionIFbRKNS_13FilterRequestEEE(void *this_, const std::function<bool (const QWebEngineCookieStore::FilterRequest &)> & filterCallback) {
-  ((QWebEngineCookieStore*)this_)->setCookieFilter(filterCallback);
-}
-#endif // QT_VERSION >= 0x050b00
-
-// Public Visibility=Default Availability=Available
-// since 5.11
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:74
-// [-2] void setCookieFilter(std::function<bool (const FilterRequest &)> &&)
-#if QT_VERSION >= 0x050b00
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStore15setCookieFilterEOSt8functionIFbRKNS_13FilterRequestEEE(void *this_, std::function<bool (const QWebEngineCookieStore::FilterRequest &)> && filterCallback) {
-  ((QWebEngineCookieStore*)this_)->setCookieFilter(filterCallback);
-}
-#endif // QT_VERSION >= 0x050b00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:75
-// [-2] void setCookie(const QNetworkCookie &, const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStore9setCookieERK14QNetworkCookieRK4QUrl(void *this_, QNetworkCookie* cookie, QUrl* origin) {
-  ((QWebEngineCookieStore*)this_)->setCookie(*cookie, *origin);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:76
-// [-2] void deleteCookie(const QNetworkCookie &, const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStore12deleteCookieERK14QNetworkCookieRK4QUrl(void *this_, QNetworkCookie* cookie, QUrl* origin) {
-  ((QWebEngineCookieStore*)this_)->deleteCookie(*cookie, *origin);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:77
-// [-2] void deleteSessionCookies()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStore20deleteSessionCookiesEv(void *this_) {
-  ((QWebEngineCookieStore*)this_)->deleteSessionCookies();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:78
-// [-2] void deleteAllCookies()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStore16deleteAllCookiesEv(void *this_) {
-  ((QWebEngineCookieStore*)this_)->deleteAllCookies();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:79
-// [-2] void loadAllCookies()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStore14loadAllCookiesEv(void *this_) {
-  ((QWebEngineCookieStore*)this_)->loadAllCookies();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:82
-// [-2] void cookieAdded(const QNetworkCookie &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStore11cookieAddedERK14QNetworkCookie(void *this_, QNetworkCookie* cookie) {
-  ((QWebEngineCookieStore*)this_)->cookieAdded(*cookie);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginecookiestore.h:83
-// [-2] void cookieRemoved(const QNetworkCookie &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QWebEngineCookieStore13cookieRemovedERK14QNetworkCookie(void *this_, QNetworkCookie* cookie) {
-  ((QWebEngineCookieStore*)this_)->cookieRemoved(*cookie);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwebenginecookiestore
 //  main block end
 
 //  use block begin

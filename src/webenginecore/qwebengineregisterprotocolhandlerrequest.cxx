@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050b00
 // /usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtWebEngineCore>
 #include "callback_inherit.h"
 
-// QWebEngineRegisterProtocolHandlerRequest is pure virtual: false
+// QWebEngineRegisterProtocolHandlerRequest is pure virtual: false false
 // QWebEngineRegisterProtocolHandlerRequest has virtual projected: false
 //  header block end
 
@@ -53,69 +52,49 @@ public:
 MyQWebEngineRegisterProtocolHandlerRequest() : QWebEngineRegisterProtocolHandlerRequest() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwebengineregisterprotocolhandlerrequest(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h:59
-// [-2] void QWebEngineRegisterProtocolHandlerRequest()
-extern "C" Q_DECL_EXPORT
-void* C_ZN40QWebEngineRegisterProtocolHandlerRequestC2Ev() {
-  return  new QWebEngineRegisterProtocolHandlerRequest();
+// [-2] void QWebEngineRegisterProtocolHandlerRequest() 
+// (12)qm3563761021 (49)_ZN40QWebEngineRegisterProtocolHandlerRequestC2Ev
+/*void* qm3563761021()*/{
+  ;
+  this_ =  new QWebEngineRegisterProtocolHandlerRequest();
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h:60
-// [-2] void accept()
-extern "C" Q_DECL_EXPORT
-void C_ZN40QWebEngineRegisterProtocolHandlerRequest6acceptEv(void *this_) {
-  ((QWebEngineRegisterProtocolHandlerRequest*)this_)->accept();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h:61
-// [-2] void reject()
-extern "C" Q_DECL_EXPORT
-void C_ZN40QWebEngineRegisterProtocolHandlerRequest6rejectEv(void *this_) {
-  ((QWebEngineRegisterProtocolHandlerRequest*)this_)->reject();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h:62
-// [8] QUrl origin()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK40QWebEngineRegisterProtocolHandlerRequest6originEv(void *this_) {
-  auto rv = ((QWebEngineRegisterProtocolHandlerRequest*)this_)->origin();
-return new QUrl(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h:63
-// [8] QString scheme()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK40QWebEngineRegisterProtocolHandlerRequest6schemeEv(void *this_) {
-  auto rv = ((QWebEngineRegisterProtocolHandlerRequest*)this_)->scheme();
-return new QString(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h:64
-// [1] bool operator==(const QWebEngineRegisterProtocolHandlerRequest &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK40QWebEngineRegisterProtocolHandlerRequesteqERKS_(void *this_, QWebEngineRegisterProtocolHandlerRequest* that) {
-  return (bool)((QWebEngineRegisterProtocolHandlerRequest*)this_)->operator==(*that);
+// [1] bool operator==(const QWebEngineRegisterProtocolHandlerRequest &) const
+// (12)qm3034987383 (53)_ZNK40QWebEngineRegisterProtocolHandlerRequesteqERKS_
+//static
+/*void qm3034987383(const QWebEngineRegisterProtocolHandlerRequest & that)*/ {
+  const QWebEngineRegisterProtocolHandlerRequest & that = *(const QWebEngineRegisterProtocolHandlerRequest *)this_;
+  (void) ((QWebEngineRegisterProtocolHandlerRequest*)this_)->operator==(that);
+  // auto xptr = (bool (QWebEngineRegisterProtocolHandlerRequest::*)(QWebEngineRegisterProtocolHandlerRequest const&) const ) &QWebEngineRegisterProtocolHandlerRequest::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebengineregisterprotocolhandlerrequest.h:65
-// [1] bool operator!=(const QWebEngineRegisterProtocolHandlerRequest &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK40QWebEngineRegisterProtocolHandlerRequestneERKS_(void *this_, QWebEngineRegisterProtocolHandlerRequest* that) {
-  return (bool)((QWebEngineRegisterProtocolHandlerRequest*)this_)->operator!=(*that);
+// [1] bool operator!=(const QWebEngineRegisterProtocolHandlerRequest &) const
+// (11)qm782642944 (53)_ZNK40QWebEngineRegisterProtocolHandlerRequestneERKS_
+//static
+/*void qm782642944(const QWebEngineRegisterProtocolHandlerRequest & that)*/ {
+  const QWebEngineRegisterProtocolHandlerRequest & that = *(const QWebEngineRegisterProtocolHandlerRequest *)this_;
+  (void) ((QWebEngineRegisterProtocolHandlerRequest*)this_)->operator!=(that);
+  // auto xptr = (bool (QWebEngineRegisterProtocolHandlerRequest::*)(QWebEngineRegisterProtocolHandlerRequest const&) const ) &QWebEngineRegisterProtocolHandlerRequest::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN40QWebEngineRegisterProtocolHandlerRequestD2Ev(void *this_) {
+/*void C_ZN40QWebEngineRegisterProtocolHandlerRequestD2Ev(void *this_)*/ {
   delete (QWebEngineRegisterProtocolHandlerRequest*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwebengineregisterprotocolhandlerrequest
 //  main block end
 
 //  use block begin

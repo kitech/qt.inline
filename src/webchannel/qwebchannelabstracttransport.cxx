@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050400
 // /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtWebChannel>
 #include "callback_inherit.h"
 
-// QWebChannelAbstractTransport is pure virtual: true
+// QWebChannelAbstractTransport is pure virtual: true true
 // QWebChannelAbstractTransport has virtual projected: false
 //  header block end
 
@@ -94,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQWebChannelAbstractTransport() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void sendMessage(const QJsonObject &)
   virtual void sendMessage(const QJsonObject & message)  override {
     int handled = 0;
@@ -122,82 +121,28 @@ void* C_QWebChannelAbstractTransport_init_staticMetaObject(void* this_, void* st
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:57
-// [-2] void sendMessage(const QJsonObject &)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwebchannelabstracttransport(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:51
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK28QWebChannelAbstractTransport10metaObjectEv(void *this_) {
-  return (void*)((QWebChannelAbstractTransport*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3377211050 (44)_ZN28QWebChannelAbstractTransport2trEPKcS1_i
+//static
+/*void qm3377211050(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QWebChannelAbstractTransport::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QWebChannelAbstractTransport::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:51
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QWebChannelAbstractTransport11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QWebChannelAbstractTransport*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:51
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN28QWebChannelAbstractTransport11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QWebChannelAbstractTransport*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:51
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QWebChannelAbstractTransport2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QWebChannelAbstractTransport::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:51
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QWebChannelAbstractTransport6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QWebChannelAbstractTransport::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:53
-// [-2] void QWebChannelAbstractTransport(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QWebChannelAbstractTransportC2EP7QObject(QObject * parent) {
-  return  new MyQWebChannelAbstractTransport(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:54
-// [-2] void ~QWebChannelAbstractTransport()
-extern "C" Q_DECL_EXPORT
-void C_ZN28QWebChannelAbstractTransportD2Ev(void *this_) {
+/*void C_ZN28QWebChannelAbstractTransportD2Ev(void *this_)*/ {
   delete (QWebChannelAbstractTransport*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:57
-// [-2] void sendMessage(const QJsonObject &)
-extern "C" Q_DECL_EXPORT
-void C_ZN28QWebChannelAbstractTransport11sendMessageERK11QJsonObject(void *this_, QJsonObject* message) {
-  ((QWebChannelAbstractTransport*)this_)->sendMessage(*message);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebChannel/qwebchannelabstracttransport.h:60
-// [-2] void messageReceived(const QJsonObject &, QWebChannelAbstractTransport *)
-extern "C" Q_DECL_EXPORT
-void C_ZN28QWebChannelAbstractTransport15messageReceivedERK11QJsonObjectPS_(void *this_, QJsonObject* message, QWebChannelAbstractTransport * transport) {
-  ((QWebChannelAbstractTransport*)this_)->messageReceived(*message, transport);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwebchannelabstracttransport
 //  main block end
 
 //  use block begin

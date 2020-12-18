@@ -12,12 +12,11 @@
 //  header block end
 
 //  main block begin
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngine/qtwebengineglobal.h:59
-// [-2] void initialize()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QtWebEngine10initializeEv() {
-  QtWebEngine::initialize();
-}
+extern "C"
+uint64_t ensure_inline_symbol_webengine(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+  return fnptrsumval;
+} // void ensure_inline_symbol_webengine
 
 //  main block end

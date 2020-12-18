@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050b00
 // /usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtWebEngineCore>
 #include "callback_inherit.h"
 
-// QWebEngineQuotaRequest is pure virtual: false
+// QWebEngineQuotaRequest is pure virtual: false false
 // QWebEngineQuotaRequest has virtual projected: false
 //  header block end
 
@@ -53,68 +52,49 @@ public:
 MyQWebEngineQuotaRequest() : QWebEngineQuotaRequest() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwebenginequotarequest(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h:59
-// [-2] void QWebEngineQuotaRequest()
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QWebEngineQuotaRequestC2Ev() {
-  return  new QWebEngineQuotaRequest();
+// [-2] void QWebEngineQuotaRequest() 
+// (12)qm2083716222 (31)_ZN22QWebEngineQuotaRequestC2Ev
+/*void* qm2083716222()*/{
+  ;
+  this_ =  new QWebEngineQuotaRequest();
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h:60
-// [-2] void accept()
-extern "C" Q_DECL_EXPORT
-void C_ZN22QWebEngineQuotaRequest6acceptEv(void *this_) {
-  ((QWebEngineQuotaRequest*)this_)->accept();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h:61
-// [-2] void reject()
-extern "C" Q_DECL_EXPORT
-void C_ZN22QWebEngineQuotaRequest6rejectEv(void *this_) {
-  ((QWebEngineQuotaRequest*)this_)->reject();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h:62
-// [8] QUrl origin()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QWebEngineQuotaRequest6originEv(void *this_) {
-  auto rv = ((QWebEngineQuotaRequest*)this_)->origin();
-return new QUrl(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h:63
-// [8] qint64 requestedSize()
-extern "C" Q_DECL_EXPORT
-qint64 C_ZNK22QWebEngineQuotaRequest13requestedSizeEv(void *this_) {
-  return (qint64)((QWebEngineQuotaRequest*)this_)->requestedSize();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h:64
-// [1] bool operator==(const QWebEngineQuotaRequest &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK22QWebEngineQuotaRequesteqERKS_(void *this_, QWebEngineQuotaRequest* that) {
-  return (bool)((QWebEngineQuotaRequest*)this_)->operator==(*that);
+// [1] bool operator==(const QWebEngineQuotaRequest &) const
+// (12)qm3551650126 (35)_ZNK22QWebEngineQuotaRequesteqERKS_
+//static
+/*void qm3551650126(const QWebEngineQuotaRequest & that)*/ {
+  const QWebEngineQuotaRequest & that = *(const QWebEngineQuotaRequest *)this_;
+  (void) ((QWebEngineQuotaRequest*)this_)->operator==(that);
+  // auto xptr = (bool (QWebEngineQuotaRequest::*)(QWebEngineQuotaRequest const&) const ) &QWebEngineQuotaRequest::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebenginequotarequest.h:65
-// [1] bool operator!=(const QWebEngineQuotaRequest &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK22QWebEngineQuotaRequestneERKS_(void *this_, QWebEngineQuotaRequest* that) {
-  return (bool)((QWebEngineQuotaRequest*)this_)->operator!=(*that);
+// [1] bool operator!=(const QWebEngineQuotaRequest &) const
+// (12)qm1240593721 (35)_ZNK22QWebEngineQuotaRequestneERKS_
+//static
+/*void qm1240593721(const QWebEngineQuotaRequest & that)*/ {
+  const QWebEngineQuotaRequest & that = *(const QWebEngineQuotaRequest *)this_;
+  (void) ((QWebEngineQuotaRequest*)this_)->operator!=(that);
+  // auto xptr = (bool (QWebEngineQuotaRequest::*)(QWebEngineQuotaRequest const&) const ) &QWebEngineQuotaRequest::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN22QWebEngineQuotaRequestD2Ev(void *this_) {
+/*void C_ZN22QWebEngineQuotaRequestD2Ev(void *this_)*/ {
   delete (QWebEngineQuotaRequest*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwebenginequotarequest
 //  main block end
 
 //  use block begin

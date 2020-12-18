@@ -9,7 +9,7 @@
 #include <QtWebEngineWidgets>
 #include "callback_inherit.h"
 
-// QWebEngineFullScreenRequest is pure virtual: false
+// QWebEngineFullScreenRequest is pure virtual: false false
 // QWebEngineFullScreenRequest has virtual projected: false
 //  header block end
 
@@ -50,44 +50,40 @@ public:
   virtual ~MyQWebEngineFullScreenRequest() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h:55
-// [-2] void reject()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QWebEngineFullScreenRequest6rejectEv(void *this_) {
-  ((QWebEngineFullScreenRequest*)this_)->reject();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwebenginefullscreenrequest(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h:56
-// [-2] void accept()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QWebEngineFullScreenRequest6acceptEv(void *this_) {
-  ((QWebEngineFullScreenRequest*)this_)->accept();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h:57
-// [1] bool toggleOn()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK27QWebEngineFullScreenRequest8toggleOnEv(void *this_) {
-  return (bool)((QWebEngineFullScreenRequest*)this_)->toggleOn();
+// [1] bool toggleOn() const
+// (12)qm2475517459 (44)_ZNK27QWebEngineFullScreenRequest8toggleOnEv
+//static
+/*void qm2475517459()*/ {
+  ;
+  (void) ((QWebEngineFullScreenRequest*)this_)->toggleOn();
+   auto xptr = (bool (QWebEngineFullScreenRequest::*)() const ) &QWebEngineFullScreenRequest::toggleOn;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginefullscreenrequest.h:58
-// [8] const QUrl & origin()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QWebEngineFullScreenRequest6originEv(void *this_) {
-  auto& rv = ((QWebEngineFullScreenRequest*)this_)->origin();
-return new QUrl(rv);
+// [8] const QUrl & origin() const
+// (12)qm1161052839 (42)_ZNK27QWebEngineFullScreenRequest6originEv
+//static
+/*void qm1161052839()*/ {
+  ;
+  (void) ((QWebEngineFullScreenRequest*)this_)->origin();
+   auto xptr = (const QUrl & (QWebEngineFullScreenRequest::*)() const ) &QWebEngineFullScreenRequest::origin;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN27QWebEngineFullScreenRequestD2Ev(void *this_) {
+/*void C_ZN27QWebEngineFullScreenRequestD2Ev(void *this_)*/ {
   delete (QWebEngineFullScreenRequest*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwebenginefullscreenrequest
 //  main block end
 
 //  use block begin

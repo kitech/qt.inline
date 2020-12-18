@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050400
 // /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtWebEngineWidgets>
 #include "callback_inherit.h"
 
-// QWebEngineSettings is pure virtual: false
+// QWebEngineSettings is pure virtual: false false
 // QWebEngineSettings has virtual projected: false
 //  header block end
 
@@ -50,136 +49,12 @@ class Q_DECL_EXPORT MyQWebEngineSettings : public QWebEngineSettings {
 public:
 };
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:115
-// [8] QWebEngineSettings * globalSettings()
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QWebEngineSettings14globalSettingsEv() {
-  return (void*)QWebEngineSettings::globalSettings();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwebenginesettings(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:117
-// [8] QWebEngineSettings * defaultSettings()
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QWebEngineSettings15defaultSettingsEv() {
-  return (void*)QWebEngineSettings::defaultSettings();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:119
-// [-2] void setFontFamily(QWebEngineSettings::FontFamily, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QWebEngineSettings13setFontFamilyENS_10FontFamilyERK7QString(void *this_, QWebEngineSettings::FontFamily which, QString* family) {
-  ((QWebEngineSettings*)this_)->setFontFamily(which, *family);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:120
-// [8] QString fontFamily(QWebEngineSettings::FontFamily)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QWebEngineSettings10fontFamilyENS_10FontFamilyE(void *this_, QWebEngineSettings::FontFamily which) {
-  auto rv = ((QWebEngineSettings*)this_)->fontFamily(which);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:121
-// [-2] void resetFontFamily(QWebEngineSettings::FontFamily)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QWebEngineSettings15resetFontFamilyENS_10FontFamilyE(void *this_, QWebEngineSettings::FontFamily which) {
-  ((QWebEngineSettings*)this_)->resetFontFamily(which);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:123
-// [-2] void setFontSize(QWebEngineSettings::FontSize, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QWebEngineSettings11setFontSizeENS_8FontSizeEi(void *this_, QWebEngineSettings::FontSize type_, int size) {
-  ((QWebEngineSettings*)this_)->setFontSize(type_, size);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:124
-// [4] int fontSize(QWebEngineSettings::FontSize)
-extern "C" Q_DECL_EXPORT
-int C_ZNK18QWebEngineSettings8fontSizeENS_8FontSizeE(void *this_, QWebEngineSettings::FontSize type_) {
-  return (int)((QWebEngineSettings*)this_)->fontSize(type_);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:125
-// [-2] void resetFontSize(QWebEngineSettings::FontSize)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QWebEngineSettings13resetFontSizeENS_8FontSizeE(void *this_, QWebEngineSettings::FontSize type_) {
-  ((QWebEngineSettings*)this_)->resetFontSize(type_);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:127
-// [-2] void setAttribute(QWebEngineSettings::WebAttribute, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QWebEngineSettings12setAttributeENS_12WebAttributeEb(void *this_, QWebEngineSettings::WebAttribute attr, bool on) {
-  ((QWebEngineSettings*)this_)->setAttribute(attr, on);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:128
-// [1] bool testAttribute(QWebEngineSettings::WebAttribute)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK18QWebEngineSettings13testAttributeENS_12WebAttributeE(void *this_, QWebEngineSettings::WebAttribute attr) {
-  return (bool)((QWebEngineSettings*)this_)->testAttribute(attr);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:129
-// [-2] void resetAttribute(QWebEngineSettings::WebAttribute)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QWebEngineSettings14resetAttributeENS_12WebAttributeE(void *this_, QWebEngineSettings::WebAttribute attr) {
-  ((QWebEngineSettings*)this_)->resetAttribute(attr);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:131
-// [-2] void setDefaultTextEncoding(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QWebEngineSettings22setDefaultTextEncodingERK7QString(void *this_, QString* encoding) {
-  ((QWebEngineSettings*)this_)->setDefaultTextEncoding(*encoding);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:132
-// [8] QString defaultTextEncoding()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QWebEngineSettings19defaultTextEncodingEv(void *this_) {
-  auto rv = ((QWebEngineSettings*)this_)->defaultTextEncoding();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:134
-// [4] QWebEngineSettings::UnknownUrlSchemePolicy unknownUrlSchemePolicy()
-extern "C" Q_DECL_EXPORT
-QWebEngineSettings::UnknownUrlSchemePolicy C_ZNK18QWebEngineSettings22unknownUrlSchemePolicyEv(void *this_) {
-  return (QWebEngineSettings::UnknownUrlSchemePolicy)((QWebEngineSettings*)this_)->unknownUrlSchemePolicy();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:135
-// [-2] void setUnknownUrlSchemePolicy(QWebEngineSettings::UnknownUrlSchemePolicy)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QWebEngineSettings25setUnknownUrlSchemePolicyENS_22UnknownUrlSchemePolicyE(void *this_, QWebEngineSettings::UnknownUrlSchemePolicy policy) {
-  ((QWebEngineSettings*)this_)->setUnknownUrlSchemePolicy(policy);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginesettings.h:136
-// [-2] void resetUnknownUrlSchemePolicy()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QWebEngineSettings27resetUnknownUrlSchemePolicyEv(void *this_) {
-  ((QWebEngineSettings*)this_)->resetUnknownUrlSchemePolicy();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwebenginesettings
 //  main block end
 
 //  use block begin

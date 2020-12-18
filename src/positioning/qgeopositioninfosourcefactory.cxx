@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050200
 // /usr/include/qt/QtPositioning/qgeopositioninfosourcefactory.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtPositioning>
 #include "callback_inherit.h"
 
-// QGeoPositionInfoSourceFactory is pure virtual: true
+// QGeoPositionInfoSourceFactory is pure virtual: true true
 // QGeoPositionInfoSourceFactory has virtual projected: false
 //  header block end
 
@@ -49,7 +48,7 @@ static const uint qt_meta_data_MyQGeoPositionInfoSourceFactory[] = {
 class Q_DECL_EXPORT MyQGeoPositionInfoSourceFactory : public QGeoPositionInfoSourceFactory {
 public:
   virtual ~MyQGeoPositionInfoSourceFactory() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QGeoPositionInfoSource * positionInfoSource(QObject *)
   virtual QGeoPositionInfoSource * positionInfoSource(QObject * parent)  override {
     int handled = 0;
@@ -62,7 +61,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QGeoSatelliteInfoSource * satelliteInfoSource(QObject *)
   virtual QGeoSatelliteInfoSource * satelliteInfoSource(QObject * parent)  override {
     int handled = 0;
@@ -75,7 +74,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QGeoAreaMonitorSource * areaMonitor(QObject *)
   virtual QGeoAreaMonitorSource * areaMonitor(QObject * parent)  override {
     int handled = 0;
@@ -90,46 +89,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfosourcefactory.h:55
-// [8] QGeoPositionInfoSource * positionInfoSource(QObject *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfosourcefactory.h:56
-// [8] QGeoSatelliteInfoSource * satelliteInfoSource(QObject *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfosourcefactory.h:57
-// [8] QGeoAreaMonitorSource * areaMonitor(QObject *)
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfosourcefactory.h:53
-// [-2] void ~QGeoPositionInfoSourceFactory()
-extern "C" Q_DECL_EXPORT
-void C_ZN29QGeoPositionInfoSourceFactoryD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qgeopositioninfosourcefactory(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN29QGeoPositionInfoSourceFactoryD2Ev(void *this_)*/ {
   delete (QGeoPositionInfoSourceFactory*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfosourcefactory.h:55
-// [8] QGeoPositionInfoSource * positionInfoSource(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN29QGeoPositionInfoSourceFactory18positionInfoSourceEP7QObject(void *this_, QObject * parent) {
-  return (void*)((QGeoPositionInfoSourceFactory*)this_)->positionInfoSource(parent);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfosourcefactory.h:56
-// [8] QGeoSatelliteInfoSource * satelliteInfoSource(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN29QGeoPositionInfoSourceFactory19satelliteInfoSourceEP7QObject(void *this_, QObject * parent) {
-  return (void*)((QGeoPositionInfoSourceFactory*)this_)->satelliteInfoSource(parent);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtPositioning/qgeopositioninfosourcefactory.h:57
-// [8] QGeoAreaMonitorSource * areaMonitor(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN29QGeoPositionInfoSourceFactory11areaMonitorEP7QObject(void *this_, QObject * parent) {
-  return (void*)((QGeoPositionInfoSourceFactory*)this_)->areaMonitor(parent);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qgeopositioninfosourcefactory
 //  main block end
 
 //  use block begin

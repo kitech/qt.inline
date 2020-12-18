@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050400
 // /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtWebEngineWidgets>
 #include "callback_inherit.h"
 
-// QWebEnginePage is pure virtual: false
+// QWebEnginePage is pure virtual: false false
 // QWebEnginePage has virtual projected: true
 //  header block end
 
@@ -98,7 +97,7 @@ public:
 MyQWebEnginePage(QObject * parent) : QWebEnginePage(parent) {}
 // void QWebEnginePage(QWebEngineProfile *, QObject *)
 MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage(profile, parent) {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Direct Visibility=Default Availability=Available
 // [8] QWebEnginePage * createWindow(QWebEnginePage::WebWindowType)
   virtual QWebEnginePage * createWindow(QWebEnginePage::WebWindowType type_)  override {
     int handled = 0;
@@ -111,7 +110,7 @@ MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Indirect Visibility=Default Availability=Available
 // [8] QStringList chooseFiles(QWebEnginePage::FileSelectionMode, const QStringList &, const QStringList &)
   virtual QStringList chooseFiles(QWebEnginePage::FileSelectionMode mode, const QStringList & oldFiles, const QStringList & acceptedMimeTypes)  override {
     int handled = 0;
@@ -125,7 +124,7 @@ MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void javaScriptAlert(const QUrl &, const QString &)
   virtual void javaScriptAlert(const QUrl & securityOrigin, const QString & msg)  override {
     int handled = 0;
@@ -137,7 +136,7 @@ MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool javaScriptConfirm(const QUrl &, const QString &)
   virtual bool javaScriptConfirm(const QUrl & securityOrigin, const QString & msg)  override {
     int handled = 0;
@@ -150,7 +149,7 @@ MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool javaScriptPrompt(const QUrl &, const QString &, const QString &, QString *)
   virtual bool javaScriptPrompt(const QUrl & securityOrigin, const QString & msg, const QString & defaultValue, QString * result)  override {
     int handled = 0;
@@ -163,7 +162,7 @@ MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void javaScriptConsoleMessage(QWebEnginePage::JavaScriptConsoleMessageLevel, const QString &, int, const QString &)
   virtual void javaScriptConsoleMessage(QWebEnginePage::JavaScriptConsoleMessageLevel level, const QString & message, int lineNumber, const QString & sourceID)  override {
     int handled = 0;
@@ -175,7 +174,7 @@ MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool certificateError(const QWebEngineCertificateError &)
   virtual bool certificateError(const QWebEngineCertificateError & certificateError)  override {
     int handled = 0;
@@ -188,7 +187,7 @@ MyQWebEnginePage(QWebEngineProfile * profile, QObject * parent) : QWebEnginePage
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool acceptNavigationRequest(const QUrl &, QWebEnginePage::NavigationType, bool)
   virtual bool acceptNavigationRequest(const QUrl & url, QWebEnginePage::NavigationType type_, bool isMainFrame)  override {
     int handled = 0;
@@ -215,781 +214,28 @@ void* C_QWebEnginePage_init_staticMetaObject(void* this_, void* strdat, void* da
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:349
-// [8] QWebEnginePage * createWindow(QWebEnginePage::WebWindowType)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWebEnginePage12createWindowENS_13WebWindowTypeE(void *this_, QWebEnginePage::WebWindowType type_) {
-  return (void*)((QWebEnginePage*)this_)->QWebEnginePage::createWindow(type_);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwebenginepage(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:78
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1149853263 (30)_ZN14QWebEnginePage2trEPKcS1_i
+//static
+/*void qm1149853263(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QWebEnginePage::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QWebEnginePage::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:350
-// [8] QStringList chooseFiles(QWebEnginePage::FileSelectionMode, const QStringList &, const QStringList &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWebEnginePage11chooseFilesENS_17FileSelectionModeERK11QStringListS3_(void *this_, QWebEnginePage::FileSelectionMode mode, QStringList* oldFiles, QStringList* acceptedMimeTypes) {
-  auto rv = ((QWebEnginePage*)this_)->QWebEnginePage::chooseFiles(mode, *oldFiles, *acceptedMimeTypes);
-return new QStringList(rv);
-}
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:351
-// [-2] void javaScriptAlert(const QUrl &, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage15javaScriptAlertERK4QUrlRK7QString(void *this_, QUrl* securityOrigin, QString* msg) {
-  ((QWebEnginePage*)this_)->QWebEnginePage::javaScriptAlert(*securityOrigin, *msg);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:352
-// [1] bool javaScriptConfirm(const QUrl &, const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QWebEnginePage17javaScriptConfirmERK4QUrlRK7QString(void *this_, QUrl* securityOrigin, QString* msg) {
-  return (bool)((QWebEnginePage*)this_)->QWebEnginePage::javaScriptConfirm(*securityOrigin, *msg);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:353
-// [1] bool javaScriptPrompt(const QUrl &, const QString &, const QString &, QString *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QWebEnginePage16javaScriptPromptERK4QUrlRK7QStringS5_PS3_(void *this_, QUrl* securityOrigin, QString* msg, QString* defaultValue, QString * result) {
-  return (bool)((QWebEnginePage*)this_)->QWebEnginePage::javaScriptPrompt(*securityOrigin, *msg, *defaultValue, result);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:354
-// [-2] void javaScriptConsoleMessage(QWebEnginePage::JavaScriptConsoleMessageLevel, const QString &, int, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage24javaScriptConsoleMessageENS_29JavaScriptConsoleMessageLevelERK7QStringiS3_(void *this_, QWebEnginePage::JavaScriptConsoleMessageLevel level, QString* message, int lineNumber, QString* sourceID) {
-  ((QWebEnginePage*)this_)->QWebEnginePage::javaScriptConsoleMessage(level, *message, lineNumber, *sourceID);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:355
-// [1] bool certificateError(const QWebEngineCertificateError &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QWebEnginePage16certificateErrorERK26QWebEngineCertificateError(void *this_, QWebEngineCertificateError* certificateError) {
-  return (bool)((QWebEnginePage*)this_)->QWebEnginePage::certificateError(*certificateError);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:356
-// [1] bool acceptNavigationRequest(const QUrl &, QWebEnginePage::NavigationType, bool)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QWebEnginePage23acceptNavigationRequestERK4QUrlNS_14NavigationTypeEb(void *this_, QUrl* url, QWebEnginePage::NavigationType type_, bool isMainFrame) {
-  return (bool)((QWebEnginePage*)this_)->QWebEnginePage::acceptNavigationRequest(*url, type_, isMainFrame);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage10metaObjectEv(void *this_) {
-  return (void*)((QWebEnginePage*)this_)->metaObject();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWebEnginePage11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QWebEnginePage*)this_)->qt_metacast(arg0);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN14QWebEnginePage11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QWebEnginePage*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWebEnginePage2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QWebEnginePage::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:76
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWebEnginePage6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QWebEnginePage::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:227
-// [-2] void QWebEnginePage(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWebEnginePageC2EP7QObject(QObject * parent) {
-  auto _nilp = (MyQWebEnginePage*)(0);
-  return  new MyQWebEnginePage(parent);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:228
-// [-2] void QWebEnginePage(QWebEngineProfile *, QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWebEnginePageC2EP17QWebEngineProfileP7QObject(QWebEngineProfile * profile, QObject * parent) {
-  auto _nilp = (MyQWebEnginePage*)(0);
-  return  new MyQWebEnginePage(profile, parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:229
-// [-2] void ~QWebEnginePage()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePageD2Ev(void *this_) {
+/*void C_ZN14QWebEnginePageD2Ev(void *this_)*/ {
   delete (QWebEnginePage*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:230
-// [8] QWebEngineHistory * history()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage7historyEv(void *this_) {
-  return (void*)((QWebEnginePage*)this_)->history();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:232
-// [-2] void setView(QWidget *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage7setViewEP7QWidget(void *this_, QWidget * view) {
-  ((QWebEnginePage*)this_)->setView(view);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:233
-// [8] QWidget * view()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage4viewEv(void *this_) {
-  return (void*)((QWebEnginePage*)this_)->view();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:235
-// [1] bool hasSelection()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QWebEnginePage12hasSelectionEv(void *this_) {
-  return (bool)((QWebEnginePage*)this_)->hasSelection();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:236
-// [8] QString selectedText()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage12selectedTextEv(void *this_) {
-  auto rv = ((QWebEnginePage*)this_)->selectedText();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:238
-// [8] QWebEngineProfile * profile()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage7profileEv(void *this_) {
-  return (void*)((QWebEnginePage*)this_)->profile();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:241
-// [8] QAction * action(QWebEnginePage::WebAction)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage6actionENS_9WebActionE(void *this_, QWebEnginePage::WebAction action) {
-  return (void*)((QWebEnginePage*)this_)->action(action);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:243
-// [-2] void triggerAction(QWebEnginePage::WebAction, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13triggerActionENS_9WebActionEb(void *this_, QWebEnginePage::WebAction action, bool checked) {
-  ((QWebEnginePage*)this_)->triggerAction(action, checked);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:245
-// [-2] void replaceMisspelledWord(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage21replaceMisspelledWordERK7QString(void *this_, QString* replacement) {
-  ((QWebEnginePage*)this_)->replaceMisspelledWord(*replacement);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:247
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN14QWebEnginePage5eventEP6QEvent(void *this_, QEvent * arg0) {
-  return (bool)((QWebEnginePage*)this_)->event(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:249
-// [-2] void findText(const QString &, QWebEnginePage::FindFlags, const QWebEngineCallback<bool> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage8findTextERK7QString6QFlagsINS_8FindFlagEERK18QWebEngineCallbackIbE(void *this_, QString* subString, QFlags<QWebEnginePage::FindFlag> options, QWebEngineCallback<bool>* resultCallback) {
-  ((QWebEnginePage*)this_)->findText(*subString, options, *resultCallback);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:252
-// [8] QMenu * createStandardContextMenu()
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWebEnginePage25createStandardContextMenuEv(void *this_) {
-  return (void*)((QWebEnginePage*)this_)->createStandardContextMenu();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:255
-// [-2] void setFeaturePermission(const QUrl &, QWebEnginePage::Feature, QWebEnginePage::PermissionPolicy)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage20setFeaturePermissionERK4QUrlNS_7FeatureENS_16PermissionPolicyE(void *this_, QUrl* securityOrigin, QWebEnginePage::Feature feature, QWebEnginePage::PermissionPolicy policy) {
-  ((QWebEnginePage*)this_)->setFeaturePermission(*securityOrigin, feature, policy);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:257
-// [-2] void load(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage4loadERK4QUrl(void *this_, QUrl* url) {
-  ((QWebEnginePage*)this_)->load(*url);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:258
-// [-2] void load(const QWebEngineHttpRequest &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage4loadERK21QWebEngineHttpRequest(void *this_, QWebEngineHttpRequest* request) {
-  ((QWebEnginePage*)this_)->load(*request);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:259
-// [-2] void download(const QUrl &, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage8downloadERK4QUrlRK7QString(void *this_, QUrl* url, QString* filename) {
-  ((QWebEnginePage*)this_)->download(*url, *filename);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:260
-// [-2] void setHtml(const QString &, const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage7setHtmlERK7QStringRK4QUrl(void *this_, QString* html, QUrl* baseUrl) {
-  ((QWebEnginePage*)this_)->setHtml(*html, *baseUrl);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:261
-// [-2] void setContent(const QByteArray &, const QString &, const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage10setContentERK10QByteArrayRK7QStringRK4QUrl(void *this_, QByteArray* data, QString* mimeType, QUrl* baseUrl) {
-  ((QWebEnginePage*)this_)->setContent(*data, *mimeType, *baseUrl);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:263
-// [-2] void toHtml(const QWebEngineCallback<const QString &> &)
-extern "C" Q_DECL_EXPORT
-void C_ZNK14QWebEnginePage6toHtmlERK18QWebEngineCallbackIRK7QStringE(void *this_, QWebEngineCallback<const QString &>* resultCallback) {
-  ((QWebEnginePage*)this_)->toHtml(*resultCallback);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:264
-// [-2] void toPlainText(const QWebEngineCallback<const QString &> &)
-extern "C" Q_DECL_EXPORT
-void C_ZNK14QWebEnginePage11toPlainTextERK18QWebEngineCallbackIRK7QStringE(void *this_, QWebEngineCallback<const QString &>* resultCallback) {
-  ((QWebEnginePage*)this_)->toPlainText(*resultCallback);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:266
-// [8] QString title()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage5titleEv(void *this_) {
-  auto rv = ((QWebEnginePage*)this_)->title();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:267
-// [-2] void setUrl(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage6setUrlERK4QUrl(void *this_, QUrl* url) {
-  ((QWebEnginePage*)this_)->setUrl(*url);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:268
-// [8] QUrl url()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage3urlEv(void *this_) {
-  auto rv = ((QWebEnginePage*)this_)->url();
-return new QUrl(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:269
-// [8] QUrl requestedUrl()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage12requestedUrlEv(void *this_) {
-  auto rv = ((QWebEnginePage*)this_)->requestedUrl();
-return new QUrl(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:270
-// [8] QUrl iconUrl()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage7iconUrlEv(void *this_) {
-  auto rv = ((QWebEnginePage*)this_)->iconUrl();
-return new QUrl(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:271
-// [8] QIcon icon()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage4iconEv(void *this_) {
-  auto rv = ((QWebEnginePage*)this_)->icon();
-return new QIcon(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:273
-// [8] qreal zoomFactor()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK14QWebEnginePage10zoomFactorEv(void *this_) {
-  return (qreal)((QWebEnginePage*)this_)->zoomFactor();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:274
-// [-2] void setZoomFactor(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13setZoomFactorEd(void *this_, qreal factor) {
-  ((QWebEnginePage*)this_)->setZoomFactor(factor);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:276
-// [16] QPointF scrollPosition()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage14scrollPositionEv(void *this_) {
-  auto rv = ((QWebEnginePage*)this_)->scrollPosition();
-return new QPointF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:277
-// [16] QSizeF contentsSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage12contentsSizeEv(void *this_) {
-  auto rv = ((QWebEnginePage*)this_)->contentsSize();
-return new QSizeF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:279
-// [-2] void runJavaScript(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13runJavaScriptERK7QString(void *this_, QString* scriptSource) {
-  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:280
-// [-2] void runJavaScript(const QString &, quint32)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13runJavaScriptERK7QStringj(void *this_, QString* scriptSource, quint32 worldId) {
-  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, worldId);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:281
-// [-2] void runJavaScript(const QString &, const QWebEngineCallback<const QVariant &> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13runJavaScriptERK7QStringRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, QWebEngineCallback<const QVariant &>* resultCallback) {
-  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, *resultCallback);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:282
-// [-2] void runJavaScript(const QString &, quint32, const QWebEngineCallback<const QVariant &> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13runJavaScriptERK7QStringjRK18QWebEngineCallbackIRK8QVariantE(void *this_, QString* scriptSource, quint32 worldId, QWebEngineCallback<const QVariant &>* resultCallback) {
-  ((QWebEnginePage*)this_)->runJavaScript(*scriptSource, worldId, *resultCallback);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:283
-// [8] QWebEngineScriptCollection & scripts()
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QWebEnginePage7scriptsEv(void *this_) {
-  auto& rv = ((QWebEnginePage*)this_)->scripts();
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:284
-// [8] QWebEngineSettings * settings()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage8settingsEv(void *this_) {
-  return (void*)((QWebEnginePage*)this_)->settings();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:286
-// [8] QWebChannel * webChannel()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage10webChannelEv(void *this_) {
-  return (void*)((QWebEnginePage*)this_)->webChannel();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:287
-// [-2] void setWebChannel(QWebChannel *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13setWebChannelEP11QWebChannel(void *this_, QWebChannel * arg0) {
-  ((QWebEnginePage*)this_)->setWebChannel(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:288
-// [-2] void setWebChannel(QWebChannel *, uint)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13setWebChannelEP11QWebChannelj(void *this_, QWebChannel * arg0, uint worldId) {
-  ((QWebEnginePage*)this_)->setWebChannel(arg0, worldId);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:289
-// [16] QColor backgroundColor()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage15backgroundColorEv(void *this_) {
-  auto rv = ((QWebEnginePage*)this_)->backgroundColor();
-return new QColor(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:290
-// [-2] void setBackgroundColor(const QColor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage18setBackgroundColorERK6QColor(void *this_, QColor* color) {
-  ((QWebEnginePage*)this_)->setBackgroundColor(*color);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:292
-// [-2] void save(const QString &, QWebEngineDownloadItem::SavePageFormat)
-extern "C" Q_DECL_EXPORT
-void C_ZNK14QWebEnginePage4saveERK7QStringN22QWebEngineDownloadItem14SavePageFormatE(void *this_, QString* filePath, QWebEngineDownloadItem::SavePageFormat format) {
-  ((QWebEnginePage*)this_)->save(*filePath, format);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:295
-// [1] bool isAudioMuted()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QWebEnginePage12isAudioMutedEv(void *this_) {
-  return (bool)((QWebEnginePage*)this_)->isAudioMuted();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:296
-// [-2] void setAudioMuted(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage13setAudioMutedEb(void *this_, bool muted) {
-  ((QWebEnginePage*)this_)->setAudioMuted(muted);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:297
-// [1] bool recentlyAudible()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QWebEnginePage15recentlyAudibleEv(void *this_) {
-  return (bool)((QWebEnginePage*)this_)->recentlyAudible();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:299
-// [-2] void printToPdf(const QString &, const QPageLayout &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage10printToPdfERK7QStringRK11QPageLayout(void *this_, QString* filePath, QPageLayout* layout) {
-  ((QWebEnginePage*)this_)->printToPdf(*filePath, *layout);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:300
-// [-2] void printToPdf(const QWebEngineCallback<const QByteArray &> &, const QPageLayout &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage10printToPdfERK18QWebEngineCallbackIRK10QByteArrayERK11QPageLayout(void *this_, QWebEngineCallback<const QByteArray &>* resultCallback, QPageLayout* layout) {
-  ((QWebEnginePage*)this_)->printToPdf(*resultCallback, *layout);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:301
-// [-2] void print(QPrinter *, const QWebEngineCallback<bool> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage5printEP8QPrinterRK18QWebEngineCallbackIbE(void *this_, QPrinter * printer, QWebEngineCallback<bool>* resultCallback) {
-  ((QWebEnginePage*)this_)->print(printer, *resultCallback);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:303
-// [-2] void setInspectedPage(QWebEnginePage *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage16setInspectedPageEPS_(void *this_, QWebEnginePage * page) {
-  ((QWebEnginePage*)this_)->setInspectedPage(page);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:304
-// [8] QWebEnginePage * inspectedPage()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage13inspectedPageEv(void *this_) {
-  return (void*)((QWebEnginePage*)this_)->inspectedPage();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:305
-// [-2] void setDevToolsPage(QWebEnginePage *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage15setDevToolsPageEPS_(void *this_, QWebEnginePage * page) {
-  ((QWebEnginePage*)this_)->setDevToolsPage(page);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:306
-// [8] QWebEnginePage * devToolsPage()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage12devToolsPageEv(void *this_) {
-  return (void*)((QWebEnginePage*)this_)->devToolsPage();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:308
-// [8] const QWebEngineContextMenuData & contextMenuData()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QWebEnginePage15contextMenuDataEv(void *this_) {
-  auto& rv = ((QWebEnginePage*)this_)->contextMenuData();
-return new QWebEngineContextMenuData(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:311
-// [-2] void loadStarted()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage11loadStartedEv(void *this_) {
-  ((QWebEnginePage*)this_)->loadStarted();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:312
-// [-2] void loadProgress(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage12loadProgressEi(void *this_, int progress) {
-  ((QWebEnginePage*)this_)->loadProgress(progress);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:313
-// [-2] void loadFinished(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage12loadFinishedEb(void *this_, bool ok) {
-  ((QWebEnginePage*)this_)->loadFinished(ok);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:315
-// [-2] void linkHovered(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage11linkHoveredERK7QString(void *this_, QString* url) {
-  ((QWebEnginePage*)this_)->linkHovered(*url);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:316
-// [-2] void selectionChanged()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage16selectionChangedEv(void *this_) {
-  ((QWebEnginePage*)this_)->selectionChanged();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:317
-// [-2] void geometryChangeRequested(const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage23geometryChangeRequestedERK5QRect(void *this_, QRect* geom) {
-  ((QWebEnginePage*)this_)->geometryChangeRequested(*geom);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:318
-// [-2] void windowCloseRequested()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage20windowCloseRequestedEv(void *this_) {
-  ((QWebEnginePage*)this_)->windowCloseRequested();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:320
-// [-2] void featurePermissionRequested(const QUrl &, QWebEnginePage::Feature)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage26featurePermissionRequestedERK4QUrlNS_7FeatureE(void *this_, QUrl* securityOrigin, QWebEnginePage::Feature feature) {
-  ((QWebEnginePage*)this_)->featurePermissionRequested(*securityOrigin, feature);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:321
-// [-2] void featurePermissionRequestCanceled(const QUrl &, QWebEnginePage::Feature)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage32featurePermissionRequestCanceledERK4QUrlNS_7FeatureE(void *this_, QUrl* securityOrigin, QWebEnginePage::Feature feature) {
-  ((QWebEnginePage*)this_)->featurePermissionRequestCanceled(*securityOrigin, feature);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:322
-// [-2] void fullScreenRequested(QWebEngineFullScreenRequest)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage19fullScreenRequestedE27QWebEngineFullScreenRequest(void *this_, QWebEngineFullScreenRequest* fullScreenRequest) {
-  ((QWebEnginePage*)this_)->fullScreenRequested(*fullScreenRequest);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:323
-// [-2] void quotaRequested(QWebEngineQuotaRequest)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage14quotaRequestedE22QWebEngineQuotaRequest(void *this_, QWebEngineQuotaRequest* quotaRequest) {
-  ((QWebEnginePage*)this_)->quotaRequested(*quotaRequest);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:324
-// [-2] void registerProtocolHandlerRequested(QWebEngineRegisterProtocolHandlerRequest)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage32registerProtocolHandlerRequestedE40QWebEngineRegisterProtocolHandlerRequest(void *this_, QWebEngineRegisterProtocolHandlerRequest* request) {
-  ((QWebEnginePage*)this_)->registerProtocolHandlerRequested(*request);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:326
-// [-2] void selectClientCertificate(QWebEngineClientCertificateSelection)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage23selectClientCertificateE36QWebEngineClientCertificateSelection(void *this_, QWebEngineClientCertificateSelection* clientCertSelection) {
-  ((QWebEnginePage*)this_)->selectClientCertificate(*clientCertSelection);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:329
-// [-2] void authenticationRequired(const QUrl &, QAuthenticator *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage22authenticationRequiredERK4QUrlP14QAuthenticator(void *this_, QUrl* requestUrl, QAuthenticator * authenticator) {
-  ((QWebEnginePage*)this_)->authenticationRequired(*requestUrl, authenticator);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:330
-// [-2] void proxyAuthenticationRequired(const QUrl &, QAuthenticator *, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage27proxyAuthenticationRequiredERK4QUrlP14QAuthenticatorRK7QString(void *this_, QUrl* requestUrl, QAuthenticator * authenticator, QString* proxyHost) {
-  ((QWebEnginePage*)this_)->proxyAuthenticationRequired(*requestUrl, authenticator, *proxyHost);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:332
-// [-2] void renderProcessTerminated(QWebEnginePage::RenderProcessTerminationStatus, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage23renderProcessTerminatedENS_30RenderProcessTerminationStatusEi(void *this_, QWebEnginePage::RenderProcessTerminationStatus terminationStatus, int exitCode) {
-  ((QWebEnginePage*)this_)->renderProcessTerminated(terminationStatus, exitCode);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:335
-// [-2] void titleChanged(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage12titleChangedERK7QString(void *this_, QString* title) {
-  ((QWebEnginePage*)this_)->titleChanged(*title);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:336
-// [-2] void urlChanged(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage10urlChangedERK4QUrl(void *this_, QUrl* url) {
-  ((QWebEnginePage*)this_)->urlChanged(*url);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:337
-// [-2] void iconUrlChanged(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage14iconUrlChangedERK4QUrl(void *this_, QUrl* url) {
-  ((QWebEnginePage*)this_)->iconUrlChanged(*url);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:338
-// [-2] void iconChanged(const QIcon &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage11iconChangedERK5QIcon(void *this_, QIcon* icon) {
-  ((QWebEnginePage*)this_)->iconChanged(*icon);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:340
-// [-2] void scrollPositionChanged(const QPointF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage21scrollPositionChangedERK7QPointF(void *this_, QPointF* position) {
-  ((QWebEnginePage*)this_)->scrollPositionChanged(*position);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:341
-// [-2] void contentsSizeChanged(const QSizeF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage19contentsSizeChangedERK6QSizeF(void *this_, QSizeF* size) {
-  ((QWebEnginePage*)this_)->contentsSizeChanged(*size);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:342
-// [-2] void audioMutedChanged(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage17audioMutedChangedEb(void *this_, bool muted) {
-  ((QWebEnginePage*)this_)->audioMutedChanged(muted);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:343
-// [-2] void recentlyAudibleChanged(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage22recentlyAudibleChangedEb(void *this_, bool recentlyAudible) {
-  ((QWebEnginePage*)this_)->recentlyAudibleChanged(recentlyAudible);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:345
-// [-2] void pdfPrintingFinished(const QString &, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage19pdfPrintingFinishedERK7QStringb(void *this_, QString* filePath, bool success) {
-  ((QWebEnginePage*)this_)->pdfPrintingFinished(*filePath, success);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:346
-// [-2] void printRequested()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QWebEnginePage14printRequestedEv(void *this_) {
-  ((QWebEnginePage*)this_)->printRequested();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwebenginepage
 //  main block end
 
 //  use block begin
