@@ -9,10 +9,13 @@
 #define private public
 #endif
 
+#ifdef QT_WIDGETS_LIB
 #include <QtCore>
 #include <QtGui>
 #include <QtWidgets>
+#endif
 
+#ifdef QT_QUICK_WIDGETS_LIB
 #include <QtNetwork>
 #include <QtQml>
 #include <QtQuick>
@@ -21,10 +24,11 @@
 // #include <QtQuickTemplates2>
 #include <QtQuickControls2>
 #include <QtQuickWidgets>
+#endif
 
 // webengines
 /* #undef USE_WEBENGINES */
-#ifdef USE_WEBENGINES
+#ifdef QT_WEBENGINE_LIB
 #include <QtPositioning>
 #include <QtWebChannel>
 #include <QtWebEngineCore>

@@ -2,8 +2,8 @@
 # defines: -DANDROID=on, -DMINGW_NOIPBIZ=on, -DWITH_QT_STATIC=on, -DWINARCH=x32
 #          -DUSE_WEBENGINES=on
 cmake_minimum_required(VERSION 3.0)
-set(PROJSOVER "5.12")
-set(PROJVER_PATCH "107")
+set(PROJSOVER "5.15")
+set(PROJVER_PATCH "108")
 set(PROJVERSTR "${PROJSOVER}.${PROJVER_PATCH}")
 project(qt5inline)
 
@@ -11,8 +11,8 @@ set(CMAKE_VERBOSE_MAKEFILE on)
 
 # don't use -std=c++11,
 # use -std=gnu++11 to fix pch error: trigraphs was enabled in PCH file but is currently disabled
-set(CMAKE_CXX_FLAGS "-g -O0 -std=gnu++11")
-set(CMAKE_C_FLAGS "-g -O0 -std=c11")
+set(CMAKE_CXX_FLAGS "-g -O2 -std=gnu++11")
+set(CMAKE_C_FLAGS "-g -O2 -std=c11")
 #set(CMAKE_C_COMPILER clang)
 #set(CMAKE_CXX_COMPILER clang++)
 IF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
@@ -97,13 +97,13 @@ find_package(${_QT_STATIC_PFX}Qt5QuickControls2)
 find_package(${_QT_STATIC_PFX}Qt5QuickWidgets)
 
 # webengines
-if(USE_WEBENGINES)
+#if(USE_WEBENGINES)
 find_package(${_QT_STATIC_PFX}Qt5Positioning)
 find_package(${_QT_STATIC_PFX}Qt5WebChannel)
 find_package(${_QT_STATIC_PFX}Qt5WebEngineCore)
 find_package(${_QT_STATIC_PFX}Qt5WebEngine)
 find_package(${_QT_STATIC_PFX}Qt5WebEngineWidgets)
-endif(USE_WEBENGINES)
+#endif(USE_WEBENGINES)
 
 if(ANDROID)
   find_package(${_QT_STATIC_PFX}Qt5AndroidExtras)
@@ -127,27 +127,84 @@ set(CMAKE_INCLUDE_CURRENT_DIR on)
 include_directories("./src" ${LibFFI_INCLUDE_DIRS})
 
 set(all_qt5_inline_srcs "")
-file(GLOB qt5_inline_srcs
+
+# Qt5InlineBase.so
+set(qt5_base_inline_srcs "") # core/gui/widgets
+set(qt5_quick_inline_srcs "") # network/qml/quick
+set(qt5_misc_inline_srcs "") # svg/multimedia
+set(qt5_webengine_inline_srcs "") # webengine
+set(qt5_3dcomp_inline_srcs "") # 3dx
+
+file(GLOB qt5_base_inline_srcs
   # src/core/qstring.cxx # for compile test
   src/core/modfix.cpp
   src/core/qstringlistx.cpp
+
+ src/core/*.cxx
+ src/gui/*.cxx
+ src/widgets/*.cxx
+# src/core/qstring.cxx
+# src/gui/qpainter.cxx
+# src/qgui/qwidget.cxx
+)
+
+file(GLOB qt5_quick_inline_srcs
   src/qml/qgolistmodel.cpp
   #src/qml/moc_qgolistmodel.cpp
 
-  src/core/*.cxx
-  src/gui/*.cxx
-  src/widgets/*.cxx
-
   # qmls
-  src/network/*.cxx
   src/qml/*.cxx
   src/quick/*.cxx
   src/quicktemplates2/*.cxx
   src/quickcontrols2/*.cxx
   src/quickwidgets/*.cxx
+  #src/quick/qquickitem.cxx
+  )
+
+file(GLOB qt5_misc_inline_srcs
+  src/network/*.cxx
   src/svg/*.cxx
   src/multimedia/*.cxx
+  #src/svg/qsvgwidget.cxx
   )
+
+file(GLOB qt5_webengine_inline_srcs
+  # webengines
+  src/positioning/*.cxx
+  src/webchannel/*.cxx
+  src/webenginecore/*.cxx
+  src/webengine/*.cxx
+  src/webenginewidgets/*.cxx
+  )
+
+# deprecated
+# file(GLOB qt5_inline_srcs
+#   # src/core/qstring.cxx # for compile test
+#   src/core/modfix.cpp
+#   src/core/qstringlistx.cpp
+#   src/qml/qgolistmodel.cpp
+#   #src/qml/moc_qgolistmodel.cpp
+
+#   #src/core/*.cxx
+#   #src/gui/*.cxx
+#   #src/widgets/*.cxx
+#   src/core/qstring.cxx
+#   src/gui/qpainter.cxx
+#   src/qgui/qwidget.cxx
+
+#   # qmls
+#   # src/network/*.cxx
+#   # src/qml/*.cxx
+#   # src/quick/*.cxx
+#   # src/quicktemplates2/*.cxx
+#   # src/quickcontrols2/*.cxx
+#   # src/quickwidgets/*.cxx
+#   src/quick/qquickitem.cxx
+
+#   # src/svg/*.cxx
+#   # src/multimedia/*.cxx
+#   src/svg/qsvgwidget.cxx
+#   )
 qt5_wrap_cpp(moc_cpp_files src/qml/qgolistmodel.cpp)
 add_custom_target(vtmoc_cpp_files ALL DEPENDS ${moc_cpp_files}) # make sure generator run first
 
@@ -225,29 +282,59 @@ if(WITH_QT_STATIC)
       )
 endif(WITH_QT_STATIC)
 
-add_library(Qt5Inline SHARED ${all_qt5_inline_srcs})
-target_link_libraries(Qt5Inline
-  ${_QT_STATIC_PFX}Qt5::Core ${_QT_STATIC_PFX}Qt5::Gui ${_QT_STATIC_PFX}Qt5::Widgets ${_QT_STATIC_PFX}Qt5::Network
+# add_library(Qt5Inline SHARED ${all_qt5_inline_srcs})
+# target_link_libraries(Qt5Inline
+#   ${_QT_STATIC_PFX}Qt5::Core ${_QT_STATIC_PFX}Qt5::Gui ${_QT_STATIC_PFX}Qt5::Widgets ${_QT_STATIC_PFX}Qt5::Network
+#   ${_QT_STATIC_PFX}Qt5::Qml ${_QT_STATIC_PFX}Qt5::Quick ${_QT_STATIC_PFX}Qt5::QuickControls2 ${_QT_STATIC_PFX}Qt5::QuickWidgets
+#   )
+# target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::Svg ${_QT_STATIC_PFX}Qt5::Multimedia)
+# if(USE_WEBENGINES)
+#   target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::Positioning ${_QT_STATIC_PFX}Qt5::WebChannel ${_QT_STATIC_PFX}Qt5::WebEngineCore ${_QT_STATIC_PFX}Qt5::WebEngine ${_QT_STATIC_PFX}Qt5::WebEngineWidgets)
+# endif(USE_WEBENGINES)
+# target_link_libraries(Qt5Inline ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
+# if(ANDROID)
+#   target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::AndroidExtras)
+#   target_link_libraries(Qt5Inline log)
+# endif(ANDROID)
+# target_link_libraries(Qt5Inline ${LibFFI_LDFLAGS})
+# add_dependencies(Qt5Inline vtmoc_cpp_files)
+
+add_library(Qt5InlineBase SHARED ${qt5_base_inline_srcs} ${qt5_inline_extra_srcs})
+target_link_libraries(Qt5InlineBase
+  ${_QT_STATIC_PFX}Qt5::Core ${_QT_STATIC_PFX}Qt5::Gui ${_QT_STATIC_PFX}Qt5::Widgets
+  )
+target_link_libraries(Qt5InlineBase ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
+target_link_libraries(Qt5InlineBase ${LibFFI_LDFLAGS})
+add_dependencies(Qt5InlineBase vtmoc_cpp_files)
+
+add_library(Qt5InlineQuick SHARED ${qt5_quick_inline_srcs})
+target_link_libraries(Qt5InlineQuick
   ${_QT_STATIC_PFX}Qt5::Qml ${_QT_STATIC_PFX}Qt5::Quick ${_QT_STATIC_PFX}Qt5::QuickControls2 ${_QT_STATIC_PFX}Qt5::QuickWidgets
   )
-target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::Svg ${_QT_STATIC_PFX}Qt5::Multimedia)
-if(USE_WEBENGINES)
-  target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::Positioning ${_QT_STATIC_PFX}Qt5::WebChannel ${_QT_STATIC_PFX}Qt5::WebEngineCore ${_QT_STATIC_PFX}Qt5::WebEngine ${_QT_STATIC_PFX}Qt5::WebEngineWidgets)
-endif(USE_WEBENGINES)
-target_link_libraries(Qt5Inline ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
-if(ANDROID)
-  target_link_libraries(Qt5Inline ${_QT_STATIC_PFX}Qt5::AndroidExtras)
-  target_link_libraries(Qt5Inline log)
-endif(ANDROID)
-target_link_libraries(Qt5Inline ${LibFFI_LDFLAGS})
-add_dependencies(Qt5Inline vtmoc_cpp_files)
+target_link_libraries(Qt5InlineQuick ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
+add_dependencies(Qt5InlineQuick vtmoc_cpp_files)
+
+add_library(Qt5InlineMisc SHARED ${qt5_misc_inline_srcs})
+target_link_libraries(Qt5InlineMisc
+  ${_QT_STATIC_PFX}Qt5::Svg ${_QT_STATIC_PFX}Qt5::Multimedia
+  )
+target_link_libraries(Qt5InlineMisc ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
+add_dependencies(Qt5InlineMisc vtmoc_cpp_files)
+
+add_library(Qt5InlineWebEngine SHARED ${qt5_webengine_inline_srcs})
+target_link_libraries(Qt5InlineWebEngine
+  ${_QT_STATIC_PFX}Qt5::QuickWidgets
+  ${_QT_STATIC_PFX}Qt5::Positioning ${_QT_STATIC_PFX}Qt5::WebChannel ${_QT_STATIC_PFX}Qt5::WebEngineCore ${_QT_STATIC_PFX}Qt5::WebEngine ${_QT_STATIC_PFX}Qt5::WebEngineWidgets
+  )
+target_link_libraries(Qt5InlineWebEngine ${LDFLAGS_FOR_CUSTOM_STATIC_BUILD})
+add_dependencies(Qt5InlineWebEngine vtmoc_cpp_files)
 
 # version and install
 if(!ANDROID)
-  set_target_properties(Qt5Inline PROPERTIES VERSION ${PROJVERSTR} SOVERSION ${PROJSOVER})
+  set_target_properties(Qt5InlineBase PROPERTIES VERSION ${PROJVERSTR} SOVERSION ${PROJSOVER})
 endif()
 configure_file(Qt5Inline.pc.in Qt5Inline.pc @ONLY)
-install(TARGETS Qt5Inline
+install(TARGETS Qt5InlineBase
     RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin
     LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
@@ -256,11 +343,14 @@ install(FILES ${CMAKE_BINARY_DIR}/Qt5Inline.pc
 
 set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake")
 include(PrecompiledHeader)
-add_precompiled_header(Qt5Inline preheaders/qthdrsrc.h FORCEINCLUDE)
+add_precompiled_header(Qt5InlineBase preheaders/qthdrsrc.h FORCEINCLUDE)
+add_precompiled_header(Qt5InlineQuick preheaders/qthdrsrc.h FORCEINCLUDE)
+add_precompiled_header(Qt5InlineMisc preheaders/qthdrsrc.h FORCEINCLUDE)
+add_precompiled_header(Qt5InlineWebEngine preheaders/qthdrsrc.h FORCEINCLUDE)
 
 # link tests
 add_executable(lnktst tests/lnktst.c)
-target_link_libraries(lnktst Qt5Inline)
+target_link_libraries(lnktst Qt5InlineBase)
 if(ANDROID)
   target_link_libraries(lnktst log)
 endif(ANDROID)

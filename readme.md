@@ -9,7 +9,7 @@ So there is no C wrapper functions header source here.
 ### Requirement
 
 * C++11 support compiler
-* Qt 5.10-5.12
+* Qt 5.9-5.15
 
 ### Platforms
 
