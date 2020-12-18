@@ -9,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlIncubationController is pure virtual: false
+// QQmlIncubationController is pure virtual: false false
 // QQmlIncubationController has virtual projected: true
 //  header block end
 
@@ -50,7 +50,7 @@ public:
   virtual ~MyQQmlIncubationController() {}
 // void QQmlIncubationController()
 MyQQmlIncubationController() : QQmlIncubationController() {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void incubatingObjectCountChanged(int)
   virtual void incubatingObjectCountChanged(int arg0)  override {
     int handled = 0;
@@ -64,62 +64,16 @@ MyQQmlIncubationController() : QQmlIncubationController() {}
 
 };
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlincubator.h:113
-// [-2] void incubatingObjectCountChanged(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN24QQmlIncubationController28incubatingObjectCountChangedEi(void *this_, int arg0) {
-  ((QQmlIncubationController*)this_)->QQmlIncubationController::incubatingObjectCountChanged(arg0);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qqmlincubationcontroller(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlincubator.h:103
-// [-2] void QQmlIncubationController()
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QQmlIncubationControllerC2Ev() {
-  auto _nilp = (MyQQmlIncubationController*)(0);
-  return  new MyQQmlIncubationController();
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlincubator.h:104
-// [-2] void ~QQmlIncubationController()
-extern "C" Q_DECL_EXPORT
-void C_ZN24QQmlIncubationControllerD2Ev(void *this_) {
+/*void C_ZN24QQmlIncubationControllerD2Ev(void *this_)*/ {
   delete (QQmlIncubationController*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlincubator.h:106
-// [8] QQmlEngine * engine()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK24QQmlIncubationController6engineEv(void *this_) {
-  return (void*)((QQmlIncubationController*)this_)->engine();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlincubator.h:107
-// [4] int incubatingObjectCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK24QQmlIncubationController21incubatingObjectCountEv(void *this_) {
-  return (int)((QQmlIncubationController*)this_)->incubatingObjectCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlincubator.h:109
-// [-2] void incubateFor(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN24QQmlIncubationController11incubateForEi(void *this_, int msecs) {
-  ((QQmlIncubationController*)this_)->incubateFor(msecs);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlincubator.h:110
-// [-2] void incubateWhile(volatile bool *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN24QQmlIncubationController13incubateWhileEPVbi(void *this_, volatile bool * flag, int msecs) {
-  ((QQmlIncubationController*)this_)->incubateWhile(flag, msecs);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qqmlincubationcontroller
 //  main block end
 
 //  use block begin

@@ -1,38 +1,38 @@
 //  header block begin
 
-// /usr/include/qt/QtQuick/qquickitemgrabresult.h
+// /usr/include/qt/QtQml/qqmlextensionplugin.h
 #ifndef protected
 #define protected public
 #define private public
 #endif
-#include <qquickitemgrabresult.h>
-#include <QtQuick>
+#include <qqmlextensionplugin.h>
+#include <QtQml>
 #include "callback_inherit.h"
 
-// QQuickItemGrabResult is pure virtual: false false
-// QQuickItemGrabResult has virtual projected: true
+// QQmlEngineExtensionPlugin is pure virtual: false false
+// QQmlEngineExtensionPlugin has virtual projected: false
 //  header block end
 
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQQuickItemGrabResult_t {
+struct qt_meta_stringdata_MyQQmlEngineExtensionPlugin_t {
   QByteArrayData data[1];
-  char stringdata0[23];
+  char stringdata0[28];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
   Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQQuickItemGrabResult_t, stringdata0) + ofs \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQQmlEngineExtensionPlugin_t, stringdata0) + ofs \
   - idx * sizeof(QByteArrayData)) \
   )
-static const qt_meta_stringdata_MyQQuickItemGrabResult_t qt_meta_stringdata_MyQQuickItemGrabResult = {
+static const qt_meta_stringdata_MyQQmlEngineExtensionPlugin_t qt_meta_stringdata_MyQQmlEngineExtensionPlugin = {
    {
-  QT_MOC_LITERAL(0, 0, 22), // "MyQQuickItemGrabResult"
+  QT_MOC_LITERAL(0, 0, 27), // "MyQQmlEngineExtensionPlugin"
   },
-  "MyQQuickItemGrabResult"
+  "MyQQmlEngineExtensionPlugin"
 };
 #undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQQuickItemGrabResult[] = {
+static const uint qt_meta_data_MyQQmlEngineExtensionPlugin[] = {
   // content:
   7,       // revision
   0,       // classname
@@ -45,11 +45,11 @@ static const uint qt_meta_data_MyQQuickItemGrabResult[] = {
   0,       // signalCount
   0        // eod
 };
-class Q_DECL_EXPORT MyQQuickItemGrabResult : public QQuickItemGrabResult {
+class Q_DECL_EXPORT MyQQmlEngineExtensionPlugin : public QQmlEngineExtensionPlugin {
 public: // Q_OBJECT
-/*static*/ QMetaObject staticMetaObject = {{&QQuickItemGrabResult::staticMetaObject,
-  qt_meta_stringdata_MyQQuickItemGrabResult.data,
-  qt_meta_data_MyQQuickItemGrabResult,
+/*static*/ QMetaObject staticMetaObject = {{&QQmlEngineExtensionPlugin::staticMetaObject,
+  qt_meta_stringdata_MyQQmlEngineExtensionPlugin.data,
+  qt_meta_data_MyQQmlEngineExtensionPlugin,
   qt_static_metacall, nullptr, nullptr
 }};
 virtual const QMetaObject *metaObject() const override {
@@ -63,12 +63,12 @@ virtual void *qt_metacast(const char *_clname) override {
   auto irv = callbackAllInherits_fnptr((void*)this, (char*)"qt_metacast", &handled, 1, (uint64_t)_clname, 0, 0, 0, 0, 0, 0, 0, 0, 0);
    if (handled) { return (void*)irv; }
   if (!_clname) return nullptr;
-  if (!strcmp(_clname, qt_meta_stringdata_MyQQuickItemGrabResult.stringdata0))
+  if (!strcmp(_clname, qt_meta_stringdata_MyQQmlEngineExtensionPlugin.stringdata0))
       return static_cast<void*>(this);
-  return QQuickItemGrabResult::qt_metacast(_clname);
+  return QQmlEngineExtensionPlugin::qt_metacast(_clname);
 }
 virtual int qt_metacall(QMetaObject::Call _c, int _id, void **_a) override {
-   _id = QQuickItemGrabResult::qt_metacall(_c, _id, _a);
+   _id = QQmlEngineExtensionPlugin::qt_metacall(_c, _id, _a);
    if (_id < 0 ) return _id;
    if (qt_metacall_fnptr != 0) {
       return qt_metacall_fnptr(this, _c, _id, _a);
@@ -92,25 +92,14 @@ public:
   void* (*qt_metacast_fnptr)(void*, char*) = nullptr;
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
-  virtual ~MyQQuickItemGrabResult() {}
-// Protected virtual Extend Visibility=Default Availability=Available
-// [1] bool event(QEvent *)
-  virtual bool event(QEvent * arg0)  override {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"event", &handled, 1, (uint64_t)arg0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (bool)(irv);
-      // Bool Bool bool
-    } else {
-    return QQuickItemGrabResult::event(arg0);
-  }
-  }
-
+  virtual ~MyQQmlEngineExtensionPlugin() {}
+// void QQmlEngineExtensionPlugin(QObject *)
+MyQQmlEngineExtensionPlugin(QObject * parent) : QQmlEngineExtensionPlugin(parent) {}
 };
 
 extern "C" Q_DECL_EXPORT
-void* C_QQuickItemGrabResult_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
-  MyQQuickItemGrabResult* qo = (MyQQuickItemGrabResult*)(this_);
+void* C_QQmlEngineExtensionPlugin_init_staticMetaObject(void* this_, void* strdat, void* dat, void* smcfn, void* mcastfn, void* mcallfn) {
+  MyQQmlEngineExtensionPlugin* qo = (MyQQmlEngineExtensionPlugin*)(this_);
   QMetaObject* qmo = &qo->staticMetaObject;
   qmo->d.stringdata = decltype(qmo->d.stringdata)(strdat);
   qmo->d.data = decltype(qmo->d.data)(dat);
@@ -121,27 +110,27 @@ void* C_QQuickItemGrabResult_init_staticMetaObject(void* this_, void* strdat, vo
 }
 
 extern "C" // Q_DECL_EXPORT
-uint64_t ensure_inline_symbol_qquickitemgrabresult(void* this_) {
+uint64_t ensure_inline_symbol_qqmlengineextensionplugin(void* this_) {
   uint64_t fnptrsumval = 0;
 
 // Public static inline Indirect Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickitemgrabresult.h:59
+// /usr/include/qt/QtQml/qqmlextensionplugin.h:77
 // [8] QString tr(const char *, const char *, int) 
-// (11)qm466491474 (36)_ZN20QQuickItemGrabResult2trEPKcS1_i
+// (12)qm2148465422 (41)_ZN25QQmlEngineExtensionPlugin2trEPKcS1_i
 //static
-/*void qm466491474(const char * s, const char * c, int n)*/ {
+/*void qm2148465422(const char * s, const char * c, int n)*/ {
   const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
-  (void) QQuickItemGrabResult::tr(s, c, n);
-   auto xptr = (QString (*)(char const*, char const*, int) ) &QQuickItemGrabResult::tr;
+  (void) QQmlEngineExtensionPlugin::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QQmlEngineExtensionPlugin::tr;
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-/*void C_ZN20QQuickItemGrabResultD2Ev(void *this_)*/ {
-  delete (QQuickItemGrabResult*)(this_);
+/*void C_ZN25QQmlEngineExtensionPluginD2Ev(void *this_)*/ {
+  delete (QQmlEngineExtensionPlugin*)(this_);
 }
   return fnptrsumval;
-} // end ensure_inline_symbol_qquickitemgrabresult
+} // end ensure_inline_symbol_qqmlengineextensionplugin
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlImageProviderBase is pure virtual: true
+// QQmlImageProviderBase is pure virtual: true true
 // QQmlImageProviderBase has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQQmlImageProviderBase[] = {
 class Q_DECL_EXPORT MyQQmlImageProviderBase : public QQmlImageProviderBase {
 public:
   virtual ~MyQQmlImageProviderBase() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] QQmlImageProviderBase::ImageType imageType()
   virtual QQmlImageProviderBase::ImageType imageType() const override {
     int handled = 0;
@@ -76,36 +76,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:73
-// [4] QQmlImageProviderBase::ImageType imageType()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:74
-// [4] QQmlImageProviderBase::Flags flags()
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:71
-// [-2] void ~QQmlImageProviderBase()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QQmlImageProviderBaseD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qqmlimageproviderbase(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN21QQmlImageProviderBaseD2Ev(void *this_)*/ {
   delete (QQmlImageProviderBase*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:73
-// [4] QQmlImageProviderBase::ImageType imageType()
-extern "C" Q_DECL_EXPORT
-QQmlImageProviderBase::ImageType C_ZNK21QQmlImageProviderBase9imageTypeEv(void *this_) {
-  return (QQmlImageProviderBase::ImageType)((QQmlImageProviderBase*)this_)->imageType();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlengine.h:74
-// [4] QQmlImageProviderBase::Flags flags()
-extern "C" Q_DECL_EXPORT
-QQmlImageProviderBase::Flags* C_ZNK21QQmlImageProviderBase5flagsEv(void *this_) {
-  auto rv = ((QQmlImageProviderBase*)this_)->flags();
-return new QQmlImageProviderBase::Flags(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qqmlimageproviderbase
 //  main block end
 
 //  use block begin

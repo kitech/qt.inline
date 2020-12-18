@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGNodeVisitor is pure virtual: false
+// QSGNodeVisitor is pure virtual: false false
 // QSGNodeVisitor has virtual projected: true
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQSGNodeVisitor[] = {
 class Q_DECL_EXPORT MyQSGNodeVisitor : public QSGNodeVisitor {
 public:
   virtual ~MyQSGNodeVisitor() {}
-// Protected inline virtual Visibility=Default Availability=Available
+// Protected inline virtual Ignore Visibility=Default Availability=Available
 // [-2] void enterTransformNode(QSGTransformNode *)
   virtual void enterTransformNode(QSGTransformNode * arg0)  override {
     int handled = 0;
@@ -60,7 +60,7 @@ public:
   }
   }
 
-// Protected inline virtual Visibility=Default Availability=Available
+// Protected inline virtual Ignore Visibility=Default Availability=Available
 // [-2] void leaveTransformNode(QSGTransformNode *)
   virtual void leaveTransformNode(QSGTransformNode * arg0)  override {
     int handled = 0;
@@ -72,7 +72,7 @@ public:
   }
   }
 
-// Protected inline virtual Visibility=Default Availability=Available
+// Protected inline virtual Ignore Visibility=Default Availability=Available
 // [-2] void enterClipNode(QSGClipNode *)
   virtual void enterClipNode(QSGClipNode * arg0)  override {
     int handled = 0;
@@ -84,7 +84,7 @@ public:
   }
   }
 
-// Protected inline virtual Visibility=Default Availability=Available
+// Protected inline virtual Ignore Visibility=Default Availability=Available
 // [-2] void leaveClipNode(QSGClipNode *)
   virtual void leaveClipNode(QSGClipNode * arg0)  override {
     int handled = 0;
@@ -96,7 +96,7 @@ public:
   }
   }
 
-// Protected inline virtual Visibility=Default Availability=Available
+// Protected inline virtual Ignore Visibility=Default Availability=Available
 // [-2] void enterGeometryNode(QSGGeometryNode *)
   virtual void enterGeometryNode(QSGGeometryNode * arg0)  override {
     int handled = 0;
@@ -108,7 +108,7 @@ public:
   }
   }
 
-// Protected inline virtual Visibility=Default Availability=Available
+// Protected inline virtual Ignore Visibility=Default Availability=Available
 // [-2] void leaveGeometryNode(QSGGeometryNode *)
   virtual void leaveGeometryNode(QSGGeometryNode * arg0)  override {
     int handled = 0;
@@ -120,7 +120,7 @@ public:
   }
   }
 
-// Protected inline virtual Visibility=Default Availability=Available
+// Protected inline virtual Ignore Visibility=Default Availability=Available
 // [-2] void enterOpacityNode(QSGOpacityNode *)
   virtual void enterOpacityNode(QSGOpacityNode * arg0)  override {
     int handled = 0;
@@ -132,7 +132,7 @@ public:
   }
   }
 
-// Protected inline virtual Visibility=Default Availability=Available
+// Protected inline virtual Ignore Visibility=Default Availability=Available
 // [-2] void leaveOpacityNode(QSGOpacityNode *)
   virtual void leaveOpacityNode(QSGOpacityNode * arg0)  override {
     int handled = 0;
@@ -144,7 +144,7 @@ public:
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void visitNode(QSGNode *)
   virtual void visitNode(QSGNode * n)  override {
     int handled = 0;
@@ -156,7 +156,7 @@ public:
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void visitChildren(QSGNode *)
   virtual void visitChildren(QSGNode * n)  override {
     int handled = 0;
@@ -170,93 +170,16 @@ public:
 
 };
 
-// Protected inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:335
-// [-2] void enterTransformNode(QSGTransformNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor18enterTransformNodeEP16QSGTransformNode(void *this_, QSGTransformNode * arg0) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::enterTransformNode(arg0);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgnodevisitor(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Protected inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:336
-// [-2] void leaveTransformNode(QSGTransformNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor18leaveTransformNodeEP16QSGTransformNode(void *this_, QSGTransformNode * arg0) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::leaveTransformNode(arg0);
-}
 
-// Protected inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:337
-// [-2] void enterClipNode(QSGClipNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor13enterClipNodeEP11QSGClipNode(void *this_, QSGClipNode * arg0) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::enterClipNode(arg0);
-}
-
-// Protected inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:338
-// [-2] void leaveClipNode(QSGClipNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor13leaveClipNodeEP11QSGClipNode(void *this_, QSGClipNode * arg0) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::leaveClipNode(arg0);
-}
-
-// Protected inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:339
-// [-2] void enterGeometryNode(QSGGeometryNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor17enterGeometryNodeEP15QSGGeometryNode(void *this_, QSGGeometryNode * arg0) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::enterGeometryNode(arg0);
-}
-
-// Protected inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:340
-// [-2] void leaveGeometryNode(QSGGeometryNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor17leaveGeometryNodeEP15QSGGeometryNode(void *this_, QSGGeometryNode * arg0) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::leaveGeometryNode(arg0);
-}
-
-// Protected inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:341
-// [-2] void enterOpacityNode(QSGOpacityNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor16enterOpacityNodeEP14QSGOpacityNode(void *this_, QSGOpacityNode * arg0) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::enterOpacityNode(arg0);
-}
-
-// Protected inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:342
-// [-2] void leaveOpacityNode(QSGOpacityNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor16leaveOpacityNodeEP14QSGOpacityNode(void *this_, QSGOpacityNode * arg0) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::leaveOpacityNode(arg0);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:343
-// [-2] void visitNode(QSGNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor9visitNodeEP7QSGNode(void *this_, QSGNode * n) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::visitNode(n);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:344
-// [-2] void visitChildren(QSGNode *)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitor13visitChildrenEP7QSGNode(void *this_, QSGNode * n) {
-  ((QSGNodeVisitor*)this_)->QSGNodeVisitor::visitChildren(n);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:332
-// [-2] void ~QSGNodeVisitor()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGNodeVisitorD2Ev(void *this_) {
+/*void C_ZN14QSGNodeVisitorD2Ev(void *this_)*/ {
   delete (QSGNodeVisitor*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgnodevisitor
 //  main block end
 
 //  use block begin

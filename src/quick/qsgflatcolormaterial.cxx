@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGFlatColorMaterial is pure virtual: false
+// QSGFlatColorMaterial is pure virtual: false false
 // QSGFlatColorMaterial has virtual projected: false
 //  header block end
 
@@ -52,60 +52,28 @@ public:
 MyQSGFlatColorMaterial() : QSGFlatColorMaterial() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgflatcolormaterial.h:51
-// [-2] void QSGFlatColorMaterial()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QSGFlatColorMaterialC2Ev() {
-  return  new QSGFlatColorMaterial();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgflatcolormaterial(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgflatcolormaterial.h:52
-// [8] QSGMaterialType * type()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QSGFlatColorMaterial4typeEv(void *this_) {
-  return (void*)((QSGFlatColorMaterial*)this_)->type();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgflatcolormaterial.h:53
-// [8] QSGMaterialShader * createShader()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QSGFlatColorMaterial12createShaderEv(void *this_) {
-  return (void*)((QSGFlatColorMaterial*)this_)->createShader();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgflatcolormaterial.h:55
-// [-2] void setColor(const QColor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN20QSGFlatColorMaterial8setColorERK6QColor(void *this_, QColor* color) {
-  ((QSGFlatColorMaterial*)this_)->setColor(*color);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:56
-// [16] const QColor & color()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QSGFlatColorMaterial5colorEv(void *this_) {
-  auto& rv = ((QSGFlatColorMaterial*)this_)->color();
-return new QColor(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgflatcolormaterial.h:58
-// [4] int compare(const QSGMaterial *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK20QSGFlatColorMaterial7compareEPK11QSGMaterial(void *this_, const QSGMaterial * other) {
-  return (int)((QSGFlatColorMaterial*)this_)->compare(other);
+// [16] const QColor & color() const
+// (11)qm903602358 (34)_ZNK20QSGFlatColorMaterial5colorEv
+//static
+/*void qm903602358()*/ {
+  ;
+  (void) ((QSGFlatColorMaterial*)this_)->color();
+   auto xptr = (const QColor & (QSGFlatColorMaterial::*)() const ) &QSGFlatColorMaterial::color;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN20QSGFlatColorMaterialD2Ev(void *this_) {
+/*void C_ZN20QSGFlatColorMaterialD2Ev(void *this_)*/ {
   delete (QSGFlatColorMaterial*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgflatcolormaterial
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGRootNode is pure virtual: false
+// QSGRootNode is pure virtual: false false
 // QSGRootNode has virtual projected: false
 //  header block end
 
@@ -52,21 +52,16 @@ public:
 MyQSGRootNode() : QSGRootNode() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:297
-// [-2] void QSGRootNode()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QSGRootNodeC2Ev() {
-  return  new QSGRootNode();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgrootnode(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:298
-// [-2] void ~QSGRootNode()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QSGRootNodeD2Ev(void *this_) {
+
+/*void C_ZN11QSGRootNodeD2Ev(void *this_)*/ {
   delete (QSGRootNode*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgrootnode
 //  main block end
 
 //  use block begin

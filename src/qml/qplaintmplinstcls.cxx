@@ -40,10 +40,10 @@ int C_ZN11QMetaTypeIdIP7QObjectE14qt_metatype_idEv(void* this_ ) {
    return rv;
 }
 
-// [4] int QMetaTypeId<QQmlListProperty<QObject> >::qt_metatype_id()
+// [4] int QMetaTypeId<QQmlListProperty<QObject>>::qt_metatype_id()
 extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaTypeIdI16QQmlListPropertyI7QObjectEE14qt_metatype_idEv(void* this_ ) {
-   auto rv =  ((QMetaTypeId<QQmlListProperty<QObject> >*)this_)->qt_metatype_id();
+   auto rv =  ((QMetaTypeId<QQmlListProperty<QObject>>*)this_)->qt_metatype_id();
    return rv;
 }
 
@@ -68,17 +68,17 @@ int C_ZN11QMetaTypeIdIP13QQmlComponentE14qt_metatype_idEv(void* this_ ) {
    return rv;
 }
 
-// [4] int QMetaTypeId<QQmlListProperty<QQmlComponent> >::qt_metatype_id()
+// [4] int QMetaTypeId<QQmlListProperty<QQmlComponent>>::qt_metatype_id()
 extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaTypeIdI16QQmlListPropertyI13QQmlComponentEE14qt_metatype_idEv(void* this_ ) {
-   auto rv =  ((QMetaTypeId<QQmlListProperty<QQmlComponent> >*)this_)->qt_metatype_id();
+   auto rv =  ((QMetaTypeId<QQmlListProperty<QQmlComponent>>*)this_)->qt_metatype_id();
    return rv;
 }
 
-// [4] int QMetaTypeId<QList<QObject *> >::qt_metatype_id()
+// [4] int QMetaTypeId<QList<QObject *>>::qt_metatype_id()
 extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaTypeIdI5QListIP7QObjectEE14qt_metatype_idEv(void* this_ ) {
-   auto rv =  ((QMetaTypeId<QList<QObject *> >*)this_)->qt_metatype_id();
+   auto rv =  ((QMetaTypeId<QList<QObject *>>*)this_)->qt_metatype_id();
    return rv;
 }
 

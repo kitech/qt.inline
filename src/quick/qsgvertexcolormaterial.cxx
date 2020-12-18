@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGVertexColorMaterial is pure virtual: false
+// QSGVertexColorMaterial is pure virtual: false false
 // QSGVertexColorMaterial has virtual projected: true
 //  header block end
 
@@ -50,7 +50,7 @@ public:
   virtual ~MyQSGVertexColorMaterial() {}
 // void QSGVertexColorMaterial()
 MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Direct Visibility=Default Availability=Available
 // [8] QSGMaterialType * type()
   virtual QSGMaterialType * type() const override {
     int handled = 0;
@@ -63,7 +63,7 @@ MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Direct Visibility=Default Availability=Available
 // [8] QSGMaterialShader * createShader()
   virtual QSGMaterialShader * createShader() const override {
     int handled = 0;
@@ -78,44 +78,16 @@ MyQSGVertexColorMaterial() : QSGVertexColorMaterial() {}
 
 };
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:55
-// [8] QSGMaterialType * type()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QSGVertexColorMaterial4typeEv(void *this_) {
-  return (void*)((QSGVertexColorMaterial*)this_)->QSGVertexColorMaterial::type();
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:56
-// [8] QSGMaterialShader * createShader()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QSGVertexColorMaterial12createShaderEv(void *this_) {
-  return (void*)((QSGVertexColorMaterial*)this_)->QSGVertexColorMaterial::createShader();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:50
-// [-2] void QSGVertexColorMaterial()
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QSGVertexColorMaterialC2Ev() {
-  auto _nilp = (MyQSGVertexColorMaterial*)(0);
-  return  new MyQSGVertexColorMaterial();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:52
-// [4] int compare(const QSGMaterial *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK22QSGVertexColorMaterial7compareEPK11QSGMaterial(void *this_, const QSGMaterial * other) {
-  return (int)((QSGVertexColorMaterial*)this_)->compare(other);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgvertexcolormaterial(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN22QSGVertexColorMaterialD2Ev(void *this_) {
+/*void C_ZN22QSGVertexColorMaterialD2Ev(void *this_)*/ {
   delete (QSGVertexColorMaterial*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgvertexcolormaterial
 //  main block end
 
 //  use block begin

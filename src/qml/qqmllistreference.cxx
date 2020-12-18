@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtQml/qqmllist.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlListReference is pure virtual: false
+// QQmlListReference is pure virtual: false false
 // QQmlListReference has virtual projected: false
 //  header block end
 
@@ -57,150 +56,16 @@ MyQQmlListReference(QObject * arg0, const char * property, QQmlEngine * arg2) : 
 MyQQmlListReference(const QQmlListReference & arg0) : QQmlListReference(arg0) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:134
-// [-2] void QQmlListReference()
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QQmlListReferenceC2Ev() {
-  return  new QQmlListReference();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qqmllistreference(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:135
-// [-2] void QQmlListReference(QObject *, const char *, QQmlEngine *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QQmlListReferenceC2EP7QObjectPKcP10QQmlEngine(QObject * arg0, const char * property, QQmlEngine * arg2) {
-  return  new QQmlListReference(arg0, property, arg2);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:136
-// [-2] void QQmlListReference(const QQmlListReference &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QQmlListReferenceC2ERKS_(QQmlListReference* arg0) {
-  return  new QQmlListReference(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:137
-// [8] QQmlListReference & operator=(const QQmlListReference &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QQmlListReferenceaSERKS_(void *this_, QQmlListReference* arg0) {
-  auto& rv = ((QQmlListReference*)this_)->operator=(*arg0);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:138
-// [-2] void ~QQmlListReference()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QQmlListReferenceD2Ev(void *this_) {
+/*void C_ZN17QQmlListReferenceD2Ev(void *this_)*/ {
   delete (QQmlListReference*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:140
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QQmlListReference7isValidEv(void *this_) {
-  return (bool)((QQmlListReference*)this_)->isValid();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:142
-// [8] QObject * object()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QQmlListReference6objectEv(void *this_) {
-  return (void*)((QQmlListReference*)this_)->object();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:143
-// [8] const QMetaObject * listElementType()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QQmlListReference15listElementTypeEv(void *this_) {
-  return (void*)((QQmlListReference*)this_)->listElementType();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:145
-// [1] bool canAppend()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QQmlListReference9canAppendEv(void *this_) {
-  return (bool)((QQmlListReference*)this_)->canAppend();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:146
-// [1] bool canAt()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QQmlListReference5canAtEv(void *this_) {
-  return (bool)((QQmlListReference*)this_)->canAt();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:147
-// [1] bool canClear()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QQmlListReference8canClearEv(void *this_) {
-  return (bool)((QQmlListReference*)this_)->canClear();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:148
-// [1] bool canCount()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QQmlListReference8canCountEv(void *this_) {
-  return (bool)((QQmlListReference*)this_)->canCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:150
-// [1] bool isManipulable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QQmlListReference13isManipulableEv(void *this_) {
-  return (bool)((QQmlListReference*)this_)->isManipulable();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:151
-// [1] bool isReadable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QQmlListReference10isReadableEv(void *this_) {
-  return (bool)((QQmlListReference*)this_)->isReadable();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:153
-// [1] bool append(QObject *)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QQmlListReference6appendEP7QObject(void *this_, QObject * arg0) {
-  return (bool)((QQmlListReference*)this_)->append(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:154
-// [8] QObject * at(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QQmlListReference2atEi(void *this_, int arg0) {
-  return (void*)((QQmlListReference*)this_)->at(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:155
-// [1] bool clear()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK17QQmlListReference5clearEv(void *this_) {
-  return (bool)((QQmlListReference*)this_)->clear();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmllist.h:156
-// [4] int count()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QQmlListReference5countEv(void *this_) {
-  return (int)((QQmlListReference*)this_)->count();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qqmllistreference
 //  main block end
 
 //  use block begin

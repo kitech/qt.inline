@@ -9,30 +9,30 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// CachedQmlUnit is pure virtual: false false
-// CachedQmlUnit has virtual projected: false
+// RegisterSingletonFunctor is pure virtual: false false
+// RegisterSingletonFunctor has virtual projected: false
 //  header block end
 
 //  main block begin
 
 
-struct qt_meta_stringdata_MyCachedQmlUnit_t {
+struct qt_meta_stringdata_MyRegisterSingletonFunctor_t {
   QByteArrayData data[1];
-  char stringdata0[16];
+  char stringdata0[27];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
   Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyCachedQmlUnit_t, stringdata0) + ofs \
+  qptrdiff(offsetof(qt_meta_stringdata_MyRegisterSingletonFunctor_t, stringdata0) + ofs \
   - idx * sizeof(QByteArrayData)) \
   )
-static const qt_meta_stringdata_MyCachedQmlUnit_t qt_meta_stringdata_MyCachedQmlUnit = {
+static const qt_meta_stringdata_MyRegisterSingletonFunctor_t qt_meta_stringdata_MyRegisterSingletonFunctor = {
    {
-  QT_MOC_LITERAL(0, 0, 15), // "MyCachedQmlUnit"
+  QT_MOC_LITERAL(0, 0, 26), // "MyRegisterSingletonFunctor"
   },
-  "MyCachedQmlUnit"
+  "MyRegisterSingletonFunctor"
 };
 #undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyCachedQmlUnit[] = {
+static const uint qt_meta_data_MyRegisterSingletonFunctor[] = {
   // content:
   7,       // revision
   0,       // classname
@@ -45,21 +45,21 @@ static const uint qt_meta_data_MyCachedQmlUnit[] = {
   0,       // signalCount
   0        // eod
 };
-class Q_DECL_EXPORT MyCachedQmlUnit : public QQmlPrivate::CachedQmlUnit {
+class Q_DECL_EXPORT MyRegisterSingletonFunctor : public QQmlPrivate::RegisterSingletonFunctor {
 public:
-  virtual ~MyCachedQmlUnit() {}
+  virtual ~MyRegisterSingletonFunctor() {}
 };
 
 extern "C" // Q_DECL_EXPORT
-uint64_t ensure_inline_symbol_cachedqmlunit(void* this_) {
+uint64_t ensure_inline_symbol_registersingletonfunctor(void* this_) {
   uint64_t fnptrsumval = 0;
 
 
-/*void C_ZN13CachedQmlUnitD2Ev(void *this_)*/ {
-  delete (QQmlPrivate::CachedQmlUnit*)(this_);
+/*void C_ZN24RegisterSingletonFunctorD2Ev(void *this_)*/ {
+  delete (QQmlPrivate::RegisterSingletonFunctor*)(this_);
 }
   return fnptrsumval;
-} // end ensure_inline_symbol_cachedqmlunit
+} // end ensure_inline_symbol_registersingletonfunctor
 //  main block end
 
 //  use block begin

@@ -9,30 +9,30 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// CachedQmlUnit is pure virtual: false false
-// CachedQmlUnit has virtual projected: false
+// RegisterTypeAndRevisions is pure virtual: false false
+// RegisterTypeAndRevisions has virtual projected: false
 //  header block end
 
 //  main block begin
 
 
-struct qt_meta_stringdata_MyCachedQmlUnit_t {
+struct qt_meta_stringdata_MyRegisterTypeAndRevisions_t {
   QByteArrayData data[1];
-  char stringdata0[16];
+  char stringdata0[27];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
   Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyCachedQmlUnit_t, stringdata0) + ofs \
+  qptrdiff(offsetof(qt_meta_stringdata_MyRegisterTypeAndRevisions_t, stringdata0) + ofs \
   - idx * sizeof(QByteArrayData)) \
   )
-static const qt_meta_stringdata_MyCachedQmlUnit_t qt_meta_stringdata_MyCachedQmlUnit = {
+static const qt_meta_stringdata_MyRegisterTypeAndRevisions_t qt_meta_stringdata_MyRegisterTypeAndRevisions = {
    {
-  QT_MOC_LITERAL(0, 0, 15), // "MyCachedQmlUnit"
+  QT_MOC_LITERAL(0, 0, 26), // "MyRegisterTypeAndRevisions"
   },
-  "MyCachedQmlUnit"
+  "MyRegisterTypeAndRevisions"
 };
 #undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyCachedQmlUnit[] = {
+static const uint qt_meta_data_MyRegisterTypeAndRevisions[] = {
   // content:
   7,       // revision
   0,       // classname
@@ -45,21 +45,21 @@ static const uint qt_meta_data_MyCachedQmlUnit[] = {
   0,       // signalCount
   0        // eod
 };
-class Q_DECL_EXPORT MyCachedQmlUnit : public QQmlPrivate::CachedQmlUnit {
+class Q_DECL_EXPORT MyRegisterTypeAndRevisions : public QQmlPrivate::RegisterTypeAndRevisions {
 public:
-  virtual ~MyCachedQmlUnit() {}
+  virtual ~MyRegisterTypeAndRevisions() {}
 };
 
 extern "C" // Q_DECL_EXPORT
-uint64_t ensure_inline_symbol_cachedqmlunit(void* this_) {
+uint64_t ensure_inline_symbol_registertypeandrevisions(void* this_) {
   uint64_t fnptrsumval = 0;
 
 
-/*void C_ZN13CachedQmlUnitD2Ev(void *this_)*/ {
-  delete (QQmlPrivate::CachedQmlUnit*)(this_);
+/*void C_ZN24RegisterTypeAndRevisionsD2Ev(void *this_)*/ {
+  delete (QQmlPrivate::RegisterTypeAndRevisions*)(this_);
 }
   return fnptrsumval;
-} // end ensure_inline_symbol_cachedqmlunit
+} // end ensure_inline_symbol_registertypeandrevisions
 //  main block end
 
 //  use block begin

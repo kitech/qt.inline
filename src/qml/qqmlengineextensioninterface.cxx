@@ -9,30 +9,30 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlExtensionInterface is pure virtual: true true
-// QQmlExtensionInterface has virtual projected: false
+// QQmlEngineExtensionInterface is pure virtual: true true
+// QQmlEngineExtensionInterface has virtual projected: false
 //  header block end
 
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQQmlExtensionInterface_t {
+struct qt_meta_stringdata_MyQQmlEngineExtensionInterface_t {
   QByteArrayData data[1];
-  char stringdata0[25];
+  char stringdata0[31];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
   Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQQmlExtensionInterface_t, stringdata0) + ofs \
+  qptrdiff(offsetof(qt_meta_stringdata_MyQQmlEngineExtensionInterface_t, stringdata0) + ofs \
   - idx * sizeof(QByteArrayData)) \
   )
-static const qt_meta_stringdata_MyQQmlExtensionInterface_t qt_meta_stringdata_MyQQmlExtensionInterface = {
+static const qt_meta_stringdata_MyQQmlEngineExtensionInterface_t qt_meta_stringdata_MyQQmlEngineExtensionInterface = {
    {
-  QT_MOC_LITERAL(0, 0, 24), // "MyQQmlExtensionInterface"
+  QT_MOC_LITERAL(0, 0, 30), // "MyQQmlEngineExtensionInterface"
   },
-  "MyQQmlExtensionInterface"
+  "MyQQmlEngineExtensionInterface"
 };
 #undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQQmlExtensionInterface[] = {
+static const uint qt_meta_data_MyQQmlEngineExtensionInterface[] = {
   // content:
   7,       // revision
   0,       // classname
@@ -45,9 +45,9 @@ static const uint qt_meta_data_MyQQmlExtensionInterface[] = {
   0,       // signalCount
   0        // eod
 };
-class Q_DECL_EXPORT MyQQmlExtensionInterface : public QQmlExtensionInterface {
+class Q_DECL_EXPORT MyQQmlEngineExtensionInterface : public QQmlEngineExtensionInterface {
 public:
-  virtual ~MyQQmlExtensionInterface() {}
+  virtual ~MyQQmlEngineExtensionInterface() {}
 // Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void initializeEngine(QQmlEngine *, const char *)
   virtual void initializeEngine(QQmlEngine * engine, const char * uri)  override {
@@ -56,37 +56,25 @@ public:
     if (handled) {
       // Void Void void
     } else {
-    // QQmlExtensionInterface::initializeEngine(engine, uri);
-  }
-  }
-
-// Public purevirtual virtual Ignore Visibility=Default Availability=Available
-// [-2] void registerTypes(const char *)
-  virtual void registerTypes(const char * uri)  override {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"registerTypes", &handled, 1, (uint64_t)uri, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-      // Void Void void
-    } else {
-    // QQmlExtensionInterface::registerTypes(uri);
+    // QQmlEngineExtensionInterface::initializeEngine(engine, uri);
   }
   }
 
 };
 
 extern "C" // Q_DECL_EXPORT
-uint64_t ensure_inline_symbol_qqmlextensioninterface(void* this_) {
+uint64_t ensure_inline_symbol_qqmlengineextensioninterface(void* this_) {
   uint64_t fnptrsumval = 0;
 
 // Public inline virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlextensioninterface.h:61
-// [-2] void ~QQmlExtensionInterface() 
-// (11)qm377190100 (31)_ZN22QQmlExtensionInterfaceD2Ev
-/*void qm377190100 (void *this_)*/ {
-  delete (QQmlExtensionInterface*)(this_);
+// /usr/include/qt/QtQml/qqmlextensioninterface.h:68
+// [-2] void ~QQmlEngineExtensionInterface() 
+// (11)qm860710753 (37)_ZN28QQmlEngineExtensionInterfaceD2Ev
+/*void qm860710753 (void *this_)*/ {
+  delete (QQmlEngineExtensionInterface*)(this_);
 }
   return fnptrsumval;
-} // end ensure_inline_symbol_qqmlextensioninterface
+} // end ensure_inline_symbol_qqmlengineextensioninterface
 //  main block end
 
 //  use block begin

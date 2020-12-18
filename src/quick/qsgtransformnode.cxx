@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGTransformNode is pure virtual: false
+// QSGTransformNode is pure virtual: false false
 // QSGTransformNode has virtual projected: false
 //  header block end
 
@@ -52,55 +52,40 @@ public:
 MyQSGTransformNode() : QSGTransformNode() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:279
-// [-2] void QSGTransformNode()
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QSGTransformNodeC2Ev() {
-  return  new QSGTransformNode();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgtransformnode(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:283
+// [68] const QMatrix4x4 & matrix() const
+// (11)qm802752843 (31)_ZNK16QSGTransformNode6matrixEv
+//static
+/*void qm802752843()*/ {
+  ;
+  (void) ((QSGTransformNode*)this_)->matrix();
+   auto xptr = (const QMatrix4x4 & (QSGTransformNode::*)() const ) &QSGTransformNode::matrix;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:280
-// [-2] void ~QSGTransformNode()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGTransformNodeD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:286
+// [68] const QMatrix4x4 & combinedMatrix() const
+// (11)qm909966223 (40)_ZNK16QSGTransformNode14combinedMatrixEv
+//static
+/*void qm909966223()*/ {
+  ;
+  (void) ((QSGTransformNode*)this_)->combinedMatrix();
+   auto xptr = (const QMatrix4x4 & (QSGTransformNode::*)() const ) &QSGTransformNode::combinedMatrix;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN16QSGTransformNodeD2Ev(void *this_)*/ {
   delete (QSGTransformNode*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:282
-// [-2] void setMatrix(const QMatrix4x4 &)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGTransformNode9setMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* matrix) {
-  ((QSGTransformNode*)this_)->setMatrix(*matrix);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:283
-// [68] const QMatrix4x4 & matrix()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK16QSGTransformNode6matrixEv(void *this_) {
-  auto& rv = ((QSGTransformNode*)this_)->matrix();
-return new QMatrix4x4(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:285
-// [-2] void setCombinedMatrix(const QMatrix4x4 &)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGTransformNode17setCombinedMatrixERK10QMatrix4x4(void *this_, QMatrix4x4* matrix) {
-  ((QSGTransformNode*)this_)->setCombinedMatrix(*matrix);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:286
-// [68] const QMatrix4x4 & combinedMatrix()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK16QSGTransformNode14combinedMatrixEv(void *this_) {
-  auto& rv = ((QSGTransformNode*)this_)->combinedMatrix();
-return new QMatrix4x4(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgtransformnode
 //  main block end
 
 //  use block begin

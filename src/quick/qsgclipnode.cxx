@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGClipNode is pure virtual: false
+// QSGClipNode is pure virtual: false false
 // QSGClipNode has virtual projected: false
 //  header block end
 
@@ -52,54 +52,40 @@ public:
 MyQSGClipNode() : QSGClipNode() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:259
-// [-2] void QSGClipNode()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QSGClipNodeC2Ev() {
-  return  new QSGClipNode();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgclipnode(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:263
+// [1] bool isRectangular() const
+// (12)qm2527517363 (34)_ZNK11QSGClipNode13isRectangularEv
+//static
+/*void qm2527517363()*/ {
+  ;
+  (void) ((QSGClipNode*)this_)->isRectangular();
+   auto xptr = (bool (QSGClipNode::*)() const ) &QSGClipNode::isRectangular;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:260
-// [-2] void ~QSGClipNode()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QSGClipNodeD2Ev(void *this_) {
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:266
+// [32] QRectF clipRect() const
+// (12)qm3628172090 (28)_ZNK11QSGClipNode8clipRectEv
+//static
+/*void qm3628172090()*/ {
+  ;
+  (void) ((QSGClipNode*)this_)->clipRect();
+   auto xptr = (QRectF (QSGClipNode::*)() const ) &QSGClipNode::clipRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN11QSGClipNodeD2Ev(void *this_)*/ {
   delete (QSGClipNode*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:262
-// [-2] void setIsRectangular(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QSGClipNode16setIsRectangularEb(void *this_, bool rectHint) {
-  ((QSGClipNode*)this_)->setIsRectangular(rectHint);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:263
-// [1] bool isRectangular()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QSGClipNode13isRectangularEv(void *this_) {
-  return (bool)((QSGClipNode*)this_)->isRectangular();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:265
-// [-2] void setClipRect(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QSGClipNode11setClipRectERK6QRectF(void *this_, QRectF* arg0) {
-  ((QSGClipNode*)this_)->setClipRect(*arg0);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:266
-// [32] QRectF clipRect()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QSGClipNode8clipRectEv(void *this_) {
-  auto rv = ((QSGClipNode*)this_)->clipRect();
-return new QRectF(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgclipnode
 //  main block end
 
 //  use block begin

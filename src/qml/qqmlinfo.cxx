@@ -9,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlInfo is pure virtual: false
+// QQmlInfo is pure virtual: false false
 // QQmlInfo has virtual projected: false
 //  header block end
 
@@ -52,219 +52,280 @@ public:
 MyQQmlInfo(const QQmlInfo & arg0) : QQmlInfo(arg0) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:75
-// [-2] void QQmlInfo(const QQmlInfo &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfoC2ERKS_(QQmlInfo* arg0) {
-  return  new QQmlInfo(*arg0);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qqmlinfo(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:79
+// [16] QQmlInfo & operator<<(QChar) 
+// (12)qm2405926893 (21)_ZN8QQmlInfolsE5QChar
+//static
+/*void qm2405926893(QChar t)*/ {
+  QChar t = *(QChar*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(QChar) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:76
-// [-2] void ~QQmlInfo()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QQmlInfoD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:80
+// [16] QQmlInfo & operator<<(bool) 
+// (11)qm889704392 (16)_ZN8QQmlInfolsEb
+//static
+/*void qm889704392(bool t)*/ {
+  bool t = *(bool*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(bool) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:81
+// [16] QQmlInfo & operator<<(char) 
+// (12)qm1107361630 (16)_ZN8QQmlInfolsEc
+//static
+/*void qm1107361630(char t)*/ {
+  char t = *(char*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(char) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:82
+// [16] QQmlInfo & operator<<(short) 
+// (12)qm1605889850 (16)_ZN8QQmlInfolsEs
+//static
+/*void qm1605889850(short t)*/ {
+  short t = *(short*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(short) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:83
+// [16] QQmlInfo & operator<<(unsigned short) 
+// (12)qm3251862169 (16)_ZN8QQmlInfolsEt
+//static
+/*void qm3251862169(unsigned short t)*/ {
+  unsigned short t = *(unsigned short*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(unsigned short) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:84
+// [16] QQmlInfo & operator<<(int) 
+// (12)qm2731873856 (16)_ZN8QQmlInfolsEi
+//static
+/*void qm2731873856(int t)*/ {
+  int t = *(int*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(int) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:85
+// [16] QQmlInfo & operator<<(unsigned int) 
+// (12)qm1004292090 (16)_ZN8QQmlInfolsEj
+//static
+/*void qm1004292090(unsigned int t)*/ {
+  unsigned int t = *(unsigned int*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(unsigned int) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:86
+// [16] QQmlInfo & operator<<(long) 
+// (12)qm3535790799 (16)_ZN8QQmlInfolsEl
+//static
+/*void qm3535790799(long t)*/ {
+  long t = *(long*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(long) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:87
+// [16] QQmlInfo & operator<<(unsigned long) 
+// (12)qm2780353113 (16)_ZN8QQmlInfolsEm
+//static
+/*void qm2780353113(unsigned long t)*/ {
+  unsigned long t = *(unsigned long*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(unsigned long) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:88
+// [16] QQmlInfo & operator<<(qint64) 
+// (12)qm3362076338 (16)_ZN8QQmlInfolsEx
+//static
+/*void qm3362076338(long long t)*/ {
+  long long t = *(long long*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(long long) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:89
+// [16] QQmlInfo & operator<<(quint64) 
+// (12)qm3210872356 (16)_ZN8QQmlInfolsEy
+//static
+/*void qm3210872356(unsigned long long t)*/ {
+  unsigned long long t = *(unsigned long long*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(unsigned long long) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:90
+// [16] QQmlInfo & operator<<(float) 
+// (11)qm845810641 (16)_ZN8QQmlInfolsEf
+//static
+/*void qm845810641(float t)*/ {
+  float t = *(float*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(float) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:91
+// [16] QQmlInfo & operator<<(double) 
+// (12)qm3697568509 (16)_ZN8QQmlInfolsEd
+//static
+/*void qm3697568509(double t)*/ {
+  double t = *(double*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(double) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:92
+// [16] QQmlInfo & operator<<(const char *) 
+// (12)qm2851615309 (18)_ZN8QQmlInfolsEPKc
+//static
+/*void qm2851615309(const char * t)*/ {
+  const char * t = *(const char **)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(char const*) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:93
+// [16] QQmlInfo & operator<<(const QString &) 
+// (12)qm3251566924 (25)_ZN8QQmlInfolsERK7QString
+//static
+/*void qm3251566924(const QString & t)*/ {
+  const QString & t = *(const QString *)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(QString const&) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:94
+// [16] QQmlInfo & operator<<(const QStringRef &) 
+// (12)qm2847561470 (29)_ZN8QQmlInfolsERK10QStringRef
+//static
+/*void qm2847561470(const QStringRef & t)*/ {
+  const QStringRef & t = *(const QStringRef *)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(QStringRef const&) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:95
+// [16] QQmlInfo & operator<<(const QLatin1String &) 
+// (11)qm823155478 (32)_ZN8QQmlInfolsERK13QLatin1String
+//static
+/*void qm823155478(const QLatin1String & t)*/ {
+  const QLatin1String & t = *(const QLatin1String *)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(QLatin1String const&) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:96
+// [16] QQmlInfo & operator<<(const QByteArray &) 
+// (12)qm1751740725 (29)_ZN8QQmlInfolsERK10QByteArray
+//static
+/*void qm1751740725(const QByteArray & t)*/ {
+  const QByteArray & t = *(const QByteArray *)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(QByteArray const&) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:97
+// [16] QQmlInfo & operator<<(const void *) 
+// (12)qm3290814118 (18)_ZN8QQmlInfolsEPKv
+//static
+/*void qm3290814118(const void * t)*/ {
+  const void * t = *(const void **)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(void const*) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:98
+// [16] QQmlInfo & operator<<(QTextStreamFunction) 
+// (11)qm112821578 (35)_ZN8QQmlInfolsEPFR11QTextStreamS1_E
+//static
+/*void qm112821578(QTextStreamFunction f)*/ {
+  QTextStreamFunction f = *(QTextStreamFunction*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(f);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(QTextStream& (*)(QTextStream&)) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:99
+// [16] QQmlInfo & operator<<(QTextStreamManipulator) 
+// (12)qm2323663337 (39)_ZN8QQmlInfolsE22QTextStreamManipulator
+//static
+/*void qm2323663337(QTextStreamManipulator m)*/ {
+  QTextStreamManipulator m = *(QTextStreamManipulator*)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(m);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(QTextStreamManipulator) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:101
+// [16] QQmlInfo & operator<<(const QUrl &) 
+// (12)qm1105047186 (22)_ZN8QQmlInfolsERK4QUrl
+//static
+/*void qm1105047186(const QUrl & t)*/ {
+  const QUrl & t = *(const QUrl *)this_;
+  (void) ((QQmlInfo*)this_)->operator<<(t);
+  // auto xptr = (QQmlInfo & (QQmlInfo::*)(QUrl const&) ) &QQmlInfo::operator<<;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN8QQmlInfoD2Ev(void *this_)*/ {
   delete (QQmlInfo*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:78
-// [16] QQmlInfo & operator<<(QChar)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsE5QChar(void *this_, QChar* t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:79
-// [16] QQmlInfo & operator<<(bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEb(void *this_, bool t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:80
-// [16] QQmlInfo & operator<<(char)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEc(void *this_, char t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:81
-// [16] QQmlInfo & operator<<(short)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEs(void *this_, short t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:82
-// [16] QQmlInfo & operator<<(unsigned short)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEt(void *this_, unsigned short t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:83
-// [16] QQmlInfo & operator<<(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEi(void *this_, int t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:84
-// [16] QQmlInfo & operator<<(unsigned int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEj(void *this_, unsigned int t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:85
-// [16] QQmlInfo & operator<<(long)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEl(void *this_, long t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:86
-// [16] QQmlInfo & operator<<(unsigned long)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEm(void *this_, unsigned long t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:87
-// [16] QQmlInfo & operator<<(qint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEx(void *this_, qint64 t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:88
-// [16] QQmlInfo & operator<<(quint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEy(void *this_, quint64 t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:89
-// [16] QQmlInfo & operator<<(float)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEf(void *this_, float t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:90
-// [16] QQmlInfo & operator<<(double)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEd(void *this_, double t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:91
-// [16] QQmlInfo & operator<<(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEPKc(void *this_, const char * t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:92
-// [16] QQmlInfo & operator<<(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsERK7QString(void *this_, QString* t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:93
-// [16] QQmlInfo & operator<<(const QStringRef &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsERK10QStringRef(void *this_, QStringRef* t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:94
-// [16] QQmlInfo & operator<<(const QLatin1String &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsERK13QLatin1String(void *this_, QLatin1String* t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:95
-// [16] QQmlInfo & operator<<(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsERK10QByteArray(void *this_, QByteArray* t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:96
-// [16] QQmlInfo & operator<<(const void *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEPKv(void *this_, const void * t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(t);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:97
-// [16] QQmlInfo & operator<<(QTextStreamFunction)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsEPFR11QTextStreamS1_E(void *this_, QTextStreamFunction f) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(f);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:98
-// [16] QQmlInfo & operator<<(QTextStreamManipulator)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsE22QTextStreamManipulator(void *this_, QTextStreamManipulator* m) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(*m);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlinfo.h:100
-// [16] QQmlInfo & operator<<(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QQmlInfolsERK4QUrl(void *this_, QUrl* t) {
-  auto& rv = ((QQmlInfo*)this_)->operator<<(*t);
-return &rv;
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qqmlinfo
 //  main block end
 
 //  use block begin

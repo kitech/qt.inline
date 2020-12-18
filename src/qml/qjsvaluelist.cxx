@@ -203,6 +203,13 @@ void C_QJSValueList_move_0(void* this_ , int from, int to) {
      ((QJSValueList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QJSValueList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QJSValueList_swapItemsAt_0()
+     ((QJSValueList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QJSValueList_swap_1(void* this_ , int i, int j) {

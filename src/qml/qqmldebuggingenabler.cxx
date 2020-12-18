@@ -9,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlDebuggingEnabler is pure virtual: false
+// QQmlDebuggingEnabler is pure virtual: false false
 // QQmlDebuggingEnabler has virtual projected: false
 //  header block end
 
@@ -52,87 +52,16 @@ public:
 MyQQmlDebuggingEnabler(bool printWarning) : QQmlDebuggingEnabler(printWarning) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmldebug.h:58
-// [-2] void QQmlDebuggingEnabler(bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQmlDebuggingEnablerC2Eb(bool printWarning) {
-  return  new QQmlDebuggingEnabler(printWarning);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmldebug.h:60
-// [8] QStringList debuggerServices()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQmlDebuggingEnabler16debuggerServicesEv() {
-  auto rv = QQmlDebuggingEnabler::debuggerServices();
-return new QStringList(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmldebug.h:61
-// [8] QStringList inspectorServices()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQmlDebuggingEnabler17inspectorServicesEv() {
-  auto rv = QQmlDebuggingEnabler::inspectorServices();
-return new QStringList(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmldebug.h:62
-// [8] QStringList profilerServices()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQmlDebuggingEnabler16profilerServicesEv() {
-  auto rv = QQmlDebuggingEnabler::profilerServices();
-return new QStringList(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmldebug.h:63
-// [8] QStringList nativeDebuggerServices()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQmlDebuggingEnabler22nativeDebuggerServicesEv() {
-  auto rv = QQmlDebuggingEnabler::nativeDebuggerServices();
-return new QStringList(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmldebug.h:65
-// [-2] void setServices(const QStringList &)
-extern "C" Q_DECL_EXPORT
-void C_ZN20QQmlDebuggingEnabler11setServicesERK11QStringList(QStringList* services) {
-  QQmlDebuggingEnabler::setServices(*services);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmldebug.h:67
-// [1] bool startTcpDebugServer(int, QQmlDebuggingEnabler::StartMode, const QString &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN20QQmlDebuggingEnabler19startTcpDebugServerEiNS_9StartModeERK7QString(int port, QQmlDebuggingEnabler::StartMode mode, QString* hostName) {
-  return (bool)QQmlDebuggingEnabler::startTcpDebugServer(port, mode, *hostName);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmldebug.h:69
-// [1] bool connectToLocalDebugger(const QString &, QQmlDebuggingEnabler::StartMode)
-extern "C" Q_DECL_EXPORT
-bool C_ZN20QQmlDebuggingEnabler22connectToLocalDebuggerERK7QStringNS_9StartModeE(QString* socketFileName, QQmlDebuggingEnabler::StartMode mode) {
-  return (bool)QQmlDebuggingEnabler::connectToLocalDebugger(*socketFileName, mode);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmldebug.h:71
-// [1] bool startDebugConnector(const QString &, const QVariantHash &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN20QQmlDebuggingEnabler19startDebugConnectorERK7QStringRK5QHashIS0_8QVariantE(QString* pluginName, const QVariantHash & configuration) {
-  return (bool)QQmlDebuggingEnabler::startDebugConnector(*pluginName, configuration);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qqmldebuggingenabler(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN20QQmlDebuggingEnablerD2Ev(void *this_) {
+/*void C_ZN20QQmlDebuggingEnablerD2Ev(void *this_)*/ {
   delete (QQmlDebuggingEnabler*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qqmldebuggingenabler
 //  main block end
 
 //  use block begin

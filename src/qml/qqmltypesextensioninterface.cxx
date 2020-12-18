@@ -9,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlTypesExtensionInterface is pure virtual: true
+// QQmlTypesExtensionInterface is pure virtual: true true
 // QQmlTypesExtensionInterface has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQQmlTypesExtensionInterface[] = {
 class Q_DECL_EXPORT MyQQmlTypesExtensionInterface : public QQmlTypesExtensionInterface {
 public:
   virtual ~MyQQmlTypesExtensionInterface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void registerTypes(const char *)
   virtual void registerTypes(const char * uri)  override {
     int handled = 0;
@@ -62,24 +62,19 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlextensioninterface.h:55
-// [-2] void registerTypes(const char *)
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qqmltypesextensioninterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlextensioninterface.h:54
-// [-2] void ~QQmlTypesExtensionInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QQmlTypesExtensionInterfaceD2Ev(void *this_) {
+// [-2] void ~QQmlTypesExtensionInterface() 
+// (12)qm3612328199 (36)_ZN27QQmlTypesExtensionInterfaceD2Ev
+/*void qm3612328199 (void *this_)*/ {
   delete (QQmlTypesExtensionInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlextensioninterface.h:55
-// [-2] void registerTypes(const char *)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QQmlTypesExtensionInterface13registerTypesEPKc(void *this_, const char * uri) {
-  ((QQmlTypesExtensionInterface*)this_)->registerTypes(uri);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qqmltypesextensioninterface
 //  main block end
 
 //  use block begin

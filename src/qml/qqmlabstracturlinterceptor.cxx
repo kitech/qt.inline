@@ -9,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlAbstractUrlInterceptor is pure virtual: true
+// QQmlAbstractUrlInterceptor is pure virtual: true true
 // QQmlAbstractUrlInterceptor has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQQmlAbstractUrlInterceptor[] = {
 class Q_DECL_EXPORT MyQQmlAbstractUrlInterceptor : public QQmlAbstractUrlInterceptor {
 public:
   virtual ~MyQQmlAbstractUrlInterceptor() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QUrl intercept(const QUrl &, QQmlAbstractUrlInterceptor::DataType)
   virtual QUrl intercept(const QUrl & path, QQmlAbstractUrlInterceptor::DataType type_)  override {
     int handled = 0;
@@ -66,33 +66,28 @@ public:
 MyQQmlAbstractUrlInterceptor() : QQmlAbstractUrlInterceptor() {}
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:60
-// [8] QUrl intercept(const QUrl &, QQmlAbstractUrlInterceptor::DataType)
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qqmlabstracturlinterceptor(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:58
-// [-2] void QQmlAbstractUrlInterceptor()
-extern "C" Q_DECL_EXPORT
-void* C_ZN26QQmlAbstractUrlInterceptorC2Ev() {
-  return 0; // new QQmlAbstractUrlInterceptor();
+// [-2] void QQmlAbstractUrlInterceptor() 
+// (12)qm1177919034 (35)_ZN26QQmlAbstractUrlInterceptorC2Ev
+/*void* qm1177919034()*/{
+  ;
+  this_ = 0; // new QQmlAbstractUrlInterceptor();
 }
 
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:59
-// [-2] void ~QQmlAbstractUrlInterceptor()
-extern "C" Q_DECL_EXPORT
-void C_ZN26QQmlAbstractUrlInterceptorD2Ev(void *this_) {
+// [-2] void ~QQmlAbstractUrlInterceptor() 
+// (12)qm3689064067 (35)_ZN26QQmlAbstractUrlInterceptorD2Ev
+/*void qm3689064067 (void *this_)*/ {
   delete (QQmlAbstractUrlInterceptor*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:60
-// [8] QUrl intercept(const QUrl &, QQmlAbstractUrlInterceptor::DataType)
-extern "C" Q_DECL_EXPORT
-void* C_ZN26QQmlAbstractUrlInterceptor9interceptERK4QUrlNS_8DataTypeE(void *this_, QUrl* path, QQmlAbstractUrlInterceptor::DataType type_) {
-  auto rv = ((QQmlAbstractUrlInterceptor*)this_)->intercept(*path, type_);
-return new QUrl(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qqmlabstracturlinterceptor
 //  main block end
 
 //  use block begin

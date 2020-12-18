@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGNinePatchNode is pure virtual: true
+// QSGNinePatchNode is pure virtual: true true
 // QSGNinePatchNode has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQSGNinePatchNode[] = {
 class Q_DECL_EXPORT MyQSGNinePatchNode : public QSGNinePatchNode {
 public:
   virtual ~MyQSGNinePatchNode() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setTexture(QSGTexture *)
   virtual void setTexture(QSGTexture * texture)  override {
     int handled = 0;
@@ -60,7 +60,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setBounds(const QRectF &)
   virtual void setBounds(const QRectF & bounds)  override {
     int handled = 0;
@@ -72,7 +72,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setDevicePixelRatio(qreal)
   virtual void setDevicePixelRatio(qreal ratio)  override {
     int handled = 0;
@@ -84,7 +84,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setPadding(qreal, qreal, qreal, qreal)
   virtual void setPadding(qreal left, qreal top, qreal right, qreal bottom)  override {
     int handled = 0;
@@ -96,7 +96,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void update()
   virtual void update()  override {
     int handled = 0;
@@ -110,76 +110,19 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:53
-// [-2] void setTexture(QSGTexture *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:54
-// [-2] void setBounds(const QRectF &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:55
-// [-2] void setDevicePixelRatio(qreal)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:56
-// [-2] void setPadding(qreal, qreal, qreal, qreal)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:57
-// [-2] void update()
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgninepatchnode(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgninepatchnode.h:51
-// [-2] void ~QSGNinePatchNode()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGNinePatchNodeD2Ev(void *this_) {
+// [-2] void ~QSGNinePatchNode() 
+// (12)qm2852705574 (25)_ZN16QSGNinePatchNodeD2Ev
+/*void qm2852705574 (void *this_)*/ {
   delete (QSGNinePatchNode*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:53
-// [-2] void setTexture(QSGTexture *)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGNinePatchNode10setTextureEP10QSGTexture(void *this_, QSGTexture * texture) {
-  ((QSGNinePatchNode*)this_)->setTexture(texture);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:54
-// [-2] void setBounds(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGNinePatchNode9setBoundsERK6QRectF(void *this_, QRectF* bounds) {
-  ((QSGNinePatchNode*)this_)->setBounds(*bounds);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:55
-// [-2] void setDevicePixelRatio(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGNinePatchNode19setDevicePixelRatioEd(void *this_, qreal ratio) {
-  ((QSGNinePatchNode*)this_)->setDevicePixelRatio(ratio);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:56
-// [-2] void setPadding(qreal, qreal, qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGNinePatchNode10setPaddingEdddd(void *this_, qreal left, qreal top, qreal right, qreal bottom) {
-  ((QSGNinePatchNode*)this_)->setPadding(left, top, right, bottom);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:57
-// [-2] void update()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGNinePatchNode6updateEv(void *this_) {
-  ((QSGNinePatchNode*)this_)->update();
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgninepatchnode.h:59
-// [-2] void rebuildGeometry(QSGTexture *, QSGGeometry *, const QVector4D &, const QRectF &, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGNinePatchNode15rebuildGeometryEP10QSGTextureP11QSGGeometryRK9QVector4DRK6QRectFd(QSGTexture * texture, QSGGeometry * geometry, QVector4D* padding, QRectF* bounds, qreal dpr) {
-  QSGNinePatchNode::rebuildGeometry(texture, geometry, *padding, *bounds, dpr);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgninepatchnode
 //  main block end
 
 //  use block begin

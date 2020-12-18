@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGTexture is pure virtual: true
+// QSGTexture is pure virtual: true true
 // QSGTexture has virtual projected: false
 //  header block end
 
@@ -93,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQSGTexture() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int textureId()
   virtual int textureId() const override {
     int handled = 0;
@@ -106,7 +106,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QSize textureSize()
   virtual QSize textureSize() const override {
     int handled = 0;
@@ -120,7 +120,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool hasAlphaChannel()
   virtual bool hasAlphaChannel() const override {
     int handled = 0;
@@ -133,7 +133,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool hasMipmaps()
   virtual bool hasMipmaps() const override {
     int handled = 0;
@@ -146,7 +146,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void bind()
   virtual void bind()  override {
     int handled = 0;
@@ -174,247 +174,40 @@ void* C_QSGTexture_init_staticMetaObject(void* this_, void* strdat, void* dat, v
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:79
-// [4] int textureId()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:80
-// [8] QSize textureSize()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:81
-// [1] bool hasAlphaChannel()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:82
-// [1] bool hasMipmaps()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:90
-// [-2] void bind()
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:52
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QSGTexture10metaObjectEv(void *this_) {
-  return (void*)((QSGTexture*)this_)->metaObject();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgtexture(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:52
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QSGTexture11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QSGTexture*)this_)->qt_metacast(arg0);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:52
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN10QSGTexture11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QSGTexture*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:52
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QSGTexture2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QSGTexture::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:52
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QSGTexture6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QSGTexture::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexture.h:56
-// [-2] void QSGTexture()
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QSGTextureC2Ev() {
-  return  new MyQSGTexture();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3535964472 (26)_ZN10QSGTexture2trEPKcS1_i
+//static
+/*void qm3535964472(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QSGTexture::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QSGTexture::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:57
-// [-2] void ~QSGTexture()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QSGTextureD2Ev(void *this_) {
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgtexture.h:118
+// [32] QRectF convertToNormalizedSourceRect(const QRectF &) const
+// (12)qm2405250140 (57)_ZNK10QSGTexture29convertToNormalizedSourceRectERK6QRectF
+//static
+/*void qm2405250140(const QRectF & rect)*/ {
+  const QRectF & rect = *(const QRectF *)this_;
+  (void) ((QSGTexture*)this_)->convertToNormalizedSourceRect(rect);
+   auto xptr = (QRectF (QSGTexture::*)(QRectF const&) const ) &QSGTexture::convertToNormalizedSourceRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN10QSGTextureD2Ev(void *this_)*/ {
   delete (QSGTexture*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:79
-// [4] int textureId()
-extern "C" Q_DECL_EXPORT
-int C_ZNK10QSGTexture9textureIdEv(void *this_) {
-  return (int)((QSGTexture*)this_)->textureId();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:80
-// [8] QSize textureSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QSGTexture11textureSizeEv(void *this_) {
-  auto rv = ((QSGTexture*)this_)->textureSize();
-return new QSize(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:81
-// [1] bool hasAlphaChannel()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QSGTexture15hasAlphaChannelEv(void *this_) {
-  return (bool)((QSGTexture*)this_)->hasAlphaChannel();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:82
-// [1] bool hasMipmaps()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QSGTexture10hasMipmapsEv(void *this_) {
-  return (bool)((QSGTexture*)this_)->hasMipmaps();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:84
-// [32] QRectF normalizedTextureSubRect()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QSGTexture24normalizedTextureSubRectEv(void *this_) {
-  auto rv = ((QSGTexture*)this_)->normalizedTextureSubRect();
-return new QRectF(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:86
-// [1] bool isAtlasTexture()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QSGTexture14isAtlasTextureEv(void *this_) {
-  return (bool)((QSGTexture*)this_)->isAtlasTexture();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:88
-// [8] QSGTexture * removedFromAtlas()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QSGTexture16removedFromAtlasEv(void *this_) {
-  return (void*)((QSGTexture*)this_)->removedFromAtlas();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:90
-// [-2] void bind()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QSGTexture4bindEv(void *this_) {
-  ((QSGTexture*)this_)->bind();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:91
-// [-2] void updateBindOptions(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QSGTexture17updateBindOptionsEb(void *this_, bool force) {
-  ((QSGTexture*)this_)->updateBindOptions(force);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:93
-// [-2] void setMipmapFiltering(QSGTexture::Filtering)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QSGTexture18setMipmapFilteringENS_9FilteringE(void *this_, QSGTexture::Filtering filter) {
-  ((QSGTexture*)this_)->setMipmapFiltering(filter);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:94
-// [4] QSGTexture::Filtering mipmapFiltering()
-extern "C" Q_DECL_EXPORT
-QSGTexture::Filtering C_ZNK10QSGTexture15mipmapFilteringEv(void *this_) {
-  return (QSGTexture::Filtering)((QSGTexture*)this_)->mipmapFiltering();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:96
-// [-2] void setFiltering(QSGTexture::Filtering)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QSGTexture12setFilteringENS_9FilteringE(void *this_, QSGTexture::Filtering filter) {
-  ((QSGTexture*)this_)->setFiltering(filter);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:97
-// [4] QSGTexture::Filtering filtering()
-extern "C" Q_DECL_EXPORT
-QSGTexture::Filtering C_ZNK10QSGTexture9filteringEv(void *this_) {
-  return (QSGTexture::Filtering)((QSGTexture*)this_)->filtering();
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.9
-// /usr/include/qt/QtQuick/qsgtexture.h:99
-// [-2] void setAnisotropyLevel(QSGTexture::AnisotropyLevel)
-#if QT_VERSION >= 0x050900
-extern "C" Q_DECL_EXPORT
-void C_ZN10QSGTexture18setAnisotropyLevelENS_15AnisotropyLevelE(void *this_, QSGTexture::AnisotropyLevel level) {
-  ((QSGTexture*)this_)->setAnisotropyLevel(level);
-}
-#endif // QT_VERSION >= 0x050900
-
-// Public Visibility=Default Availability=Available
-// since 5.9
-// /usr/include/qt/QtQuick/qsgtexture.h:100
-// [4] QSGTexture::AnisotropyLevel anisotropyLevel()
-#if QT_VERSION >= 0x050900
-extern "C" Q_DECL_EXPORT
-QSGTexture::AnisotropyLevel C_ZNK10QSGTexture15anisotropyLevelEv(void *this_) {
-  return (QSGTexture::AnisotropyLevel)((QSGTexture*)this_)->anisotropyLevel();
-}
-#endif // QT_VERSION >= 0x050900
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:102
-// [-2] void setHorizontalWrapMode(QSGTexture::WrapMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QSGTexture21setHorizontalWrapModeENS_8WrapModeE(void *this_, QSGTexture::WrapMode hwrap) {
-  ((QSGTexture*)this_)->setHorizontalWrapMode(hwrap);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:103
-// [4] QSGTexture::WrapMode horizontalWrapMode()
-extern "C" Q_DECL_EXPORT
-QSGTexture::WrapMode C_ZNK10QSGTexture18horizontalWrapModeEv(void *this_) {
-  return (QSGTexture::WrapMode)((QSGTexture*)this_)->horizontalWrapMode();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:105
-// [-2] void setVerticalWrapMode(QSGTexture::WrapMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QSGTexture19setVerticalWrapModeENS_8WrapModeE(void *this_, QSGTexture::WrapMode vwrap) {
-  ((QSGTexture*)this_)->setVerticalWrapMode(vwrap);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:106
-// [4] QSGTexture::WrapMode verticalWrapMode()
-extern "C" Q_DECL_EXPORT
-QSGTexture::WrapMode C_ZNK10QSGTexture16verticalWrapModeEv(void *this_) {
-  return (QSGTexture::WrapMode)((QSGTexture*)this_)->verticalWrapMode();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:108
-// [32] QRectF convertToNormalizedSourceRect(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QSGTexture29convertToNormalizedSourceRectERK6QRectF(void *this_, QRectF* rect) {
-  auto rv = ((QSGTexture*)this_)->convertToNormalizedSourceRect(*rect);
-return new QRectF(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgtexture
 //  main block end
 
 //  use block begin

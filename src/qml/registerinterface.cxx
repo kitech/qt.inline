@@ -9,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// RegisterInterface is pure virtual: false
+// RegisterInterface is pure virtual: false false
 // RegisterInterface has virtual projected: false
 //  header block end
 
@@ -50,11 +50,16 @@ public:
   virtual ~MyRegisterInterface() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_registerinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-extern "C" Q_DECL_EXPORT
-void C_ZN17RegisterInterfaceD2Ev(void *this_) {
+
+/*void C_ZN17RegisterInterfaceD2Ev(void *this_)*/ {
   delete (QQmlPrivate::RegisterInterface*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_registerinterface
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGSimpleRectNode is pure virtual: false
+// QSGSimpleRectNode is pure virtual: false false
 // QSGSimpleRectNode has virtual projected: false
 //  header block end
 
@@ -54,69 +54,28 @@ MyQSGSimpleRectNode(const QRectF & rect, const QColor & color) : QSGSimpleRectNo
 MyQSGSimpleRectNode() : QSGSimpleRectNode() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgsimplerectnode.h:51
-// [-2] void QSGSimpleRectNode(const QRectF &, const QColor &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QSGSimpleRectNodeC2ERK6QRectFRK6QColor(QRectF* rect, QColor* color) {
-  return  new QSGSimpleRectNode(*rect, *color);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgsimplerectnode(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgsimplerectnode.h:52
-// [-2] void QSGSimpleRectNode()
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QSGSimpleRectNodeC2Ev() {
-  return  new QSGSimpleRectNode();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgsimplerectnode.h:54
-// [-2] void setRect(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSGSimpleRectNode7setRectERK6QRectF(void *this_, QRectF* rect) {
-  ((QSGSimpleRectNode*)this_)->setRect(*rect);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:55
-// [-2] void setRect(qreal, qreal, qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSGSimpleRectNode7setRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
-  ((QSGSimpleRectNode*)this_)->setRect(x, y, w, h);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgsimplerectnode.h:56
-// [32] QRectF rect()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QSGSimpleRectNode4rectEv(void *this_) {
-  auto rv = ((QSGSimpleRectNode*)this_)->rect();
-return new QRectF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgsimplerectnode.h:58
-// [-2] void setColor(const QColor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSGSimpleRectNode8setColorERK6QColor(void *this_, QColor* color) {
-  ((QSGSimpleRectNode*)this_)->setColor(*color);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgsimplerectnode.h:59
-// [16] QColor color()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QSGSimpleRectNode5colorEv(void *this_) {
-  auto rv = ((QSGSimpleRectNode*)this_)->color();
-return new QColor(rv);
+// [-2] void setRect(qreal, qreal, qreal, qreal) 
+// (12)qm2076874065 (35)_ZN17QSGSimpleRectNode7setRectEdddd
+//static
+/*void qm2076874065(double x, double y, double w, double h)*/ {
+  double x = *(double*)this_; double y = *(double*)this_; double w = *(double*)this_; double h = *(double*)this_;
+  (void) ((QSGSimpleRectNode*)this_)->setRect(x, y, w, h);
+   auto xptr = (void (QSGSimpleRectNode::*)(double, double, double, double) ) &QSGSimpleRectNode::setRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN17QSGSimpleRectNodeD2Ev(void *this_) {
+/*void C_ZN17QSGSimpleRectNodeD2Ev(void *this_)*/ {
   delete (QSGSimpleRectNode*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgsimplerectnode
 //  main block end
 
 //  use block begin

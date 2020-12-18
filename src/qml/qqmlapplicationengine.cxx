@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050100
 // /usr/include/qt/QtQml/qqmlapplicationengine.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlApplicationEngine is pure virtual: false
+// QQmlApplicationEngine is pure virtual: false false
 // QQmlApplicationEngine has virtual projected: false
 //  header block end
 
@@ -114,129 +113,28 @@ void* C_QQmlApplicationEngine_init_staticMetaObject(void* this_, void* strdat, v
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qqmlapplicationengine(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlapplicationengine.h:54
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK21QQmlApplicationEngine10metaObjectEv(void *this_) {
-  return (void*)((QQmlApplicationEngine*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (11)qm409627374 (37)_ZN21QQmlApplicationEngine2trEPKcS1_i
+//static
+/*void qm409627374(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QQmlApplicationEngine::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QQmlApplicationEngine::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:54
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QQmlApplicationEngine11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QQmlApplicationEngine*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:54
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN21QQmlApplicationEngine11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QQmlApplicationEngine*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:54
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QQmlApplicationEngine2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QQmlApplicationEngine::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:54
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QQmlApplicationEngine6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QQmlApplicationEngine::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:56
-// [-2] void QQmlApplicationEngine(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QQmlApplicationEngineC2EP7QObject(QObject * parent) {
-  return  new MyQQmlApplicationEngine(parent);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:57
-// [-2] void QQmlApplicationEngine(const QUrl &, QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QQmlApplicationEngineC2ERK4QUrlP7QObject(QUrl* url, QObject * parent) {
-  return  new MyQQmlApplicationEngine(*url, parent);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:58
-// [-2] void QQmlApplicationEngine(const QString &, QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QQmlApplicationEngineC2ERK7QStringP7QObject(QString* filePath, QObject * parent) {
-  return  new MyQQmlApplicationEngine(*filePath, parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:59
-// [-2] void ~QQmlApplicationEngine()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QQmlApplicationEngineD2Ev(void *this_) {
+/*void C_ZN21QQmlApplicationEngineD2Ev(void *this_)*/ {
   delete (QQmlApplicationEngine*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:62
-// [8] QList<QObject *> rootObjects()
-extern "C" Q_DECL_EXPORT
-QList<QObject *>* C_ZN21QQmlApplicationEngine11rootObjectsEv(void *this_) {
-  auto rv = ((QQmlApplicationEngine*)this_)->rootObjects();
-return new QList<QObject *>(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:64
-// [8] QList<QObject *> rootObjects()
-extern "C" Q_DECL_EXPORT
-QList<QObject *>* C_ZNK21QQmlApplicationEngine11rootObjectsEv(void *this_) {
-  auto rv = ((QQmlApplicationEngine*)this_)->rootObjects();
-return new QList<QObject *>(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:67
-// [-2] void load(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QQmlApplicationEngine4loadERK4QUrl(void *this_, QUrl* url) {
-  ((QQmlApplicationEngine*)this_)->load(*url);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:68
-// [-2] void load(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QQmlApplicationEngine4loadERK7QString(void *this_, QString* filePath) {
-  ((QQmlApplicationEngine*)this_)->load(*filePath);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:69
-// [-2] void loadData(const QByteArray &, const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QQmlApplicationEngine8loadDataERK10QByteArrayRK4QUrl(void *this_, QByteArray* data, QUrl* url) {
-  ((QQmlApplicationEngine*)this_)->loadData(*data, *url);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlapplicationengine.h:72
-// [-2] void objectCreated(QObject *, const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QQmlApplicationEngine13objectCreatedEP7QObjectRK4QUrl(void *this_, QObject * object, QUrl* url) {
-  ((QQmlApplicationEngine*)this_)->objectCreated(object, *url);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qqmlapplicationengine
 //  main block end
 
 //  use block begin

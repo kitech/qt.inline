@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050600
 // /usr/include/qt/QtQuick/qquickimageprovider.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QQuickAsyncImageProvider is pure virtual: true
+// QQuickAsyncImageProvider is pure virtual: true true
 // QQuickAsyncImageProvider has virtual projected: false
 //  header block end
 
@@ -49,7 +48,7 @@ static const uint qt_meta_data_MyQQuickAsyncImageProvider[] = {
 class Q_DECL_EXPORT MyQQuickAsyncImageProvider : public QQuickAsyncImageProvider {
 public:
   virtual ~MyQQuickAsyncImageProvider() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QQuickImageResponse * requestImageResponse(const QString &, const QSize &)
   virtual QQuickImageResponse * requestImageResponse(const QString & id, const QSize & requestedSize)  override {
     int handled = 0;
@@ -66,32 +65,16 @@ public:
 MyQQuickAsyncImageProvider() : QQuickAsyncImageProvider() {}
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:128
-// [8] QQuickImageResponse * requestImageResponse(const QString &, const QSize &)
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:122
-// [-2] void QQuickAsyncImageProvider()
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QQuickAsyncImageProviderC2Ev() {
-  return 0; // new QQuickAsyncImageProvider();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qquickasyncimageprovider(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:123
-// [-2] void ~QQuickAsyncImageProvider()
-extern "C" Q_DECL_EXPORT
-void C_ZN24QQuickAsyncImageProviderD2Ev(void *this_) {
+
+/*void C_ZN24QQuickAsyncImageProviderD2Ev(void *this_)*/ {
   delete (QQuickAsyncImageProvider*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:128
-// [8] QQuickImageResponse * requestImageResponse(const QString &, const QSize &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QQuickAsyncImageProvider20requestImageResponseERK7QStringRK5QSize(void *this_, QString* id, QSize* requestedSize) {
-  return (void*)((QQuickAsyncImageProvider*)this_)->requestImageResponse(*id, *requestedSize);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qquickasyncimageprovider
 //  main block end
 
 //  use block begin

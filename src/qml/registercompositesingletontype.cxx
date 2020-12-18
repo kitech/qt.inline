@@ -9,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// RegisterCompositeSingletonType is pure virtual: false
+// RegisterCompositeSingletonType is pure virtual: false false
 // RegisterCompositeSingletonType has virtual projected: false
 //  header block end
 
@@ -50,11 +50,16 @@ public:
   virtual ~MyRegisterCompositeSingletonType() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_registercompositesingletontype(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-extern "C" Q_DECL_EXPORT
-void C_ZN30RegisterCompositeSingletonTypeD2Ev(void *this_) {
+
+/*void C_ZN30RegisterCompositeSingletonTypeD2Ev(void *this_)*/ {
   delete (QQmlPrivate::RegisterCompositeSingletonType*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_registercompositesingletontype
 //  main block end
 
 //  use block begin

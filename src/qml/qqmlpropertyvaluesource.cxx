@@ -9,7 +9,7 @@
 #include <QtQml>
 #include "callback_inherit.h"
 
-// QQmlPropertyValueSource is pure virtual: true
+// QQmlPropertyValueSource is pure virtual: true true
 // QQmlPropertyValueSource has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQQmlPropertyValueSource[] = {
 class Q_DECL_EXPORT MyQQmlPropertyValueSource : public QQmlPropertyValueSource {
 public:
   virtual ~MyQQmlPropertyValueSource() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setTarget(const QQmlProperty &)
   virtual void setTarget(const QQmlProperty & arg0)  override {
     int handled = 0;
@@ -64,32 +64,16 @@ public:
 MyQQmlPropertyValueSource() : QQmlPropertyValueSource() {}
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:55
-// [-2] void setTarget(const QQmlProperty &)
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:53
-// [-2] void QQmlPropertyValueSource()
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QQmlPropertyValueSourceC2Ev() {
-  return 0; // new QQmlPropertyValueSource();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qqmlpropertyvaluesource(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:54
-// [-2] void ~QQmlPropertyValueSource()
-extern "C" Q_DECL_EXPORT
-void C_ZN23QQmlPropertyValueSourceD2Ev(void *this_) {
+
+/*void C_ZN23QQmlPropertyValueSourceD2Ev(void *this_)*/ {
   delete (QQmlPropertyValueSource*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlpropertyvaluesource.h:55
-// [-2] void setTarget(const QQmlProperty &)
-extern "C" Q_DECL_EXPORT
-void C_ZN23QQmlPropertyValueSource9setTargetERK12QQmlProperty(void *this_, QQmlProperty* arg0) {
-  ((QQmlPropertyValueSource*)this_)->setTarget(*arg0);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qqmlpropertyvaluesource
 //  main block end
 
 //  use block begin

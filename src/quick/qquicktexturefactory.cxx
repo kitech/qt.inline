@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtQuick/qquickimageprovider.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QQuickTextureFactory is pure virtual: true
+// QQuickTextureFactory is pure virtual: true true
 // QQuickTextureFactory has virtual projected: false
 //  header block end
 
@@ -94,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQQuickTextureFactory() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QSGTexture * createTexture(QQuickWindow *)
   virtual QSGTexture * createTexture(QQuickWindow * window) const override {
     int handled = 0;
@@ -107,7 +106,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QSize textureSize()
   virtual QSize textureSize() const override {
     int handled = 0;
@@ -121,7 +120,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int textureByteCount()
   virtual int textureByteCount() const override {
     int handled = 0;
@@ -150,117 +149,28 @@ void* C_QQuickTextureFactory_init_staticMetaObject(void* this_, void* strdat, vo
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:64
-// [8] QSGTexture * createTexture(QQuickWindow *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:65
-// [8] QSize textureSize()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:66
-// [4] int textureByteCount()
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qquicktexturefactory(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickimageprovider.h:59
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QQuickTextureFactory10metaObjectEv(void *this_) {
-  return (void*)((QQuickTextureFactory*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (11)qm328164827 (36)_ZN20QQuickTextureFactory2trEPKcS1_i
+//static
+/*void qm328164827(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QQuickTextureFactory::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QQuickTextureFactory::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:59
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQuickTextureFactory11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QQuickTextureFactory*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:59
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN20QQuickTextureFactory11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QQuickTextureFactory*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:59
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQuickTextureFactory2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QQuickTextureFactory::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:59
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQuickTextureFactory6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QQuickTextureFactory::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:61
-// [-2] void QQuickTextureFactory()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQuickTextureFactoryC2Ev() {
-  return  new MyQQuickTextureFactory();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:62
-// [-2] void ~QQuickTextureFactory()
-extern "C" Q_DECL_EXPORT
-void C_ZN20QQuickTextureFactoryD2Ev(void *this_) {
+/*void C_ZN20QQuickTextureFactoryD2Ev(void *this_)*/ {
   delete (QQuickTextureFactory*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:64
-// [8] QSGTexture * createTexture(QQuickWindow *)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QQuickTextureFactory13createTextureEP12QQuickWindow(void *this_, QQuickWindow * window) {
-  return (void*)((QQuickTextureFactory*)this_)->createTexture(window);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:65
-// [8] QSize textureSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QQuickTextureFactory11textureSizeEv(void *this_) {
-  auto rv = ((QQuickTextureFactory*)this_)->textureSize();
-return new QSize(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:66
-// [4] int textureByteCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK20QQuickTextureFactory16textureByteCountEv(void *this_) {
-  return (int)((QQuickTextureFactory*)this_)->textureByteCount();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:67
-// [32] QImage image()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QQuickTextureFactory5imageEv(void *this_) {
-  auto rv = ((QQuickTextureFactory*)this_)->image();
-return new QImage(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 5.6
-// /usr/include/qt/QtQuick/qquickimageprovider.h:69
-// [8] QQuickTextureFactory * textureFactoryForImage(const QImage &)
-#if QT_VERSION >= 0x050600
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QQuickTextureFactory22textureFactoryForImageERK6QImage(QImage* image) {
-  return (void*)QQuickTextureFactory::textureFactoryForImage(*image);
-}
-#endif // QT_VERSION >= 0x050600
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qquicktexturefactory
 //  main block end
 
 //  use block begin

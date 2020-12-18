@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGOpacityNode is pure virtual: false
+// QSGOpacityNode is pure virtual: false false
 // QSGOpacityNode has virtual projected: false
 //  header block end
 
@@ -52,61 +52,40 @@ public:
 MyQSGOpacityNode() : QSGOpacityNode() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:314
-// [-2] void QSGOpacityNode()
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QSGOpacityNodeC2Ev() {
-  return  new QSGOpacityNode();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgopacitynode(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:318
+// [8] qreal opacity() const
+// (9)qm3315315 (30)_ZNK14QSGOpacityNode7opacityEv
+//static
+/*void qm3315315()*/ {
+  ;
+  (void) ((QSGOpacityNode*)this_)->opacity();
+   auto xptr = (double (QSGOpacityNode::*)() const ) &QSGOpacityNode::opacity;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:315
-// [-2] void ~QSGOpacityNode()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGOpacityNodeD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:321
+// [8] qreal combinedOpacity() const
+// (11)qm465597130 (39)_ZNK14QSGOpacityNode15combinedOpacityEv
+//static
+/*void qm465597130()*/ {
+  ;
+  (void) ((QSGOpacityNode*)this_)->combinedOpacity();
+   auto xptr = (double (QSGOpacityNode::*)() const ) &QSGOpacityNode::combinedOpacity;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN14QSGOpacityNodeD2Ev(void *this_)*/ {
   delete (QSGOpacityNode*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:317
-// [-2] void setOpacity(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGOpacityNode10setOpacityEd(void *this_, qreal opacity) {
-  ((QSGOpacityNode*)this_)->setOpacity(opacity);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:318
-// [8] qreal opacity()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK14QSGOpacityNode7opacityEv(void *this_) {
-  return (qreal)((QSGOpacityNode*)this_)->opacity();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:320
-// [-2] void setCombinedOpacity(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QSGOpacityNode18setCombinedOpacityEd(void *this_, qreal opacity) {
-  ((QSGOpacityNode*)this_)->setCombinedOpacity(opacity);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:321
-// [8] qreal combinedOpacity()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK14QSGOpacityNode15combinedOpacityEv(void *this_) {
-  return (qreal)((QSGOpacityNode*)this_)->combinedOpacity();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:323
-// [1] bool isSubtreeBlocked()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QSGOpacityNode16isSubtreeBlockedEv(void *this_) {
-  return (bool)((QSGOpacityNode*)this_)->isSubtreeBlocked();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgopacitynode
 //  main block end
 
 //  use block begin

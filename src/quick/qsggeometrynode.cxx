@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGGeometryNode is pure virtual: false
+// QSGGeometryNode is pure virtual: false false
 // QSGGeometryNode has virtual projected: false
 //  header block end
 
@@ -52,93 +52,64 @@ public:
 MyQSGGeometryNode() : QSGGeometryNode() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:226
-// [-2] void QSGGeometryNode()
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QSGGeometryNodeC2Ev() {
-  return  new QSGGeometryNode();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsggeometrynode(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:230
+// [8] QSGMaterial * material() const
+// (12)qm3197256574 (32)_ZNK15QSGGeometryNode8materialEv
+//static
+/*void qm3197256574()*/ {
+  ;
+  (void) ((QSGGeometryNode*)this_)->material();
+   auto xptr = (QSGMaterial * (QSGGeometryNode::*)() const ) &QSGGeometryNode::material;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:227
-// [-2] void ~QSGGeometryNode()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QSGGeometryNodeD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:233
+// [8] QSGMaterial * opaqueMaterial() const
+// (12)qm1521691051 (39)_ZNK15QSGGeometryNode14opaqueMaterialEv
+//static
+/*void qm1521691051()*/ {
+  ;
+  (void) ((QSGGeometryNode*)this_)->opaqueMaterial();
+   auto xptr = (QSGMaterial * (QSGGeometryNode::*)() const ) &QSGGeometryNode::opaqueMaterial;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:238
+// [4] int renderOrder() const
+// (12)qm3713326310 (36)_ZNK15QSGGeometryNode11renderOrderEv
+//static
+/*void qm3713326310()*/ {
+  ;
+  (void) ((QSGGeometryNode*)this_)->renderOrder();
+   auto xptr = (int (QSGGeometryNode::*)() const ) &QSGGeometryNode::renderOrder;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:241
+// [8] qreal inheritedOpacity() const
+// (10)qm73314119 (41)_ZNK15QSGGeometryNode16inheritedOpacityEv
+//static
+/*void qm73314119()*/ {
+  ;
+  (void) ((QSGGeometryNode*)this_)->inheritedOpacity();
+   auto xptr = (double (QSGGeometryNode::*)() const ) &QSGGeometryNode::inheritedOpacity;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN15QSGGeometryNodeD2Ev(void *this_)*/ {
   delete (QSGGeometryNode*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:229
-// [-2] void setMaterial(QSGMaterial *)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QSGGeometryNode11setMaterialEP11QSGMaterial(void *this_, QSGMaterial * material) {
-  ((QSGGeometryNode*)this_)->setMaterial(material);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:230
-// [8] QSGMaterial * material()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QSGGeometryNode8materialEv(void *this_) {
-  return (void*)((QSGGeometryNode*)this_)->material();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:232
-// [-2] void setOpaqueMaterial(QSGMaterial *)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QSGGeometryNode17setOpaqueMaterialEP11QSGMaterial(void *this_, QSGMaterial * material) {
-  ((QSGGeometryNode*)this_)->setOpaqueMaterial(material);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:233
-// [8] QSGMaterial * opaqueMaterial()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QSGGeometryNode14opaqueMaterialEv(void *this_) {
-  return (void*)((QSGGeometryNode*)this_)->opaqueMaterial();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:235
-// [8] QSGMaterial * activeMaterial()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QSGGeometryNode14activeMaterialEv(void *this_) {
-  return (void*)((QSGGeometryNode*)this_)->activeMaterial();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:237
-// [-2] void setRenderOrder(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QSGGeometryNode14setRenderOrderEi(void *this_, int order) {
-  ((QSGGeometryNode*)this_)->setRenderOrder(order);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:238
-// [4] int renderOrder()
-extern "C" Q_DECL_EXPORT
-int C_ZNK15QSGGeometryNode11renderOrderEv(void *this_) {
-  return (int)((QSGGeometryNode*)this_)->renderOrder();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:240
-// [-2] void setInheritedOpacity(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN15QSGGeometryNode19setInheritedOpacityEd(void *this_, qreal opacity) {
-  ((QSGGeometryNode*)this_)->setInheritedOpacity(opacity);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgnode.h:241
-// [8] qreal inheritedOpacity()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK15QSGGeometryNode16inheritedOpacityEv(void *this_) {
-  return (qreal)((QSGGeometryNode*)this_)->inheritedOpacity();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsggeometrynode
 //  main block end
 
 //  use block begin

@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050800
 // /usr/include/qt/QtQuick/qsgrectanglenode.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGRectangleNode is pure virtual: true
+// QSGRectangleNode is pure virtual: true true
 // QSGRectangleNode has virtual projected: false
 //  header block end
 
@@ -49,7 +48,7 @@ static const uint qt_meta_data_MyQSGRectangleNode[] = {
 class Q_DECL_EXPORT MyQSGRectangleNode : public QSGRectangleNode {
 public:
   virtual ~MyQSGRectangleNode() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setRect(const QRectF &)
   virtual void setRect(const QRectF & rect)  override {
     int handled = 0;
@@ -61,7 +60,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [32] QRectF rect()
   virtual QRectF rect() const override {
     int handled = 0;
@@ -75,7 +74,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setColor(const QColor &)
   virtual void setColor(const QColor & color)  override {
     int handled = 0;
@@ -87,7 +86,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [16] QColor color()
   virtual QColor color() const override {
     int handled = 0;
@@ -103,67 +102,31 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgrectanglenode.h:52
-// [-2] void setRect(const QRectF &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgrectanglenode.h:54
-// [32] QRectF rect()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgrectanglenode.h:56
-// [-2] void setColor(const QColor &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgrectanglenode.h:57
-// [16] QColor color()
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgrectanglenode(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:50
-// [-2] void ~QSGRectangleNode()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGRectangleNodeD2Ev(void *this_) {
+// [-2] void ~QSGRectangleNode() 
+// (11)qm402386207 (25)_ZN16QSGRectangleNodeD2Ev
+/*void qm402386207 (void *this_)*/ {
   delete (QSGRectangleNode*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgrectanglenode.h:52
-// [-2] void setRect(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGRectangleNode7setRectERK6QRectF(void *this_, QRectF* rect) {
-  ((QSGRectangleNode*)this_)->setRect(*rect);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgrectanglenode.h:53
-// [-2] void setRect(qreal, qreal, qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGRectangleNode7setRectEdddd(void *this_, qreal x, qreal y, qreal w, qreal h) {
-  ((QSGRectangleNode*)this_)->setRect(x, y, w, h);
+// [-2] void setRect(qreal, qreal, qreal, qreal) 
+// (11)qm354107506 (34)_ZN16QSGRectangleNode7setRectEdddd
+//static
+/*void qm354107506(double x, double y, double w, double h)*/ {
+  double x = *(double*)this_; double y = *(double*)this_; double w = *(double*)this_; double h = *(double*)this_;
+  (void) ((QSGRectangleNode*)this_)->setRect(x, y, w, h);
+   auto xptr = (void (QSGRectangleNode::*)(double, double, double, double) ) &QSGRectangleNode::setRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgrectanglenode.h:54
-// [32] QRectF rect()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK16QSGRectangleNode4rectEv(void *this_) {
-  auto rv = ((QSGRectangleNode*)this_)->rect();
-return new QRectF(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgrectanglenode.h:56
-// [-2] void setColor(const QColor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QSGRectangleNode8setColorERK6QColor(void *this_, QColor* color) {
-  ((QSGRectangleNode*)this_)->setColor(*color);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgrectanglenode.h:57
-// [16] QColor color()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK16QSGRectangleNode5colorEv(void *this_) {
-  auto rv = ((QSGRectangleNode*)this_)->color();
-return new QColor(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgrectanglenode
 //  main block end
 
 //  use block begin

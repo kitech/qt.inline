@@ -9,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QSGMaterial is pure virtual: true
+// QSGMaterial is pure virtual: true true
 // QSGMaterial has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQSGMaterial[] = {
 class Q_DECL_EXPORT MyQSGMaterial : public QSGMaterial {
 public:
   virtual ~MyQSGMaterial() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QSGMaterialType * type()
   virtual QSGMaterialType * type() const override {
     int handled = 0;
@@ -61,7 +61,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QSGMaterialShader * createShader()
   virtual QSGMaterialShader * createShader() const override {
     int handled = 0;
@@ -78,67 +78,28 @@ public:
 MyQSGMaterial() : QSGMaterial() {}
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgmaterial.h:149
-// [8] QSGMaterialType * type()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgmaterial.h:150
-// [8] QSGMaterialShader * createShader()
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgmaterial.h:146
-// [-2] void QSGMaterial()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QSGMaterialC2Ev() {
-  return 0; // new QSGMaterial();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgmaterial.h:147
-// [-2] void ~QSGMaterial()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QSGMaterialD2Ev(void *this_) {
-  delete (QSGMaterial*)(this_);
-}
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgmaterial.h:149
-// [8] QSGMaterialType * type()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QSGMaterial4typeEv(void *this_) {
-  return (void*)((QSGMaterial*)this_)->type();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgmaterial.h:150
-// [8] QSGMaterialShader * createShader()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QSGMaterial12createShaderEv(void *this_) {
-  return (void*)((QSGMaterial*)this_)->createShader();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgmaterial.h:151
-// [4] int compare(const QSGMaterial *)
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QSGMaterial7compareEPKS_(void *this_, const QSGMaterial * other) {
-  return (int)((QSGMaterial*)this_)->compare(other);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsgmaterial(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgmaterial.h:153
-// [4] QSGMaterial::Flags flags()
-extern "C" Q_DECL_EXPORT
-QSGMaterial::Flags C_ZNK11QSGMaterial5flagsEv(void *this_) {
-  return (QSGMaterial::Flags)((QSGMaterial*)this_)->flags();
+// /usr/include/qt/QtQuick/qsgmaterial.h:74
+// [4] QSGMaterial::Flags flags() const
+// (11)qm803861947 (25)_ZNK11QSGMaterial5flagsEv
+//static
+/*void qm803861947()*/ {
+  ;
+  (void) ((QSGMaterial*)this_)->flags();
+   auto xptr = (QFlags<QSGMaterial::Flag> (QSGMaterial::*)() const ) &QSGMaterial::flags;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgmaterial.h:154
-// [-2] void setFlag(QSGMaterial::Flags, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QSGMaterial7setFlagE6QFlagsINS_4FlagEEb(void *this_, QFlags<QSGMaterial::Flag> flags, bool on) {
-  ((QSGMaterial*)this_)->setFlag(flags, on);
-}
 
+/*void C_ZN11QSGMaterialD2Ev(void *this_)*/ {
+  delete (QSGMaterial*)(this_);
+}
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsgmaterial
 //  main block end
 
 //  use block begin

@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtQuick/qquickimageprovider.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtQuick>
 #include "callback_inherit.h"
 
-// QQuickImageProvider is pure virtual: false
+// QQuickImageProvider is pure virtual: false false
 // QQuickImageProvider has virtual projected: false
 //  header block end
 
@@ -53,64 +52,16 @@ public:
 MyQQuickImageProvider(QQmlImageProviderBase::ImageType type_, QFlags<QQmlImageProviderBase::Flag> flags) : QQuickImageProvider(type_, flags) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:99
-// [-2] void QQuickImageProvider(QQmlImageProviderBase::ImageType, QQmlImageProviderBase::Flags)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QQuickImageProviderC2EN21QQmlImageProviderBase9ImageTypeE6QFlagsINS0_4FlagEE(QQmlImageProviderBase::ImageType type_, QFlags<QQmlImageProviderBase::Flag> flags) {
-  return  new QQuickImageProvider(type_, flags);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qquickimageprovider(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:100
-// [-2] void ~QQuickImageProvider()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QQuickImageProviderD2Ev(void *this_) {
+
+/*void C_ZN19QQuickImageProviderD2Ev(void *this_)*/ {
   delete (QQuickImageProvider*)(this_);
 }
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:102
-// [4] QQmlImageProviderBase::ImageType imageType()
-extern "C" Q_DECL_EXPORT
-QQmlImageProviderBase::ImageType C_ZNK19QQuickImageProvider9imageTypeEv(void *this_) {
-  return (QQmlImageProviderBase::ImageType)((QQuickImageProvider*)this_)->imageType();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:103
-// [4] QQmlImageProviderBase::Flags flags()
-extern "C" Q_DECL_EXPORT
-QQmlImageProviderBase::Flags* C_ZNK19QQuickImageProvider5flagsEv(void *this_) {
-  auto rv = ((QQuickImageProvider*)this_)->flags();
-return new QQmlImageProviderBase::Flags(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:110
-// [32] QImage requestImage(const QString &, QSize *, const QSize &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QQuickImageProvider12requestImageERK7QStringP5QSizeRKS3_(void *this_, QString* id, QSize * size, QSize* requestedSize) {
-  auto rv = ((QQuickImageProvider*)this_)->requestImage(*id, size, *requestedSize);
-return new QImage(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:111
-// [32] QPixmap requestPixmap(const QString &, QSize *, const QSize &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QQuickImageProvider13requestPixmapERK7QStringP5QSizeRKS3_(void *this_, QString* id, QSize * size, QSize* requestedSize) {
-  auto rv = ((QQuickImageProvider*)this_)->requestPixmap(*id, size, *requestedSize);
-return new QPixmap(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qquickimageprovider.h:112
-// [8] QQuickTextureFactory * requestTexture(const QString &, QSize *, const QSize &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QQuickImageProvider14requestTextureERK7QStringP5QSizeRKS3_(void *this_, QString* id, QSize * size, QSize* requestedSize) {
-  return (void*)((QQuickImageProvider*)this_)->requestTexture(*id, size, *requestedSize);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qquickimageprovider
 //  main block end
 
 //  use block begin

@@ -235,6 +235,13 @@ void C_QQuickItemList_move_0(void* this_ , int from, int to) {
      ((QQuickItemList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QQuickItemList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QQuickItemList_swapItemsAt_0()
+     ((QQuickItemList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QQuickItemList_swap_1(void* this_ , int i, int j) {
