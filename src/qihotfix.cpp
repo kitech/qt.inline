@@ -59,7 +59,7 @@ extern "C" Q_DECL_EXPORT
 void _ZN18QMessageLogContext4copyERKS_(void* qthis, const QMessageLogContext &logContext)
 {
     QMessageLogContext* that = (QMessageLogContext*)qthis;
-    that->copy(logContext);
+    //that->copy(logContext);
 }
 #endif
 
