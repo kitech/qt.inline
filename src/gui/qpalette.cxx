@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QPalette is pure virtual: false
+// QPalette is pure virtual: false false
 // QPalette has virtual projected: false
 //  header block end
 
@@ -66,484 +66,421 @@ MyQPalette(const QPalette & palette) : QPalette(palette) {}
 MyQPalette(QPalette && other) : QPalette(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:58
-// [-2] void QPalette()
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteC2Ev() {
-  return  new QPalette();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qpalette(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:70
+// [-2] void QPalette(QPalette &&) 
+// (12)qm2925666921 (18)_ZN8QPaletteC2EOS_
+/*void* qm2925666921(QPalette && other)*/{
+  QPalette && other =  static_cast<QPalette &&>(*(QPalette *)this_);
+  this_ =  new QPalette(other);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:59
-// [-2] void QPalette(const QColor &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteC2ERK6QColor(QColor* button) {
-  return  new QPalette(*button);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:73
+// [16] QPalette & operator=(QPalette &&) 
+// (12)qm1079302313 (18)_ZN8QPaletteaSEOS_
+//static
+/*void qm1079302313(QPalette && other)*/ {
+  QPalette && other =  static_cast<QPalette &&>(*(QPalette *)this_);
+  (void) ((QPalette*)this_)->operator=(other);
+  // auto xptr = (QPalette & (QPalette::*)(QPalette&&) ) &QPalette::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:60
-// [-2] void QPalette(Qt::GlobalColor)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteC2EN2Qt11GlobalColorE(Qt::GlobalColor button) {
-  return  new QPalette(button);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:79
+// [-2] void swap(QPalette &) 
+// (12)qm1935247638 (21)_ZN8QPalette4swapERS_
+//static
+/*void qm1935247638(QPalette & other)*/ {
+  QPalette & other = *(QPalette *)this_;
+  (void) ((QPalette*)this_)->swap(other);
+   auto xptr = (void (QPalette::*)(QPalette&) ) &QPalette::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:61
-// [-2] void QPalette(const QColor &, const QColor &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteC2ERK6QColorS2_(QColor* button, QColor* window) {
-  return  new QPalette(*button, *window);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:106
+// [4] QPalette::ColorGroup currentColorGroup() const
+// (11)qm140604248 (34)_ZNK8QPalette17currentColorGroupEv
+//static
+/*void qm140604248()*/ {
+  ;
+  (void) ((QPalette*)this_)->currentColorGroup();
+   auto xptr = (QPalette::ColorGroup (QPalette::*)() const ) &QPalette::currentColorGroup;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:62
-// [-2] void QPalette(const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteC2ERK6QBrushS2_S2_S2_S2_S2_S2_S2_S2_(QBrush* windowText, QBrush* button, QBrush* light, QBrush* dark, QBrush* mid, QBrush* text, QBrush* bright_text, QBrush* base, QBrush* window) {
-  return  new QPalette(*windowText, *button, *light, *dark, *mid, *text, *bright_text, *base, *window);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:107
+// [-2] void setCurrentColorGroup(QPalette::ColorGroup) 
+// (12)qm2575365650 (51)_ZN8QPalette20setCurrentColorGroupENS_10ColorGroupE
+//static
+/*void qm2575365650(QPalette::ColorGroup cg)*/ {
+  QPalette::ColorGroup cg = *(QPalette::ColorGroup*)this_;
+  (void) ((QPalette*)this_)->setCurrentColorGroup(cg);
+   auto xptr = (void (QPalette::*)(QPalette::ColorGroup) ) &QPalette::setCurrentColorGroup;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:65
-// [-2] void QPalette(const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteC2ERK6QColorS2_S2_S2_S2_S2_S2_(QColor* windowText, QColor* window, QColor* light, QColor* dark, QColor* mid, QColor* text, QColor* base) {
-  return  new QPalette(*windowText, *window, *light, *dark, *mid, *text, *base);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:109
+// [16] const QColor & color(QPalette::ColorGroup, QPalette::ColorRole) const
+// (12)qm2907919547 (50)_ZNK8QPalette5colorENS_10ColorGroupENS_9ColorRoleE
+//static
+/*void qm2907919547(QPalette::ColorGroup cg, QPalette::ColorRole cr)*/ {
+  QPalette::ColorGroup cg = *(QPalette::ColorGroup*)this_; QPalette::ColorRole cr = *(QPalette::ColorRole*)this_;
+  (void) ((QPalette*)this_)->color(cg, cr);
+   auto xptr = (const QColor & (QPalette::*)(QPalette::ColorGroup, QPalette::ColorRole) const ) &QPalette::color;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:67
-// [-2] void QPalette(const QPalette &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteC2ERKS_(QPalette* palette) {
-  return  new QPalette(*palette);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:112
+// [-2] void setColor(QPalette::ColorGroup, QPalette::ColorRole, const QColor &) 
+// (12)qm3367236524 (61)_ZN8QPalette8setColorENS_10ColorGroupENS_9ColorRoleERK6QColor
+//static
+/*void qm3367236524(QPalette::ColorGroup cg, QPalette::ColorRole cr, const QColor & color)*/ {
+  QPalette::ColorGroup cg = *(QPalette::ColorGroup*)this_; QPalette::ColorRole cr = *(QPalette::ColorRole*)this_; const QColor & color = *(const QColor *)this_;
+  (void) ((QPalette*)this_)->setColor(cg, cr, color);
+   auto xptr = (void (QPalette::*)(QPalette::ColorGroup, QPalette::ColorRole, QColor const&) ) &QPalette::setColor;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:68
-// [-2] void ~QPalette()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPaletteD2Ev(void *this_) {
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:113
+// [-2] void setColor(QPalette::ColorRole, const QColor &) 
+// (10)qm20127936 (45)_ZN8QPalette8setColorENS_9ColorRoleERK6QColor
+//static
+/*void qm20127936(QPalette::ColorRole cr, const QColor & color)*/ {
+  QPalette::ColorRole cr = *(QPalette::ColorRole*)this_; const QColor & color = *(const QColor *)this_;
+  (void) ((QPalette*)this_)->setColor(cr, color);
+   auto xptr = (void (QPalette::*)(QPalette::ColorRole, QColor const&) ) &QPalette::setColor;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:114
+// [-2] void setBrush(QPalette::ColorRole, const QBrush &) 
+// (11)qm666388383 (45)_ZN8QPalette8setBrushENS_9ColorRoleERK6QBrush
+//static
+/*void qm666388383(QPalette::ColorRole cr, const QBrush & brush)*/ {
+  QPalette::ColorRole cr = *(QPalette::ColorRole*)this_; const QBrush & brush = *(const QBrush *)this_;
+  (void) ((QPalette*)this_)->setBrush(cr, brush);
+   auto xptr = (void (QPalette::*)(QPalette::ColorRole, QBrush const&) ) &QPalette::setBrush;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:123
+// [16] const QColor & color(QPalette::ColorRole) const
+// (12)qm3526401366 (34)_ZNK8QPalette5colorENS_9ColorRoleE
+//static
+/*void qm3526401366(QPalette::ColorRole cr)*/ {
+  QPalette::ColorRole cr = *(QPalette::ColorRole*)this_;
+  (void) ((QPalette*)this_)->color(cr);
+   auto xptr = (const QColor & (QPalette::*)(QPalette::ColorRole) const ) &QPalette::color;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:124
+// [8] const QBrush & brush(QPalette::ColorRole) const
+// (12)qm3577953358 (34)_ZNK8QPalette5brushENS_9ColorRoleE
+//static
+/*void qm3577953358(QPalette::ColorRole cr)*/ {
+  QPalette::ColorRole cr = *(QPalette::ColorRole*)this_;
+  (void) ((QPalette*)this_)->brush(cr);
+   auto xptr = (const QBrush & (QPalette::*)(QPalette::ColorRole) const ) &QPalette::brush;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:125
+// [8] const QBrush & windowText() const
+// (12)qm1145350256 (27)_ZNK8QPalette10windowTextEv
+//static
+/*void qm1145350256()*/ {
+  ;
+  (void) ((QPalette*)this_)->windowText();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::windowText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:126
+// [8] const QBrush & button() const
+// (11)qm736265663 (22)_ZNK8QPalette6buttonEv
+//static
+/*void qm736265663()*/ {
+  ;
+  (void) ((QPalette*)this_)->button();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::button;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:127
+// [8] const QBrush & light() const
+// (11)qm390936111 (21)_ZNK8QPalette5lightEv
+//static
+/*void qm390936111()*/ {
+  ;
+  (void) ((QPalette*)this_)->light();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::light;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:128
+// [8] const QBrush & dark() const
+// (12)qm2478481798 (20)_ZNK8QPalette4darkEv
+//static
+/*void qm2478481798()*/ {
+  ;
+  (void) ((QPalette*)this_)->dark();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::dark;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:129
+// [8] const QBrush & mid() const
+// (12)qm3320423939 (19)_ZNK8QPalette3midEv
+//static
+/*void qm3320423939()*/ {
+  ;
+  (void) ((QPalette*)this_)->mid();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::mid;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:130
+// [8] const QBrush & text() const
+// (11)qm489357812 (20)_ZNK8QPalette4textEv
+//static
+/*void qm489357812()*/ {
+  ;
+  (void) ((QPalette*)this_)->text();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::text;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:131
+// [8] const QBrush & base() const
+// (12)qm4156623092 (20)_ZNK8QPalette4baseEv
+//static
+/*void qm4156623092()*/ {
+  ;
+  (void) ((QPalette*)this_)->base();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::base;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:132
+// [8] const QBrush & alternateBase() const
+// (12)qm2776534739 (30)_ZNK8QPalette13alternateBaseEv
+//static
+/*void qm2776534739()*/ {
+  ;
+  (void) ((QPalette*)this_)->alternateBase();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::alternateBase;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:133
+// [8] const QBrush & toolTipBase() const
+// (12)qm4270523121 (28)_ZNK8QPalette11toolTipBaseEv
+//static
+/*void qm4270523121()*/ {
+  ;
+  (void) ((QPalette*)this_)->toolTipBase();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::toolTipBase;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:134
+// [8] const QBrush & toolTipText() const
+// (11)qm341904369 (28)_ZNK8QPalette11toolTipTextEv
+//static
+/*void qm341904369()*/ {
+  ;
+  (void) ((QPalette*)this_)->toolTipText();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::toolTipText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:135
+// [8] const QBrush & window() const
+// (12)qm1855808202 (22)_ZNK8QPalette6windowEv
+//static
+/*void qm1855808202()*/ {
+  ;
+  (void) ((QPalette*)this_)->window();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::window;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:136
+// [8] const QBrush & midlight() const
+// (12)qm3232273153 (24)_ZNK8QPalette8midlightEv
+//static
+/*void qm3232273153()*/ {
+  ;
+  (void) ((QPalette*)this_)->midlight();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::midlight;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:137
+// [8] const QBrush & brightText() const
+// (12)qm3176416555 (27)_ZNK8QPalette10brightTextEv
+//static
+/*void qm3176416555()*/ {
+  ;
+  (void) ((QPalette*)this_)->brightText();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::brightText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:138
+// [8] const QBrush & buttonText() const
+// (11)qm437907165 (27)_ZNK8QPalette10buttonTextEv
+//static
+/*void qm437907165()*/ {
+  ;
+  (void) ((QPalette*)this_)->buttonText();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::buttonText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:139
+// [8] const QBrush & shadow() const
+// (12)qm3187070289 (22)_ZNK8QPalette6shadowEv
+//static
+/*void qm3187070289()*/ {
+  ;
+  (void) ((QPalette*)this_)->shadow();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::shadow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:140
+// [8] const QBrush & highlight() const
+// (12)qm1794746917 (25)_ZNK8QPalette9highlightEv
+//static
+/*void qm1794746917()*/ {
+  ;
+  (void) ((QPalette*)this_)->highlight();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::highlight;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:141
+// [8] const QBrush & highlightedText() const
+// (12)qm3436231574 (32)_ZNK8QPalette15highlightedTextEv
+//static
+/*void qm3436231574()*/ {
+  ;
+  (void) ((QPalette*)this_)->highlightedText();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::highlightedText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:142
+// [8] const QBrush & link() const
+// (12)qm1431732237 (20)_ZNK8QPalette4linkEv
+//static
+/*void qm1431732237()*/ {
+  ;
+  (void) ((QPalette*)this_)->link();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::link;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:143
+// [8] const QBrush & linkVisited() const
+// (12)qm1915071351 (28)_ZNK8QPalette11linkVisitedEv
+//static
+/*void qm1915071351()*/ {
+  ;
+  (void) ((QPalette*)this_)->linkVisited();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::linkVisited;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:144
+// [8] const QBrush & placeholderText() const
+// (11)qm769438529 (32)_ZNK8QPalette15placeholderTextEv
+//static
+/*void qm769438529()*/ {
+  ;
+  (void) ((QPalette*)this_)->placeholderText();
+   auto xptr = (const QBrush & (QPalette::*)() const ) &QPalette::placeholderText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:153
+// [1] bool operator!=(const QPalette &) const
+// (11)qm760711547 (20)_ZNK8QPaletteneERKS_
+//static
+/*void qm760711547(const QPalette & p)*/ {
+  const QPalette & p = *(const QPalette *)this_;
+  (void) ((QPalette*)this_)->operator!=(p);
+  // auto xptr = (bool (QPalette::*)(QPalette const&) const ) &QPalette::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:162
+// [4] uint resolve() const
+// (12)qm3182790110 (23)_ZNK8QPalette7resolveEv
+//static
+/*void qm3182790110()*/ {
+  ;
+  (void) ((QPalette*)this_)->resolve();
+   auto xptr = (unsigned int (QPalette::*)() const ) &QPalette::resolve;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:163
+// [-2] void resolve(uint) 
+// (11)qm949696841 (22)_ZN8QPalette7resolveEj
+//static
+/*void qm949696841(unsigned int mask)*/ {
+  unsigned int mask = *(unsigned int*)this_;
+  (void) ((QPalette*)this_)->resolve(mask);
+   auto xptr = (void (QPalette::*)(unsigned int) ) &QPalette::resolve;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN8QPaletteD2Ev(void *this_)*/ {
   delete (QPalette*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:69
-// [16] QPalette & operator=(const QPalette &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteaSERKS_(void *this_, QPalette* palette) {
-  auto& rv = ((QPalette*)this_)->operator=(*palette);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.4
-// /usr/include/qt/QtGui/qpalette.h:71
-// [-2] void QPalette(QPalette &&)
-#if QT_VERSION >= 0x050400
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteC2EOS_(QPalette && other) {
-  return  new QPalette(other);
-}
-#endif // QT_VERSION >= 0x050400
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:74
-// [16] QPalette & operator=(QPalette &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPaletteaSEOS_(void *this_, QPalette && other) {
-  auto& rv = ((QPalette*)this_)->operator=(other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtGui/qpalette.h:81
-// [-2] void swap(QPalette &)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPalette4swapERS_(void *this_, QPalette* other) {
-  ((QPalette*)this_)->swap(*other);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:105
-// [4] QPalette::ColorGroup currentColorGroup()
-extern "C" Q_DECL_EXPORT
-QPalette::ColorGroup C_ZNK8QPalette17currentColorGroupEv(void *this_) {
-  return (QPalette::ColorGroup)((QPalette*)this_)->currentColorGroup();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:106
-// [-2] void setCurrentColorGroup(QPalette::ColorGroup)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPalette20setCurrentColorGroupENS_10ColorGroupE(void *this_, QPalette::ColorGroup cg) {
-  ((QPalette*)this_)->setCurrentColorGroup(cg);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:108
-// [16] const QColor & color(QPalette::ColorGroup, QPalette::ColorRole)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette5colorENS_10ColorGroupENS_9ColorRoleE(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr) {
-  auto& rv = ((QPalette*)this_)->color(cg, cr);
-return new QColor(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:110
-// [8] const QBrush & brush(QPalette::ColorGroup, QPalette::ColorRole)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette5brushENS_10ColorGroupENS_9ColorRoleE(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr) {
-  auto& rv = ((QPalette*)this_)->brush(cg, cr);
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:111
-// [-2] void setColor(QPalette::ColorGroup, QPalette::ColorRole, const QColor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPalette8setColorENS_10ColorGroupENS_9ColorRoleERK6QColor(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr, QColor* color) {
-  ((QPalette*)this_)->setColor(cg, cr, *color);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:112
-// [-2] void setColor(QPalette::ColorRole, const QColor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPalette8setColorENS_9ColorRoleERK6QColor(void *this_, QPalette::ColorRole cr, QColor* color) {
-  ((QPalette*)this_)->setColor(cr, *color);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:113
-// [-2] void setBrush(QPalette::ColorRole, const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPalette8setBrushENS_9ColorRoleERK6QBrush(void *this_, QPalette::ColorRole cr, QBrush* brush) {
-  ((QPalette*)this_)->setBrush(cr, *brush);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qpalette.h:114
-// [1] bool isBrushSet(QPalette::ColorGroup, QPalette::ColorRole)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPalette10isBrushSetENS_10ColorGroupENS_9ColorRoleE(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr) {
-  return (bool)((QPalette*)this_)->isBrushSet(cg, cr);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:115
-// [-2] void setBrush(QPalette::ColorGroup, QPalette::ColorRole, const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPalette8setBrushENS_10ColorGroupENS_9ColorRoleERK6QBrush(void *this_, QPalette::ColorGroup cg, QPalette::ColorRole cr, QBrush* brush) {
-  ((QPalette*)this_)->setBrush(cg, cr, *brush);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:116
-// [-2] void setColorGroup(QPalette::ColorGroup, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPalette13setColorGroupENS_10ColorGroupERK6QBrushS3_S3_S3_S3_S3_S3_S3_S3_(void *this_, QPalette::ColorGroup cr, QBrush* windowText, QBrush* button, QBrush* light, QBrush* dark, QBrush* mid, QBrush* text, QBrush* bright_text, QBrush* base, QBrush* window) {
-  ((QPalette*)this_)->setColorGroup(cr, *windowText, *button, *light, *dark, *mid, *text, *bright_text, *base, *window);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:120
-// [1] bool isEqual(QPalette::ColorGroup, QPalette::ColorGroup)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPalette7isEqualENS_10ColorGroupES0_(void *this_, QPalette::ColorGroup cr1, QPalette::ColorGroup cr2) {
-  return (bool)((QPalette*)this_)->isEqual(cr1, cr2);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:122
-// [16] const QColor & color(QPalette::ColorRole)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette5colorENS_9ColorRoleE(void *this_, QPalette::ColorRole cr) {
-  auto& rv = ((QPalette*)this_)->color(cr);
-return new QColor(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:123
-// [8] const QBrush & brush(QPalette::ColorRole)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette5brushENS_9ColorRoleE(void *this_, QPalette::ColorRole cr) {
-  auto& rv = ((QPalette*)this_)->brush(cr);
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:124
-// [8] const QBrush & foreground()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette10foregroundEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->foreground();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:125
-// [8] const QBrush & windowText()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette10windowTextEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->windowText();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:126
-// [8] const QBrush & button()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette6buttonEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->button();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:127
-// [8] const QBrush & light()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette5lightEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->light();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:128
-// [8] const QBrush & dark()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette4darkEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->dark();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:129
-// [8] const QBrush & mid()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette3midEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->mid();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:130
-// [8] const QBrush & text()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette4textEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->text();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:131
-// [8] const QBrush & base()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette4baseEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->base();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:132
-// [8] const QBrush & alternateBase()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette13alternateBaseEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->alternateBase();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtGui/qpalette.h:133
-// [8] const QBrush & toolTipBase()
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette11toolTipBaseEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->toolTipBase();
-return new QBrush(rv);
-}
-#endif // QT_VERSION >= 0x040400
-
-// Public inline Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtGui/qpalette.h:134
-// [8] const QBrush & toolTipText()
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette11toolTipTextEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->toolTipText();
-return new QBrush(rv);
-}
-#endif // QT_VERSION >= 0x040400
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:135
-// [8] const QBrush & background()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette10backgroundEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->background();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:136
-// [8] const QBrush & window()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette6windowEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->window();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:137
-// [8] const QBrush & midlight()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette8midlightEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->midlight();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:138
-// [8] const QBrush & brightText()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette10brightTextEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->brightText();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:139
-// [8] const QBrush & buttonText()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette10buttonTextEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->buttonText();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:140
-// [8] const QBrush & shadow()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette6shadowEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->shadow();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:141
-// [8] const QBrush & highlight()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette9highlightEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->highlight();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:142
-// [8] const QBrush & highlightedText()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette15highlightedTextEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->highlightedText();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:143
-// [8] const QBrush & link()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette4linkEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->link();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:144
-// [8] const QBrush & linkVisited()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette11linkVisitedEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->linkVisited();
-return new QBrush(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.12
-// /usr/include/qt/QtGui/qpalette.h:145
-// [8] const QBrush & placeholderText()
-#if QT_VERSION >= 0x050c00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette15placeholderTextEv(void *this_) {
-  auto& rv = ((QPalette*)this_)->placeholderText();
-return new QBrush(rv);
-}
-#endif // QT_VERSION >= 0x050c00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:147
-// [1] bool operator==(const QPalette &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPaletteeqERKS_(void *this_, QPalette* p) {
-  return (bool)((QPalette*)this_)->operator==(*p);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:148
-// [1] bool operator!=(const QPalette &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPaletteneERKS_(void *this_, QPalette* p) {
-  return (bool)((QPalette*)this_)->operator!=(*p);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:149
-// [1] bool isCopyOf(const QPalette &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPalette8isCopyOfERKS_(void *this_, QPalette* p) {
-  return (bool)((QPalette*)this_)->isCopyOf(*p);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:154
-// [8] qint64 cacheKey()
-extern "C" Q_DECL_EXPORT
-qint64 C_ZNK8QPalette8cacheKeyEv(void *this_) {
-  return (qint64)((QPalette*)this_)->cacheKey();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:156
-// [16] QPalette resolve(const QPalette &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPalette7resolveERKS_(void *this_, QPalette* arg0) {
-  auto rv = ((QPalette*)this_)->resolve(*arg0);
-return new QPalette(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:157
-// [4] uint resolve()
-extern "C" Q_DECL_EXPORT
-uint C_ZNK8QPalette7resolveEv(void *this_) {
-  return (uint)((QPalette*)this_)->resolve();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpalette.h:158
-// [-2] void resolve(uint)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPalette7resolveEj(void *this_, uint mask) {
-  ((QPalette*)this_)->resolve(mask);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qpalette
 //  main block end
 
 //  use block begin

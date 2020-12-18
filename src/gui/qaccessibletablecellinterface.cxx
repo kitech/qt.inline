@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAccessibleTableCellInterface is pure virtual: true
+// QAccessibleTableCellInterface is pure virtual: true true
 // QAccessibleTableCellInterface has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQAccessibleTableCellInterface[] = {
 class Q_DECL_EXPORT MyQAccessibleTableCellInterface : public QAccessibleTableCellInterface {
 public:
   virtual ~MyQAccessibleTableCellInterface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool isSelected()
   virtual bool isSelected() const override {
     int handled = 0;
@@ -89,7 +89,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int columnIndex()
   virtual int columnIndex() const override {
     int handled = 0;
@@ -102,7 +102,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int rowIndex()
   virtual int rowIndex() const override {
     int handled = 0;
@@ -115,7 +115,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int columnExtent()
   virtual int columnExtent() const override {
     int handled = 0;
@@ -128,7 +128,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int rowExtent()
   virtual int rowExtent() const override {
     int handled = 0;
@@ -141,7 +141,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QAccessibleInterface * table()
   virtual QAccessibleInterface * table() const override {
     int handled = 0;
@@ -156,103 +156,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:580
-// [1] bool isSelected()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:582
-// [-2] QList<QAccessibleInterface *> columnHeaderCells()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:583
-// [-2] QList<QAccessibleInterface *> rowHeaderCells()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:584
-// [4] int columnIndex()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:585
-// [4] int rowIndex()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:586
-// [4] int columnExtent()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:587
-// [4] int rowExtent()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:589
-// [8] QAccessibleInterface * table()
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:578
-// [-2] void ~QAccessibleTableCellInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN29QAccessibleTableCellInterfaceD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaccessibletablecellinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN29QAccessibleTableCellInterfaceD2Ev(void *this_)*/ {
   delete (QAccessibleTableCellInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:580
-// [1] bool isSelected()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK29QAccessibleTableCellInterface10isSelectedEv(void *this_) {
-  return (bool)((QAccessibleTableCellInterface*)this_)->isSelected();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:582
-// [-2] QList<QAccessibleInterface *> columnHeaderCells()
-extern "C" Q_DECL_EXPORT
-QList<QAccessibleInterface *>* C_ZNK29QAccessibleTableCellInterface17columnHeaderCellsEv(void *this_) {
-  auto rv = ((QAccessibleTableCellInterface*)this_)->columnHeaderCells();
-return new QList<QAccessibleInterface *>(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:583
-// [-2] QList<QAccessibleInterface *> rowHeaderCells()
-extern "C" Q_DECL_EXPORT
-QList<QAccessibleInterface *>* C_ZNK29QAccessibleTableCellInterface14rowHeaderCellsEv(void *this_) {
-  auto rv = ((QAccessibleTableCellInterface*)this_)->rowHeaderCells();
-return new QList<QAccessibleInterface *>(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:584
-// [4] int columnIndex()
-extern "C" Q_DECL_EXPORT
-int C_ZNK29QAccessibleTableCellInterface11columnIndexEv(void *this_) {
-  return (int)((QAccessibleTableCellInterface*)this_)->columnIndex();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:585
-// [4] int rowIndex()
-extern "C" Q_DECL_EXPORT
-int C_ZNK29QAccessibleTableCellInterface8rowIndexEv(void *this_) {
-  return (int)((QAccessibleTableCellInterface*)this_)->rowIndex();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:586
-// [4] int columnExtent()
-extern "C" Q_DECL_EXPORT
-int C_ZNK29QAccessibleTableCellInterface12columnExtentEv(void *this_) {
-  return (int)((QAccessibleTableCellInterface*)this_)->columnExtent();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:587
-// [4] int rowExtent()
-extern "C" Q_DECL_EXPORT
-int C_ZNK29QAccessibleTableCellInterface9rowExtentEv(void *this_) {
-  return (int)((QAccessibleTableCellInterface*)this_)->rowExtent();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:589
-// [8] QAccessibleInterface * table()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK29QAccessibleTableCellInterface5tableEv(void *this_) {
-  return (void*)((QAccessibleTableCellInterface*)this_)->table();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaccessibletablecellinterface
 //  main block end
 
 //  use block begin

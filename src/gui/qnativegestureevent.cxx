@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050200
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QNativeGestureEvent is pure virtual: false
+// QNativeGestureEvent is pure virtual: false false
 // QNativeGestureEvent has virtual projected: false
 //  header block end
 
@@ -55,125 +54,100 @@ MyQNativeGestureEvent(Qt::NativeGestureType type_, const QPointF & localPos, con
 MyQNativeGestureEvent(Qt::NativeGestureType type_, const QTouchDevice * dev, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, qreal value, ulong sequenceId, quint64 intArgument) : QNativeGestureEvent(type_, dev, localPos, windowPos, screenPos, value, sequenceId, intArgument) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:310
-// [-2] void QNativeGestureEvent(Qt::NativeGestureType, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeERK7QPointFS4_S4_dmy(Qt::NativeGestureType type_, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, qreal value, ulong sequenceId, quint64 intArgument) {
-  return  new QNativeGestureEvent(type_, *localPos, *windowPos, *screenPos, value, sequenceId, intArgument);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qnativegestureevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:353
+// [4] Qt::NativeGestureType gestureType() const
+// (12)qm1552578403 (40)_ZNK19QNativeGestureEvent11gestureTypeEv
+//static
+/*void qm1552578403()*/ {
+  ;
+  (void) ((QNativeGestureEvent*)this_)->gestureType();
+   auto xptr = (Qt::NativeGestureType (QNativeGestureEvent::*)() const ) &QNativeGestureEvent::gestureType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtGui/qevent.h:313
-// [-2] void QNativeGestureEvent(Qt::NativeGestureType, const QTouchDevice *, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QNativeGestureEventC2EN2Qt17NativeGestureTypeEPK12QTouchDeviceRK7QPointFS7_S7_dmy(Qt::NativeGestureType type_, const QTouchDevice * dev, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, qreal value, ulong sequenceId, quint64 intArgument) {
-  return  new QNativeGestureEvent(type_, dev, *localPos, *windowPos, *screenPos, value, sequenceId, intArgument);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:354
+// [8] qreal value() const
+// (12)qm3617035240 (33)_ZNK19QNativeGestureEvent5valueEv
+//static
+/*void qm3617035240()*/ {
+  ;
+  (void) ((QNativeGestureEvent*)this_)->value();
+   auto xptr = (double (QNativeGestureEvent::*)() const ) &QNativeGestureEvent::value;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050a00
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:315
-// [-2] void ~QNativeGestureEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QNativeGestureEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:357
+// [8] const QPoint pos() const
+// (12)qm1846718789 (31)_ZNK19QNativeGestureEvent3posEv
+//static
+/*void qm1846718789()*/ {
+  ;
+  (void) ((QNativeGestureEvent*)this_)->pos();
+   auto xptr = (const QPoint (QNativeGestureEvent::*)() const ) &QNativeGestureEvent::pos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:358
+// [8] const QPoint globalPos() const
+// (12)qm2699413081 (37)_ZNK19QNativeGestureEvent9globalPosEv
+//static
+/*void qm2699413081()*/ {
+  ;
+  (void) ((QNativeGestureEvent*)this_)->globalPos();
+   auto xptr = (const QPoint (QNativeGestureEvent::*)() const ) &QNativeGestureEvent::globalPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:360
+// [16] const QPointF & localPos() const
+// (12)qm3575464521 (36)_ZNK19QNativeGestureEvent8localPosEv
+//static
+/*void qm3575464521()*/ {
+  ;
+  (void) ((QNativeGestureEvent*)this_)->localPos();
+   auto xptr = (const QPointF & (QNativeGestureEvent::*)() const ) &QNativeGestureEvent::localPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:361
+// [16] const QPointF & windowPos() const
+// (7)qm23831 (37)_ZNK19QNativeGestureEvent9windowPosEv
+//static
+/*void qm23831()*/ {
+  ;
+  (void) ((QNativeGestureEvent*)this_)->windowPos();
+   auto xptr = (const QPointF & (QNativeGestureEvent::*)() const ) &QNativeGestureEvent::windowPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:362
+// [16] const QPointF & screenPos() const
+// (12)qm2701919162 (37)_ZNK19QNativeGestureEvent9screenPosEv
+//static
+/*void qm2701919162()*/ {
+  ;
+  (void) ((QNativeGestureEvent*)this_)->screenPos();
+   auto xptr = (const QPointF & (QNativeGestureEvent::*)() const ) &QNativeGestureEvent::screenPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN19QNativeGestureEventD2Ev(void *this_)*/ {
   delete (QNativeGestureEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtGui/qevent.h:316
-// [4] Qt::NativeGestureType gestureType()
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-Qt::NativeGestureType C_ZNK19QNativeGestureEvent11gestureTypeEv(void *this_) {
-  return (Qt::NativeGestureType)((QNativeGestureEvent*)this_)->gestureType();
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public inline Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtGui/qevent.h:317
-// [8] qreal value()
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK19QNativeGestureEvent5valueEv(void *this_) {
-  return (qreal)((QNativeGestureEvent*)this_)->value();
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public inline Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtGui/qevent.h:320
-// [8] const QPoint pos()
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QNativeGestureEvent3posEv(void *this_) {
-  auto rv = ((QNativeGestureEvent*)this_)->pos();
-return new QPoint(rv);
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public inline Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtGui/qevent.h:321
-// [8] const QPoint globalPos()
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QNativeGestureEvent9globalPosEv(void *this_) {
-  auto rv = ((QNativeGestureEvent*)this_)->globalPos();
-return new QPoint(rv);
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public inline Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtGui/qevent.h:323
-// [16] const QPointF & localPos()
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QNativeGestureEvent8localPosEv(void *this_) {
-  auto& rv = ((QNativeGestureEvent*)this_)->localPos();
-return new QPointF(rv);
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public inline Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtGui/qevent.h:324
-// [16] const QPointF & windowPos()
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QNativeGestureEvent9windowPosEv(void *this_) {
-  auto& rv = ((QNativeGestureEvent*)this_)->windowPos();
-return new QPointF(rv);
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public inline Visibility=Default Availability=Available
-// since 5.2
-// /usr/include/qt/QtGui/qevent.h:325
-// [16] const QPointF & screenPos()
-#if QT_VERSION >= 0x050200
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QNativeGestureEvent9screenPosEv(void *this_) {
-  auto& rv = ((QNativeGestureEvent*)this_)->screenPos();
-return new QPointF(rv);
-}
-#endif // QT_VERSION >= 0x050200
-
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtGui/qevent.h:327
-// [8] const QTouchDevice * device()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QNativeGestureEvent6deviceEv(void *this_) {
-  return (void*)((QNativeGestureEvent*)this_)->device();
-}
-#endif // QT_VERSION >= 0x050a00
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qnativegestureevent
 //  main block end
 
 //  use block begin

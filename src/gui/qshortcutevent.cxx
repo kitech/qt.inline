@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QShortcutEvent is pure virtual: false
+// QShortcutEvent is pure virtual: false false
 // QShortcutEvent has virtual projected: false
 //  header block end
 
@@ -52,46 +52,52 @@ public:
 MyQShortcutEvent(const QKeySequence & key, int id, bool ambiguous) : QShortcutEvent(key, id, ambiguous) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:772
-// [-2] void QShortcutEvent(const QKeySequence &, int, bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QShortcutEventC2ERK12QKeySequenceib(QKeySequence* key, int id, bool ambiguous) {
-  return  new QShortcutEvent(*key, id, ambiguous);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qshortcutevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:812
+// [8] const QKeySequence & key() const
+// (12)qm3892705985 (26)_ZNK14QShortcutEvent3keyEv
+//static
+/*void qm3892705985()*/ {
+  ;
+  (void) ((QShortcutEvent*)this_)->key();
+   auto xptr = (const QKeySequence & (QShortcutEvent::*)() const ) &QShortcutEvent::key;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:773
-// [-2] void ~QShortcutEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QShortcutEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:813
+// [4] int shortcutId() const
+// (12)qm2247701994 (34)_ZNK14QShortcutEvent10shortcutIdEv
+//static
+/*void qm2247701994()*/ {
+  ;
+  (void) ((QShortcutEvent*)this_)->shortcutId();
+   auto xptr = (int (QShortcutEvent::*)() const ) &QShortcutEvent::shortcutId;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:814
+// [1] bool isAmbiguous() const
+// (12)qm1073917990 (35)_ZNK14QShortcutEvent11isAmbiguousEv
+//static
+/*void qm1073917990()*/ {
+  ;
+  (void) ((QShortcutEvent*)this_)->isAmbiguous();
+   auto xptr = (bool (QShortcutEvent::*)() const ) &QShortcutEvent::isAmbiguous;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN14QShortcutEventD2Ev(void *this_)*/ {
   delete (QShortcutEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:775
-// [8] const QKeySequence & key()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QShortcutEvent3keyEv(void *this_) {
-  auto& rv = ((QShortcutEvent*)this_)->key();
-return new QKeySequence(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:776
-// [4] int shortcutId()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QShortcutEvent10shortcutIdEv(void *this_) {
-  return (int)((QShortcutEvent*)this_)->shortcutId();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:777
-// [1] bool isAmbiguous()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QShortcutEvent11isAmbiguousEv(void *this_) {
-  return (bool)((QShortcutEvent*)this_)->isAmbiguous();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qshortcutevent
 //  main block end
 
 //  use block begin

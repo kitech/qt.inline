@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QIconDragEvent is pure virtual: false
+// QIconDragEvent is pure virtual: false false
 // QIconDragEvent has virtual projected: false
 //  header block end
 
@@ -52,21 +52,16 @@ public:
 MyQIconDragEvent() : QIconDragEvent() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:490
-// [-2] void QIconDragEvent()
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QIconDragEventC2Ev() {
-  return  new QIconDragEvent();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qicondragevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:491
-// [-2] void ~QIconDragEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QIconDragEventD2Ev(void *this_) {
+
+/*void C_ZN14QIconDragEventD2Ev(void *this_)*/ {
   delete (QIconDragEvent*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qicondragevent
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QOpenGLVersionStatus is pure virtual: false
+// QOpenGLVersionStatus is pure virtual: false false
 // QOpenGLVersionStatus has virtual projected: false
 //  header block end
 
@@ -54,27 +54,34 @@ MyQOpenGLVersionStatus() : QOpenGLVersionStatus() {}
 MyQOpenGLVersionStatus(int majorVersion, int minorVersion, QOpenGLVersionStatus::OpenGLStatus functionStatus) : QOpenGLVersionStatus(majorVersion, minorVersion, functionStatus) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qopenglversionstatus(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:86
-// [-2] void QOpenGLVersionStatus()
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QOpenGLVersionStatusC2Ev() {
-  return  new QOpenGLVersionStatus();
+// /usr/include/qt/QtGui/qopenglversionfunctions.h:92
+// [-2] void QOpenGLVersionStatus() 
+// (11)qm560535564 (29)_ZN20QOpenGLVersionStatusC2Ev
+/*void* qm560535564()*/{
+  ;
+  this_ =  new QOpenGLVersionStatus();
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:91
-// [-2] void QOpenGLVersionStatus(int, int, QOpenGLVersionStatus::OpenGLStatus)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QOpenGLVersionStatusC2EiiNS_12OpenGLStatusE(int majorVersion, int minorVersion, QOpenGLVersionStatus::OpenGLStatus functionStatus) {
-  return  new QOpenGLVersionStatus(majorVersion, minorVersion, functionStatus);
+// /usr/include/qt/QtGui/qopenglversionfunctions.h:97
+// [-2] void QOpenGLVersionStatus(int, int, QOpenGLVersionStatus::OpenGLStatus) 
+// (12)qm1142934713 (48)_ZN20QOpenGLVersionStatusC2EiiNS_12OpenGLStatusE
+/*void* qm1142934713(int majorVersion, int minorVersion, QOpenGLVersionStatus::OpenGLStatus functionStatus)*/{
+  int majorVersion = *(int*)this_; int minorVersion = *(int*)this_; QOpenGLVersionStatus::OpenGLStatus functionStatus = *(QOpenGLVersionStatus::OpenGLStatus*)this_;
+  this_ =  new QOpenGLVersionStatus(majorVersion, minorVersion, functionStatus);
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN20QOpenGLVersionStatusD2Ev(void *this_) {
+/*void C_ZN20QOpenGLVersionStatusD2Ev(void *this_)*/ {
   delete (QOpenGLVersionStatus*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qopenglversionstatus
 //  main block end
 
 //  use block begin

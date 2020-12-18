@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAccessibleEditableTextInterface is pure virtual: true
+// QAccessibleEditableTextInterface is pure virtual: true true
 // QAccessibleEditableTextInterface has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQAccessibleEditableTextInterface[] = {
 class Q_DECL_EXPORT MyQAccessibleEditableTextInterface : public QAccessibleEditableTextInterface {
 public:
   virtual ~MyQAccessibleEditableTextInterface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void deleteText(int, int)
   virtual void deleteText(int startOffset, int endOffset)  override {
     int handled = 0;
@@ -60,7 +60,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void insertText(int, const QString &)
   virtual void insertText(int offset, const QString & text)  override {
     int handled = 0;
@@ -72,7 +72,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void replaceText(int, int, const QString &)
   virtual void replaceText(int startOffset, int endOffset, const QString & text)  override {
     int handled = 0;
@@ -86,46 +86,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:558
-// [-2] void deleteText(int, int)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:559
-// [-2] void insertText(int, const QString &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:560
-// [-2] void replaceText(int, int, const QString &)
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:556
-// [-2] void ~QAccessibleEditableTextInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleEditableTextInterfaceD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaccessibleeditabletextinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN32QAccessibleEditableTextInterfaceD2Ev(void *this_)*/ {
   delete (QAccessibleEditableTextInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:558
-// [-2] void deleteText(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleEditableTextInterface10deleteTextEii(void *this_, int startOffset, int endOffset) {
-  ((QAccessibleEditableTextInterface*)this_)->deleteText(startOffset, endOffset);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:559
-// [-2] void insertText(int, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleEditableTextInterface10insertTextEiRK7QString(void *this_, int offset, QString* text) {
-  ((QAccessibleEditableTextInterface*)this_)->insertText(offset, *text);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:560
-// [-2] void replaceText(int, int, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleEditableTextInterface11replaceTextEiiRK7QString(void *this_, int startOffset, int endOffset, QString* text) {
-  ((QAccessibleEditableTextInterface*)this_)->replaceText(startOffset, endOffset, *text);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaccessibleeditabletextinterface
 //  main block end
 
 //  use block begin

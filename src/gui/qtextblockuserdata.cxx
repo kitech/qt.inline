@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040100
 // /usr/include/qt/QtGui/qtextobject.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QTextBlockUserData is pure virtual: false
+// QTextBlockUserData is pure virtual: false false
 // QTextBlockUserData has virtual projected: false
 //  header block end
 
@@ -51,13 +50,16 @@ public:
   virtual ~MyQTextBlockUserData() {}
 };
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextobject.h:198
-// [-2] void ~QTextBlockUserData()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QTextBlockUserDataD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtextblockuserdata(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN18QTextBlockUserDataD2Ev(void *this_)*/ {
   delete (QTextBlockUserData*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtextblockuserdata
 //  main block end
 
 //  use block begin

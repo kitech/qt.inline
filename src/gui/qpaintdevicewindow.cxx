@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050400
 // /usr/include/qt/QtGui/qpaintdevicewindow.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QPaintDeviceWindow is pure virtual: false
+// QPaintDeviceWindow is pure virtual: false false
 // QPaintDeviceWindow has virtual projected: true
 //  header block end
 
@@ -94,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQPaintDeviceWindow() {}
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void paintEvent(QPaintEvent *)
   virtual void paintEvent(QPaintEvent * event)  override {
     int handled = 0;
@@ -106,7 +105,7 @@ public:
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Direct Visibility=Default Availability=Available
 // [4] int metric(QPaintDevice::PaintDeviceMetric)
   virtual int metric(QPaintDevice::PaintDeviceMetric metric) const override {
     int handled = 0;
@@ -119,7 +118,7 @@ public:
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Ignore Visibility=Default Availability=Available
 // [-2] void exposeEvent(QExposeEvent *)
   virtual void exposeEvent(QExposeEvent * arg0)  override {
     int handled = 0;
@@ -131,7 +130,7 @@ public:
   }
   }
 
-// Protected virtual Visibility=Default Availability=Available
+// Protected virtual Extend Visibility=Default Availability=Available
 // [1] bool event(QEvent *)
   virtual bool event(QEvent * event)  override {
     int handled = 0;
@@ -158,109 +157,28 @@ void* C_QPaintDeviceWindow_init_staticMetaObject(void* this_, void* strdat, void
   return qmo;
 }
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:69
-// [-2] void paintEvent(QPaintEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QPaintDeviceWindow10paintEventEP11QPaintEvent(void *this_, QPaintEvent * event) {
-  ((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::paintEvent(event);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qpaintdevicewindow(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:71
-// [4] int metric(QPaintDevice::PaintDeviceMetric)
-extern "C" Q_DECL_EXPORT
-int C_ZNK18QPaintDeviceWindow6metricEN12QPaintDevice17PaintDeviceMetricE(void *this_, QPaintDevice::PaintDeviceMetric metric) {
-  return (int)((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::metric(metric);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:72
-// [-2] void exposeEvent(QExposeEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QPaintDeviceWindow11exposeEventEP12QExposeEvent(void *this_, QExposeEvent * arg0) {
-  ((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::exposeEvent(arg0);
-}
-
-// Protected virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:73
-// [1] bool event(QEvent *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN18QPaintDeviceWindow5eventEP6QEvent(void *this_, QEvent * event) {
-  return (bool)((QPaintDeviceWindow*)this_)->QPaintDeviceWindow::event(event);
-}
-
-// Public virtual Visibility=Default Availability=Available
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpaintdevicewindow.h:54
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QPaintDeviceWindow10metaObjectEv(void *this_) {
-  return (void*)((QPaintDeviceWindow*)this_)->metaObject();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:54
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QPaintDeviceWindow11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QPaintDeviceWindow*)this_)->qt_metacast(arg0);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:54
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN18QPaintDeviceWindow11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QPaintDeviceWindow*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:54
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QPaintDeviceWindow2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QPaintDeviceWindow::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:54
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QPaintDeviceWindow6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QPaintDeviceWindow::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:58
-// [-2] void update(const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QPaintDeviceWindow6updateERK5QRect(void *this_, QRect* rect) {
-  ((QPaintDeviceWindow*)this_)->update(*rect);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:59
-// [-2] void update(const QRegion &)
-extern "C" Q_DECL_EXPORT
-void C_ZN18QPaintDeviceWindow6updateERK7QRegion(void *this_, QRegion* region) {
-  ((QPaintDeviceWindow*)this_)->update(*region);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpaintdevicewindow.h:66
-// [-2] void update()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QPaintDeviceWindow6updateEv(void *this_) {
-  ((QPaintDeviceWindow*)this_)->update();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3661623565 (34)_ZN18QPaintDeviceWindow2trEPKcS1_i
+//static
+/*void qm3661623565(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QPaintDeviceWindow::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QPaintDeviceWindow::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN18QPaintDeviceWindowD2Ev(void *this_) {
+/*void C_ZN18QPaintDeviceWindowD2Ev(void *this_)*/ {
   delete (QPaintDeviceWindow*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qpaintdevicewindow
 //  main block end
 
 //  use block begin

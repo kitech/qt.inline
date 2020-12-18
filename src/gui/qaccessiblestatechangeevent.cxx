@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAccessibleStateChangeEvent is pure virtual: false
+// QAccessibleStateChangeEvent is pure virtual: false false
 // QAccessibleStateChangeEvent has virtual projected: false
 //  header block end
 
@@ -54,37 +54,46 @@ MyQAccessibleStateChangeEvent(QObject * obj, QAccessible::State state) : QAccess
 MyQAccessibleStateChangeEvent(QAccessibleInterface * iface, QAccessible::State state) : QAccessibleStateChangeEvent(iface, state) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaccessiblestatechangeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:723
-// [-2] void QAccessibleStateChangeEvent(QObject *, QAccessible::State)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QAccessibleStateChangeEventC2EP7QObjectN11QAccessible5StateE(QObject * obj, QAccessible::State state) {
-  return  new QAccessibleStateChangeEvent(obj, state);
+// /usr/include/qt/QtGui/qaccessible.h:724
+// [-2] void QAccessibleStateChangeEvent(QObject *, QAccessible::State) 
+// (12)qm3058062153 (65)_ZN27QAccessibleStateChangeEventC2EP7QObjectN11QAccessible5StateE
+/*void* qm3058062153(QObject * obj, QAccessible::State state)*/{
+  QObject * obj = *(QObject **)this_; QAccessible::State state = *(QAccessible::State*)this_;
+  this_ =  new QAccessibleStateChangeEvent(obj, state);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:728
-// [-2] void QAccessibleStateChangeEvent(QAccessibleInterface *, QAccessible::State)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QAccessibleStateChangeEventC2EP20QAccessibleInterfaceN11QAccessible5StateE(QAccessibleInterface * iface, QAccessible::State state) {
-  return  new QAccessibleStateChangeEvent(iface, state);
+// /usr/include/qt/QtGui/qaccessible.h:729
+// [-2] void QAccessibleStateChangeEvent(QAccessibleInterface *, QAccessible::State) 
+// (12)qm3096715267 (79)_ZN27QAccessibleStateChangeEventC2EP20QAccessibleInterfaceN11QAccessible5StateE
+/*void* qm3096715267(QAccessibleInterface * iface, QAccessible::State state)*/{
+  QAccessibleInterface * iface = *(QAccessibleInterface **)this_; QAccessible::State state = *(QAccessible::State*)this_;
+  this_ =  new QAccessibleStateChangeEvent(iface, state);
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:733
-// [-2] void ~QAccessibleStateChangeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QAccessibleStateChangeEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:736
+// [8] QAccessible::State changedStates() const
+// (12)qm1491817760 (50)_ZNK27QAccessibleStateChangeEvent13changedStatesEv
+//static
+/*void qm1491817760()*/ {
+  ;
+  (void) ((QAccessibleStateChangeEvent*)this_)->changedStates();
+   auto xptr = (QAccessible::State (QAccessibleStateChangeEvent::*)() const ) &QAccessibleStateChangeEvent::changedStates;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN27QAccessibleStateChangeEventD2Ev(void *this_)*/ {
   delete (QAccessibleStateChangeEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:735
-// [8] QAccessible::State changedStates()
-extern "C" Q_DECL_EXPORT
-QAccessible::State C_ZNK27QAccessibleStateChangeEvent13changedStatesEv(void *this_) {
-  return (QAccessible::State)((QAccessibleStateChangeEvent*)this_)->changedStates();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaccessiblestatechangeevent
 //  main block end
 
 //  use block begin

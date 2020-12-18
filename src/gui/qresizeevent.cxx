@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QResizeEvent is pure virtual: false
+// QResizeEvent is pure virtual: false false
 // QResizeEvent has virtual projected: false
 //  header block end
 
@@ -52,39 +52,40 @@ public:
 MyQResizeEvent(const QSize & size, const QSize & oldSize) : QResizeEvent(size, oldSize) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:468
-// [-2] void QResizeEvent(const QSize &, const QSize &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QResizeEventC2ERK5QSizeS2_(QSize* size, QSize* oldSize) {
-  return  new QResizeEvent(*size, *oldSize);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qresizeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:508
+// [8] const QSize & size() const
+// (11)qm334655610 (25)_ZNK12QResizeEvent4sizeEv
+//static
+/*void qm334655610()*/ {
+  ;
+  (void) ((QResizeEvent*)this_)->size();
+   auto xptr = (const QSize & (QResizeEvent::*)() const ) &QResizeEvent::size;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:469
-// [-2] void ~QResizeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN12QResizeEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:509
+// [8] const QSize & oldSize() const
+// (12)qm3805921887 (28)_ZNK12QResizeEvent7oldSizeEv
+//static
+/*void qm3805921887()*/ {
+  ;
+  (void) ((QResizeEvent*)this_)->oldSize();
+   auto xptr = (const QSize & (QResizeEvent::*)() const ) &QResizeEvent::oldSize;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN12QResizeEventD2Ev(void *this_)*/ {
   delete (QResizeEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:471
-// [8] const QSize & size()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QResizeEvent4sizeEv(void *this_) {
-  auto& rv = ((QResizeEvent*)this_)->size();
-return new QSize(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:472
-// [8] const QSize & oldSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QResizeEvent7oldSizeEv(void *this_) {
-  auto& rv = ((QResizeEvent*)this_)->oldSize();
-return new QSize(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qresizeevent
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QWhatsThisClickedEvent is pure virtual: false
+// QWhatsThisClickedEvent is pure virtual: false false
 // QWhatsThisClickedEvent has virtual projected: false
 //  header block end
 
@@ -52,30 +52,28 @@ public:
 MyQWhatsThisClickedEvent(const QString & href) : QWhatsThisClickedEvent(href) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:718
-// [-2] void QWhatsThisClickedEvent(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QWhatsThisClickedEventC2ERK7QString(QString* href) {
-  return  new QWhatsThisClickedEvent(*href);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwhatsthisclickedevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:758
+// [8] QString href() const
+// (12)qm2420370814 (35)_ZNK22QWhatsThisClickedEvent4hrefEv
+//static
+/*void qm2420370814()*/ {
+  ;
+  (void) ((QWhatsThisClickedEvent*)this_)->href();
+   auto xptr = (QString (QWhatsThisClickedEvent::*)() const ) &QWhatsThisClickedEvent::href;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:719
-// [-2] void ~QWhatsThisClickedEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN22QWhatsThisClickedEventD2Ev(void *this_) {
+
+/*void C_ZN22QWhatsThisClickedEventD2Ev(void *this_)*/ {
   delete (QWhatsThisClickedEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:721
-// [8] QString href()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QWhatsThisClickedEvent4hrefEv(void *this_) {
-  auto rv = ((QWhatsThisClickedEvent*)this_)->href();
-return new QString(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwhatsthisclickedevent
 //  main block end
 
 //  use block begin

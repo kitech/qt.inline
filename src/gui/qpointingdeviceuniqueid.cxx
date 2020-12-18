@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050800
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QPointingDeviceUniqueId is pure virtual: false
+// QPointingDeviceUniqueId is pure virtual: false false
 // QPointingDeviceUniqueId has virtual projected: false
 //  header block end
 
@@ -53,44 +52,37 @@ public:
 MyQPointingDeviceUniqueId() : QPointingDeviceUniqueId() {}
 };
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:814
-// [-2] void QPointingDeviceUniqueId()
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QPointingDeviceUniqueIdC2Ev() {
-  return  new QPointingDeviceUniqueId();
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:818
-// [8] QPointingDeviceUniqueId fromNumericId(qint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QPointingDeviceUniqueId13fromNumericIdEx(qint64 id) {
-  auto rv = QPointingDeviceUniqueId::fromNumericId(id);
-return new QPointingDeviceUniqueId(rv);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qpointingdeviceuniqueid(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:820
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK23QPointingDeviceUniqueId7isValidEv(void *this_) {
-  return (bool)((QPointingDeviceUniqueId*)this_)->isValid();
+// /usr/include/qt/QtGui/qevent.h:851
+// [-2] void QPointingDeviceUniqueId() 
+// (12)qm1592284260 (32)_ZN23QPointingDeviceUniqueIdC2Ev
+/*void* qm1592284260()*/{
+  ;
+  this_ =  new QPointingDeviceUniqueId();
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:821
-// [8] qint64 numericId()
-extern "C" Q_DECL_EXPORT
-qint64 C_ZNK23QPointingDeviceUniqueId9numericIdEv(void *this_) {
-  return (qint64)((QPointingDeviceUniqueId*)this_)->numericId();
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:857
+// [1] bool isValid() const
+// (10)qm42999240 (39)_ZNK23QPointingDeviceUniqueId7isValidEv
+//static
+/*void qm42999240()*/ {
+  ;
+  (void) ((QPointingDeviceUniqueId*)this_)->isValid();
+   auto xptr = (bool (QPointingDeviceUniqueId::*)() const ) &QPointingDeviceUniqueId::isValid;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN23QPointingDeviceUniqueIdD2Ev(void *this_) {
+/*void C_ZN23QPointingDeviceUniqueIdD2Ev(void *this_)*/ {
   delete (QPointingDeviceUniqueId*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qpointingdeviceuniqueid
 //  main block end
 
 //  use block begin

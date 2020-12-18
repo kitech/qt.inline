@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtGui/qtguiglobal.h>
 #if QT_CONFIG(standarditemmodel)
-// since 0x040200
 // /usr/include/qt/QtGui/qstandarditemmodel.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QStandardItem is pure virtual: false
+// QStandardItem is pure virtual: false false
 // QStandardItem has virtual projected: false
 //  header block end
 
@@ -62,755 +61,496 @@ MyQStandardItem(const QIcon & icon, const QString & text) : QStandardItem(icon, 
 MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:64
-// [-2] void QStandardItem()
-extern "C" Q_DECL_EXPORT
-void* C_ZN13QStandardItemC2Ev() {
-  return  new QStandardItem();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstandarditem(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:65
-// [-2] void QStandardItem(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN13QStandardItemC2ERK7QString(QString* text) {
-  return  new QStandardItem(*text);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:66
-// [-2] void QStandardItem(const QIcon &, const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN13QStandardItemC2ERK5QIconRK7QString(QIcon* icon, QString* text) {
-  return  new QStandardItem(*icon, *text);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:67
-// [-2] void QStandardItem(int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN13QStandardItemC2Eii(int rows, int columns) {
-  return  new QStandardItem(rows, columns);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:68
-// [-2] void ~QStandardItem()
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItemD2Ev(void *this_) {
-  delete (QStandardItem*)(this_);
-}
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:70
-// [16] QVariant data(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem4dataEi(void *this_, int role) {
-  auto rv = ((QStandardItem*)this_)->data(role);
-return new QVariant(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:71
-// [-2] void setData(const QVariant &, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem7setDataERK8QVarianti(void *this_, QVariant* value, int role) {
-  ((QStandardItem*)this_)->setData(*value, role);
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.12
-// /usr/include/qt/QtGui/qstandarditemmodel.h:72
-// [-2] void clearData()
-#if QT_VERSION >= 0x050c00
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem9clearDataEv(void *this_) {
-  ((QStandardItem*)this_)->clearData();
-}
-#endif // QT_VERSION >= 0x050c00
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:74
-// [8] QString text()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem4textEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->text();
-return new QString(rv);
+// [8] QString text() const
+// (12)qm2756924617 (26)_ZNK13QStandardItem4textEv
+//static
+/*void qm2756924617()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->text();
+   auto xptr = (QString (QStandardItem::*)() const ) &QStandardItem::text;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:77
-// [-2] void setText(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem7setTextERK7QString(void *this_, QString* text) {
-  ((QStandardItem*)this_)->setText(*text);
+// [-2] void setText(const QString &) 
+// (12)qm4018926516 (37)_ZN13QStandardItem7setTextERK7QString
+//static
+/*void qm4018926516(const QString & text)*/ {
+  const QString & text = *(const QString *)this_;
+  (void) ((QStandardItem*)this_)->setText(text);
+   auto xptr = (void (QStandardItem::*)(QString const&) ) &QStandardItem::setText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:79
-// [8] QIcon icon()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem4iconEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->icon();
-return new QIcon(rv);
+// [8] QIcon icon() const
+// (12)qm1210382764 (26)_ZNK13QStandardItem4iconEv
+//static
+/*void qm1210382764()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->icon();
+   auto xptr = (QIcon (QStandardItem::*)() const ) &QStandardItem::icon;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:82
-// [-2] void setIcon(const QIcon &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem7setIconERK5QIcon(void *this_, QIcon* icon) {
-  ((QStandardItem*)this_)->setIcon(*icon);
+// [-2] void setIcon(const QIcon &) 
+// (12)qm4192121326 (35)_ZN13QStandardItem7setIconERK5QIcon
+//static
+/*void qm4192121326(const QIcon & icon)*/ {
+  const QIcon & icon = *(const QIcon *)this_;
+  (void) ((QStandardItem*)this_)->setIcon(icon);
+   auto xptr = (void (QStandardItem::*)(QIcon const&) ) &QStandardItem::setIcon;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:85
-// [8] QString toolTip()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem7toolTipEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->toolTip();
-return new QString(rv);
+// [8] QString toolTip() const
+// (12)qm1340250104 (29)_ZNK13QStandardItem7toolTipEv
+//static
+/*void qm1340250104()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->toolTip();
+   auto xptr = (QString (QStandardItem::*)() const ) &QStandardItem::toolTip;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:88
-// [-2] void setToolTip(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem10setToolTipERK7QString(void *this_, QString* toolTip) {
-  ((QStandardItem*)this_)->setToolTip(*toolTip);
+// [-2] void setToolTip(const QString &) 
+// (12)qm2711109448 (41)_ZN13QStandardItem10setToolTipERK7QString
+//static
+/*void qm2711109448(const QString & toolTip)*/ {
+  const QString & toolTip = *(const QString *)this_;
+  (void) ((QStandardItem*)this_)->setToolTip(toolTip);
+   auto xptr = (void (QStandardItem::*)(QString const&) ) &QStandardItem::setToolTip;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:92
-// [8] QString statusTip()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem9statusTipEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->statusTip();
-return new QString(rv);
+// [8] QString statusTip() const
+// (12)qm2932401325 (31)_ZNK13QStandardItem9statusTipEv
+//static
+/*void qm2932401325()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->statusTip();
+   auto xptr = (QString (QStandardItem::*)() const ) &QStandardItem::statusTip;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:95
-// [-2] void setStatusTip(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem12setStatusTipERK7QString(void *this_, QString* statusTip) {
-  ((QStandardItem*)this_)->setStatusTip(*statusTip);
+// [-2] void setStatusTip(const QString &) 
+// (12)qm3431889760 (43)_ZN13QStandardItem12setStatusTipERK7QString
+//static
+/*void qm3431889760(const QString & statusTip)*/ {
+  const QString & statusTip = *(const QString *)this_;
+  (void) ((QStandardItem*)this_)->setStatusTip(statusTip);
+   auto xptr = (void (QStandardItem::*)(QString const&) ) &QStandardItem::setStatusTip;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:99
-// [8] QString whatsThis()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem9whatsThisEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->whatsThis();
-return new QString(rv);
+// [8] QString whatsThis() const
+// (12)qm1013783843 (31)_ZNK13QStandardItem9whatsThisEv
+//static
+/*void qm1013783843()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->whatsThis();
+   auto xptr = (QString (QStandardItem::*)() const ) &QStandardItem::whatsThis;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:102
-// [-2] void setWhatsThis(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem12setWhatsThisERK7QString(void *this_, QString* whatsThis) {
-  ((QStandardItem*)this_)->setWhatsThis(*whatsThis);
+// [-2] void setWhatsThis(const QString &) 
+// (12)qm3338724445 (43)_ZN13QStandardItem12setWhatsThisERK7QString
+//static
+/*void qm3338724445(const QString & whatsThis)*/ {
+  const QString & whatsThis = *(const QString *)this_;
+  (void) ((QStandardItem*)this_)->setWhatsThis(whatsThis);
+   auto xptr = (void (QStandardItem::*)(QString const&) ) &QStandardItem::setWhatsThis;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:105
-// [8] QSize sizeHint()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem8sizeHintEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->sizeHint();
-return new QSize(rv);
+// [8] QSize sizeHint() const
+// (12)qm1855997775 (30)_ZNK13QStandardItem8sizeHintEv
+//static
+/*void qm1855997775()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->sizeHint();
+   auto xptr = (QSize (QStandardItem::*)() const ) &QStandardItem::sizeHint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:108
-// [-2] void setSizeHint(const QSize &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem11setSizeHintERK5QSize(void *this_, QSize* sizeHint) {
-  ((QStandardItem*)this_)->setSizeHint(*sizeHint);
+// [-2] void setSizeHint(const QSize &) 
+// (12)qm2486433144 (40)_ZN13QStandardItem11setSizeHintERK5QSize
+//static
+/*void qm2486433144(const QSize & sizeHint)*/ {
+  const QSize & sizeHint = *(const QSize *)this_;
+  (void) ((QStandardItem*)this_)->setSizeHint(sizeHint);
+   auto xptr = (void (QStandardItem::*)(QSize const&) ) &QStandardItem::setSizeHint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:110
-// [16] QFont font()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem4fontEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->font();
-return new QFont(rv);
+// [16] QFont font() const
+// (12)qm3582977979 (26)_ZNK13QStandardItem4fontEv
+//static
+/*void qm3582977979()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->font();
+   auto xptr = (QFont (QStandardItem::*)() const ) &QStandardItem::font;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:113
-// [-2] void setFont(const QFont &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem7setFontERK5QFont(void *this_, QFont* font) {
-  ((QStandardItem*)this_)->setFont(*font);
+// [-2] void setFont(const QFont &) 
+// (12)qm2678507186 (35)_ZN13QStandardItem7setFontERK5QFont
+//static
+/*void qm2678507186(const QFont & font)*/ {
+  const QFont & font = *(const QFont *)this_;
+  (void) ((QStandardItem*)this_)->setFont(font);
+   auto xptr = (void (QStandardItem::*)(QFont const&) ) &QStandardItem::setFont;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:115
-// [4] Qt::Alignment textAlignment()
-extern "C" Q_DECL_EXPORT
-Qt::Alignment C_ZNK13QStandardItem13textAlignmentEv(void *this_) {
-  return (Qt::Alignment)((QStandardItem*)this_)->textAlignment();
+// [4] Qt::Alignment textAlignment() const
+// (12)qm1545711604 (36)_ZNK13QStandardItem13textAlignmentEv
+//static
+/*void qm1545711604()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->textAlignment();
+   auto xptr = (QFlags<Qt::AlignmentFlag> (QStandardItem::*)() const ) &QStandardItem::textAlignment;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:118
-// [-2] void setTextAlignment(Qt::Alignment)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem16setTextAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> textAlignment) {
-  ((QStandardItem*)this_)->setTextAlignment(textAlignment);
+// [-2] void setTextAlignment(Qt::Alignment) 
+// (12)qm1113909400 (66)_ZN13QStandardItem16setTextAlignmentE6QFlagsIN2Qt13AlignmentFlagEE
+//static
+/*void qm1113909400(QFlags<Qt::AlignmentFlag> textAlignment)*/ {
+  QFlags<Qt::AlignmentFlag> textAlignment = *(QFlags<Qt::AlignmentFlag>*)this_;
+  (void) ((QStandardItem*)this_)->setTextAlignment(textAlignment);
+   auto xptr = (void (QStandardItem::*)(QFlags<Qt::AlignmentFlag>) ) &QStandardItem::setTextAlignment;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:120
-// [8] QBrush background()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem10backgroundEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->background();
-return new QBrush(rv);
+// [8] QBrush background() const
+// (12)qm2592120765 (33)_ZNK13QStandardItem10backgroundEv
+//static
+/*void qm2592120765()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->background();
+   auto xptr = (QBrush (QStandardItem::*)() const ) &QStandardItem::background;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:123
-// [-2] void setBackground(const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem13setBackgroundERK6QBrush(void *this_, QBrush* brush) {
-  ((QStandardItem*)this_)->setBackground(*brush);
+// [-2] void setBackground(const QBrush &) 
+// (12)qm3899156636 (43)_ZN13QStandardItem13setBackgroundERK6QBrush
+//static
+/*void qm3899156636(const QBrush & brush)*/ {
+  const QBrush & brush = *(const QBrush *)this_;
+  (void) ((QStandardItem*)this_)->setBackground(brush);
+   auto xptr = (void (QStandardItem::*)(QBrush const&) ) &QStandardItem::setBackground;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:125
-// [8] QBrush foreground()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem10foregroundEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->foreground();
-return new QBrush(rv);
+// [8] QBrush foreground() const
+// (12)qm3411984000 (33)_ZNK13QStandardItem10foregroundEv
+//static
+/*void qm3411984000()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->foreground();
+   auto xptr = (QBrush (QStandardItem::*)() const ) &QStandardItem::foreground;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:128
-// [-2] void setForeground(const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem13setForegroundERK6QBrush(void *this_, QBrush* brush) {
-  ((QStandardItem*)this_)->setForeground(*brush);
+// [-2] void setForeground(const QBrush &) 
+// (12)qm2989328188 (43)_ZN13QStandardItem13setForegroundERK6QBrush
+//static
+/*void qm2989328188(const QBrush & brush)*/ {
+  const QBrush & brush = *(const QBrush *)this_;
+  (void) ((QStandardItem*)this_)->setForeground(brush);
+   auto xptr = (void (QStandardItem::*)(QBrush const&) ) &QStandardItem::setForeground;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:130
-// [4] Qt::CheckState checkState()
-extern "C" Q_DECL_EXPORT
-Qt::CheckState C_ZNK13QStandardItem10checkStateEv(void *this_) {
-  return (Qt::CheckState)((QStandardItem*)this_)->checkState();
+// [4] Qt::CheckState checkState() const
+// (11)qm819726009 (33)_ZNK13QStandardItem10checkStateEv
+//static
+/*void qm819726009()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->checkState();
+   auto xptr = (Qt::CheckState (QStandardItem::*)() const ) &QStandardItem::checkState;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:133
-// [-2] void setCheckState(Qt::CheckState)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem13setCheckStateEN2Qt10CheckStateE(void *this_, Qt::CheckState checkState) {
-  ((QStandardItem*)this_)->setCheckState(checkState);
+// [-2] void setCheckState(Qt::CheckState) 
+// (12)qm1871959943 (51)_ZN13QStandardItem13setCheckStateEN2Qt10CheckStateE
+//static
+/*void qm1871959943(Qt::CheckState checkState)*/ {
+  Qt::CheckState checkState = *(Qt::CheckState*)this_;
+  (void) ((QStandardItem*)this_)->setCheckState(checkState);
+   auto xptr = (void (QStandardItem::*)(Qt::CheckState) ) &QStandardItem::setCheckState;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:135
-// [8] QString accessibleText()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem14accessibleTextEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->accessibleText();
-return new QString(rv);
+// [8] QString accessibleText() const
+// (12)qm3527818036 (37)_ZNK13QStandardItem14accessibleTextEv
+//static
+/*void qm3527818036()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->accessibleText();
+   auto xptr = (QString (QStandardItem::*)() const ) &QStandardItem::accessibleText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:138
-// [-2] void setAccessibleText(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem17setAccessibleTextERK7QString(void *this_, QString* accessibleText) {
-  ((QStandardItem*)this_)->setAccessibleText(*accessibleText);
+// [-2] void setAccessibleText(const QString &) 
+// (12)qm2311528674 (48)_ZN13QStandardItem17setAccessibleTextERK7QString
+//static
+/*void qm2311528674(const QString & accessibleText)*/ {
+  const QString & accessibleText = *(const QString *)this_;
+  (void) ((QStandardItem*)this_)->setAccessibleText(accessibleText);
+   auto xptr = (void (QStandardItem::*)(QString const&) ) &QStandardItem::setAccessibleText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:140
-// [8] QString accessibleDescription()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem21accessibleDescriptionEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->accessibleDescription();
-return new QString(rv);
+// [8] QString accessibleDescription() const
+// (12)qm1776282084 (44)_ZNK13QStandardItem21accessibleDescriptionEv
+//static
+/*void qm1776282084()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->accessibleDescription();
+   auto xptr = (QString (QStandardItem::*)() const ) &QStandardItem::accessibleDescription;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:143
-// [-2] void setAccessibleDescription(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem24setAccessibleDescriptionERK7QString(void *this_, QString* accessibleDescription) {
-  ((QStandardItem*)this_)->setAccessibleDescription(*accessibleDescription);
+// [-2] void setAccessibleDescription(const QString &) 
+// (11)qm352733167 (55)_ZN13QStandardItem24setAccessibleDescriptionERK7QString
+//static
+/*void qm352733167(const QString & accessibleDescription)*/ {
+  const QString & accessibleDescription = *(const QString *)this_;
+  (void) ((QStandardItem*)this_)->setAccessibleDescription(accessibleDescription);
+   auto xptr = (void (QStandardItem::*)(QString const&) ) &QStandardItem::setAccessibleDescription;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:145
-// [4] Qt::ItemFlags flags()
-extern "C" Q_DECL_EXPORT
-Qt::ItemFlags C_ZNK13QStandardItem5flagsEv(void *this_) {
-  return (Qt::ItemFlags)((QStandardItem*)this_)->flags();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:146
-// [-2] void setFlags(Qt::ItemFlags)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem8setFlagsE6QFlagsIN2Qt8ItemFlagEE(void *this_, QFlags<Qt::ItemFlag> flags) {
-  ((QStandardItem*)this_)->setFlags(flags);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:148
-// [1] bool isEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem9isEnabledEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->isEnabled();
+// [1] bool isEnabled() const
+// (12)qm2845356903 (31)_ZNK13QStandardItem9isEnabledEv
+//static
+/*void qm2845356903()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->isEnabled();
+   auto xptr = (bool (QStandardItem::*)() const ) &QStandardItem::isEnabled;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:151
-// [-2] void setEnabled(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem10setEnabledEb(void *this_, bool enabled) {
-  ((QStandardItem*)this_)->setEnabled(enabled);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:153
-// [1] bool isEditable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem10isEditableEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->isEditable();
+// [1] bool isEditable() const
+// (12)qm3039385001 (33)_ZNK13QStandardItem10isEditableEv
+//static
+/*void qm3039385001()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->isEditable();
+   auto xptr = (bool (QStandardItem::*)() const ) &QStandardItem::isEditable;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:156
-// [-2] void setEditable(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem11setEditableEb(void *this_, bool editable) {
-  ((QStandardItem*)this_)->setEditable(editable);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:158
-// [1] bool isSelectable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem12isSelectableEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->isSelectable();
+// [1] bool isSelectable() const
+// (12)qm1292193189 (35)_ZNK13QStandardItem12isSelectableEv
+//static
+/*void qm1292193189()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->isSelectable();
+   auto xptr = (bool (QStandardItem::*)() const ) &QStandardItem::isSelectable;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:161
-// [-2] void setSelectable(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem13setSelectableEb(void *this_, bool selectable) {
-  ((QStandardItem*)this_)->setSelectable(selectable);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:163
-// [1] bool isCheckable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem11isCheckableEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->isCheckable();
+// [1] bool isCheckable() const
+// (11)qm401471195 (34)_ZNK13QStandardItem11isCheckableEv
+//static
+/*void qm401471195()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->isCheckable();
+   auto xptr = (bool (QStandardItem::*)() const ) &QStandardItem::isCheckable;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:166
-// [-2] void setCheckable(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem12setCheckableEb(void *this_, bool checkable) {
-  ((QStandardItem*)this_)->setCheckable(checkable);
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.6
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:168
-// [1] bool isAutoTristate()
-#if QT_VERSION >= 0x050600
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem14isAutoTristateEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->isAutoTristate();
+// [1] bool isAutoTristate() const
+// (12)qm1970513784 (37)_ZNK13QStandardItem14isAutoTristateEv
+//static
+/*void qm1970513784()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->isAutoTristate();
+   auto xptr = (bool (QStandardItem::*)() const ) &QStandardItem::isAutoTristate;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050600
 
-// Public Visibility=Default Availability=Available
-// since 5.6
-// /usr/include/qt/QtGui/qstandarditemmodel.h:171
-// [-2] void setAutoTristate(bool)
-#if QT_VERSION >= 0x050600
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem15setAutoTristateEb(void *this_, bool tristate) {
-  ((QStandardItem*)this_)->setAutoTristate(tristate);
-}
-#endif // QT_VERSION >= 0x050600
-
-// Public inline Visibility=Default Availability=Available
-// since 5.6
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:173
-// [1] bool isUserTristate()
-#if QT_VERSION >= 0x050600
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem14isUserTristateEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->isUserTristate();
-}
-#endif // QT_VERSION >= 0x050600
-
-// Public Visibility=Default Availability=Available
-// since 5.6
-// /usr/include/qt/QtGui/qstandarditemmodel.h:176
-// [-2] void setUserTristate(bool)
-#if QT_VERSION >= 0x050600
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem15setUserTristateEb(void *this_, bool tristate) {
-  ((QStandardItem*)this_)->setUserTristate(tristate);
-}
-#endif // QT_VERSION >= 0x050600
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:179
-// [1] bool isTristate()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem10isTristateEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->isTristate();
+// [1] bool isUserTristate() const
+// (12)qm1482154893 (37)_ZNK13QStandardItem14isUserTristateEv
+//static
+/*void qm1482154893()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->isUserTristate();
+   auto xptr = (bool (QStandardItem::*)() const ) &QStandardItem::isUserTristate;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:180
-// [-2] void setTristate(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem11setTristateEb(void *this_, bool tristate) {
-  ((QStandardItem*)this_)->setTristate(tristate);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:184
-// [1] bool isDragEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem13isDragEnabledEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->isDragEnabled();
+// [1] bool isDragEnabled() const
+// (12)qm3424411353 (36)_ZNK13QStandardItem13isDragEnabledEv
+//static
+/*void qm3424411353()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->isDragEnabled();
+   auto xptr = (bool (QStandardItem::*)() const ) &QStandardItem::isDragEnabled;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:187
-// [-2] void setDragEnabled(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem14setDragEnabledEb(void *this_, bool dragEnabled) {
-  ((QStandardItem*)this_)->setDragEnabled(dragEnabled);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:189
-// [1] bool isDropEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem13isDropEnabledEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->isDropEnabled();
+// [1] bool isDropEnabled() const
+// (12)qm1528360782 (36)_ZNK13QStandardItem13isDropEnabledEv
+//static
+/*void qm1528360782()*/ {
+  ;
+  (void) ((QStandardItem*)this_)->isDropEnabled();
+   auto xptr = (bool (QStandardItem::*)() const ) &QStandardItem::isDropEnabled;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:192
-// [-2] void setDropEnabled(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem14setDropEnabledEb(void *this_, bool dropEnabled) {
-  ((QStandardItem*)this_)->setDropEnabled(dropEnabled);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:195
-// [8] QStandardItem * parent()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem6parentEv(void *this_) {
-  return (void*)((QStandardItem*)this_)->parent();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:196
-// [4] int row()
-extern "C" Q_DECL_EXPORT
-int C_ZNK13QStandardItem3rowEv(void *this_) {
-  return (int)((QStandardItem*)this_)->row();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:197
-// [4] int column()
-extern "C" Q_DECL_EXPORT
-int C_ZNK13QStandardItem6columnEv(void *this_) {
-  return (int)((QStandardItem*)this_)->column();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:198
-// [24] QModelIndex index()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem5indexEv(void *this_) {
-  auto rv = ((QStandardItem*)this_)->index();
-return new QModelIndex(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:199
-// [8] QStandardItemModel * model()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem5modelEv(void *this_) {
-  return (void*)((QStandardItem*)this_)->model();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:201
-// [4] int rowCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK13QStandardItem8rowCountEv(void *this_) {
-  return (int)((QStandardItem*)this_)->rowCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:202
-// [-2] void setRowCount(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem11setRowCountEi(void *this_, int rows) {
-  ((QStandardItem*)this_)->setRowCount(rows);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:203
-// [4] int columnCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK13QStandardItem11columnCountEv(void *this_) {
-  return (int)((QStandardItem*)this_)->columnCount();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:204
-// [-2] void setColumnCount(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem14setColumnCountEi(void *this_, int columns) {
-  ((QStandardItem*)this_)->setColumnCount(columns);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:206
-// [1] bool hasChildren()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItem11hasChildrenEv(void *this_) {
-  return (bool)((QStandardItem*)this_)->hasChildren();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:207
-// [8] QStandardItem * child(int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem5childEii(void *this_, int row, int column) {
-  return (void*)((QStandardItem*)this_)->child(row, column);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:208
-// [-2] void setChild(int, int, QStandardItem *)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem8setChildEiiPS_(void *this_, int row, int column, QStandardItem * item) {
-  ((QStandardItem*)this_)->setChild(row, column, item);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:209
-// [-2] void setChild(int, QStandardItem *)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem8setChildEiPS_(void *this_, int row, QStandardItem * item) {
-  ((QStandardItem*)this_)->setChild(row, item);
+// [-2] void setChild(int, QStandardItem *) 
+// (12)qm4285760773 (32)_ZN13QStandardItem8setChildEiPS_
+//static
+/*void qm4285760773(int row, QStandardItem * item)*/ {
+  int row = *(int*)this_; QStandardItem * item = *(QStandardItem **)this_;
+  (void) ((QStandardItem*)this_)->setChild(row, item);
+   auto xptr = (void (QStandardItem::*)(int, QStandardItem*) ) &QStandardItem::setChild;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:211
-// [-2] void insertRow(int, const QList<QStandardItem *> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem9insertRowEiRK5QListIPS_E(void *this_, int row, QList<QStandardItem *>* items) {
-  ((QStandardItem*)this_)->insertRow(row, *items);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:212
-// [-2] void insertColumn(int, const QList<QStandardItem *> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem12insertColumnEiRK5QListIPS_E(void *this_, int column, QList<QStandardItem *>* items) {
-  ((QStandardItem*)this_)->insertColumn(column, *items);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:213
-// [-2] void insertRows(int, const QList<QStandardItem *> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem10insertRowsEiRK5QListIPS_E(void *this_, int row, QList<QStandardItem *>* items) {
-  ((QStandardItem*)this_)->insertRows(row, *items);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:214
-// [-2] void insertRows(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem10insertRowsEii(void *this_, int row, int count) {
-  ((QStandardItem*)this_)->insertRows(row, count);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:215
-// [-2] void insertColumns(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem13insertColumnsEii(void *this_, int column, int count) {
-  ((QStandardItem*)this_)->insertColumns(column, count);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:217
-// [-2] void removeRow(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem9removeRowEi(void *this_, int row) {
-  ((QStandardItem*)this_)->removeRow(row);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:218
-// [-2] void removeColumn(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem12removeColumnEi(void *this_, int column) {
-  ((QStandardItem*)this_)->removeColumn(column);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:219
-// [-2] void removeRows(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem10removeRowsEii(void *this_, int row, int count) {
-  ((QStandardItem*)this_)->removeRows(row, count);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:220
-// [-2] void removeColumns(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem13removeColumnsEii(void *this_, int column, int count) {
-  ((QStandardItem*)this_)->removeColumns(column, count);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:222
-// [-2] void appendRow(const QList<QStandardItem *> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem9appendRowERK5QListIPS_E(void *this_, QList<QStandardItem *>* items) {
-  ((QStandardItem*)this_)->appendRow(*items);
+// [-2] void appendRow(const QList<QStandardItem *> &) 
+// (12)qm2861476192 (42)_ZN13QStandardItem9appendRowERK5QListIPS_E
+//static
+/*void qm2861476192(const QList<QStandardItem *> & items)*/ {
+  const QList<QStandardItem *> & items = *(const QList<QStandardItem *> *)this_;
+  (void) ((QStandardItem*)this_)->appendRow(items);
+   auto xptr = (void (QStandardItem::*)(QList<QStandardItem*> const&) ) &QStandardItem::appendRow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:223
-// [-2] void appendRows(const QList<QStandardItem *> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem10appendRowsERK5QListIPS_E(void *this_, QList<QStandardItem *>* items) {
-  ((QStandardItem*)this_)->appendRows(*items);
+// [-2] void appendRows(const QList<QStandardItem *> &) 
+// (12)qm1686534915 (44)_ZN13QStandardItem10appendRowsERK5QListIPS_E
+//static
+/*void qm1686534915(const QList<QStandardItem *> & items)*/ {
+  const QList<QStandardItem *> & items = *(const QList<QStandardItem *> *)this_;
+  (void) ((QStandardItem*)this_)->appendRows(items);
+   auto xptr = (void (QStandardItem::*)(QList<QStandardItem*> const&) ) &QStandardItem::appendRows;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:224
-// [-2] void appendColumn(const QList<QStandardItem *> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem12appendColumnERK5QListIPS_E(void *this_, QList<QStandardItem *>* items) {
-  ((QStandardItem*)this_)->appendColumn(*items);
+// [-2] void appendColumn(const QList<QStandardItem *> &) 
+// (11)qm466509761 (46)_ZN13QStandardItem12appendColumnERK5QListIPS_E
+//static
+/*void qm466509761(const QList<QStandardItem *> & items)*/ {
+  const QList<QStandardItem *> & items = *(const QList<QStandardItem *> *)this_;
+  (void) ((QStandardItem*)this_)->appendColumn(items);
+   auto xptr = (void (QStandardItem::*)(QList<QStandardItem*> const&) ) &QStandardItem::appendColumn;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:225
-// [-2] void insertRow(int, QStandardItem *)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem9insertRowEiPS_(void *this_, int row, QStandardItem * item) {
-  ((QStandardItem*)this_)->insertRow(row, item);
+// [-2] void insertRow(int, QStandardItem *) 
+// (11)qm945129770 (33)_ZN13QStandardItem9insertRowEiPS_
+//static
+/*void qm945129770(int row, QStandardItem * item)*/ {
+  int row = *(int*)this_; QStandardItem * item = *(QStandardItem **)this_;
+  (void) ((QStandardItem*)this_)->insertRow(row, item);
+   auto xptr = (void (QStandardItem::*)(int, QStandardItem*) ) &QStandardItem::insertRow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:226
-// [-2] void appendRow(QStandardItem *)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem9appendRowEPS_(void *this_, QStandardItem * item) {
-  ((QStandardItem*)this_)->appendRow(item);
+// [-2] void appendRow(QStandardItem *) 
+// (12)qm2609337580 (32)_ZN13QStandardItem9appendRowEPS_
+//static
+/*void qm2609337580(QStandardItem * item)*/ {
+  QStandardItem * item = *(QStandardItem **)this_;
+  (void) ((QStandardItem*)this_)->appendRow(item);
+   auto xptr = (void (QStandardItem::*)(QStandardItem*) ) &QStandardItem::appendRow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:228
-// [8] QStandardItem * takeChild(int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN13QStandardItem9takeChildEii(void *this_, int row, int column) {
-  return (void*)((QStandardItem*)this_)->takeChild(row, column);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:229
-// [8] QList<QStandardItem *> takeRow(int)
-extern "C" Q_DECL_EXPORT
-QList<QStandardItem *>* C_ZN13QStandardItem7takeRowEi(void *this_, int row) {
-  auto rv = ((QStandardItem*)this_)->takeRow(row);
-return new QList<QStandardItem *>(rv);
+/*void C_ZN13QStandardItemD2Ev(void *this_)*/ {
+  delete (QStandardItem*)(this_);
 }
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:230
-// [8] QList<QStandardItem *> takeColumn(int)
-extern "C" Q_DECL_EXPORT
-QList<QStandardItem *>* C_ZN13QStandardItem10takeColumnEi(void *this_, int column) {
-  auto rv = ((QStandardItem*)this_)->takeColumn(column);
-return new QList<QStandardItem *>(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:232
-// [-2] void sortChildren(int, Qt::SortOrder)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem12sortChildrenEiN2Qt9SortOrderE(void *this_, int column, Qt::SortOrder order) {
-  ((QStandardItem*)this_)->sortChildren(column, order);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:234
-// [8] QStandardItem * clone()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK13QStandardItem5cloneEv(void *this_) {
-  return (void*)((QStandardItem*)this_)->clone();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:237
-// [4] int type()
-extern "C" Q_DECL_EXPORT
-int C_ZNK13QStandardItem4typeEv(void *this_) {
-  return (int)((QStandardItem*)this_)->type();
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:240
-// [-2] void read(QDataStream &)
-extern "C" Q_DECL_EXPORT
-void C_ZN13QStandardItem4readER11QDataStream(void *this_, QDataStream* in) {
-  ((QStandardItem*)this_)->read(*in);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:241
-// [-2] void write(QDataStream &)
-extern "C" Q_DECL_EXPORT
-void C_ZNK13QStandardItem5writeER11QDataStream(void *this_, QDataStream* out_) {
-  ((QStandardItem*)this_)->write(*out_);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qstandarditemmodel.h:243
-// [1] bool operator<(const QStandardItem &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK13QStandardItemltERKS_(void *this_, QStandardItem* other) {
-  return (bool)((QStandardItem*)this_)->operator<(*other);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstandarditem
 //  main block end
 
 //  use block begin

@@ -235,6 +235,13 @@ void C_QGlyphRunList_move_0(void* this_ , int from, int to) {
      ((QGlyphRunList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QGlyphRunList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QGlyphRunList_swapItemsAt_0()
+     ((QGlyphRunList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QGlyphRunList_swap_1(void* this_ , int i, int j) {

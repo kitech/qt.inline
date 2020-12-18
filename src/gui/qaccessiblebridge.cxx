@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAccessibleBridge is pure virtual: true
+// QAccessibleBridge is pure virtual: true true
 // QAccessibleBridge has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQAccessibleBridge[] = {
 class Q_DECL_EXPORT MyQAccessibleBridge : public QAccessibleBridge {
 public:
   virtual ~MyQAccessibleBridge() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setRootObject(QAccessibleInterface *)
   virtual void setRootObject(QAccessibleInterface * arg0)  override {
     int handled = 0;
@@ -60,7 +60,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void notifyAccessibilityUpdate(QAccessibleEvent *)
   virtual void notifyAccessibilityUpdate(QAccessibleEvent * event)  override {
     int handled = 0;
@@ -74,35 +74,19 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessiblebridge.h:59
-// [-2] void setRootObject(QAccessibleInterface *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessiblebridge.h:60
-// [-2] void notifyAccessibilityUpdate(QAccessibleEvent *)
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaccessiblebridge(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qaccessiblebridge.h:58
-// [-2] void ~QAccessibleBridge()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAccessibleBridgeD2Ev(void *this_) {
+// [-2] void ~QAccessibleBridge() 
+// (12)qm2937663738 (26)_ZN17QAccessibleBridgeD2Ev
+/*void qm2937663738 (void *this_)*/ {
   delete (QAccessibleBridge*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessiblebridge.h:59
-// [-2] void setRootObject(QAccessibleInterface *)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAccessibleBridge13setRootObjectEP20QAccessibleInterface(void *this_, QAccessibleInterface * arg0) {
-  ((QAccessibleBridge*)this_)->setRootObject(arg0);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessiblebridge.h:60
-// [-2] void notifyAccessibilityUpdate(QAccessibleEvent *)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAccessibleBridge25notifyAccessibilityUpdateEP16QAccessibleEvent(void *this_, QAccessibleEvent * event) {
-  ((QAccessibleBridge*)this_)->notifyAccessibilityUpdate(event);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaccessiblebridge
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QToolBarChangeEvent is pure virtual: false
+// QToolBarChangeEvent is pure virtual: false false
 // QToolBarChangeEvent has virtual projected: false
 //  header block end
 
@@ -52,29 +52,28 @@ public:
 MyQToolBarChangeEvent(bool t) : QToolBarChangeEvent(t) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:759
-// [-2] void QToolBarChangeEvent(bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QToolBarChangeEventC2Eb(bool t) {
-  return  new QToolBarChangeEvent(t);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtoolbarchangeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:799
+// [1] bool toggle() const
+// (12)qm1879354079 (34)_ZNK19QToolBarChangeEvent6toggleEv
+//static
+/*void qm1879354079()*/ {
+  ;
+  (void) ((QToolBarChangeEvent*)this_)->toggle();
+   auto xptr = (bool (QToolBarChangeEvent::*)() const ) &QToolBarChangeEvent::toggle;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:760
-// [-2] void ~QToolBarChangeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QToolBarChangeEventD2Ev(void *this_) {
+
+/*void C_ZN19QToolBarChangeEventD2Ev(void *this_)*/ {
   delete (QToolBarChangeEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:762
-// [1] bool toggle()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QToolBarChangeEvent6toggleEv(void *this_) {
-  return (bool)((QToolBarChangeEvent*)this_)->toggle();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtoolbarchangeevent
 //  main block end
 
 //  use block begin

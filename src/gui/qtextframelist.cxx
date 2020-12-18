@@ -235,6 +235,13 @@ void C_QTextFrameList_move_0(void* this_ , int from, int to) {
      ((QTextFrameList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QTextFrameList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QTextFrameList_swapItemsAt_0()
+     ((QTextFrameList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QTextFrameList_swap_1(void* this_ , int i, int j) {

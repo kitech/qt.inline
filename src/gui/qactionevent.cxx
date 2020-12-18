@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QActionEvent is pure virtual: false
+// QActionEvent is pure virtual: false false
 // QActionEvent has virtual projected: false
 //  header block end
 
@@ -52,37 +52,40 @@ public:
 MyQActionEvent(int type_, QAction * action, QAction * before) : QActionEvent(type_, action, before) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:732
-// [-2] void QActionEvent(int, QAction *, QAction *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QActionEventC2EiP7QActionS1_(int type_, QAction * action, QAction * before) {
-  return  new QActionEvent(type_, action, before);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qactionevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:772
+// [8] QAction * action() const
+// (11)qm388717719 (27)_ZNK12QActionEvent6actionEv
+//static
+/*void qm388717719()*/ {
+  ;
+  (void) ((QActionEvent*)this_)->action();
+   auto xptr = (QAction * (QActionEvent::*)() const ) &QActionEvent::action;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:733
-// [-2] void ~QActionEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN12QActionEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:773
+// [8] QAction * before() const
+// (12)qm2500614365 (27)_ZNK12QActionEvent6beforeEv
+//static
+/*void qm2500614365()*/ {
+  ;
+  (void) ((QActionEvent*)this_)->before();
+   auto xptr = (QAction * (QActionEvent::*)() const ) &QActionEvent::before;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN12QActionEventD2Ev(void *this_)*/ {
   delete (QActionEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:735
-// [8] QAction * action()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QActionEvent6actionEv(void *this_) {
-  return (void*)((QActionEvent*)this_)->action();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:736
-// [8] QAction * before()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QActionEvent6beforeEv(void *this_) {
-  return (void*)((QActionEvent*)this_)->before();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qactionevent
 //  main block end
 
 //  use block begin

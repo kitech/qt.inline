@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QTextFrameLayoutData is pure virtual: false
+// QTextFrameLayoutData is pure virtual: false false
 // QTextFrameLayoutData has virtual projected: false
 //  header block end
 
@@ -50,13 +50,16 @@ public:
   virtual ~MyQTextFrameLayoutData() {}
 };
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextobject.h:114
-// [-2] void ~QTextFrameLayoutData()
-extern "C" Q_DECL_EXPORT
-void C_ZN20QTextFrameLayoutDataD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtextframelayoutdata(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN20QTextFrameLayoutDataD2Ev(void *this_)*/ {
   delete (QTextFrameLayoutData*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtextframelayoutdata
 //  main block end
 
 //  use block begin

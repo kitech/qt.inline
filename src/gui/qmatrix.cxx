@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QMatrix is pure virtual: false
+// QMatrix is pure virtual: false false
 // QMatrix has virtual projected: false
 //  header block end
 
@@ -60,351 +60,154 @@ MyQMatrix(QMatrix && other) : QMatrix(other) {}
 MyQMatrix(const QMatrix & other) : QMatrix(other) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmatrix(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:60
-// [-2] void QMatrix(Qt::Initialization)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrixC2EN2Qt14InitializationE(Qt::Initialization arg0) {
-  return  new QMatrix(arg0);
+// [-2] void QMatrix(Qt::Initialization) 
+// (12)qm4207020042 (35)_ZN7QMatrixC2EN2Qt14InitializationE
+/*void* qm4207020042(Qt::Initialization arg0)*/{
+  Qt::Initialization arg0 = *(Qt::Initialization*)this_;
+  this_ =  new QMatrix(arg0);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:61
-// [-2] void QMatrix()
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrixC2Ev() {
-  return  new QMatrix();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:62
-// [-2] void QMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrixC2Edddddd(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) {
-  return  new QMatrix(m11, m12, m21, m22, dx, dy);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:67
-// [48] QMatrix & operator=(QMatrix &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrixaSEOS_(void *this_, QMatrix && other) {
-  auto& rv = ((QMatrix*)this_)->operator=(other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:69
-// [48] QMatrix & operator=(const QMatrix &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrixaSERKS_(void *this_, QMatrix* arg0) {
-  auto& rv = ((QMatrix*)this_)->operator=(*arg0);
-return &rv;
+// [48] QMatrix & operator=(QMatrix &&) 
+// (12)qm1258844750 (17)_ZN7QMatrixaSEOS_
+//static
+/*void qm1258844750(QMatrix && other)*/ {
+  QMatrix && other =  static_cast<QMatrix &&>(*(QMatrix *)this_);
+  (void) ((QMatrix*)this_)->operator=(other);
+  // auto xptr = (QMatrix & (QMatrix::*)(QMatrix&&) ) &QMatrix::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:70
-// [-2] void QMatrix(QMatrix &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrixC2EOS_(QMatrix && other) {
-  return  new QMatrix(other);
+// [-2] void QMatrix(QMatrix &&) 
+// (12)qm2772338830 (17)_ZN7QMatrixC2EOS_
+/*void* qm2772338830(QMatrix && other)*/{
+  QMatrix && other =  static_cast<QMatrix &&>(*(QMatrix *)this_);
+  this_ =  new QMatrix(other);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:72
-// [-2] void QMatrix(const QMatrix &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrixC2ERKS_(QMatrix* other) {
-  return  new QMatrix(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:75
-// [-2] void setMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QMatrix9setMatrixEdddddd(void *this_, qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) {
-  ((QMatrix*)this_)->setMatrix(m11, m12, m21, m22, dx, dy);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:78
-// [8] qreal m11()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK7QMatrix3m11Ev(void *this_) {
-  return (qreal)((QMatrix*)this_)->m11();
+// [8] qreal m11() const
+// (12)qm3386709121 (18)_ZNK7QMatrix3m11Ev
+//static
+/*void qm3386709121()*/ {
+  ;
+  (void) ((QMatrix*)this_)->m11();
+   auto xptr = (double (QMatrix::*)() const ) &QMatrix::m11;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:79
-// [8] qreal m12()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK7QMatrix3m12Ev(void *this_) {
-  return (qreal)((QMatrix*)this_)->m12();
+// [8] qreal m12() const
+// (12)qm3415976664 (18)_ZNK7QMatrix3m12Ev
+//static
+/*void qm3415976664()*/ {
+  ;
+  (void) ((QMatrix*)this_)->m12();
+   auto xptr = (double (QMatrix::*)() const ) &QMatrix::m12;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:80
-// [8] qreal m21()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK7QMatrix3m21Ev(void *this_) {
-  return (qreal)((QMatrix*)this_)->m21();
+// [8] qreal m21() const
+// (12)qm3681074031 (18)_ZNK7QMatrix3m21Ev
+//static
+/*void qm3681074031()*/ {
+  ;
+  (void) ((QMatrix*)this_)->m21();
+   auto xptr = (double (QMatrix::*)() const ) &QMatrix::m21;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:81
-// [8] qreal m22()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK7QMatrix3m22Ev(void *this_) {
-  return (qreal)((QMatrix*)this_)->m22();
+// [8] qreal m22() const
+// (12)qm3643671862 (18)_ZNK7QMatrix3m22Ev
+//static
+/*void qm3643671862()*/ {
+  ;
+  (void) ((QMatrix*)this_)->m22();
+   auto xptr = (double (QMatrix::*)() const ) &QMatrix::m22;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:82
-// [8] qreal dx()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK7QMatrix2dxEv(void *this_) {
-  return (qreal)((QMatrix*)this_)->dx();
+// [8] qreal dx() const
+// (11)qm368999090 (17)_ZNK7QMatrix2dxEv
+//static
+/*void qm368999090()*/ {
+  ;
+  (void) ((QMatrix*)this_)->dx();
+   auto xptr = (double (QMatrix::*)() const ) &QMatrix::dx;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:83
-// [8] qreal dy()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK7QMatrix2dyEv(void *this_) {
-  return (qreal)((QMatrix*)this_)->dy();
+// [8] qreal dy() const
+// (11)qm339480709 (17)_ZNK7QMatrix2dyEv
+//static
+/*void qm339480709()*/ {
+  ;
+  (void) ((QMatrix*)this_)->dy();
+   auto xptr = (double (QMatrix::*)() const ) &QMatrix::dy;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:85
-// [-2] void map(int, int, int *, int *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK7QMatrix3mapEiiPiS0_(void *this_, int x, int y, int * tx, int * ty) {
-  ((QMatrix*)this_)->map(x, y, tx, ty);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:86
-// [-2] void map(qreal, qreal, qreal *, qreal *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK7QMatrix3mapEddPdS0_(void *this_, qreal x, qreal y, qreal * tx, qreal * ty) {
-  ((QMatrix*)this_)->map(x, y, tx, ty);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:87
-// [16] QRect mapRect(const QRect &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix7mapRectERK5QRect(void *this_, QRect* arg0) {
-  auto rv = ((QMatrix*)this_)->mapRect(*arg0);
-return new QRect(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:88
-// [32] QRectF mapRect(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix7mapRectERK6QRectF(void *this_, QRectF* arg0) {
-  auto rv = ((QMatrix*)this_)->mapRect(*arg0);
-return new QRectF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:90
-// [8] QPoint map(const QPoint &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix3mapERK6QPoint(void *this_, QPoint* p) {
-  auto rv = ((QMatrix*)this_)->map(*p);
-return new QPoint(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:91
-// [16] QPointF map(const QPointF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix3mapERK7QPointF(void *this_, QPointF* p) {
-  auto rv = ((QMatrix*)this_)->map(*p);
-return new QPointF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:92
-// [16] QLine map(const QLine &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix3mapERK5QLine(void *this_, QLine* l) {
-  auto rv = ((QMatrix*)this_)->map(*l);
-return new QLine(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:93
-// [32] QLineF map(const QLineF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix3mapERK6QLineF(void *this_, QLineF* l) {
-  auto rv = ((QMatrix*)this_)->map(*l);
-return new QLineF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:94
-// [8] QPolygonF map(const QPolygonF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix3mapERK9QPolygonF(void *this_, QPolygonF* a) {
-  auto rv = ((QMatrix*)this_)->map(*a);
-return new QPolygonF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:95
-// [8] QPolygon map(const QPolygon &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix3mapERK8QPolygon(void *this_, QPolygon* a) {
-  auto rv = ((QMatrix*)this_)->map(*a);
-return new QPolygon(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:96
-// [8] QRegion map(const QRegion &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix3mapERK7QRegion(void *this_, QRegion* r) {
-  auto rv = ((QMatrix*)this_)->map(*r);
-return new QRegion(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:97
-// [8] QPainterPath map(const QPainterPath &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix3mapERK12QPainterPath(void *this_, QPainterPath* p) {
-  auto rv = ((QMatrix*)this_)->map(*p);
-return new QPainterPath(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:98
-// [8] QPolygon mapToPolygon(const QRect &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix12mapToPolygonERK5QRect(void *this_, QRect* r) {
-  auto rv = ((QMatrix*)this_)->mapToPolygon(*r);
-return new QPolygon(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:100
-// [-2] void reset()
-extern "C" Q_DECL_EXPORT
-void C_ZN7QMatrix5resetEv(void *this_) {
-  ((QMatrix*)this_)->reset();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:101
-// [1] bool isIdentity()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK7QMatrix10isIdentityEv(void *this_) {
-  return (bool)((QMatrix*)this_)->isIdentity();
+// [1] bool isIdentity() const
+// (12)qm1813002877 (26)_ZNK7QMatrix10isIdentityEv
+//static
+/*void qm1813002877()*/ {
+  ;
+  (void) ((QMatrix*)this_)->isIdentity();
+   auto xptr = (bool (QMatrix::*)() const ) &QMatrix::isIdentity;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:103
-// [48] QMatrix & translate(qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrix9translateEdd(void *this_, qreal dx, qreal dy) {
-  auto& rv = ((QMatrix*)this_)->translate(dx, dy);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:104
-// [48] QMatrix & scale(qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrix5scaleEdd(void *this_, qreal sx, qreal sy) {
-  auto& rv = ((QMatrix*)this_)->scale(sx, sy);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:105
-// [48] QMatrix & shear(qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrix5shearEdd(void *this_, qreal sh, qreal sv) {
-  auto& rv = ((QMatrix*)this_)->shear(sh, sv);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:106
-// [48] QMatrix & rotate(qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrix6rotateEd(void *this_, qreal a) {
-  auto& rv = ((QMatrix*)this_)->rotate(a);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:108
-// [1] bool isInvertible()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK7QMatrix12isInvertibleEv(void *this_) {
-  return (bool)((QMatrix*)this_)->isInvertible();
+// [1] bool isInvertible() const
+// (12)qm2257402958 (28)_ZNK7QMatrix12isInvertibleEv
+//static
+/*void qm2257402958()*/ {
+  ;
+  (void) ((QMatrix*)this_)->isInvertible();
+   auto xptr = (bool (QMatrix::*)() const ) &QMatrix::isInvertible;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qmatrix.h:109
-// [8] qreal determinant()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK7QMatrix11determinantEv(void *this_) {
-  return (qreal)((QMatrix*)this_)->determinant();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:111
-// [48] QMatrix inverted(bool *)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrix8invertedEPb(void *this_, bool * invertible) {
-  auto rv = ((QMatrix*)this_)->inverted(invertible);
-return new QMatrix(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:113
-// [1] bool operator==(const QMatrix &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK7QMatrixeqERKS_(void *this_, QMatrix* arg0) {
-  return (bool)((QMatrix*)this_)->operator==(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:114
-// [1] bool operator!=(const QMatrix &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK7QMatrixneERKS_(void *this_, QMatrix* arg0) {
-  return (bool)((QMatrix*)this_)->operator!=(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:116
-// [48] QMatrix & operator*=(const QMatrix &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QMatrixmLERKS_(void *this_, QMatrix* arg0) {
-  auto& rv = ((QMatrix*)this_)->operator*=(*arg0);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qmatrix.h:117
-// [48] QMatrix operator*(const QMatrix &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QMatrixmlERKS_(void *this_, QMatrix* o) {
-  auto rv = ((QMatrix*)this_)->operator*(*o);
-return new QMatrix(rv);
+// [8] qreal determinant() const
+// (12)qm2577988256 (27)_ZNK7QMatrix11determinantEv
+//static
+/*void qm2577988256()*/ {
+  ;
+  (void) ((QMatrix*)this_)->determinant();
+   auto xptr = (double (QMatrix::*)() const ) &QMatrix::determinant;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN7QMatrixD2Ev(void *this_) {
+/*void C_ZN7QMatrixD2Ev(void *this_)*/ {
   delete (QMatrix*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmatrix
 //  main block end
 
 //  use block begin

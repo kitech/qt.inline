@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QOpenGLVersionFunctionsBackend is pure virtual: false
+// QOpenGLVersionFunctionsBackend is pure virtual: false false
 // QOpenGLVersionFunctionsBackend has virtual projected: false
 //  header block end
 
@@ -52,19 +52,25 @@ public:
 MyQOpenGLVersionFunctionsBackend(QOpenGLContext * ctx) : QOpenGLVersionFunctionsBackend(ctx) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qopenglversionfunctionsbackend(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:171
-// [-2] void QOpenGLVersionFunctionsBackend(QOpenGLContext *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN30QOpenGLVersionFunctionsBackendC2EP14QOpenGLContext(QOpenGLContext * ctx) {
-  return  new QOpenGLVersionFunctionsBackend(ctx);
+// /usr/include/qt/QtGui/qopenglversionfunctions.h:177
+// [-2] void QOpenGLVersionFunctionsBackend(QOpenGLContext *) 
+// (11)qm384815462 (55)_ZN30QOpenGLVersionFunctionsBackendC2EP14QOpenGLContext
+/*void* qm384815462(QOpenGLContext * ctx)*/{
+  QOpenGLContext * ctx = *(QOpenGLContext **)this_;
+  this_ =  new QOpenGLVersionFunctionsBackend(ctx);
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN30QOpenGLVersionFunctionsBackendD2Ev(void *this_) {
+/*void C_ZN30QOpenGLVersionFunctionsBackendD2Ev(void *this_)*/ {
   delete (QOpenGLVersionFunctionsBackend*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qopenglversionfunctionsbackend
 //  main block end
 
 //  use block begin

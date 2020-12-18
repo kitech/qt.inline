@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QMouseEvent is pure virtual: false
+// QMouseEvent is pure virtual: false false
 // QMouseEvent has virtual projected: false
 //  header block end
 
@@ -58,180 +58,160 @@ MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & wind
 MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::MouseEventSource source) : QMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers, source) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:107
-// [-2] void QMouseEvent(QEvent::Type, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFN2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE(QEvent::Type type_, QPointF* localPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) {
-  return  new QMouseEvent(type_, *localPos, button, buttons, modifiers);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmouseevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:109
-// [-2] void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFS4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE(QEvent::Type type_, QPointF* localPos, QPointF* screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) {
-  return  new QMouseEvent(type_, *localPos, *screenPos, button, buttons, modifiers);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:112
-// [-2] void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFS4_S4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEE(QEvent::Type type_, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) {
-  return  new QMouseEvent(type_, *localPos, *windowPos, *screenPos, button, buttons, modifiers);
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.6
-// /usr/include/qt/QtGui/qevent.h:115
-// [-2] void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::MouseEventSource)
-#if QT_VERSION >= 0x050600
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QMouseEventC2EN6QEvent4TypeERK7QPointFS4_S4_N2Qt11MouseButtonE6QFlagsIS6_ES7_INS5_16KeyboardModifierEENS5_16MouseEventSourceE(QEvent::Type type_, QPointF* localPos, QPointF* windowPos, QPointF* screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::MouseEventSource source) {
-  return  new QMouseEvent(type_, *localPos, *windowPos, *screenPos, button, buttons, modifiers, source);
-}
-#endif // QT_VERSION >= 0x050600
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:118
-// [-2] void ~QMouseEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMouseEventD2Ev(void *this_) {
-  delete (QMouseEvent*)(this_);
-}
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:121
-// [8] QPoint pos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMouseEvent3posEv(void *this_) {
-  auto rv = ((QMouseEvent*)this_)->pos();
-return new QPoint(rv);
+// [8] QPoint pos() const
+// (12)qm1659492746 (23)_ZNK11QMouseEvent3posEv
+//static
+/*void qm1659492746()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->pos();
+   auto xptr = (QPoint (QMouseEvent::*)() const ) &QMouseEvent::pos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:122
-// [8] QPoint globalPos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMouseEvent9globalPosEv(void *this_) {
-  auto rv = ((QMouseEvent*)this_)->globalPos();
-return new QPoint(rv);
+// [8] QPoint globalPos() const
+// (12)qm2976136822 (29)_ZNK11QMouseEvent9globalPosEv
+//static
+/*void qm2976136822()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->globalPos();
+   auto xptr = (QPoint (QMouseEvent::*)() const ) &QMouseEvent::globalPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:123
-// [4] int x()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMouseEvent1xEv(void *this_) {
-  return (int)((QMouseEvent*)this_)->x();
+// [4] int x() const
+// (12)qm1953764823 (21)_ZNK11QMouseEvent1xEv
+//static
+/*void qm1953764823()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->x();
+   auto xptr = (int (QMouseEvent::*)() const ) &QMouseEvent::x;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:124
-// [4] int y()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMouseEvent1yEv(void *this_) {
-  return (int)((QMouseEvent*)this_)->y();
+// [4] int y() const
+// (12)qm1974894560 (21)_ZNK11QMouseEvent1yEv
+//static
+/*void qm1974894560()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->y();
+   auto xptr = (int (QMouseEvent::*)() const ) &QMouseEvent::y;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:125
-// [4] int globalX()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMouseEvent7globalXEv(void *this_) {
-  return (int)((QMouseEvent*)this_)->globalX();
+// [4] int globalX() const
+// (11)qm220043088 (27)_ZNK11QMouseEvent7globalXEv
+//static
+/*void qm220043088()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->globalX();
+   auto xptr = (int (QMouseEvent::*)() const ) &QMouseEvent::globalX;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:126
-// [4] int globalY()
-extern "C" Q_DECL_EXPORT
-int C_ZNK11QMouseEvent7globalYEv(void *this_) {
-  return (int)((QMouseEvent*)this_)->globalY();
+// [4] int globalY() const
+// (11)qm216005991 (27)_ZNK11QMouseEvent7globalYEv
+//static
+/*void qm216005991()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->globalY();
+   auto xptr = (int (QMouseEvent::*)() const ) &QMouseEvent::globalY;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 5.0
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:128
-// [16] const QPointF & localPos()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMouseEvent8localPosEv(void *this_) {
-  auto& rv = ((QMouseEvent*)this_)->localPos();
-return new QPointF(rv);
+// [16] const QPointF & localPos() const
+// (12)qm1441673618 (28)_ZNK11QMouseEvent8localPosEv
+//static
+/*void qm1441673618()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->localPos();
+   auto xptr = (const QPointF & (QMouseEvent::*)() const ) &QMouseEvent::localPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050000
 
-// Public inline Visibility=Default Availability=Available
-// since 5.0
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:129
-// [16] const QPointF & windowPos()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMouseEvent9windowPosEv(void *this_) {
-  auto& rv = ((QMouseEvent*)this_)->windowPos();
-return new QPointF(rv);
+// [16] const QPointF & windowPos() const
+// (11)qm293709112 (29)_ZNK11QMouseEvent9windowPosEv
+//static
+/*void qm293709112()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->windowPos();
+   auto xptr = (const QPointF & (QMouseEvent::*)() const ) &QMouseEvent::windowPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050000
 
-// Public inline Visibility=Default Availability=Available
-// since 5.0
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:130
-// [16] const QPointF & screenPos()
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QMouseEvent9screenPosEv(void *this_) {
-  auto& rv = ((QMouseEvent*)this_)->screenPos();
-return new QPointF(rv);
+// [16] const QPointF & screenPos() const
+// (12)qm2962094997 (29)_ZNK11QMouseEvent9screenPosEv
+//static
+/*void qm2962094997()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->screenPos();
+   auto xptr = (const QPointF & (QMouseEvent::*)() const ) &QMouseEvent::screenPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050000
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:132
-// [4] Qt::MouseButton button()
-extern "C" Q_DECL_EXPORT
-Qt::MouseButton C_ZNK11QMouseEvent6buttonEv(void *this_) {
-  return (Qt::MouseButton)((QMouseEvent*)this_)->button();
+// [4] Qt::MouseButton button() const
+// (12)qm4145865677 (26)_ZNK11QMouseEvent6buttonEv
+//static
+/*void qm4145865677()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->button();
+   auto xptr = (Qt::MouseButton (QMouseEvent::*)() const ) &QMouseEvent::button;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:133
-// [4] Qt::MouseButtons buttons()
-extern "C" Q_DECL_EXPORT
-Qt::MouseButtons C_ZNK11QMouseEvent7buttonsEv(void *this_) {
-  return (Qt::MouseButtons)((QMouseEvent*)this_)->buttons();
+// [4] Qt::MouseButtons buttons() const
+// (12)qm3037269574 (27)_ZNK11QMouseEvent7buttonsEv
+//static
+/*void qm3037269574()*/ {
+  ;
+  (void) ((QMouseEvent*)this_)->buttons();
+   auto xptr = (QFlags<Qt::MouseButton> (QMouseEvent::*)() const ) &QMouseEvent::buttons;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:135
-// [-2] void setLocalPos(const QPointF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QMouseEvent11setLocalPosERK7QPointF(void *this_, QPointF* localPosition) {
-  ((QMouseEvent*)this_)->setLocalPos(*localPosition);
+// [-2] void setLocalPos(const QPointF &) 
+// (12)qm3226532673 (40)_ZN11QMouseEvent11setLocalPosERK7QPointF
+//static
+/*void qm3226532673(const QPointF & localPosition)*/ {
+  const QPointF & localPosition = *(const QPointF *)this_;
+  (void) ((QMouseEvent*)this_)->setLocalPos(localPosition);
+   auto xptr = (void (QMouseEvent::*)(QPointF const&) ) &QMouseEvent::setLocalPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 5.3
-// /usr/include/qt/QtGui/qevent.h:141
-// [4] Qt::MouseEventSource source()
-#if QT_VERSION >= 0x050300
-extern "C" Q_DECL_EXPORT
-Qt::MouseEventSource C_ZNK11QMouseEvent6sourceEv(void *this_) {
-  return (Qt::MouseEventSource)((QMouseEvent*)this_)->source();
-}
-#endif // QT_VERSION >= 0x050300
 
-// Public Visibility=Default Availability=Available
-// since 5.3
-// /usr/include/qt/QtGui/qevent.h:142
-// [4] Qt::MouseEventFlags flags()
-#if QT_VERSION >= 0x050300
-extern "C" Q_DECL_EXPORT
-Qt::MouseEventFlags C_ZNK11QMouseEvent5flagsEv(void *this_) {
-  return (Qt::MouseEventFlags)((QMouseEvent*)this_)->flags();
+/*void C_ZN11QMouseEventD2Ev(void *this_)*/ {
+  delete (QMouseEvent*)(this_);
 }
-#endif // QT_VERSION >= 0x050300
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmouseevent
 //  main block end
 
 //  use block begin

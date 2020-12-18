@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040800
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QScrollPrepareEvent is pure virtual: false
+// QScrollPrepareEvent is pure virtual: false false
 // QScrollPrepareEvent has virtual projected: false
 //  header block end
 
@@ -53,81 +52,16 @@ public:
 MyQScrollPrepareEvent(const QPointF & startPos) : QScrollPrepareEvent(startPos) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:995
-// [-2] void QScrollPrepareEvent(const QPointF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QScrollPrepareEventC2ERK7QPointF(QPointF* startPos) {
-  return  new QScrollPrepareEvent(*startPos);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qscrollprepareevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:996
-// [-2] void ~QScrollPrepareEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QScrollPrepareEventD2Ev(void *this_) {
+
+/*void C_ZN19QScrollPrepareEventD2Ev(void *this_)*/ {
   delete (QScrollPrepareEvent*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:998
-// [16] QPointF startPos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QScrollPrepareEvent8startPosEv(void *this_) {
-  auto rv = ((QScrollPrepareEvent*)this_)->startPos();
-return new QPointF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1000
-// [16] QSizeF viewportSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QScrollPrepareEvent12viewportSizeEv(void *this_) {
-  auto rv = ((QScrollPrepareEvent*)this_)->viewportSize();
-return new QSizeF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1001
-// [32] QRectF contentPosRange()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QScrollPrepareEvent15contentPosRangeEv(void *this_) {
-  auto rv = ((QScrollPrepareEvent*)this_)->contentPosRange();
-return new QRectF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1002
-// [16] QPointF contentPos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QScrollPrepareEvent10contentPosEv(void *this_) {
-  auto rv = ((QScrollPrepareEvent*)this_)->contentPos();
-return new QPointF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1004
-// [-2] void setViewportSize(const QSizeF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QScrollPrepareEvent15setViewportSizeERK6QSizeF(void *this_, QSizeF* size) {
-  ((QScrollPrepareEvent*)this_)->setViewportSize(*size);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1005
-// [-2] void setContentPosRange(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QScrollPrepareEvent18setContentPosRangeERK6QRectF(void *this_, QRectF* rect) {
-  ((QScrollPrepareEvent*)this_)->setContentPosRange(*rect);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1006
-// [-2] void setContentPos(const QPointF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QScrollPrepareEvent13setContentPosERK7QPointF(void *this_, QPointF* pos) {
-  ((QScrollPrepareEvent*)this_)->setContentPos(*pos);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qscrollprepareevent
 //  main block end
 
 //  use block begin

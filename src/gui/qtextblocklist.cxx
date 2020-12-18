@@ -235,6 +235,13 @@ void C_QTextBlockList_move_0(void* this_ , int from, int to) {
      ((QTextBlockList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QTextBlockList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QTextBlockList_swapItemsAt_0()
+     ((QTextBlockList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QTextBlockList_swap_1(void* this_ , int i, int j) {

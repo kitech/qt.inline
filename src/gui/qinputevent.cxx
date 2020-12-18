@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QInputEvent is pure virtual: false
+// QInputEvent is pure virtual: false false
 // QInputEvent has virtual projected: false
 //  header block end
 
@@ -52,53 +52,64 @@ public:
 MyQInputEvent(QEvent::Type type_, QFlags<Qt::KeyboardModifier> modifiers) : QInputEvent(type_, modifiers) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:71
-// [-2] void QInputEvent(QEvent::Type, Qt::KeyboardModifiers)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QInputEventC2EN6QEvent4TypeE6QFlagsIN2Qt16KeyboardModifierEE(QEvent::Type type_, QFlags<Qt::KeyboardModifier> modifiers) {
-  return  new QInputEvent(type_, modifiers);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qinputevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:72
-// [-2] void ~QInputEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QInputEventD2Ev(void *this_) {
-  delete (QInputEvent*)(this_);
-}
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:73
-// [4] Qt::KeyboardModifiers modifiers()
-extern "C" Q_DECL_EXPORT
-Qt::KeyboardModifiers C_ZNK11QInputEvent9modifiersEv(void *this_) {
-  return (Qt::KeyboardModifiers)((QInputEvent*)this_)->modifiers();
+// [4] Qt::KeyboardModifiers modifiers() const
+// (12)qm2378656152 (29)_ZNK11QInputEvent9modifiersEv
+//static
+/*void qm2378656152()*/ {
+  ;
+  (void) ((QInputEvent*)this_)->modifiers();
+   auto xptr = (QFlags<Qt::KeyboardModifier> (QInputEvent::*)() const ) &QInputEvent::modifiers;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:74
-// [-2] void setModifiers(Qt::KeyboardModifiers)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QInputEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE(void *this_, QFlags<Qt::KeyboardModifier> amodifiers) {
-  ((QInputEvent*)this_)->setModifiers(amodifiers);
+// [-2] void setModifiers(Qt::KeyboardModifiers) 
+// (11)qm866161578 (63)_ZN11QInputEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE
+//static
+/*void qm866161578(QFlags<Qt::KeyboardModifier> amodifiers)*/ {
+  QFlags<Qt::KeyboardModifier> amodifiers = *(QFlags<Qt::KeyboardModifier>*)this_;
+  (void) ((QInputEvent*)this_)->setModifiers(amodifiers);
+   auto xptr = (void (QInputEvent::*)(QFlags<Qt::KeyboardModifier>) ) &QInputEvent::setModifiers;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:75
-// [8] ulong timestamp()
-extern "C" Q_DECL_EXPORT
-ulong C_ZNK11QInputEvent9timestampEv(void *this_) {
-  return (ulong)((QInputEvent*)this_)->timestamp();
+// [8] ulong timestamp() const
+// (12)qm3682385401 (29)_ZNK11QInputEvent9timestampEv
+//static
+/*void qm3682385401()*/ {
+  ;
+  (void) ((QInputEvent*)this_)->timestamp();
+   auto xptr = (unsigned long (QInputEvent::*)() const ) &QInputEvent::timestamp;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:76
-// [-2] void setTimestamp(ulong)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QInputEvent12setTimestampEm(void *this_, ulong atimestamp) {
-  ((QInputEvent*)this_)->setTimestamp(atimestamp);
+// [-2] void setTimestamp(ulong) 
+// (12)qm1066347960 (32)_ZN11QInputEvent12setTimestampEm
+//static
+/*void qm1066347960(unsigned long atimestamp)*/ {
+  unsigned long atimestamp = *(unsigned long*)this_;
+  (void) ((QInputEvent*)this_)->setTimestamp(atimestamp);
+   auto xptr = (void (QInputEvent::*)(unsigned long) ) &QInputEvent::setTimestamp;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+
+/*void C_ZN11QInputEventD2Ev(void *this_)*/ {
+  delete (QInputEvent*)(this_);
+}
+  return fnptrsumval;
+} // end ensure_inline_symbol_qinputevent
 //  main block end
 
 //  use block begin

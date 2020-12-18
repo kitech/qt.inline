@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QTextOption is pure virtual: false
+// QTextOption is pure virtual: false false
 // QTextOption has virtual projected: false
 //  header block end
 
@@ -56,205 +56,160 @@ MyQTextOption(QFlags<Qt::AlignmentFlag> alignment) : QTextOption(alignment) {}
 MyQTextOption(const QTextOption & o) : QTextOption(o) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:85
-// [-2] void QTextOption()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QTextOptionC2Ev() {
-  return  new QTextOption();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:86
-// [-2] void QTextOption(Qt::Alignment)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QTextOptionC2E6QFlagsIN2Qt13AlignmentFlagEE(QFlags<Qt::AlignmentFlag> alignment) {
-  return  new QTextOption(alignment);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:87
-// [-2] void ~QTextOption()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOptionD2Ev(void *this_) {
-  delete (QTextOption*)(this_);
-}
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:89
-// [-2] void QTextOption(const QTextOption &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QTextOptionC2ERKS_(QTextOption* o) {
-  return  new QTextOption(*o);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:90
-// [32] QTextOption & operator=(const QTextOption &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QTextOptionaSERKS_(void *this_, QTextOption* o) {
-  auto& rv = ((QTextOption*)this_)->operator=(*o);
-return &rv;
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtextoption(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:92
-// [-2] void setAlignment(Qt::Alignment)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE(void *this_, QFlags<Qt::AlignmentFlag> alignment) {
-  ((QTextOption*)this_)->setAlignment(alignment);
+// [-2] void setAlignment(Qt::Alignment) 
+// (12)qm1368939239 (60)_ZN11QTextOption12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE
+//static
+/*void qm1368939239(QFlags<Qt::AlignmentFlag> alignment)*/ {
+  QFlags<Qt::AlignmentFlag> alignment = *(QFlags<Qt::AlignmentFlag>*)this_;
+  (void) ((QTextOption*)this_)->setAlignment(alignment);
+   auto xptr = (void (QTextOption::*)(QFlags<Qt::AlignmentFlag>) ) &QTextOption::setAlignment;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:93
-// [4] Qt::Alignment alignment()
-extern "C" Q_DECL_EXPORT
-Qt::Alignment C_ZNK11QTextOption9alignmentEv(void *this_) {
-  return (Qt::Alignment)((QTextOption*)this_)->alignment();
+// [4] Qt::Alignment alignment() const
+// (12)qm3797253204 (29)_ZNK11QTextOption9alignmentEv
+//static
+/*void qm3797253204()*/ {
+  ;
+  (void) ((QTextOption*)this_)->alignment();
+   auto xptr = (QFlags<Qt::AlignmentFlag> (QTextOption::*)() const ) &QTextOption::alignment;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:95
-// [-2] void setTextDirection(Qt::LayoutDirection)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption16setTextDirectionEN2Qt15LayoutDirectionE(void *this_, Qt::LayoutDirection aDirection) {
-  ((QTextOption*)this_)->setTextDirection(aDirection);
+// [-2] void setTextDirection(Qt::LayoutDirection) 
+// (12)qm2227094180 (57)_ZN11QTextOption16setTextDirectionEN2Qt15LayoutDirectionE
+//static
+/*void qm2227094180(Qt::LayoutDirection aDirection)*/ {
+  Qt::LayoutDirection aDirection = *(Qt::LayoutDirection*)this_;
+  (void) ((QTextOption*)this_)->setTextDirection(aDirection);
+   auto xptr = (void (QTextOption::*)(Qt::LayoutDirection) ) &QTextOption::setTextDirection;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:96
-// [4] Qt::LayoutDirection textDirection()
-extern "C" Q_DECL_EXPORT
-Qt::LayoutDirection C_ZNK11QTextOption13textDirectionEv(void *this_) {
-  return (Qt::LayoutDirection)((QTextOption*)this_)->textDirection();
+// [4] Qt::LayoutDirection textDirection() const
+// (11)qm740552098 (34)_ZNK11QTextOption13textDirectionEv
+//static
+/*void qm740552098()*/ {
+  ;
+  (void) ((QTextOption*)this_)->textDirection();
+   auto xptr = (Qt::LayoutDirection (QTextOption::*)() const ) &QTextOption::textDirection;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:105
-// [-2] void setWrapMode(QTextOption::WrapMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption11setWrapModeENS_8WrapModeE(void *this_, QTextOption::WrapMode wrap) {
-  ((QTextOption*)this_)->setWrapMode(wrap);
+// [-2] void setWrapMode(QTextOption::WrapMode) 
+// (12)qm1286407213 (43)_ZN11QTextOption11setWrapModeENS_8WrapModeE
+//static
+/*void qm1286407213(QTextOption::WrapMode wrap)*/ {
+  QTextOption::WrapMode wrap = *(QTextOption::WrapMode*)this_;
+  (void) ((QTextOption*)this_)->setWrapMode(wrap);
+   auto xptr = (void (QTextOption::*)(QTextOption::WrapMode) ) &QTextOption::setWrapMode;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:106
-// [4] QTextOption::WrapMode wrapMode()
-extern "C" Q_DECL_EXPORT
-QTextOption::WrapMode C_ZNK11QTextOption8wrapModeEv(void *this_) {
-  return (QTextOption::WrapMode)((QTextOption*)this_)->wrapMode();
+// [4] QTextOption::WrapMode wrapMode() const
+// (11)qm709948472 (28)_ZNK11QTextOption8wrapModeEv
+//static
+/*void qm709948472()*/ {
+  ;
+  (void) ((QTextOption*)this_)->wrapMode();
+   auto xptr = (QTextOption::WrapMode (QTextOption::*)() const ) &QTextOption::wrapMode;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:117
-// [-2] void setFlags(QTextOption::Flags)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption8setFlagsE6QFlagsINS_4FlagEE(void *this_, QFlags<QTextOption::Flag> flags) {
-  ((QTextOption*)this_)->setFlags(flags);
+// [-2] void setFlags(QTextOption::Flags) 
+// (11)qm267934386 (44)_ZN11QTextOption8setFlagsE6QFlagsINS_4FlagEE
+//static
+/*void qm267934386(QFlags<QTextOption::Flag> flags)*/ {
+  QFlags<QTextOption::Flag> flags = *(QFlags<QTextOption::Flag>*)this_;
+  (void) ((QTextOption*)this_)->setFlags(flags);
+   auto xptr = (void (QTextOption::*)(QFlags<QTextOption::Flag>) ) &QTextOption::setFlags;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:118
-// [4] QTextOption::Flags flags()
-extern "C" Q_DECL_EXPORT
-QTextOption::Flags* C_ZNK11QTextOption5flagsEv(void *this_) {
-  auto rv = ((QTextOption*)this_)->flags();
-return new QTextOption::Flags(rv);
+// [4] QTextOption::Flags flags() const
+// (12)qm1513632662 (25)_ZNK11QTextOption5flagsEv
+//static
+/*void qm1513632662()*/ {
+  ;
+  (void) ((QTextOption*)this_)->flags();
+   auto xptr = (QFlags<QTextOption::Flag> (QTextOption::*)() const ) &QTextOption::flags;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:121
-// [-2] void setTabStop(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption10setTabStopEd(void *this_, qreal tabStop) {
-  ((QTextOption*)this_)->setTabStop(tabStop);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:122
-// [8] qreal tabStop()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK11QTextOption7tabStopEv(void *this_) {
-  return (qreal)((QTextOption*)this_)->tabStop();
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.10
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:125
-// [-2] void setTabStopDistance(qreal)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption18setTabStopDistanceEd(void *this_, qreal tabStopDistance) {
-  ((QTextOption*)this_)->setTabStopDistance(tabStopDistance);
+// [-2] void setTabStopDistance(qreal) 
+// (12)qm1480251831 (38)_ZN11QTextOption18setTabStopDistanceEd
+//static
+/*void qm1480251831(double tabStopDistance)*/ {
+  double tabStopDistance = *(double*)this_;
+  (void) ((QTextOption*)this_)->setTabStopDistance(tabStopDistance);
+   auto xptr = (void (QTextOption::*)(double) ) &QTextOption::setTabStopDistance;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050a00
 
-// Public inline Visibility=Default Availability=Available
-// since 5.10
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:126
-// [8] qreal tabStopDistance()
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK11QTextOption15tabStopDistanceEv(void *this_) {
-  return (qreal)((QTextOption*)this_)->tabStopDistance();
-}
-#endif // QT_VERSION >= 0x050a00
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:128
-// [-2] void setTabArray(const QList<qreal> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption11setTabArrayERK5QListIdE(void *this_, QList<double>* tabStops) {
-  ((QTextOption*)this_)->setTabArray(*tabStops);
+// [8] qreal tabStopDistance() const
+// (12)qm1322564266 (36)_ZNK11QTextOption15tabStopDistanceEv
+//static
+/*void qm1322564266()*/ {
+  ;
+  (void) ((QTextOption*)this_)->tabStopDistance();
+   auto xptr = (double (QTextOption::*)() const ) &QTextOption::tabStopDistance;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextoption.h:129
-// [-2] QList<qreal> tabArray()
-extern "C" Q_DECL_EXPORT
-QList<qreal>* C_ZNK11QTextOption8tabArrayEv(void *this_) {
-  auto rv = ((QTextOption*)this_)->tabArray();
-return new QList<qreal>(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtGui/qtextoption.h:131
-// [-2] void setTabs(const QList<QTextOption::Tab> &)
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption7setTabsERK5QListINS_3TabEE(void *this_, QList<QTextOption::Tab>* tabStops) {
-  ((QTextOption*)this_)->setTabs(*tabStops);
-}
-#endif // QT_VERSION >= 0x040400
-
-// Public Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtGui/qtextoption.h:132
-// [-2] QList<QTextOption::Tab> tabs()
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-QList<QTextOption::Tab>* C_ZNK11QTextOption4tabsEv(void *this_) {
-  auto rv = ((QTextOption*)this_)->tabs();
-return new QList<QTextOption::Tab>(rv);
-}
-#endif // QT_VERSION >= 0x040400
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:134
-// [-2] void setUseDesignMetrics(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextOption19setUseDesignMetricsEb(void *this_, bool b) {
-  ((QTextOption*)this_)->setUseDesignMetrics(b);
+// [-2] void setUseDesignMetrics(bool) 
+// (12)qm1355757453 (39)_ZN11QTextOption19setUseDesignMetricsEb
+//static
+/*void qm1355757453(bool b)*/ {
+  bool b = *(bool*)this_;
+  (void) ((QTextOption*)this_)->setUseDesignMetrics(b);
+   auto xptr = (void (QTextOption::*)(bool) ) &QTextOption::setUseDesignMetrics;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:135
-// [1] bool useDesignMetrics()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QTextOption16useDesignMetricsEv(void *this_) {
-  return (bool)((QTextOption*)this_)->useDesignMetrics();
+// [1] bool useDesignMetrics() const
+// (12)qm3851416560 (37)_ZNK11QTextOption16useDesignMetricsEv
+//static
+/*void qm3851416560()*/ {
+  ;
+  (void) ((QTextOption*)this_)->useDesignMetrics();
+   auto xptr = (bool (QTextOption::*)() const ) &QTextOption::useDesignMetrics;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+
+/*void C_ZN11QTextOptionD2Ev(void *this_)*/ {
+  delete (QTextOption*)(this_);
+}
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtextoption
 //  main block end
 
 //  use block begin

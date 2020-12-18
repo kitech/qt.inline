@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QHelpEvent is pure virtual: false
+// QHelpEvent is pure virtual: false false
 // QHelpEvent has virtual projected: false
 //  header block end
 
@@ -52,71 +52,88 @@ public:
 MyQHelpEvent(QEvent::Type type_, const QPoint & pos, const QPoint & globalPos) : QHelpEvent(type_, pos, globalPos) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:685
-// [-2] void QHelpEvent(QEvent::Type, const QPoint &, const QPoint &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_(QEvent::Type type_, QPoint* pos, QPoint* globalPos) {
-  return  new QHelpEvent(type_, *pos, *globalPos);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qhelpevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:725
+// [4] int x() const
+// (11)qm594142306 (20)_ZNK10QHelpEvent1xEv
+//static
+/*void qm594142306()*/ {
+  ;
+  (void) ((QHelpEvent*)this_)->x();
+   auto xptr = (int (QHelpEvent::*)() const ) &QHelpEvent::x;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:686
-// [-2] void ~QHelpEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QHelpEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:726
+// [4] int y() const
+// (11)qm581668437 (20)_ZNK10QHelpEvent1yEv
+//static
+/*void qm581668437()*/ {
+  ;
+  (void) ((QHelpEvent*)this_)->y();
+   auto xptr = (int (QHelpEvent::*)() const ) &QHelpEvent::y;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:727
+// [4] int globalX() const
+// (12)qm4191083276 (26)_ZNK10QHelpEvent7globalXEv
+//static
+/*void qm4191083276()*/ {
+  ;
+  (void) ((QHelpEvent*)this_)->globalX();
+   auto xptr = (int (QHelpEvent::*)() const ) &QHelpEvent::globalX;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:728
+// [4] int globalY() const
+// (12)qm4161581371 (26)_ZNK10QHelpEvent7globalYEv
+//static
+/*void qm4161581371()*/ {
+  ;
+  (void) ((QHelpEvent*)this_)->globalY();
+   auto xptr = (int (QHelpEvent::*)() const ) &QHelpEvent::globalY;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:730
+// [8] const QPoint & pos() const
+// (11)qm836835040 (22)_ZNK10QHelpEvent3posEv
+//static
+/*void qm836835040()*/ {
+  ;
+  (void) ((QHelpEvent*)this_)->pos();
+   auto xptr = (const QPoint & (QHelpEvent::*)() const ) &QHelpEvent::pos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:731
+// [8] const QPoint & globalPos() const
+// (12)qm3623933254 (28)_ZNK10QHelpEvent9globalPosEv
+//static
+/*void qm3623933254()*/ {
+  ;
+  (void) ((QHelpEvent*)this_)->globalPos();
+   auto xptr = (const QPoint & (QHelpEvent::*)() const ) &QHelpEvent::globalPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN10QHelpEventD2Ev(void *this_)*/ {
   delete (QHelpEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:688
-// [4] int x()
-extern "C" Q_DECL_EXPORT
-int C_ZNK10QHelpEvent1xEv(void *this_) {
-  return (int)((QHelpEvent*)this_)->x();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:689
-// [4] int y()
-extern "C" Q_DECL_EXPORT
-int C_ZNK10QHelpEvent1yEv(void *this_) {
-  return (int)((QHelpEvent*)this_)->y();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:690
-// [4] int globalX()
-extern "C" Q_DECL_EXPORT
-int C_ZNK10QHelpEvent7globalXEv(void *this_) {
-  return (int)((QHelpEvent*)this_)->globalX();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:691
-// [4] int globalY()
-extern "C" Q_DECL_EXPORT
-int C_ZNK10QHelpEvent7globalYEv(void *this_) {
-  return (int)((QHelpEvent*)this_)->globalY();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:693
-// [8] const QPoint & pos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QHelpEvent3posEv(void *this_) {
-  auto& rv = ((QHelpEvent*)this_)->pos();
-return new QPoint(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:694
-// [8] const QPoint & globalPos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QHelpEvent9globalPosEv(void *this_) {
-  auto& rv = ((QHelpEvent*)this_)->globalPos();
-return new QPoint(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qhelpevent
 //  main block end
 
 //  use block begin

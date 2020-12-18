@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050100
 // /usr/include/qt/QtGui/qvalidator.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QRegularExpressionValidator is pure virtual: false
+// QRegularExpressionValidator is pure virtual: false false
 // QRegularExpressionValidator has virtual projected: false
 //  header block end
 
@@ -112,104 +111,28 @@ void* C_QRegularExpressionValidator_init_staticMetaObject(void* this_, void* str
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:205
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QRegularExpressionValidator10metaObjectEv(void *this_) {
-  return (void*)((QRegularExpressionValidator*)this_)->metaObject();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qregularexpressionvalidator(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:206
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1149065219 (43)_ZN27QRegularExpressionValidator2trEPKcS1_i
+//static
+/*void qm1149065219(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QRegularExpressionValidator::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QRegularExpressionValidator::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:205
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QRegularExpressionValidator11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QRegularExpressionValidator*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:205
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN27QRegularExpressionValidator11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QRegularExpressionValidator*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:205
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QRegularExpressionValidator2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QRegularExpressionValidator::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:205
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QRegularExpressionValidator6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QRegularExpressionValidator::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:209
-// [-2] void QRegularExpressionValidator(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QRegularExpressionValidatorC2EP7QObject(QObject * parent) {
-  return  new MyQRegularExpressionValidator(parent);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:210
-// [-2] void QRegularExpressionValidator(const QRegularExpression &, QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QRegularExpressionValidatorC2ERK18QRegularExpressionP7QObject(QRegularExpression* re, QObject * parent) {
-  return  new MyQRegularExpressionValidator(*re, parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:211
-// [-2] void ~QRegularExpressionValidator()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QRegularExpressionValidatorD2Ev(void *this_) {
+/*void C_ZN27QRegularExpressionValidatorD2Ev(void *this_)*/ {
   delete (QRegularExpressionValidator*)(this_);
 }
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:213
-// [4] QValidator::State validate(QString &, int &)
-extern "C" Q_DECL_EXPORT
-QValidator::State C_ZNK27QRegularExpressionValidator8validateER7QStringRi(void *this_, QString* input, int & pos) {
-  return (QValidator::State)((QRegularExpressionValidator*)this_)->validate(*input, pos);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:215
-// [8] QRegularExpression regularExpression()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QRegularExpressionValidator17regularExpressionEv(void *this_) {
-  auto rv = ((QRegularExpressionValidator*)this_)->regularExpression();
-return new QRegularExpression(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:218
-// [-2] void setRegularExpression(const QRegularExpression &)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QRegularExpressionValidator20setRegularExpressionERK18QRegularExpression(void *this_, QRegularExpression* re) {
-  ((QRegularExpressionValidator*)this_)->setRegularExpression(*re);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:221
-// [-2] void regularExpressionChanged(const QRegularExpression &)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QRegularExpressionValidator24regularExpressionChangedERK18QRegularExpression(void *this_, QRegularExpression* re) {
-  ((QRegularExpressionValidator*)this_)->regularExpressionChanged(*re);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qregularexpressionvalidator
 //  main block end
 
 //  use block begin

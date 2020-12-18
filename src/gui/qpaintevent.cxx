@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QPaintEvent is pure virtual: false
+// QPaintEvent is pure virtual: false false
 // QPaintEvent has virtual projected: false
 //  header block end
 
@@ -54,47 +54,40 @@ MyQPaintEvent(const QRegion & paintRegion) : QPaintEvent(paintRegion) {}
 MyQPaintEvent(const QRect & paintRect) : QPaintEvent(paintRect) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:410
-// [-2] void QPaintEvent(const QRegion &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QPaintEventC2ERK7QRegion(QRegion* paintRegion) {
-  return  new QPaintEvent(*paintRegion);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qpaintevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:451
+// [16] const QRect & rect() const
+// (12)qm3108784968 (24)_ZNK11QPaintEvent4rectEv
+//static
+/*void qm3108784968()*/ {
+  ;
+  (void) ((QPaintEvent*)this_)->rect();
+   auto xptr = (const QRect & (QPaintEvent::*)() const ) &QPaintEvent::rect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:411
-// [-2] void QPaintEvent(const QRect &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QPaintEventC2ERK5QRect(QRect* paintRect) {
-  return  new QPaintEvent(*paintRect);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:452
+// [8] const QRegion & region() const
+// (12)qm1555176926 (26)_ZNK11QPaintEvent6regionEv
+//static
+/*void qm1555176926()*/ {
+  ;
+  (void) ((QPaintEvent*)this_)->region();
+   auto xptr = (const QRegion & (QPaintEvent::*)() const ) &QPaintEvent::region;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:412
-// [-2] void ~QPaintEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QPaintEventD2Ev(void *this_) {
+
+/*void C_ZN11QPaintEventD2Ev(void *this_)*/ {
   delete (QPaintEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:414
-// [16] const QRect & rect()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QPaintEvent4rectEv(void *this_) {
-  auto& rv = ((QPaintEvent*)this_)->rect();
-return new QRect(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:415
-// [8] const QRegion & region()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK11QPaintEvent6regionEv(void *this_) {
-  auto& rv = ((QPaintEvent*)this_)->region();
-return new QRegion(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qpaintevent
 //  main block end
 
 //  use block begin

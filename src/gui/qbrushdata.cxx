@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QBrushData is pure virtual: false
+// QBrushData is pure virtual: false false
 // QBrushData has virtual projected: false
 //  header block end
 
@@ -50,11 +50,16 @@ public:
   virtual ~MyQBrushData() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qbrushdata(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-extern "C" Q_DECL_EXPORT
-void C_ZN10QBrushDataD2Ev(void *this_) {
+
+/*void C_ZN10QBrushDataD2Ev(void *this_)*/ {
   delete (QBrushData*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qbrushdata
 //  main block end
 
 //  use block begin

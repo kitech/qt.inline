@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QDragLeaveEvent is pure virtual: false
+// QDragLeaveEvent is pure virtual: false false
 // QDragLeaveEvent has virtual projected: false
 //  header block end
 
@@ -52,21 +52,16 @@ public:
 MyQDragLeaveEvent() : QDragLeaveEvent() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:676
-// [-2] void QDragLeaveEvent()
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QDragLeaveEventC2Ev() {
-  return  new QDragLeaveEvent();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qdragleaveevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:677
-// [-2] void ~QDragLeaveEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QDragLeaveEventD2Ev(void *this_) {
+
+/*void C_ZN15QDragLeaveEventD2Ev(void *this_)*/ {
   delete (QDragLeaveEvent*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qdragleaveevent
 //  main block end
 
 //  use block begin

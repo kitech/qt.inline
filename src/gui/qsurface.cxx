@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtGui/qsurface.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QSurface is pure virtual: true
+// QSurface is pure virtual: true true
 // QSurface has virtual projected: false
 //  header block end
 
@@ -49,7 +48,7 @@ static const uint qt_meta_data_MyQSurface[] = {
 class Q_DECL_EXPORT MyQSurface : public QSurface {
 public:
   virtual ~MyQSurface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QSurfaceFormat format()
   virtual QSurfaceFormat format() const override {
     int handled = 0;
@@ -63,7 +62,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QPlatformSurface * surfaceHandle()
   virtual QPlatformSurface * surfaceHandle() const override {
     int handled = 0;
@@ -76,7 +75,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] QSurface::SurfaceType surfaceType()
   virtual QSurface::SurfaceType surfaceType() const override {
     int handled = 0;
@@ -89,7 +88,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QSize size()
   virtual QSize size() const override {
     int handled = 0;
@@ -105,78 +104,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:80
-// [8] QSurfaceFormat format()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:81
-// [8] QPlatformSurface * surfaceHandle()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:83
-// [4] QSurface::SurfaceType surfaceType()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:86
-// [8] QSize size()
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:76
-// [-2] void ~QSurface()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QSurfaceD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsurface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN8QSurfaceD2Ev(void *this_)*/ {
   delete (QSurface*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:78
-// [4] QSurface::SurfaceClass surfaceClass()
-extern "C" Q_DECL_EXPORT
-QSurface::SurfaceClass C_ZNK8QSurface12surfaceClassEv(void *this_) {
-  return (QSurface::SurfaceClass)((QSurface*)this_)->surfaceClass();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:80
-// [8] QSurfaceFormat format()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QSurface6formatEv(void *this_) {
-  auto rv = ((QSurface*)this_)->format();
-return new QSurfaceFormat(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:81
-// [8] QPlatformSurface * surfaceHandle()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QSurface13surfaceHandleEv(void *this_) {
-  return (void*)((QSurface*)this_)->surfaceHandle();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:83
-// [4] QSurface::SurfaceType surfaceType()
-extern "C" Q_DECL_EXPORT
-QSurface::SurfaceType C_ZNK8QSurface11surfaceTypeEv(void *this_) {
-  return (QSurface::SurfaceType)((QSurface*)this_)->surfaceType();
-}
-
-// Public Visibility=Default Availability=Available
-// since 5.3
-// /usr/include/qt/QtGui/qsurface.h:84
-// [1] bool supportsOpenGL()
-#if QT_VERSION >= 0x050300
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QSurface14supportsOpenGLEv(void *this_) {
-  return (bool)((QSurface*)this_)->supportsOpenGL();
-}
-#endif // QT_VERSION >= 0x050300
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qsurface.h:86
-// [8] QSize size()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QSurface4sizeEv(void *this_) {
-  auto rv = ((QSurface*)this_)->size();
-return new QSize(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsurface
 //  main block end
 
 //  use block begin

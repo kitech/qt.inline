@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAbstractUndoItem is pure virtual: true
+// QAbstractUndoItem is pure virtual: true true
 // QAbstractUndoItem has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQAbstractUndoItem[] = {
 class Q_DECL_EXPORT MyQAbstractUndoItem : public QAbstractUndoItem {
 public:
   virtual ~MyQAbstractUndoItem() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void undo()
   virtual void undo()  override {
     int handled = 0;
@@ -60,7 +60,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void redo()
   virtual void redo()  override {
     int handled = 0;
@@ -74,35 +74,19 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextdocument.h:87
-// [-2] void undo()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextdocument.h:88
-// [-2] void redo()
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qabstractundoitem(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public purevirtual virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextdocument.h:86
-// [-2] void ~QAbstractUndoItem()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractUndoItemD2Ev(void *this_) {
+// [-2] void ~QAbstractUndoItem() 
+// (11)qm344714085 (26)_ZN17QAbstractUndoItemD2Ev
+/*void qm344714085 (void *this_)*/ {
   delete (QAbstractUndoItem*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextdocument.h:87
-// [-2] void undo()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractUndoItem4undoEv(void *this_) {
-  ((QAbstractUndoItem*)this_)->undo();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextdocument.h:88
-// [-2] void redo()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QAbstractUndoItem4redoEv(void *this_) {
-  ((QAbstractUndoItem*)this_)->redo();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qabstractundoitem
 //  main block end
 
 //  use block begin

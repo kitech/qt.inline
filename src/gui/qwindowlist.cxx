@@ -235,6 +235,13 @@ void C_QWindowList_move_0(void* this_ , int from, int to) {
      ((QWindowList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QWindowList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QWindowList_swapItemsAt_0()
+     ((QWindowList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QWindowList_swap_1(void* this_ , int i, int j) {

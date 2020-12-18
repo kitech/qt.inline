@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QBitmap is pure virtual: false
+// QBitmap is pure virtual: false false
 // QBitmap has virtual projected: false
 //  header block end
 
@@ -62,155 +62,73 @@ MyQBitmap(const QString & fileName, const char * format) : QBitmap(fileName, for
 MyQBitmap(const QBitmap & other) : QBitmap(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:54
-// [-2] void QBitmap()
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmapC2Ev() {
-  return  new QBitmap();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:55
-// [-2] void QBitmap(const QPixmap &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmapC2ERK7QPixmap(QPixmap* arg0) {
-  return  new QBitmap(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:56
-// [-2] void QBitmap(int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmapC2Eii(int w, int h) {
-  return  new QBitmap(w, h);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:57
-// [-2] void QBitmap(const QSize &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmapC2ERK5QSize(QSize* arg0) {
-  return  new QBitmap(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:58
-// [-2] void QBitmap(const QString &, const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmapC2ERK7QStringPKc(QString* fileName, const char * format) {
-  return  new QBitmap(*fileName, format);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qbitmap(void* this_) {
+  uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:61
-// [-2] void QBitmap(const QBitmap &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmapC2ERKS_(QBitmap* other) {
-  return  new QBitmap(*other);
+// [-2] void QBitmap(const QBitmap &) 
+// (12)qm2690957762 (18)_ZN7QBitmapC2ERKS_
+/*void* qm2690957762(const QBitmap & other)*/{
+  const QBitmap & other = *(const QBitmap *)this_;
+  this_ =  new QBitmap(other);
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:63
-// [32] QBitmap & operator=(const QBitmap &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmapaSERKS_(void *this_, QBitmap* other) {
-  auto& rv = ((QBitmap*)this_)->operator=(*other);
-return &rv;
+// [32] QBitmap & operator=(const QBitmap &) 
+// (12)qm1005467016 (18)_ZN7QBitmapaSERKS_
+//static
+/*void qm1005467016(const QBitmap & other)*/ {
+  const QBitmap & other = *(const QBitmap *)this_;
+  (void) ((QBitmap*)this_)->operator=(other);
+  // auto xptr = (QBitmap & (QBitmap::*)(QBitmap const&) ) &QBitmap::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:64
-// [32] QBitmap & operator=(QBitmap &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmapaSEOS_(void *this_, QBitmap && other) {
-  auto& rv = ((QBitmap*)this_)->operator=(other);
-return &rv;
+// [32] QBitmap & operator=(QBitmap &&) 
+// (11)qm271373320 (17)_ZN7QBitmapaSEOS_
+//static
+/*void qm271373320(QBitmap && other)*/ {
+  QBitmap && other =  static_cast<QBitmap &&>(*(QBitmap *)this_);
+  (void) ((QBitmap*)this_)->operator=(other);
+  // auto xptr = (QBitmap & (QBitmap::*)(QBitmap&&) ) &QBitmap::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:65
-// [-2] void ~QBitmap()
-extern "C" Q_DECL_EXPORT
-void C_ZN7QBitmapD2Ev(void *this_) {
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:69
+// [-2] void swap(QBitmap &) 
+// (12)qm1502087187 (20)_ZN7QBitmap4swapERS_
+//static
+/*void qm1502087187(QBitmap & other)*/ {
+  QBitmap & other = *(QBitmap *)this_;
+  (void) ((QBitmap*)this_)->swap(other);
+   auto xptr = (void (QBitmap::*)(QBitmap&) ) &QBitmap::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:72
+// [-2] void clear() 
+// (12)qm2226925555 (19)_ZN7QBitmap5clearEv
+//static
+/*void qm2226925555()*/ {
+  ;
+  (void) ((QBitmap*)this_)->clear();
+   auto xptr = (void (QBitmap::*)() ) &QBitmap::clear;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN7QBitmapD2Ev(void *this_)*/ {
   delete (QBitmap*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:68
-// [32] QBitmap & operator=(const QPixmap &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmapaSERK7QPixmap(void *this_, QPixmap* arg0) {
-  auto& rv = ((QBitmap*)this_)->operator=(*arg0);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtGui/qbitmap.h:69
-// [-2] void swap(QBitmap &)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-void C_ZN7QBitmap4swapERS_(void *this_, QBitmap* other) {
-  ((QBitmap*)this_)->swap(*other);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:72
-// [-2] void clear()
-extern "C" Q_DECL_EXPORT
-void C_ZN7QBitmap5clearEv(void *this_) {
-  ((QBitmap*)this_)->clear();
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:74
-// [32] QBitmap fromImage(const QImage &, Qt::ImageConversionFlags)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmap9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE(QImage* image, QFlags<Qt::ImageConversionFlag> flags) {
-  auto rv = QBitmap::fromImage(*image, flags);
-return new QBitmap(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// since 5.12
-// /usr/include/qt/QtGui/qbitmap.h:75
-// [32] QBitmap fromImage(QImage &&, Qt::ImageConversionFlags)
-#if QT_VERSION >= 0x050c00
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmap9fromImageEO6QImage6QFlagsIN2Qt19ImageConversionFlagEE(QImage && image, QFlags<Qt::ImageConversionFlag> flags) {
-  auto rv = QBitmap::fromImage(image, flags);
-return new QBitmap(rv);
-}
-#endif // QT_VERSION >= 0x050c00
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:76
-// [32] QBitmap fromData(const QSize &, const uchar *, QImage::Format)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QBitmap8fromDataERK5QSizePKhN6QImage6FormatE(QSize* size, const uchar * bits, QImage::Format monoFormat) {
-  auto rv = QBitmap::fromData(*size, bits, monoFormat);
-return new QBitmap(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:79
-// [32] QBitmap transformed(const QMatrix &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QBitmap11transformedERK7QMatrix(void *this_, QMatrix* arg0) {
-  auto rv = ((QBitmap*)this_)->transformed(*arg0);
-return new QBitmap(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbitmap.h:80
-// [32] QBitmap transformed(const QTransform &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QBitmap11transformedERK10QTransform(void *this_, QTransform* matrix) {
-  auto rv = ((QBitmap*)this_)->transformed(*matrix);
-return new QBitmap(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qbitmap
 //  main block end
 
 //  use block begin

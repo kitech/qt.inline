@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QTextList is pure virtual: false
+// QTextList is pure virtual: false false
 // QTextList has virtual projected: false
 //  header block end
 
@@ -109,146 +109,52 @@ void* C_QTextList_init_staticMetaObject(void* this_, void* strdat, void* dat, vo
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtextlist(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:55
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QTextList10metaObjectEv(void *this_) {
-  return (void*)((QTextList*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3393897957 (24)_ZN9QTextList2trEPKcS1_i
+//static
+/*void qm3393897957(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QTextList::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QTextList::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:55
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTextList11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QTextList*)this_)->qt_metacast(arg0);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:78
+// [-2] void setFormat(const QTextListFormat &) 
+// (12)qm3023183784 (43)_ZN9QTextList9setFormatERK15QTextListFormat
+//static
+/*void qm3023183784(const QTextListFormat & format)*/ {
+  const QTextListFormat & format = *(const QTextListFormat *)this_;
+  (void) ((QTextList*)this_)->setFormat(format);
+   auto xptr = (void (QTextList::*)(QTextListFormat const&) ) &QTextList::setFormat;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:55
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN9QTextList11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QTextList*)this_)->qt_metacall(arg0, arg1, arg2);
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:79
+// [16] QTextListFormat format() const
+// (12)qm4215477317 (23)_ZNK9QTextList6formatEv
+//static
+/*void qm4215477317()*/ {
+  ;
+  (void) ((QTextList*)this_)->format();
+   auto xptr = (QTextListFormat (QTextList::*)() const ) &QTextList::format;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:55
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTextList2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QTextList::tr(s, c, n);
-return new QString(rv);
-}
 
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:55
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTextList6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QTextList::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:57
-// [-2] void QTextList(QTextDocument *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTextListC2EP13QTextDocument(QTextDocument * doc) {
-  return  new MyQTextList(doc);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:58
-// [-2] void ~QTextList()
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTextListD2Ev(void *this_) {
+/*void C_ZN9QTextListD2Ev(void *this_)*/ {
   delete (QTextList*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:60
-// [4] int count()
-extern "C" Q_DECL_EXPORT
-int C_ZNK9QTextList5countEv(void *this_) {
-  return (int)((QTextList*)this_)->count();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:62
-// [1] bool isEmpty()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QTextList7isEmptyEv(void *this_) {
-  return (bool)((QTextList*)this_)->isEmpty();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:65
-// [16] QTextBlock item(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QTextList4itemEi(void *this_, int i) {
-  auto rv = ((QTextList*)this_)->item(i);
-return new QTextBlock(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:67
-// [4] int itemNumber(const QTextBlock &)
-extern "C" Q_DECL_EXPORT
-int C_ZNK9QTextList10itemNumberERK10QTextBlock(void *this_, QTextBlock* arg0) {
-  return (int)((QTextList*)this_)->itemNumber(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:68
-// [8] QString itemText(const QTextBlock &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QTextList8itemTextERK10QTextBlock(void *this_, QTextBlock* arg0) {
-  auto rv = ((QTextList*)this_)->itemText(*arg0);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:70
-// [-2] void removeItem(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTextList10removeItemEi(void *this_, int i) {
-  ((QTextList*)this_)->removeItem(i);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:71
-// [-2] void remove(const QTextBlock &)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTextList6removeERK10QTextBlock(void *this_, QTextBlock* arg0) {
-  ((QTextList*)this_)->remove(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:73
-// [-2] void add(const QTextBlock &)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTextList3addERK10QTextBlock(void *this_, QTextBlock* block) {
-  ((QTextList*)this_)->add(*block);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:75
-// [-2] void setFormat(const QTextListFormat &)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QTextList9setFormatERK15QTextListFormat(void *this_, QTextListFormat* format) {
-  ((QTextList*)this_)->setFormat(*format);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtextlist.h:76
-// [16] QTextListFormat format()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK9QTextList6formatEv(void *this_) {
-  auto rv = ((QTextList*)this_)->format();
-return new QTextListFormat(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtextlist
 //  main block end
 
 //  use block begin

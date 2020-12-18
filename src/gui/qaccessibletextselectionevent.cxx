@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAccessibleTextSelectionEvent is pure virtual: false
+// QAccessibleTextSelectionEvent is pure virtual: false false
 // QAccessibleTextSelectionEvent has virtual projected: false
 //  header block end
 
@@ -54,53 +54,70 @@ MyQAccessibleTextSelectionEvent(QObject * obj, int start, int end_) : QAccessibl
 MyQAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end_) : QAccessibleTextSelectionEvent(iface, start, end_) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaccessibletextselectionevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:773
-// [-2] void QAccessibleTextSelectionEvent(QObject *, int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN29QAccessibleTextSelectionEventC2EP7QObjectii(QObject * obj, int start, int end_) {
-  return  new QAccessibleTextSelectionEvent(obj, start, end_);
+// /usr/include/qt/QtGui/qaccessible.h:774
+// [-2] void QAccessibleTextSelectionEvent(QObject *, int, int) 
+// (11)qm372479360 (48)_ZN29QAccessibleTextSelectionEventC2EP7QObjectii
+/*void* qm372479360(QObject * obj, int start, int end_)*/{
+  QObject * obj = *(QObject **)this_; int start = *(int*)this_; int end_ = *(int*)this_;
+  this_ =  new QAccessibleTextSelectionEvent(obj, start, end_);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:779
-// [-2] void QAccessibleTextSelectionEvent(QAccessibleInterface *, int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN29QAccessibleTextSelectionEventC2EP20QAccessibleInterfaceii(QAccessibleInterface * iface, int start, int end_) {
-  return  new QAccessibleTextSelectionEvent(iface, start, end_);
+// /usr/include/qt/QtGui/qaccessible.h:780
+// [-2] void QAccessibleTextSelectionEvent(QAccessibleInterface *, int, int) 
+// (11)qm624577784 (62)_ZN29QAccessibleTextSelectionEventC2EP20QAccessibleInterfaceii
+/*void* qm624577784(QAccessibleInterface * iface, int start, int end_)*/{
+  QAccessibleInterface * iface = *(QAccessibleInterface **)this_; int start = *(int*)this_; int end_ = *(int*)this_;
+  this_ =  new QAccessibleTextSelectionEvent(iface, start, end_);
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:786
-// [-2] void ~QAccessibleTextSelectionEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN29QAccessibleTextSelectionEventD2Ev(void *this_) {
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:789
+// [-2] void setSelection(int, int) 
+// (12)qm2865014506 (51)_ZN29QAccessibleTextSelectionEvent12setSelectionEii
+//static
+/*void qm2865014506(int start, int end_)*/ {
+  int start = *(int*)this_; int end_ = *(int*)this_;
+  (void) ((QAccessibleTextSelectionEvent*)this_)->setSelection(start, end_);
+   auto xptr = (void (QAccessibleTextSelectionEvent::*)(int, int) ) &QAccessibleTextSelectionEvent::setSelection;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:794
+// [4] int selectionStart() const
+// (12)qm2390021757 (53)_ZNK29QAccessibleTextSelectionEvent14selectionStartEv
+//static
+/*void qm2390021757()*/ {
+  ;
+  (void) ((QAccessibleTextSelectionEvent*)this_)->selectionStart();
+   auto xptr = (int (QAccessibleTextSelectionEvent::*)() const ) &QAccessibleTextSelectionEvent::selectionStart;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:795
+// [4] int selectionEnd() const
+// (12)qm1821966595 (51)_ZNK29QAccessibleTextSelectionEvent12selectionEndEv
+//static
+/*void qm1821966595()*/ {
+  ;
+  (void) ((QAccessibleTextSelectionEvent*)this_)->selectionEnd();
+   auto xptr = (int (QAccessibleTextSelectionEvent::*)() const ) &QAccessibleTextSelectionEvent::selectionEnd;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN29QAccessibleTextSelectionEventD2Ev(void *this_)*/ {
   delete (QAccessibleTextSelectionEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:788
-// [-2] void setSelection(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN29QAccessibleTextSelectionEvent12setSelectionEii(void *this_, int start, int end_) {
-  ((QAccessibleTextSelectionEvent*)this_)->setSelection(start, end_);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:793
-// [4] int selectionStart()
-extern "C" Q_DECL_EXPORT
-int C_ZNK29QAccessibleTextSelectionEvent14selectionStartEv(void *this_) {
-  return (int)((QAccessibleTextSelectionEvent*)this_)->selectionStart();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:794
-// [4] int selectionEnd()
-extern "C" Q_DECL_EXPORT
-int C_ZNK29QAccessibleTextSelectionEvent12selectionEndEv(void *this_) {
-  return (int)((QAccessibleTextSelectionEvent*)this_)->selectionEnd();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaccessibletextselectionevent
 //  main block end
 
 //  use block begin

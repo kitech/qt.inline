@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050500
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QPlatformSurfaceEvent is pure virtual: false
+// QPlatformSurfaceEvent is pure virtual: false false
 // QPlatformSurfaceEvent has virtual projected: false
 //  header block end
 
@@ -53,29 +52,28 @@ public:
 MyQPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) : QPlatformSurfaceEvent(surfaceEventType) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:456
-// [-2] void QPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QPlatformSurfaceEventC2ENS_16SurfaceEventTypeE(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType) {
-  return  new QPlatformSurfaceEvent(surfaceEventType);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qplatformsurfaceevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:496
+// [4] QPlatformSurfaceEvent::SurfaceEventType surfaceEventType() const
+// (12)qm3787892467 (47)_ZNK21QPlatformSurfaceEvent16surfaceEventTypeEv
+//static
+/*void qm3787892467()*/ {
+  ;
+  (void) ((QPlatformSurfaceEvent*)this_)->surfaceEventType();
+   auto xptr = (QPlatformSurfaceEvent::SurfaceEventType (QPlatformSurfaceEvent::*)() const ) &QPlatformSurfaceEvent::surfaceEventType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:457
-// [-2] void ~QPlatformSurfaceEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QPlatformSurfaceEventD2Ev(void *this_) {
+
+/*void C_ZN21QPlatformSurfaceEventD2Ev(void *this_)*/ {
   delete (QPlatformSurfaceEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:459
-// [4] QPlatformSurfaceEvent::SurfaceEventType surfaceEventType()
-extern "C" Q_DECL_EXPORT
-QPlatformSurfaceEvent::SurfaceEventType C_ZNK21QPlatformSurfaceEvent16surfaceEventTypeEv(void *this_) {
-  return (QPlatformSurfaceEvent::SurfaceEventType)((QPlatformSurfaceEvent*)this_)->surfaceEventType();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qplatformsurfaceevent
 //  main block end
 
 //  use block begin

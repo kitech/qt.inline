@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QHideEvent is pure virtual: false
+// QHideEvent is pure virtual: false false
 // QHideEvent has virtual projected: false
 //  header block end
 
@@ -52,21 +52,16 @@ public:
 MyQHideEvent() : QHideEvent() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:506
-// [-2] void QHideEvent()
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QHideEventC2Ev() {
-  return  new QHideEvent();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qhideevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:507
-// [-2] void ~QHideEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QHideEventD2Ev(void *this_) {
+
+/*void C_ZN10QHideEventD2Ev(void *this_)*/ {
   delete (QHideEvent*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qhideevent
 //  main block end
 
 //  use block begin

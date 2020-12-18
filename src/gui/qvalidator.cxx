@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QValidator is pure virtual: true
+// QValidator is pure virtual: true true
 // QValidator has virtual projected: false
 //  header block end
 
@@ -93,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQValidator() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] QValidator::State validate(QString &, int &)
   virtual QValidator::State validate(QString & arg0, int & arg1) const override {
     int handled = 0;
@@ -122,107 +122,28 @@ void* C_QValidator_init_staticMetaObject(void* this_, void* strdat, void* dat, v
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:76
-// [4] QValidator::State validate(QString &, int &)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qvalidator(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:62
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QValidator10metaObjectEv(void *this_) {
-  return (void*)((QValidator*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm2482563430 (26)_ZN10QValidator2trEPKcS1_i
+//static
+/*void qm2482563430(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QValidator::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QValidator::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:62
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QValidator11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QValidator*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:62
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN10QValidator11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QValidator*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:62
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QValidator2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QValidator::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:62
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QValidator6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QValidator::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:64
-// [-2] void QValidator(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QValidatorC2EP7QObject(QObject * parent) {
-  return  new MyQValidator(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:65
-// [-2] void ~QValidator()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QValidatorD2Ev(void *this_) {
+/*void C_ZN10QValidatorD2Ev(void *this_)*/ {
   delete (QValidator*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:73
-// [-2] void setLocale(const QLocale &)
-extern "C" Q_DECL_EXPORT
-void C_ZN10QValidator9setLocaleERK7QLocale(void *this_, QLocale* locale) {
-  ((QValidator*)this_)->setLocale(*locale);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:74
-// [8] QLocale locale()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QValidator6localeEv(void *this_) {
-  auto rv = ((QValidator*)this_)->locale();
-return new QLocale(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:76
-// [4] QValidator::State validate(QString &, int &)
-extern "C" Q_DECL_EXPORT
-QValidator::State C_ZNK10QValidator8validateER7QStringRi(void *this_, QString* arg0, int & arg1) {
-  return (QValidator::State)((QValidator*)this_)->validate(*arg0, arg1);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:77
-// [-2] void fixup(QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZNK10QValidator5fixupER7QString(void *this_, QString* arg0) {
-  ((QValidator*)this_)->fixup(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qvalidator.h:80
-// [-2] void changed()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QValidator7changedEv(void *this_) {
-  ((QValidator*)this_)->changed();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qvalidator
 //  main block end
 
 //  use block begin

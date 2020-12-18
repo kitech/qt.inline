@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QMoveEvent is pure virtual: false
+// QMoveEvent is pure virtual: false false
 // QMoveEvent has virtual projected: false
 //  header block end
 
@@ -52,39 +52,40 @@ public:
 MyQMoveEvent(const QPoint & pos, const QPoint & oldPos) : QMoveEvent(pos, oldPos) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:426
-// [-2] void QMoveEvent(const QPoint &, const QPoint &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QMoveEventC2ERK6QPointS2_(QPoint* pos, QPoint* oldPos) {
-  return  new QMoveEvent(*pos, *oldPos);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmoveevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:466
+// [8] const QPoint & pos() const
+// (12)qm3400673504 (22)_ZNK10QMoveEvent3posEv
+//static
+/*void qm3400673504()*/ {
+  ;
+  (void) ((QMoveEvent*)this_)->pos();
+   auto xptr = (const QPoint & (QMoveEvent::*)() const ) &QMoveEvent::pos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:427
-// [-2] void ~QMoveEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QMoveEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:467
+// [8] const QPoint & oldPos() const
+// (11)qm157844131 (25)_ZNK10QMoveEvent6oldPosEv
+//static
+/*void qm157844131()*/ {
+  ;
+  (void) ((QMoveEvent*)this_)->oldPos();
+   auto xptr = (const QPoint & (QMoveEvent::*)() const ) &QMoveEvent::oldPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN10QMoveEventD2Ev(void *this_)*/ {
   delete (QMoveEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:429
-// [8] const QPoint & pos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QMoveEvent3posEv(void *this_) {
-  auto& rv = ((QMoveEvent*)this_)->pos();
-return new QPoint(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:430
-// [8] const QPoint & oldPos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QMoveEvent6oldPosEv(void *this_) {
-  auto& rv = ((QMoveEvent*)this_)->oldPos();
-return new QPoint(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmoveevent
 //  main block end
 
 //  use block begin

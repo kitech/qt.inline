@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAccessibleValueChangeEvent is pure virtual: false
+// QAccessibleValueChangeEvent is pure virtual: false false
 // QAccessibleValueChangeEvent has virtual projected: false
 //  header block end
 
@@ -54,46 +54,58 @@ MyQAccessibleValueChangeEvent(QObject * obj, const QVariant & val) : QAccessible
 MyQAccessibleValueChangeEvent(QAccessibleInterface * iface, const QVariant & val) : QAccessibleValueChangeEvent(iface, val) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaccessiblevaluechangeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:898
-// [-2] void QAccessibleValueChangeEvent(QObject *, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QAccessibleValueChangeEventC2EP7QObjectRK8QVariant(QObject * obj, QVariant* val) {
-  return  new QAccessibleValueChangeEvent(obj, *val);
+// /usr/include/qt/QtGui/qaccessible.h:899
+// [-2] void QAccessibleValueChangeEvent(QObject *, const QVariant &) 
+// (11)qm265134276 (55)_ZN27QAccessibleValueChangeEventC2EP7QObjectRK8QVariant
+/*void* qm265134276(QObject * obj, const QVariant & val)*/{
+  QObject * obj = *(QObject **)this_; const QVariant & val = *(const QVariant *)this_;
+  this_ =  new QAccessibleValueChangeEvent(obj, val);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:904
-// [-2] void QAccessibleValueChangeEvent(QAccessibleInterface *, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QAccessibleValueChangeEventC2EP20QAccessibleInterfaceRK8QVariant(QAccessibleInterface * iface, QVariant* val) {
-  return  new QAccessibleValueChangeEvent(iface, *val);
+// /usr/include/qt/QtGui/qaccessible.h:905
+// [-2] void QAccessibleValueChangeEvent(QAccessibleInterface *, const QVariant &) 
+// (12)qm2197674980 (69)_ZN27QAccessibleValueChangeEventC2EP20QAccessibleInterfaceRK8QVariant
+/*void* qm2197674980(QAccessibleInterface * iface, const QVariant & val)*/{
+  QAccessibleInterface * iface = *(QAccessibleInterface **)this_; const QVariant & val = *(const QVariant *)this_;
+  this_ =  new QAccessibleValueChangeEvent(iface, val);
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:911
-// [-2] void ~QAccessibleValueChangeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QAccessibleValueChangeEventD2Ev(void *this_) {
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:914
+// [-2] void setValue(const QVariant &) 
+// (12)qm1540112245 (53)_ZN27QAccessibleValueChangeEvent8setValueERK8QVariant
+//static
+/*void qm1540112245(const QVariant & val)*/ {
+  const QVariant & val = *(const QVariant *)this_;
+  (void) ((QAccessibleValueChangeEvent*)this_)->setValue(val);
+   auto xptr = (void (QAccessibleValueChangeEvent::*)(QVariant const&) ) &QAccessibleValueChangeEvent::setValue;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:915
+// [16] QVariant value() const
+// (12)qm3065845370 (41)_ZNK27QAccessibleValueChangeEvent5valueEv
+//static
+/*void qm3065845370()*/ {
+  ;
+  (void) ((QAccessibleValueChangeEvent*)this_)->value();
+   auto xptr = (QVariant (QAccessibleValueChangeEvent::*)() const ) &QAccessibleValueChangeEvent::value;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN27QAccessibleValueChangeEventD2Ev(void *this_)*/ {
   delete (QAccessibleValueChangeEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:913
-// [-2] void setValue(const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QAccessibleValueChangeEvent8setValueERK8QVariant(void *this_, QVariant* val) {
-  ((QAccessibleValueChangeEvent*)this_)->setValue(*val);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:914
-// [16] QVariant value()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QAccessibleValueChangeEvent5valueEv(void *this_) {
-  auto rv = ((QAccessibleValueChangeEvent*)this_)->value();
-return new QVariant(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaccessiblevaluechangeevent
 //  main block end
 
 //  use block begin

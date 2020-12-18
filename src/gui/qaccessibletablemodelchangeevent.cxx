@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAccessibleTableModelChangeEvent is pure virtual: false
+// QAccessibleTableModelChangeEvent is pure virtual: false false
 // QAccessibleTableModelChangeEvent has virtual projected: false
 //  header block end
 
@@ -54,109 +54,154 @@ MyQAccessibleTableModelChangeEvent(QObject * obj, QAccessibleTableModelChangeEve
 MyQAccessibleTableModelChangeEvent(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType) : QAccessibleTableModelChangeEvent(iface, changeType) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaccessibletablemodelchangeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:932
-// [-2] void QAccessibleTableModelChangeEvent(QObject *, QAccessibleTableModelChangeEvent::ModelChangeType)
-extern "C" Q_DECL_EXPORT
-void* C_ZN32QAccessibleTableModelChangeEventC2EP7QObjectNS_15ModelChangeTypeE(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
-  return  new QAccessibleTableModelChangeEvent(obj, changeType);
+// /usr/include/qt/QtGui/qaccessible.h:933
+// [-2] void QAccessibleTableModelChangeEvent(QObject *, QAccessibleTableModelChangeEvent::ModelChangeType) 
+// (12)qm3742335179 (70)_ZN32QAccessibleTableModelChangeEventC2EP7QObjectNS_15ModelChangeTypeE
+/*void* qm3742335179(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType)*/{
+  QObject * obj = *(QObject **)this_; QAccessibleTableModelChangeEvent::ModelChangeType changeType = *(QAccessibleTableModelChangeEvent::ModelChangeType*)this_;
+  this_ =  new QAccessibleTableModelChangeEvent(obj, changeType);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:939
-// [-2] void QAccessibleTableModelChangeEvent(QAccessibleInterface *, QAccessibleTableModelChangeEvent::ModelChangeType)
-extern "C" Q_DECL_EXPORT
-void* C_ZN32QAccessibleTableModelChangeEventC2EP20QAccessibleInterfaceNS_15ModelChangeTypeE(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
-  return  new QAccessibleTableModelChangeEvent(iface, changeType);
+// /usr/include/qt/QtGui/qaccessible.h:940
+// [-2] void QAccessibleTableModelChangeEvent(QAccessibleInterface *, QAccessibleTableModelChangeEvent::ModelChangeType) 
+// (12)qm2421950558 (84)_ZN32QAccessibleTableModelChangeEventC2EP20QAccessibleInterfaceNS_15ModelChangeTypeE
+/*void* qm2421950558(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType)*/{
+  QAccessibleInterface * iface = *(QAccessibleInterface **)this_; QAccessibleTableModelChangeEvent::ModelChangeType changeType = *(QAccessibleTableModelChangeEvent::ModelChangeType*)this_;
+  this_ =  new QAccessibleTableModelChangeEvent(iface, changeType);
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:947
-// [-2] void ~QAccessibleTableModelChangeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleTableModelChangeEventD2Ev(void *this_) {
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:950
+// [-2] void setModelChangeType(QAccessibleTableModelChangeEvent::ModelChangeType) 
+// (12)qm2093877969 (79)_ZN32QAccessibleTableModelChangeEvent18setModelChangeTypeENS_15ModelChangeTypeE
+//static
+/*void qm2093877969(QAccessibleTableModelChangeEvent::ModelChangeType changeType)*/ {
+  QAccessibleTableModelChangeEvent::ModelChangeType changeType = *(QAccessibleTableModelChangeEvent::ModelChangeType*)this_;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->setModelChangeType(changeType);
+   auto xptr = (void (QAccessibleTableModelChangeEvent::*)(QAccessibleTableModelChangeEvent::ModelChangeType) ) &QAccessibleTableModelChangeEvent::setModelChangeType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:951
+// [4] QAccessibleTableModelChangeEvent::ModelChangeType modelChangeType() const
+// (12)qm2839589483 (57)_ZNK32QAccessibleTableModelChangeEvent15modelChangeTypeEv
+//static
+/*void qm2839589483()*/ {
+  ;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->modelChangeType();
+   auto xptr = (QAccessibleTableModelChangeEvent::ModelChangeType (QAccessibleTableModelChangeEvent::*)() const ) &QAccessibleTableModelChangeEvent::modelChangeType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:953
+// [-2] void setFirstRow(int) 
+// (11)qm568047405 (52)_ZN32QAccessibleTableModelChangeEvent11setFirstRowEi
+//static
+/*void qm568047405(int row)*/ {
+  int row = *(int*)this_;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->setFirstRow(row);
+   auto xptr = (void (QAccessibleTableModelChangeEvent::*)(int) ) &QAccessibleTableModelChangeEvent::setFirstRow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:954
+// [-2] void setFirstColumn(int) 
+// (12)qm2375400325 (55)_ZN32QAccessibleTableModelChangeEvent14setFirstColumnEi
+//static
+/*void qm2375400325(int col)*/ {
+  int col = *(int*)this_;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->setFirstColumn(col);
+   auto xptr = (void (QAccessibleTableModelChangeEvent::*)(int) ) &QAccessibleTableModelChangeEvent::setFirstColumn;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:955
+// [-2] void setLastRow(int) 
+// (12)qm3244010331 (51)_ZN32QAccessibleTableModelChangeEvent10setLastRowEi
+//static
+/*void qm3244010331(int row)*/ {
+  int row = *(int*)this_;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->setLastRow(row);
+   auto xptr = (void (QAccessibleTableModelChangeEvent::*)(int) ) &QAccessibleTableModelChangeEvent::setLastRow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:956
+// [-2] void setLastColumn(int) 
+// (11)qm188754308 (54)_ZN32QAccessibleTableModelChangeEvent13setLastColumnEi
+//static
+/*void qm188754308(int col)*/ {
+  int col = *(int*)this_;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->setLastColumn(col);
+   auto xptr = (void (QAccessibleTableModelChangeEvent::*)(int) ) &QAccessibleTableModelChangeEvent::setLastColumn;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:957
+// [4] int firstRow() const
+// (11)qm973626577 (49)_ZNK32QAccessibleTableModelChangeEvent8firstRowEv
+//static
+/*void qm973626577()*/ {
+  ;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->firstRow();
+   auto xptr = (int (QAccessibleTableModelChangeEvent::*)() const ) &QAccessibleTableModelChangeEvent::firstRow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:958
+// [4] int firstColumn() const
+// (12)qm1252949448 (53)_ZNK32QAccessibleTableModelChangeEvent11firstColumnEv
+//static
+/*void qm1252949448()*/ {
+  ;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->firstColumn();
+   auto xptr = (int (QAccessibleTableModelChangeEvent::*)() const ) &QAccessibleTableModelChangeEvent::firstColumn;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:959
+// [4] int lastRow() const
+// (12)qm2994775020 (48)_ZNK32QAccessibleTableModelChangeEvent7lastRowEv
+//static
+/*void qm2994775020()*/ {
+  ;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->lastRow();
+   auto xptr = (int (QAccessibleTableModelChangeEvent::*)() const ) &QAccessibleTableModelChangeEvent::lastRow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qaccessible.h:960
+// [4] int lastColumn() const
+// (12)qm1246362853 (52)_ZNK32QAccessibleTableModelChangeEvent10lastColumnEv
+//static
+/*void qm1246362853()*/ {
+  ;
+  (void) ((QAccessibleTableModelChangeEvent*)this_)->lastColumn();
+   auto xptr = (int (QAccessibleTableModelChangeEvent::*)() const ) &QAccessibleTableModelChangeEvent::lastColumn;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN32QAccessibleTableModelChangeEventD2Ev(void *this_)*/ {
   delete (QAccessibleTableModelChangeEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:949
-// [-2] void setModelChangeType(QAccessibleTableModelChangeEvent::ModelChangeType)
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleTableModelChangeEvent18setModelChangeTypeENS_15ModelChangeTypeE(void *this_, QAccessibleTableModelChangeEvent::ModelChangeType changeType) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setModelChangeType(changeType);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:950
-// [4] QAccessibleTableModelChangeEvent::ModelChangeType modelChangeType()
-extern "C" Q_DECL_EXPORT
-QAccessibleTableModelChangeEvent::ModelChangeType C_ZNK32QAccessibleTableModelChangeEvent15modelChangeTypeEv(void *this_) {
-  return (QAccessibleTableModelChangeEvent::ModelChangeType)((QAccessibleTableModelChangeEvent*)this_)->modelChangeType();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:952
-// [-2] void setFirstRow(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleTableModelChangeEvent11setFirstRowEi(void *this_, int row) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setFirstRow(row);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:953
-// [-2] void setFirstColumn(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleTableModelChangeEvent14setFirstColumnEi(void *this_, int col) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setFirstColumn(col);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:954
-// [-2] void setLastRow(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleTableModelChangeEvent10setLastRowEi(void *this_, int row) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setLastRow(row);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:955
-// [-2] void setLastColumn(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN32QAccessibleTableModelChangeEvent13setLastColumnEi(void *this_, int col) {
-  ((QAccessibleTableModelChangeEvent*)this_)->setLastColumn(col);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:956
-// [4] int firstRow()
-extern "C" Q_DECL_EXPORT
-int C_ZNK32QAccessibleTableModelChangeEvent8firstRowEv(void *this_) {
-  return (int)((QAccessibleTableModelChangeEvent*)this_)->firstRow();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:957
-// [4] int firstColumn()
-extern "C" Q_DECL_EXPORT
-int C_ZNK32QAccessibleTableModelChangeEvent11firstColumnEv(void *this_) {
-  return (int)((QAccessibleTableModelChangeEvent*)this_)->firstColumn();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:958
-// [4] int lastRow()
-extern "C" Q_DECL_EXPORT
-int C_ZNK32QAccessibleTableModelChangeEvent7lastRowEv(void *this_) {
-  return (int)((QAccessibleTableModelChangeEvent*)this_)->lastRow();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:959
-// [4] int lastColumn()
-extern "C" Q_DECL_EXPORT
-int C_ZNK32QAccessibleTableModelChangeEvent10lastColumnEv(void *this_) {
-  return (int)((QAccessibleTableModelChangeEvent*)this_)->lastColumn();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaccessibletablemodelchangeevent
 //  main block end
 
 //  use block begin

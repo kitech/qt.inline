@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QInputMethodEvent is pure virtual: false
+// QInputMethodEvent is pure virtual: false false
 // QInputMethodEvent has virtual projected: false
 //  header block end
 
@@ -56,88 +56,76 @@ MyQInputMethodEvent(const QString & preeditText, const QList<QInputMethodEvent::
 MyQInputMethodEvent(const QInputMethodEvent & other) : QInputMethodEvent(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:560
-// [-2] void QInputMethodEvent()
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QInputMethodEventC2Ev() {
-  return  new QInputMethodEvent();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qinputmethodevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:602
+// [8] const QList<QInputMethodEvent::Attribute> & attributes() const
+// (11)qm334143686 (37)_ZNK17QInputMethodEvent10attributesEv
+//static
+/*void qm334143686()*/ {
+  ;
+  (void) ((QInputMethodEvent*)this_)->attributes();
+   auto xptr = (const QList<QInputMethodEvent::Attribute> & (QInputMethodEvent::*)() const ) &QInputMethodEvent::attributes;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:561
-// [-2] void QInputMethodEvent(const QString &, const QList<QInputMethodEvent::Attribute> &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QInputMethodEventC2ERK7QStringRK5QListINS_9AttributeEE(QString* preeditText, QList<QInputMethodEvent::Attribute>* attributes) {
-  return  new QInputMethodEvent(*preeditText, *attributes);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:603
+// [8] const QString & preeditString() const
+// (12)qm2350695945 (40)_ZNK17QInputMethodEvent13preeditStringEv
+//static
+/*void qm2350695945()*/ {
+  ;
+  (void) ((QInputMethodEvent*)this_)->preeditString();
+   auto xptr = (const QString & (QInputMethodEvent::*)() const ) &QInputMethodEvent::preeditString;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:562
-// [-2] void ~QInputMethodEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QInputMethodEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:605
+// [8] const QString & commitString() const
+// (11)qm919157259 (39)_ZNK17QInputMethodEvent12commitStringEv
+//static
+/*void qm919157259()*/ {
+  ;
+  (void) ((QInputMethodEvent*)this_)->commitString();
+   auto xptr = (const QString & (QInputMethodEvent::*)() const ) &QInputMethodEvent::commitString;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:606
+// [4] int replacementStart() const
+// (11)qm966691332 (43)_ZNK17QInputMethodEvent16replacementStartEv
+//static
+/*void qm966691332()*/ {
+  ;
+  (void) ((QInputMethodEvent*)this_)->replacementStart();
+   auto xptr = (int (QInputMethodEvent::*)() const ) &QInputMethodEvent::replacementStart;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:607
+// [4] int replacementLength() const
+// (12)qm4040029192 (44)_ZNK17QInputMethodEvent17replacementLengthEv
+//static
+/*void qm4040029192()*/ {
+  ;
+  (void) ((QInputMethodEvent*)this_)->replacementLength();
+   auto xptr = (int (QInputMethodEvent::*)() const ) &QInputMethodEvent::replacementLength;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN17QInputMethodEventD2Ev(void *this_)*/ {
   delete (QInputMethodEvent*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:564
-// [-2] void setCommitString(const QString &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QInputMethodEvent15setCommitStringERK7QStringii(void *this_, QString* commitString, int replaceFrom, int replaceLength) {
-  ((QInputMethodEvent*)this_)->setCommitString(*commitString, replaceFrom, replaceLength);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:565
-// [8] const QList<QInputMethodEvent::Attribute> & attributes()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QInputMethodEvent10attributesEv(void *this_) {
-  auto& rv = ((QInputMethodEvent*)this_)->attributes();
-return new QList<QInputMethodEvent::Attribute>(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:566
-// [8] const QString & preeditString()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QInputMethodEvent13preeditStringEv(void *this_) {
-  auto& rv = ((QInputMethodEvent*)this_)->preeditString();
-return new QString(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:568
-// [8] const QString & commitString()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QInputMethodEvent12commitStringEv(void *this_) {
-  auto& rv = ((QInputMethodEvent*)this_)->commitString();
-return new QString(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:569
-// [4] int replacementStart()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QInputMethodEvent16replacementStartEv(void *this_) {
-  return (int)((QInputMethodEvent*)this_)->replacementStart();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:570
-// [4] int replacementLength()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QInputMethodEvent17replacementLengthEv(void *this_) {
-  return (int)((QInputMethodEvent*)this_)->replacementLength();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:572
-// [-2] void QInputMethodEvent(const QInputMethodEvent &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QInputMethodEventC2ERKS_(QInputMethodEvent* other) {
-  return  new QInputMethodEvent(*other);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qinputmethodevent
 //  main block end
 
 //  use block begin

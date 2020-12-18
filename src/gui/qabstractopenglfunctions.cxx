@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050100
 // /usr/include/qt/QtGui/qopenglversionfunctions.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAbstractOpenGLFunctions is pure virtual: true
+// QAbstractOpenGLFunctions is pure virtual: true false
 // QAbstractOpenGLFunctions has virtual projected: false
 //  header block end
 
@@ -51,37 +50,40 @@ public:
   virtual ~MyQAbstractOpenGLFunctions() {}
 };
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:213
-// [-2] void ~QAbstractOpenGLFunctions()
-extern "C" Q_DECL_EXPORT
-void C_ZN24QAbstractOpenGLFunctionsD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qabstractopenglfunctions(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglversionfunctions.h:224
+// [8] QAbstractOpenGLFunctionsPrivate * d_func() 
+// (11)qm399404310 (38)_ZN24QAbstractOpenGLFunctions6d_funcEv
+//static
+/*void qm399404310()*/ {
+  ;
+  (void) ((QAbstractOpenGLFunctions*)this_)->d_func();
+   auto xptr = (QAbstractOpenGLFunctionsPrivate * (QAbstractOpenGLFunctions::*)() ) &QAbstractOpenGLFunctions::d_func;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglversionfunctions.h:224
+// [8] const QAbstractOpenGLFunctionsPrivate * d_func() const
+// (12)qm2932602103 (39)_ZNK24QAbstractOpenGLFunctions6d_funcEv
+//static
+/*void qm2932602103()*/ {
+  ;
+  (void) ((QAbstractOpenGLFunctions*)this_)->d_func();
+   auto xptr = (const QAbstractOpenGLFunctionsPrivate * (QAbstractOpenGLFunctions::*)() const ) &QAbstractOpenGLFunctions::d_func;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN24QAbstractOpenGLFunctionsD2Ev(void *this_)*/ {
   delete (QAbstractOpenGLFunctions*)(this_);
 }
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:215
-// [1] bool initializeOpenGLFunctions()
-extern "C" Q_DECL_EXPORT
-bool C_ZN24QAbstractOpenGLFunctions25initializeOpenGLFunctionsEv(void *this_) {
-  return (bool)((QAbstractOpenGLFunctions*)this_)->initializeOpenGLFunctions();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:217
-// [8] QAbstractOpenGLFunctionsPrivate * d_func()
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QAbstractOpenGLFunctions6d_funcEv(void *this_) {
-  return (void*)((QAbstractOpenGLFunctions*)this_)->d_func();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglversionfunctions.h:217
-// [8] const QAbstractOpenGLFunctionsPrivate * d_func()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK24QAbstractOpenGLFunctions6d_funcEv(void *this_) {
-  return (void*)((QAbstractOpenGLFunctions*)this_)->d_func();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qabstractopenglfunctions
 //  main block end
 
 //  use block begin

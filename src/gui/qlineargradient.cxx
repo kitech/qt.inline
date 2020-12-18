@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QLinearGradient is pure virtual: false
+// QLinearGradient is pure virtual: false false
 // QLinearGradient has virtual projected: false
 //  header block end
 
@@ -56,97 +56,40 @@ MyQLinearGradient(const QPointF & start, const QPointF & finalStop) : QLinearGra
 MyQLinearGradient(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop) : QLinearGradient(xStart, yStart, xFinalStop, yFinalStop) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:431
-// [-2] void QLinearGradient()
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QLinearGradientC2Ev() {
-  return  new QLinearGradient();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qlineargradient(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:446
+// [-2] void setStart(qreal, qreal) 
+// (12)qm3357847726 (32)_ZN15QLinearGradient8setStartEdd
+//static
+/*void qm3357847726(double x, double y)*/ {
+  double x = *(double*)this_; double y = *(double*)this_;
+  (void) ((QLinearGradient*)this_)->setStart(x, y);
+   auto xptr = (void (QLinearGradient::*)(double, double) ) &QLinearGradient::setStart;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:432
-// [-2] void QLinearGradient(const QPointF &, const QPointF &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QLinearGradientC2ERK7QPointFS2_(QPointF* start, QPointF* finalStop) {
-  return  new QLinearGradient(*start, *finalStop);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:450
+// [-2] void setFinalStop(qreal, qreal) 
+// (12)qm3335903427 (37)_ZN15QLinearGradient12setFinalStopEdd
+//static
+/*void qm3335903427(double x, double y)*/ {
+  double x = *(double*)this_; double y = *(double*)this_;
+  (void) ((QLinearGradient*)this_)->setFinalStop(x, y);
+   auto xptr = (void (QLinearGradient::*)(double, double) ) &QLinearGradient::setFinalStop;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:433
-// [-2] void QLinearGradient(qreal, qreal, qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QLinearGradientC2Edddd(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop) {
-  return  new QLinearGradient(xStart, yStart, xFinalStop, yFinalStop);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:435
-// [16] QPointF start()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QLinearGradient5startEv(void *this_) {
-  auto rv = ((QLinearGradient*)this_)->start();
-return new QPointF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qbrush.h:436
-// [-2] void setStart(const QPointF &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN15QLinearGradient8setStartERK7QPointF(void *this_, QPointF* start) {
-  ((QLinearGradient*)this_)->setStart(*start);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public inline Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qbrush.h:437
-// [-2] void setStart(qreal, qreal)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN15QLinearGradient8setStartEdd(void *this_, qreal x, qreal y) {
-  ((QLinearGradient*)this_)->setStart(x, y);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qbrush.h:439
-// [16] QPointF finalStop()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QLinearGradient9finalStopEv(void *this_) {
-  auto rv = ((QLinearGradient*)this_)->finalStop();
-return new QPointF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qbrush.h:440
-// [-2] void setFinalStop(const QPointF &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN15QLinearGradient12setFinalStopERK7QPointF(void *this_, QPointF* stop) {
-  ((QLinearGradient*)this_)->setFinalStop(*stop);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public inline Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qbrush.h:441
-// [-2] void setFinalStop(qreal, qreal)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN15QLinearGradient12setFinalStopEdd(void *this_, qreal x, qreal y) {
-  ((QLinearGradient*)this_)->setFinalStop(x, y);
-}
-#endif // QT_VERSION >= 0x040200
-
-
-extern "C" Q_DECL_EXPORT
-void C_ZN15QLinearGradientD2Ev(void *this_) {
+/*void C_ZN15QLinearGradientD2Ev(void *this_)*/ {
   delete (QLinearGradient*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qlineargradient
 //  main block end
 
 //  use block begin

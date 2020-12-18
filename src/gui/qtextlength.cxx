@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QTextLength is pure virtual: false
+// QTextLength is pure virtual: false false
 // QTextLength has virtual projected: false
 //  header block end
 
@@ -54,67 +54,94 @@ MyQTextLength() : QTextLength() {}
 MyQTextLength(QTextLength::Type type_, qreal value) : QTextLength(type_, value) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtextlength(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:89
-// [-2] void QTextLength()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QTextLengthC2Ev() {
-  return  new QTextLength();
+// [-2] void QTextLength() 
+// (11)qm199100388 (20)_ZN11QTextLengthC2Ev
+/*void* qm199100388()*/{
+  ;
+  this_ =  new QTextLength();
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:91
-// [-2] void QTextLength(QTextLength::Type, qreal)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QTextLengthC2ENS_4TypeEd(QTextLength::Type type_, qreal value) {
-  return  new QTextLength(type_, value);
+// [-2] void QTextLength(QTextLength::Type, qreal) 
+// (12)qm2077484502 (29)_ZN11QTextLengthC2ENS_4TypeEd
+/*void* qm2077484502(QTextLength::Type type_, double value)*/{
+  QTextLength::Type type_ = *(QTextLength::Type*)this_; double value = *(double*)this_;
+  this_ =  new QTextLength(type_, value);
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:93
-// [4] QTextLength::Type type()
-extern "C" Q_DECL_EXPORT
-QTextLength::Type C_ZNK11QTextLength4typeEv(void *this_) {
-  return (QTextLength::Type)((QTextLength*)this_)->type();
+// [4] QTextLength::Type type() const
+// (12)qm1008326266 (24)_ZNK11QTextLength4typeEv
+//static
+/*void qm1008326266()*/ {
+  ;
+  (void) ((QTextLength*)this_)->type();
+   auto xptr = (QTextLength::Type (QTextLength::*)() const ) &QTextLength::type;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:94
-// [8] qreal value(qreal)
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK11QTextLength5valueEd(void *this_, qreal maximumLength) {
-  return (qreal)((QTextLength*)this_)->value(maximumLength);
+// [8] qreal value(qreal) const
+// (12)qm2779665589 (25)_ZNK11QTextLength5valueEd
+//static
+/*void qm2779665589(double maximumLength)*/ {
+  double maximumLength = *(double*)this_;
+  (void) ((QTextLength*)this_)->value(maximumLength);
+   auto xptr = (double (QTextLength::*)(double) const ) &QTextLength::value;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:104
-// [8] qreal rawValue()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK11QTextLength8rawValueEv(void *this_) {
-  return (qreal)((QTextLength*)this_)->rawValue();
+// [8] qreal rawValue() const
+// (11)qm185027049 (28)_ZNK11QTextLength8rawValueEv
+//static
+/*void qm185027049()*/ {
+  ;
+  (void) ((QTextLength*)this_)->rawValue();
+   auto xptr = (double (QTextLength::*)() const ) &QTextLength::rawValue;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:106
-// [1] bool operator==(const QTextLength &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QTextLengtheqERKS_(void *this_, QTextLength* other) {
-  return (bool)((QTextLength*)this_)->operator==(*other);
+// [1] bool operator==(const QTextLength &) const
+// (12)qm3949318569 (24)_ZNK11QTextLengtheqERKS_
+//static
+/*void qm3949318569(const QTextLength & other)*/ {
+  const QTextLength & other = *(const QTextLength *)this_;
+  (void) ((QTextLength*)this_)->operator==(other);
+  // auto xptr = (bool (QTextLength::*)(QTextLength const&) const ) &QTextLength::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:109
-// [1] bool operator!=(const QTextLength &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QTextLengthneERKS_(void *this_, QTextLength* other) {
-  return (bool)((QTextLength*)this_)->operator!=(*other);
+// [1] bool operator!=(const QTextLength &) const
+// (12)qm1898300894 (24)_ZNK11QTextLengthneERKS_
+//static
+/*void qm1898300894(const QTextLength & other)*/ {
+  const QTextLength & other = *(const QTextLength *)this_;
+  (void) ((QTextLength*)this_)->operator!=(other);
+  // auto xptr = (bool (QTextLength::*)(QTextLength const&) const ) &QTextLength::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN11QTextLengthD2Ev(void *this_) {
+/*void C_ZN11QTextLengthD2Ev(void *this_)*/ {
   delete (QTextLength*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtextlength
 //  main block end
 
 //  use block begin

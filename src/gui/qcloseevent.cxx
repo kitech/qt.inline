@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QCloseEvent is pure virtual: false
+// QCloseEvent is pure virtual: false false
 // QCloseEvent has virtual projected: false
 //  header block end
 
@@ -52,21 +52,16 @@ public:
 MyQCloseEvent() : QCloseEvent() {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:482
-// [-2] void QCloseEvent()
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QCloseEventC2Ev() {
-  return  new QCloseEvent();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcloseevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:483
-// [-2] void ~QCloseEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QCloseEventD2Ev(void *this_) {
+
+/*void C_ZN11QCloseEventD2Ev(void *this_)*/ {
   delete (QCloseEvent*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcloseevent
 //  main block end
 
 //  use block begin

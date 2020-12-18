@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QOpenGLPixelTransferOptions is pure virtual: false
+// QOpenGLPixelTransferOptions is pure virtual: false false
 // QOpenGLPixelTransferOptions has virtual projected: false
 //  header block end
 
@@ -54,183 +54,40 @@ MyQOpenGLPixelTransferOptions() : QOpenGLPixelTransferOptions() {}
 MyQOpenGLPixelTransferOptions(const QOpenGLPixelTransferOptions & arg0) : QOpenGLPixelTransferOptions(arg0) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:56
-// [-2] void QOpenGLPixelTransferOptions()
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QOpenGLPixelTransferOptionsC2Ev() {
-  return  new QOpenGLPixelTransferOptions();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qopenglpixeltransferoptions(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:58
+// [8] QOpenGLPixelTransferOptions & operator=(QOpenGLPixelTransferOptions &&) 
+// (12)qm2457036627 (38)_ZN27QOpenGLPixelTransferOptionsaSEOS_
+//static
+/*void qm2457036627(QOpenGLPixelTransferOptions && other)*/ {
+  QOpenGLPixelTransferOptions && other =  static_cast<QOpenGLPixelTransferOptions &&>(*(QOpenGLPixelTransferOptions *)this_);
+  (void) ((QOpenGLPixelTransferOptions*)this_)->operator=(other);
+  // auto xptr = (QOpenGLPixelTransferOptions & (QOpenGLPixelTransferOptions::*)(QOpenGLPixelTransferOptions&&) ) &QOpenGLPixelTransferOptions::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:57
-// [-2] void QOpenGLPixelTransferOptions(const QOpenGLPixelTransferOptions &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QOpenGLPixelTransferOptionsC2ERKS_(QOpenGLPixelTransferOptions* arg0) {
-  return  new QOpenGLPixelTransferOptions(*arg0);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:59
-// [8] QOpenGLPixelTransferOptions & operator=(QOpenGLPixelTransferOptions &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QOpenGLPixelTransferOptionsaSEOS_(void *this_, QOpenGLPixelTransferOptions && other) {
-  auto& rv = ((QOpenGLPixelTransferOptions*)this_)->operator=(other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:62
-// [8] QOpenGLPixelTransferOptions & operator=(const QOpenGLPixelTransferOptions &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QOpenGLPixelTransferOptionsaSERKS_(void *this_, QOpenGLPixelTransferOptions* arg0) {
-  auto& rv = ((QOpenGLPixelTransferOptions*)this_)->operator=(*arg0);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:63
-// [-2] void ~QOpenGLPixelTransferOptions()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptionsD2Ev(void *this_) {
+// [-2] void swap(QOpenGLPixelTransferOptions &) 
+// (11)qm224229598 (41)_ZN27QOpenGLPixelTransferOptions4swapERS_
+//static
+/*void qm224229598(QOpenGLPixelTransferOptions & other)*/ {
+  QOpenGLPixelTransferOptions & other = *(QOpenGLPixelTransferOptions *)this_;
+  (void) ((QOpenGLPixelTransferOptions*)this_)->swap(other);
+   auto xptr = (void (QOpenGLPixelTransferOptions::*)(QOpenGLPixelTransferOptions&) ) &QOpenGLPixelTransferOptions::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN27QOpenGLPixelTransferOptionsD2Ev(void *this_)*/ {
   delete (QOpenGLPixelTransferOptions*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:65
-// [-2] void swap(QOpenGLPixelTransferOptions &)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptions4swapERS_(void *this_, QOpenGLPixelTransferOptions* other) {
-  ((QOpenGLPixelTransferOptions*)this_)->swap(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:68
-// [-2] void setAlignment(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptions12setAlignmentEi(void *this_, int alignment) {
-  ((QOpenGLPixelTransferOptions*)this_)->setAlignment(alignment);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:69
-// [4] int alignment()
-extern "C" Q_DECL_EXPORT
-int C_ZNK27QOpenGLPixelTransferOptions9alignmentEv(void *this_) {
-  return (int)((QOpenGLPixelTransferOptions*)this_)->alignment();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:71
-// [-2] void setSkipImages(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptions13setSkipImagesEi(void *this_, int skipImages) {
-  ((QOpenGLPixelTransferOptions*)this_)->setSkipImages(skipImages);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:72
-// [4] int skipImages()
-extern "C" Q_DECL_EXPORT
-int C_ZNK27QOpenGLPixelTransferOptions10skipImagesEv(void *this_) {
-  return (int)((QOpenGLPixelTransferOptions*)this_)->skipImages();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:74
-// [-2] void setSkipRows(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptions11setSkipRowsEi(void *this_, int skipRows) {
-  ((QOpenGLPixelTransferOptions*)this_)->setSkipRows(skipRows);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:75
-// [4] int skipRows()
-extern "C" Q_DECL_EXPORT
-int C_ZNK27QOpenGLPixelTransferOptions8skipRowsEv(void *this_) {
-  return (int)((QOpenGLPixelTransferOptions*)this_)->skipRows();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:77
-// [-2] void setSkipPixels(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptions13setSkipPixelsEi(void *this_, int skipPixels) {
-  ((QOpenGLPixelTransferOptions*)this_)->setSkipPixels(skipPixels);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:78
-// [4] int skipPixels()
-extern "C" Q_DECL_EXPORT
-int C_ZNK27QOpenGLPixelTransferOptions10skipPixelsEv(void *this_) {
-  return (int)((QOpenGLPixelTransferOptions*)this_)->skipPixels();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:80
-// [-2] void setImageHeight(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptions14setImageHeightEi(void *this_, int imageHeight) {
-  ((QOpenGLPixelTransferOptions*)this_)->setImageHeight(imageHeight);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:81
-// [4] int imageHeight()
-extern "C" Q_DECL_EXPORT
-int C_ZNK27QOpenGLPixelTransferOptions11imageHeightEv(void *this_) {
-  return (int)((QOpenGLPixelTransferOptions*)this_)->imageHeight();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:83
-// [-2] void setRowLength(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptions12setRowLengthEi(void *this_, int rowLength) {
-  ((QOpenGLPixelTransferOptions*)this_)->setRowLength(rowLength);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:84
-// [4] int rowLength()
-extern "C" Q_DECL_EXPORT
-int C_ZNK27QOpenGLPixelTransferOptions9rowLengthEv(void *this_) {
-  return (int)((QOpenGLPixelTransferOptions*)this_)->rowLength();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:86
-// [-2] void setLeastSignificantByteFirst(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptions28setLeastSignificantByteFirstEb(void *this_, bool lsbFirst) {
-  ((QOpenGLPixelTransferOptions*)this_)->setLeastSignificantByteFirst(lsbFirst);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:87
-// [1] bool isLeastSignificantBitFirst()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK27QOpenGLPixelTransferOptions26isLeastSignificantBitFirstEv(void *this_) {
-  return (bool)((QOpenGLPixelTransferOptions*)this_)->isLeastSignificantBitFirst();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:89
-// [-2] void setSwapBytesEnabled(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QOpenGLPixelTransferOptions19setSwapBytesEnabledEb(void *this_, bool swapBytes) {
-  ((QOpenGLPixelTransferOptions*)this_)->setSwapBytesEnabled(swapBytes);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:90
-// [1] bool isSwapBytesEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK27QOpenGLPixelTransferOptions18isSwapBytesEnabledEv(void *this_) {
-  return (bool)((QOpenGLPixelTransferOptions*)this_)->isSwapBytesEnabled();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qopenglpixeltransferoptions
 //  main block end
 
 //  use block begin

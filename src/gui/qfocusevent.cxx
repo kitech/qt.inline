@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QFocusEvent is pure virtual: false
+// QFocusEvent is pure virtual: false false
 // QFocusEvent has virtual projected: false
 //  header block end
 
@@ -52,45 +52,40 @@ public:
 MyQFocusEvent(QEvent::Type type_, Qt::FocusReason reason) : QFocusEvent(type_, reason) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:394
-// [-2] void QFocusEvent(QEvent::Type, Qt::FocusReason)
-extern "C" Q_DECL_EXPORT
-void* C_ZN11QFocusEventC2EN6QEvent4TypeEN2Qt11FocusReasonE(QEvent::Type type_, Qt::FocusReason reason) {
-  return  new QFocusEvent(type_, reason);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qfocusevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:434
+// [1] bool gotFocus() const
+// (12)qm3769686842 (28)_ZNK11QFocusEvent8gotFocusEv
+//static
+/*void qm3769686842()*/ {
+  ;
+  (void) ((QFocusEvent*)this_)->gotFocus();
+   auto xptr = (bool (QFocusEvent::*)() const ) &QFocusEvent::gotFocus;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:395
-// [-2] void ~QFocusEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN11QFocusEventD2Ev(void *this_) {
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:435
+// [1] bool lostFocus() const
+// (12)qm2233785815 (29)_ZNK11QFocusEvent9lostFocusEv
+//static
+/*void qm2233785815()*/ {
+  ;
+  (void) ((QFocusEvent*)this_)->lostFocus();
+   auto xptr = (bool (QFocusEvent::*)() const ) &QFocusEvent::lostFocus;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN11QFocusEventD2Ev(void *this_)*/ {
   delete (QFocusEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:397
-// [1] bool gotFocus()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QFocusEvent8gotFocusEv(void *this_) {
-  return (bool)((QFocusEvent*)this_)->gotFocus();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:398
-// [1] bool lostFocus()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK11QFocusEvent9lostFocusEv(void *this_) {
-  return (bool)((QFocusEvent*)this_)->lostFocus();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:400
-// [4] Qt::FocusReason reason()
-extern "C" Q_DECL_EXPORT
-Qt::FocusReason C_ZNK11QFocusEvent6reasonEv(void *this_) {
-  return (Qt::FocusReason)((QFocusEvent*)this_)->reason();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qfocusevent
 //  main block end
 
 //  use block begin

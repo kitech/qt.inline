@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QFileOpenEvent is pure virtual: false
+// QFileOpenEvent is pure virtual: false false
 // QFileOpenEvent has virtual projected: false
 //  header block end
 
@@ -54,61 +54,40 @@ MyQFileOpenEvent(const QString & file) : QFileOpenEvent(file) {}
 MyQFileOpenEvent(const QUrl & url) : QFileOpenEvent(url) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:743
-// [-2] void QFileOpenEvent(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QFileOpenEventC2ERK7QString(QString* file) {
-  return  new QFileOpenEvent(*file);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qfileopenevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:784
+// [8] QString file() const
+// (12)qm1192897722 (27)_ZNK14QFileOpenEvent4fileEv
+//static
+/*void qm1192897722()*/ {
+  ;
+  (void) ((QFileOpenEvent*)this_)->file();
+   auto xptr = (QString (QFileOpenEvent::*)() const ) &QFileOpenEvent::file;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:744
-// [-2] void QFileOpenEvent(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QFileOpenEventC2ERK4QUrl(QUrl* url) {
-  return  new QFileOpenEvent(*url);
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:785
+// [8] QUrl url() const
+// (11)qm813759870 (26)_ZNK14QFileOpenEvent3urlEv
+//static
+/*void qm813759870()*/ {
+  ;
+  (void) ((QFileOpenEvent*)this_)->url();
+   auto xptr = (QUrl (QFileOpenEvent::*)() const ) &QFileOpenEvent::url;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:745
-// [-2] void ~QFileOpenEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QFileOpenEventD2Ev(void *this_) {
+
+/*void C_ZN14QFileOpenEventD2Ev(void *this_)*/ {
   delete (QFileOpenEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:747
-// [8] QString file()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QFileOpenEvent4fileEv(void *this_) {
-  auto rv = ((QFileOpenEvent*)this_)->file();
-return new QString(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtGui/qevent.h:748
-// [8] QUrl url()
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QFileOpenEvent3urlEv(void *this_) {
-  auto rv = ((QFileOpenEvent*)this_)->url();
-return new QUrl(rv);
-}
-#endif // QT_VERSION >= 0x040600
-
-// Public Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtGui/qevent.h:749
-// [1] bool openFile(QFile &, QIODevice::OpenMode)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QFileOpenEvent8openFileER5QFile6QFlagsIN9QIODevice12OpenModeFlagEE(void *this_, QFile* file, QFlags<QIODevice::OpenModeFlag> flags) {
-  return (bool)((QFileOpenEvent*)this_)->openFile(*file, flags);
-}
-#endif // QT_VERSION >= 0x040800
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qfileopenevent
 //  main block end
 
 //  use block begin

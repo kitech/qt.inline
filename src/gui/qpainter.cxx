@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QPainter is pure virtual: false
+// QPainter is pure virtual: false false
 // QPainter has virtual projected: false
 //  header block end
 
@@ -54,1830 +54,1036 @@ MyQPainter() : QPainter() {}
 MyQPainter(QPaintDevice * arg0) : QPainter(arg0) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:124
-// [-2] void QPainter()
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPainterC2Ev() {
-  return  new QPainter();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qpainter(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:125
-// [-2] void QPainter(QPaintDevice *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPainterC2EP12QPaintDevice(QPaintDevice * arg0) {
-  return  new QPainter(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:126
-// [-2] void ~QPainter()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainterD2Ev(void *this_) {
-  delete (QPainter*)(this_);
-}
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:128
-// [8] QPaintDevice * device()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter6deviceEv(void *this_) {
-  return (void*)((QPainter*)this_)->device();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:130
-// [1] bool begin(QPaintDevice *)
-extern "C" Q_DECL_EXPORT
-bool C_ZN8QPainter5beginEP12QPaintDevice(void *this_, QPaintDevice * arg0) {
-  return (bool)((QPainter*)this_)->begin(arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:131
-// [1] bool end()
-extern "C" Q_DECL_EXPORT
-bool C_ZN8QPainter3endEv(void *this_) {
-  return (bool)((QPainter*)this_)->end();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:132
-// [1] bool isActive()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPainter8isActiveEv(void *this_) {
-  return (bool)((QPainter*)this_)->isActive();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:134
-// [-2] void initFrom(const QPaintDevice *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8initFromEPK12QPaintDevice(void *this_, const QPaintDevice * device) {
-  ((QPainter*)this_)->initFrom(device);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:180
-// [-2] void setCompositionMode(QPainter::CompositionMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter18setCompositionModeENS_15CompositionModeE(void *this_, QPainter::CompositionMode mode) {
-  ((QPainter*)this_)->setCompositionMode(mode);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:181
-// [4] QPainter::CompositionMode compositionMode()
-extern "C" Q_DECL_EXPORT
-QPainter::CompositionMode C_ZNK8QPainter15compositionModeEv(void *this_) {
-  return (QPainter::CompositionMode)((QPainter*)this_)->compositionMode();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:183
-// [16] const QFont & font()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter4fontEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->font();
-return new QFont(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:184
-// [-2] void setFont(const QFont &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter7setFontERK5QFont(void *this_, QFont* f) {
-  ((QPainter*)this_)->setFont(*f);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:186
-// [8] QFontMetrics fontMetrics()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter11fontMetricsEv(void *this_) {
-  auto rv = ((QPainter*)this_)->fontMetrics();
-return new QFontMetrics(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:187
-// [8] QFontInfo fontInfo()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter8fontInfoEv(void *this_) {
-  auto rv = ((QPainter*)this_)->fontInfo();
-return new QFontInfo(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:189
-// [-2] void setPen(const QColor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter6setPenERK6QColor(void *this_, QColor* color) {
-  ((QPainter*)this_)->setPen(*color);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:190
-// [-2] void setPen(const QPen &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter6setPenERK4QPen(void *this_, QPen* pen) {
-  ((QPainter*)this_)->setPen(*pen);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:191
-// [-2] void setPen(Qt::PenStyle)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter6setPenEN2Qt8PenStyleE(void *this_, Qt::PenStyle style) {
-  ((QPainter*)this_)->setPen(style);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:192
-// [8] const QPen & pen()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter3penEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->pen();
-return new QPen(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:194
-// [-2] void setBrush(const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8setBrushERK6QBrush(void *this_, QBrush* brush) {
-  ((QPainter*)this_)->setBrush(*brush);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:195
-// [-2] void setBrush(Qt::BrushStyle)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8setBrushEN2Qt10BrushStyleE(void *this_, Qt::BrushStyle style) {
-  ((QPainter*)this_)->setBrush(style);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:196
-// [8] const QBrush & brush()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter5brushEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->brush();
-return new QBrush(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:199
-// [-2] void setBackgroundMode(Qt::BGMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter17setBackgroundModeEN2Qt6BGModeE(void *this_, Qt::BGMode mode) {
-  ((QPainter*)this_)->setBackgroundMode(mode);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:200
-// [4] Qt::BGMode backgroundMode()
-extern "C" Q_DECL_EXPORT
-Qt::BGMode C_ZNK8QPainter14backgroundModeEv(void *this_) {
-  return (Qt::BGMode)((QPainter*)this_)->backgroundMode();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:202
-// [8] QPoint brushOrigin()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter11brushOriginEv(void *this_) {
-  auto rv = ((QPainter*)this_)->brushOrigin();
-return new QPoint(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:203
-// [-2] void setBrushOrigin(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter14setBrushOriginEii(void *this_, int x, int y) {
-  ((QPainter*)this_)->setBrushOrigin(x, y);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:204
-// [-2] void setBrushOrigin(const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter14setBrushOriginERK6QPoint(void *this_, QPoint* arg0) {
-  ((QPainter*)this_)->setBrushOrigin(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:205
-// [-2] void setBrushOrigin(const QPointF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter14setBrushOriginERK7QPointF(void *this_, QPointF* arg0) {
-  ((QPainter*)this_)->setBrushOrigin(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:207
-// [-2] void setBackground(const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter13setBackgroundERK6QBrush(void *this_, QBrush* bg) {
-  ((QPainter*)this_)->setBackground(*bg);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:208
-// [8] const QBrush & background()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter10backgroundEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->background();
-return new QBrush(rv);
+// [-2] void setBrushOrigin(int, int) 
+// (12)qm2782499015 (31)_ZN8QPainter14setBrushOriginEii
+//static
+/*void qm2782499015(int x, int y)*/ {
+  int x = *(int*)this_; int y = *(int*)this_;
+  (void) ((QPainter*)this_)->setBrushOrigin(x, y);
+   auto xptr = (void (QPainter::*)(int, int) ) &QPainter::setBrushOrigin;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qpainter.h:210
-// [8] qreal opacity()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK8QPainter7opacityEv(void *this_) {
-  return (qreal)((QPainter*)this_)->opacity();
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qpainter.h:211
-// [-2] void setOpacity(qreal)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10setOpacityEd(void *this_, qreal opacity) {
-  ((QPainter*)this_)->setOpacity(opacity);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:214
-// [8] QRegion clipRegion()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter10clipRegionEv(void *this_) {
-  auto rv = ((QPainter*)this_)->clipRegion();
-return new QRegion(rv);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:209
+// [-2] void setBrushOrigin(const QPoint &) 
+// (12)qm3706767108 (38)_ZN8QPainter14setBrushOriginERK6QPoint
+//static
+/*void qm3706767108(const QPoint & arg0)*/ {
+  const QPoint & arg0 = *(const QPoint *)this_;
+  (void) ((QPainter*)this_)->setBrushOrigin(arg0);
+   auto xptr = (void (QPainter::*)(QPoint const&) ) &QPainter::setBrushOrigin;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:215
-// [8] QPainterPath clipPath()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter8clipPathEv(void *this_) {
-  auto rv = ((QPainter*)this_)->clipPath();
-return new QPainterPath(rv);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:224
+// [-2] void setClipRect(int, int, int, int, Qt::ClipOperation) 
+// (11)qm720001610 (50)_ZN8QPainter11setClipRectEiiiiN2Qt13ClipOperationE
+//static
+/*void qm720001610(int x, int y, int w, int h, Qt::ClipOperation op)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; Qt::ClipOperation op = *(Qt::ClipOperation*)this_;
+  (void) ((QPainter*)this_)->setClipRect(x, y, w, h, op);
+   auto xptr = (void (QPainter::*)(int, int, int, int, Qt::ClipOperation) ) &QPainter::setClipRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:217
-// [-2] void setClipRect(const QRectF &, Qt::ClipOperation)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11setClipRectERK6QRectFN2Qt13ClipOperationE(void *this_, QRectF* arg0, Qt::ClipOperation op) {
-  ((QPainter*)this_)->setClipRect(*arg0, op);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:218
-// [-2] void setClipRect(const QRect &, Qt::ClipOperation)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11setClipRectERK5QRectN2Qt13ClipOperationE(void *this_, QRect* arg0, Qt::ClipOperation op) {
-  ((QPainter*)this_)->setClipRect(*arg0, op);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:219
-// [-2] void setClipRect(int, int, int, int, Qt::ClipOperation)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11setClipRectEiiiiN2Qt13ClipOperationE(void *this_, int x, int y, int w, int h, Qt::ClipOperation op) {
-  ((QPainter*)this_)->setClipRect(x, y, w, h, op);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:221
-// [-2] void setClipRegion(const QRegion &, Qt::ClipOperation)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter13setClipRegionERK7QRegionN2Qt13ClipOperationE(void *this_, QRegion* arg0, Qt::ClipOperation op) {
-  ((QPainter*)this_)->setClipRegion(*arg0, op);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:223
-// [-2] void setClipPath(const QPainterPath &, Qt::ClipOperation)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11setClipPathERK12QPainterPathN2Qt13ClipOperationE(void *this_, QPainterPath* path, Qt::ClipOperation op) {
-  ((QPainter*)this_)->setClipPath(*path, op);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:225
-// [-2] void setClipping(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11setClippingEb(void *this_, bool enable) {
-  ((QPainter*)this_)->setClipping(enable);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:226
-// [1] bool hasClipping()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPainter11hasClippingEv(void *this_) {
-  return (bool)((QPainter*)this_)->hasClipping();
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtGui/qpainter.h:228
-// [32] QRectF clipBoundingRect()
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter16clipBoundingRectEv(void *this_) {
-  auto rv = ((QPainter*)this_)->clipBoundingRect();
-return new QRectF(rv);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:230
-// [-2] void save()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter4saveEv(void *this_) {
-  ((QPainter*)this_)->save();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:231
-// [-2] void restore()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter7restoreEv(void *this_) {
-  ((QPainter*)this_)->restore();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:234
-// [-2] void setMatrix(const QMatrix &, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9setMatrixERK7QMatrixb(void *this_, QMatrix* matrix, bool combine) {
-  ((QPainter*)this_)->setMatrix(*matrix, combine);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:235
-// [48] const QMatrix & matrix()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter6matrixEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->matrix();
-return new QMatrix(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:236
-// [48] const QMatrix & deviceMatrix()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter12deviceMatrixEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->deviceMatrix();
-return new QMatrix(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:237
-// [-2] void resetMatrix()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11resetMatrixEv(void *this_) {
-  ((QPainter*)this_)->resetMatrix();
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtGui/qpainter.h:239
-// [-2] void setTransform(const QTransform &, bool)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter12setTransformERK10QTransformb(void *this_, QTransform* transform, bool combine) {
-  ((QPainter*)this_)->setTransform(*transform, combine);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:240
-// [88] const QTransform & transform()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter9transformEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->transform();
-return new QTransform(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:241
-// [88] const QTransform & deviceTransform()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter15deviceTransformEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->deviceTransform();
-return new QTransform(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:242
-// [-2] void resetTransform()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter14resetTransformEv(void *this_) {
-  ((QPainter*)this_)->resetTransform();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:244
-// [-2] void setWorldMatrix(const QMatrix &, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter14setWorldMatrixERK7QMatrixb(void *this_, QMatrix* matrix, bool combine) {
-  ((QPainter*)this_)->setWorldMatrix(*matrix, combine);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:245
-// [48] const QMatrix & worldMatrix()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter11worldMatrixEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->worldMatrix();
-return new QMatrix(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:247
-// [-2] void setWorldTransform(const QTransform &, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter17setWorldTransformERK10QTransformb(void *this_, QTransform* matrix, bool combine) {
-  ((QPainter*)this_)->setWorldTransform(*matrix, combine);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:248
-// [88] const QTransform & worldTransform()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter14worldTransformEv(void *this_) {
-  auto& rv = ((QPainter*)this_)->worldTransform();
-return new QTransform(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:250
-// [48] QMatrix combinedMatrix()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter14combinedMatrixEv(void *this_) {
-  auto rv = ((QPainter*)this_)->combinedMatrix();
-return new QMatrix(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:251
-// [88] QTransform combinedTransform()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter17combinedTransformEv(void *this_) {
-  auto rv = ((QPainter*)this_)->combinedTransform();
-return new QTransform(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:253
-// [-2] void setMatrixEnabled(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter16setMatrixEnabledEb(void *this_, bool enabled) {
-  ((QPainter*)this_)->setMatrixEnabled(enabled);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:254
-// [1] bool matrixEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPainter13matrixEnabledEv(void *this_) {
-  return (bool)((QPainter*)this_)->matrixEnabled();
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qpainter.h:256
-// [-2] void setWorldMatrixEnabled(bool)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter21setWorldMatrixEnabledEb(void *this_, bool enabled) {
-  ((QPainter*)this_)->setWorldMatrixEnabled(enabled);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qpainter.h:257
-// [1] bool worldMatrixEnabled()
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPainter18worldMatrixEnabledEv(void *this_) {
-  return (bool)((QPainter*)this_)->worldMatrixEnabled();
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:259
-// [-2] void scale(qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter5scaleEdd(void *this_, qreal sx, qreal sy) {
-  ((QPainter*)this_)->scale(sx, sy);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:260
-// [-2] void shear(qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter5shearEdd(void *this_, qreal sh, qreal sv) {
-  ((QPainter*)this_)->shear(sh, sv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:261
-// [-2] void rotate(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter6rotateEd(void *this_, qreal a) {
-  ((QPainter*)this_)->rotate(a);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:263
-// [-2] void translate(const QPointF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9translateERK7QPointF(void *this_, QPointF* offset) {
-  ((QPainter*)this_)->translate(*offset);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:264
-// [-2] void translate(const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9translateERK6QPoint(void *this_, QPoint* offset) {
-  ((QPainter*)this_)->translate(*offset);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:265
-// [-2] void translate(qreal, qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9translateEdd(void *this_, qreal dx, qreal dy) {
-  ((QPainter*)this_)->translate(dx, dy);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:267
-// [16] QRect window()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter6windowEv(void *this_) {
-  auto rv = ((QPainter*)this_)->window();
-return new QRect(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:268
-// [-2] void setWindow(const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9setWindowERK5QRect(void *this_, QRect* window) {
-  ((QPainter*)this_)->setWindow(*window);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:269
-// [-2] void setWindow(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9setWindowEiiii(void *this_, int x, int y, int w, int h) {
-  ((QPainter*)this_)->setWindow(x, y, w, h);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:271
-// [16] QRect viewport()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter8viewportEv(void *this_) {
-  auto rv = ((QPainter*)this_)->viewport();
-return new QRect(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:272
-// [-2] void setViewport(const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11setViewportERK5QRect(void *this_, QRect* viewport) {
-  ((QPainter*)this_)->setViewport(*viewport);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:273
-// [-2] void setViewport(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11setViewportEiiii(void *this_, int x, int y, int w, int h) {
-  ((QPainter*)this_)->setViewport(x, y, w, h);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:275
-// [-2] void setViewTransformEnabled(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter23setViewTransformEnabledEb(void *this_, bool enable) {
-  ((QPainter*)this_)->setViewTransformEnabled(enable);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:276
-// [1] bool viewTransformEnabled()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPainter20viewTransformEnabledEv(void *this_) {
-  return (bool)((QPainter*)this_)->viewTransformEnabled();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:279
-// [-2] void strokePath(const QPainterPath &, const QPen &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10strokePathERK12QPainterPathRK4QPen(void *this_, QPainterPath* path, QPen* pen) {
-  ((QPainter*)this_)->strokePath(*path, *pen);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:280
-// [-2] void fillPath(const QPainterPath &, const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillPathERK12QPainterPathRK6QBrush(void *this_, QPainterPath* path, QBrush* brush) {
-  ((QPainter*)this_)->fillPath(*path, *brush);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:281
-// [-2] void drawPath(const QPainterPath &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawPathERK12QPainterPath(void *this_, QPainterPath* path) {
-  ((QPainter*)this_)->drawPath(*path);
+// [-2] void translate(const QPoint &) 
+// (11)qm281104324 (32)_ZN8QPainter9translateERK6QPoint
+//static
+/*void qm281104324(const QPoint & offset)*/ {
+  const QPoint & offset = *(const QPoint *)this_;
+  (void) ((QPainter*)this_)->translate(offset);
+   auto xptr = (void (QPainter::*)(QPoint const&) ) &QPainter::translate;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:283
-// [-2] void drawPoint(const QPointF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawPointERK7QPointF(void *this_, QPointF* pt) {
-  ((QPainter*)this_)->drawPoint(*pt);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:282
+// [-2] void translate(qreal, qreal) 
+// (12)qm3832174035 (25)_ZN8QPainter9translateEdd
+//static
+/*void qm3832174035(double dx, double dy)*/ {
+  double dx = *(double*)this_; double dy = *(double*)this_;
+  (void) ((QPainter*)this_)->translate(dx, dy);
+   auto xptr = (void (QPainter::*)(double, double) ) &QPainter::translate;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:284
-// [-2] void drawPoint(const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawPointERK6QPoint(void *this_, QPoint* p) {
-  ((QPainter*)this_)->drawPoint(*p);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:286
+// [-2] void setWindow(int, int, int, int) 
+// (12)qm2622897918 (27)_ZN8QPainter9setWindowEiiii
+//static
+/*void qm2622897918(int x, int y, int w, int h)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_;
+  (void) ((QPainter*)this_)->setWindow(x, y, w, h);
+   auto xptr = (void (QPainter::*)(int, int, int, int) ) &QPainter::setWindow;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:285
-// [-2] void drawPoint(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawPointEii(void *this_, int x, int y) {
-  ((QPainter*)this_)->drawPoint(x, y);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:287
-// [-2] void drawPoints(const QPointF *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPointsEPK7QPointFi(void *this_, const QPointF * points, int pointCount) {
-  ((QPainter*)this_)->drawPoints(points, pointCount);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:288
-// [-2] void drawPoints(const QPolygonF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPointsERK9QPolygonF(void *this_, QPolygonF* points) {
-  ((QPainter*)this_)->drawPoints(*points);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:289
-// [-2] void drawPoints(const QPoint *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPointsEPK6QPointi(void *this_, const QPoint * points, int pointCount) {
-  ((QPainter*)this_)->drawPoints(points, pointCount);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:290
-// [-2] void drawPoints(const QPolygon &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPointsERK8QPolygon(void *this_, QPolygon* points) {
-  ((QPainter*)this_)->drawPoints(*points);
+// [-2] void setViewport(int, int, int, int) 
+// (12)qm1351697374 (30)_ZN8QPainter11setViewportEiiii
+//static
+/*void qm1351697374(int x, int y, int w, int h)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_;
+  (void) ((QPainter*)this_)->setViewport(x, y, w, h);
+   auto xptr = (void (QPainter::*)(int, int, int, int) ) &QPainter::setViewport;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:292
-// [-2] void drawLine(const QLineF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawLineERK6QLineF(void *this_, QLineF* line) {
-  ((QPainter*)this_)->drawLine(*line);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:293
-// [-2] void drawLine(const QLine &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawLineERK5QLine(void *this_, QLine* line) {
-  ((QPainter*)this_)->drawLine(*line);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:294
-// [-2] void drawLine(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawLineEiiii(void *this_, int x1, int y1, int x2, int y2) {
-  ((QPainter*)this_)->drawLine(x1, y1, x2, y2);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:295
-// [-2] void drawLine(const QPoint &, const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawLineERK6QPointS2_(void *this_, QPoint* p1, QPoint* p2) {
-  ((QPainter*)this_)->drawLine(*p1, *p2);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:296
-// [-2] void drawLine(const QPointF &, const QPointF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawLineERK7QPointFS2_(void *this_, QPointF* p1, QPointF* p2) {
-  ((QPainter*)this_)->drawLine(*p1, *p2);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:298
-// [-2] void drawLines(const QLineF *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesEPK6QLineFi(void *this_, const QLineF * lines, int lineCount) {
-  ((QPainter*)this_)->drawLines(lines, lineCount);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:299
-// [-2] void drawLines(const QVector<QLineF> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesERK7QVectorI6QLineFE(void *this_, QVector<QLineF>* lines) {
-  ((QPainter*)this_)->drawLines(*lines);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:300
-// [-2] void drawLines(const QPointF *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesEPK7QPointFi(void *this_, const QPointF * pointPairs, int lineCount) {
-  ((QPainter*)this_)->drawLines(pointPairs, lineCount);
+// [-2] void drawPoint(const QPointF &) 
+// (12)qm2384044154 (33)_ZN8QPainter9drawPointERK7QPointF
+//static
+/*void qm2384044154(const QPointF & pt)*/ {
+  const QPointF & pt = *(const QPointF *)this_;
+  (void) ((QPainter*)this_)->drawPoint(pt);
+   auto xptr = (void (QPainter::*)(QPointF const&) ) &QPainter::drawPoint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:301
-// [-2] void drawLines(const QVector<QPointF> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesERK7QVectorI7QPointFE(void *this_, QVector<QPointF>* pointPairs) {
-  ((QPainter*)this_)->drawLines(*pointPairs);
+// [-2] void drawPoint(const QPoint &) 
+// (11)qm240318537 (32)_ZN8QPainter9drawPointERK6QPoint
+//static
+/*void qm240318537(const QPoint & p)*/ {
+  const QPoint & p = *(const QPoint *)this_;
+  (void) ((QPainter*)this_)->drawPoint(p);
+   auto xptr = (void (QPainter::*)(QPoint const&) ) &QPainter::drawPoint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:302
-// [-2] void drawLines(const QLine *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesEPK5QLinei(void *this_, const QLine * lines, int lineCount) {
-  ((QPainter*)this_)->drawLines(lines, lineCount);
+// [-2] void drawPoint(int, int) 
+// (12)qm1270418537 (25)_ZN8QPainter9drawPointEii
+//static
+/*void qm1270418537(int x, int y)*/ {
+  int x = *(int*)this_; int y = *(int*)this_;
+  (void) ((QPainter*)this_)->drawPoint(x, y);
+   auto xptr = (void (QPainter::*)(int, int) ) &QPainter::drawPoint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:303
-// [-2] void drawLines(const QVector<QLine> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesERK7QVectorI5QLineE(void *this_, QVector<QLine>* lines) {
-  ((QPainter*)this_)->drawLines(*lines);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:304
-// [-2] void drawLines(const QPoint *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesEPK6QPointi(void *this_, const QPoint * pointPairs, int lineCount) {
-  ((QPainter*)this_)->drawLines(pointPairs, lineCount);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:305
-// [-2] void drawLines(const QVector<QPoint> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawLinesERK7QVectorI6QPointE(void *this_, QVector<QPoint>* pointPairs) {
-  ((QPainter*)this_)->drawLines(*pointPairs);
+// [-2] void drawPoints(const QPolygonF &) 
+// (12)qm2561896720 (37)_ZN8QPainter10drawPointsERK9QPolygonF
+//static
+/*void qm2561896720(const QPolygonF & points)*/ {
+  const QPolygonF & points = *(const QPolygonF *)this_;
+  (void) ((QPainter*)this_)->drawPoints(points);
+   auto xptr = (void (QPainter::*)(QPolygonF const&) ) &QPainter::drawPoints;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:307
-// [-2] void drawRect(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawRectERK6QRectF(void *this_, QRectF* rect) {
-  ((QPainter*)this_)->drawRect(*rect);
+// [-2] void drawPoints(const QPolygon &) 
+// (12)qm2034288737 (36)_ZN8QPainter10drawPointsERK8QPolygon
+//static
+/*void qm2034288737(const QPolygon & points)*/ {
+  const QPolygon & points = *(const QPolygon *)this_;
+  (void) ((QPainter*)this_)->drawPoints(points);
+   auto xptr = (void (QPainter::*)(QPolygon const&) ) &QPainter::drawPoints;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:308
-// [-2] void drawRect(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawRectEiiii(void *this_, int x1, int y1, int w, int h) {
-  ((QPainter*)this_)->drawRect(x1, y1, w, h);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:309
-// [-2] void drawRect(const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawRectERK5QRect(void *this_, QRect* rect) {
-  ((QPainter*)this_)->drawRect(*rect);
+// [-2] void drawLine(const QLineF &) 
+// (12)qm3545799739 (31)_ZN8QPainter8drawLineERK6QLineF
+//static
+/*void qm3545799739(const QLineF & line)*/ {
+  const QLineF & line = *(const QLineF *)this_;
+  (void) ((QPainter*)this_)->drawLine(line);
+   auto xptr = (void (QPainter::*)(QLineF const&) ) &QPainter::drawLine;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:310
+// [-2] void drawLine(const QLine &) 
+// (11)qm127320745 (30)_ZN8QPainter8drawLineERK5QLine
+//static
+/*void qm127320745(const QLine & line)*/ {
+  const QLine & line = *(const QLine *)this_;
+  (void) ((QPainter*)this_)->drawLine(line);
+   auto xptr = (void (QPainter::*)(QLine const&) ) &QPainter::drawLine;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:311
-// [-2] void drawRects(const QRectF *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawRectsEPK6QRectFi(void *this_, const QRectF * rects, int rectCount) {
-  ((QPainter*)this_)->drawRects(rects, rectCount);
+// [-2] void drawLine(int, int, int, int) 
+// (11)qm437797096 (26)_ZN8QPainter8drawLineEiiii
+//static
+/*void qm437797096(int x1, int y1, int x2, int y2)*/ {
+  int x1 = *(int*)this_; int y1 = *(int*)this_; int x2 = *(int*)this_; int y2 = *(int*)this_;
+  (void) ((QPainter*)this_)->drawLine(x1, y1, x2, y2);
+   auto xptr = (void (QPainter::*)(int, int, int, int) ) &QPainter::drawLine;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:312
-// [-2] void drawRects(const QVector<QRectF> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawRectsERK7QVectorI6QRectFE(void *this_, QVector<QRectF>* rectangles) {
-  ((QPainter*)this_)->drawRects(*rectangles);
+// [-2] void drawLine(const QPoint &, const QPoint &) 
+// (12)qm1867933504 (34)_ZN8QPainter8drawLineERK6QPointS2_
+//static
+/*void qm1867933504(const QPoint & p1, const QPoint & p2)*/ {
+  const QPoint & p1 = *(const QPoint *)this_; const QPoint & p2 = *(const QPoint *)this_;
+  (void) ((QPainter*)this_)->drawLine(p1, p2);
+   auto xptr = (void (QPainter::*)(QPoint const&, QPoint const&) ) &QPainter::drawLine;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:313
-// [-2] void drawRects(const QRect *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawRectsEPK5QRecti(void *this_, const QRect * rects, int rectCount) {
-  ((QPainter*)this_)->drawRects(rects, rectCount);
+// [-2] void drawLine(const QPointF &, const QPointF &) 
+// (12)qm1617590415 (35)_ZN8QPainter8drawLineERK7QPointFS2_
+//static
+/*void qm1617590415(const QPointF & p1, const QPointF & p2)*/ {
+  const QPointF & p1 = *(const QPointF *)this_; const QPointF & p2 = *(const QPointF *)this_;
+  (void) ((QPainter*)this_)->drawLine(p1, p2);
+   auto xptr = (void (QPainter::*)(QPointF const&, QPointF const&) ) &QPainter::drawLine;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:314
-// [-2] void drawRects(const QVector<QRect> &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawRectsERK7QVectorI5QRectE(void *this_, QVector<QRect>* rectangles) {
-  ((QPainter*)this_)->drawRects(*rectangles);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:316
-// [-2] void drawEllipse(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawEllipseERK6QRectF(void *this_, QRectF* r) {
-  ((QPainter*)this_)->drawEllipse(*r);
+// [-2] void drawLines(const QVector<QLineF> &) 
+// (12)qm4064749038 (42)_ZN8QPainter9drawLinesERK7QVectorI6QLineFE
+//static
+/*void qm4064749038(const QVector<QLineF> & lines)*/ {
+  const QVector<QLineF> & lines = *(const QVector<QLineF> *)this_;
+  (void) ((QPainter*)this_)->drawLines(lines);
+   auto xptr = (void (QPainter::*)(QVector<QLineF> const&) ) &QPainter::drawLines;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:317
-// [-2] void drawEllipse(const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawEllipseERK5QRect(void *this_, QRect* r) {
-  ((QPainter*)this_)->drawEllipse(*r);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:318
-// [-2] void drawEllipse(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawEllipseEiiii(void *this_, int x, int y, int w, int h) {
-  ((QPainter*)this_)->drawEllipse(x, y, w, h);
+// [-2] void drawLines(const QVector<QPointF> &) 
+// (12)qm2605443584 (43)_ZN8QPainter9drawLinesERK7QVectorI7QPointFE
+//static
+/*void qm2605443584(const QVector<QPointF> & pointPairs)*/ {
+  const QVector<QPointF> & pointPairs = *(const QVector<QPointF> *)this_;
+  (void) ((QPainter*)this_)->drawLines(pointPairs);
+   auto xptr = (void (QPainter::*)(QVector<QPointF> const&) ) &QPainter::drawLines;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// since 4.4
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:320
-// [-2] void drawEllipse(const QPointF &, qreal, qreal)
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawEllipseERK7QPointFdd(void *this_, QPointF* center, qreal rx, qreal ry) {
-  ((QPainter*)this_)->drawEllipse(*center, rx, ry);
-}
-#endif // QT_VERSION >= 0x040400
-
-// Public inline Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtGui/qpainter.h:321
-// [-2] void drawEllipse(const QPoint &, int, int)
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawEllipseERK6QPointii(void *this_, QPoint* center, int rx, int ry) {
-  ((QPainter*)this_)->drawEllipse(*center, rx, ry);
-}
-#endif // QT_VERSION >= 0x040400
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:323
-// [-2] void drawPolyline(const QPointF *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter12drawPolylineEPK7QPointFi(void *this_, const QPointF * points, int pointCount) {
-  ((QPainter*)this_)->drawPolyline(points, pointCount);
+// [-2] void drawLines(const QVector<QLine> &) 
+// (12)qm2192481047 (41)_ZN8QPainter9drawLinesERK7QVectorI5QLineE
+//static
+/*void qm2192481047(const QVector<QLine> & lines)*/ {
+  const QVector<QLine> & lines = *(const QVector<QLine> *)this_;
+  (void) ((QPainter*)this_)->drawLines(lines);
+   auto xptr = (void (QPainter::*)(QVector<QLine> const&) ) &QPainter::drawLines;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:322
+// [-2] void drawLines(const QVector<QPoint> &) 
+// (12)qm1977717127 (42)_ZN8QPainter9drawLinesERK7QVectorI6QPointE
+//static
+/*void qm1977717127(const QVector<QPoint> & pointPairs)*/ {
+  const QVector<QPoint> & pointPairs = *(const QVector<QPoint> *)this_;
+  (void) ((QPainter*)this_)->drawLines(pointPairs);
+   auto xptr = (void (QPainter::*)(QVector<QPoint> const&) ) &QPainter::drawLines;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:324
-// [-2] void drawPolyline(const QPolygonF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter12drawPolylineERK9QPolygonF(void *this_, QPolygonF* polyline) {
-  ((QPainter*)this_)->drawPolyline(*polyline);
+// [-2] void drawRect(const QRectF &) 
+// (12)qm3676008657 (31)_ZN8QPainter8drawRectERK6QRectF
+//static
+/*void qm3676008657(const QRectF & rect)*/ {
+  const QRectF & rect = *(const QRectF *)this_;
+  (void) ((QPainter*)this_)->drawRect(rect);
+   auto xptr = (void (QPainter::*)(QRectF const&) ) &QPainter::drawRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:325
-// [-2] void drawPolyline(const QPoint *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter12drawPolylineEPK6QPointi(void *this_, const QPoint * points, int pointCount) {
-  ((QPainter*)this_)->drawPolyline(points, pointCount);
+// [-2] void drawRect(int, int, int, int) 
+// (12)qm2162719930 (26)_ZN8QPainter8drawRectEiiii
+//static
+/*void qm2162719930(int x1, int y1, int w, int h)*/ {
+  int x1 = *(int*)this_; int y1 = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_;
+  (void) ((QPainter*)this_)->drawRect(x1, y1, w, h);
+   auto xptr = (void (QPainter::*)(int, int, int, int) ) &QPainter::drawRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:326
-// [-2] void drawPolyline(const QPolygon &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter12drawPolylineERK8QPolygon(void *this_, QPolygon* polygon) {
-  ((QPainter*)this_)->drawPolyline(*polygon);
+// [-2] void drawRect(const QRect &) 
+// (11)qm692520420 (30)_ZN8QPainter8drawRectERK5QRect
+//static
+/*void qm692520420(const QRect & rect)*/ {
+  const QRect & rect = *(const QRect *)this_;
+  (void) ((QPainter*)this_)->drawRect(rect);
+   auto xptr = (void (QPainter::*)(QRect const&) ) &QPainter::drawRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:328
-// [-2] void drawPolygon(const QPointF *, int, Qt::FillRule)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawPolygonEPK7QPointFiN2Qt8FillRuleE(void *this_, const QPointF * points, int pointCount, Qt::FillRule fillRule) {
-  ((QPainter*)this_)->drawPolygon(points, pointCount, fillRule);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:329
-// [-2] void drawPolygon(const QPolygonF &, Qt::FillRule)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawPolygonERK9QPolygonFN2Qt8FillRuleE(void *this_, QPolygonF* polygon, Qt::FillRule fillRule) {
-  ((QPainter*)this_)->drawPolygon(*polygon, fillRule);
+// [-2] void drawRects(const QVector<QRectF> &) 
+// (12)qm1616963296 (42)_ZN8QPainter9drawRectsERK7QVectorI6QRectFE
+//static
+/*void qm1616963296(const QVector<QRectF> & rectangles)*/ {
+  const QVector<QRectF> & rectangles = *(const QVector<QRectF> *)this_;
+  (void) ((QPainter*)this_)->drawRects(rectangles);
+   auto xptr = (void (QPainter::*)(QVector<QRectF> const&) ) &QPainter::drawRects;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:330
-// [-2] void drawPolygon(const QPoint *, int, Qt::FillRule)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawPolygonEPK6QPointiN2Qt8FillRuleE(void *this_, const QPoint * points, int pointCount, Qt::FillRule fillRule) {
-  ((QPainter*)this_)->drawPolygon(points, pointCount, fillRule);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:331
-// [-2] void drawPolygon(const QPolygon &, Qt::FillRule)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawPolygonERK8QPolygonN2Qt8FillRuleE(void *this_, QPolygon* polygon, Qt::FillRule fillRule) {
-  ((QPainter*)this_)->drawPolygon(*polygon, fillRule);
+// [-2] void drawRects(const QVector<QRect> &) 
+// (12)qm2011369179 (41)_ZN8QPainter9drawRectsERK7QVectorI5QRectE
+//static
+/*void qm2011369179(const QVector<QRect> & rectangles)*/ {
+  const QVector<QRect> & rectangles = *(const QVector<QRect> *)this_;
+  (void) ((QPainter*)this_)->drawRects(rectangles);
+   auto xptr = (void (QPainter::*)(QVector<QRect> const&) ) &QPainter::drawRects;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:333
-// [-2] void drawConvexPolygon(const QPointF *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter17drawConvexPolygonEPK7QPointFi(void *this_, const QPointF * points, int pointCount) {
-  ((QPainter*)this_)->drawConvexPolygon(points, pointCount);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:334
-// [-2] void drawConvexPolygon(const QPolygonF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter17drawConvexPolygonERK9QPolygonF(void *this_, QPolygonF* polygon) {
-  ((QPainter*)this_)->drawConvexPolygon(*polygon);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:335
-// [-2] void drawConvexPolygon(const QPoint *, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter17drawConvexPolygonEPK6QPointi(void *this_, const QPoint * points, int pointCount) {
-  ((QPainter*)this_)->drawConvexPolygon(points, pointCount);
+// [-2] void drawEllipse(int, int, int, int) 
+// (12)qm1793592021 (30)_ZN8QPainter11drawEllipseEiiii
+//static
+/*void qm1793592021(int x, int y, int w, int h)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_;
+  (void) ((QPainter*)this_)->drawEllipse(x, y, w, h);
+   auto xptr = (void (QPainter::*)(int, int, int, int) ) &QPainter::drawEllipse;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:336
-// [-2] void drawConvexPolygon(const QPolygon &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter17drawConvexPolygonERK8QPolygon(void *this_, QPolygon* polygon) {
-  ((QPainter*)this_)->drawConvexPolygon(*polygon);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:337
+// [-2] void drawEllipse(const QPointF &, qreal, qreal) 
+// (12)qm3579898718 (38)_ZN8QPainter11drawEllipseERK7QPointFdd
+//static
+/*void qm3579898718(const QPointF & center, double rx, double ry)*/ {
+  const QPointF & center = *(const QPointF *)this_; double rx = *(double*)this_; double ry = *(double*)this_;
+  (void) ((QPainter*)this_)->drawEllipse(center, rx, ry);
+   auto xptr = (void (QPainter::*)(QPointF const&, double, double) ) &QPainter::drawEllipse;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:338
-// [-2] void drawArc(const QRectF &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter7drawArcERK6QRectFii(void *this_, QRectF* rect, int a, int alen) {
-  ((QPainter*)this_)->drawArc(*rect, a, alen);
+// [-2] void drawEllipse(const QPoint &, int, int) 
+// (12)qm1947638515 (37)_ZN8QPainter11drawEllipseERK6QPointii
+//static
+/*void qm1947638515(const QPoint & center, int rx, int ry)*/ {
+  const QPoint & center = *(const QPoint *)this_; int rx = *(int*)this_; int ry = *(int*)this_;
+  (void) ((QPainter*)this_)->drawEllipse(center, rx, ry);
+   auto xptr = (void (QPainter::*)(QPoint const&, int, int) ) &QPainter::drawEllipse;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:339
-// [-2] void drawArc(const QRect &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter7drawArcERK5QRectii(void *this_, QRect* arg0, int a, int alen) {
-  ((QPainter*)this_)->drawArc(*arg0, a, alen);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:341
+// [-2] void drawPolyline(const QPolygonF &) 
+// (12)qm3935038486 (39)_ZN8QPainter12drawPolylineERK9QPolygonF
+//static
+/*void qm3935038486(const QPolygonF & polyline)*/ {
+  const QPolygonF & polyline = *(const QPolygonF *)this_;
+  (void) ((QPainter*)this_)->drawPolyline(polyline);
+   auto xptr = (void (QPainter::*)(QPolygonF const&) ) &QPainter::drawPolyline;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:340
-// [-2] void drawArc(int, int, int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter7drawArcEiiiiii(void *this_, int x, int y, int w, int h, int a, int alen) {
-  ((QPainter*)this_)->drawArc(x, y, w, h, a, alen);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:342
-// [-2] void drawPie(const QRectF &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter7drawPieERK6QRectFii(void *this_, QRectF* rect, int a, int alen) {
-  ((QPainter*)this_)->drawPie(*rect, a, alen);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:343
-// [-2] void drawPie(int, int, int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter7drawPieEiiiiii(void *this_, int x, int y, int w, int h, int a, int alen) {
-  ((QPainter*)this_)->drawPie(x, y, w, h, a, alen);
+// [-2] void drawPolyline(const QPolygon &) 
+// (12)qm1186614183 (38)_ZN8QPainter12drawPolylineERK8QPolygon
+//static
+/*void qm1186614183(const QPolygon & polygon)*/ {
+  const QPolygon & polygon = *(const QPolygon *)this_;
+  (void) ((QPainter*)this_)->drawPolyline(polygon);
+   auto xptr = (void (QPainter::*)(QPolygon const&) ) &QPainter::drawPolyline;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:344
-// [-2] void drawPie(const QRect &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter7drawPieERK5QRectii(void *this_, QRect* arg0, int a, int alen) {
-  ((QPainter*)this_)->drawPie(*arg0, a, alen);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:346
-// [-2] void drawChord(const QRectF &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawChordERK6QRectFii(void *this_, QRectF* rect, int a, int alen) {
-  ((QPainter*)this_)->drawChord(*rect, a, alen);
+// [-2] void drawPolygon(const QPolygonF &, Qt::FillRule) 
+// (12)qm2441023518 (52)_ZN8QPainter11drawPolygonERK9QPolygonFN2Qt8FillRuleE
+//static
+/*void qm2441023518(const QPolygonF & polygon, Qt::FillRule fillRule)*/ {
+  const QPolygonF & polygon = *(const QPolygonF *)this_; Qt::FillRule fillRule = *(Qt::FillRule*)this_;
+  (void) ((QPainter*)this_)->drawPolygon(polygon, fillRule);
+   auto xptr = (void (QPainter::*)(QPolygonF const&, Qt::FillRule) ) &QPainter::drawPolygon;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:347
-// [-2] void drawChord(int, int, int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawChordEiiiiii(void *this_, int x, int y, int w, int h, int a, int alen) {
-  ((QPainter*)this_)->drawChord(x, y, w, h, a, alen);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:348
-// [-2] void drawChord(const QRect &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawChordERK5QRectii(void *this_, QRect* arg0, int a, int alen) {
-  ((QPainter*)this_)->drawChord(*arg0, a, alen);
+// [-2] void drawPolygon(const QPolygon &, Qt::FillRule) 
+// (11)qm542337015 (51)_ZN8QPainter11drawPolygonERK8QPolygonN2Qt8FillRuleE
+//static
+/*void qm542337015(const QPolygon & polygon, Qt::FillRule fillRule)*/ {
+  const QPolygon & polygon = *(const QPolygon *)this_; Qt::FillRule fillRule = *(Qt::FillRule*)this_;
+  (void) ((QPainter*)this_)->drawPolygon(polygon, fillRule);
+   auto xptr = (void (QPainter::*)(QPolygon const&, Qt::FillRule) ) &QPainter::drawPolygon;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtGui/qpainter.h:350
-// [-2] void drawRoundedRect(const QRectF &, qreal, qreal, Qt::SizeMode)
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter15drawRoundedRectERK6QRectFddN2Qt8SizeModeE(void *this_, QRectF* rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
-  ((QPainter*)this_)->drawRoundedRect(*rect, xRadius, yRadius, mode);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:351
+// [-2] void drawConvexPolygon(const QPolygonF &) 
+// (12)qm1661137280 (44)_ZN8QPainter17drawConvexPolygonERK9QPolygonF
+//static
+/*void qm1661137280(const QPolygonF & polygon)*/ {
+  const QPolygonF & polygon = *(const QPolygonF *)this_;
+  (void) ((QPainter*)this_)->drawConvexPolygon(polygon);
+   auto xptr = (void (QPainter::*)(QPolygonF const&) ) &QPainter::drawConvexPolygon;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040400
 
-// Public inline Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtGui/qpainter.h:352
-// [-2] void drawRoundedRect(int, int, int, int, qreal, qreal, Qt::SizeMode)
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter15drawRoundedRectEiiiiddN2Qt8SizeModeE(void *this_, int x, int y, int w, int h, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
-  ((QPainter*)this_)->drawRoundedRect(x, y, w, h, xRadius, yRadius, mode);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:353
+// [-2] void drawConvexPolygon(const QPolygon &) 
+// (11)qm478952766 (43)_ZN8QPainter17drawConvexPolygonERK8QPolygon
+//static
+/*void qm478952766(const QPolygon & polygon)*/ {
+  const QPolygon & polygon = *(const QPolygon *)this_;
+  (void) ((QPainter*)this_)->drawConvexPolygon(polygon);
+   auto xptr = (void (QPainter::*)(QPolygon const&) ) &QPainter::drawConvexPolygon;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040400
 
-// Public inline Visibility=Default Availability=Available
-// since 4.4
-// /usr/include/qt/QtGui/qpainter.h:354
-// [-2] void drawRoundedRect(const QRect &, qreal, qreal, Qt::SizeMode)
-#if QT_VERSION >= 0x040400
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter15drawRoundedRectERK5QRectddN2Qt8SizeModeE(void *this_, QRect* rect, qreal xRadius, qreal yRadius, Qt::SizeMode mode) {
-  ((QPainter*)this_)->drawRoundedRect(*rect, xRadius, yRadius, mode);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:356
+// [-2] void drawArc(const QRect &, int, int) 
+// (12)qm1832384976 (31)_ZN8QPainter7drawArcERK5QRectii
+//static
+/*void qm1832384976(const QRect & arg0, int a, int alen)*/ {
+  const QRect & arg0 = *(const QRect *)this_; int a = *(int*)this_; int alen = *(int*)this_;
+  (void) ((QPainter*)this_)->drawArc(arg0, a, alen);
+   auto xptr = (void (QPainter::*)(QRect const&, int, int) ) &QPainter::drawArc;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040400
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:357
-// [-2] void drawRoundRect(const QRectF &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter13drawRoundRectERK6QRectFii(void *this_, QRectF* r, int xround, int yround) {
-  ((QPainter*)this_)->drawRoundRect(*r, xround, yround);
+// [-2] void drawArc(int, int, int, int, int, int) 
+// (12)qm3818011130 (27)_ZN8QPainter7drawArcEiiiiii
+//static
+/*void qm3818011130(int x, int y, int w, int h, int a, int alen)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; int a = *(int*)this_; int alen = *(int*)this_;
+  (void) ((QPainter*)this_)->drawArc(x, y, w, h, a, alen);
+   auto xptr = (void (QPainter::*)(int, int, int, int, int, int) ) &QPainter::drawArc;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:358
-// [-2] void drawRoundRect(int, int, int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter13drawRoundRectEiiiiii(void *this_, int x, int y, int w, int h, int arg4, int arg5) {
-  ((QPainter*)this_)->drawRoundRect(x, y, w, h, arg4, arg5);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:360
+// [-2] void drawPie(int, int, int, int, int, int) 
+// (12)qm3271820807 (27)_ZN8QPainter7drawPieEiiiiii
+//static
+/*void qm3271820807(int x, int y, int w, int h, int a, int alen)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; int a = *(int*)this_; int alen = *(int*)this_;
+  (void) ((QPainter*)this_)->drawPie(x, y, w, h, a, alen);
+   auto xptr = (void (QPainter::*)(int, int, int, int, int, int) ) &QPainter::drawPie;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:359
-// [-2] void drawRoundRect(const QRect &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter13drawRoundRectERK5QRectii(void *this_, QRect* r, int xround, int yround) {
-  ((QPainter*)this_)->drawRoundRect(*r, xround, yround);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:361
-// [-2] void drawTiledPixmap(const QRectF &, const QPixmap &, const QPointF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter15drawTiledPixmapERK6QRectFRK7QPixmapRK7QPointF(void *this_, QRectF* rect, QPixmap* pm, QPointF* offset) {
-  ((QPainter*)this_)->drawTiledPixmap(*rect, *pm, *offset);
+// [-2] void drawPie(const QRect &, int, int) 
+// (11)qm712611923 (31)_ZN8QPainter7drawPieERK5QRectii
+//static
+/*void qm712611923(const QRect & arg0, int a, int alen)*/ {
+  const QRect & arg0 = *(const QRect *)this_; int a = *(int*)this_; int alen = *(int*)this_;
+  (void) ((QPainter*)this_)->drawPie(arg0, a, alen);
+   auto xptr = (void (QPainter::*)(QRect const&, int, int) ) &QPainter::drawPie;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:362
-// [-2] void drawTiledPixmap(int, int, int, int, const QPixmap &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter15drawTiledPixmapEiiiiRK7QPixmapii(void *this_, int x, int y, int w, int h, QPixmap* arg4, int sx, int sy) {
-  ((QPainter*)this_)->drawTiledPixmap(x, y, w, h, *arg4, sx, sy);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:364
+// [-2] void drawChord(int, int, int, int, int, int) 
+// (12)qm1391233194 (29)_ZN8QPainter9drawChordEiiiiii
+//static
+/*void qm1391233194(int x, int y, int w, int h, int a, int alen)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; int a = *(int*)this_; int alen = *(int*)this_;
+  (void) ((QPainter*)this_)->drawChord(x, y, w, h, a, alen);
+   auto xptr = (void (QPainter::*)(int, int, int, int, int, int) ) &QPainter::drawChord;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:363
-// [-2] void drawTiledPixmap(const QRect &, const QPixmap &, const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter15drawTiledPixmapERK5QRectRK7QPixmapRK6QPoint(void *this_, QRect* arg0, QPixmap* arg1, QPoint* arg2) {
-  ((QPainter*)this_)->drawTiledPixmap(*arg0, *arg1, *arg2);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:365
-// [-2] void drawPicture(const QPointF &, const QPicture &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawPictureERK7QPointFRK8QPicture(void *this_, QPointF* p, QPicture* picture) {
-  ((QPainter*)this_)->drawPicture(*p, *picture);
+// [-2] void drawChord(const QRect &, int, int) 
+// (12)qm1870443831 (33)_ZN8QPainter9drawChordERK5QRectii
+//static
+/*void qm1870443831(const QRect & arg0, int a, int alen)*/ {
+  const QRect & arg0 = *(const QRect *)this_; int a = *(int*)this_; int alen = *(int*)this_;
+  (void) ((QPainter*)this_)->drawChord(arg0, a, alen);
+   auto xptr = (void (QPainter::*)(QRect const&, int, int) ) &QPainter::drawChord;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:366
-// [-2] void drawPicture(int, int, const QPicture &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawPictureEiiRK8QPicture(void *this_, int x, int y, QPicture* picture) {
-  ((QPainter*)this_)->drawPicture(x, y, *picture);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:369
+// [-2] void drawRoundedRect(int, int, int, int, qreal, qreal, Qt::SizeMode) 
+// (12)qm3069572486 (50)_ZN8QPainter15drawRoundedRectEiiiiddN2Qt8SizeModeE
+//static
+/*void qm3069572486(int x, int y, int w, int h, double xRadius, double yRadius, Qt::SizeMode mode)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; double xRadius = *(double*)this_; double yRadius = *(double*)this_; Qt::SizeMode mode = *(Qt::SizeMode*)this_;
+  (void) ((QPainter*)this_)->drawRoundedRect(x, y, w, h, xRadius, yRadius, mode);
+   auto xptr = (void (QPainter::*)(int, int, int, int, double, double, Qt::SizeMode) ) &QPainter::drawRoundedRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:367
-// [-2] void drawPicture(const QPoint &, const QPicture &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter11drawPictureERK6QPointRK8QPicture(void *this_, QPoint* p, QPicture* picture) {
-  ((QPainter*)this_)->drawPicture(*p, *picture);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:370
-// [-2] void drawPixmap(const QRectF &, const QPixmap &, const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapERK6QRectFRK7QPixmapS2_(void *this_, QRectF* targetRect, QPixmap* pixmap, QRectF* sourceRect) {
-  ((QPainter*)this_)->drawPixmap(*targetRect, *pixmap, *sourceRect);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:371
-// [-2] void drawPixmap(const QRect &, const QPixmap &, const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapERK5QRectRK7QPixmapS2_(void *this_, QRect* targetRect, QPixmap* pixmap, QRect* sourceRect) {
-  ((QPainter*)this_)->drawPixmap(*targetRect, *pixmap, *sourceRect);
+// [-2] void drawRoundedRect(const QRect &, qreal, qreal, Qt::SizeMode) 
+// (12)qm3800426133 (54)_ZN8QPainter15drawRoundedRectERK5QRectddN2Qt8SizeModeE
+//static
+/*void qm3800426133(const QRect & rect, double xRadius, double yRadius, Qt::SizeMode mode)*/ {
+  const QRect & rect = *(const QRect *)this_; double xRadius = *(double*)this_; double yRadius = *(double*)this_; Qt::SizeMode mode = *(Qt::SizeMode*)this_;
+  (void) ((QPainter*)this_)->drawRoundedRect(rect, xRadius, yRadius, mode);
+   auto xptr = (void (QPainter::*)(QRect const&, double, double, Qt::SizeMode) ) &QPainter::drawRoundedRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:372
-// [-2] void drawPixmap(int, int, int, int, const QPixmap &, int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapEiiiiRK7QPixmapiiii(void *this_, int x, int y, int w, int h, QPixmap* pm, int sx, int sy, int sw, int sh) {
-  ((QPainter*)this_)->drawPixmap(x, y, w, h, *pm, sx, sy, sw, sh);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:374
-// [-2] void drawPixmap(int, int, const QPixmap &, int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapEiiRK7QPixmapiiii(void *this_, int x, int y, QPixmap* pm, int sx, int sy, int sw, int sh) {
-  ((QPainter*)this_)->drawPixmap(x, y, *pm, sx, sy, sw, sh);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:376
-// [-2] void drawPixmap(const QPointF &, const QPixmap &, const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapERK7QPointFRK7QPixmapRK6QRectF(void *this_, QPointF* p, QPixmap* pm, QRectF* sr) {
-  ((QPainter*)this_)->drawPixmap(*p, *pm, *sr);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:377
-// [-2] void drawPixmap(const QPoint &, const QPixmap &, const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapERK6QPointRK7QPixmapRK5QRect(void *this_, QPoint* p, QPixmap* pm, QRect* sr) {
-  ((QPainter*)this_)->drawPixmap(*p, *pm, *sr);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:378
-// [-2] void drawPixmap(const QPointF &, const QPixmap &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapERK7QPointFRK7QPixmap(void *this_, QPointF* p, QPixmap* pm) {
-  ((QPainter*)this_)->drawPixmap(*p, *pm);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:379
-// [-2] void drawPixmap(const QPoint &, const QPixmap &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapERK6QPointRK7QPixmap(void *this_, QPoint* p, QPixmap* pm) {
-  ((QPainter*)this_)->drawPixmap(*p, *pm);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:380
-// [-2] void drawPixmap(int, int, const QPixmap &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapEiiRK7QPixmap(void *this_, int x, int y, QPixmap* pm) {
-  ((QPainter*)this_)->drawPixmap(x, y, *pm);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:381
-// [-2] void drawPixmap(const QRect &, const QPixmap &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapERK5QRectRK7QPixmap(void *this_, QRect* r, QPixmap* pm) {
-  ((QPainter*)this_)->drawPixmap(*r, *pm);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:382
-// [-2] void drawPixmap(int, int, int, int, const QPixmap &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter10drawPixmapEiiiiRK7QPixmap(void *this_, int x, int y, int w, int h, QPixmap* pm) {
-  ((QPainter*)this_)->drawPixmap(x, y, w, h, *pm);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.7
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:384
-// [-2] void drawPixmapFragments(const QPainter::PixmapFragment *, int, const QPixmap &, QPainter::PixmapFragmentHints)
-#if QT_VERSION >= 0x040700
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter19drawPixmapFragmentsEPKNS_14PixmapFragmentEiRK7QPixmap6QFlagsINS_18PixmapFragmentHintEE(void *this_, const QPainter::PixmapFragment * fragments, int fragmentCount, QPixmap* pixmap, QFlags<QPainter::PixmapFragmentHint> hints) {
-  ((QPainter*)this_)->drawPixmapFragments(fragments, fragmentCount, *pixmap, hints);
-}
-#endif // QT_VERSION >= 0x040700
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:387
-// [-2] void drawImage(const QRectF &, const QImage &, const QRectF &, Qt::ImageConversionFlags)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawImageERK6QRectFRK6QImageS2_6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QRectF* targetRect, QImage* image, QRectF* sourceRect, QFlags<Qt::ImageConversionFlag> flags) {
-  ((QPainter*)this_)->drawImage(*targetRect, *image, *sourceRect, flags);
+// [-2] void drawTiledPixmap(int, int, int, int, const QPixmap &, int, int) 
+// (12)qm2251893481 (46)_ZN8QPainter15drawTiledPixmapEiiiiRK7QPixmapii
+//static
+/*void qm2251893481(int x, int y, int w, int h, const QPixmap & arg4, int sx, int sy)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; const QPixmap & arg4 = *(const QPixmap *)this_; int sx = *(int*)this_; int sy = *(int*)this_;
+  (void) ((QPainter*)this_)->drawTiledPixmap(x, y, w, h, arg4, sx, sy);
+   auto xptr = (void (QPainter::*)(int, int, int, int, QPixmap const&, int, int) ) &QPainter::drawTiledPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:385
+// [-2] void drawTiledPixmap(const QRect &, const QPixmap &, const QPoint &) 
+// (11)qm207202025 (57)_ZN8QPainter15drawTiledPixmapERK5QRectRK7QPixmapRK6QPoint
+//static
+/*void qm207202025(const QRect & arg0, const QPixmap & arg1, const QPoint & arg2)*/ {
+  const QRect & arg0 = *(const QRect *)this_; const QPixmap & arg1 = *(const QPixmap *)this_; const QPoint & arg2 = *(const QPoint *)this_;
+  (void) ((QPainter*)this_)->drawTiledPixmap(arg0, arg1, arg2);
+   auto xptr = (void (QPainter::*)(QRect const&, QPixmap const&, QPoint const&) ) &QPainter::drawTiledPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:388
+// [-2] void drawPicture(int, int, const QPicture &) 
+// (12)qm2448020198 (39)_ZN8QPainter11drawPictureEiiRK8QPicture
+//static
+/*void qm2448020198(int x, int y, const QPicture & picture)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; const QPicture & picture = *(const QPicture *)this_;
+  (void) ((QPainter*)this_)->drawPicture(x, y, picture);
+   auto xptr = (void (QPainter::*)(int, int, QPicture const&) ) &QPainter::drawPicture;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:389
-// [-2] void drawImage(const QRect &, const QImage &, const QRect &, Qt::ImageConversionFlags)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawImageERK5QRectRK6QImageS2_6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QRect* targetRect, QImage* image, QRect* sourceRect, QFlags<Qt::ImageConversionFlag> flags) {
-  ((QPainter*)this_)->drawImage(*targetRect, *image, *sourceRect, flags);
+// [-2] void drawPicture(const QPoint &, const QPicture &) 
+// (12)qm2892169984 (46)_ZN8QPainter11drawPictureERK6QPointRK8QPicture
+//static
+/*void qm2892169984(const QPoint & p, const QPicture & picture)*/ {
+  const QPoint & p = *(const QPoint *)this_; const QPicture & picture = *(const QPicture *)this_;
+  (void) ((QPainter*)this_)->drawPicture(p, picture);
+   auto xptr = (void (QPainter::*)(QPoint const&, QPicture const&) ) &QPainter::drawPicture;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:391
-// [-2] void drawImage(const QPointF &, const QImage &, const QRectF &, Qt::ImageConversionFlags)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawImageERK7QPointFRK6QImageRK6QRectF6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QPointF* p, QImage* image, QRectF* sr, QFlags<Qt::ImageConversionFlag> flags) {
-  ((QPainter*)this_)->drawImage(*p, *image, *sr, flags);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:393
-// [-2] void drawImage(const QPoint &, const QImage &, const QRect &, Qt::ImageConversionFlags)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawImageERK6QPointRK6QImageRK5QRect6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, QPoint* p, QImage* image, QRect* sr, QFlags<Qt::ImageConversionFlag> flags) {
-  ((QPainter*)this_)->drawImage(*p, *image, *sr, flags);
+// [-2] void drawPixmap(const QRect &, const QPixmap &, const QRect &) 
+// (12)qm1781657010 (46)_ZN8QPainter10drawPixmapERK5QRectRK7QPixmapS2_
+//static
+/*void qm1781657010(const QRect & targetRect, const QPixmap & pixmap, const QRect & sourceRect)*/ {
+  const QRect & targetRect = *(const QRect *)this_; const QPixmap & pixmap = *(const QPixmap *)this_; const QRect & sourceRect = *(const QRect *)this_;
+  (void) ((QPainter*)this_)->drawPixmap(targetRect, pixmap, sourceRect);
+   auto xptr = (void (QPainter::*)(QRect const&, QPixmap const&, QRect const&) ) &QPainter::drawPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:395
-// [-2] void drawImage(const QRectF &, const QImage &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawImageERK6QRectFRK6QImage(void *this_, QRectF* r, QImage* image) {
-  ((QPainter*)this_)->drawImage(*r, *image);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:394
+// [-2] void drawPixmap(int, int, int, int, const QPixmap &, int, int, int, int) 
+// (12)qm2580940002 (43)_ZN8QPainter10drawPixmapEiiiiRK7QPixmapiiii
+//static
+/*void qm2580940002(int x, int y, int w, int h, const QPixmap & pm, int sx, int sy, int sw, int sh)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; const QPixmap & pm = *(const QPixmap *)this_; int sx = *(int*)this_; int sy = *(int*)this_; int sw = *(int*)this_; int sh = *(int*)this_;
+  (void) ((QPainter*)this_)->drawPixmap(x, y, w, h, pm, sx, sy, sw, sh);
+   auto xptr = (void (QPainter::*)(int, int, int, int, QPixmap const&, int, int, int, int) ) &QPainter::drawPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:396
-// [-2] void drawImage(const QRect &, const QImage &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawImageERK5QRectRK6QImage(void *this_, QRect* r, QImage* image) {
-  ((QPainter*)this_)->drawImage(*r, *image);
+// [-2] void drawPixmap(int, int, const QPixmap &, int, int, int, int) 
+// (12)qm2312396121 (41)_ZN8QPainter10drawPixmapEiiRK7QPixmapiiii
+//static
+/*void qm2312396121(int x, int y, const QPixmap & pm, int sx, int sy, int sw, int sh)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; const QPixmap & pm = *(const QPixmap *)this_; int sx = *(int*)this_; int sy = *(int*)this_; int sw = *(int*)this_; int sh = *(int*)this_;
+  (void) ((QPainter*)this_)->drawPixmap(x, y, pm, sx, sy, sw, sh);
+   auto xptr = (void (QPainter::*)(int, int, QPixmap const&, int, int, int, int) ) &QPainter::drawPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:397
-// [-2] void drawImage(const QPointF &, const QImage &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawImageERK7QPointFRK6QImage(void *this_, QPointF* p, QImage* image) {
-  ((QPainter*)this_)->drawImage(*p, *image);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:398
-// [-2] void drawImage(const QPoint &, const QImage &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawImageERK6QPointRK6QImage(void *this_, QPoint* p, QImage* image) {
-  ((QPainter*)this_)->drawImage(*p, *image);
+// [-2] void drawPixmap(const QPointF &, const QPixmap &, const QRectF &) 
+// (11)qm962208427 (54)_ZN8QPainter10drawPixmapERK7QPointFRK7QPixmapRK6QRectF
+//static
+/*void qm962208427(const QPointF & p, const QPixmap & pm, const QRectF & sr)*/ {
+  const QPointF & p = *(const QPointF *)this_; const QPixmap & pm = *(const QPixmap *)this_; const QRectF & sr = *(const QRectF *)this_;
+  (void) ((QPainter*)this_)->drawPixmap(p, pm, sr);
+   auto xptr = (void (QPainter::*)(QPointF const&, QPixmap const&, QRectF const&) ) &QPainter::drawPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:399
-// [-2] void drawImage(int, int, const QImage &, int, int, int, int, Qt::ImageConversionFlags)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9drawImageEiiRK6QImageiiii6QFlagsIN2Qt19ImageConversionFlagEE(void *this_, int x, int y, QImage* image, int sx, int sy, int sw, int sh, QFlags<Qt::ImageConversionFlag> flags) {
-  ((QPainter*)this_)->drawImage(x, y, *image, sx, sy, sw, sh, flags);
+// [-2] void drawPixmap(const QPoint &, const QPixmap &, const QRect &) 
+// (12)qm3894369120 (52)_ZN8QPainter10drawPixmapERK6QPointRK7QPixmapRK5QRect
+//static
+/*void qm3894369120(const QPoint & p, const QPixmap & pm, const QRect & sr)*/ {
+  const QPoint & p = *(const QPoint *)this_; const QPixmap & pm = *(const QPixmap *)this_; const QRect & sr = *(const QRect *)this_;
+  (void) ((QPainter*)this_)->drawPixmap(p, pm, sr);
+   auto xptr = (void (QPainter::*)(QPoint const&, QPixmap const&, QRect const&) ) &QPainter::drawPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:401
+// [-2] void drawPixmap(const QPoint &, const QPixmap &) 
+// (11)qm294529983 (44)_ZN8QPainter10drawPixmapERK6QPointRK7QPixmap
+//static
+/*void qm294529983(const QPoint & p, const QPixmap & pm)*/ {
+  const QPoint & p = *(const QPoint *)this_; const QPixmap & pm = *(const QPixmap *)this_;
+  (void) ((QPainter*)this_)->drawPixmap(p, pm);
+   auto xptr = (void (QPainter::*)(QPoint const&, QPixmap const&) ) &QPainter::drawPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:402
-// [-2] void setLayoutDirection(Qt::LayoutDirection)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter18setLayoutDirectionEN2Qt15LayoutDirectionE(void *this_, Qt::LayoutDirection direction) {
-  ((QPainter*)this_)->setLayoutDirection(direction);
+// [-2] void drawPixmap(int, int, const QPixmap &) 
+// (12)qm4246765882 (37)_ZN8QPainter10drawPixmapEiiRK7QPixmap
+//static
+/*void qm4246765882(int x, int y, const QPixmap & pm)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; const QPixmap & pm = *(const QPixmap *)this_;
+  (void) ((QPainter*)this_)->drawPixmap(x, y, pm);
+   auto xptr = (void (QPainter::*)(int, int, QPixmap const&) ) &QPainter::drawPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:403
-// [4] Qt::LayoutDirection layoutDirection()
-extern "C" Q_DECL_EXPORT
-Qt::LayoutDirection C_ZNK8QPainter15layoutDirectionEv(void *this_) {
-  return (Qt::LayoutDirection)((QPainter*)this_)->layoutDirection();
+// [-2] void drawPixmap(const QRect &, const QPixmap &) 
+// (12)qm3594828970 (43)_ZN8QPainter10drawPixmapERK5QRectRK7QPixmap
+//static
+/*void qm3594828970(const QRect & r, const QPixmap & pm)*/ {
+  const QRect & r = *(const QRect *)this_; const QPixmap & pm = *(const QPixmap *)this_;
+  (void) ((QPainter*)this_)->drawPixmap(r, pm);
+   auto xptr = (void (QPainter::*)(QRect const&, QPixmap const&) ) &QPainter::drawPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtGui/qpainter.h:406
-// [-2] void drawGlyphRun(const QPointF &, const QGlyphRun &)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter12drawGlyphRunERK7QPointFRK9QGlyphRun(void *this_, QPointF* position, QGlyphRun* glyphRun) {
-  ((QPainter*)this_)->drawGlyphRun(*position, *glyphRun);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:404
+// [-2] void drawPixmap(int, int, int, int, const QPixmap &) 
+// (10)qm24461623 (39)_ZN8QPainter10drawPixmapEiiiiRK7QPixmap
+//static
+/*void qm24461623(int x, int y, int w, int h, const QPixmap & pm)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; const QPixmap & pm = *(const QPixmap *)this_;
+  (void) ((QPainter*)this_)->drawPixmap(x, y, w, h, pm);
+   auto xptr = (void (QPainter::*)(int, int, int, int, QPixmap const&) ) &QPainter::drawPixmap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040800
-
-// Public Visibility=Default Availability=Available
-// since 4.7
-// /usr/include/qt/QtGui/qpainter.h:409
-// [-2] void drawStaticText(const QPointF &, const QStaticText &)
-#if QT_VERSION >= 0x040700
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter14drawStaticTextERK7QPointFRK11QStaticText(void *this_, QPointF* topLeftPosition, QStaticText* staticText) {
-  ((QPainter*)this_)->drawStaticText(*topLeftPosition, *staticText);
-}
-#endif // QT_VERSION >= 0x040700
 
 // Public inline Visibility=Default Availability=Available
-// since 4.7
-// /usr/include/qt/QtGui/qpainter.h:410
-// [-2] void drawStaticText(const QPoint &, const QStaticText &)
-#if QT_VERSION >= 0x040700
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter14drawStaticTextERK6QPointRK11QStaticText(void *this_, QPoint* topLeftPosition, QStaticText* staticText) {
-  ((QPainter*)this_)->drawStaticText(*topLeftPosition, *staticText);
-}
-#endif // QT_VERSION >= 0x040700
-
-// Public inline Visibility=Default Availability=Available
-// since 4.7
 // /usr/include/qt/QtGui/qpainter.h:411
-// [-2] void drawStaticText(int, int, const QStaticText &)
-#if QT_VERSION >= 0x040700
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter14drawStaticTextEiiRK11QStaticText(void *this_, int left, int top, QStaticText* staticText) {
-  ((QPainter*)this_)->drawStaticText(left, top, *staticText);
-}
-#endif // QT_VERSION >= 0x040700
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:413
-// [-2] void drawText(const QPointF &, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawTextERK7QPointFRK7QString(void *this_, QPointF* p, QString* s) {
-  ((QPainter*)this_)->drawText(*p, *s);
+// [-2] void drawImage(const QRect &, const QImage &, const QRect &, Qt::ImageConversionFlags) 
+// (12)qm2161539804 (78)_ZN8QPainter9drawImageERK5QRectRK6QImageS2_6QFlagsIN2Qt19ImageConversionFlagEE
+//static
+/*void qm2161539804(const QRect & targetRect, const QImage & image, const QRect & sourceRect, QFlags<Qt::ImageConversionFlag> flags)*/ {
+  const QRect & targetRect = *(const QRect *)this_; const QImage & image = *(const QImage *)this_; const QRect & sourceRect = *(const QRect *)this_; QFlags<Qt::ImageConversionFlag> flags = *(QFlags<Qt::ImageConversionFlag>*)this_;
+  (void) ((QPainter*)this_)->drawImage(targetRect, image, sourceRect, flags);
+   auto xptr = (void (QPainter::*)(QRect const&, QImage const&, QRect const&, QFlags<Qt::ImageConversionFlag>) ) &QPainter::drawImage;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:414
-// [-2] void drawText(const QPoint &, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawTextERK6QPointRK7QString(void *this_, QPoint* p, QString* s) {
-  ((QPainter*)this_)->drawText(*p, *s);
+// /usr/include/qt/QtGui/qpainter.h:413
+// [-2] void drawImage(const QPointF &, const QImage &, const QRectF &, Qt::ImageConversionFlags) 
+// (12)qm1910841397 (86)_ZN8QPainter9drawImageERK7QPointFRK6QImageRK6QRectF6QFlagsIN2Qt19ImageConversionFlagEE
+//static
+/*void qm1910841397(const QPointF & p, const QImage & image, const QRectF & sr, QFlags<Qt::ImageConversionFlag> flags)*/ {
+  const QPointF & p = *(const QPointF *)this_; const QImage & image = *(const QImage *)this_; const QRectF & sr = *(const QRectF *)this_; QFlags<Qt::ImageConversionFlag> flags = *(QFlags<Qt::ImageConversionFlag>*)this_;
+  (void) ((QPainter*)this_)->drawImage(p, image, sr, flags);
+   auto xptr = (void (QPainter::*)(QPointF const&, QImage const&, QRectF const&, QFlags<Qt::ImageConversionFlag>) ) &QPainter::drawImage;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:415
-// [-2] void drawText(int, int, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawTextEiiRK7QString(void *this_, int x, int y, QString* s) {
-  ((QPainter*)this_)->drawText(x, y, *s);
+// [-2] void drawImage(const QPoint &, const QImage &, const QRect &, Qt::ImageConversionFlags) 
+// (12)qm3428625292 (84)_ZN8QPainter9drawImageERK6QPointRK6QImageRK5QRect6QFlagsIN2Qt19ImageConversionFlagEE
+//static
+/*void qm3428625292(const QPoint & p, const QImage & image, const QRect & sr, QFlags<Qt::ImageConversionFlag> flags)*/ {
+  const QPoint & p = *(const QPoint *)this_; const QImage & image = *(const QImage *)this_; const QRect & sr = *(const QRect *)this_; QFlags<Qt::ImageConversionFlag> flags = *(QFlags<Qt::ImageConversionFlag>*)this_;
+  (void) ((QPainter*)this_)->drawImage(p, image, sr, flags);
+   auto xptr = (void (QPainter::*)(QPoint const&, QImage const&, QRect const&, QFlags<Qt::ImageConversionFlag>) ) &QPainter::drawImage;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:417
-// [-2] void drawText(const QPointF &, const QString &, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawTextERK7QPointFRK7QStringii(void *this_, QPointF* p, QString* str, int tf, int justificationPadding) {
-  ((QPainter*)this_)->drawText(*p, *str, tf, justificationPadding);
+// [-2] void drawImage(const QRectF &, const QImage &) 
+// (12)qm2254199474 (41)_ZN8QPainter9drawImageERK6QRectFRK6QImage
+//static
+/*void qm2254199474(const QRectF & r, const QImage & image)*/ {
+  const QRectF & r = *(const QRectF *)this_; const QImage & image = *(const QImage *)this_;
+  (void) ((QPainter*)this_)->drawImage(r, image);
+   auto xptr = (void (QPainter::*)(QRectF const&, QImage const&) ) &QPainter::drawImage;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:419
-// [-2] void drawText(const QRectF &, int, const QString &, QRectF *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawTextERK6QRectFiRK7QStringPS0_(void *this_, QRectF* r, int flags, QString* text, QRectF * br) {
-  ((QPainter*)this_)->drawText(*r, flags, *text, br);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:418
+// [-2] void drawImage(const QRect &, const QImage &) 
+// (12)qm1434914938 (40)_ZN8QPainter9drawImageERK5QRectRK6QImage
+//static
+/*void qm1434914938(const QRect & r, const QImage & image)*/ {
+  const QRect & r = *(const QRect *)this_; const QImage & image = *(const QImage *)this_;
+  (void) ((QPainter*)this_)->drawImage(r, image);
+   auto xptr = (void (QPainter::*)(QRect const&, QImage const&) ) &QPainter::drawImage;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:420
-// [-2] void drawText(const QRect &, int, const QString &, QRect *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawTextERK5QRectiRK7QStringPS0_(void *this_, QRect* r, int flags, QString* text, QRect * br) {
-  ((QPainter*)this_)->drawText(*r, flags, *text, br);
+// [-2] void drawImage(const QPoint &, const QImage &) 
+// (12)qm2533744146 (41)_ZN8QPainter9drawImageERK6QPointRK6QImage
+//static
+/*void qm2533744146(const QPoint & p, const QImage & image)*/ {
+  const QPoint & p = *(const QPoint *)this_; const QImage & image = *(const QImage *)this_;
+  (void) ((QPainter*)this_)->drawImage(p, image);
+   auto xptr = (void (QPainter::*)(QPoint const&, QImage const&) ) &QPainter::drawImage;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:421
-// [-2] void drawText(int, int, int, int, int, const QString &, QRect *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawTextEiiiiiRK7QStringP5QRect(void *this_, int x, int y, int w, int h, int flags, QString* text, QRect * br) {
-  ((QPainter*)this_)->drawText(x, y, w, h, flags, *text, br);
+// [-2] void drawImage(int, int, const QImage &, int, int, int, int, Qt::ImageConversionFlags) 
+// (12)qm2129661642 (73)_ZN8QPainter9drawImageEiiRK6QImageiiii6QFlagsIN2Qt19ImageConversionFlagEE
+//static
+/*void qm2129661642(int x, int y, const QImage & image, int sx, int sy, int sw, int sh, QFlags<Qt::ImageConversionFlag> flags)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; const QImage & image = *(const QImage *)this_; int sx = *(int*)this_; int sy = *(int*)this_; int sw = *(int*)this_; int sh = *(int*)this_; QFlags<Qt::ImageConversionFlag> flags = *(QFlags<Qt::ImageConversionFlag>*)this_;
+  (void) ((QPainter*)this_)->drawImage(x, y, image, sx, sy, sw, sh, flags);
+   auto xptr = (void (QPainter::*)(int, int, QImage const&, int, int, int, int, QFlags<Qt::ImageConversionFlag>) ) &QPainter::drawImage;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:423
-// [-2] void drawText(const QRectF &, const QString &, const QTextOption &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8drawTextERK6QRectFRK7QStringRK11QTextOption(void *this_, QRectF* r, QString* text, QTextOption* o) {
-  ((QPainter*)this_)->drawText(*r, *text, *o);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:425
-// [32] QRectF boundingRect(const QRectF &, int, const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPainter12boundingRectERK6QRectFiRK7QString(void *this_, QRectF* rect, int flags, QString* text) {
-  auto rv = ((QPainter*)this_)->boundingRect(*rect, flags, *text);
-return new QRectF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:426
-// [16] QRect boundingRect(const QRect &, int, const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPainter12boundingRectERK5QRectiRK7QString(void *this_, QRect* rect, int flags, QString* text) {
-  auto rv = ((QPainter*)this_)->boundingRect(*rect, flags, *text);
-return new QRect(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:427
-// [16] QRect boundingRect(int, int, int, int, int, const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPainter12boundingRectEiiiiiRK7QString(void *this_, int x, int y, int w, int h, int flags, QString* text) {
-  auto rv = ((QPainter*)this_)->boundingRect(x, y, w, h, flags, *text);
-return new QRect(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:429
-// [32] QRectF boundingRect(const QRectF &, const QString &, const QTextOption &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPainter12boundingRectERK6QRectFRK7QStringRK11QTextOption(void *this_, QRectF* rect, QString* text, QTextOption* o) {
-  auto rv = ((QPainter*)this_)->boundingRect(*rect, *text, *o);
-return new QRectF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:431
-// [-2] void drawTextItem(const QPointF &, const QTextItem &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter12drawTextItemERK7QPointFRK9QTextItem(void *this_, QPointF* p, QTextItem* ti) {
-  ((QPainter*)this_)->drawTextItem(*p, *ti);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:432
-// [-2] void drawTextItem(int, int, const QTextItem &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter12drawTextItemEiiRK9QTextItem(void *this_, int x, int y, QTextItem* ti) {
-  ((QPainter*)this_)->drawTextItem(x, y, *ti);
+// [-2] void drawStaticText(const QPoint &, const QStaticText &) 
+// (12)qm2267184671 (53)_ZN8QPainter14drawStaticTextERK6QPointRK11QStaticText
+//static
+/*void qm2267184671(const QPoint & topLeftPosition, const QStaticText & staticText)*/ {
+  const QPoint & topLeftPosition = *(const QPoint *)this_; const QStaticText & staticText = *(const QStaticText *)this_;
+  (void) ((QPainter*)this_)->drawStaticText(topLeftPosition, staticText);
+   auto xptr = (void (QPainter::*)(QPoint const&, QStaticText const&) ) &QPainter::drawStaticText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:433
-// [-2] void drawTextItem(const QPoint &, const QTextItem &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter12drawTextItemERK6QPointRK9QTextItem(void *this_, QPoint* p, QTextItem* ti) {
-  ((QPainter*)this_)->drawTextItem(*p, *ti);
+// [-2] void drawStaticText(int, int, const QStaticText &) 
+// (12)qm1276306527 (46)_ZN8QPainter14drawStaticTextEiiRK11QStaticText
+//static
+/*void qm1276306527(int left, int top, const QStaticText & staticText)*/ {
+  int left = *(int*)this_; int top = *(int*)this_; const QStaticText & staticText = *(const QStaticText *)this_;
+  (void) ((QPainter*)this_)->drawStaticText(left, top, staticText);
+   auto xptr = (void (QPainter::*)(int, int, QStaticText const&) ) &QPainter::drawStaticText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:435
-// [-2] void fillRect(const QRectF &, const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK6QRectFRK6QBrush(void *this_, QRectF* arg0, QBrush* arg1) {
-  ((QPainter*)this_)->fillRect(*arg0, *arg1);
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:436
-// [-2] void fillRect(int, int, int, int, const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectEiiiiRK6QBrush(void *this_, int x, int y, int w, int h, QBrush* arg4) {
-  ((QPainter*)this_)->fillRect(x, y, w, h, *arg4);
+// [-2] void drawText(const QPoint &, const QString &) 
+// (12)qm2810526175 (41)_ZN8QPainter8drawTextERK6QPointRK7QString
+//static
+/*void qm2810526175(const QPoint & p, const QString & s)*/ {
+  const QPoint & p = *(const QPoint *)this_; const QString & s = *(const QString *)this_;
+  (void) ((QPainter*)this_)->drawText(p, s);
+   auto xptr = (void (QPainter::*)(QPoint const&, QString const&) ) &QPainter::drawText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:437
-// [-2] void fillRect(const QRect &, const QBrush &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK5QRectRK6QBrush(void *this_, QRect* arg0, QBrush* arg1) {
-  ((QPainter*)this_)->fillRect(*arg0, *arg1);
+// [-2] void drawText(int, int, const QString &) 
+// (12)qm1642165548 (34)_ZN8QPainter8drawTextEiiRK7QString
+//static
+/*void qm1642165548(int x, int y, const QString & s)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; const QString & s = *(const QString *)this_;
+  (void) ((QPainter*)this_)->drawText(x, y, s);
+   auto xptr = (void (QPainter::*)(int, int, QString const&) ) &QPainter::drawText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtGui/qpainter.h:439
-// [-2] void fillRect(const QRectF &, const QColor &)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK6QRectFRK6QColor(void *this_, QRectF* arg0, QColor* color) {
-  ((QPainter*)this_)->fillRect(*arg0, *color);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public inline Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtGui/qpainter.h:440
-// [-2] void fillRect(int, int, int, int, const QColor &)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectEiiiiRK6QColor(void *this_, int x, int y, int w, int h, QColor* color) {
-  ((QPainter*)this_)->fillRect(x, y, w, h, *color);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtGui/qpainter.h:441
-// [-2] void fillRect(const QRect &, const QColor &)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK5QRectRK6QColor(void *this_, QRect* arg0, QColor* color) {
-  ((QPainter*)this_)->fillRect(*arg0, *color);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public inline Visibility=Default Availability=Available
-// since 4.5
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:443
-// [-2] void fillRect(int, int, int, int, Qt::GlobalColor)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectEiiiiN2Qt11GlobalColorE(void *this_, int x, int y, int w, int h, Qt::GlobalColor c) {
-  ((QPainter*)this_)->fillRect(x, y, w, h, c);
+// [-2] void drawText(int, int, int, int, int, const QString &, QRect *) 
+// (12)qm4132837198 (44)_ZN8QPainter8drawTextEiiiiiRK7QStringP5QRect
+//static
+/*void qm4132837198(int x, int y, int w, int h, int flags, const QString & text, QRect * br)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; int flags = *(int*)this_; const QString & text = *(const QString *)this_; QRect * br = *(QRect **)this_;
+  (void) ((QPainter*)this_)->drawText(x, y, w, h, flags, text, br);
+   auto xptr = (void (QPainter::*)(int, int, int, int, int, QString const&, QRect*) ) &QPainter::drawText;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040500
 
-// Public inline Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtGui/qpainter.h:444
-// [-2] void fillRect(const QRect &, Qt::GlobalColor)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK5QRectN2Qt11GlobalColorE(void *this_, QRect* r, Qt::GlobalColor c) {
-  ((QPainter*)this_)->fillRect(*r, c);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public inline Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtGui/qpainter.h:445
-// [-2] void fillRect(const QRectF &, Qt::GlobalColor)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK6QRectFN2Qt11GlobalColorE(void *this_, QRectF* r, Qt::GlobalColor c) {
-  ((QPainter*)this_)->fillRect(*r, c);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public inline Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtGui/qpainter.h:447
-// [-2] void fillRect(int, int, int, int, Qt::BrushStyle)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectEiiiiN2Qt10BrushStyleE(void *this_, int x, int y, int w, int h, Qt::BrushStyle style) {
-  ((QPainter*)this_)->fillRect(x, y, w, h, style);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public inline Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtGui/qpainter.h:448
-// [-2] void fillRect(const QRect &, Qt::BrushStyle)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK5QRectN2Qt10BrushStyleE(void *this_, QRect* r, Qt::BrushStyle style) {
-  ((QPainter*)this_)->fillRect(*r, style);
-}
-#endif // QT_VERSION >= 0x040500
-
-// Public inline Visibility=Default Availability=Available
-// since 4.5
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:449
-// [-2] void fillRect(const QRectF &, Qt::BrushStyle)
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK6QRectFN2Qt10BrushStyleE(void *this_, QRectF* r, Qt::BrushStyle style) {
-  ((QPainter*)this_)->fillRect(*r, style);
+// [16] QRect boundingRect(int, int, int, int, int, const QString &) 
+// (12)qm3358062512 (42)_ZN8QPainter12boundingRectEiiiiiRK7QString
+//static
+/*void qm3358062512(int x, int y, int w, int h, int flags, const QString & text)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; int flags = *(int*)this_; const QString & text = *(const QString *)this_;
+  (void) ((QPainter*)this_)->boundingRect(x, y, w, h, flags, text);
+   auto xptr = (QRect (QPainter::*)(int, int, int, int, int, QString const&) ) &QPainter::boundingRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040500
 
-// Public inline Visibility=Default Availability=Available
-// since 5.12
-// /usr/include/qt/QtGui/qpainter.h:451
-// [-2] void fillRect(int, int, int, int, QGradient::Preset)
-#if QT_VERSION >= 0x050c00
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectEiiiiN9QGradient6PresetE(void *this_, int x, int y, int w, int h, QGradient::Preset preset) {
-  ((QPainter*)this_)->fillRect(x, y, w, h, preset);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:454
+// [-2] void drawTextItem(int, int, const QTextItem &) 
+// (12)qm1146106772 (41)_ZN8QPainter12drawTextItemEiiRK9QTextItem
+//static
+/*void qm1146106772(int x, int y, const QTextItem & ti)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; const QTextItem & ti = *(const QTextItem *)this_;
+  (void) ((QPainter*)this_)->drawTextItem(x, y, ti);
+   auto xptr = (void (QPainter::*)(int, int, QTextItem const&) ) &QPainter::drawTextItem;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x050c00
 
-// Public inline Visibility=Default Availability=Available
-// since 5.12
-// /usr/include/qt/QtGui/qpainter.h:452
-// [-2] void fillRect(const QRect &, QGradient::Preset)
-#if QT_VERSION >= 0x050c00
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK5QRectN9QGradient6PresetE(void *this_, QRect* r, QGradient::Preset preset) {
-  ((QPainter*)this_)->fillRect(*r, preset);
-}
-#endif // QT_VERSION >= 0x050c00
-
-// Public inline Visibility=Default Availability=Available
-// since 5.12
-// /usr/include/qt/QtGui/qpainter.h:453
-// [-2] void fillRect(const QRectF &, QGradient::Preset)
-#if QT_VERSION >= 0x050c00
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter8fillRectERK6QRectFN9QGradient6PresetE(void *this_, QRectF* r, QGradient::Preset preset) {
-  ((QPainter*)this_)->fillRect(*r, preset);
-}
-#endif // QT_VERSION >= 0x050c00
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:455
-// [-2] void eraseRect(const QRectF &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9eraseRectERK6QRectF(void *this_, QRectF* arg0) {
-  ((QPainter*)this_)->eraseRect(*arg0);
+// [-2] void drawTextItem(const QPoint &, const QTextItem &) 
+// (12)qm1661546576 (48)_ZN8QPainter12drawTextItemERK6QPointRK9QTextItem
+//static
+/*void qm1661546576(const QPoint & p, const QTextItem & ti)*/ {
+  const QPoint & p = *(const QPoint *)this_; const QTextItem & ti = *(const QTextItem *)this_;
+  (void) ((QPainter*)this_)->drawTextItem(p, ti);
+   auto xptr = (void (QPainter::*)(QPoint const&, QTextItem const&) ) &QPainter::drawTextItem;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:456
-// [-2] void eraseRect(int, int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9eraseRectEiiii(void *this_, int x, int y, int w, int h) {
-  ((QPainter*)this_)->eraseRect(x, y, w, h);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:458
+// [-2] void fillRect(int, int, int, int, const QBrush &) 
+// (11)qm143205891 (35)_ZN8QPainter8fillRectEiiiiRK6QBrush
+//static
+/*void qm143205891(int x, int y, int w, int h, const QBrush & arg4)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; const QBrush & arg4 = *(const QBrush *)this_;
+  (void) ((QPainter*)this_)->fillRect(x, y, w, h, arg4);
+   auto xptr = (void (QPainter::*)(int, int, int, int, QBrush const&) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:457
-// [-2] void eraseRect(const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter9eraseRectERK5QRect(void *this_, QRect* arg0) {
-  ((QPainter*)this_)->eraseRect(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:459
-// [-2] void setRenderHint(QPainter::RenderHint, bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter13setRenderHintENS_10RenderHintEb(void *this_, QPainter::RenderHint hint, bool on) {
-  ((QPainter*)this_)->setRenderHint(hint, on);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qpainter.h:460
-// [-2] void setRenderHints(QPainter::RenderHints, bool)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter14setRenderHintsE6QFlagsINS_10RenderHintEEb(void *this_, QFlags<QPainter::RenderHint> hints, bool on) {
-  ((QPainter*)this_)->setRenderHints(hints, on);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:461
-// [4] QPainter::RenderHints renderHints()
-extern "C" Q_DECL_EXPORT
-QPainter::RenderHints* C_ZNK8QPainter11renderHintsEv(void *this_) {
-  auto rv = ((QPainter*)this_)->renderHints();
-return new QPainter::RenderHints(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 4.3
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:462
-// [1] bool testRenderHint(QPainter::RenderHint)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPainter14testRenderHintENS_10RenderHintE(void *this_, QPainter::RenderHint hint) {
-  return (bool)((QPainter*)this_)->testRenderHint(hint);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:464
-// [8] QPaintEngine * paintEngine()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPainter11paintEngineEv(void *this_) {
-  return (void*)((QPainter*)this_)->paintEngine();
+// [-2] void fillRect(int, int, int, int, const QColor &) 
+// (12)qm2675489833 (35)_ZN8QPainter8fillRectEiiiiRK6QColor
+//static
+/*void qm2675489833(int x, int y, int w, int h, const QColor & color)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; const QColor & color = *(const QColor *)this_;
+  (void) ((QPainter*)this_)->fillRect(x, y, w, h, color);
+   auto xptr = (void (QPainter::*)(int, int, int, int, QColor const&) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:465
+// [-2] void fillRect(int, int, int, int, Qt::GlobalColor) 
+// (12)qm1908654524 (44)_ZN8QPainter8fillRectEiiiiN2Qt11GlobalColorE
+//static
+/*void qm1908654524(int x, int y, int w, int h, Qt::GlobalColor c)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; Qt::GlobalColor c = *(Qt::GlobalColor*)this_;
+  (void) ((QPainter*)this_)->fillRect(x, y, w, h, c);
+   auto xptr = (void (QPainter::*)(int, int, int, int, Qt::GlobalColor) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:466
-// [-2] void setRedirected(const QPaintDevice *, QPaintDevice *, const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter13setRedirectedEPK12QPaintDevicePS0_RK6QPoint(const QPaintDevice * device, QPaintDevice * replacement, QPoint* offset) {
-  QPainter::setRedirected(device, replacement, *offset);
+// [-2] void fillRect(const QRect &, Qt::GlobalColor) 
+// (12)qm1445218262 (48)_ZN8QPainter8fillRectERK5QRectN2Qt11GlobalColorE
+//static
+/*void qm1445218262(const QRect & r, Qt::GlobalColor c)*/ {
+  const QRect & r = *(const QRect *)this_; Qt::GlobalColor c = *(Qt::GlobalColor*)this_;
+  (void) ((QPainter*)this_)->fillRect(r, c);
+   auto xptr = (void (QPainter::*)(QRect const&, Qt::GlobalColor) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpainter.h:468
-// [8] QPaintDevice * redirected(const QPaintDevice *, QPoint *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPainter10redirectedEPK12QPaintDeviceP6QPoint(const QPaintDevice * device, QPoint * offset) {
-  return (void*)QPainter::redirected(device, offset);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:467
+// [-2] void fillRect(const QRectF &, Qt::GlobalColor) 
+// (12)qm3283874220 (49)_ZN8QPainter8fillRectERK6QRectFN2Qt11GlobalColorE
+//static
+/*void qm3283874220(const QRectF & r, Qt::GlobalColor c)*/ {
+  const QRectF & r = *(const QRectF *)this_; Qt::GlobalColor c = *(Qt::GlobalColor*)this_;
+  (void) ((QPainter*)this_)->fillRect(r, c);
+   auto xptr = (void (QPainter::*)(QRectF const&, Qt::GlobalColor) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public static Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:469
-// [-2] void restoreRedirected(const QPaintDevice *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter17restoreRedirectedEPK12QPaintDevice(const QPaintDevice * device) {
-  QPainter::restoreRedirected(device);
+// [-2] void fillRect(int, int, int, int, Qt::BrushStyle) 
+// (12)qm1674657008 (43)_ZN8QPainter8fillRectEiiiiN2Qt10BrushStyleE
+//static
+/*void qm1674657008(int x, int y, int w, int h, Qt::BrushStyle style)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; Qt::BrushStyle style = *(Qt::BrushStyle*)this_;
+  (void) ((QPainter*)this_)->fillRect(x, y, w, h, style);
+   auto xptr = (void (QPainter::*)(int, int, int, int, Qt::BrushStyle) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 4.6
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:470
+// [-2] void fillRect(const QRect &, Qt::BrushStyle) 
+// (12)qm2249653377 (47)_ZN8QPainter8fillRectERK5QRectN2Qt10BrushStyleE
+//static
+/*void qm2249653377(const QRect & r, Qt::BrushStyle style)*/ {
+  const QRect & r = *(const QRect *)this_; Qt::BrushStyle style = *(Qt::BrushStyle*)this_;
+  (void) ((QPainter*)this_)->fillRect(r, style);
+   auto xptr = (void (QPainter::*)(QRect const&, Qt::BrushStyle) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:471
-// [-2] void beginNativePainting()
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter19beginNativePaintingEv(void *this_) {
-  ((QPainter*)this_)->beginNativePainting();
+// [-2] void fillRect(const QRectF &, Qt::BrushStyle) 
+// (12)qm2800354377 (48)_ZN8QPainter8fillRectERK6QRectFN2Qt10BrushStyleE
+//static
+/*void qm2800354377(const QRectF & r, Qt::BrushStyle style)*/ {
+  const QRectF & r = *(const QRectF *)this_; Qt::BrushStyle style = *(Qt::BrushStyle*)this_;
+  (void) ((QPainter*)this_)->fillRect(r, style);
+   auto xptr = (void (QPainter::*)(QRectF const&, Qt::BrushStyle) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040600
 
-// Public Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtGui/qpainter.h:472
-// [-2] void endNativePainting()
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPainter17endNativePaintingEv(void *this_) {
-  ((QPainter*)this_)->endNativePainting();
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:473
+// [-2] void fillRect(int, int, int, int, QGradient::Preset) 
+// (12)qm2721616132 (45)_ZN8QPainter8fillRectEiiiiN9QGradient6PresetE
+//static
+/*void qm2721616132(int x, int y, int w, int h, QGradient::Preset preset)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; QGradient::Preset preset = *(QGradient::Preset*)this_;
+  (void) ((QPainter*)this_)->fillRect(x, y, w, h, preset);
+   auto xptr = (void (QPainter::*)(int, int, int, int, QGradient::Preset) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
-#endif // QT_VERSION >= 0x040600
 
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:474
+// [-2] void fillRect(const QRect &, QGradient::Preset) 
+// (11)qm259587780 (49)_ZN8QPainter8fillRectERK5QRectN9QGradient6PresetE
+//static
+/*void qm259587780(const QRect & r, QGradient::Preset preset)*/ {
+  const QRect & r = *(const QRect *)this_; QGradient::Preset preset = *(QGradient::Preset*)this_;
+  (void) ((QPainter*)this_)->fillRect(r, preset);
+   auto xptr = (void (QPainter::*)(QRect const&, QGradient::Preset) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:475
+// [-2] void fillRect(const QRectF &, QGradient::Preset) 
+// (12)qm3208509776 (50)_ZN8QPainter8fillRectERK6QRectFN9QGradient6PresetE
+//static
+/*void qm3208509776(const QRectF & r, QGradient::Preset preset)*/ {
+  const QRectF & r = *(const QRectF *)this_; QGradient::Preset preset = *(QGradient::Preset*)this_;
+  (void) ((QPainter*)this_)->fillRect(r, preset);
+   auto xptr = (void (QPainter::*)(QRectF const&, QGradient::Preset) ) &QPainter::fillRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:478
+// [-2] void eraseRect(int, int, int, int) 
+// (11)qm906707987 (27)_ZN8QPainter9eraseRectEiiii
+//static
+/*void qm906707987(int x, int y, int w, int h)*/ {
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_;
+  (void) ((QPainter*)this_)->eraseRect(x, y, w, h);
+   auto xptr = (void (QPainter::*)(int, int, int, int) ) &QPainter::eraseRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:479
+// [-2] void eraseRect(const QRect &) 
+// (12)qm1678594517 (31)_ZN8QPainter9eraseRectERK5QRect
+//static
+/*void qm1678594517(const QRect & arg0)*/ {
+  const QRect & arg0 = *(const QRect *)this_;
+  (void) ((QPainter*)this_)->eraseRect(arg0);
+   auto xptr = (void (QPainter::*)(QRect const&) ) &QPainter::eraseRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:484
+// [1] bool testRenderHint(QPainter::RenderHint) const
+// (12)qm2125172229 (46)_ZNK8QPainter14testRenderHintENS_10RenderHintE
+//static
+/*void qm2125172229(QPainter::RenderHint hint)*/ {
+  QPainter::RenderHint hint = *(QPainter::RenderHint*)this_;
+  (void) ((QPainter*)this_)->testRenderHint(hint);
+   auto xptr = (bool (QPainter::*)(QPainter::RenderHint) const ) &QPainter::testRenderHint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN8QPainterD2Ev(void *this_)*/ {
+  delete (QPainter*)(this_);
+}
+  return fnptrsumval;
+} // end ensure_inline_symbol_qpainter
 //  main block end
 
 //  use block begin

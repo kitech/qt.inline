@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QTabletEvent is pure virtual: false
+// QTabletEvent is pure virtual: false false
 // QTabletEvent has virtual projected: false
 //  header block end
 
@@ -54,201 +54,220 @@ MyQTabletEvent(QEvent::Type t, const QPointF & pos, const QPointF & globalPos, i
 MyQTabletEvent(QEvent::Type t, const QPointF & pos, const QPointF & globalPos, int device, int pointerType, qreal pressure, int xTilt, int yTilt, qreal tangentialPressure, qreal rotation, int z, QFlags<Qt::KeyboardModifier> keyState, qint64 uniqueID, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons) : QTabletEvent(t, pos, globalPos, device, pointerType, pressure, xTilt, yTilt, tangentialPressure, rotation, z, keyState, uniqueID, button, buttons) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:255
-// [-2] void QTabletEvent(QEvent::Type, const QPointF &, const QPointF &, int, int, qreal, int, int, qreal, qreal, int, Qt::KeyboardModifiers, qint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QTabletEventC2EN6QEvent4TypeERK7QPointFS4_iidiiddi6QFlagsIN2Qt16KeyboardModifierEEx(QEvent::Type t, QPointF* pos, QPointF* globalPos, int device, int pointerType, qreal pressure, int xTilt, int yTilt, qreal tangentialPressure, qreal rotation, int z, QFlags<Qt::KeyboardModifier> keyState, qint64 uniqueID) {
-  return  new QTabletEvent(t, *pos, *globalPos, device, pointerType, pressure, xTilt, yTilt, tangentialPressure, rotation, z, keyState, uniqueID);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtabletevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:297
+// [8] QPoint pos() const
+// (12)qm3309057278 (24)_ZNK12QTabletEvent3posEv
+//static
+/*void qm3309057278()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->pos();
+   auto xptr = (QPoint (QTabletEvent::*)() const ) &QTabletEvent::pos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:259
-// [-2] void QTabletEvent(QEvent::Type, const QPointF &, const QPointF &, int, int, qreal, int, int, qreal, qreal, int, Qt::KeyboardModifiers, qint64, Qt::MouseButton, Qt::MouseButtons)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QTabletEventC2EN6QEvent4TypeERK7QPointFS4_iidiiddi6QFlagsIN2Qt16KeyboardModifierEExNS6_11MouseButtonES5_IS9_E(QEvent::Type t, QPointF* pos, QPointF* globalPos, int device, int pointerType, qreal pressure, int xTilt, int yTilt, qreal tangentialPressure, qreal rotation, int z, QFlags<Qt::KeyboardModifier> keyState, qint64 uniqueID, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons) {
-  return  new QTabletEvent(t, *pos, *globalPos, device, pointerType, pressure, xTilt, yTilt, tangentialPressure, rotation, z, keyState, uniqueID, button, buttons);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:298
+// [8] QPoint globalPos() const
+// (12)qm1009676417 (30)_ZNK12QTabletEvent9globalPosEv
+//static
+/*void qm1009676417()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->globalPos();
+   auto xptr = (QPoint (QTabletEvent::*)() const ) &QTabletEvent::globalPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:264
-// [-2] void ~QTabletEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN12QTabletEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:303
+// [16] const QPointF & posF() const
+// (10)qm36584780 (25)_ZNK12QTabletEvent4posFEv
+//static
+/*void qm36584780()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->posF();
+   auto xptr = (const QPointF & (QTabletEvent::*)() const ) &QTabletEvent::posF;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:304
+// [16] const QPointF & globalPosF() const
+// (11)qm828281898 (32)_ZNK12QTabletEvent10globalPosFEv
+//static
+/*void qm828281898()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->globalPosF();
+   auto xptr = (const QPointF & (QTabletEvent::*)() const ) &QTabletEvent::globalPosF;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:306
+// [4] int x() const
+// (10)qm40556910 (22)_ZNK12QTabletEvent1xEv
+//static
+/*void qm40556910()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->x();
+   auto xptr = (int (QTabletEvent::*)() const ) &QTabletEvent::x;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:307
+// [4] int y() const
+// (10)qm61387609 (22)_ZNK12QTabletEvent1yEv
+//static
+/*void qm61387609()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->y();
+   auto xptr = (int (QTabletEvent::*)() const ) &QTabletEvent::y;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:308
+// [4] int globalX() const
+// (12)qm4236764281 (28)_ZNK12QTabletEvent7globalXEv
+//static
+/*void qm4236764281()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->globalX();
+   auto xptr = (int (QTabletEvent::*)() const ) &QTabletEvent::globalX;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:309
+// [4] int globalY() const
+// (12)qm4249194062 (28)_ZNK12QTabletEvent7globalYEv
+//static
+/*void qm4249194062()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->globalY();
+   auto xptr = (int (QTabletEvent::*)() const ) &QTabletEvent::globalY;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:318
+// [4] QTabletEvent::TabletDevice deviceType() const
+// (12)qm4015094125 (32)_ZNK12QTabletEvent10deviceTypeEv
+//static
+/*void qm4015094125()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->deviceType();
+   auto xptr = (QTabletEvent::TabletDevice (QTabletEvent::*)() const ) &QTabletEvent::deviceType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:319
+// [4] QTabletEvent::PointerType pointerType() const
+// (12)qm4258482893 (33)_ZNK12QTabletEvent11pointerTypeEv
+//static
+/*void qm4258482893()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->pointerType();
+   auto xptr = (QTabletEvent::PointerType (QTabletEvent::*)() const ) &QTabletEvent::pointerType;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:320
+// [8] qint64 uniqueId() const
+// (12)qm4233833560 (29)_ZNK12QTabletEvent8uniqueIdEv
+//static
+/*void qm4233833560()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->uniqueId();
+   auto xptr = (long long (QTabletEvent::*)() const ) &QTabletEvent::uniqueId;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:321
+// [8] qreal pressure() const
+// (10)qm15151895 (29)_ZNK12QTabletEvent8pressureEv
+//static
+/*void qm15151895()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->pressure();
+   auto xptr = (double (QTabletEvent::*)() const ) &QTabletEvent::pressure;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:322
+// [4] int z() const
+// (10)qm32378112 (22)_ZNK12QTabletEvent1zEv
+//static
+/*void qm32378112()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->z();
+   auto xptr = (int (QTabletEvent::*)() const ) &QTabletEvent::z;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:323
+// [8] qreal tangentialPressure() const
+// (12)qm2821733910 (40)_ZNK12QTabletEvent18tangentialPressureEv
+//static
+/*void qm2821733910()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->tangentialPressure();
+   auto xptr = (double (QTabletEvent::*)() const ) &QTabletEvent::tangentialPressure;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:324
+// [8] qreal rotation() const
+// (11)qm268357830 (29)_ZNK12QTabletEvent8rotationEv
+//static
+/*void qm268357830()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->rotation();
+   auto xptr = (double (QTabletEvent::*)() const ) &QTabletEvent::rotation;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:325
+// [4] int xTilt() const
+// (12)qm2984872827 (26)_ZNK12QTabletEvent5xTiltEv
+//static
+/*void qm2984872827()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->xTilt();
+   auto xptr = (int (QTabletEvent::*)() const ) &QTabletEvent::xTilt;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:326
+// [4] int yTilt() const
+// (11)qm396263631 (26)_ZNK12QTabletEvent5yTiltEv
+//static
+/*void qm396263631()*/ {
+  ;
+  (void) ((QTabletEvent*)this_)->yTilt();
+   auto xptr = (int (QTabletEvent::*)() const ) &QTabletEvent::yTilt;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN12QTabletEventD2Ev(void *this_)*/ {
   delete (QTabletEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:266
-// [8] QPoint pos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QTabletEvent3posEv(void *this_) {
-  auto rv = ((QTabletEvent*)this_)->pos();
-return new QPoint(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:267
-// [8] QPoint globalPos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QTabletEvent9globalPosEv(void *this_) {
-  auto rv = ((QTabletEvent*)this_)->globalPos();
-return new QPoint(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:272
-// [16] const QPointF & posF()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QTabletEvent4posFEv(void *this_) {
-  auto& rv = ((QTabletEvent*)this_)->posF();
-return new QPointF(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:273
-// [16] const QPointF & globalPosF()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QTabletEvent10globalPosFEv(void *this_) {
-  auto& rv = ((QTabletEvent*)this_)->globalPosF();
-return new QPointF(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:275
-// [4] int x()
-extern "C" Q_DECL_EXPORT
-int C_ZNK12QTabletEvent1xEv(void *this_) {
-  return (int)((QTabletEvent*)this_)->x();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:276
-// [4] int y()
-extern "C" Q_DECL_EXPORT
-int C_ZNK12QTabletEvent1yEv(void *this_) {
-  return (int)((QTabletEvent*)this_)->y();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:277
-// [4] int globalX()
-extern "C" Q_DECL_EXPORT
-int C_ZNK12QTabletEvent7globalXEv(void *this_) {
-  return (int)((QTabletEvent*)this_)->globalX();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:278
-// [4] int globalY()
-extern "C" Q_DECL_EXPORT
-int C_ZNK12QTabletEvent7globalYEv(void *this_) {
-  return (int)((QTabletEvent*)this_)->globalY();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:279
-// [8] qreal hiResGlobalX()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK12QTabletEvent12hiResGlobalXEv(void *this_) {
-  return (qreal)((QTabletEvent*)this_)->hiResGlobalX();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:280
-// [8] qreal hiResGlobalY()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK12QTabletEvent12hiResGlobalYEv(void *this_) {
-  return (qreal)((QTabletEvent*)this_)->hiResGlobalY();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:281
-// [4] QTabletEvent::TabletDevice device()
-extern "C" Q_DECL_EXPORT
-QTabletEvent::TabletDevice C_ZNK12QTabletEvent6deviceEv(void *this_) {
-  return (QTabletEvent::TabletDevice)((QTabletEvent*)this_)->device();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:282
-// [4] QTabletEvent::PointerType pointerType()
-extern "C" Q_DECL_EXPORT
-QTabletEvent::PointerType C_ZNK12QTabletEvent11pointerTypeEv(void *this_) {
-  return (QTabletEvent::PointerType)((QTabletEvent*)this_)->pointerType();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:283
-// [8] qint64 uniqueId()
-extern "C" Q_DECL_EXPORT
-qint64 C_ZNK12QTabletEvent8uniqueIdEv(void *this_) {
-  return (qint64)((QTabletEvent*)this_)->uniqueId();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:284
-// [8] qreal pressure()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK12QTabletEvent8pressureEv(void *this_) {
-  return (qreal)((QTabletEvent*)this_)->pressure();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:285
-// [4] int z()
-extern "C" Q_DECL_EXPORT
-int C_ZNK12QTabletEvent1zEv(void *this_) {
-  return (int)((QTabletEvent*)this_)->z();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:286
-// [8] qreal tangentialPressure()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK12QTabletEvent18tangentialPressureEv(void *this_) {
-  return (qreal)((QTabletEvent*)this_)->tangentialPressure();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:287
-// [8] qreal rotation()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK12QTabletEvent8rotationEv(void *this_) {
-  return (qreal)((QTabletEvent*)this_)->rotation();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:288
-// [4] int xTilt()
-extern "C" Q_DECL_EXPORT
-int C_ZNK12QTabletEvent5xTiltEv(void *this_) {
-  return (int)((QTabletEvent*)this_)->xTilt();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:289
-// [4] int yTilt()
-extern "C" Q_DECL_EXPORT
-int C_ZNK12QTabletEvent5yTiltEv(void *this_) {
-  return (int)((QTabletEvent*)this_)->yTilt();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:290
-// [4] Qt::MouseButton button()
-extern "C" Q_DECL_EXPORT
-Qt::MouseButton C_ZNK12QTabletEvent6buttonEv(void *this_) {
-  return (Qt::MouseButton)((QTabletEvent*)this_)->button();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:291
-// [4] Qt::MouseButtons buttons()
-extern "C" Q_DECL_EXPORT
-Qt::MouseButtons C_ZNK12QTabletEvent7buttonsEv(void *this_) {
-  return (Qt::MouseButtons)((QTabletEvent*)this_)->buttons();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtabletevent
 //  main block end
 
 //  use block begin

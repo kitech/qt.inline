@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QPolygon is pure virtual: false
+// QPolygon is pure virtual: false false
 // QPolygon has virtual projected: false
 //  header block end
 
@@ -66,286 +66,169 @@ MyQPolygon(const QPolygon & other) : QPolygon(other) {}
 MyQPolygon(QPolygon && other) : QPolygon(other) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qpolygon(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:59
-// [-2] void QPolygon()
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonC2Ev() {
-  return  new QPolygon();
+// [-2] void QPolygon() 
+// (12)qm1771381249 (16)_ZN8QPolygonC2Ev
+/*void* qm1771381249()*/{
+  ;
+  this_ =  new QPolygon();
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:60
-// [-2] void ~QPolygon()
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygonD2Ev(void *this_) {
+// [-2] void ~QPolygon() 
+// (12)qm4097972920 (16)_ZN8QPolygonD2Ev
+/*void qm4097972920 (void *this_)*/ {
   delete (QPolygon*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:61
-// [-2] void QPolygon(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonC2Ei(int size) {
-  return  new QPolygon(size);
+// [-2] void QPolygon(int) 
+// (12)qm3835506676 (16)_ZN8QPolygonC2Ei
+/*void* qm3835506676(int size)*/{
+  int size = *(int*)this_;
+  this_ =  new QPolygon(size);
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:62
-// [-2] void QPolygon(const QVector<QPoint> &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonC2ERK7QVectorI6QPointE(QVector<QPoint>* v) {
-  return  new QPolygon(*v);
+// [-2] void QPolygon(const QVector<QPoint> &) 
+// (12)qm2589534692 (34)_ZN8QPolygonC2ERK7QVectorI6QPointE
+/*void* qm2589534692(const QVector<QPoint> & v)*/{
+  const QVector<QPoint> & v = *(const QVector<QPoint> *)this_;
+  this_ =  new QPolygon(v);
 }
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:64
-// [-2] void QPolygon(QVector<QPoint> &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonC2EO7QVectorI6QPointE(QVector<QPoint> && v) {
-  return  new QPolygon(v);
+// /usr/include/qt/QtGui/qpolygon.h:63
+// [-2] void QPolygon(QVector<QPoint> &&) 
+// (12)qm3660574542 (33)_ZN8QPolygonC2EO7QVectorI6QPointE
+/*void* qm3660574542(QVector<QPoint> && v)*/{
+  QVector<QPoint> && v =  static_cast<QVector<QPoint> &&>(*(QVector<QPoint> *)this_);
+  this_ =  new QPolygon(v);
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:66
-// [-2] void QPolygon(const QRect &, bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonC2ERK5QRectb(QRect* r, bool closed) {
-  return  new QPolygon(*r, closed);
+// [-2] void QPolygon(const QPolygon &) 
+// (12)qm3767110173 (19)_ZN8QPolygonC2ERKS_
+/*void* qm3767110173(const QPolygon & other)*/{
+  const QPolygon & other = *(const QPolygon *)this_;
+  this_ =  new QPolygon(other);
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:67
-// [-2] void QPolygon(int, const int *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonC2EiPKi(int nPoints, const int * points) {
-  return  new QPolygon(nPoints, points);
+// [-2] void QPolygon(QPolygon &&) 
+// (12)qm3428488994 (18)_ZN8QPolygonC2EOS_
+/*void* qm3428488994(QPolygon && other)*/{
+  QPolygon && other =  static_cast<QPolygon &&>(*(QPolygon *)this_);
+  this_ =  new QPolygon(other);
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:68
-// [-2] void QPolygon(const QPolygon &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonC2ERKS_(QPolygon* other) {
-  return  new QPolygon(*other);
+// [8] QPolygon & operator=(QPolygon &&) 
+// (11)qm577531362 (18)_ZN8QPolygonaSEOS_
+//static
+/*void qm577531362(QPolygon && other)*/ {
+  QPolygon && other =  static_cast<QPolygon &&>(*(QPolygon *)this_);
+  (void) ((QPolygon*)this_)->operator=(other);
+  // auto xptr = (QPolygon & (QPolygon::*)(QPolygon&&) ) &QPolygon::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:69
+// [8] QPolygon & operator=(const QPolygon &) 
+// (12)qm2063826519 (19)_ZN8QPolygonaSERKS_
+//static
+/*void qm2063826519(const QPolygon & other)*/ {
+  const QPolygon & other = *(const QPolygon *)this_;
+  (void) ((QPolygon*)this_)->operator=(other);
+  // auto xptr = (QPolygon & (QPolygon::*)(QPolygon const&) ) &QPolygon::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:70
-// [-2] void QPolygon(QPolygon &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonC2EOS_(QPolygon && other) {
-  return  new QPolygon(other);
+// [-2] void swap(QPolygon &) 
+// (12)qm3190163766 (21)_ZN8QPolygon4swapERS_
+//static
+/*void qm3190163766(QPolygon & other)*/ {
+  QPolygon & other = *(QPolygon *)this_;
+  (void) ((QPolygon*)this_)->swap(other);
+   auto xptr = (void (QPolygon::*)(QPolygon&) ) &QPolygon::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:71
-// [8] QPolygon & operator=(QPolygon &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonaSEOS_(void *this_, QPolygon && other) {
-  auto& rv = ((QPolygon*)this_)->operator=(other);
-return &rv;
+// Public Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:75
+// [-2] void translate(const QPoint &) 
+// (12)qm4128793254 (32)_ZN8QPolygon9translateERK6QPoint
+//static
+/*void qm4128793254(const QPoint & offset)*/ {
+  const QPoint & offset = *(const QPoint *)this_;
+  (void) ((QPolygon*)this_)->translate(offset);
+   auto xptr = (void (QPolygon::*)(QPoint const&) ) &QPolygon::translate;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:73
-// [8] QPolygon & operator=(const QPolygon &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN8QPolygonaSERKS_(void *this_, QPolygon* other) {
-  auto& rv = ((QPolygon*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtGui/qpolygon.h:74
-// [-2] void swap(QPolygon &)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon4swapERS_(void *this_, QPolygon* other) {
-  ((QPolygon*)this_)->swap(*other);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public Visibility=Default Availability=Available
+// Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:78
-// [-2] void translate(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon9translateEii(void *this_, int dx, int dy) {
-  ((QPolygon*)this_)->translate(dx, dy);
+// [8] QPolygon translated(const QPoint &) const
+// (12)qm3541708868 (35)_ZNK8QPolygon10translatedERK6QPoint
+//static
+/*void qm3541708868(const QPoint & offset)*/ {
+  const QPoint & offset = *(const QPoint *)this_;
+  (void) ((QPolygon*)this_)->translated(offset);
+   auto xptr = (QPolygon (QPolygon::*)(QPoint const&) const ) &QPolygon::translated;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:79
-// [-2] void translate(const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon9translateERK6QPoint(void *this_, QPoint* offset) {
-  ((QPolygon*)this_)->translate(*offset);
+// Public Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:83
+// [8] QPoint point(int) const
+// (12)qm3737091125 (21)_ZNK8QPolygon5pointEi
+//static
+/*void qm3737091125(int i)*/ {
+  int i = *(int*)this_;
+  (void) ((QPolygon*)this_)->point(i);
+   auto xptr = (QPoint (QPolygon::*)(int) const ) &QPolygon::point;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtGui/qpolygon.h:81
-// [8] QPolygon translated(int, int)
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPolygon10translatedEii(void *this_, int dx, int dy) {
-  auto rv = ((QPolygon*)this_)->translated(dx, dy);
-return new QPolygon(rv);
-}
-#endif // QT_VERSION >= 0x040600
-
-// Public inline Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtGui/qpolygon.h:82
-// [8] QPolygon translated(const QPoint &)
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPolygon10translatedERK6QPoint(void *this_, QPoint* offset) {
-  auto rv = ((QPolygon*)this_)->translated(*offset);
-return new QPolygon(rv);
-}
-#endif // QT_VERSION >= 0x040600
-
-// Public Visibility=Default Availability=Available
+// Public Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpolygon.h:84
-// [16] QRect boundingRect()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPolygon12boundingRectEv(void *this_) {
-  auto rv = ((QPolygon*)this_)->boundingRect();
-return new QRect(rv);
+// [-2] void setPoint(int, int, int) 
+// (12)qm2621343325 (25)_ZN8QPolygon8setPointEiii
+//static
+/*void qm2621343325(int index, int x, int y)*/ {
+  int index = *(int*)this_; int x = *(int*)this_; int y = *(int*)this_;
+  (void) ((QPolygon*)this_)->setPoint(index, x, y);
+   auto xptr = (void (QPolygon::*)(int, int, int) ) &QPolygon::setPoint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:86
-// [-2] void point(int, int *, int *)
-extern "C" Q_DECL_EXPORT
-void C_ZNK8QPolygon5pointEiPiS0_(void *this_, int i, int * x, int * y) {
-  ((QPolygon*)this_)->point(i, x, y);
+// Public Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:85
+// [-2] void setPoint(int, const QPoint &) 
+// (12)qm1427153684 (32)_ZN8QPolygon8setPointEiRK6QPoint
+//static
+/*void qm1427153684(int index, const QPoint & p)*/ {
+  int index = *(int*)this_; const QPoint & p = *(const QPoint *)this_;
+  (void) ((QPolygon*)this_)->setPoint(index, p);
+   auto xptr = (void (QPolygon::*)(int, QPoint const&) ) &QPolygon::setPoint;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:87
-// [8] QPoint point(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPolygon5pointEi(void *this_, int i) {
-  auto rv = ((QPolygon*)this_)->point(i);
-return new QPoint(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:88
-// [-2] void setPoint(int, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon8setPointEiii(void *this_, int index, int x, int y) {
-  ((QPolygon*)this_)->setPoint(index, x, y);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:89
-// [-2] void setPoint(int, const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon8setPointEiRK6QPoint(void *this_, int index, QPoint* p) {
-  ((QPolygon*)this_)->setPoint(index, *p);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:90
-// [-2] void setPoints(int, const int *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon9setPointsEiPKi(void *this_, int nPoints, const int * points) {
-  ((QPolygon*)this_)->setPoints(nPoints, points);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:91
-// [-2] void setPoints(int, int, int, ...)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon9setPointsEiiiz(void *this_, int nPoints, int firstx, int firsty,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
-  ((QPolygon*)this_)->setPoints(nPoints, firstx, firsty,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:92
-// [-2] void putPoints(int, int, const int *)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon9putPointsEiiPKi(void *this_, int index, int nPoints, const int * points) {
-  ((QPolygon*)this_)->putPoints(index, nPoints, points);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:93
-// [-2] void putPoints(int, int, int, int, ...)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon9putPointsEiiiiz(void *this_, int index, int nPoints, int firstx, int firsty,void*a0 ,void*a1 ,void*a2 ,void*a3 ,void*a4 ,void*a5 ,void*a6 ,void*a7 ,void*a8 ,void*a9 ) {
-  ((QPolygon*)this_)->putPoints(index, nPoints, firstx, firsty,a0 ,a1 ,a2 ,a3 ,a4 ,a5 ,a6 ,a7 ,a8 ,a9 );
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qpolygon.h:94
-// [-2] void putPoints(int, int, const QPolygon &, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN8QPolygon9putPointsEiiRKS_i(void *this_, int index, int nPoints, QPolygon* from, int fromIndex) {
-  ((QPolygon*)this_)->putPoints(index, nPoints, *from, fromIndex);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtGui/qpolygon.h:96
-// [1] bool containsPoint(const QPoint &, Qt::FillRule)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPolygon13containsPointERK6QPointN2Qt8FillRuleE(void *this_, QPoint* pt, Qt::FillRule fillRule) {
-  return (bool)((QPolygon*)this_)->containsPoint(*pt, fillRule);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtGui/qpolygon.h:98
-// [8] QPolygon united(const QPolygon &)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPolygon6unitedERKS_(void *this_, QPolygon* r) {
-  auto rv = ((QPolygon*)this_)->united(*r);
-return new QPolygon(rv);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtGui/qpolygon.h:99
-// [8] QPolygon intersected(const QPolygon &)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPolygon11intersectedERKS_(void *this_, QPolygon* r) {
-  auto rv = ((QPolygon*)this_)->intersected(*r);
-return new QPolygon(rv);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public Visibility=Default Availability=Available
-// since 4.3
-// /usr/include/qt/QtGui/qpolygon.h:100
-// [8] QPolygon subtracted(const QPolygon &)
-#if QT_VERSION >= 0x040300
-extern "C" Q_DECL_EXPORT
-void* C_ZNK8QPolygon10subtractedERKS_(void *this_, QPolygon* r) {
-  auto rv = ((QPolygon*)this_)->subtracted(*r);
-return new QPolygon(rv);
-}
-#endif // QT_VERSION >= 0x040300
-
-// Public Visibility=Default Availability=Available
-// since 5.10
-// /usr/include/qt/QtGui/qpolygon.h:102
-// [1] bool intersects(const QPolygon &)
-#if QT_VERSION >= 0x050a00
-extern "C" Q_DECL_EXPORT
-bool C_ZNK8QPolygon10intersectsERKS_(void *this_, QPolygon* r) {
-  return (bool)((QPolygon*)this_)->intersects(*r);
-}
-#endif // QT_VERSION >= 0x050a00
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qpolygon
 //  main block end
 
 //  use block begin

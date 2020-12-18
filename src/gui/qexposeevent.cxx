@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QExposeEvent is pure virtual: false
+// QExposeEvent is pure virtual: false false
 // QExposeEvent has virtual projected: false
 //  header block end
 
@@ -53,30 +52,28 @@ public:
 MyQExposeEvent(const QRegion & rgn) : QExposeEvent(rgn) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:439
-// [-2] void QExposeEvent(const QRegion &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QExposeEventC2ERK7QRegion(QRegion* rgn) {
-  return  new QExposeEvent(*rgn);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qexposeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:479
+// [8] const QRegion & region() const
+// (12)qm3350744969 (27)_ZNK12QExposeEvent6regionEv
+//static
+/*void qm3350744969()*/ {
+  ;
+  (void) ((QExposeEvent*)this_)->region();
+   auto xptr = (const QRegion & (QExposeEvent::*)() const ) &QExposeEvent::region;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:440
-// [-2] void ~QExposeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN12QExposeEventD2Ev(void *this_) {
+
+/*void C_ZN12QExposeEventD2Ev(void *this_)*/ {
   delete (QExposeEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:442
-// [8] const QRegion & region()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QExposeEvent6regionEv(void *this_) {
-  auto& rv = ((QExposeEvent*)this_)->region();
-return new QRegion(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qexposeevent
 //  main block end
 
 //  use block begin

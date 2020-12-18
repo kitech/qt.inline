@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QCursor is pure virtual: false
+// QCursor is pure virtual: false false
 // QCursor has virtual projected: false
 //  header block end
 
@@ -62,190 +62,73 @@ MyQCursor(const QCursor & cursor) : QCursor(cursor) {}
 MyQCursor(QCursor && other) : QCursor(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:82
-// [-2] void QCursor()
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursorC2Ev() {
-  return  new QCursor();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcursor(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:89
+// [-2] void QCursor(QCursor &&) 
+// (11)qm710598164 (17)_ZN7QCursorC2EOS_
+/*void* qm710598164(QCursor && other)*/{
+  QCursor && other =  static_cast<QCursor &&>(*(QCursor *)this_);
+  this_ =  new QCursor(other);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:83
-// [-2] void QCursor(Qt::CursorShape)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursorC2EN2Qt11CursorShapeE(Qt::CursorShape shape) {
-  return  new QCursor(shape);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:90
+// [8] QCursor & operator=(QCursor &&) 
+// (12)qm3295421652 (17)_ZN7QCursoraSEOS_
+//static
+/*void qm3295421652(QCursor && other)*/ {
+  QCursor && other =  static_cast<QCursor &&>(*(QCursor *)this_);
+  (void) ((QCursor*)this_)->operator=(other);
+  // auto xptr = (QCursor & (QCursor::*)(QCursor&&) ) &QCursor::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:84
-// [-2] void QCursor(const QBitmap &, const QBitmap &, int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursorC2ERK7QBitmapS2_ii(QBitmap* bitmap, QBitmap* mask, int hotX, int hotY) {
-  return  new QCursor(*bitmap, *mask, hotX, hotY);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:93
+// [-2] void swap(QCursor &) 
+// (12)qm3212534974 (20)_ZN7QCursor4swapERS_
+//static
+/*void qm3212534974(QCursor & other)*/ {
+  QCursor & other = *(QCursor *)this_;
+  (void) ((QCursor*)this_)->swap(other);
+   auto xptr = (void (QCursor::*)(QCursor&) ) &QCursor::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:85
-// [-2] void QCursor(const QPixmap &, int, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursorC2ERK7QPixmapii(QPixmap* pixmap, int hotX, int hotY) {
-  return  new QCursor(*pixmap, hotX, hotY);
+// Public static inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:120
+// [-2] void setPos(const QPoint &) 
+// (12)qm3847847402 (28)_ZN7QCursor6setPosERK6QPoint
+//static
+/*void qm3847847402(const QPoint & p)*/ {
+  const QPoint & p = *(const QPoint *)this_;
+  (void) QCursor::setPos(p);
+   auto xptr = (void (*)(QPoint const&) ) &QCursor::setPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:86
-// [-2] void QCursor(const QCursor &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursorC2ERKS_(QCursor* cursor) {
-  return  new QCursor(*cursor);
+// Public static inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:121
+// [-2] void setPos(QScreen *, const QPoint &) 
+// (12)qm2961776494 (37)_ZN7QCursor6setPosEP7QScreenRK6QPoint
+//static
+/*void qm2961776494(QScreen * screen, const QPoint & p)*/ {
+  QScreen * screen = *(QScreen **)this_; const QPoint & p = *(const QPoint *)this_;
+  (void) QCursor::setPos(screen, p);
+   auto xptr = (void (*)(QScreen*, QPoint const&) ) &QCursor::setPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:87
-// [-2] void ~QCursor()
-extern "C" Q_DECL_EXPORT
-void C_ZN7QCursorD2Ev(void *this_) {
+
+/*void C_ZN7QCursorD2Ev(void *this_)*/ {
   delete (QCursor*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:88
-// [8] QCursor & operator=(const QCursor &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursoraSERKS_(void *this_, QCursor* cursor) {
-  auto& rv = ((QCursor*)this_)->operator=(*cursor);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.5
-// /usr/include/qt/QtGui/qcursor.h:90
-// [-2] void QCursor(QCursor &&)
-#if QT_VERSION >= 0x050500
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursorC2EOS_(QCursor && other) {
-  return  new QCursor(other);
-}
-#endif // QT_VERSION >= 0x050500
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:91
-// [8] QCursor & operator=(QCursor &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursoraSEOS_(void *this_, QCursor && other) {
-  auto& rv = ((QCursor*)this_)->operator=(other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:95
-// [-2] void swap(QCursor &)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QCursor4swapERS_(void *this_, QCursor* other) {
-  ((QCursor*)this_)->swap(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:99
-// [4] Qt::CursorShape shape()
-extern "C" Q_DECL_EXPORT
-Qt::CursorShape C_ZNK7QCursor5shapeEv(void *this_) {
-  return (Qt::CursorShape)((QCursor*)this_)->shape();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:100
-// [-2] void setShape(Qt::CursorShape)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QCursor8setShapeEN2Qt11CursorShapeE(void *this_, Qt::CursorShape newShape) {
-  ((QCursor*)this_)->setShape(newShape);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:102
-// [8] const QBitmap * bitmap()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QCursor6bitmapEv(void *this_) {
-  return (void*)((QCursor*)this_)->bitmap();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:103
-// [8] const QBitmap * mask()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QCursor4maskEv(void *this_) {
-  return (void*)((QCursor*)this_)->mask();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:104
-// [32] QPixmap pixmap()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QCursor6pixmapEv(void *this_) {
-  auto rv = ((QCursor*)this_)->pixmap();
-return new QPixmap(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:105
-// [8] QPoint hotSpot()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK7QCursor7hotSpotEv(void *this_) {
-  auto rv = ((QCursor*)this_)->hotSpot();
-return new QPoint(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:107
-// [8] QPoint pos()
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursor3posEv() {
-  auto rv = QCursor::pos();
-return new QPoint(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:108
-// [8] QPoint pos(const QScreen *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN7QCursor3posEPK7QScreen(const QScreen * screen) {
-  auto rv = QCursor::pos(screen);
-return new QPoint(rv);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:109
-// [-2] void setPos(int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QCursor6setPosEii(int x, int y) {
-  QCursor::setPos(x, y);
-}
-
-// Public static Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:110
-// [-2] void setPos(QScreen *, int, int)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QCursor6setPosEP7QScreenii(QScreen * screen, int x, int y) {
-  QCursor::setPos(screen, x, y);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:111
-// [-2] void setPos(const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QCursor6setPosERK6QPoint(QPoint* p) {
-  QCursor::setPos(*p);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qcursor.h:112
-// [-2] void setPos(QScreen *, const QPoint &)
-extern "C" Q_DECL_EXPORT
-void C_ZN7QCursor6setPosEP7QScreenRK6QPoint(QScreen * screen, QPoint* p) {
-  QCursor::setPos(screen, *p);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcursor
 //  main block end
 
 //  use block begin

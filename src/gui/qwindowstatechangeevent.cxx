@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QWindowStateChangeEvent is pure virtual: false
+// QWindowStateChangeEvent is pure virtual: false false
 // QWindowStateChangeEvent has virtual projected: false
 //  header block end
 
@@ -52,37 +52,28 @@ public:
 MyQWindowStateChangeEvent(QFlags<Qt::WindowState> aOldState, bool isOverride) : QWindowStateChangeEvent(aOldState, isOverride) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:788
-// [-2] void QWindowStateChangeEvent(Qt::WindowStates, bool)
-extern "C" Q_DECL_EXPORT
-void* C_ZN23QWindowStateChangeEventC2E6QFlagsIN2Qt11WindowStateEEb(QFlags<Qt::WindowState> aOldState, bool isOverride) {
-  return  new QWindowStateChangeEvent(aOldState, isOverride);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qwindowstatechangeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:828
+// [4] Qt::WindowStates oldState() const
+// (12)qm2359992506 (40)_ZNK23QWindowStateChangeEvent8oldStateEv
+//static
+/*void qm2359992506()*/ {
+  ;
+  (void) ((QWindowStateChangeEvent*)this_)->oldState();
+   auto xptr = (QFlags<Qt::WindowState> (QWindowStateChangeEvent::*)() const ) &QWindowStateChangeEvent::oldState;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:789
-// [-2] void ~QWindowStateChangeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN23QWindowStateChangeEventD2Ev(void *this_) {
+
+/*void C_ZN23QWindowStateChangeEventD2Ev(void *this_)*/ {
   delete (QWindowStateChangeEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:791
-// [4] Qt::WindowStates oldState()
-extern "C" Q_DECL_EXPORT
-Qt::WindowStates C_ZNK23QWindowStateChangeEvent8oldStateEv(void *this_) {
-  return (Qt::WindowStates)((QWindowStateChangeEvent*)this_)->oldState();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:792
-// [1] bool isOverride()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK23QWindowStateChangeEvent10isOverrideEv(void *this_) {
-  return (bool)((QWindowStateChangeEvent*)this_)->isOverride();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qwindowstatechangeevent
 //  main block end
 
 //  use block begin

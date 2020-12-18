@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QContextMenuEvent is pure virtual: false
+// QContextMenuEvent is pure virtual: false false
 // QContextMenuEvent has virtual projected: false
 //  header block end
 
@@ -56,95 +56,100 @@ MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos, const 
 MyQContextMenuEvent(QContextMenuEvent::Reason reason, const QPoint & pos) : QContextMenuEvent(reason, pos) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:516
-// [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &, Qt::KeyboardModifiers)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_6QFlagsIN2Qt16KeyboardModifierEE(QContextMenuEvent::Reason reason, QPoint* pos, QPoint* globalPos, QFlags<Qt::KeyboardModifier> modifiers) {
-  return  new QContextMenuEvent(reason, *pos, *globalPos, modifiers);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcontextmenuevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:559
+// [4] int x() const
+// (11)qm824714272 (27)_ZNK17QContextMenuEvent1xEv
+//static
+/*void qm824714272()*/ {
+  ;
+  (void) ((QContextMenuEvent*)this_)->x();
+   auto xptr = (int (QContextMenuEvent::*)() const ) &QContextMenuEvent::x;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:518
-// [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_(QContextMenuEvent::Reason reason, QPoint* pos, QPoint* globalPos) {
-  return  new QContextMenuEvent(reason, *pos, *globalPos);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:560
+// [4] int y() const
+// (11)qm820661783 (27)_ZNK17QContextMenuEvent1yEv
+//static
+/*void qm820661783()*/ {
+  ;
+  (void) ((QContextMenuEvent*)this_)->y();
+   auto xptr = (int (QContextMenuEvent::*)() const ) &QContextMenuEvent::y;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:519
-// [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QContextMenuEventC2ENS_6ReasonERK6QPoint(QContextMenuEvent::Reason reason, QPoint* pos) {
-  return  new QContextMenuEvent(reason, *pos);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:561
+// [4] int globalX() const
+// (12)qm1849807094 (33)_ZNK17QContextMenuEvent7globalXEv
+//static
+/*void qm1849807094()*/ {
+  ;
+  (void) ((QContextMenuEvent*)this_)->globalX();
+   auto xptr = (int (QContextMenuEvent::*)() const ) &QContextMenuEvent::globalX;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:520
-// [-2] void ~QContextMenuEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QContextMenuEventD2Ev(void *this_) {
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:562
+// [4] int globalY() const
+// (12)qm1870904001 (33)_ZNK17QContextMenuEvent7globalYEv
+//static
+/*void qm1870904001()*/ {
+  ;
+  (void) ((QContextMenuEvent*)this_)->globalY();
+   auto xptr = (int (QContextMenuEvent::*)() const ) &QContextMenuEvent::globalY;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:564
+// [8] const QPoint & pos() const
+// (12)qm1758129046 (29)_ZNK17QContextMenuEvent3posEv
+//static
+/*void qm1758129046()*/ {
+  ;
+  (void) ((QContextMenuEvent*)this_)->pos();
+   auto xptr = (const QPoint & (QContextMenuEvent::*)() const ) &QContextMenuEvent::pos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:565
+// [8] const QPoint & globalPos() const
+// (12)qm2709623414 (35)_ZNK17QContextMenuEvent9globalPosEv
+//static
+/*void qm2709623414()*/ {
+  ;
+  (void) ((QContextMenuEvent*)this_)->globalPos();
+   auto xptr = (const QPoint & (QContextMenuEvent::*)() const ) &QContextMenuEvent::globalPos;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:567
+// [4] QContextMenuEvent::Reason reason() const
+// (12)qm1466531341 (32)_ZNK17QContextMenuEvent6reasonEv
+//static
+/*void qm1466531341()*/ {
+  ;
+  (void) ((QContextMenuEvent*)this_)->reason();
+   auto xptr = (QContextMenuEvent::Reason (QContextMenuEvent::*)() const ) &QContextMenuEvent::reason;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN17QContextMenuEventD2Ev(void *this_)*/ {
   delete (QContextMenuEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:522
-// [4] int x()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QContextMenuEvent1xEv(void *this_) {
-  return (int)((QContextMenuEvent*)this_)->x();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:523
-// [4] int y()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QContextMenuEvent1yEv(void *this_) {
-  return (int)((QContextMenuEvent*)this_)->y();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:524
-// [4] int globalX()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QContextMenuEvent7globalXEv(void *this_) {
-  return (int)((QContextMenuEvent*)this_)->globalX();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:525
-// [4] int globalY()
-extern "C" Q_DECL_EXPORT
-int C_ZNK17QContextMenuEvent7globalYEv(void *this_) {
-  return (int)((QContextMenuEvent*)this_)->globalY();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:527
-// [8] const QPoint & pos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QContextMenuEvent3posEv(void *this_) {
-  auto& rv = ((QContextMenuEvent*)this_)->pos();
-return new QPoint(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:528
-// [8] const QPoint & globalPos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QContextMenuEvent9globalPosEv(void *this_) {
-  auto& rv = ((QContextMenuEvent*)this_)->globalPos();
-return new QPoint(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:530
-// [4] QContextMenuEvent::Reason reason()
-extern "C" Q_DECL_EXPORT
-QContextMenuEvent::Reason C_ZNK17QContextMenuEvent6reasonEv(void *this_) {
-  return (QContextMenuEvent::Reason)((QContextMenuEvent*)this_)->reason();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcontextmenuevent
 //  main block end
 
 //  use block begin

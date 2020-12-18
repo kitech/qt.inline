@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QStatusTipEvent is pure virtual: false
+// QStatusTipEvent is pure virtual: false false
 // QStatusTipEvent has virtual projected: false
 //  header block end
 
@@ -52,30 +52,28 @@ public:
 MyQStatusTipEvent(const QString & tip) : QStatusTipEvent(tip) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:705
-// [-2] void QStatusTipEvent(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN15QStatusTipEventC2ERK7QString(QString* tip) {
-  return  new QStatusTipEvent(*tip);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qstatustipevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:745
+// [8] QString tip() const
+// (12)qm2961832183 (27)_ZNK15QStatusTipEvent3tipEv
+//static
+/*void qm2961832183()*/ {
+  ;
+  (void) ((QStatusTipEvent*)this_)->tip();
+   auto xptr = (QString (QStatusTipEvent::*)() const ) &QStatusTipEvent::tip;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:706
-// [-2] void ~QStatusTipEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN15QStatusTipEventD2Ev(void *this_) {
+
+/*void C_ZN15QStatusTipEventD2Ev(void *this_)*/ {
   delete (QStatusTipEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:708
-// [8] QString tip()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK15QStatusTipEvent3tipEv(void *this_) {
-  auto rv = ((QStatusTipEvent*)this_)->tip();
-return new QString(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qstatustipevent
 //  main block end
 
 //  use block begin

@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040800
 // /usr/include/qt/QtGui/qevent.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QScrollEvent is pure virtual: false
+// QScrollEvent is pure virtual: false false
 // QScrollEvent has virtual projected: false
 //  header block end
 
@@ -53,47 +52,16 @@ public:
 MyQScrollEvent(const QPointF & contentPos, const QPointF & overshoot, QScrollEvent::ScrollState scrollState) : QScrollEvent(contentPos, overshoot, scrollState) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1027
-// [-2] void QScrollEvent(const QPointF &, const QPointF &, QScrollEvent::ScrollState)
-extern "C" Q_DECL_EXPORT
-void* C_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE(QPointF* contentPos, QPointF* overshoot, QScrollEvent::ScrollState scrollState) {
-  return  new QScrollEvent(*contentPos, *overshoot, scrollState);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qscrollevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1028
-// [-2] void ~QScrollEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN12QScrollEventD2Ev(void *this_) {
+
+/*void C_ZN12QScrollEventD2Ev(void *this_)*/ {
   delete (QScrollEvent*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1030
-// [16] QPointF contentPos()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QScrollEvent10contentPosEv(void *this_) {
-  auto rv = ((QScrollEvent*)this_)->contentPos();
-return new QPointF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1031
-// [16] QPointF overshootDistance()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK12QScrollEvent17overshootDistanceEv(void *this_) {
-  auto rv = ((QScrollEvent*)this_)->overshootDistance();
-return new QPointF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1032
-// [4] QScrollEvent::ScrollState scrollState()
-extern "C" Q_DECL_EXPORT
-QScrollEvent::ScrollState C_ZNK12QScrollEvent11scrollStateEv(void *this_) {
-  return (QScrollEvent::ScrollState)((QScrollEvent*)this_)->scrollState();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qscrollevent
 //  main block end
 
 //  use block begin

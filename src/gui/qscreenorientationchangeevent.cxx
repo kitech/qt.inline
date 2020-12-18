@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QScreenOrientationChangeEvent is pure virtual: false
+// QScreenOrientationChangeEvent is pure virtual: false false
 // QScreenOrientationChangeEvent has virtual projected: false
 //  header block end
 
@@ -52,37 +52,16 @@ public:
 MyQScreenOrientationChangeEvent(QScreen * screen, Qt::ScreenOrientation orientation) : QScreenOrientationChangeEvent(screen, orientation) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1043
-// [-2] void QScreenOrientationChangeEvent(QScreen *, Qt::ScreenOrientation)
-extern "C" Q_DECL_EXPORT
-void* C_ZN29QScreenOrientationChangeEventC2EP7QScreenN2Qt17ScreenOrientationE(QScreen * screen, Qt::ScreenOrientation orientation) {
-  return  new QScreenOrientationChangeEvent(screen, orientation);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qscreenorientationchangeevent(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1044
-// [-2] void ~QScreenOrientationChangeEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN29QScreenOrientationChangeEventD2Ev(void *this_) {
+
+/*void C_ZN29QScreenOrientationChangeEventD2Ev(void *this_)*/ {
   delete (QScreenOrientationChangeEvent*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1046
-// [8] QScreen * screen()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK29QScreenOrientationChangeEvent6screenEv(void *this_) {
-  return (void*)((QScreenOrientationChangeEvent*)this_)->screen();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:1047
-// [4] Qt::ScreenOrientation orientation()
-extern "C" Q_DECL_EXPORT
-Qt::ScreenOrientation C_ZNK29QScreenOrientationChangeEvent11orientationEv(void *this_) {
-  return (Qt::ScreenOrientation)((QScreenOrientationChangeEvent*)this_)->orientation();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qscreenorientationchangeevent
 //  main block end
 
 //  use block begin

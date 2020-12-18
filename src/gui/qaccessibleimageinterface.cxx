@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QAccessibleImageInterface is pure virtual: true
+// QAccessibleImageInterface is pure virtual: true true
 // QAccessibleImageInterface has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQAccessibleImageInterface[] = {
 class Q_DECL_EXPORT MyQAccessibleImageInterface : public QAccessibleImageInterface {
 public:
   virtual ~MyQAccessibleImageInterface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QString imageDescription()
   virtual QString imageDescription() const override {
     int handled = 0;
@@ -62,7 +62,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QSize imageSize()
   virtual QSize imageSize() const override {
     int handled = 0;
@@ -76,7 +76,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QPoint imagePosition()
   virtual QPoint imagePosition() const override {
     int handled = 0;
@@ -92,49 +92,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:657
-// [8] QString imageDescription()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:658
-// [8] QSize imageSize()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:659
-// [8] QPoint imagePosition()
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:655
-// [-2] void ~QAccessibleImageInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN25QAccessibleImageInterfaceD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaccessibleimageinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN25QAccessibleImageInterfaceD2Ev(void *this_)*/ {
   delete (QAccessibleImageInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:657
-// [8] QString imageDescription()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK25QAccessibleImageInterface16imageDescriptionEv(void *this_) {
-  auto rv = ((QAccessibleImageInterface*)this_)->imageDescription();
-return new QString(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:658
-// [8] QSize imageSize()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK25QAccessibleImageInterface9imageSizeEv(void *this_) {
-  auto rv = ((QAccessibleImageInterface*)this_)->imageSize();
-return new QSize(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qaccessible.h:659
-// [8] QPoint imagePosition()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK25QAccessibleImageInterface13imagePositionEv(void *this_) {
-  auto rv = ((QAccessibleImageInterface*)this_)->imagePosition();
-return new QPoint(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaccessibleimageinterface
 //  main block end
 
 //  use block begin

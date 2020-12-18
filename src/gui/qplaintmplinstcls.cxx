@@ -103,20 +103,6 @@ void* C_ZN9QTypeInfoI7QMatrixE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
-// [8] const char * QTypeInfo<QPainterPath>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoI12QPainterPathE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QPainterPath>*)this_)->name();
-   return (void*)rv;
-}
-
-// [8] const char * QTypeInfo<QPainterPath::Element>::name()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QTypeInfoIN12QPainterPath7ElementEE4nameEv(void* this_ ) {
-   auto rv =  ((QTypeInfo<QPainterPath::Element>*)this_)->name();
-   return (void*)rv;
-}
-
 // [8] const char * QTypeInfo<QTransform>::name()
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI10QTransformE4nameEv(void* this_ ) {
@@ -303,6 +289,20 @@ void* C_ZN9QTypeInfoI7QCursorE4nameEv(void* this_ ) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI7QBitmapE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QBitmap>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QColorTransform>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI15QColorTransformE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QColorTransform>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QColorSpace>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI11QColorSpaceE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QColorSpace>*)this_)->name();
    return (void*)rv;
 }
 
@@ -499,6 +499,20 @@ void* C_ZN9QTypeInfoIN8QPainter14PixmapFragmentEE4nameEv(void* this_ ) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI9QTextItemE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QTextItem>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QPainterPath>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI12QPainterPathE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QPainterPath>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QPainterPath::Element>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoIN12QPainterPath7ElementEE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QPainterPath::Element>*)this_)->name();
    return (void*)rv;
 }
 

@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QDragMoveEvent is pure virtual: false
+// QDragMoveEvent is pure virtual: false false
 // QDragMoveEvent has virtual projected: false
 //  header block end
 
@@ -52,62 +52,76 @@ public:
 MyQDragMoveEvent(const QPoint & pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type_) : QDragMoveEvent(pos, actions, data, buttons, modifiers, type_) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:647
-// [-2] void QDragMoveEvent(const QPoint &, Qt::DropActions, const QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, QEvent::Type)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QDragMoveEventC2ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE(QPoint* pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type_) {
-  return  new QDragMoveEvent(*pos, actions, data, buttons, modifiers, type_);
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qdragmoveevent(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:688
+// [16] QRect answerRect() const
+// (11)qm710559280 (34)_ZNK14QDragMoveEvent10answerRectEv
+//static
+/*void qm710559280()*/ {
+  ;
+  (void) ((QDragMoveEvent*)this_)->answerRect();
+   auto xptr = (QRect (QDragMoveEvent::*)() const ) &QDragMoveEvent::answerRect;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:649
-// [-2] void ~QDragMoveEvent()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QDragMoveEventD2Ev(void *this_) {
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:690
+// [-2] void accept() 
+// (10)qm46107050 (28)_ZN14QDragMoveEvent6acceptEv
+//static
+/*void qm46107050()*/ {
+  ;
+  (void) ((QDragMoveEvent*)this_)->accept();
+   auto xptr = (void (QDragMoveEvent::*)() ) &QDragMoveEvent::accept;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:691
+// [-2] void ignore() 
+// (12)qm1691794623 (28)_ZN14QDragMoveEvent6ignoreEv
+//static
+/*void qm1691794623()*/ {
+  ;
+  (void) ((QDragMoveEvent*)this_)->ignore();
+   auto xptr = (void (QDragMoveEvent::*)() ) &QDragMoveEvent::ignore;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:693
+// [-2] void accept(const QRect &) 
+// (11)qm599932905 (35)_ZN14QDragMoveEvent6acceptERK5QRect
+//static
+/*void qm599932905(const QRect & r)*/ {
+  const QRect & r = *(const QRect *)this_;
+  (void) ((QDragMoveEvent*)this_)->accept(r);
+   auto xptr = (void (QDragMoveEvent::*)(QRect const&) ) &QDragMoveEvent::accept;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:694
+// [-2] void ignore(const QRect &) 
+// (12)qm3372001149 (35)_ZN14QDragMoveEvent6ignoreERK5QRect
+//static
+/*void qm3372001149(const QRect & r)*/ {
+  const QRect & r = *(const QRect *)this_;
+  (void) ((QDragMoveEvent*)this_)->ignore(r);
+   auto xptr = (void (QDragMoveEvent::*)(QRect const&) ) &QDragMoveEvent::ignore;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN14QDragMoveEventD2Ev(void *this_)*/ {
   delete (QDragMoveEvent*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:651
-// [16] QRect answerRect()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QDragMoveEvent10answerRectEv(void *this_) {
-  auto rv = ((QDragMoveEvent*)this_)->answerRect();
-return new QRect(rv);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:653
-// [-2] void accept()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QDragMoveEvent6acceptEv(void *this_) {
-  ((QDragMoveEvent*)this_)->accept();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:654
-// [-2] void ignore()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QDragMoveEvent6ignoreEv(void *this_) {
-  ((QDragMoveEvent*)this_)->ignore();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:656
-// [-2] void accept(const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QDragMoveEvent6acceptERK5QRect(void *this_, QRect* r) {
-  ((QDragMoveEvent*)this_)->accept(*r);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qevent.h:657
-// [-2] void ignore(const QRect &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QDragMoveEvent6ignoreERK5QRect(void *this_, QRect* r) {
-  ((QDragMoveEvent*)this_)->ignore(*r);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qdragmoveevent
 //  main block end
 
 //  use block begin

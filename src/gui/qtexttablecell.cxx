@@ -9,7 +9,7 @@
 #include <QtGui>
 #include "callback_inherit.h"
 
-// QTextTableCell is pure virtual: false
+// QTextTableCell is pure virtual: false false
 // QTextTableCell has virtual projected: false
 //  header block end
 
@@ -54,175 +54,85 @@ MyQTextTableCell() : QTextTableCell() {}
 MyQTextTableCell(const QTextTableCell & o) : QTextTableCell(o) {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qtexttablecell(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:57
-// [-2] void QTextTableCell()
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QTextTableCellC2Ev() {
-  return  new QTextTableCell();
+// [-2] void QTextTableCell() 
+// (12)qm3273602161 (23)_ZN14QTextTableCellC2Ev
+/*void* qm3273602161()*/{
+  ;
+  this_ =  new QTextTableCell();
 }
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:58
-// [-2] void ~QTextTableCell()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QTextTableCellD2Ev(void *this_) {
+// [-2] void ~QTextTableCell() 
+// (12)qm1590168776 (23)_ZN14QTextTableCellD2Ev
+/*void qm1590168776 (void *this_)*/ {
   delete (QTextTableCell*)(this_);
 }
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:59
-// [-2] void QTextTableCell(const QTextTableCell &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QTextTableCellC2ERKS_(QTextTableCell* o) {
-  return  new QTextTableCell(*o);
+// [-2] void QTextTableCell(const QTextTableCell &) 
+// (12)qm2777496846 (26)_ZN14QTextTableCellC2ERKS_
+/*void* qm2777496846(const QTextTableCell & o)*/{
+  const QTextTableCell & o = *(const QTextTableCell *)this_;
+  this_ =  new QTextTableCell(o);
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:60
-// [16] QTextTableCell & operator=(const QTextTableCell &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QTextTableCellaSERKS_(void *this_, QTextTableCell* o) {
-  auto& rv = ((QTextTableCell*)this_)->operator=(*o);
-return &rv;
+// [16] QTextTableCell & operator=(const QTextTableCell &) 
+// (12)qm1040697668 (26)_ZN14QTextTableCellaSERKS_
+//static
+/*void qm1040697668(const QTextTableCell & o)*/ {
+  const QTextTableCell & o = *(const QTextTableCell *)this_;
+  (void) ((QTextTableCell*)this_)->operator=(o);
+  // auto xptr = (QTextTableCell & (QTextTableCell::*)(QTextTableCell const&) ) &QTextTableCell::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// since 4.2
-// /usr/include/qt/QtGui/qtexttable.h:63
-// [-2] void setFormat(const QTextCharFormat &)
-#if QT_VERSION >= 0x040200
-extern "C" Q_DECL_EXPORT
-void C_ZN14QTextTableCell9setFormatERK15QTextCharFormat(void *this_, QTextCharFormat* format) {
-  ((QTextTableCell*)this_)->setFormat(*format);
-}
-#endif // QT_VERSION >= 0x040200
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:64
-// [16] QTextCharFormat format()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QTextTableCell6formatEv(void *this_) {
-  auto rv = ((QTextTableCell*)this_)->format();
-return new QTextCharFormat(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:66
-// [4] int row()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QTextTableCell3rowEv(void *this_) {
-  return (int)((QTextTableCell*)this_)->row();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:67
-// [4] int column()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QTextTableCell6columnEv(void *this_) {
-  return (int)((QTextTableCell*)this_)->column();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:69
-// [4] int rowSpan()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QTextTableCell7rowSpanEv(void *this_) {
-  return (int)((QTextTableCell*)this_)->rowSpan();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:70
-// [4] int columnSpan()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QTextTableCell10columnSpanEv(void *this_) {
-  return (int)((QTextTableCell*)this_)->columnSpan();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:72
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QTextTableCell7isValidEv(void *this_) {
-  return (bool)((QTextTableCell*)this_)->isValid();
+// [1] bool isValid() const
+// (12)qm1472400709 (30)_ZNK14QTextTableCell7isValidEv
+//static
+/*void qm1472400709()*/ {
+  ;
+  (void) ((QTextTableCell*)this_)->isValid();
+   auto xptr = (bool (QTextTableCell::*)() const ) &QTextTableCell::isValid;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:74
-// [8] QTextCursor firstCursorPosition()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QTextTableCell19firstCursorPositionEv(void *this_) {
-  auto rv = ((QTextTableCell*)this_)->firstCursorPosition();
-return new QTextCursor(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:75
-// [8] QTextCursor lastCursorPosition()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QTextTableCell18lastCursorPositionEv(void *this_) {
-  auto rv = ((QTextTableCell*)this_)->lastCursorPosition();
-return new QTextCursor(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:76
-// [4] int firstPosition()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QTextTableCell13firstPositionEv(void *this_) {
-  return (int)((QTextTableCell*)this_)->firstPosition();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:77
-// [4] int lastPosition()
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QTextTableCell12lastPositionEv(void *this_) {
-  return (int)((QTextTableCell*)this_)->lastPosition();
-}
-
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:79
-// [1] bool operator==(const QTextTableCell &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QTextTableCelleqERKS_(void *this_, QTextTableCell* other) {
-  return (bool)((QTextTableCell*)this_)->operator==(*other);
+// [1] bool operator==(const QTextTableCell &) const
+// (12)qm1597674243 (27)_ZNK14QTextTableCelleqERKS_
+//static
+/*void qm1597674243(const QTextTableCell & other)*/ {
+  const QTextTableCell & other = *(const QTextTableCell *)this_;
+  (void) ((QTextTableCell*)this_)->operator==(other);
+  // auto xptr = (bool (QTextTableCell::*)(QTextTableCell const&) const ) &QTextTableCell::operator==;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
+// Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:81
-// [1] bool operator!=(const QTextTableCell &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK14QTextTableCellneERKS_(void *this_, QTextTableCell* other) {
-  return (bool)((QTextTableCell*)this_)->operator!=(*other);
+// [1] bool operator!=(const QTextTableCell &) const
+// (12)qm3313141620 (27)_ZNK14QTextTableCellneERKS_
+//static
+/*void qm3313141620(const QTextTableCell & other)*/ {
+  const QTextTableCell & other = *(const QTextTableCell *)this_;
+  (void) ((QTextTableCell*)this_)->operator!=(other);
+  // auto xptr = (bool (QTextTableCell::*)(QTextTableCell const&) const ) &QTextTableCell::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:84
-// [32] QTextFrame::iterator begin()
-extern "C" Q_DECL_EXPORT
-QTextFrame::iterator C_ZNK14QTextTableCell5beginEv(void *this_) {
-  return (QTextFrame::iterator)((QTextTableCell*)this_)->begin();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtGui/qtexttable.h:85
-// [32] QTextFrame::iterator end()
-extern "C" Q_DECL_EXPORT
-QTextFrame::iterator C_ZNK14QTextTableCell3endEv(void *this_) {
-  return (QTextFrame::iterator)((QTextTableCell*)this_)->end();
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.5
-// /usr/include/qt/QtGui/qtexttable.h:87
-// [4] int tableCellFormatIndex()
-#if QT_VERSION >= 0x040500
-extern "C" Q_DECL_EXPORT
-int C_ZNK14QTextTableCell20tableCellFormatIndexEv(void *this_) {
-  return (int)((QTextTableCell*)this_)->tableCellFormatIndex();
-}
-#endif // QT_VERSION >= 0x040500
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qtexttablecell
 //  main block end
 
 //  use block begin
