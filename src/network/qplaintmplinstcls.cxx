@@ -117,10 +117,10 @@ void* C_ZN9QTypeInfoI9QSslErrorE4nameEv(void* this_ ) {
    return (void*)rv;
 }
 
-// [4] int QMetaTypeId<QList<QSslError> >::qt_metatype_id()
+// [4] int QMetaTypeId<QList<QSslError>>::qt_metatype_id()
 extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaTypeIdI5QListI9QSslErrorEE14qt_metatype_idEv(void* this_ ) {
-   auto rv =  ((QMetaTypeId<QList<QSslError> >*)this_)->qt_metatype_id();
+   auto rv =  ((QMetaTypeId<QList<QSslError>>*)this_)->qt_metatype_id();
    return rv;
 }
 
@@ -149,6 +149,13 @@ int C_ZN11QMetaTypeIdI9QHostInfoE14qt_metatype_idEv(void* this_ ) {
 extern "C" Q_DECL_EXPORT
 void* C_ZN9QTypeInfoI11QHstsPolicyE4nameEv(void* this_ ) {
    auto rv =  ((QTypeInfo<QHstsPolicy>*)this_)->name();
+   return (void*)rv;
+}
+
+// [8] const char * QTypeInfo<QHttp2Configuration>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI19QHttp2ConfigurationE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QHttp2Configuration>*)this_)->name();
    return (void*)rv;
 }
 
@@ -310,6 +317,20 @@ int C_ZN11QMetaTypeIdIN15QNetworkSession12SessionErrorEE14qt_metatype_idEv(void*
 extern "C" Q_DECL_EXPORT
 int C_ZN11QMetaTypeIdI6QFlagsIN15QNetworkSession11UsagePolicyEEE14qt_metatype_idEv(void* this_ ) {
    auto rv =  ((QMetaTypeId<QNetworkSession::UsagePolicies>*)this_)->qt_metatype_id();
+   return rv;
+}
+
+// [8] const char * QTypeInfo<QOcspResponse>::name()
+extern "C" Q_DECL_EXPORT
+void* C_ZN9QTypeInfoI13QOcspResponseE4nameEv(void* this_ ) {
+   auto rv =  ((QTypeInfo<QOcspResponse>*)this_)->name();
+   return (void*)rv;
+}
+
+// [4] int QMetaTypeId<QOcspResponse>::qt_metatype_id()
+extern "C" Q_DECL_EXPORT
+int C_ZN11QMetaTypeIdI13QOcspResponseE14qt_metatype_idEv(void* this_ ) {
+   auto rv =  ((QMetaTypeId<QOcspResponse>*)this_)->qt_metatype_id();
    return rv;
 }
 

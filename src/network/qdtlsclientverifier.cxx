@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtNetwork/qtnetworkglobal.h>
 #if QT_CONFIG(dtls)
-// since 0x050c00
 // /usr/include/qt/QtNetwork/qdtls.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtNetwork>
 #include "callback_inherit.h"
 
-// QDtlsClientVerifier is pure virtual: false
+// QDtlsClientVerifier is pure virtual: false false
 // QDtlsClientVerifier has virtual projected: false
 //  header block end
 
@@ -113,114 +112,28 @@ void* C_QDtlsClientVerifier_init_staticMetaObject(void* this_, void* strdat, voi
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:76
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QDtlsClientVerifier10metaObjectEv(void *this_) {
-  return (void*)((QDtlsClientVerifier*)this_)->metaObject();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qdtlsclientverifier(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdtls.h:78
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm2811470917 (35)_ZN19QDtlsClientVerifier2trEPKcS1_i
+//static
+/*void qm2811470917(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QDtlsClientVerifier::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QDtlsClientVerifier::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:76
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QDtlsClientVerifier11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QDtlsClientVerifier*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:76
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN19QDtlsClientVerifier11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QDtlsClientVerifier*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:76
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QDtlsClientVerifier2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QDtlsClientVerifier::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:76
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QDtlsClientVerifier6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QDtlsClientVerifier::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:80
-// [-2] void QDtlsClientVerifier(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QDtlsClientVerifierC2EP7QObject(QObject * parent) {
-  return  new MyQDtlsClientVerifier(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:81
-// [-2] void ~QDtlsClientVerifier()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QDtlsClientVerifierD2Ev(void *this_) {
+/*void C_ZN19QDtlsClientVerifierD2Ev(void *this_)*/ {
   delete (QDtlsClientVerifier*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:91
-// [1] bool setCookieGeneratorParameters(const QDtlsClientVerifier::GeneratorParameters &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN19QDtlsClientVerifier28setCookieGeneratorParametersERKNS_19GeneratorParametersE(void *this_, QDtlsClientVerifier::GeneratorParameters* params) {
-  return (bool)((QDtlsClientVerifier*)this_)->setCookieGeneratorParameters(*params);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:92
-// [16] QDtlsClientVerifier::GeneratorParameters cookieGeneratorParameters()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QDtlsClientVerifier25cookieGeneratorParametersEv(void *this_) {
-  auto rv = ((QDtlsClientVerifier*)this_)->cookieGeneratorParameters();
-return new QDtlsClientVerifier::GeneratorParameters(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:94
-// [1] bool verifyClient(QUdpSocket *, const QByteArray &, const QHostAddress &, quint16)
-extern "C" Q_DECL_EXPORT
-bool C_ZN19QDtlsClientVerifier12verifyClientEP10QUdpSocketRK10QByteArrayRK12QHostAddresst(void *this_, QUdpSocket * socket, QByteArray* dgram, QHostAddress* address, quint16 port) {
-  return (bool)((QDtlsClientVerifier*)this_)->verifyClient(socket, *dgram, *address, port);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:96
-// [8] QByteArray verifiedHello()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QDtlsClientVerifier13verifiedHelloEv(void *this_) {
-  auto rv = ((QDtlsClientVerifier*)this_)->verifiedHello();
-return new QByteArray(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:98
-// [1] QDtlsError dtlsError()
-extern "C" Q_DECL_EXPORT
-QDtlsError C_ZNK19QDtlsClientVerifier9dtlsErrorEv(void *this_) {
-  return (QDtlsError)((QDtlsClientVerifier*)this_)->dtlsError();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdtls.h:99
-// [8] QString dtlsErrorString()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QDtlsClientVerifier15dtlsErrorStringEv(void *this_) {
-  auto rv = ((QDtlsClientVerifier*)this_)->dtlsErrorString();
-return new QString(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qdtlsclientverifier
 //  main block end
 
 //  use block begin

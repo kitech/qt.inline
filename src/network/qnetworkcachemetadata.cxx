@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040500
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtNetwork>
 #include "callback_inherit.h"
 
-// QNetworkCacheMetaData is pure virtual: false
+// QNetworkCacheMetaData is pure virtual: false false
 // QNetworkCacheMetaData has virtual projected: false
 //  header block end
 
@@ -55,189 +54,52 @@ MyQNetworkCacheMetaData() : QNetworkCacheMetaData() {}
 MyQNetworkCacheMetaData(const QNetworkCacheMetaData & other) : QNetworkCacheMetaData(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:66
-// [-2] void QNetworkCacheMetaData()
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QNetworkCacheMetaDataC2Ev() {
-  return  new QNetworkCacheMetaData();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qnetworkcachemetadata(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:70
+// [8] QNetworkCacheMetaData & operator=(QNetworkCacheMetaData &&) 
+// (12)qm1548685607 (32)_ZN21QNetworkCacheMetaDataaSEOS_
+//static
+/*void qm1548685607(QNetworkCacheMetaData && other)*/ {
+  QNetworkCacheMetaData && other =  static_cast<QNetworkCacheMetaData &&>(*(QNetworkCacheMetaData *)this_);
+  (void) ((QNetworkCacheMetaData*)this_)->operator=(other);
+  // auto xptr = (QNetworkCacheMetaData & (QNetworkCacheMetaData::*)(QNetworkCacheMetaData&&) ) &QNetworkCacheMetaData::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:67
-// [-2] void QNetworkCacheMetaData(const QNetworkCacheMetaData &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QNetworkCacheMetaDataC2ERKS_(QNetworkCacheMetaData* other) {
-  return  new QNetworkCacheMetaData(*other);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:73
+// [-2] void swap(QNetworkCacheMetaData &) 
+// (11)qm145693291 (35)_ZN21QNetworkCacheMetaData4swapERS_
+//static
+/*void qm145693291(QNetworkCacheMetaData & other)*/ {
+  QNetworkCacheMetaData & other = *(QNetworkCacheMetaData *)this_;
+  (void) ((QNetworkCacheMetaData*)this_)->swap(other);
+   auto xptr = (void (QNetworkCacheMetaData::*)(QNetworkCacheMetaData&) ) &QNetworkCacheMetaData::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:68
-// [-2] void ~QNetworkCacheMetaData()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkCacheMetaDataD2Ev(void *this_) {
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:77
+// [1] bool operator!=(const QNetworkCacheMetaData &) const
+// (12)qm2281964255 (34)_ZNK21QNetworkCacheMetaDataneERKS_
+//static
+/*void qm2281964255(const QNetworkCacheMetaData & other)*/ {
+  const QNetworkCacheMetaData & other = *(const QNetworkCacheMetaData *)this_;
+  (void) ((QNetworkCacheMetaData*)this_)->operator!=(other);
+  // auto xptr = (bool (QNetworkCacheMetaData::*)(QNetworkCacheMetaData const&) const ) &QNetworkCacheMetaData::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN21QNetworkCacheMetaDataD2Ev(void *this_)*/ {
   delete (QNetworkCacheMetaData*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:71
-// [8] QNetworkCacheMetaData & operator=(QNetworkCacheMetaData &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QNetworkCacheMetaDataaSEOS_(void *this_, QNetworkCacheMetaData && other) {
-  auto& rv = ((QNetworkCacheMetaData*)this_)->operator=(other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:73
-// [8] QNetworkCacheMetaData & operator=(const QNetworkCacheMetaData &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QNetworkCacheMetaDataaSERKS_(void *this_, QNetworkCacheMetaData* other) {
-  auto& rv = ((QNetworkCacheMetaData*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:75
-// [-2] void swap(QNetworkCacheMetaData &)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkCacheMetaData4swapERS_(void *this_, QNetworkCacheMetaData* other) {
-  ((QNetworkCacheMetaData*)this_)->swap(*other);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:78
-// [1] bool operator==(const QNetworkCacheMetaData &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK21QNetworkCacheMetaDataeqERKS_(void *this_, QNetworkCacheMetaData* other) {
-  return (bool)((QNetworkCacheMetaData*)this_)->operator==(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:79
-// [1] bool operator!=(const QNetworkCacheMetaData &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK21QNetworkCacheMetaDataneERKS_(void *this_, QNetworkCacheMetaData* other) {
-  return (bool)((QNetworkCacheMetaData*)this_)->operator!=(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:82
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK21QNetworkCacheMetaData7isValidEv(void *this_) {
-  return (bool)((QNetworkCacheMetaData*)this_)->isValid();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:84
-// [8] QUrl url()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK21QNetworkCacheMetaData3urlEv(void *this_) {
-  auto rv = ((QNetworkCacheMetaData*)this_)->url();
-return new QUrl(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:85
-// [-2] void setUrl(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkCacheMetaData6setUrlERK4QUrl(void *this_, QUrl* url) {
-  ((QNetworkCacheMetaData*)this_)->setUrl(*url);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:87
-// [-2] QNetworkCacheMetaData::RawHeaderList rawHeaders()
-extern "C" Q_DECL_EXPORT
-QNetworkCacheMetaData::RawHeaderList* C_ZNK21QNetworkCacheMetaData10rawHeadersEv(void *this_) {
-  auto rv = ((QNetworkCacheMetaData*)this_)->rawHeaders();
-return new QNetworkCacheMetaData::RawHeaderList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:88
-// [-2] void setRawHeaders(const QNetworkCacheMetaData::RawHeaderList &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkCacheMetaData13setRawHeadersERK5QListI5QPairI10QByteArrayS2_EE(void *this_, const QNetworkCacheMetaData::RawHeaderList & headers) {
-  ((QNetworkCacheMetaData*)this_)->setRawHeaders(headers);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:90
-// [8] QDateTime lastModified()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK21QNetworkCacheMetaData12lastModifiedEv(void *this_) {
-  auto rv = ((QNetworkCacheMetaData*)this_)->lastModified();
-return new QDateTime(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:91
-// [-2] void setLastModified(const QDateTime &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkCacheMetaData15setLastModifiedERK9QDateTime(void *this_, QDateTime* dateTime) {
-  ((QNetworkCacheMetaData*)this_)->setLastModified(*dateTime);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:93
-// [8] QDateTime expirationDate()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK21QNetworkCacheMetaData14expirationDateEv(void *this_) {
-  auto rv = ((QNetworkCacheMetaData*)this_)->expirationDate();
-return new QDateTime(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:94
-// [-2] void setExpirationDate(const QDateTime &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkCacheMetaData17setExpirationDateERK9QDateTime(void *this_, QDateTime* dateTime) {
-  ((QNetworkCacheMetaData*)this_)->setExpirationDate(*dateTime);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:96
-// [1] bool saveToDisk()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK21QNetworkCacheMetaData10saveToDiskEv(void *this_) {
-  return (bool)((QNetworkCacheMetaData*)this_)->saveToDisk();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:97
-// [-2] void setSaveToDisk(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkCacheMetaData13setSaveToDiskEb(void *this_, bool allow) {
-  ((QNetworkCacheMetaData*)this_)->setSaveToDisk(allow);
-}
-
-// Public Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:99
-// [-2] QNetworkCacheMetaData::AttributesMap attributes()
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-QNetworkCacheMetaData::AttributesMap* C_ZNK21QNetworkCacheMetaData10attributesEv(void *this_) {
-  auto rv = ((QNetworkCacheMetaData*)this_)->attributes();
-return new QNetworkCacheMetaData::AttributesMap(rv);
-}
-#endif // QT_VERSION >= 0x040600
-
-// Public Visibility=Default Availability=Available
-// since 4.6
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:100
-// [-2] void setAttributes(const QNetworkCacheMetaData::AttributesMap &)
-#if QT_VERSION >= 0x040600
-extern "C" Q_DECL_EXPORT
-void C_ZN21QNetworkCacheMetaData13setAttributesERK5QHashIN15QNetworkRequest9AttributeE8QVariantE(void *this_, const QNetworkCacheMetaData::AttributesMap & attributes) {
-  ((QNetworkCacheMetaData*)this_)->setAttributes(attributes);
-}
-#endif // QT_VERSION >= 0x040600
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qnetworkcachemetadata
 //  main block end
 
 //  use block begin

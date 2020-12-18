@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x040500
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtNetwork>
 #include "callback_inherit.h"
 
-// QAbstractNetworkCache is pure virtual: true
+// QAbstractNetworkCache is pure virtual: true true
 // QAbstractNetworkCache has virtual projected: false
 //  header block end
 
@@ -94,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQAbstractNetworkCache() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QNetworkCacheMetaData metaData(const QUrl &)
   virtual QNetworkCacheMetaData metaData(const QUrl & url)  override {
     int handled = 0;
@@ -108,7 +107,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void updateMetaData(const QNetworkCacheMetaData &)
   virtual void updateMetaData(const QNetworkCacheMetaData & metaData)  override {
     int handled = 0;
@@ -120,7 +119,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QIODevice * data(const QUrl &)
   virtual QIODevice * data(const QUrl & url)  override {
     int handled = 0;
@@ -133,7 +132,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool remove(const QUrl &)
   virtual bool remove(const QUrl & url)  override {
     int handled = 0;
@@ -146,7 +145,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] qint64 cacheSize()
   virtual qint64 cacheSize() const override {
     int handled = 0;
@@ -159,7 +158,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QIODevice * prepare(const QNetworkCacheMetaData &)
   virtual QIODevice * prepare(const QNetworkCacheMetaData & metaData)  override {
     int handled = 0;
@@ -172,7 +171,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void insert(QIODevice *)
   virtual void insert(QIODevice * device)  override {
     int handled = 0;
@@ -184,7 +183,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void clear()
   virtual void clear()  override {
     int handled = 0;
@@ -210,144 +209,28 @@ void* C_QAbstractNetworkCache_init_staticMetaObject(void* this_, void* strdat, v
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:121
-// [8] QNetworkCacheMetaData metaData(const QUrl &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:122
-// [-2] void updateMetaData(const QNetworkCacheMetaData &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:123
-// [8] QIODevice * data(const QUrl &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:124
-// [1] bool remove(const QUrl &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:125
-// [8] qint64 cacheSize()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:127
-// [8] QIODevice * prepare(const QNetworkCacheMetaData &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:128
-// [-2] void insert(QIODevice *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:131
-// [-2] void clear()
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:116
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK21QAbstractNetworkCache10metaObjectEv(void *this_) {
-  return (void*)((QAbstractNetworkCache*)this_)->metaObject();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qabstractnetworkcache(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:114
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm2476017176 (37)_ZN21QAbstractNetworkCache2trEPKcS1_i
+//static
+/*void qm2476017176(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QAbstractNetworkCache::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QAbstractNetworkCache::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:116
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QAbstractNetworkCache11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QAbstractNetworkCache*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:116
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN21QAbstractNetworkCache11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QAbstractNetworkCache*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:116
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QAbstractNetworkCache2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAbstractNetworkCache::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:116
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QAbstractNetworkCache6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAbstractNetworkCache::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:119
-// [-2] void ~QAbstractNetworkCache()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QAbstractNetworkCacheD2Ev(void *this_) {
+/*void C_ZN21QAbstractNetworkCacheD2Ev(void *this_)*/ {
   delete (QAbstractNetworkCache*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:121
-// [8] QNetworkCacheMetaData metaData(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QAbstractNetworkCache8metaDataERK4QUrl(void *this_, QUrl* url) {
-  auto rv = ((QAbstractNetworkCache*)this_)->metaData(*url);
-return new QNetworkCacheMetaData(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:122
-// [-2] void updateMetaData(const QNetworkCacheMetaData &)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QAbstractNetworkCache14updateMetaDataERK21QNetworkCacheMetaData(void *this_, QNetworkCacheMetaData* metaData) {
-  ((QAbstractNetworkCache*)this_)->updateMetaData(*metaData);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:123
-// [8] QIODevice * data(const QUrl &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QAbstractNetworkCache4dataERK4QUrl(void *this_, QUrl* url) {
-  return (void*)((QAbstractNetworkCache*)this_)->data(*url);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:124
-// [1] bool remove(const QUrl &)
-extern "C" Q_DECL_EXPORT
-bool C_ZN21QAbstractNetworkCache6removeERK4QUrl(void *this_, QUrl* url) {
-  return (bool)((QAbstractNetworkCache*)this_)->remove(*url);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:125
-// [8] qint64 cacheSize()
-extern "C" Q_DECL_EXPORT
-qint64 C_ZNK21QAbstractNetworkCache9cacheSizeEv(void *this_) {
-  return (qint64)((QAbstractNetworkCache*)this_)->cacheSize();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:127
-// [8] QIODevice * prepare(const QNetworkCacheMetaData &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN21QAbstractNetworkCache7prepareERK21QNetworkCacheMetaData(void *this_, QNetworkCacheMetaData* metaData) {
-  return (void*)((QAbstractNetworkCache*)this_)->prepare(*metaData);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:128
-// [-2] void insert(QIODevice *)
-extern "C" Q_DECL_EXPORT
-void C_ZN21QAbstractNetworkCache6insertEP9QIODevice(void *this_, QIODevice * device) {
-  ((QAbstractNetworkCache*)this_)->insert(device);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:131
-// [-2] void clear()
-extern "C" Q_DECL_EXPORT
-void C_ZN21QAbstractNetworkCache5clearEv(void *this_) {
-  ((QAbstractNetworkCache*)this_)->clear();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qabstractnetworkcache
 //  main block end
 
 //  use block begin

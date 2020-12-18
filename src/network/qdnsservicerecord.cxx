@@ -12,7 +12,7 @@
 #include <QtNetwork>
 #include "callback_inherit.h"
 
-// QDnsServiceRecord is pure virtual: false
+// QDnsServiceRecord is pure virtual: false false
 // QDnsServiceRecord has virtual projected: false
 //  header block end
 
@@ -57,105 +57,40 @@ MyQDnsServiceRecord() : QDnsServiceRecord() {}
 MyQDnsServiceRecord(const QDnsServiceRecord & other) : QDnsServiceRecord(other) {}
 };
 
-// Public Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qdnsservicerecord(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:134
+// [8] QDnsServiceRecord & operator=(QDnsServiceRecord &&) 
+// (12)qm1531322490 (28)_ZN17QDnsServiceRecordaSEOS_
+//static
+/*void qm1531322490(QDnsServiceRecord && other)*/ {
+  QDnsServiceRecord && other =  static_cast<QDnsServiceRecord &&>(*(QDnsServiceRecord *)this_);
+  (void) ((QDnsServiceRecord*)this_)->operator=(other);
+  // auto xptr = (QDnsServiceRecord & (QDnsServiceRecord::*)(QDnsServiceRecord&&) ) &QDnsServiceRecord::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:138
-// [-2] void QDnsServiceRecord()
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QDnsServiceRecordC2Ev() {
-  return  new QDnsServiceRecord();
+// [-2] void swap(QDnsServiceRecord &) 
+// (12)qm3544848537 (31)_ZN17QDnsServiceRecord4swapERS_
+//static
+/*void qm3544848537(QDnsServiceRecord & other)*/ {
+  QDnsServiceRecord & other = *(QDnsServiceRecord *)this_;
+  (void) ((QDnsServiceRecord*)this_)->swap(other);
+   auto xptr = (void (QDnsServiceRecord::*)(QDnsServiceRecord&) ) &QDnsServiceRecord::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:139
-// [-2] void QDnsServiceRecord(const QDnsServiceRecord &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QDnsServiceRecordC2ERKS_(QDnsServiceRecord* other) {
-  return  new QDnsServiceRecord(*other);
-}
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:141
-// [8] QDnsServiceRecord & operator=(QDnsServiceRecord &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QDnsServiceRecordaSEOS_(void *this_, QDnsServiceRecord && other) {
-  auto& rv = ((QDnsServiceRecord*)this_)->operator=(other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:143
-// [8] QDnsServiceRecord & operator=(const QDnsServiceRecord &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN17QDnsServiceRecordaSERKS_(void *this_, QDnsServiceRecord* other) {
-  auto& rv = ((QDnsServiceRecord*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:144
-// [-2] void ~QDnsServiceRecord()
-extern "C" Q_DECL_EXPORT
-void C_ZN17QDnsServiceRecordD2Ev(void *this_) {
+/*void C_ZN17QDnsServiceRecordD2Ev(void *this_)*/ {
   delete (QDnsServiceRecord*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:146
-// [-2] void swap(QDnsServiceRecord &)
-extern "C" Q_DECL_EXPORT
-void C_ZN17QDnsServiceRecord4swapERS_(void *this_, QDnsServiceRecord* other) {
-  ((QDnsServiceRecord*)this_)->swap(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:148
-// [8] QString name()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QDnsServiceRecord4nameEv(void *this_) {
-  auto rv = ((QDnsServiceRecord*)this_)->name();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:149
-// [2] quint16 port()
-extern "C" Q_DECL_EXPORT
-quint16 C_ZNK17QDnsServiceRecord4portEv(void *this_) {
-  return (quint16)((QDnsServiceRecord*)this_)->port();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:150
-// [2] quint16 priority()
-extern "C" Q_DECL_EXPORT
-quint16 C_ZNK17QDnsServiceRecord8priorityEv(void *this_) {
-  return (quint16)((QDnsServiceRecord*)this_)->priority();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:151
-// [8] QString target()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK17QDnsServiceRecord6targetEv(void *this_) {
-  auto rv = ((QDnsServiceRecord*)this_)->target();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:152
-// [4] quint32 timeToLive()
-extern "C" Q_DECL_EXPORT
-quint32 C_ZNK17QDnsServiceRecord10timeToLiveEv(void *this_) {
-  return (quint32)((QDnsServiceRecord*)this_)->timeToLive();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:153
-// [2] quint16 weight()
-extern "C" Q_DECL_EXPORT
-quint16 C_ZNK17QDnsServiceRecord6weightEv(void *this_) {
-  return (quint16)((QDnsServiceRecord*)this_)->weight();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qdnsservicerecord
 //  main block end
 
 //  use block begin

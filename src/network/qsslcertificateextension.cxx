@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050000
 // /usr/include/qt/QtNetwork/qsslcertificateextension.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtNetwork>
 #include "callback_inherit.h"
 
-// QSslCertificateExtension is pure virtual: false
+// QSslCertificateExtension is pure virtual: false false
 // QSslCertificateExtension has virtual projected: false
 //  header block end
 
@@ -55,98 +54,40 @@ MyQSslCertificateExtension() : QSslCertificateExtension() {}
 MyQSslCertificateExtension(const QSslCertificateExtension & other) : QSslCertificateExtension(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:56
-// [-2] void QSslCertificateExtension()
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QSslCertificateExtensionC2Ev() {
-  return  new QSslCertificateExtension();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qsslcertificateextension(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificateextension.h:58
+// [8] QSslCertificateExtension & operator=(QSslCertificateExtension &&) 
+// (12)qm2713924081 (35)_ZN24QSslCertificateExtensionaSEOS_
+//static
+/*void qm2713924081(QSslCertificateExtension && other)*/ {
+  QSslCertificateExtension && other =  static_cast<QSslCertificateExtension &&>(*(QSslCertificateExtension *)this_);
+  (void) ((QSslCertificateExtension*)this_)->operator=(other);
+  // auto xptr = (QSslCertificateExtension & (QSslCertificateExtension::*)(QSslCertificateExtension&&) ) &QSslCertificateExtension::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:57
-// [-2] void QSslCertificateExtension(const QSslCertificateExtension &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QSslCertificateExtensionC2ERKS_(QSslCertificateExtension* other) {
-  return  new QSslCertificateExtension(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:59
-// [8] QSslCertificateExtension & operator=(QSslCertificateExtension &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QSslCertificateExtensionaSEOS_(void *this_, QSslCertificateExtension && other) {
-  auto& rv = ((QSslCertificateExtension*)this_)->operator=(other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:61
-// [8] QSslCertificateExtension & operator=(const QSslCertificateExtension &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN24QSslCertificateExtensionaSERKS_(void *this_, QSslCertificateExtension* other) {
-  auto& rv = ((QSslCertificateExtension*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificateextension.h:62
-// [-2] void ~QSslCertificateExtension()
-extern "C" Q_DECL_EXPORT
-void C_ZN24QSslCertificateExtensionD2Ev(void *this_) {
+// [-2] void swap(QSslCertificateExtension &) 
+// (12)qm4028741821 (38)_ZN24QSslCertificateExtension4swapERS_
+//static
+/*void qm4028741821(QSslCertificateExtension & other)*/ {
+  QSslCertificateExtension & other = *(QSslCertificateExtension *)this_;
+  (void) ((QSslCertificateExtension*)this_)->swap(other);
+   auto xptr = (void (QSslCertificateExtension::*)(QSslCertificateExtension&) ) &QSslCertificateExtension::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN24QSslCertificateExtensionD2Ev(void *this_)*/ {
   delete (QSslCertificateExtension*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:64
-// [-2] void swap(QSslCertificateExtension &)
-extern "C" Q_DECL_EXPORT
-void C_ZN24QSslCertificateExtension4swapERS_(void *this_, QSslCertificateExtension* other) {
-  ((QSslCertificateExtension*)this_)->swap(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:66
-// [8] QString oid()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK24QSslCertificateExtension3oidEv(void *this_) {
-  auto rv = ((QSslCertificateExtension*)this_)->oid();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:67
-// [8] QString name()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK24QSslCertificateExtension4nameEv(void *this_) {
-  auto rv = ((QSslCertificateExtension*)this_)->name();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:68
-// [16] QVariant value()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK24QSslCertificateExtension5valueEv(void *this_) {
-  auto rv = ((QSslCertificateExtension*)this_)->value();
-return new QVariant(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:69
-// [1] bool isCritical()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK24QSslCertificateExtension10isCriticalEv(void *this_) {
-  return (bool)((QSslCertificateExtension*)this_)->isCritical();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qsslcertificateextension.h:71
-// [1] bool isSupported()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK24QSslCertificateExtension11isSupportedEv(void *this_) {
-  return (bool)((QSslCertificateExtension*)this_)->isSupported();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qsslcertificateextension
 //  main block end
 
 //  use block begin

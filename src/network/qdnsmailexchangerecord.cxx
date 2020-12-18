@@ -12,7 +12,7 @@
 #include <QtNetwork>
 #include "callback_inherit.h"
 
-// QDnsMailExchangeRecord is pure virtual: false
+// QDnsMailExchangeRecord is pure virtual: false false
 // QDnsMailExchangeRecord has virtual projected: false
 //  header block end
 
@@ -57,89 +57,40 @@ MyQDnsMailExchangeRecord() : QDnsMailExchangeRecord() {}
 MyQDnsMailExchangeRecord(const QDnsMailExchangeRecord & other) : QDnsMailExchangeRecord(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:113
-// [-2] void QDnsMailExchangeRecord()
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QDnsMailExchangeRecordC2Ev() {
-  return  new QDnsMailExchangeRecord();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qdnsmailexchangerecord(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:111
+// [8] QDnsMailExchangeRecord & operator=(QDnsMailExchangeRecord &&) 
+// (11)qm710205852 (33)_ZN22QDnsMailExchangeRecordaSEOS_
+//static
+/*void qm710205852(QDnsMailExchangeRecord && other)*/ {
+  QDnsMailExchangeRecord && other =  static_cast<QDnsMailExchangeRecord &&>(*(QDnsMailExchangeRecord *)this_);
+  (void) ((QDnsMailExchangeRecord*)this_)->operator=(other);
+  // auto xptr = (QDnsMailExchangeRecord & (QDnsMailExchangeRecord::*)(QDnsMailExchangeRecord&&) ) &QDnsMailExchangeRecord::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:114
-// [-2] void QDnsMailExchangeRecord(const QDnsMailExchangeRecord &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QDnsMailExchangeRecordC2ERKS_(QDnsMailExchangeRecord* other) {
-  return  new QDnsMailExchangeRecord(*other);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:115
+// [-2] void swap(QDnsMailExchangeRecord &) 
+// (12)qm1602036669 (36)_ZN22QDnsMailExchangeRecord4swapERS_
+//static
+/*void qm1602036669(QDnsMailExchangeRecord & other)*/ {
+  QDnsMailExchangeRecord & other = *(QDnsMailExchangeRecord *)this_;
+  (void) ((QDnsMailExchangeRecord*)this_)->swap(other);
+   auto xptr = (void (QDnsMailExchangeRecord::*)(QDnsMailExchangeRecord&) ) &QDnsMailExchangeRecord::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:116
-// [8] QDnsMailExchangeRecord & operator=(QDnsMailExchangeRecord &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QDnsMailExchangeRecordaSEOS_(void *this_, QDnsMailExchangeRecord && other) {
-  auto& rv = ((QDnsMailExchangeRecord*)this_)->operator=(other);
-return &rv;
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:118
-// [8] QDnsMailExchangeRecord & operator=(const QDnsMailExchangeRecord &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QDnsMailExchangeRecordaSERKS_(void *this_, QDnsMailExchangeRecord* other) {
-  auto& rv = ((QDnsMailExchangeRecord*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:119
-// [-2] void ~QDnsMailExchangeRecord()
-extern "C" Q_DECL_EXPORT
-void C_ZN22QDnsMailExchangeRecordD2Ev(void *this_) {
+/*void C_ZN22QDnsMailExchangeRecordD2Ev(void *this_)*/ {
   delete (QDnsMailExchangeRecord*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:121
-// [-2] void swap(QDnsMailExchangeRecord &)
-extern "C" Q_DECL_EXPORT
-void C_ZN22QDnsMailExchangeRecord4swapERS_(void *this_, QDnsMailExchangeRecord* other) {
-  ((QDnsMailExchangeRecord*)this_)->swap(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:123
-// [8] QString exchange()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QDnsMailExchangeRecord8exchangeEv(void *this_) {
-  auto rv = ((QDnsMailExchangeRecord*)this_)->exchange();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:124
-// [8] QString name()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QDnsMailExchangeRecord4nameEv(void *this_) {
-  auto rv = ((QDnsMailExchangeRecord*)this_)->name();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:125
-// [2] quint16 preference()
-extern "C" Q_DECL_EXPORT
-quint16 C_ZNK22QDnsMailExchangeRecord10preferenceEv(void *this_) {
-  return (quint16)((QDnsMailExchangeRecord*)this_)->preference();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qdnslookup.h:126
-// [4] quint32 timeToLive()
-extern "C" Q_DECL_EXPORT
-quint32 C_ZNK22QDnsMailExchangeRecord10timeToLiveEv(void *this_) {
-  return (quint32)((QDnsMailExchangeRecord*)this_)->timeToLive();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qdnsmailexchangerecord
 //  main block end
 
 //  use block begin

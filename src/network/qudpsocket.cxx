@@ -9,7 +9,7 @@
 #include <QtNetwork>
 #include "callback_inherit.h"
 
-// QUdpSocket is pure virtual: false
+// QUdpSocket is pure virtual: false false
 // QUdpSocket has virtual projected: false
 //  header block end
 
@@ -109,187 +109,40 @@ void* C_QUdpSocket_init_staticMetaObject(void* this_, void* strdat, void* dat, v
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qudpsocket(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qudpsocket.h:58
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QUdpSocket10metaObjectEv(void *this_) {
-  return (void*)((QUdpSocket*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (11)qm742828458 (26)_ZN10QUdpSocket2trEPKcS1_i
+//static
+/*void qm742828458(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QUdpSocket::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QUdpSocket::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:58
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QUdpSocket11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QUdpSocket*)this_)->qt_metacast(arg0);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qudpsocket.h:82
+// [8] qint64 writeDatagram(const QByteArray &, const QHostAddress &, quint16) 
+// (11)qm669288394 (62)_ZN10QUdpSocket13writeDatagramERK10QByteArrayRK12QHostAddresst
+//static
+/*void qm669288394(const QByteArray & datagram, const QHostAddress & host, unsigned short port)*/ {
+  const QByteArray & datagram = *(const QByteArray *)this_; const QHostAddress & host = *(const QHostAddress *)this_; unsigned short port = *(unsigned short*)this_;
+  (void) ((QUdpSocket*)this_)->writeDatagram(datagram, host, port);
+   auto xptr = (long long (QUdpSocket::*)(QByteArray const&, QHostAddress const&, unsigned short) ) &QUdpSocket::writeDatagram;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:58
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN10QUdpSocket11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QUdpSocket*)this_)->qt_metacall(arg0, arg1, arg2);
-}
 
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:58
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QUdpSocket2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QUdpSocket::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:58
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QUdpSocket6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QUdpSocket::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:60
-// [-2] void QUdpSocket(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QUdpSocketC2EP7QObject(QObject * parent) {
-  return  new MyQUdpSocket(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:61
-// [-2] void ~QUdpSocket()
-extern "C" Q_DECL_EXPORT
-void C_ZN10QUdpSocketD2Ev(void *this_) {
+/*void C_ZN10QUdpSocketD2Ev(void *this_)*/ {
   delete (QUdpSocket*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtNetwork/qudpsocket.h:64
-// [1] bool joinMulticastGroup(const QHostAddress &)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-bool C_ZN10QUdpSocket18joinMulticastGroupERK12QHostAddress(void *this_, QHostAddress* groupAddress) {
-  return (bool)((QUdpSocket*)this_)->joinMulticastGroup(*groupAddress);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtNetwork/qudpsocket.h:65
-// [1] bool joinMulticastGroup(const QHostAddress &, const QNetworkInterface &)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-bool C_ZN10QUdpSocket18joinMulticastGroupERK12QHostAddressRK17QNetworkInterface(void *this_, QHostAddress* groupAddress, QNetworkInterface* iface) {
-  return (bool)((QUdpSocket*)this_)->joinMulticastGroup(*groupAddress, *iface);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtNetwork/qudpsocket.h:67
-// [1] bool leaveMulticastGroup(const QHostAddress &)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-bool C_ZN10QUdpSocket19leaveMulticastGroupERK12QHostAddress(void *this_, QHostAddress* groupAddress) {
-  return (bool)((QUdpSocket*)this_)->leaveMulticastGroup(*groupAddress);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtNetwork/qudpsocket.h:68
-// [1] bool leaveMulticastGroup(const QHostAddress &, const QNetworkInterface &)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-bool C_ZN10QUdpSocket19leaveMulticastGroupERK12QHostAddressRK17QNetworkInterface(void *this_, QHostAddress* groupAddress, QNetworkInterface* iface) {
-  return (bool)((QUdpSocket*)this_)->leaveMulticastGroup(*groupAddress, *iface);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtNetwork/qudpsocket.h:71
-// [8] QNetworkInterface multicastInterface()
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-void* C_ZNK10QUdpSocket18multicastInterfaceEv(void *this_) {
-  auto rv = ((QUdpSocket*)this_)->multicastInterface();
-return new QNetworkInterface(rv);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public Visibility=Default Availability=Available
-// since 4.8
-// /usr/include/qt/QtNetwork/qudpsocket.h:72
-// [-2] void setMulticastInterface(const QNetworkInterface &)
-#if QT_VERSION >= 0x040800
-extern "C" Q_DECL_EXPORT
-void C_ZN10QUdpSocket21setMulticastInterfaceERK17QNetworkInterface(void *this_, QNetworkInterface* iface) {
-  ((QUdpSocket*)this_)->setMulticastInterface(*iface);
-}
-#endif // QT_VERSION >= 0x040800
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:75
-// [1] bool hasPendingDatagrams()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK10QUdpSocket19hasPendingDatagramsEv(void *this_) {
-  return (bool)((QUdpSocket*)this_)->hasPendingDatagrams();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:76
-// [8] qint64 pendingDatagramSize()
-extern "C" Q_DECL_EXPORT
-qint64 C_ZNK10QUdpSocket19pendingDatagramSizeEv(void *this_) {
-  return (qint64)((QUdpSocket*)this_)->pendingDatagramSize();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:77
-// [8] QNetworkDatagram receiveDatagram(qint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZN10QUdpSocket15receiveDatagramEx(void *this_, qint64 maxSize) {
-  auto rv = ((QUdpSocket*)this_)->receiveDatagram(maxSize);
-return new QNetworkDatagram(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:78
-// [8] qint64 readDatagram(char *, qint64, QHostAddress *, quint16 *)
-extern "C" Q_DECL_EXPORT
-qint64 C_ZN10QUdpSocket12readDatagramEPcxP12QHostAddressPt(void *this_, char * data, qint64 maxlen, QHostAddress * host, quint16 * port) {
-  return (qint64)((QUdpSocket*)this_)->readDatagram(data, maxlen, host, port);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:80
-// [8] qint64 writeDatagram(const QNetworkDatagram &)
-extern "C" Q_DECL_EXPORT
-qint64 C_ZN10QUdpSocket13writeDatagramERK16QNetworkDatagram(void *this_, QNetworkDatagram* datagram) {
-  return (qint64)((QUdpSocket*)this_)->writeDatagram(*datagram);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:81
-// [8] qint64 writeDatagram(const char *, qint64, const QHostAddress &, quint16)
-extern "C" Q_DECL_EXPORT
-qint64 C_ZN10QUdpSocket13writeDatagramEPKcxRK12QHostAddresst(void *this_, const char * data, qint64 len_, QHostAddress* host, quint16 port) {
-  return (qint64)((QUdpSocket*)this_)->writeDatagram(data, len_, *host, port);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qudpsocket.h:82
-// [8] qint64 writeDatagram(const QByteArray &, const QHostAddress &, quint16)
-extern "C" Q_DECL_EXPORT
-qint64 C_ZN10QUdpSocket13writeDatagramERK10QByteArrayRK12QHostAddresst(void *this_, QByteArray* datagram, QHostAddress* host, quint16 port) {
-  return (qint64)((QUdpSocket*)this_)->writeDatagram(*datagram, *host, port);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qudpsocket
 //  main block end
 
 //  use block begin

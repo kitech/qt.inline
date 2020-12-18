@@ -3,7 +3,6 @@
 #ifndef QT_MINIMAL
 #include <QtNetwork/qtnetworkglobal.h>
 #if QT_CONFIG(http)
-// since 0x040800
 // /usr/include/qt/QtNetwork/qhttpmultipart.h
 #ifndef protected
 #define protected public
@@ -13,7 +12,7 @@
 #include <QtNetwork>
 #include "callback_inherit.h"
 
-// QHttpPart is pure virtual: false
+// QHttpPart is pure virtual: false false
 // QHttpPart has virtual projected: false
 //  header block end
 
@@ -58,106 +57,52 @@ MyQHttpPart() : QHttpPart() {}
 MyQHttpPart(const QHttpPart & other) : QHttpPart(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:60
-// [-2] void QHttpPart()
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QHttpPartC2Ev() {
-  return  new QHttpPart();
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qhttppart(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:63
+// [8] QHttpPart & operator=(QHttpPart &&) 
+// (12)qm2463999938 (19)_ZN9QHttpPartaSEOS_
+//static
+/*void qm2463999938(QHttpPart && other)*/ {
+  QHttpPart && other =  static_cast<QHttpPart &&>(*(QHttpPart *)this_);
+  (void) ((QHttpPart*)this_)->operator=(other);
+  // auto xptr = (QHttpPart & (QHttpPart::*)(QHttpPart&&) ) &QHttpPart::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:61
-// [-2] void QHttpPart(const QHttpPart &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QHttpPartC2ERKS_(QHttpPart* other) {
-  return  new QHttpPart(*other);
+// Public inline Ignore Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:66
+// [-2] void swap(QHttpPart &) 
+// (11)qm186184632 (22)_ZN9QHttpPart4swapERS_
+//static
+/*void qm186184632(QHttpPart & other)*/ {
+  QHttpPart & other = *(QHttpPart *)this_;
+  (void) ((QHttpPart*)this_)->swap(other);
+   auto xptr = (void (QHttpPart::*)(QHttpPart&) ) &QHttpPart::swap;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:62
-// [-2] void ~QHttpPart()
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHttpPartD2Ev(void *this_) {
+// Public inline Extend Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:69
+// [1] bool operator!=(const QHttpPart &) const
+// (12)qm3962401321 (21)_ZNK9QHttpPartneERKS_
+//static
+/*void qm3962401321(const QHttpPart & other)*/ {
+  const QHttpPart & other = *(const QHttpPart *)this_;
+  (void) ((QHttpPart*)this_)->operator!=(other);
+  // auto xptr = (bool (QHttpPart::*)(QHttpPart const&) const ) &QHttpPart::operator!=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+
+/*void C_ZN9QHttpPartD2Ev(void *this_)*/ {
   delete (QHttpPart*)(this_);
 }
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:64
-// [8] QHttpPart & operator=(QHttpPart &&)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QHttpPartaSEOS_(void *this_, QHttpPart && other) {
-  auto& rv = ((QHttpPart*)this_)->operator=(other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:66
-// [8] QHttpPart & operator=(const QHttpPart &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN9QHttpPartaSERKS_(void *this_, QHttpPart* other) {
-  auto& rv = ((QHttpPart*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public inline Visibility=Default Availability=Available
-// since 5.0
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:68
-// [-2] void swap(QHttpPart &)
-#if QT_VERSION >= 0x050000
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHttpPart4swapERS_(void *this_, QHttpPart* other) {
-  ((QHttpPart*)this_)->swap(*other);
-}
-#endif // QT_VERSION >= 0x050000
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:70
-// [1] bool operator==(const QHttpPart &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QHttpParteqERKS_(void *this_, QHttpPart* other) {
-  return (bool)((QHttpPart*)this_)->operator==(*other);
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:71
-// [1] bool operator!=(const QHttpPart &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK9QHttpPartneERKS_(void *this_, QHttpPart* other) {
-  return (bool)((QHttpPart*)this_)->operator!=(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:74
-// [-2] void setHeader(QNetworkRequest::KnownHeaders, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHttpPart9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant(void *this_, QNetworkRequest::KnownHeaders header, QVariant* value) {
-  ((QHttpPart*)this_)->setHeader(header, *value);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:75
-// [-2] void setRawHeader(const QByteArray &, const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHttpPart12setRawHeaderERK10QByteArrayS2_(void *this_, QByteArray* headerName, QByteArray* headerValue) {
-  ((QHttpPart*)this_)->setRawHeader(*headerName, *headerValue);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:77
-// [-2] void setBody(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHttpPart7setBodyERK10QByteArray(void *this_, QByteArray* body) {
-  ((QHttpPart*)this_)->setBody(*body);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtNetwork/qhttpmultipart.h:78
-// [-2] void setBodyDevice(QIODevice *)
-extern "C" Q_DECL_EXPORT
-void C_ZN9QHttpPart13setBodyDeviceEP9QIODevice(void *this_, QIODevice * device) {
-  ((QHttpPart*)this_)->setBodyDevice(device);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qhttppart
 //  main block end
 
 //  use block begin
