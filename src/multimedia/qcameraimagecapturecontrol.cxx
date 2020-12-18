@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QCameraImageCaptureControl is pure virtual: true
+// QCameraImageCaptureControl is pure virtual: true true
 // QCameraImageCaptureControl has virtual projected: false
 //  header block end
 
@@ -93,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQCameraImageCaptureControl() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool isReadyForCapture()
   virtual bool isReadyForCapture() const override {
     int handled = 0;
@@ -106,7 +106,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] QCameraImageCapture::DriveMode driveMode()
   virtual QCameraImageCapture::DriveMode driveMode() const override {
     int handled = 0;
@@ -119,7 +119,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setDriveMode(QCameraImageCapture::DriveMode)
   virtual void setDriveMode(QCameraImageCapture::DriveMode mode)  override {
     int handled = 0;
@@ -131,7 +131,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int capture(const QString &)
   virtual int capture(const QString & fileName)  override {
     int handled = 0;
@@ -144,7 +144,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void cancelCapture()
   virtual void cancelCapture()  override {
     int handled = 0;
@@ -170,166 +170,28 @@ void* C_QCameraImageCaptureControl_init_staticMetaObject(void* this_, void* strd
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:63
-// [1] bool isReadyForCapture()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:65
-// [4] QCameraImageCapture::DriveMode driveMode()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:66
-// [-2] void setDriveMode(QCameraImageCapture::DriveMode)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:68
-// [4] int capture(const QString &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:69
-// [-2] void cancelCapture()
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcameraimagecapturecontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK26QCameraImageCaptureControl10metaObjectEv(void *this_) {
-  return (void*)((QCameraImageCaptureControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3420701005 (42)_ZN26QCameraImageCaptureControl2trEPKcS1_i
+//static
+/*void qm3420701005(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QCameraImageCaptureControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QCameraImageCaptureControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN26QCameraImageCaptureControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QCameraImageCaptureControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN26QCameraImageCaptureControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QCameraImageCaptureControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN26QCameraImageCaptureControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraImageCaptureControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:58
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN26QCameraImageCaptureControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraImageCaptureControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:61
-// [-2] void ~QCameraImageCaptureControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControlD2Ev(void *this_) {
+/*void C_ZN26QCameraImageCaptureControlD2Ev(void *this_)*/ {
   delete (QCameraImageCaptureControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:63
-// [1] bool isReadyForCapture()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK26QCameraImageCaptureControl17isReadyForCaptureEv(void *this_) {
-  return (bool)((QCameraImageCaptureControl*)this_)->isReadyForCapture();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:65
-// [4] QCameraImageCapture::DriveMode driveMode()
-extern "C" Q_DECL_EXPORT
-QCameraImageCapture::DriveMode C_ZNK26QCameraImageCaptureControl9driveModeEv(void *this_) {
-  return (QCameraImageCapture::DriveMode)((QCameraImageCaptureControl*)this_)->driveMode();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:66
-// [-2] void setDriveMode(QCameraImageCapture::DriveMode)
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl12setDriveModeEN19QCameraImageCapture9DriveModeE(void *this_, QCameraImageCapture::DriveMode mode) {
-  ((QCameraImageCaptureControl*)this_)->setDriveMode(mode);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:68
-// [4] int capture(const QString &)
-extern "C" Q_DECL_EXPORT
-int C_ZN26QCameraImageCaptureControl7captureERK7QString(void *this_, QString* fileName) {
-  return (int)((QCameraImageCaptureControl*)this_)->capture(*fileName);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:69
-// [-2] void cancelCapture()
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl13cancelCaptureEv(void *this_) {
-  ((QCameraImageCaptureControl*)this_)->cancelCapture();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:72
-// [-2] void readyForCaptureChanged(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl22readyForCaptureChangedEb(void *this_, bool ready) {
-  ((QCameraImageCaptureControl*)this_)->readyForCaptureChanged(ready);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:74
-// [-2] void imageExposed(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl12imageExposedEi(void *this_, int requestId) {
-  ((QCameraImageCaptureControl*)this_)->imageExposed(requestId);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:75
-// [-2] void imageCaptured(int, const QImage &)
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl13imageCapturedEiRK6QImage(void *this_, int requestId, QImage* preview) {
-  ((QCameraImageCaptureControl*)this_)->imageCaptured(requestId, *preview);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:76
-// [-2] void imageMetadataAvailable(int, const QString &, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl22imageMetadataAvailableEiRK7QStringRK8QVariant(void *this_, int id, QString* key, QVariant* value) {
-  ((QCameraImageCaptureControl*)this_)->imageMetadataAvailable(id, *key, *value);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:77
-// [-2] void imageAvailable(int, const QVideoFrame &)
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl14imageAvailableEiRK11QVideoFrame(void *this_, int requestId, QVideoFrame* buffer) {
-  ((QCameraImageCaptureControl*)this_)->imageAvailable(requestId, *buffer);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:78
-// [-2] void imageSaved(int, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl10imageSavedEiRK7QString(void *this_, int requestId, QString* fileName) {
-  ((QCameraImageCaptureControl*)this_)->imageSaved(requestId, *fileName);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimagecapturecontrol.h:80
-// [-2] void error(int, int, const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN26QCameraImageCaptureControl5errorEiiRK7QString(void *this_, int id, int error, QString* errorString) {
-  ((QCameraImageCaptureControl*)this_)->error(id, error, *errorString);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcameraimagecapturecontrol
 //  main block end
 
 //  use block begin

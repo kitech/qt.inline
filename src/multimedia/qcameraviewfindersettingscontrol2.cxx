@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050500
 // /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QCameraViewfinderSettingsControl2 is pure virtual: true
+// QCameraViewfinderSettingsControl2 is pure virtual: true true
 // QCameraViewfinderSettingsControl2 has virtual projected: false
 //  header block end
 
@@ -108,7 +107,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QCameraViewfinderSettings viewfinderSettings()
   virtual QCameraViewfinderSettings viewfinderSettings() const override {
     int handled = 0;
@@ -122,7 +121,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setViewfinderSettings(const QCameraViewfinderSettings &)
   virtual void setViewfinderSettings(const QCameraViewfinderSettings & settings)  override {
     int handled = 0;
@@ -148,90 +147,28 @@ void* C_QCameraViewfinderSettingsControl2_init_staticMetaObject(void* this_, voi
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:89
-// [-2] QList<QCameraViewfinderSettings> supportedViewfinderSettings()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:91
-// [8] QCameraViewfinderSettings viewfinderSettings()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:92
-// [-2] void setViewfinderSettings(const QCameraViewfinderSettings &)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcameraviewfindersettingscontrol2(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:85
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK33QCameraViewfinderSettingsControl210metaObjectEv(void *this_) {
-  return (void*)((QCameraViewfinderSettingsControl2*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1532544277 (49)_ZN33QCameraViewfinderSettingsControl22trEPKcS1_i
+//static
+/*void qm1532544277(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QCameraViewfinderSettingsControl2::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QCameraViewfinderSettingsControl2::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:85
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN33QCameraViewfinderSettingsControl211qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QCameraViewfinderSettingsControl2*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:85
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN33QCameraViewfinderSettingsControl211qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QCameraViewfinderSettingsControl2*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:85
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN33QCameraViewfinderSettingsControl22trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraViewfinderSettingsControl2::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:85
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN33QCameraViewfinderSettingsControl26trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraViewfinderSettingsControl2::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:87
-// [-2] void ~QCameraViewfinderSettingsControl2()
-extern "C" Q_DECL_EXPORT
-void C_ZN33QCameraViewfinderSettingsControl2D2Ev(void *this_) {
+/*void C_ZN33QCameraViewfinderSettingsControl2D2Ev(void *this_)*/ {
   delete (QCameraViewfinderSettingsControl2*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:89
-// [-2] QList<QCameraViewfinderSettings> supportedViewfinderSettings()
-extern "C" Q_DECL_EXPORT
-QList<QCameraViewfinderSettings>* C_ZNK33QCameraViewfinderSettingsControl227supportedViewfinderSettingsEv(void *this_) {
-  auto rv = ((QCameraViewfinderSettingsControl2*)this_)->supportedViewfinderSettings();
-return new QList<QCameraViewfinderSettings>(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:91
-// [8] QCameraViewfinderSettings viewfinderSettings()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK33QCameraViewfinderSettingsControl218viewfinderSettingsEv(void *this_) {
-  auto rv = ((QCameraViewfinderSettingsControl2*)this_)->viewfinderSettings();
-return new QCameraViewfinderSettings(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraviewfindersettingscontrol.h:92
-// [-2] void setViewfinderSettings(const QCameraViewfinderSettings &)
-extern "C" Q_DECL_EXPORT
-void C_ZN33QCameraViewfinderSettingsControl221setViewfinderSettingsERK25QCameraViewfinderSettings(void *this_, QCameraViewfinderSettings* settings) {
-  ((QCameraViewfinderSettingsControl2*)this_)->setViewfinderSettings(*settings);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcameraviewfindersettingscontrol2
 //  main block end
 
 //  use block begin

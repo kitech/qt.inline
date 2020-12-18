@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050300
 // /usr/include/qt/QtMultimedia/qcamerainfocontrol.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QCameraInfoControl is pure virtual: true
+// QCameraInfoControl is pure virtual: true true
 // QCameraInfoControl has virtual projected: false
 //  header block end
 
@@ -94,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQCameraInfoControl() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] QCamera::Position cameraPosition(const QString &)
   virtual QCamera::Position cameraPosition(const QString & deviceName) const override {
     int handled = 0;
@@ -107,7 +106,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int cameraOrientation(const QString &)
   virtual int cameraOrientation(const QString & deviceName) const override {
     int handled = 0;
@@ -134,77 +133,28 @@ void* C_QCameraInfoControl_init_staticMetaObject(void* this_, void* strdat, void
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:57
-// [4] QCamera::Position cameraPosition(const QString &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:58
-// [4] int cameraOrientation(const QString &)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcamerainfocontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:52
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QCameraInfoControl10metaObjectEv(void *this_) {
-  return (void*)((QCameraInfoControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm4155513336 (34)_ZN18QCameraInfoControl2trEPKcS1_i
+//static
+/*void qm4155513336(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QCameraInfoControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QCameraInfoControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:52
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QCameraInfoControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QCameraInfoControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:52
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN18QCameraInfoControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QCameraInfoControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:52
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QCameraInfoControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraInfoControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:52
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QCameraInfoControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraInfoControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:55
-// [-2] void ~QCameraInfoControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN18QCameraInfoControlD2Ev(void *this_) {
+/*void C_ZN18QCameraInfoControlD2Ev(void *this_)*/ {
   delete (QCameraInfoControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:57
-// [4] QCamera::Position cameraPosition(const QString &)
-extern "C" Q_DECL_EXPORT
-QCamera::Position C_ZNK18QCameraInfoControl14cameraPositionERK7QString(void *this_, QString* deviceName) {
-  return (QCamera::Position)((QCameraInfoControl*)this_)->cameraPosition(*deviceName);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfocontrol.h:58
-// [4] int cameraOrientation(const QString &)
-extern "C" Q_DECL_EXPORT
-int C_ZNK18QCameraInfoControl17cameraOrientationERK7QString(void *this_, QString* deviceName) {
-  return (int)((QCameraInfoControl*)this_)->cameraOrientation(*deviceName);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcamerainfocontrol
 //  main block end
 
 //  use block begin

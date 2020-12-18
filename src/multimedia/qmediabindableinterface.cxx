@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaBindableInterface is pure virtual: true
+// QMediaBindableInterface is pure virtual: true true
 // QMediaBindableInterface has virtual projected: true
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQMediaBindableInterface[] = {
 class Q_DECL_EXPORT MyQMediaBindableInterface : public QMediaBindableInterface {
 public:
   virtual ~MyQMediaBindableInterface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QMediaObject * mediaObject()
   virtual QMediaObject * mediaObject() const override {
     int handled = 0;
@@ -61,7 +61,7 @@ public:
   }
   }
 
-// Protected purevirtual virtual Visibility=Default Availability=Available
+// Protected purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool setMediaObject(QMediaObject *)
   virtual bool setMediaObject(QMediaObject * object)  override {
     int handled = 0;
@@ -76,27 +76,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediabindableinterface.h:55
-// [8] QMediaObject * mediaObject()
-// Protected purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediabindableinterface.h:59
-// [1] bool setMediaObject(QMediaObject *)
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediabindableinterface.h:53
-// [-2] void ~QMediaBindableInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN23QMediaBindableInterfaceD2Ev(void *this_) {
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediabindableinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+
+/*void C_ZN23QMediaBindableInterfaceD2Ev(void *this_)*/ {
   delete (QMediaBindableInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediabindableinterface.h:55
-// [8] QMediaObject * mediaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK23QMediaBindableInterface11mediaObjectEv(void *this_) {
-  return (void*)((QMediaBindableInterface*)this_)->mediaObject();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediabindableinterface
 //  main block end
 
 //  use block begin

@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050300
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaServiceDefaultDeviceInterface is pure virtual: true
+// QMediaServiceDefaultDeviceInterface is pure virtual: true true
 // QMediaServiceDefaultDeviceInterface has virtual projected: false
 //  header block end
 
@@ -49,7 +48,7 @@ static const uint qt_meta_data_MyQMediaServiceDefaultDeviceInterface[] = {
 class Q_DECL_EXPORT MyQMediaServiceDefaultDeviceInterface : public QMediaServiceDefaultDeviceInterface {
 public:
   virtual ~MyQMediaServiceDefaultDeviceInterface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QByteArray defaultDevice(const QByteArray &)
   virtual QByteArray defaultDevice(const QByteArray & service) const override {
     int handled = 0;
@@ -65,25 +64,19 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:157
-// [8] QByteArray defaultDevice(const QByteArray &)
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediaservicedefaultdeviceinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:156
-// [-2] void ~QMediaServiceDefaultDeviceInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN35QMediaServiceDefaultDeviceInterfaceD2Ev(void *this_) {
+// [-2] void ~QMediaServiceDefaultDeviceInterface() 
+// (11)qm928870662 (44)_ZN35QMediaServiceDefaultDeviceInterfaceD2Ev
+/*void qm928870662 (void *this_)*/ {
   delete (QMediaServiceDefaultDeviceInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:157
-// [8] QByteArray defaultDevice(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK35QMediaServiceDefaultDeviceInterface13defaultDeviceERK10QByteArray(void *this_, QByteArray* service) {
-  auto rv = ((QMediaServiceDefaultDeviceInterface*)this_)->defaultDevice(*service);
-return new QByteArray(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediaservicedefaultdeviceinterface
 //  main block end
 
 //  use block begin

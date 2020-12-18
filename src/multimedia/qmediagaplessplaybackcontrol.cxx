@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaGaplessPlaybackControl is pure virtual: true
+// QMediaGaplessPlaybackControl is pure virtual: true true
 // QMediaGaplessPlaybackControl has virtual projected: false
 //  header block end
 
@@ -93,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQMediaGaplessPlaybackControl() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QMediaContent nextMedia()
   virtual QMediaContent nextMedia() const override {
     int handled = 0;
@@ -107,7 +107,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setNextMedia(const QMediaContent &)
   virtual void setNextMedia(const QMediaContent & media)  override {
     int handled = 0;
@@ -119,7 +119,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool isCrossfadeSupported()
   virtual bool isCrossfadeSupported() const override {
     int handled = 0;
@@ -132,7 +132,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] qreal crossfadeTime()
   virtual qreal crossfadeTime() const override {
     int handled = 0;
@@ -145,7 +145,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setCrossfadeTime(qreal)
   virtual void setCrossfadeTime(qreal crossfadeTime)  override {
     int handled = 0;
@@ -171,135 +171,28 @@ void* C_QMediaGaplessPlaybackControl_init_staticMetaObject(void* this_, void* st
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:56
-// [8] QMediaContent nextMedia()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:57
-// [-2] void setNextMedia(const QMediaContent &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:59
-// [1] bool isCrossfadeSupported()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:60
-// [8] qreal crossfadeTime()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:61
-// [-2] void setCrossfadeTime(qreal)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediagaplessplaybackcontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:52
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK28QMediaGaplessPlaybackControl10metaObjectEv(void *this_) {
-  return (void*)((QMediaGaplessPlaybackControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1596341893 (44)_ZN28QMediaGaplessPlaybackControl2trEPKcS1_i
+//static
+/*void qm1596341893(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QMediaGaplessPlaybackControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QMediaGaplessPlaybackControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:52
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QMediaGaplessPlaybackControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QMediaGaplessPlaybackControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:52
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN28QMediaGaplessPlaybackControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QMediaGaplessPlaybackControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:52
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QMediaGaplessPlaybackControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMediaGaplessPlaybackControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:52
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QMediaGaplessPlaybackControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMediaGaplessPlaybackControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:54
-// [-2] void ~QMediaGaplessPlaybackControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN28QMediaGaplessPlaybackControlD2Ev(void *this_) {
+/*void C_ZN28QMediaGaplessPlaybackControlD2Ev(void *this_)*/ {
   delete (QMediaGaplessPlaybackControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:56
-// [8] QMediaContent nextMedia()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK28QMediaGaplessPlaybackControl9nextMediaEv(void *this_) {
-  auto rv = ((QMediaGaplessPlaybackControl*)this_)->nextMedia();
-return new QMediaContent(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:57
-// [-2] void setNextMedia(const QMediaContent &)
-extern "C" Q_DECL_EXPORT
-void C_ZN28QMediaGaplessPlaybackControl12setNextMediaERK13QMediaContent(void *this_, QMediaContent* media) {
-  ((QMediaGaplessPlaybackControl*)this_)->setNextMedia(*media);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:59
-// [1] bool isCrossfadeSupported()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK28QMediaGaplessPlaybackControl20isCrossfadeSupportedEv(void *this_) {
-  return (bool)((QMediaGaplessPlaybackControl*)this_)->isCrossfadeSupported();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:60
-// [8] qreal crossfadeTime()
-extern "C" Q_DECL_EXPORT
-qreal C_ZNK28QMediaGaplessPlaybackControl13crossfadeTimeEv(void *this_) {
-  return (qreal)((QMediaGaplessPlaybackControl*)this_)->crossfadeTime();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:61
-// [-2] void setCrossfadeTime(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN28QMediaGaplessPlaybackControl16setCrossfadeTimeEd(void *this_, qreal crossfadeTime) {
-  ((QMediaGaplessPlaybackControl*)this_)->setCrossfadeTime(crossfadeTime);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:64
-// [-2] void crossfadeTimeChanged(qreal)
-extern "C" Q_DECL_EXPORT
-void C_ZN28QMediaGaplessPlaybackControl20crossfadeTimeChangedEd(void *this_, qreal crossfadeTime) {
-  ((QMediaGaplessPlaybackControl*)this_)->crossfadeTimeChanged(crossfadeTime);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:65
-// [-2] void nextMediaChanged(const QMediaContent &)
-extern "C" Q_DECL_EXPORT
-void C_ZN28QMediaGaplessPlaybackControl16nextMediaChangedERK13QMediaContent(void *this_, QMediaContent* media) {
-  ((QMediaGaplessPlaybackControl*)this_)->nextMediaChanged(*media);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediagaplessplaybackcontrol.h:66
-// [-2] void advancedToNextMedia()
-extern "C" Q_DECL_EXPORT
-void C_ZN28QMediaGaplessPlaybackControl19advancedToNextMediaEv(void *this_) {
-  ((QMediaGaplessPlaybackControl*)this_)->advancedToNextMedia();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediagaplessplaybackcontrol
 //  main block end
 
 //  use block begin

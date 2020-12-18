@@ -235,6 +235,13 @@ void C_QCameraViewfinderSettingsList_move_0(void* this_ , int from, int to) {
      ((QCameraViewfinderSettingsList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QCameraViewfinderSettingsList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QCameraViewfinderSettingsList_swapItemsAt_0()
+     ((QCameraViewfinderSettingsList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QCameraViewfinderSettingsList_swap_1(void* this_ , int i, int j) {

@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// StereoFrameDefault is pure virtual: false
+// StereoFrameDefault is pure virtual: false false
 // StereoFrameDefault has virtual projected: false
 //  header block end
 
@@ -50,11 +50,16 @@ public:
   virtual ~MyStereoFrameDefault() {}
 };
 
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_stereoframedefault(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-extern "C" Q_DECL_EXPORT
-void C_ZN18StereoFrameDefaultD2Ev(void *this_) {
+
+/*void C_ZN18StereoFrameDefaultD2Ev(void *this_)*/ {
   delete (QAudioBuffer::StereoFrameDefault<unsigned short>*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_stereoframedefault
 //  main block end
 
 //  use block begin

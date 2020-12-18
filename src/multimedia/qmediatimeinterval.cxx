@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaTimeInterval is pure virtual: false
+// QMediaTimeInterval is pure virtual: false false
 // QMediaTimeInterval has virtual projected: false
 //  header block end
 
@@ -54,87 +54,53 @@ MyQMediaTimeInterval() : QMediaTimeInterval() {}
 MyQMediaTimeInterval(qint64 start, qint64 end_) : QMediaTimeInterval(start, end_) {}
 // void QMediaTimeInterval(const QMediaTimeInterval &)
 MyQMediaTimeInterval(const QMediaTimeInterval & arg0) : QMediaTimeInterval(arg0) {}
+// void QMediaTimeInterval(QMediaTimeInterval &&)
+MyQMediaTimeInterval(QMediaTimeInterval && arg0) : QMediaTimeInterval(arg0) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:55
-// [-2] void QMediaTimeInterval()
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QMediaTimeIntervalC2Ev() {
-  return  new QMediaTimeInterval();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediatimeinterval(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:56
-// [-2] void QMediaTimeInterval(qint64, qint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QMediaTimeIntervalC2Exx(qint64 start, qint64 end_) {
-  return  new QMediaTimeInterval(start, end_);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:57
-// [-2] void QMediaTimeInterval(const QMediaTimeInterval &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN18QMediaTimeIntervalC2ERKS_(QMediaTimeInterval* arg0) {
-  return  new QMediaTimeInterval(*arg0);
-}
-
-// Public Visibility=Default Availability=Available
+// Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediatimerange.h:59
-// [8] qint64 start()
-extern "C" Q_DECL_EXPORT
-qint64 C_ZNK18QMediaTimeInterval5startEv(void *this_) {
-  return (qint64)((QMediaTimeInterval*)this_)->start();
+// [16] QMediaTimeInterval & operator=(const QMediaTimeInterval &) 
+// (12)qm3314246717 (30)_ZN18QMediaTimeIntervalaSERKS_
+//static
+/*void qm3314246717(const QMediaTimeInterval & arg0)*/ {
+  const QMediaTimeInterval & arg0 = *(const QMediaTimeInterval *)this_;
+  (void) ((QMediaTimeInterval*)this_)->operator=(arg0);
+  // auto xptr = (QMediaTimeInterval & (QMediaTimeInterval::*)(QMediaTimeInterval const&) ) &QMediaTimeInterval::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public Visibility=Default Availability=Available
+// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediatimerange.h:60
-// [8] qint64 end()
-extern "C" Q_DECL_EXPORT
-qint64 C_ZNK18QMediaTimeInterval3endEv(void *this_) {
-  return (qint64)((QMediaTimeInterval*)this_)->end();
+// [-2] void QMediaTimeInterval(QMediaTimeInterval &&) 
+// (12)qm1330703696 (29)_ZN18QMediaTimeIntervalC2EOS_
+/*void* qm1330703696(QMediaTimeInterval && arg0)*/{
+  QMediaTimeInterval && arg0 =  static_cast<QMediaTimeInterval &&>(*(QMediaTimeInterval *)this_);
+  this_ =  new QMediaTimeInterval(arg0);
 }
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:62
-// [1] bool contains(qint64)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK18QMediaTimeInterval8containsEx(void *this_, qint64 time) {
-  return (bool)((QMediaTimeInterval*)this_)->contains(time);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:64
-// [1] bool isNormal()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK18QMediaTimeInterval8isNormalEv(void *this_) {
-  return (bool)((QMediaTimeInterval*)this_)->isNormal();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:65
-// [16] QMediaTimeInterval normalized()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QMediaTimeInterval10normalizedEv(void *this_) {
-  auto rv = ((QMediaTimeInterval*)this_)->normalized();
-return new QMediaTimeInterval(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:66
-// [16] QMediaTimeInterval translated(qint64)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK18QMediaTimeInterval10translatedEx(void *this_, qint64 offset) {
-  auto rv = ((QMediaTimeInterval*)this_)->translated(offset);
-return new QMediaTimeInterval(rv);
+// Public inline Direct Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediatimerange.h:61
+// [16] QMediaTimeInterval & operator=(QMediaTimeInterval &&) 
+// (12)qm2707822480 (29)_ZN18QMediaTimeIntervalaSEOS_
+//static
+/*void qm2707822480(QMediaTimeInterval && arg0)*/ {
+  QMediaTimeInterval && arg0 =  static_cast<QMediaTimeInterval &&>(*(QMediaTimeInterval *)this_);
+  (void) ((QMediaTimeInterval*)this_)->operator=(arg0);
+  // auto xptr = (QMediaTimeInterval & (QMediaTimeInterval::*)(QMediaTimeInterval&&) ) &QMediaTimeInterval::operator=;
+  // fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
 
-extern "C" Q_DECL_EXPORT
-void C_ZN18QMediaTimeIntervalD2Ev(void *this_) {
+/*void C_ZN18QMediaTimeIntervalD2Ev(void *this_)*/ {
   delete (QMediaTimeInterval*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediatimeinterval
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaServiceFeaturesInterface is pure virtual: true
+// QMediaServiceFeaturesInterface is pure virtual: true true
 // QMediaServiceFeaturesInterface has virtual projected: false
 //  header block end
 
@@ -63,24 +63,19 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:181
-// [4] QMediaServiceProviderHint::Features supportedFeatures(const QByteArray &)
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediaservicefeaturesinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:180
-// [-2] void ~QMediaServiceFeaturesInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN30QMediaServiceFeaturesInterfaceD2Ev(void *this_) {
+// [-2] void ~QMediaServiceFeaturesInterface() 
+// (12)qm4016655890 (39)_ZN30QMediaServiceFeaturesInterfaceD2Ev
+/*void qm4016655890 (void *this_)*/ {
   delete (QMediaServiceFeaturesInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:181
-// [4] QMediaServiceProviderHint::Features supportedFeatures(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-QMediaServiceProviderHint::Features C_ZNK30QMediaServiceFeaturesInterface17supportedFeaturesERK10QByteArray(void *this_, QByteArray* service) {
-  return (QMediaServiceProviderHint::Features)((QMediaServiceFeaturesInterface*)this_)->supportedFeatures(*service);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediaservicefeaturesinterface
 //  main block end
 
 //  use block begin

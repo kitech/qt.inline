@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaAvailabilityControl is pure virtual: true
+// QMediaAvailabilityControl is pure virtual: true true
 // QMediaAvailabilityControl has virtual projected: false
 //  header block end
 
@@ -93,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQMediaAvailabilityControl() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] QMultimedia::AvailabilityStatus availability()
   virtual QMultimedia::AvailabilityStatus availability() const override {
     int handled = 0;
@@ -120,74 +120,28 @@ void* C_QMediaAvailabilityControl_init_staticMetaObject(void* this_, void* strda
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:59
-// [4] QMultimedia::AvailabilityStatus availability()
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediaavailabilitycontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:54
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK25QMediaAvailabilityControl10metaObjectEv(void *this_) {
-  return (void*)((QMediaAvailabilityControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1875060129 (41)_ZN25QMediaAvailabilityControl2trEPKcS1_i
+//static
+/*void qm1875060129(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QMediaAvailabilityControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QMediaAvailabilityControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:54
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaAvailabilityControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QMediaAvailabilityControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:54
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN25QMediaAvailabilityControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QMediaAvailabilityControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:54
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaAvailabilityControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMediaAvailabilityControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:54
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaAvailabilityControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMediaAvailabilityControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:57
-// [-2] void ~QMediaAvailabilityControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN25QMediaAvailabilityControlD2Ev(void *this_) {
+/*void C_ZN25QMediaAvailabilityControlD2Ev(void *this_)*/ {
   delete (QMediaAvailabilityControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:59
-// [4] QMultimedia::AvailabilityStatus availability()
-extern "C" Q_DECL_EXPORT
-QMultimedia::AvailabilityStatus C_ZNK25QMediaAvailabilityControl12availabilityEv(void *this_) {
-  return (QMultimedia::AvailabilityStatus)((QMediaAvailabilityControl*)this_)->availability();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaavailabilitycontrol.h:62
-// [-2] void availabilityChanged(QMultimedia::AvailabilityStatus)
-extern "C" Q_DECL_EXPORT
-void C_ZN25QMediaAvailabilityControl19availabilityChangedEN11QMultimedia18AvailabilityStatusE(void *this_, QMultimedia::AvailabilityStatus availability) {
-  ((QMediaAvailabilityControl*)this_)->availabilityChanged(availability);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediaavailabilitycontrol
 //  main block end
 
 //  use block begin

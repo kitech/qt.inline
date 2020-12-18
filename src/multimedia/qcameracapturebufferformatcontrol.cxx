@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QCameraCaptureBufferFormatControl is pure virtual: true
+// QCameraCaptureBufferFormatControl is pure virtual: true true
 // QCameraCaptureBufferFormatControl has virtual projected: false
 //  header block end
 
@@ -107,7 +107,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] QVideoFrame::PixelFormat bufferFormat()
   virtual QVideoFrame::PixelFormat bufferFormat() const override {
     int handled = 0;
@@ -120,7 +120,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setBufferFormat(QVideoFrame::PixelFormat)
   virtual void setBufferFormat(QVideoFrame::PixelFormat format)  override {
     int handled = 0;
@@ -146,97 +146,28 @@ void* C_QCameraCaptureBufferFormatControl_init_staticMetaObject(void* this_, voi
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:57
-// [-2] QList<QVideoFrame::PixelFormat> supportedBufferFormats()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:58
-// [4] QVideoFrame::PixelFormat bufferFormat()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:59
-// [-2] void setBufferFormat(QVideoFrame::PixelFormat)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcameracapturebufferformatcontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:53
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK33QCameraCaptureBufferFormatControl10metaObjectEv(void *this_) {
-  return (void*)((QCameraCaptureBufferFormatControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1157062301 (49)_ZN33QCameraCaptureBufferFormatControl2trEPKcS1_i
+//static
+/*void qm1157062301(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QCameraCaptureBufferFormatControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QCameraCaptureBufferFormatControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:53
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN33QCameraCaptureBufferFormatControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QCameraCaptureBufferFormatControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:53
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN33QCameraCaptureBufferFormatControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QCameraCaptureBufferFormatControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:53
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN33QCameraCaptureBufferFormatControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraCaptureBufferFormatControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:53
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN33QCameraCaptureBufferFormatControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraCaptureBufferFormatControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:55
-// [-2] void ~QCameraCaptureBufferFormatControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN33QCameraCaptureBufferFormatControlD2Ev(void *this_) {
+/*void C_ZN33QCameraCaptureBufferFormatControlD2Ev(void *this_)*/ {
   delete (QCameraCaptureBufferFormatControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:57
-// [-2] QList<QVideoFrame::PixelFormat> supportedBufferFormats()
-extern "C" Q_DECL_EXPORT
-QList<QVideoFrame::PixelFormat>* C_ZNK33QCameraCaptureBufferFormatControl22supportedBufferFormatsEv(void *this_) {
-  auto rv = ((QCameraCaptureBufferFormatControl*)this_)->supportedBufferFormats();
-return new QList<QVideoFrame::PixelFormat>(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:58
-// [4] QVideoFrame::PixelFormat bufferFormat()
-extern "C" Q_DECL_EXPORT
-QVideoFrame::PixelFormat C_ZNK33QCameraCaptureBufferFormatControl12bufferFormatEv(void *this_) {
-  return (QVideoFrame::PixelFormat)((QCameraCaptureBufferFormatControl*)this_)->bufferFormat();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:59
-// [-2] void setBufferFormat(QVideoFrame::PixelFormat)
-extern "C" Q_DECL_EXPORT
-void C_ZN33QCameraCaptureBufferFormatControl15setBufferFormatEN11QVideoFrame11PixelFormatE(void *this_, QVideoFrame::PixelFormat format) {
-  ((QCameraCaptureBufferFormatControl*)this_)->setBufferFormat(format);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameracapturebufferformatcontrol.h:62
-// [-2] void bufferFormatChanged(QVideoFrame::PixelFormat)
-extern "C" Q_DECL_EXPORT
-void C_ZN33QCameraCaptureBufferFormatControl19bufferFormatChangedEN11QVideoFrame11PixelFormatE(void *this_, QVideoFrame::PixelFormat format) {
-  ((QCameraCaptureBufferFormatControl*)this_)->bufferFormatChanged(format);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcameracapturebufferformatcontrol
 //  main block end
 
 //  use block begin

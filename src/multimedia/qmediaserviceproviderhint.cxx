@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaServiceProviderHint is pure virtual: false
+// QMediaServiceProviderHint is pure virtual: false false
 // QMediaServiceProviderHint has virtual projected: false
 //  header block end
 
@@ -62,146 +62,16 @@ MyQMediaServiceProviderHint(QFlags<QMediaServiceProviderHint::Feature> features)
 MyQMediaServiceProviderHint(const QMediaServiceProviderHint & other) : QMediaServiceProviderHint(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:74
-// [-2] void QMediaServiceProviderHint()
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaServiceProviderHintC2Ev() {
-  return  new QMediaServiceProviderHint();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediaserviceproviderhint(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:75
-// [-2] void QMediaServiceProviderHint(const QString &, const QStringList &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaServiceProviderHintC2ERK7QStringRK11QStringList(QString* mimeType, QStringList* codecs) {
-  return  new QMediaServiceProviderHint(*mimeType, *codecs);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:76
-// [-2] void QMediaServiceProviderHint(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaServiceProviderHintC2ERK10QByteArray(QByteArray* device) {
-  return  new QMediaServiceProviderHint(*device);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:77
-// [-2] void QMediaServiceProviderHint(QCamera::Position)
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaServiceProviderHintC2EN7QCamera8PositionE(QCamera::Position position) {
-  return  new QMediaServiceProviderHint(position);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:78
-// [-2] void QMediaServiceProviderHint(QMediaServiceProviderHint::Features)
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaServiceProviderHintC2E6QFlagsINS_7FeatureEE(QFlags<QMediaServiceProviderHint::Feature> features) {
-  return  new QMediaServiceProviderHint(features);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:79
-// [-2] void QMediaServiceProviderHint(const QMediaServiceProviderHint &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaServiceProviderHintC2ERKS_(QMediaServiceProviderHint* other) {
-  return  new QMediaServiceProviderHint(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:80
-// [-2] void ~QMediaServiceProviderHint()
-extern "C" Q_DECL_EXPORT
-void C_ZN25QMediaServiceProviderHintD2Ev(void *this_) {
+/*void C_ZN25QMediaServiceProviderHintD2Ev(void *this_)*/ {
   delete (QMediaServiceProviderHint*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:82
-// [8] QMediaServiceProviderHint & operator=(const QMediaServiceProviderHint &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN25QMediaServiceProviderHintaSERKS_(void *this_, QMediaServiceProviderHint* other) {
-  auto& rv = ((QMediaServiceProviderHint*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:84
-// [1] bool operator==(const QMediaServiceProviderHint &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK25QMediaServiceProviderHinteqERKS_(void *this_, QMediaServiceProviderHint* other) {
-  return (bool)((QMediaServiceProviderHint*)this_)->operator==(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:85
-// [1] bool operator!=(const QMediaServiceProviderHint &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK25QMediaServiceProviderHintneERKS_(void *this_, QMediaServiceProviderHint* other) {
-  return (bool)((QMediaServiceProviderHint*)this_)->operator!=(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:87
-// [1] bool isNull()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK25QMediaServiceProviderHint6isNullEv(void *this_) {
-  return (bool)((QMediaServiceProviderHint*)this_)->isNull();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:89
-// [4] QMediaServiceProviderHint::Type type()
-extern "C" Q_DECL_EXPORT
-QMediaServiceProviderHint::Type C_ZNK25QMediaServiceProviderHint4typeEv(void *this_) {
-  return (QMediaServiceProviderHint::Type)((QMediaServiceProviderHint*)this_)->type();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:91
-// [8] QString mimeType()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK25QMediaServiceProviderHint8mimeTypeEv(void *this_) {
-  auto rv = ((QMediaServiceProviderHint*)this_)->mimeType();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:92
-// [8] QStringList codecs()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK25QMediaServiceProviderHint6codecsEv(void *this_) {
-  auto rv = ((QMediaServiceProviderHint*)this_)->codecs();
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:94
-// [8] QByteArray device()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK25QMediaServiceProviderHint6deviceEv(void *this_) {
-  auto rv = ((QMediaServiceProviderHint*)this_)->device();
-return new QByteArray(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:95
-// [4] QCamera::Position cameraPosition()
-extern "C" Q_DECL_EXPORT
-QCamera::Position C_ZNK25QMediaServiceProviderHint14cameraPositionEv(void *this_) {
-  return (QCamera::Position)((QMediaServiceProviderHint*)this_)->cameraPosition();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:97
-// [4] QMediaServiceProviderHint::Features features()
-extern "C" Q_DECL_EXPORT
-QMediaServiceProviderHint::Features* C_ZNK25QMediaServiceProviderHint8featuresEv(void *this_) {
-  auto rv = ((QMediaServiceProviderHint*)this_)->features();
-return new QMediaServiceProviderHint::Features(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediaserviceproviderhint
 //  main block end
 
 //  use block begin

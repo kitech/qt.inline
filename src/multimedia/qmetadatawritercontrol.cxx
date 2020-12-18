@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMetaDataWriterControl is pure virtual: true
+// QMetaDataWriterControl is pure virtual: true true
 // QMetaDataWriterControl has virtual projected: false
 //  header block end
 
@@ -93,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQMetaDataWriterControl() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool isWritable()
   virtual bool isWritable() const override {
     int handled = 0;
@@ -106,7 +106,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool isMetaDataAvailable()
   virtual bool isMetaDataAvailable() const override {
     int handled = 0;
@@ -119,7 +119,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [16] QVariant metaData(const QString &)
   virtual QVariant metaData(const QString & key) const override {
     int handled = 0;
@@ -133,7 +133,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setMetaData(const QString &, const QVariant &)
   virtual void setMetaData(const QString & key, const QVariant & value)  override {
     int handled = 0;
@@ -145,7 +145,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QStringList availableMetaData()
   virtual QStringList availableMetaData() const override {
     int handled = 0;
@@ -173,144 +173,28 @@ void* C_QMetaDataWriterControl_init_staticMetaObject(void* this_, void* strdat, 
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:62
-// [1] bool isWritable()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:63
-// [1] bool isMetaDataAvailable()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:65
-// [16] QVariant metaData(const QString &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:66
-// [-2] void setMetaData(const QString &, const QVariant &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:67
-// [8] QStringList availableMetaData()
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmetadatawritercontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:58
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QMetaDataWriterControl10metaObjectEv(void *this_) {
-  return (void*)((QMetaDataWriterControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm2530082721 (38)_ZN22QMetaDataWriterControl2trEPKcS1_i
+//static
+/*void qm2530082721(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QMetaDataWriterControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QMetaDataWriterControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:58
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QMetaDataWriterControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QMetaDataWriterControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:58
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN22QMetaDataWriterControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QMetaDataWriterControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:58
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QMetaDataWriterControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMetaDataWriterControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:58
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN22QMetaDataWriterControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QMetaDataWriterControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:60
-// [-2] void ~QMetaDataWriterControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN22QMetaDataWriterControlD2Ev(void *this_) {
+/*void C_ZN22QMetaDataWriterControlD2Ev(void *this_)*/ {
   delete (QMetaDataWriterControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:62
-// [1] bool isWritable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK22QMetaDataWriterControl10isWritableEv(void *this_) {
-  return (bool)((QMetaDataWriterControl*)this_)->isWritable();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:63
-// [1] bool isMetaDataAvailable()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK22QMetaDataWriterControl19isMetaDataAvailableEv(void *this_) {
-  return (bool)((QMetaDataWriterControl*)this_)->isMetaDataAvailable();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:65
-// [16] QVariant metaData(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QMetaDataWriterControl8metaDataERK7QString(void *this_, QString* key) {
-  auto rv = ((QMetaDataWriterControl*)this_)->metaData(*key);
-return new QVariant(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:66
-// [-2] void setMetaData(const QString &, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN22QMetaDataWriterControl11setMetaDataERK7QStringRK8QVariant(void *this_, QString* key, QVariant* value) {
-  ((QMetaDataWriterControl*)this_)->setMetaData(*key, *value);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:67
-// [8] QStringList availableMetaData()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK22QMetaDataWriterControl17availableMetaDataEv(void *this_) {
-  auto rv = ((QMetaDataWriterControl*)this_)->availableMetaData();
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:70
-// [-2] void metaDataChanged()
-extern "C" Q_DECL_EXPORT
-void C_ZN22QMetaDataWriterControl15metaDataChangedEv(void *this_) {
-  ((QMetaDataWriterControl*)this_)->metaDataChanged();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:71
-// [-2] void metaDataChanged(const QString &, const QVariant &)
-extern "C" Q_DECL_EXPORT
-void C_ZN22QMetaDataWriterControl15metaDataChangedERK7QStringRK8QVariant(void *this_, QString* key, QVariant* value) {
-  ((QMetaDataWriterControl*)this_)->metaDataChanged(*key, *value);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:73
-// [-2] void writableChanged(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN22QMetaDataWriterControl15writableChangedEb(void *this_, bool writable) {
-  ((QMetaDataWriterControl*)this_)->writableChanged(writable);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmetadatawritercontrol.h:74
-// [-2] void metaDataAvailableChanged(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN22QMetaDataWriterControl24metaDataAvailableChangedEb(void *this_, bool available) {
-  ((QMetaDataWriterControl*)this_)->metaDataAvailableChanged(available);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmetadatawritercontrol
 //  main block end
 
 //  use block begin

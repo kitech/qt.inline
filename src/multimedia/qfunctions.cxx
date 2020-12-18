@@ -7,760 +7,660 @@
 //  header block end
 
 //  main block begin
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:122
-// [8] QMediaTimeRange operator+(const QMediaTimeRange &, const QMediaTimeRange &)
-extern "C" Q_DECL_EXPORT
-void* C_ZplRK15QMediaTimeRangeS1__55(QMediaTimeRange* arg0, QMediaTimeRange* arg1) {
-  auto rv = operator+(*arg0, *arg1);
-return new QMediaTimeRange(rv);
+extern "C"
+uint64_t ensure_inline_symbol_multimedia(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:261
+// [4] QIncompatibleFlag operator|(QCamera::LockTypes::enum_type, int) 
+// (12)qm1902676999 (24)_ZorN7QCamera8LockTypeEi
+/*void qm1902676999_199(QCamera::LockType f1, int f2)*/ {
+  QCamera::LockType f1 = *(QCamera::LockType*)this_; int f2 = *(int*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QIncompatibleFlag (*)(QCamera::LockType, int) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamera.h:258
-// [4] QIncompatibleFlag operator|(QCamera::LockTypes::enum_type, int)
-extern "C" Q_DECL_EXPORT
-void C_ZorN7QCamera8LockTypeEi_197(QCamera::LockTypes::enum_type f1, int f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// /usr/include/qt/QtMultimedia/qcamera.h:261
+// [4] QFlags<QCamera::LockTypes::enum_type> operator|(QCamera::LockTypes::enum_type, QCamera::LockTypes::enum_type) 
+// (12)qm3891798155 (26)_ZorN7QCamera8LockTypeES0_
+/*void qm3891798155_200(QCamera::LockType f1, QCamera::LockType f2)*/ {
+  QCamera::LockType f1 = *(QCamera::LockType*)this_; QCamera::LockType f2 = *(QCamera::LockType*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QCamera::LockType> (*)(QCamera::LockType, QCamera::LockType) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamera.h:258
-// [4] QFlags<QCamera::LockTypes::enum_type> operator|(QCamera::LockTypes::enum_type, QCamera::LockTypes::enum_type)
-extern "C" Q_DECL_EXPORT
-void C_ZorN7QCamera8LockTypeES0__198(QCamera::LockTypes::enum_type f1, QCamera::LockTypes::enum_type f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamera.h:258
-// [4] QFlags<QCamera::LockTypes::enum_type> operator|(QCamera::LockTypes::enum_type, QFlags<QCamera::LockTypes::enum_type>)
-extern "C" Q_DECL_EXPORT
-void C_ZorN7QCamera8LockTypeE6QFlagsIS0_E_199(QCamera::LockTypes::enum_type f1, QFlags<QCamera::LockType> f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:105
-// [4] QIncompatibleFlag operator|(QMediaServiceProviderHint::Features::enum_type, int)
-extern "C" Q_DECL_EXPORT
-void C_ZorN25QMediaServiceProviderHint7FeatureEi_200(QMediaServiceProviderHint::Features::enum_type f1, int f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// /usr/include/qt/QtMultimedia/qcamera.h:261
+// [4] QFlags<QCamera::LockTypes::enum_type> operator|(QCamera::LockTypes::enum_type, QFlags<QCamera::LockTypes::enum_type>) 
+// (12)qm2880117725 (35)_ZorN7QCamera8LockTypeE6QFlagsIS0_E
+/*void qm2880117725_201(QCamera::LockType f1, QFlags<QCamera::LockType> f2)*/ {
+  QCamera::LockType f1 = *(QCamera::LockType*)this_; QFlags<QCamera::LockType> f2 = *(QFlags<QCamera::LockType>*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QCamera::LockType> (*)(QCamera::LockType, QFlags<QCamera::LockType>) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:105
-// [4] QFlags<QMediaServiceProviderHint::Features::enum_type> operator|(QMediaServiceProviderHint::Features::enum_type, QMediaServiceProviderHint::Features::enum_type)
-extern "C" Q_DECL_EXPORT
-void C_ZorN25QMediaServiceProviderHint7FeatureES0__201(QMediaServiceProviderHint::Features::enum_type f1, QMediaServiceProviderHint::Features::enum_type f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// [4] QIncompatibleFlag operator|(QMediaServiceProviderHint::Features::enum_type, int) 
+// (12)qm3929484862 (42)_ZorN25QMediaServiceProviderHint7FeatureEi
+/*void qm3929484862_202(QMediaServiceProviderHint::Feature f1, int f2)*/ {
+  QMediaServiceProviderHint::Feature f1 = *(QMediaServiceProviderHint::Feature*)this_; int f2 = *(int*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QIncompatibleFlag (*)(QMediaServiceProviderHint::Feature, int) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:105
-// [4] QFlags<QMediaServiceProviderHint::Features::enum_type> operator|(QMediaServiceProviderHint::Features::enum_type, QFlags<QMediaServiceProviderHint::Features::enum_type>)
-extern "C" Q_DECL_EXPORT
-void C_ZorN25QMediaServiceProviderHint7FeatureE6QFlagsIS0_E_202(QMediaServiceProviderHint::Features::enum_type f1, QFlags<QMediaServiceProviderHint::Feature> f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// [4] QFlags<QMediaServiceProviderHint::Features::enum_type> operator|(QMediaServiceProviderHint::Features::enum_type, QMediaServiceProviderHint::Features::enum_type) 
+// (12)qm3517248682 (44)_ZorN25QMediaServiceProviderHint7FeatureES0_
+/*void qm3517248682_203(QMediaServiceProviderHint::Feature f1, QMediaServiceProviderHint::Feature f2)*/ {
+  QMediaServiceProviderHint::Feature f1 = *(QMediaServiceProviderHint::Feature*)this_; QMediaServiceProviderHint::Feature f2 = *(QMediaServiceProviderHint::Feature*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QMediaServiceProviderHint::Feature> (*)(QMediaServiceProviderHint::Feature, QMediaServiceProviderHint::Feature) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:105
+// [4] QFlags<QMediaServiceProviderHint::Features::enum_type> operator|(QMediaServiceProviderHint::Features::enum_type, QFlags<QMediaServiceProviderHint::Features::enum_type>) 
+// (12)qm2317390504 (53)_ZorN25QMediaServiceProviderHint7FeatureE6QFlagsIS0_E
+/*void qm2317390504_204(QMediaServiceProviderHint::Feature f1, QFlags<QMediaServiceProviderHint::Feature> f2)*/ {
+  QMediaServiceProviderHint::Feature f1 = *(QMediaServiceProviderHint::Feature*)this_; QFlags<QMediaServiceProviderHint::Feature> f2 = *(QFlags<QMediaServiceProviderHint::Feature>*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QMediaServiceProviderHint::Feature> (*)(QMediaServiceProviderHint::Feature, QFlags<QMediaServiceProviderHint::Feature>) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideofilter.h:63
-// [4] QIncompatibleFlag operator|(QVideoFilterRunnable::RunFlags::enum_type, int)
-extern "C" Q_DECL_EXPORT
-void C_ZorN20QVideoFilterRunnable7RunFlagEi_203(QVideoFilterRunnable::RunFlags::enum_type f1, int f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// [4] QIncompatibleFlag operator|(QVideoFilterRunnable::RunFlags::enum_type, int) 
+// (12)qm1655168318 (37)_ZorN20QVideoFilterRunnable7RunFlagEi
+/*void qm1655168318_205(QVideoFilterRunnable::RunFlag f1, int f2)*/ {
+  QVideoFilterRunnable::RunFlag f1 = *(QVideoFilterRunnable::RunFlag*)this_; int f2 = *(int*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QIncompatibleFlag (*)(QVideoFilterRunnable::RunFlag, int) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideofilter.h:63
-// [4] QFlags<QVideoFilterRunnable::RunFlags::enum_type> operator|(QVideoFilterRunnable::RunFlags::enum_type, QVideoFilterRunnable::RunFlags::enum_type)
-extern "C" Q_DECL_EXPORT
-void C_ZorN20QVideoFilterRunnable7RunFlagES0__204(QVideoFilterRunnable::RunFlags::enum_type f1, QVideoFilterRunnable::RunFlags::enum_type f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// [4] QFlags<QVideoFilterRunnable::RunFlags::enum_type> operator|(QVideoFilterRunnable::RunFlags::enum_type, QVideoFilterRunnable::RunFlags::enum_type) 
+// (12)qm4111523740 (39)_ZorN20QVideoFilterRunnable7RunFlagES0_
+/*void qm4111523740_206(QVideoFilterRunnable::RunFlag f1, QVideoFilterRunnable::RunFlag f2)*/ {
+  QVideoFilterRunnable::RunFlag f1 = *(QVideoFilterRunnable::RunFlag*)this_; QVideoFilterRunnable::RunFlag f2 = *(QVideoFilterRunnable::RunFlag*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QVideoFilterRunnable::RunFlag> (*)(QVideoFilterRunnable::RunFlag, QVideoFilterRunnable::RunFlag) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qabstractvideofilter.h:63
-// [4] QFlags<QVideoFilterRunnable::RunFlags::enum_type> operator|(QVideoFilterRunnable::RunFlags::enum_type, QFlags<QVideoFilterRunnable::RunFlags::enum_type>)
-extern "C" Q_DECL_EXPORT
-void C_ZorN20QVideoFilterRunnable7RunFlagE6QFlagsIS0_E_205(QVideoFilterRunnable::RunFlags::enum_type f1, QFlags<QVideoFilterRunnable::RunFlag> f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// [4] QFlags<QVideoFilterRunnable::RunFlags::enum_type> operator|(QVideoFilterRunnable::RunFlags::enum_type, QFlags<QVideoFilterRunnable::RunFlags::enum_type>) 
+// (11)qm990935395 (48)_ZorN20QVideoFilterRunnable7RunFlagE6QFlagsIS0_E
+/*void qm990935395_207(QVideoFilterRunnable::RunFlag f1, QFlags<QVideoFilterRunnable::RunFlag> f2)*/ {
+  QVideoFilterRunnable::RunFlag f1 = *(QVideoFilterRunnable::RunFlag*)this_; QFlags<QVideoFilterRunnable::RunFlag> f2 = *(QFlags<QVideoFilterRunnable::RunFlag>*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QVideoFilterRunnable::RunFlag> (*)(QVideoFilterRunnable::RunFlag, QFlags<QVideoFilterRunnable::RunFlag>) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h:149
-// [4] QIncompatibleFlag operator|(QCameraImageCapture::CaptureDestinations::enum_type, int)
-extern "C" Q_DECL_EXPORT
-void C_ZorN19QCameraImageCapture18CaptureDestinationEi_206(QCameraImageCapture::CaptureDestinations::enum_type f1, int f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// [4] QIncompatibleFlag operator|(QCameraImageCapture::CaptureDestinations::enum_type, int) 
+// (11)qm273258086 (48)_ZorN19QCameraImageCapture18CaptureDestinationEi
+/*void qm273258086_208(QCameraImageCapture::CaptureDestination f1, int f2)*/ {
+  QCameraImageCapture::CaptureDestination f1 = *(QCameraImageCapture::CaptureDestination*)this_; int f2 = *(int*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QIncompatibleFlag (*)(QCameraImageCapture::CaptureDestination, int) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h:149
-// [4] QFlags<QCameraImageCapture::CaptureDestinations::enum_type> operator|(QCameraImageCapture::CaptureDestinations::enum_type, QCameraImageCapture::CaptureDestinations::enum_type)
-extern "C" Q_DECL_EXPORT
-void C_ZorN19QCameraImageCapture18CaptureDestinationES0__207(QCameraImageCapture::CaptureDestinations::enum_type f1, QCameraImageCapture::CaptureDestinations::enum_type f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// [4] QFlags<QCameraImageCapture::CaptureDestinations::enum_type> operator|(QCameraImageCapture::CaptureDestinations::enum_type, QCameraImageCapture::CaptureDestinations::enum_type) 
+// (12)qm1719460406 (50)_ZorN19QCameraImageCapture18CaptureDestinationES0_
+/*void qm1719460406_209(QCameraImageCapture::CaptureDestination f1, QCameraImageCapture::CaptureDestination f2)*/ {
+  QCameraImageCapture::CaptureDestination f1 = *(QCameraImageCapture::CaptureDestination*)this_; QCameraImageCapture::CaptureDestination f2 = *(QCameraImageCapture::CaptureDestination*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QCameraImageCapture::CaptureDestination> (*)(QCameraImageCapture::CaptureDestination, QCameraImageCapture::CaptureDestination) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h:149
-// [4] QFlags<QCameraImageCapture::CaptureDestinations::enum_type> operator|(QCameraImageCapture::CaptureDestinations::enum_type, QFlags<QCameraImageCapture::CaptureDestinations::enum_type>)
-extern "C" Q_DECL_EXPORT
-void C_ZorN19QCameraImageCapture18CaptureDestinationE6QFlagsIS0_E_208(QCameraImageCapture::CaptureDestinations::enum_type f1, QFlags<QCameraImageCapture::CaptureDestination> f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// [4] QFlags<QCameraImageCapture::CaptureDestinations::enum_type> operator|(QCameraImageCapture::CaptureDestinations::enum_type, QFlags<QCameraImageCapture::CaptureDestinations::enum_type>) 
+// (12)qm2209772993 (59)_ZorN19QCameraImageCapture18CaptureDestinationE6QFlagsIS0_E
+/*void qm2209772993_210(QCameraImageCapture::CaptureDestination f1, QFlags<QCameraImageCapture::CaptureDestination> f2)*/ {
+  QCameraImageCapture::CaptureDestination f1 = *(QCameraImageCapture::CaptureDestination*)this_; QFlags<QCameraImageCapture::CaptureDestination> f2 = *(QFlags<QCameraImageCapture::CaptureDestination>*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QCameraImageCapture::CaptureDestination> (*)(QCameraImageCapture::CaptureDestination, QFlags<QCameraImageCapture::CaptureDestination>) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraexposure.h:181
-// [4] QIncompatibleFlag operator|(QCameraExposure::FlashModes::enum_type, int)
-extern "C" Q_DECL_EXPORT
-void C_ZorN15QCameraExposure9FlashModeEi_209(QCameraExposure::FlashModes::enum_type f1, int f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:183
+// [4] QIncompatibleFlag operator|(QCameraExposure::FlashModes::enum_type, int) 
+// (12)qm1732000485 (34)_ZorN15QCameraExposure9FlashModeEi
+/*void qm1732000485_211(QCameraExposure::FlashMode f1, int f2)*/ {
+  QCameraExposure::FlashMode f1 = *(QCameraExposure::FlashMode*)this_; int f2 = *(int*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QIncompatibleFlag (*)(QCameraExposure::FlashMode, int) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraexposure.h:181
-// [4] QFlags<QCameraExposure::FlashModes::enum_type> operator|(QCameraExposure::FlashModes::enum_type, QCameraExposure::FlashModes::enum_type)
-extern "C" Q_DECL_EXPORT
-void C_ZorN15QCameraExposure9FlashModeES0__210(QCameraExposure::FlashModes::enum_type f1, QCameraExposure::FlashModes::enum_type f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:183
+// [4] QFlags<QCameraExposure::FlashModes::enum_type> operator|(QCameraExposure::FlashModes::enum_type, QCameraExposure::FlashModes::enum_type) 
+// (12)qm2847060232 (36)_ZorN15QCameraExposure9FlashModeES0_
+/*void qm2847060232_212(QCameraExposure::FlashMode f1, QCameraExposure::FlashMode f2)*/ {
+  QCameraExposure::FlashMode f1 = *(QCameraExposure::FlashMode*)this_; QCameraExposure::FlashMode f2 = *(QCameraExposure::FlashMode*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QCameraExposure::FlashMode> (*)(QCameraExposure::FlashMode, QCameraExposure::FlashMode) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraexposure.h:181
-// [4] QFlags<QCameraExposure::FlashModes::enum_type> operator|(QCameraExposure::FlashModes::enum_type, QFlags<QCameraExposure::FlashModes::enum_type>)
-extern "C" Q_DECL_EXPORT
-void C_ZorN15QCameraExposure9FlashModeE6QFlagsIS0_E_211(QCameraExposure::FlashModes::enum_type f1, QFlags<QCameraExposure::FlashMode> f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:183
+// [4] QFlags<QCameraExposure::FlashModes::enum_type> operator|(QCameraExposure::FlashModes::enum_type, QFlags<QCameraExposure::FlashModes::enum_type>) 
+// (12)qm3262173715 (45)_ZorN15QCameraExposure9FlashModeE6QFlagsIS0_E
+/*void qm3262173715_213(QCameraExposure::FlashMode f1, QFlags<QCameraExposure::FlashMode> f2)*/ {
+  QCameraExposure::FlashMode f1 = *(QCameraExposure::FlashMode*)this_; QFlags<QCameraExposure::FlashMode> f2 = *(QFlags<QCameraExposure::FlashMode>*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QCameraExposure::FlashMode> (*)(QCameraExposure::FlashMode, QFlags<QCameraExposure::FlashMode>) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:166
-// [4] QIncompatibleFlag operator|(QCameraFocus::FocusModes::enum_type, int)
-extern "C" Q_DECL_EXPORT
-void C_ZorN12QCameraFocus9FocusModeEi_212(QCameraFocus::FocusModes::enum_type f1, int f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// /usr/include/qt/QtMultimedia/qcamerafocus.h:170
+// [4] QIncompatibleFlag operator|(QCameraFocus::FocusModes::enum_type, int) 
+// (12)qm1152753372 (31)_ZorN12QCameraFocus9FocusModeEi
+/*void qm1152753372_214(QCameraFocus::FocusMode f1, int f2)*/ {
+  QCameraFocus::FocusMode f1 = *(QCameraFocus::FocusMode*)this_; int f2 = *(int*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QIncompatibleFlag (*)(QCameraFocus::FocusMode, int) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:166
-// [4] QFlags<QCameraFocus::FocusModes::enum_type> operator|(QCameraFocus::FocusModes::enum_type, QCameraFocus::FocusModes::enum_type)
-extern "C" Q_DECL_EXPORT
-void C_ZorN12QCameraFocus9FocusModeES0__213(QCameraFocus::FocusModes::enum_type f1, QCameraFocus::FocusModes::enum_type f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// /usr/include/qt/QtMultimedia/qcamerafocus.h:170
+// [4] QFlags<QCameraFocus::FocusModes::enum_type> operator|(QCameraFocus::FocusModes::enum_type, QCameraFocus::FocusModes::enum_type) 
+// (12)qm1988982986 (33)_ZorN12QCameraFocus9FocusModeES0_
+/*void qm1988982986_215(QCameraFocus::FocusMode f1, QCameraFocus::FocusMode f2)*/ {
+  QCameraFocus::FocusMode f1 = *(QCameraFocus::FocusMode*)this_; QCameraFocus::FocusMode f2 = *(QCameraFocus::FocusMode*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QCameraFocus::FocusMode> (*)(QCameraFocus::FocusMode, QCameraFocus::FocusMode) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:166
-// [4] QFlags<QCameraFocus::FocusModes::enum_type> operator|(QCameraFocus::FocusModes::enum_type, QFlags<QCameraFocus::FocusModes::enum_type>)
-extern "C" Q_DECL_EXPORT
-void C_ZorN12QCameraFocus9FocusModeE6QFlagsIS0_E_214(QCameraFocus::FocusModes::enum_type f1, QFlags<QCameraFocus::FocusMode> f2) {
-  auto rv = operator|(f1, f2);
-/*return rv;*/
+// /usr/include/qt/QtMultimedia/qcamerafocus.h:170
+// [4] QFlags<QCameraFocus::FocusModes::enum_type> operator|(QCameraFocus::FocusModes::enum_type, QFlags<QCameraFocus::FocusModes::enum_type>) 
+// (12)qm2364268160 (42)_ZorN12QCameraFocus9FocusModeE6QFlagsIS0_E
+/*void qm2364268160_216(QCameraFocus::FocusMode f1, QFlags<QCameraFocus::FocusMode> f2)*/ {
+  QCameraFocus::FocusMode f1 = *(QCameraFocus::FocusMode*)this_; QFlags<QCameraFocus::FocusMode> f2 = *(QFlags<QCameraFocus::FocusMode>*)this_;
+  (void) operator|(f1, f2);
+  auto xptr = (QFlags<QCameraFocus::FocusMode> (*)(QCameraFocus::FocusMode, QFlags<QCameraFocus::FocusMode>) ) &operator|;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamera.h:272
-// [1] bool operator!=(const QCamera::FrameRateRange &, const QCamera::FrameRateRange &)
-extern "C" Q_DECL_EXPORT
-bool C_ZneRKN7QCamera14FrameRateRangeES2__66(const QCamera::FrameRateRange & r1, const QCamera::FrameRateRange & r2) {
-  return (bool)operator!=(r1, r2);
+// /usr/include/qt/QtMultimedia/qcamera.h:275
+// [1] bool operator!=(const QCamera::FrameRateRange &, const QCamera::FrameRateRange &) 
+// (12)qm3111919069 (35)_ZneRKN7QCamera14FrameRateRangeES2_
+/*void qm3111919069_61(const QCamera::FrameRateRange & r1, const QCamera::FrameRateRange & r2)*/ {
+  const QCamera::FrameRateRange & r1 = *(const QCamera::FrameRateRange *)this_; const QCamera::FrameRateRange & r2 = *(const QCamera::FrameRateRange *)this_;
+  (void) operator!=(r1, r2);
+  auto xptr = (bool (*)(QCamera::FrameRateRange const&, QCamera::FrameRateRange const&) ) &operator!=;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraviewfindersettings.h:96
-// [1] bool operator!=(const QCameraViewfinderSettings &, const QCameraViewfinderSettings &)
-extern "C" Q_DECL_EXPORT
-bool C_ZneRK25QCameraViewfinderSettingsS1__67(QCameraViewfinderSettings* lhs, QCameraViewfinderSettings* rhs) {
-  return (bool)operator!=(*lhs, *rhs);
+// [1] bool operator!=(const QCameraViewfinderSettings &, const QCameraViewfinderSettings &) 
+// (12)qm3677375088 (36)_ZneRK25QCameraViewfinderSettingsS1_
+/*void qm3677375088_62(const QCameraViewfinderSettings & lhs, const QCameraViewfinderSettings & rhs)*/ {
+  const QCameraViewfinderSettings & lhs = *(const QCameraViewfinderSettings *)this_; const QCameraViewfinderSettings & rhs = *(const QCameraViewfinderSettings *)this_;
+  (void) operator!=(lhs, rhs);
+  auto xptr = (bool (*)(QCameraViewfinderSettings const&, QCameraViewfinderSettings const&) ) &operator!=;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:77
-// [1] bool operator!=(const QMediaTimeInterval &, const QMediaTimeInterval &)
-extern "C" Q_DECL_EXPORT
-bool C_ZneRK18QMediaTimeIntervalS1__68(QMediaTimeInterval* arg0, QMediaTimeInterval* arg1) {
-  return (bool)operator!=(*arg0, *arg1);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:121
-// [1] bool operator!=(const QMediaTimeRange &, const QMediaTimeRange &)
-extern "C" Q_DECL_EXPORT
-bool C_ZneRK15QMediaTimeRangeS1__69(QMediaTimeRange* arg0, QMediaTimeRange* arg1) {
-  return (bool)operator!=(*arg0, *arg1);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:123
-// [8] QMediaTimeRange operator-(const QMediaTimeRange &, const QMediaTimeRange &)
-extern "C" Q_DECL_EXPORT
-void* C_ZmiRK15QMediaTimeRangeS1__35(QMediaTimeRange* arg0, QMediaTimeRange* arg1) {
-  auto rv = operator-(*arg0, *arg1);
-return new QMediaTimeRange(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qabstractvideosurface.h:104
-// [8] QDebug operator<<(QDebug, const QAbstractVideoSurface::Error &)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRKN21QAbstractVideoSurface5ErrorE_142(QDebug* arg0, const QAbstractVideoSurface::Error & arg1) {
-  auto rv = operator<<(*arg0, arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:134
-// [8] QDebug operator<<(QDebug, const QVideoSurfaceFormat &)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK19QVideoSurfaceFormat_143(QDebug* arg0, QVideoSurfaceFormat* arg1) {
-  auto rv = operator<<(*arg0, *arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:126
-// [8] QDebug operator<<(QDebug, const QMediaTimeRange &)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK15QMediaTimeRange_144(QDebug* arg0, QMediaTimeRange* arg1) {
-  auto rv = operator<<(*arg0, *arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudioformat.h:105
-// [8] QDebug operator<<(QDebug, const QAudioFormat &)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK12QAudioFormat_145(QDebug* arg0, QAudioFormat* arg1) {
-  auto rv = operator<<(*arg0, *arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoframe.h:174
-// [8] QDebug operator<<(QDebug, const QVideoFrame &)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK11QVideoFrame_146(QDebug* arg0, QVideoFrame* arg1) {
-  auto rv = operator<<(*arg0, *arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerainfo.h:79
-// [8] QDebug operator<<(QDebug, const QCameraInfo &)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugRK11QCameraInfo_147(QDebug* arg0, QCameraInfo* arg1) {
-  auto rv = operator<<(*arg0, *arg1);
-return new QDebug(rv);
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:299
+// [8] QDebug operator<<(QDebug, QCamera::Position) 
+// (12)qm1536027671 (30)_Zls6QDebugN7QCamera8PositionE
+/*void qm1536027671_2(QDebug dbg, QCamera::Position value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCamera::Position value = *(QCamera::Position*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCamera::Position) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamera.h:296
-// [8] QDebug operator<<(QDebug, QCamera::Position)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN7QCamera8PositionE_148(QDebug* dbg, QCamera::Position value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QCamera::LockType) 
+// (12)qm1580803498 (30)_Zls6QDebugN7QCamera8LockTypeE
+/*void qm1580803498_3(QDebug dbg, QCamera::LockType value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCamera::LockType value = *(QCamera::LockType*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCamera::LockType) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamera.h:293
-// [8] QDebug operator<<(QDebug, QCamera::LockType)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN7QCamera8LockTypeE_149(QDebug* dbg, QCamera::LockType value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamera.h:290
-// [8] QDebug operator<<(QDebug, QCamera::Status)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN7QCamera6StatusE_150(QDebug* dbg, QCamera::Status value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamera.h:289
-// [8] QDebug operator<<(QDebug, QCamera::State)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN7QCamera5StateE_151(QDebug* dbg, QCamera::State value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamera.h:291
-// [8] QDebug operator<<(QDebug, QCamera::Error)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN7QCamera5ErrorE_152(QDebug* dbg, QCamera::Error value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamera.h:295
-// [8] QDebug operator<<(QDebug, QCamera::LockChangeReason)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN7QCamera16LockChangeReasonE_153(QDebug* dbg, QCamera::LockChangeReason value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QCamera::Status) 
+// (11)qm185483422 (28)_Zls6QDebugN7QCamera6StatusE
+/*void qm185483422_4(QDebug dbg, QCamera::Status value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCamera::Status value = *(QCamera::Status*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCamera::Status) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamera.h:292
-// [8] QDebug operator<<(QDebug, QCamera::CaptureMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN7QCamera11CaptureModeE_154(QDebug* dbg, QCamera::CaptureMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QCamera::State) 
+// (12)qm1852134137 (27)_Zls6QDebugN7QCamera5StateE
+/*void qm1852134137_5(QDebug dbg, QCamera::State value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCamera::State value = *(QCamera::State*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCamera::State) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcamera.h:294
-// [8] QDebug operator<<(QDebug, QCamera::LockStatus)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN7QCamera10LockStatusE_155(QDebug* dbg, QCamera::LockStatus value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QCamera::Error) 
+// (12)qm1677096617 (27)_Zls6QDebugN7QCamera5ErrorE
+/*void qm1677096617_6(QDebug dbg, QCamera::Error value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCamera::Error value = *(QCamera::Error*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCamera::Error) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudio.h:87
-// [8] QDebug operator<<(QDebug, QAudio::State)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN6QAudio5StateE_156(QDebug* dbg, QAudio::State state) {
-  auto rv = operator<<(*dbg, state);
-return new QDebug(rv);
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:298
+// [8] QDebug operator<<(QDebug, QCamera::LockChangeReason) 
+// (12)qm3752010318 (39)_Zls6QDebugN7QCamera16LockChangeReasonE
+/*void qm3752010318_7(QDebug dbg, QCamera::LockChangeReason value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCamera::LockChangeReason value = *(QCamera::LockChangeReason*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCamera::LockChangeReason) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudio.h:86
-// [8] QDebug operator<<(QDebug, QAudio::Error)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN6QAudio5ErrorE_157(QDebug* dbg, QAudio::Error error) {
-  auto rv = operator<<(*dbg, error);
-return new QDebug(rv);
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:295
+// [8] QDebug operator<<(QDebug, QCamera::CaptureMode) 
+// (11)qm918718066 (34)_Zls6QDebugN7QCamera11CaptureModeE
+/*void qm918718066_8(QDebug dbg, QCamera::CaptureMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCamera::CaptureMode value = *(QCamera::CaptureMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCamera::CaptureMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudio.h:89
-// [8] QDebug operator<<(QDebug, QAudio::Role)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN6QAudio4RoleE_158(QDebug* dbg, QAudio::Role role) {
-  auto rv = operator<<(*dbg, role);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudio.h:88
-// [8] QDebug operator<<(QDebug, QAudio::Mode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN6QAudio4ModeE_159(QDebug* dbg, QAudio::Mode mode) {
-  auto rv = operator<<(*dbg, mode);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudio.h:90
-// [8] QDebug operator<<(QDebug, QAudio::VolumeScale)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN6QAudio11VolumeScaleE_160(QDebug* dbg, QAudio::VolumeScale role) {
-  auto rv = operator<<(*dbg, role);
-return new QDebug(rv);
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:297
+// [8] QDebug operator<<(QDebug, QCamera::LockStatus) 
+// (12)qm3308215624 (33)_Zls6QDebugN7QCamera10LockStatusE
+/*void qm3308215624_9(QDebug dbg, QCamera::LockStatus value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCamera::LockStatus value = *(QCamera::LockStatus*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCamera::LockStatus) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimageprocessingcontrol.h:95
-// [8] QDebug operator<<(QDebug, QCameraImageProcessingControl::ProcessingParameter)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN29QCameraImageProcessingControl19ProcessingParameterE_161(QDebug* dbg, QCameraImageProcessingControl::ProcessingParameter value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QCameraImageProcessingControl::ProcessingParameter) 
+// (12)qm3278020642 (65)_Zls6QDebugN29QCameraImageProcessingControl19ProcessingParameterE
+/*void qm3278020642_10(QDebug dbg, QCameraImageProcessingControl::ProcessingParameter value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraImageProcessingControl::ProcessingParameter value = *(QCameraImageProcessingControl::ProcessingParameter*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraImageProcessingControl::ProcessingParameter) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimageprocessing.h:135
-// [8] QDebug operator<<(QDebug, QCameraImageProcessing::WhiteBalanceMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN22QCameraImageProcessing16WhiteBalanceModeE_162(QDebug* dbg, QCameraImageProcessing::WhiteBalanceMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// /usr/include/qt/QtMultimedia/qcameraimageprocessing.h:139
+// [8] QDebug operator<<(QDebug, QCameraImageProcessing::WhiteBalanceMode) 
+// (12)qm2264773559 (55)_Zls6QDebugN22QCameraImageProcessing16WhiteBalanceModeE
+/*void qm2264773559_11(QDebug dbg, QCameraImageProcessing::WhiteBalanceMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraImageProcessing::WhiteBalanceMode value = *(QCameraImageProcessing::WhiteBalanceMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraImageProcessing::WhiteBalanceMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraimageprocessing.h:136
-// [8] QDebug operator<<(QDebug, QCameraImageProcessing::ColorFilter)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN22QCameraImageProcessing11ColorFilterE_163(QDebug* dbg, QCameraImageProcessing::ColorFilter value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// /usr/include/qt/QtMultimedia/qcameraimageprocessing.h:140
+// [8] QDebug operator<<(QDebug, QCameraImageProcessing::ColorFilter) 
+// (12)qm1068670859 (50)_Zls6QDebugN22QCameraImageProcessing11ColorFilterE
+/*void qm1068670859_12(QDebug dbg, QCameraImageProcessing::ColorFilter value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraImageProcessing::ColorFilter value = *(QCameraImageProcessing::ColorFilter*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraImageProcessing::ColorFilter) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraexposurecontrol.h:100
-// [8] QDebug operator<<(QDebug, QCameraExposureControl::ExposureParameter)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN22QCameraExposureControl17ExposureParameterE_164(QDebug* dbg, QCameraExposureControl::ExposureParameter value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QCameraExposureControl::ExposureParameter) 
+// (12)qm1343241215 (56)_Zls6QDebugN22QCameraExposureControl17ExposureParameterE
+/*void qm1343241215_13(QDebug dbg, QCameraExposureControl::ExposureParameter value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraExposureControl::ExposureParameter value = *(QCameraExposureControl::ExposureParameter*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraExposureControl::ExposureParameter) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediastreamscontrol.h:86
-// [8] QDebug operator<<(QDebug, QMediaStreamsControl::StreamType)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN20QMediaStreamsControl10StreamTypeE_165(QDebug* dbg, QMediaStreamsControl::StreamType value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:122
-// [8] QDebug operator<<(QDebug, QAbstractVideoBuffer::MapMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN20QAbstractVideoBuffer7MapModeE_166(QDebug* arg0, QAbstractVideoBuffer::MapMode arg1) {
-  auto rv = operator<<(*arg0, arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qabstractvideobuffer.h:121
-// [8] QDebug operator<<(QDebug, QAbstractVideoBuffer::HandleType)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN20QAbstractVideoBuffer10HandleTypeE_167(QDebug* arg0, QAbstractVideoBuffer::HandleType arg1) {
-  auto rv = operator<<(*arg0, arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:135
-// [8] QDebug operator<<(QDebug, QVideoSurfaceFormat::Direction)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN19QVideoSurfaceFormat9DirectionE_168(QDebug* arg0, QVideoSurfaceFormat::Direction arg1) {
-  auto rv = operator<<(*arg0, arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideosurfaceformat.h:136
-// [8] QDebug operator<<(QDebug, QVideoSurfaceFormat::YCbCrColorSpace)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN19QVideoSurfaceFormat15YCbCrColorSpaceE_169(QDebug* arg0, QVideoSurfaceFormat::YCbCrColorSpace arg1) {
-  auto rv = operator<<(*arg0, arg1);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QMediaStreamsControl::StreamType) 
+// (12)qm4279531408 (47)_Zls6QDebugN20QMediaStreamsControl10StreamTypeE
+/*void qm4279531408_14(QDebug dbg, QMediaStreamsControl::StreamType value)*/ {
+  QDebug dbg = *(QDebug*)this_; QMediaStreamsControl::StreamType value = *(QMediaStreamsControl::StreamType*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QMediaStreamsControl::StreamType) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h:157
-// [8] QDebug operator<<(QDebug, QCameraImageCapture::Error)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN19QCameraImageCapture5ErrorE_170(QDebug* dbg, QCameraImageCapture::Error value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QCameraImageCapture::Error) 
+// (12)qm3924656678 (40)_Zls6QDebugN19QCameraImageCapture5ErrorE
+/*void qm3924656678_15(QDebug dbg, QCameraImageCapture::Error value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraImageCapture::Error value = *(QCameraImageCapture::Error*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraImageCapture::Error) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraimagecapture.h:158
-// [8] QDebug operator<<(QDebug, QCameraImageCapture::CaptureDestination)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN19QCameraImageCapture18CaptureDestinationE_171(QDebug* dbg, QCameraImageCapture::CaptureDestination value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QCameraImageCapture::CaptureDestination) 
+// (11)qm878176054 (54)_Zls6QDebugN19QCameraImageCapture18CaptureDestinationE
+/*void qm878176054_16(QDebug dbg, QCameraImageCapture::CaptureDestination value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraImageCapture::CaptureDestination value = *(QCameraImageCapture::CaptureDestination*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraImageCapture::CaptureDestination) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraexposure.h:190
-// [8] QDebug operator<<(QDebug, QCameraExposure::FlashMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN15QCameraExposure9FlashModeE_172(QDebug* dbg, QCameraExposure::FlashMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:192
+// [8] QDebug operator<<(QDebug, QCameraExposure::FlashMode) 
+// (12)qm1103998020 (40)_Zls6QDebugN15QCameraExposure9FlashModeE
+/*void qm1103998020_17(QDebug dbg, QCameraExposure::FlashMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraExposure::FlashMode value = *(QCameraExposure::FlashMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraExposure::FlashMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
+}
+
+// Invalid inline Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraexposure.h:193
+// [8] QDebug operator<<(QDebug, QCameraExposure::MeteringMode) 
+// (12)qm3409360582 (44)_Zls6QDebugN15QCameraExposure12MeteringModeE
+/*void qm3409360582_18(QDebug dbg, QCameraExposure::MeteringMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraExposure::MeteringMode value = *(QCameraExposure::MeteringMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraExposure::MeteringMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraexposure.h:191
-// [8] QDebug operator<<(QDebug, QCameraExposure::MeteringMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN15QCameraExposure12MeteringModeE_173(QDebug* dbg, QCameraExposure::MeteringMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
-}
-
-// Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraexposure.h:189
-// [8] QDebug operator<<(QDebug, QCameraExposure::ExposureMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN15QCameraExposure12ExposureModeE_174(QDebug* dbg, QCameraExposure::ExposureMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QCameraExposure::ExposureMode) 
+// (12)qm1973423460 (44)_Zls6QDebugN15QCameraExposure12ExposureModeE
+/*void qm1973423460_19(QDebug dbg, QCameraExposure::ExposureMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraExposure::ExposureMode value = *(QCameraExposure::ExposureMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraExposure::ExposureMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediarecorder.h:220
-// [8] QDebug operator<<(QDebug, QMediaRecorder::Status)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN14QMediaRecorder6StatusE_175(QDebug* dbg, QMediaRecorder::Status value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QMediaRecorder::Status) 
+// (11)qm255980677 (36)_Zls6QDebugN14QMediaRecorder6StatusE
+/*void qm255980677_20(QDebug dbg, QMediaRecorder::Status value)*/ {
+  QDebug dbg = *(QDebug*)this_; QMediaRecorder::Status value = *(QMediaRecorder::Status*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QMediaRecorder::Status) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediarecorder.h:219
-// [8] QDebug operator<<(QDebug, QMediaRecorder::State)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN14QMediaRecorder5StateE_176(QDebug* dbg, QMediaRecorder::State value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QMediaRecorder::State) 
+// (12)qm4210515071 (35)_Zls6QDebugN14QMediaRecorder5StateE
+/*void qm4210515071_21(QDebug dbg, QMediaRecorder::State value)*/ {
+  QDebug dbg = *(QDebug*)this_; QMediaRecorder::State value = *(QMediaRecorder::State*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QMediaRecorder::State) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediarecorder.h:221
-// [8] QDebug operator<<(QDebug, QMediaRecorder::Error)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN14QMediaRecorder5ErrorE_177(QDebug* dbg, QMediaRecorder::Error value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QMediaRecorder::Error) 
+// (12)qm4150556719 (35)_Zls6QDebugN14QMediaRecorder5ErrorE
+/*void qm4150556719_22(QDebug dbg, QMediaRecorder::Error value)*/ {
+  QDebug dbg = *(QDebug*)this_; QMediaRecorder::Error value = *(QMediaRecorder::Error*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QMediaRecorder::Error) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:146
-// [8] QDebug operator<<(QDebug, QMediaPlaylist::Error)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN14QMediaPlaylist5ErrorE_178(QDebug* dbg, QMediaPlaylist::Error value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QMediaPlaylist::Error) 
+// (12)qm1644600744 (35)_Zls6QDebugN14QMediaPlaylist5ErrorE
+/*void qm1644600744_23(QDebug dbg, QMediaPlaylist::Error value)*/ {
+  QDebug dbg = *(QDebug*)this_; QMediaPlaylist::Error value = *(QMediaPlaylist::Error*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QMediaPlaylist::Error) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaplaylist.h:145
-// [8] QDebug operator<<(QDebug, QMediaPlaylist::PlaybackMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN14QMediaPlaylist12PlaybackModeE_179(QDebug* dbg, QMediaPlaylist::PlaybackMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QMediaPlaylist::PlaybackMode) 
+// (12)qm2382711765 (43)_Zls6QDebugN14QMediaPlaylist12PlaybackModeE
+/*void qm2382711765_24(QDebug dbg, QMediaPlaylist::PlaybackMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QMediaPlaylist::PlaybackMode value = *(QMediaPlaylist::PlaybackMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QMediaPlaylist::PlaybackMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiodecoder.h:138
-// [8] QDebug operator<<(QDebug, QAudioDecoder::State)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN13QAudioDecoder5StateE_180(QDebug* dbg, QAudioDecoder::State value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QAudioDecoder::State) 
+// (12)qm1364034913 (34)_Zls6QDebugN13QAudioDecoder5StateE
+/*void qm1364034913_25(QDebug dbg, QAudioDecoder::State value)*/ {
+  QDebug dbg = *(QDebug*)this_; QAudioDecoder::State value = *(QAudioDecoder::State*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QAudioDecoder::State) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiodecoder.h:139
-// [8] QDebug operator<<(QDebug, QAudioDecoder::Error)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN13QAudioDecoder5ErrorE_181(QDebug* dbg, QAudioDecoder::Error value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QAudioDecoder::Error) 
+// (12)qm1558094129 (34)_Zls6QDebugN13QAudioDecoder5ErrorE
+/*void qm1558094129_26(QDebug dbg, QAudioDecoder::Error value)*/ {
+  QDebug dbg = *(QDebug*)this_; QAudioDecoder::Error value = *(QAudioDecoder::Error*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QAudioDecoder::Error) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:235
-// [8] QDebug operator<<(QDebug, QMediaPlayer::State)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN12QMediaPlayer5StateE_182(QDebug* dbg, QMediaPlayer::State value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:260
+// [8] QDebug operator<<(QDebug, QMediaPlayer::State) 
+// (12)qm4194870891 (33)_Zls6QDebugN12QMediaPlayer5StateE
+/*void qm4194870891_27(QDebug dbg, QMediaPlayer::State value)*/ {
+  QDebug dbg = *(QDebug*)this_; QMediaPlayer::State value = *(QMediaPlayer::State*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QMediaPlayer::State) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:237
-// [8] QDebug operator<<(QDebug, QMediaPlayer::Error)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN12QMediaPlayer5ErrorE_183(QDebug* dbg, QMediaPlayer::Error value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:262
+// [8] QDebug operator<<(QDebug, QMediaPlayer::Error) 
+// (12)qm4154163771 (33)_Zls6QDebugN12QMediaPlayer5ErrorE
+/*void qm4154163771_28(QDebug dbg, QMediaPlayer::Error value)*/ {
+  QDebug dbg = *(QDebug*)this_; QMediaPlayer::Error value = *(QMediaPlayer::Error*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QMediaPlayer::Error) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaplayer.h:236
-// [8] QDebug operator<<(QDebug, QMediaPlayer::MediaStatus)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN12QMediaPlayer11MediaStatusE_184(QDebug* dbg, QMediaPlayer::MediaStatus value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:261
+// [8] QDebug operator<<(QDebug, QMediaPlayer::MediaStatus) 
+// (12)qm1657858435 (40)_Zls6QDebugN12QMediaPlayer11MediaStatusE
+/*void qm1657858435_29(QDebug dbg, QMediaPlayer::MediaStatus value)*/ {
+  QDebug dbg = *(QDebug*)this_; QMediaPlayer::MediaStatus value = *(QMediaPlayer::MediaStatus*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QMediaPlayer::MediaStatus) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:173
-// [8] QDebug operator<<(QDebug, QCameraFocus::FocusMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN12QCameraFocus9FocusModeE_185(QDebug* dbg, QCameraFocus::FocusMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// /usr/include/qt/QtMultimedia/qcamerafocus.h:177
+// [8] QDebug operator<<(QDebug, QCameraFocus::FocusMode) 
+// (12)qm2108859051 (37)_Zls6QDebugN12QCameraFocus9FocusModeE
+/*void qm2108859051_30(QDebug dbg, QCameraFocus::FocusMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraFocus::FocusMode value = *(QCameraFocus::FocusMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraFocus::FocusMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:174
-// [8] QDebug operator<<(QDebug, QCameraFocus::FocusPointMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN12QCameraFocus14FocusPointModeE_186(QDebug* dbg, QCameraFocus::FocusPointMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudioformat.h:107
-// [8] QDebug operator<<(QDebug, QAudioFormat::Endian)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN12QAudioFormat6EndianE_187(QDebug* arg0, QAudioFormat::Endian arg1) {
-  auto rv = operator<<(*arg0, arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudioformat.h:106
-// [8] QDebug operator<<(QDebug, QAudioFormat::SampleType)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN12QAudioFormat10SampleTypeE_188(QDebug* arg0, QAudioFormat::SampleType arg1) {
-  auto rv = operator<<(*arg0, arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoframe.h:175
-// [8] QDebug operator<<(QDebug, QVideoFrame::FieldType)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN11QVideoFrame9FieldTypeE_189(QDebug* arg0, QVideoFrame::FieldType arg1) {
-  auto rv = operator<<(*arg0, arg1);
-return new QDebug(rv);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoframe.h:176
-// [8] QDebug operator<<(QDebug, QVideoFrame::PixelFormat)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN11QVideoFrame11PixelFormatE_190(QDebug* arg0, QVideoFrame::PixelFormat arg1) {
-  auto rv = operator<<(*arg0, arg1);
-return new QDebug(rv);
+// /usr/include/qt/QtMultimedia/qcamerafocus.h:178
+// [8] QDebug operator<<(QDebug, QCameraFocus::FocusPointMode) 
+// (12)qm1261727381 (43)_Zls6QDebugN12QCameraFocus14FocusPointModeE
+/*void qm1261727381_31(QDebug dbg, QCameraFocus::FocusPointMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QCameraFocus::FocusPointMode value = *(QCameraFocus::FocusPointMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QCameraFocus::FocusPointMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qradiotuner.h:156
-// [8] QDebug operator<<(QDebug, QRadioTuner::State)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN11QRadioTuner5StateE_191(QDebug* dbg, QRadioTuner::State value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QRadioTuner::State) 
+// (12)qm1994561258 (32)_Zls6QDebugN11QRadioTuner5StateE
+/*void qm1994561258_32(QDebug dbg, QRadioTuner::State value)*/ {
+  QDebug dbg = *(QDebug*)this_; QRadioTuner::State value = *(QRadioTuner::State*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QRadioTuner::State) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qradiotuner.h:158
-// [8] QDebug operator<<(QDebug, QRadioTuner::Error)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN11QRadioTuner5ErrorE_192(QDebug* dbg, QRadioTuner::Error value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QRadioTuner::Error) 
+// (12)qm2071048890 (32)_Zls6QDebugN11QRadioTuner5ErrorE
+/*void qm2071048890_33(QDebug dbg, QRadioTuner::Error value)*/ {
+  QDebug dbg = *(QDebug*)this_; QRadioTuner::Error value = *(QRadioTuner::Error*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QRadioTuner::Error) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qradiotuner.h:157
-// [8] QDebug operator<<(QDebug, QRadioTuner::Band)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN11QRadioTuner4BandE_193(QDebug* dbg, QRadioTuner::Band value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QRadioTuner::Band) 
+// (12)qm3126244797 (31)_Zls6QDebugN11QRadioTuner4BandE
+/*void qm3126244797_34(QDebug dbg, QRadioTuner::Band value)*/ {
+  QDebug dbg = *(QDebug*)this_; QRadioTuner::Band value = *(QRadioTuner::Band*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QRadioTuner::Band) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qradiotuner.h:159
-// [8] QDebug operator<<(QDebug, QRadioTuner::StereoMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN11QRadioTuner10StereoModeE_194(QDebug* dbg, QRadioTuner::StereoMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QRadioTuner::StereoMode) 
+// (12)qm3961129615 (38)_Zls6QDebugN11QRadioTuner10StereoModeE
+/*void qm3961129615_35(QDebug dbg, QRadioTuner::StereoMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QRadioTuner::StereoMode value = *(QRadioTuner::StereoMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QRadioTuner::StereoMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qradiotuner.h:160
-// [8] QDebug operator<<(QDebug, QRadioTuner::SearchMode)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN11QRadioTuner10SearchModeE_195(QDebug* dbg, QRadioTuner::SearchMode value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QRadioTuner::SearchMode) 
+// (11)qm122664151 (38)_Zls6QDebugN11QRadioTuner10SearchModeE
+/*void qm122664151_36(QDebug dbg, QRadioTuner::SearchMode value)*/ {
+  QDebug dbg = *(QDebug*)this_; QRadioTuner::SearchMode value = *(QRadioTuner::SearchMode*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QRadioTuner::SearchMode) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qradiodata.h:131
-// [8] QDebug operator<<(QDebug, QRadioData::Error)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN10QRadioData5ErrorE_196(QDebug* dbg, QRadioData::Error value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QRadioData::Error) 
+// (12)qm3608554132 (31)_Zls6QDebugN10QRadioData5ErrorE
+/*void qm3608554132_37(QDebug dbg, QRadioData::Error value)*/ {
+  QDebug dbg = *(QDebug*)this_; QRadioData::Error value = *(QRadioData::Error*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QRadioData::Error) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qradiodata.h:132
-// [8] QDebug operator<<(QDebug, QRadioData::ProgramType)
-extern "C" Q_DECL_EXPORT
-void* C_Zls6QDebugN10QRadioData11ProgramTypeE_197(QDebug* dbg, QRadioData::ProgramType value) {
-  auto rv = operator<<(*dbg, value);
-return new QDebug(rv);
+// [8] QDebug operator<<(QDebug, QRadioData::ProgramType) 
+// (12)qm2190038610 (38)_Zls6QDebugN10QRadioData11ProgramTypeE
+/*void qm2190038610_38(QDebug dbg, QRadioData::ProgramType value)*/ {
+  QDebug dbg = *(QDebug*)this_; QRadioData::ProgramType value = *(QRadioData::ProgramType*)this_;
+  (void) operator<<(dbg, value);
+  auto xptr = (QDebug (*)(QDebug, QRadioData::ProgramType) ) &operator<<;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamera.h:264
-// [1] bool operator==(const QCamera::FrameRateRange &, const QCamera::FrameRateRange &)
-extern "C" Q_DECL_EXPORT
-bool C_ZeqRKN7QCamera14FrameRateRangeES2__70(const QCamera::FrameRateRange & r1, const QCamera::FrameRateRange & r2) {
-  return (bool)operator==(r1, r2);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:76
-// [1] bool operator==(const QMediaTimeInterval &, const QMediaTimeInterval &)
-extern "C" Q_DECL_EXPORT
-bool C_ZeqRK18QMediaTimeIntervalS1__71(QMediaTimeInterval* arg0, QMediaTimeInterval* arg1) {
-  return (bool)operator==(*arg0, *arg1);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediatimerange.h:120
-// [1] bool operator==(const QMediaTimeRange &, const QMediaTimeRange &)
-extern "C" Q_DECL_EXPORT
-bool C_ZeqRK15QMediaTimeRangeS1__72(QMediaTimeRange* arg0, QMediaTimeRange* arg1) {
-  return (bool)operator==(*arg0, *arg1);
-}
-
-// Invalid Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudio.h:82
-// [8] qreal convertVolume(qreal, QAudio::VolumeScale, QAudio::VolumeScale)
-extern "C" Q_DECL_EXPORT
-qreal C_ZN6QAudio13convertVolumeEdNS_11VolumeScaleES0_(qreal volume, QAudio::VolumeScale from, QAudio::VolumeScale to) {
-  return (qreal)QAudio::convertVolume(volume, from, to);
+// /usr/include/qt/QtMultimedia/qcamera.h:267
+// [1] bool operator==(const QCamera::FrameRateRange &, const QCamera::FrameRateRange &) 
+// (12)qm3797768658 (35)_ZeqRKN7QCamera14FrameRateRangeES2_
+/*void qm3797768658_56(const QCamera::FrameRateRange & r1, const QCamera::FrameRateRange & r2)*/ {
+  const QCamera::FrameRateRange & r1 = *(const QCamera::FrameRateRange *)this_; const QCamera::FrameRateRange & r2 = *(const QCamera::FrameRateRange *)this_;
+  (void) operator==(r1, r2);
+  auto xptr = (bool (*)(QCamera::FrameRateRange const&, QCamera::FrameRateRange const&) ) &operator==;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
 
 // Invalid inline Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraviewfindersettings.h:94
-// [-2] void swap(QCameraViewfinderSettings &, QCameraViewfinderSettings &)
-extern "C" Q_DECL_EXPORT
-void C_Z4swapR25QCameraViewfinderSettingsS0__68(QCameraViewfinderSettings* value1, QCameraViewfinderSettings* value2) {
-  swap(*value1, *value2);
+// [-2] void swap(QCameraViewfinderSettings &, QCameraViewfinderSettings &) 
+// (12)qm3154839640 (38)_Z4swapR25QCameraViewfinderSettingsS0_
+/*void qm3154839640_72(QCameraViewfinderSettings & value1, QCameraViewfinderSettings & value2)*/ {
+  QCameraViewfinderSettings & value1 = *(QCameraViewfinderSettings *)this_; QCameraViewfinderSettings & value2 = *(QCameraViewfinderSettings *)this_;
+  (void) swap(value1, value2);
+  auto xptr = (void (*)(QCameraViewfinderSettings&, QCameraViewfinderSettings&) ) &swap;
+  fnptrsumval += (uint64_t)(void*)xptr;
 }
+
+  return fnptrsumval;
+} // void ensure_inline_symbol_multimedia
 
 //  main block end

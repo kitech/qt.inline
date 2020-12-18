@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QCameraFlashControl is pure virtual: true
+// QCameraFlashControl is pure virtual: true true
 // QCameraFlashControl has virtual projected: false
 //  header block end
 
@@ -131,7 +131,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Extend Visibility=Default Availability=Available
 // [1] bool isFlashReady()
   virtual bool isFlashReady() const override {
     int handled = 0;
@@ -158,107 +158,28 @@ void* C_QCameraFlashControl_init_staticMetaObject(void* this_, void* strdat, voi
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:61
-// [4] QCameraExposure::FlashModes flashMode()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:62
-// [-2] void setFlashMode(QCameraExposure::FlashModes)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:63
-// [1] bool isFlashModeSupported(QCameraExposure::FlashModes)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:65
-// [1] bool isFlashReady()
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcameraflashcontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:56
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK19QCameraFlashControl10metaObjectEv(void *this_) {
-  return (void*)((QCameraFlashControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm2718205538 (35)_ZN19QCameraFlashControl2trEPKcS1_i
+//static
+/*void qm2718205538(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QCameraFlashControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QCameraFlashControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:56
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QCameraFlashControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QCameraFlashControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:56
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN19QCameraFlashControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QCameraFlashControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:56
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QCameraFlashControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraFlashControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:56
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN19QCameraFlashControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QCameraFlashControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:59
-// [-2] void ~QCameraFlashControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN19QCameraFlashControlD2Ev(void *this_) {
+/*void C_ZN19QCameraFlashControlD2Ev(void *this_)*/ {
   delete (QCameraFlashControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:61
-// [4] QCameraExposure::FlashModes flashMode()
-extern "C" Q_DECL_EXPORT
-QCameraExposure::FlashModes C_ZNK19QCameraFlashControl9flashModeEv(void *this_) {
-  return (QCameraExposure::FlashModes)((QCameraFlashControl*)this_)->flashMode();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:62
-// [-2] void setFlashMode(QCameraExposure::FlashModes)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QCameraFlashControl12setFlashModeE6QFlagsIN15QCameraExposure9FlashModeEE(void *this_, QFlags<QCameraExposure::FlashMode> mode) {
-  ((QCameraFlashControl*)this_)->setFlashMode(mode);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:63
-// [1] bool isFlashModeSupported(QCameraExposure::FlashModes)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QCameraFlashControl20isFlashModeSupportedE6QFlagsIN15QCameraExposure9FlashModeEE(void *this_, QFlags<QCameraExposure::FlashMode> mode) {
-  return (bool)((QCameraFlashControl*)this_)->isFlashModeSupported(mode);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:65
-// [1] bool isFlashReady()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK19QCameraFlashControl12isFlashReadyEv(void *this_) {
-  return (bool)((QCameraFlashControl*)this_)->isFlashReady();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcameraflashcontrol.h:68
-// [-2] void flashReady(bool)
-extern "C" Q_DECL_EXPORT
-void C_ZN19QCameraFlashControl10flashReadyEb(void *this_, bool arg0) {
-  ((QCameraFlashControl*)this_)->flashReady(arg0);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcameraflashcontrol
 //  main block end
 
 //  use block begin

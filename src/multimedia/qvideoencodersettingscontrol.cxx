@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QVideoEncoderSettingsControl is pure virtual: true
+// QVideoEncoderSettingsControl is pure virtual: true true
 // QVideoEncoderSettingsControl has virtual projected: false
 //  header block end
 
@@ -121,7 +121,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QStringList supportedVideoCodecs()
   virtual QStringList supportedVideoCodecs() const override {
     int handled = 0;
@@ -135,7 +135,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QString videoCodecDescription(const QString &)
   virtual QString videoCodecDescription(const QString & codec) const override {
     int handled = 0;
@@ -149,7 +149,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QVideoEncoderSettings videoSettings()
   virtual QVideoEncoderSettings videoSettings() const override {
     int handled = 0;
@@ -163,7 +163,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setVideoSettings(const QVideoEncoderSettings &)
   virtual void setVideoSettings(const QVideoEncoderSettings & settings)  override {
     int handled = 0;
@@ -189,126 +189,28 @@ void* C_QVideoEncoderSettingsControl_init_staticMetaObject(void* this_, void* st
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:67
-// [8] QList<QSize> supportedResolutions(const QVideoEncoderSettings &, bool *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:70
-// [-2] QList<qreal> supportedFrameRates(const QVideoEncoderSettings &, bool *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:73
-// [8] QStringList supportedVideoCodecs()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:74
-// [8] QString videoCodecDescription(const QString &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:76
-// [8] QVideoEncoderSettings videoSettings()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:77
-// [-2] void setVideoSettings(const QVideoEncoderSettings &)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qvideoencodersettingscontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:62
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK28QVideoEncoderSettingsControl10metaObjectEv(void *this_) {
-  return (void*)((QVideoEncoderSettingsControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3079370560 (44)_ZN28QVideoEncoderSettingsControl2trEPKcS1_i
+//static
+/*void qm3079370560(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QVideoEncoderSettingsControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QVideoEncoderSettingsControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:62
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QVideoEncoderSettingsControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QVideoEncoderSettingsControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:62
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN28QVideoEncoderSettingsControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QVideoEncoderSettingsControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:62
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QVideoEncoderSettingsControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QVideoEncoderSettingsControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:62
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN28QVideoEncoderSettingsControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QVideoEncoderSettingsControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:65
-// [-2] void ~QVideoEncoderSettingsControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN28QVideoEncoderSettingsControlD2Ev(void *this_) {
+/*void C_ZN28QVideoEncoderSettingsControlD2Ev(void *this_)*/ {
   delete (QVideoEncoderSettingsControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:67
-// [8] QList<QSize> supportedResolutions(const QVideoEncoderSettings &, bool *)
-extern "C" Q_DECL_EXPORT
-QList<QSize>* C_ZNK28QVideoEncoderSettingsControl20supportedResolutionsERK21QVideoEncoderSettingsPb(void *this_, QVideoEncoderSettings* settings, bool * continuous) {
-  auto rv = ((QVideoEncoderSettingsControl*)this_)->supportedResolutions(*settings, continuous);
-return new QList<QSize>(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:70
-// [-2] QList<qreal> supportedFrameRates(const QVideoEncoderSettings &, bool *)
-extern "C" Q_DECL_EXPORT
-QList<qreal>* C_ZNK28QVideoEncoderSettingsControl19supportedFrameRatesERK21QVideoEncoderSettingsPb(void *this_, QVideoEncoderSettings* settings, bool * continuous) {
-  auto rv = ((QVideoEncoderSettingsControl*)this_)->supportedFrameRates(*settings, continuous);
-return new QList<qreal>(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:73
-// [8] QStringList supportedVideoCodecs()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK28QVideoEncoderSettingsControl20supportedVideoCodecsEv(void *this_) {
-  auto rv = ((QVideoEncoderSettingsControl*)this_)->supportedVideoCodecs();
-return new QStringList(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:74
-// [8] QString videoCodecDescription(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK28QVideoEncoderSettingsControl21videoCodecDescriptionERK7QString(void *this_, QString* codec) {
-  auto rv = ((QVideoEncoderSettingsControl*)this_)->videoCodecDescription(*codec);
-return new QString(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:76
-// [8] QVideoEncoderSettings videoSettings()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK28QVideoEncoderSettingsControl13videoSettingsEv(void *this_) {
-  auto rv = ((QVideoEncoderSettingsControl*)this_)->videoSettings();
-return new QVideoEncoderSettings(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideoencodersettingscontrol.h:77
-// [-2] void setVideoSettings(const QVideoEncoderSettings &)
-extern "C" Q_DECL_EXPORT
-void C_ZN28QVideoEncoderSettingsControl16setVideoSettingsERK21QVideoEncoderSettings(void *this_, QVideoEncoderSettings* settings) {
-  ((QVideoEncoderSettingsControl*)this_)->setVideoSettings(*settings);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qvideoencodersettingscontrol
 //  main block end
 
 //  use block begin

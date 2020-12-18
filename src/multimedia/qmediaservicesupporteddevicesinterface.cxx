@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaServiceSupportedDevicesInterface is pure virtual: true
+// QMediaServiceSupportedDevicesInterface is pure virtual: true true
 // QMediaServiceSupportedDevicesInterface has virtual projected: false
 //  header block end
 
@@ -62,7 +62,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QString deviceDescription(const QByteArray &, const QByteArray &)
   virtual QString deviceDescription(const QByteArray & service, const QByteArray & device)  override {
     int handled = 0;
@@ -78,37 +78,19 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:141
-// [8] QList<QByteArray> devices(const QByteArray &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:142
-// [8] QString deviceDescription(const QByteArray &, const QByteArray &)
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediaservicesupporteddevicesinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:140
-// [-2] void ~QMediaServiceSupportedDevicesInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN38QMediaServiceSupportedDevicesInterfaceD2Ev(void *this_) {
+// [-2] void ~QMediaServiceSupportedDevicesInterface() 
+// (12)qm3685067229 (47)_ZN38QMediaServiceSupportedDevicesInterfaceD2Ev
+/*void qm3685067229 (void *this_)*/ {
   delete (QMediaServiceSupportedDevicesInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:141
-// [8] QList<QByteArray> devices(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-QList<QByteArray>* C_ZNK38QMediaServiceSupportedDevicesInterface7devicesERK10QByteArray(void *this_, QByteArray* service) {
-  auto rv = ((QMediaServiceSupportedDevicesInterface*)this_)->devices(*service);
-return new QList<QByteArray>(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:142
-// [8] QString deviceDescription(const QByteArray &, const QByteArray &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN38QMediaServiceSupportedDevicesInterface17deviceDescriptionERK10QByteArrayS2_(void *this_, QByteArray* service, QByteArray* device) {
-  auto rv = ((QMediaServiceSupportedDevicesInterface*)this_)->deviceDescription(*service, *device);
-return new QString(rv);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediaservicesupporteddevicesinterface
 //  main block end
 
 //  use block begin

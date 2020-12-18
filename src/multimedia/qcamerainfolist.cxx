@@ -235,6 +235,13 @@ void C_QCameraInfoList_move_0(void* this_ , int from, int to) {
      ((QCameraInfoList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QCameraInfoList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QCameraInfoList_swapItemsAt_0()
+     ((QCameraInfoList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QCameraInfoList_swap_1(void* this_ , int i, int j) {

@@ -1,6 +1,5 @@
 //  header block begin
 
-// since 0x050300
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h
 #ifndef protected
 #define protected public
@@ -10,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaServiceCameraInfoInterface is pure virtual: true
+// QMediaServiceCameraInfoInterface is pure virtual: true true
 // QMediaServiceCameraInfoInterface has virtual projected: false
 //  header block end
 
@@ -49,7 +48,7 @@ static const uint qt_meta_data_MyQMediaServiceCameraInfoInterface[] = {
 class Q_DECL_EXPORT MyQMediaServiceCameraInfoInterface : public QMediaServiceCameraInfoInterface {
 public:
   virtual ~MyQMediaServiceCameraInfoInterface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] QCamera::Position cameraPosition(const QByteArray &)
   virtual QCamera::Position cameraPosition(const QByteArray & device) const override {
     int handled = 0;
@@ -62,7 +61,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int cameraOrientation(const QByteArray &)
   virtual int cameraOrientation(const QByteArray & device) const override {
     int handled = 0;
@@ -77,35 +76,19 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:167
-// [4] QCamera::Position cameraPosition(const QByteArray &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:168
-// [4] int cameraOrientation(const QByteArray &)
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediaservicecamerainfointerface(void* this_) {
+  uint64_t fnptrsumval = 0;
+
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:166
-// [-2] void ~QMediaServiceCameraInfoInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN32QMediaServiceCameraInfoInterfaceD2Ev(void *this_) {
+// [-2] void ~QMediaServiceCameraInfoInterface() 
+// (12)qm3960060885 (41)_ZN32QMediaServiceCameraInfoInterfaceD2Ev
+/*void qm3960060885 (void *this_)*/ {
   delete (QMediaServiceCameraInfoInterface*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:167
-// [4] QCamera::Position cameraPosition(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-QCamera::Position C_ZNK32QMediaServiceCameraInfoInterface14cameraPositionERK10QByteArray(void *this_, QByteArray* device) {
-  return (QCamera::Position)((QMediaServiceCameraInfoInterface*)this_)->cameraPosition(*device);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:168
-// [4] int cameraOrientation(const QByteArray &)
-extern "C" Q_DECL_EXPORT
-int C_ZNK32QMediaServiceCameraInfoInterface17cameraOrientationERK10QByteArray(void *this_, QByteArray* device) {
-  return (int)((QMediaServiceCameraInfoInterface*)this_)->cameraOrientation(*device);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediaservicecamerainfointerface
 //  main block end
 
 //  use block begin

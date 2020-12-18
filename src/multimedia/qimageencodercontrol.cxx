@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QImageEncoderControl is pure virtual: true
+// QImageEncoderControl is pure virtual: true true
 // QImageEncoderControl has virtual projected: false
 //  header block end
 
@@ -93,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQImageEncoderControl() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QStringList supportedImageCodecs()
   virtual QStringList supportedImageCodecs() const override {
     int handled = 0;
@@ -107,7 +107,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QString imageCodecDescription(const QString &)
   virtual QString imageCodecDescription(const QString & codec) const override {
     int handled = 0;
@@ -135,7 +135,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QImageEncoderSettings imageSettings()
   virtual QImageEncoderSettings imageSettings() const override {
     int handled = 0;
@@ -149,7 +149,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setImageSettings(const QImageEncoderSettings &)
   virtual void setImageSettings(const QImageEncoderSettings & settings)  override {
     int handled = 0;
@@ -175,114 +175,28 @@ void* C_QImageEncoderControl_init_staticMetaObject(void* this_, void* strdat, vo
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:64
-// [8] QStringList supportedImageCodecs()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:65
-// [8] QString imageCodecDescription(const QString &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:67
-// [8] QList<QSize> supportedResolutions(const QImageEncoderSettings &, bool *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:70
-// [8] QImageEncoderSettings imageSettings()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:71
-// [-2] void setImageSettings(const QImageEncoderSettings &)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qimageencodercontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qimageencodercontrol.h:59
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QImageEncoderControl10metaObjectEv(void *this_) {
-  return (void*)((QImageEncoderControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3405350061 (36)_ZN20QImageEncoderControl2trEPKcS1_i
+//static
+/*void qm3405350061(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QImageEncoderControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QImageEncoderControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:59
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QImageEncoderControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QImageEncoderControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:59
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN20QImageEncoderControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QImageEncoderControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:59
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QImageEncoderControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QImageEncoderControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:59
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN20QImageEncoderControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QImageEncoderControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:62
-// [-2] void ~QImageEncoderControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN20QImageEncoderControlD2Ev(void *this_) {
+/*void C_ZN20QImageEncoderControlD2Ev(void *this_)*/ {
   delete (QImageEncoderControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:64
-// [8] QStringList supportedImageCodecs()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QImageEncoderControl20supportedImageCodecsEv(void *this_) {
-  auto rv = ((QImageEncoderControl*)this_)->supportedImageCodecs();
-return new QStringList(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:65
-// [8] QString imageCodecDescription(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QImageEncoderControl21imageCodecDescriptionERK7QString(void *this_, QString* codec) {
-  auto rv = ((QImageEncoderControl*)this_)->imageCodecDescription(*codec);
-return new QString(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:67
-// [8] QList<QSize> supportedResolutions(const QImageEncoderSettings &, bool *)
-extern "C" Q_DECL_EXPORT
-QList<QSize>* C_ZNK20QImageEncoderControl20supportedResolutionsERK21QImageEncoderSettingsPb(void *this_, QImageEncoderSettings* settings, bool * continuous) {
-  auto rv = ((QImageEncoderControl*)this_)->supportedResolutions(*settings, continuous);
-return new QList<QSize>(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:70
-// [8] QImageEncoderSettings imageSettings()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK20QImageEncoderControl13imageSettingsEv(void *this_) {
-  auto rv = ((QImageEncoderControl*)this_)->imageSettings();
-return new QImageEncoderSettings(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qimageencodercontrol.h:71
-// [-2] void setImageSettings(const QImageEncoderSettings &)
-extern "C" Q_DECL_EXPORT
-void C_ZN20QImageEncoderControl16setImageSettingsERK21QImageEncoderSettings(void *this_, QImageEncoderSettings* settings) {
-  ((QImageEncoderControl*)this_)->setImageSettings(*settings);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qimageencodercontrol
 //  main block end
 
 //  use block begin

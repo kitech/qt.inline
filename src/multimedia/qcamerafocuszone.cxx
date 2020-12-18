@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QCameraFocusZone is pure virtual: false
+// QCameraFocusZone is pure virtual: false false
 // QCameraFocusZone has virtual projected: false
 //  header block end
 
@@ -56,95 +56,16 @@ MyQCameraFocusZone(const QRectF & area, QCameraFocusZone::FocusZoneStatus status
 MyQCameraFocusZone(const QCameraFocusZone & other) : QCameraFocusZone(other) {}
 };
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:69
-// [-2] void QCameraFocusZone()
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QCameraFocusZoneC2Ev() {
-  return  new QCameraFocusZone();
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qcamerafocuszone(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:70
-// [-2] void QCameraFocusZone(const QRectF &, QCameraFocusZone::FocusZoneStatus)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QCameraFocusZoneC2ERK6QRectFNS_15FocusZoneStatusE(QRectF* area, QCameraFocusZone::FocusZoneStatus status) {
-  return  new QCameraFocusZone(*area, status);
-}
 
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:71
-// [-2] void QCameraFocusZone(const QCameraFocusZone &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QCameraFocusZoneC2ERKS_(QCameraFocusZone* other) {
-  return  new QCameraFocusZone(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:73
-// [8] QCameraFocusZone & operator=(const QCameraFocusZone &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN16QCameraFocusZoneaSERKS_(void *this_, QCameraFocusZone* other) {
-  auto& rv = ((QCameraFocusZone*)this_)->operator=(*other);
-return &rv;
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:74
-// [1] bool operator==(const QCameraFocusZone &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK16QCameraFocusZoneeqERKS_(void *this_, QCameraFocusZone* other) {
-  return (bool)((QCameraFocusZone*)this_)->operator==(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:75
-// [1] bool operator!=(const QCameraFocusZone &)
-extern "C" Q_DECL_EXPORT
-bool C_ZNK16QCameraFocusZoneneERKS_(void *this_, QCameraFocusZone* other) {
-  return (bool)((QCameraFocusZone*)this_)->operator!=(*other);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:77
-// [-2] void ~QCameraFocusZone()
-extern "C" Q_DECL_EXPORT
-void C_ZN16QCameraFocusZoneD2Ev(void *this_) {
+/*void C_ZN16QCameraFocusZoneD2Ev(void *this_)*/ {
   delete (QCameraFocusZone*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:79
-// [1] bool isValid()
-extern "C" Q_DECL_EXPORT
-bool C_ZNK16QCameraFocusZone7isValidEv(void *this_) {
-  return (bool)((QCameraFocusZone*)this_)->isValid();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:81
-// [32] QRectF area()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK16QCameraFocusZone4areaEv(void *this_) {
-  auto rv = ((QCameraFocusZone*)this_)->area();
-return new QRectF(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:83
-// [4] QCameraFocusZone::FocusZoneStatus status()
-extern "C" Q_DECL_EXPORT
-QCameraFocusZone::FocusZoneStatus C_ZNK16QCameraFocusZone6statusEv(void *this_) {
-  return (QCameraFocusZone::FocusZoneStatus)((QCameraFocusZone*)this_)->status();
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qcamerafocus.h:84
-// [-2] void setStatus(QCameraFocusZone::FocusZoneStatus)
-extern "C" Q_DECL_EXPORT
-void C_ZN16QCameraFocusZone9setStatusENS_15FocusZoneStatusE(void *this_, QCameraFocusZone::FocusZoneStatus status) {
-  ((QCameraFocusZone*)this_)->setStatus(status);
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qcamerafocuszone
 //  main block end
 
 //  use block begin

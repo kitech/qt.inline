@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QAudioRecorder is pure virtual: false
+// QAudioRecorder is pure virtual: false false
 // QAudioRecorder has virtual projected: false
 //  header block end
 
@@ -109,123 +109,28 @@ void* C_QAudioRecorder_init_staticMetaObject(void* this_, void* strdat, void* da
   return qmo;
 }
 
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaudiorecorder(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiorecorder.h:62
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QAudioRecorder10metaObjectEv(void *this_) {
-  return (void*)((QAudioRecorder*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm1887194231 (30)_ZN14QAudioRecorder2trEPKcS1_i
+//static
+/*void qm1887194231(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QAudioRecorder::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QAudioRecorder::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:62
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QAudioRecorder11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QAudioRecorder*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:62
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN14QAudioRecorder11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QAudioRecorder*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:62
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QAudioRecorder2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAudioRecorder::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:62
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QAudioRecorder6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAudioRecorder::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:65
-// [-2] void QAudioRecorder(QObject *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN14QAudioRecorderC2EP7QObject(QObject * parent) {
-  return  new MyQAudioRecorder(parent);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:66
-// [-2] void ~QAudioRecorder()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QAudioRecorderD2Ev(void *this_) {
+/*void C_ZN14QAudioRecorderD2Ev(void *this_)*/ {
   delete (QAudioRecorder*)(this_);
 }
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:68
-// [8] QStringList audioInputs()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QAudioRecorder11audioInputsEv(void *this_) {
-  auto rv = ((QAudioRecorder*)this_)->audioInputs();
-return new QStringList(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:69
-// [8] QString defaultAudioInput()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QAudioRecorder17defaultAudioInputEv(void *this_) {
-  auto rv = ((QAudioRecorder*)this_)->defaultAudioInput();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:70
-// [8] QString audioInputDescription(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QAudioRecorder21audioInputDescriptionERK7QString(void *this_, QString* name) {
-  auto rv = ((QAudioRecorder*)this_)->audioInputDescription(*name);
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:72
-// [8] QString audioInput()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK14QAudioRecorder10audioInputEv(void *this_) {
-  auto rv = ((QAudioRecorder*)this_)->audioInput();
-return new QString(rv);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:75
-// [-2] void setAudioInput(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QAudioRecorder13setAudioInputERK7QString(void *this_, QString* name) {
-  ((QAudioRecorder*)this_)->setAudioInput(*name);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:78
-// [-2] void audioInputChanged(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN14QAudioRecorder17audioInputChangedERK7QString(void *this_, QString* name) {
-  ((QAudioRecorder*)this_)->audioInputChanged(*name);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiorecorder.h:79
-// [-2] void availableAudioInputsChanged()
-extern "C" Q_DECL_EXPORT
-void C_ZN14QAudioRecorder27availableAudioInputsChangedEv(void *this_) {
-  ((QAudioRecorder*)this_)->availableAudioInputsChanged();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaudiorecorder
 //  main block end
 
 //  use block begin

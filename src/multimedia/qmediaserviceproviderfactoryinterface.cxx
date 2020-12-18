@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QMediaServiceProviderFactoryInterface is pure virtual: true
+// QMediaServiceProviderFactoryInterface is pure virtual: true true
 // QMediaServiceProviderFactoryInterface has virtual projected: false
 //  header block end
 
@@ -48,7 +48,7 @@ static const uint qt_meta_data_MyQMediaServiceProviderFactoryInterface[] = {
 class Q_DECL_EXPORT MyQMediaServiceProviderFactoryInterface : public QMediaServiceProviderFactoryInterface {
 public:
   virtual ~MyQMediaServiceProviderFactoryInterface() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [8] QMediaService * create(const QString &)
   virtual QMediaService * create(const QString & key)  override {
     int handled = 0;
@@ -61,7 +61,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void release(QMediaService *)
   virtual void release(QMediaService * service)  override {
     int handled = 0;
@@ -75,35 +75,16 @@ public:
 
 };
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:112
-// [8] QMediaService * create(const QString &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:113
-// [-2] void release(QMediaService *)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:112
-// [8] QMediaService * create(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZN37QMediaServiceProviderFactoryInterface6createERK7QString(void *this_, QString* key) {
-  return (void*)((QMediaServiceProviderFactoryInterface*)this_)->create(*key);
-}
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qmediaserviceproviderfactoryinterface(void* this_) {
+  uint64_t fnptrsumval = 0;
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:113
-// [-2] void release(QMediaService *)
-extern "C" Q_DECL_EXPORT
-void C_ZN37QMediaServiceProviderFactoryInterface7releaseEP13QMediaService(void *this_, QMediaService * service) {
-  ((QMediaServiceProviderFactoryInterface*)this_)->release(service);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qmediaserviceproviderplugin.h:114
-// [-2] void ~QMediaServiceProviderFactoryInterface()
-extern "C" Q_DECL_EXPORT
-void C_ZN37QMediaServiceProviderFactoryInterfaceD2Ev(void *this_) {
+/*void C_ZN37QMediaServiceProviderFactoryInterfaceD2Ev(void *this_)*/ {
   delete (QMediaServiceProviderFactoryInterface*)(this_);
 }
+  return fnptrsumval;
+} // end ensure_inline_symbol_qmediaserviceproviderfactoryinterface
 //  main block end
 
 //  use block begin

@@ -235,6 +235,13 @@ void C_QMediaResourceList_move_0(void* this_ , int from, int to) {
      ((QMediaResourceList*)this_)->move(from, to);
 }
 
+// [-2] void swapItemsAt(int, int)
+extern "C" Q_DECL_EXPORT
+void C_QMediaResourceList_swapItemsAt_0(void* this_ , int i, int j) {
+    // QMediaResourceList_swapItemsAt_0()
+     ((QMediaResourceList*)this_)->swapItemsAt(i, j);
+}
+
 // [-2] void swap(int, int)
 extern "C" Q_DECL_EXPORT
 void C_QMediaResourceList_swap_1(void* this_ , int i, int j) {

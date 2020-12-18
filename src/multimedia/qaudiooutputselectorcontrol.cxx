@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QAudioOutputSelectorControl is pure virtual: true
+// QAudioOutputSelectorControl is pure virtual: true true
 // QAudioOutputSelectorControl has virtual projected: false
 //  header block end
 
@@ -107,7 +107,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QString outputDescription(const QString &)
   virtual QString outputDescription(const QString & name) const override {
     int handled = 0;
@@ -121,7 +121,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QString defaultOutput()
   virtual QString defaultOutput() const override {
     int handled = 0;
@@ -135,7 +135,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QString activeOutput()
   virtual QString activeOutput() const override {
     int handled = 0;
@@ -149,7 +149,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setActiveOutput(const QString &)
   virtual void setActiveOutput(const QString & name)  override {
     int handled = 0;
@@ -175,130 +175,28 @@ void* C_QAudioOutputSelectorControl_init_staticMetaObject(void* this_, void* str
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:58
-// [8] QList<QString> availableOutputs()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:59
-// [8] QString outputDescription(const QString &)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:60
-// [8] QString defaultOutput()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:61
-// [8] QString activeOutput()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:64
-// [-2] void setActiveOutput(const QString &)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qaudiooutputselectorcontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:53
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QAudioOutputSelectorControl10metaObjectEv(void *this_) {
-  return (void*)((QAudioOutputSelectorControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm4287167499 (43)_ZN27QAudioOutputSelectorControl2trEPKcS1_i
+//static
+/*void qm4287167499(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QAudioOutputSelectorControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QAudioOutputSelectorControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:53
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QAudioOutputSelectorControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QAudioOutputSelectorControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:53
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN27QAudioOutputSelectorControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QAudioOutputSelectorControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:53
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QAudioOutputSelectorControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAudioOutputSelectorControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:53
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QAudioOutputSelectorControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QAudioOutputSelectorControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:56
-// [-2] void ~QAudioOutputSelectorControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QAudioOutputSelectorControlD2Ev(void *this_) {
+/*void C_ZN27QAudioOutputSelectorControlD2Ev(void *this_)*/ {
   delete (QAudioOutputSelectorControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:58
-// [8] QList<QString> availableOutputs()
-extern "C" Q_DECL_EXPORT
-QList<QString>* C_ZNK27QAudioOutputSelectorControl16availableOutputsEv(void *this_) {
-  auto rv = ((QAudioOutputSelectorControl*)this_)->availableOutputs();
-return new QList<QString>(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:59
-// [8] QString outputDescription(const QString &)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QAudioOutputSelectorControl17outputDescriptionERK7QString(void *this_, QString* name) {
-  auto rv = ((QAudioOutputSelectorControl*)this_)->outputDescription(*name);
-return new QString(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:60
-// [8] QString defaultOutput()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QAudioOutputSelectorControl13defaultOutputEv(void *this_) {
-  auto rv = ((QAudioOutputSelectorControl*)this_)->defaultOutput();
-return new QString(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:61
-// [8] QString activeOutput()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QAudioOutputSelectorControl12activeOutputEv(void *this_) {
-  auto rv = ((QAudioOutputSelectorControl*)this_)->activeOutput();
-return new QString(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:64
-// [-2] void setActiveOutput(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QAudioOutputSelectorControl15setActiveOutputERK7QString(void *this_, QString* name) {
-  ((QAudioOutputSelectorControl*)this_)->setActiveOutput(*name);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:67
-// [-2] void activeOutputChanged(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QAudioOutputSelectorControl19activeOutputChangedERK7QString(void *this_, QString* name) {
-  ((QAudioOutputSelectorControl*)this_)->activeOutputChanged(*name);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qaudiooutputselectorcontrol.h:68
-// [-2] void availableOutputsChanged()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QAudioOutputSelectorControl23availableOutputsChangedEv(void *this_) {
-  ((QAudioOutputSelectorControl*)this_)->availableOutputsChanged();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qaudiooutputselectorcontrol
 //  main block end
 
 //  use block begin

@@ -9,7 +9,7 @@
 #include <QtMultimedia>
 #include "callback_inherit.h"
 
-// QVideoDeviceSelectorControl is pure virtual: true
+// QVideoDeviceSelectorControl is pure virtual: true true
 // QVideoDeviceSelectorControl has virtual projected: false
 //  header block end
 
@@ -93,7 +93,7 @@ public:
   int (*qt_metacall_fnptr)(QObject *, QMetaObject::Call, int, void **) = nullptr;
 public:
   virtual ~MyQVideoDeviceSelectorControl() {}
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int deviceCount()
   virtual int deviceCount() const override {
     int handled = 0;
@@ -106,7 +106,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QString deviceName(int)
   virtual QString deviceName(int index) const override {
     int handled = 0;
@@ -120,7 +120,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Indirect Visibility=Default Availability=Available
 // [8] QString deviceDescription(int)
   virtual QString deviceDescription(int index) const override {
     int handled = 0;
@@ -134,7 +134,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int defaultDevice()
   virtual int defaultDevice() const override {
     int handled = 0;
@@ -147,7 +147,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Direct Visibility=Default Availability=Available
 // [4] int selectedDevice()
   virtual int selectedDevice() const override {
     int handled = 0;
@@ -160,7 +160,7 @@ public:
   }
   }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
+// Public purevirtual virtual Ignore Visibility=Default Availability=Available
 // [-2] void setSelectedDevice(int)
   virtual void setSelectedDevice(int index)  override {
     int handled = 0;
@@ -186,147 +186,28 @@ void* C_QVideoDeviceSelectorControl_init_staticMetaObject(void* this_, void* str
   return qmo;
 }
 
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:57
-// [4] int deviceCount()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:59
-// [8] QString deviceName(int)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:60
-// [8] QString deviceDescription(int)
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:62
-// [4] int defaultDevice()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:63
-// [4] int selectedDevice()
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:66
-// [-2] void setSelectedDevice(int)
-// Public virtual Visibility=Default Availability=Available
+extern "C" // Q_DECL_EXPORT
+uint64_t ensure_inline_symbol_qvideodeviceselectorcontrol(void* this_) {
+  uint64_t fnptrsumval = 0;
+
+// Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:52
-// [8] const QMetaObject * metaObject()
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QVideoDeviceSelectorControl10metaObjectEv(void *this_) {
-  return (void*)((QVideoDeviceSelectorControl*)this_)->metaObject();
+// [8] QString tr(const char *, const char *, int) 
+// (12)qm3034644551 (43)_ZN27QVideoDeviceSelectorControl2trEPKcS1_i
+//static
+/*void qm3034644551(const char * s, const char * c, int n)*/ {
+  const char * s = *(const char **)this_; const char * c = *(const char **)this_; int n = *(int*)this_;
+  (void) QVideoDeviceSelectorControl::tr(s, c, n);
+   auto xptr = (QString (*)(char const*, char const*, int) ) &QVideoDeviceSelectorControl::tr;
+   fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:52
-// [8] void * qt_metacast(const char *)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QVideoDeviceSelectorControl11qt_metacastEPKc(void *this_, const char * arg0) {
-  return (void*)((QVideoDeviceSelectorControl*)this_)->qt_metacast(arg0);
-}
 
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:52
-// [4] int qt_metacall(QMetaObject::Call, int, void **)
-extern "C" Q_DECL_EXPORT
-int C_ZN27QVideoDeviceSelectorControl11qt_metacallEN11QMetaObject4CallEiPPv(void *this_, QMetaObject::Call arg0, int arg1, void ** arg2) {
-  return (int)((QVideoDeviceSelectorControl*)this_)->qt_metacall(arg0, arg1, arg2);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:52
-// [8] QString tr(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QVideoDeviceSelectorControl2trEPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QVideoDeviceSelectorControl::tr(s, c, n);
-return new QString(rv);
-}
-
-// Public static inline Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:52
-// [8] QString trUtf8(const char *, const char *, int)
-extern "C" Q_DECL_EXPORT
-void* C_ZN27QVideoDeviceSelectorControl6trUtf8EPKcS1_i(const char * s, const char * c, int n) {
-  auto rv = QVideoDeviceSelectorControl::trUtf8(s, c, n);
-return new QString(rv);
-}
-
-// Public virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:55
-// [-2] void ~QVideoDeviceSelectorControl()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QVideoDeviceSelectorControlD2Ev(void *this_) {
+/*void C_ZN27QVideoDeviceSelectorControlD2Ev(void *this_)*/ {
   delete (QVideoDeviceSelectorControl*)(this_);
 }
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:57
-// [4] int deviceCount()
-extern "C" Q_DECL_EXPORT
-int C_ZNK27QVideoDeviceSelectorControl11deviceCountEv(void *this_) {
-  return (int)((QVideoDeviceSelectorControl*)this_)->deviceCount();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:59
-// [8] QString deviceName(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QVideoDeviceSelectorControl10deviceNameEi(void *this_, int index) {
-  auto rv = ((QVideoDeviceSelectorControl*)this_)->deviceName(index);
-return new QString(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:60
-// [8] QString deviceDescription(int)
-extern "C" Q_DECL_EXPORT
-void* C_ZNK27QVideoDeviceSelectorControl17deviceDescriptionEi(void *this_, int index) {
-  auto rv = ((QVideoDeviceSelectorControl*)this_)->deviceDescription(index);
-return new QString(rv);
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:62
-// [4] int defaultDevice()
-extern "C" Q_DECL_EXPORT
-int C_ZNK27QVideoDeviceSelectorControl13defaultDeviceEv(void *this_) {
-  return (int)((QVideoDeviceSelectorControl*)this_)->defaultDevice();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:63
-// [4] int selectedDevice()
-extern "C" Q_DECL_EXPORT
-int C_ZNK27QVideoDeviceSelectorControl14selectedDeviceEv(void *this_) {
-  return (int)((QVideoDeviceSelectorControl*)this_)->selectedDevice();
-}
-
-// Public purevirtual virtual Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:66
-// [-2] void setSelectedDevice(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QVideoDeviceSelectorControl17setSelectedDeviceEi(void *this_, int index) {
-  ((QVideoDeviceSelectorControl*)this_)->setSelectedDevice(index);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:69
-// [-2] void selectedDeviceChanged(int)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QVideoDeviceSelectorControl21selectedDeviceChangedEi(void *this_, int index) {
-  ((QVideoDeviceSelectorControl*)this_)->selectedDeviceChanged(index);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:70
-// [-2] void selectedDeviceChanged(const QString &)
-extern "C" Q_DECL_EXPORT
-void C_ZN27QVideoDeviceSelectorControl21selectedDeviceChangedERK7QString(void *this_, QString* name) {
-  ((QVideoDeviceSelectorControl*)this_)->selectedDeviceChanged(*name);
-}
-
-// Public Visibility=Default Availability=Available
-// /usr/include/qt/QtMultimedia/qvideodeviceselectorcontrol.h:71
-// [-2] void devicesChanged()
-extern "C" Q_DECL_EXPORT
-void C_ZN27QVideoDeviceSelectorControl14devicesChangedEv(void *this_) {
-  ((QVideoDeviceSelectorControl*)this_)->devicesChanged();
-}
-
+  return fnptrsumval;
+} // end ensure_inline_symbol_qvideodeviceselectorcontrol
 //  main block end
 
 //  use block begin
