@@ -61,6 +61,14 @@ void ffi_call_ex(void*fn, int retype, uint64_t* retval, int argc, uint8_t* argty
     }
 }
 
+void ffi_call_ex3(void*fn, ffi_type* retype, uint64_t* retval, int argc, ffi_type** argtys, void** argvals) {
+    ffi_cif cif;
+    if (ffi_prep_cif(&cif, FFI_DEFAULT_ABI, argc, retype, argtys) == FFI_OK) {
+        ffi_call(&cif, (void(*)(void))(fn), retval, argvals);
+    }
+}
+
+
 /*
   for variadic function call
   argtypes int[20]
@@ -80,6 +88,16 @@ void ffi_call_var_ex(void*fn, int retype, uint64_t* retval, int fixedargc, int t
     ffi_type* retyp = itype2stype(retype);
     if (ffi_prep_cif_var(&cif, FFI_DEFAULT_ABI, fixedargc, totalargc, retyp, ffitys) == FFI_OK) {
         ffi_call(&cif, (void(*)(void))(fn), retval, ffivals);
+    }
+}
+
+    // caller pass ffi type object directly, not need convert
+void ffi_call_var_ex3(void*fn, ffi_type* retype, uint64_t* retval, int fixedargc, int totalargc,
+                     ffi_type** argtys, void** argvals) {
+    ffi_cif cif;
+
+    if (ffi_prep_cif_var(&cif, FFI_DEFAULT_ABI, fixedargc, totalargc, retype, argtys) == FFI_OK) {
+        ffi_call(&cif, (void(*)(void))(fn), retval, argvals);
     }
 }
 
@@ -108,6 +126,12 @@ void ffi_call_var_ex(void*fn, int retype, uint64_t* retval, int fixedargc, int t
         return prepend1 == 1 ? retval : (void*)oretval;
     }
 
+    extern
+    char *__cxa_demangle (const char *mangled, char *buf, size_t *len, int *status);
+    char* qil_cxa_demangle(const char *mangled, char *buf, size_t *len, int *status) {
+        char* ret = __cxa_demangle(mangled, buf, len, status);
+        return ret;
+    }
 #ifdef __cplusplus
 };
 #endif
