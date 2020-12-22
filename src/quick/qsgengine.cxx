@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qsgengine(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgengine.h:72
+// [-2] void QSGEngine(QObject *) 
+// (12)qm1633706205 (25)_ZN9QSGEngineC2EP7QObject
+/*void* qm1633706205(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSGEngine(parent);
+  this_ =  new MyQSGEngine(parent);
+}
+
 
 /*void C_ZN9QSGEngineD2Ev(void *this_)*/ {
   delete (QSGEngine*)(this_);

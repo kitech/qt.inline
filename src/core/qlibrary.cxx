@@ -134,6 +134,46 @@ uint64_t ensure_inline_symbol_qlibrary(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlibrary.h:68
+// [-2] void QLibrary(QObject *) 
+// (11)qm292508989 (24)_ZN8QLibraryC2EP7QObject
+/*void* qm292508989(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QLibrary(parent);
+  this_ =  new MyQLibrary(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlibrary.h:69
+// [-2] void QLibrary(const QString &, QObject *) 
+// (12)qm3743329586 (34)_ZN8QLibraryC2ERK7QStringP7QObject
+/*void* qm3743329586(const QString & fileName, QObject * parent)*/{
+  const QString & fileName = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QLibrary(fileName, parent);
+  this_ =  new MyQLibrary(fileName, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlibrary.h:70
+// [-2] void QLibrary(const QString &, int, QObject *) 
+// (11)qm315403246 (35)_ZN8QLibraryC2ERK7QStringiP7QObject
+/*void* qm315403246(const QString & fileName, int verNum, QObject * parent)*/{
+  const QString & fileName = *(const QString *)this_; int verNum = *(int*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QLibrary(fileName, verNum, parent);
+  this_ =  new MyQLibrary(fileName, verNum, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlibrary.h:71
+// [-2] void QLibrary(const QString &, const QString &, QObject *) 
+// (12)qm2582016921 (37)_ZN8QLibraryC2ERK7QStringS2_P7QObject
+/*void* qm2582016921(const QString & fileName, const QString & version, QObject * parent)*/{
+  const QString & fileName = *(const QString *)this_; const QString & version = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QLibrary(fileName, version, parent);
+  this_ =  new MyQLibrary(fileName, version, parent);
+}
+
 
 /*void C_ZN8QLibraryD2Ev(void *this_)*/ {
   delete (QLibrary*)(this_);

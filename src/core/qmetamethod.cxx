@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qmetamethod(void* this_) {
 /*void* qm1099024557()*/{
   ;
   this_ =  new QMetaMethod();
+  this_ =  new MyQMetaMethod();
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicslinearlayout(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:56
+// [-2] void QGraphicsLinearLayout(QGraphicsLayoutItem *) 
+// (11)qm308529578 (51)_ZN21QGraphicsLinearLayoutC2EP19QGraphicsLayoutItem
+/*void* qm308529578(QGraphicsLayoutItem * parent)*/{
+  QGraphicsLayoutItem * parent = *(QGraphicsLayoutItem **)this_;
+  this_ =  new QGraphicsLinearLayout(parent);
+  this_ =  new MyQGraphicsLinearLayout(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:57
+// [-2] void QGraphicsLinearLayout(Qt::Orientation, QGraphicsLayoutItem *) 
+// (11)qm215033946 (69)_ZN21QGraphicsLinearLayoutC2EN2Qt11OrientationEP19QGraphicsLayoutItem
+/*void* qm215033946(Qt::Orientation orientation, QGraphicsLayoutItem * parent)*/{
+  Qt::Orientation orientation = *(Qt::Orientation*)this_; QGraphicsLayoutItem * parent = *(QGraphicsLayoutItem **)this_;
+  this_ =  new QGraphicsLinearLayout(orientation, parent);
+  this_ =  new MyQGraphicsLinearLayout(orientation, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicslinearlayout.h:63
 // [-2] void addItem(QGraphicsLayoutItem *) 

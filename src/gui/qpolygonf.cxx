@@ -77,6 +77,7 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm1068706858()*/{
   ;
   this_ =  new QPolygonF();
+  this_ =  new MyQPolygonF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -93,6 +94,7 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm2998608351(int size)*/{
   int size = *(int*)this_;
   this_ =  new QPolygonF(size);
+  this_ =  new MyQPolygonF(size);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -102,6 +104,7 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm3357456793(const QVector<QPointF> & v)*/{
   const QVector<QPointF> & v = *(const QVector<QPointF> *)this_;
   this_ =  new QPolygonF(v);
+  this_ =  new MyQPolygonF(v);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -111,6 +114,27 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm1881427963(QVector<QPointF> && v)*/{
   QVector<QPointF> && v =  static_cast<QVector<QPointF> &&>(*(QVector<QPointF> *)this_);
   this_ =  new QPolygonF(v);
+  this_ =  new MyQPolygonF(v);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:145
+// [-2] void QPolygonF(const QRectF &) 
+// (12)qm3447409673 (25)_ZN9QPolygonFC2ERK6QRectF
+/*void* qm3447409673(const QRectF & r)*/{
+  const QRectF & r = *(const QRectF *)this_;
+  this_ =  new QPolygonF(r);
+  this_ =  new MyQPolygonF(r);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpolygon.h:146
+// [-2] void QPolygonF(const QPolygon &) 
+// (11)qm275634247 (27)_ZN9QPolygonFC2ERK8QPolygon
+/*void* qm275634247(const QPolygon & a)*/{
+  const QPolygon & a = *(const QPolygon *)this_;
+  this_ =  new QPolygonF(a);
+  this_ =  new MyQPolygonF(a);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -120,6 +144,7 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm2552204089(const QPolygonF & a)*/{
   const QPolygonF & a = *(const QPolygonF *)this_;
   this_ =  new QPolygonF(a);
+  this_ =  new MyQPolygonF(a);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -129,6 +154,7 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm1569853802(QPolygonF && other)*/{
   QPolygonF && other =  static_cast<QPolygonF &&>(*(QPolygonF *)this_);
   this_ =  new QPolygonF(other);
+  this_ =  new MyQPolygonF(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

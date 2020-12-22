@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsequentialiterable(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:663
+// [-2] void QSequentialIterable(QtMetaTypePrivate::QSequentialIterableImpl) 
+// (12)qm3097060146 (73)_ZN19QSequentialIterableC2EN17QtMetaTypePrivate23QSequentialIterableImplE
+/*void* qm3097060146(QtMetaTypePrivate::QSequentialIterableImpl impl)*/{
+  QtMetaTypePrivate::QSequentialIterableImpl impl = *(QtMetaTypePrivate::QSequentialIterableImpl*)this_;
+  this_ =  new QSequentialIterable(impl);
+  this_ =  new MyQSequentialIterable(impl);
+}
+
 
 /*void C_ZN19QSequentialIterableD2Ev(void *this_)*/ {
   delete (QSequentialIterable*)(this_);

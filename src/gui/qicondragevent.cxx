@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qicondragevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:527
+// [-2] void QIconDragEvent() 
+// (10)qm41990026 (23)_ZN14QIconDragEventC2Ev
+/*void* qm41990026()*/{
+  ;
+  this_ =  new QIconDragEvent();
+  this_ =  new MyQIconDragEvent();
+}
+
 
 /*void C_ZN14QIconDragEventD2Ev(void *this_)*/ {
   delete (QIconDragEvent*)(this_);

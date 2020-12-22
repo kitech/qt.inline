@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qmetaenum(void* this_) {
 /*void* qm2934848283()*/{
   ;
   this_ =  new QMetaEnum();
+  this_ =  new MyQMetaEnum();
 }
 
 // Public inline Direct Visibility=Default Availability=Available

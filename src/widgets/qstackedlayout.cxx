@@ -129,6 +129,36 @@ uint64_t ensure_inline_symbol_qstackedlayout(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstackedlayout.h:66
+// [-2] void QStackedLayout() 
+// (12)qm2274557352 (23)_ZN14QStackedLayoutC2Ev
+/*void* qm2274557352()*/{
+  ;
+  this_ =  new QStackedLayout();
+  this_ =  new MyQStackedLayout();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstackedlayout.h:67
+// [-2] void QStackedLayout(QWidget *) 
+// (12)qm2191350408 (31)_ZN14QStackedLayoutC2EP7QWidget
+/*void* qm2191350408(QWidget * parent)*/{
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QStackedLayout(parent);
+  this_ =  new MyQStackedLayout(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstackedlayout.h:68
+// [-2] void QStackedLayout(QLayout *) 
+// (12)qm1029582778 (31)_ZN14QStackedLayoutC2EP7QLayout
+/*void* qm1029582778(QLayout * parentLayout)*/{
+  QLayout * parentLayout = *(QLayout **)this_;
+  this_ =  new QStackedLayout(parentLayout);
+  this_ =  new MyQStackedLayout(parentLayout);
+}
+
 
 /*void C_ZN14QStackedLayoutD2Ev(void *this_)*/ {
   delete (QStackedLayout*)(this_);

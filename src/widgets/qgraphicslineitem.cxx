@@ -102,6 +102,39 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicslineitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:790
+// [-2] void QGraphicsLineItem(QGraphicsItem *) 
+// (12)qm1083993842 (41)_ZN17QGraphicsLineItemC2EP13QGraphicsItem
+/*void* qm1083993842(QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsLineItem*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsLineItem(parent);
+  this_ =  new MyQGraphicsLineItem(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:791
+// [-2] void QGraphicsLineItem(const QLineF &, QGraphicsItem *) 
+// (12)qm1764027651 (50)_ZN17QGraphicsLineItemC2ERK6QLineFP13QGraphicsItem
+/*void* qm1764027651(const QLineF & line, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsLineItem*)(0);
+  const QLineF & line = *(const QLineF *)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsLineItem(line, parent);
+  this_ =  new MyQGraphicsLineItem(line, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:792
+// [-2] void QGraphicsLineItem(qreal, qreal, qreal, qreal, QGraphicsItem *) 
+// (12)qm2666522929 (45)_ZN17QGraphicsLineItemC2EddddP13QGraphicsItem
+/*void* qm2666522929(double x1, double y1, double x2, double y2, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsLineItem*)(0);
+  double x1 = *(double*)this_; double y1 = *(double*)this_; double x2 = *(double*)this_; double y2 = *(double*)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsLineItem(x1, y1, x2, y2, parent);
+  this_ =  new MyQGraphicsLineItem(x1, y1, x2, y2, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:800
 // [-2] void setLine(qreal, qreal, qreal, qreal) 

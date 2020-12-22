@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qobjectuserdata(void* this_) {
 /*void* qm858108183()*/{
   ;
   this_ =  new QObjectUserData();
+  this_ =  new MyQObjectUserData();
 }
 
 

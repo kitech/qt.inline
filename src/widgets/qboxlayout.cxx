@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qboxlayout(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:64
+// [-2] void QBoxLayout(QBoxLayout::Direction, QWidget *) 
+// (12)qm3198258420 (41)_ZN10QBoxLayoutC2ENS_9DirectionEP7QWidget
+/*void* qm3198258420(QBoxLayout::Direction arg0, QWidget * parent)*/{
+  QBoxLayout::Direction arg0 = *(QBoxLayout::Direction*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QBoxLayout(arg0, parent);
+  this_ =  new MyQBoxLayout(arg0, parent);
+}
+
 
 /*void C_ZN10QBoxLayoutD2Ev(void *this_)*/ {
   delete (QBoxLayout*)(this_);

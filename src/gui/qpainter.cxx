@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpainter(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:126
+// [-2] void QPainter() 
+// (11)qm419999865 (16)_ZN8QPainterC2Ev
+/*void* qm419999865()*/{
+  ;
+  this_ =  new QPainter();
+  this_ =  new MyQPainter();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainter.h:127
+// [-2] void QPainter(QPaintDevice *) 
+// (12)qm1768399324 (30)_ZN8QPainterC2EP12QPaintDevice
+/*void* qm1768399324(QPaintDevice * arg0)*/{
+  QPaintDevice * arg0 = *(QPaintDevice **)this_;
+  this_ =  new QPainter(arg0);
+  this_ =  new MyQPainter(arg0);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainter.h:208
 // [-2] void setBrushOrigin(int, int) 

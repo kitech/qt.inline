@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgsimpletexturenode(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgsimpletexturenode.h:54
+// [-2] void QSGSimpleTextureNode() 
+// (12)qm1145788240 (29)_ZN20QSGSimpleTextureNodeC2Ev
+/*void* qm1145788240()*/{
+  ;
+  this_ =  new QSGSimpleTextureNode();
+  this_ =  new MyQSGSimpleTextureNode();
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimpletexturenode.h:58
 // [-2] void setRect(qreal, qreal, qreal, qreal) 

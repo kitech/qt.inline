@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qmarginsf(void* this_) {
 /*void* qm2929904453()*/{
   ;
   this_ =  new QMarginsF();
+  this_ =  new MyQMarginsF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +77,7 @@ uint64_t ensure_inline_symbol_qmarginsf(void* this_) {
 /*void* qm1732685276(double left, double top, double right, double bottom)*/{
   double left = *(double*)this_; double top = *(double*)this_; double right = *(double*)this_; double bottom = *(double*)this_;
   this_ =  new QMarginsF(left, top, right, bottom);
+  this_ =  new MyQMarginsF(left, top, right, bottom);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -85,6 +87,7 @@ uint64_t ensure_inline_symbol_qmarginsf(void* this_) {
 /*void* qm3035546118(const QMargins & margins)*/{
   const QMargins & margins = *(const QMargins *)this_;
   this_ =  new QMarginsF(margins);
+  this_ =  new MyQMarginsF(margins);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

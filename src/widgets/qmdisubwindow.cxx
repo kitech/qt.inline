@@ -370,6 +370,17 @@ uint64_t ensure_inline_symbol_qmdisubwindow(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmdisubwindow.h:69
+// [-2] void QMdiSubWindow(QWidget *, Qt::WindowFlags) 
+// (12)qm1806920957 (56)_ZN13QMdiSubWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm1806920957(QWidget * parent, QFlags<Qt::WindowType> flags)*/{
+  auto _nilp = (MyQMdiSubWindow*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> flags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QMdiSubWindow(parent, flags);
+  this_ =  new MyQMdiSubWindow(parent, flags);
+}
+
 
 /*void C_ZN13QMdiSubWindowD2Ev(void *this_)*/ {
   delete (QMdiSubWindow*)(this_);

@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qrgba64(void* this_) {
 /*void* qm1079802919()*/{
   ;
   this_ =  new QRgba64();
+  this_ =  new MyQRgba64();
 }
 
 // Public static inline Direct Visibility=Default Availability=Available

@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qwebengineregisterprotocolhandlerrequest(void* thi
 /*void* qm3563761021()*/{
   ;
   this_ =  new QWebEngineRegisterProtocolHandlerRequest();
+  this_ =  new MyQWebEngineRegisterProtocolHandlerRequest();
 }
 
 // Public inline Extend Visibility=Default Availability=Available

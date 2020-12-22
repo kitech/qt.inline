@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qdatawidgetmapper(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatawidgetmapper.h:64
+// [-2] void QDataWidgetMapper(QObject *) 
+// (12)qm3768346476 (34)_ZN17QDataWidgetMapperC2EP7QObject
+/*void* qm3768346476(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QDataWidgetMapper(parent);
+  this_ =  new MyQDataWidgetMapper(parent);
+}
+
 
 /*void C_ZN17QDataWidgetMapperD2Ev(void *this_)*/ {
   delete (QDataWidgetMapper*)(this_);

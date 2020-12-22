@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qmutexlocker(void* this_) {
 /*void* qm3182476505(QBasicMutex * m)*/{
   QBasicMutex * m = *(QBasicMutex **)this_;
   this_ =  new QMutexLocker(m);
+  this_ =  new MyQMutexLocker(m);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qmutexlocker(void* this_) {
 /*void* qm2401233820(QRecursiveMutex * m)*/{
   QRecursiveMutex * m = *(QRecursiveMutex **)this_;
   this_ =  new QMutexLocker(m);
+  this_ =  new MyQMutexLocker(m);
 }
 
 // Public inline Visibility=Default Availability=Available

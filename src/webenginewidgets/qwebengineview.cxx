@@ -247,6 +247,17 @@ uint64_t ensure_inline_symbol_qwebengineview(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineview.h:70
+// [-2] void QWebEngineView(QWidget *) 
+// (11)qm820967146 (31)_ZN14QWebEngineViewC2EP7QWidget
+/*void* qm820967146(QWidget * parent)*/{
+  auto _nilp = (MyQWebEngineView*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QWebEngineView(parent);
+  this_ =  new MyQWebEngineView(parent);
+}
+
 
 /*void C_ZN14QWebEngineViewD2Ev(void *this_)*/ {
   delete (QWebEngineView*)(this_);

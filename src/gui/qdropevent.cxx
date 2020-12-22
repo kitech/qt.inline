@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdropevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:650
+// [-2] void QDropEvent(const QPointF &, Qt::DropActions, const QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, QEvent::Type) 
+// (12)qm2720690567 (131)_ZN10QDropEventC2ERK7QPointF6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE
+/*void* qm2720690567(const QPointF & pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type_)*/{
+  const QPointF & pos = *(const QPointF *)this_; QFlags<Qt::DropAction> actions = *(QFlags<Qt::DropAction>*)this_; const QMimeData * data = *(const QMimeData **)this_; QFlags<Qt::MouseButton> buttons = *(QFlags<Qt::MouseButton>*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_; QEvent::Type type_ = *(QEvent::Type*)this_;
+  this_ =  new QDropEvent(pos, actions, data, buttons, modifiers, type_);
+  this_ =  new MyQDropEvent(pos, actions, data, buttons, modifiers, type_);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:654
 // [8] QPoint pos() const

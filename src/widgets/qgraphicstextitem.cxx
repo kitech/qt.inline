@@ -400,6 +400,28 @@ uint64_t ensure_inline_symbol_qgraphicstextitem(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:887
+// [-2] void QGraphicsTextItem(QGraphicsItem *) 
+// (12)qm1851128221 (41)_ZN17QGraphicsTextItemC2EP13QGraphicsItem
+/*void* qm1851128221(QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsTextItem*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsTextItem(parent);
+  this_ =  new MyQGraphicsTextItem(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:888
+// [-2] void QGraphicsTextItem(const QString &, QGraphicsItem *) 
+// (12)qm4006931730 (51)_ZN17QGraphicsTextItemC2ERK7QStringP13QGraphicsItem
+/*void* qm4006931730(const QString & text, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsTextItem*)(0);
+  const QString & text = *(const QString *)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsTextItem(text, parent);
+  this_ =  new MyQGraphicsTextItem(text, parent);
+}
+
 
 /*void C_ZN17QGraphicsTextItemD2Ev(void *this_)*/ {
   delete (QGraphicsTextItem*)(this_);

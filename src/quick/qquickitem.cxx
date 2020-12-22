@@ -488,6 +488,17 @@ uint64_t ensure_inline_symbol_qquickitem(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickitem.h:203
+// [-2] void QQuickItem(QQuickItem *) 
+// (12)qm2472285008 (21)_ZN10QQuickItemC2EPS_
+/*void* qm2472285008(QQuickItem * parent)*/{
+  auto _nilp = (MyQQuickItem*)(0);
+  QQuickItem * parent = *(QQuickItem **)this_;
+  this_ =  new QQuickItem(parent);
+  this_ =  new MyQQuickItem(parent);
+}
+
 
 /*void C_ZN10QQuickItemD2Ev(void *this_)*/ {
   delete (QQuickItem*)(this_);

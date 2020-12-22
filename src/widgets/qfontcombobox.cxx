@@ -141,6 +141,17 @@ uint64_t ensure_inline_symbol_qfontcombobox(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontcombobox.h:61
+// [-2] void QFontComboBox(QWidget *) 
+// (12)qm3150361190 (30)_ZN13QFontComboBoxC2EP7QWidget
+/*void* qm3150361190(QWidget * parent)*/{
+  auto _nilp = (MyQFontComboBox*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QFontComboBox(parent);
+  this_ =  new MyQFontComboBox(parent);
+}
+
 
 /*void C_ZN13QFontComboBoxD2Ev(void *this_)*/ {
   delete (QFontComboBox*)(this_);

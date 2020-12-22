@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtoolbarchangeevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:796
+// [-2] void QToolBarChangeEvent(bool) 
+// (12)qm3365750564 (28)_ZN19QToolBarChangeEventC2Eb
+/*void* qm3365750564(bool t)*/{
+  bool t = *(bool*)this_;
+  this_ =  new QToolBarChangeEvent(t);
+  this_ =  new MyQToolBarChangeEvent(t);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:799
 // [1] bool toggle() const

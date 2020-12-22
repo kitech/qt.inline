@@ -71,6 +71,7 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm1465129040(QIODevice * device)*/{
   QIODevice * device = *(QIODevice **)this_;
   this_ =  new QDebug(device);
+  this_ =  new MyQDebug(device);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -80,6 +81,7 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm331215671(QString * string)*/{
   QString * string = *(QString **)this_;
   this_ =  new QDebug(string);
+  this_ =  new MyQDebug(string);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -89,6 +91,7 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm2015758278(QtMsgType t)*/{
   QtMsgType t = *(QtMsgType*)this_;
   this_ =  new QDebug(t);
+  this_ =  new MyQDebug(t);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -98,6 +101,7 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm2771745366(const QDebug & o)*/{
   const QDebug & o = *(const QDebug *)this_;
   this_ =  new QDebug(o);
+  this_ =  new MyQDebug(o);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -107,6 +111,7 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm2952177935(QDebug && other)*/{
   QDebug && other =  static_cast<QDebug &&>(*(QDebug *)this_);
   this_ =  new QDebug(other);
+  this_ =  new MyQDebug(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

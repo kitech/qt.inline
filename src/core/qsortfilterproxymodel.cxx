@@ -167,6 +167,17 @@ uint64_t ensure_inline_symbol_qsortfilterproxymodel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsortfilterproxymodel.h:79
+// [-2] void QSortFilterProxyModel(QObject *) 
+// (12)qm3088238312 (38)_ZN21QSortFilterProxyModelC2EP7QObject
+/*void* qm3088238312(QObject * parent)*/{
+  auto _nilp = (MyQSortFilterProxyModel*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSortFilterProxyModel(parent);
+  this_ =  new MyQSortFilterProxyModel(parent);
+}
+
 
 /*void C_ZN21QSortFilterProxyModelD2Ev(void *this_)*/ {
   delete (QSortFilterProxyModel*)(this_);

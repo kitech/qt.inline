@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qtransposeproxymodel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtransposeproxymodel.h:58
+// [-2] void QTransposeProxyModel(QObject *) 
+// (12)qm1504913216 (37)_ZN20QTransposeProxyModelC2EP7QObject
+/*void* qm1504913216(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QTransposeProxyModel(parent);
+  this_ =  new MyQTransposeProxyModel(parent);
+}
+
 
 /*void C_ZN20QTransposeProxyModelD2Ev(void *this_)*/ {
   delete (QTransposeProxyModel*)(this_);

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qscrollprepareevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:1049
+// [-2] void QScrollPrepareEvent(const QPointF &) 
+// (12)qm3080891566 (37)_ZN19QScrollPrepareEventC2ERK7QPointF
+/*void* qm3080891566(const QPointF & startPos)*/{
+  const QPointF & startPos = *(const QPointF *)this_;
+  this_ =  new QScrollPrepareEvent(startPos);
+  this_ =  new MyQScrollPrepareEvent(startPos);
+}
+
 
 /*void C_ZN19QScrollPrepareEventD2Ev(void *this_)*/ {
   delete (QScrollPrepareEvent*)(this_);

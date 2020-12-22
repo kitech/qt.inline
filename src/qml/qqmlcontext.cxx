@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qqmlcontext(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcontext.h:69
+// [-2] void QQmlContext(QQmlEngine *, QObject *) 
+// (12)qm4257046582 (41)_ZN11QQmlContextC2EP10QQmlEngineP7QObject
+/*void* qm4257046582(QQmlEngine * parent, QObject * objParent)*/{
+  QQmlEngine * parent = *(QQmlEngine **)this_; QObject * objParent = *(QObject **)this_;
+  this_ =  new QQmlContext(parent, objParent);
+  this_ =  new MyQQmlContext(parent, objParent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlcontext.h:70
+// [-2] void QQmlContext(QQmlContext *, QObject *) 
+// (11)qm267568946 (31)_ZN11QQmlContextC2EPS_P7QObject
+/*void* qm267568946(QQmlContext * parent, QObject * objParent)*/{
+  QQmlContext * parent = *(QQmlContext **)this_; QObject * objParent = *(QObject **)this_;
+  this_ =  new QQmlContext(parent, objParent);
+  this_ =  new MyQQmlContext(parent, objParent);
+}
+
 
 /*void C_ZN11QQmlContextD2Ev(void *this_)*/ {
   delete (QQmlContext*)(this_);

@@ -165,6 +165,17 @@ uint64_t ensure_inline_symbol_qfinalstate(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfinalstate.h:54
+// [-2] void QFinalState(QState *) 
+// (12)qm4038169746 (27)_ZN11QFinalStateC2EP6QState
+/*void* qm4038169746(QState * parent)*/{
+  auto _nilp = (MyQFinalState*)(0);
+  QState * parent = *(QState **)this_;
+  this_ =  new QFinalState(parent);
+  this_ =  new MyQFinalState(parent);
+}
+
 
 /*void C_ZN11QFinalStateD2Ev(void *this_)*/ {
   delete (QFinalState*)(this_);

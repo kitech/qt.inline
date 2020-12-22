@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslcertificateextension(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificateextension.h:56
+// [-2] void QSslCertificateExtension() 
+// (12)qm1823376079 (33)_ZN24QSslCertificateExtensionC2Ev
+/*void* qm1823376079()*/{
+  ;
+  this_ =  new QSslCertificateExtension();
+  this_ =  new MyQSslCertificateExtension();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificateextension.h:57
+// [-2] void QSslCertificateExtension(const QSslCertificateExtension &) 
+// (12)qm1689543839 (36)_ZN24QSslCertificateExtensionC2ERKS_
+/*void* qm1689543839(const QSslCertificateExtension & other)*/{
+  const QSslCertificateExtension & other = *(const QSslCertificateExtension *)this_;
+  this_ =  new QSslCertificateExtension(other);
+  this_ =  new MyQSslCertificateExtension(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificateextension.h:58
 // [8] QSslCertificateExtension & operator=(QSslCertificateExtension &&) 

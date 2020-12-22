@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qformlayout(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qformlayout.h:91
+// [-2] void QFormLayout(QWidget *) 
+// (12)qm4165280238 (28)_ZN11QFormLayoutC2EP7QWidget
+/*void* qm4165280238(QWidget * parent)*/{
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QFormLayout(parent);
+  this_ =  new MyQFormLayout(parent);
+}
+
 
 /*void C_ZN11QFormLayoutD2Ev(void *this_)*/ {
   delete (QFormLayout*)(this_);

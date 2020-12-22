@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qwebengineprofile(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:71
+// [-2] void QWebEngineProfile(QObject *) 
+// (12)qm3666979106 (34)_ZN17QWebEngineProfileC2EP7QObject
+/*void* qm3666979106(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QWebEngineProfile(parent);
+  this_ =  new MyQWebEngineProfile(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineprofile.h:72
+// [-2] void QWebEngineProfile(const QString &, QObject *) 
+// (12)qm1568836304 (44)_ZN17QWebEngineProfileC2ERK7QStringP7QObject
+/*void* qm1568836304(const QString & name, QObject * parent)*/{
+  const QString & name = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QWebEngineProfile(name, parent);
+  this_ =  new MyQWebEngineProfile(name, parent);
+}
+
 
 /*void C_ZN17QWebEngineProfileD2Ev(void *this_)*/ {
   delete (QWebEngineProfile*)(this_);

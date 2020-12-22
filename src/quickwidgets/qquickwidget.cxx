@@ -371,6 +371,39 @@ uint64_t ensure_inline_symbol_qquickwidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:66
+// [-2] void QQuickWidget(QWidget *) 
+// (12)qm3821488841 (29)_ZN12QQuickWidgetC2EP7QWidget
+/*void* qm3821488841(QWidget * parent)*/{
+  auto _nilp = (MyQQuickWidget*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QQuickWidget(parent);
+  this_ =  new MyQQuickWidget(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:67
+// [-2] void QQuickWidget(QQmlEngine *, QWidget *) 
+// (12)qm3782634404 (42)_ZN12QQuickWidgetC2EP10QQmlEngineP7QWidget
+/*void* qm3782634404(QQmlEngine * engine, QWidget * parent)*/{
+  auto _nilp = (MyQQuickWidget*)(0);
+  QQmlEngine * engine = *(QQmlEngine **)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QQuickWidget(engine, parent);
+  this_ =  new MyQQuickWidget(engine, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuickWidgets/qquickwidget.h:68
+// [-2] void QQuickWidget(const QUrl &, QWidget *) 
+// (12)qm1128663212 (36)_ZN12QQuickWidgetC2ERK4QUrlP7QWidget
+/*void* qm1128663212(const QUrl & source, QWidget * parent)*/{
+  auto _nilp = (MyQQuickWidget*)(0);
+  const QUrl & source = *(const QUrl *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QQuickWidget(source, parent);
+  this_ =  new MyQQuickWidget(source, parent);
+}
+
 
 /*void C_ZN12QQuickWidgetD2Ev(void *this_)*/ {
   delete (QQuickWidget*)(this_);

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgnode(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:125
+// [-2] void QSGNode() 
+// (12)qm2545735289 (15)_ZN7QSGNodeC2Ev
+/*void* qm2545735289()*/{
+  ;
+  this_ =  new QSGNode();
+  this_ =  new MyQSGNode();
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:128
 // [8] QSGNode * parent() const

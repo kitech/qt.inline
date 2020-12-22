@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qgenericargument(void* this_) {
 /*void* qm1379378773(const char * aName, const void * aData)*/{
   const char * aName = *(const char **)this_; const void * aData = *(const void **)this_;
   this_ =  new QGenericArgument(aName, aData);
+  this_ =  new MyQGenericArgument(aName, aData);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

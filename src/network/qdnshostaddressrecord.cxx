@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdnshostaddressrecord(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:87
+// [-2] void QDnsHostAddressRecord() 
+// (12)qm2767704415 (30)_ZN21QDnsHostAddressRecordC2Ev
+/*void* qm2767704415()*/{
+  ;
+  this_ =  new QDnsHostAddressRecord();
+  this_ =  new MyQDnsHostAddressRecord();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:88
+// [-2] void QDnsHostAddressRecord(const QDnsHostAddressRecord &) 
+// (11)qm445004640 (33)_ZN21QDnsHostAddressRecordC2ERKS_
+/*void* qm445004640(const QDnsHostAddressRecord & other)*/{
+  const QDnsHostAddressRecord & other = *(const QDnsHostAddressRecord *)this_;
+  this_ =  new QDnsHostAddressRecord(other);
+  this_ =  new MyQDnsHostAddressRecord(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:89
 // [8] QDnsHostAddressRecord & operator=(QDnsHostAddressRecord &&) 

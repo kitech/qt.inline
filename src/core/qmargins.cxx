@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qmargins(void* this_) {
 /*void* qm471784015()*/{
   ;
   this_ =  new QMargins();
+  this_ =  new MyQMargins();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qmargins(void* this_) {
 /*void* qm3396517233(int left, int top, int right, int bottom)*/{
   int left = *(int*)this_; int top = *(int*)this_; int right = *(int*)this_; int bottom = *(int*)this_;
   this_ =  new QMargins(left, top, right, bottom);
+  this_ =  new MyQMargins(left, top, right, bottom);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

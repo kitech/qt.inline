@@ -138,6 +138,17 @@ uint64_t ensure_inline_symbol_qnetworkaccessmanager(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkaccessmanager.h:106
+// [-2] void QNetworkAccessManager(QObject *) 
+// (11)qm667972135 (38)_ZN21QNetworkAccessManagerC2EP7QObject
+/*void* qm667972135(QObject * parent)*/{
+  auto _nilp = (MyQNetworkAccessManager*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QNetworkAccessManager(parent);
+  this_ =  new MyQNetworkAccessManager(parent);
+}
+
 
 /*void C_ZN21QNetworkAccessManagerD2Ev(void *this_)*/ {
   delete (QNetworkAccessManager*)(this_);

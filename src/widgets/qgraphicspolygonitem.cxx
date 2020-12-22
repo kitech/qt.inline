@@ -100,6 +100,28 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicspolygonitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:753
+// [-2] void QGraphicsPolygonItem(QGraphicsItem *) 
+// (12)qm2537868427 (44)_ZN20QGraphicsPolygonItemC2EP13QGraphicsItem
+/*void* qm2537868427(QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsPolygonItem*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsPolygonItem(parent);
+  this_ =  new MyQGraphicsPolygonItem(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:754
+// [-2] void QGraphicsPolygonItem(const QPolygonF &, QGraphicsItem *) 
+// (12)qm3099412477 (56)_ZN20QGraphicsPolygonItemC2ERK9QPolygonFP13QGraphicsItem
+/*void* qm3099412477(const QPolygonF & polygon, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsPolygonItem*)(0);
+  const QPolygonF & polygon = *(const QPolygonF *)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsPolygonItem(polygon, parent);
+  this_ =  new MyQGraphicsPolygonItem(polygon, parent);
+}
+
 
 /*void C_ZN20QGraphicsPolygonItemD2Ev(void *this_)*/ {
   delete (QGraphicsPolygonItem*)(this_);

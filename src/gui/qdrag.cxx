@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qdrag(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qdrag.h:62
+// [-2] void QDrag(QObject *) 
+// (12)qm2893035590 (21)_ZN5QDragC2EP7QObject
+/*void* qm2893035590(QObject * dragSource)*/{
+  QObject * dragSource = *(QObject **)this_;
+  this_ =  new QDrag(dragSource);
+  this_ =  new MyQDrag(dragSource);
+}
+
 
 /*void C_ZN5QDragD2Ev(void *this_)*/ {
   delete (QDrag*)(this_);

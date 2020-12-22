@@ -131,6 +131,46 @@ uint64_t ensure_inline_symbol_qcamera(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:168
+// [-2] void QCamera(QObject *) 
+// (12)qm1434939819 (23)_ZN7QCameraC2EP7QObject
+/*void* qm1434939819(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QCamera(parent);
+  this_ =  new MyQCamera(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:169
+// [-2] void QCamera(const QByteArray &, QObject *) 
+// (11)qm314386062 (37)_ZN7QCameraC2ERK10QByteArrayP7QObject
+/*void* qm314386062(const QByteArray & deviceName, QObject * parent)*/{
+  const QByteArray & deviceName = *(const QByteArray *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QCamera(deviceName, parent);
+  this_ =  new MyQCamera(deviceName, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:170
+// [-2] void QCamera(const QCameraInfo &, QObject *) 
+// (12)qm2999338008 (38)_ZN7QCameraC2ERK11QCameraInfoP7QObject
+/*void* qm2999338008(const QCameraInfo & cameraInfo, QObject * parent)*/{
+  const QCameraInfo & cameraInfo = *(const QCameraInfo *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QCamera(cameraInfo, parent);
+  this_ =  new MyQCamera(cameraInfo, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcamera.h:171
+// [-2] void QCamera(QCamera::Position, QObject *) 
+// (12)qm3803242807 (36)_ZN7QCameraC2ENS_8PositionEP7QObject
+/*void* qm3803242807(QCamera::Position position, QObject * parent)*/{
+  QCamera::Position position = *(QCamera::Position*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QCamera(position, parent);
+  this_ =  new MyQCamera(position, parent);
+}
+
 
 /*void C_ZN7QCameraD2Ev(void *this_)*/ {
   delete (QCamera*)(this_);

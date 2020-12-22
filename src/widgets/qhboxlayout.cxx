@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qhboxlayout(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:117
+// [-2] void QHBoxLayout() 
+// (12)qm2369781699 (20)_ZN11QHBoxLayoutC2Ev
+/*void* qm2369781699()*/{
+  ;
+  this_ =  new QHBoxLayout();
+  this_ =  new MyQHBoxLayout();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:118
+// [-2] void QHBoxLayout(QWidget *) 
+// (12)qm2008149469 (28)_ZN11QHBoxLayoutC2EP7QWidget
+/*void* qm2008149469(QWidget * parent)*/{
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QHBoxLayout(parent);
+  this_ =  new MyQHBoxLayout(parent);
+}
+
 
 /*void C_ZN11QHBoxLayoutD2Ev(void *this_)*/ {
   delete (QHBoxLayout*)(this_);

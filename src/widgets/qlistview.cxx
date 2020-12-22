@@ -465,6 +465,17 @@ uint64_t ensure_inline_symbol_qlistview(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistview.h:82
+// [-2] void QListView(QWidget *) 
+// (12)qm4267936992 (25)_ZN9QListViewC2EP7QWidget
+/*void* qm4267936992(QWidget * parent)*/{
+  auto _nilp = (MyQListView*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QListView(parent);
+  this_ =  new MyQListView(parent);
+}
+
 
 /*void C_ZN9QListViewD2Ev(void *this_)*/ {
   delete (QListView*)(this_);

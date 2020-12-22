@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpainterpath(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:92
+// [-2] void QPainterPath() 
+// (12)qm1427962372 (21)_ZN12QPainterPathC2Ev
+/*void* qm1427962372()*/{
+  ;
+  this_ =  new QPainterPath();
+  this_ =  new MyQPainterPath();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:93
+// [-2] void QPainterPath(const QPointF &) 
+// (12)qm4274997846 (30)_ZN12QPainterPathC2ERK7QPointF
+/*void* qm4274997846(const QPointF & startPoint)*/{
+  const QPointF & startPoint = *(const QPointF *)this_;
+  this_ =  new QPainterPath(startPoint);
+  this_ =  new MyQPainterPath(startPoint);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpainterpath.h:94
+// [-2] void QPainterPath(const QPainterPath &) 
+// (12)qm1002912857 (24)_ZN12QPainterPathC2ERKS_
+/*void* qm1002912857(const QPainterPath & other)*/{
+  const QPainterPath & other = *(const QPainterPath *)this_;
+  this_ =  new QPainterPath(other);
+  this_ =  new MyQPainterPath(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpainterpath.h:96
 // [8] QPainterPath & operator=(QPainterPath &&) 

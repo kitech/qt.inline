@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcameraviewfindersettings(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraviewfindersettings.h:56
+// [-2] void QCameraViewfinderSettings() 
+// (12)qm2132849231 (34)_ZN25QCameraViewfinderSettingsC2Ev
+/*void* qm2132849231()*/{
+  ;
+  this_ =  new QCameraViewfinderSettings();
+  this_ =  new MyQCameraViewfinderSettings();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraviewfindersettings.h:57
+// [-2] void QCameraViewfinderSettings(const QCameraViewfinderSettings &) 
+// (12)qm1355278296 (37)_ZN25QCameraViewfinderSettingsC2ERKS_
+/*void* qm1355278296(const QCameraViewfinderSettings & other)*/{
+  const QCameraViewfinderSettings & other = *(const QCameraViewfinderSettings *)this_;
+  this_ =  new QCameraViewfinderSettings(other);
+  this_ =  new MyQCameraViewfinderSettings(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qcameraviewfindersettings.h:63
 // [8] QCameraViewfinderSettings & operator=(QCameraViewfinderSettings &&) 

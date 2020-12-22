@@ -82,6 +82,17 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgvertexcolormaterial(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgvertexcolormaterial.h:50
+// [-2] void QSGVertexColorMaterial() 
+// (12)qm1413483382 (31)_ZN22QSGVertexColorMaterialC2Ev
+/*void* qm1413483382()*/{
+  auto _nilp = (MyQSGVertexColorMaterial*)(0);
+  ;
+  this_ =  new QSGVertexColorMaterial();
+  this_ =  new MyQSGVertexColorMaterial();
+}
+
 
 /*void C_ZN22QSGVertexColorMaterialD2Ev(void *this_)*/ {
   delete (QSGVertexColorMaterial*)(this_);

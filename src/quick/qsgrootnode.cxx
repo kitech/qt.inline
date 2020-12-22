@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgrootnode(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:297
+// [-2] void QSGRootNode() 
+// (12)qm3975030646 (20)_ZN11QSGRootNodeC2Ev
+/*void* qm3975030646()*/{
+  ;
+  this_ =  new QSGRootNode();
+  this_ =  new MyQSGRootNode();
+}
+
 
 /*void C_ZN11QSGRootNodeD2Ev(void *this_)*/ {
   delete (QSGRootNode*)(this_);

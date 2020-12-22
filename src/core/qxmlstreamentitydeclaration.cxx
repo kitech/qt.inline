@@ -60,6 +60,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamentitydeclaration(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:280
+// [-2] void QXmlStreamEntityDeclaration() 
+// (12)qm2539572310 (36)_ZN27QXmlStreamEntityDeclarationC2Ev
+/*void* qm2539572310()*/{
+  ;
+  this_ =  new QXmlStreamEntityDeclaration();
+  this_ =  new MyQXmlStreamEntityDeclaration();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:283
+// [-2] void QXmlStreamEntityDeclaration(const QXmlStreamEntityDeclaration &) 
+// (12)qm1160869772 (39)_ZN27QXmlStreamEntityDeclarationC2ERKS_
+/*void* qm1160869772(const QXmlStreamEntityDeclaration & arg0)*/{
+  const QXmlStreamEntityDeclaration & arg0 = *(const QXmlStreamEntityDeclaration *)this_;
+  this_ =  new QXmlStreamEntityDeclaration(arg0);
+  this_ =  new MyQXmlStreamEntityDeclaration(arg0);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:284
 // [-2] void QXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration &&) 
@@ -67,6 +87,7 @@ uint64_t ensure_inline_symbol_qxmlstreamentitydeclaration(void* this_) {
 /*void* qm2115136773(QXmlStreamEntityDeclaration && other)*/{
   QXmlStreamEntityDeclaration && other =  static_cast<QXmlStreamEntityDeclaration &&>(*(QXmlStreamEntityDeclaration *)this_);
   this_ =  new QXmlStreamEntityDeclaration(other);
+  this_ =  new MyQXmlStreamEntityDeclaration(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

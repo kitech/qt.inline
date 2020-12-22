@@ -73,6 +73,7 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm1711037227()*/{
   ;
   this_ =  new QXmlStreamStringRef();
+  this_ =  new MyQXmlStreamStringRef();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -82,6 +83,7 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm3117984013(const QStringRef & aString)*/{
   const QStringRef & aString = *(const QStringRef *)this_;
   this_ =  new QXmlStreamStringRef(aString);
+  this_ =  new MyQXmlStreamStringRef(aString);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -91,6 +93,7 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm755874095(const QString & aString)*/{
   const QString & aString = *(const QString *)this_;
   this_ =  new QXmlStreamStringRef(aString);
+  this_ =  new MyQXmlStreamStringRef(aString);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -100,6 +103,7 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm1938220457(QString && aString)*/{
   QString && aString =  static_cast<QString &&>(*(QString *)this_);
   this_ =  new QXmlStreamStringRef(aString);
+  this_ =  new MyQXmlStreamStringRef(aString);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -109,6 +113,7 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm532697700(const QXmlStreamStringRef & other)*/{
   const QXmlStreamStringRef & other = *(const QXmlStreamStringRef *)this_;
   this_ =  new QXmlStreamStringRef(other);
+  this_ =  new MyQXmlStreamStringRef(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -118,6 +123,7 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm2330500859(QXmlStreamStringRef && other)*/{
   QXmlStreamStringRef && other =  static_cast<QXmlStreamStringRef &&>(*(QXmlStreamStringRef *)this_);
   this_ =  new QXmlStreamStringRef(other);
+  this_ =  new MyQXmlStreamStringRef(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

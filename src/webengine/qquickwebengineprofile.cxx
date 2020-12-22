@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qquickwebengineprofile(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngine/qquickwebengineprofile.h:85
+// [-2] void QQuickWebEngineProfile(QObject *) 
+// (11)qm997571327 (39)_ZN22QQuickWebEngineProfileC2EP7QObject
+/*void* qm997571327(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QQuickWebEngineProfile(parent);
+  this_ =  new MyQQuickWebEngineProfile(parent);
+}
+
 
 /*void C_ZN22QQuickWebEngineProfileD2Ev(void *this_)*/ {
   delete (QQuickWebEngineProfile*)(this_);

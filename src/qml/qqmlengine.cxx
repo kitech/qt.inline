@@ -138,6 +138,17 @@ uint64_t ensure_inline_symbol_qqmlengine(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlengine.h:99
+// [-2] void QQmlEngine(QObject *) 
+// (12)qm2151069905 (27)_ZN10QQmlEngineC2EP7QObject
+/*void* qm2151069905(QObject * p)*/{
+  auto _nilp = (MyQQmlEngine*)(0);
+  QObject * p = *(QObject **)this_;
+  this_ =  new QQmlEngine(p);
+  this_ =  new MyQQmlEngine(p);
+}
+
 
 /*void C_ZN10QQmlEngineD2Ev(void *this_)*/ {
   delete (QQmlEngine*)(this_);

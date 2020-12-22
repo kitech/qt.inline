@@ -179,6 +179,28 @@ uint64_t ensure_inline_symbol_qkeysequenceedit(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qkeysequenceedit.h:58
+// [-2] void QKeySequenceEdit(QWidget *) 
+// (12)qm2455766204 (33)_ZN16QKeySequenceEditC2EP7QWidget
+/*void* qm2455766204(QWidget * parent)*/{
+  auto _nilp = (MyQKeySequenceEdit*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QKeySequenceEdit(parent);
+  this_ =  new MyQKeySequenceEdit(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qkeysequenceedit.h:59
+// [-2] void QKeySequenceEdit(const QKeySequence &, QWidget *) 
+// (11)qm883824033 (49)_ZN16QKeySequenceEditC2ERK12QKeySequenceP7QWidget
+/*void* qm883824033(const QKeySequence & keySequence, QWidget * parent)*/{
+  auto _nilp = (MyQKeySequenceEdit*)(0);
+  const QKeySequence & keySequence = *(const QKeySequence *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QKeySequenceEdit(keySequence, parent);
+  this_ =  new MyQKeySequenceEdit(keySequence, parent);
+}
+
 
 /*void C_ZN16QKeySequenceEditD2Ev(void *this_)*/ {
   delete (QKeySequenceEdit*)(this_);

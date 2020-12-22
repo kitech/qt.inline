@@ -69,6 +69,17 @@ uint64_t ensure_inline_symbol_qbitarray(void* this_) {
 /*void* qm1992321311()*/{
   ;
   this_ =  new QBitArray();
+  this_ =  new MyQBitArray();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbitarray.h:58
+// [-2] void QBitArray(int, bool) 
+// (11)qm832187643 (18)_ZN9QBitArrayC2Eib
+/*void* qm832187643(int size, bool val)*/{
+  int size = *(int*)this_; bool val = *(bool*)this_;
+  this_ =  new QBitArray(size, val);
+  this_ =  new MyQBitArray(size, val);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -78,6 +89,7 @@ uint64_t ensure_inline_symbol_qbitarray(void* this_) {
 /*void* qm4273813453(const QBitArray & other)*/{
   const QBitArray & other = *(const QBitArray *)this_;
   this_ =  new QBitArray(other);
+  this_ =  new MyQBitArray(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -99,6 +111,7 @@ uint64_t ensure_inline_symbol_qbitarray(void* this_) {
 /*void* qm4178915248(QBitArray && other)*/{
   QBitArray && other =  static_cast<QBitArray &&>(*(QBitArray *)this_);
   this_ =  new QBitArray(other);
+  this_ =  new MyQBitArray(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

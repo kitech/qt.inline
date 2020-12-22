@@ -138,6 +138,17 @@ uint64_t ensure_inline_symbol_qmediaplaylist(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplaylist.h:70
+// [-2] void QMediaPlaylist(QObject *) 
+// (12)qm1118923357 (31)_ZN14QMediaPlaylistC2EP7QObject
+/*void* qm1118923357(QObject * parent)*/{
+  auto _nilp = (MyQMediaPlaylist*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QMediaPlaylist(parent);
+  this_ =  new MyQMediaPlaylist(parent);
+}
+
 
 /*void C_ZN14QMediaPlaylistD2Ev(void *this_)*/ {
   delete (QMediaPlaylist*)(this_);

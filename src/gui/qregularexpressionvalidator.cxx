@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qregularexpressionvalidator(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:210
+// [-2] void QRegularExpressionValidator(QObject *) 
+// (12)qm3422406708 (44)_ZN27QRegularExpressionValidatorC2EP7QObject
+/*void* qm3422406708(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QRegularExpressionValidator(parent);
+  this_ =  new MyQRegularExpressionValidator(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:211
+// [-2] void QRegularExpressionValidator(const QRegularExpression &, QObject *) 
+// (12)qm3277368562 (66)_ZN27QRegularExpressionValidatorC2ERK18QRegularExpressionP7QObject
+/*void* qm3277368562(const QRegularExpression & re, QObject * parent)*/{
+  const QRegularExpression & re = *(const QRegularExpression *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QRegularExpressionValidator(re, parent);
+  this_ =  new MyQRegularExpressionValidator(re, parent);
+}
+
 
 /*void C_ZN27QRegularExpressionValidatorD2Ev(void *this_)*/ {
   delete (QRegularExpressionValidator*)(this_);

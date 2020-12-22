@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgflatcolormaterial(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgflatcolormaterial.h:51
+// [-2] void QSGFlatColorMaterial() 
+// (12)qm3278763102 (29)_ZN20QSGFlatColorMaterialC2Ev
+/*void* qm3278763102()*/{
+  ;
+  this_ =  new QSGFlatColorMaterial();
+  this_ =  new MyQSGFlatColorMaterial();
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgflatcolormaterial.h:56
 // [16] const QColor & color() const

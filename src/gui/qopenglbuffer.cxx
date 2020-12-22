@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglbuffer(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglbuffer.h:66
+// [-2] void QOpenGLBuffer() 
+// (12)qm2924549072 (22)_ZN13QOpenGLBufferC2Ev
+/*void* qm2924549072()*/{
+  ;
+  this_ =  new QOpenGLBuffer();
+  this_ =  new MyQOpenGLBuffer();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglbuffer.h:67
+// [-2] void QOpenGLBuffer(QOpenGLBuffer::Type) 
+// (12)qm2828229433 (30)_ZN13QOpenGLBufferC2ENS_4TypeE
+/*void* qm2828229433(QOpenGLBuffer::Type type_)*/{
+  QOpenGLBuffer::Type type_ = *(QOpenGLBuffer::Type*)this_;
+  this_ =  new QOpenGLBuffer(type_);
+  this_ =  new MyQOpenGLBuffer(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglbuffer.h:68
+// [-2] void QOpenGLBuffer(const QOpenGLBuffer &) 
+// (11)qm915854534 (25)_ZN13QOpenGLBufferC2ERKS_
+/*void* qm915854534(const QOpenGLBuffer & other)*/{
+  const QOpenGLBuffer & other = *(const QOpenGLBuffer *)this_;
+  this_ =  new QOpenGLBuffer(other);
+  this_ =  new MyQOpenGLBuffer(other);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglbuffer.h:127
 // [-2] void allocate(int) 

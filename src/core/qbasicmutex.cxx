@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qbasicmutex(void* this_) {
 /*void* qm420848158()*/{
   ;
   this_ =  new QBasicMutex();
+  this_ =  new MyQBasicMutex();
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

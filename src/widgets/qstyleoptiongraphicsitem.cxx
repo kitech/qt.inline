@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptiongraphicsitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:699
+// [-2] void QStyleOptionGraphicsItem() 
+// (12)qm3479475705 (33)_ZN24QStyleOptionGraphicsItemC2Ev
+/*void* qm3479475705()*/{
+  ;
+  this_ =  new QStyleOptionGraphicsItem();
+  this_ =  new MyQStyleOptionGraphicsItem();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:700
 // [-2] void QStyleOptionGraphicsItem(const QStyleOptionGraphicsItem &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptiongraphicsitem(void* this_) {
 /*void* qm979391014(const QStyleOptionGraphicsItem & other)*/{
   const QStyleOptionGraphicsItem & other = *(const QStyleOptionGraphicsItem *)this_;
   this_ =  new QStyleOptionGraphicsItem(other);
+  this_ =  new MyQStyleOptionGraphicsItem(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -68,6 +68,76 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextcursor(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:69
+// [-2] void QTextCursor() 
+// (12)qm2916220890 (20)_ZN11QTextCursorC2Ev
+/*void* qm2916220890()*/{
+  ;
+  this_ =  new QTextCursor();
+  this_ =  new MyQTextCursor();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:70
+// [-2] void QTextCursor(QTextDocument *) 
+// (12)qm4247658738 (35)_ZN11QTextCursorC2EP13QTextDocument
+/*void* qm4247658738(QTextDocument * document)*/{
+  QTextDocument * document = *(QTextDocument **)this_;
+  this_ =  new QTextCursor(document);
+  this_ =  new MyQTextCursor(document);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:71
+// [-2] void QTextCursor(QTextDocumentPrivate *, int) 
+// (12)qm1584463576 (43)_ZN11QTextCursorC2EP20QTextDocumentPrivatei
+/*void* qm1584463576(QTextDocumentPrivate * p, int pos)*/{
+  QTextDocumentPrivate * p = *(QTextDocumentPrivate **)this_; int pos = *(int*)this_;
+  this_ =  new QTextCursor(p, pos);
+  this_ =  new MyQTextCursor(p, pos);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:72
+// [-2] void QTextCursor(QTextCursorPrivate *) 
+// (11)qm126686025 (40)_ZN11QTextCursorC2EP18QTextCursorPrivate
+/*void* qm126686025(QTextCursorPrivate * d)*/{
+  QTextCursorPrivate * d = *(QTextCursorPrivate **)this_;
+  this_ =  new QTextCursor(d);
+  this_ =  new MyQTextCursor(d);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:73
+// [-2] void QTextCursor(QTextFrame *) 
+// (12)qm3664562759 (32)_ZN11QTextCursorC2EP10QTextFrame
+/*void* qm3664562759(QTextFrame * frame)*/{
+  QTextFrame * frame = *(QTextFrame **)this_;
+  this_ =  new QTextCursor(frame);
+  this_ =  new MyQTextCursor(frame);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:74
+// [-2] void QTextCursor(const QTextBlock &) 
+// (11)qm996200562 (33)_ZN11QTextCursorC2ERK10QTextBlock
+/*void* qm996200562(const QTextBlock & block)*/{
+  const QTextBlock & block = *(const QTextBlock *)this_;
+  this_ =  new QTextCursor(block);
+  this_ =  new MyQTextCursor(block);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextcursor.h:75
+// [-2] void QTextCursor(const QTextCursor &) 
+// (11)qm611479251 (23)_ZN11QTextCursorC2ERKS_
+/*void* qm611479251(const QTextCursor & cursor)*/{
+  const QTextCursor & cursor = *(const QTextCursor *)this_;
+  this_ =  new QTextCursor(cursor);
+  this_ =  new MyQTextCursor(cursor);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextcursor.h:76
 // [8] QTextCursor & operator=(QTextCursor &&) 

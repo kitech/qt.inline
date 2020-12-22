@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtabletevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:290
+// [-2] void QTabletEvent(QEvent::Type, const QPointF &, const QPointF &, int, int, qreal, int, int, qreal, qreal, int, Qt::KeyboardModifiers, qint64, Qt::MouseButton, Qt::MouseButtons) 
+// (12)qm3683562185 (114)_ZN12QTabletEventC2EN6QEvent4TypeERK7QPointFS4_iidiiddi6QFlagsIN2Qt16KeyboardModifierEExNS6_11MouseButtonES5_IS9_E
+/*void* qm3683562185(QEvent::Type t, const QPointF & pos, const QPointF & globalPos, int device, int pointerType, double pressure, int xTilt, int yTilt, double tangentialPressure, double rotation, int z, QFlags<Qt::KeyboardModifier> keyState, long long uniqueID, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons)*/{
+  QEvent::Type t = *(QEvent::Type*)this_; const QPointF & pos = *(const QPointF *)this_; const QPointF & globalPos = *(const QPointF *)this_; int device = *(int*)this_; int pointerType = *(int*)this_; double pressure = *(double*)this_; int xTilt = *(int*)this_; int yTilt = *(int*)this_; double tangentialPressure = *(double*)this_; double rotation = *(double*)this_; int z = *(int*)this_; QFlags<Qt::KeyboardModifier> keyState = *(QFlags<Qt::KeyboardModifier>*)this_; long long uniqueID = *(long long*)this_; Qt::MouseButton button = *(Qt::MouseButton*)this_; QFlags<Qt::MouseButton> buttons = *(QFlags<Qt::MouseButton>*)this_;
+  this_ =  new QTabletEvent(t, pos, globalPos, device, pointerType, pressure, xTilt, yTilt, tangentialPressure, rotation, z, keyState, uniqueID, button, buttons);
+  this_ =  new MyQTabletEvent(t, pos, globalPos, device, pointerType, pressure, xTilt, yTilt, tangentialPressure, rotation, z, keyState, uniqueID, button, buttons);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:297
 // [8] QPoint pos() const

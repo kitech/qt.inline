@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptiongroupbox(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:667
+// [-2] void QStyleOptionGroupBox() 
+// (12)qm1776856900 (29)_ZN20QStyleOptionGroupBoxC2Ev
+/*void* qm1776856900()*/{
+  ;
+  this_ =  new QStyleOptionGroupBox();
+  this_ =  new MyQStyleOptionGroupBox();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:668
 // [-2] void QStyleOptionGroupBox(const QStyleOptionGroupBox &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptiongroupbox(void* this_) {
 /*void* qm910241457(const QStyleOptionGroupBox & other)*/{
   const QStyleOptionGroupBox & other = *(const QStyleOptionGroupBox *)this_;
   this_ =  new QStyleOptionGroupBox(other);
+  this_ =  new MyQStyleOptionGroupBox(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

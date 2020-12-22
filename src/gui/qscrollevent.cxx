@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qscrollevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:1081
+// [-2] void QScrollEvent(const QPointF &, const QPointF &, QScrollEvent::ScrollState) 
+// (12)qm3236102957 (50)_ZN12QScrollEventC2ERK7QPointFS2_NS_11ScrollStateE
+/*void* qm3236102957(const QPointF & contentPos, const QPointF & overshoot, QScrollEvent::ScrollState scrollState)*/{
+  const QPointF & contentPos = *(const QPointF *)this_; const QPointF & overshoot = *(const QPointF *)this_; QScrollEvent::ScrollState scrollState = *(QScrollEvent::ScrollState*)this_;
+  this_ =  new QScrollEvent(contentPos, overshoot, scrollState);
+  this_ =  new MyQScrollEvent(contentPos, overshoot, scrollState);
+}
+
 
 /*void C_ZN12QScrollEventD2Ev(void *this_)*/ {
   delete (QScrollEvent*)(this_);

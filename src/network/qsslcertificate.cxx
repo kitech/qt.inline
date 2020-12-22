@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslcertificate(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:94
+// [-2] void QSslCertificate(QIODevice *, QSsl::EncodingFormat) 
+// (12)qm4235676370 (57)_ZN15QSslCertificateC2EP9QIODeviceN4QSsl14EncodingFormatE
+/*void* qm4235676370(QIODevice * device, QSsl::EncodingFormat format)*/{
+  QIODevice * device = *(QIODevice **)this_; QSsl::EncodingFormat format = *(QSsl::EncodingFormat*)this_;
+  this_ =  new QSslCertificate(device, format);
+  this_ =  new MyQSslCertificate(device, format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:95
+// [-2] void QSslCertificate(const QByteArray &, QSsl::EncodingFormat) 
+// (11)qm671911435 (60)_ZN15QSslCertificateC2ERK10QByteArrayN4QSsl14EncodingFormatE
+/*void* qm671911435(const QByteArray & data, QSsl::EncodingFormat format)*/{
+  const QByteArray & data = *(const QByteArray *)this_; QSsl::EncodingFormat format = *(QSsl::EncodingFormat*)this_;
+  this_ =  new QSslCertificate(data, format);
+  this_ =  new MyQSslCertificate(data, format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcertificate.h:96
+// [-2] void QSslCertificate(const QSslCertificate &) 
+// (12)qm3291796427 (27)_ZN15QSslCertificateC2ERKS_
+/*void* qm3291796427(const QSslCertificate & other)*/{
+  const QSslCertificate & other = *(const QSslCertificate *)this_;
+  this_ =  new QSslCertificate(other);
+  this_ =  new MyQSslCertificate(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcertificate.h:98
 // [8] QSslCertificate & operator=(QSslCertificate &&) 

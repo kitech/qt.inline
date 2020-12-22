@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qsoundeffect(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qsoundeffect.h:84
+// [-2] void QSoundEffect(QObject *) 
+// (12)qm2932989333 (29)_ZN12QSoundEffectC2EP7QObject
+/*void* qm2932989333(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSoundEffect(parent);
+  this_ =  new MyQSoundEffect(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qsoundeffect.h:85
+// [-2] void QSoundEffect(const QAudioDeviceInfo &, QObject *) 
+// (12)qm1069588072 (49)_ZN12QSoundEffectC2ERK16QAudioDeviceInfoP7QObject
+/*void* qm1069588072(const QAudioDeviceInfo & audioDevice, QObject * parent)*/{
+  const QAudioDeviceInfo & audioDevice = *(const QAudioDeviceInfo *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSoundEffect(audioDevice, parent);
+  this_ =  new MyQSoundEffect(audioDevice, parent);
+}
+
 
 /*void C_ZN12QSoundEffectD2Ev(void *this_)*/ {
   delete (QSoundEffect*)(this_);

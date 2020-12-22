@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qaudiodecoder(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodecoder.h:78
+// [-2] void QAudioDecoder(QObject *) 
+// (12)qm2833835735 (30)_ZN13QAudioDecoderC2EP7QObject
+/*void* qm2833835735(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QAudioDecoder(parent);
+  this_ =  new MyQAudioDecoder(parent);
+}
+
 
 /*void C_ZN13QAudioDecoderD2Ev(void *this_)*/ {
   delete (QAudioDecoder*)(this_);

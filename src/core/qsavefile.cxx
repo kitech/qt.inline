@@ -142,6 +142,39 @@ uint64_t ensure_inline_symbol_qsavefile(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsavefile.h:68
+// [-2] void QSaveFile(const QString &) 
+// (12)qm1581886403 (26)_ZN9QSaveFileC2ERK7QString
+/*void* qm1581886403(const QString & name)*/{
+  auto _nilp = (MyQSaveFile*)(0);
+  const QString & name = *(const QString *)this_;
+  this_ =  new QSaveFile(name);
+  this_ =  new MyQSaveFile(name);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsavefile.h:70
+// [-2] void QSaveFile(QObject *) 
+// (12)qm2934447819 (25)_ZN9QSaveFileC2EP7QObject
+/*void* qm2934447819(QObject * parent)*/{
+  auto _nilp = (MyQSaveFile*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSaveFile(parent);
+  this_ =  new MyQSaveFile(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsavefile.h:71
+// [-2] void QSaveFile(const QString &, QObject *) 
+// (11)qm289963964 (35)_ZN9QSaveFileC2ERK7QStringP7QObject
+/*void* qm289963964(const QString & name, QObject * parent)*/{
+  auto _nilp = (MyQSaveFile*)(0);
+  const QString & name = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSaveFile(name, parent);
+  this_ =  new MyQSaveFile(name, parent);
+}
+
 
 /*void C_ZN9QSaveFileD2Ev(void *this_)*/ {
   delete (QSaveFile*)(this_);

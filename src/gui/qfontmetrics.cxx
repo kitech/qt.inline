@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfontmetrics(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:61
+// [-2] void QFontMetrics(const QFont &) 
+// (12)qm1203140175 (28)_ZN12QFontMetricsC2ERK5QFont
+/*void* qm1203140175(const QFont & arg0)*/{
+  const QFont & arg0 = *(const QFont *)this_;
+  this_ =  new QFontMetrics(arg0);
+  this_ =  new MyQFontMetrics(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:63
+// [-2] void QFontMetrics(const QFont &, QPaintDevice *) 
+// (12)qm3035092134 (43)_ZN12QFontMetricsC2ERK5QFontP12QPaintDevice
+/*void* qm3035092134(const QFont & font, QPaintDevice * pd)*/{
+  const QFont & font = *(const QFont *)this_; QPaintDevice * pd = *(QPaintDevice **)this_;
+  this_ =  new QFontMetrics(font, pd);
+  this_ =  new MyQFontMetrics(font, pd);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:75
+// [-2] void QFontMetrics(const QFontMetrics &) 
+// (12)qm1245860941 (24)_ZN12QFontMetricsC2ERKS_
+/*void* qm1245860941(const QFontMetrics & arg0)*/{
+  const QFontMetrics & arg0 = *(const QFontMetrics *)this_;
+  this_ =  new QFontMetrics(arg0);
+  this_ =  new MyQFontMetrics(arg0);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:79
 // [8] QFontMetrics & operator=(QFontMetrics &&) 

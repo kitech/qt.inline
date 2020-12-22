@@ -176,6 +176,17 @@ uint64_t ensure_inline_symbol_qwidgetaction(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qwidgetaction.h:59
+// [-2] void QWidgetAction(QObject *) 
+// (12)qm1034126192 (30)_ZN13QWidgetActionC2EP7QObject
+/*void* qm1034126192(QObject * parent)*/{
+  auto _nilp = (MyQWidgetAction*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QWidgetAction(parent);
+  this_ =  new MyQWidgetAction(parent);
+}
+
 
 /*void C_ZN13QWidgetActionD2Ev(void *this_)*/ {
   delete (QWidgetAction*)(this_);

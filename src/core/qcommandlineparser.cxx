@@ -71,6 +71,16 @@ uint64_t ensure_inline_symbol_qcommandlineparser(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineparser.h:59
+// [-2] void QCommandLineParser() 
+// (12)qm1620353516 (27)_ZN18QCommandLineParserC2Ev
+/*void* qm1620353516()*/{
+  ;
+  this_ =  new QCommandLineParser();
+  this_ =  new MyQCommandLineParser();
+}
+
 
 /*void C_ZN18QCommandLineParserD2Ev(void *this_)*/ {
   delete (QCommandLineParser*)(this_);

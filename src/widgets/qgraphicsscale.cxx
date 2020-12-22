@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qgraphicsscale(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicstransform.h:88
+// [-2] void QGraphicsScale(QObject *) 
+// (12)qm4160837767 (31)_ZN14QGraphicsScaleC2EP7QObject
+/*void* qm4160837767(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsScale(parent);
+  this_ =  new MyQGraphicsScale(parent);
+}
+
 
 /*void C_ZN14QGraphicsScaleD2Ev(void *this_)*/ {
   delete (QGraphicsScale*)(this_);

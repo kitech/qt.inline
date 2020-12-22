@@ -251,6 +251,17 @@ uint64_t ensure_inline_symbol_qmdiarea(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmdiarea.h:90
+// [-2] void QMdiArea(QWidget *) 
+// (12)qm3444333716 (24)_ZN8QMdiAreaC2EP7QWidget
+/*void* qm3444333716(QWidget * parent)*/{
+  auto _nilp = (MyQMdiArea*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QMdiArea(parent);
+  this_ =  new MyQMdiArea(parent);
+}
+
 
 /*void C_ZN8QMdiAreaD2Ev(void *this_)*/ {
   delete (QMdiArea*)(this_);

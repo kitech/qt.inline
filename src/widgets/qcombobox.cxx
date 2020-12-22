@@ -296,6 +296,17 @@ uint64_t ensure_inline_symbol_qcombobox(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcombobox.h:88
+// [-2] void QComboBox(QWidget *) 
+// (11)qm400444357 (25)_ZN9QComboBoxC2EP7QWidget
+/*void* qm400444357(QWidget * parent)*/{
+  auto _nilp = (MyQComboBox*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QComboBox(parent);
+  this_ =  new MyQComboBox(parent);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qcombobox.h:117
 // [4] int findText(const QString &, Qt::MatchFlags) const

@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwebenginescript(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginescript.h:68
+// [-2] void QWebEngineScript() 
+// (12)qm1866397586 (25)_ZN16QWebEngineScriptC2Ev
+/*void* qm1866397586()*/{
+  ;
+  this_ =  new QWebEngineScript();
+  this_ =  new MyQWebEngineScript();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginescript.h:69
+// [-2] void QWebEngineScript(const QWebEngineScript &) 
+// (12)qm2727856008 (28)_ZN16QWebEngineScriptC2ERKS_
+/*void* qm2727856008(const QWebEngineScript & other)*/{
+  const QWebEngineScript & other = *(const QWebEngineScript *)this_;
+  this_ =  new QWebEngineScript(other);
+  this_ =  new MyQWebEngineScript(other);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginescript.h:92
 // [1] bool operator!=(const QWebEngineScript &) const

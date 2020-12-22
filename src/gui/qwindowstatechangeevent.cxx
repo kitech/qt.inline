@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwindowstatechangeevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:825
+// [-2] void QWindowStateChangeEvent(Qt::WindowStates, bool) 
+// (12)qm1742490735 (59)_ZN23QWindowStateChangeEventC2E6QFlagsIN2Qt11WindowStateEEb
+/*void* qm1742490735(QFlags<Qt::WindowState> aOldState, bool isOverride)*/{
+  QFlags<Qt::WindowState> aOldState = *(QFlags<Qt::WindowState>*)this_; bool isOverride = *(bool*)this_;
+  this_ =  new QWindowStateChangeEvent(aOldState, isOverride);
+  this_ =  new MyQWindowStateChangeEvent(aOldState, isOverride);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:828
 // [4] Qt::WindowStates oldState() const

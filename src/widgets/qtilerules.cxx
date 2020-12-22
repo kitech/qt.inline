@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qtilerules(void* this_) {
 /*void* qm1662546004(Qt::TileRule horizontalRule, Qt::TileRule verticalRule)*/{
   Qt::TileRule horizontalRule = *(Qt::TileRule*)this_; Qt::TileRule verticalRule = *(Qt::TileRule*)this_;
   this_ =  new QTileRules(horizontalRule, verticalRule);
+  this_ =  new MyQTileRules(horizontalRule, verticalRule);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qtilerules(void* this_) {
 /*void* qm2498436669(Qt::TileRule rule)*/{
   Qt::TileRule rule = *(Qt::TileRule*)this_;
   this_ =  new QTileRules(rule);
+  this_ =  new MyQTileRules(rule);
 }
 
 

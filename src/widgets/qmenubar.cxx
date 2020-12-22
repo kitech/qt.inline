@@ -298,6 +298,17 @@ uint64_t ensure_inline_symbol_qmenubar(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenubar.h:63
+// [-2] void QMenuBar(QWidget *) 
+// (12)qm4217600900 (24)_ZN8QMenuBarC2EP7QWidget
+/*void* qm4217600900(QWidget * parent)*/{
+  auto _nilp = (MyQMenuBar*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QMenuBar(parent);
+  this_ =  new MyQMenuBar(parent);
+}
+
 
 /*void C_ZN8QMenuBarD2Ev(void *this_)*/ {
   delete (QMenuBar*)(this_);

@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgsimplerectnode(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgsimplerectnode.h:51
+// [-2] void QSGSimpleRectNode(const QRectF &, const QColor &) 
+// (12)qm3229304132 (43)_ZN17QSGSimpleRectNodeC2ERK6QRectFRK6QColor
+/*void* qm3229304132(const QRectF & rect, const QColor & color)*/{
+  const QRectF & rect = *(const QRectF *)this_; const QColor & color = *(const QColor *)this_;
+  this_ =  new QSGSimpleRectNode(rect, color);
+  this_ =  new MyQSGSimpleRectNode(rect, color);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgsimplerectnode.h:52
+// [-2] void QSGSimpleRectNode() 
+// (12)qm1180848505 (26)_ZN17QSGSimpleRectNodeC2Ev
+/*void* qm1180848505()*/{
+  ;
+  this_ =  new QSGSimpleRectNode();
+  this_ =  new MyQSGSimpleRectNode();
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgsimplerectnode.h:55
 // [-2] void setRect(qreal, qreal, qreal, qreal) 

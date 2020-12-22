@@ -132,6 +132,36 @@ uint64_t ensure_inline_symbol_qundoview(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qundoview.h:65
+// [-2] void QUndoView(QWidget *) 
+// (12)qm3245447777 (25)_ZN9QUndoViewC2EP7QWidget
+/*void* qm3245447777(QWidget * parent)*/{
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QUndoView(parent);
+  this_ =  new MyQUndoView(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qundoview.h:66
+// [-2] void QUndoView(QUndoStack *, QWidget *) 
+// (11)qm168829214 (38)_ZN9QUndoViewC2EP10QUndoStackP7QWidget
+/*void* qm168829214(QUndoStack * stack, QWidget * parent)*/{
+  QUndoStack * stack = *(QUndoStack **)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QUndoView(stack, parent);
+  this_ =  new MyQUndoView(stack, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qundoview.h:68
+// [-2] void QUndoView(QUndoGroup *, QWidget *) 
+// (12)qm2782390845 (38)_ZN9QUndoViewC2EP10QUndoGroupP7QWidget
+/*void* qm2782390845(QUndoGroup * group, QWidget * parent)*/{
+  QUndoGroup * group = *(QUndoGroup **)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QUndoView(group, parent);
+  this_ =  new MyQUndoView(group, parent);
+}
+
 
 /*void C_ZN9QUndoViewD2Ev(void *this_)*/ {
   delete (QUndoView*)(this_);

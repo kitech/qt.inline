@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qopenglshaderprogram(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglshaderprogram.h:110
+// [-2] void QOpenGLShaderProgram(QObject *) 
+// (11)qm532219565 (37)_ZN20QOpenGLShaderProgramC2EP7QObject
+/*void* qm532219565(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QOpenGLShaderProgram(parent);
+  this_ =  new MyQOpenGLShaderProgram(parent);
+}
+
 
 /*void C_ZN20QOpenGLShaderProgramD2Ev(void *this_)*/ {
   delete (QOpenGLShaderProgram*)(this_);

@@ -80,6 +80,17 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qqmlincubator(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlincubator.h:72
+// [-2] void QQmlIncubator(QQmlIncubator::IncubationMode) 
+// (12)qm3785200753 (41)_ZN13QQmlIncubatorC2ENS_14IncubationModeE
+/*void* qm3785200753(QQmlIncubator::IncubationMode arg0)*/{
+  auto _nilp = (MyQQmlIncubator*)(0);
+  QQmlIncubator::IncubationMode arg0 = *(QQmlIncubator::IncubationMode*)this_;
+  this_ =  new QQmlIncubator(arg0);
+  this_ =  new MyQQmlIncubator(arg0);
+}
+
 
 /*void C_ZN13QQmlIncubatorD2Ev(void *this_)*/ {
   delete (QQmlIncubator*)(this_);

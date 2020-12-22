@@ -166,6 +166,28 @@ uint64_t ensure_inline_symbol_qfiledialog(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfiledialog.h:107
+// [-2] void QFileDialog(QWidget *, Qt::WindowFlags) 
+// (12)qm3242626269 (54)_ZN11QFileDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm3242626269(QWidget * parent, QFlags<Qt::WindowType> f)*/{
+  auto _nilp = (MyQFileDialog*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> f = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QFileDialog(parent, f);
+  this_ =  new MyQFileDialog(parent, f);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfiledialog.h:108
+// [-2] void QFileDialog(QWidget *, const QString &, const QString &, const QString &) 
+// (12)qm4174434543 (44)_ZN11QFileDialogC2EP7QWidgetRK7QStringS4_S4_
+/*void* qm4174434543(QWidget * parent, const QString & caption, const QString & directory, const QString & filter)*/{
+  auto _nilp = (MyQFileDialog*)(0);
+  QWidget * parent = *(QWidget **)this_; const QString & caption = *(const QString *)this_; const QString & directory = *(const QString *)this_; const QString & filter = *(const QString *)this_;
+  this_ =  new QFileDialog(parent, caption, directory, filter);
+  this_ =  new MyQFileDialog(parent, caption, directory, filter);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfiledialog.h:115
 // [-2] void setDirectory(const QDir &) 

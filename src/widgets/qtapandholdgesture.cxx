@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qtapandholdgesture(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:260
+// [-2] void QTapAndHoldGesture(QObject *) 
+// (12)qm2293637655 (35)_ZN18QTapAndHoldGestureC2EP7QObject
+/*void* qm2293637655(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QTapAndHoldGesture(parent);
+  this_ =  new MyQTapAndHoldGesture(parent);
+}
+
 
 /*void C_ZN18QTapAndHoldGestureD2Ev(void *this_)*/ {
   delete (QTapAndHoldGesture*)(this_);

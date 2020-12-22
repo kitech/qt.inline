@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qtextlist(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlist.h:57
+// [-2] void QTextList(QTextDocument *) 
+// (12)qm4001948172 (32)_ZN9QTextListC2EP13QTextDocument
+/*void* qm4001948172(QTextDocument * doc)*/{
+  QTextDocument * doc = *(QTextDocument **)this_;
+  this_ =  new QTextList(doc);
+  this_ =  new MyQTextList(doc);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlist.h:78
 // [-2] void setFormat(const QTextListFormat &) 

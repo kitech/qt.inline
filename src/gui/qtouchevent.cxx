@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtouchevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:1001
+// [-2] void QTouchEvent(QEvent::Type, QTouchDevice *, Qt::KeyboardModifiers, Qt::TouchPointStates, const QList<QTouchEvent::TouchPoint> &) 
+// (12)qm3797961829 (133)_ZN11QTouchEventC2EN6QEvent4TypeEP12QTouchDevice6QFlagsIN2Qt16KeyboardModifierEES4_INS5_15TouchPointStateEERK5QListINS_10TouchPointEE
+/*void* qm3797961829(QEvent::Type eventType, QTouchDevice * device, QFlags<Qt::KeyboardModifier> modifiers, QFlags<Qt::TouchPointState> touchPointStates, const QList<QTouchEvent::TouchPoint> & touchPoints)*/{
+  QEvent::Type eventType = *(QEvent::Type*)this_; QTouchDevice * device = *(QTouchDevice **)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_; QFlags<Qt::TouchPointState> touchPointStates = *(QFlags<Qt::TouchPointState>*)this_; const QList<QTouchEvent::TouchPoint> & touchPoints = *(const QList<QTouchEvent::TouchPoint> *)this_;
+  this_ =  new QTouchEvent(eventType, device, modifiers, touchPointStates, touchPoints);
+  this_ =  new MyQTouchEvent(eventType, device, modifiers, touchPointStates, touchPoints);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:1008
 // [8] QWindow * window() const

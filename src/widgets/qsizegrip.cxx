@@ -238,6 +238,17 @@ uint64_t ensure_inline_symbol_qsizegrip(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsizegrip.h:55
+// [-2] void QSizeGrip(QWidget *) 
+// (12)qm2408652028 (25)_ZN9QSizeGripC2EP7QWidget
+/*void* qm2408652028(QWidget * parent)*/{
+  auto _nilp = (MyQSizeGrip*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QSizeGrip(parent);
+  this_ =  new MyQSizeGrip(parent);
+}
+
 
 /*void C_ZN9QSizeGripD2Ev(void *this_)*/ {
   delete (QSizeGrip*)(this_);

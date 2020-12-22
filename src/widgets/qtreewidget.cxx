@@ -206,6 +206,17 @@ uint64_t ensure_inline_symbol_qtreewidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:273
+// [-2] void QTreeWidget(QWidget *) 
+// (12)qm3888562791 (28)_ZN11QTreeWidgetC2EP7QWidget
+/*void* qm3888562791(QWidget * parent)*/{
+  auto _nilp = (MyQTreeWidget*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTreeWidget(parent);
+  this_ =  new MyQTreeWidget(parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:293
 // [-2] void setHeaderLabel(const QString &) 

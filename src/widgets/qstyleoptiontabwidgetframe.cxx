@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptiontabwidgetframe(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:173
+// [-2] void QStyleOptionTabWidgetFrame() 
+// (12)qm3248001666 (35)_ZN26QStyleOptionTabWidgetFrameC2Ev
+/*void* qm3248001666()*/{
+  ;
+  this_ =  new QStyleOptionTabWidgetFrame();
+  this_ =  new MyQStyleOptionTabWidgetFrame();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:174
 // [-2] void QStyleOptionTabWidgetFrame(const QStyleOptionTabWidgetFrame &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptiontabwidgetframe(void* this_) {
 /*void* qm2576285033(const QStyleOptionTabWidgetFrame & other)*/{
   const QStyleOptionTabWidgetFrame & other = *(const QStyleOptionTabWidgetFrame *)this_;
   this_ =  new QStyleOptionTabWidgetFrame(other);
+  this_ =  new MyQStyleOptionTabWidgetFrame(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

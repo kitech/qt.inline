@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qresizeevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:505
+// [-2] void QResizeEvent(const QSize &, const QSize &) 
+// (11)qm194315494 (31)_ZN12QResizeEventC2ERK5QSizeS2_
+/*void* qm194315494(const QSize & size, const QSize & oldSize)*/{
+  const QSize & size = *(const QSize *)this_; const QSize & oldSize = *(const QSize *)this_;
+  this_ =  new QResizeEvent(size, oldSize);
+  this_ =  new MyQResizeEvent(size, oldSize);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:508
 // [8] const QSize & size() const

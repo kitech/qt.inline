@@ -68,6 +68,17 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qqmlincubationcontroller(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlincubator.h:109
+// [-2] void QQmlIncubationController() 
+// (12)qm3346595152 (33)_ZN24QQmlIncubationControllerC2Ev
+/*void* qm3346595152()*/{
+  auto _nilp = (MyQQmlIncubationController*)(0);
+  ;
+  this_ =  new QQmlIncubationController();
+  this_ =  new MyQQmlIncubationController();
+}
+
 
 /*void C_ZN24QQmlIncubationControllerD2Ev(void *this_)*/ {
   delete (QQmlIncubationController*)(this_);

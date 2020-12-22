@@ -60,6 +60,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qssldiffiehellmanparameters(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:84
+// [-2] void QSslDiffieHellmanParameters() 
+// (11)qm127126037 (36)_ZN27QSslDiffieHellmanParametersC2Ev
+/*void* qm127126037()*/{
+  ;
+  this_ =  new QSslDiffieHellmanParameters();
+  this_ =  new MyQSslDiffieHellmanParameters();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:85
+// [-2] void QSslDiffieHellmanParameters(const QSslDiffieHellmanParameters &) 
+// (12)qm2221038862 (39)_ZN27QSslDiffieHellmanParametersC2ERKS_
+/*void* qm2221038862(const QSslDiffieHellmanParameters & other)*/{
+  const QSslDiffieHellmanParameters & other = *(const QSslDiffieHellmanParameters *)this_;
+  this_ =  new QSslDiffieHellmanParameters(other);
+  this_ =  new MyQSslDiffieHellmanParameters(other);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qssldiffiehellmanparameters.h:86
 // [-2] void QSslDiffieHellmanParameters(QSslDiffieHellmanParameters &&) 
@@ -67,6 +87,7 @@ uint64_t ensure_inline_symbol_qssldiffiehellmanparameters(void* this_) {
 /*void* qm1277510715(QSslDiffieHellmanParameters && other)*/{
   QSslDiffieHellmanParameters && other =  static_cast<QSslDiffieHellmanParameters &&>(*(QSslDiffieHellmanParameters *)this_);
   this_ =  new QSslDiffieHellmanParameters(other);
+  this_ =  new MyQSslDiffieHellmanParameters(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

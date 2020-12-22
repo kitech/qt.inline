@@ -116,15 +116,6 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfuturewatcher(void* this_) {
   uint64_t fnptrsumval = 0;
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuturewatcher.h:187
-// [-2] void QFutureWatcher(QObject *) 
-// (12)qm2284928351 (34)_ZN14QFutureWatcherIvEC2EP7QObject
-/*void* qm2284928351(QObject * _parent)*/{
-  QObject * _parent = *(QObject **)this_;
-  this_ =  new QFutureWatcher<void>(_parent);
-}
-
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuturewatcher.h:190
 // [-2] void ~QFutureWatcher() 

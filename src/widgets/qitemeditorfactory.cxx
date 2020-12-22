@@ -66,6 +66,7 @@ uint64_t ensure_inline_symbol_qitemeditorfactory(void* this_) {
 /*void* qm2809309265()*/{
   ;
   this_ =  new QItemEditorFactory();
+  this_ =  new MyQItemEditorFactory();
 }
 
 

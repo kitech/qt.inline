@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qradiotuner(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiotuner.h:81
+// [-2] void QRadioTuner(QObject *) 
+// (12)qm3692540921 (28)_ZN11QRadioTunerC2EP7QObject
+/*void* qm3692540921(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QRadioTuner(parent);
+  this_ =  new MyQRadioTuner(parent);
+}
+
 
 /*void C_ZN11QRadioTunerD2Ev(void *this_)*/ {
   delete (QRadioTuner*)(this_);

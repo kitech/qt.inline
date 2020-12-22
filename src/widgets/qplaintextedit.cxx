@@ -458,6 +458,28 @@ uint64_t ensure_inline_symbol_qplaintextedit(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qplaintextedit.h:95
+// [-2] void QPlainTextEdit(QWidget *) 
+// (11)qm396516486 (31)_ZN14QPlainTextEditC2EP7QWidget
+/*void* qm396516486(QWidget * parent)*/{
+  auto _nilp = (MyQPlainTextEdit*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QPlainTextEdit(parent);
+  this_ =  new MyQPlainTextEdit(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qplaintextedit.h:96
+// [-2] void QPlainTextEdit(const QString &, QWidget *) 
+// (12)qm2780232515 (41)_ZN14QPlainTextEditC2ERK7QStringP7QWidget
+/*void* qm2780232515(const QString & text, QWidget * parent)*/{
+  auto _nilp = (MyQPlainTextEdit*)(0);
+  const QString & text = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QPlainTextEdit(text, parent);
+  this_ =  new MyQPlainTextEdit(text, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qplaintextedit.h:121
 // [-2] void setDocumentTitle(const QString &) 

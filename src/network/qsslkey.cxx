@@ -66,6 +66,66 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslkey(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:63
+// [-2] void QSslKey() 
+// (11)qm176985637 (15)_ZN7QSslKeyC2Ev
+/*void* qm176985637()*/{
+  ;
+  this_ =  new QSslKey();
+  this_ =  new MyQSslKey();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:64
+// [-2] void QSslKey(const QByteArray &, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const QByteArray &) 
+// (10)qm68009653 (86)_ZN7QSslKeyC2ERK10QByteArrayN4QSsl12KeyAlgorithmENS3_14EncodingFormatENS3_7KeyTypeES2_
+/*void* qm68009653(const QByteArray & encoded, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase)*/{
+  const QByteArray & encoded = *(const QByteArray *)this_; QSsl::KeyAlgorithm algorithm = *(QSsl::KeyAlgorithm*)this_; QSsl::EncodingFormat format = *(QSsl::EncodingFormat*)this_; QSsl::KeyType type_ = *(QSsl::KeyType*)this_; const QByteArray & passPhrase = *(const QByteArray *)this_;
+  this_ =  new QSslKey(encoded, algorithm, format, type_, passPhrase);
+  this_ =  new MyQSslKey(encoded, algorithm, format, type_, passPhrase);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:68
+// [-2] void QSslKey(QIODevice *, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const QByteArray &) 
+// (12)qm4041924596 (94)_ZN7QSslKeyC2EP9QIODeviceN4QSsl12KeyAlgorithmENS2_14EncodingFormatENS2_7KeyTypeERK10QByteArray
+/*void* qm4041924596(QIODevice * device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase)*/{
+  QIODevice * device = *(QIODevice **)this_; QSsl::KeyAlgorithm algorithm = *(QSsl::KeyAlgorithm*)this_; QSsl::EncodingFormat format = *(QSsl::EncodingFormat*)this_; QSsl::KeyType type_ = *(QSsl::KeyType*)this_; const QByteArray & passPhrase = *(const QByteArray *)this_;
+  this_ =  new QSslKey(device, algorithm, format, type_, passPhrase);
+  this_ =  new MyQSslKey(device, algorithm, format, type_, passPhrase);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:72
+// [-2] void QSslKey(Qt::HANDLE, QSsl::KeyType) 
+// (12)qm3271984934 (31)_ZN7QSslKeyC2EPvN4QSsl7KeyTypeE
+/*void* qm3271984934(void * handle, QSsl::KeyType type_)*/{
+  void * handle = *(void **)this_; QSsl::KeyType type_ = *(QSsl::KeyType*)this_;
+  this_ =  new QSslKey(handle, type_);
+  this_ =  new MyQSslKey(handle, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:73
+// [-2] void QSslKey(const QSslKey &) 
+// (11)qm990881598 (18)_ZN7QSslKeyC2ERKS_
+/*void* qm990881598(const QSslKey & other)*/{
+  const QSslKey & other = *(const QSslKey *)this_;
+  this_ =  new QSslKey(other);
+  this_ =  new MyQSslKey(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslkey.h:74
+// [-2] void QSslKey(QSslKey &&) 
+// (12)qm4055785992 (17)_ZN7QSslKeyC2EOS_
+/*void* qm4055785992(QSslKey && other)*/{
+  QSslKey && other =  static_cast<QSslKey &&>(*(QSslKey *)this_);
+  this_ =  new QSslKey(other);
+  this_ =  new MyQSslKey(other);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslkey.h:79
 // [-2] void swap(QSslKey &) 

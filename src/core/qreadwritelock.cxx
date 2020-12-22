@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qreadwritelock(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qreadwritelock.h:57
+// [-2] void QReadWriteLock(QReadWriteLock::RecursionMode) 
+// (12)qm1512914593 (41)_ZN14QReadWriteLockC2ENS_13RecursionModeE
+/*void* qm1512914593(QReadWriteLock::RecursionMode recursionMode)*/{
+  QReadWriteLock::RecursionMode recursionMode = *(QReadWriteLock::RecursionMode*)this_;
+  this_ =  new QReadWriteLock(recursionMode);
+  this_ =  new MyQReadWriteLock(recursionMode);
+}
+
 
 /*void C_ZN14QReadWriteLockD2Ev(void *this_)*/ {
   delete (QReadWriteLock*)(this_);

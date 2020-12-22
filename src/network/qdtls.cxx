@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qdtls(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdtls.h:130
+// [-2] void QDtls(QSslSocket::SslMode, QObject *) 
+// (12)qm3137421052 (43)_ZN5QDtlsC2EN10QSslSocket7SslModeEP7QObject
+/*void* qm3137421052(QSslSocket::SslMode mode, QObject * parent)*/{
+  QSslSocket::SslMode mode = *(QSslSocket::SslMode*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QDtls(mode, parent);
+  this_ =  new MyQDtls(mode, parent);
+}
+
 
 /*void C_ZN5QDtlsD2Ev(void *this_)*/ {
   delete (QDtls*)(this_);

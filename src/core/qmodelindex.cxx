@@ -66,6 +66,7 @@ uint64_t ensure_inline_symbol_qmodelindex(void* this_) {
 /*void* qm756365278()*/{
   ;
   this_ =  new QModelIndex();
+  this_ =  new MyQModelIndex();
 }
 
 // Public inline Direct Visibility=Default Availability=Available

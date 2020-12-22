@@ -67,6 +67,56 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcommandlineoption(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:61
+// [-2] void QCommandLineOption(const QString &) 
+// (12)qm2018568397 (36)_ZN18QCommandLineOptionC2ERK7QString
+/*void* qm2018568397(const QString & name)*/{
+  const QString & name = *(const QString *)this_;
+  this_ =  new QCommandLineOption(name);
+  this_ =  new MyQCommandLineOption(name);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:62
+// [-2] void QCommandLineOption(const QStringList &) 
+// (12)qm1822647685 (41)_ZN18QCommandLineOptionC2ERK11QStringList
+/*void* qm1822647685(const QStringList & names)*/{
+  const QStringList & names = *(const QStringList *)this_;
+  this_ =  new QCommandLineOption(names);
+  this_ =  new MyQCommandLineOption(names);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:63
+// [-2] void QCommandLineOption(const QString &, const QString &, const QString &, const QString &) 
+// (12)qm3631291941 (45)_ZN18QCommandLineOptionC2ERK7QStringS2_S2_S2_
+/*void* qm3631291941(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue)*/{
+  const QString & name = *(const QString *)this_; const QString & description = *(const QString *)this_; const QString & valueName = *(const QString *)this_; const QString & defaultValue = *(const QString *)this_;
+  this_ =  new QCommandLineOption(name, description, valueName, defaultValue);
+  this_ =  new MyQCommandLineOption(name, description, valueName, defaultValue);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:66
+// [-2] void QCommandLineOption(const QStringList &, const QString &, const QString &, const QString &) 
+// (12)qm2547001035 (57)_ZN18QCommandLineOptionC2ERK11QStringListRK7QStringS5_S5_
+/*void* qm2547001035(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue)*/{
+  const QStringList & names = *(const QStringList *)this_; const QString & description = *(const QString *)this_; const QString & valueName = *(const QString *)this_; const QString & defaultValue = *(const QString *)this_;
+  this_ =  new QCommandLineOption(names, description, valueName, defaultValue);
+  this_ =  new MyQCommandLineOption(names, description, valueName, defaultValue);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcommandlineoption.h:69
+// [-2] void QCommandLineOption(const QCommandLineOption &) 
+// (12)qm1154716957 (30)_ZN18QCommandLineOptionC2ERKS_
+/*void* qm1154716957(const QCommandLineOption & other)*/{
+  const QCommandLineOption & other = *(const QCommandLineOption *)this_;
+  this_ =  new QCommandLineOption(other);
+  this_ =  new MyQCommandLineOption(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcommandlineoption.h:74
 // [8] QCommandLineOption & operator=(QCommandLineOption &&) 

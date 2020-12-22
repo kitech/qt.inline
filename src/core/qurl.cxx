@@ -62,6 +62,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qurl(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:176
+// [-2] void QUrl() 
+// (11)qm887786197 (12)_ZN4QUrlC2Ev
+/*void* qm887786197()*/{
+  ;
+  this_ =  new QUrl();
+  this_ =  new MyQUrl();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:177
+// [-2] void QUrl(const QUrl &) 
+// (12)qm3429715424 (15)_ZN4QUrlC2ERKS_
+/*void* qm3429715424(const QUrl & copy)*/{
+  const QUrl & copy = *(const QUrl *)this_;
+  this_ =  new QUrl(copy);
+  this_ =  new MyQUrl(copy);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurl.h:182
+// [-2] void QUrl(const QString &, QUrl::ParsingMode) 
+// (12)qm2077668047 (38)_ZN4QUrlC2ERK7QStringNS_11ParsingModeE
+/*void* qm2077668047(const QString & url, QUrl::ParsingMode mode)*/{
+  const QString & url = *(const QString *)this_; QUrl::ParsingMode mode = *(QUrl::ParsingMode*)this_;
+  this_ =  new QUrl(url, mode);
+  this_ =  new MyQUrl(url, mode);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurl.h:185
 // [-2] void QUrl(QUrl &&) 
@@ -69,6 +99,7 @@ uint64_t ensure_inline_symbol_qurl(void* this_) {
 /*void* qm4043563420(QUrl && other)*/{
   QUrl && other =  static_cast<QUrl &&>(*(QUrl *)this_);
   this_ =  new QUrl(other);
+  this_ =  new MyQUrl(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

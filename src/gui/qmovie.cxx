@@ -132,6 +132,36 @@ uint64_t ensure_inline_symbol_qmovie(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmovie.h:82
+// [-2] void QMovie(QObject *) 
+// (12)qm1387148965 (22)_ZN6QMovieC2EP7QObject
+/*void* qm1387148965(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QMovie(parent);
+  this_ =  new MyQMovie(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmovie.h:83
+// [-2] void QMovie(QIODevice *, const QByteArray &, QObject *) 
+// (12)qm1044922179 (47)_ZN6QMovieC2EP9QIODeviceRK10QByteArrayP7QObject
+/*void* qm1044922179(QIODevice * device, const QByteArray & format, QObject * parent)*/{
+  QIODevice * device = *(QIODevice **)this_; const QByteArray & format = *(const QByteArray *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QMovie(device, format, parent);
+  this_ =  new MyQMovie(device, format, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmovie.h:84
+// [-2] void QMovie(const QString &, const QByteArray &, QObject *) 
+// (12)qm2183735277 (46)_ZN6QMovieC2ERK7QStringRK10QByteArrayP7QObject
+/*void* qm2183735277(const QString & fileName, const QByteArray & format, QObject * parent)*/{
+  const QString & fileName = *(const QString *)this_; const QByteArray & format = *(const QByteArray *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QMovie(fileName, format, parent);
+  this_ =  new MyQMovie(fileName, format, parent);
+}
+
 
 /*void C_ZN6QMovieD2Ev(void *this_)*/ {
   delete (QMovie*)(this_);

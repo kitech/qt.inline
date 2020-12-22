@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgeosatelliteinfo(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeosatelliteinfo.h:64
+// [-2] void QGeoSatelliteInfo() 
+// (12)qm4163357542 (26)_ZN17QGeoSatelliteInfoC2Ev
+/*void* qm4163357542()*/{
+  ;
+  this_ =  new QGeoSatelliteInfo();
+  this_ =  new MyQGeoSatelliteInfo();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeosatelliteinfo.h:65
+// [-2] void QGeoSatelliteInfo(const QGeoSatelliteInfo &) 
+// (11)qm130207020 (29)_ZN17QGeoSatelliteInfoC2ERKS_
+/*void* qm130207020(const QGeoSatelliteInfo & other)*/{
+  const QGeoSatelliteInfo & other = *(const QGeoSatelliteInfo *)this_;
+  this_ =  new QGeoSatelliteInfo(other);
+  this_ =  new MyQGeoSatelliteInfo(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeosatelliteinfo.h:66
+// [-2] void QGeoSatelliteInfo(QGeoSatelliteInfoPrivate &) 
+// (12)qm1403353915 (52)_ZN17QGeoSatelliteInfoC2ER24QGeoSatelliteInfoPrivate
+/*void* qm1403353915(QGeoSatelliteInfoPrivate & dd)*/{
+  QGeoSatelliteInfoPrivate & dd = *(QGeoSatelliteInfoPrivate *)this_;
+  this_ =  new QGeoSatelliteInfo(dd);
+  this_ =  new MyQGeoSatelliteInfo(dd);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeosatelliteinfo.h:72
 // [1] bool operator!=(const QGeoSatelliteInfo &) const

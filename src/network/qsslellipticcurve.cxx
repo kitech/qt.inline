@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qsslellipticcurve(void* this_) {
 /*void* qm24086401()*/{
   ;
   this_ =  new QSslEllipticCurve();
+  this_ =  new MyQSslEllipticCurve();
 }
 
 // Public inline Extend Visibility=Default Availability=Available

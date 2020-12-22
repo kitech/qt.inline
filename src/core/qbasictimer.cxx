@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qbasictimer(void* this_) {
 /*void* qm2325001196()*/{
   ;
   this_ =  new QBasicTimer();
+  this_ =  new MyQBasicTimer();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -83,6 +84,7 @@ uint64_t ensure_inline_symbol_qbasictimer(void* this_) {
 /*void* qm2692897360(QBasicTimer && other)*/{
   QBasicTimer && other =  static_cast<QBasicTimer &&>(*(QBasicTimer *)this_);
   this_ =  new QBasicTimer(other);
+  this_ =  new MyQBasicTimer(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

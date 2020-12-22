@@ -131,6 +131,46 @@ uint64_t ensure_inline_symbol_qfile(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:65
+// [-2] void QFile() 
+// (12)qm3708904495 (13)_ZN5QFileC2Ev
+/*void* qm3708904495()*/{
+  ;
+  this_ =  new QFile();
+  this_ =  new MyQFile();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:66
+// [-2] void QFile(const QString &) 
+// (12)qm3101884221 (22)_ZN5QFileC2ERK7QString
+/*void* qm3101884221(const QString & name)*/{
+  const QString & name = *(const QString *)this_;
+  this_ =  new QFile(name);
+  this_ =  new MyQFile(name);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:68
+// [-2] void QFile(QObject *) 
+// (12)qm1726013828 (21)_ZN5QFileC2EP7QObject
+/*void* qm1726013828(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QFile(parent);
+  this_ =  new MyQFile(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfile.h:69
+// [-2] void QFile(const QString &, QObject *) 
+// (11)qm463594883 (31)_ZN5QFileC2ERK7QStringP7QObject
+/*void* qm463594883(const QString & name, QObject * parent)*/{
+  const QString & name = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QFile(name, parent);
+  this_ =  new MyQFile(name, parent);
+}
+
 // Public static inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfile.h:92
 // [8] QByteArray encodeName(const QString &) 

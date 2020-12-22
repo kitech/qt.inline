@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qaccessibletextselectionevent(void* this_) {
 /*void* qm372479360(QObject * obj, int start, int end_)*/{
   QObject * obj = *(QObject **)this_; int start = *(int*)this_; int end_ = *(int*)this_;
   this_ =  new QAccessibleTextSelectionEvent(obj, start, end_);
+  this_ =  new MyQAccessibleTextSelectionEvent(obj, start, end_);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qaccessibletextselectionevent(void* this_) {
 /*void* qm624577784(QAccessibleInterface * iface, int start, int end_)*/{
   QAccessibleInterface * iface = *(QAccessibleInterface **)this_; int start = *(int*)this_; int end_ = *(int*)this_;
   this_ =  new QAccessibleTextSelectionEvent(iface, start, end_);
+  this_ =  new MyQAccessibleTextSelectionEvent(iface, start, end_);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

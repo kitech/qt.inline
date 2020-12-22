@@ -59,6 +59,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmimedatabase(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedatabase.h:63
+// [-2] void QMimeDatabase() 
+// (11)qm662991940 (22)_ZN13QMimeDatabaseC2Ev
+/*void* qm662991940()*/{
+  ;
+  this_ =  new QMimeDatabase();
+  this_ =  new MyQMimeDatabase();
+}
+
 
 /*void C_ZN13QMimeDatabaseD2Ev(void *this_)*/ {
   delete (QMimeDatabase*)(this_);

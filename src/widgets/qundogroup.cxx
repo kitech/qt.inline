@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qundogroup(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qundogroup.h:61
+// [-2] void QUndoGroup(QObject *) 
+// (11)qm171377295 (27)_ZN10QUndoGroupC2EP7QObject
+/*void* qm171377295(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QUndoGroup(parent);
+  this_ =  new MyQUndoGroup(parent);
+}
+
 
 /*void C_ZN10QUndoGroupD2Ev(void *this_)*/ {
   delete (QUndoGroup*)(this_);

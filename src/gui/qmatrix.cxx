@@ -71,6 +71,27 @@ uint64_t ensure_inline_symbol_qmatrix(void* this_) {
 /*void* qm4207020042(Qt::Initialization arg0)*/{
   Qt::Initialization arg0 = *(Qt::Initialization*)this_;
   this_ =  new QMatrix(arg0);
+  this_ =  new MyQMatrix(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:61
+// [-2] void QMatrix() 
+// (12)qm1775922781 (15)_ZN7QMatrixC2Ev
+/*void* qm1775922781()*/{
+  ;
+  this_ =  new QMatrix();
+  this_ =  new MyQMatrix();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:62
+// [-2] void QMatrix(qreal, qreal, qreal, qreal, qreal, qreal) 
+// (12)qm2063689224 (20)_ZN7QMatrixC2Edddddd
+/*void* qm2063689224(double m11, double m12, double m21, double m22, double dx, double dy)*/{
+  double m11 = *(double*)this_; double m12 = *(double*)this_; double m21 = *(double*)this_; double m22 = *(double*)this_; double dx = *(double*)this_; double dy = *(double*)this_;
+  this_ =  new QMatrix(m11, m12, m21, m22, dx, dy);
+  this_ =  new MyQMatrix(m11, m12, m21, m22, dx, dy);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -92,6 +113,17 @@ uint64_t ensure_inline_symbol_qmatrix(void* this_) {
 /*void* qm2772338830(QMatrix && other)*/{
   QMatrix && other =  static_cast<QMatrix &&>(*(QMatrix *)this_);
   this_ =  new QMatrix(other);
+  this_ =  new MyQMatrix(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix.h:72
+// [-2] void QMatrix(const QMatrix &) 
+// (12)qm1065353665 (18)_ZN7QMatrixC2ERKS_
+/*void* qm1065353665(const QMatrix & other)*/{
+  const QMatrix & other = *(const QMatrix *)this_;
+  this_ =  new QMatrix(other);
+  this_ =  new MyQMatrix(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

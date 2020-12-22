@@ -81,6 +81,83 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpixmap(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:64
+// [-2] void QPixmap() 
+// (11)qm440989401 (15)_ZN7QPixmapC2Ev
+/*void* qm440989401()*/{
+  auto _nilp = (MyQPixmap*)(0);
+  ;
+  this_ =  new QPixmap();
+  this_ =  new MyQPixmap();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:65
+// [-2] void QPixmap(QPlatformPixmap *) 
+// (11)qm666905070 (32)_ZN7QPixmapC2EP15QPlatformPixmap
+/*void* qm666905070(QPlatformPixmap * data)*/{
+  auto _nilp = (MyQPixmap*)(0);
+  QPlatformPixmap * data = *(QPlatformPixmap **)this_;
+  this_ =  new QPixmap(data);
+  this_ =  new MyQPixmap(data);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:66
+// [-2] void QPixmap(int, int) 
+// (12)qm3559070313 (16)_ZN7QPixmapC2Eii
+/*void* qm3559070313(int w, int h)*/{
+  auto _nilp = (MyQPixmap*)(0);
+  int w = *(int*)this_; int h = *(int*)this_;
+  this_ =  new QPixmap(w, h);
+  this_ =  new MyQPixmap(w, h);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:67
+// [-2] void QPixmap(const QSize &) 
+// (11)qm731491997 (22)_ZN7QPixmapC2ERK5QSize
+/*void* qm731491997(const QSize & arg0)*/{
+  auto _nilp = (MyQPixmap*)(0);
+  const QSize & arg0 = *(const QSize *)this_;
+  this_ =  new QPixmap(arg0);
+  this_ =  new MyQPixmap(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:68
+// [-2] void QPixmap(const QString &, const char *, Qt::ImageConversionFlags) 
+// (12)qm2547731876 (62)_ZN7QPixmapC2ERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE
+/*void* qm2547731876(const QString & fileName, const char * format, QFlags<Qt::ImageConversionFlag> flags)*/{
+  auto _nilp = (MyQPixmap*)(0);
+  const QString & fileName = *(const QString *)this_; const char * format = *(const char **)this_; QFlags<Qt::ImageConversionFlag> flags = *(QFlags<Qt::ImageConversionFlag>*)this_;
+  this_ =  new QPixmap(fileName, format, flags);
+  this_ =  new MyQPixmap(fileName, format, flags);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:70
+// [-2] void QPixmap(const char *const *) 
+// (12)qm2811074334 (19)_ZN7QPixmapC2EPKPKc
+/*void* qm2811074334(const char *const[] xpm)*/{
+  auto _nilp = (MyQPixmap*)(0);
+    char * * xpm;
+  this_ =  new QPixmap(xpm);
+  this_ =  new MyQPixmap(xpm);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpixmap.h:72
+// [-2] void QPixmap(const QPixmap &) 
+// (12)qm2116370580 (18)_ZN7QPixmapC2ERKS_
+/*void* qm2116370580(const QPixmap & arg0)*/{
+  auto _nilp = (MyQPixmap*)(0);
+  const QPixmap & arg0 = *(const QPixmap *)this_;
+  this_ =  new QPixmap(arg0);
+  this_ =  new MyQPixmap(arg0);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpixmap.h:76
 // [32] QPixmap & operator=(QPixmap &&) 

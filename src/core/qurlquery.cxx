@@ -64,6 +64,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qurlquery(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:61
+// [-2] void QUrlQuery() 
+// (11)qm919631586 (17)_ZN9QUrlQueryC2Ev
+/*void* qm919631586()*/{
+  ;
+  this_ =  new QUrlQuery();
+  this_ =  new MyQUrlQuery();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:62
+// [-2] void QUrlQuery(const QUrl &) 
+// (12)qm3496568067 (23)_ZN9QUrlQueryC2ERK4QUrl
+/*void* qm3496568067(const QUrl & url)*/{
+  const QUrl & url = *(const QUrl *)this_;
+  this_ =  new QUrlQuery(url);
+  this_ =  new MyQUrlQuery(url);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:63
+// [-2] void QUrlQuery(const QString &) 
+// (12)qm3642577418 (26)_ZN9QUrlQueryC2ERK7QString
+/*void* qm3642577418(const QString & queryString)*/{
+  const QString & queryString = *(const QString *)this_;
+  this_ =  new QUrlQuery(queryString);
+  this_ =  new MyQUrlQuery(queryString);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qurlquery.h:64
 // [-2] void QUrlQuery(std::initializer_list<QPair<QString, QString>>) 
@@ -71,6 +101,17 @@ uint64_t ensure_inline_symbol_qurlquery(void* this_) {
 /*void* qm1220165977(std::initializer_list<QPair<QString, QString>> list)*/{
   std::initializer_list<QPair<QString, QString>> list = *(std::initializer_list<QPair<QString, QString>>*)this_;
   this_ =  new QUrlQuery(list);
+  this_ =  new MyQUrlQuery(list);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qurlquery.h:71
+// [-2] void QUrlQuery(const QUrlQuery &) 
+// (12)qm2471283188 (20)_ZN9QUrlQueryC2ERKS_
+/*void* qm2471283188(const QUrlQuery & other)*/{
+  const QUrlQuery & other = *(const QUrlQuery *)this_;
+  this_ =  new QUrlQuery(other);
+  this_ =  new MyQUrlQuery(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -60,6 +60,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcbormap(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcbormap.h:171
+// [-2] void QCborMap() 
+// (12)qm1099892137 (16)_ZN8QCborMapC2Ev
+/*void* qm1099892137()*/{
+  ;
+  this_ =  new QCborMap();
+  this_ =  new MyQCborMap();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcbormap.h:172
+// [-2] void QCborMap(const QCborMap &) 
+// (11)qm273010162 (19)_ZN8QCborMapC2ERKS_
+/*void* qm273010162(const QCborMap & other)*/{
+  const QCborMap & other = *(const QCborMap *)this_;
+  this_ =  new QCborMap(other);
+  this_ =  new MyQCborMap(other);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcbormap.h:174
 // [-2] void QCborMap(std::initializer_list<value_type>) 
@@ -67,6 +87,7 @@ uint64_t ensure_inline_symbol_qcbormap(void* this_) {
 /*void* qm2711232054(std::initializer_list<QPair<QCborValue, QCborValue>> args)*/{
   std::initializer_list<QPair<QCborValue, QCborValue>> args = *(std::initializer_list<QPair<QCborValue, QCborValue>>*)this_;
   this_ =  new QCborMap(args);
+  this_ =  new MyQCborMap(args);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

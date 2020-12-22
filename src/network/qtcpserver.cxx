@@ -137,6 +137,17 @@ uint64_t ensure_inline_symbol_qtcpserver(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qtcpserver.h:61
+// [-2] void QTcpServer(QObject *) 
+// (12)qm2028703564 (27)_ZN10QTcpServerC2EP7QObject
+/*void* qm2028703564(QObject * parent)*/{
+  auto _nilp = (MyQTcpServer*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QTcpServer(parent);
+  this_ =  new MyQTcpServer(parent);
+}
+
 
 /*void C_ZN10QTcpServerD2Ev(void *this_)*/ {
   delete (QTcpServer*)(this_);

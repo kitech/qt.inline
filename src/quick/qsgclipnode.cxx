@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgclipnode(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:259
+// [-2] void QSGClipNode() 
+// (12)qm2990784943 (20)_ZN11QSGClipNodeC2Ev
+/*void* qm2990784943()*/{
+  ;
+  this_ =  new QSGClipNode();
+  this_ =  new MyQSGClipNode();
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:263
 // [1] bool isRectangular() const

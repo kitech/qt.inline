@@ -129,6 +129,36 @@ uint64_t ensure_inline_symbol_qqmlapplicationengine(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlapplicationengine.h:56
+// [-2] void QQmlApplicationEngine(QObject *) 
+// (11)qm354042307 (38)_ZN21QQmlApplicationEngineC2EP7QObject
+/*void* qm354042307(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QQmlApplicationEngine(parent);
+  this_ =  new MyQQmlApplicationEngine(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlapplicationengine.h:57
+// [-2] void QQmlApplicationEngine(const QUrl &, QObject *) 
+// (12)qm3368203142 (45)_ZN21QQmlApplicationEngineC2ERK4QUrlP7QObject
+/*void* qm3368203142(const QUrl & url, QObject * parent)*/{
+  const QUrl & url = *(const QUrl *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QQmlApplicationEngine(url, parent);
+  this_ =  new MyQQmlApplicationEngine(url, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlapplicationengine.h:58
+// [-2] void QQmlApplicationEngine(const QString &, QObject *) 
+// (11)qm810072450 (48)_ZN21QQmlApplicationEngineC2ERK7QStringP7QObject
+/*void* qm810072450(const QString & filePath, QObject * parent)*/{
+  const QString & filePath = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QQmlApplicationEngine(filePath, parent);
+  this_ =  new MyQQmlApplicationEngine(filePath, parent);
+}
+
 
 /*void C_ZN21QQmlApplicationEngineD2Ev(void *this_)*/ {
   delete (QQmlApplicationEngine*)(this_);

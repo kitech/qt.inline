@@ -300,6 +300,28 @@ uint64_t ensure_inline_symbol_qmenu(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenu.h:74
+// [-2] void QMenu(QWidget *) 
+// (10)qm32748694 (21)_ZN5QMenuC2EP7QWidget
+/*void* qm32748694(QWidget * parent)*/{
+  auto _nilp = (MyQMenu*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QMenu(parent);
+  this_ =  new MyQMenu(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmenu.h:75
+// [-2] void QMenu(const QString &, QWidget *) 
+// (12)qm2658403316 (31)_ZN5QMenuC2ERK7QStringP7QWidget
+/*void* qm2658403316(const QString & title, QWidget * parent)*/{
+  auto _nilp = (MyQMenu*)(0);
+  const QString & title = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QMenu(title, parent);
+  this_ =  new MyQMenu(title, parent);
+}
+
 
 /*void C_ZN5QMenuD2Ev(void *this_)*/ {
   delete (QMenu*)(this_);

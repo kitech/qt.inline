@@ -158,6 +158,39 @@ uint64_t ensure_inline_symbol_qcompleter(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcompleter.h:87
+// [-2] void QCompleter(QObject *) 
+// (12)qm3365477331 (27)_ZN10QCompleterC2EP7QObject
+/*void* qm3365477331(QObject * parent)*/{
+  auto _nilp = (MyQCompleter*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QCompleter(parent);
+  this_ =  new MyQCompleter(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcompleter.h:88
+// [-2] void QCompleter(QAbstractItemModel *, QObject *) 
+// (12)qm1901837861 (48)_ZN10QCompleterC2EP18QAbstractItemModelP7QObject
+/*void* qm1901837861(QAbstractItemModel * model, QObject * parent)*/{
+  auto _nilp = (MyQCompleter*)(0);
+  QAbstractItemModel * model = *(QAbstractItemModel **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QCompleter(model, parent);
+  this_ =  new MyQCompleter(model, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcompleter.h:90
+// [-2] void QCompleter(const QStringList &, QObject *) 
+// (12)qm2794415259 (42)_ZN10QCompleterC2ERK11QStringListP7QObject
+/*void* qm2794415259(const QStringList & completions, QObject * parent)*/{
+  auto _nilp = (MyQCompleter*)(0);
+  const QStringList & completions = *(const QStringList *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QCompleter(completions, parent);
+  this_ =  new MyQCompleter(completions, parent);
+}
+
 
 /*void C_ZN10QCompleterD2Ev(void *this_)*/ {
   delete (QCompleter*)(this_);

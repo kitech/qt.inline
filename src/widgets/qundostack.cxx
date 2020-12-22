@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qundostack(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qundostack.h:100
+// [-2] void QUndoStack(QObject *) 
+// (11)qm489857807 (27)_ZN10QUndoStackC2EP7QObject
+/*void* qm489857807(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QUndoStack(parent);
+  this_ =  new MyQUndoStack(parent);
+}
+
 
 /*void C_ZN10QUndoStackD2Ev(void *this_)*/ {
   delete (QUndoStack*)(this_);

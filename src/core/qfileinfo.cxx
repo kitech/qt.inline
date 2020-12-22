@@ -66,6 +66,66 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfileinfo(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:60
+// [-2] void QFileInfo(QFileInfoPrivate *) 
+// (12)qm3841383659 (35)_ZN9QFileInfoC2EP16QFileInfoPrivate
+/*void* qm3841383659(QFileInfoPrivate * d)*/{
+  QFileInfoPrivate * d = *(QFileInfoPrivate **)this_;
+  this_ =  new QFileInfo(d);
+  this_ =  new MyQFileInfo(d);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:62
+// [-2] void QFileInfo() 
+// (11)qm350137304 (17)_ZN9QFileInfoC2Ev
+/*void* qm350137304()*/{
+  ;
+  this_ =  new QFileInfo();
+  this_ =  new MyQFileInfo();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:63
+// [-2] void QFileInfo(const QString &) 
+// (12)qm3846284523 (26)_ZN9QFileInfoC2ERK7QString
+/*void* qm3846284523(const QString & file)*/{
+  const QString & file = *(const QString *)this_;
+  this_ =  new QFileInfo(file);
+  this_ =  new MyQFileInfo(file);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:64
+// [-2] void QFileInfo(const QFile &) 
+// (12)qm4164422137 (24)_ZN9QFileInfoC2ERK5QFile
+/*void* qm4164422137(const QFile & file)*/{
+  const QFile & file = *(const QFile *)this_;
+  this_ =  new QFileInfo(file);
+  this_ =  new MyQFileInfo(file);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:65
+// [-2] void QFileInfo(const QDir &, const QString &) 
+// (12)qm1894457771 (33)_ZN9QFileInfoC2ERK4QDirRK7QString
+/*void* qm1894457771(const QDir & dir, const QString & file)*/{
+  const QDir & dir = *(const QDir *)this_; const QString & file = *(const QString *)this_;
+  this_ =  new QFileInfo(dir, file);
+  this_ =  new MyQFileInfo(dir, file);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileinfo.h:66
+// [-2] void QFileInfo(const QFileInfo &) 
+// (12)qm1771978693 (20)_ZN9QFileInfoC2ERKS_
+/*void* qm1771978693(const QFileInfo & fileinfo)*/{
+  const QFileInfo & fileinfo = *(const QFileInfo *)this_;
+  this_ =  new QFileInfo(fileinfo);
+  this_ =  new MyQFileInfo(fileinfo);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfileinfo.h:70
 // [8] QFileInfo & operator=(QFileInfo &&) 

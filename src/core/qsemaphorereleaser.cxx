@@ -70,6 +70,7 @@ uint64_t ensure_inline_symbol_qsemaphorereleaser(void* this_) {
 /*void* qm1271734568()*/{
   ;
   this_ =  new QSemaphoreReleaser();
+  this_ =  new MyQSemaphoreReleaser();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -79,6 +80,7 @@ uint64_t ensure_inline_symbol_qsemaphorereleaser(void* this_) {
 /*void* qm1384645767(QSemaphore & sem, int n)*/{
   QSemaphore & sem = *(QSemaphore *)this_; int n = *(int*)this_;
   this_ =  new QSemaphoreReleaser(sem, n);
+  this_ =  new MyQSemaphoreReleaser(sem, n);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -88,6 +90,7 @@ uint64_t ensure_inline_symbol_qsemaphorereleaser(void* this_) {
 /*void* qm3018244138(QSemaphore * sem, int n)*/{
   QSemaphore * sem = *(QSemaphore **)this_; int n = *(int*)this_;
   this_ =  new QSemaphoreReleaser(sem, n);
+  this_ =  new MyQSemaphoreReleaser(sem, n);
 }
 
 // Public inline Visibility=Default Availability=Available

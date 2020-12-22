@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qjsengine(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsengine.h:65
+// [-2] void QJSEngine() 
+// (12)qm1706333984 (17)_ZN9QJSEngineC2Ev
+/*void* qm1706333984()*/{
+  ;
+  this_ =  new QJSEngine();
+  this_ =  new MyQJSEngine();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsengine.h:66
+// [-2] void QJSEngine(QObject *) 
+// (12)qm2200965348 (25)_ZN9QJSEngineC2EP7QObject
+/*void* qm2200965348(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QJSEngine(parent);
+  this_ =  new MyQJSEngine(parent);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qjsengine.h:120
 // [8] QV4::ExecutionEngine * handle() const

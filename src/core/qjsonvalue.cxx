@@ -78,6 +78,76 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qjsonvalue(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:72
+// [-2] void QJsonValue(QJsonValue::Type) 
+// (12)qm2305063527 (27)_ZN10QJsonValueC2ENS_4TypeE
+/*void* qm2305063527(QJsonValue::Type arg0)*/{
+  QJsonValue::Type arg0 = *(QJsonValue::Type*)this_;
+  this_ =  new QJsonValue(arg0);
+  this_ =  new MyQJsonValue(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:73
+// [-2] void QJsonValue(bool) 
+// (12)qm1998452468 (19)_ZN10QJsonValueC2Eb
+/*void* qm1998452468(bool b)*/{
+  bool b = *(bool*)this_;
+  this_ =  new QJsonValue(b);
+  this_ =  new MyQJsonValue(b);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:74
+// [-2] void QJsonValue(double) 
+// (12)qm2659079105 (19)_ZN10QJsonValueC2Ed
+/*void* qm2659079105(double n)*/{
+  double n = *(double*)this_;
+  this_ =  new QJsonValue(n);
+  this_ =  new MyQJsonValue(n);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:75
+// [-2] void QJsonValue(int) 
+// (12)qm3771674492 (19)_ZN10QJsonValueC2Ei
+/*void* qm3771674492(int n)*/{
+  int n = *(int*)this_;
+  this_ =  new QJsonValue(n);
+  this_ =  new MyQJsonValue(n);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:76
+// [-2] void QJsonValue(qint64) 
+// (12)qm2323582862 (19)_ZN10QJsonValueC2Ex
+/*void* qm2323582862(long long v)*/{
+  long long v = *(long long*)this_;
+  this_ =  new QJsonValue(v);
+  this_ =  new MyQJsonValue(v);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:77
+// [-2] void QJsonValue(const QString &) 
+// (11)qm309848635 (28)_ZN10QJsonValueC2ERK7QString
+/*void* qm309848635(const QString & s)*/{
+  const QString & s = *(const QString *)this_;
+  this_ =  new QJsonValue(s);
+  this_ =  new MyQJsonValue(s);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:78
+// [-2] void QJsonValue(QLatin1String) 
+// (12)qm2321886528 (33)_ZN10QJsonValueC2E13QLatin1String
+/*void* qm2321886528(QLatin1String s)*/{
+  QLatin1String s = *(QLatin1String*)this_;
+  this_ =  new QJsonValue(s);
+  this_ =  new MyQJsonValue(s);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonvalue.h:80
 // [-2] void QJsonValue(const char *) 
@@ -85,6 +155,47 @@ uint64_t ensure_inline_symbol_qjsonvalue(void* this_) {
 /*void* qm2232320416(const char * s)*/{
   const char * s = *(const char **)this_;
   this_ =  new QJsonValue(s);
+  this_ =  new MyQJsonValue(s);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:83
+// [-2] void QJsonValue(const QJsonArray &) 
+// (12)qm2403001473 (32)_ZN10QJsonValueC2ERK10QJsonArray
+/*void* qm2403001473(const QJsonArray & a)*/{
+  const QJsonArray & a = *(const QJsonArray *)this_;
+  this_ =  new QJsonValue(a);
+  this_ =  new MyQJsonValue(a);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:84
+// [-2] void QJsonValue(const QJsonObject &) 
+// (12)qm4238099472 (33)_ZN10QJsonValueC2ERK11QJsonObject
+/*void* qm4238099472(const QJsonObject & o)*/{
+  const QJsonObject & o = *(const QJsonObject *)this_;
+  this_ =  new QJsonValue(o);
+  this_ =  new MyQJsonValue(o);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:88
+// [-2] void QJsonValue(const QJsonValue &) 
+// (12)qm2328555769 (22)_ZN10QJsonValueC2ERKS_
+/*void* qm2328555769(const QJsonValue & other)*/{
+  const QJsonValue & other = *(const QJsonValue *)this_;
+  this_ =  new QJsonValue(other);
+  this_ =  new MyQJsonValue(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonvalue.h:91
+// [-2] void QJsonValue(QJsonValue &&) 
+// (12)qm1056997683 (21)_ZN10QJsonValueC2EOS_
+/*void* qm1056997683(QJsonValue && other)*/{
+  QJsonValue && other =  static_cast<QJsonValue &&>(*(QJsonValue *)this_);
+  this_ =  new QJsonValue(other);
+  this_ =  new MyQJsonValue(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

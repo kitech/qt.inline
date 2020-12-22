@@ -75,6 +75,37 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm2565301520()*/{
   ;
   this_ =  new QByteArray();
+  this_ =  new MyQByteArray();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:181
+// [-2] void QByteArray(const char *, int) 
+// (12)qm1185669528 (22)_ZN10QByteArrayC2EPKci
+/*void* qm1185669528(const char * arg0, int size)*/{
+  const char * arg0 = *(const char **)this_; int size = *(int*)this_;
+  this_ =  new QByteArray(arg0, size);
+  this_ =  new MyQByteArray(arg0, size);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:182
+// [-2] void QByteArray(int, char) 
+// (12)qm3603703536 (20)_ZN10QByteArrayC2Eic
+/*void* qm3603703536(int size, char c)*/{
+  int size = *(int*)this_; char c = *(char*)this_;
+  this_ =  new QByteArray(size, c);
+  this_ =  new MyQByteArray(size, c);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbytearray.h:183
+// [-2] void QByteArray(int, Qt::Initialization) 
+// (12)qm3671312835 (40)_ZN10QByteArrayC2EiN2Qt14InitializationE
+/*void* qm3671312835(int size, Qt::Initialization arg1)*/{
+  int size = *(int*)this_; Qt::Initialization arg1 = *(Qt::Initialization*)this_;
+  this_ =  new QByteArray(size, arg1);
+  this_ =  new MyQByteArray(size, arg1);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -84,6 +115,7 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm4234054265(const QByteArray & arg0)*/{
   const QByteArray & arg0 = *(const QByteArray *)this_;
   this_ =  new QByteArray(arg0);
+  this_ =  new MyQByteArray(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -100,6 +132,7 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm2000392563(QByteArray && other)*/{
   QByteArray && other =  static_cast<QByteArray &&>(*(QByteArray *)this_);
   this_ =  new QByteArray(other);
+  this_ =  new MyQByteArray(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -1073,6 +1106,7 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm2424989172(QByteArrayDataPtr dd)*/{
   QByteArrayDataPtr dd = *(QByteArrayDataPtr*)this_;
   this_ =  new QByteArray(dd);
+  this_ =  new MyQByteArray(dd);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

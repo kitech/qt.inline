@@ -155,6 +155,28 @@ uint64_t ensure_inline_symbol_qlcdnumber(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlcdnumber.h:62
+// [-2] void QLCDNumber(QWidget *) 
+// (12)qm2440140827 (27)_ZN10QLCDNumberC2EP7QWidget
+/*void* qm2440140827(QWidget * parent)*/{
+  auto _nilp = (MyQLCDNumber*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QLCDNumber(parent);
+  this_ =  new MyQLCDNumber(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlcdnumber.h:63
+// [-2] void QLCDNumber(uint, QWidget *) 
+// (12)qm3104930490 (28)_ZN10QLCDNumberC2EjP7QWidget
+/*void* qm3104930490(unsigned int numDigits, QWidget * parent)*/{
+  auto _nilp = (MyQLCDNumber*)(0);
+  unsigned int numDigits = *(unsigned int*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QLCDNumber(numDigits, parent);
+  this_ =  new MyQLCDNumber(numDigits, parent);
+}
+
 
 /*void C_ZN10QLCDNumberD2Ev(void *this_)*/ {
   delete (QLCDNumber*)(this_);

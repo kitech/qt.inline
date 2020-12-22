@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qcommonstyle(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcommonstyle.h:55
+// [-2] void QCommonStyle() 
+// (12)qm2719626766 (21)_ZN12QCommonStyleC2Ev
+/*void* qm2719626766()*/{
+  ;
+  this_ =  new QCommonStyle();
+  this_ =  new MyQCommonStyle();
+}
+
 
 /*void C_ZN12QCommonStyleD2Ev(void *this_)*/ {
   delete (QCommonStyle*)(this_);

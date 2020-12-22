@@ -64,6 +64,56 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamreader(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:354
+// [-2] void QXmlStreamReader() 
+// (12)qm2408789023 (25)_ZN16QXmlStreamReaderC2Ev
+/*void* qm2408789023()*/{
+  ;
+  this_ =  new QXmlStreamReader();
+  this_ =  new MyQXmlStreamReader();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:355
+// [-2] void QXmlStreamReader(QIODevice *) 
+// (12)qm1033207258 (35)_ZN16QXmlStreamReaderC2EP9QIODevice
+/*void* qm1033207258(QIODevice * device)*/{
+  QIODevice * device = *(QIODevice **)this_;
+  this_ =  new QXmlStreamReader(device);
+  this_ =  new MyQXmlStreamReader(device);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:356
+// [-2] void QXmlStreamReader(const QByteArray &) 
+// (11)qm115410240 (38)_ZN16QXmlStreamReaderC2ERK10QByteArray
+/*void* qm115410240(const QByteArray & data)*/{
+  const QByteArray & data = *(const QByteArray *)this_;
+  this_ =  new QXmlStreamReader(data);
+  this_ =  new MyQXmlStreamReader(data);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:357
+// [-2] void QXmlStreamReader(const QString &) 
+// (12)qm2637864462 (34)_ZN16QXmlStreamReaderC2ERK7QString
+/*void* qm2637864462(const QString & data)*/{
+  const QString & data = *(const QString *)this_;
+  this_ =  new QXmlStreamReader(data);
+  this_ =  new MyQXmlStreamReader(data);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:358
+// [-2] void QXmlStreamReader(const char *) 
+// (12)qm1455553337 (27)_ZN16QXmlStreamReaderC2EPKc
+/*void* qm1455553337(const char * data)*/{
+  const char * data = *(const char **)this_;
+  this_ =  new QXmlStreamReader(data);
+  this_ =  new MyQXmlStreamReader(data);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:381
 // [1] bool isStartDocument() const

@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qaudiodeviceinfo(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodeviceinfo.h:67
+// [-2] void QAudioDeviceInfo() 
+// (12)qm2385936377 (25)_ZN16QAudioDeviceInfoC2Ev
+/*void* qm2385936377()*/{
+  ;
+  this_ =  new QAudioDeviceInfo();
+  this_ =  new MyQAudioDeviceInfo();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiodeviceinfo.h:68
+// [-2] void QAudioDeviceInfo(const QAudioDeviceInfo &) 
+// (11)qm462715353 (28)_ZN16QAudioDeviceInfoC2ERKS_
+/*void* qm462715353(const QAudioDeviceInfo & other)*/{
+  const QAudioDeviceInfo & other = *(const QAudioDeviceInfo *)this_;
+  this_ =  new QAudioDeviceInfo(other);
+  this_ =  new MyQAudioDeviceInfo(other);
+}
+
 
 /*void C_ZN16QAudioDeviceInfoD2Ev(void *this_)*/ {
   delete (QAudioDeviceInfo*)(this_);

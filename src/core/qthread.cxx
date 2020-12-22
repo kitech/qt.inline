@@ -137,6 +137,17 @@ uint64_t ensure_inline_symbol_qthread(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthread.h:77
+// [-2] void QThread(QObject *) 
+// (12)qm2492289034 (23)_ZN7QThreadC2EP7QObject
+/*void* qm2492289034(QObject * parent)*/{
+  auto _nilp = (MyQThread*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QThread(parent);
+  this_ =  new MyQThread(parent);
+}
+
 
 /*void C_ZN7QThreadD2Ev(void *this_)*/ {
   delete (QThread*)(this_);

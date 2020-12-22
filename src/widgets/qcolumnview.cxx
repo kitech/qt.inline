@@ -268,6 +268,17 @@ uint64_t ensure_inline_symbol_qcolumnview(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolumnview.h:61
+// [-2] void QColumnView(QWidget *) 
+// (12)qm1154528752 (28)_ZN11QColumnViewC2EP7QWidget
+/*void* qm1154528752(QWidget * parent)*/{
+  auto _nilp = (MyQColumnView*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QColumnView(parent);
+  this_ =  new MyQColumnView(parent);
+}
+
 
 /*void C_ZN11QColumnViewD2Ev(void *this_)*/ {
   delete (QColumnView*)(this_);

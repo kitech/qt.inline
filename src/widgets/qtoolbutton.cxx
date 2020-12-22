@@ -262,6 +262,17 @@ uint64_t ensure_inline_symbol_qtoolbutton(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtoolbutton.h:74
+// [-2] void QToolButton(QWidget *) 
+// (11)qm719486503 (28)_ZN11QToolButtonC2EP7QWidget
+/*void* qm719486503(QWidget * parent)*/{
+  auto _nilp = (MyQToolButton*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QToolButton(parent);
+  this_ =  new MyQToolButton(parent);
+}
+
 
 /*void C_ZN11QToolButtonD2Ev(void *this_)*/ {
   delete (QToolButton*)(this_);

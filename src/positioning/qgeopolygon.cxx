@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgeopolygon(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopolygon.h:57
+// [-2] void QGeoPolygon() 
+// (12)qm3341735735 (20)_ZN11QGeoPolygonC2Ev
+/*void* qm3341735735()*/{
+  ;
+  this_ =  new QGeoPolygon();
+  this_ =  new MyQGeoPolygon();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopolygon.h:58
+// [-2] void QGeoPolygon(const QList<QGeoCoordinate> &) 
+// (11)qm715874415 (45)_ZN11QGeoPolygonC2ERK5QListI14QGeoCoordinateE
+/*void* qm715874415(const QList<QGeoCoordinate> & path)*/{
+  const QList<QGeoCoordinate> & path = *(const QList<QGeoCoordinate> *)this_;
+  this_ =  new QGeoPolygon(path);
+  this_ =  new MyQGeoPolygon(path);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopolygon.h:59
+// [-2] void QGeoPolygon(const QGeoPolygon &) 
+// (12)qm4111953005 (23)_ZN11QGeoPolygonC2ERKS_
+/*void* qm4111953005(const QGeoPolygon & other)*/{
+  const QGeoPolygon & other = *(const QGeoPolygon *)this_;
+  this_ =  new QGeoPolygon(other);
+  this_ =  new MyQGeoPolygon(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeopolygon.h:60
+// [-2] void QGeoPolygon(const QGeoShape &) 
+// (11)qm729668687 (31)_ZN11QGeoPolygonC2ERK9QGeoShape
+/*void* qm729668687(const QGeoShape & other)*/{
+  const QGeoShape & other = *(const QGeoShape *)this_;
+  this_ =  new QGeoPolygon(other);
+  this_ =  new MyQGeoPolygon(other);
+}
+
 
 /*void C_ZN11QGeoPolygonD2Ev(void *this_)*/ {
   delete (QGeoPolygon*)(this_);

@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qtextfragment(void* this_) {
 /*void* qm3081189285(const QTextDocumentPrivate * priv, int f, int fe)*/{
   const QTextDocumentPrivate * priv = *(const QTextDocumentPrivate **)this_; int f = *(int*)this_; int fe = *(int*)this_;
   this_ =  new QTextFragment(priv, f, fe);
+  this_ =  new MyQTextFragment(priv, f, fe);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +77,7 @@ uint64_t ensure_inline_symbol_qtextfragment(void* this_) {
 /*void* qm1958237701()*/{
   ;
   this_ =  new QTextFragment();
+  this_ =  new MyQTextFragment();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -85,6 +87,7 @@ uint64_t ensure_inline_symbol_qtextfragment(void* this_) {
 /*void* qm3909927515(const QTextFragment & o)*/{
   const QTextFragment & o = *(const QTextFragment *)this_;
   this_ =  new QTextFragment(o);
+  this_ =  new MyQTextFragment(o);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

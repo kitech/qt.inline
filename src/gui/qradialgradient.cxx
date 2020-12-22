@@ -68,6 +68,76 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qradialgradient(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:457
+// [-2] void QRadialGradient() 
+// (12)qm3158821516 (24)_ZN15QRadialGradientC2Ev
+/*void* qm3158821516()*/{
+  ;
+  this_ =  new QRadialGradient();
+  this_ =  new MyQRadialGradient();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:458
+// [-2] void QRadialGradient(const QPointF &, qreal, const QPointF &) 
+// (11)qm377145314 (37)_ZN15QRadialGradientC2ERK7QPointFdS2_
+/*void* qm377145314(const QPointF & center, double radius, const QPointF & focalPoint)*/{
+  const QPointF & center = *(const QPointF *)this_; double radius = *(double*)this_; const QPointF & focalPoint = *(const QPointF *)this_;
+  this_ =  new QRadialGradient(center, radius, focalPoint);
+  this_ =  new MyQRadialGradient(center, radius, focalPoint);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:459
+// [-2] void QRadialGradient(qreal, qreal, qreal, qreal, qreal) 
+// (12)qm3454545860 (28)_ZN15QRadialGradientC2Eddddd
+/*void* qm3454545860(double cx, double cy, double radius, double fx, double fy)*/{
+  double cx = *(double*)this_; double cy = *(double*)this_; double radius = *(double*)this_; double fx = *(double*)this_; double fy = *(double*)this_;
+  this_ =  new QRadialGradient(cx, cy, radius, fx, fy);
+  this_ =  new MyQRadialGradient(cx, cy, radius, fx, fy);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:461
+// [-2] void QRadialGradient(const QPointF &, qreal) 
+// (12)qm1606218804 (34)_ZN15QRadialGradientC2ERK7QPointFd
+/*void* qm1606218804(const QPointF & center, double radius)*/{
+  const QPointF & center = *(const QPointF *)this_; double radius = *(double*)this_;
+  this_ =  new QRadialGradient(center, radius);
+  this_ =  new MyQRadialGradient(center, radius);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:462
+// [-2] void QRadialGradient(qreal, qreal, qreal) 
+// (12)qm4189204141 (26)_ZN15QRadialGradientC2Eddd
+/*void* qm4189204141(double cx, double cy, double radius)*/{
+  double cx = *(double*)this_; double cy = *(double*)this_; double radius = *(double*)this_;
+  this_ =  new QRadialGradient(cx, cy, radius);
+  this_ =  new MyQRadialGradient(cx, cy, radius);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:464
+// [-2] void QRadialGradient(const QPointF &, qreal, const QPointF &, qreal) 
+// (12)qm3603936095 (38)_ZN15QRadialGradientC2ERK7QPointFdS2_d
+/*void* qm3603936095(const QPointF & center, double centerRadius, const QPointF & focalPoint, double focalRadius)*/{
+  const QPointF & center = *(const QPointF *)this_; double centerRadius = *(double*)this_; const QPointF & focalPoint = *(const QPointF *)this_; double focalRadius = *(double*)this_;
+  this_ =  new QRadialGradient(center, centerRadius, focalPoint, focalRadius);
+  this_ =  new MyQRadialGradient(center, centerRadius, focalPoint, focalRadius);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:465
+// [-2] void QRadialGradient(qreal, qreal, qreal, qreal, qreal, qreal) 
+// (10)qm68789322 (29)_ZN15QRadialGradientC2Edddddd
+/*void* qm68789322(double cx, double cy, double centerRadius, double fx, double fy, double focalRadius)*/{
+  double cx = *(double*)this_; double cy = *(double*)this_; double centerRadius = *(double*)this_; double fx = *(double*)this_; double fy = *(double*)this_; double focalRadius = *(double*)this_;
+  this_ =  new QRadialGradient(cx, cy, centerRadius, fx, fy, focalRadius);
+  this_ =  new MyQRadialGradient(cx, cy, centerRadius, fx, fy, focalRadius);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:471
 // [-2] void setCenter(qreal, qreal) 

@@ -69,6 +69,7 @@ uint64_t ensure_inline_symbol_qlinef(void* this_) {
 /*void* qm3851270499()*/{
   ;
   this_ =  new QLineF();
+  this_ =  new MyQLineF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -78,6 +79,7 @@ uint64_t ensure_inline_symbol_qlinef(void* this_) {
 /*void* qm2601427614(const QPointF & pt1, const QPointF & pt2)*/{
   const QPointF & pt1 = *(const QPointF *)this_; const QPointF & pt2 = *(const QPointF *)this_;
   this_ =  new QLineF(pt1, pt2);
+  this_ =  new MyQLineF(pt1, pt2);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,6 +89,7 @@ uint64_t ensure_inline_symbol_qlinef(void* this_) {
 /*void* qm3982406120(double x1, double y1, double x2, double y2)*/{
   double x1 = *(double*)this_; double y1 = *(double*)this_; double x2 = *(double*)this_; double y2 = *(double*)this_;
   this_ =  new QLineF(x1, y1, x2, y2);
+  this_ =  new MyQLineF(x1, y1, x2, y2);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -96,6 +99,7 @@ uint64_t ensure_inline_symbol_qlinef(void* this_) {
 /*void* qm2293692172(const QLine & line)*/{
   const QLine & line = *(const QLine *)this_;
   this_ =  new QLineF(line);
+  this_ =  new MyQLineF(line);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

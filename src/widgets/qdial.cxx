@@ -213,6 +213,17 @@ uint64_t ensure_inline_symbol_qdial(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdial.h:64
+// [-2] void QDial(QWidget *) 
+// (12)qm4235922280 (21)_ZN5QDialC2EP7QWidget
+/*void* qm4235922280(QWidget * parent)*/{
+  auto _nilp = (MyQDial*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDial(parent);
+  this_ =  new MyQDial(parent);
+}
+
 
 /*void C_ZN5QDialD2Ev(void *this_)*/ {
   delete (QDial*)(this_);

@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qcharref(void* this_) {
 /*void* qm4072065807(const QCharRef & arg0)*/{
   const QCharRef & arg0 = *(const QCharRef *)this_;
   this_ =  new QCharRef(arg0);
+  this_ =  new MyQCharRef(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

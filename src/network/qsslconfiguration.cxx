@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslconfiguration(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:85
+// [-2] void QSslConfiguration() 
+// (10)qm57191989 (26)_ZN17QSslConfigurationC2Ev
+/*void* qm57191989()*/{
+  ;
+  this_ =  new QSslConfiguration();
+  this_ =  new MyQSslConfiguration();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslconfiguration.h:86
+// [-2] void QSslConfiguration(const QSslConfiguration &) 
+// (12)qm2547097309 (29)_ZN17QSslConfigurationC2ERKS_
+/*void* qm2547097309(const QSslConfiguration & other)*/{
+  const QSslConfiguration & other = *(const QSslConfiguration *)this_;
+  this_ =  new QSslConfiguration(other);
+  this_ =  new MyQSslConfiguration(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslconfiguration.h:88
 // [8] QSslConfiguration & operator=(QSslConfiguration &&) 

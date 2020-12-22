@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtemporarydir(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtemporarydir.h:56
+// [-2] void QTemporaryDir() 
+// (11)qm916537380 (22)_ZN13QTemporaryDirC2Ev
+/*void* qm916537380()*/{
+  ;
+  this_ =  new QTemporaryDir();
+  this_ =  new MyQTemporaryDir();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtemporarydir.h:57
+// [-2] void QTemporaryDir(const QString &) 
+// (11)qm461220269 (31)_ZN13QTemporaryDirC2ERK7QString
+/*void* qm461220269(const QString & templateName)*/{
+  const QString & templateName = *(const QString *)this_;
+  this_ =  new QTemporaryDir(templateName);
+  this_ =  new MyQTemporaryDir(templateName);
+}
+
 
 /*void C_ZN13QTemporaryDirD2Ev(void *this_)*/ {
   delete (QTemporaryDir*)(this_);

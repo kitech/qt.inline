@@ -226,6 +226,28 @@ uint64_t ensure_inline_symbol_qscrollbar(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollbar.h:59
+// [-2] void QScrollBar(QWidget *) 
+// (12)qm3751026874 (27)_ZN10QScrollBarC2EP7QWidget
+/*void* qm3751026874(QWidget * parent)*/{
+  auto _nilp = (MyQScrollBar*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QScrollBar(parent);
+  this_ =  new MyQScrollBar(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollbar.h:60
+// [-2] void QScrollBar(Qt::Orientation, QWidget *) 
+// (12)qm1553971199 (45)_ZN10QScrollBarC2EN2Qt11OrientationEP7QWidget
+/*void* qm1553971199(Qt::Orientation arg0, QWidget * parent)*/{
+  auto _nilp = (MyQScrollBar*)(0);
+  Qt::Orientation arg0 = *(Qt::Orientation*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QScrollBar(arg0, parent);
+  this_ =  new MyQScrollBar(arg0, parent);
+}
+
 
 /*void C_ZN10QScrollBarD2Ev(void *this_)*/ {
   delete (QScrollBar*)(this_);

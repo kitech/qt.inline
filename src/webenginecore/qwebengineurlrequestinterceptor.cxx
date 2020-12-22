@@ -137,15 +137,6 @@ uint64_t ensure_inline_symbol_qwebengineurlrequestinterceptor(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWebEngineCore/qwebengineurlrequestinterceptor.h:57
-// [-2] void QWebEngineUrlRequestInterceptor(QObject *) 
-// (12)qm2560959505 (48)_ZN31QWebEngineUrlRequestInterceptorC2EP7QObject
-/*void* qm2560959505(QObject * p)*/{
-  QObject * p = *(QObject **)this_;
-  this_ =  new MyQWebEngineUrlRequestInterceptor(p);
-}
-
 
 /*void C_ZN31QWebEngineUrlRequestInterceptorD2Ev(void *this_)*/ {
   delete (QWebEngineUrlRequestInterceptor*)(this_);

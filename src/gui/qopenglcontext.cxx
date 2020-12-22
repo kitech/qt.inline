@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qopenglcontext(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglcontext.h:154
+// [-2] void QOpenGLContext(QObject *) 
+// (12)qm1027378876 (31)_ZN14QOpenGLContextC2EP7QObject
+/*void* qm1027378876(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QOpenGLContext(parent);
+  this_ =  new MyQOpenGLContext(parent);
+}
+
 
 /*void C_ZN14QOpenGLContextD2Ev(void *this_)*/ {
   delete (QOpenGLContext*)(this_);

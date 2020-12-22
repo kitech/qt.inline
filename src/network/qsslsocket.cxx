@@ -151,6 +151,17 @@ uint64_t ensure_inline_symbol_qsslsocket(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslsocket.h:84
+// [-2] void QSslSocket(QObject *) 
+// (12)qm1621871508 (27)_ZN10QSslSocketC2EP7QObject
+/*void* qm1621871508(QObject * parent)*/{
+  auto _nilp = (MyQSslSocket*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSslSocket(parent);
+  this_ =  new MyQSslSocket(parent);
+}
+
 
 /*void C_ZN10QSslSocketD2Ev(void *this_)*/ {
   delete (QSslSocket*)(this_);

@@ -151,6 +151,72 @@ uint64_t ensure_inline_symbol_qsettings(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:124
+// [-2] void QSettings(const QString &, const QString &, QObject *) 
+// (11)qm155933828 (38)_ZN9QSettingsC2ERK7QStringS2_P7QObject
+/*void* qm155933828(const QString & organization, const QString & application, QObject * parent)*/{
+  auto _nilp = (MyQSettings*)(0);
+  const QString & organization = *(const QString *)this_; const QString & application = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSettings(organization, application, parent);
+  this_ =  new MyQSettings(organization, application, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:126
+// [-2] void QSettings(QSettings::Scope, const QString &, const QString &, QObject *) 
+// (11)qm531173260 (48)_ZN9QSettingsC2ENS_5ScopeERK7QStringS3_P7QObject
+/*void* qm531173260(QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent)*/{
+  auto _nilp = (MyQSettings*)(0);
+  QSettings::Scope scope = *(QSettings::Scope*)this_; const QString & organization = *(const QString *)this_; const QString & application = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSettings(scope, organization, application, parent);
+  this_ =  new MyQSettings(scope, organization, application, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:128
+// [-2] void QSettings(QSettings::Format, QSettings::Scope, const QString &, const QString &, QObject *) 
+// (12)qm2633384120 (59)_ZN9QSettingsC2ENS_6FormatENS_5ScopeERK7QStringS4_P7QObject
+/*void* qm2633384120(QSettings::Format format, QSettings::Scope scope, const QString & organization, const QString & application, QObject * parent)*/{
+  auto _nilp = (MyQSettings*)(0);
+  QSettings::Format format = *(QSettings::Format*)this_; QSettings::Scope scope = *(QSettings::Scope*)this_; const QString & organization = *(const QString *)this_; const QString & application = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSettings(format, scope, organization, application, parent);
+  this_ =  new MyQSettings(format, scope, organization, application, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:130
+// [-2] void QSettings(const QString &, QSettings::Format, QObject *) 
+// (12)qm4242197099 (46)_ZN9QSettingsC2ERK7QStringNS_6FormatEP7QObject
+/*void* qm4242197099(const QString & fileName, QSettings::Format format, QObject * parent)*/{
+  auto _nilp = (MyQSettings*)(0);
+  const QString & fileName = *(const QString *)this_; QSettings::Format format = *(QSettings::Format*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSettings(fileName, format, parent);
+  this_ =  new MyQSettings(fileName, format, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:131
+// [-2] void QSettings(QObject *) 
+// (12)qm2343402275 (25)_ZN9QSettingsC2EP7QObject
+/*void* qm2343402275(QObject * parent)*/{
+  auto _nilp = (MyQSettings*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSettings(parent);
+  this_ =  new MyQSettings(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsettings.h:132
+// [-2] void QSettings(QSettings::Scope, QObject *) 
+// (12)qm1692532549 (35)_ZN9QSettingsC2ENS_5ScopeEP7QObject
+/*void* qm1692532549(QSettings::Scope scope, QObject * parent)*/{
+  auto _nilp = (MyQSettings*)(0);
+  QSettings::Scope scope = *(QSettings::Scope*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSettings(scope, parent);
+  this_ =  new MyQSettings(scope, parent);
+}
+
 
 /*void C_ZN9QSettingsD2Ev(void *this_)*/ {
   delete (QSettings*)(this_);

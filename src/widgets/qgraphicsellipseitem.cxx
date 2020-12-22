@@ -102,6 +102,39 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicsellipseitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:709
+// [-2] void QGraphicsEllipseItem(QGraphicsItem *) 
+// (12)qm2786333810 (44)_ZN20QGraphicsEllipseItemC2EP13QGraphicsItem
+/*void* qm2786333810(QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsEllipseItem*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsEllipseItem(parent);
+  this_ =  new MyQGraphicsEllipseItem(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:710
+// [-2] void QGraphicsEllipseItem(const QRectF &, QGraphicsItem *) 
+// (12)qm4106380655 (53)_ZN20QGraphicsEllipseItemC2ERK6QRectFP13QGraphicsItem
+/*void* qm4106380655(const QRectF & rect, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsEllipseItem*)(0);
+  const QRectF & rect = *(const QRectF *)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsEllipseItem(rect, parent);
+  this_ =  new MyQGraphicsEllipseItem(rect, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:711
+// [-2] void QGraphicsEllipseItem(qreal, qreal, qreal, qreal, QGraphicsItem *) 
+// (12)qm2430855042 (48)_ZN20QGraphicsEllipseItemC2EddddP13QGraphicsItem
+/*void* qm2430855042(double x, double y, double w, double h, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsEllipseItem*)(0);
+  double x = *(double*)this_; double y = *(double*)this_; double w = *(double*)this_; double h = *(double*)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsEllipseItem(x, y, w, h, parent);
+  this_ =  new MyQGraphicsEllipseItem(x, y, w, h, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:716
 // [-2] void setRect(qreal, qreal, qreal, qreal) 

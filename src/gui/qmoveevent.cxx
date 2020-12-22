@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmoveevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:463
+// [-2] void QMoveEvent(const QPoint &, const QPoint &) 
+// (12)qm2231906405 (30)_ZN10QMoveEventC2ERK6QPointS2_
+/*void* qm2231906405(const QPoint & pos, const QPoint & oldPos)*/{
+  const QPoint & pos = *(const QPoint *)this_; const QPoint & oldPos = *(const QPoint *)this_;
+  this_ =  new QMoveEvent(pos, oldPos);
+  this_ =  new MyQMoveEvent(pos, oldPos);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:466
 // [8] const QPoint & pos() const

@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslerror(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:102
+// [-2] void QSslError() 
+// (12)qm2305529010 (17)_ZN9QSslErrorC2Ev
+/*void* qm2305529010()*/{
+  ;
+  this_ =  new QSslError();
+  this_ =  new MyQSslError();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:103
+// [-2] void QSslError(QSslError::SslError) 
+// (12)qm2404464769 (29)_ZN9QSslErrorC2ENS_8SslErrorE
+/*void* qm2404464769(QSslError::SslError error)*/{
+  QSslError::SslError error = *(QSslError::SslError*)this_;
+  this_ =  new QSslError(error);
+  this_ =  new MyQSslError(error);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:104
+// [-2] void QSslError(QSslError::SslError, const QSslCertificate &) 
+// (12)qm1051805829 (48)_ZN9QSslErrorC2ENS_8SslErrorERK15QSslCertificate
+/*void* qm1051805829(QSslError::SslError error, const QSslCertificate & certificate)*/{
+  QSslError::SslError error = *(QSslError::SslError*)this_; const QSslCertificate & certificate = *(const QSslCertificate *)this_;
+  this_ =  new QSslError(error, certificate);
+  this_ =  new MyQSslError(error, certificate);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslerror.h:106
+// [-2] void QSslError(const QSslError &) 
+// (12)qm3473611921 (20)_ZN9QSslErrorC2ERKS_
+/*void* qm3473611921(const QSslError & other)*/{
+  const QSslError & other = *(const QSslError *)this_;
+  this_ =  new QSslError(other);
+  this_ =  new MyQSslError(other);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslerror.h:108
 // [-2] void swap(QSslError &) 

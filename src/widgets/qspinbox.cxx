@@ -193,6 +193,17 @@ uint64_t ensure_inline_symbol_qspinbox(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qspinbox.h:66
+// [-2] void QSpinBox(QWidget *) 
+// (12)qm3685691689 (24)_ZN8QSpinBoxC2EP7QWidget
+/*void* qm3685691689(QWidget * parent)*/{
+  auto _nilp = (MyQSpinBox*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QSpinBox(parent);
+  this_ =  new MyQSpinBox(parent);
+}
+
 
 /*void C_ZN8QSpinBoxD2Ev(void *this_)*/ {
   delete (QSpinBox*)(this_);

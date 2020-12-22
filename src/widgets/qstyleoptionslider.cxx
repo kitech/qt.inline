@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptionslider(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:556
+// [-2] void QStyleOptionSlider() 
+// (12)qm1361475227 (27)_ZN18QStyleOptionSliderC2Ev
+/*void* qm1361475227()*/{
+  ;
+  this_ =  new QStyleOptionSlider();
+  this_ =  new MyQStyleOptionSlider();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:557
 // [-2] void QStyleOptionSlider(const QStyleOptionSlider &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptionslider(void* this_) {
 /*void* qm2628963685(const QStyleOptionSlider & other)*/{
   const QStyleOptionSlider & other = *(const QStyleOptionSlider *)this_;
   this_ =  new QStyleOptionSlider(other);
+  this_ =  new MyQStyleOptionSlider(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

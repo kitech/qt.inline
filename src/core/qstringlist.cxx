@@ -71,6 +71,7 @@ uint64_t ensure_inline_symbol_qstringlist(void* this_) {
 /*void* qm3203407088()*/{
   ;
   this_ =  new QStringList();
+  this_ =  new MyQStringList();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -80,6 +81,7 @@ uint64_t ensure_inline_symbol_qstringlist(void* this_) {
 /*void* qm660482983(const QString & i)*/{
   const QString & i = *(const QString *)this_;
   this_ =  new QStringList(i);
+  this_ =  new MyQStringList(i);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -89,6 +91,7 @@ uint64_t ensure_inline_symbol_qstringlist(void* this_) {
 /*void* qm2561793022(const QList<QString> & l)*/{
   const QList<QString> & l = *(const QList<QString> *)this_;
   this_ =  new QStringList(l);
+  this_ =  new MyQStringList(l);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -98,6 +101,7 @@ uint64_t ensure_inline_symbol_qstringlist(void* this_) {
 /*void* qm3653147889(QList<QString> && l)*/{
   QList<QString> && l =  static_cast<QList<QString> &&>(*(QList<QString> *)this_);
   this_ =  new QStringList(l);
+  this_ =  new MyQStringList(l);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -107,6 +111,7 @@ uint64_t ensure_inline_symbol_qstringlist(void* this_) {
 /*void* qm696630550(std::initializer_list<QString> args)*/{
   std::initializer_list<QString> args = *(std::initializer_list<QString>*)this_;
   this_ =  new QStringList(args);
+  this_ =  new MyQStringList(args);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

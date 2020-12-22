@@ -68,15 +68,6 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qrunnable(void* this_) {
   uint64_t fnptrsumval = 0;
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qrunnable.h:61
-// [-2] void QRunnable() 
-// (12)qm1066683879 (17)_ZN9QRunnableC2Ev
-/*void* qm1066683879()*/{
-  ;
-  this_ = 0; // new QRunnable();
-}
-
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qrunnable.h:65
 // [1] bool autoDelete() const

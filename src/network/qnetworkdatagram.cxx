@@ -62,6 +62,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkdatagram(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdatagram.h:56
+// [-2] void QNetworkDatagram() 
+// (12)qm1778679952 (25)_ZN16QNetworkDatagramC2Ev
+/*void* qm1778679952()*/{
+  ;
+  this_ =  new QNetworkDatagram();
+  this_ =  new MyQNetworkDatagram();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdatagram.h:57
+// [-2] void QNetworkDatagram(const QByteArray &, const QHostAddress &, quint16) 
+// (12)qm2014476337 (55)_ZN16QNetworkDatagramC2ERK10QByteArrayRK12QHostAddresst
+/*void* qm2014476337(const QByteArray & data, const QHostAddress & destinationAddress, unsigned short port)*/{
+  const QByteArray & data = *(const QByteArray *)this_; const QHostAddress & destinationAddress = *(const QHostAddress *)this_; unsigned short port = *(unsigned short*)this_;
+  this_ =  new QNetworkDatagram(data, destinationAddress, port);
+  this_ =  new MyQNetworkDatagram(data, destinationAddress, port);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdatagram.h:59
+// [-2] void QNetworkDatagram(const QNetworkDatagram &) 
+// (11)qm123807072 (28)_ZN16QNetworkDatagramC2ERKS_
+/*void* qm123807072(const QNetworkDatagram & other)*/{
+  const QNetworkDatagram & other = *(const QNetworkDatagram *)this_;
+  this_ =  new QNetworkDatagram(other);
+  this_ =  new MyQNetworkDatagram(other);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkdatagram.h:61
 // [-2] void ~QNetworkDatagram() 
@@ -76,6 +106,7 @@ uint64_t ensure_inline_symbol_qnetworkdatagram(void* this_) {
 /*void* qm2631462188(QNetworkDatagram && other)*/{
   QNetworkDatagram && other =  static_cast<QNetworkDatagram &&>(*(QNetworkDatagram *)this_);
   this_ =  new QNetworkDatagram(other);
+  this_ =  new MyQNetworkDatagram(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qsize(void* this_) {
 /*void* qm1019591398()*/{
   ;
   this_ =  new QSize();
+  this_ =  new MyQSize();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qsize(void* this_) {
 /*void* qm1650702872(int w, int h)*/{
   int w = *(int*)this_; int h = *(int*)this_;
   this_ =  new QSize(w, h);
+  this_ =  new MyQSize(w, h);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

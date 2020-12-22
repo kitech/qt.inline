@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopengldebugmessage(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopengldebug.h:109
+// [-2] void QOpenGLDebugMessage() 
+// (12)qm3415398641 (28)_ZN19QOpenGLDebugMessageC2Ev
+/*void* qm3415398641()*/{
+  ;
+  this_ =  new QOpenGLDebugMessage();
+  this_ =  new MyQOpenGLDebugMessage();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopengldebug.h:110
+// [-2] void QOpenGLDebugMessage(const QOpenGLDebugMessage &) 
+// (11)qm628778491 (31)_ZN19QOpenGLDebugMessageC2ERKS_
+/*void* qm628778491(const QOpenGLDebugMessage & debugMessage)*/{
+  const QOpenGLDebugMessage & debugMessage = *(const QOpenGLDebugMessage *)this_;
+  this_ =  new QOpenGLDebugMessage(debugMessage);
+  this_ =  new MyQOpenGLDebugMessage(debugMessage);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopengldebug.h:113
 // [8] QOpenGLDebugMessage & operator=(QOpenGLDebugMessage &&) 

@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qtexttable(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtexttable.h:102
+// [-2] void QTextTable(QTextDocument *) 
+// (12)qm2982215743 (34)_ZN10QTextTableC2EP13QTextDocument
+/*void* qm2982215743(QTextDocument * doc)*/{
+  QTextDocument * doc = *(QTextDocument **)this_;
+  this_ =  new QTextTable(doc);
+  this_ =  new MyQTextTable(doc);
+}
+
 // Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtexttable.h:128
 // [16] QTextTableFormat format() const

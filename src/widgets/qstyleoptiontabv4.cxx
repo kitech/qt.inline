@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptiontabv4(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:303
+// [-2] void QStyleOptionTabV4() 
+// (12)qm1479456410 (26)_ZN17QStyleOptionTabV4C2Ev
+/*void* qm1479456410()*/{
+  ;
+  this_ =  new QStyleOptionTabV4();
+  this_ =  new MyQStyleOptionTabV4();
+}
+
 
 /*void C_ZN17QStyleOptionTabV4D2Ev(void *this_)*/ {
   delete (QStyleOptionTabV4*)(this_);

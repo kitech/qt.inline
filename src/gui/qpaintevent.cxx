@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpaintevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:447
+// [-2] void QPaintEvent(const QRegion &) 
+// (12)qm4093668022 (29)_ZN11QPaintEventC2ERK7QRegion
+/*void* qm4093668022(const QRegion & paintRegion)*/{
+  const QRegion & paintRegion = *(const QRegion *)this_;
+  this_ =  new QPaintEvent(paintRegion);
+  this_ =  new MyQPaintEvent(paintRegion);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:448
+// [-2] void QPaintEvent(const QRect &) 
+// (12)qm1268183221 (27)_ZN11QPaintEventC2ERK5QRect
+/*void* qm1268183221(const QRect & paintRect)*/{
+  const QRect & paintRect = *(const QRect *)this_;
+  this_ =  new QPaintEvent(paintRect);
+  this_ =  new MyQPaintEvent(paintRect);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:451
 // [16] const QRect & rect() const

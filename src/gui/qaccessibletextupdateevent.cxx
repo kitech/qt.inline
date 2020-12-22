@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qaccessibletextupdateevent(void* this_) {
 /*void* qm1543461352(QObject * obj, int position, const QString & oldText, const QString & text)*/{
   QObject * obj = *(QObject **)this_; int position = *(int*)this_; const QString & oldText = *(const QString *)this_; const QString & text = *(const QString *)this_;
   this_ =  new QAccessibleTextUpdateEvent(obj, position, oldText, text);
+  this_ =  new MyQAccessibleTextUpdateEvent(obj, position, oldText, text);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qaccessibletextupdateevent(void* this_) {
 /*void* qm2679859716(QAccessibleInterface * iface, int position, const QString & oldText, const QString & text)*/{
   QAccessibleInterface * iface = *(QAccessibleInterface **)this_; int position = *(int*)this_; const QString & oldText = *(const QString *)this_; const QString & text = *(const QString *)this_;
   this_ =  new QAccessibleTextUpdateEvent(iface, position, oldText, text);
+  this_ =  new MyQAccessibleTextUpdateEvent(iface, position, oldText, text);
 }
 
 // Public inline Indirect Visibility=Default Availability=Available

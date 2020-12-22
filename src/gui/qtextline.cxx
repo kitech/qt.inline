@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qtextline(void* this_) {
 /*void* qm1086167034()*/{
   ;
   this_ =  new QTextLine();
+  this_ =  new MyQTextLine();
 }
 
 // Public inline Extend Visibility=Default Availability=Available

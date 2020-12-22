@@ -194,6 +194,17 @@ uint64_t ensure_inline_symbol_qlistwidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:217
+// [-2] void QListWidget(QWidget *) 
+// (12)qm1111472893 (28)_ZN11QListWidgetC2EP7QWidget
+/*void* qm1111472893(QWidget * parent)*/{
+  auto _nilp = (MyQListWidget*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QListWidget(parent);
+  this_ =  new MyQListWidget(parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:227
 // [-2] void addItem(const QString &) 

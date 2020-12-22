@@ -237,6 +237,28 @@ uint64_t ensure_inline_symbol_qopenglwindow(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglwindow.h:67
+// [-2] void QOpenGLWindow(QOpenGLWindow::UpdateBehavior, QWindow *) 
+// (11)qm724438377 (50)_ZN13QOpenGLWindowC2ENS_14UpdateBehaviorEP7QWindow
+/*void* qm724438377(QOpenGLWindow::UpdateBehavior updateBehavior, QWindow * parent)*/{
+  auto _nilp = (MyQOpenGLWindow*)(0);
+  QOpenGLWindow::UpdateBehavior updateBehavior = *(QOpenGLWindow::UpdateBehavior*)this_; QWindow * parent = *(QWindow **)this_;
+  this_ =  new QOpenGLWindow(updateBehavior, parent);
+  this_ =  new MyQOpenGLWindow(updateBehavior, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglwindow.h:68
+// [-2] void QOpenGLWindow(QOpenGLContext *, QOpenGLWindow::UpdateBehavior, QWindow *) 
+// (11)qm396861566 (67)_ZN13QOpenGLWindowC2EP14QOpenGLContextNS_14UpdateBehaviorEP7QWindow
+/*void* qm396861566(QOpenGLContext * shareContext, QOpenGLWindow::UpdateBehavior updateBehavior, QWindow * parent)*/{
+  auto _nilp = (MyQOpenGLWindow*)(0);
+  QOpenGLContext * shareContext = *(QOpenGLContext **)this_; QOpenGLWindow::UpdateBehavior updateBehavior = *(QOpenGLWindow::UpdateBehavior*)this_; QWindow * parent = *(QWindow **)this_;
+  this_ =  new QOpenGLWindow(shareContext, updateBehavior, parent);
+  this_ =  new MyQOpenGLWindow(shareContext, updateBehavior, parent);
+}
+
 
 /*void C_ZN13QOpenGLWindowD2Ev(void *this_)*/ {
   delete (QOpenGLWindow*)(this_);

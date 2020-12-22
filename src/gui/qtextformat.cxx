@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextformat(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:314
+// [-2] void QTextFormat() 
+// (12)qm4038954802 (20)_ZN11QTextFormatC2Ev
+/*void* qm4038954802()*/{
+  ;
+  this_ =  new QTextFormat();
+  this_ =  new MyQTextFormat();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:316
+// [-2] void QTextFormat(int) 
+// (12)qm2109047495 (20)_ZN11QTextFormatC2Ei
+/*void* qm2109047495(int type_)*/{
+  int type_ = *(int*)this_;
+  this_ =  new QTextFormat(type_);
+  this_ =  new MyQTextFormat(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:318
+// [-2] void QTextFormat(const QTextFormat &) 
+// (12)qm3904420627 (23)_ZN11QTextFormatC2ERKS_
+/*void* qm3904420627(const QTextFormat & rhs)*/{
+  const QTextFormat & rhs = *(const QTextFormat *)this_;
+  this_ =  new QTextFormat(rhs);
+  this_ =  new MyQTextFormat(rhs);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:322
 // [-2] void swap(QTextFormat &) 

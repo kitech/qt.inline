@@ -56,15 +56,6 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qobjectdata(void* this_) {
   uint64_t fnptrsumval = 0;
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qobject.h:102
-// [-2] void QObjectData() 
-// (12)qm3555150319 (20)_ZN11QObjectDataC2Ev
-/*void* qm3555150319()*/{
-  ;
-  this_ = 0; // new QObjectData();
-}
-
 
 /*void C_ZN11QObjectDataD2Ev(void *this_)*/ {
   delete (QObjectData*)(this_);

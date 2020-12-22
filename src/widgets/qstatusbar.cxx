@@ -177,6 +177,17 @@ uint64_t ensure_inline_symbol_qstatusbar(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstatusbar.h:59
+// [-2] void QStatusBar(QWidget *) 
+// (12)qm2740779997 (27)_ZN10QStatusBarC2EP7QWidget
+/*void* qm2740779997(QWidget * parent)*/{
+  auto _nilp = (MyQStatusBar*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QStatusBar(parent);
+  this_ =  new MyQStatusBar(parent);
+}
+
 
 /*void C_ZN10QStatusBarD2Ev(void *this_)*/ {
   delete (QStatusBar*)(this_);

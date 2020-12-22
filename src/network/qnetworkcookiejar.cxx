@@ -138,6 +138,17 @@ uint64_t ensure_inline_symbol_qnetworkcookiejar(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkcookiejar.h:57
+// [-2] void QNetworkCookieJar(QObject *) 
+// (12)qm3021002457 (34)_ZN17QNetworkCookieJarC2EP7QObject
+/*void* qm3021002457(QObject * parent)*/{
+  auto _nilp = (MyQNetworkCookieJar*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QNetworkCookieJar(parent);
+  this_ =  new MyQNetworkCookieJar(parent);
+}
+
 
 /*void C_ZN17QNetworkCookieJarD2Ev(void *this_)*/ {
   delete (QNetworkCookieJar*)(this_);

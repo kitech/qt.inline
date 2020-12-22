@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qvideoprobe(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qvideoprobe.h:56
+// [-2] void QVideoProbe(QObject *) 
+// (12)qm3728619512 (28)_ZN11QVideoProbeC2EP7QObject
+/*void* qm3728619512(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QVideoProbe(parent);
+  this_ =  new MyQVideoProbe(parent);
+}
+
 
 /*void C_ZN11QVideoProbeD2Ev(void *this_)*/ {
   delete (QVideoProbe*)(this_);

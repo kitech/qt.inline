@@ -66,6 +66,56 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcursor(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:82
+// [-2] void QCursor() 
+// (12)qm2060366876 (15)_ZN7QCursorC2Ev
+/*void* qm2060366876()*/{
+  ;
+  this_ =  new QCursor();
+  this_ =  new MyQCursor();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:83
+// [-2] void QCursor(Qt::CursorShape) 
+// (12)qm2270285397 (32)_ZN7QCursorC2EN2Qt11CursorShapeE
+/*void* qm2270285397(Qt::CursorShape shape)*/{
+  Qt::CursorShape shape = *(Qt::CursorShape*)this_;
+  this_ =  new QCursor(shape);
+  this_ =  new MyQCursor(shape);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:84
+// [-2] void QCursor(const QBitmap &, const QBitmap &, int, int) 
+// (11)qm789977789 (29)_ZN7QCursorC2ERK7QBitmapS2_ii
+/*void* qm789977789(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY)*/{
+  const QBitmap & bitmap = *(const QBitmap *)this_; const QBitmap & mask = *(const QBitmap *)this_; int hotX = *(int*)this_; int hotY = *(int*)this_;
+  this_ =  new QCursor(bitmap, mask, hotX, hotY);
+  this_ =  new MyQCursor(bitmap, mask, hotX, hotY);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:85
+// [-2] void QCursor(const QPixmap &, int, int) 
+// (12)qm2656705789 (26)_ZN7QCursorC2ERK7QPixmapii
+/*void* qm2656705789(const QPixmap & pixmap, int hotX, int hotY)*/{
+  const QPixmap & pixmap = *(const QPixmap *)this_; int hotX = *(int*)this_; int hotY = *(int*)this_;
+  this_ =  new QCursor(pixmap, hotX, hotY);
+  this_ =  new MyQCursor(pixmap, hotX, hotY);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcursor.h:86
+// [-2] void QCursor(const QCursor &) 
+// (11)qm802496461 (18)_ZN7QCursorC2ERKS_
+/*void* qm802496461(const QCursor & cursor)*/{
+  const QCursor & cursor = *(const QCursor *)this_;
+  this_ =  new QCursor(cursor);
+  this_ =  new MyQCursor(cursor);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qcursor.h:89
 // [-2] void QCursor(QCursor &&) 
@@ -73,6 +123,7 @@ uint64_t ensure_inline_symbol_qcursor(void* this_) {
 /*void* qm710598164(QCursor && other)*/{
   QCursor && other =  static_cast<QCursor &&>(*(QCursor *)this_);
   this_ =  new QCursor(other);
+  this_ =  new MyQCursor(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

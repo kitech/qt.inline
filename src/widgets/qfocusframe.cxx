@@ -163,6 +163,17 @@ uint64_t ensure_inline_symbol_qfocusframe(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfocusframe.h:56
+// [-2] void QFocusFrame(QWidget *) 
+// (12)qm1736374078 (28)_ZN11QFocusFrameC2EP7QWidget
+/*void* qm1736374078(QWidget * parent)*/{
+  auto _nilp = (MyQFocusFrame*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QFocusFrame(parent);
+  this_ =  new MyQFocusFrame(parent);
+}
+
 
 /*void C_ZN11QFocusFrameD2Ev(void *this_)*/ {
   delete (QFocusFrame*)(this_);

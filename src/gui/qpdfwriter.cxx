@@ -153,6 +153,28 @@ uint64_t ensure_inline_symbol_qpdfwriter(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpdfwriter.h:60
+// [-2] void QPdfWriter(const QString &) 
+// (12)qm2138992355 (28)_ZN10QPdfWriterC2ERK7QString
+/*void* qm2138992355(const QString & filename)*/{
+  auto _nilp = (MyQPdfWriter*)(0);
+  const QString & filename = *(const QString *)this_;
+  this_ =  new QPdfWriter(filename);
+  this_ =  new MyQPdfWriter(filename);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpdfwriter.h:61
+// [-2] void QPdfWriter(QIODevice *) 
+// (12)qm3821840367 (29)_ZN10QPdfWriterC2EP9QIODevice
+/*void* qm3821840367(QIODevice * device)*/{
+  auto _nilp = (MyQPdfWriter*)(0);
+  QIODevice * device = *(QIODevice **)this_;
+  this_ =  new QPdfWriter(device);
+  this_ =  new MyQPdfWriter(device);
+}
+
 
 /*void C_ZN10QPdfWriterD2Ev(void *this_)*/ {
   delete (QPdfWriter*)(this_);

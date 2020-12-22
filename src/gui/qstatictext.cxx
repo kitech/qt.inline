@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstatictext(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstatictext.h:64
+// [-2] void QStaticText() 
+// (11)qm488460396 (20)_ZN11QStaticTextC2Ev
+/*void* qm488460396()*/{
+  ;
+  this_ =  new QStaticText();
+  this_ =  new MyQStaticText();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstatictext.h:65
+// [-2] void QStaticText(const QString &) 
+// (12)qm2285038008 (29)_ZN11QStaticTextC2ERK7QString
+/*void* qm2285038008(const QString & text)*/{
+  const QString & text = *(const QString *)this_;
+  this_ =  new QStaticText(text);
+  this_ =  new MyQStaticText(text);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstatictext.h:66
+// [-2] void QStaticText(const QStaticText &) 
+// (12)qm1592574588 (23)_ZN11QStaticTextC2ERKS_
+/*void* qm1592574588(const QStaticText & other)*/{
+  const QStaticText & other = *(const QStaticText *)this_;
+  this_ =  new QStaticText(other);
+  this_ =  new MyQStaticText(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstatictext.h:67
 // [8] QStaticText & operator=(QStaticText &&) 

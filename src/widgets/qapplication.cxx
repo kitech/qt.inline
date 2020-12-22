@@ -151,6 +151,17 @@ uint64_t ensure_inline_symbol_qapplication(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qapplication.h:96
+// [-2] void QApplication(int &, char **, int) 
+// (12)qm3158502489 (26)_ZN12QApplicationC2ERiPPci
+/*void* qm3158502489(int & argc, char ** argv, int arg2)*/{
+  auto _nilp = (MyQApplication*)(0);
+  int & argc = *(int *)this_; char ** argv = *(char ***)this_; int arg2 = *(int*)this_;
+  this_ =  new QApplication(*(new int(argc)), argv, arg2);
+  this_ =  new MyQApplication(*(new int(argc)), argv, arg2);
+}
+
 // Public static inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qapplication.h:140
 // [8] QWidget * widgetAt(int, int) 

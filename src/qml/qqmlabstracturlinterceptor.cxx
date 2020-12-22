@@ -70,15 +70,6 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qqmlabstracturlinterceptor(void* this_) {
   uint64_t fnptrsumval = 0;
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:58
-// [-2] void QQmlAbstractUrlInterceptor() 
-// (12)qm1177919034 (35)_ZN26QQmlAbstractUrlInterceptorC2Ev
-/*void* qm1177919034()*/{
-  ;
-  this_ = 0; // new QQmlAbstractUrlInterceptor();
-}
-
 // Public inline virtual Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlabstracturlinterceptor.h:59
 // [-2] void ~QQmlAbstractUrlInterceptor() 

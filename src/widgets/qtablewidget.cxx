@@ -208,6 +208,28 @@ uint64_t ensure_inline_symbol_qtablewidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:236
+// [-2] void QTableWidget(QWidget *) 
+// (12)qm1001403885 (29)_ZN12QTableWidgetC2EP7QWidget
+/*void* qm1001403885(QWidget * parent)*/{
+  auto _nilp = (MyQTableWidget*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTableWidget(parent);
+  this_ =  new MyQTableWidget(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:237
+// [-2] void QTableWidget(int, int, QWidget *) 
+// (12)qm2159830923 (31)_ZN12QTableWidgetC2EiiP7QWidget
+/*void* qm2159830923(int rows, int columns, QWidget * parent)*/{
+  auto _nilp = (MyQTableWidget*)(0);
+  int rows = *(int*)this_; int columns = *(int*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTableWidget(rows, columns, parent);
+  this_ =  new MyQTableWidget(rows, columns, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:283
 // [-2] void removeCellWidget(int, int) 

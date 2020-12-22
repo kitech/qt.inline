@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qopenglversionfunctionsbackend(void* this_) {
 /*void* qm384815462(QOpenGLContext * ctx)*/{
   QOpenGLContext * ctx = *(QOpenGLContext **)this_;
   this_ =  new QOpenGLVersionFunctionsBackend(ctx);
+  this_ =  new MyQOpenGLVersionFunctionsBackend(ctx);
 }
 
 

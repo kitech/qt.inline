@@ -65,6 +65,17 @@ uint64_t ensure_inline_symbol_qmutex(void* this_) {
 /*void* qm73223203()*/{
   ;
   this_ =  new QMutex();
+  this_ =  new MyQMutex();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmutex.h:138
+// [-2] void QMutex(QMutex::RecursionMode) 
+// (11)qm870870648 (32)_ZN6QMutexC2ENS_13RecursionModeE
+/*void* qm870870648(QMutex::RecursionMode mode)*/{
+  QMutex::RecursionMode mode = *(QMutex::RecursionMode*)this_;
+  this_ =  new QMutex(mode);
+  this_ =  new MyQMutex(mode);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

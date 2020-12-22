@@ -178,6 +178,28 @@ uint64_t ensure_inline_symbol_qprogressdialog(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qprogressdialog.h:71
+// [-2] void QProgressDialog(QWidget *, Qt::WindowFlags) 
+// (12)qm3517239756 (58)_ZN15QProgressDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm3517239756(QWidget * parent, QFlags<Qt::WindowType> flags)*/{
+  auto _nilp = (MyQProgressDialog*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> flags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QProgressDialog(parent, flags);
+  this_ =  new MyQProgressDialog(parent, flags);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qprogressdialog.h:72
+// [-2] void QProgressDialog(const QString &, const QString &, int, int, QWidget *, Qt::WindowFlags) 
+// (11)qm163772542 (73)_ZN15QProgressDialogC2ERK7QStringS2_iiP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm163772542(const QString & labelText, const QString & cancelButtonText, int minimum, int maximum, QWidget * parent, QFlags<Qt::WindowType> flags)*/{
+  auto _nilp = (MyQProgressDialog*)(0);
+  const QString & labelText = *(const QString *)this_; const QString & cancelButtonText = *(const QString *)this_; int minimum = *(int*)this_; int maximum = *(int*)this_; QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> flags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QProgressDialog(labelText, cancelButtonText, minimum, maximum, parent, flags);
+  this_ =  new MyQProgressDialog(labelText, cancelButtonText, minimum, maximum, parent, flags);
+}
+
 
 /*void C_ZN15QProgressDialogD2Ev(void *this_)*/ {
   delete (QProgressDialog*)(this_);

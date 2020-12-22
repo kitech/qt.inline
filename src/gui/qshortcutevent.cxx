@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qshortcutevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:809
+// [-2] void QShortcutEvent(const QKeySequence &, int, bool) 
+// (12)qm4164138623 (40)_ZN14QShortcutEventC2ERK12QKeySequenceib
+/*void* qm4164138623(const QKeySequence & key, int id, bool ambiguous)*/{
+  const QKeySequence & key = *(const QKeySequence *)this_; int id = *(int*)this_; bool ambiguous = *(bool*)this_;
+  this_ =  new QShortcutEvent(key, id, ambiguous);
+  this_ =  new MyQShortcutEvent(key, id, ambiguous);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:812
 // [8] const QKeySequence & key() const

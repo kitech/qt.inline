@@ -151,15 +151,6 @@ uint64_t ensure_inline_symbol_qlayoutitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
 // Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtWidgets/qlayoutitem.h:63
-// [-2] void QLayoutItem(Qt::Alignment) 
-// (11)qm536863978 (48)_ZN11QLayoutItemC2E6QFlagsIN2Qt13AlignmentFlagEE
-/*void* qm536863978(QFlags<Qt::AlignmentFlag> alignment)*/{
-  QFlags<Qt::AlignmentFlag> alignment = *(QFlags<Qt::AlignmentFlag>*)this_;
-  this_ = 0; // new QLayoutItem(alignment);
-}
-
-// Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlayoutitem.h:85
 // [4] Qt::Alignment alignment() const
 // (10)qm23188746 (29)_ZNK11QLayoutItem9alignmentEv

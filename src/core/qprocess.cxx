@@ -166,6 +166,17 @@ uint64_t ensure_inline_symbol_qprocess(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:158
+// [-2] void QProcess(QObject *) 
+// (12)qm1179500296 (24)_ZN8QProcessC2EP7QObject
+/*void* qm1179500296(QObject * parent)*/{
+  auto _nilp = (MyQProcess*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QProcess(parent);
+  this_ =  new MyQProcess(parent);
+}
+
 
 /*void C_ZN8QProcessD2Ev(void *this_)*/ {
   delete (QProcess*)(this_);

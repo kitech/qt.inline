@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qtcpsocket(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qtcpsocket.h:56
+// [-2] void QTcpSocket(QObject *) 
+// (11)qm436325764 (27)_ZN10QTcpSocketC2EP7QObject
+/*void* qm436325764(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QTcpSocket(parent);
+  this_ =  new MyQTcpSocket(parent);
+}
+
 
 /*void C_ZN10QTcpSocketD2Ev(void *this_)*/ {
   delete (QTcpSocket*)(this_);

@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qdoublevalidator(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:136
+// [-2] void QDoubleValidator(QObject *) 
+// (12)qm3394597441 (33)_ZN16QDoubleValidatorC2EP7QObject
+/*void* qm3394597441(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QDoubleValidator(parent);
+  this_ =  new MyQDoubleValidator(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:137
+// [-2] void QDoubleValidator(double, double, int, QObject *) 
+// (12)qm3181960926 (36)_ZN16QDoubleValidatorC2EddiP7QObject
+/*void* qm3181960926(double bottom, double top, int decimals, QObject * parent)*/{
+  double bottom = *(double*)this_; double top = *(double*)this_; int decimals = *(int*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QDoubleValidator(bottom, top, decimals, parent);
+  this_ =  new MyQDoubleValidator(bottom, top, decimals, parent);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:153
 // [8] double bottom() const

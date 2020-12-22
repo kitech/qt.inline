@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsggeometry(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsggeometry.h:146
+// [-2] void QSGGeometry(const QSGGeometry::AttributeSet &, int, int, int) 
+// (12)qm2625391281 (42)_ZN11QSGGeometryC2ERKNS_12AttributeSetEiii
+/*void* qm2625391281(const QSGGeometry::AttributeSet & attribs, int vertexCount, int indexCount, int indexType)*/{
+  const QSGGeometry::AttributeSet & attribs = *(const QSGGeometry::AttributeSet *)this_; int vertexCount = *(int*)this_; int indexCount = *(int*)this_; int indexType = *(int*)this_;
+  this_ =  new QSGGeometry(attribs, vertexCount, indexCount, indexType);
+  this_ =  new MyQSGGeometry(attribs, vertexCount, indexCount, indexType);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsggeometry.h:154
 // [4] unsigned int drawingMode() const

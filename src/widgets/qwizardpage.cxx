@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qwizardpage(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qwizard.h:225
+// [-2] void QWizardPage(QWidget *) 
+// (12)qm2594782233 (28)_ZN11QWizardPageC2EP7QWidget
+/*void* qm2594782233(QWidget * parent)*/{
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QWizardPage(parent);
+  this_ =  new MyQWizardPage(parent);
+}
+
 
 /*void C_ZN11QWizardPageD2Ev(void *this_)*/ {
   delete (QWizardPage*)(this_);

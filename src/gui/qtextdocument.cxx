@@ -154,6 +154,28 @@ uint64_t ensure_inline_symbol_qtextdocument(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:119
+// [-2] void QTextDocument(QObject *) 
+// (12)qm1519397152 (30)_ZN13QTextDocumentC2EP7QObject
+/*void* qm1519397152(QObject * parent)*/{
+  auto _nilp = (MyQTextDocument*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QTextDocument(parent);
+  this_ =  new MyQTextDocument(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextdocument.h:120
+// [-2] void QTextDocument(const QString &, QObject *) 
+// (12)qm2073997518 (40)_ZN13QTextDocumentC2ERK7QStringP7QObject
+/*void* qm2073997518(const QString & text, QObject * parent)*/{
+  auto _nilp = (MyQTextDocument*)(0);
+  const QString & text = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QTextDocument(text, parent);
+  this_ =  new MyQTextDocument(text, parent);
+}
+
 
 /*void C_ZN13QTextDocumentD2Ev(void *this_)*/ {
   delete (QTextDocument*)(this_);

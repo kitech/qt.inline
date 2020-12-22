@@ -152,6 +152,17 @@ uint64_t ensure_inline_symbol_qgraphicsitemanimation(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitemanimation.h:62
+// [-2] void QGraphicsItemAnimation(QObject *) 
+// (12)qm2914697205 (39)_ZN22QGraphicsItemAnimationC2EP7QObject
+/*void* qm2914697205(QObject * parent)*/{
+  auto _nilp = (MyQGraphicsItemAnimation*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsItemAnimation(parent);
+  this_ =  new MyQGraphicsItemAnimation(parent);
+}
+
 
 /*void C_ZN22QGraphicsItemAnimationD2Ev(void *this_)*/ {
   delete (QGraphicsItemAnimation*)(this_);

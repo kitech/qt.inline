@@ -155,6 +155,28 @@ uint64_t ensure_inline_symbol_qpauseanimation(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpauseanimation.h:56
+// [-2] void QPauseAnimation(QObject *) 
+// (12)qm1170153284 (32)_ZN15QPauseAnimationC2EP7QObject
+/*void* qm1170153284(QObject * parent)*/{
+  auto _nilp = (MyQPauseAnimation*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QPauseAnimation(parent);
+  this_ =  new MyQPauseAnimation(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpauseanimation.h:57
+// [-2] void QPauseAnimation(int, QObject *) 
+// (12)qm2872106581 (33)_ZN15QPauseAnimationC2EiP7QObject
+/*void* qm2872106581(int msecs, QObject * parent)*/{
+  auto _nilp = (MyQPauseAnimation*)(0);
+  int msecs = *(int*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QPauseAnimation(msecs, parent);
+  this_ =  new MyQPauseAnimation(msecs, parent);
+}
+
 
 /*void C_ZN15QPauseAnimationD2Ev(void *this_)*/ {
   delete (QPauseAnimation*)(this_);

@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qaudioprobe(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudioprobe.h:56
+// [-2] void QAudioProbe(QObject *) 
+// (12)qm2385923263 (28)_ZN11QAudioProbeC2EP7QObject
+/*void* qm2385923263(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QAudioProbe(parent);
+  this_ =  new MyQAudioProbe(parent);
+}
+
 
 /*void C_ZN11QAudioProbeD2Ev(void *this_)*/ {
   delete (QAudioProbe*)(this_);

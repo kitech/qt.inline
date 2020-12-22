@@ -137,6 +137,17 @@ uint64_t ensure_inline_symbol_qdesktopwidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdesktopwidget.h:61
+// [-2] void QDesktopWidget() 
+// (12)qm4091354047 (23)_ZN14QDesktopWidgetC2Ev
+/*void* qm4091354047()*/{
+  auto _nilp = (MyQDesktopWidget*)(0);
+  ;
+  this_ =  new QDesktopWidget();
+  this_ =  new MyQDesktopWidget();
+}
+
 
 /*void C_ZN14QDesktopWidgetD2Ev(void *this_)*/ {
   delete (QDesktopWidget*)(this_);

@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptiontitlebar(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:646
+// [-2] void QStyleOptionTitleBar() 
+// (10)qm74783596 (29)_ZN20QStyleOptionTitleBarC2Ev
+/*void* qm74783596()*/{
+  ;
+  this_ =  new QStyleOptionTitleBar();
+  this_ =  new MyQStyleOptionTitleBar();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:647
 // [-2] void QStyleOptionTitleBar(const QStyleOptionTitleBar &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptiontitlebar(void* this_) {
 /*void* qm235453889(const QStyleOptionTitleBar & other)*/{
   const QStyleOptionTitleBar & other = *(const QStyleOptionTitleBar *)this_;
   this_ =  new QStyleOptionTitleBar(other);
+  this_ =  new MyQStyleOptionTitleBar(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

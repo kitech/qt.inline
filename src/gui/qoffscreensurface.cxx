@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qoffscreensurface(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qoffscreensurface.h:61
+// [-2] void QOffscreenSurface(QScreen *, QObject *) 
+// (12)qm1329342925 (43)_ZN17QOffscreenSurfaceC2EP7QScreenP7QObject
+/*void* qm1329342925(QScreen * screen, QObject * parent)*/{
+  QScreen * screen = *(QScreen **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QOffscreenSurface(screen, parent);
+  this_ =  new MyQOffscreenSurface(screen, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qoffscreensurface.h:62
+// [-2] void QOffscreenSurface(QScreen *) 
+// (12)qm1458013500 (34)_ZN17QOffscreenSurfaceC2EP7QScreen
+/*void* qm1458013500(QScreen * screen)*/{
+  QScreen * screen = *(QScreen **)this_;
+  this_ =  new QOffscreenSurface(screen);
+  this_ =  new MyQOffscreenSurface(screen);
+}
+
 
 /*void C_ZN17QOffscreenSurfaceD2Ev(void *this_)*/ {
   delete (QOffscreenSurface*)(this_);

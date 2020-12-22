@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgeoshape(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoshape.h:61
+// [-2] void QGeoShape() 
+// (12)qm1876335661 (17)_ZN9QGeoShapeC2Ev
+/*void* qm1876335661()*/{
+  ;
+  this_ =  new QGeoShape();
+  this_ =  new MyQGeoShape();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeoshape.h:62
+// [-2] void QGeoShape(const QGeoShape &) 
+// (12)qm1145939587 (20)_ZN9QGeoShapeC2ERKS_
+/*void* qm1145939587(const QGeoShape & other)*/{
+  const QGeoShape & other = *(const QGeoShape *)this_;
+  this_ =  new QGeoShape(other);
+  this_ =  new MyQGeoShape(other);
+}
+
 
 /*void C_ZN9QGeoShapeD2Ev(void *this_)*/ {
   delete (QGeoShape*)(this_);

@@ -66,6 +66,66 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgeorectangle(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeorectangle.h:61
+// [-2] void QGeoRectangle() 
+// (11)qm279049787 (22)_ZN13QGeoRectangleC2Ev
+/*void* qm279049787()*/{
+  ;
+  this_ =  new QGeoRectangle();
+  this_ =  new MyQGeoRectangle();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeorectangle.h:62
+// [-2] void QGeoRectangle(const QGeoCoordinate &, double, double) 
+// (12)qm3979943334 (41)_ZN13QGeoRectangleC2ERK14QGeoCoordinatedd
+/*void* qm3979943334(const QGeoCoordinate & center, double degreesWidth, double degreesHeight)*/{
+  const QGeoCoordinate & center = *(const QGeoCoordinate *)this_; double degreesWidth = *(double*)this_; double degreesHeight = *(double*)this_;
+  this_ =  new QGeoRectangle(center, degreesWidth, degreesHeight);
+  this_ =  new MyQGeoRectangle(center, degreesWidth, degreesHeight);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeorectangle.h:63
+// [-2] void QGeoRectangle(const QGeoCoordinate &, const QGeoCoordinate &) 
+// (12)qm3679163887 (42)_ZN13QGeoRectangleC2ERK14QGeoCoordinateS2_
+/*void* qm3679163887(const QGeoCoordinate & topLeft, const QGeoCoordinate & bottomRight)*/{
+  const QGeoCoordinate & topLeft = *(const QGeoCoordinate *)this_; const QGeoCoordinate & bottomRight = *(const QGeoCoordinate *)this_;
+  this_ =  new QGeoRectangle(topLeft, bottomRight);
+  this_ =  new MyQGeoRectangle(topLeft, bottomRight);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeorectangle.h:64
+// [-2] void QGeoRectangle(const QList<QGeoCoordinate> &) 
+// (12)qm3069697439 (47)_ZN13QGeoRectangleC2ERK5QListI14QGeoCoordinateE
+/*void* qm3069697439(const QList<QGeoCoordinate> & coordinates)*/{
+  const QList<QGeoCoordinate> & coordinates = *(const QList<QGeoCoordinate> *)this_;
+  this_ =  new QGeoRectangle(coordinates);
+  this_ =  new MyQGeoRectangle(coordinates);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeorectangle.h:65
+// [-2] void QGeoRectangle(const QGeoRectangle &) 
+// (11)qm227876492 (25)_ZN13QGeoRectangleC2ERKS_
+/*void* qm227876492(const QGeoRectangle & other)*/{
+  const QGeoRectangle & other = *(const QGeoRectangle *)this_;
+  this_ =  new QGeoRectangle(other);
+  this_ =  new MyQGeoRectangle(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeorectangle.h:66
+// [-2] void QGeoRectangle(const QGeoShape &) 
+// (11)qm885823229 (33)_ZN13QGeoRectangleC2ERK9QGeoShape
+/*void* qm885823229(const QGeoShape & other)*/{
+  const QGeoShape & other = *(const QGeoShape *)this_;
+  this_ =  new QGeoRectangle(other);
+  this_ =  new MyQGeoRectangle(other);
+}
+
 // Public Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeorectangle.h:108
 // [8] QGeoRectangle operator|(const QGeoRectangle &) const

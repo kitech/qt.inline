@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qdtlsclientverifier(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdtls.h:82
+// [-2] void QDtlsClientVerifier(QObject *) 
+// (12)qm1419887213 (36)_ZN19QDtlsClientVerifierC2EP7QObject
+/*void* qm1419887213(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QDtlsClientVerifier(parent);
+  this_ =  new MyQDtlsClientVerifier(parent);
+}
+
 
 /*void C_ZN19QDtlsClientVerifierD2Ev(void *this_)*/ {
   delete (QDtlsClientVerifier*)(this_);

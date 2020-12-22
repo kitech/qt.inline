@@ -154,6 +154,28 @@ uint64_t ensure_inline_symbol_qcolordialog(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolordialog.h:71
+// [-2] void QColorDialog(QWidget *) 
+// (11)qm430001321 (29)_ZN12QColorDialogC2EP7QWidget
+/*void* qm430001321(QWidget * parent)*/{
+  auto _nilp = (MyQColorDialog*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QColorDialog(parent);
+  this_ =  new MyQColorDialog(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolordialog.h:72
+// [-2] void QColorDialog(const QColor &, QWidget *) 
+// (11)qm718652138 (38)_ZN12QColorDialogC2ERK6QColorP7QWidget
+/*void* qm718652138(const QColor & initial, QWidget * parent)*/{
+  auto _nilp = (MyQColorDialog*)(0);
+  const QColor & initial = *(const QColor *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QColorDialog(initial, parent);
+  this_ =  new MyQColorDialog(initial, parent);
+}
+
 
 /*void C_ZN12QColorDialogD2Ev(void *this_)*/ {
   delete (QColorDialog*)(this_);

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtimerevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:340
+// [-2] void QTimerEvent(int) 
+// (11)qm754475756 (20)_ZN11QTimerEventC2Ei
+/*void* qm754475756(int timerId)*/{
+  int timerId = *(int*)this_;
+  this_ =  new QTimerEvent(timerId);
+  this_ =  new MyQTimerEvent(timerId);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:342
 // [4] int timerId() const

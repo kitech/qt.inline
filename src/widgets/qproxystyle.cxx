@@ -140,6 +140,28 @@ uint64_t ensure_inline_symbol_qproxystyle(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qproxystyle.h:57
+// [-2] void QProxyStyle(QStyle *) 
+// (12)qm1453342661 (27)_ZN11QProxyStyleC2EP6QStyle
+/*void* qm1453342661(QStyle * style)*/{
+  auto _nilp = (MyQProxyStyle*)(0);
+  QStyle * style = *(QStyle **)this_;
+  this_ =  new QProxyStyle(style);
+  this_ =  new MyQProxyStyle(style);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qproxystyle.h:58
+// [-2] void QProxyStyle(const QString &) 
+// (12)qm3061685478 (29)_ZN11QProxyStyleC2ERK7QString
+/*void* qm3061685478(const QString & key)*/{
+  auto _nilp = (MyQProxyStyle*)(0);
+  const QString & key = *(const QString *)this_;
+  this_ =  new QProxyStyle(key);
+  this_ =  new MyQProxyStyle(key);
+}
+
 
 /*void C_ZN11QProxyStyleD2Ev(void *this_)*/ {
   delete (QProxyStyle*)(this_);

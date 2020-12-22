@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwebenginehttprequest(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h:61
+// [-2] void QWebEngineHttpRequest(const QUrl &, const QWebEngineHttpRequest::Method &) 
+// (12)qm2395567218 (49)_ZN21QWebEngineHttpRequestC2ERK4QUrlRKNS_6MethodE
+/*void* qm2395567218(const QUrl & url, const QWebEngineHttpRequest::Method & method)*/{
+  const QUrl & url = *(const QUrl *)this_; const QWebEngineHttpRequest::Method & method = *(const QWebEngineHttpRequest::Method *)this_;
+  this_ =  new QWebEngineHttpRequest(url, method);
+  this_ =  new MyQWebEngineHttpRequest(url, method);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h:63
+// [-2] void QWebEngineHttpRequest(const QWebEngineHttpRequest &) 
+// (11)qm190623355 (33)_ZN21QWebEngineHttpRequestC2ERKS_
+/*void* qm190623355(const QWebEngineHttpRequest & other)*/{
+  const QWebEngineHttpRequest & other = *(const QWebEngineHttpRequest *)this_;
+  this_ =  new QWebEngineHttpRequest(other);
+  this_ =  new MyQWebEngineHttpRequest(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineCore/qwebenginehttprequest.h:66
 // [8] QWebEngineHttpRequest & operator=(QWebEngineHttpRequest &&) 

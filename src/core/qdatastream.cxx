@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdatastream(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:134
+// [-2] void QDataStream() 
+// (12)qm1024512340 (20)_ZN11QDataStreamC2Ev
+/*void* qm1024512340()*/{
+  ;
+  this_ =  new QDataStream();
+  this_ =  new MyQDataStream();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:135
+// [-2] void QDataStream(QIODevice *) 
+// (12)qm1093704089 (30)_ZN11QDataStreamC2EP9QIODevice
+/*void* qm1093704089(QIODevice * arg0)*/{
+  QIODevice * arg0 = *(QIODevice **)this_;
+  this_ =  new QDataStream(arg0);
+  this_ =  new MyQDataStream(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:136
+// [-2] void QDataStream(QByteArray *, QIODevice::OpenMode) 
+// (12)qm2299279107 (67)_ZN11QDataStreamC2EP10QByteArray6QFlagsIN9QIODevice12OpenModeFlagEE
+/*void* qm2299279107(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags)*/{
+  QByteArray * arg0 = *(QByteArray **)this_; QFlags<QIODevice::OpenModeFlag> flags = *(QFlags<QIODevice::OpenModeFlag>*)this_;
+  this_ =  new QDataStream(arg0, flags);
+  this_ =  new MyQDataStream(arg0, flags);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatastream.h:137
+// [-2] void QDataStream(const QByteArray &) 
+// (12)qm3901970218 (33)_ZN11QDataStreamC2ERK10QByteArray
+/*void* qm3901970218(const QByteArray & arg0)*/{
+  const QByteArray & arg0 = *(const QByteArray *)this_;
+  this_ =  new QDataStream(arg0);
+  this_ =  new MyQDataStream(arg0);
+}
+
 // Public Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatastream.h:140
 // [8] QIODevice * device() const

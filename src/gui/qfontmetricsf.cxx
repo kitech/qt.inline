@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfontmetricsf(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:155
+// [-2] void QFontMetricsF(const QFont &) 
+// (12)qm1328389211 (29)_ZN13QFontMetricsFC2ERK5QFont
+/*void* qm1328389211(const QFont & font)*/{
+  const QFont & font = *(const QFont *)this_;
+  this_ =  new QFontMetricsF(font);
+  this_ =  new MyQFontMetricsF(font);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:157
+// [-2] void QFontMetricsF(const QFont &, QPaintDevice *) 
+// (12)qm1388895818 (44)_ZN13QFontMetricsFC2ERK5QFontP12QPaintDevice
+/*void* qm1388895818(const QFont & font, QPaintDevice * pd)*/{
+  const QFont & font = *(const QFont *)this_; QPaintDevice * pd = *(QPaintDevice **)this_;
+  this_ =  new QFontMetricsF(font, pd);
+  this_ =  new MyQFontMetricsF(font, pd);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:169
+// [-2] void QFontMetricsF(const QFontMetrics &) 
+// (12)qm2235435477 (37)_ZN13QFontMetricsFC2ERK12QFontMetrics
+/*void* qm2235435477(const QFontMetrics & arg0)*/{
+  const QFontMetrics & arg0 = *(const QFontMetrics *)this_;
+  this_ =  new QFontMetricsF(arg0);
+  this_ =  new MyQFontMetricsF(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontmetrics.h:170
+// [-2] void QFontMetricsF(const QFontMetricsF &) 
+// (12)qm3953285582 (25)_ZN13QFontMetricsFC2ERKS_
+/*void* qm3953285582(const QFontMetricsF & arg0)*/{
+  const QFontMetricsF & arg0 = *(const QFontMetricsF *)this_;
+  this_ =  new QFontMetricsF(arg0);
+  this_ =  new MyQFontMetricsF(arg0);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontmetrics.h:175
 // [8] QFontMetricsF & operator=(QFontMetricsF &&) 

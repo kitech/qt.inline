@@ -239,6 +239,28 @@ uint64_t ensure_inline_symbol_qgroupbox(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgroupbox.h:62
+// [-2] void QGroupBox(QWidget *) 
+// (11)qm662756536 (25)_ZN9QGroupBoxC2EP7QWidget
+/*void* qm662756536(QWidget * parent)*/{
+  auto _nilp = (MyQGroupBox*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QGroupBox(parent);
+  this_ =  new MyQGroupBox(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgroupbox.h:63
+// [-2] void QGroupBox(const QString &, QWidget *) 
+// (12)qm2800323070 (35)_ZN9QGroupBoxC2ERK7QStringP7QWidget
+/*void* qm2800323070(const QString & title, QWidget * parent)*/{
+  auto _nilp = (MyQGroupBox*)(0);
+  const QString & title = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QGroupBox(title, parent);
+  this_ =  new MyQGroupBox(title, parent);
+}
+
 
 /*void C_ZN9QGroupBoxD2Ev(void *this_)*/ {
   delete (QGroupBox*)(this_);

@@ -273,6 +273,50 @@ uint64_t ensure_inline_symbol_qdatetimeedit(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:96
+// [-2] void QDateTimeEdit(QWidget *) 
+// (12)qm4065581080 (30)_ZN13QDateTimeEditC2EP7QWidget
+/*void* qm4065581080(QWidget * parent)*/{
+  auto _nilp = (MyQDateTimeEdit*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDateTimeEdit(parent);
+  this_ =  new MyQDateTimeEdit(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:97
+// [-2] void QDateTimeEdit(const QDateTime &, QWidget *) 
+// (12)qm1210068397 (42)_ZN13QDateTimeEditC2ERK9QDateTimeP7QWidget
+/*void* qm1210068397(const QDateTime & dt, QWidget * parent)*/{
+  auto _nilp = (MyQDateTimeEdit*)(0);
+  const QDateTime & dt = *(const QDateTime *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDateTimeEdit(dt, parent);
+  this_ =  new MyQDateTimeEdit(dt, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:98
+// [-2] void QDateTimeEdit(const QDate &, QWidget *) 
+// (12)qm3414390093 (38)_ZN13QDateTimeEditC2ERK5QDateP7QWidget
+/*void* qm3414390093(const QDate & d, QWidget * parent)*/{
+  auto _nilp = (MyQDateTimeEdit*)(0);
+  const QDate & d = *(const QDate *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDateTimeEdit(d, parent);
+  this_ =  new MyQDateTimeEdit(d, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:99
+// [-2] void QDateTimeEdit(const QTime &, QWidget *) 
+// (12)qm2889047847 (38)_ZN13QDateTimeEditC2ERK5QTimeP7QWidget
+/*void* qm2889047847(const QTime & t, QWidget * parent)*/{
+  auto _nilp = (MyQDateTimeEdit*)(0);
+  const QTime & t = *(const QTime *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDateTimeEdit(t, parent);
+  this_ =  new MyQDateTimeEdit(t, parent);
+}
+
 
 /*void C_ZN13QDateTimeEditD2Ev(void *this_)*/ {
   delete (QDateTimeEdit*)(this_);

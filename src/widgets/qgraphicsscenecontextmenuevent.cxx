@@ -59,6 +59,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicsscenecontextmenuevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:174
+// [-2] void QGraphicsSceneContextMenuEvent(QEvent::Type) 
+// (12)qm2554234773 (52)_ZN30QGraphicsSceneContextMenuEventC2EN6QEvent4TypeE
+/*void* qm2554234773(QEvent::Type type_)*/{
+  QEvent::Type type_ = *(QEvent::Type*)this_;
+  this_ =  new QGraphicsSceneContextMenuEvent(type_);
+  this_ =  new MyQGraphicsSceneContextMenuEvent(type_);
+}
+
 
 /*void C_ZN30QGraphicsSceneContextMenuEventD2Ev(void *this_)*/ {
   delete (QGraphicsSceneContextMenuEvent*)(this_);

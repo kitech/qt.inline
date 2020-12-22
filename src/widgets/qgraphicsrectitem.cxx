@@ -102,6 +102,39 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicsrectitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:671
+// [-2] void QGraphicsRectItem(QGraphicsItem *) 
+// (12)qm2482874064 (41)_ZN17QGraphicsRectItemC2EP13QGraphicsItem
+/*void* qm2482874064(QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsRectItem*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsRectItem(parent);
+  this_ =  new MyQGraphicsRectItem(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:672
+// [-2] void QGraphicsRectItem(const QRectF &, QGraphicsItem *) 
+// (12)qm1758227205 (50)_ZN17QGraphicsRectItemC2ERK6QRectFP13QGraphicsItem
+/*void* qm1758227205(const QRectF & rect, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsRectItem*)(0);
+  const QRectF & rect = *(const QRectF *)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsRectItem(rect, parent);
+  this_ =  new MyQGraphicsRectItem(rect, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:673
+// [-2] void QGraphicsRectItem(qreal, qreal, qreal, qreal, QGraphicsItem *) 
+// (12)qm1750372596 (45)_ZN17QGraphicsRectItemC2EddddP13QGraphicsItem
+/*void* qm1750372596(double x, double y, double w, double h, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsRectItem*)(0);
+  double x = *(double*)this_; double y = *(double*)this_; double w = *(double*)this_; double h = *(double*)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsRectItem(x, y, w, h, parent);
+  this_ =  new MyQGraphicsRectItem(x, y, w, h, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:678
 // [-2] void setRect(qreal, qreal, qreal, qreal) 

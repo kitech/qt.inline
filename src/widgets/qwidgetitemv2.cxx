@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwidgetitemv2(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlayoutitem.h:156
+// [-2] void QWidgetItemV2(QWidget *) 
+// (12)qm1692828260 (30)_ZN13QWidgetItemV2C2EP7QWidget
+/*void* qm1692828260(QWidget * widget)*/{
+  QWidget * widget = *(QWidget **)this_;
+  this_ =  new QWidgetItemV2(widget);
+  this_ =  new MyQWidgetItemV2(widget);
+}
+
 
 /*void C_ZN13QWidgetItemV2D2Ev(void *this_)*/ {
   delete (QWidgetItemV2*)(this_);

@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qsignalblocker(void* this_) {
 /*void* qm897789643(QObject * o)*/{
   QObject * o = *(QObject **)this_;
   this_ =  new QSignalBlocker(o);
+  this_ =  new MyQSignalBlocker(o);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qsignalblocker(void* this_) {
 /*void* qm460654157(QObject & o)*/{
   QObject & o = *(QObject *)this_;
   this_ =  new QSignalBlocker(o);
+  this_ =  new MyQSignalBlocker(o);
 }
 
 // Public inline Visibility=Default Availability=Available

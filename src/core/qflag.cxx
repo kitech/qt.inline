@@ -69,6 +69,7 @@ uint64_t ensure_inline_symbol_qflag(void* this_) {
 /*void* qm3296659139(int value)*/{
   int value = *(int*)this_;
   this_ =  new QFlag(value);
+  this_ =  new MyQFlag(value);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -78,6 +79,7 @@ uint64_t ensure_inline_symbol_qflag(void* this_) {
 /*void* qm1568036729(unsigned int value)*/{
   unsigned int value = *(unsigned int*)this_;
   this_ =  new QFlag(value);
+  this_ =  new MyQFlag(value);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,6 +89,7 @@ uint64_t ensure_inline_symbol_qflag(void* this_) {
 /*void* qm958267321(short value)*/{
   short value = *(short*)this_;
   this_ =  new QFlag(value);
+  this_ =  new MyQFlag(value);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -96,6 +99,7 @@ uint64_t ensure_inline_symbol_qflag(void* this_) {
 /*void* qm2809752090(unsigned short value)*/{
   unsigned short value = *(unsigned short*)this_;
   this_ =  new QFlag(value);
+  this_ =  new MyQFlag(value);
 }
 
 

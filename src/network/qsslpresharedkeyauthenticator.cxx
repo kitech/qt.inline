@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslpresharedkeyauthenticator(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:57
+// [-2] void QSslPreSharedKeyAuthenticator() 
+// (12)qm1025614381 (38)_ZN29QSslPreSharedKeyAuthenticatorC2Ev
+/*void* qm1025614381()*/{
+  ;
+  this_ =  new QSslPreSharedKeyAuthenticator();
+  this_ =  new MyQSslPreSharedKeyAuthenticator();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:59
+// [-2] void QSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator &) 
+// (11)qm642898451 (41)_ZN29QSslPreSharedKeyAuthenticatorC2ERKS_
+/*void* qm642898451(const QSslPreSharedKeyAuthenticator & authenticator)*/{
+  const QSslPreSharedKeyAuthenticator & authenticator = *(const QSslPreSharedKeyAuthenticator *)this_;
+  this_ =  new QSslPreSharedKeyAuthenticator(authenticator);
+  this_ =  new MyQSslPreSharedKeyAuthenticator(authenticator);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslpresharedkeyauthenticator.h:62
 // [8] QSslPreSharedKeyAuthenticator & operator=(QSslPreSharedKeyAuthenticator &&) 

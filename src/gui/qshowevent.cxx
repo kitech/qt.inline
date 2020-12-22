@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qshowevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:535
+// [-2] void QShowEvent() 
+// (12)qm3126731348 (19)_ZN10QShowEventC2Ev
+/*void* qm3126731348()*/{
+  ;
+  this_ =  new QShowEvent();
+  this_ =  new MyQShowEvent();
+}
+
 
 /*void C_ZN10QShowEventD2Ev(void *this_)*/ {
   delete (QShowEvent*)(this_);

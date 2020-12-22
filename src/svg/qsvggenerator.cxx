@@ -82,6 +82,17 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsvggenerator(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtSvg/qsvggenerator.h:70
+// [-2] void QSvgGenerator() 
+// (12)qm2687372877 (22)_ZN13QSvgGeneratorC2Ev
+/*void* qm2687372877()*/{
+  auto _nilp = (MyQSvgGenerator*)(0);
+  ;
+  this_ =  new QSvgGenerator();
+  this_ =  new MyQSvgGenerator();
+}
+
 
 /*void C_ZN13QSvgGeneratorD2Ev(void *this_)*/ {
   delete (QSvgGenerator*)(this_);

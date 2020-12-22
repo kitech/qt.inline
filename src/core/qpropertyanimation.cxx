@@ -167,6 +167,28 @@ uint64_t ensure_inline_symbol_qpropertyanimation(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpropertyanimation.h:57
+// [-2] void QPropertyAnimation(QObject *) 
+// (12)qm2113640865 (35)_ZN18QPropertyAnimationC2EP7QObject
+/*void* qm2113640865(QObject * parent)*/{
+  auto _nilp = (MyQPropertyAnimation*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QPropertyAnimation(parent);
+  this_ =  new MyQPropertyAnimation(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpropertyanimation.h:58
+// [-2] void QPropertyAnimation(QObject *, const QByteArray &, QObject *) 
+// (11)qm523784609 (52)_ZN18QPropertyAnimationC2EP7QObjectRK10QByteArrayS1_
+/*void* qm523784609(QObject * target, const QByteArray & propertyName, QObject * parent)*/{
+  auto _nilp = (MyQPropertyAnimation*)(0);
+  QObject * target = *(QObject **)this_; const QByteArray & propertyName = *(const QByteArray *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QPropertyAnimation(target, propertyName, parent);
+  this_ =  new MyQPropertyAnimation(target, propertyName, parent);
+}
+
 
 /*void C_ZN18QPropertyAnimationD2Ev(void *this_)*/ {
   delete (QPropertyAnimation*)(this_);

@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qwebenginequotarequest(void* this_) {
 /*void* qm2083716222()*/{
   ;
   this_ =  new QWebEngineQuotaRequest();
+  this_ =  new MyQWebEngineQuotaRequest();
 }
 
 // Public inline Extend Visibility=Default Availability=Available

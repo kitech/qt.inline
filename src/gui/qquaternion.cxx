@@ -71,6 +71,7 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm1733059385()*/{
   ;
   this_ =  new QQuaternion();
+  this_ =  new MyQQuaternion();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -80,6 +81,7 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm1670413819(Qt::Initialization arg0)*/{
   Qt::Initialization arg0 = *(Qt::Initialization*)this_;
   this_ =  new QQuaternion(arg0);
+  this_ =  new MyQQuaternion(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,6 +91,7 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm1853151988(float scalar, float xpos, float ypos, float zpos)*/{
   float scalar = *(float*)this_; float xpos = *(float*)this_; float ypos = *(float*)this_; float zpos = *(float*)this_;
   this_ =  new QQuaternion(scalar, xpos, ypos, zpos);
+  this_ =  new MyQQuaternion(scalar, xpos, ypos, zpos);
 }
 
 // Public Visibility=Default Availability=Available
@@ -98,6 +101,7 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm2652448911(float scalar, const QVector3D & vector)*/{
   float scalar = *(float*)this_; const QVector3D & vector = *(const QVector3D *)this_;
   this_ =  new QQuaternion(scalar, vector);
+  this_ =  new MyQQuaternion(scalar, vector);
 }
 
 // Public Visibility=Default Availability=Available
@@ -107,6 +111,7 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm3375837105(const QVector4D & vector)*/{
   const QVector4D & vector = *(const QVector4D *)this_;
   this_ =  new QQuaternion(vector);
+  this_ =  new MyQQuaternion(vector);
 }
 
 // Public Extend Visibility=Default Availability=Available

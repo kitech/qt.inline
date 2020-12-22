@@ -68,6 +68,56 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qregion(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:67
+// [-2] void QRegion() 
+// (12)qm1283955447 (15)_ZN7QRegionC2Ev
+/*void* qm1283955447()*/{
+  ;
+  this_ =  new QRegion();
+  this_ =  new MyQRegion();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:68
+// [-2] void QRegion(int, int, int, int, QRegion::RegionType) 
+// (12)qm3346632747 (34)_ZN7QRegionC2EiiiiNS_10RegionTypeE
+/*void* qm3346632747(int x, int y, int w, int h, QRegion::RegionType t)*/{
+  int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; QRegion::RegionType t = *(QRegion::RegionType*)this_;
+  this_ =  new QRegion(x, y, w, h, t);
+  this_ =  new MyQRegion(x, y, w, h, t);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:69
+// [-2] void QRegion(const QRect &, QRegion::RegionType) 
+// (11)qm732856443 (38)_ZN7QRegionC2ERK5QRectNS_10RegionTypeE
+/*void* qm732856443(const QRect & r, QRegion::RegionType t)*/{
+  const QRect & r = *(const QRect *)this_; QRegion::RegionType t = *(QRegion::RegionType*)this_;
+  this_ =  new QRegion(r, t);
+  this_ =  new MyQRegion(r, t);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:70
+// [-2] void QRegion(const QPolygon &, Qt::FillRule) 
+// (12)qm2484957508 (39)_ZN7QRegionC2ERK8QPolygonN2Qt8FillRuleE
+/*void* qm2484957508(const QPolygon & pa, Qt::FillRule fillRule)*/{
+  const QPolygon & pa = *(const QPolygon *)this_; Qt::FillRule fillRule = *(Qt::FillRule*)this_;
+  this_ =  new QRegion(pa, fillRule);
+  this_ =  new MyQRegion(pa, fillRule);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:71
+// [-2] void QRegion(const QRegion &) 
+// (12)qm2389037218 (18)_ZN7QRegionC2ERKS_
+/*void* qm2389037218(const QRegion & region)*/{
+  const QRegion & region = *(const QRegion *)this_;
+  this_ =  new QRegion(region);
+  this_ =  new MyQRegion(region);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qregion.h:72
 // [-2] void QRegion(QRegion &&) 
@@ -75,6 +125,17 @@ uint64_t ensure_inline_symbol_qregion(void* this_) {
 /*void* qm1258737589(QRegion && other)*/{
   QRegion && other =  static_cast<QRegion &&>(*(QRegion *)this_);
   this_ =  new QRegion(other);
+  this_ =  new MyQRegion(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qregion.h:74
+// [-2] void QRegion(const QBitmap &) 
+// (12)qm3509416065 (24)_ZN7QRegionC2ERK7QBitmap
+/*void* qm3509416065(const QBitmap & bitmap)*/{
+  const QBitmap & bitmap = *(const QBitmap *)this_;
+  this_ =  new QRegion(bitmap);
+  this_ =  new MyQRegion(bitmap);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

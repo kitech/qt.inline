@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslcipher(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcipher.h:58
+// [-2] void QSslCipher() 
+// (11)qm433337206 (19)_ZN10QSslCipherC2Ev
+/*void* qm433337206()*/{
+  ;
+  this_ =  new QSslCipher();
+  this_ =  new MyQSslCipher();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcipher.h:59
+// [-2] void QSslCipher(const QString &) 
+// (11)qm766254657 (28)_ZN10QSslCipherC2ERK7QString
+/*void* qm766254657(const QString & name)*/{
+  const QString & name = *(const QString *)this_;
+  this_ =  new QSslCipher(name);
+  this_ =  new MyQSslCipher(name);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcipher.h:60
+// [-2] void QSslCipher(const QString &, QSsl::SslProtocol) 
+// (12)qm2896178919 (48)_ZN10QSslCipherC2ERK7QStringN4QSsl11SslProtocolE
+/*void* qm2896178919(const QString & name, QSsl::SslProtocol protocol)*/{
+  const QString & name = *(const QString *)this_; QSsl::SslProtocol protocol = *(QSsl::SslProtocol*)this_;
+  this_ =  new QSslCipher(name, protocol);
+  this_ =  new MyQSslCipher(name, protocol);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qsslcipher.h:61
+// [-2] void QSslCipher(const QSslCipher &) 
+// (12)qm3811944110 (22)_ZN10QSslCipherC2ERKS_
+/*void* qm3811944110(const QSslCipher & other)*/{
+  const QSslCipher & other = *(const QSslCipher *)this_;
+  this_ =  new QSslCipher(other);
+  this_ =  new MyQSslCipher(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qsslcipher.h:62
 // [8] QSslCipher & operator=(QSslCipher &&) 

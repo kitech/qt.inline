@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qaccessibletablemodelchangeevent(void* this_) {
 /*void* qm3742335179(QObject * obj, QAccessibleTableModelChangeEvent::ModelChangeType changeType)*/{
   QObject * obj = *(QObject **)this_; QAccessibleTableModelChangeEvent::ModelChangeType changeType = *(QAccessibleTableModelChangeEvent::ModelChangeType*)this_;
   this_ =  new QAccessibleTableModelChangeEvent(obj, changeType);
+  this_ =  new MyQAccessibleTableModelChangeEvent(obj, changeType);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qaccessibletablemodelchangeevent(void* this_) {
 /*void* qm2421950558(QAccessibleInterface * iface, QAccessibleTableModelChangeEvent::ModelChangeType changeType)*/{
   QAccessibleInterface * iface = *(QAccessibleInterface **)this_; QAccessibleTableModelChangeEvent::ModelChangeType changeType = *(QAccessibleTableModelChangeEvent::ModelChangeType*)this_;
   this_ =  new QAccessibleTableModelChangeEvent(iface, changeType);
+  this_ =  new MyQAccessibleTableModelChangeEvent(iface, changeType);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

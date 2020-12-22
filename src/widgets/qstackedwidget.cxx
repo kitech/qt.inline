@@ -141,6 +141,17 @@ uint64_t ensure_inline_symbol_qstackedwidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstackedwidget.h:59
+// [-2] void QStackedWidget(QWidget *) 
+// (12)qm4054824524 (31)_ZN14QStackedWidgetC2EP7QWidget
+/*void* qm4054824524(QWidget * parent)*/{
+  auto _nilp = (MyQStackedWidget*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QStackedWidget(parent);
+  this_ =  new MyQStackedWidget(parent);
+}
+
 
 /*void C_ZN14QStackedWidgetD2Ev(void *this_)*/ {
   delete (QStackedWidget*)(this_);

@@ -152,6 +152,17 @@ uint64_t ensure_inline_symbol_qanimationdriver(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractanimation.h:138
+// [-2] void QAnimationDriver(QObject *) 
+// (12)qm2166828990 (33)_ZN16QAnimationDriverC2EP7QObject
+/*void* qm2166828990(QObject * parent)*/{
+  auto _nilp = (MyQAnimationDriver*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QAnimationDriver(parent);
+  this_ =  new MyQAnimationDriver(parent);
+}
+
 
 /*void C_ZN16QAnimationDriverD2Ev(void *this_)*/ {
   delete (QAnimationDriver*)(this_);

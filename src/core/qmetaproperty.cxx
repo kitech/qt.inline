@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmetaproperty(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetaobject.h:249
+// [-2] void QMetaProperty() 
+// (12)qm3526748431 (22)_ZN13QMetaPropertyC2Ev
+/*void* qm3526748431()*/{
+  ;
+  this_ =  new QMetaProperty();
+  this_ =  new MyQMetaProperty();
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetaobject.h:291
 // [1] bool isValid() const

@@ -62,6 +62,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmediatimeinterval(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediatimerange.h:55
+// [-2] void QMediaTimeInterval() 
+// (12)qm1081797096 (27)_ZN18QMediaTimeIntervalC2Ev
+/*void* qm1081797096()*/{
+  ;
+  this_ =  new QMediaTimeInterval();
+  this_ =  new MyQMediaTimeInterval();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediatimerange.h:56
+// [-2] void QMediaTimeInterval(qint64, qint64) 
+// (12)qm3167628206 (28)_ZN18QMediaTimeIntervalC2Exx
+/*void* qm3167628206(long long start, long long end_)*/{
+  long long start = *(long long*)this_; long long end_ = *(long long*)this_;
+  this_ =  new QMediaTimeInterval(start, end_);
+  this_ =  new MyQMediaTimeInterval(start, end_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediatimerange.h:58
+// [-2] void QMediaTimeInterval(const QMediaTimeInterval &) 
+// (12)qm1577160823 (30)_ZN18QMediaTimeIntervalC2ERKS_
+/*void* qm1577160823(const QMediaTimeInterval & arg0)*/{
+  const QMediaTimeInterval & arg0 = *(const QMediaTimeInterval *)this_;
+  this_ =  new QMediaTimeInterval(arg0);
+  this_ =  new MyQMediaTimeInterval(arg0);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtMultimedia/qmediatimerange.h:59
 // [16] QMediaTimeInterval & operator=(const QMediaTimeInterval &) 
@@ -81,6 +111,7 @@ uint64_t ensure_inline_symbol_qmediatimeinterval(void* this_) {
 /*void* qm1330703696(QMediaTimeInterval && arg0)*/{
   QMediaTimeInterval && arg0 =  static_cast<QMediaTimeInterval &&>(*(QMediaTimeInterval *)this_);
   this_ =  new QMediaTimeInterval(arg0);
+  this_ =  new MyQMediaTimeInterval(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

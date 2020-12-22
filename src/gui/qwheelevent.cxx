@@ -68,6 +68,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwheelevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:207
+// [-2] void QWheelEvent(QPointF, QPointF, QPoint, QPoint, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::ScrollPhase, bool, Qt::MouseEventSource) 
+// (11)qm541666615 (137)_ZN11QWheelEventC2E7QPointFS0_6QPointS1_6QFlagsIN2Qt11MouseButtonEES2_INS3_16KeyboardModifierEENS3_11ScrollPhaseEbNS3_16MouseEventSourceE
+/*void* qm541666615(QPointF pos, QPointF globalPos, QPoint pixelDelta, QPoint angleDelta, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::ScrollPhase phase, bool inverted, Qt::MouseEventSource source)*/{
+  QPointF pos = *(QPointF*)this_; QPointF globalPos = *(QPointF*)this_; QPoint pixelDelta = *(QPoint*)this_; QPoint angleDelta = *(QPoint*)this_; QFlags<Qt::MouseButton> buttons = *(QFlags<Qt::MouseButton>*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_; Qt::ScrollPhase phase = *(Qt::ScrollPhase*)this_; bool inverted = *(bool*)this_; Qt::MouseEventSource source = *(Qt::MouseEventSource*)this_;
+  this_ =  new QWheelEvent(pos, globalPos, pixelDelta, angleDelta, buttons, modifiers, phase, inverted, source);
+  this_ =  new MyQWheelEvent(pos, globalPos, pixelDelta, angleDelta, buttons, modifiers, phase, inverted, source);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:213
 // [8] QPoint pixelDelta() const

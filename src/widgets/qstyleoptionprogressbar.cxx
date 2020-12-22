@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptionprogressbar(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:358
+// [-2] void QStyleOptionProgressBar() 
+// (11)qm997170462 (32)_ZN23QStyleOptionProgressBarC2Ev
+/*void* qm997170462()*/{
+  ;
+  this_ =  new QStyleOptionProgressBar();
+  this_ =  new MyQStyleOptionProgressBar();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:359
 // [-2] void QStyleOptionProgressBar(const QStyleOptionProgressBar &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptionprogressbar(void* this_) {
 /*void* qm3385247607(const QStyleOptionProgressBar & other)*/{
   const QStyleOptionProgressBar & other = *(const QStyleOptionProgressBar *)this_;
   this_ =  new QStyleOptionProgressBar(other);
+  this_ =  new MyQStyleOptionProgressBar(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

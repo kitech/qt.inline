@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qvariantcomparisonhelper(void* this_) {
 /*void* qm2450469610(const QVariant & var_)*/{
   const QVariant & var_ = *(const QVariant *)this_;
   this_ =  new QVariantComparisonHelper(var_);
+  this_ =  new MyQVariantComparisonHelper(var_);
 }
 
 

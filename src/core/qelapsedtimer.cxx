@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qelapsedtimer(void* this_) {
 /*void* qm3928532270()*/{
   ;
   this_ =  new QElapsedTimer();
+  this_ =  new MyQElapsedTimer();
 }
 
 // Public inline Extend Visibility=Default Availability=Available

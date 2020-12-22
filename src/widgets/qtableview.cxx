@@ -370,6 +370,17 @@ uint64_t ensure_inline_symbol_qtableview(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtableview.h:65
+// [-2] void QTableView(QWidget *) 
+// (12)qm3017206140 (27)_ZN10QTableViewC2EP7QWidget
+/*void* qm3017206140(QWidget * parent)*/{
+  auto _nilp = (MyQTableView*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTableView(parent);
+  this_ =  new MyQTableView(parent);
+}
+
 
 /*void C_ZN10QTableViewD2Ev(void *this_)*/ {
   delete (QTableView*)(this_);

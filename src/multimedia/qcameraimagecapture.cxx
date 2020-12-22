@@ -138,6 +138,17 @@ uint64_t ensure_inline_symbol_qcameraimagecapture(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qcameraimagecapture.h:90
+// [-2] void QCameraImageCapture(QMediaObject *, QObject *) 
+// (12)qm2614649796 (51)_ZN19QCameraImageCaptureC2EP12QMediaObjectP7QObject
+/*void* qm2614649796(QMediaObject * mediaObject, QObject * parent)*/{
+  auto _nilp = (MyQCameraImageCapture*)(0);
+  QMediaObject * mediaObject = *(QMediaObject **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QCameraImageCapture(mediaObject, parent);
+  this_ =  new MyQCameraImageCapture(mediaObject, parent);
+}
+
 
 /*void C_ZN19QCameraImageCaptureD2Ev(void *this_)*/ {
   delete (QCameraImageCapture*)(this_);

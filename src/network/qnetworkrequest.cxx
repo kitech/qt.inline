@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkrequest(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkrequest.h:141
+// [-2] void QNetworkRequest() 
+// (12)qm3609069012 (24)_ZN15QNetworkRequestC2Ev
+/*void* qm3609069012()*/{
+  ;
+  this_ =  new QNetworkRequest();
+  this_ =  new MyQNetworkRequest();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkrequest.h:142
+// [-2] void QNetworkRequest(const QUrl &) 
+// (12)qm2190096398 (30)_ZN15QNetworkRequestC2ERK4QUrl
+/*void* qm2190096398(const QUrl & url)*/{
+  const QUrl & url = *(const QUrl *)this_;
+  this_ =  new QNetworkRequest(url);
+  this_ =  new MyQNetworkRequest(url);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkrequest.h:143
+// [-2] void QNetworkRequest(const QNetworkRequest &) 
+// (12)qm3412366773 (27)_ZN15QNetworkRequestC2ERKS_
+/*void* qm3412366773(const QNetworkRequest & other)*/{
+  const QNetworkRequest & other = *(const QNetworkRequest *)this_;
+  this_ =  new QNetworkRequest(other);
+  this_ =  new MyQNetworkRequest(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkrequest.h:145
 // [8] QNetworkRequest & operator=(QNetworkRequest &&) 

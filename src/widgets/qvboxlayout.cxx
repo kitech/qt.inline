@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qvboxlayout(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:130
+// [-2] void QVBoxLayout() 
+// (11)qm538351151 (20)_ZN11QVBoxLayoutC2Ev
+/*void* qm538351151()*/{
+  ;
+  this_ =  new QVBoxLayout();
+  this_ =  new MyQVBoxLayout();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qboxlayout.h:131
+// [-2] void QVBoxLayout(QWidget *) 
+// (11)qm368368412 (28)_ZN11QVBoxLayoutC2EP7QWidget
+/*void* qm368368412(QWidget * parent)*/{
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QVBoxLayout(parent);
+  this_ =  new MyQVBoxLayout(parent);
+}
+
 
 /*void C_ZN11QVBoxLayoutD2Ev(void *this_)*/ {
   delete (QVBoxLayout*)(this_);

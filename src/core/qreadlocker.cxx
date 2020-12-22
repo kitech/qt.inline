@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qreadlocker(void* this_) {
 /*void* qm2809922547(QReadWriteLock * readWriteLock)*/{
   QReadWriteLock * readWriteLock = *(QReadWriteLock **)this_;
   this_ =  new QReadLocker(readWriteLock);
+  this_ =  new MyQReadLocker(readWriteLock);
 }
 
 // Public inline Visibility=Default Availability=Available

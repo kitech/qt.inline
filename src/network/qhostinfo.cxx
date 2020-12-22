@@ -60,6 +60,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qhostinfo(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostinfo.h:63
+// [-2] void QHostInfo(int) 
+// (12)qm4115411751 (17)_ZN9QHostInfoC2Ei
+/*void* qm4115411751(int lookupId)*/{
+  int lookupId = *(int*)this_;
+  this_ =  new QHostInfo(lookupId);
+  this_ =  new MyQHostInfo(lookupId);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostinfo.h:64
+// [-2] void QHostInfo(const QHostInfo &) 
+// (12)qm2028322426 (20)_ZN9QHostInfoC2ERKS_
+/*void* qm2028322426(const QHostInfo & d)*/{
+  const QHostInfo & d = *(const QHostInfo *)this_;
+  this_ =  new QHostInfo(d);
+  this_ =  new MyQHostInfo(d);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostinfo.h:65
 // [-2] void QHostInfo(QHostInfo &&) 
@@ -67,6 +87,7 @@ uint64_t ensure_inline_symbol_qhostinfo(void* this_) {
 /*void* qm1917733984(QHostInfo && other)*/{
   QHostInfo && other =  static_cast<QHostInfo &&>(*(QHostInfo *)this_);
   this_ =  new QHostInfo(other);
+  this_ =  new MyQHostInfo(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

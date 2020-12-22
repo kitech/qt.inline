@@ -62,6 +62,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamnamespacedeclaration(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:193
+// [-2] void QXmlStreamNamespaceDeclaration() 
+// (12)qm1635349409 (39)_ZN30QXmlStreamNamespaceDeclarationC2Ev
+/*void* qm1635349409()*/{
+  ;
+  this_ =  new QXmlStreamNamespaceDeclaration();
+  this_ =  new MyQXmlStreamNamespaceDeclaration();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:194
+// [-2] void QXmlStreamNamespaceDeclaration(const QString &, const QString &) 
+// (11)qm349651721 (51)_ZN30QXmlStreamNamespaceDeclarationC2ERK7QStringS2_
+/*void* qm349651721(const QString & prefix, const QString & namespaceUri)*/{
+  const QString & prefix = *(const QString *)this_; const QString & namespaceUri = *(const QString *)this_;
+  this_ =  new QXmlStreamNamespaceDeclaration(prefix, namespaceUri);
+  this_ =  new MyQXmlStreamNamespaceDeclaration(prefix, namespaceUri);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:196
+// [-2] void QXmlStreamNamespaceDeclaration(const QXmlStreamNamespaceDeclaration &) 
+// (11)qm871175475 (42)_ZN30QXmlStreamNamespaceDeclarationC2ERKS_
+/*void* qm871175475(const QXmlStreamNamespaceDeclaration & arg0)*/{
+  const QXmlStreamNamespaceDeclaration & arg0 = *(const QXmlStreamNamespaceDeclaration *)this_;
+  this_ =  new QXmlStreamNamespaceDeclaration(arg0);
+  this_ =  new MyQXmlStreamNamespaceDeclaration(arg0);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:197
 // [-2] void QXmlStreamNamespaceDeclaration(QXmlStreamNamespaceDeclaration &&) 
@@ -69,6 +99,7 @@ uint64_t ensure_inline_symbol_qxmlstreamnamespacedeclaration(void* this_) {
 /*void* qm2117157445(QXmlStreamNamespaceDeclaration && other)*/{
   QXmlStreamNamespaceDeclaration && other =  static_cast<QXmlStreamNamespaceDeclaration &&>(*(QXmlStreamNamespaceDeclaration *)this_);
   this_ =  new QXmlStreamNamespaceDeclaration(other);
+  this_ =  new MyQXmlStreamNamespaceDeclaration(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

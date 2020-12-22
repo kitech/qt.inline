@@ -130,6 +130,26 @@ uint64_t ensure_inline_symbol_qstandarditemmodel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:330
+// [-2] void QStandardItemModel(QObject *) 
+// (12)qm1827812101 (35)_ZN18QStandardItemModelC2EP7QObject
+/*void* qm1827812101(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QStandardItemModel(parent);
+  this_ =  new MyQStandardItemModel(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:331
+// [-2] void QStandardItemModel(int, int, QObject *) 
+// (11)qm450120332 (37)_ZN18QStandardItemModelC2EiiP7QObject
+/*void* qm450120332(int rows, int columns, QObject * parent)*/{
+  int rows = *(int*)this_; int columns = *(int*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QStandardItemModel(rows, columns, parent);
+  this_ =  new MyQStandardItemModel(rows, columns, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:377
 // [-2] void setItem(int, QStandardItem *) 

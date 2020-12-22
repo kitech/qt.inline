@@ -59,6 +59,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicssceneresizeevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:297
+// [-2] void QGraphicsSceneResizeEvent() 
+// (12)qm1592665072 (34)_ZN25QGraphicsSceneResizeEventC2Ev
+/*void* qm1592665072()*/{
+  ;
+  this_ =  new QGraphicsSceneResizeEvent();
+  this_ =  new MyQGraphicsSceneResizeEvent();
+}
+
 
 /*void C_ZN25QGraphicsSceneResizeEventD2Ev(void *this_)*/ {
   delete (QGraphicsSceneResizeEvent*)(this_);

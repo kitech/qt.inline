@@ -168,6 +168,28 @@ uint64_t ensure_inline_symbol_qeventtransition(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:57
+// [-2] void QEventTransition(QState *) 
+// (12)qm3895162130 (32)_ZN16QEventTransitionC2EP6QState
+/*void* qm3895162130(QState * sourceState)*/{
+  auto _nilp = (MyQEventTransition*)(0);
+  QState * sourceState = *(QState **)this_;
+  this_ =  new QEventTransition(sourceState);
+  this_ =  new MyQEventTransition(sourceState);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventtransition.h:58
+// [-2] void QEventTransition(QObject *, QEvent::Type, QState *) 
+// (12)qm1403737405 (55)_ZN16QEventTransitionC2EP7QObjectN6QEvent4TypeEP6QState
+/*void* qm1403737405(QObject * object, QEvent::Type type_, QState * sourceState)*/{
+  auto _nilp = (MyQEventTransition*)(0);
+  QObject * object = *(QObject **)this_; QEvent::Type type_ = *(QEvent::Type*)this_; QState * sourceState = *(QState **)this_;
+  this_ =  new QEventTransition(object, type_, sourceState);
+  this_ =  new MyQEventTransition(object, type_, sourceState);
+}
+
 
 /*void C_ZN16QEventTransitionD2Ev(void *this_)*/ {
   delete (QEventTransition*)(this_);

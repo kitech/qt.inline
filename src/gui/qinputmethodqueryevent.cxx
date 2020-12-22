@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qinputmethodqueryevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:623
+// [-2] void QInputMethodQueryEvent(Qt::InputMethodQueries) 
+// (11)qm541641888 (62)_ZN22QInputMethodQueryEventC2E6QFlagsIN2Qt16InputMethodQueryEE
+/*void* qm541641888(QFlags<Qt::InputMethodQuery> queries)*/{
+  QFlags<Qt::InputMethodQuery> queries = *(QFlags<Qt::InputMethodQuery>*)this_;
+  this_ =  new QInputMethodQueryEvent(queries);
+  this_ =  new MyQInputMethodQueryEvent(queries);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:626
 // [4] Qt::InputMethodQueries queries() const

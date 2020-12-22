@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgopacitynode(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:314
+// [-2] void QSGOpacityNode() 
+// (12)qm1223666409 (23)_ZN14QSGOpacityNodeC2Ev
+/*void* qm1223666409()*/{
+  ;
+  this_ =  new QSGOpacityNode();
+  this_ =  new MyQSGOpacityNode();
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:318
 // [8] qreal opacity() const

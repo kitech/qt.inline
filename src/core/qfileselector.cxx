@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qfileselector(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfileselector.h:53
+// [-2] void QFileSelector(QObject *) 
+// (12)qm2684721124 (30)_ZN13QFileSelectorC2EP7QObject
+/*void* qm2684721124(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QFileSelector(parent);
+  this_ =  new MyQFileSelector(parent);
+}
+
 
 /*void C_ZN13QFileSelectorD2Ev(void *this_)*/ {
   delete (QFileSelector*)(this_);

@@ -71,6 +71,7 @@ uint64_t ensure_inline_symbol_quuid(void* this_) {
 /*void* qm3807779934()*/{
   ;
   this_ =  new QUuid();
+  this_ =  new MyQUuid();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -80,6 +81,37 @@ uint64_t ensure_inline_symbol_quuid(void* this_) {
 /*void* qm4113588650(unsigned int l, unsigned short w1, unsigned short w2, unsigned char b1, unsigned char b2, unsigned char b3, unsigned char b4, unsigned char b5, unsigned char b6, unsigned char b7, unsigned char b8)*/{
   unsigned int l = *(unsigned int*)this_; unsigned short w1 = *(unsigned short*)this_; unsigned short w2 = *(unsigned short*)this_; unsigned char b1 = *(unsigned char*)this_; unsigned char b2 = *(unsigned char*)this_; unsigned char b3 = *(unsigned char*)this_; unsigned char b4 = *(unsigned char*)this_; unsigned char b5 = *(unsigned char*)this_; unsigned char b6 = *(unsigned char*)this_; unsigned char b7 = *(unsigned char*)this_; unsigned char b8 = *(unsigned char*)this_;
   this_ =  new QUuid(l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8);
+  this_ =  new MyQUuid(l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/quuid.h:126
+// [-2] void QUuid(const QString &) 
+// (11)qm329551727 (22)_ZN5QUuidC2ERK7QString
+/*void* qm329551727(const QString & arg0)*/{
+  const QString & arg0 = *(const QString *)this_;
+  this_ =  new QUuid(arg0);
+  this_ =  new MyQUuid(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/quuid.h:129
+// [-2] void QUuid(const char *) 
+// (12)qm2316714210 (15)_ZN5QUuidC2EPKc
+/*void* qm2316714210(const char * arg0)*/{
+  const char * arg0 = *(const char **)this_;
+  this_ =  new QUuid(arg0);
+  this_ =  new MyQUuid(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/quuid.h:132
+// [-2] void QUuid(const QByteArray &) 
+// (12)qm2103268818 (26)_ZN5QUuidC2ERK10QByteArray
+/*void* qm2103268818(const QByteArray & arg0)*/{
+  const QByteArray & arg0 = *(const QByteArray *)this_;
+  this_ =  new QUuid(arg0);
+  this_ =  new MyQUuid(arg0);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

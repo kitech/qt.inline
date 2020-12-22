@@ -140,6 +140,17 @@ uint64_t ensure_inline_symbol_qgraphicsdropshadoweffect(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:205
+// [-2] void QGraphicsDropShadowEffect(QObject *) 
+// (11)qm969531311 (42)_ZN25QGraphicsDropShadowEffectC2EP7QObject
+/*void* qm969531311(QObject * parent)*/{
+  auto _nilp = (MyQGraphicsDropShadowEffect*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsDropShadowEffect(parent);
+  this_ =  new MyQGraphicsDropShadowEffect(parent);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicseffect.h:211
 // [8] qreal xOffset() const

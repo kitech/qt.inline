@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qaccessiblestatechangeevent(void* this_) {
 /*void* qm3058062153(QObject * obj, QAccessible::State state)*/{
   QObject * obj = *(QObject **)this_; QAccessible::State state = *(QAccessible::State*)this_;
   this_ =  new QAccessibleStateChangeEvent(obj, state);
+  this_ =  new MyQAccessibleStateChangeEvent(obj, state);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qaccessiblestatechangeevent(void* this_) {
 /*void* qm3096715267(QAccessibleInterface * iface, QAccessible::State state)*/{
   QAccessibleInterface * iface = *(QAccessibleInterface **)this_; QAccessible::State state = *(QAccessible::State*)this_;
   this_ =  new QAccessibleStateChangeEvent(iface, state);
+  this_ =  new MyQAccessibleStateChangeEvent(iface, state);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

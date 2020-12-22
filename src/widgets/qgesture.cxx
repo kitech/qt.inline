@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qgesture(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:73
+// [-2] void QGesture(QObject *) 
+// (12)qm2225367500 (24)_ZN8QGestureC2EP7QObject
+/*void* qm2225367500(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QGesture(parent);
+  this_ =  new MyQGesture(parent);
+}
+
 
 /*void C_ZN8QGestureD2Ev(void *this_)*/ {
   delete (QGesture*)(this_);

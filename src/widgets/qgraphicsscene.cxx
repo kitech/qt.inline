@@ -386,6 +386,39 @@ uint64_t ensure_inline_symbol_qgraphicsscene(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:126
+// [-2] void QGraphicsScene(QObject *) 
+// (12)qm2467559753 (31)_ZN14QGraphicsSceneC2EP7QObject
+/*void* qm2467559753(QObject * parent)*/{
+  auto _nilp = (MyQGraphicsScene*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsScene(parent);
+  this_ =  new MyQGraphicsScene(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:127
+// [-2] void QGraphicsScene(const QRectF &, QObject *) 
+// (12)qm3462541824 (40)_ZN14QGraphicsSceneC2ERK6QRectFP7QObject
+/*void* qm3462541824(const QRectF & sceneRect, QObject * parent)*/{
+  auto _nilp = (MyQGraphicsScene*)(0);
+  const QRectF & sceneRect = *(const QRectF *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsScene(sceneRect, parent);
+  this_ =  new MyQGraphicsScene(sceneRect, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsscene.h:128
+// [-2] void QGraphicsScene(qreal, qreal, qreal, qreal, QObject *) 
+// (11)qm423143460 (35)_ZN14QGraphicsSceneC2EddddP7QObject
+/*void* qm423143460(double x, double y, double width, double height, QObject * parent)*/{
+  auto _nilp = (MyQGraphicsScene*)(0);
+  double x = *(double*)this_; double y = *(double*)this_; double width = *(double*)this_; double height = *(double*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsScene(x, y, width, height, parent);
+  this_ =  new MyQGraphicsScene(x, y, width, height, parent);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsscene.h:132
 // [8] qreal width() const

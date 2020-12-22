@@ -142,6 +142,39 @@ uint64_t ensure_inline_symbol_qaction(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaction.h:95
+// [-2] void QAction(QObject *) 
+// (11)qm218008137 (23)_ZN7QActionC2EP7QObject
+/*void* qm218008137(QObject * parent)*/{
+  auto _nilp = (MyQAction*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QAction(parent);
+  this_ =  new MyQAction(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaction.h:96
+// [-2] void QAction(const QString &, QObject *) 
+// (11)qm237064025 (33)_ZN7QActionC2ERK7QStringP7QObject
+/*void* qm237064025(const QString & text, QObject * parent)*/{
+  auto _nilp = (MyQAction*)(0);
+  const QString & text = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QAction(text, parent);
+  this_ =  new MyQAction(text, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaction.h:97
+// [-2] void QAction(const QIcon &, const QString &, QObject *) 
+// (12)qm2683604509 (41)_ZN7QActionC2ERK5QIconRK7QStringP7QObject
+/*void* qm2683604509(const QIcon & icon, const QString & text, QObject * parent)*/{
+  auto _nilp = (MyQAction*)(0);
+  const QIcon & icon = *(const QIcon *)this_; const QString & text = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QAction(icon, text, parent);
+  this_ =  new MyQAction(icon, text, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qaction.h:187
 // [-2] void trigger() 

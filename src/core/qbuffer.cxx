@@ -177,6 +177,28 @@ uint64_t ensure_inline_symbol_qbuffer(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbuffer.h:60
+// [-2] void QBuffer(QObject *) 
+// (12)qm2677564548 (23)_ZN7QBufferC2EP7QObject
+/*void* qm2677564548(QObject * parent)*/{
+  auto _nilp = (MyQBuffer*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QBuffer(parent);
+  this_ =  new MyQBuffer(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qbuffer.h:61
+// [-2] void QBuffer(QByteArray *, QObject *) 
+// (12)qm2672792203 (36)_ZN7QBufferC2EP10QByteArrayP7QObject
+/*void* qm2672792203(QByteArray * buf, QObject * parent)*/{
+  auto _nilp = (MyQBuffer*)(0);
+  QByteArray * buf = *(QByteArray **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QBuffer(buf, parent);
+  this_ =  new MyQBuffer(buf, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qbuffer.h:73
 // [-2] void setData(const char *, int) 

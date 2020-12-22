@@ -167,6 +167,28 @@ uint64_t ensure_inline_symbol_qfontdialog(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontdialog.h:75
+// [-2] void QFontDialog(QWidget *) 
+// (12)qm3472103214 (28)_ZN11QFontDialogC2EP7QWidget
+/*void* qm3472103214(QWidget * parent)*/{
+  auto _nilp = (MyQFontDialog*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QFontDialog(parent);
+  this_ =  new MyQFontDialog(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfontdialog.h:76
+// [-2] void QFontDialog(const QFont &, QWidget *) 
+// (12)qm3756303560 (36)_ZN11QFontDialogC2ERK5QFontP7QWidget
+/*void* qm3756303560(const QFont & initial, QWidget * parent)*/{
+  auto _nilp = (MyQFontDialog*)(0);
+  const QFont & initial = *(const QFont *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QFontDialog(initial, parent);
+  this_ =  new MyQFontDialog(initial, parent);
+}
+
 
 /*void C_ZN11QFontDialogD2Ev(void *this_)*/ {
   delete (QFontDialog*)(this_);

@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qpointingdeviceuniqueid(void* this_) {
 /*void* qm1592284260()*/{
   ;
   this_ =  new QPointingDeviceUniqueId();
+  this_ =  new MyQPointingDeviceUniqueId();
 }
 
 // Public inline Extend Visibility=Default Availability=Available

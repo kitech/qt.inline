@@ -66,6 +66,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qicon(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:61
+// [-2] void QIcon() 
+// (12)qm1359309426 (13)_ZN5QIconC2Ev
+/*void* qm1359309426()*/{
+  ;
+  this_ =  new QIcon();
+  this_ =  new MyQIcon();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:62
+// [-2] void QIcon(const QPixmap &) 
+// (12)qm2794313597 (22)_ZN5QIconC2ERK7QPixmap
+/*void* qm2794313597(const QPixmap & pixmap)*/{
+  const QPixmap & pixmap = *(const QPixmap *)this_;
+  this_ =  new QIcon(pixmap);
+  this_ =  new MyQIcon(pixmap);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:63
+// [-2] void QIcon(const QIcon &) 
+// (12)qm2123434597 (16)_ZN5QIconC2ERKS_
+/*void* qm2123434597(const QIcon & other)*/{
+  const QIcon & other = *(const QIcon *)this_;
+  this_ =  new QIcon(other);
+  this_ =  new MyQIcon(other);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qicon.h:64
 // [-2] void QIcon(QIcon &&) 
@@ -73,6 +103,27 @@ uint64_t ensure_inline_symbol_qicon(void* this_) {
 /*void* qm2957986853(QIcon && other)*/{
   QIcon && other =  static_cast<QIcon &&>(*(QIcon *)this_);
   this_ =  new QIcon(other);
+  this_ =  new MyQIcon(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:67
+// [-2] void QIcon(const QString &) 
+// (12)qm3566610256 (22)_ZN5QIconC2ERK7QString
+/*void* qm3566610256(const QString & fileName)*/{
+  const QString & fileName = *(const QString *)this_;
+  this_ =  new QIcon(fileName);
+  this_ =  new MyQIcon(fileName);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qicon.h:68
+// [-2] void QIcon(QIconEngine *) 
+// (12)qm1644732391 (26)_ZN5QIconC2EP11QIconEngine
+/*void* qm1644732391(QIconEngine * engine)*/{
+  QIconEngine * engine = *(QIconEngine **)this_;
+  this_ =  new QIcon(engine);
+  this_ =  new MyQIcon(engine);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qbitref(void* this_) {
 /*void* qm3735318999(const QBitRef & arg0)*/{
   const QBitRef & arg0 = *(const QBitRef *)this_;
   this_ =  new QBitRef(arg0);
+  this_ =  new MyQBitRef(arg0);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

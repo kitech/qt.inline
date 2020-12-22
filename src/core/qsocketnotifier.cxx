@@ -138,6 +138,17 @@ uint64_t ensure_inline_symbol_qsocketnotifier(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsocketnotifier.h:57
+// [-2] void QSocketNotifier(qintptr, QSocketNotifier::Type, QObject *) 
+// (12)qm1065192599 (42)_ZN15QSocketNotifierC2ExNS_4TypeEP7QObject
+/*void* qm1065192599(long long socket, QSocketNotifier::Type arg1, QObject * parent)*/{
+  auto _nilp = (MyQSocketNotifier*)(0);
+  long long socket = *(long long*)this_; QSocketNotifier::Type arg1 = *(QSocketNotifier::Type*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSocketNotifier(socket, arg1, parent);
+  this_ =  new MyQSocketNotifier(socket, arg1, parent);
+}
+
 
 /*void C_ZN15QSocketNotifierD2Ev(void *this_)*/ {
   delete (QSocketNotifier*)(this_);

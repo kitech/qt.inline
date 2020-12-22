@@ -237,6 +237,17 @@ uint64_t ensure_inline_symbol_qopenglwidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qopenglwidget.h:66
+// [-2] void QOpenGLWidget(QWidget *, Qt::WindowFlags) 
+// (12)qm3780142129 (56)_ZN13QOpenGLWidgetC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm3780142129(QWidget * parent, QFlags<Qt::WindowType> f)*/{
+  auto _nilp = (MyQOpenGLWidget*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> f = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QOpenGLWidget(parent, f);
+  this_ =  new MyQOpenGLWidget(parent, f);
+}
+
 
 /*void C_ZN13QOpenGLWidgetD2Ev(void *this_)*/ {
   delete (QOpenGLWidget*)(this_);

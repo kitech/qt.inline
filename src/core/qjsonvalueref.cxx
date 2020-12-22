@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qjsonvalueref(void* this_) {
 /*void* qm505555892(const QJsonValueRef & arg0)*/{
   const QJsonValueRef & arg0 = *(const QJsonValueRef *)this_;
   this_ =  new QJsonValueRef(arg0);
+  this_ =  new MyQJsonValueRef(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +77,7 @@ uint64_t ensure_inline_symbol_qjsonvalueref(void* this_) {
 /*void* qm330089457(QJsonArray * array, int idx)*/{
   QJsonArray * array = *(QJsonArray **)this_; int idx = *(int*)this_;
   this_ =  new QJsonValueRef(array, idx);
+  this_ =  new MyQJsonValueRef(array, idx);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -85,6 +87,7 @@ uint64_t ensure_inline_symbol_qjsonvalueref(void* this_) {
 /*void* qm2476079573(QJsonObject * object, int idx)*/{
   QJsonObject * object = *(QJsonObject **)this_; int idx = *(int*)this_;
   this_ =  new QJsonValueRef(object, idx);
+  this_ =  new MyQJsonValueRef(object, idx);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

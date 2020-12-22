@@ -169,6 +169,28 @@ uint64_t ensure_inline_symbol_qsplashscreen(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsplashscreen.h:57
+// [-2] void QSplashScreen(const QPixmap &, Qt::WindowFlags) 
+// (11)qm231826367 (57)_ZN13QSplashScreenC2ERK7QPixmap6QFlagsIN2Qt10WindowTypeEE
+/*void* qm231826367(const QPixmap & pixmap, QFlags<Qt::WindowType> f)*/{
+  auto _nilp = (MyQSplashScreen*)(0);
+  const QPixmap & pixmap = *(const QPixmap *)this_; QFlags<Qt::WindowType> f = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QSplashScreen(pixmap, f);
+  this_ =  new MyQSplashScreen(pixmap, f);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsplashscreen.h:58
+// [-2] void QSplashScreen(QScreen *, const QPixmap &, Qt::WindowFlags) 
+// (12)qm1116062355 (66)_ZN13QSplashScreenC2EP7QScreenRK7QPixmap6QFlagsIN2Qt10WindowTypeEE
+/*void* qm1116062355(QScreen * screen, const QPixmap & pixmap, QFlags<Qt::WindowType> f)*/{
+  auto _nilp = (MyQSplashScreen*)(0);
+  QScreen * screen = *(QScreen **)this_; const QPixmap & pixmap = *(const QPixmap *)this_; QFlags<Qt::WindowType> f = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QSplashScreen(screen, pixmap, f);
+  this_ =  new MyQSplashScreen(screen, pixmap, f);
+}
+
 
 /*void C_ZN13QSplashScreenD2Ev(void *this_)*/ {
   delete (QSplashScreen*)(this_);

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtexttablecellformat(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:1013
+// [-2] void QTextTableCellFormat() 
+// (12)qm1834837491 (29)_ZN20QTextTableCellFormatC2Ev
+/*void* qm1834837491()*/{
+  ;
+  this_ =  new QTextTableCellFormat();
+  this_ =  new MyQTextTableCellFormat();
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:1015
 // [1] bool isValid() const

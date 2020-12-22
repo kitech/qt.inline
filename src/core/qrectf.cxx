@@ -71,6 +71,7 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm2138932529()*/{
   ;
   this_ =  new QRectF();
+  this_ =  new MyQRectF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -80,6 +81,7 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm3303482793(const QPointF & topleft, const QSizeF & size)*/{
   const QPointF & topleft = *(const QPointF *)this_; const QSizeF & size = *(const QSizeF *)this_;
   this_ =  new QRectF(topleft, size);
+  this_ =  new MyQRectF(topleft, size);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -89,6 +91,7 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm650771439(const QPointF & topleft, const QPointF & bottomRight)*/{
   const QPointF & topleft = *(const QPointF *)this_; const QPointF & bottomRight = *(const QPointF *)this_;
   this_ =  new QRectF(topleft, bottomRight);
+  this_ =  new MyQRectF(topleft, bottomRight);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -98,6 +101,7 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm1277739087(double left, double top, double width, double height)*/{
   double left = *(double*)this_; double top = *(double*)this_; double width = *(double*)this_; double height = *(double*)this_;
   this_ =  new QRectF(left, top, width, height);
+  this_ =  new MyQRectF(left, top, width, height);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -107,6 +111,7 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm3008306862(const QRect & rect)*/{
   const QRect & rect = *(const QRect *)this_;
   this_ =  new QRectF(rect);
+  this_ =  new MyQRectF(rect);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

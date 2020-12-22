@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qregexp(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:70
+// [-2] void QRegExp() 
+// (12)qm2241450719 (15)_ZN7QRegExpC2Ev
+/*void* qm2241450719()*/{
+  ;
+  this_ =  new QRegExp();
+  this_ =  new MyQRegExp();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:71
+// [-2] void QRegExp(const QString &, Qt::CaseSensitivity, QRegExp::PatternSyntax) 
+// (12)qm1613537477 (65)_ZN7QRegExpC2ERK7QStringN2Qt15CaseSensitivityENS_13PatternSyntaxE
+/*void* qm1613537477(const QString & pattern, Qt::CaseSensitivity cs, QRegExp::PatternSyntax syntax)*/{
+  const QString & pattern = *(const QString *)this_; Qt::CaseSensitivity cs = *(Qt::CaseSensitivity*)this_; QRegExp::PatternSyntax syntax = *(QRegExp::PatternSyntax*)this_;
+  this_ =  new QRegExp(pattern, cs, syntax);
+  this_ =  new MyQRegExp(pattern, cs, syntax);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregexp.h:73
+// [-2] void QRegExp(const QRegExp &) 
+// (12)qm2056535901 (18)_ZN7QRegExpC2ERKS_
+/*void* qm2056535901(const QRegExp & rx)*/{
+  const QRegExp & rx = *(const QRegExp *)this_;
+  this_ =  new QRegExp(rx);
+  this_ =  new MyQRegExp(rx);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregexp.h:76
 // [8] QRegExp & operator=(QRegExp &&) 

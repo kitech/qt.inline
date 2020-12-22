@@ -100,6 +100,28 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicssimpletextitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:978
+// [-2] void QGraphicsSimpleTextItem(QGraphicsItem *) 
+// (12)qm3377978320 (47)_ZN23QGraphicsSimpleTextItemC2EP13QGraphicsItem
+/*void* qm3377978320(QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsSimpleTextItem*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsSimpleTextItem(parent);
+  this_ =  new MyQGraphicsSimpleTextItem(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:979
+// [-2] void QGraphicsSimpleTextItem(const QString &, QGraphicsItem *) 
+// (12)qm3921551802 (57)_ZN23QGraphicsSimpleTextItemC2ERK7QStringP13QGraphicsItem
+/*void* qm3921551802(const QString & text, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsSimpleTextItem*)(0);
+  const QString & text = *(const QString *)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsSimpleTextItem(text, parent);
+  this_ =  new MyQGraphicsSimpleTextItem(text, parent);
+}
+
 
 /*void C_ZN23QGraphicsSimpleTextItemD2Ev(void *this_)*/ {
   delete (QGraphicsSimpleTextItem*)(this_);

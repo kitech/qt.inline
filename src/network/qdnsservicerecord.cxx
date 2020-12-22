@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdnsservicerecord(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:132
+// [-2] void QDnsServiceRecord() 
+// (11)qm630157524 (26)_ZN17QDnsServiceRecordC2Ev
+/*void* qm630157524()*/{
+  ;
+  this_ =  new QDnsServiceRecord();
+  this_ =  new MyQDnsServiceRecord();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:133
+// [-2] void QDnsServiceRecord(const QDnsServiceRecord &) 
+// (11)qm505723686 (29)_ZN17QDnsServiceRecordC2ERKS_
+/*void* qm505723686(const QDnsServiceRecord & other)*/{
+  const QDnsServiceRecord & other = *(const QDnsServiceRecord *)this_;
+  this_ =  new QDnsServiceRecord(other);
+  this_ =  new MyQDnsServiceRecord(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:134
 // [8] QDnsServiceRecord & operator=(QDnsServiceRecord &&) 

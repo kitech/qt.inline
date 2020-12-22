@@ -63,6 +63,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qeasingcurve(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeasingcurve.h:80
+// [-2] void QEasingCurve(QEasingCurve::Type) 
+// (12)qm2331579693 (29)_ZN12QEasingCurveC2ENS_4TypeE
+/*void* qm2331579693(QEasingCurve::Type type_)*/{
+  QEasingCurve::Type type_ = *(QEasingCurve::Type*)this_;
+  this_ =  new QEasingCurve(type_);
+  this_ =  new MyQEasingCurve(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeasingcurve.h:81
+// [-2] void QEasingCurve(const QEasingCurve &) 
+// (12)qm2919204848 (24)_ZN12QEasingCurveC2ERKS_
+/*void* qm2919204848(const QEasingCurve & other)*/{
+  const QEasingCurve & other = *(const QEasingCurve *)this_;
+  this_ =  new QEasingCurve(other);
+  this_ =  new MyQEasingCurve(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qeasingcurve.h:84
 // [8] QEasingCurve & operator=(const QEasingCurve &) 
@@ -82,6 +102,7 @@ uint64_t ensure_inline_symbol_qeasingcurve(void* this_) {
 /*void* qm137765442(QEasingCurve && other)*/{
   QEasingCurve && other =  static_cast<QEasingCurve &&>(*(QEasingCurve *)this_);
   this_ =  new QEasingCurve(other);
+  this_ =  new MyQEasingCurve(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

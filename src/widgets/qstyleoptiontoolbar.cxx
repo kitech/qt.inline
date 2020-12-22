@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptiontoolbar(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:330
+// [-2] void QStyleOptionToolBar() 
+// (12)qm2322711723 (28)_ZN19QStyleOptionToolBarC2Ev
+/*void* qm2322711723()*/{
+  ;
+  this_ =  new QStyleOptionToolBar();
+  this_ =  new MyQStyleOptionToolBar();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:331
 // [-2] void QStyleOptionToolBar(const QStyleOptionToolBar &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptiontoolbar(void* this_) {
 /*void* qm2602901571(const QStyleOptionToolBar & other)*/{
   const QStyleOptionToolBar & other = *(const QStyleOptionToolBar *)this_;
   this_ =  new QStyleOptionToolBar(other);
+  this_ =  new MyQStyleOptionToolBar(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

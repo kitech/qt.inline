@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qplatformsurfaceevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:493
+// [-2] void QPlatformSurfaceEvent(QPlatformSurfaceEvent::SurfaceEventType) 
+// (11)qm206939469 (51)_ZN21QPlatformSurfaceEventC2ENS_16SurfaceEventTypeE
+/*void* qm206939469(QPlatformSurfaceEvent::SurfaceEventType surfaceEventType)*/{
+  QPlatformSurfaceEvent::SurfaceEventType surfaceEventType = *(QPlatformSurfaceEvent::SurfaceEventType*)this_;
+  this_ =  new QPlatformSurfaceEvent(surfaceEventType);
+  this_ =  new MyQPlatformSurfaceEvent(surfaceEventType);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:496
 // [4] QPlatformSurfaceEvent::SurfaceEventType surfaceEventType() const

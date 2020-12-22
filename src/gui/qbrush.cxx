@@ -74,6 +74,106 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qbrush(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:66
+// [-2] void QBrush() 
+// (12)qm3258578779 (14)_ZN6QBrushC2Ev
+/*void* qm3258578779()*/{
+  ;
+  this_ =  new QBrush();
+  this_ =  new MyQBrush();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:67
+// [-2] void QBrush(Qt::BrushStyle) 
+// (12)qm3846282792 (30)_ZN6QBrushC2EN2Qt10BrushStyleE
+/*void* qm3846282792(Qt::BrushStyle bs)*/{
+  Qt::BrushStyle bs = *(Qt::BrushStyle*)this_;
+  this_ =  new QBrush(bs);
+  this_ =  new MyQBrush(bs);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:68
+// [-2] void QBrush(const QColor &, Qt::BrushStyle) 
+// (12)qm1697783790 (39)_ZN6QBrushC2ERK6QColorN2Qt10BrushStyleE
+/*void* qm1697783790(const QColor & color, Qt::BrushStyle bs)*/{
+  const QColor & color = *(const QColor *)this_; Qt::BrushStyle bs = *(Qt::BrushStyle*)this_;
+  this_ =  new QBrush(color, bs);
+  this_ =  new MyQBrush(color, bs);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:69
+// [-2] void QBrush(Qt::GlobalColor, Qt::BrushStyle) 
+// (12)qm1191848810 (48)_ZN6QBrushC2EN2Qt11GlobalColorENS0_10BrushStyleE
+/*void* qm1191848810(Qt::GlobalColor color, Qt::BrushStyle bs)*/{
+  Qt::GlobalColor color = *(Qt::GlobalColor*)this_; Qt::BrushStyle bs = *(Qt::BrushStyle*)this_;
+  this_ =  new QBrush(color, bs);
+  this_ =  new MyQBrush(color, bs);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:71
+// [-2] void QBrush(const QColor &, const QPixmap &) 
+// (12)qm1490641295 (32)_ZN6QBrushC2ERK6QColorRK7QPixmap
+/*void* qm1490641295(const QColor & color, const QPixmap & pixmap)*/{
+  const QColor & color = *(const QColor *)this_; const QPixmap & pixmap = *(const QPixmap *)this_;
+  this_ =  new QBrush(color, pixmap);
+  this_ =  new MyQBrush(color, pixmap);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:72
+// [-2] void QBrush(Qt::GlobalColor, const QPixmap &) 
+// (12)qm2424112937 (41)_ZN6QBrushC2EN2Qt11GlobalColorERK7QPixmap
+/*void* qm2424112937(Qt::GlobalColor color, const QPixmap & pixmap)*/{
+  Qt::GlobalColor color = *(Qt::GlobalColor*)this_; const QPixmap & pixmap = *(const QPixmap *)this_;
+  this_ =  new QBrush(color, pixmap);
+  this_ =  new MyQBrush(color, pixmap);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:73
+// [-2] void QBrush(const QPixmap &) 
+// (12)qm3362515310 (23)_ZN6QBrushC2ERK7QPixmap
+/*void* qm3362515310(const QPixmap & pixmap)*/{
+  const QPixmap & pixmap = *(const QPixmap *)this_;
+  this_ =  new QBrush(pixmap);
+  this_ =  new MyQBrush(pixmap);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:74
+// [-2] void QBrush(const QImage &) 
+// (11)qm423772952 (22)_ZN6QBrushC2ERK6QImage
+/*void* qm423772952(const QImage & image)*/{
+  const QImage & image = *(const QImage *)this_;
+  this_ =  new QBrush(image);
+  this_ =  new MyQBrush(image);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:76
+// [-2] void QBrush(const QBrush &) 
+// (12)qm2727214921 (17)_ZN6QBrushC2ERKS_
+/*void* qm2727214921(const QBrush & brush)*/{
+  const QBrush & brush = *(const QBrush *)this_;
+  this_ =  new QBrush(brush);
+  this_ =  new MyQBrush(brush);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:78
+// [-2] void QBrush(const QGradient &) 
+// (11)qm882478478 (25)_ZN6QBrushC2ERK9QGradient
+/*void* qm882478478(const QGradient & gradient)*/{
+  const QGradient & gradient = *(const QGradient *)this_;
+  this_ =  new QBrush(gradient);
+  this_ =  new MyQBrush(gradient);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:82
 // [8] QBrush & operator=(QBrush &&) 

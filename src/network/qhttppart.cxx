@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qhttppart(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:60
+// [-2] void QHttpPart() 
+// (12)qm1349028831 (17)_ZN9QHttpPartC2Ev
+/*void* qm1349028831()*/{
+  ;
+  this_ =  new QHttpPart();
+  this_ =  new MyQHttpPart();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:61
+// [-2] void QHttpPart(const QHttpPart &) 
+// (12)qm3679918879 (20)_ZN9QHttpPartC2ERKS_
+/*void* qm3679918879(const QHttpPart & other)*/{
+  const QHttpPart & other = *(const QHttpPart *)this_;
+  this_ =  new QHttpPart(other);
+  this_ =  new MyQHttpPart(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhttpmultipart.h:63
 // [8] QHttpPart & operator=(QHttpPart &&) 

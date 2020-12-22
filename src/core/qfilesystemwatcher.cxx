@@ -130,6 +130,26 @@ uint64_t ensure_inline_symbol_qfilesystemwatcher(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:58
+// [-2] void QFileSystemWatcher(QObject *) 
+// (11)qm222004831 (35)_ZN18QFileSystemWatcherC2EP7QObject
+/*void* qm222004831(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QFileSystemWatcher(parent);
+  this_ =  new MyQFileSystemWatcher(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfilesystemwatcher.h:59
+// [-2] void QFileSystemWatcher(const QStringList &, QObject *) 
+// (12)qm1149889208 (50)_ZN18QFileSystemWatcherC2ERK11QStringListP7QObject
+/*void* qm1149889208(const QStringList & paths, QObject * parent)*/{
+  const QStringList & paths = *(const QStringList *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QFileSystemWatcher(paths, parent);
+  this_ =  new MyQFileSystemWatcher(paths, parent);
+}
+
 
 /*void C_ZN18QFileSystemWatcherD2Ev(void *this_)*/ {
   delete (QFileSystemWatcher*)(this_);

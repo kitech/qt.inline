@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qundocommand(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qundostack.h:60
+// [-2] void QUndoCommand(QUndoCommand *) 
+// (11)qm805274765 (23)_ZN12QUndoCommandC2EPS_
+/*void* qm805274765(QUndoCommand * parent)*/{
+  QUndoCommand * parent = *(QUndoCommand **)this_;
+  this_ =  new QUndoCommand(parent);
+  this_ =  new MyQUndoCommand(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qundostack.h:61
+// [-2] void QUndoCommand(const QString &, QUndoCommand *) 
+// (12)qm3007010760 (33)_ZN12QUndoCommandC2ERK7QStringPS_
+/*void* qm3007010760(const QString & text, QUndoCommand * parent)*/{
+  const QString & text = *(const QString *)this_; QUndoCommand * parent = *(QUndoCommand **)this_;
+  this_ =  new QUndoCommand(text, parent);
+  this_ =  new MyQUndoCommand(text, parent);
+}
+
 
 /*void C_ZN12QUndoCommandD2Ev(void *this_)*/ {
   delete (QUndoCommand*)(this_);

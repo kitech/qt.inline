@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qmessagelogcontext(void* this_) {
 /*void* qm3610397043()*/{
   ;
   this_ =  new QMessageLogContext();
+  this_ =  new MyQMessageLogContext();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qmessagelogcontext(void* this_) {
 /*void* qm2713371922(const char * fileName, int lineNumber, const char * functionName, const char * categoryName)*/{
   const char * fileName = *(const char **)this_; int lineNumber = *(int*)this_; const char * functionName = *(const char **)this_; const char * categoryName = *(const char **)this_;
   this_ =  new QMessageLogContext(fileName, lineNumber, functionName, categoryName);
+  this_ =  new MyQMessageLogContext(fileName, lineNumber, functionName, categoryName);
 }
 
 

@@ -59,6 +59,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicssceneevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:67
+// [-2] void QGraphicsSceneEvent(QEvent::Type) 
+// (12)qm2472058346 (41)_ZN19QGraphicsSceneEventC2EN6QEvent4TypeE
+/*void* qm2472058346(QEvent::Type type_)*/{
+  QEvent::Type type_ = *(QEvent::Type*)this_;
+  this_ =  new QGraphicsSceneEvent(type_);
+  this_ =  new MyQGraphicsSceneEvent(type_);
+}
+
 
 /*void C_ZN19QGraphicsSceneEventD2Ev(void *this_)*/ {
   delete (QGraphicsSceneEvent*)(this_);

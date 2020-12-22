@@ -151,6 +151,17 @@ uint64_t ensure_inline_symbol_qrasterwindow(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrasterwindow.h:56
+// [-2] void QRasterWindow(QWindow *) 
+// (12)qm1485038410 (30)_ZN13QRasterWindowC2EP7QWindow
+/*void* qm1485038410(QWindow * parent)*/{
+  auto _nilp = (MyQRasterWindow*)(0);
+  QWindow * parent = *(QWindow **)this_;
+  this_ =  new QRasterWindow(parent);
+  this_ =  new MyQRasterWindow(parent);
+}
+
 
 /*void C_ZN13QRasterWindowD2Ev(void *this_)*/ {
   delete (QRasterWindow*)(this_);

@@ -139,6 +139,28 @@ uint64_t ensure_inline_symbol_qsvgwidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtSvg/qsvgwidget.h:62
+// [-2] void QSvgWidget(QWidget *) 
+// (12)qm3625059332 (27)_ZN10QSvgWidgetC2EP7QWidget
+/*void* qm3625059332(QWidget * parent)*/{
+  auto _nilp = (MyQSvgWidget*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QSvgWidget(parent);
+  this_ =  new MyQSvgWidget(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtSvg/qsvgwidget.h:63
+// [-2] void QSvgWidget(const QString &, QWidget *) 
+// (12)qm1651505364 (37)_ZN10QSvgWidgetC2ERK7QStringP7QWidget
+/*void* qm1651505364(const QString & file, QWidget * parent)*/{
+  auto _nilp = (MyQSvgWidget*)(0);
+  const QString & file = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QSvgWidget(file, parent);
+  this_ =  new MyQSvgWidget(file, parent);
+}
+
 
 /*void C_ZN10QSvgWidgetD2Ev(void *this_)*/ {
   delete (QSvgWidget*)(this_);

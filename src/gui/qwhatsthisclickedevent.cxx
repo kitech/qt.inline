@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwhatsthisclickedevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:755
+// [-2] void QWhatsThisClickedEvent(const QString &) 
+// (12)qm3474865231 (40)_ZN22QWhatsThisClickedEventC2ERK7QString
+/*void* qm3474865231(const QString & href)*/{
+  const QString & href = *(const QString *)this_;
+  this_ =  new QWhatsThisClickedEvent(href);
+  this_ =  new MyQWhatsThisClickedEvent(href);
+}
+
 // Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:758
 // [8] QString href() const

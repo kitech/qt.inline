@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qswipegesture(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:221
+// [-2] void QSwipeGesture(QObject *) 
+// (12)qm2287212424 (30)_ZN13QSwipeGestureC2EP7QObject
+/*void* qm2287212424(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSwipeGesture(parent);
+  this_ =  new MyQSwipeGesture(parent);
+}
+
 
 /*void C_ZN13QSwipeGestureD2Ev(void *this_)*/ {
   delete (QSwipeGesture*)(this_);

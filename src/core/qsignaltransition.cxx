@@ -168,6 +168,28 @@ uint64_t ensure_inline_symbol_qsignaltransition(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsignaltransition.h:58
+// [-2] void QSignalTransition(QState *) 
+// (12)qm3432198956 (33)_ZN17QSignalTransitionC2EP6QState
+/*void* qm3432198956(QState * sourceState)*/{
+  auto _nilp = (MyQSignalTransition*)(0);
+  QState * sourceState = *(QState **)this_;
+  this_ =  new QSignalTransition(sourceState);
+  this_ =  new MyQSignalTransition(sourceState);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsignaltransition.h:59
+// [-2] void QSignalTransition(const QObject *, const char *, QState *) 
+// (12)qm4086243449 (46)_ZN17QSignalTransitionC2EPK7QObjectPKcP6QState
+/*void* qm4086243449(const QObject * sender, const char * signal, QState * sourceState)*/{
+  auto _nilp = (MyQSignalTransition*)(0);
+  const QObject * sender = *(const QObject **)this_; const char * signal = *(const char **)this_; QState * sourceState = *(QState **)this_;
+  this_ =  new QSignalTransition(sender, signal, sourceState);
+  this_ =  new MyQSignalTransition(sender, signal, sourceState);
+}
+
 
 /*void C_ZN17QSignalTransitionD2Ev(void *this_)*/ {
   delete (QSignalTransition*)(this_);

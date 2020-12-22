@@ -192,6 +192,17 @@ uint64_t ensure_inline_symbol_qscrollarea(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollarea.h:59
+// [-2] void QScrollArea(QWidget *) 
+// (12)qm3816919611 (28)_ZN11QScrollAreaC2EP7QWidget
+/*void* qm3816919611(QWidget * parent)*/{
+  auto _nilp = (MyQScrollArea*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QScrollArea(parent);
+  this_ =  new MyQScrollArea(parent);
+}
+
 
 /*void C_ZN11QScrollAreaD2Ev(void *this_)*/ {
   delete (QScrollArea*)(this_);

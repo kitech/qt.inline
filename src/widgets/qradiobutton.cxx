@@ -180,6 +180,28 @@ uint64_t ensure_inline_symbol_qradiobutton(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qradiobutton.h:59
+// [-2] void QRadioButton(QWidget *) 
+// (12)qm3516896294 (29)_ZN12QRadioButtonC2EP7QWidget
+/*void* qm3516896294(QWidget * parent)*/{
+  auto _nilp = (MyQRadioButton*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QRadioButton(parent);
+  this_ =  new MyQRadioButton(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qradiobutton.h:60
+// [-2] void QRadioButton(const QString &, QWidget *) 
+// (12)qm3203710175 (39)_ZN12QRadioButtonC2ERK7QStringP7QWidget
+/*void* qm3203710175(const QString & text, QWidget * parent)*/{
+  auto _nilp = (MyQRadioButton*)(0);
+  const QString & text = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QRadioButton(text, parent);
+  this_ =  new MyQRadioButton(text, parent);
+}
+
 
 /*void C_ZN12QRadioButtonD2Ev(void *this_)*/ {
   delete (QRadioButton*)(this_);

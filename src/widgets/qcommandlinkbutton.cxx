@@ -198,6 +198,39 @@ uint64_t ensure_inline_symbol_qcommandlinkbutton(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcommandlinkbutton.h:61
+// [-2] void QCommandLinkButton(QWidget *) 
+// (12)qm1759236469 (35)_ZN18QCommandLinkButtonC2EP7QWidget
+/*void* qm1759236469(QWidget * parent)*/{
+  auto _nilp = (MyQCommandLinkButton*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QCommandLinkButton(parent);
+  this_ =  new MyQCommandLinkButton(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcommandlinkbutton.h:62
+// [-2] void QCommandLinkButton(const QString &, QWidget *) 
+// (12)qm1625817528 (45)_ZN18QCommandLinkButtonC2ERK7QStringP7QWidget
+/*void* qm1625817528(const QString & text, QWidget * parent)*/{
+  auto _nilp = (MyQCommandLinkButton*)(0);
+  const QString & text = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QCommandLinkButton(text, parent);
+  this_ =  new MyQCommandLinkButton(text, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcommandlinkbutton.h:63
+// [-2] void QCommandLinkButton(const QString &, const QString &, QWidget *) 
+// (12)qm3602460489 (48)_ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget
+/*void* qm3602460489(const QString & text, const QString & description, QWidget * parent)*/{
+  auto _nilp = (MyQCommandLinkButton*)(0);
+  const QString & text = *(const QString *)this_; const QString & description = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QCommandLinkButton(text, description, parent);
+  this_ =  new MyQCommandLinkButton(text, description, parent);
+}
+
 
 /*void C_ZN18QCommandLinkButtonD2Ev(void *this_)*/ {
   delete (QCommandLinkButton*)(this_);

@@ -65,6 +65,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qlistwidgetitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:64
+// [-2] void QListWidgetItem(QListWidget *, int) 
+// (10)qm56480504 (38)_ZN15QListWidgetItemC2EP11QListWidgeti
+/*void* qm56480504(QListWidget * listview, int type_)*/{
+  QListWidget * listview = *(QListWidget **)this_; int type_ = *(int*)this_;
+  this_ =  new QListWidgetItem(listview, type_);
+  this_ =  new MyQListWidgetItem(listview, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:65
+// [-2] void QListWidgetItem(const QString &, QListWidget *, int) 
+// (11)qm248460992 (48)_ZN15QListWidgetItemC2ERK7QStringP11QListWidgeti
+/*void* qm248460992(const QString & text, QListWidget * listview, int type_)*/{
+  const QString & text = *(const QString *)this_; QListWidget * listview = *(QListWidget **)this_; int type_ = *(int*)this_;
+  this_ =  new QListWidgetItem(text, listview, type_);
+  this_ =  new MyQListWidgetItem(text, listview, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:66
+// [-2] void QListWidgetItem(const QIcon &, const QString &, QListWidget *, int) 
+// (12)qm3565841736 (56)_ZN15QListWidgetItemC2ERK5QIconRK7QStringP11QListWidgeti
+/*void* qm3565841736(const QIcon & icon, const QString & text, QListWidget * listview, int type_)*/{
+  const QIcon & icon = *(const QIcon *)this_; const QString & text = *(const QString *)this_; QListWidget * listview = *(QListWidget **)this_; int type_ = *(int*)this_;
+  this_ =  new QListWidgetItem(icon, text, listview, type_);
+  this_ =  new MyQListWidgetItem(icon, text, listview, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlistwidget.h:68
+// [-2] void QListWidgetItem(const QListWidgetItem &) 
+// (12)qm2321330834 (27)_ZN15QListWidgetItemC2ERKS_
+/*void* qm2321330834(const QListWidgetItem & other)*/{
+  const QListWidgetItem & other = *(const QListWidgetItem *)this_;
+  this_ =  new QListWidgetItem(other);
+  this_ =  new MyQListWidgetItem(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qlistwidget.h:73
 // [8] QListWidget * listWidget() const

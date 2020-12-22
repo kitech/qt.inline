@@ -155,6 +155,28 @@ uint64_t ensure_inline_symbol_qkeyeventtransition(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:57
+// [-2] void QKeyEventTransition(QState *) 
+// (12)qm3555541257 (35)_ZN19QKeyEventTransitionC2EP6QState
+/*void* qm3555541257(QState * sourceState)*/{
+  auto _nilp = (MyQKeyEventTransition*)(0);
+  QState * sourceState = *(QState **)this_;
+  this_ =  new QKeyEventTransition(sourceState);
+  this_ =  new MyQKeyEventTransition(sourceState);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qkeyeventtransition.h:58
+// [-2] void QKeyEventTransition(QObject *, QEvent::Type, int, QState *) 
+// (12)qm4263363132 (59)_ZN19QKeyEventTransitionC2EP7QObjectN6QEvent4TypeEiP6QState
+/*void* qm4263363132(QObject * object, QEvent::Type type_, int key, QState * sourceState)*/{
+  auto _nilp = (MyQKeyEventTransition*)(0);
+  QObject * object = *(QObject **)this_; QEvent::Type type_ = *(QEvent::Type*)this_; int key = *(int*)this_; QState * sourceState = *(QState **)this_;
+  this_ =  new QKeyEventTransition(object, type_, key, sourceState);
+  this_ =  new MyQKeyEventTransition(object, type_, key, sourceState);
+}
+
 
 /*void C_ZN19QKeyEventTransitionD2Ev(void *this_)*/ {
   delete (QKeyEventTransition*)(this_);

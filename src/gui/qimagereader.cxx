@@ -72,6 +72,36 @@ uint64_t ensure_inline_symbol_qimagereader(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:71
+// [-2] void QImageReader() 
+// (12)qm1579189598 (21)_ZN12QImageReaderC2Ev
+/*void* qm1579189598()*/{
+  ;
+  this_ =  new QImageReader();
+  this_ =  new MyQImageReader();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:72
+// [-2] void QImageReader(QIODevice *, const QByteArray &) 
+// (12)qm4096643181 (45)_ZN12QImageReaderC2EP9QIODeviceRK10QByteArray
+/*void* qm4096643181(QIODevice * device, const QByteArray & format)*/{
+  QIODevice * device = *(QIODevice **)this_; const QByteArray & format = *(const QByteArray *)this_;
+  this_ =  new QImageReader(device, format);
+  this_ =  new MyQImageReader(device, format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagereader.h:73
+// [-2] void QImageReader(const QString &, const QByteArray &) 
+// (12)qm2039519028 (44)_ZN12QImageReaderC2ERK7QStringRK10QByteArray
+/*void* qm2039519028(const QString & fileName, const QByteArray & format)*/{
+  const QString & fileName = *(const QString *)this_; const QByteArray & format = *(const QByteArray *)this_;
+  this_ =  new QImageReader(fileName, format);
+  this_ =  new MyQImageReader(fileName, format);
+}
+
 
 /*void C_ZN12QImageReaderD2Ev(void *this_)*/ {
   delete (QImageReader*)(this_);

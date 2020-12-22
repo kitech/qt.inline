@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglfunctions(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglfunctions.h:240
+// [-2] void QOpenGLFunctions() 
+// (11)qm219410663 (25)_ZN16QOpenGLFunctionsC2Ev
+/*void* qm219410663()*/{
+  ;
+  this_ =  new QOpenGLFunctions();
+  this_ =  new MyQOpenGLFunctions();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglfunctions.h:241
+// [-2] void QOpenGLFunctions(QOpenGLContext *) 
+// (12)qm1874144887 (41)_ZN16QOpenGLFunctionsC2EP14QOpenGLContext
+/*void* qm1874144887(QOpenGLContext * context)*/{
+  QOpenGLContext * context = *(QOpenGLContext **)this_;
+  this_ =  new QOpenGLFunctions(context);
+  this_ =  new MyQOpenGLFunctions(context);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglfunctions.h:242
 // [-2] void ~QOpenGLFunctions() 

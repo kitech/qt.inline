@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qbackingstore(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbackingstore.h:62
+// [-2] void QBackingStore(QWindow *) 
+// (11)qm404467822 (30)_ZN13QBackingStoreC2EP7QWindow
+/*void* qm404467822(QWindow * window)*/{
+  QWindow * window = *(QWindow **)this_;
+  this_ =  new QBackingStore(window);
+  this_ =  new MyQBackingStore(window);
+}
+
 
 /*void C_ZN13QBackingStoreD2Ev(void *this_)*/ {
   delete (QBackingStore*)(this_);

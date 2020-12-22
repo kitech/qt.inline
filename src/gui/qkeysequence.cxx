@@ -64,6 +64,56 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qkeysequence(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qkeysequence.h:156
+// [-2] void QKeySequence() 
+// (11)qm282939820 (21)_ZN12QKeySequenceC2Ev
+/*void* qm282939820()*/{
+  ;
+  this_ =  new QKeySequence();
+  this_ =  new MyQKeySequence();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qkeysequence.h:157
+// [-2] void QKeySequence(const QString &, QKeySequence::SequenceFormat) 
+// (12)qm3747334494 (50)_ZN12QKeySequenceC2ERK7QStringNS_14SequenceFormatE
+/*void* qm3747334494(const QString & key, QKeySequence::SequenceFormat format)*/{
+  const QString & key = *(const QString *)this_; QKeySequence::SequenceFormat format = *(QKeySequence::SequenceFormat*)this_;
+  this_ =  new QKeySequence(key, format);
+  this_ =  new MyQKeySequence(key, format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qkeysequence.h:158
+// [-2] void QKeySequence(int, int, int, int) 
+// (12)qm3150709006 (24)_ZN12QKeySequenceC2Eiiii
+/*void* qm3150709006(int k1, int k2, int k3, int k4)*/{
+  int k1 = *(int*)this_; int k2 = *(int*)this_; int k3 = *(int*)this_; int k4 = *(int*)this_;
+  this_ =  new QKeySequence(k1, k2, k3, k4);
+  this_ =  new MyQKeySequence(k1, k2, k3, k4);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qkeysequence.h:159
+// [-2] void QKeySequence(const QKeySequence &) 
+// (12)qm1295820736 (24)_ZN12QKeySequenceC2ERKS_
+/*void* qm1295820736(const QKeySequence & ks)*/{
+  const QKeySequence & ks = *(const QKeySequence *)this_;
+  this_ =  new QKeySequence(ks);
+  this_ =  new MyQKeySequence(ks);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qkeysequence.h:160
+// [-2] void QKeySequence(QKeySequence::StandardKey) 
+// (12)qm2651341965 (37)_ZN12QKeySequenceC2ENS_11StandardKeyE
+/*void* qm2651341965(QKeySequence::StandardKey key)*/{
+  QKeySequence::StandardKey key = *(QKeySequence::StandardKey*)this_;
+  this_ =  new QKeySequence(key);
+  this_ =  new MyQKeySequence(key);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qkeysequence.h:189
 // [8] QKeySequence & operator=(QKeySequence &&) 

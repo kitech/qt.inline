@@ -64,6 +64,56 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpagesize(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagesize.h:230
+// [-2] void QPageSize() 
+// (12)qm2745184346 (17)_ZN9QPageSizeC2Ev
+/*void* qm2745184346()*/{
+  ;
+  this_ =  new QPageSize();
+  this_ =  new MyQPageSize();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagesize.h:231
+// [-2] void QPageSize(QPageSize::PageSizeId) 
+// (11)qm939258003 (32)_ZN9QPageSizeC2ENS_10PageSizeIdE
+/*void* qm939258003(QPageSize::PageSizeId pageSizeId)*/{
+  QPageSize::PageSizeId pageSizeId = *(QPageSize::PageSizeId*)this_;
+  this_ =  new QPageSize(pageSizeId);
+  this_ =  new MyQPageSize(pageSizeId);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagesize.h:232
+// [-2] void QPageSize(const QSize &, const QString &, QPageSize::SizeMatchPolicy) 
+// (11)qm150233864 (55)_ZN9QPageSizeC2ERK5QSizeRK7QStringNS_15SizeMatchPolicyE
+/*void* qm150233864(const QSize & pointSize, const QString & name, QPageSize::SizeMatchPolicy matchPolicy)*/{
+  const QSize & pointSize = *(const QSize *)this_; const QString & name = *(const QString *)this_; QPageSize::SizeMatchPolicy matchPolicy = *(QPageSize::SizeMatchPolicy*)this_;
+  this_ =  new QPageSize(pointSize, name, matchPolicy);
+  this_ =  new MyQPageSize(pointSize, name, matchPolicy);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagesize.h:235
+// [-2] void QPageSize(const QSizeF &, QPageSize::Unit, const QString &, QPageSize::SizeMatchPolicy) 
+// (12)qm2269842282 (65)_ZN9QPageSizeC2ERK6QSizeFNS_4UnitERK7QStringNS_15SizeMatchPolicyE
+/*void* qm2269842282(const QSizeF & size, QPageSize::Unit units, const QString & name, QPageSize::SizeMatchPolicy matchPolicy)*/{
+  const QSizeF & size = *(const QSizeF *)this_; QPageSize::Unit units = *(QPageSize::Unit*)this_; const QString & name = *(const QString *)this_; QPageSize::SizeMatchPolicy matchPolicy = *(QPageSize::SizeMatchPolicy*)this_;
+  this_ =  new QPageSize(size, units, name, matchPolicy);
+  this_ =  new MyQPageSize(size, units, name, matchPolicy);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagesize.h:238
+// [-2] void QPageSize(const QPageSize &) 
+// (12)qm2921856886 (20)_ZN9QPageSizeC2ERKS_
+/*void* qm2921856886(const QPageSize & other)*/{
+  const QPageSize & other = *(const QPageSize *)this_;
+  this_ =  new QPageSize(other);
+  this_ =  new MyQPageSize(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagesize.h:239
 // [8] QPageSize & operator=(QPageSize &&) 

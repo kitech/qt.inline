@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwebenginehistoryitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:59
+// [-2] void QWebEngineHistoryItem(const QWebEngineHistoryItem &) 
+// (12)qm4233152871 (33)_ZN21QWebEngineHistoryItemC2ERKS_
+/*void* qm4233152871(const QWebEngineHistoryItem & other)*/{
+  const QWebEngineHistoryItem & other = *(const QWebEngineHistoryItem *)this_;
+  this_ =  new QWebEngineHistoryItem(other);
+  this_ =  new MyQWebEngineHistoryItem(other);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWebEngineWidgets/qwebenginehistory.h:72
 // [-2] void swap(QWebEngineHistoryItem &) 

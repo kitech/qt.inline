@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qaccessibletextremoveevent(void* this_) {
 /*void* qm3295745994(QObject * obj, int position, const QString & text)*/{
   QObject * obj = *(QObject **)this_; int position = *(int*)this_; const QString & text = *(const QString *)this_;
   this_ =  new QAccessibleTextRemoveEvent(obj, position, text);
+  this_ =  new MyQAccessibleTextRemoveEvent(obj, position, text);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qaccessibletextremoveevent(void* this_) {
 /*void* qm1482743019(QAccessibleInterface * iface, int position, const QString & text)*/{
   QAccessibleInterface * iface = *(QAccessibleInterface **)this_; int position = *(int*)this_; const QString & text = *(const QString *)this_;
   this_ =  new QAccessibleTextRemoveEvent(iface, position, text);
+  this_ =  new MyQAccessibleTextRemoveEvent(iface, position, text);
 }
 
 // Public inline Indirect Visibility=Default Availability=Available

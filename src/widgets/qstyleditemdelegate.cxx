@@ -166,6 +166,17 @@ uint64_t ensure_inline_symbol_qstyleditemdelegate(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleditemdelegate.h:61
+// [-2] void QStyledItemDelegate(QObject *) 
+// (12)qm2447839297 (36)_ZN19QStyledItemDelegateC2EP7QObject
+/*void* qm2447839297(QObject * parent)*/{
+  auto _nilp = (MyQStyledItemDelegate*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QStyledItemDelegate(parent);
+  this_ =  new MyQStyledItemDelegate(parent);
+}
+
 
 /*void C_ZN19QStyledItemDelegateD2Ev(void *this_)*/ {
   delete (QStyledItemDelegate*)(this_);

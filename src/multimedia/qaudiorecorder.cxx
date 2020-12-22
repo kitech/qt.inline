@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qaudiorecorder(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiorecorder.h:65
+// [-2] void QAudioRecorder(QObject *) 
+// (12)qm2627828741 (31)_ZN14QAudioRecorderC2EP7QObject
+/*void* qm2627828741(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QAudioRecorder(parent);
+  this_ =  new MyQAudioRecorder(parent);
+}
+
 
 /*void C_ZN14QAudioRecorderD2Ev(void *this_)*/ {
   delete (QAudioRecorder*)(this_);

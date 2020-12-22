@@ -63,6 +63,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qregularexpression(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:84
+// [-2] void QRegularExpression() 
+// (12)qm4292092048 (27)_ZN18QRegularExpressionC2Ev
+/*void* qm4292092048()*/{
+  ;
+  this_ =  new QRegularExpression();
+  this_ =  new MyQRegularExpression();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:85
+// [-2] void QRegularExpression(const QString &, QRegularExpression::PatternOptions) 
+// (12)qm2520603571 (64)_ZN18QRegularExpressionC2ERK7QString6QFlagsINS_13PatternOptionEE
+/*void* qm2520603571(const QString & pattern, QFlags<QRegularExpression::PatternOption> options)*/{
+  const QString & pattern = *(const QString *)this_; QFlags<QRegularExpression::PatternOption> options = *(QFlags<QRegularExpression::PatternOption>*)this_;
+  this_ =  new QRegularExpression(pattern, options);
+  this_ =  new MyQRegularExpression(pattern, options);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:86
+// [-2] void QRegularExpression(const QRegularExpression &) 
+// (11)qm800410568 (30)_ZN18QRegularExpressionC2ERKS_
+/*void* qm800410568(const QRegularExpression & re)*/{
+  const QRegularExpression & re = *(const QRegularExpression *)this_;
+  this_ =  new QRegularExpression(re);
+  this_ =  new MyQRegularExpression(re);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:89
 // [8] QRegularExpression & operator=(QRegularExpression &&) 

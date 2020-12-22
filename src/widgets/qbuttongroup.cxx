@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qbuttongroup(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qbuttongroup.h:60
+// [-2] void QButtonGroup(QObject *) 
+// (12)qm2324572097 (29)_ZN12QButtonGroupC2EP7QObject
+/*void* qm2324572097(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QButtonGroup(parent);
+  this_ =  new MyQButtonGroup(parent);
+}
+
 
 /*void C_ZN12QButtonGroupD2Ev(void *this_)*/ {
   delete (QButtonGroup*)(this_);

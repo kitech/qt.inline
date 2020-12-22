@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qstylepainter(void* this_) {
 /*void* qm3572436832()*/{
   ;
   this_ =  new QStylePainter();
+  this_ =  new MyQStylePainter();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +77,7 @@ uint64_t ensure_inline_symbol_qstylepainter(void* this_) {
 /*void* qm271615742(QWidget * w)*/{
   QWidget * w = *(QWidget **)this_;
   this_ =  new QStylePainter(w);
+  this_ =  new MyQStylePainter(w);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -85,6 +87,7 @@ uint64_t ensure_inline_symbol_qstylepainter(void* this_) {
 /*void* qm2698646986(QPaintDevice * pd, QWidget * w)*/{
   QPaintDevice * pd = *(QPaintDevice **)this_; QWidget * w = *(QWidget **)this_;
   this_ =  new QStylePainter(pd, w);
+  this_ =  new MyQStylePainter(pd, w);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

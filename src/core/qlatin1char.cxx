@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qlatin1char(void* this_) {
 /*void* qm442480508(char c)*/{
   char c = *(char*)this_;
   this_ =  new QLatin1Char(c);
+  this_ =  new MyQLatin1Char(c);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

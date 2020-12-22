@@ -59,6 +59,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicsscenemouseevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicssceneevent.h:85
+// [-2] void QGraphicsSceneMouseEvent(QEvent::Type) 
+// (12)qm3139640757 (46)_ZN24QGraphicsSceneMouseEventC2EN6QEvent4TypeE
+/*void* qm3139640757(QEvent::Type type_)*/{
+  QEvent::Type type_ = *(QEvent::Type*)this_;
+  this_ =  new QGraphicsSceneMouseEvent(type_);
+  this_ =  new MyQGraphicsSceneMouseEvent(type_);
+}
+
 
 /*void C_ZN24QGraphicsSceneMouseEventD2Ev(void *this_)*/ {
   delete (QGraphicsSceneMouseEvent*)(this_);

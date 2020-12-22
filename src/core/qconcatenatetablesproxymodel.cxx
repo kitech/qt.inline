@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qconcatenatetablesproxymodel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qconcatenatetablesproxymodel.h:56
+// [-2] void QConcatenateTablesProxyModel(QObject *) 
+// (12)qm2991241901 (45)_ZN28QConcatenateTablesProxyModelC2EP7QObject
+/*void* qm2991241901(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QConcatenateTablesProxyModel(parent);
+  this_ =  new MyQConcatenateTablesProxyModel(parent);
+}
+
 
 /*void C_ZN28QConcatenateTablesProxyModelD2Ev(void *this_)*/ {
   delete (QConcatenateTablesProxyModel*)(this_);

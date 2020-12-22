@@ -201,6 +201,17 @@ uint64_t ensure_inline_symbol_qrubberband(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qrubberband.h:59
+// [-2] void QRubberBand(QRubberBand::Shape, QWidget *) 
+// (11)qm917804007 (38)_ZN11QRubberBandC2ENS_5ShapeEP7QWidget
+/*void* qm917804007(QRubberBand::Shape arg0, QWidget * arg1)*/{
+  auto _nilp = (MyQRubberBand*)(0);
+  QRubberBand::Shape arg0 = *(QRubberBand::Shape*)this_; QWidget * arg1 = *(QWidget **)this_;
+  this_ =  new QRubberBand(arg0, arg1);
+  this_ =  new MyQRubberBand(arg0, arg1);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qrubberband.h:66
 // [-2] void setGeometry(int, int, int, int) 

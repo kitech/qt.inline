@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qqmlengineextensionplugin(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlextensionplugin.h:81
+// [-2] void QQmlEngineExtensionPlugin(QObject *) 
+// (12)qm3045639978 (42)_ZN25QQmlEngineExtensionPluginC2EP7QObject
+/*void* qm3045639978(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QQmlEngineExtensionPlugin(parent);
+  this_ =  new MyQQmlEngineExtensionPlugin(parent);
+}
+
 
 /*void C_ZN25QQmlEngineExtensionPluginD2Ev(void *this_)*/ {
   delete (QQmlEngineExtensionPlugin*)(this_);

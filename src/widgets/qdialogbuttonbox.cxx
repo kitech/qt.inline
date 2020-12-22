@@ -159,6 +159,50 @@ uint64_t ensure_inline_symbol_qdialogbuttonbox(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialogbuttonbox.h:120
+// [-2] void QDialogButtonBox(QWidget *) 
+// (12)qm2656004728 (33)_ZN16QDialogButtonBoxC2EP7QWidget
+/*void* qm2656004728(QWidget * parent)*/{
+  auto _nilp = (MyQDialogButtonBox*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDialogButtonBox(parent);
+  this_ =  new MyQDialogButtonBox(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialogbuttonbox.h:121
+// [-2] void QDialogButtonBox(Qt::Orientation, QWidget *) 
+// (12)qm2679660168 (51)_ZN16QDialogButtonBoxC2EN2Qt11OrientationEP7QWidget
+/*void* qm2679660168(Qt::Orientation orientation, QWidget * parent)*/{
+  auto _nilp = (MyQDialogButtonBox*)(0);
+  Qt::Orientation orientation = *(Qt::Orientation*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDialogButtonBox(orientation, parent);
+  this_ =  new MyQDialogButtonBox(orientation, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialogbuttonbox.h:122
+// [-2] void QDialogButtonBox(QDialogButtonBox::StandardButtons, QWidget *) 
+// (12)qm1798518328 (62)_ZN16QDialogButtonBoxC2E6QFlagsINS_14StandardButtonEEP7QWidget
+/*void* qm1798518328(QFlags<QDialogButtonBox::StandardButton> buttons, QWidget * parent)*/{
+  auto _nilp = (MyQDialogButtonBox*)(0);
+  QFlags<QDialogButtonBox::StandardButton> buttons = *(QFlags<QDialogButtonBox::StandardButton>*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDialogButtonBox(buttons, parent);
+  this_ =  new MyQDialogButtonBox(buttons, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialogbuttonbox.h:123
+// [-2] void QDialogButtonBox(QDialogButtonBox::StandardButtons, Qt::Orientation, QWidget *) 
+// (12)qm4179775101 (80)_ZN16QDialogButtonBoxC2E6QFlagsINS_14StandardButtonEEN2Qt11OrientationEP7QWidget
+/*void* qm4179775101(QFlags<QDialogButtonBox::StandardButton> buttons, Qt::Orientation orientation, QWidget * parent)*/{
+  auto _nilp = (MyQDialogButtonBox*)(0);
+  QFlags<QDialogButtonBox::StandardButton> buttons = *(QFlags<QDialogButtonBox::StandardButton>*)this_; Qt::Orientation orientation = *(Qt::Orientation*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDialogButtonBox(buttons, orientation, parent);
+  this_ =  new MyQDialogButtonBox(buttons, orientation, parent);
+}
+
 
 /*void C_ZN16QDialogButtonBoxD2Ev(void *this_)*/ {
   delete (QDialogButtonBox*)(this_);

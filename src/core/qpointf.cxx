@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qpointf(void* this_) {
 /*void* qm2513533557()*/{
   ;
   this_ =  new QPointF();
+  this_ =  new MyQPointF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +77,7 @@ uint64_t ensure_inline_symbol_qpointf(void* this_) {
 /*void* qm516146433(const QPoint & p)*/{
   const QPoint & p = *(const QPoint *)this_;
   this_ =  new QPointF(p);
+  this_ =  new MyQPointF(p);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -85,6 +87,7 @@ uint64_t ensure_inline_symbol_qpointf(void* this_) {
 /*void* qm3235081942(double xpos, double ypos)*/{
   double xpos = *(double*)this_; double ypos = *(double*)this_;
   this_ =  new QPointF(xpos, ypos);
+  this_ =  new MyQPointF(xpos, ypos);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

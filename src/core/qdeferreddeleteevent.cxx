@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdeferreddeleteevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:377
+// [-2] void QDeferredDeleteEvent() 
+// (12)qm2727277488 (29)_ZN20QDeferredDeleteEventC2Ev
+/*void* qm2727277488()*/{
+  ;
+  this_ =  new QDeferredDeleteEvent();
+  this_ =  new MyQDeferredDeleteEvent();
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:379
 // [4] int loopLevel() const

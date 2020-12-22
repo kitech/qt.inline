@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptionsizegrip(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:682
+// [-2] void QStyleOptionSizeGrip() 
+// (12)qm1193567615 (29)_ZN20QStyleOptionSizeGripC2Ev
+/*void* qm1193567615()*/{
+  ;
+  this_ =  new QStyleOptionSizeGrip();
+  this_ =  new MyQStyleOptionSizeGrip();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:683
 // [-2] void QStyleOptionSizeGrip(const QStyleOptionSizeGrip &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptionsizegrip(void* this_) {
 /*void* qm3182990769(const QStyleOptionSizeGrip & other)*/{
   const QStyleOptionSizeGrip & other = *(const QStyleOptionSizeGrip *)this_;
   this_ =  new QStyleOptionSizeGrip(other);
+  this_ =  new MyQStyleOptionSizeGrip(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

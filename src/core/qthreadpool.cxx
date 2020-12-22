@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qthreadpool(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthreadpool.h:67
+// [-2] void QThreadPool(QObject *) 
+// (12)qm4168544634 (28)_ZN11QThreadPoolC2EP7QObject
+/*void* qm4168544634(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QThreadPool(parent);
+  this_ =  new MyQThreadPool(parent);
+}
+
 
 /*void C_ZN11QThreadPoolD2Ev(void *this_)*/ {
   delete (QThreadPool*)(this_);

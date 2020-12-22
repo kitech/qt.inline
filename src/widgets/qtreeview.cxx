@@ -476,6 +476,17 @@ uint64_t ensure_inline_symbol_qtreeview(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreeview.h:71
+// [-2] void QTreeView(QWidget *) 
+// (12)qm2330190834 (25)_ZN9QTreeViewC2EP7QWidget
+/*void* qm2330190834(QWidget * parent)*/{
+  auto _nilp = (MyQTreeView*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTreeView(parent);
+  this_ =  new MyQTreeView(parent);
+}
+
 
 /*void C_ZN9QTreeViewD2Ev(void *this_)*/ {
   delete (QTreeView*)(this_);

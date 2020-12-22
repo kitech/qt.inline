@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qtextinlineobject(void* this_) {
 /*void* qm1890895892(int i, QTextEngine * e)*/{
   int i = *(int*)this_; QTextEngine * e = *(QTextEngine **)this_;
   this_ =  new QTextInlineObject(i, e);
+  this_ =  new MyQTextInlineObject(i, e);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qtextinlineobject(void* this_) {
 /*void* qm2728157517()*/{
   ;
   this_ =  new QTextInlineObject();
+  this_ =  new MyQTextInlineObject();
 }
 
 // Public inline Extend Visibility=Default Availability=Available

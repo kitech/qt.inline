@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qaccessiblevaluechangeevent(void* this_) {
 /*void* qm265134276(QObject * obj, const QVariant & val)*/{
   QObject * obj = *(QObject **)this_; const QVariant & val = *(const QVariant *)this_;
   this_ =  new QAccessibleValueChangeEvent(obj, val);
+  this_ =  new MyQAccessibleValueChangeEvent(obj, val);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qaccessiblevaluechangeevent(void* this_) {
 /*void* qm2197674980(QAccessibleInterface * iface, const QVariant & val)*/{
   QAccessibleInterface * iface = *(QAccessibleInterface **)this_; const QVariant & val = *(const QVariant *)this_;
   this_ =  new QAccessibleValueChangeEvent(iface, val);
+  this_ =  new MyQAccessibleValueChangeEvent(iface, val);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

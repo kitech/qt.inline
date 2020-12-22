@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextimageformat(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:791
+// [-2] void QTextImageFormat() 
+// (12)qm2873797915 (25)_ZN16QTextImageFormatC2Ev
+/*void* qm2873797915()*/{
+  ;
+  this_ =  new QTextImageFormat();
+  this_ =  new MyQTextImageFormat();
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:793
 // [1] bool isValid() const

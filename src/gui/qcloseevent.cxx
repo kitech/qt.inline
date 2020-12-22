@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcloseevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:519
+// [-2] void QCloseEvent() 
+// (12)qm3500818464 (20)_ZN11QCloseEventC2Ev
+/*void* qm3500818464()*/{
+  ;
+  this_ =  new QCloseEvent();
+  this_ =  new MyQCloseEvent();
+}
+
 
 /*void C_ZN11QCloseEventD2Ev(void *this_)*/ {
   delete (QCloseEvent*)(this_);

@@ -206,6 +206,39 @@ uint64_t ensure_inline_symbol_qpushbutton(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qpushbutton.h:64
+// [-2] void QPushButton(QWidget *) 
+// (11)qm638151916 (28)_ZN11QPushButtonC2EP7QWidget
+/*void* qm638151916(QWidget * parent)*/{
+  auto _nilp = (MyQPushButton*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QPushButton(parent);
+  this_ =  new MyQPushButton(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qpushbutton.h:65
+// [-2] void QPushButton(const QString &, QWidget *) 
+// (12)qm3027368468 (38)_ZN11QPushButtonC2ERK7QStringP7QWidget
+/*void* qm3027368468(const QString & text, QWidget * parent)*/{
+  auto _nilp = (MyQPushButton*)(0);
+  const QString & text = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QPushButton(text, parent);
+  this_ =  new MyQPushButton(text, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qpushbutton.h:66
+// [-2] void QPushButton(const QIcon &, const QString &, QWidget *) 
+// (11)qm720180025 (46)_ZN11QPushButtonC2ERK5QIconRK7QStringP7QWidget
+/*void* qm720180025(const QIcon & icon, const QString & text, QWidget * parent)*/{
+  auto _nilp = (MyQPushButton*)(0);
+  const QIcon & icon = *(const QIcon *)this_; const QString & text = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QPushButton(icon, text, parent);
+  this_ =  new MyQPushButton(icon, text, parent);
+}
+
 
 /*void C_ZN11QPushButtonD2Ev(void *this_)*/ {
   delete (QPushButton*)(this_);

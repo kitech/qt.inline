@@ -85,6 +85,37 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm3941149024()*/{
   ;
   this_ =  new QString();
+  this_ =  new MyQString();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:264
+// [-2] void QString(const QChar *, int) 
+// (12)qm2246409334 (23)_ZN7QStringC2EPK5QChari
+/*void* qm2246409334(const QChar * unicode, int size)*/{
+  const QChar * unicode = *(const QChar **)this_; int size = *(int*)this_;
+  this_ =  new QString(unicode, size);
+  this_ =  new MyQString(unicode, size);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:265
+// [-2] void QString(QChar) 
+// (10)qm29305257 (20)_ZN7QStringC2E5QChar
+/*void* qm29305257(QChar c)*/{
+  QChar c = *(QChar*)this_;
+  this_ =  new QString(c);
+  this_ =  new MyQString(c);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:266
+// [-2] void QString(int, QChar) 
+// (12)qm3074360247 (21)_ZN7QStringC2Ei5QChar
+/*void* qm3074360247(int size, QChar c)*/{
+  int size = *(int*)this_; QChar c = *(QChar*)this_;
+  this_ =  new QString(size, c);
+  this_ =  new MyQString(size, c);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -94,6 +125,7 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm1670260114(QLatin1String latin1)*/{
   QLatin1String latin1 = *(QLatin1String*)this_;
   this_ =  new QString(latin1);
+  this_ =  new MyQString(latin1);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -103,6 +135,7 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm333172565(const QString & arg0)*/{
   const QString & arg0 = *(const QString *)this_;
   this_ =  new QString(arg0);
+  this_ =  new MyQString(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -119,6 +152,7 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm661559088(QString && other)*/{
   QString && other =  static_cast<QString &&>(*(QString *)this_);
   this_ =  new QString(other);
+  this_ =  new MyQString(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -1432,6 +1466,7 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm2640353187(const char * ch)*/{
   const char * ch = *(const char **)this_;
   this_ =  new QString(ch);
+  this_ =  new MyQString(ch);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -1441,6 +1476,7 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm579962272(const QByteArray & a)*/{
   const QByteArray & a = *(const QByteArray *)this_;
   this_ =  new QString(a);
+  this_ =  new MyQString(a);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -2062,6 +2098,7 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm3320937164(const QString::Null & arg0)*/{
   const QString::Null & arg0 = *(const QString::Null *)this_;
   this_ =  new QString(arg0);
+  this_ =  new MyQString(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -2100,6 +2137,16 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstring.h:966
+// [-2] void QString(int, Qt::Initialization) 
+// (12)qm1276233638 (36)_ZN7QStringC2EiN2Qt14InitializationE
+/*void* qm1276233638(int size, Qt::Initialization arg1)*/{
+  int size = *(int*)this_; Qt::Initialization arg1 = *(Qt::Initialization*)this_;
+  this_ =  new QString(size, arg1);
+  this_ =  new MyQString(size, arg1);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstring.h:967
 // [-2] void QString(QStringDataPtr) 
@@ -2107,6 +2154,7 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm1641427172(QStringDataPtr dd)*/{
   QStringDataPtr dd = *(QStringDataPtr*)this_;
   this_ =  new QString(dd);
+  this_ =  new MyQString(dd);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -132,6 +132,36 @@ uint64_t ensure_inline_symbol_qdnslookup(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:213
+// [-2] void QDnsLookup(QObject *) 
+// (12)qm2635538990 (27)_ZN10QDnsLookupC2EP7QObject
+/*void* qm2635538990(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QDnsLookup(parent);
+  this_ =  new MyQDnsLookup(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:214
+// [-2] void QDnsLookup(QDnsLookup::Type, const QString &, QObject *) 
+// (12)qm1935194564 (46)_ZN10QDnsLookupC2ENS_4TypeERK7QStringP7QObject
+/*void* qm1935194564(QDnsLookup::Type type_, const QString & name, QObject * parent)*/{
+  QDnsLookup::Type type_ = *(QDnsLookup::Type*)this_; const QString & name = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QDnsLookup(type_, name, parent);
+  this_ =  new MyQDnsLookup(type_, name, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:215
+// [-2] void QDnsLookup(QDnsLookup::Type, const QString &, const QHostAddress &, QObject *) 
+// (12)qm2964841064 (62)_ZN10QDnsLookupC2ENS_4TypeERK7QStringRK12QHostAddressP7QObject
+/*void* qm2964841064(QDnsLookup::Type type_, const QString & name, const QHostAddress & nameserver, QObject * parent)*/{
+  QDnsLookup::Type type_ = *(QDnsLookup::Type*)this_; const QString & name = *(const QString *)this_; const QHostAddress & nameserver = *(const QHostAddress *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QDnsLookup(type_, name, nameserver, parent);
+  this_ =  new MyQDnsLookup(type_, name, nameserver, parent);
+}
+
 
 /*void C_ZN10QDnsLookupD2Ev(void *this_)*/ {
   delete (QDnsLookup*)(this_);

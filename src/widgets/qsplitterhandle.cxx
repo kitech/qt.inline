@@ -201,6 +201,17 @@ uint64_t ensure_inline_symbol_qsplitterhandle(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsplitter.h:144
+// [-2] void QSplitterHandle(Qt::Orientation, QSplitter *) 
+// (12)qm3265192075 (52)_ZN15QSplitterHandleC2EN2Qt11OrientationEP9QSplitter
+/*void* qm3265192075(Qt::Orientation o, QSplitter * parent)*/{
+  auto _nilp = (MyQSplitterHandle*)(0);
+  Qt::Orientation o = *(Qt::Orientation*)this_; QSplitter * parent = *(QSplitter **)this_;
+  this_ =  new QSplitterHandle(o, parent);
+  this_ =  new MyQSplitterHandle(o, parent);
+}
+
 
 /*void C_ZN15QSplitterHandleD2Ev(void *this_)*/ {
   delete (QSplitterHandle*)(this_);

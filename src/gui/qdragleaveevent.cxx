@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdragleaveevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:713
+// [-2] void QDragLeaveEvent() 
+// (12)qm3428661095 (24)_ZN15QDragLeaveEventC2Ev
+/*void* qm3428661095()*/{
+  ;
+  this_ =  new QDragLeaveEvent();
+  this_ =  new MyQDragLeaveEvent();
+}
+
 
 /*void C_ZN15QDragLeaveEventD2Ev(void *this_)*/ {
   delete (QDragLeaveEvent*)(this_);

@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qpluginloader(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpluginloader.h:62
+// [-2] void QPluginLoader(QObject *) 
+// (12)qm1851998160 (30)_ZN13QPluginLoaderC2EP7QObject
+/*void* qm1851998160(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QPluginLoader(parent);
+  this_ =  new MyQPluginLoader(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qpluginloader.h:63
+// [-2] void QPluginLoader(const QString &, QObject *) 
+// (12)qm2579535172 (40)_ZN13QPluginLoaderC2ERK7QStringP7QObject
+/*void* qm2579535172(const QString & fileName, QObject * parent)*/{
+  const QString & fileName = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QPluginLoader(fileName, parent);
+  this_ =  new MyQPluginLoader(fileName, parent);
+}
+
 
 /*void C_ZN13QPluginLoaderD2Ev(void *this_)*/ {
   delete (QPluginLoader*)(this_);

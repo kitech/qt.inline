@@ -71,6 +71,28 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpicture(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:59
+// [-2] void QPicture(int) 
+// (12)qm2514888704 (16)_ZN8QPictureC2Ei
+/*void* qm2514888704(int formatVersion)*/{
+  auto _nilp = (MyQPicture*)(0);
+  int formatVersion = *(int*)this_;
+  this_ =  new QPicture(formatVersion);
+  this_ =  new MyQPicture(formatVersion);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpicture.h:60
+// [-2] void QPicture(const QPicture &) 
+// (12)qm3671224083 (19)_ZN8QPictureC2ERKS_
+/*void* qm3671224083(const QPicture & arg0)*/{
+  auto _nilp = (MyQPicture*)(0);
+  const QPicture & arg0 = *(const QPicture *)this_;
+  this_ =  new QPicture(arg0);
+  this_ =  new MyQPicture(arg0);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpicture.h:81
 // [32] QPicture & operator=(QPicture &&) 

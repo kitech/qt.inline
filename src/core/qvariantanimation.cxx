@@ -191,6 +191,17 @@ uint64_t ensure_inline_symbol_qvariantanimation(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariantanimation.h:67
+// [-2] void QVariantAnimation(QObject *) 
+// (11)qm900770310 (34)_ZN17QVariantAnimationC2EP7QObject
+/*void* qm900770310(QObject * parent)*/{
+  auto _nilp = (MyQVariantAnimation*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QVariantAnimation(parent);
+  this_ =  new MyQVariantAnimation(parent);
+}
+
 
 /*void C_ZN17QVariantAnimationD2Ev(void *this_)*/ {
   delete (QVariantAnimation*)(this_);

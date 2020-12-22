@@ -65,6 +65,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpersistentmodelindex(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:111
+// [-2] void QPersistentModelIndex() 
+// (12)qm4053232108 (30)_ZN21QPersistentModelIndexC2Ev
+/*void* qm4053232108()*/{
+  ;
+  this_ =  new QPersistentModelIndex();
+  this_ =  new MyQPersistentModelIndex();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:112
+// [-2] void QPersistentModelIndex(const QModelIndex &) 
+// (12)qm1357918003 (44)_ZN21QPersistentModelIndexC2ERK11QModelIndex
+/*void* qm1357918003(const QModelIndex & index)*/{
+  const QModelIndex & index = *(const QModelIndex *)this_;
+  this_ =  new QPersistentModelIndex(index);
+  this_ =  new MyQPersistentModelIndex(index);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qabstractitemmodel.h:113
+// [-2] void QPersistentModelIndex(const QPersistentModelIndex &) 
+// (12)qm3157278356 (33)_ZN21QPersistentModelIndexC2ERKS_
+/*void* qm3157278356(const QPersistentModelIndex & other)*/{
+  const QPersistentModelIndex & other = *(const QPersistentModelIndex *)this_;
+  this_ =  new QPersistentModelIndex(other);
+  this_ =  new MyQPersistentModelIndex(other);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qabstractitemmodel.h:117
 // [1] bool operator!=(const QPersistentModelIndex &) const
@@ -84,6 +114,7 @@ uint64_t ensure_inline_symbol_qpersistentmodelindex(void* this_) {
 /*void* qm3330546329(QPersistentModelIndex && other)*/{
   QPersistentModelIndex && other =  static_cast<QPersistentModelIndex &&>(*(QPersistentModelIndex *)this_);
   this_ =  new QPersistentModelIndex(other);
+  this_ =  new MyQPersistentModelIndex(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglversionprofile(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglcontext.h:87
+// [-2] void QOpenGLVersionProfile() 
+// (12)qm2372338670 (30)_ZN21QOpenGLVersionProfileC2Ev
+/*void* qm2372338670()*/{
+  ;
+  this_ =  new QOpenGLVersionProfile();
+  this_ =  new MyQOpenGLVersionProfile();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglcontext.h:88
+// [-2] void QOpenGLVersionProfile(const QSurfaceFormat &) 
+// (12)qm1315530085 (47)_ZN21QOpenGLVersionProfileC2ERK14QSurfaceFormat
+/*void* qm1315530085(const QSurfaceFormat & format)*/{
+  const QSurfaceFormat & format = *(const QSurfaceFormat *)this_;
+  this_ =  new QOpenGLVersionProfile(format);
+  this_ =  new MyQOpenGLVersionProfile(format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglcontext.h:89
+// [-2] void QOpenGLVersionProfile(const QOpenGLVersionProfile &) 
+// (12)qm2635832247 (33)_ZN21QOpenGLVersionProfileC2ERKS_
+/*void* qm2635832247(const QOpenGLVersionProfile & other)*/{
+  const QOpenGLVersionProfile & other = *(const QOpenGLVersionProfile *)this_;
+  this_ =  new QOpenGLVersionProfile(other);
+  this_ =  new MyQOpenGLVersionProfile(other);
+}
+
 
 /*void C_ZN21QOpenGLVersionProfileD2Ev(void *this_)*/ {
   delete (QOpenGLVersionProfile*)(this_);

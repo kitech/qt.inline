@@ -137,6 +137,17 @@ uint64_t ensure_inline_symbol_qtimer(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimer.h:66
+// [-2] void QTimer(QObject *) 
+// (11)qm248466175 (22)_ZN6QTimerC2EP7QObject
+/*void* qm248466175(QObject * parent)*/{
+  auto _nilp = (MyQTimer*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QTimer(parent);
+  this_ =  new MyQTimer(parent);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtimer.h:69
 // [1] bool isActive() const

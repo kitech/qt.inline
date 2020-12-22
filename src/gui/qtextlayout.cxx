@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextlayout(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:108
+// [-2] void QTextLayout() 
+// (12)qm2112850331 (20)_ZN11QTextLayoutC2Ev
+/*void* qm2112850331()*/{
+  ;
+  this_ =  new QTextLayout();
+  this_ =  new MyQTextLayout();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:109
+// [-2] void QTextLayout(const QString &) 
+// (12)qm2564951670 (29)_ZN11QTextLayoutC2ERK7QString
+/*void* qm2564951670(const QString & text)*/{
+  const QString & text = *(const QString *)this_;
+  this_ =  new QTextLayout(text);
+  this_ =  new MyQTextLayout(text);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:111
+// [-2] void QTextLayout(const QString &, const QFont &, QPaintDevice *) 
+// (12)qm3878359469 (52)_ZN11QTextLayoutC2ERK7QStringRK5QFontP12QPaintDevice
+/*void* qm3878359469(const QString & text, const QFont & font, QPaintDevice * paintdevice)*/{
+  const QString & text = *(const QString *)this_; const QFont & font = *(const QFont *)this_; QPaintDevice * paintdevice = *(QPaintDevice **)this_;
+  this_ =  new QTextLayout(text, font, paintdevice);
+  this_ =  new MyQTextLayout(text, font, paintdevice);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextlayout.h:123
+// [-2] void QTextLayout(const QTextBlock &) 
+// (12)qm3036762907 (33)_ZN11QTextLayoutC2ERK10QTextBlock
+/*void* qm3036762907(const QTextBlock & b)*/{
+  const QTextBlock & b = *(const QTextBlock *)this_;
+  this_ =  new QTextLayout(b);
+  this_ =  new MyQTextLayout(b);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextlayout.h:205
 // [8] QTextEngine * engine() const

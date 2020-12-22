@@ -63,6 +63,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmimetype(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:78
+// [-2] void QMimeType() 
+// (12)qm1349917557 (17)_ZN9QMimeTypeC2Ev
+/*void* qm1349917557()*/{
+  ;
+  this_ =  new QMimeType();
+  this_ =  new MyQMimeType();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:79
+// [-2] void QMimeType(const QMimeType &) 
+// (12)qm2230744272 (20)_ZN9QMimeTypeC2ERKS_
+/*void* qm2230744272(const QMimeType & other)*/{
+  const QMimeType & other = *(const QMimeType *)this_;
+  this_ =  new QMimeType(other);
+  this_ =  new MyQMimeType(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmimetype.h:81
 // [8] QMimeType & operator=(QMimeType &&) 
@@ -85,6 +105,16 @@ uint64_t ensure_inline_symbol_qmimetype(void* this_) {
   (void) ((QMimeType*)this_)->swap(other);
    auto xptr = (void (QMimeType::*)(QMimeType&) ) &QMimeType::swap;
    fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimetype.h:86
+// [-2] void QMimeType(const QMimeTypePrivate &) 
+// (12)qm1415262850 (36)_ZN9QMimeTypeC2ERK16QMimeTypePrivate
+/*void* qm1415262850(const QMimeTypePrivate & dd)*/{
+  const QMimeTypePrivate & dd = *(const QMimeTypePrivate *)this_;
+  this_ =  new QMimeType(dd);
+  this_ =  new MyQMimeType(dd);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

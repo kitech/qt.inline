@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qgraphicssvgitem(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtSvg/qgraphicssvgitem.h:64
+// [-2] void QGraphicsSvgItem(QGraphicsItem *) 
+// (12)qm1546926536 (40)_ZN16QGraphicsSvgItemC2EP13QGraphicsItem
+/*void* qm1546926536(QGraphicsItem * parentItem)*/{
+  QGraphicsItem * parentItem = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsSvgItem(parentItem);
+  this_ =  new MyQGraphicsSvgItem(parentItem);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtSvg/qgraphicssvgitem.h:65
+// [-2] void QGraphicsSvgItem(const QString &, QGraphicsItem *) 
+// (11)qm714323720 (50)_ZN16QGraphicsSvgItemC2ERK7QStringP13QGraphicsItem
+/*void* qm714323720(const QString & fileName, QGraphicsItem * parentItem)*/{
+  const QString & fileName = *(const QString *)this_; QGraphicsItem * parentItem = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsSvgItem(fileName, parentItem);
+  this_ =  new MyQGraphicsSvgItem(fileName, parentItem);
+}
+
 
 /*void C_ZN16QGraphicsSvgItemD2Ev(void *this_)*/ {
   delete (QGraphicsSvgItem*)(this_);

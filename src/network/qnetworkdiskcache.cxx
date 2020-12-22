@@ -141,6 +141,17 @@ uint64_t ensure_inline_symbol_qnetworkdiskcache(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkdiskcache.h:56
+// [-2] void QNetworkDiskCache(QObject *) 
+// (12)qm4218695982 (34)_ZN17QNetworkDiskCacheC2EP7QObject
+/*void* qm4218695982(QObject * parent)*/{
+  auto _nilp = (MyQNetworkDiskCache*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QNetworkDiskCache(parent);
+  this_ =  new MyQNetworkDiskCache(parent);
+}
+
 
 /*void C_ZN17QNetworkDiskCacheD2Ev(void *this_)*/ {
   delete (QNetworkDiskCache*)(this_);

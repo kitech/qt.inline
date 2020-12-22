@@ -151,6 +151,17 @@ uint64_t ensure_inline_symbol_qcoreapplication(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreapplication.h:91
+// [-2] void QCoreApplication(int &, char **, int) 
+// (12)qm2963771967 (30)_ZN16QCoreApplicationC2ERiPPci
+/*void* qm2963771967(int & argc, char ** argv, int arg2)*/{
+  auto _nilp = (MyQCoreApplication*)(0);
+  int & argc = *(int *)this_; char ** argv = *(char ***)this_; int arg2 = *(int*)this_;
+  this_ =  new QCoreApplication(*(new int(argc)), argv, arg2);
+  this_ =  new MyQCoreApplication(*(new int(argc)), argv, arg2);
+}
+
 // Public static inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreapplication.h:116
 // [8] QCoreApplication * instance() 

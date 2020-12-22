@@ -201,6 +201,17 @@ uint64_t ensure_inline_symbol_qdialog(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdialog.h:63
+// [-2] void QDialog(QWidget *, Qt::WindowFlags) 
+// (12)qm3072836813 (49)_ZN7QDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm3072836813(QWidget * parent, QFlags<Qt::WindowType> f)*/{
+  auto _nilp = (MyQDialog*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> f = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QDialog(parent, f);
+  this_ =  new MyQDialog(parent, f);
+}
+
 
 /*void C_ZN7QDialogD2Ev(void *this_)*/ {
   delete (QDialog*)(this_);

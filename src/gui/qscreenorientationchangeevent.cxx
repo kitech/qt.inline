@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qscreenorientationchangeevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:1097
+// [-2] void QScreenOrientationChangeEvent(QScreen *, Qt::ScreenOrientation) 
+// (12)qm1494436171 (70)_ZN29QScreenOrientationChangeEventC2EP7QScreenN2Qt17ScreenOrientationE
+/*void* qm1494436171(QScreen * screen, Qt::ScreenOrientation orientation)*/{
+  QScreen * screen = *(QScreen **)this_; Qt::ScreenOrientation orientation = *(Qt::ScreenOrientation*)this_;
+  this_ =  new QScreenOrientationChangeEvent(screen, orientation);
+  this_ =  new MyQScreenOrientationChangeEvent(screen, orientation);
+}
+
 
 /*void C_ZN29QScreenOrientationChangeEventD2Ev(void *this_)*/ {
   delete (QScreenOrientationChangeEvent*)(this_);

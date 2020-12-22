@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcollatorsortkey(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:57
+// [-2] void QCollatorSortKey(const QCollatorSortKey &) 
+// (11)qm274693814 (28)_ZN16QCollatorSortKeyC2ERKS_
+/*void* qm274693814(const QCollatorSortKey & other)*/{
+  const QCollatorSortKey & other = *(const QCollatorSortKey *)this_;
+  this_ =  new QCollatorSortKey(other);
+  this_ =  new MyQCollatorSortKey(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:60
 // [8] QCollatorSortKey & operator=(QCollatorSortKey &&) 

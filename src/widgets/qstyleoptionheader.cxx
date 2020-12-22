@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptionheader(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:230
+// [-2] void QStyleOptionHeader() 
+// (12)qm4046365034 (27)_ZN18QStyleOptionHeaderC2Ev
+/*void* qm4046365034()*/{
+  ;
+  this_ =  new QStyleOptionHeader();
+  this_ =  new MyQStyleOptionHeader();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:231
 // [-2] void QStyleOptionHeader(const QStyleOptionHeader &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptionheader(void* this_) {
 /*void* qm3893759944(const QStyleOptionHeader & other)*/{
   const QStyleOptionHeader & other = *(const QStyleOptionHeader *)this_;
   this_ =  new QStyleOptionHeader(other);
+  this_ =  new MyQStyleOptionHeader(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptionbutton(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:253
+// [-2] void QStyleOptionButton() 
+// (11)qm499288502 (27)_ZN18QStyleOptionButtonC2Ev
+/*void* qm499288502()*/{
+  ;
+  this_ =  new QStyleOptionButton();
+  this_ =  new MyQStyleOptionButton();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:254
 // [-2] void QStyleOptionButton(const QStyleOptionButton &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptionbutton(void* this_) {
 /*void* qm2556740489(const QStyleOptionButton & other)*/{
   const QStyleOptionButton & other = *(const QStyleOptionButton *)this_;
   this_ =  new QStyleOptionButton(other);
+  this_ =  new MyQStyleOptionButton(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

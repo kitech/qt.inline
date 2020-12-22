@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qdoublespinbox(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qspinbox.h:135
+// [-2] void QDoubleSpinBox(QWidget *) 
+// (11)qm698183486 (31)_ZN14QDoubleSpinBoxC2EP7QWidget
+/*void* qm698183486(QWidget * parent)*/{
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDoubleSpinBox(parent);
+  this_ =  new MyQDoubleSpinBox(parent);
+}
+
 
 /*void C_ZN14QDoubleSpinBoxD2Ev(void *this_)*/ {
   delete (QDoubleSpinBox*)(this_);

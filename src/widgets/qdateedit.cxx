@@ -130,6 +130,26 @@ uint64_t ensure_inline_symbol_qdateedit(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:227
+// [-2] void QDateEdit(QWidget *) 
+// (12)qm3206421006 (25)_ZN9QDateEditC2EP7QWidget
+/*void* qm3206421006(QWidget * parent)*/{
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDateEdit(parent);
+  this_ =  new MyQDateEdit(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdatetimeedit.h:228
+// [-2] void QDateEdit(const QDate &, QWidget *) 
+// (11)qm963659273 (33)_ZN9QDateEditC2ERK5QDateP7QWidget
+/*void* qm963659273(const QDate & date, QWidget * parent)*/{
+  const QDate & date = *(const QDate *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QDateEdit(date, parent);
+  this_ =  new MyQDateEdit(date, parent);
+}
+
 
 /*void C_ZN9QDateEditD2Ev(void *this_)*/ {
   delete (QDateEdit*)(this_);

@@ -203,15 +203,6 @@ uint64_t ensure_inline_symbol_qsgdynamictexture(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtQuick/qsgtexture.h:150
-// [-2] void QSGDynamicTexture() 
-// (12)qm3258201847 (26)_ZN17QSGDynamicTextureC2Ev
-/*void* qm3258201847()*/{
-  ;
-  this_ =  new MyQSGDynamicTexture();
-}
-
 
 /*void C_ZN17QSGDynamicTextureD2Ev(void *this_)*/ {
   delete (QSGDynamicTexture*)(this_);

@@ -162,6 +162,17 @@ uint64_t ensure_inline_symbol_qframe(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qframe.h:64
+// [-2] void QFrame(QWidget *, Qt::WindowFlags) 
+// (12)qm3925201311 (48)_ZN6QFrameC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm3925201311(QWidget * parent, QFlags<Qt::WindowType> f)*/{
+  auto _nilp = (MyQFrame*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> f = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QFrame(parent, f);
+  this_ =  new MyQFrame(parent, f);
+}
+
 
 /*void C_ZN6QFrameD2Ev(void *this_)*/ {
   delete (QFrame*)(this_);

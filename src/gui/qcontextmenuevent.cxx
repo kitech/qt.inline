@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcontextmenuevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:553
+// [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &, Qt::KeyboardModifiers) 
+// (11)qm951288180 (80)_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_6QFlagsIN2Qt16KeyboardModifierEE
+/*void* qm951288180(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos, QFlags<Qt::KeyboardModifier> modifiers)*/{
+  QContextMenuEvent::Reason reason = *(QContextMenuEvent::Reason*)this_; const QPoint & pos = *(const QPoint *)this_; const QPoint & globalPos = *(const QPoint *)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_;
+  this_ =  new QContextMenuEvent(reason, pos, globalPos, modifiers);
+  this_ =  new MyQContextMenuEvent(reason, pos, globalPos, modifiers);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:555
+// [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &, const QPoint &) 
+// (12)qm4287249204 (48)_ZN17QContextMenuEventC2ENS_6ReasonERK6QPointS3_
+/*void* qm4287249204(QContextMenuEvent::Reason reason, const QPoint & pos, const QPoint & globalPos)*/{
+  QContextMenuEvent::Reason reason = *(QContextMenuEvent::Reason*)this_; const QPoint & pos = *(const QPoint *)this_; const QPoint & globalPos = *(const QPoint *)this_;
+  this_ =  new QContextMenuEvent(reason, pos, globalPos);
+  this_ =  new MyQContextMenuEvent(reason, pos, globalPos);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:556
+// [-2] void QContextMenuEvent(QContextMenuEvent::Reason, const QPoint &) 
+// (12)qm1180058692 (45)_ZN17QContextMenuEventC2ENS_6ReasonERK6QPoint
+/*void* qm1180058692(QContextMenuEvent::Reason reason, const QPoint & pos)*/{
+  QContextMenuEvent::Reason reason = *(QContextMenuEvent::Reason*)this_; const QPoint & pos = *(const QPoint *)this_;
+  this_ =  new QContextMenuEvent(reason, pos);
+  this_ =  new MyQContextMenuEvent(reason, pos);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:559
 // [4] int x() const

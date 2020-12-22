@@ -152,6 +152,17 @@ uint64_t ensure_inline_symbol_qerrormessage(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qerrormessage.h:58
+// [-2] void QErrorMessage(QWidget *) 
+// (12)qm1915084487 (30)_ZN13QErrorMessageC2EP7QWidget
+/*void* qm1915084487(QWidget * parent)*/{
+  auto _nilp = (MyQErrorMessage*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QErrorMessage(parent);
+  this_ =  new MyQErrorMessage(parent);
+}
+
 
 /*void C_ZN13QErrorMessageD2Ev(void *this_)*/ {
   delete (QErrorMessage*)(this_);

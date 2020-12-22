@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qopenglversionstatus(void* this_) {
 /*void* qm560535564()*/{
   ;
   this_ =  new QOpenGLVersionStatus();
+  this_ =  new MyQOpenGLVersionStatus();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qopenglversionstatus(void* this_) {
 /*void* qm1142934713(int majorVersion, int minorVersion, QOpenGLVersionStatus::OpenGLStatus functionStatus)*/{
   int majorVersion = *(int*)this_; int minorVersion = *(int*)this_; QOpenGLVersionStatus::OpenGLStatus functionStatus = *(QOpenGLVersionStatus::OpenGLStatus*)this_;
   this_ =  new QOpenGLVersionStatus(majorVersion, minorVersion, functionStatus);
+  this_ =  new MyQOpenGLVersionStatus(majorVersion, minorVersion, functionStatus);
 }
 
 

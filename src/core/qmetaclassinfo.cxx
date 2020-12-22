@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qmetaclassinfo(void* this_) {
 /*void* qm2695292227()*/{
   ;
   this_ =  new QMetaClassInfo();
+  this_ =  new MyQMetaClassInfo();
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfutureinterfacebase(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfutureinterface.h:74
+// [-2] void QFutureInterfaceBase(QFutureInterfaceBase::State) 
+// (12)qm2333400419 (38)_ZN20QFutureInterfaceBaseC2ENS_5StateE
+/*void* qm2333400419(QFutureInterfaceBase::State initialState)*/{
+  QFutureInterfaceBase::State initialState = *(QFutureInterfaceBase::State*)this_;
+  this_ =  new QFutureInterfaceBase(initialState);
+  this_ =  new MyQFutureInterfaceBase(initialState);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qfutureinterface.h:75
+// [-2] void QFutureInterfaceBase(const QFutureInterfaceBase &) 
+// (12)qm3368977451 (32)_ZN20QFutureInterfaceBaseC2ERKS_
+/*void* qm3368977451(const QFutureInterfaceBase & other)*/{
+  const QFutureInterfaceBase & other = *(const QFutureInterfaceBase *)this_;
+  this_ =  new QFutureInterfaceBase(other);
+  this_ =  new MyQFutureInterfaceBase(other);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:128
 // [1] bool operator==(const QFutureInterfaceBase &) const

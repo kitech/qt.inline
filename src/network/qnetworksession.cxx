@@ -149,6 +149,17 @@ uint64_t ensure_inline_symbol_qnetworksession(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworksession.h:97
+// [-2] void QNetworkSession(const QNetworkConfiguration &, QObject *) 
+// (12)qm2559712662 (57)_ZN15QNetworkSessionC2ERK21QNetworkConfigurationP7QObject
+/*void* qm2559712662(const QNetworkConfiguration & connConfig, QObject * parent)*/{
+  auto _nilp = (MyQNetworkSession*)(0);
+  const QNetworkConfiguration & connConfig = *(const QNetworkConfiguration *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QNetworkSession(connConfig, parent);
+  this_ =  new MyQNetworkSession(connConfig, parent);
+}
+
 
 /*void C_ZN15QNetworkSessionD2Ev(void *this_)*/ {
   delete (QNetworkSession*)(this_);

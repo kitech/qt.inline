@@ -95,6 +95,7 @@ uint64_t ensure_inline_symbol_qrandomgenerator64(void* this_) {
 /*void* qm2253013809(unsigned int seedValue)*/{
   unsigned int seedValue = *(unsigned int*)this_;
   this_ =  new QRandomGenerator64(seedValue);
+  this_ =  new MyQRandomGenerator64(seedValue);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -104,6 +105,7 @@ uint64_t ensure_inline_symbol_qrandomgenerator64(void* this_) {
 /*void* qm3038831292(const unsigned int * seedBuffer, long long len_)*/{
   const unsigned int * seedBuffer = *(const unsigned int **)this_; long long len_ = *(long long*)this_;
   this_ =  new QRandomGenerator64(seedBuffer, len_);
+  this_ =  new MyQRandomGenerator64(seedBuffer, len_);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -113,6 +115,7 @@ uint64_t ensure_inline_symbol_qrandomgenerator64(void* this_) {
 /*void* qm2243923264(std::seed_seq & sseq)*/{
   std::seed_seq & sseq = *(std::seed_seq *)this_;
   this_ =  new QRandomGenerator64(sseq);
+  this_ =  new MyQRandomGenerator64(sseq);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -122,6 +125,7 @@ uint64_t ensure_inline_symbol_qrandomgenerator64(void* this_) {
 /*void* qm1312565225(const unsigned int * begin_, const unsigned int * end_)*/{
   const unsigned int * begin_ = *(const unsigned int **)this_; const unsigned int * end_ = *(const unsigned int **)this_;
   this_ =  new QRandomGenerator64(begin_, end_);
+  this_ =  new MyQRandomGenerator64(begin_, end_);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -131,6 +135,7 @@ uint64_t ensure_inline_symbol_qrandomgenerator64(void* this_) {
 /*void* qm1301307547(const QRandomGenerator & other)*/{
   const QRandomGenerator & other = *(const QRandomGenerator *)this_;
   this_ =  new QRandomGenerator64(other);
+  this_ =  new MyQRandomGenerator64(other);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

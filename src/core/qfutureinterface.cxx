@@ -59,15 +59,6 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfutureinterface(void* this_) {
   uint64_t fnptrsumval = 0;
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfutureinterface.h:284
-// [-2] void QFutureInterface(QFutureInterfaceBase::State) 
-// (11)qm399392165 (57)_ZN16QFutureInterfaceIvEC2EN20QFutureInterfaceBase5StateE
-/*void* qm399392165(QFutureInterfaceBase::State initialState)*/{
-  QFutureInterfaceBase::State initialState = *(QFutureInterfaceBase::State*)this_;
-  this_ =  new QFutureInterface<void>(initialState);
-}
-
 // Public static inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfutureinterface.h:288
 // [16] QFutureInterface<void> canceledResult() 

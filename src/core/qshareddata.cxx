@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qshareddata(void* this_) {
 /*void* qm4068394488()*/{
   ;
   this_ =  new QSharedData();
+  this_ =  new MyQSharedData();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qshareddata(void* this_) {
 /*void* qm2088475650(const QSharedData & arg0)*/{
   const QSharedData & arg0 = *(const QSharedData *)this_;
   this_ =  new QSharedData(arg0);
+  this_ =  new MyQSharedData(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available

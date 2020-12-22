@@ -139,6 +139,17 @@ uint64_t ensure_inline_symbol_qqmlpropertymap(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlpropertymap.h:58
+// [-2] void QQmlPropertyMap(QObject *) 
+// (11)qm153335069 (32)_ZN15QQmlPropertyMapC2EP7QObject
+/*void* qm153335069(QObject * parent)*/{
+  auto _nilp = (MyQQmlPropertyMap*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QQmlPropertyMap(parent);
+  this_ =  new MyQQmlPropertyMap(parent);
+}
+
 
 /*void C_ZN15QQmlPropertyMapD2Ev(void *this_)*/ {
   delete (QQmlPropertyMap*)(this_);

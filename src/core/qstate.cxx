@@ -167,6 +167,28 @@ uint64_t ensure_inline_symbol_qstate(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:74
+// [-2] void QState(QState *) 
+// (12)qm2509593518 (16)_ZN6QStateC2EPS_
+/*void* qm2509593518(QState * parent)*/{
+  auto _nilp = (MyQState*)(0);
+  QState * parent = *(QState **)this_;
+  this_ =  new QState(parent);
+  this_ =  new MyQState(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstate.h:75
+// [-2] void QState(QState::ChildMode, QState *) 
+// (12)qm3716980958 (30)_ZN6QStateC2ENS_9ChildModeEPS_
+/*void* qm3716980958(QState::ChildMode childMode, QState * parent)*/{
+  auto _nilp = (MyQState*)(0);
+  QState::ChildMode childMode = *(QState::ChildMode*)this_; QState * parent = *(QState **)this_;
+  this_ =  new QState(childMode, parent);
+  this_ =  new MyQState(childMode, parent);
+}
+
 
 /*void C_ZN6QStateD2Ev(void *this_)*/ {
   delete (QState*)(this_);

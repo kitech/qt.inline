@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qassociativeiterable(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qvariant.h:721
+// [-2] void QAssociativeIterable(QtMetaTypePrivate::QAssociativeIterableImpl) 
+// (11)qm837777242 (75)_ZN20QAssociativeIterableC2EN17QtMetaTypePrivate24QAssociativeIterableImplE
+/*void* qm837777242(QtMetaTypePrivate::QAssociativeIterableImpl impl)*/{
+  QtMetaTypePrivate::QAssociativeIterableImpl impl = *(QtMetaTypePrivate::QAssociativeIterableImpl*)this_;
+  this_ =  new QAssociativeIterable(impl);
+  this_ =  new MyQAssociativeIterable(impl);
+}
+
 
 /*void C_ZN20QAssociativeIterableD2Ev(void *this_)*/ {
   delete (QAssociativeIterable*)(this_);

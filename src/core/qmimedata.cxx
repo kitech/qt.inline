@@ -139,6 +139,17 @@ uint64_t ensure_inline_symbol_qmimedata(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmimedata.h:56
+// [-2] void QMimeData() 
+// (11)qm384637985 (17)_ZN9QMimeDataC2Ev
+/*void* qm384637985()*/{
+  auto _nilp = (MyQMimeData*)(0);
+  ;
+  this_ =  new QMimeData();
+  this_ =  new MyQMimeData();
+}
+
 
 /*void C_ZN9QMimeDataD2Ev(void *this_)*/ {
   delete (QMimeData*)(this_);

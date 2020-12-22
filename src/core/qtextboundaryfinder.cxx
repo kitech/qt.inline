@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextboundaryfinder(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:54
+// [-2] void QTextBoundaryFinder() 
+// (11)qm861982634 (28)_ZN19QTextBoundaryFinderC2Ev
+/*void* qm861982634()*/{
+  ;
+  this_ =  new QTextBoundaryFinder();
+  this_ =  new MyQTextBoundaryFinder();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:55
+// [-2] void QTextBoundaryFinder(const QTextBoundaryFinder &) 
+// (11)qm329495540 (31)_ZN19QTextBoundaryFinderC2ERKS_
+/*void* qm329495540(const QTextBoundaryFinder & other)*/{
+  const QTextBoundaryFinder & other = *(const QTextBoundaryFinder *)this_;
+  this_ =  new QTextBoundaryFinder(other);
+  this_ =  new MyQTextBoundaryFinder(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:76
+// [-2] void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QString &) 
+// (12)qm2219281450 (55)_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeERK7QString
+/*void* qm2219281450(QTextBoundaryFinder::BoundaryType type_, const QString & string)*/{
+  QTextBoundaryFinder::BoundaryType type_ = *(QTextBoundaryFinder::BoundaryType*)this_; const QString & string = *(const QString *)this_;
+  this_ =  new QTextBoundaryFinder(type_, string);
+  this_ =  new MyQTextBoundaryFinder(type_, string);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextboundaryfinder.h:77
+// [-2] void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QChar *, int, unsigned char *, int) 
+// (12)qm1232878065 (57)_ZN19QTextBoundaryFinderC2ENS_12BoundaryTypeEPK5QChariPhi
+/*void* qm1232878065(QTextBoundaryFinder::BoundaryType type_, const QChar * chars, int length, unsigned char * buffer, int bufferSize)*/{
+  QTextBoundaryFinder::BoundaryType type_ = *(QTextBoundaryFinder::BoundaryType*)this_; const QChar * chars = *(const QChar **)this_; int length = *(int*)this_; unsigned char * buffer = *(unsigned char **)this_; int bufferSize = *(int*)this_;
+  this_ =  new QTextBoundaryFinder(type_, chars, length, buffer, bufferSize);
+  this_ =  new MyQTextBoundaryFinder(type_, chars, length, buffer, bufferSize);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtextboundaryfinder.h:79
 // [1] bool isValid() const

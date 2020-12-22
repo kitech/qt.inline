@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpagelayout(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:80
+// [-2] void QPageLayout() 
+// (12)qm3037595024 (20)_ZN11QPageLayoutC2Ev
+/*void* qm3037595024()*/{
+  ;
+  this_ =  new QPageLayout();
+  this_ =  new MyQPageLayout();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:81
+// [-2] void QPageLayout(const QPageSize &, QPageLayout::Orientation, const QMarginsF &, QPageLayout::Unit, const QMarginsF &) 
+// (12)qm3403826045 (72)_ZN11QPageLayoutC2ERK9QPageSizeNS_11OrientationERK9QMarginsFNS_4UnitES6_
+/*void* qm3403826045(const QPageSize & pageSize, QPageLayout::Orientation orientation, const QMarginsF & margins, QPageLayout::Unit units, const QMarginsF & minMargins)*/{
+  const QPageSize & pageSize = *(const QPageSize *)this_; QPageLayout::Orientation orientation = *(QPageLayout::Orientation*)this_; const QMarginsF & margins = *(const QMarginsF *)this_; QPageLayout::Unit units = *(QPageLayout::Unit*)this_; const QMarginsF & minMargins = *(const QMarginsF *)this_;
+  this_ =  new QPageLayout(pageSize, orientation, margins, units, minMargins);
+  this_ =  new MyQPageLayout(pageSize, orientation, margins, units, minMargins);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpagelayout.h:84
+// [-2] void QPageLayout(const QPageLayout &) 
+// (12)qm2705367215 (23)_ZN11QPageLayoutC2ERKS_
+/*void* qm2705367215(const QPageLayout & other)*/{
+  const QPageLayout & other = *(const QPageLayout *)this_;
+  this_ =  new QPageLayout(other);
+  this_ =  new MyQPageLayout(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpagelayout.h:85
 // [8] QPageLayout & operator=(QPageLayout &&) 

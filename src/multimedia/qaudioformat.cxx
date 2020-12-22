@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qaudioformat(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudioformat.h:60
+// [-2] void QAudioFormat() 
+// (11)qm451230891 (21)_ZN12QAudioFormatC2Ev
+/*void* qm451230891()*/{
+  ;
+  this_ =  new QAudioFormat();
+  this_ =  new MyQAudioFormat();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudioformat.h:61
+// [-2] void QAudioFormat(const QAudioFormat &) 
+// (12)qm2955025467 (24)_ZN12QAudioFormatC2ERKS_
+/*void* qm2955025467(const QAudioFormat & other)*/{
+  const QAudioFormat & other = *(const QAudioFormat *)this_;
+  this_ =  new QAudioFormat(other);
+  this_ =  new MyQAudioFormat(other);
+}
+
 
 /*void C_ZN12QAudioFormatD2Ev(void *this_)*/ {
   delete (QAudioFormat*)(this_);

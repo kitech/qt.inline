@@ -67,6 +67,17 @@ uint64_t ensure_inline_symbol_qcolortransform(void* this_) {
 /*void* qm3427948977()*/{
   ;
   this_ =  new QColorTransform();
+  this_ =  new MyQColorTransform();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolortransform.h:58
+// [-2] void QColorTransform(const QColorTransform &) 
+// (12)qm3961291654 (27)_ZN15QColorTransformC2ERKS_
+/*void* qm3961291654(const QColorTransform & colorTransform)*/{
+  const QColorTransform & colorTransform = *(const QColorTransform *)this_;
+  this_ =  new QColorTransform(colorTransform);
+  this_ =  new MyQColorTransform(colorTransform);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +87,7 @@ uint64_t ensure_inline_symbol_qcolortransform(void* this_) {
 /*void* qm4014486761(QColorTransform && colorTransform)*/{
   QColorTransform && colorTransform =  static_cast<QColorTransform &&>(*(QColorTransform *)this_);
   this_ =  new QColorTransform(colorTransform);
+  this_ =  new MyQColorTransform(colorTransform);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

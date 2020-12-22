@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qquicktextdocument(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquicktextdocument.h:55
+// [-2] void QQuickTextDocument(QQuickItem *) 
+// (12)qm4173393570 (39)_ZN18QQuickTextDocumentC2EP10QQuickItem
+/*void* qm4173393570(QQuickItem * parent)*/{
+  QQuickItem * parent = *(QQuickItem **)this_;
+  this_ =  new QQuickTextDocument(parent);
+  this_ =  new MyQQuickTextDocument(parent);
+}
+
 
 /*void C_ZN18QQuickTextDocumentD2Ev(void *this_)*/ {
   delete (QQuickTextDocument*)(this_);

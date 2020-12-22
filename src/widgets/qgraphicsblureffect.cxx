@@ -140,6 +140,17 @@ uint64_t ensure_inline_symbol_qgraphicsblureffect(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:170
+// [-2] void QGraphicsBlurEffect(QObject *) 
+// (11)qm267527398 (36)_ZN19QGraphicsBlurEffectC2EP7QObject
+/*void* qm267527398(QObject * parent)*/{
+  auto _nilp = (MyQGraphicsBlurEffect*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsBlurEffect(parent);
+  this_ =  new MyQGraphicsBlurEffect(parent);
+}
+
 
 /*void C_ZN19QGraphicsBlurEffectD2Ev(void *this_)*/ {
   delete (QGraphicsBlurEffect*)(this_);

@@ -178,6 +178,28 @@ uint64_t ensure_inline_symbol_qslider(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qslider.h:71
+// [-2] void QSlider(QWidget *) 
+// (11)qm599191626 (23)_ZN7QSliderC2EP7QWidget
+/*void* qm599191626(QWidget * parent)*/{
+  auto _nilp = (MyQSlider*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QSlider(parent);
+  this_ =  new MyQSlider(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qslider.h:72
+// [-2] void QSlider(Qt::Orientation, QWidget *) 
+// (12)qm1454780346 (41)_ZN7QSliderC2EN2Qt11OrientationEP7QWidget
+/*void* qm1454780346(Qt::Orientation orientation, QWidget * parent)*/{
+  auto _nilp = (MyQSlider*)(0);
+  Qt::Orientation orientation = *(Qt::Orientation*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QSlider(orientation, parent);
+  this_ =  new MyQSlider(orientation, parent);
+}
+
 
 /*void C_ZN7QSliderD2Ev(void *this_)*/ {
   delete (QSlider*)(this_);

@@ -59,6 +59,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsemaphore(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsemaphore.h:54
+// [-2] void QSemaphore(int) 
+// (12)qm1532420921 (19)_ZN10QSemaphoreC2Ei
+/*void* qm1532420921(int n)*/{
+  int n = *(int*)this_;
+  this_ =  new QSemaphore(n);
+  this_ =  new MyQSemaphore(n);
+}
+
 
 /*void C_ZN10QSemaphoreD2Ev(void *this_)*/ {
   delete (QSemaphore*)(this_);

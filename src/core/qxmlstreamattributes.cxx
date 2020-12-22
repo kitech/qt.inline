@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qxmlstreamattributes(void* this_) {
 /*void* qm2465102407()*/{
   ;
   this_ =  new QXmlStreamAttributes();
+  this_ =  new MyQXmlStreamAttributes();
 }
 
 // Public inline Extend Visibility=Default Availability=Available

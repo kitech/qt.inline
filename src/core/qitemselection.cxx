@@ -68,6 +68,17 @@ uint64_t ensure_inline_symbol_qitemselection(void* this_) {
 /*void* qm3922188993()*/{
   ;
   this_ =  new QItemSelection();
+  this_ =  new MyQItemSelection();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:253
+// [-2] void QItemSelection(const QModelIndex &, const QModelIndex &) 
+// (12)qm1842449250 (40)_ZN14QItemSelectionC2ERK11QModelIndexS2_
+/*void* qm1842449250(const QModelIndex & topLeft, const QModelIndex & bottomRight)*/{
+  const QModelIndex & topLeft = *(const QModelIndex *)this_; const QModelIndex & bottomRight = *(const QModelIndex *)this_;
+  this_ =  new QItemSelection(topLeft, bottomRight);
+  this_ =  new MyQItemSelection(topLeft, bottomRight);
 }
 
 

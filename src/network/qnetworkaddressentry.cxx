@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkaddressentry(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:65
+// [-2] void QNetworkAddressEntry() 
+// (12)qm2020700820 (29)_ZN20QNetworkAddressEntryC2Ev
+/*void* qm2020700820()*/{
+  ;
+  this_ =  new QNetworkAddressEntry();
+  this_ =  new MyQNetworkAddressEntry();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkinterface.h:66
+// [-2] void QNetworkAddressEntry(const QNetworkAddressEntry &) 
+// (11)qm109939490 (32)_ZN20QNetworkAddressEntryC2ERKS_
+/*void* qm109939490(const QNetworkAddressEntry & other)*/{
+  const QNetworkAddressEntry & other = *(const QNetworkAddressEntry *)this_;
+  this_ =  new QNetworkAddressEntry(other);
+  this_ =  new MyQNetworkAddressEntry(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkinterface.h:67
 // [8] QNetworkAddressEntry & operator=(QNetworkAddressEntry &&) 

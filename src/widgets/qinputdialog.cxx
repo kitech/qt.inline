@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qinputdialog(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qinputdialog.h:94
+// [-2] void QInputDialog(QWidget *, Qt::WindowFlags) 
+// (11)qm315152923 (55)_ZN12QInputDialogC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm315152923(QWidget * parent, QFlags<Qt::WindowType> flags)*/{
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> flags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QInputDialog(parent, flags);
+  this_ =  new MyQInputDialog(parent, flags);
+}
+
 
 /*void C_ZN12QInputDialogD2Ev(void *this_)*/ {
   delete (QInputDialog*)(this_);

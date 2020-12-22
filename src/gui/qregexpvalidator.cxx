@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qregexpvalidator(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:180
+// [-2] void QRegExpValidator(QObject *) 
+// (12)qm2364846176 (33)_ZN16QRegExpValidatorC2EP7QObject
+/*void* qm2364846176(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QRegExpValidator(parent);
+  this_ =  new MyQRegExpValidator(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:181
+// [-2] void QRegExpValidator(const QRegExp &, QObject *) 
+// (12)qm1791281774 (43)_ZN16QRegExpValidatorC2ERK7QRegExpP7QObject
+/*void* qm1791281774(const QRegExp & rx, QObject * parent)*/{
+  const QRegExp & rx = *(const QRegExp *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QRegExpValidator(rx, parent);
+  this_ =  new MyQRegExpValidator(rx, parent);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:187
 // [8] const QRegExp & regExp() const

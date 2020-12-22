@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qwidgetitem(void* this_) {
 /*void* qm3510836749(QWidget * w)*/{
   QWidget * w = *(QWidget **)this_;
   this_ =  new QWidgetItem(w);
+  this_ =  new MyQWidgetItem(w);
 }
 
 

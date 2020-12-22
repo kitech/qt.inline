@@ -65,6 +65,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtablewidgetitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:85
+// [-2] void QTableWidgetItem(int) 
+// (11)qm184313016 (25)_ZN16QTableWidgetItemC2Ei
+/*void* qm184313016(int type_)*/{
+  int type_ = *(int*)this_;
+  this_ =  new QTableWidgetItem(type_);
+  this_ =  new MyQTableWidgetItem(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:86
+// [-2] void QTableWidgetItem(const QString &, int) 
+// (12)qm3597940345 (35)_ZN16QTableWidgetItemC2ERK7QStringi
+/*void* qm3597940345(const QString & text, int type_)*/{
+  const QString & text = *(const QString *)this_; int type_ = *(int*)this_;
+  this_ =  new QTableWidgetItem(text, type_);
+  this_ =  new MyQTableWidgetItem(text, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:87
+// [-2] void QTableWidgetItem(const QIcon &, const QString &, int) 
+// (12)qm3073502681 (43)_ZN16QTableWidgetItemC2ERK5QIconRK7QStringi
+/*void* qm3073502681(const QIcon & icon, const QString & text, int type_)*/{
+  const QIcon & icon = *(const QIcon *)this_; const QString & text = *(const QString *)this_; int type_ = *(int*)this_;
+  this_ =  new QTableWidgetItem(icon, text, type_);
+  this_ =  new MyQTableWidgetItem(icon, text, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:88
+// [-2] void QTableWidgetItem(const QTableWidgetItem &) 
+// (12)qm2956015959 (28)_ZN16QTableWidgetItemC2ERKS_
+/*void* qm2956015959(const QTableWidgetItem & other)*/{
+  const QTableWidgetItem & other = *(const QTableWidgetItem *)this_;
+  this_ =  new QTableWidgetItem(other);
+  this_ =  new MyQTableWidgetItem(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:93
 // [8] QTableWidget * tableWidget() const

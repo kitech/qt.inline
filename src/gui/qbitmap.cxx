@@ -66,6 +66,56 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qbitmap(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:54
+// [-2] void QBitmap() 
+// (12)qm1857860163 (15)_ZN7QBitmapC2Ev
+/*void* qm1857860163()*/{
+  ;
+  this_ =  new QBitmap();
+  this_ =  new MyQBitmap();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:55
+// [-2] void QBitmap(const QPixmap &) 
+// (11)qm184471886 (24)_ZN7QBitmapC2ERK7QPixmap
+/*void* qm184471886(const QPixmap & arg0)*/{
+  const QPixmap & arg0 = *(const QPixmap *)this_;
+  this_ =  new QBitmap(arg0);
+  this_ =  new MyQBitmap(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:56
+// [-2] void QBitmap(int, int) 
+// (12)qm3297612919 (16)_ZN7QBitmapC2Eii
+/*void* qm3297612919(int w, int h)*/{
+  int w = *(int*)this_; int h = *(int*)this_;
+  this_ =  new QBitmap(w, h);
+  this_ =  new MyQBitmap(w, h);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:57
+// [-2] void QBitmap(const QSize &) 
+// (12)qm2902527683 (22)_ZN7QBitmapC2ERK5QSize
+/*void* qm2902527683(const QSize & arg0)*/{
+  const QSize & arg0 = *(const QSize *)this_;
+  this_ =  new QBitmap(arg0);
+  this_ =  new MyQBitmap(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbitmap.h:58
+// [-2] void QBitmap(const QString &, const char *) 
+// (12)qm1118119835 (27)_ZN7QBitmapC2ERK7QStringPKc
+/*void* qm1118119835(const QString & fileName, const char * format)*/{
+  const QString & fileName = *(const QString *)this_; const char * format = *(const char **)this_;
+  this_ =  new QBitmap(fileName, format);
+  this_ =  new MyQBitmap(fileName, format);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbitmap.h:61
 // [-2] void QBitmap(const QBitmap &) 
@@ -73,6 +123,7 @@ uint64_t ensure_inline_symbol_qbitmap(void* this_) {
 /*void* qm2690957762(const QBitmap & other)*/{
   const QBitmap & other = *(const QBitmap *)this_;
   this_ =  new QBitmap(other);
+  this_ =  new MyQBitmap(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -230,6 +230,28 @@ uint64_t ensure_inline_symbol_qwebenginepage(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:238
+// [-2] void QWebEnginePage(QObject *) 
+// (12)qm3029807497 (31)_ZN14QWebEnginePageC2EP7QObject
+/*void* qm3029807497(QObject * parent)*/{
+  auto _nilp = (MyQWebEnginePage*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QWebEnginePage(parent);
+  this_ =  new MyQWebEnginePage(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebenginepage.h:239
+// [-2] void QWebEnginePage(QWebEngineProfile *, QObject *) 
+// (12)qm1963408770 (51)_ZN14QWebEnginePageC2EP17QWebEngineProfileP7QObject
+/*void* qm1963408770(QWebEngineProfile * profile, QObject * parent)*/{
+  auto _nilp = (MyQWebEnginePage*)(0);
+  QWebEngineProfile * profile = *(QWebEngineProfile **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QWebEnginePage(profile, parent);
+  this_ =  new MyQWebEnginePage(profile, parent);
+}
+
 
 /*void C_ZN14QWebEnginePageD2Ev(void *this_)*/ {
   delete (QWebEnginePage*)(this_);

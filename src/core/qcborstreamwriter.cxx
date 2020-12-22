@@ -23,6 +23,24 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcborstreamwriter(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:68
+// [-2] void QCborStreamWriter(QIODevice *) 
+// (12)qm3565469453 (36)_ZN17QCborStreamWriterC2EP9QIODevice
+/*void* qm3565469453(QIODevice * device)*/{
+  QIODevice * device = *(QIODevice **)this_;
+  this_ = 0; // new QCborStreamWriter(device);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamwriter.h:69
+// [-2] void QCborStreamWriter(QByteArray *) 
+// (12)qm4071152689 (38)_ZN17QCborStreamWriterC2EP10QByteArray
+/*void* qm4071152689(QByteArray * data)*/{
+  QByteArray * data = *(QByteArray **)this_;
+  this_ = 0; // new QCborStreamWriter(data);
+}
+
 // Public inline Visibility=Default Availability=NotAvailable
 // /usr/include/qt/QtCore/qcborstreamwriter.h:71
 // [-2] void QCborStreamWriter(const QCborStreamWriter &) 

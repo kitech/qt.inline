@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptioncombobox(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:627
+// [-2] void QStyleOptionComboBox() 
+// (12)qm1715716597 (29)_ZN20QStyleOptionComboBoxC2Ev
+/*void* qm1715716597()*/{
+  ;
+  this_ =  new QStyleOptionComboBox();
+  this_ =  new MyQStyleOptionComboBox();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:628
 // [-2] void QStyleOptionComboBox(const QStyleOptionComboBox &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptioncombobox(void* this_) {
 /*void* qm1218938576(const QStyleOptionComboBox & other)*/{
   const QStyleOptionComboBox & other = *(const QStyleOptionComboBox *)this_;
   this_ =  new QStyleOptionComboBox(other);
+  this_ =  new MyQStyleOptionComboBox(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

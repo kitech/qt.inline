@@ -100,6 +100,28 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicspathitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:638
+// [-2] void QGraphicsPathItem(QGraphicsItem *) 
+// (11)qm911605910 (41)_ZN17QGraphicsPathItemC2EP13QGraphicsItem
+/*void* qm911605910(QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsPathItem*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsPathItem(parent);
+  this_ =  new MyQGraphicsPathItem(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:639
+// [-2] void QGraphicsPathItem(const QPainterPath &, QGraphicsItem *) 
+// (12)qm4240094087 (57)_ZN17QGraphicsPathItemC2ERK12QPainterPathP13QGraphicsItem
+/*void* qm4240094087(const QPainterPath & path, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsPathItem*)(0);
+  const QPainterPath & path = *(const QPainterPath *)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsPathItem(path, parent);
+  this_ =  new MyQGraphicsPathItem(path, parent);
+}
+
 
 /*void C_ZN17QGraphicsPathItemD2Ev(void *this_)*/ {
   delete (QGraphicsPathItem*)(this_);

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextlistformat(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextformat.h:737
+// [-2] void QTextListFormat() 
+// (12)qm1825405632 (24)_ZN15QTextListFormatC2Ev
+/*void* qm1825405632()*/{
+  ;
+  this_ =  new QTextListFormat();
+  this_ =  new MyQTextListFormat();
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextformat.h:739
 // [1] bool isValid() const

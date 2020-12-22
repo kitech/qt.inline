@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qregularexpressionmatchiterator(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:264
+// [-2] void QRegularExpressionMatchIterator() 
+// (12)qm4026188155 (40)_ZN31QRegularExpressionMatchIteratorC2Ev
+/*void* qm4026188155()*/{
+  ;
+  this_ =  new QRegularExpressionMatchIterator();
+  this_ =  new MyQRegularExpressionMatchIterator();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:266
+// [-2] void QRegularExpressionMatchIterator(const QRegularExpressionMatchIterator &) 
+// (11)qm296860667 (43)_ZN31QRegularExpressionMatchIteratorC2ERKS_
+/*void* qm296860667(const QRegularExpressionMatchIterator & iterator)*/{
+  const QRegularExpressionMatchIterator & iterator = *(const QRegularExpressionMatchIterator *)this_;
+  this_ =  new QRegularExpressionMatchIterator(iterator);
+  this_ =  new MyQRegularExpressionMatchIterator(iterator);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:268
 // [8] QRegularExpressionMatchIterator & operator=(QRegularExpressionMatchIterator &&) 

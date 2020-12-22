@@ -89,6 +89,116 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qimage(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:141
+// [-2] void QImage() 
+// (11)qm380729056 (14)_ZN6QImageC2Ev
+/*void* qm380729056()*/{
+  auto _nilp = (MyQImage*)(0);
+  ;
+  this_ =  new QImage();
+  this_ =  new MyQImage();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:142
+// [-2] void QImage(const QSize &, QImage::Format) 
+// (12)qm2386780666 (32)_ZN6QImageC2ERK5QSizeNS_6FormatE
+/*void* qm2386780666(const QSize & size, QImage::Format format)*/{
+  auto _nilp = (MyQImage*)(0);
+  const QSize & size = *(const QSize *)this_; QImage::Format format = *(QImage::Format*)this_;
+  this_ =  new QImage(size, format);
+  this_ =  new MyQImage(size, format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:143
+// [-2] void QImage(int, int, QImage::Format) 
+// (11)qm355905797 (26)_ZN6QImageC2EiiNS_6FormatE
+/*void* qm355905797(int width, int height, QImage::Format format)*/{
+  auto _nilp = (MyQImage*)(0);
+  int width = *(int*)this_; int height = *(int*)this_; QImage::Format format = *(QImage::Format*)this_;
+  this_ =  new QImage(width, height, format);
+  this_ =  new MyQImage(width, height, format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:144
+// [-2] void QImage(uchar *, int, int, QImage::Format, QImageCleanupFunction, void *) 
+// (12)qm3014210377 (37)_ZN6QImageC2EPhiiNS_6FormatEPFvPvES2_
+/*void* qm3014210377(unsigned char * data, int width, int height, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo)*/{
+  auto _nilp = (MyQImage*)(0);
+  unsigned char * data = *(unsigned char **)this_; int width = *(int*)this_; int height = *(int*)this_; QImage::Format format = *(QImage::Format*)this_; QImageCleanupFunction cleanupFunction = *(QImageCleanupFunction*)this_; void * cleanupInfo = *(void **)this_;
+  this_ =  new QImage(data, width, height, format, cleanupFunction, cleanupInfo);
+  this_ =  new MyQImage(data, width, height, format, cleanupFunction, cleanupInfo);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:145
+// [-2] void QImage(const uchar *, int, int, QImage::Format, QImageCleanupFunction, void *) 
+// (12)qm2023648887 (38)_ZN6QImageC2EPKhiiNS_6FormatEPFvPvES3_
+/*void* qm2023648887(const unsigned char * data, int width, int height, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo)*/{
+  auto _nilp = (MyQImage*)(0);
+  const unsigned char * data = *(const unsigned char **)this_; int width = *(int*)this_; int height = *(int*)this_; QImage::Format format = *(QImage::Format*)this_; QImageCleanupFunction cleanupFunction = *(QImageCleanupFunction*)this_; void * cleanupInfo = *(void **)this_;
+  this_ =  new QImage(data, width, height, format, cleanupFunction, cleanupInfo);
+  this_ =  new MyQImage(data, width, height, format, cleanupFunction, cleanupInfo);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:146
+// [-2] void QImage(uchar *, int, int, int, QImage::Format, QImageCleanupFunction, void *) 
+// (12)qm1547625136 (38)_ZN6QImageC2EPhiiiNS_6FormatEPFvPvES2_
+/*void* qm1547625136(unsigned char * data, int width, int height, int bytesPerLine, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo)*/{
+  auto _nilp = (MyQImage*)(0);
+  unsigned char * data = *(unsigned char **)this_; int width = *(int*)this_; int height = *(int*)this_; int bytesPerLine = *(int*)this_; QImage::Format format = *(QImage::Format*)this_; QImageCleanupFunction cleanupFunction = *(QImageCleanupFunction*)this_; void * cleanupInfo = *(void **)this_;
+  this_ =  new QImage(data, width, height, bytesPerLine, format, cleanupFunction, cleanupInfo);
+  this_ =  new MyQImage(data, width, height, bytesPerLine, format, cleanupFunction, cleanupInfo);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:147
+// [-2] void QImage(const uchar *, int, int, int, QImage::Format, QImageCleanupFunction, void *) 
+// (12)qm2236453680 (39)_ZN6QImageC2EPKhiiiNS_6FormatEPFvPvES3_
+/*void* qm2236453680(const unsigned char * data, int width, int height, int bytesPerLine, QImage::Format format, QImageCleanupFunction cleanupFunction, void * cleanupInfo)*/{
+  auto _nilp = (MyQImage*)(0);
+  const unsigned char * data = *(const unsigned char **)this_; int width = *(int*)this_; int height = *(int*)this_; int bytesPerLine = *(int*)this_; QImage::Format format = *(QImage::Format*)this_; QImageCleanupFunction cleanupFunction = *(QImageCleanupFunction*)this_; void * cleanupInfo = *(void **)this_;
+  this_ =  new QImage(data, width, height, bytesPerLine, format, cleanupFunction, cleanupInfo);
+  this_ =  new MyQImage(data, width, height, bytesPerLine, format, cleanupFunction, cleanupInfo);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:150
+// [-2] void QImage(const char *const *) 
+// (11)qm122891626 (18)_ZN6QImageC2EPKPKc
+/*void* qm122891626(const char *const[] xpm)*/{
+  auto _nilp = (MyQImage*)(0);
+    char * * xpm;
+  this_ =  new QImage(xpm);
+  this_ =  new MyQImage(xpm);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:152
+// [-2] void QImage(const QString &, const char *) 
+// (12)qm3795383548 (26)_ZN6QImageC2ERK7QStringPKc
+/*void* qm3795383548(const QString & fileName, const char * format)*/{
+  auto _nilp = (MyQImage*)(0);
+  const QString & fileName = *(const QString *)this_; const char * format = *(const char **)this_;
+  this_ =  new QImage(fileName, format);
+  this_ =  new MyQImage(fileName, format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimage.h:154
+// [-2] void QImage(const QImage &) 
+// (12)qm2860338292 (17)_ZN6QImageC2ERKS_
+/*void* qm2860338292(const QImage & arg0)*/{
+  auto _nilp = (MyQImage*)(0);
+  const QImage & arg0 = *(const QImage *)this_;
+  this_ =  new QImage(arg0);
+  this_ =  new MyQImage(arg0);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qimage.h:155
 // [-2] void QImage(QImage &&) 
@@ -96,6 +206,7 @@ uint64_t ensure_inline_symbol_qimage(void* this_) {
 /*void* qm3879321414(QImage && other)*/{
   auto _nilp = (MyQImage*)(0);
   QImage && other =  static_cast<QImage &&>(*(QImage *)this_);
+  this_ =  new QImage(other);
   this_ =  new MyQImage(other);
 }
 

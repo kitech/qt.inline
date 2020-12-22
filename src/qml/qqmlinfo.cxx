@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qqmlinfo(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlinfo.h:76
+// [-2] void QQmlInfo(const QQmlInfo &) 
+// (12)qm2846623795 (19)_ZN8QQmlInfoC2ERKS_
+/*void* qm2846623795(const QQmlInfo & arg0)*/{
+  const QQmlInfo & arg0 = *(const QQmlInfo *)this_;
+  this_ =  new QQmlInfo(arg0);
+  this_ =  new MyQQmlInfo(arg0);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqmlinfo.h:79
 // [16] QQmlInfo & operator<<(QChar) 

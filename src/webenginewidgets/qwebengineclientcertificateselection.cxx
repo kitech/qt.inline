@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwebengineclientcertificateselection(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngineWidgets/qwebengineclientcertificateselection.h:57
+// [-2] void QWebEngineClientCertificateSelection(const QWebEngineClientCertificateSelection &) 
+// (11)qm767051356 (48)_ZN36QWebEngineClientCertificateSelectionC2ERKS_
+/*void* qm767051356(const QWebEngineClientCertificateSelection & arg0)*/{
+  const QWebEngineClientCertificateSelection & arg0 = *(const QWebEngineClientCertificateSelection *)this_;
+  this_ =  new QWebEngineClientCertificateSelection(arg0);
+  this_ =  new MyQWebEngineClientCertificateSelection(arg0);
+}
+
 
 /*void C_ZN36QWebEngineClientCertificateSelectionD2Ev(void *this_)*/ {
   delete (QWebEngineClientCertificateSelection*)(this_);

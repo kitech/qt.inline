@@ -23,6 +23,51 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcborstreamreader(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamreader.h:98
+// [-2] void QCborStreamReader() 
+// (12)qm1536272578 (26)_ZN17QCborStreamReaderC2Ev
+/*void* qm1536272578()*/{
+  ;
+  this_ = 0; // new QCborStreamReader();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamreader.h:99
+// [-2] void QCborStreamReader(const char *, qsizetype) 
+// (12)qm1696882173 (29)_ZN17QCborStreamReaderC2EPKcx
+/*void* qm1696882173(const char * data, long long len_)*/{
+  const char * data = *(const char **)this_; long long len_ = *(long long*)this_;
+  this_ = 0; // new QCborStreamReader(data, len_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamreader.h:100
+// [-2] void QCborStreamReader(const quint8 *, qsizetype) 
+// (12)qm2261812278 (29)_ZN17QCborStreamReaderC2EPKhx
+/*void* qm2261812278(const unsigned char * data, long long len_)*/{
+  const unsigned char * data = *(const unsigned char **)this_; long long len_ = *(long long*)this_;
+  this_ = 0; // new QCborStreamReader(data, len_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamreader.h:101
+// [-2] void QCborStreamReader(const QByteArray &) 
+// (12)qm2406362679 (39)_ZN17QCborStreamReaderC2ERK10QByteArray
+/*void* qm2406362679(const QByteArray & data)*/{
+  const QByteArray & data = *(const QByteArray *)this_;
+  this_ = 0; // new QCborStreamReader(data);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborstreamreader.h:102
+// [-2] void QCborStreamReader(QIODevice *) 
+// (12)qm2792548386 (36)_ZN17QCborStreamReaderC2EP9QIODevice
+/*void* qm2792548386(QIODevice * device)*/{
+  QIODevice * device = *(QIODevice **)this_;
+  this_ = 0; // new QCborStreamReader(device);
+}
+
 // Public inline Visibility=Default Availability=NotAvailable
 // /usr/include/qt/QtCore/qcborstreamreader.h:104
 // [-2] void QCborStreamReader(const QCborStreamReader &) 

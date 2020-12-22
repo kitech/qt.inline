@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qchildevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:352
+// [-2] void QChildEvent(QEvent::Type, QObject *) 
+// (12)qm1316606467 (42)_ZN11QChildEventC2EN6QEvent4TypeEP7QObject
+/*void* qm1316606467(QEvent::Type type_, QObject * child)*/{
+  QEvent::Type type_ = *(QEvent::Type*)this_; QObject * child = *(QObject **)this_;
+  this_ =  new QChildEvent(type_, child);
+  this_ =  new MyQChildEvent(type_, child);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:354
 // [8] QObject * child() const

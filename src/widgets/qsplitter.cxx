@@ -192,6 +192,28 @@ uint64_t ensure_inline_symbol_qsplitter(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsplitter.h:67
+// [-2] void QSplitter(QWidget *) 
+// (12)qm1205089122 (25)_ZN9QSplitterC2EP7QWidget
+/*void* qm1205089122(QWidget * parent)*/{
+  auto _nilp = (MyQSplitter*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QSplitter(parent);
+  this_ =  new MyQSplitter(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsplitter.h:68
+// [-2] void QSplitter(Qt::Orientation, QWidget *) 
+// (12)qm3729933434 (43)_ZN9QSplitterC2EN2Qt11OrientationEP7QWidget
+/*void* qm3729933434(Qt::Orientation arg0, QWidget * parent)*/{
+  auto _nilp = (MyQSplitter*)(0);
+  Qt::Orientation arg0 = *(Qt::Orientation*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QSplitter(arg0, parent);
+  this_ =  new MyQSplitter(arg0, parent);
+}
+
 
 /*void C_ZN9QSplitterD2Ev(void *this_)*/ {
   delete (QSplitter*)(this_);

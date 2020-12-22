@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qidentityproxymodel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qidentityproxymodel.h:57
+// [-2] void QIdentityProxyModel(QObject *) 
+// (12)qm2862423231 (36)_ZN19QIdentityProxyModelC2EP7QObject
+/*void* qm2862423231(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QIdentityProxyModel(parent);
+  this_ =  new MyQIdentityProxyModel(parent);
+}
+
 
 /*void C_ZN19QIdentityProxyModelD2Ev(void *this_)*/ {
   delete (QIdentityProxyModel*)(this_);

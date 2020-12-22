@@ -63,6 +63,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qocspresponse(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qocspresponse.h:83
+// [-2] void QOcspResponse() 
+// (12)qm2767995897 (22)_ZN13QOcspResponseC2Ev
+/*void* qm2767995897()*/{
+  ;
+  this_ =  new QOcspResponse();
+  this_ =  new MyQOcspResponse();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qocspresponse.h:84
+// [-2] void QOcspResponse(const QOcspResponse &) 
+// (11)qm332802978 (25)_ZN13QOcspResponseC2ERKS_
+/*void* qm332802978(const QOcspResponse & other)*/{
+  const QOcspResponse & other = *(const QOcspResponse *)this_;
+  this_ =  new QOcspResponse(other);
+  this_ =  new MyQOcspResponse(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qocspresponse.h:85
+// [-2] void QOcspResponse(QOcspResponse &&) 
+// (11)qm713711664 (24)_ZN13QOcspResponseC2EOS_
+/*void* qm713711664(QOcspResponse && other)*/{
+  QOcspResponse && other =  static_cast<QOcspResponse &&>(*(QOcspResponse *)this_);
+  this_ =  new QOcspResponse(other);
+  this_ =  new MyQOcspResponse(other);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qocspresponse.h:97
 // [-2] void swap(QOcspResponse &) 

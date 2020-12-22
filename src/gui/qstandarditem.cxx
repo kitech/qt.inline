@@ -65,6 +65,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstandarditem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:64
+// [-2] void QStandardItem() 
+// (12)qm3217880674 (22)_ZN13QStandardItemC2Ev
+/*void* qm3217880674()*/{
+  ;
+  this_ =  new QStandardItem();
+  this_ =  new MyQStandardItem();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:65
+// [-2] void QStandardItem(const QString &) 
+// (12)qm1974625333 (31)_ZN13QStandardItemC2ERK7QString
+/*void* qm1974625333(const QString & text)*/{
+  const QString & text = *(const QString *)this_;
+  this_ =  new QStandardItem(text);
+  this_ =  new MyQStandardItem(text);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:66
+// [-2] void QStandardItem(const QIcon &, const QString &) 
+// (12)qm3295350938 (39)_ZN13QStandardItemC2ERK5QIconRK7QString
+/*void* qm3295350938(const QIcon & icon, const QString & text)*/{
+  const QIcon & icon = *(const QIcon *)this_; const QString & text = *(const QString *)this_;
+  this_ =  new QStandardItem(icon, text);
+  this_ =  new MyQStandardItem(icon, text);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qstandarditemmodel.h:67
+// [-2] void QStandardItem(int, int) 
+// (12)qm2285237357 (23)_ZN13QStandardItemC2Eii
+/*void* qm2285237357(int rows, int columns)*/{
+  int rows = *(int*)this_; int columns = *(int*)this_;
+  this_ =  new QStandardItem(rows, columns);
+  this_ =  new MyQStandardItem(rows, columns);
+}
+
 // Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qstandarditemmodel.h:74
 // [8] QString text() const

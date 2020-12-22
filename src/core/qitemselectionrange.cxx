@@ -74,6 +74,7 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm3558485819()*/{
   ;
   this_ =  new QItemSelectionRange();
+  this_ =  new MyQItemSelectionRange();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -83,6 +84,7 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm31197722(const QItemSelectionRange & other)*/{
   const QItemSelectionRange & other = *(const QItemSelectionRange *)this_;
   this_ =  new QItemSelectionRange(other);
+  this_ =  new MyQItemSelectionRange(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -92,6 +94,7 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm2537719913(QItemSelectionRange && other)*/{
   QItemSelectionRange && other =  static_cast<QItemSelectionRange &&>(*(QItemSelectionRange *)this_);
   this_ =  new QItemSelectionRange(other);
+  this_ =  new MyQItemSelectionRange(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -125,6 +128,7 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm1480294449(const QModelIndex & topL, const QModelIndex & bottomR)*/{
   const QModelIndex & topL = *(const QModelIndex *)this_; const QModelIndex & bottomR = *(const QModelIndex *)this_;
   this_ =  new QItemSelectionRange(topL, bottomR);
+  this_ =  new MyQItemSelectionRange(topL, bottomR);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -134,6 +138,7 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm2240717409(const QModelIndex & index)*/{
   const QModelIndex & index = *(const QModelIndex *)this_;
   this_ =  new QItemSelectionRange(index);
+  this_ =  new MyQItemSelectionRange(index);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

@@ -68,6 +68,66 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdatetime(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:296
+// [-2] void QDateTime() 
+// (12)qm1949427464 (17)_ZN9QDateTimeC2Ev
+/*void* qm1949427464()*/{
+  ;
+  this_ =  new QDateTime();
+  this_ =  new MyQDateTime();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:300
+// [-2] void QDateTime(const QDate &, const QTime &, Qt::TimeSpec) 
+// (12)qm3960008292 (46)_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecE
+/*void* qm3960008292(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec)*/{
+  const QDate & arg0 = *(const QDate *)this_; const QTime & arg1 = *(const QTime *)this_; Qt::TimeSpec spec = *(Qt::TimeSpec*)this_;
+  this_ =  new QDateTime(arg0, arg1, spec);
+  this_ =  new MyQDateTime(arg0, arg1, spec);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:302
+// [-2] void QDateTime(const QDate &, const QTime &, Qt::TimeSpec, int) 
+// (12)qm2891946974 (47)_ZN9QDateTimeC2ERK5QDateRK5QTimeN2Qt8TimeSpecEi
+/*void* qm2891946974(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds)*/{
+  const QDate & date = *(const QDate *)this_; const QTime & time = *(const QTime *)this_; Qt::TimeSpec spec = *(Qt::TimeSpec*)this_; int offsetSeconds = *(int*)this_;
+  this_ =  new QDateTime(date, time, spec, offsetSeconds);
+  this_ =  new MyQDateTime(date, time, spec, offsetSeconds);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:304
+// [-2] void QDateTime(const QDate &, const QTime &, const QTimeZone &) 
+// (11)qm548597330 (44)_ZN9QDateTimeC2ERK5QDateRK5QTimeRK9QTimeZone
+/*void* qm548597330(const QDate & date, const QTime & time, const QTimeZone & timeZone)*/{
+  const QDate & date = *(const QDate *)this_; const QTime & time = *(const QTime *)this_; const QTimeZone & timeZone = *(const QTimeZone *)this_;
+  this_ =  new QDateTime(date, time, timeZone);
+  this_ =  new MyQDateTime(date, time, timeZone);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:306
+// [-2] void QDateTime(const QDateTime &) 
+// (12)qm2288973173 (20)_ZN9QDateTimeC2ERKS_
+/*void* qm2288973173(const QDateTime & other)*/{
+  const QDateTime & other = *(const QDateTime *)this_;
+  this_ =  new QDateTime(other);
+  this_ =  new MyQDateTime(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:307
+// [-2] void QDateTime(QDateTime &&) 
+// (12)qm4137027568 (19)_ZN9QDateTimeC2EOS_
+/*void* qm4137027568(QDateTime && other)*/{
+  QDateTime && other =  static_cast<QDateTime &&>(*(QDateTime *)this_);
+  this_ =  new QDateTime(other);
+  this_ =  new MyQDateTime(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdatetime.h:310
 // [8] QDateTime & operator=(QDateTime &&) 

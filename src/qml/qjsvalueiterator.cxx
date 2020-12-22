@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qjsvalueiterator(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qjsvalueiterator.h:56
+// [-2] void QJSValueIterator(const QJSValue &) 
+// (11)qm958807065 (35)_ZN16QJSValueIteratorC2ERK8QJSValue
+/*void* qm958807065(const QJSValue & value)*/{
+  const QJSValue & value = *(const QJSValue *)this_;
+  this_ =  new QJSValueIterator(value);
+  this_ =  new MyQJSValueIterator(value);
+}
+
 
 /*void C_ZN16QJSValueIteratorD2Ev(void *this_)*/ {
   delete (QJSValueIterator*)(this_);

@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qatomicint(void* this_) {
 /*void* qm2182123644(int value)*/{
   int value = *(int*)this_;
   this_ =  new QAtomicInt(value);
+  this_ =  new MyQAtomicInt(value);
 }
 
 

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgopaquetexturematerial(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgtexturematerial.h:51
+// [-2] void QSGOpaqueTextureMaterial() 
+// (12)qm3048450109 (33)_ZN24QSGOpaqueTextureMaterialC2Ev
+/*void* qm3048450109()*/{
+  ;
+  this_ =  new QSGOpaqueTextureMaterial();
+  this_ =  new MyQSGOpaqueTextureMaterial();
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgtexturematerial.h:58
 // [8] QSGTexture * texture() const

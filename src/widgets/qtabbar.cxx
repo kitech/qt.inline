@@ -337,6 +337,17 @@ uint64_t ensure_inline_symbol_qtabbar(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtabbar.h:74
+// [-2] void QTabBar(QWidget *) 
+// (11)qm963516406 (23)_ZN7QTabBarC2EP7QWidget
+/*void* qm963516406(QWidget * parent)*/{
+  auto _nilp = (MyQTabBar*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTabBar(parent);
+  this_ =  new MyQTabBar(parent);
+}
+
 
 /*void C_ZN7QTabBarD2Ev(void *this_)*/ {
   delete (QTabBar*)(this_);

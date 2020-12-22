@@ -64,6 +64,56 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfont(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:175
+// [-2] void QFont() 
+// (12)qm2928234028 (13)_ZN5QFontC2Ev
+/*void* qm2928234028()*/{
+  ;
+  this_ =  new QFont();
+  this_ =  new MyQFont();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:176
+// [-2] void QFont(const QString &, int, int, bool) 
+// (12)qm1453900756 (25)_ZN5QFontC2ERK7QStringiib
+/*void* qm1453900756(const QString & family, int pointSize, int weight, bool italic)*/{
+  const QString & family = *(const QString *)this_; int pointSize = *(int*)this_; int weight = *(int*)this_; bool italic = *(bool*)this_;
+  this_ =  new QFont(family, pointSize, weight, italic);
+  this_ =  new MyQFont(family, pointSize, weight, italic);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:178
+// [-2] void QFont(const QFont &, QPaintDevice *) 
+// (12)qm3944613900 (31)_ZN5QFontC2ERKS_P12QPaintDevice
+/*void* qm3944613900(const QFont & font, QPaintDevice * pd)*/{
+  const QFont & font = *(const QFont *)this_; QPaintDevice * pd = *(QPaintDevice **)this_;
+  this_ =  new QFont(font, pd);
+  this_ =  new MyQFont(font, pd);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:180
+// [-2] void QFont(const QFont &, const QPaintDevice *) 
+// (12)qm2959359983 (32)_ZN5QFontC2ERKS_PK12QPaintDevice
+/*void* qm2959359983(const QFont & font, const QPaintDevice * pd)*/{
+  const QFont & font = *(const QFont *)this_; const QPaintDevice * pd = *(const QPaintDevice **)this_;
+  this_ =  new QFont(font, pd);
+  this_ =  new MyQFont(font, pd);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfont.h:181
+// [-2] void QFont(const QFont &) 
+// (11)qm223684493 (16)_ZN5QFontC2ERKS_
+/*void* qm223684493(const QFont & font)*/{
+  const QFont & font = *(const QFont *)this_;
+  this_ =  new QFont(font);
+  this_ =  new MyQFont(font);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfont.h:184
 // [-2] void swap(QFont &) 

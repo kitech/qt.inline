@@ -140,6 +140,17 @@ uint64_t ensure_inline_symbol_qtimeline(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtimeline.h:87
+// [-2] void QTimeLine(int, QObject *) 
+// (10)qm33524193 (26)_ZN9QTimeLineC2EiP7QObject
+/*void* qm33524193(int duration, QObject * parent)*/{
+  auto _nilp = (MyQTimeLine*)(0);
+  int duration = *(int*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QTimeLine(duration, parent);
+  this_ =  new MyQTimeLine(duration, parent);
+}
+
 
 /*void C_ZN9QTimeLineD2Ev(void *this_)*/ {
   delete (QTimeLine*)(this_);

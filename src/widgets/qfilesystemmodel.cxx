@@ -153,6 +153,17 @@ uint64_t ensure_inline_symbol_qfilesystemmodel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfilesystemmodel.h:88
+// [-2] void QFileSystemModel(QObject *) 
+// (12)qm1123096801 (33)_ZN16QFileSystemModelC2EP7QObject
+/*void* qm1123096801(QObject * parent)*/{
+  auto _nilp = (MyQFileSystemModel*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QFileSystemModel(parent);
+  this_ =  new MyQFileSystemModel(parent);
+}
+
 // Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qfilesystemmodel.h:155
 // [8] QString fileName(const QModelIndex &) const

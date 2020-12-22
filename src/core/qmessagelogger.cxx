@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qmessagelogger(void* this_) {
 /*void* qm446580560()*/{
   ;
   this_ =  new QMessageLogger();
+  this_ =  new MyQMessageLogger();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +77,7 @@ uint64_t ensure_inline_symbol_qmessagelogger(void* this_) {
 /*void* qm428606751(const char * file, int line, const char * function)*/{
   const char * file = *(const char **)this_; int line = *(int*)this_; const char * function = *(const char **)this_;
   this_ =  new QMessageLogger(file, line, function);
+  this_ =  new MyQMessageLogger(file, line, function);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -85,6 +87,7 @@ uint64_t ensure_inline_symbol_qmessagelogger(void* this_) {
 /*void* qm573693238(const char * file, int line, const char * function, const char * category)*/{
   const char * file = *(const char **)this_; int line = *(int*)this_; const char * function = *(const char **)this_; const char * category = *(const char **)this_;
   this_ =  new QMessageLogger(file, line, function, category);
+  this_ =  new MyQMessageLogger(file, line, function, category);
 }
 
 

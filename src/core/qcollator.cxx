@@ -62,6 +62,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcollator(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:84
+// [-2] void QCollator() 
+// (12)qm2653493320 (17)_ZN9QCollatorC2Ev
+/*void* qm2653493320()*/{
+  ;
+  this_ =  new QCollator();
+  this_ =  new MyQCollator();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:85
+// [-2] void QCollator(const QLocale &) 
+// (12)qm3059839049 (26)_ZN9QCollatorC2ERK7QLocale
+/*void* qm3059839049(const QLocale & locale)*/{
+  const QLocale & locale = *(const QLocale *)this_;
+  this_ =  new QCollator(locale);
+  this_ =  new MyQCollator(locale);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcollator.h:86
+// [-2] void QCollator(const QCollator &) 
+// (12)qm2025594235 (20)_ZN9QCollatorC2ERKS_
+/*void* qm2025594235(const QCollator & arg0)*/{
+  const QCollator & arg0 = *(const QCollator *)this_;
+  this_ =  new QCollator(arg0);
+  this_ =  new MyQCollator(arg0);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcollator.h:89
 // [-2] void QCollator(QCollator &&) 
@@ -69,6 +99,7 @@ uint64_t ensure_inline_symbol_qcollator(void* this_) {
 /*void* qm736972128(QCollator && other)*/{
   QCollator && other =  static_cast<QCollator &&>(*(QCollator *)this_);
   this_ =  new QCollator(other);
+  this_ =  new MyQCollator(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

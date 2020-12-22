@@ -140,6 +140,28 @@ uint64_t ensure_inline_symbol_qshortcut(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qshortcut.h:63
+// [-2] void QShortcut(QWidget *) 
+// (11)qm207500812 (25)_ZN9QShortcutC2EP7QWidget
+/*void* qm207500812(QWidget * parent)*/{
+  auto _nilp = (MyQShortcut*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QShortcut(parent);
+  this_ =  new MyQShortcut(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qshortcut.h:64
+// [-2] void QShortcut(const QKeySequence &, QWidget *, const char *, const char *, Qt::ShortcutContext) 
+// (12)qm3952751096 (69)_ZN9QShortcutC2ERK12QKeySequenceP7QWidgetPKcS6_N2Qt15ShortcutContextE
+/*void* qm3952751096(const QKeySequence & key, QWidget * parent, const char * member, const char * ambiguousMember, Qt::ShortcutContext shortcutContext)*/{
+  auto _nilp = (MyQShortcut*)(0);
+  const QKeySequence & key = *(const QKeySequence *)this_; QWidget * parent = *(QWidget **)this_; const char * member = *(const char **)this_; const char * ambiguousMember = *(const char **)this_; Qt::ShortcutContext shortcutContext = *(Qt::ShortcutContext*)this_;
+  this_ =  new QShortcut(key, parent, member, ambiguousMember, shortcutContext);
+  this_ =  new MyQShortcut(key, parent, member, ambiguousMember, shortcutContext);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qshortcut.h:146
 // [8] QWidget * parentWidget() const

@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qregularexpressionmatch(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:196
+// [-2] void QRegularExpressionMatch() 
+// (12)qm2043354271 (32)_ZN23QRegularExpressionMatchC2Ev
+/*void* qm2043354271()*/{
+  ;
+  this_ =  new QRegularExpressionMatch();
+  this_ =  new MyQRegularExpressionMatch();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qregularexpression.h:198
+// [-2] void QRegularExpressionMatch(const QRegularExpressionMatch &) 
+// (12)qm3658643577 (35)_ZN23QRegularExpressionMatchC2ERKS_
+/*void* qm3658643577(const QRegularExpressionMatch & match_)*/{
+  const QRegularExpressionMatch & match_ = *(const QRegularExpressionMatch *)this_;
+  this_ =  new QRegularExpressionMatch(match_);
+  this_ =  new MyQRegularExpressionMatch(match_);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qregularexpression.h:200
 // [8] QRegularExpressionMatch & operator=(QRegularExpressionMatch &&) 

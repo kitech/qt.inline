@@ -75,6 +75,7 @@ uint64_t ensure_inline_symbol_qmatrix4x4(void* this_) {
 /*void* qm2071527981()*/{
   ;
   this_ =  new QMatrix4x4();
+  this_ =  new MyQMatrix4x4();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -84,6 +85,17 @@ uint64_t ensure_inline_symbol_qmatrix4x4(void* this_) {
 /*void* qm1686328064(Qt::Initialization arg0)*/{
   Qt::Initialization arg0 = *(Qt::Initialization*)this_;
   this_ =  new QMatrix4x4(arg0);
+  this_ =  new MyQMatrix4x4(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:64
+// [-2] void QMatrix4x4(const float *) 
+// (10)qm73480884 (21)_ZN10QMatrix4x4C2EPKf
+/*void* qm73480884(const float * values)*/{
+  const float * values = *(const float **)this_;
+  this_ =  new QMatrix4x4(values);
+  this_ =  new MyQMatrix4x4(values);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -93,6 +105,37 @@ uint64_t ensure_inline_symbol_qmatrix4x4(void* this_) {
 /*void* qm167183903(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)*/{
   float m11 = *(float*)this_; float m12 = *(float*)this_; float m13 = *(float*)this_; float m14 = *(float*)this_; float m21 = *(float*)this_; float m22 = *(float*)this_; float m23 = *(float*)this_; float m24 = *(float*)this_; float m31 = *(float*)this_; float m32 = *(float*)this_; float m33 = *(float*)this_; float m34 = *(float*)this_; float m41 = *(float*)this_; float m42 = *(float*)this_; float m43 = *(float*)this_; float m44 = *(float*)this_;
   this_ =  new QMatrix4x4(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44);
+  this_ =  new MyQMatrix4x4(m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, m41, m42, m43, m44);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:73
+// [-2] void QMatrix4x4(const float *, int, int) 
+// (12)qm2267917698 (23)_ZN10QMatrix4x4C2EPKfii
+/*void* qm2267917698(const float * values, int cols, int rows)*/{
+  const float * values = *(const float **)this_; int cols = *(int*)this_; int rows = *(int*)this_;
+  this_ =  new QMatrix4x4(values, cols, rows);
+  this_ =  new MyQMatrix4x4(values, cols, rows);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:74
+// [-2] void QMatrix4x4(const QTransform &) 
+// (12)qm4029543397 (32)_ZN10QMatrix4x4C2ERK10QTransform
+/*void* qm4029543397(const QTransform & transform)*/{
+  const QTransform & transform = *(const QTransform *)this_;
+  this_ =  new QMatrix4x4(transform);
+  this_ =  new MyQMatrix4x4(transform);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qmatrix4x4.h:76
+// [-2] void QMatrix4x4(const QMatrix &) 
+// (12)qm2432794000 (28)_ZN10QMatrix4x4C2ERK7QMatrix
+/*void* qm2432794000(const QMatrix & matrix)*/{
+  const QMatrix & matrix = *(const QMatrix *)this_;
+  this_ =  new QMatrix4x4(matrix);
+  this_ =  new MyQMatrix4x4(matrix);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

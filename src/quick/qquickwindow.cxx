@@ -308,6 +308,28 @@ uint64_t ensure_inline_symbol_qquickwindow(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickwindow.h:117
+// [-2] void QQuickWindow(QWindow *) 
+// (12)qm1743375300 (29)_ZN12QQuickWindowC2EP7QWindow
+/*void* qm1743375300(QWindow * parent)*/{
+  auto _nilp = (MyQQuickWindow*)(0);
+  QWindow * parent = *(QWindow **)this_;
+  this_ =  new QQuickWindow(parent);
+  this_ =  new MyQQuickWindow(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickwindow.h:118
+// [-2] void QQuickWindow(QQuickRenderControl *) 
+// (12)qm3354712033 (42)_ZN12QQuickWindowC2EP19QQuickRenderControl
+/*void* qm3354712033(QQuickRenderControl * renderControl)*/{
+  auto _nilp = (MyQQuickWindow*)(0);
+  QQuickRenderControl * renderControl = *(QQuickRenderControl **)this_;
+  this_ =  new QQuickWindow(renderControl);
+  this_ =  new MyQQuickWindow(renderControl);
+}
+
 
 /*void C_ZN12QQuickWindowD2Ev(void *this_)*/ {
   delete (QQuickWindow*)(this_);

@@ -179,6 +179,28 @@ uint64_t ensure_inline_symbol_qtoolbar(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtoolbar.h:72
+// [-2] void QToolBar(const QString &, QWidget *) 
+// (11)qm115476381 (34)_ZN8QToolBarC2ERK7QStringP7QWidget
+/*void* qm115476381(const QString & title, QWidget * parent)*/{
+  auto _nilp = (MyQToolBar*)(0);
+  const QString & title = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QToolBar(title, parent);
+  this_ =  new MyQToolBar(title, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtoolbar.h:73
+// [-2] void QToolBar(QWidget *) 
+// (12)qm2552095711 (24)_ZN8QToolBarC2EP7QWidget
+/*void* qm2552095711(QWidget * parent)*/{
+  auto _nilp = (MyQToolBar*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QToolBar(parent);
+  this_ =  new MyQToolBar(parent);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtoolbar.h:82
 // [1] bool isAreaAllowed(Qt::ToolBarArea) const

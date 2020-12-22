@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkcachemetadata(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:66
+// [-2] void QNetworkCacheMetaData() 
+// (12)qm3143873741 (30)_ZN21QNetworkCacheMetaDataC2Ev
+/*void* qm3143873741()*/{
+  ;
+  this_ =  new QNetworkCacheMetaData();
+  this_ =  new MyQNetworkCacheMetaData();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qabstractnetworkcache.h:67
+// [-2] void QNetworkCacheMetaData(const QNetworkCacheMetaData &) 
+// (11)qm200908638 (33)_ZN21QNetworkCacheMetaDataC2ERKS_
+/*void* qm200908638(const QNetworkCacheMetaData & other)*/{
+  const QNetworkCacheMetaData & other = *(const QNetworkCacheMetaData *)this_;
+  this_ =  new QNetworkCacheMetaData(other);
+  this_ =  new MyQNetworkCacheMetaData(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qabstractnetworkcache.h:70
 // [8] QNetworkCacheMetaData & operator=(QNetworkCacheMetaData &&) 

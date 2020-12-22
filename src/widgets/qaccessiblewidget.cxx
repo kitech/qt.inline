@@ -55,6 +55,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qaccessiblewidget(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qaccessiblewidget.h:56
+// [-2] void QAccessibleWidget(QWidget *, QAccessible::Role, const QString &) 
+// (12)qm1003490150 (64)_ZN17QAccessibleWidgetC2EP7QWidgetN11QAccessible4RoleERK7QString
+/*void* qm1003490150(QWidget * o, QAccessible::Role r, const QString & name)*/{
+  QWidget * o = *(QWidget **)this_; QAccessible::Role r = *(QAccessible::Role*)this_; const QString & name = *(const QString *)this_;
+  this_ =  new QAccessibleWidget(o, r, name);
+  this_ =  new MyQAccessibleWidget(o, r, name);
+}
+
   return fnptrsumval;
 } // end ensure_inline_symbol_qaccessiblewidget
 //  main block end

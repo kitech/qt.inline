@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qobjectcleanuphandler(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobjectcleanuphandler.h:53
+// [-2] void QObjectCleanupHandler() 
+// (12)qm4092531256 (30)_ZN21QObjectCleanupHandlerC2Ev
+/*void* qm4092531256()*/{
+  ;
+  this_ =  new QObjectCleanupHandler();
+  this_ =  new MyQObjectCleanupHandler();
+}
+
 
 /*void C_ZN21QObjectCleanupHandlerD2Ev(void *this_)*/ {
   delete (QObjectCleanupHandler*)(this_);

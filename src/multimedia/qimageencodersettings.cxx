@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qimageencodersettings(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:143
+// [-2] void QImageEncoderSettings() 
+// (11)qm214366602 (30)_ZN21QImageEncoderSettingsC2Ev
+/*void* qm214366602()*/{
+  ;
+  this_ =  new QImageEncoderSettings();
+  this_ =  new MyQImageEncoderSettings();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:144
+// [-2] void QImageEncoderSettings(const QImageEncoderSettings &) 
+// (12)qm2638701187 (33)_ZN21QImageEncoderSettingsC2ERKS_
+/*void* qm2638701187(const QImageEncoderSettings & other)*/{
+  const QImageEncoderSettings & other = *(const QImageEncoderSettings *)this_;
+  this_ =  new QImageEncoderSettings(other);
+  this_ =  new MyQImageEncoderSettings(other);
+}
+
 
 /*void C_ZN21QImageEncoderSettingsD2Ev(void *this_)*/ {
   delete (QImageEncoderSettings*)(this_);

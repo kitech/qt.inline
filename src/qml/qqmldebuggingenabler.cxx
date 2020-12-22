@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qqmldebuggingenabler(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmldebug.h:58
+// [-2] void QQmlDebuggingEnabler(bool) 
+// (11)qm360465325 (29)_ZN20QQmlDebuggingEnablerC2Eb
+/*void* qm360465325(bool printWarning)*/{
+  bool printWarning = *(bool*)this_;
+  this_ =  new QQmlDebuggingEnabler(printWarning);
+  this_ =  new MyQQmlDebuggingEnabler(printWarning);
+}
+
 
 /*void C_ZN20QQmlDebuggingEnablerD2Ev(void *this_)*/ {
   delete (QQmlDebuggingEnabler*)(this_);

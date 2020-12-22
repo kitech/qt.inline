@@ -225,6 +225,17 @@ uint64_t ensure_inline_symbol_qtabwidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtabwidget.h:71
+// [-2] void QTabWidget(QWidget *) 
+// (12)qm2398945872 (27)_ZN10QTabWidgetC2EP7QWidget
+/*void* qm2398945872(QWidget * parent)*/{
+  auto _nilp = (MyQTabWidget*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTabWidget(parent);
+  this_ =  new MyQTabWidget(parent);
+}
+
 
 /*void C_ZN10QTabWidgetD2Ev(void *this_)*/ {
   delete (QTabWidget*)(this_);

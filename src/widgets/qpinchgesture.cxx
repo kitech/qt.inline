@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qpinchgesture(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:165
+// [-2] void QPinchGesture(QObject *) 
+// (12)qm3745096018 (30)_ZN13QPinchGestureC2EP7QObject
+/*void* qm3745096018(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QPinchGesture(parent);
+  this_ =  new MyQPinchGesture(parent);
+}
+
 
 /*void C_ZN13QPinchGestureD2Ev(void *this_)*/ {
   delete (QPinchGesture*)(this_);

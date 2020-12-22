@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qgenericreturnargument(void* this_) {
 /*void* qm685887590(const char * aName, void * aData)*/{
   const char * aName = *(const char **)this_; void * aData = *(void **)this_;
   this_ =  new QGenericReturnArgument(aName, aData);
+  this_ =  new MyQGenericReturnArgument(aName, aData);
 }
 
 

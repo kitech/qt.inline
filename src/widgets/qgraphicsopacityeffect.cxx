@@ -140,6 +140,17 @@ uint64_t ensure_inline_symbol_qgraphicsopacityeffect(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:258
+// [-2] void QGraphicsOpacityEffect(QObject *) 
+// (12)qm2558002463 (39)_ZN22QGraphicsOpacityEffectC2EP7QObject
+/*void* qm2558002463(QObject * parent)*/{
+  auto _nilp = (MyQGraphicsOpacityEffect*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsOpacityEffect(parent);
+  this_ =  new MyQGraphicsOpacityEffect(parent);
+}
+
 
 /*void C_ZN22QGraphicsOpacityEffectD2Ev(void *this_)*/ {
   delete (QGraphicsOpacityEffect*)(this_);

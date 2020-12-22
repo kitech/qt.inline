@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfileopenevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:780
+// [-2] void QFileOpenEvent(const QString &) 
+// (12)qm3741341417 (32)_ZN14QFileOpenEventC2ERK7QString
+/*void* qm3741341417(const QString & file)*/{
+  const QString & file = *(const QString *)this_;
+  this_ =  new QFileOpenEvent(file);
+  this_ =  new MyQFileOpenEvent(file);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:781
+// [-2] void QFileOpenEvent(const QUrl &) 
+// (12)qm2717622172 (29)_ZN14QFileOpenEventC2ERK4QUrl
+/*void* qm2717622172(const QUrl & url)*/{
+  const QUrl & url = *(const QUrl *)this_;
+  this_ =  new QFileOpenEvent(url);
+  this_ =  new MyQFileOpenEvent(url);
+}
+
 // Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:784
 // [8] QString file() const

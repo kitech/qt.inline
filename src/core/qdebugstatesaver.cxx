@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdebugstatesaver(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdebug.h:184
+// [-2] void QDebugStateSaver(QDebug &) 
+// (11)qm700760093 (32)_ZN16QDebugStateSaverC2ER6QDebug
+/*void* qm700760093(QDebug & dbg)*/{
+  QDebug & dbg = *(QDebug *)this_;
+  this_ =  new QDebugStateSaver(dbg);
+  this_ =  new MyQDebugStateSaver(dbg);
+}
+
 
 /*void C_ZN16QDebugStateSaverD2Ev(void *this_)*/ {
   delete (QDebugStateSaver*)(this_);

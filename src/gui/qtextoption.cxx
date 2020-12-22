@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextoption(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:85
+// [-2] void QTextOption() 
+// (12)qm1571547807 (20)_ZN11QTextOptionC2Ev
+/*void* qm1571547807()*/{
+  ;
+  this_ =  new QTextOption();
+  this_ =  new MyQTextOption();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:86
+// [-2] void QTextOption(Qt::Alignment) 
+// (12)qm1397842795 (48)_ZN11QTextOptionC2E6QFlagsIN2Qt13AlignmentFlagEE
+/*void* qm1397842795(QFlags<Qt::AlignmentFlag> alignment)*/{
+  QFlags<Qt::AlignmentFlag> alignment = *(QFlags<Qt::AlignmentFlag>*)this_;
+  this_ =  new QTextOption(alignment);
+  this_ =  new MyQTextOption(alignment);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextoption.h:89
+// [-2] void QTextOption(const QTextOption &) 
+// (12)qm3578158910 (23)_ZN11QTextOptionC2ERKS_
+/*void* qm3578158910(const QTextOption & o)*/{
+  const QTextOption & o = *(const QTextOption *)this_;
+  this_ =  new QTextOption(o);
+  this_ =  new MyQTextOption(o);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextoption.h:92
 // [-2] void setAlignment(Qt::Alignment) 

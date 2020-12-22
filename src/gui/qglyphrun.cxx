@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qglyphrun(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:67
+// [-2] void QGlyphRun() 
+// (12)qm1002566156 (17)_ZN9QGlyphRunC2Ev
+/*void* qm1002566156()*/{
+  ;
+  this_ =  new QGlyphRun();
+  this_ =  new MyQGlyphRun();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qglyphrun.h:68
+// [-2] void QGlyphRun(const QGlyphRun &) 
+// (10)qm91179502 (20)_ZN9QGlyphRunC2ERKS_
+/*void* qm91179502(const QGlyphRun & other)*/{
+  const QGlyphRun & other = *(const QGlyphRun *)this_;
+  this_ =  new QGlyphRun(other);
+  this_ =  new MyQGlyphRun(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qglyphrun.h:69
 // [8] QGlyphRun & operator=(QGlyphRun &&) 

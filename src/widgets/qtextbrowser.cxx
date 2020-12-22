@@ -226,6 +226,17 @@ uint64_t ensure_inline_symbol_qtextbrowser(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextbrowser.h:67
+// [-2] void QTextBrowser(QWidget *) 
+// (12)qm1140391296 (29)_ZN12QTextBrowserC2EP7QWidget
+/*void* qm1140391296(QWidget * parent)*/{
+  auto _nilp = (MyQTextBrowser*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTextBrowser(parent);
+  this_ =  new MyQTextBrowser(parent);
+}
+
 
 /*void C_ZN12QTextBrowserD2Ev(void *this_)*/ {
   delete (QTextBrowser*)(this_);

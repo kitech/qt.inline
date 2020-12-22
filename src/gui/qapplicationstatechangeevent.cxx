@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qapplicationstatechangeevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:1111
+// [-2] void QApplicationStateChangeEvent(Qt::ApplicationState) 
+// (12)qm1768008204 (59)_ZN28QApplicationStateChangeEventC2EN2Qt16ApplicationStateE
+/*void* qm1768008204(Qt::ApplicationState state)*/{
+  Qt::ApplicationState state = *(Qt::ApplicationState*)this_;
+  this_ =  new QApplicationStateChangeEvent(state);
+  this_ =  new MyQApplicationStateChangeEvent(state);
+}
+
 
 /*void C_ZN28QApplicationStateChangeEventD2Ev(void *this_)*/ {
   delete (QApplicationStateChangeEvent*)(this_);

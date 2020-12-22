@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qpangesture(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgesture.h:117
+// [-2] void QPanGesture(QObject *) 
+// (12)qm4125798389 (28)_ZN11QPanGestureC2EP7QObject
+/*void* qm4125798389(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QPanGesture(parent);
+  this_ =  new MyQPanGesture(parent);
+}
+
 
 /*void C_ZN11QPanGestureD2Ev(void *this_)*/ {
   delete (QPanGesture*)(this_);

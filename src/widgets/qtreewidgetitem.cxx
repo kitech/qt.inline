@@ -75,6 +75,96 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:67
+// [-2] void QTreeWidgetItem(int) 
+// (12)qm4103294711 (24)_ZN15QTreeWidgetItemC2Ei
+/*void* qm4103294711(int type_)*/{
+  int type_ = *(int*)this_;
+  this_ =  new QTreeWidgetItem(type_);
+  this_ =  new MyQTreeWidgetItem(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:68
+// [-2] void QTreeWidgetItem(const QStringList &, int) 
+// (12)qm2817782461 (39)_ZN15QTreeWidgetItemC2ERK11QStringListi
+/*void* qm2817782461(const QStringList & strings, int type_)*/{
+  const QStringList & strings = *(const QStringList *)this_; int type_ = *(int*)this_;
+  this_ =  new QTreeWidgetItem(strings, type_);
+  this_ =  new MyQTreeWidgetItem(strings, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:69
+// [-2] void QTreeWidgetItem(QTreeWidget *, int) 
+// (12)qm3483897186 (38)_ZN15QTreeWidgetItemC2EP11QTreeWidgeti
+/*void* qm3483897186(QTreeWidget * treeview, int type_)*/{
+  QTreeWidget * treeview = *(QTreeWidget **)this_; int type_ = *(int*)this_;
+  this_ =  new QTreeWidgetItem(treeview, type_);
+  this_ =  new MyQTreeWidgetItem(treeview, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:70
+// [-2] void QTreeWidgetItem(QTreeWidget *, const QStringList &, int) 
+// (11)qm641872238 (53)_ZN15QTreeWidgetItemC2EP11QTreeWidgetRK11QStringListi
+/*void* qm641872238(QTreeWidget * treeview, const QStringList & strings, int type_)*/{
+  QTreeWidget * treeview = *(QTreeWidget **)this_; const QStringList & strings = *(const QStringList *)this_; int type_ = *(int*)this_;
+  this_ =  new QTreeWidgetItem(treeview, strings, type_);
+  this_ =  new MyQTreeWidgetItem(treeview, strings, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:71
+// [-2] void QTreeWidgetItem(QTreeWidget *, QTreeWidgetItem *, int) 
+// (11)qm858074273 (41)_ZN15QTreeWidgetItemC2EP11QTreeWidgetPS_i
+/*void* qm858074273(QTreeWidget * treeview, QTreeWidgetItem * after, int type_)*/{
+  QTreeWidget * treeview = *(QTreeWidget **)this_; QTreeWidgetItem * after = *(QTreeWidgetItem **)this_; int type_ = *(int*)this_;
+  this_ =  new QTreeWidgetItem(treeview, after, type_);
+  this_ =  new MyQTreeWidgetItem(treeview, after, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:72
+// [-2] void QTreeWidgetItem(QTreeWidgetItem *, int) 
+// (12)qm2728567651 (27)_ZN15QTreeWidgetItemC2EPS_i
+/*void* qm2728567651(QTreeWidgetItem * parent, int type_)*/{
+  QTreeWidgetItem * parent = *(QTreeWidgetItem **)this_; int type_ = *(int*)this_;
+  this_ =  new QTreeWidgetItem(parent, type_);
+  this_ =  new MyQTreeWidgetItem(parent, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:73
+// [-2] void QTreeWidgetItem(QTreeWidgetItem *, const QStringList &, int) 
+// (12)qm2526487548 (42)_ZN15QTreeWidgetItemC2EPS_RK11QStringListi
+/*void* qm2526487548(QTreeWidgetItem * parent, const QStringList & strings, int type_)*/{
+  QTreeWidgetItem * parent = *(QTreeWidgetItem **)this_; const QStringList & strings = *(const QStringList *)this_; int type_ = *(int*)this_;
+  this_ =  new QTreeWidgetItem(parent, strings, type_);
+  this_ =  new MyQTreeWidgetItem(parent, strings, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:74
+// [-2] void QTreeWidgetItem(QTreeWidgetItem *, QTreeWidgetItem *, int) 
+// (12)qm3130188821 (30)_ZN15QTreeWidgetItemC2EPS_S0_i
+/*void* qm3130188821(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type_)*/{
+  QTreeWidgetItem * parent = *(QTreeWidgetItem **)this_; QTreeWidgetItem * after = *(QTreeWidgetItem **)this_; int type_ = *(int*)this_;
+  this_ =  new QTreeWidgetItem(parent, after, type_);
+  this_ =  new MyQTreeWidgetItem(parent, after, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidget.h:75
+// [-2] void QTreeWidgetItem(const QTreeWidgetItem &) 
+// (12)qm2039563189 (27)_ZN15QTreeWidgetItemC2ERKS_
+/*void* qm2039563189(const QTreeWidgetItem & other)*/{
+  const QTreeWidgetItem & other = *(const QTreeWidgetItem *)this_;
+  this_ =  new QTreeWidgetItem(other);
+  this_ =  new MyQTreeWidgetItem(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidget.h:80
 // [8] QTreeWidget * treeWidget() const

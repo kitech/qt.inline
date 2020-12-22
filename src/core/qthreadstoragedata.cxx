@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qthreadstoragedata(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qthreadstorage.h:53
+// [-2] void QThreadStorageData(void (*)(void *)) 
+// (11)qm775063539 (32)_ZN18QThreadStorageDataC2EPFvPvE
+/*void* qm775063539(void (*)(void *) func_)*/{
+  void (*func_)(void *) = (void (*)(void *))this_;
+  this_ =  new QThreadStorageData(func_);
+  this_ =  new MyQThreadStorageData(func_);
+}
+
 
 /*void C_ZN18QThreadStorageDataD2Ev(void *this_)*/ {
   delete (QThreadStorageData*)(this_);

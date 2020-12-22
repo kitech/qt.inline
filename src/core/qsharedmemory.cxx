@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qsharedmemory(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsharedmemory.h:89
+// [-2] void QSharedMemory(QObject *) 
+// (12)qm3951913213 (30)_ZN13QSharedMemoryC2EP7QObject
+/*void* qm3951913213(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSharedMemory(parent);
+  this_ =  new MyQSharedMemory(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsharedmemory.h:90
+// [-2] void QSharedMemory(const QString &, QObject *) 
+// (12)qm2032452509 (40)_ZN13QSharedMemoryC2ERK7QStringP7QObject
+/*void* qm2032452509(const QString & key, QObject * parent)*/{
+  const QString & key = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSharedMemory(key, parent);
+  this_ =  new MyQSharedMemory(key, parent);
+}
+
 
 /*void C_ZN13QSharedMemoryD2Ev(void *this_)*/ {
   delete (QSharedMemory*)(this_);

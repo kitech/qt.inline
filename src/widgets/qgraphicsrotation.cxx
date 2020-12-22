@@ -128,6 +128,16 @@ uint64_t ensure_inline_symbol_qgraphicsrotation(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicstransform.h:126
+// [-2] void QGraphicsRotation(QObject *) 
+// (12)qm4161771606 (34)_ZN17QGraphicsRotationC2EP7QObject
+/*void* qm4161771606(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsRotation(parent);
+  this_ =  new MyQGraphicsRotation(parent);
+}
+
 
 /*void C_ZN17QGraphicsRotationD2Ev(void *this_)*/ {
   delete (QGraphicsRotation*)(this_);

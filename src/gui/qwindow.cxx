@@ -345,6 +345,28 @@ uint64_t ensure_inline_symbol_qwindow(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qwindow.h:145
+// [-2] void QWindow(QScreen *) 
+// (12)qm3034850781 (23)_ZN7QWindowC2EP7QScreen
+/*void* qm3034850781(QScreen * screen)*/{
+  auto _nilp = (MyQWindow*)(0);
+  QScreen * screen = *(QScreen **)this_;
+  this_ =  new QWindow(screen);
+  this_ =  new MyQWindow(screen);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qwindow.h:146
+// [-2] void QWindow(QWindow *) 
+// (11)qm836361135 (17)_ZN7QWindowC2EPS_
+/*void* qm836361135(QWindow * parent)*/{
+  auto _nilp = (MyQWindow*)(0);
+  QWindow * parent = *(QWindow **)this_;
+  this_ =  new QWindow(parent);
+  this_ =  new MyQWindow(parent);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qwindow.h:207
 // [4] int minimumWidth() const

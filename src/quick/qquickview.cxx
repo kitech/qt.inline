@@ -215,6 +215,50 @@ uint64_t ensure_inline_symbol_qquickview(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:62
+// [-2] void QQuickView(QWindow *) 
+// (12)qm2205093626 (27)_ZN10QQuickViewC2EP7QWindow
+/*void* qm2205093626(QWindow * parent)*/{
+  auto _nilp = (MyQQuickView*)(0);
+  QWindow * parent = *(QWindow **)this_;
+  this_ =  new QQuickView(parent);
+  this_ =  new MyQQuickView(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:63
+// [-2] void QQuickView(QQmlEngine *, QWindow *) 
+// (12)qm4235128284 (40)_ZN10QQuickViewC2EP10QQmlEngineP7QWindow
+/*void* qm4235128284(QQmlEngine * engine, QWindow * parent)*/{
+  auto _nilp = (MyQQuickView*)(0);
+  QQmlEngine * engine = *(QQmlEngine **)this_; QWindow * parent = *(QWindow **)this_;
+  this_ =  new QQuickView(engine, parent);
+  this_ =  new MyQQuickView(engine, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:64
+// [-2] void QQuickView(const QUrl &, QWindow *) 
+// (11)qm693196218 (34)_ZN10QQuickViewC2ERK4QUrlP7QWindow
+/*void* qm693196218(const QUrl & source, QWindow * parent)*/{
+  auto _nilp = (MyQQuickView*)(0);
+  const QUrl & source = *(const QUrl *)this_; QWindow * parent = *(QWindow **)this_;
+  this_ =  new QQuickView(source, parent);
+  this_ =  new MyQQuickView(source, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickview.h:65
+// [-2] void QQuickView(const QUrl &, QQuickRenderControl *) 
+// (12)qm1731419650 (47)_ZN10QQuickViewC2ERK4QUrlP19QQuickRenderControl
+/*void* qm1731419650(const QUrl & source, QQuickRenderControl * renderControl)*/{
+  auto _nilp = (MyQQuickView*)(0);
+  const QUrl & source = *(const QUrl *)this_; QQuickRenderControl * renderControl = *(QQuickRenderControl **)this_;
+  this_ =  new QQuickView(source, renderControl);
+  this_ =  new MyQQuickView(source, renderControl);
+}
+
 
 /*void C_ZN10QQuickViewD2Ev(void *this_)*/ {
   delete (QQuickView*)(this_);

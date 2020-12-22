@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qaudioencodersettings(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:58
+// [-2] void QAudioEncoderSettings() 
+// (11)qm273898256 (30)_ZN21QAudioEncoderSettingsC2Ev
+/*void* qm273898256()*/{
+  ;
+  this_ =  new QAudioEncoderSettings();
+  this_ =  new MyQAudioEncoderSettings();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaencodersettings.h:59
+// [-2] void QAudioEncoderSettings(const QAudioEncoderSettings &) 
+// (12)qm1905780249 (33)_ZN21QAudioEncoderSettingsC2ERKS_
+/*void* qm1905780249(const QAudioEncoderSettings & other)*/{
+  const QAudioEncoderSettings & other = *(const QAudioEncoderSettings *)this_;
+  this_ =  new QAudioEncoderSettings(other);
+  this_ =  new MyQAudioEncoderSettings(other);
+}
+
 
 /*void C_ZN21QAudioEncoderSettingsD2Ev(void *this_)*/ {
   delete (QAudioEncoderSettings*)(this_);

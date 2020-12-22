@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptionfocusrect(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:119
+// [-2] void QStyleOptionFocusRect() 
+// (12)qm1436176151 (30)_ZN21QStyleOptionFocusRectC2Ev
+/*void* qm1436176151()*/{
+  ;
+  this_ =  new QStyleOptionFocusRect();
+  this_ =  new MyQStyleOptionFocusRect();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:120
 // [-2] void QStyleOptionFocusRect(const QStyleOptionFocusRect &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptionfocusrect(void* this_) {
 /*void* qm3100532120(const QStyleOptionFocusRect & other)*/{
   const QStyleOptionFocusRect & other = *(const QStyleOptionFocusRect *)this_;
   this_ =  new QStyleOptionFocusRect(other);
+  this_ =  new MyQStyleOptionFocusRect(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

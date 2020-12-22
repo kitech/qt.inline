@@ -138,6 +138,17 @@ uint64_t ensure_inline_symbol_qradiodata(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qradiodata.h:85
+// [-2] void QRadioData(QMediaObject *, QObject *) 
+// (11)qm206039631 (42)_ZN10QRadioDataC2EP12QMediaObjectP7QObject
+/*void* qm206039631(QMediaObject * mediaObject, QObject * parent)*/{
+  auto _nilp = (MyQRadioData*)(0);
+  QMediaObject * mediaObject = *(QMediaObject **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QRadioData(mediaObject, parent);
+  this_ =  new MyQRadioData(mediaObject, parent);
+}
+
 
 /*void C_ZN10QRadioDataD2Ev(void *this_)*/ {
   delete (QRadioData*)(this_);

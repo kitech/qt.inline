@@ -73,6 +73,17 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicsanchorlayout(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsanchorlayout.h:78
+// [-2] void QGraphicsAnchorLayout(QGraphicsLayoutItem *) 
+// (12)qm1656068766 (51)_ZN21QGraphicsAnchorLayoutC2EP19QGraphicsLayoutItem
+/*void* qm1656068766(QGraphicsLayoutItem * parent)*/{
+  auto _nilp = (MyQGraphicsAnchorLayout*)(0);
+  QGraphicsLayoutItem * parent = *(QGraphicsLayoutItem **)this_;
+  this_ =  new QGraphicsAnchorLayout(parent);
+  this_ =  new MyQGraphicsAnchorLayout(parent);
+}
+
 
 /*void C_ZN21QGraphicsAnchorLayoutD2Ev(void *this_)*/ {
   delete (QGraphicsAnchorLayout*)(this_);

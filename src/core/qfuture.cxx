@@ -61,24 +61,6 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfuture(void* this_) {
   uint64_t fnptrsumval = 0;
 
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuture.h:231
-// [-2] void QFuture() 
-// (11)qm565629540 (18)_ZN7QFutureIvEC2Ev
-/*void* qm565629540()*/{
-  ;
-  this_ =  new QFuture<void>();
-}
-
-// Public inline Visibility=Default Availability=Available
-// /usr/include/qt/QtCore/qfuture.h:234
-// [-2] void QFuture(QFutureInterfaceBase *) 
-// (12)qm2810721255 (40)_ZN7QFutureIvEC2EP20QFutureInterfaceBase
-/*void* qm2810721255(QFutureInterfaceBase * p)*/{
-  QFutureInterfaceBase * p = *(QFutureInterfaceBase **)this_;
-  this_ =  new QFuture<void>(p);
-}
-
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qfuture.h:238
 // [1] bool operator==(const QFuture<void> &) const

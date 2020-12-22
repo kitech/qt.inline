@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfontdatabase(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontdatabase.h:118
+// [-2] void QFontDatabase() 
+// (12)qm1247138191 (22)_ZN13QFontDatabaseC2Ev
+/*void* qm1247138191()*/{
+  ;
+  this_ =  new QFontDatabase();
+  this_ =  new MyQFontDatabase();
+}
+
 
 /*void C_ZN13QFontDatabaseD2Ev(void *this_)*/ {
   delete (QFontDatabase*)(this_);

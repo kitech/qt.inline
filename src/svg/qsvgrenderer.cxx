@@ -131,6 +131,46 @@ uint64_t ensure_inline_symbol_qsvgrenderer(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtSvg/qsvgrenderer.h:70
+// [-2] void QSvgRenderer(QObject *) 
+// (11)qm581069645 (29)_ZN12QSvgRendererC2EP7QObject
+/*void* qm581069645(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSvgRenderer(parent);
+  this_ =  new MyQSvgRenderer(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtSvg/qsvgrenderer.h:71
+// [-2] void QSvgRenderer(const QString &, QObject *) 
+// (12)qm3079462595 (39)_ZN12QSvgRendererC2ERK7QStringP7QObject
+/*void* qm3079462595(const QString & filename, QObject * parent)*/{
+  const QString & filename = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSvgRenderer(filename, parent);
+  this_ =  new MyQSvgRenderer(filename, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtSvg/qsvgrenderer.h:72
+// [-2] void QSvgRenderer(const QByteArray &, QObject *) 
+// (12)qm1006773911 (43)_ZN12QSvgRendererC2ERK10QByteArrayP7QObject
+/*void* qm1006773911(const QByteArray & contents, QObject * parent)*/{
+  const QByteArray & contents = *(const QByteArray *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSvgRenderer(contents, parent);
+  this_ =  new MyQSvgRenderer(contents, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtSvg/qsvgrenderer.h:73
+// [-2] void QSvgRenderer(QXmlStreamReader *, QObject *) 
+// (12)qm2093721650 (48)_ZN12QSvgRendererC2EP16QXmlStreamReaderP7QObject
+/*void* qm2093721650(QXmlStreamReader * contents, QObject * parent)*/{
+  QXmlStreamReader * contents = *(QXmlStreamReader **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSvgRenderer(contents, parent);
+  this_ =  new MyQSvgRenderer(contents, parent);
+}
+
 
 /*void C_ZN12QSvgRendererD2Ev(void *this_)*/ {
   delete (QSvgRenderer*)(this_);

@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qopenglvertexarrayobject(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglvertexarrayobject.h:59
+// [-2] void QOpenGLVertexArrayObject(QObject *) 
+// (12)qm2237782313 (41)_ZN24QOpenGLVertexArrayObjectC2EP7QObject
+/*void* qm2237782313(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QOpenGLVertexArrayObject(parent);
+  this_ =  new MyQOpenGLVertexArrayObject(parent);
+}
+
 
 /*void C_ZN24QOpenGLVertexArrayObjectD2Ev(void *this_)*/ {
   delete (QOpenGLVertexArrayObject*)(this_);

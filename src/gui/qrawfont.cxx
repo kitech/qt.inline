@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qrawfont(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:74
+// [-2] void QRawFont() 
+// (12)qm2410357999 (16)_ZN8QRawFontC2Ev
+/*void* qm2410357999()*/{
+  ;
+  this_ =  new QRawFont();
+  this_ =  new MyQRawFont();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:75
+// [-2] void QRawFont(const QString &, qreal, QFont::HintingPreference) 
+// (12)qm2375333881 (53)_ZN8QRawFontC2ERK7QStringdN5QFont17HintingPreferenceE
+/*void* qm2375333881(const QString & fileName, double pixelSize, QFont::HintingPreference hintingPreference)*/{
+  const QString & fileName = *(const QString *)this_; double pixelSize = *(double*)this_; QFont::HintingPreference hintingPreference = *(QFont::HintingPreference*)this_;
+  this_ =  new QRawFont(fileName, pixelSize, hintingPreference);
+  this_ =  new MyQRawFont(fileName, pixelSize, hintingPreference);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:78
+// [-2] void QRawFont(const QByteArray &, qreal, QFont::HintingPreference) 
+// (12)qm3687950224 (57)_ZN8QRawFontC2ERK10QByteArraydN5QFont17HintingPreferenceE
+/*void* qm3687950224(const QByteArray & fontData, double pixelSize, QFont::HintingPreference hintingPreference)*/{
+  const QByteArray & fontData = *(const QByteArray *)this_; double pixelSize = *(double*)this_; QFont::HintingPreference hintingPreference = *(QFont::HintingPreference*)this_;
+  this_ =  new QRawFont(fontData, pixelSize, hintingPreference);
+  this_ =  new MyQRawFont(fontData, pixelSize, hintingPreference);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qrawfont.h:81
+// [-2] void QRawFont(const QRawFont &) 
+// (12)qm3570322812 (19)_ZN8QRawFontC2ERKS_
+/*void* qm3570322812(const QRawFont & other)*/{
+  const QRawFont & other = *(const QRawFont *)this_;
+  this_ =  new QRawFont(other);
+  this_ =  new MyQRawFont(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qrawfont.h:82
 // [8] QRawFont & operator=(QRawFont &&) 

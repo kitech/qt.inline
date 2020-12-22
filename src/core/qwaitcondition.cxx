@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwaitcondition(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qwaitcondition.h:56
+// [-2] void QWaitCondition() 
+// (12)qm3530368176 (23)_ZN14QWaitConditionC2Ev
+/*void* qm3530368176()*/{
+  ;
+  this_ =  new QWaitCondition();
+  this_ =  new MyQWaitCondition();
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qwaitcondition.h:70
 // [-2] void notify_one() 

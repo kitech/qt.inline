@@ -155,6 +155,28 @@ uint64_t ensure_inline_symbol_qmouseeventtransition(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmouseeventtransition.h:58
+// [-2] void QMouseEventTransition(QState *) 
+// (12)qm1685108666 (37)_ZN21QMouseEventTransitionC2EP6QState
+/*void* qm1685108666(QState * sourceState)*/{
+  auto _nilp = (MyQMouseEventTransition*)(0);
+  QState * sourceState = *(QState **)this_;
+  this_ =  new QMouseEventTransition(sourceState);
+  this_ =  new MyQMouseEventTransition(sourceState);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmouseeventtransition.h:59
+// [-2] void QMouseEventTransition(QObject *, QEvent::Type, Qt::MouseButton, QState *) 
+// (12)qm3404188469 (78)_ZN21QMouseEventTransitionC2EP7QObjectN6QEvent4TypeEN2Qt11MouseButtonEP6QState
+/*void* qm3404188469(QObject * object, QEvent::Type type_, Qt::MouseButton button, QState * sourceState)*/{
+  auto _nilp = (MyQMouseEventTransition*)(0);
+  QObject * object = *(QObject **)this_; QEvent::Type type_ = *(QEvent::Type*)this_; Qt::MouseButton button = *(Qt::MouseButton*)this_; QState * sourceState = *(QState **)this_;
+  this_ =  new QMouseEventTransition(object, type_, button, sourceState);
+  this_ =  new MyQMouseEventTransition(object, type_, button, sourceState);
+}
+
 
 /*void C_ZN21QMouseEventTransitionD2Ev(void *this_)*/ {
   delete (QMouseEventTransition*)(this_);

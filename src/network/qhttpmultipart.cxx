@@ -130,6 +130,26 @@ uint64_t ensure_inline_symbol_qhttpmultipart(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:101
+// [-2] void QHttpMultiPart(QObject *) 
+// (12)qm2888209190 (31)_ZN14QHttpMultiPartC2EP7QObject
+/*void* qm2888209190(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QHttpMultiPart(parent);
+  this_ =  new MyQHttpMultiPart(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhttpmultipart.h:102
+// [-2] void QHttpMultiPart(QHttpMultiPart::ContentType, QObject *) 
+// (12)qm3114438703 (48)_ZN14QHttpMultiPartC2ENS_11ContentTypeEP7QObject
+/*void* qm3114438703(QHttpMultiPart::ContentType contentType, QObject * parent)*/{
+  QHttpMultiPart::ContentType contentType = *(QHttpMultiPart::ContentType*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QHttpMultiPart(contentType, parent);
+  this_ =  new MyQHttpMultiPart(contentType, parent);
+}
+
 
 /*void C_ZN14QHttpMultiPartD2Ev(void *this_)*/ {
   delete (QHttpMultiPart*)(this_);

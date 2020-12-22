@@ -32,3 +32,10 @@ char* C_QMetaObject_getEnumItemName(void* this_, char* enumName,  int value) {
     QMetaEnum e = rthis->enumerator(enumIdx);
     return (char*)e.valueToKey(value);
 }
+
+extern "C" Q_DECL_EXPORT
+int C_dump_comandline() {
+    QStringList args = QCoreApplication::arguments();
+    qDebug()<<args.length()<<args;
+    return args.length();
+}

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstatustipevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:742
+// [-2] void QStatusTipEvent(const QString &) 
+// (12)qm2062511105 (33)_ZN15QStatusTipEventC2ERK7QString
+/*void* qm2062511105(const QString & tip)*/{
+  const QString & tip = *(const QString *)this_;
+  this_ =  new QStatusTipEvent(tip);
+  this_ =  new MyQStatusTipEvent(tip);
+}
+
 // Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:745
 // [8] QString tip() const

@@ -83,6 +83,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm1574451635()*/{
   ;
   this_ =  new QChar();
+  this_ =  new MyQChar();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -92,6 +93,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm3017169055(unsigned short rc)*/{
   unsigned short rc = *(unsigned short*)this_;
   this_ =  new QChar(rc);
+  this_ =  new MyQChar(rc);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -101,6 +103,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm387908407(unsigned char c, unsigned char r)*/{
   unsigned char c = *(unsigned char*)this_; unsigned char r = *(unsigned char*)this_;
   this_ =  new QChar(c, r);
+  this_ =  new MyQChar(c, r);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -110,6 +113,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm766692668(short rc)*/{
   short rc = *(short*)this_;
   this_ =  new QChar(rc);
+  this_ =  new MyQChar(rc);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -119,6 +123,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm1238984188(unsigned int rc)*/{
   unsigned int rc = *(unsigned int*)this_;
   this_ =  new QChar(rc);
+  this_ =  new MyQChar(rc);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -128,6 +133,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm3503305798(int rc)*/{
   int rc = *(int*)this_;
   this_ =  new QChar(rc);
+  this_ =  new MyQChar(rc);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -137,6 +143,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm1755695445(QChar::SpecialCharacter s)*/{
   QChar::SpecialCharacter s = *(QChar::SpecialCharacter*)this_;
   this_ =  new QChar(s);
+  this_ =  new MyQChar(s);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -146,6 +153,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm1216774710(QLatin1Char ch)*/{
   QLatin1Char ch = *(QLatin1Char*)this_;
   this_ =  new QChar(ch);
+  this_ =  new MyQChar(ch);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -155,6 +163,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm2756419957(char16_t ch)*/{
   char16_t ch = *(char16_t*)this_;
   this_ =  new QChar(ch);
+  this_ =  new MyQChar(ch);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -164,6 +173,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm805690712(char c)*/{
   char c = *(char*)this_;
   this_ =  new QChar(c);
+  this_ =  new MyQChar(c);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -173,6 +183,7 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm2815886544(unsigned char c)*/{
   unsigned char c = *(unsigned char*)this_;
   this_ =  new QChar(c);
+  this_ =  new MyQChar(c);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

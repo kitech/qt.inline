@@ -264,6 +264,28 @@ uint64_t ensure_inline_symbol_qlabel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlabel.h:70
+// [-2] void QLabel(QWidget *, Qt::WindowFlags) 
+// (12)qm3619358992 (48)_ZN6QLabelC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm3619358992(QWidget * parent, QFlags<Qt::WindowType> f)*/{
+  auto _nilp = (MyQLabel*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> f = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QLabel(parent, f);
+  this_ =  new MyQLabel(parent, f);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlabel.h:71
+// [-2] void QLabel(const QString &, QWidget *, Qt::WindowFlags) 
+// (11)qm199160535 (58)_ZN6QLabelC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm199160535(const QString & text, QWidget * parent, QFlags<Qt::WindowType> f)*/{
+  auto _nilp = (MyQLabel*)(0);
+  const QString & text = *(const QString *)this_; QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> f = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QLabel(text, parent, f);
+  this_ =  new MyQLabel(text, parent, f);
+}
+
 
 /*void C_ZN6QLabelD2Ev(void *this_)*/ {
   delete (QLabel*)(this_);

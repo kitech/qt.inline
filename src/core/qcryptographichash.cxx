@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcryptographichash(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcryptographichash.h:92
+// [-2] void QCryptographicHash(QCryptographicHash::Algorithm) 
+// (9)qm6962514 (40)_ZN18QCryptographicHashC2ENS_9AlgorithmE
+/*void* qm6962514(QCryptographicHash::Algorithm method)*/{
+  QCryptographicHash::Algorithm method = *(QCryptographicHash::Algorithm*)this_;
+  this_ =  new QCryptographicHash(method);
+  this_ =  new MyQCryptographicHash(method);
+}
+
 
 /*void C_ZN18QCryptographicHashD2Ev(void *this_)*/ {
   delete (QCryptographicHash*)(this_);

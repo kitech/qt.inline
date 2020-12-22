@@ -205,6 +205,39 @@ uint64_t ensure_inline_symbol_qmessagebox(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:135
+// [-2] void QMessageBox(QWidget *) 
+// (12)qm1228442212 (28)_ZN11QMessageBoxC2EP7QWidget
+/*void* qm1228442212(QWidget * parent)*/{
+  auto _nilp = (MyQMessageBox*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QMessageBox(parent);
+  this_ =  new MyQMessageBox(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:136
+// [-2] void QMessageBox(QMessageBox::Icon, const QString &, const QString &, QMessageBox::StandardButtons, QWidget *, Qt::WindowFlags) 
+// (12)qm3763294929 (101)_ZN11QMessageBoxC2ENS_4IconERK7QStringS3_6QFlagsINS_14StandardButtonEEP7QWidgetS4_IN2Qt10WindowTypeEE
+/*void* qm3763294929(QMessageBox::Icon icon, const QString & title, const QString & text, QFlags<QMessageBox::StandardButton> buttons, QWidget * parent, QFlags<Qt::WindowType> flags)*/{
+  auto _nilp = (MyQMessageBox*)(0);
+  QMessageBox::Icon icon = *(QMessageBox::Icon*)this_; const QString & title = *(const QString *)this_; const QString & text = *(const QString *)this_; QFlags<QMessageBox::StandardButton> buttons = *(QFlags<QMessageBox::StandardButton>*)this_; QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> flags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QMessageBox(icon, title, text, buttons, parent, flags);
+  this_ =  new MyQMessageBox(icon, title, text, buttons, parent, flags);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmessagebox.h:202
+// [-2] void QMessageBox(const QString &, const QString &, QMessageBox::Icon, int, int, int, QWidget *, Qt::WindowFlags) 
+// (12)qm3829830805 (79)_ZN11QMessageBoxC2ERK7QStringS2_NS_4IconEiiiP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm3829830805(const QString & title, const QString & text, QMessageBox::Icon icon, int button0, int button1, int button2, QWidget * parent, QFlags<Qt::WindowType> f)*/{
+  auto _nilp = (MyQMessageBox*)(0);
+  const QString & title = *(const QString *)this_; const QString & text = *(const QString *)this_; QMessageBox::Icon icon = *(QMessageBox::Icon*)this_; int button0 = *(int*)this_; int button1 = *(int*)this_; int button2 = *(int*)this_; QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> f = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QMessageBox(title, text, icon, button0, button1, button2, parent, f);
+  this_ =  new MyQMessageBox(title, text, icon, button0, button1, button2, parent, f);
+}
+
 // Public static inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qmessagebox.h:217
 // [4] QMessageBox::StandardButton information(QWidget *, const QString &, const QString &, QMessageBox::StandardButton, QMessageBox::StandardButton) 

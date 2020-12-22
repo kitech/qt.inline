@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:297
+// [-2] void QEvent(QEvent::Type) 
+// (12)qm2793188191 (22)_ZN6QEventC2ENS_4TypeE
+/*void* qm2793188191(QEvent::Type type_)*/{
+  QEvent::Type type_ = *(QEvent::Type*)this_;
+  this_ =  new QEvent(type_);
+  this_ =  new MyQEvent(type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:298
+// [-2] void QEvent(const QEvent &) 
+// (11)qm939091438 (17)_ZN6QEventC2ERKS_
+/*void* qm939091438(const QEvent & other)*/{
+  const QEvent & other = *(const QEvent *)this_;
+  this_ =  new QEvent(other);
+  this_ =  new MyQEvent(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:301
 // [4] QEvent::Type type() const

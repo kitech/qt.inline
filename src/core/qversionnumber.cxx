@@ -75,6 +75,7 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm2155026613()*/{
   ;
   this_ =  new QVersionNumber();
+  this_ =  new MyQVersionNumber();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -84,6 +85,7 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm957326860(const QVector<int> & seg)*/{
   const QVector<int> & seg = *(const QVector<int> *)this_;
   this_ =  new QVersionNumber(seg);
+  this_ =  new MyQVersionNumber(seg);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -93,6 +95,7 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm2433266494(QVector<int> && seg)*/{
   QVector<int> && seg =  static_cast<QVector<int> &&>(*(QVector<int> *)this_);
   this_ =  new QVersionNumber(seg);
+  this_ =  new MyQVersionNumber(seg);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -102,6 +105,7 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm3522872855(std::initializer_list<int> args)*/{
   std::initializer_list<int> args = *(std::initializer_list<int>*)this_;
   this_ =  new QVersionNumber(args);
+  this_ =  new MyQVersionNumber(args);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -111,6 +115,7 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm226170176(int maj)*/{
   int maj = *(int*)this_;
   this_ =  new QVersionNumber(maj);
+  this_ =  new MyQVersionNumber(maj);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -120,6 +125,7 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm2428308724(int maj, int min)*/{
   int maj = *(int*)this_; int min = *(int*)this_;
   this_ =  new QVersionNumber(maj, min);
+  this_ =  new MyQVersionNumber(maj, min);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -129,6 +135,7 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm1546435960(int maj, int min, int mic)*/{
   int maj = *(int*)this_; int min = *(int*)this_; int mic = *(int*)this_;
   this_ =  new QVersionNumber(maj, min, mic);
+  this_ =  new MyQVersionNumber(maj, min, mic);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

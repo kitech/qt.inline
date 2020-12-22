@@ -72,6 +72,96 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qhostaddress(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:94
+// [-2] void QHostAddress() 
+// (12)qm1360484773 (21)_ZN12QHostAddressC2Ev
+/*void* qm1360484773()*/{
+  ;
+  this_ =  new QHostAddress();
+  this_ =  new MyQHostAddress();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:95
+// [-2] void QHostAddress(quint32) 
+// (12)qm1159071210 (21)_ZN12QHostAddressC2Ej
+/*void* qm1159071210(unsigned int ip4Addr)*/{
+  unsigned int ip4Addr = *(unsigned int*)this_;
+  this_ =  new QHostAddress(ip4Addr);
+  this_ =  new MyQHostAddress(ip4Addr);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:96
+// [-2] void QHostAddress(quint8 *) 
+// (12)qm4099458557 (22)_ZN12QHostAddressC2EPh
+/*void* qm4099458557(unsigned char * ip6Addr)*/{
+  unsigned char * ip6Addr = *(unsigned char **)this_;
+  this_ =  new QHostAddress(ip6Addr);
+  this_ =  new MyQHostAddress(ip6Addr);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:97
+// [-2] void QHostAddress(const quint8 *) 
+// (12)qm3963267042 (23)_ZN12QHostAddressC2EPKh
+/*void* qm3963267042(const unsigned char * ip6Addr)*/{
+  const unsigned char * ip6Addr = *(const unsigned char **)this_;
+  this_ =  new QHostAddress(ip6Addr);
+  this_ =  new MyQHostAddress(ip6Addr);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:98
+// [-2] void QHostAddress(const Q_IPV6ADDR &) 
+// (12)qm1867986989 (36)_ZN12QHostAddressC2ERK12QIPv6Address
+/*void* qm1867986989(const QIPv6Address & ip6Addr)*/{
+  const QIPv6Address & ip6Addr = *(const QIPv6Address *)this_;
+  this_ =  new QHostAddress(ip6Addr);
+  this_ =  new MyQHostAddress(ip6Addr);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:99
+// [-2] void QHostAddress(const sockaddr *) 
+// (12)qm1345422088 (31)_ZN12QHostAddressC2EPK8sockaddr
+/*void* qm1345422088(const sockaddr * address)*/{
+  const sockaddr * address = *(const sockaddr **)this_;
+  this_ =  new QHostAddress(address);
+  this_ =  new MyQHostAddress(address);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:100
+// [-2] void QHostAddress(const QString &) 
+// (12)qm1609814745 (30)_ZN12QHostAddressC2ERK7QString
+/*void* qm1609814745(const QString & address)*/{
+  const QString & address = *(const QString *)this_;
+  this_ =  new QHostAddress(address);
+  this_ =  new MyQHostAddress(address);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:101
+// [-2] void QHostAddress(const QHostAddress &) 
+// (12)qm4052041128 (24)_ZN12QHostAddressC2ERKS_
+/*void* qm4052041128(const QHostAddress & copy)*/{
+  const QHostAddress & copy = *(const QHostAddress *)this_;
+  this_ =  new QHostAddress(copy);
+  this_ =  new MyQHostAddress(copy);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qhostaddress.h:102
+// [-2] void QHostAddress(QHostAddress::SpecialAddress) 
+// (12)qm1111210732 (40)_ZN12QHostAddressC2ENS_14SpecialAddressE
+/*void* qm1111210732(QHostAddress::SpecialAddress address)*/{
+  QHostAddress::SpecialAddress address = *(QHostAddress::SpecialAddress*)this_;
+  this_ =  new QHostAddress(address);
+  this_ =  new MyQHostAddress(address);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qhostaddress.h:105
 // [8] QHostAddress & operator=(QHostAddress &&) 

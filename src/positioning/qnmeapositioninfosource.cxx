@@ -138,6 +138,17 @@ uint64_t ensure_inline_symbol_qnmeapositioninfosource(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qnmeapositioninfosource.h:58
+// [-2] void QNmeaPositionInfoSource(QNmeaPositionInfoSource::UpdateMode, QObject *) 
+// (12)qm1390918116 (56)_ZN23QNmeaPositionInfoSourceC2ENS_10UpdateModeEP7QObject
+/*void* qm1390918116(QNmeaPositionInfoSource::UpdateMode updateMode, QObject * parent)*/{
+  auto _nilp = (MyQNmeaPositionInfoSource*)(0);
+  QNmeaPositionInfoSource::UpdateMode updateMode = *(QNmeaPositionInfoSource::UpdateMode*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QNmeaPositionInfoSource(updateMode, parent);
+  this_ =  new MyQNmeaPositionInfoSource(updateMode, parent);
+}
+
 
 /*void C_ZN23QNmeaPositionInfoSourceD2Ev(void *this_)*/ {
   delete (QNmeaPositionInfoSource*)(this_);

@@ -113,6 +113,7 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm1081993364()*/{
   ;
   this_ =  new QCborValue();
+  this_ =  new MyQCborValue();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -122,6 +123,7 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm2226603518(QCborValue::Type t_)*/{
   QCborValue::Type t_ = *(QCborValue::Type*)this_;
   this_ =  new QCborValue(t_);
+  this_ =  new MyQCborValue(t_);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -131,6 +133,7 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm1650122006(nullptr_t arg0)*/{
   nullptr_t arg0 = *(nullptr_t*)this_;
   this_ =  new QCborValue(arg0);
+  this_ =  new MyQCborValue(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -140,6 +143,7 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm1520909545(bool b_)*/{
   bool b_ = *(bool*)this_;
   this_ =  new QCborValue(b_);
+  this_ =  new MyQCborValue(b_);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -149,6 +153,7 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm3447055713(int i)*/{
   int i = *(int*)this_;
   this_ =  new QCborValue(i);
+  this_ =  new MyQCborValue(i);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -158,6 +163,7 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm1417458907(unsigned int u)*/{
   unsigned int u = *(unsigned int*)this_;
   this_ =  new QCborValue(u);
+  this_ =  new MyQCborValue(u);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -167,6 +173,7 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm2814756243(long long i)*/{
   long long i = *(long long*)this_;
   this_ =  new QCborValue(i);
+  this_ =  new MyQCborValue(i);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -176,6 +183,7 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm3016006108(double v)*/{
   double v = *(double*)this_;
   this_ =  new QCborValue(v);
+  this_ =  new MyQCborValue(v);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -185,6 +193,37 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm3914963924(QCborSimpleType st)*/{
   QCborSimpleType st = *(QCborSimpleType*)this_;
   this_ =  new QCborValue(st);
+  this_ =  new MyQCborValue(st);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:149
+// [-2] void QCborValue(const QByteArray &) 
+// (12)qm3825416724 (32)_ZN10QCborValueC2ERK10QByteArray
+/*void* qm3825416724(const QByteArray & ba)*/{
+  const QByteArray & ba = *(const QByteArray *)this_;
+  this_ =  new QCborValue(ba);
+  this_ =  new MyQCborValue(ba);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:151
+// [-2] void QCborValue(const QString &) 
+// (12)qm2611548900 (28)_ZN10QCborValueC2ERK7QString
+/*void* qm2611548900(const QString & s)*/{
+  const QString & s = *(const QString *)this_;
+  this_ =  new QCborValue(s);
+  this_ =  new MyQCborValue(s);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:154
+// [-2] void QCborValue(QLatin1String) 
+// (12)qm2940518584 (33)_ZN10QCborValueC2E13QLatin1String
+/*void* qm2940518584(QLatin1String s)*/{
+  QLatin1String s = *(QLatin1String*)this_;
+  this_ =  new QCborValue(s);
+  this_ =  new MyQCborValue(s);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -194,6 +233,17 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm30665640(const char * s)*/{
   const char * s = *(const char **)this_;
   this_ =  new QCborValue(s);
+  this_ =  new MyQCborValue(s);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:158
+// [-2] void QCborValue(const QCborArray &) 
+// (12)qm2846095677 (32)_ZN10QCborValueC2ERK10QCborArray
+/*void* qm2846095677(const QCborArray & a)*/{
+  const QCborArray & a = *(const QCborArray *)this_;
+  this_ =  new QCborValue(a);
+  this_ =  new MyQCborValue(a);
 }
 
 // Public Visibility=Default Availability=Available
@@ -203,6 +253,17 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm3442029931(QCborArray && a)*/{
   QCborArray && a =  static_cast<QCborArray &&>(*(QCborArray *)this_);
   this_ =  new QCborValue(a);
+  this_ =  new MyQCborValue(a);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:160
+// [-2] void QCborValue(const QCborMap &) 
+// (11)qm992640969 (29)_ZN10QCborValueC2ERK8QCborMap
+/*void* qm992640969(const QCborMap & m)*/{
+  const QCborMap & m = *(const QCborMap *)this_;
+  this_ =  new QCborValue(m);
+  this_ =  new MyQCborValue(m);
 }
 
 // Public Visibility=Default Availability=Available
@@ -212,6 +273,17 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm2232141528(QCborMap && m)*/{
   QCborMap && m =  static_cast<QCborMap &&>(*(QCborMap *)this_);
   this_ =  new QCborValue(m);
+  this_ =  new MyQCborValue(m);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:162
+// [-2] void QCborValue(QCborTag, const QCborValue &) 
+// (11)qm198481278 (31)_ZN10QCborValueC2E8QCborTagRKS_
+/*void* qm198481278(QCborTag tag, const QCborValue & taggedValue)*/{
+  QCborTag tag = *(QCborTag*)this_; const QCborValue & taggedValue = *(const QCborValue *)this_;
+  this_ =  new QCborValue(tag, taggedValue);
+  this_ =  new MyQCborValue(tag, taggedValue);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -221,6 +293,47 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm2596948014(QCborKnownTags t_, const QCborValue & tv)*/{
   QCborKnownTags t_ = *(QCborKnownTags*)this_; const QCborValue & tv = *(const QCborValue *)this_;
   this_ =  new QCborValue(t_, tv);
+  this_ =  new MyQCborValue(t_, tv);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:167
+// [-2] void QCborValue(const QDateTime &) 
+// (12)qm3188313840 (30)_ZN10QCborValueC2ERK9QDateTime
+/*void* qm3188313840(const QDateTime & dt)*/{
+  const QDateTime & dt = *(const QDateTime *)this_;
+  this_ =  new QCborValue(dt);
+  this_ =  new MyQCborValue(dt);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:169
+// [-2] void QCborValue(const QUrl &) 
+// (12)qm2354694036 (25)_ZN10QCborValueC2ERK4QUrl
+/*void* qm2354694036(const QUrl & url)*/{
+  const QUrl & url = *(const QUrl *)this_;
+  this_ =  new QCborValue(url);
+  this_ =  new MyQCborValue(url);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:172
+// [-2] void QCborValue(const QRegularExpression &) 
+// (12)qm1062115841 (40)_ZN10QCborValueC2ERK18QRegularExpression
+/*void* qm1062115841(const QRegularExpression & rx)*/{
+  const QRegularExpression & rx = *(const QRegularExpression *)this_;
+  this_ =  new QCborValue(rx);
+  this_ =  new MyQCborValue(rx);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:174
+// [-2] void QCborValue(const QUuid &) 
+// (12)qm3696719155 (26)_ZN10QCborValueC2ERK5QUuid
+/*void* qm3696719155(const QUuid & uuid)*/{
+  const QUuid & uuid = *(const QUuid *)this_;
+  this_ =  new QCborValue(uuid);
+  this_ =  new MyQCborValue(uuid);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -230,6 +343,16 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void qm3718959149 (void *this_)*/ {
   delete (QCborValue*)(this_);
 }
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcborvalue.h:181
+// [-2] void QCborValue(const QCborValue &) 
+// (12)qm2224399777 (22)_ZN10QCborValueC2ERKS_
+/*void* qm2224399777(const QCborValue & other)*/{
+  const QCborValue & other = *(const QCborValue *)this_;
+  this_ =  new QCborValue(other);
+  this_ =  new MyQCborValue(other);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcborvalue.h:182
 // [-2] void QCborValue(QCborValue &&) 
@@ -237,6 +360,7 @@ uint64_t ensure_inline_symbol_qcborvalue(void* this_) {
 /*void* qm3151883067(QCborValue && other)*/{
   QCborValue && other =  static_cast<QCborValue &&>(*(QCborValue *)this_);
   this_ =  new QCborValue(other);
+  this_ =  new MyQCborValue(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

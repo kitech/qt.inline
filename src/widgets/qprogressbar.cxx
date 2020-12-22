@@ -153,6 +153,17 @@ uint64_t ensure_inline_symbol_qprogressbar(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qprogressbar.h:71
+// [-2] void QProgressBar(QWidget *) 
+// (11)qm572852642 (29)_ZN12QProgressBarC2EP7QWidget
+/*void* qm572852642(QWidget * parent)*/{
+  auto _nilp = (MyQProgressBar*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QProgressBar(parent);
+  this_ =  new MyQProgressBar(parent);
+}
+
 
 /*void C_ZN12QProgressBarD2Ev(void *this_)*/ {
   delete (QProgressBar*)(this_);

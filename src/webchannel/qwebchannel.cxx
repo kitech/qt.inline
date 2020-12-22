@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qwebchannel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebChannel/qwebchannel.h:60
+// [-2] void QWebChannel(QObject *) 
+// (12)qm2226799121 (28)_ZN11QWebChannelC2EP7QObject
+/*void* qm2226799121(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QWebChannel(parent);
+  this_ =  new MyQWebChannel(parent);
+}
+
 
 /*void C_ZN11QWebChannelD2Ev(void *this_)*/ {
   delete (QWebChannel*)(this_);

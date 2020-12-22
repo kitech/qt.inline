@@ -67,6 +67,27 @@ uint64_t ensure_inline_symbol_qdate(void* this_) {
 /*void* qm1130278339()*/{
   ;
   this_ =  new QDate();
+  this_ =  new MyQDate();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:74
+// [-2] void QDate(int, int, int) 
+// (12)qm2655184678 (15)_ZN5QDateC2Eiii
+/*void* qm2655184678(int y, int m, int d)*/{
+  int y = *(int*)this_; int m = *(int*)this_; int d = *(int*)this_;
+  this_ =  new QDate(y, m, d);
+  this_ =  new MyQDate(y, m, d);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:75
+// [-2] void QDate(int, int, int, QCalendar) 
+// (11)qm686022540 (25)_ZN5QDateC2Eiii9QCalendar
+/*void* qm686022540(int y, int m, int d, QCalendar cal)*/{
+  int y = *(int*)this_; int m = *(int*)this_; int d = *(int*)this_; QCalendar cal = *(QCalendar*)this_;
+  this_ =  new QDate(y, m, d, cal);
+  this_ =  new MyQDate(y, m, d, cal);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

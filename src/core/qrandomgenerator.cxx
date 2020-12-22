@@ -71,6 +71,7 @@ uint64_t ensure_inline_symbol_qrandomgenerator(void* this_) {
 /*void* qm1159609541(unsigned int seedValue)*/{
   unsigned int seedValue = *(unsigned int*)this_;
   this_ =  new QRandomGenerator(seedValue);
+  this_ =  new MyQRandomGenerator(seedValue);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -80,6 +81,37 @@ uint64_t ensure_inline_symbol_qrandomgenerator(void* this_) {
 /*void* qm3276589479(const unsigned int * seedBuffer, long long len_)*/{
   const unsigned int * seedBuffer = *(const unsigned int **)this_; long long len_ = *(long long*)this_;
   this_ =  new QRandomGenerator(seedBuffer, len_);
+  this_ =  new MyQRandomGenerator(seedBuffer, len_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:71
+// [-2] void QRandomGenerator(std::seed_seq &) 
+// (12)qm1617958677 (36)_ZN16QRandomGeneratorC2ERSt8seed_seq
+/*void* qm1617958677(std::seed_seq & sseq)*/{
+  std::seed_seq & sseq = *(std::seed_seq *)this_;
+  this_ =  new QRandomGenerator(sseq);
+  this_ =  new MyQRandomGenerator(sseq);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:72
+// [-2] void QRandomGenerator(const quint32 *, const quint32 *) 
+// (12)qm1270244191 (30)_ZN16QRandomGeneratorC2EPKjS1_
+/*void* qm1270244191(const unsigned int * begin_, const unsigned int * end_)*/{
+  const unsigned int * begin_ = *(const unsigned int **)this_; const unsigned int * end_ = *(const unsigned int **)this_;
+  this_ =  new QRandomGenerator(begin_, end_);
+  this_ =  new MyQRandomGenerator(begin_, end_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qrandom.h:75
+// [-2] void QRandomGenerator(const QRandomGenerator &) 
+// (12)qm3268098557 (28)_ZN16QRandomGeneratorC2ERKS_
+/*void* qm3268098557(const QRandomGenerator & other)*/{
+  const QRandomGenerator & other = *(const QRandomGenerator *)this_;
+  this_ =  new QRandomGenerator(other);
+  this_ =  new MyQRandomGenerator(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

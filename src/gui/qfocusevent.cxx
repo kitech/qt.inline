@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfocusevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:431
+// [-2] void QFocusEvent(QEvent::Type, Qt::FocusReason) 
+// (12)qm1572757467 (51)_ZN11QFocusEventC2EN6QEvent4TypeEN2Qt11FocusReasonE
+/*void* qm1572757467(QEvent::Type type_, Qt::FocusReason reason)*/{
+  QEvent::Type type_ = *(QEvent::Type*)this_; Qt::FocusReason reason = *(Qt::FocusReason*)this_;
+  this_ =  new QFocusEvent(type_, reason);
+  this_ =  new MyQFocusEvent(type_, reason);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:434
 // [1] bool gotFocus() const

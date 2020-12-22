@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qenterevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:85
+// [-2] void QEnterEvent(const QPointF &, const QPointF &, const QPointF &) 
+// (12)qm3958615560 (35)_ZN11QEnterEventC2ERK7QPointFS2_S2_
+/*void* qm3958615560(const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos)*/{
+  const QPointF & localPos = *(const QPointF *)this_; const QPointF & windowPos = *(const QPointF *)this_; const QPointF & screenPos = *(const QPointF *)this_;
+  this_ =  new QEnterEvent(localPos, windowPos, screenPos);
+  this_ =  new MyQEnterEvent(localPos, windowPos, screenPos);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:89
 // [8] QPoint pos() const

@@ -87,6 +87,17 @@ uint64_t ensure_inline_symbol_qcolor(void* this_) {
 /*void* qm2667467580()*/{
   ;
   this_ =  new QColor();
+  this_ =  new MyQColor();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:72
+// [-2] void QColor(Qt::GlobalColor) 
+// (11)qm659170527 (31)_ZN6QColorC2EN2Qt11GlobalColorE
+/*void* qm659170527(Qt::GlobalColor color)*/{
+  Qt::GlobalColor color = *(Qt::GlobalColor*)this_;
+  this_ =  new QColor(color);
+  this_ =  new MyQColor(color);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -96,6 +107,27 @@ uint64_t ensure_inline_symbol_qcolor(void* this_) {
 /*void* qm3599673984(int r, int g, int b, int a)*/{
   int r = *(int*)this_; int g = *(int*)this_; int b = *(int*)this_; int a = *(int*)this_;
   this_ =  new QColor(r, g, b, a);
+  this_ =  new MyQColor(r, g, b, a);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:80
+// [-2] void QColor(QRgb) 
+// (12)qm2331971443 (14)_ZN6QColorC2Ej
+/*void* qm2331971443(unsigned int rgb)*/{
+  unsigned int rgb = *(unsigned int*)this_;
+  this_ =  new QColor(rgb);
+  this_ =  new MyQColor(rgb);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:81
+// [-2] void QColor(QRgba64) 
+// (12)qm2826816292 (21)_ZN6QColorC2E7QRgba64
+/*void* qm2826816292(QRgba64 rgba64)*/{
+  QRgba64 rgba64 = *(QRgba64*)this_;
+  this_ =  new QColor(rgba64);
+  this_ =  new MyQColor(rgba64);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -105,6 +137,7 @@ uint64_t ensure_inline_symbol_qcolor(void* this_) {
 /*void* qm3733157329(const QString & name)*/{
   const QString & name = *(const QString *)this_;
   this_ =  new QColor(name);
+  this_ =  new MyQColor(name);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -114,6 +147,7 @@ uint64_t ensure_inline_symbol_qcolor(void* this_) {
 /*void* qm1002334670(const char * aname)*/{
   const char * aname = *(const char **)this_;
   this_ =  new QColor(aname);
+  this_ =  new MyQColor(aname);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -123,6 +157,17 @@ uint64_t ensure_inline_symbol_qcolor(void* this_) {
 /*void* qm3634380930(QLatin1String name)*/{
   QLatin1String name = *(QLatin1String*)this_;
   this_ =  new QColor(name);
+  this_ =  new MyQColor(name);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qcolor.h:88
+// [-2] void QColor(QColor::Spec) 
+// (12)qm4061352020 (22)_ZN6QColorC2ENS_4SpecE
+/*void* qm4061352020(QColor::Spec spec)*/{
+  QColor::Spec spec = *(QColor::Spec*)this_;
+  this_ =  new QColor(spec);
+  this_ =  new MyQColor(spec);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -132,6 +177,7 @@ uint64_t ensure_inline_symbol_qcolor(void* this_) {
 /*void* qm545131598(const QColor & color)*/{
   const QColor & color = *(const QColor *)this_;
   this_ =  new QColor(color);
+  this_ =  new MyQColor(color);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -141,6 +187,7 @@ uint64_t ensure_inline_symbol_qcolor(void* this_) {
 /*void* qm2175822173(QColor && other)*/{
   QColor && other =  static_cast<QColor &&>(*(QColor *)this_);
   this_ =  new QColor(other);
+  this_ =  new MyQColor(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -186,6 +233,7 @@ uint64_t ensure_inline_symbol_qcolor(void* this_) {
 /*void* qm1603974973(QColor::Spec spec, unsigned short a1, unsigned short a2, unsigned short a3, unsigned short a4, unsigned short a5)*/{
   QColor::Spec spec = *(QColor::Spec*)this_; unsigned short a1 = *(unsigned short*)this_; unsigned short a2 = *(unsigned short*)this_; unsigned short a3 = *(unsigned short*)this_; unsigned short a4 = *(unsigned short*)this_; unsigned short a5 = *(unsigned short*)this_;
   this_ =  new QColor(spec, a1, a2, a3, a4, a5);
+  this_ =  new MyQColor(spec, a1, a2, a3, a4, a5);
 }
 
 

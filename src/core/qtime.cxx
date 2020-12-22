@@ -65,6 +65,17 @@ uint64_t ensure_inline_symbol_qtime(void* this_) {
 /*void* qm684949980()*/{
   ;
   this_ =  new QTime();
+  this_ =  new MyQTime();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdatetime.h:194
+// [-2] void QTime(int, int, int, int) 
+// (12)qm2310898046 (16)_ZN5QTimeC2Eiiii
+/*void* qm2310898046(int h, int m, int s, int ms)*/{
+  int h = *(int*)this_; int m = *(int*)this_; int s = *(int*)this_; int ms = *(int*)this_;
+  this_ =  new QTime(h, m, s, ms);
+  this_ =  new MyQTime(h, m, s, ms);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

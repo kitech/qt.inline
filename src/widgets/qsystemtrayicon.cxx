@@ -140,6 +140,28 @@ uint64_t ensure_inline_symbol_qsystemtrayicon(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsystemtrayicon.h:69
+// [-2] void QSystemTrayIcon(QObject *) 
+// (12)qm3284962045 (32)_ZN15QSystemTrayIconC2EP7QObject
+/*void* qm3284962045(QObject * parent)*/{
+  auto _nilp = (MyQSystemTrayIcon*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSystemTrayIcon(parent);
+  this_ =  new MyQSystemTrayIcon(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qsystemtrayicon.h:70
+// [-2] void QSystemTrayIcon(const QIcon &, QObject *) 
+// (11)qm966649778 (40)_ZN15QSystemTrayIconC2ERK5QIconP7QObject
+/*void* qm966649778(const QIcon & icon, QObject * parent)*/{
+  auto _nilp = (MyQSystemTrayIcon*)(0);
+  const QIcon & icon = *(const QIcon *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSystemTrayIcon(icon, parent);
+  this_ =  new MyQSystemTrayIcon(icon, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qsystemtrayicon.h:102
 // [-2] void show() 

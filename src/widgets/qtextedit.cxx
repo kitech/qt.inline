@@ -458,6 +458,28 @@ uint64_t ensure_inline_symbol_qtextedit(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextedit.h:109
+// [-2] void QTextEdit(QWidget *) 
+// (11)qm985569277 (25)_ZN9QTextEditC2EP7QWidget
+/*void* qm985569277(QWidget * parent)*/{
+  auto _nilp = (MyQTextEdit*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTextEdit(parent);
+  this_ =  new MyQTextEdit(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtextedit.h:110
+// [-2] void QTextEdit(const QString &, QWidget *) 
+// (11)qm351495297 (35)_ZN9QTextEditC2ERK7QStringP7QWidget
+/*void* qm351495297(const QString & text, QWidget * parent)*/{
+  auto _nilp = (MyQTextEdit*)(0);
+  const QString & text = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QTextEdit(text, parent);
+  this_ =  new MyQTextEdit(text, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtextedit.h:149
 // [-2] void setDocumentTitle(const QString &) 

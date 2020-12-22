@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmessageauthenticationcode(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmessageauthenticationcode.h:54
+// [-2] void QMessageAuthenticationCode(QCryptographicHash::Algorithm, const QByteArray &) 
+// (12)qm1253799329 (80)_ZN26QMessageAuthenticationCodeC2EN18QCryptographicHash9AlgorithmERK10QByteArray
+/*void* qm1253799329(QCryptographicHash::Algorithm method, const QByteArray & key)*/{
+  QCryptographicHash::Algorithm method = *(QCryptographicHash::Algorithm*)this_; const QByteArray & key = *(const QByteArray *)this_;
+  this_ =  new QMessageAuthenticationCode(method, key);
+  this_ =  new MyQMessageAuthenticationCode(method, key);
+}
+
 
 /*void C_ZN26QMessageAuthenticationCodeD2Ev(void *this_)*/ {
   delete (QMessageAuthenticationCode*)(this_);

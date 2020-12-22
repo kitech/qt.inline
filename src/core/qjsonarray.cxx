@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qjsonarray(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonarray.h:58
+// [-2] void QJsonArray() 
+// (12)qm1575282276 (19)_ZN10QJsonArrayC2Ev
+/*void* qm1575282276()*/{
+  ;
+  this_ =  new QJsonArray();
+  this_ =  new MyQJsonArray();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonarray.h:60
+// [-2] void QJsonArray(std::initializer_list<QJsonValue>) 
+// (12)qm4153761749 (52)_ZN10QJsonArrayC2ESt16initializer_listI10QJsonValueE
+/*void* qm4153761749(std::initializer_list<QJsonValue> args)*/{
+  std::initializer_list<QJsonValue> args = *(std::initializer_list<QJsonValue>*)this_;
+  this_ =  new QJsonArray(args);
+  this_ =  new MyQJsonArray(args);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonarray.h:64
+// [-2] void QJsonArray(const QJsonArray &) 
+// (11)qm637652994 (22)_ZN10QJsonArrayC2ERKS_
+/*void* qm637652994(const QJsonArray & other)*/{
+  const QJsonArray & other = *(const QJsonArray *)this_;
+  this_ =  new QJsonArray(other);
+  this_ =  new MyQJsonArray(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonarray.h:67
+// [-2] void QJsonArray(QJsonArray &&) 
+// (12)qm1222195736 (21)_ZN10QJsonArrayC2EOS_
+/*void* qm1222195736(QJsonArray && other)*/{
+  QJsonArray && other =  static_cast<QJsonArray &&>(*(QJsonArray *)this_);
+  this_ =  new QJsonArray(other);
+  this_ =  new MyQJsonArray(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonarray.h:69
 // [16] QJsonArray & operator=(QJsonArray &&) 

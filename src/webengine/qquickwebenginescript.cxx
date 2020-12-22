@@ -137,6 +137,17 @@ uint64_t ensure_inline_symbol_qquickwebenginescript(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWebEngine/qquickwebenginescript.h:77
+// [-2] void QQuickWebEngineScript(QObject *) 
+// (12)qm2378452465 (38)_ZN21QQuickWebEngineScriptC2EP7QObject
+/*void* qm2378452465(QObject * parent)*/{
+  auto _nilp = (MyQQuickWebEngineScript*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QQuickWebEngineScript(parent);
+  this_ =  new MyQQuickWebEngineScript(parent);
+}
+
 
 /*void C_ZN21QQuickWebEngineScriptD2Ev(void *this_)*/ {
   delete (QQuickWebEngineScript*)(this_);

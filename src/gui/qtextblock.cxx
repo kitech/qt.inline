@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qtextblock(void* this_) {
 /*void* qm3172116198(QTextDocumentPrivate * priv, int b)*/{
   QTextDocumentPrivate * priv = *(QTextDocumentPrivate **)this_; int b = *(int*)this_;
   this_ =  new QTextBlock(priv, b);
+  this_ =  new MyQTextBlock(priv, b);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +77,7 @@ uint64_t ensure_inline_symbol_qtextblock(void* this_) {
 /*void* qm1178354496()*/{
   ;
   this_ =  new QTextBlock();
+  this_ =  new MyQTextBlock();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -85,6 +87,7 @@ uint64_t ensure_inline_symbol_qtextblock(void* this_) {
 /*void* qm1111305327(const QTextBlock & o)*/{
   const QTextBlock & o = *(const QTextBlock *)this_;
   this_ =  new QTextBlock(o);
+  this_ =  new MyQTextBlock(o);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

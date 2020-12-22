@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstorageinfo(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:58
+// [-2] void QStorageInfo() 
+// (12)qm1978666937 (21)_ZN12QStorageInfoC2Ev
+/*void* qm1978666937()*/{
+  ;
+  this_ =  new QStorageInfo();
+  this_ =  new MyQStorageInfo();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:59
+// [-2] void QStorageInfo(const QString &) 
+// (12)qm3698607684 (30)_ZN12QStorageInfoC2ERK7QString
+/*void* qm3698607684(const QString & path)*/{
+  const QString & path = *(const QString *)this_;
+  this_ =  new QStorageInfo(path);
+  this_ =  new MyQStorageInfo(path);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:60
+// [-2] void QStorageInfo(const QDir &) 
+// (12)qm3738287248 (27)_ZN12QStorageInfoC2ERK4QDir
+/*void* qm3738287248(const QDir & dir)*/{
+  const QDir & dir = *(const QDir *)this_;
+  this_ =  new QStorageInfo(dir);
+  this_ =  new MyQStorageInfo(dir);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstorageinfo.h:61
+// [-2] void QStorageInfo(const QStorageInfo &) 
+// (11)qm909568657 (24)_ZN12QStorageInfoC2ERKS_
+/*void* qm909568657(const QStorageInfo & other)*/{
+  const QStorageInfo & other = *(const QStorageInfo *)this_;
+  this_ =  new QStorageInfo(other);
+  this_ =  new MyQStorageInfo(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstorageinfo.h:65
 // [8] QStorageInfo & operator=(QStorageInfo &&) 

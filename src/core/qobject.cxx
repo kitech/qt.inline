@@ -128,6 +128,17 @@ uint64_t ensure_inline_symbol_qobject(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qobject.h:135
+// [-2] void QObject(QObject *) 
+// (12)qm1614511106 (17)_ZN7QObjectC2EPS_
+/*void* qm1614511106(QObject * parent)*/{
+  auto _nilp = (MyQObject*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QObject(parent);
+  this_ =  new MyQObject(parent);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qobject.h:153
 // [1] bool isWidgetType() const

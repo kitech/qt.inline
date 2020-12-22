@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qcborvalueref(void* this_) {
 /*void* qm1083552198(const QCborValueRef & arg0)*/{
   const QCborValueRef & arg0 = *(const QCborValueRef *)this_;
   this_ =  new QCborValueRef(arg0);
+  this_ =  new MyQCborValueRef(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qcborvalueref(void* this_) {
 /*void* qm3666031810(QCborValueRef && arg0)*/{
   QCborValueRef && arg0 =  static_cast<QCborValueRef &&>(*(QCborValueRef *)this_);
   this_ =  new QCborValueRef(arg0);
+  this_ =  new MyQCborValueRef(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

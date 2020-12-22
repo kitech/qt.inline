@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qqmlfileselector(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlfileselector.h:57
+// [-2] void QQmlFileSelector(QQmlEngine *, QObject *) 
+// (12)qm2363515315 (46)_ZN16QQmlFileSelectorC2EP10QQmlEngineP7QObject
+/*void* qm2363515315(QQmlEngine * engine, QObject * parent)*/{
+  QQmlEngine * engine = *(QQmlEngine **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QQmlFileSelector(engine, parent);
+  this_ =  new MyQQmlFileSelector(engine, parent);
+}
+
 
 /*void C_ZN16QQmlFileSelectorD2Ev(void *this_)*/ {
   delete (QQmlFileSelector*)(this_);

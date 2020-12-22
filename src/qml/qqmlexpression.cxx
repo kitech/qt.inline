@@ -129,6 +129,36 @@ uint64_t ensure_inline_symbol_qqmlexpression(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlexpression.h:62
+// [-2] void QQmlExpression() 
+// (11)qm823953404 (23)_ZN14QQmlExpressionC2Ev
+/*void* qm823953404()*/{
+  ;
+  this_ =  new QQmlExpression();
+  this_ =  new MyQQmlExpression();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlexpression.h:63
+// [-2] void QQmlExpression(QQmlContext *, QObject *, const QString &, QObject *) 
+// (11)qm155982464 (58)_ZN14QQmlExpressionC2EP11QQmlContextP7QObjectRK7QStringS3_
+/*void* qm155982464(QQmlContext * arg0, QObject * arg1, const QString & arg2, QObject * arg3)*/{
+  QQmlContext * arg0 = *(QQmlContext **)this_; QObject * arg1 = *(QObject **)this_; const QString & arg2 = *(const QString *)this_; QObject * arg3 = *(QObject **)this_;
+  this_ =  new QQmlExpression(arg0, arg1, arg2, arg3);
+  this_ =  new MyQQmlExpression(arg0, arg1, arg2, arg3);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmlexpression.h:64
+// [-2] void QQmlExpression(const QQmlScriptString &, QQmlContext *, QObject *, QObject *) 
+// (12)qm2884495650 (68)_ZN14QQmlExpressionC2ERK16QQmlScriptStringP11QQmlContextP7QObjectS6_
+/*void* qm2884495650(const QQmlScriptString & arg0, QQmlContext * arg1, QObject * arg2, QObject * arg3)*/{
+  const QQmlScriptString & arg0 = *(const QQmlScriptString *)this_; QQmlContext * arg1 = *(QQmlContext **)this_; QObject * arg2 = *(QObject **)this_; QObject * arg3 = *(QObject **)this_;
+  this_ =  new QQmlExpression(arg0, arg1, arg2, arg3);
+  this_ =  new MyQQmlExpression(arg0, arg1, arg2, arg3);
+}
+
 
 /*void C_ZN14QQmlExpressionD2Ev(void *this_)*/ {
   delete (QQmlExpression*)(this_);

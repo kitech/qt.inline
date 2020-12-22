@@ -167,6 +167,28 @@ uint64_t ensure_inline_symbol_qhistorystate(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhistorystate.h:64
+// [-2] void QHistoryState(QState *) 
+// (12)qm3792588114 (29)_ZN13QHistoryStateC2EP6QState
+/*void* qm3792588114(QState * parent)*/{
+  auto _nilp = (MyQHistoryState*)(0);
+  QState * parent = *(QState **)this_;
+  this_ =  new QHistoryState(parent);
+  this_ =  new MyQHistoryState(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qhistorystate.h:65
+// [-2] void QHistoryState(QHistoryState::HistoryType, QState *) 
+// (12)qm3633409274 (46)_ZN13QHistoryStateC2ENS_11HistoryTypeEP6QState
+/*void* qm3633409274(QHistoryState::HistoryType type_, QState * parent)*/{
+  auto _nilp = (MyQHistoryState*)(0);
+  QHistoryState::HistoryType type_ = *(QHistoryState::HistoryType*)this_; QState * parent = *(QState **)this_;
+  this_ =  new QHistoryState(type_, parent);
+  this_ =  new MyQHistoryState(type_, parent);
+}
+
 
 /*void C_ZN13QHistoryStateD2Ev(void *this_)*/ {
   delete (QHistoryState*)(this_);

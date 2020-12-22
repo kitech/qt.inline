@@ -60,6 +60,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qinputmethodevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:597
+// [-2] void QInputMethodEvent() 
+// (11)qm967411084 (26)_ZN17QInputMethodEventC2Ev
+/*void* qm967411084()*/{
+  ;
+  this_ =  new QInputMethodEvent();
+  this_ =  new MyQInputMethodEvent();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:598
+// [-2] void QInputMethodEvent(const QString &, const QList<QInputMethodEvent::Attribute> &) 
+// (12)qm1003021782 (59)_ZN17QInputMethodEventC2ERK7QStringRK5QListINS_9AttributeEE
+/*void* qm1003021782(const QString & preeditText, const QList<QInputMethodEvent::Attribute> & attributes)*/{
+  const QString & preeditText = *(const QString *)this_; const QList<QInputMethodEvent::Attribute> & attributes = *(const QList<QInputMethodEvent::Attribute> *)this_;
+  this_ =  new QInputMethodEvent(preeditText, attributes);
+  this_ =  new MyQInputMethodEvent(preeditText, attributes);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:602
 // [8] const QList<QInputMethodEvent::Attribute> & attributes() const
@@ -118,6 +138,16 @@ uint64_t ensure_inline_symbol_qinputmethodevent(void* this_) {
   (void) ((QInputMethodEvent*)this_)->replacementLength();
    auto xptr = (int (QInputMethodEvent::*)() const ) &QInputMethodEvent::replacementLength;
    fnptrsumval += (uint64_t)(void*&)xptr;
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:609
+// [-2] void QInputMethodEvent(const QInputMethodEvent &) 
+// (12)qm3343733815 (29)_ZN17QInputMethodEventC2ERKS_
+/*void* qm3343733815(const QInputMethodEvent & other)*/{
+  const QInputMethodEvent & other = *(const QInputMethodEvent *)this_;
+  this_ =  new QInputMethodEvent(other);
+  this_ =  new MyQInputMethodEvent(other);
 }
 
 

@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdnsmailexchangerecord(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:109
+// [-2] void QDnsMailExchangeRecord() 
+// (12)qm3722461366 (31)_ZN22QDnsMailExchangeRecordC2Ev
+/*void* qm3722461366()*/{
+  ;
+  this_ =  new QDnsMailExchangeRecord();
+  this_ =  new MyQDnsMailExchangeRecord();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qdnslookup.h:110
+// [-2] void QDnsMailExchangeRecord(const QDnsMailExchangeRecord &) 
+// (12)qm1463611050 (34)_ZN22QDnsMailExchangeRecordC2ERKS_
+/*void* qm1463611050(const QDnsMailExchangeRecord & other)*/{
+  const QDnsMailExchangeRecord & other = *(const QDnsMailExchangeRecord *)this_;
+  this_ =  new QDnsMailExchangeRecord(other);
+  this_ =  new MyQDnsMailExchangeRecord(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qdnslookup.h:111
 // [8] QDnsMailExchangeRecord & operator=(QDnsMailExchangeRecord &&) 

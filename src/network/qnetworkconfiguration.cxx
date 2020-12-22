@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkconfiguration(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkconfiguration.h:65
+// [-2] void QNetworkConfiguration() 
+// (11)qm977478551 (30)_ZN21QNetworkConfigurationC2Ev
+/*void* qm977478551()*/{
+  ;
+  this_ =  new QNetworkConfiguration();
+  this_ =  new MyQNetworkConfiguration();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkconfiguration.h:66
+// [-2] void QNetworkConfiguration(const QNetworkConfiguration &) 
+// (12)qm1874593964 (33)_ZN21QNetworkConfigurationC2ERKS_
+/*void* qm1874593964(const QNetworkConfiguration & other)*/{
+  const QNetworkConfiguration & other = *(const QNetworkConfiguration *)this_;
+  this_ =  new QNetworkConfiguration(other);
+  this_ =  new MyQNetworkConfiguration(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkconfiguration.h:67
 // [8] QNetworkConfiguration & operator=(QNetworkConfiguration &&) 

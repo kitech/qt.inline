@@ -72,6 +72,36 @@ uint64_t ensure_inline_symbol_qimagewriter(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagewriter.h:67
+// [-2] void QImageWriter() 
+// (12)qm3298027225 (21)_ZN12QImageWriterC2Ev
+/*void* qm3298027225()*/{
+  ;
+  this_ =  new QImageWriter();
+  this_ =  new MyQImageWriter();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagewriter.h:68
+// [-2] void QImageWriter(QIODevice *, const QByteArray &) 
+// (11)qm383421868 (45)_ZN12QImageWriterC2EP9QIODeviceRK10QByteArray
+/*void* qm383421868(QIODevice * device, const QByteArray & format)*/{
+  QIODevice * device = *(QIODevice **)this_; const QByteArray & format = *(const QByteArray *)this_;
+  this_ =  new QImageWriter(device, format);
+  this_ =  new MyQImageWriter(device, format);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qimagewriter.h:69
+// [-2] void QImageWriter(const QString &, const QByteArray &) 
+// (11)qm917979901 (44)_ZN12QImageWriterC2ERK7QStringRK10QByteArray
+/*void* qm917979901(const QString & fileName, const QByteArray & format)*/{
+  const QString & fileName = *(const QString *)this_; const QByteArray & format = *(const QByteArray *)this_;
+  this_ =  new QImageWriter(fileName, format);
+  this_ =  new MyQImageWriter(fileName, format);
+}
+
 
 /*void C_ZN12QImageWriterD2Ev(void *this_)*/ {
   delete (QImageWriter*)(this_);

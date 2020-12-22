@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qsizef(void* this_) {
 /*void* qm90541086()*/{
   ;
   this_ =  new QSizeF();
+  this_ =  new MyQSizeF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +77,7 @@ uint64_t ensure_inline_symbol_qsizef(void* this_) {
 /*void* qm3115420995(const QSize & sz)*/{
   const QSize & sz = *(const QSize *)this_;
   this_ =  new QSizeF(sz);
+  this_ =  new MyQSizeF(sz);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -85,6 +87,7 @@ uint64_t ensure_inline_symbol_qsizef(void* this_) {
 /*void* qm438526704(double w, double h)*/{
   double w = *(double*)this_; double h = *(double*)this_;
   this_ =  new QSizeF(w, h);
+  this_ =  new MyQSizeF(w, h);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

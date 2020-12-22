@@ -140,6 +140,17 @@ uint64_t ensure_inline_symbol_qlocalserver(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qlocalserver.h:74
+// [-2] void QLocalServer(QObject *) 
+// (12)qm1563382402 (29)_ZN12QLocalServerC2EP7QObject
+/*void* qm1563382402(QObject * parent)*/{
+  auto _nilp = (MyQLocalServer*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QLocalServer(parent);
+  this_ =  new MyQLocalServer(parent);
+}
+
 
 /*void C_ZN12QLocalServerD2Ev(void *this_)*/ {
   delete (QLocalServer*)(this_);

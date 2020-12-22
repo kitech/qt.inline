@@ -63,6 +63,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtreewidgetitemiterator(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:84
+// [-2] void QTreeWidgetItemIterator(const QTreeWidgetItemIterator &) 
+// (12)qm3831915607 (35)_ZN23QTreeWidgetItemIteratorC2ERKS_
+/*void* qm3831915607(const QTreeWidgetItemIterator & it)*/{
+  const QTreeWidgetItemIterator & it = *(const QTreeWidgetItemIterator *)this_;
+  this_ =  new QTreeWidgetItemIterator(it);
+  this_ =  new MyQTreeWidgetItemIterator(it);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:85
+// [-2] void QTreeWidgetItemIterator(QTreeWidget *, QTreeWidgetItemIterator::IteratorFlags) 
+// (12)qm3414776233 (72)_ZN23QTreeWidgetItemIteratorC2EP11QTreeWidget6QFlagsINS_12IteratorFlagEE
+/*void* qm3414776233(QTreeWidget * widget, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags)*/{
+  QTreeWidget * widget = *(QTreeWidget **)this_; QFlags<QTreeWidgetItemIterator::IteratorFlag> flags = *(QFlags<QTreeWidgetItemIterator::IteratorFlag>*)this_;
+  this_ =  new QTreeWidgetItemIterator(widget, flags);
+  this_ =  new MyQTreeWidgetItemIterator(widget, flags);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:86
+// [-2] void QTreeWidgetItemIterator(QTreeWidgetItem *, QTreeWidgetItemIterator::IteratorFlags) 
+// (12)qm3008050236 (76)_ZN23QTreeWidgetItemIteratorC2EP15QTreeWidgetItem6QFlagsINS_12IteratorFlagEE
+/*void* qm3008050236(QTreeWidgetItem * item, QFlags<QTreeWidgetItemIterator::IteratorFlag> flags)*/{
+  QTreeWidgetItem * item = *(QTreeWidgetItem **)this_; QFlags<QTreeWidgetItemIterator::IteratorFlag> flags = *(QFlags<QTreeWidgetItemIterator::IteratorFlag>*)this_;
+  this_ =  new QTreeWidgetItemIterator(item, flags);
+  this_ =  new MyQTreeWidgetItemIterator(item, flags);
+}
+
 // Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtreewidgetitemiterator.h:92
 // [24] const QTreeWidgetItemIterator operator++(int) 

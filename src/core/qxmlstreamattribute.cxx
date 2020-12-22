@@ -64,6 +64,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamattribute(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:105
+// [-2] void QXmlStreamAttribute() 
+// (11)qm804075447 (28)_ZN19QXmlStreamAttributeC2Ev
+/*void* qm804075447()*/{
+  ;
+  this_ =  new QXmlStreamAttribute();
+  this_ =  new MyQXmlStreamAttribute();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:106
+// [-2] void QXmlStreamAttribute(const QString &, const QString &) 
+// (12)qm1332973950 (40)_ZN19QXmlStreamAttributeC2ERK7QStringS2_
+/*void* qm1332973950(const QString & qualifiedName, const QString & value)*/{
+  const QString & qualifiedName = *(const QString *)this_; const QString & value = *(const QString *)this_;
+  this_ =  new QXmlStreamAttribute(qualifiedName, value);
+  this_ =  new MyQXmlStreamAttribute(qualifiedName, value);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:107
+// [-2] void QXmlStreamAttribute(const QString &, const QString &, const QString &) 
+// (12)qm2015792935 (43)_ZN19QXmlStreamAttributeC2ERK7QStringS2_S2_
+/*void* qm2015792935(const QString & namespaceUri, const QString & name, const QString & value)*/{
+  const QString & namespaceUri = *(const QString *)this_; const QString & name = *(const QString *)this_; const QString & value = *(const QString *)this_;
+  this_ =  new QXmlStreamAttribute(namespaceUri, name, value);
+  this_ =  new MyQXmlStreamAttribute(namespaceUri, name, value);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:109
+// [-2] void QXmlStreamAttribute(const QXmlStreamAttribute &) 
+// (12)qm1211176931 (31)_ZN19QXmlStreamAttributeC2ERKS_
+/*void* qm1211176931(const QXmlStreamAttribute & arg0)*/{
+  const QXmlStreamAttribute & arg0 = *(const QXmlStreamAttribute *)this_;
+  this_ =  new QXmlStreamAttribute(arg0);
+  this_ =  new MyQXmlStreamAttribute(arg0);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:110
 // [-2] void QXmlStreamAttribute(QXmlStreamAttribute &&) 
@@ -71,6 +111,7 @@ uint64_t ensure_inline_symbol_qxmlstreamattribute(void* this_) {
 /*void* qm320355471(QXmlStreamAttribute && other)*/{
   QXmlStreamAttribute && other =  static_cast<QXmlStreamAttribute &&>(*(QXmlStreamAttribute *)this_);
   this_ =  new QXmlStreamAttribute(other);
+  this_ =  new MyQXmlStreamAttribute(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

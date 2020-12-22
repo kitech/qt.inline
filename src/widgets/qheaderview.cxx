@@ -419,6 +419,17 @@ uint64_t ensure_inline_symbol_qheaderview(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qheaderview.h:78
+// [-2] void QHeaderView(Qt::Orientation, QWidget *) 
+// (12)qm2846623887 (46)_ZN11QHeaderViewC2EN2Qt11OrientationEP7QWidget
+/*void* qm2846623887(Qt::Orientation orientation, QWidget * parent)*/{
+  auto _nilp = (MyQHeaderView*)(0);
+  Qt::Orientation orientation = *(Qt::Orientation*)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QHeaderView(orientation, parent);
+  this_ =  new MyQHeaderView(orientation, parent);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qheaderview.h:93
 // [4] int logicalIndexAt(int, int) const

@@ -140,6 +140,17 @@ uint64_t ensure_inline_symbol_qplaintextdocumentlayout(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qplaintextedit.h:307
+// [-2] void QPlainTextDocumentLayout(QTextDocument *) 
+// (12)qm2541438689 (48)_ZN24QPlainTextDocumentLayoutC2EP13QTextDocument
+/*void* qm2541438689(QTextDocument * document)*/{
+  auto _nilp = (MyQPlainTextDocumentLayout*)(0);
+  QTextDocument * document = *(QTextDocument **)this_;
+  this_ =  new QPlainTextDocumentLayout(document);
+  this_ =  new MyQPlainTextDocumentLayout(document);
+}
+
 
 /*void C_ZN24QPlainTextDocumentLayoutD2Ev(void *this_)*/ {
   delete (QPlainTextDocumentLayout*)(this_);

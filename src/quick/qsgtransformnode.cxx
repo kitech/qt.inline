@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgtransformnode(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:279
+// [-2] void QSGTransformNode() 
+// (12)qm3236848714 (25)_ZN16QSGTransformNodeC2Ev
+/*void* qm3236848714()*/{
+  ;
+  this_ =  new QSGTransformNode();
+  this_ =  new MyQSGTransformNode();
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:283
 // [68] const QMatrix4x4 & matrix() const

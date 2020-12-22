@@ -151,6 +151,17 @@ uint64_t ensure_inline_symbol_qguiapplication(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qguiapplication.h:87
+// [-2] void QGuiApplication(int &, char **, int) 
+// (12)qm4188366736 (29)_ZN15QGuiApplicationC2ERiPPci
+/*void* qm4188366736(int & argc, char ** argv, int arg2)*/{
+  auto _nilp = (MyQGuiApplication*)(0);
+  int & argc = *(int *)this_; char ** argv = *(char ***)this_; int arg2 = *(int*)this_;
+  this_ =  new QGuiApplication(*(new int(argc)), argv, arg2);
+  this_ =  new MyQGuiApplication(*(new int(argc)), argv, arg2);
+}
+
 // Public static inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qguiapplication.h:141
 // [1] bool isRightToLeft() 

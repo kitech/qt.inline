@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdynamicpropertychangeevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qcoreevent.h:365
+// [-2] void QDynamicPropertyChangeEvent(const QByteArray &) 
+// (12)qm3321332928 (49)_ZN27QDynamicPropertyChangeEventC2ERK10QByteArray
+/*void* qm3321332928(const QByteArray & name)*/{
+  const QByteArray & name = *(const QByteArray *)this_;
+  this_ =  new QDynamicPropertyChangeEvent(name);
+  this_ =  new MyQDynamicPropertyChangeEvent(name);
+}
+
 // Public inline Indirect Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qcoreevent.h:368
 // [8] QByteArray propertyName() const

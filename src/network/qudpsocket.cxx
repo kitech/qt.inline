@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qudpsocket(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qudpsocket.h:60
+// [-2] void QUdpSocket(QObject *) 
+// (12)qm1688201353 (27)_ZN10QUdpSocketC2EP7QObject
+/*void* qm1688201353(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QUdpSocket(parent);
+  this_ =  new MyQUdpSocket(parent);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qudpsocket.h:82
 // [8] qint64 writeDatagram(const QByteArray &, const QHostAddress &, quint16) 

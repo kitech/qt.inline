@@ -60,6 +60,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamnotationdeclaration(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:235
+// [-2] void QXmlStreamNotationDeclaration() 
+// (12)qm2301654862 (38)_ZN29QXmlStreamNotationDeclarationC2Ev
+/*void* qm2301654862()*/{
+  ;
+  this_ =  new QXmlStreamNotationDeclaration();
+  this_ =  new MyQXmlStreamNotationDeclaration();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qxmlstream.h:238
+// [-2] void QXmlStreamNotationDeclaration(const QXmlStreamNotationDeclaration &) 
+// (12)qm4198481526 (41)_ZN29QXmlStreamNotationDeclarationC2ERKS_
+/*void* qm4198481526(const QXmlStreamNotationDeclaration & arg0)*/{
+  const QXmlStreamNotationDeclaration & arg0 = *(const QXmlStreamNotationDeclaration *)this_;
+  this_ =  new QXmlStreamNotationDeclaration(arg0);
+  this_ =  new MyQXmlStreamNotationDeclaration(arg0);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qxmlstream.h:239
 // [-2] void QXmlStreamNotationDeclaration(QXmlStreamNotationDeclaration &&) 
@@ -67,6 +87,7 @@ uint64_t ensure_inline_symbol_qxmlstreamnotationdeclaration(void* this_) {
 /*void* qm2696577334(QXmlStreamNotationDeclaration && other)*/{
   QXmlStreamNotationDeclaration && other =  static_cast<QXmlStreamNotationDeclaration &&>(*(QXmlStreamNotationDeclaration *)this_);
   this_ =  new QXmlStreamNotationDeclaration(other);
+  this_ =  new MyQXmlStreamNotationDeclaration(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

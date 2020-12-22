@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qquickrendercontrol(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qquickrendercontrol.h:58
+// [-2] void QQuickRenderControl(QObject *) 
+// (12)qm1573141673 (36)_ZN19QQuickRenderControlC2EP7QObject
+/*void* qm1573141673(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QQuickRenderControl(parent);
+  this_ =  new MyQQuickRenderControl(parent);
+}
+
 // Public inline virtual Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qquickrendercontrol.h:72
 // [8] QWindow * renderWindow(QPoint *) 

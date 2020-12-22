@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qintvalidator(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:99
+// [-2] void QIntValidator(QObject *) 
+// (12)qm2288272045 (30)_ZN13QIntValidatorC2EP7QObject
+/*void* qm2288272045(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QIntValidator(parent);
+  this_ =  new MyQIntValidator(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvalidator.h:100
+// [-2] void QIntValidator(int, int, QObject *) 
+// (12)qm1527306577 (32)_ZN13QIntValidatorC2EiiP7QObject
+/*void* qm1527306577(int bottom, int top, QObject * parent)*/{
+  int bottom = *(int*)this_; int top = *(int*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QIntValidator(bottom, top, parent);
+  this_ =  new MyQIntValidator(bottom, top, parent);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qvalidator.h:110
 // [4] int bottom() const

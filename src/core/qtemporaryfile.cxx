@@ -144,6 +144,50 @@ uint64_t ensure_inline_symbol_qtemporaryfile(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtemporaryfile.h:66
+// [-2] void QTemporaryFile() 
+// (12)qm1581356912 (23)_ZN14QTemporaryFileC2Ev
+/*void* qm1581356912()*/{
+  auto _nilp = (MyQTemporaryFile*)(0);
+  ;
+  this_ =  new QTemporaryFile();
+  this_ =  new MyQTemporaryFile();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtemporaryfile.h:67
+// [-2] void QTemporaryFile(const QString &) 
+// (12)qm3743215090 (32)_ZN14QTemporaryFileC2ERK7QString
+/*void* qm3743215090(const QString & templateName)*/{
+  auto _nilp = (MyQTemporaryFile*)(0);
+  const QString & templateName = *(const QString *)this_;
+  this_ =  new QTemporaryFile(templateName);
+  this_ =  new MyQTemporaryFile(templateName);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtemporaryfile.h:69
+// [-2] void QTemporaryFile(QObject *) 
+// (12)qm1169744415 (31)_ZN14QTemporaryFileC2EP7QObject
+/*void* qm1169744415(QObject * parent)*/{
+  auto _nilp = (MyQTemporaryFile*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QTemporaryFile(parent);
+  this_ =  new MyQTemporaryFile(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtemporaryfile.h:70
+// [-2] void QTemporaryFile(const QString &, QObject *) 
+// (12)qm1676763434 (41)_ZN14QTemporaryFileC2ERK7QStringP7QObject
+/*void* qm1676763434(const QString & templateName, QObject * parent)*/{
+  auto _nilp = (MyQTemporaryFile*)(0);
+  const QString & templateName = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QTemporaryFile(templateName, parent);
+  this_ =  new MyQTemporaryFile(templateName, parent);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qtemporaryfile.h:78
 // [1] bool open() 

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qlockfile(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlockfile.h:53
+// [-2] void QLockFile(const QString &) 
+// (12)qm1957026143 (26)_ZN9QLockFileC2ERK7QString
+/*void* qm1957026143(const QString & fileName)*/{
+  const QString & fileName = *(const QString *)this_;
+  this_ =  new QLockFile(fileName);
+  this_ =  new MyQLockFile(fileName);
+}
+
 
 /*void C_ZN9QLockFileD2Ev(void *this_)*/ {
   delete (QLockFile*)(this_);

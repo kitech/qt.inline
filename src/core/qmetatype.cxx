@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmetatype(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qmetatype.h:576
+// [-2] void QMetaType(const int) 
+// (12)qm1362329449 (17)_ZN9QMetaTypeC2Ei
+/*void* qm1362329449(const int type_)*/{
+  const int type_ = *(const int*)this_;
+  this_ =  new QMetaType(type_);
+  this_ =  new MyQMetaType(type_);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qmetatype.h:577
 // [-2] void ~QMetaType() 

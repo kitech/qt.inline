@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qscrollerproperties(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:60
+// [-2] void QScrollerProperties() 
+// (12)qm3608928252 (28)_ZN19QScrollerPropertiesC2Ev
+/*void* qm3608928252()*/{
+  ;
+  this_ =  new QScrollerProperties();
+  this_ =  new MyQScrollerProperties();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qscrollerproperties.h:61
+// [-2] void QScrollerProperties(const QScrollerProperties &) 
+// (12)qm4136066039 (31)_ZN19QScrollerPropertiesC2ERKS_
+/*void* qm4136066039(const QScrollerProperties & sp)*/{
+  const QScrollerProperties & sp = *(const QScrollerProperties *)this_;
+  this_ =  new QScrollerProperties(sp);
+  this_ =  new MyQScrollerProperties(sp);
+}
+
 
 /*void C_ZN19QScrollerPropertiesD2Ev(void *this_)*/ {
   delete (QScrollerProperties*)(this_);

@@ -177,6 +177,17 @@ uint64_t ensure_inline_symbol_qparallelanimationgroup(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qparallelanimationgroup.h:55
+// [-2] void QParallelAnimationGroup(QObject *) 
+// (12)qm2456136760 (40)_ZN23QParallelAnimationGroupC2EP7QObject
+/*void* qm2456136760(QObject * parent)*/{
+  auto _nilp = (MyQParallelAnimationGroup*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QParallelAnimationGroup(parent);
+  this_ =  new MyQParallelAnimationGroup(parent);
+}
+
 
 /*void C_ZN23QParallelAnimationGroupD2Ev(void *this_)*/ {
   delete (QParallelAnimationGroup*)(this_);

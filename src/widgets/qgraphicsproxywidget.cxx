@@ -485,6 +485,17 @@ uint64_t ensure_inline_symbol_qgraphicsproxywidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsproxywidget.h:56
+// [-2] void QGraphicsProxyWidget(QGraphicsItem *, Qt::WindowFlags) 
+// (12)qm3679950724 (70)_ZN20QGraphicsProxyWidgetC2EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE
+/*void* qm3679950724(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags)*/{
+  auto _nilp = (MyQGraphicsProxyWidget*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_; QFlags<Qt::WindowType> wFlags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QGraphicsProxyWidget(parent, wFlags);
+  this_ =  new MyQGraphicsProxyWidget(parent, wFlags);
+}
+
 
 /*void C_ZN20QGraphicsProxyWidgetD2Ev(void *this_)*/ {
   delete (QGraphicsProxyWidget*)(this_);

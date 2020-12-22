@@ -177,6 +177,17 @@ uint64_t ensure_inline_symbol_qsequentialanimationgroup(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsequentialanimationgroup.h:58
+// [-2] void QSequentialAnimationGroup(QObject *) 
+// (11)qm697334159 (42)_ZN25QSequentialAnimationGroupC2EP7QObject
+/*void* qm697334159(QObject * parent)*/{
+  auto _nilp = (MyQSequentialAnimationGroup*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSequentialAnimationGroup(parent);
+  this_ =  new MyQSequentialAnimationGroup(parent);
+}
+
 
 /*void C_ZN25QSequentialAnimationGroupD2Ev(void *this_)*/ {
   delete (QSequentialAnimationGroup*)(this_);

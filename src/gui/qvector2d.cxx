@@ -75,6 +75,7 @@ uint64_t ensure_inline_symbol_qvector2d(void* this_) {
 /*void* qm3859091651()*/{
   ;
   this_ =  new QVector2D();
+  this_ =  new MyQVector2D();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -84,6 +85,7 @@ uint64_t ensure_inline_symbol_qvector2d(void* this_) {
 /*void* qm881494376(Qt::Initialization arg0)*/{
   Qt::Initialization arg0 = *(Qt::Initialization*)this_;
   this_ =  new QVector2D(arg0);
+  this_ =  new MyQVector2D(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -93,6 +95,7 @@ uint64_t ensure_inline_symbol_qvector2d(void* this_) {
 /*void* qm1050324907(float xpos, float ypos)*/{
   float xpos = *(float*)this_; float ypos = *(float*)this_;
   this_ =  new QVector2D(xpos, ypos);
+  this_ =  new MyQVector2D(xpos, ypos);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -102,6 +105,7 @@ uint64_t ensure_inline_symbol_qvector2d(void* this_) {
 /*void* qm373411244(const QPoint & point)*/{
   const QPoint & point = *(const QPoint *)this_;
   this_ =  new QVector2D(point);
+  this_ =  new MyQVector2D(point);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -111,6 +115,27 @@ uint64_t ensure_inline_symbol_qvector2d(void* this_) {
 /*void* qm1583457720(const QPointF & point)*/{
   const QPointF & point = *(const QPointF *)this_;
   this_ =  new QVector2D(point);
+  this_ =  new MyQVector2D(point);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:65
+// [-2] void QVector2D(const QVector3D &) 
+// (11)qm499419165 (28)_ZN9QVector2DC2ERK9QVector3D
+/*void* qm499419165(const QVector3D & vector)*/{
+  const QVector3D & vector = *(const QVector3D *)this_;
+  this_ =  new QVector2D(vector);
+  this_ =  new MyQVector2D(vector);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qvector2d.h:68
+// [-2] void QVector2D(const QVector4D &) 
+// (12)qm1384455898 (28)_ZN9QVector2DC2ERK9QVector4D
+/*void* qm1384455898(const QVector4D & vector)*/{
+  const QVector4D & vector = *(const QVector4D *)this_;
+  this_ =  new QVector2D(vector);
+  this_ =  new MyQVector2D(vector);
 }
 
 // Public Extend Visibility=Default Availability=Available

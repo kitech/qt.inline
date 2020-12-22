@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptionspinbox(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:576
+// [-2] void QStyleOptionSpinBox() 
+// (11)qm879365227 (28)_ZN19QStyleOptionSpinBoxC2Ev
+/*void* qm879365227()*/{
+  ;
+  this_ =  new QStyleOptionSpinBox();
+  this_ =  new MyQStyleOptionSpinBox();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:577
 // [-2] void QStyleOptionSpinBox(const QStyleOptionSpinBox &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptionspinbox(void* this_) {
 /*void* qm2211193367(const QStyleOptionSpinBox & other)*/{
   const QStyleOptionSpinBox & other = *(const QStyleOptionSpinBox *)this_;
   this_ =  new QStyleOptionSpinBox(other);
+  this_ =  new MyQStyleOptionSpinBox(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

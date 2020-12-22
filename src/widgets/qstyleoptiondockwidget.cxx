@@ -58,6 +58,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptiondockwidget(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:409
+// [-2] void QStyleOptionDockWidget() 
+// (11)qm963809843 (31)_ZN22QStyleOptionDockWidgetC2Ev
+/*void* qm963809843()*/{
+  ;
+  this_ =  new QStyleOptionDockWidget();
+  this_ =  new MyQStyleOptionDockWidget();
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qstyleoption.h:410
 // [-2] void QStyleOptionDockWidget(const QStyleOptionDockWidget &) 
@@ -65,6 +75,7 @@ uint64_t ensure_inline_symbol_qstyleoptiondockwidget(void* this_) {
 /*void* qm499999440(const QStyleOptionDockWidget & other)*/{
   const QStyleOptionDockWidget & other = *(const QStyleOptionDockWidget *)this_;
   this_ =  new QStyleOptionDockWidget(other);
+  this_ =  new MyQStyleOptionDockWidget(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

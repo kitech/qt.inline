@@ -70,6 +70,76 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpalette(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:58
+// [-2] void QPalette() 
+// (11)qm348091340 (16)_ZN8QPaletteC2Ev
+/*void* qm348091340()*/{
+  ;
+  this_ =  new QPalette();
+  this_ =  new MyQPalette();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:59
+// [-2] void QPalette(const QColor &) 
+// (11)qm761856411 (24)_ZN8QPaletteC2ERK6QColor
+/*void* qm761856411(const QColor & button)*/{
+  const QColor & button = *(const QColor *)this_;
+  this_ =  new QPalette(button);
+  this_ =  new MyQPalette(button);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:60
+// [-2] void QPalette(Qt::GlobalColor) 
+// (12)qm3423195093 (33)_ZN8QPaletteC2EN2Qt11GlobalColorE
+/*void* qm3423195093(Qt::GlobalColor button)*/{
+  Qt::GlobalColor button = *(Qt::GlobalColor*)this_;
+  this_ =  new QPalette(button);
+  this_ =  new MyQPalette(button);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:61
+// [-2] void QPalette(const QColor &, const QColor &) 
+// (12)qm1529671278 (27)_ZN8QPaletteC2ERK6QColorS2_
+/*void* qm1529671278(const QColor & button, const QColor & window)*/{
+  const QColor & button = *(const QColor *)this_; const QColor & window = *(const QColor *)this_;
+  this_ =  new QPalette(button, window);
+  this_ =  new MyQPalette(button, window);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:62
+// [-2] void QPalette(const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &, const QBrush &) 
+// (12)qm3858044745 (48)_ZN8QPaletteC2ERK6QBrushS2_S2_S2_S2_S2_S2_S2_S2_
+/*void* qm3858044745(const QBrush & windowText, const QBrush & button, const QBrush & light, const QBrush & dark, const QBrush & mid, const QBrush & text, const QBrush & bright_text, const QBrush & base, const QBrush & window)*/{
+  const QBrush & windowText = *(const QBrush *)this_; const QBrush & button = *(const QBrush *)this_; const QBrush & light = *(const QBrush *)this_; const QBrush & dark = *(const QBrush *)this_; const QBrush & mid = *(const QBrush *)this_; const QBrush & text = *(const QBrush *)this_; const QBrush & bright_text = *(const QBrush *)this_; const QBrush & base = *(const QBrush *)this_; const QBrush & window = *(const QBrush *)this_;
+  this_ =  new QPalette(windowText, button, light, dark, mid, text, bright_text, base, window);
+  this_ =  new MyQPalette(windowText, button, light, dark, mid, text, bright_text, base, window);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:65
+// [-2] void QPalette(const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &, const QColor &) 
+// (12)qm3015547551 (42)_ZN8QPaletteC2ERK6QColorS2_S2_S2_S2_S2_S2_
+/*void* qm3015547551(const QColor & windowText, const QColor & window, const QColor & light, const QColor & dark, const QColor & mid, const QColor & text, const QColor & base)*/{
+  const QColor & windowText = *(const QColor *)this_; const QColor & window = *(const QColor *)this_; const QColor & light = *(const QColor *)this_; const QColor & dark = *(const QColor *)this_; const QColor & mid = *(const QColor *)this_; const QColor & text = *(const QColor *)this_; const QColor & base = *(const QColor *)this_;
+  this_ =  new QPalette(windowText, window, light, dark, mid, text, base);
+  this_ =  new MyQPalette(windowText, window, light, dark, mid, text, base);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qpalette.h:67
+// [-2] void QPalette(const QPalette &) 
+// (10)qm31795888 (19)_ZN8QPaletteC2ERKS_
+/*void* qm31795888(const QPalette & palette)*/{
+  const QPalette & palette = *(const QPalette *)this_;
+  this_ =  new QPalette(palette);
+  this_ =  new MyQPalette(palette);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qpalette.h:70
 // [-2] void QPalette(QPalette &&) 
@@ -77,6 +147,7 @@ uint64_t ensure_inline_symbol_qpalette(void* this_) {
 /*void* qm2925666921(QPalette && other)*/{
   QPalette && other =  static_cast<QPalette &&>(*(QPalette *)this_);
   this_ =  new QPalette(other);
+  this_ =  new MyQPalette(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

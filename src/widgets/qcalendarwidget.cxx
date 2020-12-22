@@ -202,6 +202,17 @@ uint64_t ensure_inline_symbol_qcalendarwidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcalendarwidget.h:92
+// [-2] void QCalendarWidget(QWidget *) 
+// (12)qm2141480293 (32)_ZN15QCalendarWidgetC2EP7QWidget
+/*void* qm2141480293(QWidget * parent)*/{
+  auto _nilp = (MyQCalendarWidget*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QCalendarWidget(parent);
+  this_ =  new MyQCalendarWidget(parent);
+}
+
 
 /*void C_ZN15QCalendarWidgetD2Ev(void *this_)*/ {
   delete (QCalendarWidget*)(this_);

@@ -63,6 +63,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtablewidgetselectionrange(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:56
+// [-2] void QTableWidgetSelectionRange() 
+// (12)qm2875843222 (35)_ZN26QTableWidgetSelectionRangeC2Ev
+/*void* qm2875843222()*/{
+  ;
+  this_ =  new QTableWidgetSelectionRange();
+  this_ =  new MyQTableWidgetSelectionRange();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:57
+// [-2] void QTableWidgetSelectionRange(int, int, int, int) 
+// (12)qm2446650141 (38)_ZN26QTableWidgetSelectionRangeC2Eiiii
+/*void* qm2446650141(int top, int left, int bottom, int right)*/{
+  int top = *(int*)this_; int left = *(int*)this_; int bottom = *(int*)this_; int right = *(int*)this_;
+  this_ =  new QTableWidgetSelectionRange(top, left, bottom, right);
+  this_ =  new MyQTableWidgetSelectionRange(top, left, bottom, right);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qtablewidget.h:60
+// [-2] void QTableWidgetSelectionRange(const QTableWidgetSelectionRange &) 
+// (12)qm1730432467 (38)_ZN26QTableWidgetSelectionRangeC2ERKS_
+/*void* qm1730432467(const QTableWidgetSelectionRange & other)*/{
+  const QTableWidgetSelectionRange & other = *(const QTableWidgetSelectionRange *)this_;
+  this_ =  new QTableWidgetSelectionRange(other);
+  this_ =  new MyQTableWidgetSelectionRange(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qtablewidget.h:63
 // [4] int topRow() const

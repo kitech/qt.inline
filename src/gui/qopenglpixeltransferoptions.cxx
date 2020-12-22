@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglpixeltransferoptions(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:56
+// [-2] void QOpenGLPixelTransferOptions() 
+// (12)qm1100202295 (36)_ZN27QOpenGLPixelTransferOptionsC2Ev
+/*void* qm1100202295()*/{
+  ;
+  this_ =  new QOpenGLPixelTransferOptions();
+  this_ =  new MyQOpenGLPixelTransferOptions();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:57
+// [-2] void QOpenGLPixelTransferOptions(const QOpenGLPixelTransferOptions &) 
+// (12)qm1549735437 (39)_ZN27QOpenGLPixelTransferOptionsC2ERKS_
+/*void* qm1549735437(const QOpenGLPixelTransferOptions & arg0)*/{
+  const QOpenGLPixelTransferOptions & arg0 = *(const QOpenGLPixelTransferOptions *)this_;
+  this_ =  new QOpenGLPixelTransferOptions(arg0);
+  this_ =  new MyQOpenGLPixelTransferOptions(arg0);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qopenglpixeltransferoptions.h:58
 // [8] QOpenGLPixelTransferOptions & operator=(QOpenGLPixelTransferOptions &&) 

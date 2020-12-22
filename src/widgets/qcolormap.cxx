@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcolormap(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcolormap.h:65
+// [-2] void QColormap(const QColormap &) 
+// (12)qm1768561548 (20)_ZN9QColormapC2ERKS_
+/*void* qm1768561548(const QColormap & colormap)*/{
+  const QColormap & colormap = *(const QColormap *)this_;
+  this_ =  new QColormap(colormap);
+  this_ =  new MyQColormap(colormap);
+}
+
 
 /*void C_ZN9QColormapD2Ev(void *this_)*/ {
   delete (QColormap*)(this_);

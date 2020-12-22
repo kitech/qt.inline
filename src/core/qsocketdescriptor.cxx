@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qsocketdescriptor(void* this_) {
 /*void* qm4154457918(int descriptor)*/{
   int descriptor = *(int*)this_;
   this_ =  new QSocketDescriptor(descriptor);
+  this_ =  new MyQSocketDescriptor(descriptor);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qnetworkconfigurationmanager(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkconfigmanager.h:76
+// [-2] void QNetworkConfigurationManager(QObject *) 
+// (12)qm2224871683 (45)_ZN28QNetworkConfigurationManagerC2EP7QObject
+/*void* qm2224871683(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QNetworkConfigurationManager(parent);
+  this_ =  new MyQNetworkConfigurationManager(parent);
+}
+
 
 /*void C_ZN28QNetworkConfigurationManagerD2Ev(void *this_)*/ {
   delete (QNetworkConfigurationManager*)(this_);

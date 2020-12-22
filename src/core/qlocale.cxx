@@ -64,6 +64,56 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qlocale(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:996
+// [-2] void QLocale() 
+// (12)qm2788139536 (15)_ZN7QLocaleC2Ev
+/*void* qm2788139536()*/{
+  ;
+  this_ =  new QLocale();
+  this_ =  new MyQLocale();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:997
+// [-2] void QLocale(const QString &) 
+// (12)qm1813683587 (24)_ZN7QLocaleC2ERK7QString
+/*void* qm1813683587(const QString & name)*/{
+  const QString & name = *(const QString *)this_;
+  this_ =  new QLocale(name);
+  this_ =  new MyQLocale(name);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:998
+// [-2] void QLocale(QLocale::Language, QLocale::Country) 
+// (12)qm3228077800 (39)_ZN7QLocaleC2ENS_8LanguageENS_7CountryE
+/*void* qm3228077800(QLocale::Language language, QLocale::Country country)*/{
+  QLocale::Language language = *(QLocale::Language*)this_; QLocale::Country country = *(QLocale::Country*)this_;
+  this_ =  new QLocale(language, country);
+  this_ =  new MyQLocale(language, country);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:999
+// [-2] void QLocale(QLocale::Language, QLocale::Script, QLocale::Country) 
+// (12)qm3045660338 (50)_ZN7QLocaleC2ENS_8LanguageENS_6ScriptENS_7CountryE
+/*void* qm3045660338(QLocale::Language language, QLocale::Script script, QLocale::Country country)*/{
+  QLocale::Language language = *(QLocale::Language*)this_; QLocale::Script script = *(QLocale::Script*)this_; QLocale::Country country = *(QLocale::Country*)this_;
+  this_ =  new QLocale(language, script, country);
+  this_ =  new MyQLocale(language, script, country);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qlocale.h:1000
+// [-2] void QLocale(const QLocale &) 
+// (12)qm3982131532 (18)_ZN7QLocaleC2ERKS_
+/*void* qm3982131532(const QLocale & other)*/{
+  const QLocale & other = *(const QLocale *)this_;
+  this_ =  new QLocale(other);
+  this_ =  new MyQLocale(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlocale.h:1001
 // [8] QLocale & operator=(QLocale &&) 

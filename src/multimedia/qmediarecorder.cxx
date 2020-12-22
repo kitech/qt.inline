@@ -138,6 +138,17 @@ uint64_t ensure_inline_symbol_qmediarecorder(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediarecorder.h:109
+// [-2] void QMediaRecorder(QMediaObject *, QObject *) 
+// (12)qm3996907291 (46)_ZN14QMediaRecorderC2EP12QMediaObjectP7QObject
+/*void* qm3996907291(QMediaObject * mediaObject, QObject * parent)*/{
+  auto _nilp = (MyQMediaRecorder*)(0);
+  QMediaObject * mediaObject = *(QMediaObject **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QMediaRecorder(mediaObject, parent);
+  this_ =  new MyQMediaRecorder(mediaObject, parent);
+}
+
 
 /*void C_ZN14QMediaRecorderD2Ev(void *this_)*/ {
   delete (QMediaRecorder*)(this_);

@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qconicalgradient(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:491
+// [-2] void QConicalGradient() 
+// (12)qm1860724151 (25)_ZN16QConicalGradientC2Ev
+/*void* qm1860724151()*/{
+  ;
+  this_ =  new QConicalGradient();
+  this_ =  new MyQConicalGradient();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:492
+// [-2] void QConicalGradient(const QPointF &, qreal) 
+// (12)qm3145934730 (35)_ZN16QConicalGradientC2ERK7QPointFd
+/*void* qm3145934730(const QPointF & center, double startAngle)*/{
+  const QPointF & center = *(const QPointF *)this_; double startAngle = *(double*)this_;
+  this_ =  new QConicalGradient(center, startAngle);
+  this_ =  new MyQConicalGradient(center, startAngle);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:493
+// [-2] void QConicalGradient(qreal, qreal, qreal) 
+// (12)qm2204740931 (27)_ZN16QConicalGradientC2Eddd
+/*void* qm2204740931(double cx, double cy, double startAngle)*/{
+  double cx = *(double*)this_; double cy = *(double*)this_; double startAngle = *(double*)this_;
+  this_ =  new QConicalGradient(cx, cy, startAngle);
+  this_ =  new MyQConicalGradient(cx, cy, startAngle);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:498
 // [-2] void setCenter(qreal, qreal) 

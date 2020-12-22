@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qbyteref(void* this_) {
 /*void* qm358489730(const QByteRef & arg0)*/{
   const QByteRef & arg0 = *(const QByteRef *)this_;
   this_ =  new QByteRef(arg0);
+  this_ =  new MyQByteRef(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

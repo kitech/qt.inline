@@ -130,6 +130,26 @@ uint64_t ensure_inline_symbol_qitemselectionmodel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:169
+// [-2] void QItemSelectionModel(QAbstractItemModel *) 
+// (12)qm3441491637 (48)_ZN19QItemSelectionModelC2EP18QAbstractItemModel
+/*void* qm3441491637(QAbstractItemModel * model)*/{
+  QAbstractItemModel * model = *(QAbstractItemModel **)this_;
+  this_ =  new QItemSelectionModel(model);
+  this_ =  new MyQItemSelectionModel(model);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qitemselectionmodel.h:170
+// [-2] void QItemSelectionModel(QAbstractItemModel *, QObject *) 
+// (11)qm183195034 (57)_ZN19QItemSelectionModelC2EP18QAbstractItemModelP7QObject
+/*void* qm183195034(QAbstractItemModel * model, QObject * parent)*/{
+  QAbstractItemModel * model = *(QAbstractItemModel **)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QItemSelectionModel(model, parent);
+  this_ =  new MyQItemSelectionModel(model, parent);
+}
+
 
 /*void C_ZN19QItemSelectionModelD2Ev(void *this_)*/ {
   delete (QItemSelectionModel*)(this_);

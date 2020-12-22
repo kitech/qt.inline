@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qtextstreammanipulator(void* this_) {
 /*void* qm3319755925(QTSMFI m, int a)*/{
   QTSMFI m = *(QTSMFI*)this_; int a = *(int*)this_;
   this_ =  new QTextStreamManipulator(m, a);
+  this_ =  new MyQTextStreamManipulator(m, a);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qtextstreammanipulator(void* this_) {
 /*void* qm3354470984(QTSMFC m, QChar c)*/{
   QTSMFC m = *(QTSMFC*)this_; QChar c = *(QChar*)this_;
   this_ =  new QTextStreamManipulator(m, c);
+  this_ =  new MyQTextStreamManipulator(m, c);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

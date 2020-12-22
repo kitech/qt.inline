@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qexposeevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:476
+// [-2] void QExposeEvent(const QRegion &) 
+// (12)qm1410408316 (30)_ZN12QExposeEventC2ERK7QRegion
+/*void* qm1410408316(const QRegion & rgn)*/{
+  const QRegion & rgn = *(const QRegion *)this_;
+  this_ =  new QExposeEvent(rgn);
+  this_ =  new MyQExposeEvent(rgn);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:479
 // [8] const QRegion & region() const

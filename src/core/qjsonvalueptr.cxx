@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qjsonvalueptr(void* this_) {
 /*void* qm2927635405(const QJsonValue & val)*/{
   const QJsonValue & val = *(const QJsonValue *)this_;
   this_ =  new QJsonValuePtr(val);
+  this_ =  new MyQJsonValuePtr(val);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

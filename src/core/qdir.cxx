@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdir(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:101
+// [-2] void QDir(const QDir &) 
+// (12)qm1134909571 (15)_ZN4QDirC2ERKS_
+/*void* qm1134909571(const QDir & arg0)*/{
+  const QDir & arg0 = *(const QDir *)this_;
+  this_ =  new QDir(arg0);
+  this_ =  new MyQDir(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:102
+// [-2] void QDir(const QString &) 
+// (10)qm94526033 (21)_ZN4QDirC2ERK7QString
+/*void* qm94526033(const QString & path)*/{
+  const QString & path = *(const QString *)this_;
+  this_ =  new QDir(path);
+  this_ =  new MyQDir(path);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdir.h:103
+// [-2] void QDir(const QString &, const QString &, QDir::SortFlags, QDir::Filters) 
+// (12)qm3822012793 (62)_ZN4QDirC2ERK7QStringS2_6QFlagsINS_8SortFlagEES3_INS_6FilterEE
+/*void* qm3822012793(const QString & path, const QString & nameFilter, QFlags<QDir::SortFlag> sort, QFlags<QDir::Filter> filter)*/{
+  const QString & path = *(const QString *)this_; const QString & nameFilter = *(const QString *)this_; QFlags<QDir::SortFlag> sort = *(QFlags<QDir::SortFlag>*)this_; QFlags<QDir::Filter> filter = *(QFlags<QDir::Filter>*)this_;
+  this_ =  new QDir(path, nameFilter, sort, filter);
+  this_ =  new MyQDir(path, nameFilter, sort, filter);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qdir.h:112
 // [8] QDir & operator=(QDir &&) 

@@ -68,6 +68,17 @@ uint64_t ensure_inline_symbol_qtextdecoder(void* this_) {
 /*void* qm2985853780(const QTextCodec * codec)*/{
   const QTextCodec * codec = *(const QTextCodec **)this_;
   this_ =  new QTextDecoder(codec);
+  this_ =  new MyQTextDecoder(codec);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtextcodec.h:158
+// [-2] void QTextDecoder(const QTextCodec *, QTextCodec::ConversionFlags) 
+// (12)qm1400753027 (64)_ZN12QTextDecoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE
+/*void* qm1400753027(const QTextCodec * codec, QFlags<QTextCodec::ConversionFlag> flags)*/{
+  const QTextCodec * codec = *(const QTextCodec **)this_; QFlags<QTextCodec::ConversionFlag> flags = *(QFlags<QTextCodec::ConversionFlag>*)this_;
+  this_ =  new QTextDecoder(codec, flags);
+  this_ =  new MyQTextDecoder(codec, flags);
 }
 
 

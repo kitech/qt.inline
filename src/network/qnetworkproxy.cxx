@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkproxy(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:164
+// [-2] void QNetworkProxy() 
+// (10)qm84781585 (22)_ZN13QNetworkProxyC2Ev
+/*void* qm84781585()*/{
+  ;
+  this_ =  new QNetworkProxy();
+  this_ =  new MyQNetworkProxy();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:165
+// [-2] void QNetworkProxy(QNetworkProxy::ProxyType, const QString &, quint16, const QString &, const QString &) 
+// (12)qm2450004126 (52)_ZN13QNetworkProxyC2ENS_9ProxyTypeERK7QStringtS3_S3_
+/*void* qm2450004126(QNetworkProxy::ProxyType type_, const QString & hostName, unsigned short port, const QString & user, const QString & password)*/{
+  QNetworkProxy::ProxyType type_ = *(QNetworkProxy::ProxyType*)this_; const QString & hostName = *(const QString *)this_; unsigned short port = *(unsigned short*)this_; const QString & user = *(const QString *)this_; const QString & password = *(const QString *)this_;
+  this_ =  new QNetworkProxy(type_, hostName, port, user, password);
+  this_ =  new MyQNetworkProxy(type_, hostName, port, user, password);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkproxy.h:167
+// [-2] void QNetworkProxy(const QNetworkProxy &) 
+// (12)qm4045479988 (25)_ZN13QNetworkProxyC2ERKS_
+/*void* qm4045479988(const QNetworkProxy & other)*/{
+  const QNetworkProxy & other = *(const QNetworkProxy *)this_;
+  this_ =  new QNetworkProxy(other);
+  this_ =  new MyQNetworkProxy(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkproxy.h:168
 // [8] QNetworkProxy & operator=(QNetworkProxy &&) 

@@ -61,6 +61,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qprocessenvironment(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:72
+// [-2] void QProcessEnvironment() 
+// (12)qm1896038237 (28)_ZN19QProcessEnvironmentC2Ev
+/*void* qm1896038237()*/{
+  ;
+  this_ =  new QProcessEnvironment();
+  this_ =  new MyQProcessEnvironment();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qprocess.h:73
+// [-2] void QProcessEnvironment(const QProcessEnvironment &) 
+// (12)qm1664026556 (31)_ZN19QProcessEnvironmentC2ERKS_
+/*void* qm1664026556(const QProcessEnvironment & other)*/{
+  const QProcessEnvironment & other = *(const QProcessEnvironment *)this_;
+  this_ =  new QProcessEnvironment(other);
+  this_ =  new MyQProcessEnvironment(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qprocess.h:75
 // [8] QProcessEnvironment & operator=(QProcessEnvironment &&) 

@@ -204,6 +204,28 @@ uint64_t ensure_inline_symbol_qcheckbox(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcheckbox.h:61
+// [-2] void QCheckBox(QWidget *) 
+// (11)qm421980486 (25)_ZN9QCheckBoxC2EP7QWidget
+/*void* qm421980486(QWidget * parent)*/{
+  auto _nilp = (MyQCheckBox*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QCheckBox(parent);
+  this_ =  new MyQCheckBox(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qcheckbox.h:62
+// [-2] void QCheckBox(const QString &, QWidget *) 
+// (12)qm1488224333 (35)_ZN9QCheckBoxC2ERK7QStringP7QWidget
+/*void* qm1488224333(const QString & text, QWidget * parent)*/{
+  auto _nilp = (MyQCheckBox*)(0);
+  const QString & text = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QCheckBox(text, parent);
+  this_ =  new MyQCheckBox(text, parent);
+}
+
 
 /*void C_ZN9QCheckBoxD2Ev(void *this_)*/ {
   delete (QCheckBox*)(this_);

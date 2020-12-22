@@ -140,6 +140,17 @@ uint64_t ensure_inline_symbol_qgraphicscolorizeeffect(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicseffect.h:132
+// [-2] void QGraphicsColorizeEffect(QObject *) 
+// (12)qm2262492314 (40)_ZN23QGraphicsColorizeEffectC2EP7QObject
+/*void* qm2262492314(QObject * parent)*/{
+  auto _nilp = (MyQGraphicsColorizeEffect*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QGraphicsColorizeEffect(parent);
+  this_ =  new MyQGraphicsColorizeEffect(parent);
+}
+
 
 /*void C_ZN23QGraphicsColorizeEffectD2Ev(void *this_)*/ {
   delete (QGraphicsColorizeEffect*)(this_);

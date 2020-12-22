@@ -20,6 +20,24 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qloggingcategory(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qloggingcategory.h:53
+// [-2] void QLoggingCategory(const char *) 
+// (12)qm1095412876 (27)_ZN16QLoggingCategoryC2EPKc
+/*void* qm1095412876(const char * category)*/{
+  const char * category = *(const char **)this_;
+  this_ = 0; // new QLoggingCategory(category);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qloggingcategory.h:54
+// [-2] void QLoggingCategory(const char *, QtMsgType) 
+// (11)qm268948676 (37)_ZN16QLoggingCategoryC2EPKc9QtMsgType
+/*void* qm268948676(const char * category, QtMsgType severityLevel)*/{
+  const char * category = *(const char **)this_; QtMsgType severityLevel = *(QtMsgType*)this_;
+  this_ = 0; // new QLoggingCategory(category, severityLevel);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qloggingcategory.h:61
 // [1] bool isDebugEnabled() const

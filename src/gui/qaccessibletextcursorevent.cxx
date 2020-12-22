@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qaccessibletextcursorevent(void* this_) {
 /*void* qm3911566872(QObject * obj, int cursorPos)*/{
   QObject * obj = *(QObject **)this_; int cursorPos = *(int*)this_;
   this_ =  new QAccessibleTextCursorEvent(obj, cursorPos);
+  this_ =  new MyQAccessibleTextCursorEvent(obj, cursorPos);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qaccessibletextcursorevent(void* this_) {
 /*void* qm1570575241(QAccessibleInterface * iface, int cursorPos)*/{
   QAccessibleInterface * iface = *(QAccessibleInterface **)this_; int cursorPos = *(int*)this_;
   this_ =  new QAccessibleTextCursorEvent(iface, cursorPos);
+  this_ =  new MyQAccessibleTextCursorEvent(iface, cursorPos);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

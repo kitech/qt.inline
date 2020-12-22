@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qtranslator(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qtranslator.h:58
+// [-2] void QTranslator(QObject *) 
+// (12)qm3512510962 (28)_ZN11QTranslatorC2EP7QObject
+/*void* qm3512510962(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QTranslator(parent);
+  this_ =  new MyQTranslator(parent);
+}
+
 
 /*void C_ZN11QTranslatorD2Ev(void *this_)*/ {
   delete (QTranslator*)(this_);

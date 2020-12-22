@@ -153,6 +153,17 @@ uint64_t ensure_inline_symbol_qmainwindow(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qmainwindow.h:94
+// [-2] void QMainWindow(QWidget *, Qt::WindowFlags) 
+// (12)qm1132463102 (54)_ZN11QMainWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm1132463102(QWidget * parent, QFlags<Qt::WindowType> flags)*/{
+  auto _nilp = (MyQMainWindow*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> flags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QMainWindow(parent, flags);
+  this_ =  new MyQMainWindow(parent, flags);
+}
+
 
 /*void C_ZN11QMainWindowD2Ev(void *this_)*/ {
   delete (QMainWindow*)(this_);

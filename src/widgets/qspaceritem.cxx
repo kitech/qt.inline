@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qspaceritem(void* this_) {
 /*void* qm886124047(int w, int h, QSizePolicy::Policy hData, QSizePolicy::Policy vData)*/{
   int w = *(int*)this_; int h = *(int*)this_; QSizePolicy::Policy hData = *(QSizePolicy::Policy*)this_; QSizePolicy::Policy vData = *(QSizePolicy::Policy*)this_;
   this_ =  new QSpacerItem(w, h, hData, vData);
+  this_ =  new MyQSpacerItem(w, h, hData, vData);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

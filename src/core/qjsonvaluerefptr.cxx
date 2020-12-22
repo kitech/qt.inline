@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qjsonvaluerefptr(void* this_) {
 /*void* qm525575146(QJsonArray * array, int idx)*/{
   QJsonArray * array = *(QJsonArray **)this_; int idx = *(int*)this_;
   this_ =  new QJsonValueRefPtr(array, idx);
+  this_ =  new MyQJsonValueRefPtr(array, idx);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qjsonvaluerefptr(void* this_) {
 /*void* qm435998553(QJsonObject * object, int idx)*/{
   QJsonObject * object = *(QJsonObject **)this_; int idx = *(int*)this_;
   this_ =  new QJsonValueRefPtr(object, idx);
+  this_ =  new MyQJsonValueRefPtr(object, idx);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

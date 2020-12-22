@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qsignalmapper(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qsignalmapper.h:54
+// [-2] void QSignalMapper(QObject *) 
+// (12)qm1368727425 (30)_ZN13QSignalMapperC2EP7QObject
+/*void* qm1368727425(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QSignalMapper(parent);
+  this_ =  new MyQSignalMapper(parent);
+}
+
 
 /*void C_ZN13QSignalMapperD2Ev(void *this_)*/ {
   delete (QSignalMapper*)(this_);

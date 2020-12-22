@@ -130,6 +130,26 @@ uint64_t ensure_inline_symbol_qstringlistmodel(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlistmodel.h:54
+// [-2] void QStringListModel(QObject *) 
+// (12)qm3785501353 (33)_ZN16QStringListModelC2EP7QObject
+/*void* qm3785501353(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QStringListModel(parent);
+  this_ =  new MyQStringListModel(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstringlistmodel.h:55
+// [-2] void QStringListModel(const QStringList &, QObject *) 
+// (12)qm2486031622 (48)_ZN16QStringListModelC2ERK11QStringListP7QObject
+/*void* qm2486031622(const QStringList & strings, QObject * parent)*/{
+  const QStringList & strings = *(const QStringList *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QStringListModel(strings, parent);
+  this_ =  new MyQStringListModel(strings, parent);
+}
+
 
 /*void C_ZN16QStringListModelD2Ev(void *this_)*/ {
   delete (QStringListModel*)(this_);

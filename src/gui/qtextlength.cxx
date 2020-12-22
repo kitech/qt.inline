@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qtextlength(void* this_) {
 /*void* qm199100388()*/{
   ;
   this_ =  new QTextLength();
+  this_ =  new MyQTextLength();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qtextlength(void* this_) {
 /*void* qm2077484502(QTextLength::Type type_, double value)*/{
   QTextLength::Type type_ = *(QTextLength::Type*)this_; double value = *(double*)this_;
   this_ =  new QTextLength(type_, value);
+  this_ =  new MyQTextLength(type_, value);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

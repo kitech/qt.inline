@@ -127,6 +127,26 @@ uint64_t ensure_inline_symbol_qaudiooutput(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiooutput.h:65
+// [-2] void QAudioOutput(const QAudioFormat &, QObject *) 
+// (12)qm1801094683 (45)_ZN12QAudioOutputC2ERK12QAudioFormatP7QObject
+/*void* qm1801094683(const QAudioFormat & format, QObject * parent)*/{
+  const QAudioFormat & format = *(const QAudioFormat *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QAudioOutput(format, parent);
+  this_ =  new MyQAudioOutput(format, parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qaudiooutput.h:66
+// [-2] void QAudioOutput(const QAudioDeviceInfo &, const QAudioFormat &, QObject *) 
+// (9)qm4905331 (65)_ZN12QAudioOutputC2ERK16QAudioDeviceInfoRK12QAudioFormatP7QObject
+/*void* qm4905331(const QAudioDeviceInfo & audioDeviceInfo, const QAudioFormat & format, QObject * parent)*/{
+  const QAudioDeviceInfo & audioDeviceInfo = *(const QAudioDeviceInfo *)this_; const QAudioFormat & format = *(const QAudioFormat *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QAudioOutput(audioDeviceInfo, format, parent);
+  this_ =  new MyQAudioOutput(audioDeviceInfo, format, parent);
+}
+
 
 /*void C_ZN12QAudioOutputD2Ev(void *this_)*/ {
   delete (QAudioOutput*)(this_);

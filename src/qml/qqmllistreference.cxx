@@ -60,6 +60,36 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qqmllistreference(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmllist.h:203
+// [-2] void QQmlListReference() 
+// (12)qm4198420027 (26)_ZN17QQmlListReferenceC2Ev
+/*void* qm4198420027()*/{
+  ;
+  this_ =  new QQmlListReference();
+  this_ =  new MyQQmlListReference();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmllist.h:204
+// [-2] void QQmlListReference(QObject *, const char *, QQmlEngine *) 
+// (12)qm3235097403 (50)_ZN17QQmlListReferenceC2EP7QObjectPKcP10QQmlEngine
+/*void* qm3235097403(QObject * arg0, const char * property, QQmlEngine * arg2)*/{
+  QObject * arg0 = *(QObject **)this_; const char * property = *(const char **)this_; QQmlEngine * arg2 = *(QQmlEngine **)this_;
+  this_ =  new QQmlListReference(arg0, property, arg2);
+  this_ =  new MyQQmlListReference(arg0, property, arg2);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQml/qqmllist.h:205
+// [-2] void QQmlListReference(const QQmlListReference &) 
+// (12)qm2059021384 (29)_ZN17QQmlListReferenceC2ERKS_
+/*void* qm2059021384(const QQmlListReference & arg0)*/{
+  const QQmlListReference & arg0 = *(const QQmlListReference *)this_;
+  this_ =  new QQmlListReference(arg0);
+  this_ =  new MyQQmlListReference(arg0);
+}
+
 
 /*void C_ZN17QQmlListReferenceD2Ev(void *this_)*/ {
   delete (QQmlListReference*)(this_);

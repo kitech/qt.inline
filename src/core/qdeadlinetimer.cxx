@@ -67,6 +67,7 @@ uint64_t ensure_inline_symbol_qdeadlinetimer(void* this_) {
 /*void* qm1499621509(Qt::TimerType type_)*/{
   Qt::TimerType type_ = *(Qt::TimerType*)this_;
   this_ =  new QDeadlineTimer(type_);
+  this_ =  new MyQDeadlineTimer(type_);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -76,6 +77,17 @@ uint64_t ensure_inline_symbol_qdeadlinetimer(void* this_) {
 /*void* qm1011522817(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_)*/{
   QDeadlineTimer::ForeverConstant arg0 = *(QDeadlineTimer::ForeverConstant*)this_; Qt::TimerType type_ = *(Qt::TimerType*)this_;
   this_ =  new QDeadlineTimer(arg0, type_);
+  this_ =  new MyQDeadlineTimer(arg0, type_);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qdeadlinetimer.h:70
+// [-2] void QDeadlineTimer(qint64, Qt::TimerType) 
+// (12)qm1757858163 (38)_ZN14QDeadlineTimerC2ExN2Qt9TimerTypeE
+/*void* qm1757858163(long long msecs, Qt::TimerType type_)*/{
+  long long msecs = *(long long*)this_; Qt::TimerType type_ = *(Qt::TimerType*)this_;
+  this_ =  new QDeadlineTimer(msecs, type_);
+  this_ =  new MyQDeadlineTimer(msecs, type_);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgeolocation(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeolocation.h:57
+// [-2] void QGeoLocation() 
+// (12)qm2050627519 (21)_ZN12QGeoLocationC2Ev
+/*void* qm2050627519()*/{
+  ;
+  this_ =  new QGeoLocation();
+  this_ =  new MyQGeoLocation();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtPositioning/qgeolocation.h:58
+// [-2] void QGeoLocation(const QGeoLocation &) 
+// (12)qm3406898651 (24)_ZN12QGeoLocationC2ERKS_
+/*void* qm3406898651(const QGeoLocation & other)*/{
+  const QGeoLocation & other = *(const QGeoLocation *)this_;
+  this_ =  new QGeoLocation(other);
+  this_ =  new MyQGeoLocation(other);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtPositioning/qgeolocation.h:65
 // [1] bool operator!=(const QGeoLocation &) const

@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfontinfo(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:53
+// [-2] void QFontInfo(const QFont &) 
+// (11)qm909948022 (24)_ZN9QFontInfoC2ERK5QFont
+/*void* qm909948022(const QFont & arg0)*/{
+  const QFont & arg0 = *(const QFont *)this_;
+  this_ =  new QFontInfo(arg0);
+  this_ =  new MyQFontInfo(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qfontinfo.h:54
+// [-2] void QFontInfo(const QFontInfo &) 
+// (12)qm1723687083 (20)_ZN9QFontInfoC2ERKS_
+/*void* qm1723687083(const QFontInfo & arg0)*/{
+  const QFontInfo & arg0 = *(const QFontInfo *)this_;
+  this_ =  new QFontInfo(arg0);
+  this_ =  new MyQFontInfo(arg0);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qfontinfo.h:59
 // [-2] void swap(QFontInfo &) 

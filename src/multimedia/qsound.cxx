@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qsound(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qsound.h:61
+// [-2] void QSound(const QString &, QObject *) 
+// (11)qm340442091 (32)_ZN6QSoundC2ERK7QStringP7QObject
+/*void* qm340442091(const QString & filename, QObject * parent)*/{
+  const QString & filename = *(const QString *)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QSound(filename, parent);
+  this_ =  new MyQSound(filename, parent);
+}
+
 
 /*void C_ZN6QSoundD2Ev(void *this_)*/ {
   delete (QSound*)(this_);

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qinputevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:71
+// [-2] void QInputEvent(QEvent::Type, Qt::KeyboardModifiers) 
+// (11)qm634116851 (65)_ZN11QInputEventC2EN6QEvent4TypeE6QFlagsIN2Qt16KeyboardModifierEE
+/*void* qm634116851(QEvent::Type type_, QFlags<Qt::KeyboardModifier> modifiers)*/{
+  QEvent::Type type_ = *(QEvent::Type*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_;
+  this_ =  new QInputEvent(type_, modifiers);
+  this_ =  new MyQInputEvent(type_, modifiers);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:73
 // [4] Qt::KeyboardModifiers modifiers() const

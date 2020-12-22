@@ -439,6 +439,17 @@ uint64_t ensure_inline_symbol_qgraphicswidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicswidget.h:83
+// [-2] void QGraphicsWidget(QGraphicsItem *, Qt::WindowFlags) 
+// (11)qm602831855 (65)_ZN15QGraphicsWidgetC2EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE
+/*void* qm602831855(QGraphicsItem * parent, QFlags<Qt::WindowType> wFlags)*/{
+  auto _nilp = (MyQGraphicsWidget*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_; QFlags<Qt::WindowType> wFlags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QGraphicsWidget(parent, wFlags);
+  this_ =  new MyQGraphicsWidget(parent, wFlags);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicswidget.h:106
 // [-2] void resize(qreal, qreal) 

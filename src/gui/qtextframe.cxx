@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qtextframe(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtextobject.h:123
+// [-2] void QTextFrame(QTextDocument *) 
+// (12)qm3332645538 (34)_ZN10QTextFrameC2EP13QTextDocument
+/*void* qm3332645538(QTextDocument * doc)*/{
+  QTextDocument * doc = *(QTextDocument **)this_;
+  this_ =  new QTextFrame(doc);
+  this_ =  new MyQTextFrame(doc);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qtextobject.h:126
 // [-2] void setFrameFormat(const QTextFrameFormat &) 

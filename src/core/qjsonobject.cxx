@@ -62,6 +62,46 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qjsonobject(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonobject.h:62
+// [-2] void QJsonObject() 
+// (12)qm2710310538 (20)_ZN11QJsonObjectC2Ev
+/*void* qm2710310538()*/{
+  ;
+  this_ =  new QJsonObject();
+  this_ =  new MyQJsonObject();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonobject.h:64
+// [-2] void QJsonObject(std::initializer_list<QPair<QString, QJsonValue>>) 
+// (12)qm1123035815 (69)_ZN11QJsonObjectC2ESt16initializer_listI5QPairI7QString10QJsonValueEE
+/*void* qm1123035815(std::initializer_list<QPair<QString, QJsonValue>> args)*/{
+  std::initializer_list<QPair<QString, QJsonValue>> args = *(std::initializer_list<QPair<QString, QJsonValue>>*)this_;
+  this_ =  new QJsonObject(args);
+  this_ =  new MyQJsonObject(args);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonobject.h:68
+// [-2] void QJsonObject(const QJsonObject &) 
+// (12)qm1353956826 (23)_ZN11QJsonObjectC2ERKS_
+/*void* qm1353956826(const QJsonObject & other)*/{
+  const QJsonObject & other = *(const QJsonObject *)this_;
+  this_ =  new QJsonObject(other);
+  this_ =  new MyQJsonObject(other);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qjsonobject.h:71
+// [-2] void QJsonObject(QJsonObject &&) 
+// (11)qm653619800 (22)_ZN11QJsonObjectC2EOS_
+/*void* qm653619800(QJsonObject && other)*/{
+  QJsonObject && other =  static_cast<QJsonObject &&>(*(QJsonObject *)this_);
+  this_ =  new QJsonObject(other);
+  this_ =  new MyQJsonObject(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qjsonobject.h:73
 // [16] QJsonObject & operator=(QJsonObject &&) 

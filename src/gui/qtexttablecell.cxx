@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qtexttablecell(void* this_) {
 /*void* qm3273602161()*/{
   ;
   this_ =  new QTextTableCell();
+  this_ =  new MyQTextTableCell();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -81,6 +82,7 @@ uint64_t ensure_inline_symbol_qtexttablecell(void* this_) {
 /*void* qm2777496846(const QTextTableCell & o)*/{
   const QTextTableCell & o = *(const QTextTableCell *)this_;
   this_ =  new QTextTableCell(o);
+  this_ =  new MyQTextTableCell(o);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

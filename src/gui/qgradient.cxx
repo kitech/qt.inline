@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgradient(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:384
+// [-2] void QGradient() 
+// (12)qm3761973657 (17)_ZN9QGradientC2Ev
+/*void* qm3761973657()*/{
+  ;
+  this_ =  new QGradient();
+  this_ =  new MyQGradient();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qbrush.h:385
+// [-2] void QGradient(QGradient::Preset) 
+// (12)qm1262282698 (27)_ZN9QGradientC2ENS_6PresetE
+/*void* qm1262282698(QGradient::Preset arg0)*/{
+  QGradient::Preset arg0 = *(QGradient::Preset*)this_;
+  this_ =  new QGradient(arg0);
+  this_ =  new MyQGradient(arg0);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qbrush.h:388
 // [4] QGradient::Type type() const

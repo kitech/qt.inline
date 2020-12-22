@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qactiongroup(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qactiongroup.h:70
+// [-2] void QActionGroup(QObject *) 
+// (12)qm1912251317 (29)_ZN12QActionGroupC2EP7QObject
+/*void* qm1912251317(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QActionGroup(parent);
+  this_ =  new MyQActionGroup(parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qactiongroup.h:88
 // [-2] void setDisabled(bool) 

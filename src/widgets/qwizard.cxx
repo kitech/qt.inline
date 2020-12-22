@@ -201,6 +201,17 @@ uint64_t ensure_inline_symbol_qwizard(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qwizard.h:123
+// [-2] void QWizard(QWidget *, Qt::WindowFlags) 
+// (12)qm3586186219 (49)_ZN7QWizardC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm3586186219(QWidget * parent, QFlags<Qt::WindowType> flags)*/{
+  auto _nilp = (MyQWizard*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> flags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QWizard(parent, flags);
+  this_ =  new MyQWizard(parent, flags);
+}
+
 
 /*void C_ZN7QWizardD2Ev(void *this_)*/ {
   delete (QWizard*)(this_);

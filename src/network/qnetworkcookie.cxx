@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkcookie(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkcookie.h:66
+// [-2] void QNetworkCookie(const QByteArray &, const QByteArray &) 
+// (11)qm325702650 (39)_ZN14QNetworkCookieC2ERK10QByteArrayS2_
+/*void* qm325702650(const QByteArray & name, const QByteArray & value)*/{
+  const QByteArray & name = *(const QByteArray *)this_; const QByteArray & value = *(const QByteArray *)this_;
+  this_ =  new QNetworkCookie(name, value);
+  this_ =  new MyQNetworkCookie(name, value);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qnetworkcookie.h:67
+// [-2] void QNetworkCookie(const QNetworkCookie &) 
+// (12)qm3021567445 (26)_ZN14QNetworkCookieC2ERKS_
+/*void* qm3021567445(const QNetworkCookie & other)*/{
+  const QNetworkCookie & other = *(const QNetworkCookie *)this_;
+  this_ =  new QNetworkCookie(other);
+  this_ =  new MyQNetworkCookie(other);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qnetworkcookie.h:69
 // [8] QNetworkCookie & operator=(QNetworkCookie &&) 

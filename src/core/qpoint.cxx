@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qpoint(void* this_) {
 /*void* qm496444458()*/{
   ;
   this_ =  new QPoint();
+  this_ =  new MyQPoint();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qpoint(void* this_) {
 /*void* qm4035995165(int xpos, int ypos)*/{
   int xpos = *(int*)this_; int ypos = *(int*)this_;
   this_ =  new QPoint(xpos, ypos);
+  this_ =  new MyQPoint(xpos, ypos);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

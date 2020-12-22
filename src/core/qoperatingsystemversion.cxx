@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qoperatingsystemversion(void* this_) {
 /*void* qm3511452327(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro)*/{
   QOperatingSystemVersion::OSType osType = *(QOperatingSystemVersion::OSType*)this_; int vmajor = *(int*)this_; int vminor = *(int*)this_; int vmicro = *(int*)this_;
   this_ =  new QOperatingSystemVersion(osType, vmajor, vminor, vmicro);
+  this_ =  new MyQOperatingSystemVersion(osType, vmajor, vminor, vmicro);
 }
 
 // Public static inline Direct Visibility=Default Availability=Available

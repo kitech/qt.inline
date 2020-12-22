@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qeventloop(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qeventloop.h:56
+// [-2] void QEventLoop(QObject *) 
+// (11)qm185204465 (27)_ZN10QEventLoopC2EP7QObject
+/*void* qm185204465(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QEventLoop(parent);
+  this_ =  new MyQEventLoop(parent);
+}
+
 
 /*void C_ZN10QEventLoopD2Ev(void *this_)*/ {
   delete (QEventLoop*)(this_);

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgmaterialrhishader(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgmaterialrhishader.h:146
+// [-2] void QSGMaterialRhiShader() 
+// (12)qm2818621059 (29)_ZN20QSGMaterialRhiShaderC2Ev
+/*void* qm2818621059()*/{
+  ;
+  this_ =  new QSGMaterialRhiShader();
+  this_ =  new MyQSGMaterialRhiShader();
+}
+
 
 /*void C_ZN20QSGMaterialRhiShaderD2Ev(void *this_)*/ {
   delete (QSGMaterialRhiShader*)(this_);

@@ -100,6 +100,28 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgraphicspixmapitem(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:835
+// [-2] void QGraphicsPixmapItem(QGraphicsItem *) 
+// (12)qm2494622637 (43)_ZN19QGraphicsPixmapItemC2EP13QGraphicsItem
+/*void* qm2494622637(QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsPixmapItem*)(0);
+  QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsPixmapItem(parent);
+  this_ =  new MyQGraphicsPixmapItem(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgraphicsitem.h:836
+// [-2] void QGraphicsPixmapItem(const QPixmap &, QGraphicsItem *) 
+// (12)qm2862847538 (53)_ZN19QGraphicsPixmapItemC2ERK7QPixmapP13QGraphicsItem
+/*void* qm2862847538(const QPixmap & pixmap, QGraphicsItem * parent)*/{
+  auto _nilp = (MyQGraphicsPixmapItem*)(0);
+  const QPixmap & pixmap = *(const QPixmap *)this_; QGraphicsItem * parent = *(QGraphicsItem **)this_;
+  this_ =  new QGraphicsPixmapItem(pixmap, parent);
+  this_ =  new MyQGraphicsPixmapItem(pixmap, parent);
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgraphicsitem.h:847
 // [-2] void setOffset(qreal, qreal) 

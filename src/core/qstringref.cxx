@@ -71,6 +71,7 @@ uint64_t ensure_inline_symbol_qstringref(void* this_) {
 /*void* qm1121925256()*/{
   ;
   this_ =  new QStringRef();
+  this_ =  new MyQStringRef();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -80,6 +81,7 @@ uint64_t ensure_inline_symbol_qstringref(void* this_) {
 /*void* qm2542939433(const QString * string, int position, int size)*/{
   const QString * string = *(const QString **)this_; int position = *(int*)this_; int size = *(int*)this_;
   this_ =  new QStringRef(string, position, size);
+  this_ =  new MyQStringRef(string, position, size);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -89,6 +91,7 @@ uint64_t ensure_inline_symbol_qstringref(void* this_) {
 /*void* qm1313433324(const QString * string)*/{
   const QString * string = *(const QString **)this_;
   this_ =  new QStringRef(string);
+  this_ =  new MyQStringRef(string);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -98,6 +101,7 @@ uint64_t ensure_inline_symbol_qstringref(void* this_) {
 /*void* qm675936364(const QStringRef & other)*/{
   const QStringRef & other = *(const QStringRef *)this_;
   this_ =  new QStringRef(other);
+  this_ =  new MyQStringRef(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -107,6 +111,7 @@ uint64_t ensure_inline_symbol_qstringref(void* this_) {
 /*void* qm3682166288(QStringRef && other)*/{
   QStringRef && other =  static_cast<QStringRef &&>(*(QStringRef *)this_);
   this_ =  new QStringRef(other);
+  this_ =  new MyQStringRef(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

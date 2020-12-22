@@ -139,6 +139,28 @@ uint64_t ensure_inline_symbol_qgridlayout(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgridlayout.h:64
+// [-2] void QGridLayout(QWidget *) 
+// (10)qm11498513 (28)_ZN11QGridLayoutC2EP7QWidget
+/*void* qm11498513(QWidget * parent)*/{
+  auto _nilp = (MyQGridLayout*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QGridLayout(parent);
+  this_ =  new MyQGridLayout(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qgridlayout.h:65
+// [-2] void QGridLayout() 
+// (12)qm2533578230 (20)_ZN11QGridLayoutC2Ev
+/*void* qm2533578230()*/{
+  auto _nilp = (MyQGridLayout*)(0);
+  ;
+  this_ =  new QGridLayout();
+  this_ =  new MyQGridLayout();
+}
+
 // Public inline Ignore Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qgridlayout.h:102
 // [-2] void addWidget(QWidget *) 

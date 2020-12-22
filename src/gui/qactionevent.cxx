@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qactionevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:769
+// [-2] void QActionEvent(int, QAction *, QAction *) 
+// (12)qm1750880341 (33)_ZN12QActionEventC2EiP7QActionS1_
+/*void* qm1750880341(int type_, QAction * action, QAction * before)*/{
+  int type_ = *(int*)this_; QAction * action = *(QAction **)this_; QAction * before = *(QAction **)this_;
+  this_ =  new QActionEvent(type_, action, before);
+  this_ =  new MyQActionEvent(type_, action, before);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:772
 // [8] QAction * action() const

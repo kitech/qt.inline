@@ -65,6 +65,7 @@ uint64_t ensure_inline_symbol_qsizepolicy(void* this_) {
 /*void* qm2384431746()*/{
   ;
   this_ =  new QSizePolicy();
+  this_ =  new MyQSizePolicy();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -74,6 +75,7 @@ uint64_t ensure_inline_symbol_qsizepolicy(void* this_) {
 /*void* qm1433235332(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type_)*/{
   QSizePolicy::Policy horizontal = *(QSizePolicy::Policy*)this_; QSizePolicy::Policy vertical = *(QSizePolicy::Policy*)this_; QSizePolicy::ControlType type_ = *(QSizePolicy::ControlType*)this_;
   this_ =  new QSizePolicy(horizontal, vertical, type_);
+  this_ =  new MyQSizePolicy(horizontal, vertical, type_);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

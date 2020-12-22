@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qauthenticator(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qauthenticator.h:56
+// [-2] void QAuthenticator() 
+// (12)qm2545993018 (23)_ZN14QAuthenticatorC2Ev
+/*void* qm2545993018()*/{
+  ;
+  this_ =  new QAuthenticator();
+  this_ =  new MyQAuthenticator();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtNetwork/qauthenticator.h:59
+// [-2] void QAuthenticator(const QAuthenticator &) 
+// (12)qm3263774914 (26)_ZN14QAuthenticatorC2ERKS_
+/*void* qm3263774914(const QAuthenticator & other)*/{
+  const QAuthenticator & other = *(const QAuthenticator *)this_;
+  this_ =  new QAuthenticator(other);
+  this_ =  new MyQAuthenticator(other);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtNetwork/qauthenticator.h:63
 // [1] bool operator!=(const QAuthenticator &) const

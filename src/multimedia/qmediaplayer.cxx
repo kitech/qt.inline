@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qmediaplayer(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtMultimedia/qmediaplayer.h:124
+// [-2] void QMediaPlayer(QObject *, QMediaPlayer::Flags) 
+// (12)qm1371021590 (47)_ZN12QMediaPlayerC2EP7QObject6QFlagsINS_4FlagEE
+/*void* qm1371021590(QObject * parent, QFlags<QMediaPlayer::Flag> flags)*/{
+  QObject * parent = *(QObject **)this_; QFlags<QMediaPlayer::Flag> flags = *(QFlags<QMediaPlayer::Flag>*)this_;
+  this_ =  new QMediaPlayer(parent, flags);
+  this_ =  new MyQMediaPlayer(parent, flags);
+}
+
 
 /*void C_ZN12QMediaPlayerD2Ev(void *this_)*/ {
   delete (QMediaPlayer*)(this_);

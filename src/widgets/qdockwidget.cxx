@@ -179,6 +179,28 @@ uint64_t ensure_inline_symbol_qdockwidget(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdockwidget.h:66
+// [-2] void QDockWidget(const QString &, QWidget *, Qt::WindowFlags) 
+// (11)qm599394212 (64)_ZN11QDockWidgetC2ERK7QStringP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm599394212(const QString & title, QWidget * parent, QFlags<Qt::WindowType> flags)*/{
+  auto _nilp = (MyQDockWidget*)(0);
+  const QString & title = *(const QString *)this_; QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> flags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QDockWidget(title, parent, flags);
+  this_ =  new MyQDockWidget(title, parent, flags);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qdockwidget.h:68
+// [-2] void QDockWidget(QWidget *, Qt::WindowFlags) 
+// (12)qm2971841270 (54)_ZN11QDockWidgetC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE
+/*void* qm2971841270(QWidget * parent, QFlags<Qt::WindowType> flags)*/{
+  auto _nilp = (MyQDockWidget*)(0);
+  QWidget * parent = *(QWidget **)this_; QFlags<Qt::WindowType> flags = *(QFlags<Qt::WindowType>*)this_;
+  this_ =  new QDockWidget(parent, flags);
+  this_ =  new MyQDockWidget(parent, flags);
+}
+
 // Public inline Extend Visibility=Default Availability=Available
 // /usr/include/qt/QtWidgets/qdockwidget.h:96
 // [1] bool isFloating() const

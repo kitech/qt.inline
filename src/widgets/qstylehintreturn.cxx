@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstylehintreturn(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qstyleoption.h:741
+// [-2] void QStyleHintReturn(int, int) 
+// (12)qm2467530938 (26)_ZN16QStyleHintReturnC2Eii
+/*void* qm2467530938(int version, int type_)*/{
+  int version = *(int*)this_; int type_ = *(int*)this_;
+  this_ =  new QStyleHintReturn(version, type_);
+  this_ =  new MyQStyleHintReturn(version, type_);
+}
+
 
 /*void C_ZN16QStyleHintReturnD2Ev(void *this_)*/ {
   delete (QStyleHintReturn*)(this_);

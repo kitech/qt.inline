@@ -75,6 +75,47 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm189374469(Qt::Initialization arg0)*/{
   Qt::Initialization arg0 = *(Qt::Initialization*)this_;
   this_ =  new QTransform(arg0);
+  this_ =  new MyQTransform(arg0);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:69
+// [-2] void QTransform() 
+// (11)qm885735579 (19)_ZN10QTransformC2Ev
+/*void* qm885735579()*/{
+  ;
+  this_ =  new QTransform();
+  this_ =  new MyQTransform();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:70
+// [-2] void QTransform(qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal) 
+// (12)qm2585840205 (27)_ZN10QTransformC2Eddddddddd
+/*void* qm2585840205(double h11, double h12, double h13, double h21, double h22, double h23, double h31, double h32, double h33)*/{
+  double h11 = *(double*)this_; double h12 = *(double*)this_; double h13 = *(double*)this_; double h21 = *(double*)this_; double h22 = *(double*)this_; double h23 = *(double*)this_; double h31 = *(double*)this_; double h32 = *(double*)this_; double h33 = *(double*)this_;
+  this_ =  new QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
+  this_ =  new MyQTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:73
+// [-2] void QTransform(qreal, qreal, qreal, qreal, qreal, qreal) 
+// (12)qm1330137376 (24)_ZN10QTransformC2Edddddd
+/*void* qm1330137376(double h11, double h12, double h21, double h22, double dx, double dy)*/{
+  double h11 = *(double*)this_; double h12 = *(double*)this_; double h21 = *(double*)this_; double h22 = *(double*)this_; double dx = *(double*)this_; double dy = *(double*)this_;
+  this_ =  new QTransform(h11, h12, h21, h22, dx, dy);
+  this_ =  new MyQTransform(h11, h12, h21, h22, dx, dy);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qtransform.h:76
+// [-2] void QTransform(const QMatrix &) 
+// (12)qm2284054311 (28)_ZN10QTransformC2ERK7QMatrix
+/*void* qm2284054311(const QMatrix & mtx)*/{
+  const QMatrix & mtx = *(const QMatrix *)this_;
+  this_ =  new QTransform(mtx);
+  this_ =  new MyQTransform(mtx);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -96,6 +137,7 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm3829967000(QTransform && other)*/{
   QTransform && other =  static_cast<QTransform &&>(*(QTransform *)this_);
   this_ =  new QTransform(other);
+  this_ =  new MyQTransform(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -105,6 +147,7 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm3407200944(const QTransform & other)*/{
   const QTransform & other = *(const QTransform *)this_;
   this_ =  new QTransform(other);
+  this_ =  new MyQTransform(other);
 }
 
 // Public Extend Visibility=Default Availability=Available

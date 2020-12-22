@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsggeometrynode(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtQuick/qsgnode.h:226
+// [-2] void QSGGeometryNode() 
+// (12)qm2449254989 (24)_ZN15QSGGeometryNodeC2Ev
+/*void* qm2449254989()*/{
+  ;
+  this_ =  new QSGGeometryNode();
+  this_ =  new MyQSGGeometryNode();
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtQuick/qsgnode.h:230
 // [8] QSGMaterial * material() const

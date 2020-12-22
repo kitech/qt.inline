@@ -310,6 +310,28 @@ uint64_t ensure_inline_symbol_qlineedit(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlineedit.h:93
+// [-2] void QLineEdit(QWidget *) 
+// (11)qm390219950 (25)_ZN9QLineEditC2EP7QWidget
+/*void* qm390219950(QWidget * parent)*/{
+  auto _nilp = (MyQLineEdit*)(0);
+  QWidget * parent = *(QWidget **)this_;
+  this_ =  new QLineEdit(parent);
+  this_ =  new MyQLineEdit(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qlineedit.h:94
+// [-2] void QLineEdit(const QString &, QWidget *) 
+// (12)qm2344652411 (35)_ZN9QLineEditC2ERK7QStringP7QWidget
+/*void* qm2344652411(const QString & arg0, QWidget * parent)*/{
+  auto _nilp = (MyQLineEdit*)(0);
+  const QString & arg0 = *(const QString *)this_; QWidget * parent = *(QWidget **)this_;
+  this_ =  new QLineEdit(arg0, parent);
+  this_ =  new MyQLineEdit(arg0, parent);
+}
+
 
 /*void C_ZN9QLineEditD2Ev(void *this_)*/ {
   delete (QLineEdit*)(this_);

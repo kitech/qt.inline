@@ -63,6 +63,7 @@ uint64_t ensure_inline_symbol_qincompatibleflag(void* this_) {
 /*void* qm1089776055(int i)*/{
   int i = *(int*)this_;
   this_ =  new QIncompatibleFlag(i);
+  this_ =  new MyQIncompatibleFlag(i);
 }
 
 

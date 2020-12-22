@@ -125,6 +125,16 @@ uint64_t ensure_inline_symbol_qopengldebuglogger(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopengldebug.h:168
+// [-2] void QOpenGLDebugLogger(QObject *) 
+// (12)qm1889778517 (35)_ZN18QOpenGLDebugLoggerC2EP7QObject
+/*void* qm1889778517(QObject * parent)*/{
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QOpenGLDebugLogger(parent);
+  this_ =  new MyQOpenGLDebugLogger(parent);
+}
+
 
 /*void C_ZN18QOpenGLDebugLoggerD2Ev(void *this_)*/ {
   delete (QOpenGLDebugLogger*)(this_);

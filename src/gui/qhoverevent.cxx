@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qhoverevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:157
+// [-2] void QHoverEvent(QEvent::Type, const QPointF &, const QPointF &, Qt::KeyboardModifiers) 
+// (11)qm745147355 (78)_ZN11QHoverEventC2EN6QEvent4TypeERK7QPointFS4_6QFlagsIN2Qt16KeyboardModifierEE
+/*void* qm745147355(QEvent::Type type_, const QPointF & pos, const QPointF & oldPos, QFlags<Qt::KeyboardModifier> modifiers)*/{
+  QEvent::Type type_ = *(QEvent::Type*)this_; const QPointF & pos = *(const QPointF *)this_; const QPointF & oldPos = *(const QPointF *)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_;
+  this_ =  new QHoverEvent(type_, pos, oldPos, modifiers);
+  this_ =  new MyQHoverEvent(type_, pos, oldPos, modifiers);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:161
 // [8] QPoint pos() const

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qhelpevent(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qevent.h:722
+// [-2] void QHelpEvent(QEvent::Type, const QPoint &, const QPoint &) 
+// (12)qm2592684267 (44)_ZN10QHelpEventC2EN6QEvent4TypeERK6QPointS4_
+/*void* qm2592684267(QEvent::Type type_, const QPoint & pos, const QPoint & globalPos)*/{
+  QEvent::Type type_ = *(QEvent::Type*)this_; const QPoint & pos = *(const QPoint *)this_; const QPoint & globalPos = *(const QPoint *)this_;
+  this_ =  new QHelpEvent(type_, pos, globalPos);
+  this_ =  new MyQHelpEvent(type_, pos, globalPos);
+}
+
 // Public inline Direct Visibility=Default Availability=Available
 // /usr/include/qt/QtGui/qevent.h:725
 // [4] int x() const

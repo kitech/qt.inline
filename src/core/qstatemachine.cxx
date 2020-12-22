@@ -215,6 +215,28 @@ uint64_t ensure_inline_symbol_qstatemachine(void* this_) {
    fnptrsumval += (uint64_t)(void*&)xptr;
 }
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:117
+// [-2] void QStateMachine(QObject *) 
+// (11)qm942813117 (30)_ZN13QStateMachineC2EP7QObject
+/*void* qm942813117(QObject * parent)*/{
+  auto _nilp = (MyQStateMachine*)(0);
+  QObject * parent = *(QObject **)this_;
+  this_ =  new QStateMachine(parent);
+  this_ =  new MyQStateMachine(parent);
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtCore/qstatemachine.h:118
+// [-2] void QStateMachine(QState::ChildMode, QObject *) 
+// (12)qm2535540660 (49)_ZN13QStateMachineC2EN6QState9ChildModeEP7QObject
+/*void* qm2535540660(QState::ChildMode childMode, QObject * parent)*/{
+  auto _nilp = (MyQStateMachine*)(0);
+  QState::ChildMode childMode = *(QState::ChildMode*)this_; QObject * parent = *(QObject **)this_;
+  this_ =  new QStateMachine(childMode, parent);
+  this_ =  new MyQStateMachine(childMode, parent);
+}
+
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qstatemachine.h:153
 // [4] int postDelayedEvent(QEvent *, std::chrono::milliseconds) 

@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopengltextureblitter(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopengltextureblitter.h:58
+// [-2] void QOpenGLTextureBlitter() 
+// (12)qm1480619625 (30)_ZN21QOpenGLTextureBlitterC2Ev
+/*void* qm1480619625()*/{
+  ;
+  this_ =  new QOpenGLTextureBlitter();
+  this_ =  new MyQOpenGLTextureBlitter();
+}
+
 
 /*void C_ZN21QOpenGLTextureBlitterD2Ev(void *this_)*/ {
   delete (QOpenGLTextureBlitter*)(this_);

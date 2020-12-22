@@ -58,6 +58,26 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglframebufferobjectformat(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:167
+// [-2] void QOpenGLFramebufferObjectFormat() 
+// (12)qm2099681631 (39)_ZN30QOpenGLFramebufferObjectFormatC2Ev
+/*void* qm2099681631()*/{
+  ;
+  this_ =  new QOpenGLFramebufferObjectFormat();
+  this_ =  new MyQOpenGLFramebufferObjectFormat();
+}
+
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtGui/qopenglframebufferobject.h:168
+// [-2] void QOpenGLFramebufferObjectFormat(const QOpenGLFramebufferObjectFormat &) 
+// (12)qm3555859702 (42)_ZN30QOpenGLFramebufferObjectFormatC2ERKS_
+/*void* qm3555859702(const QOpenGLFramebufferObjectFormat & other)*/{
+  const QOpenGLFramebufferObjectFormat & other = *(const QOpenGLFramebufferObjectFormat *)this_;
+  this_ =  new QOpenGLFramebufferObjectFormat(other);
+  this_ =  new MyQOpenGLFramebufferObjectFormat(other);
+}
+
 
 /*void C_ZN30QOpenGLFramebufferObjectFormatD2Ev(void *this_)*/ {
   delete (QOpenGLFramebufferObjectFormat*)(this_);

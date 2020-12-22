@@ -56,6 +56,16 @@ extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfileiconprovider(void* this_) {
   uint64_t fnptrsumval = 0;
 
+// Public Visibility=Default Availability=Available
+// /usr/include/qt/QtWidgets/qfileiconprovider.h:56
+// [-2] void QFileIconProvider() 
+// (12)qm2516064825 (26)_ZN17QFileIconProviderC2Ev
+/*void* qm2516064825()*/{
+  ;
+  this_ =  new QFileIconProvider();
+  this_ =  new MyQFileIconProvider();
+}
+
 
 /*void C_ZN17QFileIconProviderD2Ev(void *this_)*/ {
   delete (QFileIconProvider*)(this_);
