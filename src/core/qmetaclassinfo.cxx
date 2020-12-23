@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQMetaClassInfo_t {
-  QByteArrayData data[1];
-  char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQMetaClassInfo_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQMetaClassInfo_t qt_meta_stringdata_MyQMetaClassInfo = {
-   {
-  QT_MOC_LITERAL(0, 0, 16), // "MyQMetaClassInfo"
-  },
-  "MyQMetaClassInfo"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQMetaClassInfo[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQMetaClassInfo : public QMetaClassInfo {
-public:
-  virtual ~MyQMetaClassInfo() {}
-// void QMetaClassInfo()
-MyQMetaClassInfo() : QMetaClassInfo() {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmetaclassinfo(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qmetaclassinfo(void* this_) {
 /*void* qm2695292227()*/{
   ;
   this_ =  new QMetaClassInfo();
-  this_ =  new MyQMetaClassInfo();
 }
 
 // Public inline Direct Visibility=Default Availability=Available

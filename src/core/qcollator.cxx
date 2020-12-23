@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQCollator_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQCollator_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQCollator_t qt_meta_stringdata_MyQCollator = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQCollator"
-  },
-  "MyQCollator"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQCollator[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQCollator : public QCollator {
-public:
-  virtual ~MyQCollator() {}
-// void QCollator()
-MyQCollator() : QCollator() {}
-// void QCollator(const QLocale &)
-MyQCollator(const QLocale & locale) : QCollator(locale) {}
-// void QCollator(const QCollator &)
-MyQCollator(const QCollator & arg0) : QCollator(arg0) {}
-// void QCollator(QCollator &&)
-MyQCollator(QCollator && other) : QCollator(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcollator(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qcollator(void* this_) {
 /*void* qm2653493320()*/{
   ;
   this_ =  new QCollator();
-  this_ =  new MyQCollator();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qcollator(void* this_) {
 /*void* qm3059839049(const QLocale & locale)*/{
   const QLocale & locale = *(const QLocale *)this_;
   this_ =  new QCollator(locale);
-  this_ =  new MyQCollator(locale);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qcollator(void* this_) {
 /*void* qm2025594235(const QCollator & arg0)*/{
   const QCollator & arg0 = *(const QCollator *)this_;
   this_ =  new QCollator(arg0);
-  this_ =  new MyQCollator(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qcollator(void* this_) {
 /*void* qm736972128(QCollator && other)*/{
   QCollator && other =  static_cast<QCollator &&>(*(QCollator *)this_);
   this_ =  new QCollator(other);
-  this_ =  new MyQCollator(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

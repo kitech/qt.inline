@@ -16,64 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQString_t {
-  QByteArrayData data[1];
-  char stringdata0[10];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQString_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQString_t qt_meta_stringdata_MyQString = {
-   {
-  QT_MOC_LITERAL(0, 0, 9), // "MyQString"
-  },
-  "MyQString"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQString[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQString : public QString {
-public:
-  virtual ~MyQString() {}
-// void QString()
-MyQString() : QString() {}
-// void QString(const QChar *, int)
-MyQString(const QChar * unicode, int size) : QString(unicode, size) {}
-// void QString(QChar)
-MyQString(QChar c) : QString(c) {}
-// void QString(int, QChar)
-MyQString(int size, QChar c) : QString(size, c) {}
-// void QString(QLatin1String)
-MyQString(QLatin1String latin1) : QString(latin1) {}
-// void QString(const QString &)
-MyQString(const QString & arg0) : QString(arg0) {}
-// void QString(QString &&)
-MyQString(QString && other) : QString(other) {}
-// void QString(const char *)
-MyQString(const char * ch) : QString(ch) {}
-// void QString(const QByteArray &)
-MyQString(const QByteArray & a) : QString(a) {}
-// void QString(const QString::Null &)
-MyQString(const QString::Null & arg0) : QString(arg0) {}
-// void QString(int, Qt::Initialization)
-MyQString(int size, Qt::Initialization arg1) : QString(size, arg1) {}
-// void QString(QStringDataPtr)
-MyQString(QStringDataPtr dd) : QString(dd) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstring(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -85,7 +27,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm3941149024()*/{
   ;
   this_ =  new QString();
-  this_ =  new MyQString();
 }
 
 // Public Visibility=Default Availability=Available
@@ -95,7 +36,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm2246409334(const QChar * unicode, int size)*/{
   const QChar * unicode = *(const QChar **)this_; int size = *(int*)this_;
   this_ =  new QString(unicode, size);
-  this_ =  new MyQString(unicode, size);
 }
 
 // Public Visibility=Default Availability=Available
@@ -105,7 +45,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm29305257(QChar c)*/{
   QChar c = *(QChar*)this_;
   this_ =  new QString(c);
-  this_ =  new MyQString(c);
 }
 
 // Public Visibility=Default Availability=Available
@@ -115,7 +54,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm3074360247(int size, QChar c)*/{
   int size = *(int*)this_; QChar c = *(QChar*)this_;
   this_ =  new QString(size, c);
-  this_ =  new MyQString(size, c);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -125,7 +63,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm1670260114(QLatin1String latin1)*/{
   QLatin1String latin1 = *(QLatin1String*)this_;
   this_ =  new QString(latin1);
-  this_ =  new MyQString(latin1);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -135,7 +72,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm333172565(const QString & arg0)*/{
   const QString & arg0 = *(const QString *)this_;
   this_ =  new QString(arg0);
-  this_ =  new MyQString(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -152,7 +88,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm661559088(QString && other)*/{
   QString && other =  static_cast<QString &&>(*(QString *)this_);
   this_ =  new QString(other);
-  this_ =  new MyQString(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -1466,7 +1401,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm2640353187(const char * ch)*/{
   const char * ch = *(const char **)this_;
   this_ =  new QString(ch);
-  this_ =  new MyQString(ch);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -1476,7 +1410,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm579962272(const QByteArray & a)*/{
   const QByteArray & a = *(const QByteArray *)this_;
   this_ =  new QString(a);
-  this_ =  new MyQString(a);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -2098,7 +2031,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm3320937164(const QString::Null & arg0)*/{
   const QString::Null & arg0 = *(const QString::Null *)this_;
   this_ =  new QString(arg0);
-  this_ =  new MyQString(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -2144,7 +2076,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm1276233638(int size, Qt::Initialization arg1)*/{
   int size = *(int*)this_; Qt::Initialization arg1 = *(Qt::Initialization*)this_;
   this_ =  new QString(size, arg1);
-  this_ =  new MyQString(size, arg1);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -2154,7 +2085,6 @@ uint64_t ensure_inline_symbol_qstring(void* this_) {
 /*void* qm1641427172(QStringDataPtr dd)*/{
   QStringDataPtr dd = *(QStringDataPtr*)this_;
   this_ =  new QString(dd);
-  this_ =  new MyQString(dd);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

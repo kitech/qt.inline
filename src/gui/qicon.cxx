@@ -16,52 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQIcon_t {
-  QByteArrayData data[1];
-  char stringdata0[8];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQIcon_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQIcon_t qt_meta_stringdata_MyQIcon = {
-   {
-  QT_MOC_LITERAL(0, 0, 7), // "MyQIcon"
-  },
-  "MyQIcon"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQIcon[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQIcon : public QIcon {
-public:
-  virtual ~MyQIcon() {}
-// void QIcon()
-MyQIcon() : QIcon() {}
-// void QIcon(const QPixmap &)
-MyQIcon(const QPixmap & pixmap) : QIcon(pixmap) {}
-// void QIcon(const QIcon &)
-MyQIcon(const QIcon & other) : QIcon(other) {}
-// void QIcon(QIcon &&)
-MyQIcon(QIcon && other) : QIcon(other) {}
-// void QIcon(const QString &)
-MyQIcon(const QString & fileName) : QIcon(fileName) {}
-// void QIcon(QIconEngine *)
-MyQIcon(QIconEngine * engine) : QIcon(engine) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qicon(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -73,7 +27,6 @@ uint64_t ensure_inline_symbol_qicon(void* this_) {
 /*void* qm1359309426()*/{
   ;
   this_ =  new QIcon();
-  this_ =  new MyQIcon();
 }
 
 // Public Visibility=Default Availability=Available
@@ -83,7 +36,6 @@ uint64_t ensure_inline_symbol_qicon(void* this_) {
 /*void* qm2794313597(const QPixmap & pixmap)*/{
   const QPixmap & pixmap = *(const QPixmap *)this_;
   this_ =  new QIcon(pixmap);
-  this_ =  new MyQIcon(pixmap);
 }
 
 // Public Visibility=Default Availability=Available
@@ -93,7 +45,6 @@ uint64_t ensure_inline_symbol_qicon(void* this_) {
 /*void* qm2123434597(const QIcon & other)*/{
   const QIcon & other = *(const QIcon *)this_;
   this_ =  new QIcon(other);
-  this_ =  new MyQIcon(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -103,7 +54,6 @@ uint64_t ensure_inline_symbol_qicon(void* this_) {
 /*void* qm2957986853(QIcon && other)*/{
   QIcon && other =  static_cast<QIcon &&>(*(QIcon *)this_);
   this_ =  new QIcon(other);
-  this_ =  new MyQIcon(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -113,7 +63,6 @@ uint64_t ensure_inline_symbol_qicon(void* this_) {
 /*void* qm3566610256(const QString & fileName)*/{
   const QString & fileName = *(const QString *)this_;
   this_ =  new QIcon(fileName);
-  this_ =  new MyQIcon(fileName);
 }
 
 // Public Visibility=Default Availability=Available
@@ -123,7 +72,6 @@ uint64_t ensure_inline_symbol_qicon(void* this_) {
 /*void* qm1644732391(QIconEngine * engine)*/{
   QIconEngine * engine = *(QIconEngine **)this_;
   this_ =  new QIcon(engine);
-  this_ =  new MyQIcon(engine);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

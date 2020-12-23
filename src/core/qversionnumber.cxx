@@ -16,54 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQVersionNumber_t {
-  QByteArrayData data[1];
-  char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQVersionNumber_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQVersionNumber_t qt_meta_stringdata_MyQVersionNumber = {
-   {
-  QT_MOC_LITERAL(0, 0, 16), // "MyQVersionNumber"
-  },
-  "MyQVersionNumber"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQVersionNumber[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQVersionNumber : public QVersionNumber {
-public:
-  virtual ~MyQVersionNumber() {}
-// void QVersionNumber()
-MyQVersionNumber() : QVersionNumber() {}
-// void QVersionNumber(const QVector<int> &)
-MyQVersionNumber(const QVector<int> & seg) : QVersionNumber(seg) {}
-// void QVersionNumber(QVector<int> &&)
-MyQVersionNumber(QVector<int> && seg) : QVersionNumber(seg) {}
-// void QVersionNumber(std::initializer_list<int>)
-MyQVersionNumber(std::initializer_list<int> args) : QVersionNumber(args) {}
-// void QVersionNumber(int)
-MyQVersionNumber(int maj) : QVersionNumber(maj) {}
-// void QVersionNumber(int, int)
-MyQVersionNumber(int maj, int min) : QVersionNumber(maj, min) {}
-// void QVersionNumber(int, int, int)
-MyQVersionNumber(int maj, int min, int mic) : QVersionNumber(maj, min, mic) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -75,7 +27,6 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm2155026613()*/{
   ;
   this_ =  new QVersionNumber();
-  this_ =  new MyQVersionNumber();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -85,7 +36,6 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm957326860(const QVector<int> & seg)*/{
   const QVector<int> & seg = *(const QVector<int> *)this_;
   this_ =  new QVersionNumber(seg);
-  this_ =  new MyQVersionNumber(seg);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -95,7 +45,6 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm2433266494(QVector<int> && seg)*/{
   QVector<int> && seg =  static_cast<QVector<int> &&>(*(QVector<int> *)this_);
   this_ =  new QVersionNumber(seg);
-  this_ =  new MyQVersionNumber(seg);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -105,7 +54,6 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm3522872855(std::initializer_list<int> args)*/{
   std::initializer_list<int> args = *(std::initializer_list<int>*)this_;
   this_ =  new QVersionNumber(args);
-  this_ =  new MyQVersionNumber(args);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -115,7 +63,6 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm226170176(int maj)*/{
   int maj = *(int*)this_;
   this_ =  new QVersionNumber(maj);
-  this_ =  new MyQVersionNumber(maj);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -125,7 +72,6 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm2428308724(int maj, int min)*/{
   int maj = *(int*)this_; int min = *(int*)this_;
   this_ =  new QVersionNumber(maj, min);
-  this_ =  new MyQVersionNumber(maj, min);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -135,7 +81,6 @@ uint64_t ensure_inline_symbol_qversionnumber(void* this_) {
 /*void* qm1546435960(int maj, int min, int mic)*/{
   int maj = *(int*)this_; int min = *(int*)this_; int mic = *(int*)this_;
   this_ =  new QVersionNumber(maj, min, mic);
-  this_ =  new MyQVersionNumber(maj, min, mic);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQWebEngineUrlScheme_t {
-  QByteArrayData data[1];
-  char stringdata0[22];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQWebEngineUrlScheme_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQWebEngineUrlScheme_t qt_meta_stringdata_MyQWebEngineUrlScheme = {
-   {
-  QT_MOC_LITERAL(0, 0, 21), // "MyQWebEngineUrlScheme"
-  },
-  "MyQWebEngineUrlScheme"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQWebEngineUrlScheme[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQWebEngineUrlScheme : public QWebEngineUrlScheme {
-public:
-  virtual ~MyQWebEngineUrlScheme() {}
-// void QWebEngineUrlScheme()
-MyQWebEngineUrlScheme() : QWebEngineUrlScheme() {}
-// void QWebEngineUrlScheme(const QByteArray &)
-MyQWebEngineUrlScheme(const QByteArray & name) : QWebEngineUrlScheme(name) {}
-// void QWebEngineUrlScheme(const QWebEngineUrlScheme &)
-MyQWebEngineUrlScheme(const QWebEngineUrlScheme & that) : QWebEngineUrlScheme(that) {}
-// void QWebEngineUrlScheme(QWebEngineUrlScheme &&)
-MyQWebEngineUrlScheme(QWebEngineUrlScheme && that) : QWebEngineUrlScheme(that) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwebengineurlscheme(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qwebengineurlscheme(void* this_) {
 /*void* qm906609405()*/{
   ;
   this_ =  new QWebEngineUrlScheme();
-  this_ =  new MyQWebEngineUrlScheme();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qwebengineurlscheme(void* this_) {
 /*void* qm718212501(const QByteArray & name)*/{
   const QByteArray & name = *(const QByteArray *)this_;
   this_ =  new QWebEngineUrlScheme(name);
-  this_ =  new MyQWebEngineUrlScheme(name);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qwebengineurlscheme(void* this_) {
 /*void* qm4220529781(const QWebEngineUrlScheme & that)*/{
   const QWebEngineUrlScheme & that = *(const QWebEngineUrlScheme *)this_;
   this_ =  new QWebEngineUrlScheme(that);
-  this_ =  new MyQWebEngineUrlScheme(that);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qwebengineurlscheme(void* this_) {
 /*void* qm3562636407(QWebEngineUrlScheme && that)*/{
   QWebEngineUrlScheme && that =  static_cast<QWebEngineUrlScheme &&>(*(QWebEngineUrlScheme *)this_);
   this_ =  new QWebEngineUrlScheme(that);
-  this_ =  new MyQWebEngineUrlScheme(that);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

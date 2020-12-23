@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQXmlStreamNamespaceDeclaration_t {
-  QByteArrayData data[1];
-  char stringdata0[33];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQXmlStreamNamespaceDeclaration_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQXmlStreamNamespaceDeclaration_t qt_meta_stringdata_MyQXmlStreamNamespaceDeclaration = {
-   {
-  QT_MOC_LITERAL(0, 0, 32), // "MyQXmlStreamNamespaceDeclaration"
-  },
-  "MyQXmlStreamNamespaceDeclaration"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQXmlStreamNamespaceDeclaration[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQXmlStreamNamespaceDeclaration : public QXmlStreamNamespaceDeclaration {
-public:
-  virtual ~MyQXmlStreamNamespaceDeclaration() {}
-// void QXmlStreamNamespaceDeclaration()
-MyQXmlStreamNamespaceDeclaration() : QXmlStreamNamespaceDeclaration() {}
-// void QXmlStreamNamespaceDeclaration(const QString &, const QString &)
-MyQXmlStreamNamespaceDeclaration(const QString & prefix, const QString & namespaceUri) : QXmlStreamNamespaceDeclaration(prefix, namespaceUri) {}
-// void QXmlStreamNamespaceDeclaration(const QXmlStreamNamespaceDeclaration &)
-MyQXmlStreamNamespaceDeclaration(const QXmlStreamNamespaceDeclaration & arg0) : QXmlStreamNamespaceDeclaration(arg0) {}
-// void QXmlStreamNamespaceDeclaration(QXmlStreamNamespaceDeclaration &&)
-MyQXmlStreamNamespaceDeclaration(QXmlStreamNamespaceDeclaration && other) : QXmlStreamNamespaceDeclaration(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamnamespacedeclaration(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qxmlstreamnamespacedeclaration(void* this_) {
 /*void* qm1635349409()*/{
   ;
   this_ =  new QXmlStreamNamespaceDeclaration();
-  this_ =  new MyQXmlStreamNamespaceDeclaration();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qxmlstreamnamespacedeclaration(void* this_) {
 /*void* qm349651721(const QString & prefix, const QString & namespaceUri)*/{
   const QString & prefix = *(const QString *)this_; const QString & namespaceUri = *(const QString *)this_;
   this_ =  new QXmlStreamNamespaceDeclaration(prefix, namespaceUri);
-  this_ =  new MyQXmlStreamNamespaceDeclaration(prefix, namespaceUri);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qxmlstreamnamespacedeclaration(void* this_) {
 /*void* qm871175475(const QXmlStreamNamespaceDeclaration & arg0)*/{
   const QXmlStreamNamespaceDeclaration & arg0 = *(const QXmlStreamNamespaceDeclaration *)this_;
   this_ =  new QXmlStreamNamespaceDeclaration(arg0);
-  this_ =  new MyQXmlStreamNamespaceDeclaration(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qxmlstreamnamespacedeclaration(void* this_) {
 /*void* qm2117157445(QXmlStreamNamespaceDeclaration && other)*/{
   QXmlStreamNamespaceDeclaration && other =  static_cast<QXmlStreamNamespaceDeclaration &&>(*(QXmlStreamNamespaceDeclaration *)this_);
   this_ =  new QXmlStreamNamespaceDeclaration(other);
-  this_ =  new MyQXmlStreamNamespaceDeclaration(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -19,46 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTableWidgetSelectionRange_t {
-  QByteArrayData data[1];
-  char stringdata0[29];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTableWidgetSelectionRange_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTableWidgetSelectionRange_t qt_meta_stringdata_MyQTableWidgetSelectionRange = {
-   {
-  QT_MOC_LITERAL(0, 0, 28), // "MyQTableWidgetSelectionRange"
-  },
-  "MyQTableWidgetSelectionRange"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTableWidgetSelectionRange[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTableWidgetSelectionRange : public QTableWidgetSelectionRange {
-public:
-  virtual ~MyQTableWidgetSelectionRange() {}
-// void QTableWidgetSelectionRange()
-MyQTableWidgetSelectionRange() : QTableWidgetSelectionRange() {}
-// void QTableWidgetSelectionRange(int, int, int, int)
-MyQTableWidgetSelectionRange(int top, int left, int bottom, int right) : QTableWidgetSelectionRange(top, left, bottom, right) {}
-// void QTableWidgetSelectionRange(const QTableWidgetSelectionRange &)
-MyQTableWidgetSelectionRange(const QTableWidgetSelectionRange & other) : QTableWidgetSelectionRange(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtablewidgetselectionrange(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -70,7 +30,6 @@ uint64_t ensure_inline_symbol_qtablewidgetselectionrange(void* this_) {
 /*void* qm2875843222()*/{
   ;
   this_ =  new QTableWidgetSelectionRange();
-  this_ =  new MyQTableWidgetSelectionRange();
 }
 
 // Public Visibility=Default Availability=Available
@@ -80,7 +39,6 @@ uint64_t ensure_inline_symbol_qtablewidgetselectionrange(void* this_) {
 /*void* qm2446650141(int top, int left, int bottom, int right)*/{
   int top = *(int*)this_; int left = *(int*)this_; int bottom = *(int*)this_; int right = *(int*)this_;
   this_ =  new QTableWidgetSelectionRange(top, left, bottom, right);
-  this_ =  new MyQTableWidgetSelectionRange(top, left, bottom, right);
 }
 
 // Public Visibility=Default Availability=Available
@@ -90,7 +48,6 @@ uint64_t ensure_inline_symbol_qtablewidgetselectionrange(void* this_) {
 /*void* qm1730432467(const QTableWidgetSelectionRange & other)*/{
   const QTableWidgetSelectionRange & other = *(const QTableWidgetSelectionRange *)this_;
   this_ =  new QTableWidgetSelectionRange(other);
-  this_ =  new MyQTableWidgetSelectionRange(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

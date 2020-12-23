@@ -16,56 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQPolygonF_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQPolygonF_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQPolygonF_t qt_meta_stringdata_MyQPolygonF = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQPolygonF"
-  },
-  "MyQPolygonF"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQPolygonF[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQPolygonF : public QPolygonF {
-public:
-  virtual ~MyQPolygonF() {}
-// void QPolygonF()
-MyQPolygonF() : QPolygonF() {}
-// void QPolygonF(int)
-MyQPolygonF(int size) : QPolygonF(size) {}
-// void QPolygonF(const QVector<QPointF> &)
-MyQPolygonF(const QVector<QPointF> & v) : QPolygonF(v) {}
-// void QPolygonF(QVector<QPointF> &&)
-MyQPolygonF(QVector<QPointF> && v) : QPolygonF(v) {}
-// void QPolygonF(const QRectF &)
-MyQPolygonF(const QRectF & r) : QPolygonF(r) {}
-// void QPolygonF(const QPolygon &)
-MyQPolygonF(const QPolygon & a) : QPolygonF(a) {}
-// void QPolygonF(const QPolygonF &)
-MyQPolygonF(const QPolygonF & a) : QPolygonF(a) {}
-// void QPolygonF(QPolygonF &&)
-MyQPolygonF(QPolygonF && other) : QPolygonF(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -77,7 +27,6 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm1068706858()*/{
   ;
   this_ =  new QPolygonF();
-  this_ =  new MyQPolygonF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -94,7 +43,6 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm2998608351(int size)*/{
   int size = *(int*)this_;
   this_ =  new QPolygonF(size);
-  this_ =  new MyQPolygonF(size);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -104,7 +52,6 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm3357456793(const QVector<QPointF> & v)*/{
   const QVector<QPointF> & v = *(const QVector<QPointF> *)this_;
   this_ =  new QPolygonF(v);
-  this_ =  new MyQPolygonF(v);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -114,7 +61,6 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm1881427963(QVector<QPointF> && v)*/{
   QVector<QPointF> && v =  static_cast<QVector<QPointF> &&>(*(QVector<QPointF> *)this_);
   this_ =  new QPolygonF(v);
-  this_ =  new MyQPolygonF(v);
 }
 
 // Public Visibility=Default Availability=Available
@@ -124,7 +70,6 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm3447409673(const QRectF & r)*/{
   const QRectF & r = *(const QRectF *)this_;
   this_ =  new QPolygonF(r);
-  this_ =  new MyQPolygonF(r);
 }
 
 // Public Visibility=Default Availability=Available
@@ -134,7 +79,6 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm275634247(const QPolygon & a)*/{
   const QPolygon & a = *(const QPolygon *)this_;
   this_ =  new QPolygonF(a);
-  this_ =  new MyQPolygonF(a);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -144,7 +88,6 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm2552204089(const QPolygonF & a)*/{
   const QPolygonF & a = *(const QPolygonF *)this_;
   this_ =  new QPolygonF(a);
-  this_ =  new MyQPolygonF(a);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -154,7 +97,6 @@ uint64_t ensure_inline_symbol_qpolygonf(void* this_) {
 /*void* qm1569853802(QPolygonF && other)*/{
   QPolygonF && other =  static_cast<QPolygonF &&>(*(QPolygonF *)this_);
   this_ =  new QPolygonF(other);
-  this_ =  new MyQPolygonF(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

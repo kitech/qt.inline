@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQOpenGLFramebufferObjectFormat_t {
-  QByteArrayData data[1];
-  char stringdata0[33];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQOpenGLFramebufferObjectFormat_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQOpenGLFramebufferObjectFormat_t qt_meta_stringdata_MyQOpenGLFramebufferObjectFormat = {
-   {
-  QT_MOC_LITERAL(0, 0, 32), // "MyQOpenGLFramebufferObjectFormat"
-  },
-  "MyQOpenGLFramebufferObjectFormat"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQOpenGLFramebufferObjectFormat[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQOpenGLFramebufferObjectFormat : public QOpenGLFramebufferObjectFormat {
-public:
-  virtual ~MyQOpenGLFramebufferObjectFormat() {}
-// void QOpenGLFramebufferObjectFormat()
-MyQOpenGLFramebufferObjectFormat() : QOpenGLFramebufferObjectFormat() {}
-// void QOpenGLFramebufferObjectFormat(const QOpenGLFramebufferObjectFormat &)
-MyQOpenGLFramebufferObjectFormat(const QOpenGLFramebufferObjectFormat & other) : QOpenGLFramebufferObjectFormat(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglframebufferobjectformat(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qopenglframebufferobjectformat(void* this_) {
 /*void* qm2099681631()*/{
   ;
   this_ =  new QOpenGLFramebufferObjectFormat();
-  this_ =  new MyQOpenGLFramebufferObjectFormat();
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qopenglframebufferobjectformat(void* this_) {
 /*void* qm3555859702(const QOpenGLFramebufferObjectFormat & other)*/{
   const QOpenGLFramebufferObjectFormat & other = *(const QOpenGLFramebufferObjectFormat *)this_;
   this_ =  new QOpenGLFramebufferObjectFormat(other);
-  this_ =  new MyQOpenGLFramebufferObjectFormat(other);
 }
 
 

@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQFileOpenEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQFileOpenEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQFileOpenEvent_t qt_meta_stringdata_MyQFileOpenEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 16), // "MyQFileOpenEvent"
-  },
-  "MyQFileOpenEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQFileOpenEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQFileOpenEvent : public QFileOpenEvent {
-public:
-  virtual ~MyQFileOpenEvent() {}
-// void QFileOpenEvent(const QString &)
-MyQFileOpenEvent(const QString & file) : QFileOpenEvent(file) {}
-// void QFileOpenEvent(const QUrl &)
-MyQFileOpenEvent(const QUrl & url) : QFileOpenEvent(url) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfileopenevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qfileopenevent(void* this_) {
 /*void* qm3741341417(const QString & file)*/{
   const QString & file = *(const QString *)this_;
   this_ =  new QFileOpenEvent(file);
-  this_ =  new MyQFileOpenEvent(file);
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qfileopenevent(void* this_) {
 /*void* qm2717622172(const QUrl & url)*/{
   const QUrl & url = *(const QUrl *)this_;
   this_ =  new QFileOpenEvent(url);
-  this_ =  new MyQFileOpenEvent(url);
 }
 
 // Public inline Indirect Visibility=Default Availability=Available

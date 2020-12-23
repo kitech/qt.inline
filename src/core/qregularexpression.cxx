@@ -19,46 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQRegularExpression_t {
-  QByteArrayData data[1];
-  char stringdata0[21];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQRegularExpression_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQRegularExpression_t qt_meta_stringdata_MyQRegularExpression = {
-   {
-  QT_MOC_LITERAL(0, 0, 20), // "MyQRegularExpression"
-  },
-  "MyQRegularExpression"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQRegularExpression[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQRegularExpression : public QRegularExpression {
-public:
-  virtual ~MyQRegularExpression() {}
-// void QRegularExpression()
-MyQRegularExpression() : QRegularExpression() {}
-// void QRegularExpression(const QString &, QRegularExpression::PatternOptions)
-MyQRegularExpression(const QString & pattern, QFlags<QRegularExpression::PatternOption> options) : QRegularExpression(pattern, options) {}
-// void QRegularExpression(const QRegularExpression &)
-MyQRegularExpression(const QRegularExpression & re) : QRegularExpression(re) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qregularexpression(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -70,7 +30,6 @@ uint64_t ensure_inline_symbol_qregularexpression(void* this_) {
 /*void* qm4292092048()*/{
   ;
   this_ =  new QRegularExpression();
-  this_ =  new MyQRegularExpression();
 }
 
 // Public Visibility=Default Availability=Available
@@ -80,7 +39,6 @@ uint64_t ensure_inline_symbol_qregularexpression(void* this_) {
 /*void* qm2520603571(const QString & pattern, QFlags<QRegularExpression::PatternOption> options)*/{
   const QString & pattern = *(const QString *)this_; QFlags<QRegularExpression::PatternOption> options = *(QFlags<QRegularExpression::PatternOption>*)this_;
   this_ =  new QRegularExpression(pattern, options);
-  this_ =  new MyQRegularExpression(pattern, options);
 }
 
 // Public Visibility=Default Availability=Available
@@ -90,7 +48,6 @@ uint64_t ensure_inline_symbol_qregularexpression(void* this_) {
 /*void* qm800410568(const QRegularExpression & re)*/{
   const QRegularExpression & re = *(const QRegularExpression *)this_;
   this_ =  new QRegularExpression(re);
-  this_ =  new MyQRegularExpression(re);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

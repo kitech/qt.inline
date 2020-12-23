@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQDataStream_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQDataStream_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQDataStream_t qt_meta_stringdata_MyQDataStream = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQDataStream"
-  },
-  "MyQDataStream"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQDataStream[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQDataStream : public QDataStream {
-public:
-  virtual ~MyQDataStream() {}
-// void QDataStream()
-MyQDataStream() : QDataStream() {}
-// void QDataStream(QIODevice *)
-MyQDataStream(QIODevice * arg0) : QDataStream(arg0) {}
-// void QDataStream(QByteArray *, QIODevice::OpenMode)
-MyQDataStream(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags) : QDataStream(arg0, flags) {}
-// void QDataStream(const QByteArray &)
-MyQDataStream(const QByteArray & arg0) : QDataStream(arg0) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdatastream(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qdatastream(void* this_) {
 /*void* qm1024512340()*/{
   ;
   this_ =  new QDataStream();
-  this_ =  new MyQDataStream();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qdatastream(void* this_) {
 /*void* qm1093704089(QIODevice * arg0)*/{
   QIODevice * arg0 = *(QIODevice **)this_;
   this_ =  new QDataStream(arg0);
-  this_ =  new MyQDataStream(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qdatastream(void* this_) {
 /*void* qm2299279107(QByteArray * arg0, QFlags<QIODevice::OpenModeFlag> flags)*/{
   QByteArray * arg0 = *(QByteArray **)this_; QFlags<QIODevice::OpenModeFlag> flags = *(QFlags<QIODevice::OpenModeFlag>*)this_;
   this_ =  new QDataStream(arg0, flags);
-  this_ =  new MyQDataStream(arg0, flags);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qdatastream(void* this_) {
 /*void* qm3901970218(const QByteArray & arg0)*/{
   const QByteArray & arg0 = *(const QByteArray *)this_;
   this_ =  new QDataStream(arg0);
-  this_ =  new MyQDataStream(arg0);
 }
 
 // Public Direct Visibility=Default Availability=Available

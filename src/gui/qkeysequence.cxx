@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQKeySequence_t {
-  QByteArrayData data[1];
-  char stringdata0[15];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQKeySequence_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQKeySequence_t qt_meta_stringdata_MyQKeySequence = {
-   {
-  QT_MOC_LITERAL(0, 0, 14), // "MyQKeySequence"
-  },
-  "MyQKeySequence"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQKeySequence[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQKeySequence : public QKeySequence {
-public:
-  virtual ~MyQKeySequence() {}
-// void QKeySequence()
-MyQKeySequence() : QKeySequence() {}
-// void QKeySequence(const QString &, QKeySequence::SequenceFormat)
-MyQKeySequence(const QString & key, QKeySequence::SequenceFormat format) : QKeySequence(key, format) {}
-// void QKeySequence(int, int, int, int)
-MyQKeySequence(int k1, int k2, int k3, int k4) : QKeySequence(k1, k2, k3, k4) {}
-// void QKeySequence(const QKeySequence &)
-MyQKeySequence(const QKeySequence & ks) : QKeySequence(ks) {}
-// void QKeySequence(QKeySequence::StandardKey)
-MyQKeySequence(QKeySequence::StandardKey key) : QKeySequence(key) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qkeysequence(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qkeysequence(void* this_) {
 /*void* qm282939820()*/{
   ;
   this_ =  new QKeySequence();
-  this_ =  new MyQKeySequence();
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qkeysequence(void* this_) {
 /*void* qm3747334494(const QString & key, QKeySequence::SequenceFormat format)*/{
   const QString & key = *(const QString *)this_; QKeySequence::SequenceFormat format = *(QKeySequence::SequenceFormat*)this_;
   this_ =  new QKeySequence(key, format);
-  this_ =  new MyQKeySequence(key, format);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qkeysequence(void* this_) {
 /*void* qm3150709006(int k1, int k2, int k3, int k4)*/{
   int k1 = *(int*)this_; int k2 = *(int*)this_; int k3 = *(int*)this_; int k4 = *(int*)this_;
   this_ =  new QKeySequence(k1, k2, k3, k4);
-  this_ =  new MyQKeySequence(k1, k2, k3, k4);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qkeysequence(void* this_) {
 /*void* qm1295820736(const QKeySequence & ks)*/{
   const QKeySequence & ks = *(const QKeySequence *)this_;
   this_ =  new QKeySequence(ks);
-  this_ =  new MyQKeySequence(ks);
 }
 
 // Public Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qkeysequence(void* this_) {
 /*void* qm2651341965(QKeySequence::StandardKey key)*/{
   QKeySequence::StandardKey key = *(QKeySequence::StandardKey*)this_;
   this_ =  new QKeySequence(key);
-  this_ =  new MyQKeySequence(key);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

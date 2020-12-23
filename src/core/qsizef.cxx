@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSizeF_t {
-  QByteArrayData data[1];
-  char stringdata0[9];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSizeF_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSizeF_t qt_meta_stringdata_MyQSizeF = {
-   {
-  QT_MOC_LITERAL(0, 0, 8), // "MyQSizeF"
-  },
-  "MyQSizeF"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSizeF[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSizeF : public QSizeF {
-public:
-  virtual ~MyQSizeF() {}
-// void QSizeF()
-MyQSizeF() : QSizeF() {}
-// void QSizeF(const QSize &)
-MyQSizeF(const QSize & sz) : QSizeF(sz) {}
-// void QSizeF(qreal, qreal)
-MyQSizeF(qreal w, qreal h) : QSizeF(w, h) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsizef(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qsizef(void* this_) {
 /*void* qm90541086()*/{
   ;
   this_ =  new QSizeF();
-  this_ =  new MyQSizeF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qsizef(void* this_) {
 /*void* qm3115420995(const QSize & sz)*/{
   const QSize & sz = *(const QSize *)this_;
   this_ =  new QSizeF(sz);
-  this_ =  new MyQSizeF(sz);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qsizef(void* this_) {
 /*void* qm438526704(double w, double h)*/{
   double w = *(double*)this_; double h = *(double*)this_;
   this_ =  new QSizeF(w, h);
-  this_ =  new MyQSizeF(w, h);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

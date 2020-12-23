@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQOpenGLFunctions_t {
-  QByteArrayData data[1];
-  char stringdata0[19];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQOpenGLFunctions_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQOpenGLFunctions_t qt_meta_stringdata_MyQOpenGLFunctions = {
-   {
-  QT_MOC_LITERAL(0, 0, 18), // "MyQOpenGLFunctions"
-  },
-  "MyQOpenGLFunctions"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQOpenGLFunctions[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQOpenGLFunctions : public QOpenGLFunctions {
-public:
-  virtual ~MyQOpenGLFunctions() {}
-// void QOpenGLFunctions()
-MyQOpenGLFunctions() : QOpenGLFunctions() {}
-// void QOpenGLFunctions(QOpenGLContext *)
-MyQOpenGLFunctions(QOpenGLContext * context) : QOpenGLFunctions(context) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglfunctions(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qopenglfunctions(void* this_) {
 /*void* qm219410663()*/{
   ;
   this_ =  new QOpenGLFunctions();
-  this_ =  new MyQOpenGLFunctions();
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qopenglfunctions(void* this_) {
 /*void* qm1874144887(QOpenGLContext * context)*/{
   QOpenGLContext * context = *(QOpenGLContext **)this_;
   this_ =  new QOpenGLFunctions(context);
-  this_ =  new MyQOpenGLFunctions(context);
 }
 
 // Public inline Visibility=Default Availability=Available

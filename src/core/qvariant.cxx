@@ -16,134 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQVariant_t {
-  QByteArrayData data[1];
-  char stringdata0[11];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQVariant_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQVariant_t qt_meta_stringdata_MyQVariant = {
-   {
-  QT_MOC_LITERAL(0, 0, 10), // "MyQVariant"
-  },
-  "MyQVariant"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQVariant[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQVariant : public QVariant {
-public:
-  virtual ~MyQVariant() {}
-// void QVariant()
-MyQVariant() : QVariant() {}
-// void QVariant(QVariant::Type)
-MyQVariant(QVariant::Type type_) : QVariant(type_) {}
-// void QVariant(int, const void *)
-MyQVariant(int typeId, const void * copy) : QVariant(typeId, copy) {}
-// void QVariant(int, const void *, uint)
-MyQVariant(int typeId, const void * copy, uint flags) : QVariant(typeId, copy, flags) {}
-// void QVariant(const QVariant &)
-MyQVariant(const QVariant & other) : QVariant(other) {}
-// void QVariant(QDataStream &)
-MyQVariant(QDataStream & s) : QVariant(s) {}
-// void QVariant(int)
-MyQVariant(int i) : QVariant(i) {}
-// void QVariant(uint)
-MyQVariant(uint ui) : QVariant(ui) {}
-// void QVariant(qlonglong)
-MyQVariant(qlonglong ll) : QVariant(ll) {}
-// void QVariant(qulonglong)
-MyQVariant(qulonglong ull) : QVariant(ull) {}
-// void QVariant(bool)
-MyQVariant(bool b) : QVariant(b) {}
-// void QVariant(double)
-MyQVariant(double d) : QVariant(d) {}
-// void QVariant(float)
-MyQVariant(float f) : QVariant(f) {}
-// void QVariant(const char *)
-MyQVariant(const char * str) : QVariant(str) {}
-// void QVariant(const QByteArray &)
-MyQVariant(const QByteArray & bytearray) : QVariant(bytearray) {}
-// void QVariant(const QBitArray &)
-MyQVariant(const QBitArray & bitarray) : QVariant(bitarray) {}
-// void QVariant(const QString &)
-MyQVariant(const QString & string) : QVariant(string) {}
-// void QVariant(QLatin1String)
-MyQVariant(QLatin1String string) : QVariant(string) {}
-// void QVariant(const QStringList &)
-MyQVariant(const QStringList & stringlist) : QVariant(stringlist) {}
-// void QVariant(QChar)
-MyQVariant(QChar qchar) : QVariant(qchar) {}
-// void QVariant(const QDate &)
-MyQVariant(const QDate & date) : QVariant(date) {}
-// void QVariant(const QTime &)
-MyQVariant(const QTime & time) : QVariant(time) {}
-// void QVariant(const QDateTime &)
-MyQVariant(const QDateTime & datetime) : QVariant(datetime) {}
-// void QVariant(const QList<QVariant> &)
-MyQVariant(const QList<QVariant> & list) : QVariant(list) {}
-// void QVariant(const QMap<QString, QVariant> &)
-MyQVariant(const QMap<QString, QVariant> & map_) : QVariant(map_) {}
-// void QVariant(const QHash<QString, QVariant> &)
-MyQVariant(const QHash<QString, QVariant> & hash) : QVariant(hash) {}
-// void QVariant(const QSize &)
-MyQVariant(const QSize & size) : QVariant(size) {}
-// void QVariant(const QSizeF &)
-MyQVariant(const QSizeF & size) : QVariant(size) {}
-// void QVariant(const QPoint &)
-MyQVariant(const QPoint & pt) : QVariant(pt) {}
-// void QVariant(const QPointF &)
-MyQVariant(const QPointF & pt) : QVariant(pt) {}
-// void QVariant(const QLine &)
-MyQVariant(const QLine & line) : QVariant(line) {}
-// void QVariant(const QLineF &)
-MyQVariant(const QLineF & line) : QVariant(line) {}
-// void QVariant(const QRect &)
-MyQVariant(const QRect & rect) : QVariant(rect) {}
-// void QVariant(const QRectF &)
-MyQVariant(const QRectF & rect) : QVariant(rect) {}
-// void QVariant(const QLocale &)
-MyQVariant(const QLocale & locale) : QVariant(locale) {}
-// void QVariant(const QRegExp &)
-MyQVariant(const QRegExp & regExp) : QVariant(regExp) {}
-// void QVariant(const QRegularExpression &)
-MyQVariant(const QRegularExpression & re) : QVariant(re) {}
-// void QVariant(const QEasingCurve &)
-MyQVariant(const QEasingCurve & easing) : QVariant(easing) {}
-// void QVariant(const QUuid &)
-MyQVariant(const QUuid & uuid) : QVariant(uuid) {}
-// void QVariant(const QUrl &)
-MyQVariant(const QUrl & url) : QVariant(url) {}
-// void QVariant(const QJsonValue &)
-MyQVariant(const QJsonValue & jsonValue) : QVariant(jsonValue) {}
-// void QVariant(const QJsonObject &)
-MyQVariant(const QJsonObject & jsonObject) : QVariant(jsonObject) {}
-// void QVariant(const QJsonArray &)
-MyQVariant(const QJsonArray & jsonArray) : QVariant(jsonArray) {}
-// void QVariant(const QJsonDocument &)
-MyQVariant(const QJsonDocument & jsonDocument) : QVariant(jsonDocument) {}
-// void QVariant(const QModelIndex &)
-MyQVariant(const QModelIndex & modelIndex) : QVariant(modelIndex) {}
-// void QVariant(const QPersistentModelIndex &)
-MyQVariant(const QPersistentModelIndex & modelIndex) : QVariant(modelIndex) {}
-// void QVariant(QVariant &&)
-MyQVariant(QVariant && other) : QVariant(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qvariant(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -155,7 +27,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm93067653()*/{
   ;
   this_ =  new QVariant();
-  this_ =  new MyQVariant();
 }
 
 // Public Visibility=Default Availability=Available
@@ -165,7 +36,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm3094501539(QVariant::Type type_)*/{
   QVariant::Type type_ = *(QVariant::Type*)this_;
   this_ =  new QVariant(type_);
-  this_ =  new MyQVariant(type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -175,7 +45,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2845593041(int typeId, const void * copy)*/{
   int typeId = *(int*)this_; const void * copy = *(const void **)this_;
   this_ =  new QVariant(typeId, copy);
-  this_ =  new MyQVariant(typeId, copy);
 }
 
 // Public Visibility=Default Availability=Available
@@ -185,7 +54,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2383944132(int typeId, const void * copy, unsigned int flags)*/{
   int typeId = *(int*)this_; const void * copy = *(const void **)this_; unsigned int flags = *(unsigned int*)this_;
   this_ =  new QVariant(typeId, copy, flags);
-  this_ =  new MyQVariant(typeId, copy, flags);
 }
 
 // Public Visibility=Default Availability=Available
@@ -195,7 +63,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1584168661(const QVariant & other)*/{
   const QVariant & other = *(const QVariant *)this_;
   this_ =  new QVariant(other);
-  this_ =  new MyQVariant(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -205,7 +72,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm534519966(QDataStream & s)*/{
   QDataStream & s = *(QDataStream *)this_;
   this_ =  new QVariant(s);
-  this_ =  new MyQVariant(s);
 }
 
 // Public Visibility=Default Availability=Available
@@ -215,7 +81,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2290357360(int i)*/{
   int i = *(int*)this_;
   this_ =  new QVariant(i);
-  this_ =  new MyQVariant(i);
 }
 
 // Public Visibility=Default Availability=Available
@@ -225,7 +90,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm294471114(unsigned int ui)*/{
   unsigned int ui = *(unsigned int*)this_;
   this_ =  new QVariant(ui);
-  this_ =  new MyQVariant(ui);
 }
 
 // Public Visibility=Default Availability=Available
@@ -235,7 +99,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm3795072130(long long ll)*/{
   long long ll = *(long long*)this_;
   this_ =  new QVariant(ll);
-  this_ =  new MyQVariant(ll);
 }
 
 // Public Visibility=Default Availability=Available
@@ -245,7 +108,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2503148564(unsigned long long ull)*/{
   unsigned long long ull = *(unsigned long long*)this_;
   this_ =  new QVariant(ull);
-  this_ =  new MyQVariant(ull);
 }
 
 // Public Visibility=Default Availability=Available
@@ -255,7 +117,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm525782520(bool b)*/{
   bool b = *(bool*)this_;
   this_ =  new QVariant(b);
-  this_ =  new MyQVariant(b);
 }
 
 // Public Visibility=Default Availability=Available
@@ -265,7 +126,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm4130695373(double d)*/{
   double d = *(double*)this_;
   this_ =  new QVariant(d);
-  this_ =  new MyQVariant(d);
 }
 
 // Public Visibility=Default Availability=Available
@@ -275,7 +135,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm406522337(float f)*/{
   float f = *(float*)this_;
   this_ =  new QVariant(f);
-  this_ =  new MyQVariant(f);
 }
 
 // Public Visibility=Default Availability=Available
@@ -285,7 +144,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2561691587(const char * str)*/{
   const char * str = *(const char **)this_;
   this_ =  new QVariant(str);
-  this_ =  new MyQVariant(str);
 }
 
 // Public Visibility=Default Availability=Available
@@ -295,7 +153,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1650758520(const QByteArray & bytearray)*/{
   const QByteArray & bytearray = *(const QByteArray *)this_;
   this_ =  new QVariant(bytearray);
-  this_ =  new MyQVariant(bytearray);
 }
 
 // Public Visibility=Default Availability=Available
@@ -305,7 +162,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm575686680(const QBitArray & bitarray)*/{
   const QBitArray & bitarray = *(const QBitArray *)this_;
   this_ =  new QVariant(bitarray);
-  this_ =  new MyQVariant(bitarray);
 }
 
 // Public Visibility=Default Availability=Available
@@ -315,7 +171,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2387606192(const QString & string)*/{
   const QString & string = *(const QString *)this_;
   this_ =  new QVariant(string);
-  this_ =  new MyQVariant(string);
 }
 
 // Public Visibility=Default Availability=Available
@@ -325,7 +180,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm3955657314(QLatin1String string)*/{
   QLatin1String string = *(QLatin1String*)this_;
   this_ =  new QVariant(string);
-  this_ =  new MyQVariant(string);
 }
 
 // Public Visibility=Default Availability=Available
@@ -335,7 +189,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm3261955225(const QStringList & stringlist)*/{
   const QStringList & stringlist = *(const QStringList *)this_;
   this_ =  new QVariant(stringlist);
-  this_ =  new MyQVariant(stringlist);
 }
 
 // Public Visibility=Default Availability=Available
@@ -345,7 +198,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2254077775(QChar qchar)*/{
   QChar qchar = *(QChar*)this_;
   this_ =  new QVariant(qchar);
-  this_ =  new MyQVariant(qchar);
 }
 
 // Public Visibility=Default Availability=Available
@@ -355,7 +207,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1632607947(const QDate & date)*/{
   const QDate & date = *(const QDate *)this_;
   this_ =  new QVariant(date);
-  this_ =  new MyQVariant(date);
 }
 
 // Public Visibility=Default Availability=Available
@@ -365,7 +216,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2755998196(const QTime & time)*/{
   const QTime & time = *(const QTime *)this_;
   this_ =  new QVariant(time);
-  this_ =  new MyQVariant(time);
 }
 
 // Public Visibility=Default Availability=Available
@@ -375,7 +225,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm3457100044(const QDateTime & datetime)*/{
   const QDateTime & datetime = *(const QDateTime *)this_;
   this_ =  new QVariant(datetime);
-  this_ =  new MyQVariant(datetime);
 }
 
 // Public Visibility=Default Availability=Available
@@ -385,7 +234,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm690850151(const QList<QVariant> & list)*/{
   const QList<QVariant> & list = *(const QList<QVariant> *)this_;
   this_ =  new QVariant(list);
-  this_ =  new MyQVariant(list);
 }
 
 // Public Visibility=Default Availability=Available
@@ -395,7 +243,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2994946793(const QMap<QString, QVariant> & map_)*/{
   const QMap<QString, QVariant> & map_ = *(const QMap<QString, QVariant> *)this_;
   this_ =  new QVariant(map_);
-  this_ =  new MyQVariant(map_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -405,7 +252,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1760596389(const QHash<QString, QVariant> & hash)*/{
   const QHash<QString, QVariant> & hash = *(const QHash<QString, QVariant> *)this_;
   this_ =  new QVariant(hash);
-  this_ =  new MyQVariant(hash);
 }
 
 // Public Visibility=Default Availability=Available
@@ -415,7 +261,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1007783387(const QSize & size)*/{
   const QSize & size = *(const QSize *)this_;
   this_ =  new QVariant(size);
-  this_ =  new MyQVariant(size);
 }
 
 // Public Visibility=Default Availability=Available
@@ -425,7 +270,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1835535204(const QSizeF & size)*/{
   const QSizeF & size = *(const QSizeF *)this_;
   this_ =  new QVariant(size);
-  this_ =  new MyQVariant(size);
 }
 
 // Public Visibility=Default Availability=Available
@@ -435,7 +279,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm987806474(const QPoint & pt)*/{
   const QPoint & pt = *(const QPoint *)this_;
   this_ =  new QVariant(pt);
-  this_ =  new MyQVariant(pt);
 }
 
 // Public Visibility=Default Availability=Available
@@ -445,7 +288,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1643643411(const QPointF & pt)*/{
   const QPointF & pt = *(const QPointF *)this_;
   this_ =  new QVariant(pt);
-  this_ =  new MyQVariant(pt);
 }
 
 // Public Visibility=Default Availability=Available
@@ -455,7 +297,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm449125703(const QLine & line)*/{
   const QLine & line = *(const QLine *)this_;
   this_ =  new QVariant(line);
-  this_ =  new MyQVariant(line);
 }
 
 // Public Visibility=Default Availability=Available
@@ -465,7 +306,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2499215515(const QLineF & line)*/{
   const QLineF & line = *(const QLineF *)this_;
   this_ =  new QVariant(line);
-  this_ =  new MyQVariant(line);
 }
 
 // Public Visibility=Default Availability=Available
@@ -475,7 +315,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2080873008(const QRect & rect)*/{
   const QRect & rect = *(const QRect *)this_;
   this_ =  new QVariant(rect);
-  this_ =  new MyQVariant(rect);
 }
 
 // Public Visibility=Default Availability=Available
@@ -485,7 +324,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1525687939(const QRectF & rect)*/{
   const QRectF & rect = *(const QRectF *)this_;
   this_ =  new QVariant(rect);
-  this_ =  new MyQVariant(rect);
 }
 
 // Public Visibility=Default Availability=Available
@@ -495,7 +333,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1366396545(const QLocale & locale)*/{
   const QLocale & locale = *(const QLocale *)this_;
   this_ =  new QVariant(locale);
-  this_ =  new MyQVariant(locale);
 }
 
 // Public Visibility=Default Availability=Available
@@ -505,7 +342,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm3511205662(const QRegExp & regExp)*/{
   const QRegExp & regExp = *(const QRegExp *)this_;
   this_ =  new QVariant(regExp);
-  this_ =  new MyQVariant(regExp);
 }
 
 // Public Visibility=Default Availability=Available
@@ -515,7 +351,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1097778072(const QRegularExpression & re)*/{
   const QRegularExpression & re = *(const QRegularExpression *)this_;
   this_ =  new QVariant(re);
-  this_ =  new MyQVariant(re);
 }
 
 // Public Visibility=Default Availability=Available
@@ -525,7 +360,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm3772086060(const QEasingCurve & easing)*/{
   const QEasingCurve & easing = *(const QEasingCurve *)this_;
   this_ =  new QVariant(easing);
-  this_ =  new MyQVariant(easing);
 }
 
 // Public Visibility=Default Availability=Available
@@ -535,7 +369,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm447674647(const QUuid & uuid)*/{
   const QUuid & uuid = *(const QUuid *)this_;
   this_ =  new QVariant(uuid);
-  this_ =  new MyQVariant(uuid);
 }
 
 // Public Visibility=Default Availability=Available
@@ -545,7 +378,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2030850478(const QUrl & url)*/{
   const QUrl & url = *(const QUrl *)this_;
   this_ =  new QVariant(url);
-  this_ =  new MyQVariant(url);
 }
 
 // Public Visibility=Default Availability=Available
@@ -555,7 +387,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm4212761564(const QJsonValue & jsonValue)*/{
   const QJsonValue & jsonValue = *(const QJsonValue *)this_;
   this_ =  new QVariant(jsonValue);
-  this_ =  new MyQVariant(jsonValue);
 }
 
 // Public Visibility=Default Availability=Available
@@ -565,7 +396,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2638209842(const QJsonObject & jsonObject)*/{
   const QJsonObject & jsonObject = *(const QJsonObject *)this_;
   this_ =  new QVariant(jsonObject);
-  this_ =  new MyQVariant(jsonObject);
 }
 
 // Public Visibility=Default Availability=Available
@@ -575,7 +405,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1197610335(const QJsonArray & jsonArray)*/{
   const QJsonArray & jsonArray = *(const QJsonArray *)this_;
   this_ =  new QVariant(jsonArray);
-  this_ =  new MyQVariant(jsonArray);
 }
 
 // Public Visibility=Default Availability=Available
@@ -585,7 +414,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm1589336698(const QJsonDocument & jsonDocument)*/{
   const QJsonDocument & jsonDocument = *(const QJsonDocument *)this_;
   this_ =  new QVariant(jsonDocument);
-  this_ =  new MyQVariant(jsonDocument);
 }
 
 // Public Visibility=Default Availability=Available
@@ -595,7 +423,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm2350874306(const QModelIndex & modelIndex)*/{
   const QModelIndex & modelIndex = *(const QModelIndex *)this_;
   this_ =  new QVariant(modelIndex);
-  this_ =  new MyQVariant(modelIndex);
 }
 
 // Public Visibility=Default Availability=Available
@@ -605,7 +432,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm3727440816(const QPersistentModelIndex & modelIndex)*/{
   const QPersistentModelIndex & modelIndex = *(const QPersistentModelIndex *)this_;
   this_ =  new QVariant(modelIndex);
-  this_ =  new MyQVariant(modelIndex);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -615,7 +441,6 @@ uint64_t ensure_inline_symbol_qvariant(void* this_) {
 /*void* qm582897488(QVariant && other)*/{
   QVariant && other =  static_cast<QVariant &&>(*(QVariant *)this_);
   this_ =  new QVariant(other);
-  this_ =  new MyQVariant(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

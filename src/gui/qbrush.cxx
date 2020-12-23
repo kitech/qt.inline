@@ -16,60 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQBrush_t {
-  QByteArrayData data[1];
-  char stringdata0[9];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQBrush_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQBrush_t qt_meta_stringdata_MyQBrush = {
-   {
-  QT_MOC_LITERAL(0, 0, 8), // "MyQBrush"
-  },
-  "MyQBrush"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQBrush[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQBrush : public QBrush {
-public:
-  virtual ~MyQBrush() {}
-// void QBrush()
-MyQBrush() : QBrush() {}
-// void QBrush(Qt::BrushStyle)
-MyQBrush(Qt::BrushStyle bs) : QBrush(bs) {}
-// void QBrush(const QColor &, Qt::BrushStyle)
-MyQBrush(const QColor & color, Qt::BrushStyle bs) : QBrush(color, bs) {}
-// void QBrush(Qt::GlobalColor, Qt::BrushStyle)
-MyQBrush(Qt::GlobalColor color, Qt::BrushStyle bs) : QBrush(color, bs) {}
-// void QBrush(const QColor &, const QPixmap &)
-MyQBrush(const QColor & color, const QPixmap & pixmap) : QBrush(color, pixmap) {}
-// void QBrush(Qt::GlobalColor, const QPixmap &)
-MyQBrush(Qt::GlobalColor color, const QPixmap & pixmap) : QBrush(color, pixmap) {}
-// void QBrush(const QPixmap &)
-MyQBrush(const QPixmap & pixmap) : QBrush(pixmap) {}
-// void QBrush(const QImage &)
-MyQBrush(const QImage & image) : QBrush(image) {}
-// void QBrush(const QBrush &)
-MyQBrush(const QBrush & brush) : QBrush(brush) {}
-// void QBrush(const QGradient &)
-MyQBrush(const QGradient & gradient) : QBrush(gradient) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qbrush(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -81,7 +27,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm3258578779()*/{
   ;
   this_ =  new QBrush();
-  this_ =  new MyQBrush();
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +36,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm3846282792(Qt::BrushStyle bs)*/{
   Qt::BrushStyle bs = *(Qt::BrushStyle*)this_;
   this_ =  new QBrush(bs);
-  this_ =  new MyQBrush(bs);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +45,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm1697783790(const QColor & color, Qt::BrushStyle bs)*/{
   const QColor & color = *(const QColor *)this_; Qt::BrushStyle bs = *(Qt::BrushStyle*)this_;
   this_ =  new QBrush(color, bs);
-  this_ =  new MyQBrush(color, bs);
 }
 
 // Public Visibility=Default Availability=Available
@@ -111,7 +54,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm1191848810(Qt::GlobalColor color, Qt::BrushStyle bs)*/{
   Qt::GlobalColor color = *(Qt::GlobalColor*)this_; Qt::BrushStyle bs = *(Qt::BrushStyle*)this_;
   this_ =  new QBrush(color, bs);
-  this_ =  new MyQBrush(color, bs);
 }
 
 // Public Visibility=Default Availability=Available
@@ -121,7 +63,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm1490641295(const QColor & color, const QPixmap & pixmap)*/{
   const QColor & color = *(const QColor *)this_; const QPixmap & pixmap = *(const QPixmap *)this_;
   this_ =  new QBrush(color, pixmap);
-  this_ =  new MyQBrush(color, pixmap);
 }
 
 // Public Visibility=Default Availability=Available
@@ -131,7 +72,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm2424112937(Qt::GlobalColor color, const QPixmap & pixmap)*/{
   Qt::GlobalColor color = *(Qt::GlobalColor*)this_; const QPixmap & pixmap = *(const QPixmap *)this_;
   this_ =  new QBrush(color, pixmap);
-  this_ =  new MyQBrush(color, pixmap);
 }
 
 // Public Visibility=Default Availability=Available
@@ -141,7 +81,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm3362515310(const QPixmap & pixmap)*/{
   const QPixmap & pixmap = *(const QPixmap *)this_;
   this_ =  new QBrush(pixmap);
-  this_ =  new MyQBrush(pixmap);
 }
 
 // Public Visibility=Default Availability=Available
@@ -151,7 +90,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm423772952(const QImage & image)*/{
   const QImage & image = *(const QImage *)this_;
   this_ =  new QBrush(image);
-  this_ =  new MyQBrush(image);
 }
 
 // Public Visibility=Default Availability=Available
@@ -161,7 +99,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm2727214921(const QBrush & brush)*/{
   const QBrush & brush = *(const QBrush *)this_;
   this_ =  new QBrush(brush);
-  this_ =  new MyQBrush(brush);
 }
 
 // Public Visibility=Default Availability=Available
@@ -171,7 +108,6 @@ uint64_t ensure_inline_symbol_qbrush(void* this_) {
 /*void* qm882478478(const QGradient & gradient)*/{
   const QGradient & gradient = *(const QGradient *)this_;
   this_ =  new QBrush(gradient);
-  this_ =  new MyQBrush(gradient);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

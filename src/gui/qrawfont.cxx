@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQRawFont_t {
-  QByteArrayData data[1];
-  char stringdata0[11];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQRawFont_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQRawFont_t qt_meta_stringdata_MyQRawFont = {
-   {
-  QT_MOC_LITERAL(0, 0, 10), // "MyQRawFont"
-  },
-  "MyQRawFont"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQRawFont[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQRawFont : public QRawFont {
-public:
-  virtual ~MyQRawFont() {}
-// void QRawFont()
-MyQRawFont() : QRawFont() {}
-// void QRawFont(const QString &, qreal, QFont::HintingPreference)
-MyQRawFont(const QString & fileName, qreal pixelSize, QFont::HintingPreference hintingPreference) : QRawFont(fileName, pixelSize, hintingPreference) {}
-// void QRawFont(const QByteArray &, qreal, QFont::HintingPreference)
-MyQRawFont(const QByteArray & fontData, qreal pixelSize, QFont::HintingPreference hintingPreference) : QRawFont(fontData, pixelSize, hintingPreference) {}
-// void QRawFont(const QRawFont &)
-MyQRawFont(const QRawFont & other) : QRawFont(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qrawfont(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qrawfont(void* this_) {
 /*void* qm2410357999()*/{
   ;
   this_ =  new QRawFont();
-  this_ =  new MyQRawFont();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qrawfont(void* this_) {
 /*void* qm2375333881(const QString & fileName, double pixelSize, QFont::HintingPreference hintingPreference)*/{
   const QString & fileName = *(const QString *)this_; double pixelSize = *(double*)this_; QFont::HintingPreference hintingPreference = *(QFont::HintingPreference*)this_;
   this_ =  new QRawFont(fileName, pixelSize, hintingPreference);
-  this_ =  new MyQRawFont(fileName, pixelSize, hintingPreference);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qrawfont(void* this_) {
 /*void* qm3687950224(const QByteArray & fontData, double pixelSize, QFont::HintingPreference hintingPreference)*/{
   const QByteArray & fontData = *(const QByteArray *)this_; double pixelSize = *(double*)this_; QFont::HintingPreference hintingPreference = *(QFont::HintingPreference*)this_;
   this_ =  new QRawFont(fontData, pixelSize, hintingPreference);
-  this_ =  new MyQRawFont(fontData, pixelSize, hintingPreference);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qrawfont(void* this_) {
 /*void* qm3570322812(const QRawFont & other)*/{
   const QRawFont & other = *(const QRawFont *)this_;
   this_ =  new QRawFont(other);
-  this_ =  new MyQRawFont(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

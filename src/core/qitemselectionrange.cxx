@@ -19,50 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQItemSelectionRange_t {
-  QByteArrayData data[1];
-  char stringdata0[22];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQItemSelectionRange_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQItemSelectionRange_t qt_meta_stringdata_MyQItemSelectionRange = {
-   {
-  QT_MOC_LITERAL(0, 0, 21), // "MyQItemSelectionRange"
-  },
-  "MyQItemSelectionRange"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQItemSelectionRange[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQItemSelectionRange : public QItemSelectionRange {
-public:
-  virtual ~MyQItemSelectionRange() {}
-// void QItemSelectionRange()
-MyQItemSelectionRange() : QItemSelectionRange() {}
-// void QItemSelectionRange(const QItemSelectionRange &)
-MyQItemSelectionRange(const QItemSelectionRange & other) : QItemSelectionRange(other) {}
-// void QItemSelectionRange(QItemSelectionRange &&)
-MyQItemSelectionRange(QItemSelectionRange && other) : QItemSelectionRange(other) {}
-// void QItemSelectionRange(const QModelIndex &, const QModelIndex &)
-MyQItemSelectionRange(const QModelIndex & topL, const QModelIndex & bottomR) : QItemSelectionRange(topL, bottomR) {}
-// void QItemSelectionRange(const QModelIndex &)
-MyQItemSelectionRange(const QModelIndex & index) : QItemSelectionRange(index) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -74,7 +30,6 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm3558485819()*/{
   ;
   this_ =  new QItemSelectionRange();
-  this_ =  new MyQItemSelectionRange();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -84,7 +39,6 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm31197722(const QItemSelectionRange & other)*/{
   const QItemSelectionRange & other = *(const QItemSelectionRange *)this_;
   this_ =  new QItemSelectionRange(other);
-  this_ =  new MyQItemSelectionRange(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -94,7 +48,6 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm2537719913(QItemSelectionRange && other)*/{
   QItemSelectionRange && other =  static_cast<QItemSelectionRange &&>(*(QItemSelectionRange *)this_);
   this_ =  new QItemSelectionRange(other);
-  this_ =  new MyQItemSelectionRange(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -128,7 +81,6 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm1480294449(const QModelIndex & topL, const QModelIndex & bottomR)*/{
   const QModelIndex & topL = *(const QModelIndex *)this_; const QModelIndex & bottomR = *(const QModelIndex *)this_;
   this_ =  new QItemSelectionRange(topL, bottomR);
-  this_ =  new MyQItemSelectionRange(topL, bottomR);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -138,7 +90,6 @@ uint64_t ensure_inline_symbol_qitemselectionrange(void* this_) {
 /*void* qm2240717409(const QModelIndex & index)*/{
   const QModelIndex & index = *(const QModelIndex *)this_;
   this_ =  new QItemSelectionRange(index);
-  this_ =  new MyQItemSelectionRange(index);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

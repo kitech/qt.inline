@@ -16,54 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQColorSpace_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQColorSpace_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQColorSpace_t qt_meta_stringdata_MyQColorSpace = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQColorSpace"
-  },
-  "MyQColorSpace"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQColorSpace[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQColorSpace : public QColorSpace {
-public:
-  virtual ~MyQColorSpace() {}
-// void QColorSpace()
-MyQColorSpace() : QColorSpace() {}
-// void QColorSpace(QColorSpace::NamedColorSpace)
-MyQColorSpace(QColorSpace::NamedColorSpace namedColorSpace) : QColorSpace(namedColorSpace) {}
-// void QColorSpace(QColorSpace::Primaries, QColorSpace::TransferFunction, float)
-MyQColorSpace(QColorSpace::Primaries primaries, QColorSpace::TransferFunction fun, float gamma) : QColorSpace(primaries, fun, gamma) {}
-// void QColorSpace(QColorSpace::Primaries, float)
-MyQColorSpace(QColorSpace::Primaries primaries, float gamma) : QColorSpace(primaries, gamma) {}
-// void QColorSpace(const QPointF &, const QPointF &, const QPointF &, const QPointF &, QColorSpace::TransferFunction, float)
-MyQColorSpace(const QPointF & whitePoint, const QPointF & redPoint, const QPointF & greenPoint, const QPointF & bluePoint, QColorSpace::TransferFunction fun, float gamma) : QColorSpace(whitePoint, redPoint, greenPoint, bluePoint, fun, gamma) {}
-// void QColorSpace(const QColorSpace &)
-MyQColorSpace(const QColorSpace & colorSpace) : QColorSpace(colorSpace) {}
-// void QColorSpace(QColorSpace &&)
-MyQColorSpace(QColorSpace && colorSpace) : QColorSpace(colorSpace) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcolorspace(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -75,7 +27,6 @@ uint64_t ensure_inline_symbol_qcolorspace(void* this_) {
 /*void* qm2005174528()*/{
   ;
   this_ =  new QColorSpace();
-  this_ =  new MyQColorSpace();
 }
 
 // Public Visibility=Default Availability=Available
@@ -85,7 +36,6 @@ uint64_t ensure_inline_symbol_qcolorspace(void* this_) {
 /*void* qm2421250810(QColorSpace::NamedColorSpace namedColorSpace)*/{
   QColorSpace::NamedColorSpace namedColorSpace = *(QColorSpace::NamedColorSpace*)this_;
   this_ =  new QColorSpace(namedColorSpace);
-  this_ =  new MyQColorSpace(namedColorSpace);
 }
 
 // Public Visibility=Default Availability=Available
@@ -95,7 +45,6 @@ uint64_t ensure_inline_symbol_qcolorspace(void* this_) {
 /*void* qm4107089349(QColorSpace::Primaries primaries, QColorSpace::TransferFunction fun, float gamma)*/{
   QColorSpace::Primaries primaries = *(QColorSpace::Primaries*)this_; QColorSpace::TransferFunction fun = *(QColorSpace::TransferFunction*)this_; float gamma = *(float*)this_;
   this_ =  new QColorSpace(primaries, fun, gamma);
-  this_ =  new MyQColorSpace(primaries, fun, gamma);
 }
 
 // Public Visibility=Default Availability=Available
@@ -105,7 +54,6 @@ uint64_t ensure_inline_symbol_qcolorspace(void* this_) {
 /*void* qm1536688(QColorSpace::Primaries primaries, float gamma)*/{
   QColorSpace::Primaries primaries = *(QColorSpace::Primaries*)this_; float gamma = *(float*)this_;
   this_ =  new QColorSpace(primaries, gamma);
-  this_ =  new MyQColorSpace(primaries, gamma);
 }
 
 // Public Visibility=Default Availability=Available
@@ -115,7 +63,6 @@ uint64_t ensure_inline_symbol_qcolorspace(void* this_) {
 /*void* qm3792308814(const QPointF & whitePoint, const QPointF & redPoint, const QPointF & greenPoint, const QPointF & bluePoint, QColorSpace::TransferFunction fun, float gamma)*/{
   const QPointF & whitePoint = *(const QPointF *)this_; const QPointF & redPoint = *(const QPointF *)this_; const QPointF & greenPoint = *(const QPointF *)this_; const QPointF & bluePoint = *(const QPointF *)this_; QColorSpace::TransferFunction fun = *(QColorSpace::TransferFunction*)this_; float gamma = *(float*)this_;
   this_ =  new QColorSpace(whitePoint, redPoint, greenPoint, bluePoint, fun, gamma);
-  this_ =  new MyQColorSpace(whitePoint, redPoint, greenPoint, bluePoint, fun, gamma);
 }
 
 // Public Visibility=Default Availability=Available
@@ -125,7 +72,6 @@ uint64_t ensure_inline_symbol_qcolorspace(void* this_) {
 /*void* qm3322455524(const QColorSpace & colorSpace)*/{
   const QColorSpace & colorSpace = *(const QColorSpace *)this_;
   this_ =  new QColorSpace(colorSpace);
-  this_ =  new MyQColorSpace(colorSpace);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -135,7 +81,6 @@ uint64_t ensure_inline_symbol_qcolorspace(void* this_) {
 /*void* qm2487599634(QColorSpace && colorSpace)*/{
   QColorSpace && colorSpace =  static_cast<QColorSpace &&>(*(QColorSpace *)this_);
   this_ =  new QColorSpace(colorSpace);
-  this_ =  new MyQColorSpace(colorSpace);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQJsonArray_t {
-  QByteArrayData data[1];
-  char stringdata0[13];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQJsonArray_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQJsonArray_t qt_meta_stringdata_MyQJsonArray = {
-   {
-  QT_MOC_LITERAL(0, 0, 12), // "MyQJsonArray"
-  },
-  "MyQJsonArray"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQJsonArray[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQJsonArray : public QJsonArray {
-public:
-  virtual ~MyQJsonArray() {}
-// void QJsonArray()
-MyQJsonArray() : QJsonArray() {}
-// void QJsonArray(std::initializer_list<QJsonValue>)
-MyQJsonArray(std::initializer_list<QJsonValue> args) : QJsonArray(args) {}
-// void QJsonArray(const QJsonArray &)
-MyQJsonArray(const QJsonArray & other) : QJsonArray(other) {}
-// void QJsonArray(QJsonArray &&)
-MyQJsonArray(QJsonArray && other) : QJsonArray(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qjsonarray(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qjsonarray(void* this_) {
 /*void* qm1575282276()*/{
   ;
   this_ =  new QJsonArray();
-  this_ =  new MyQJsonArray();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qjsonarray(void* this_) {
 /*void* qm4153761749(std::initializer_list<QJsonValue> args)*/{
   std::initializer_list<QJsonValue> args = *(std::initializer_list<QJsonValue>*)this_;
   this_ =  new QJsonArray(args);
-  this_ =  new MyQJsonArray(args);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qjsonarray(void* this_) {
 /*void* qm637652994(const QJsonArray & other)*/{
   const QJsonArray & other = *(const QJsonArray *)this_;
   this_ =  new QJsonArray(other);
-  this_ =  new MyQJsonArray(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qjsonarray(void* this_) {
 /*void* qm1222195736(QJsonArray && other)*/{
   QJsonArray && other =  static_cast<QJsonArray &&>(*(QJsonArray *)this_);
   this_ =  new QJsonArray(other);
-  this_ =  new MyQJsonArray(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

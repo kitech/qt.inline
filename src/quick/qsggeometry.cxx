@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSGGeometry_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSGGeometry_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSGGeometry_t qt_meta_stringdata_MyQSGGeometry = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQSGGeometry"
-  },
-  "MyQSGGeometry"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSGGeometry[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSGGeometry : public QSGGeometry {
-public:
-  virtual ~MyQSGGeometry() {}
-// void QSGGeometry(const QSGGeometry::AttributeSet &, int, int, int)
-MyQSGGeometry(const QSGGeometry::AttributeSet & attribs, int vertexCount, int indexCount, int indexType) : QSGGeometry(attribs, vertexCount, indexCount, indexType) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsggeometry(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qsggeometry(void* this_) {
 /*void* qm2625391281(const QSGGeometry::AttributeSet & attribs, int vertexCount, int indexCount, int indexType)*/{
   const QSGGeometry::AttributeSet & attribs = *(const QSGGeometry::AttributeSet *)this_; int vertexCount = *(int*)this_; int indexCount = *(int*)this_; int indexType = *(int*)this_;
   this_ =  new QSGGeometry(attribs, vertexCount, indexCount, indexType);
-  this_ =  new MyQSGGeometry(attribs, vertexCount, indexCount, indexType);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

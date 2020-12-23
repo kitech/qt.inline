@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQXmlStreamEntityDeclaration_t {
-  QByteArrayData data[1];
-  char stringdata0[30];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQXmlStreamEntityDeclaration_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQXmlStreamEntityDeclaration_t qt_meta_stringdata_MyQXmlStreamEntityDeclaration = {
-   {
-  QT_MOC_LITERAL(0, 0, 29), // "MyQXmlStreamEntityDeclaration"
-  },
-  "MyQXmlStreamEntityDeclaration"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQXmlStreamEntityDeclaration[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQXmlStreamEntityDeclaration : public QXmlStreamEntityDeclaration {
-public:
-  virtual ~MyQXmlStreamEntityDeclaration() {}
-// void QXmlStreamEntityDeclaration()
-MyQXmlStreamEntityDeclaration() : QXmlStreamEntityDeclaration() {}
-// void QXmlStreamEntityDeclaration(const QXmlStreamEntityDeclaration &)
-MyQXmlStreamEntityDeclaration(const QXmlStreamEntityDeclaration & arg0) : QXmlStreamEntityDeclaration(arg0) {}
-// void QXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration &&)
-MyQXmlStreamEntityDeclaration(QXmlStreamEntityDeclaration && other) : QXmlStreamEntityDeclaration(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamentitydeclaration(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qxmlstreamentitydeclaration(void* this_) {
 /*void* qm2539572310()*/{
   ;
   this_ =  new QXmlStreamEntityDeclaration();
-  this_ =  new MyQXmlStreamEntityDeclaration();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qxmlstreamentitydeclaration(void* this_) {
 /*void* qm1160869772(const QXmlStreamEntityDeclaration & arg0)*/{
   const QXmlStreamEntityDeclaration & arg0 = *(const QXmlStreamEntityDeclaration *)this_;
   this_ =  new QXmlStreamEntityDeclaration(arg0);
-  this_ =  new MyQXmlStreamEntityDeclaration(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qxmlstreamentitydeclaration(void* this_) {
 /*void* qm2115136773(QXmlStreamEntityDeclaration && other)*/{
   QXmlStreamEntityDeclaration && other =  static_cast<QXmlStreamEntityDeclaration &&>(*(QXmlStreamEntityDeclaration *)this_);
   this_ =  new QXmlStreamEntityDeclaration(other);
-  this_ =  new MyQXmlStreamEntityDeclaration(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQAccessibleTextSelectionEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[32];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQAccessibleTextSelectionEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQAccessibleTextSelectionEvent_t qt_meta_stringdata_MyQAccessibleTextSelectionEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 31), // "MyQAccessibleTextSelectionEvent"
-  },
-  "MyQAccessibleTextSelectionEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQAccessibleTextSelectionEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQAccessibleTextSelectionEvent : public QAccessibleTextSelectionEvent {
-public:
-  virtual ~MyQAccessibleTextSelectionEvent() {}
-// void QAccessibleTextSelectionEvent(QObject *, int, int)
-MyQAccessibleTextSelectionEvent(QObject * obj, int start, int end_) : QAccessibleTextSelectionEvent(obj, start, end_) {}
-// void QAccessibleTextSelectionEvent(QAccessibleInterface *, int, int)
-MyQAccessibleTextSelectionEvent(QAccessibleInterface * iface, int start, int end_) : QAccessibleTextSelectionEvent(iface, start, end_) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qaccessibletextselectionevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qaccessibletextselectionevent(void* this_) {
 /*void* qm372479360(QObject * obj, int start, int end_)*/{
   QObject * obj = *(QObject **)this_; int start = *(int*)this_; int end_ = *(int*)this_;
   this_ =  new QAccessibleTextSelectionEvent(obj, start, end_);
-  this_ =  new MyQAccessibleTextSelectionEvent(obj, start, end_);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qaccessibletextselectionevent(void* this_) {
 /*void* qm624577784(QAccessibleInterface * iface, int start, int end_)*/{
   QAccessibleInterface * iface = *(QAccessibleInterface **)this_; int start = *(int*)this_; int end_ = *(int*)this_;
   this_ =  new QAccessibleTextSelectionEvent(iface, start, end_);
-  this_ =  new MyQAccessibleTextSelectionEvent(iface, start, end_);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

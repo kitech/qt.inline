@@ -19,44 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQItemSelection_t {
-  QByteArrayData data[1];
-  char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQItemSelection_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQItemSelection_t qt_meta_stringdata_MyQItemSelection = {
-   {
-  QT_MOC_LITERAL(0, 0, 16), // "MyQItemSelection"
-  },
-  "MyQItemSelection"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQItemSelection[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQItemSelection : public QItemSelection {
-public:
-  virtual ~MyQItemSelection() {}
-// void QItemSelection()
-MyQItemSelection() : QItemSelection() {}
-// void QItemSelection(const QModelIndex &, const QModelIndex &)
-MyQItemSelection(const QModelIndex & topLeft, const QModelIndex & bottomRight) : QItemSelection(topLeft, bottomRight) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qitemselection(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -68,7 +30,6 @@ uint64_t ensure_inline_symbol_qitemselection(void* this_) {
 /*void* qm3922188993()*/{
   ;
   this_ =  new QItemSelection();
-  this_ =  new MyQItemSelection();
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +39,6 @@ uint64_t ensure_inline_symbol_qitemselection(void* this_) {
 /*void* qm1842449250(const QModelIndex & topLeft, const QModelIndex & bottomRight)*/{
   const QModelIndex & topLeft = *(const QModelIndex *)this_; const QModelIndex & bottomRight = *(const QModelIndex *)this_;
   this_ =  new QItemSelection(topLeft, bottomRight);
-  this_ =  new MyQItemSelection(topLeft, bottomRight);
 }
 
 

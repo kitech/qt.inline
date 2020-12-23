@@ -19,58 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTreeWidgetItem_t {
-  QByteArrayData data[1];
-  char stringdata0[18];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTreeWidgetItem_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTreeWidgetItem_t qt_meta_stringdata_MyQTreeWidgetItem = {
-   {
-  QT_MOC_LITERAL(0, 0, 17), // "MyQTreeWidgetItem"
-  },
-  "MyQTreeWidgetItem"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTreeWidgetItem[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTreeWidgetItem : public QTreeWidgetItem {
-public:
-  virtual ~MyQTreeWidgetItem() {}
-// void QTreeWidgetItem(int)
-MyQTreeWidgetItem(int type_) : QTreeWidgetItem(type_) {}
-// void QTreeWidgetItem(const QStringList &, int)
-MyQTreeWidgetItem(const QStringList & strings, int type_) : QTreeWidgetItem(strings, type_) {}
-// void QTreeWidgetItem(QTreeWidget *, int)
-MyQTreeWidgetItem(QTreeWidget * treeview, int type_) : QTreeWidgetItem(treeview, type_) {}
-// void QTreeWidgetItem(QTreeWidget *, const QStringList &, int)
-MyQTreeWidgetItem(QTreeWidget * treeview, const QStringList & strings, int type_) : QTreeWidgetItem(treeview, strings, type_) {}
-// void QTreeWidgetItem(QTreeWidget *, QTreeWidgetItem *, int)
-MyQTreeWidgetItem(QTreeWidget * treeview, QTreeWidgetItem * after, int type_) : QTreeWidgetItem(treeview, after, type_) {}
-// void QTreeWidgetItem(QTreeWidgetItem *, int)
-MyQTreeWidgetItem(QTreeWidgetItem * parent, int type_) : QTreeWidgetItem(parent, type_) {}
-// void QTreeWidgetItem(QTreeWidgetItem *, const QStringList &, int)
-MyQTreeWidgetItem(QTreeWidgetItem * parent, const QStringList & strings, int type_) : QTreeWidgetItem(parent, strings, type_) {}
-// void QTreeWidgetItem(QTreeWidgetItem *, QTreeWidgetItem *, int)
-MyQTreeWidgetItem(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type_) : QTreeWidgetItem(parent, after, type_) {}
-// void QTreeWidgetItem(const QTreeWidgetItem &)
-MyQTreeWidgetItem(const QTreeWidgetItem & other) : QTreeWidgetItem(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -82,7 +30,6 @@ uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
 /*void* qm4103294711(int type_)*/{
   int type_ = *(int*)this_;
   this_ =  new QTreeWidgetItem(type_);
-  this_ =  new MyQTreeWidgetItem(type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -92,7 +39,6 @@ uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
 /*void* qm2817782461(const QStringList & strings, int type_)*/{
   const QStringList & strings = *(const QStringList *)this_; int type_ = *(int*)this_;
   this_ =  new QTreeWidgetItem(strings, type_);
-  this_ =  new MyQTreeWidgetItem(strings, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -102,7 +48,6 @@ uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
 /*void* qm3483897186(QTreeWidget * treeview, int type_)*/{
   QTreeWidget * treeview = *(QTreeWidget **)this_; int type_ = *(int*)this_;
   this_ =  new QTreeWidgetItem(treeview, type_);
-  this_ =  new MyQTreeWidgetItem(treeview, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -112,7 +57,6 @@ uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
 /*void* qm641872238(QTreeWidget * treeview, const QStringList & strings, int type_)*/{
   QTreeWidget * treeview = *(QTreeWidget **)this_; const QStringList & strings = *(const QStringList *)this_; int type_ = *(int*)this_;
   this_ =  new QTreeWidgetItem(treeview, strings, type_);
-  this_ =  new MyQTreeWidgetItem(treeview, strings, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -122,7 +66,6 @@ uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
 /*void* qm858074273(QTreeWidget * treeview, QTreeWidgetItem * after, int type_)*/{
   QTreeWidget * treeview = *(QTreeWidget **)this_; QTreeWidgetItem * after = *(QTreeWidgetItem **)this_; int type_ = *(int*)this_;
   this_ =  new QTreeWidgetItem(treeview, after, type_);
-  this_ =  new MyQTreeWidgetItem(treeview, after, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -132,7 +75,6 @@ uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
 /*void* qm2728567651(QTreeWidgetItem * parent, int type_)*/{
   QTreeWidgetItem * parent = *(QTreeWidgetItem **)this_; int type_ = *(int*)this_;
   this_ =  new QTreeWidgetItem(parent, type_);
-  this_ =  new MyQTreeWidgetItem(parent, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -142,7 +84,6 @@ uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
 /*void* qm2526487548(QTreeWidgetItem * parent, const QStringList & strings, int type_)*/{
   QTreeWidgetItem * parent = *(QTreeWidgetItem **)this_; const QStringList & strings = *(const QStringList *)this_; int type_ = *(int*)this_;
   this_ =  new QTreeWidgetItem(parent, strings, type_);
-  this_ =  new MyQTreeWidgetItem(parent, strings, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -152,7 +93,6 @@ uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
 /*void* qm3130188821(QTreeWidgetItem * parent, QTreeWidgetItem * after, int type_)*/{
   QTreeWidgetItem * parent = *(QTreeWidgetItem **)this_; QTreeWidgetItem * after = *(QTreeWidgetItem **)this_; int type_ = *(int*)this_;
   this_ =  new QTreeWidgetItem(parent, after, type_);
-  this_ =  new MyQTreeWidgetItem(parent, after, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -162,7 +102,6 @@ uint64_t ensure_inline_symbol_qtreewidgetitem(void* this_) {
 /*void* qm2039563189(const QTreeWidgetItem & other)*/{
   const QTreeWidgetItem & other = *(const QTreeWidgetItem *)this_;
   this_ =  new QTreeWidgetItem(other);
-  this_ =  new MyQTreeWidgetItem(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQJsonValueRef_t {
-  QByteArrayData data[1];
-  char stringdata0[16];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQJsonValueRef_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQJsonValueRef_t qt_meta_stringdata_MyQJsonValueRef = {
-   {
-  QT_MOC_LITERAL(0, 0, 15), // "MyQJsonValueRef"
-  },
-  "MyQJsonValueRef"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQJsonValueRef[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQJsonValueRef : public QJsonValueRef {
-public:
-  virtual ~MyQJsonValueRef() {}
-// void QJsonValueRef(const QJsonValueRef &)
-MyQJsonValueRef(const QJsonValueRef & arg0) : QJsonValueRef(arg0) {}
-// void QJsonValueRef(QJsonArray *, int)
-MyQJsonValueRef(QJsonArray * array, int idx) : QJsonValueRef(array, idx) {}
-// void QJsonValueRef(QJsonObject *, int)
-MyQJsonValueRef(QJsonObject * object, int idx) : QJsonValueRef(object, idx) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qjsonvalueref(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qjsonvalueref(void* this_) {
 /*void* qm505555892(const QJsonValueRef & arg0)*/{
   const QJsonValueRef & arg0 = *(const QJsonValueRef *)this_;
   this_ =  new QJsonValueRef(arg0);
-  this_ =  new MyQJsonValueRef(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qjsonvalueref(void* this_) {
 /*void* qm330089457(QJsonArray * array, int idx)*/{
   QJsonArray * array = *(QJsonArray **)this_; int idx = *(int*)this_;
   this_ =  new QJsonValueRef(array, idx);
-  this_ =  new MyQJsonValueRef(array, idx);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qjsonvalueref(void* this_) {
 /*void* qm2476079573(QJsonObject * object, int idx)*/{
   QJsonObject * object = *(QJsonObject **)this_; int idx = *(int*)this_;
   this_ =  new QJsonValueRef(object, idx);
-  this_ =  new MyQJsonValueRef(object, idx);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

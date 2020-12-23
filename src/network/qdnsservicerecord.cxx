@@ -19,44 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQDnsServiceRecord_t {
-  QByteArrayData data[1];
-  char stringdata0[20];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQDnsServiceRecord_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQDnsServiceRecord_t qt_meta_stringdata_MyQDnsServiceRecord = {
-   {
-  QT_MOC_LITERAL(0, 0, 19), // "MyQDnsServiceRecord"
-  },
-  "MyQDnsServiceRecord"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQDnsServiceRecord[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQDnsServiceRecord : public QDnsServiceRecord {
-public:
-  virtual ~MyQDnsServiceRecord() {}
-// void QDnsServiceRecord()
-MyQDnsServiceRecord() : QDnsServiceRecord() {}
-// void QDnsServiceRecord(const QDnsServiceRecord &)
-MyQDnsServiceRecord(const QDnsServiceRecord & other) : QDnsServiceRecord(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdnsservicerecord(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -68,7 +30,6 @@ uint64_t ensure_inline_symbol_qdnsservicerecord(void* this_) {
 /*void* qm630157524()*/{
   ;
   this_ =  new QDnsServiceRecord();
-  this_ =  new MyQDnsServiceRecord();
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +39,6 @@ uint64_t ensure_inline_symbol_qdnsservicerecord(void* this_) {
 /*void* qm505723686(const QDnsServiceRecord & other)*/{
   const QDnsServiceRecord & other = *(const QDnsServiceRecord *)this_;
   this_ =  new QDnsServiceRecord(other);
-  this_ =  new MyQDnsServiceRecord(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

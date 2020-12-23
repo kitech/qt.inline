@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSizePolicy_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSizePolicy_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSizePolicy_t qt_meta_stringdata_MyQSizePolicy = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQSizePolicy"
-  },
-  "MyQSizePolicy"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSizePolicy[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSizePolicy : public QSizePolicy {
-public:
-  virtual ~MyQSizePolicy() {}
-// void QSizePolicy()
-MyQSizePolicy() : QSizePolicy() {}
-// void QSizePolicy(QSizePolicy::Policy, QSizePolicy::Policy, QSizePolicy::ControlType)
-MyQSizePolicy(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type_) : QSizePolicy(horizontal, vertical, type_) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsizepolicy(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qsizepolicy(void* this_) {
 /*void* qm2384431746()*/{
   ;
   this_ =  new QSizePolicy();
-  this_ =  new MyQSizePolicy();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qsizepolicy(void* this_) {
 /*void* qm1433235332(QSizePolicy::Policy horizontal, QSizePolicy::Policy vertical, QSizePolicy::ControlType type_)*/{
   QSizePolicy::Policy horizontal = *(QSizePolicy::Policy*)this_; QSizePolicy::Policy vertical = *(QSizePolicy::Policy*)this_; QSizePolicy::ControlType type_ = *(QSizePolicy::ControlType*)this_;
   this_ =  new QSizePolicy(horizontal, vertical, type_);
-  this_ =  new MyQSizePolicy(horizontal, vertical, type_);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

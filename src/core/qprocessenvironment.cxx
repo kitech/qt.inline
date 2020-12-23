@@ -19,44 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQProcessEnvironment_t {
-  QByteArrayData data[1];
-  char stringdata0[22];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQProcessEnvironment_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQProcessEnvironment_t qt_meta_stringdata_MyQProcessEnvironment = {
-   {
-  QT_MOC_LITERAL(0, 0, 21), // "MyQProcessEnvironment"
-  },
-  "MyQProcessEnvironment"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQProcessEnvironment[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQProcessEnvironment : public QProcessEnvironment {
-public:
-  virtual ~MyQProcessEnvironment() {}
-// void QProcessEnvironment()
-MyQProcessEnvironment() : QProcessEnvironment() {}
-// void QProcessEnvironment(const QProcessEnvironment &)
-MyQProcessEnvironment(const QProcessEnvironment & other) : QProcessEnvironment(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qprocessenvironment(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -68,7 +30,6 @@ uint64_t ensure_inline_symbol_qprocessenvironment(void* this_) {
 /*void* qm1896038237()*/{
   ;
   this_ =  new QProcessEnvironment();
-  this_ =  new MyQProcessEnvironment();
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +39,6 @@ uint64_t ensure_inline_symbol_qprocessenvironment(void* this_) {
 /*void* qm1664026556(const QProcessEnvironment & other)*/{
   const QProcessEnvironment & other = *(const QProcessEnvironment *)this_;
   this_ =  new QProcessEnvironment(other);
-  this_ =  new MyQProcessEnvironment(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

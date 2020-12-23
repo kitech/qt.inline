@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQPageSize_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQPageSize_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQPageSize_t qt_meta_stringdata_MyQPageSize = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQPageSize"
-  },
-  "MyQPageSize"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQPageSize[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQPageSize : public QPageSize {
-public:
-  virtual ~MyQPageSize() {}
-// void QPageSize()
-MyQPageSize() : QPageSize() {}
-// void QPageSize(QPageSize::PageSizeId)
-MyQPageSize(QPageSize::PageSizeId pageSizeId) : QPageSize(pageSizeId) {}
-// void QPageSize(const QSize &, const QString &, QPageSize::SizeMatchPolicy)
-MyQPageSize(const QSize & pointSize, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) : QPageSize(pointSize, name, matchPolicy) {}
-// void QPageSize(const QSizeF &, QPageSize::Unit, const QString &, QPageSize::SizeMatchPolicy)
-MyQPageSize(const QSizeF & size, QPageSize::Unit units, const QString & name, QPageSize::SizeMatchPolicy matchPolicy) : QPageSize(size, units, name, matchPolicy) {}
-// void QPageSize(const QPageSize &)
-MyQPageSize(const QPageSize & other) : QPageSize(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpagesize(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qpagesize(void* this_) {
 /*void* qm2745184346()*/{
   ;
   this_ =  new QPageSize();
-  this_ =  new MyQPageSize();
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qpagesize(void* this_) {
 /*void* qm939258003(QPageSize::PageSizeId pageSizeId)*/{
   QPageSize::PageSizeId pageSizeId = *(QPageSize::PageSizeId*)this_;
   this_ =  new QPageSize(pageSizeId);
-  this_ =  new MyQPageSize(pageSizeId);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qpagesize(void* this_) {
 /*void* qm150233864(const QSize & pointSize, const QString & name, QPageSize::SizeMatchPolicy matchPolicy)*/{
   const QSize & pointSize = *(const QSize *)this_; const QString & name = *(const QString *)this_; QPageSize::SizeMatchPolicy matchPolicy = *(QPageSize::SizeMatchPolicy*)this_;
   this_ =  new QPageSize(pointSize, name, matchPolicy);
-  this_ =  new MyQPageSize(pointSize, name, matchPolicy);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qpagesize(void* this_) {
 /*void* qm2269842282(const QSizeF & size, QPageSize::Unit units, const QString & name, QPageSize::SizeMatchPolicy matchPolicy)*/{
   const QSizeF & size = *(const QSizeF *)this_; QPageSize::Unit units = *(QPageSize::Unit*)this_; const QString & name = *(const QString *)this_; QPageSize::SizeMatchPolicy matchPolicy = *(QPageSize::SizeMatchPolicy*)this_;
   this_ =  new QPageSize(size, units, name, matchPolicy);
-  this_ =  new MyQPageSize(size, units, name, matchPolicy);
 }
 
 // Public Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qpagesize(void* this_) {
 /*void* qm2921856886(const QPageSize & other)*/{
   const QPageSize & other = *(const QPageSize *)this_;
   this_ =  new QPageSize(other);
-  this_ =  new MyQPageSize(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

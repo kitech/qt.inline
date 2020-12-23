@@ -19,44 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSslPreSharedKeyAuthenticator_t {
-  QByteArrayData data[1];
-  char stringdata0[32];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSslPreSharedKeyAuthenticator_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSslPreSharedKeyAuthenticator_t qt_meta_stringdata_MyQSslPreSharedKeyAuthenticator = {
-   {
-  QT_MOC_LITERAL(0, 0, 31), // "MyQSslPreSharedKeyAuthenticator"
-  },
-  "MyQSslPreSharedKeyAuthenticator"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSslPreSharedKeyAuthenticator[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSslPreSharedKeyAuthenticator : public QSslPreSharedKeyAuthenticator {
-public:
-  virtual ~MyQSslPreSharedKeyAuthenticator() {}
-// void QSslPreSharedKeyAuthenticator()
-MyQSslPreSharedKeyAuthenticator() : QSslPreSharedKeyAuthenticator() {}
-// void QSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator &)
-MyQSslPreSharedKeyAuthenticator(const QSslPreSharedKeyAuthenticator & authenticator) : QSslPreSharedKeyAuthenticator(authenticator) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslpresharedkeyauthenticator(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -68,7 +30,6 @@ uint64_t ensure_inline_symbol_qsslpresharedkeyauthenticator(void* this_) {
 /*void* qm1025614381()*/{
   ;
   this_ =  new QSslPreSharedKeyAuthenticator();
-  this_ =  new MyQSslPreSharedKeyAuthenticator();
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +39,6 @@ uint64_t ensure_inline_symbol_qsslpresharedkeyauthenticator(void* this_) {
 /*void* qm642898451(const QSslPreSharedKeyAuthenticator & authenticator)*/{
   const QSslPreSharedKeyAuthenticator & authenticator = *(const QSslPreSharedKeyAuthenticator *)this_;
   this_ =  new QSslPreSharedKeyAuthenticator(authenticator);
-  this_ =  new MyQSslPreSharedKeyAuthenticator(authenticator);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQOpenGLBuffer_t {
-  QByteArrayData data[1];
-  char stringdata0[16];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQOpenGLBuffer_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQOpenGLBuffer_t qt_meta_stringdata_MyQOpenGLBuffer = {
-   {
-  QT_MOC_LITERAL(0, 0, 15), // "MyQOpenGLBuffer"
-  },
-  "MyQOpenGLBuffer"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQOpenGLBuffer[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQOpenGLBuffer : public QOpenGLBuffer {
-public:
-  virtual ~MyQOpenGLBuffer() {}
-// void QOpenGLBuffer()
-MyQOpenGLBuffer() : QOpenGLBuffer() {}
-// void QOpenGLBuffer(QOpenGLBuffer::Type)
-MyQOpenGLBuffer(QOpenGLBuffer::Type type_) : QOpenGLBuffer(type_) {}
-// void QOpenGLBuffer(const QOpenGLBuffer &)
-MyQOpenGLBuffer(const QOpenGLBuffer & other) : QOpenGLBuffer(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglbuffer(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qopenglbuffer(void* this_) {
 /*void* qm2924549072()*/{
   ;
   this_ =  new QOpenGLBuffer();
-  this_ =  new MyQOpenGLBuffer();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qopenglbuffer(void* this_) {
 /*void* qm2828229433(QOpenGLBuffer::Type type_)*/{
   QOpenGLBuffer::Type type_ = *(QOpenGLBuffer::Type*)this_;
   this_ =  new QOpenGLBuffer(type_);
-  this_ =  new MyQOpenGLBuffer(type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qopenglbuffer(void* this_) {
 /*void* qm915854534(const QOpenGLBuffer & other)*/{
   const QOpenGLBuffer & other = *(const QOpenGLBuffer *)this_;
   this_ =  new QOpenGLBuffer(other);
-  this_ =  new MyQOpenGLBuffer(other);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

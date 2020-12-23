@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQDate_t {
-  QByteArrayData data[1];
-  char stringdata0[8];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQDate_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQDate_t qt_meta_stringdata_MyQDate = {
-   {
-  QT_MOC_LITERAL(0, 0, 7), // "MyQDate"
-  },
-  "MyQDate"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQDate[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQDate : public QDate {
-public:
-  virtual ~MyQDate() {}
-// void QDate()
-MyQDate() : QDate() {}
-// void QDate(int, int, int)
-MyQDate(int y, int m, int d) : QDate(y, m, d) {}
-// void QDate(int, int, int, QCalendar)
-MyQDate(int y, int m, int d, QCalendar cal) : QDate(y, m, d, cal) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdate(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qdate(void* this_) {
 /*void* qm1130278339()*/{
   ;
   this_ =  new QDate();
-  this_ =  new MyQDate();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qdate(void* this_) {
 /*void* qm2655184678(int y, int m, int d)*/{
   int y = *(int*)this_; int m = *(int*)this_; int d = *(int*)this_;
   this_ =  new QDate(y, m, d);
-  this_ =  new MyQDate(y, m, d);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qdate(void* this_) {
 /*void* qm686022540(int y, int m, int d, QCalendar cal)*/{
   int y = *(int*)this_; int m = *(int*)this_; int d = *(int*)this_; QCalendar cal = *(QCalendar*)this_;
   this_ =  new QDate(y, m, d, cal);
-  this_ =  new MyQDate(y, m, d, cal);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

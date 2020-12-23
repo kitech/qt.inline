@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQGeoPositionInfo_t {
-  QByteArrayData data[1];
-  char stringdata0[19];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQGeoPositionInfo_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQGeoPositionInfo_t qt_meta_stringdata_MyQGeoPositionInfo = {
-   {
-  QT_MOC_LITERAL(0, 0, 18), // "MyQGeoPositionInfo"
-  },
-  "MyQGeoPositionInfo"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQGeoPositionInfo[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQGeoPositionInfo : public QGeoPositionInfo {
-public:
-  virtual ~MyQGeoPositionInfo() {}
-// void QGeoPositionInfo()
-MyQGeoPositionInfo() : QGeoPositionInfo() {}
-// void QGeoPositionInfo(const QGeoCoordinate &, const QDateTime &)
-MyQGeoPositionInfo(const QGeoCoordinate & coordinate, const QDateTime & updateTime) : QGeoPositionInfo(coordinate, updateTime) {}
-// void QGeoPositionInfo(const QGeoPositionInfo &)
-MyQGeoPositionInfo(const QGeoPositionInfo & other) : QGeoPositionInfo(other) {}
-// void QGeoPositionInfo(QGeoPositionInfoPrivate &)
-MyQGeoPositionInfo(QGeoPositionInfoPrivate & dd) : QGeoPositionInfo(dd) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgeopositioninfo(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qgeopositioninfo(void* this_) {
 /*void* qm2220081302()*/{
   ;
   this_ =  new QGeoPositionInfo();
-  this_ =  new MyQGeoPositionInfo();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qgeopositioninfo(void* this_) {
 /*void* qm182759056(const QGeoCoordinate & coordinate, const QDateTime & updateTime)*/{
   const QGeoCoordinate & coordinate = *(const QGeoCoordinate *)this_; const QDateTime & updateTime = *(const QDateTime *)this_;
   this_ =  new QGeoPositionInfo(coordinate, updateTime);
-  this_ =  new MyQGeoPositionInfo(coordinate, updateTime);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qgeopositioninfo(void* this_) {
 /*void* qm110809710(const QGeoPositionInfo & other)*/{
   const QGeoPositionInfo & other = *(const QGeoPositionInfo *)this_;
   this_ =  new QGeoPositionInfo(other);
-  this_ =  new MyQGeoPositionInfo(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qgeopositioninfo(void* this_) {
 /*void* qm3938641305(QGeoPositionInfoPrivate & dd)*/{
   QGeoPositionInfoPrivate & dd = *(QGeoPositionInfoPrivate *)this_;
   this_ =  new QGeoPositionInfo(dd);
-  this_ =  new MyQGeoPositionInfo(dd);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

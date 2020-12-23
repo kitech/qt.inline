@@ -16,68 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSGMaterial_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSGMaterial_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSGMaterial_t qt_meta_stringdata_MyQSGMaterial = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQSGMaterial"
-  },
-  "MyQSGMaterial"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSGMaterial[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSGMaterial : public QSGMaterial {
-public:
-  virtual ~MyQSGMaterial() {}
-// Public purevirtual virtual Direct Visibility=Default Availability=Available
-// [8] QSGMaterialType * type()
-  virtual QSGMaterialType * type() const override {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"type", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QSGMaterialType *)(irv);
-      // Pointer Pointer QSGMaterialType *
-    } else {
-    return (QSGMaterialType *){};
-  }
-  }
-
-// Public purevirtual virtual Direct Visibility=Default Availability=Available
-// [8] QSGMaterialShader * createShader()
-  virtual QSGMaterialShader * createShader() const override {
-    int handled = 0;
-    auto irv = callbackAllInherits_fnptr((void*)this, (char*)"createShader", &handled, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-    if (handled) {
-    return (QSGMaterialShader *)(irv);
-      // Pointer Pointer QSGMaterialShader *
-    } else {
-    return (QSGMaterialShader *){};
-  }
-  }
-
-// void QSGMaterial()
-MyQSGMaterial() : QSGMaterial() {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsgmaterial(void* this_) {
   uint64_t fnptrsumval = 0;

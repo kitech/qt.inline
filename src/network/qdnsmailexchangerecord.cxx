@@ -19,44 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQDnsMailExchangeRecord_t {
-  QByteArrayData data[1];
-  char stringdata0[25];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQDnsMailExchangeRecord_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQDnsMailExchangeRecord_t qt_meta_stringdata_MyQDnsMailExchangeRecord = {
-   {
-  QT_MOC_LITERAL(0, 0, 24), // "MyQDnsMailExchangeRecord"
-  },
-  "MyQDnsMailExchangeRecord"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQDnsMailExchangeRecord[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQDnsMailExchangeRecord : public QDnsMailExchangeRecord {
-public:
-  virtual ~MyQDnsMailExchangeRecord() {}
-// void QDnsMailExchangeRecord()
-MyQDnsMailExchangeRecord() : QDnsMailExchangeRecord() {}
-// void QDnsMailExchangeRecord(const QDnsMailExchangeRecord &)
-MyQDnsMailExchangeRecord(const QDnsMailExchangeRecord & other) : QDnsMailExchangeRecord(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdnsmailexchangerecord(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -68,7 +30,6 @@ uint64_t ensure_inline_symbol_qdnsmailexchangerecord(void* this_) {
 /*void* qm3722461366()*/{
   ;
   this_ =  new QDnsMailExchangeRecord();
-  this_ =  new MyQDnsMailExchangeRecord();
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +39,6 @@ uint64_t ensure_inline_symbol_qdnsmailexchangerecord(void* this_) {
 /*void* qm1463611050(const QDnsMailExchangeRecord & other)*/{
   const QDnsMailExchangeRecord & other = *(const QDnsMailExchangeRecord *)this_;
   this_ =  new QDnsMailExchangeRecord(other);
-  this_ =  new MyQDnsMailExchangeRecord(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

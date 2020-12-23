@@ -19,44 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQDnsDomainNameRecord_t {
-  QByteArrayData data[1];
-  char stringdata0[23];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQDnsDomainNameRecord_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQDnsDomainNameRecord_t qt_meta_stringdata_MyQDnsDomainNameRecord = {
-   {
-  QT_MOC_LITERAL(0, 0, 22), // "MyQDnsDomainNameRecord"
-  },
-  "MyQDnsDomainNameRecord"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQDnsDomainNameRecord[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQDnsDomainNameRecord : public QDnsDomainNameRecord {
-public:
-  virtual ~MyQDnsDomainNameRecord() {}
-// void QDnsDomainNameRecord()
-MyQDnsDomainNameRecord() : QDnsDomainNameRecord() {}
-// void QDnsDomainNameRecord(const QDnsDomainNameRecord &)
-MyQDnsDomainNameRecord(const QDnsDomainNameRecord & other) : QDnsDomainNameRecord(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdnsdomainnamerecord(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -68,7 +30,6 @@ uint64_t ensure_inline_symbol_qdnsdomainnamerecord(void* this_) {
 /*void* qm3536950032()*/{
   ;
   this_ =  new QDnsDomainNameRecord();
-  this_ =  new MyQDnsDomainNameRecord();
 }
 
 // Public Visibility=Default Availability=Available
@@ -78,7 +39,6 @@ uint64_t ensure_inline_symbol_qdnsdomainnamerecord(void* this_) {
 /*void* qm1895979409(const QDnsDomainNameRecord & other)*/{
   const QDnsDomainNameRecord & other = *(const QDnsDomainNameRecord *)this_;
   this_ =  new QDnsDomainNameRecord(other);
-  this_ =  new MyQDnsDomainNameRecord(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

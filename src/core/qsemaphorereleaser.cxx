@@ -19,46 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSemaphoreReleaser_t {
-  QByteArrayData data[1];
-  char stringdata0[21];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSemaphoreReleaser_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSemaphoreReleaser_t qt_meta_stringdata_MyQSemaphoreReleaser = {
-   {
-  QT_MOC_LITERAL(0, 0, 20), // "MyQSemaphoreReleaser"
-  },
-  "MyQSemaphoreReleaser"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSemaphoreReleaser[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSemaphoreReleaser : public QSemaphoreReleaser {
-public:
-  virtual ~MyQSemaphoreReleaser() {}
-// void QSemaphoreReleaser()
-MyQSemaphoreReleaser() : QSemaphoreReleaser() {}
-// void QSemaphoreReleaser(QSemaphore &, int)
-MyQSemaphoreReleaser(QSemaphore & sem, int n) : QSemaphoreReleaser(sem, n) {}
-// void QSemaphoreReleaser(QSemaphore *, int)
-MyQSemaphoreReleaser(QSemaphore * sem, int n) : QSemaphoreReleaser(sem, n) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsemaphorereleaser(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -70,7 +30,6 @@ uint64_t ensure_inline_symbol_qsemaphorereleaser(void* this_) {
 /*void* qm1271734568()*/{
   ;
   this_ =  new QSemaphoreReleaser();
-  this_ =  new MyQSemaphoreReleaser();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -80,7 +39,6 @@ uint64_t ensure_inline_symbol_qsemaphorereleaser(void* this_) {
 /*void* qm1384645767(QSemaphore & sem, int n)*/{
   QSemaphore & sem = *(QSemaphore *)this_; int n = *(int*)this_;
   this_ =  new QSemaphoreReleaser(sem, n);
-  this_ =  new MyQSemaphoreReleaser(sem, n);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -90,7 +48,6 @@ uint64_t ensure_inline_symbol_qsemaphorereleaser(void* this_) {
 /*void* qm3018244138(QSemaphore * sem, int n)*/{
   QSemaphore * sem = *(QSemaphore **)this_; int n = *(int*)this_;
   this_ =  new QSemaphoreReleaser(sem, n);
-  this_ =  new MyQSemaphoreReleaser(sem, n);
 }
 
 // Public inline Visibility=Default Availability=Available

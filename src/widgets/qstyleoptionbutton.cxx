@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQStyleOptionButton_t {
-  QByteArrayData data[1];
-  char stringdata0[21];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQStyleOptionButton_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQStyleOptionButton_t qt_meta_stringdata_MyQStyleOptionButton = {
-   {
-  QT_MOC_LITERAL(0, 0, 20), // "MyQStyleOptionButton"
-  },
-  "MyQStyleOptionButton"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQStyleOptionButton[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQStyleOptionButton : public QStyleOptionButton {
-public:
-  virtual ~MyQStyleOptionButton() {}
-// void QStyleOptionButton()
-MyQStyleOptionButton() : QStyleOptionButton() {}
-// void QStyleOptionButton(const QStyleOptionButton &)
-MyQStyleOptionButton(const QStyleOptionButton & other) : QStyleOptionButton(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptionbutton(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qstyleoptionbutton(void* this_) {
 /*void* qm499288502()*/{
   ;
   this_ =  new QStyleOptionButton();
-  this_ =  new MyQStyleOptionButton();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qstyleoptionbutton(void* this_) {
 /*void* qm2556740489(const QStyleOptionButton & other)*/{
   const QStyleOptionButton & other = *(const QStyleOptionButton *)this_;
   this_ =  new QStyleOptionButton(other);
-  this_ =  new MyQStyleOptionButton(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

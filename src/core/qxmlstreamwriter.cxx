@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQXmlStreamWriter_t {
-  QByteArrayData data[1];
-  char stringdata0[19];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQXmlStreamWriter_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQXmlStreamWriter_t qt_meta_stringdata_MyQXmlStreamWriter = {
-   {
-  QT_MOC_LITERAL(0, 0, 18), // "MyQXmlStreamWriter"
-  },
-  "MyQXmlStreamWriter"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQXmlStreamWriter[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQXmlStreamWriter : public QXmlStreamWriter {
-public:
-  virtual ~MyQXmlStreamWriter() {}
-// void QXmlStreamWriter()
-MyQXmlStreamWriter() : QXmlStreamWriter() {}
-// void QXmlStreamWriter(QIODevice *)
-MyQXmlStreamWriter(QIODevice * device) : QXmlStreamWriter(device) {}
-// void QXmlStreamWriter(QByteArray *)
-MyQXmlStreamWriter(QByteArray * array) : QXmlStreamWriter(array) {}
-// void QXmlStreamWriter(QString *)
-MyQXmlStreamWriter(QString * string) : QXmlStreamWriter(string) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamwriter(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qxmlstreamwriter(void* this_) {
 /*void* qm354441112()*/{
   ;
   this_ =  new QXmlStreamWriter();
-  this_ =  new MyQXmlStreamWriter();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qxmlstreamwriter(void* this_) {
 /*void* qm1331899125(QIODevice * device)*/{
   QIODevice * device = *(QIODevice **)this_;
   this_ =  new QXmlStreamWriter(device);
-  this_ =  new MyQXmlStreamWriter(device);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qxmlstreamwriter(void* this_) {
 /*void* qm2930265000(QByteArray * array)*/{
   QByteArray * array = *(QByteArray **)this_;
   this_ =  new QXmlStreamWriter(array);
-  this_ =  new MyQXmlStreamWriter(array);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qxmlstreamwriter(void* this_) {
 /*void* qm50917282(QString * string)*/{
   QString * string = *(QString **)this_;
   this_ =  new QXmlStreamWriter(string);
-  this_ =  new MyQXmlStreamWriter(string);
 }
 
 

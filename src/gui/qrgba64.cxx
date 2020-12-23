@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQRgba64_t {
-  QByteArrayData data[1];
-  char stringdata0[10];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQRgba64_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQRgba64_t qt_meta_stringdata_MyQRgba64 = {
-   {
-  QT_MOC_LITERAL(0, 0, 9), // "MyQRgba64"
-  },
-  "MyQRgba64"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQRgba64[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQRgba64 : public QRgba64 {
-public:
-  virtual ~MyQRgba64() {}
-// void QRgba64()
-MyQRgba64() : QRgba64() {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qrgba64(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qrgba64(void* this_) {
 /*void* qm1079802919()*/{
   ;
   this_ =  new QRgba64();
-  this_ =  new MyQRgba64();
 }
 
 // Public static inline Direct Visibility=Default Availability=Available

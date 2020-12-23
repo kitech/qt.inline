@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQPainterPathStroker_t {
-  QByteArrayData data[1];
-  char stringdata0[22];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQPainterPathStroker_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQPainterPathStroker_t qt_meta_stringdata_MyQPainterPathStroker = {
-   {
-  QT_MOC_LITERAL(0, 0, 21), // "MyQPainterPathStroker"
-  },
-  "MyQPainterPathStroker"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQPainterPathStroker[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQPainterPathStroker : public QPainterPathStroker {
-public:
-  virtual ~MyQPainterPathStroker() {}
-// void QPainterPathStroker()
-MyQPainterPathStroker() : QPainterPathStroker() {}
-// void QPainterPathStroker(const QPen &)
-MyQPainterPathStroker(const QPen & pen) : QPainterPathStroker(pen) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpainterpathstroker(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qpainterpathstroker(void* this_) {
 /*void* qm3534780829()*/{
   ;
   this_ =  new QPainterPathStroker();
-  this_ =  new MyQPainterPathStroker();
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qpainterpathstroker(void* this_) {
 /*void* qm3502695912(const QPen & pen)*/{
   const QPen & pen = *(const QPen *)this_;
   this_ =  new QPainterPathStroker(pen);
-  this_ =  new MyQPainterPathStroker(pen);
 }
 
 

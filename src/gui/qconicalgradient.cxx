@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQConicalGradient_t {
-  QByteArrayData data[1];
-  char stringdata0[19];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQConicalGradient_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQConicalGradient_t qt_meta_stringdata_MyQConicalGradient = {
-   {
-  QT_MOC_LITERAL(0, 0, 18), // "MyQConicalGradient"
-  },
-  "MyQConicalGradient"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQConicalGradient[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQConicalGradient : public QConicalGradient {
-public:
-  virtual ~MyQConicalGradient() {}
-// void QConicalGradient()
-MyQConicalGradient() : QConicalGradient() {}
-// void QConicalGradient(const QPointF &, qreal)
-MyQConicalGradient(const QPointF & center, qreal startAngle) : QConicalGradient(center, startAngle) {}
-// void QConicalGradient(qreal, qreal, qreal)
-MyQConicalGradient(qreal cx, qreal cy, qreal startAngle) : QConicalGradient(cx, cy, startAngle) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qconicalgradient(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qconicalgradient(void* this_) {
 /*void* qm1860724151()*/{
   ;
   this_ =  new QConicalGradient();
-  this_ =  new MyQConicalGradient();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qconicalgradient(void* this_) {
 /*void* qm3145934730(const QPointF & center, double startAngle)*/{
   const QPointF & center = *(const QPointF *)this_; double startAngle = *(double*)this_;
   this_ =  new QConicalGradient(center, startAngle);
-  this_ =  new MyQConicalGradient(center, startAngle);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qconicalgradient(void* this_) {
 /*void* qm2204740931(double cx, double cy, double startAngle)*/{
   double cx = *(double*)this_; double cy = *(double*)this_; double startAngle = *(double*)this_;
   this_ =  new QConicalGradient(cx, cy, startAngle);
-  this_ =  new MyQConicalGradient(cx, cy, startAngle);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

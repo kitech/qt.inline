@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQDeadlineTimer_t {
-  QByteArrayData data[1];
-  char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQDeadlineTimer_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQDeadlineTimer_t qt_meta_stringdata_MyQDeadlineTimer = {
-   {
-  QT_MOC_LITERAL(0, 0, 16), // "MyQDeadlineTimer"
-  },
-  "MyQDeadlineTimer"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQDeadlineTimer[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQDeadlineTimer : public QDeadlineTimer {
-public:
-  virtual ~MyQDeadlineTimer() {}
-// void QDeadlineTimer(Qt::TimerType)
-MyQDeadlineTimer(Qt::TimerType type_) : QDeadlineTimer(type_) {}
-// void QDeadlineTimer(QDeadlineTimer::ForeverConstant, Qt::TimerType)
-MyQDeadlineTimer(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_) : QDeadlineTimer(arg0, type_) {}
-// void QDeadlineTimer(qint64, Qt::TimerType)
-MyQDeadlineTimer(qint64 msecs, Qt::TimerType type_) : QDeadlineTimer(msecs, type_) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdeadlinetimer(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qdeadlinetimer(void* this_) {
 /*void* qm1499621509(Qt::TimerType type_)*/{
   Qt::TimerType type_ = *(Qt::TimerType*)this_;
   this_ =  new QDeadlineTimer(type_);
-  this_ =  new MyQDeadlineTimer(type_);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qdeadlinetimer(void* this_) {
 /*void* qm1011522817(QDeadlineTimer::ForeverConstant arg0, Qt::TimerType type_)*/{
   QDeadlineTimer::ForeverConstant arg0 = *(QDeadlineTimer::ForeverConstant*)this_; Qt::TimerType type_ = *(Qt::TimerType*)this_;
   this_ =  new QDeadlineTimer(arg0, type_);
-  this_ =  new MyQDeadlineTimer(arg0, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qdeadlinetimer(void* this_) {
 /*void* qm1757858163(long long msecs, Qt::TimerType type_)*/{
   long long msecs = *(long long*)this_; Qt::TimerType type_ = *(Qt::TimerType*)this_;
   this_ =  new QDeadlineTimer(msecs, type_);
-  this_ =  new MyQDeadlineTimer(msecs, type_);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

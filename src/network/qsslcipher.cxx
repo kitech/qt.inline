@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSslCipher_t {
-  QByteArrayData data[1];
-  char stringdata0[13];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSslCipher_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSslCipher_t qt_meta_stringdata_MyQSslCipher = {
-   {
-  QT_MOC_LITERAL(0, 0, 12), // "MyQSslCipher"
-  },
-  "MyQSslCipher"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSslCipher[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSslCipher : public QSslCipher {
-public:
-  virtual ~MyQSslCipher() {}
-// void QSslCipher()
-MyQSslCipher() : QSslCipher() {}
-// void QSslCipher(const QString &)
-MyQSslCipher(const QString & name) : QSslCipher(name) {}
-// void QSslCipher(const QString &, QSsl::SslProtocol)
-MyQSslCipher(const QString & name, QSsl::SslProtocol protocol) : QSslCipher(name, protocol) {}
-// void QSslCipher(const QSslCipher &)
-MyQSslCipher(const QSslCipher & other) : QSslCipher(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslcipher(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qsslcipher(void* this_) {
 /*void* qm433337206()*/{
   ;
   this_ =  new QSslCipher();
-  this_ =  new MyQSslCipher();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qsslcipher(void* this_) {
 /*void* qm766254657(const QString & name)*/{
   const QString & name = *(const QString *)this_;
   this_ =  new QSslCipher(name);
-  this_ =  new MyQSslCipher(name);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qsslcipher(void* this_) {
 /*void* qm2896178919(const QString & name, QSsl::SslProtocol protocol)*/{
   const QString & name = *(const QString *)this_; QSsl::SslProtocol protocol = *(QSsl::SslProtocol*)this_;
   this_ =  new QSslCipher(name, protocol);
-  this_ =  new MyQSslCipher(name, protocol);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qsslcipher(void* this_) {
 /*void* qm3811944110(const QSslCipher & other)*/{
   const QSslCipher & other = *(const QSslCipher *)this_;
   this_ =  new QSslCipher(other);
-  this_ =  new MyQSslCipher(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

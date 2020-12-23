@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQMouseEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQMouseEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQMouseEvent_t qt_meta_stringdata_MyQMouseEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQMouseEvent"
-  },
-  "MyQMouseEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQMouseEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQMouseEvent : public QMouseEvent {
-public:
-  virtual ~MyQMouseEvent() {}
-// void QMouseEvent(QEvent::Type, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
-MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) : QMouseEvent(type_, localPos, button, buttons, modifiers) {}
-// void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
-MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) : QMouseEvent(type_, localPos, screenPos, button, buttons, modifiers) {}
-// void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers)
-MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers) : QMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers) {}
-// void QMouseEvent(QEvent::Type, const QPointF &, const QPointF &, const QPointF &, Qt::MouseButton, Qt::MouseButtons, Qt::KeyboardModifiers, Qt::MouseEventSource)
-MyQMouseEvent(QEvent::Type type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::MouseEventSource source) : QMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers, source) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmouseevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qmouseevent(void* this_) {
 /*void* qm1232816269(QEvent::Type type_, const QPointF & localPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers)*/{
   QEvent::Type type_ = *(QEvent::Type*)this_; const QPointF & localPos = *(const QPointF *)this_; Qt::MouseButton button = *(Qt::MouseButton*)this_; QFlags<Qt::MouseButton> buttons = *(QFlags<Qt::MouseButton>*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_;
   this_ =  new QMouseEvent(type_, localPos, button, buttons, modifiers);
-  this_ =  new MyQMouseEvent(type_, localPos, button, buttons, modifiers);
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qmouseevent(void* this_) {
 /*void* qm3849153686(QEvent::Type type_, const QPointF & localPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers)*/{
   QEvent::Type type_ = *(QEvent::Type*)this_; const QPointF & localPos = *(const QPointF *)this_; const QPointF & screenPos = *(const QPointF *)this_; Qt::MouseButton button = *(Qt::MouseButton*)this_; QFlags<Qt::MouseButton> buttons = *(QFlags<Qt::MouseButton>*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_;
   this_ =  new QMouseEvent(type_, localPos, screenPos, button, buttons, modifiers);
-  this_ =  new MyQMouseEvent(type_, localPos, screenPos, button, buttons, modifiers);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qmouseevent(void* this_) {
 /*void* qm4028789852(QEvent::Type type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers)*/{
   QEvent::Type type_ = *(QEvent::Type*)this_; const QPointF & localPos = *(const QPointF *)this_; const QPointF & windowPos = *(const QPointF *)this_; const QPointF & screenPos = *(const QPointF *)this_; Qt::MouseButton button = *(Qt::MouseButton*)this_; QFlags<Qt::MouseButton> buttons = *(QFlags<Qt::MouseButton>*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_;
   this_ =  new QMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers);
-  this_ =  new MyQMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qmouseevent(void* this_) {
 /*void* qm4049620773(QEvent::Type type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, Qt::MouseButton button, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, Qt::MouseEventSource source)*/{
   QEvent::Type type_ = *(QEvent::Type*)this_; const QPointF & localPos = *(const QPointF *)this_; const QPointF & windowPos = *(const QPointF *)this_; const QPointF & screenPos = *(const QPointF *)this_; Qt::MouseButton button = *(Qt::MouseButton*)this_; QFlags<Qt::MouseButton> buttons = *(QFlags<Qt::MouseButton>*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_; Qt::MouseEventSource source = *(Qt::MouseEventSource*)this_;
   this_ =  new QMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers, source);
-  this_ =  new MyQMouseEvent(type_, localPos, windowPos, screenPos, button, buttons, modifiers, source);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

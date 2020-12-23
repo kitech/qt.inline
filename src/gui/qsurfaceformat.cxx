@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSurfaceFormat_t {
-  QByteArrayData data[1];
-  char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSurfaceFormat_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSurfaceFormat_t qt_meta_stringdata_MyQSurfaceFormat = {
-   {
-  QT_MOC_LITERAL(0, 0, 16), // "MyQSurfaceFormat"
-  },
-  "MyQSurfaceFormat"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSurfaceFormat[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSurfaceFormat : public QSurfaceFormat {
-public:
-  virtual ~MyQSurfaceFormat() {}
-// void QSurfaceFormat()
-MyQSurfaceFormat() : QSurfaceFormat() {}
-// void QSurfaceFormat(QSurfaceFormat::FormatOptions)
-MyQSurfaceFormat(QFlags<QSurfaceFormat::FormatOption> options) : QSurfaceFormat(options) {}
-// void QSurfaceFormat(const QSurfaceFormat &)
-MyQSurfaceFormat(const QSurfaceFormat & other) : QSurfaceFormat(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsurfaceformat(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qsurfaceformat(void* this_) {
 /*void* qm1643703757()*/{
   ;
   this_ =  new QSurfaceFormat();
-  this_ =  new MyQSurfaceFormat();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qsurfaceformat(void* this_) {
 /*void* qm2659620541(QFlags<QSurfaceFormat::FormatOption> options)*/{
   QFlags<QSurfaceFormat::FormatOption> options = *(QFlags<QSurfaceFormat::FormatOption>*)this_;
   this_ =  new QSurfaceFormat(options);
-  this_ =  new MyQSurfaceFormat(options);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qsurfaceformat(void* this_) {
 /*void* qm123548501(const QSurfaceFormat & other)*/{
   const QSurfaceFormat & other = *(const QSurfaceFormat *)this_;
   this_ =  new QSurfaceFormat(other);
-  this_ =  new MyQSurfaceFormat(other);
 }
 
 // Public Extend Visibility=Default Availability=Available

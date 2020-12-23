@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQDebug_t {
-  QByteArrayData data[1];
-  char stringdata0[9];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQDebug_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQDebug_t qt_meta_stringdata_MyQDebug = {
-   {
-  QT_MOC_LITERAL(0, 0, 8), // "MyQDebug"
-  },
-  "MyQDebug"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQDebug[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQDebug : public QDebug {
-public:
-  virtual ~MyQDebug() {}
-// void QDebug(QIODevice *)
-MyQDebug(QIODevice * device) : QDebug(device) {}
-// void QDebug(QString *)
-MyQDebug(QString * string) : QDebug(string) {}
-// void QDebug(QtMsgType)
-MyQDebug(QtMsgType t) : QDebug(t) {}
-// void QDebug(const QDebug &)
-MyQDebug(const QDebug & o) : QDebug(o) {}
-// void QDebug(QDebug &&)
-MyQDebug(QDebug && other) : QDebug(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdebug(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm1465129040(QIODevice * device)*/{
   QIODevice * device = *(QIODevice **)this_;
   this_ =  new QDebug(device);
-  this_ =  new MyQDebug(device);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm331215671(QString * string)*/{
   QString * string = *(QString **)this_;
   this_ =  new QDebug(string);
-  this_ =  new MyQDebug(string);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm2015758278(QtMsgType t)*/{
   QtMsgType t = *(QtMsgType*)this_;
   this_ =  new QDebug(t);
-  this_ =  new MyQDebug(t);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm2771745366(const QDebug & o)*/{
   const QDebug & o = *(const QDebug *)this_;
   this_ =  new QDebug(o);
-  this_ =  new MyQDebug(o);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qdebug(void* this_) {
 /*void* qm2952177935(QDebug && other)*/{
   QDebug && other =  static_cast<QDebug &&>(*(QDebug *)this_);
   this_ =  new QDebug(other);
-  this_ =  new MyQDebug(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

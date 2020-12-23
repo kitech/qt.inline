@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQStaticText_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQStaticText_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQStaticText_t qt_meta_stringdata_MyQStaticText = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQStaticText"
-  },
-  "MyQStaticText"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQStaticText[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQStaticText : public QStaticText {
-public:
-  virtual ~MyQStaticText() {}
-// void QStaticText()
-MyQStaticText() : QStaticText() {}
-// void QStaticText(const QString &)
-MyQStaticText(const QString & text) : QStaticText(text) {}
-// void QStaticText(const QStaticText &)
-MyQStaticText(const QStaticText & other) : QStaticText(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstatictext(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qstatictext(void* this_) {
 /*void* qm488460396()*/{
   ;
   this_ =  new QStaticText();
-  this_ =  new MyQStaticText();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qstatictext(void* this_) {
 /*void* qm2285038008(const QString & text)*/{
   const QString & text = *(const QString *)this_;
   this_ =  new QStaticText(text);
-  this_ =  new MyQStaticText(text);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qstatictext(void* this_) {
 /*void* qm1592574588(const QStaticText & other)*/{
   const QStaticText & other = *(const QStaticText *)this_;
   this_ =  new QStaticText(other);
-  this_ =  new MyQStaticText(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

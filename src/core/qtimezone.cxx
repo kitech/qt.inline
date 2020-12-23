@@ -19,50 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTimeZone_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTimeZone_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTimeZone_t qt_meta_stringdata_MyQTimeZone = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQTimeZone"
-  },
-  "MyQTimeZone"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTimeZone[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTimeZone : public QTimeZone {
-public:
-  virtual ~MyQTimeZone() {}
-// void QTimeZone()
-MyQTimeZone() : QTimeZone() {}
-// void QTimeZone(const QByteArray &)
-MyQTimeZone(const QByteArray & ianaId) : QTimeZone(ianaId) {}
-// void QTimeZone(int)
-MyQTimeZone(int offsetSeconds) : QTimeZone(offsetSeconds) {}
-// void QTimeZone(const QByteArray &, int, const QString &, const QString &, QLocale::Country, const QString &)
-MyQTimeZone(const QByteArray & zoneId, int offsetSeconds, const QString & name, const QString & abbreviation, QLocale::Country country, const QString & comment) : QTimeZone(zoneId, offsetSeconds, name, abbreviation, country, comment) {}
-// void QTimeZone(const QTimeZone &)
-MyQTimeZone(const QTimeZone & other) : QTimeZone(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtimezone(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -74,7 +30,6 @@ uint64_t ensure_inline_symbol_qtimezone(void* this_) {
 /*void* qm3919516725()*/{
   ;
   this_ =  new QTimeZone();
-  this_ =  new MyQTimeZone();
 }
 
 // Public Visibility=Default Availability=Available
@@ -84,7 +39,6 @@ uint64_t ensure_inline_symbol_qtimezone(void* this_) {
 /*void* qm1091704219(const QByteArray & ianaId)*/{
   const QByteArray & ianaId = *(const QByteArray *)this_;
   this_ =  new QTimeZone(ianaId);
-  this_ =  new MyQTimeZone(ianaId);
 }
 
 // Public Visibility=Default Availability=Available
@@ -94,7 +48,6 @@ uint64_t ensure_inline_symbol_qtimezone(void* this_) {
 /*void* qm1687624128(int offsetSeconds)*/{
   int offsetSeconds = *(int*)this_;
   this_ =  new QTimeZone(offsetSeconds);
-  this_ =  new MyQTimeZone(offsetSeconds);
 }
 
 // Public Visibility=Default Availability=Available
@@ -104,7 +57,6 @@ uint64_t ensure_inline_symbol_qtimezone(void* this_) {
 /*void* qm1931350210(const QByteArray & zoneId, int offsetSeconds, const QString & name, const QString & abbreviation, QLocale::Country country, const QString & comment)*/{
   const QByteArray & zoneId = *(const QByteArray *)this_; int offsetSeconds = *(int*)this_; const QString & name = *(const QString *)this_; const QString & abbreviation = *(const QString *)this_; QLocale::Country country = *(QLocale::Country*)this_; const QString & comment = *(const QString *)this_;
   this_ =  new QTimeZone(zoneId, offsetSeconds, name, abbreviation, country, comment);
-  this_ =  new MyQTimeZone(zoneId, offsetSeconds, name, abbreviation, country, comment);
 }
 
 // Public Visibility=Default Availability=Available
@@ -114,7 +66,6 @@ uint64_t ensure_inline_symbol_qtimezone(void* this_) {
 /*void* qm2854404026(const QTimeZone & other)*/{
   const QTimeZone & other = *(const QTimeZone *)this_;
   this_ =  new QTimeZone(other);
-  this_ =  new MyQTimeZone(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,54 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTransform_t {
-  QByteArrayData data[1];
-  char stringdata0[13];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTransform_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTransform_t qt_meta_stringdata_MyQTransform = {
-   {
-  QT_MOC_LITERAL(0, 0, 12), // "MyQTransform"
-  },
-  "MyQTransform"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTransform[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTransform : public QTransform {
-public:
-  virtual ~MyQTransform() {}
-// void QTransform(Qt::Initialization)
-MyQTransform(Qt::Initialization arg0) : QTransform(arg0) {}
-// void QTransform()
-MyQTransform() : QTransform() {}
-// void QTransform(qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal, qreal)
-MyQTransform(qreal h11, qreal h12, qreal h13, qreal h21, qreal h22, qreal h23, qreal h31, qreal h32, qreal h33) : QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33) {}
-// void QTransform(qreal, qreal, qreal, qreal, qreal, qreal)
-MyQTransform(qreal h11, qreal h12, qreal h21, qreal h22, qreal dx, qreal dy) : QTransform(h11, h12, h21, h22, dx, dy) {}
-// void QTransform(const QMatrix &)
-MyQTransform(const QMatrix & mtx) : QTransform(mtx) {}
-// void QTransform(QTransform &&)
-MyQTransform(QTransform && other) : QTransform(other) {}
-// void QTransform(const QTransform &)
-MyQTransform(const QTransform & other) : QTransform(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtransform(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -75,7 +27,6 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm189374469(Qt::Initialization arg0)*/{
   Qt::Initialization arg0 = *(Qt::Initialization*)this_;
   this_ =  new QTransform(arg0);
-  this_ =  new MyQTransform(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -85,7 +36,6 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm885735579()*/{
   ;
   this_ =  new QTransform();
-  this_ =  new MyQTransform();
 }
 
 // Public Visibility=Default Availability=Available
@@ -95,7 +45,6 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm2585840205(double h11, double h12, double h13, double h21, double h22, double h23, double h31, double h32, double h33)*/{
   double h11 = *(double*)this_; double h12 = *(double*)this_; double h13 = *(double*)this_; double h21 = *(double*)this_; double h22 = *(double*)this_; double h23 = *(double*)this_; double h31 = *(double*)this_; double h32 = *(double*)this_; double h33 = *(double*)this_;
   this_ =  new QTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
-  this_ =  new MyQTransform(h11, h12, h13, h21, h22, h23, h31, h32, h33);
 }
 
 // Public Visibility=Default Availability=Available
@@ -105,7 +54,6 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm1330137376(double h11, double h12, double h21, double h22, double dx, double dy)*/{
   double h11 = *(double*)this_; double h12 = *(double*)this_; double h21 = *(double*)this_; double h22 = *(double*)this_; double dx = *(double*)this_; double dy = *(double*)this_;
   this_ =  new QTransform(h11, h12, h21, h22, dx, dy);
-  this_ =  new MyQTransform(h11, h12, h21, h22, dx, dy);
 }
 
 // Public Visibility=Default Availability=Available
@@ -115,7 +63,6 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm2284054311(const QMatrix & mtx)*/{
   const QMatrix & mtx = *(const QMatrix *)this_;
   this_ =  new QTransform(mtx);
-  this_ =  new MyQTransform(mtx);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -137,7 +84,6 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm3829967000(QTransform && other)*/{
   QTransform && other =  static_cast<QTransform &&>(*(QTransform *)this_);
   this_ =  new QTransform(other);
-  this_ =  new MyQTransform(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -147,7 +93,6 @@ uint64_t ensure_inline_symbol_qtransform(void* this_) {
 /*void* qm3407200944(const QTransform & other)*/{
   const QTransform & other = *(const QTransform *)this_;
   this_ =  new QTransform(other);
-  this_ =  new MyQTransform(other);
 }
 
 // Public Extend Visibility=Default Availability=Available

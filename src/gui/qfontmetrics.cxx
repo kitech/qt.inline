@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQFontMetrics_t {
-  QByteArrayData data[1];
-  char stringdata0[15];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQFontMetrics_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQFontMetrics_t qt_meta_stringdata_MyQFontMetrics = {
-   {
-  QT_MOC_LITERAL(0, 0, 14), // "MyQFontMetrics"
-  },
-  "MyQFontMetrics"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQFontMetrics[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQFontMetrics : public QFontMetrics {
-public:
-  virtual ~MyQFontMetrics() {}
-// void QFontMetrics(const QFont &)
-MyQFontMetrics(const QFont & arg0) : QFontMetrics(arg0) {}
-// void QFontMetrics(const QFont &, QPaintDevice *)
-MyQFontMetrics(const QFont & font, QPaintDevice * pd) : QFontMetrics(font, pd) {}
-// void QFontMetrics(const QFontMetrics &)
-MyQFontMetrics(const QFontMetrics & arg0) : QFontMetrics(arg0) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfontmetrics(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qfontmetrics(void* this_) {
 /*void* qm1203140175(const QFont & arg0)*/{
   const QFont & arg0 = *(const QFont *)this_;
   this_ =  new QFontMetrics(arg0);
-  this_ =  new MyQFontMetrics(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qfontmetrics(void* this_) {
 /*void* qm3035092134(const QFont & font, QPaintDevice * pd)*/{
   const QFont & font = *(const QFont *)this_; QPaintDevice * pd = *(QPaintDevice **)this_;
   this_ =  new QFontMetrics(font, pd);
-  this_ =  new MyQFontMetrics(font, pd);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qfontmetrics(void* this_) {
 /*void* qm1245860941(const QFontMetrics & arg0)*/{
   const QFontMetrics & arg0 = *(const QFontMetrics *)this_;
   this_ =  new QFontMetrics(arg0);
-  this_ =  new MyQFontMetrics(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

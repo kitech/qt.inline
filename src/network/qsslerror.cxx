@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSslError_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSslError_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSslError_t qt_meta_stringdata_MyQSslError = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQSslError"
-  },
-  "MyQSslError"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSslError[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSslError : public QSslError {
-public:
-  virtual ~MyQSslError() {}
-// void QSslError()
-MyQSslError() : QSslError() {}
-// void QSslError(QSslError::SslError)
-MyQSslError(QSslError::SslError error) : QSslError(error) {}
-// void QSslError(QSslError::SslError, const QSslCertificate &)
-MyQSslError(QSslError::SslError error, const QSslCertificate & certificate) : QSslError(error, certificate) {}
-// void QSslError(const QSslError &)
-MyQSslError(const QSslError & other) : QSslError(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslerror(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qsslerror(void* this_) {
 /*void* qm2305529010()*/{
   ;
   this_ =  new QSslError();
-  this_ =  new MyQSslError();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qsslerror(void* this_) {
 /*void* qm2404464769(QSslError::SslError error)*/{
   QSslError::SslError error = *(QSslError::SslError*)this_;
   this_ =  new QSslError(error);
-  this_ =  new MyQSslError(error);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qsslerror(void* this_) {
 /*void* qm1051805829(QSslError::SslError error, const QSslCertificate & certificate)*/{
   QSslError::SslError error = *(QSslError::SslError*)this_; const QSslCertificate & certificate = *(const QSslCertificate *)this_;
   this_ =  new QSslError(error, certificate);
-  this_ =  new MyQSslError(error, certificate);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qsslerror(void* this_) {
 /*void* qm3473611921(const QSslError & other)*/{
   const QSslError & other = *(const QSslError *)this_;
   this_ =  new QSslError(other);
-  this_ =  new MyQSslError(other);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

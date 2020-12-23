@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQMediaTimeInterval_t {
-  QByteArrayData data[1];
-  char stringdata0[21];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQMediaTimeInterval_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQMediaTimeInterval_t qt_meta_stringdata_MyQMediaTimeInterval = {
-   {
-  QT_MOC_LITERAL(0, 0, 20), // "MyQMediaTimeInterval"
-  },
-  "MyQMediaTimeInterval"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQMediaTimeInterval[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQMediaTimeInterval : public QMediaTimeInterval {
-public:
-  virtual ~MyQMediaTimeInterval() {}
-// void QMediaTimeInterval()
-MyQMediaTimeInterval() : QMediaTimeInterval() {}
-// void QMediaTimeInterval(qint64, qint64)
-MyQMediaTimeInterval(qint64 start, qint64 end_) : QMediaTimeInterval(start, end_) {}
-// void QMediaTimeInterval(const QMediaTimeInterval &)
-MyQMediaTimeInterval(const QMediaTimeInterval & arg0) : QMediaTimeInterval(arg0) {}
-// void QMediaTimeInterval(QMediaTimeInterval &&)
-MyQMediaTimeInterval(QMediaTimeInterval && arg0) : QMediaTimeInterval(arg0) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmediatimeinterval(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qmediatimeinterval(void* this_) {
 /*void* qm1081797096()*/{
   ;
   this_ =  new QMediaTimeInterval();
-  this_ =  new MyQMediaTimeInterval();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qmediatimeinterval(void* this_) {
 /*void* qm3167628206(long long start, long long end_)*/{
   long long start = *(long long*)this_; long long end_ = *(long long*)this_;
   this_ =  new QMediaTimeInterval(start, end_);
-  this_ =  new MyQMediaTimeInterval(start, end_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qmediatimeinterval(void* this_) {
 /*void* qm1577160823(const QMediaTimeInterval & arg0)*/{
   const QMediaTimeInterval & arg0 = *(const QMediaTimeInterval *)this_;
   this_ =  new QMediaTimeInterval(arg0);
-  this_ =  new MyQMediaTimeInterval(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -111,7 +66,6 @@ uint64_t ensure_inline_symbol_qmediatimeinterval(void* this_) {
 /*void* qm1330703696(QMediaTimeInterval && arg0)*/{
   QMediaTimeInterval && arg0 =  static_cast<QMediaTimeInterval &&>(*(QMediaTimeInterval *)this_);
   this_ =  new QMediaTimeInterval(arg0);
-  this_ =  new MyQMediaTimeInterval(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

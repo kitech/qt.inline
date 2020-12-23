@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQXmlStreamAttribute_t {
-  QByteArrayData data[1];
-  char stringdata0[22];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQXmlStreamAttribute_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQXmlStreamAttribute_t qt_meta_stringdata_MyQXmlStreamAttribute = {
-   {
-  QT_MOC_LITERAL(0, 0, 21), // "MyQXmlStreamAttribute"
-  },
-  "MyQXmlStreamAttribute"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQXmlStreamAttribute[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQXmlStreamAttribute : public QXmlStreamAttribute {
-public:
-  virtual ~MyQXmlStreamAttribute() {}
-// void QXmlStreamAttribute()
-MyQXmlStreamAttribute() : QXmlStreamAttribute() {}
-// void QXmlStreamAttribute(const QString &, const QString &)
-MyQXmlStreamAttribute(const QString & qualifiedName, const QString & value) : QXmlStreamAttribute(qualifiedName, value) {}
-// void QXmlStreamAttribute(const QString &, const QString &, const QString &)
-MyQXmlStreamAttribute(const QString & namespaceUri, const QString & name, const QString & value) : QXmlStreamAttribute(namespaceUri, name, value) {}
-// void QXmlStreamAttribute(const QXmlStreamAttribute &)
-MyQXmlStreamAttribute(const QXmlStreamAttribute & arg0) : QXmlStreamAttribute(arg0) {}
-// void QXmlStreamAttribute(QXmlStreamAttribute &&)
-MyQXmlStreamAttribute(QXmlStreamAttribute && other) : QXmlStreamAttribute(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamattribute(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qxmlstreamattribute(void* this_) {
 /*void* qm804075447()*/{
   ;
   this_ =  new QXmlStreamAttribute();
-  this_ =  new MyQXmlStreamAttribute();
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qxmlstreamattribute(void* this_) {
 /*void* qm1332973950(const QString & qualifiedName, const QString & value)*/{
   const QString & qualifiedName = *(const QString *)this_; const QString & value = *(const QString *)this_;
   this_ =  new QXmlStreamAttribute(qualifiedName, value);
-  this_ =  new MyQXmlStreamAttribute(qualifiedName, value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qxmlstreamattribute(void* this_) {
 /*void* qm2015792935(const QString & namespaceUri, const QString & name, const QString & value)*/{
   const QString & namespaceUri = *(const QString *)this_; const QString & name = *(const QString *)this_; const QString & value = *(const QString *)this_;
   this_ =  new QXmlStreamAttribute(namespaceUri, name, value);
-  this_ =  new MyQXmlStreamAttribute(namespaceUri, name, value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qxmlstreamattribute(void* this_) {
 /*void* qm1211176931(const QXmlStreamAttribute & arg0)*/{
   const QXmlStreamAttribute & arg0 = *(const QXmlStreamAttribute *)this_;
   this_ =  new QXmlStreamAttribute(arg0);
-  this_ =  new MyQXmlStreamAttribute(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qxmlstreamattribute(void* this_) {
 /*void* qm320355471(QXmlStreamAttribute && other)*/{
   QXmlStreamAttribute && other =  static_cast<QXmlStreamAttribute &&>(*(QXmlStreamAttribute *)this_);
   this_ =  new QXmlStreamAttribute(other);
-  this_ =  new MyQXmlStreamAttribute(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

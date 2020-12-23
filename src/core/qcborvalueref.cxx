@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQCborValueRef_t {
-  QByteArrayData data[1];
-  char stringdata0[16];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQCborValueRef_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQCborValueRef_t qt_meta_stringdata_MyQCborValueRef = {
-   {
-  QT_MOC_LITERAL(0, 0, 15), // "MyQCborValueRef"
-  },
-  "MyQCborValueRef"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQCborValueRef[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQCborValueRef : public QCborValueRef {
-public:
-  virtual ~MyQCborValueRef() {}
-// void QCborValueRef(const QCborValueRef &)
-MyQCborValueRef(const QCborValueRef & arg0) : QCborValueRef(arg0) {}
-// void QCborValueRef(QCborValueRef &&)
-MyQCborValueRef(QCborValueRef && arg0) : QCborValueRef(arg0) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcborvalueref(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qcborvalueref(void* this_) {
 /*void* qm1083552198(const QCborValueRef & arg0)*/{
   const QCborValueRef & arg0 = *(const QCborValueRef *)this_;
   this_ =  new QCborValueRef(arg0);
-  this_ =  new MyQCborValueRef(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qcborvalueref(void* this_) {
 /*void* qm3666031810(QCborValueRef && arg0)*/{
   QCborValueRef && arg0 =  static_cast<QCborValueRef &&>(*(QCborValueRef *)this_);
   this_ =  new QCborValueRef(arg0);
-  this_ =  new MyQCborValueRef(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

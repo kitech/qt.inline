@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQHelpEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[13];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQHelpEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQHelpEvent_t qt_meta_stringdata_MyQHelpEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 12), // "MyQHelpEvent"
-  },
-  "MyQHelpEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQHelpEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQHelpEvent : public QHelpEvent {
-public:
-  virtual ~MyQHelpEvent() {}
-// void QHelpEvent(QEvent::Type, const QPoint &, const QPoint &)
-MyQHelpEvent(QEvent::Type type_, const QPoint & pos, const QPoint & globalPos) : QHelpEvent(type_, pos, globalPos) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qhelpevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qhelpevent(void* this_) {
 /*void* qm2592684267(QEvent::Type type_, const QPoint & pos, const QPoint & globalPos)*/{
   QEvent::Type type_ = *(QEvent::Type*)this_; const QPoint & pos = *(const QPoint *)this_; const QPoint & globalPos = *(const QPoint *)this_;
   this_ =  new QHelpEvent(type_, pos, globalPos);
-  this_ =  new MyQHelpEvent(type_, pos, globalPos);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQXmlStreamReader_t {
-  QByteArrayData data[1];
-  char stringdata0[19];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQXmlStreamReader_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQXmlStreamReader_t qt_meta_stringdata_MyQXmlStreamReader = {
-   {
-  QT_MOC_LITERAL(0, 0, 18), // "MyQXmlStreamReader"
-  },
-  "MyQXmlStreamReader"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQXmlStreamReader[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQXmlStreamReader : public QXmlStreamReader {
-public:
-  virtual ~MyQXmlStreamReader() {}
-// void QXmlStreamReader()
-MyQXmlStreamReader() : QXmlStreamReader() {}
-// void QXmlStreamReader(QIODevice *)
-MyQXmlStreamReader(QIODevice * device) : QXmlStreamReader(device) {}
-// void QXmlStreamReader(const QByteArray &)
-MyQXmlStreamReader(const QByteArray & data) : QXmlStreamReader(data) {}
-// void QXmlStreamReader(const QString &)
-MyQXmlStreamReader(const QString & data) : QXmlStreamReader(data) {}
-// void QXmlStreamReader(const char *)
-MyQXmlStreamReader(const char * data) : QXmlStreamReader(data) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamreader(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qxmlstreamreader(void* this_) {
 /*void* qm2408789023()*/{
   ;
   this_ =  new QXmlStreamReader();
-  this_ =  new MyQXmlStreamReader();
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qxmlstreamreader(void* this_) {
 /*void* qm1033207258(QIODevice * device)*/{
   QIODevice * device = *(QIODevice **)this_;
   this_ =  new QXmlStreamReader(device);
-  this_ =  new MyQXmlStreamReader(device);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qxmlstreamreader(void* this_) {
 /*void* qm115410240(const QByteArray & data)*/{
   const QByteArray & data = *(const QByteArray *)this_;
   this_ =  new QXmlStreamReader(data);
-  this_ =  new MyQXmlStreamReader(data);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qxmlstreamreader(void* this_) {
 /*void* qm2637864462(const QString & data)*/{
   const QString & data = *(const QString *)this_;
   this_ =  new QXmlStreamReader(data);
-  this_ =  new MyQXmlStreamReader(data);
 }
 
 // Public Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qxmlstreamreader(void* this_) {
 /*void* qm1455553337(const char * data)*/{
   const char * data = *(const char **)this_;
   this_ =  new QXmlStreamReader(data);
-  this_ =  new MyQXmlStreamReader(data);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

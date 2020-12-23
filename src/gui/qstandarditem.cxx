@@ -19,48 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQStandardItem_t {
-  QByteArrayData data[1];
-  char stringdata0[16];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQStandardItem_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQStandardItem_t qt_meta_stringdata_MyQStandardItem = {
-   {
-  QT_MOC_LITERAL(0, 0, 15), // "MyQStandardItem"
-  },
-  "MyQStandardItem"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQStandardItem[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQStandardItem : public QStandardItem {
-public:
-  virtual ~MyQStandardItem() {}
-// void QStandardItem()
-MyQStandardItem() : QStandardItem() {}
-// void QStandardItem(const QString &)
-MyQStandardItem(const QString & text) : QStandardItem(text) {}
-// void QStandardItem(const QIcon &, const QString &)
-MyQStandardItem(const QIcon & icon, const QString & text) : QStandardItem(icon, text) {}
-// void QStandardItem(int, int)
-MyQStandardItem(int rows, int columns) : QStandardItem(rows, columns) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstandarditem(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -72,7 +30,6 @@ uint64_t ensure_inline_symbol_qstandarditem(void* this_) {
 /*void* qm3217880674()*/{
   ;
   this_ =  new QStandardItem();
-  this_ =  new MyQStandardItem();
 }
 
 // Public Visibility=Default Availability=Available
@@ -82,7 +39,6 @@ uint64_t ensure_inline_symbol_qstandarditem(void* this_) {
 /*void* qm1974625333(const QString & text)*/{
   const QString & text = *(const QString *)this_;
   this_ =  new QStandardItem(text);
-  this_ =  new MyQStandardItem(text);
 }
 
 // Public Visibility=Default Availability=Available
@@ -92,7 +48,6 @@ uint64_t ensure_inline_symbol_qstandarditem(void* this_) {
 /*void* qm3295350938(const QIcon & icon, const QString & text)*/{
   const QIcon & icon = *(const QIcon *)this_; const QString & text = *(const QString *)this_;
   this_ =  new QStandardItem(icon, text);
-  this_ =  new MyQStandardItem(icon, text);
 }
 
 // Public Visibility=Default Availability=Available
@@ -102,7 +57,6 @@ uint64_t ensure_inline_symbol_qstandarditem(void* this_) {
 /*void* qm2285237357(int rows, int columns)*/{
   int rows = *(int*)this_; int columns = *(int*)this_;
   this_ =  new QStandardItem(rows, columns);
-  this_ =  new MyQStandardItem(rows, columns);
 }
 
 // Public inline Indirect Visibility=Default Availability=Available

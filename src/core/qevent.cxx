@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[9];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQEvent_t qt_meta_stringdata_MyQEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 8), // "MyQEvent"
-  },
-  "MyQEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQEvent : public QEvent {
-public:
-  virtual ~MyQEvent() {}
-// void QEvent(QEvent::Type)
-MyQEvent(QEvent::Type type_) : QEvent(type_) {}
-// void QEvent(const QEvent &)
-MyQEvent(const QEvent & other) : QEvent(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qevent(void* this_) {
 /*void* qm2793188191(QEvent::Type type_)*/{
   QEvent::Type type_ = *(QEvent::Type*)this_;
   this_ =  new QEvent(type_);
-  this_ =  new MyQEvent(type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qevent(void* this_) {
 /*void* qm939091438(const QEvent & other)*/{
   const QEvent & other = *(const QEvent *)this_;
   this_ =  new QEvent(other);
-  this_ =  new MyQEvent(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

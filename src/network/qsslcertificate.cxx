@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSslCertificate_t {
-  QByteArrayData data[1];
-  char stringdata0[18];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSslCertificate_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSslCertificate_t qt_meta_stringdata_MyQSslCertificate = {
-   {
-  QT_MOC_LITERAL(0, 0, 17), // "MyQSslCertificate"
-  },
-  "MyQSslCertificate"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSslCertificate[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSslCertificate : public QSslCertificate {
-public:
-  virtual ~MyQSslCertificate() {}
-// void QSslCertificate(QIODevice *, QSsl::EncodingFormat)
-MyQSslCertificate(QIODevice * device, QSsl::EncodingFormat format) : QSslCertificate(device, format) {}
-// void QSslCertificate(const QByteArray &, QSsl::EncodingFormat)
-MyQSslCertificate(const QByteArray & data, QSsl::EncodingFormat format) : QSslCertificate(data, format) {}
-// void QSslCertificate(const QSslCertificate &)
-MyQSslCertificate(const QSslCertificate & other) : QSslCertificate(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslcertificate(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qsslcertificate(void* this_) {
 /*void* qm4235676370(QIODevice * device, QSsl::EncodingFormat format)*/{
   QIODevice * device = *(QIODevice **)this_; QSsl::EncodingFormat format = *(QSsl::EncodingFormat*)this_;
   this_ =  new QSslCertificate(device, format);
-  this_ =  new MyQSslCertificate(device, format);
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qsslcertificate(void* this_) {
 /*void* qm671911435(const QByteArray & data, QSsl::EncodingFormat format)*/{
   const QByteArray & data = *(const QByteArray *)this_; QSsl::EncodingFormat format = *(QSsl::EncodingFormat*)this_;
   this_ =  new QSslCertificate(data, format);
-  this_ =  new MyQSslCertificate(data, format);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qsslcertificate(void* this_) {
 /*void* qm3291796427(const QSslCertificate & other)*/{
   const QSslCertificate & other = *(const QSslCertificate *)this_;
   this_ =  new QSslCertificate(other);
-  this_ =  new MyQSslCertificate(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

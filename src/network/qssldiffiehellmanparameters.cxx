@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSslDiffieHellmanParameters_t {
-  QByteArrayData data[1];
-  char stringdata0[30];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSslDiffieHellmanParameters_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSslDiffieHellmanParameters_t qt_meta_stringdata_MyQSslDiffieHellmanParameters = {
-   {
-  QT_MOC_LITERAL(0, 0, 29), // "MyQSslDiffieHellmanParameters"
-  },
-  "MyQSslDiffieHellmanParameters"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSslDiffieHellmanParameters[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSslDiffieHellmanParameters : public QSslDiffieHellmanParameters {
-public:
-  virtual ~MyQSslDiffieHellmanParameters() {}
-// void QSslDiffieHellmanParameters()
-MyQSslDiffieHellmanParameters() : QSslDiffieHellmanParameters() {}
-// void QSslDiffieHellmanParameters(const QSslDiffieHellmanParameters &)
-MyQSslDiffieHellmanParameters(const QSslDiffieHellmanParameters & other) : QSslDiffieHellmanParameters(other) {}
-// void QSslDiffieHellmanParameters(QSslDiffieHellmanParameters &&)
-MyQSslDiffieHellmanParameters(QSslDiffieHellmanParameters && other) : QSslDiffieHellmanParameters(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qssldiffiehellmanparameters(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qssldiffiehellmanparameters(void* this_) {
 /*void* qm127126037()*/{
   ;
   this_ =  new QSslDiffieHellmanParameters();
-  this_ =  new MyQSslDiffieHellmanParameters();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qssldiffiehellmanparameters(void* this_) {
 /*void* qm2221038862(const QSslDiffieHellmanParameters & other)*/{
   const QSslDiffieHellmanParameters & other = *(const QSslDiffieHellmanParameters *)this_;
   this_ =  new QSslDiffieHellmanParameters(other);
-  this_ =  new MyQSslDiffieHellmanParameters(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qssldiffiehellmanparameters(void* this_) {
 /*void* qm1277510715(QSslDiffieHellmanParameters && other)*/{
   QSslDiffieHellmanParameters && other =  static_cast<QSslDiffieHellmanParameters &&>(*(QSslDiffieHellmanParameters *)this_);
   this_ =  new QSslDiffieHellmanParameters(other);
-  this_ =  new MyQSslDiffieHellmanParameters(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

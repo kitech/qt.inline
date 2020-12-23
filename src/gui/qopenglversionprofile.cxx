@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQOpenGLVersionProfile_t {
-  QByteArrayData data[1];
-  char stringdata0[24];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQOpenGLVersionProfile_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQOpenGLVersionProfile_t qt_meta_stringdata_MyQOpenGLVersionProfile = {
-   {
-  QT_MOC_LITERAL(0, 0, 23), // "MyQOpenGLVersionProfile"
-  },
-  "MyQOpenGLVersionProfile"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQOpenGLVersionProfile[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQOpenGLVersionProfile : public QOpenGLVersionProfile {
-public:
-  virtual ~MyQOpenGLVersionProfile() {}
-// void QOpenGLVersionProfile()
-MyQOpenGLVersionProfile() : QOpenGLVersionProfile() {}
-// void QOpenGLVersionProfile(const QSurfaceFormat &)
-MyQOpenGLVersionProfile(const QSurfaceFormat & format) : QOpenGLVersionProfile(format) {}
-// void QOpenGLVersionProfile(const QOpenGLVersionProfile &)
-MyQOpenGLVersionProfile(const QOpenGLVersionProfile & other) : QOpenGLVersionProfile(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglversionprofile(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qopenglversionprofile(void* this_) {
 /*void* qm2372338670()*/{
   ;
   this_ =  new QOpenGLVersionProfile();
-  this_ =  new MyQOpenGLVersionProfile();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qopenglversionprofile(void* this_) {
 /*void* qm1315530085(const QSurfaceFormat & format)*/{
   const QSurfaceFormat & format = *(const QSurfaceFormat *)this_;
   this_ =  new QOpenGLVersionProfile(format);
-  this_ =  new MyQOpenGLVersionProfile(format);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qopenglversionprofile(void* this_) {
 /*void* qm2635832247(const QOpenGLVersionProfile & other)*/{
   const QOpenGLVersionProfile & other = *(const QOpenGLVersionProfile *)this_;
   this_ =  new QOpenGLVersionProfile(other);
-  this_ =  new MyQOpenGLVersionProfile(other);
 }
 
 

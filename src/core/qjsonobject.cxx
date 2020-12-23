@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQJsonObject_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQJsonObject_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQJsonObject_t qt_meta_stringdata_MyQJsonObject = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQJsonObject"
-  },
-  "MyQJsonObject"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQJsonObject[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQJsonObject : public QJsonObject {
-public:
-  virtual ~MyQJsonObject() {}
-// void QJsonObject()
-MyQJsonObject() : QJsonObject() {}
-// void QJsonObject(std::initializer_list<QPair<QString, QJsonValue>>)
-MyQJsonObject(std::initializer_list<QPair<QString, QJsonValue>> args) : QJsonObject(args) {}
-// void QJsonObject(const QJsonObject &)
-MyQJsonObject(const QJsonObject & other) : QJsonObject(other) {}
-// void QJsonObject(QJsonObject &&)
-MyQJsonObject(QJsonObject && other) : QJsonObject(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qjsonobject(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qjsonobject(void* this_) {
 /*void* qm2710310538()*/{
   ;
   this_ =  new QJsonObject();
-  this_ =  new MyQJsonObject();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qjsonobject(void* this_) {
 /*void* qm1123035815(std::initializer_list<QPair<QString, QJsonValue>> args)*/{
   std::initializer_list<QPair<QString, QJsonValue>> args = *(std::initializer_list<QPair<QString, QJsonValue>>*)this_;
   this_ =  new QJsonObject(args);
-  this_ =  new MyQJsonObject(args);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qjsonobject(void* this_) {
 /*void* qm1353956826(const QJsonObject & other)*/{
   const QJsonObject & other = *(const QJsonObject *)this_;
   this_ =  new QJsonObject(other);
-  this_ =  new MyQJsonObject(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qjsonobject(void* this_) {
 /*void* qm653619800(QJsonObject && other)*/{
   QJsonObject && other =  static_cast<QJsonObject &&>(*(QJsonObject *)this_);
   this_ =  new QJsonObject(other);
-  this_ =  new MyQJsonObject(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

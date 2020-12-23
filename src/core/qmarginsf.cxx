@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQMarginsF_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQMarginsF_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQMarginsF_t qt_meta_stringdata_MyQMarginsF = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQMarginsF"
-  },
-  "MyQMarginsF"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQMarginsF[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQMarginsF : public QMarginsF {
-public:
-  virtual ~MyQMarginsF() {}
-// void QMarginsF()
-MyQMarginsF() : QMarginsF() {}
-// void QMarginsF(qreal, qreal, qreal, qreal)
-MyQMarginsF(qreal left, qreal top, qreal right, qreal bottom) : QMarginsF(left, top, right, bottom) {}
-// void QMarginsF(const QMargins &)
-MyQMarginsF(const QMargins & margins) : QMarginsF(margins) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmarginsf(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qmarginsf(void* this_) {
 /*void* qm2929904453()*/{
   ;
   this_ =  new QMarginsF();
-  this_ =  new MyQMarginsF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qmarginsf(void* this_) {
 /*void* qm1732685276(double left, double top, double right, double bottom)*/{
   double left = *(double*)this_; double top = *(double*)this_; double right = *(double*)this_; double bottom = *(double*)this_;
   this_ =  new QMarginsF(left, top, right, bottom);
-  this_ =  new MyQMarginsF(left, top, right, bottom);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qmarginsf(void* this_) {
 /*void* qm3035546118(const QMargins & margins)*/{
   const QMargins & margins = *(const QMargins *)this_;
   this_ =  new QMarginsF(margins);
-  this_ =  new MyQMarginsF(margins);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

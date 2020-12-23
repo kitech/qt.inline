@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTextDocumentFragment_t {
-  QByteArrayData data[1];
-  char stringdata0[24];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTextDocumentFragment_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTextDocumentFragment_t qt_meta_stringdata_MyQTextDocumentFragment = {
-   {
-  QT_MOC_LITERAL(0, 0, 23), // "MyQTextDocumentFragment"
-  },
-  "MyQTextDocumentFragment"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTextDocumentFragment[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTextDocumentFragment : public QTextDocumentFragment {
-public:
-  virtual ~MyQTextDocumentFragment() {}
-// void QTextDocumentFragment()
-MyQTextDocumentFragment() : QTextDocumentFragment() {}
-// void QTextDocumentFragment(const QTextDocument *)
-MyQTextDocumentFragment(const QTextDocument * document) : QTextDocumentFragment(document) {}
-// void QTextDocumentFragment(const QTextCursor &)
-MyQTextDocumentFragment(const QTextCursor & range_) : QTextDocumentFragment(range_) {}
-// void QTextDocumentFragment(const QTextDocumentFragment &)
-MyQTextDocumentFragment(const QTextDocumentFragment & rhs) : QTextDocumentFragment(rhs) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextdocumentfragment(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qtextdocumentfragment(void* this_) {
 /*void* qm2629881781()*/{
   ;
   this_ =  new QTextDocumentFragment();
-  this_ =  new MyQTextDocumentFragment();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qtextdocumentfragment(void* this_) {
 /*void* qm1043972808(const QTextDocument * document)*/{
   const QTextDocument * document = *(const QTextDocument **)this_;
   this_ =  new QTextDocumentFragment(document);
-  this_ =  new MyQTextDocumentFragment(document);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qtextdocumentfragment(void* this_) {
 /*void* qm2522935277(const QTextCursor & range_)*/{
   const QTextCursor & range_ = *(const QTextCursor *)this_;
   this_ =  new QTextDocumentFragment(range_);
-  this_ =  new MyQTextDocumentFragment(range_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qtextdocumentfragment(void* this_) {
 /*void* qm3524261118(const QTextDocumentFragment & rhs)*/{
   const QTextDocumentFragment & rhs = *(const QTextDocumentFragment *)this_;
   this_ =  new QTextDocumentFragment(rhs);
-  this_ =  new MyQTextDocumentFragment(rhs);
 }
 
 

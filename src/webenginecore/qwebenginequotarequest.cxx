@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQWebEngineQuotaRequest_t {
-  QByteArrayData data[1];
-  char stringdata0[25];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQWebEngineQuotaRequest_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQWebEngineQuotaRequest_t qt_meta_stringdata_MyQWebEngineQuotaRequest = {
-   {
-  QT_MOC_LITERAL(0, 0, 24), // "MyQWebEngineQuotaRequest"
-  },
-  "MyQWebEngineQuotaRequest"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQWebEngineQuotaRequest[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQWebEngineQuotaRequest : public QWebEngineQuotaRequest {
-public:
-  virtual ~MyQWebEngineQuotaRequest() {}
-// void QWebEngineQuotaRequest()
-MyQWebEngineQuotaRequest() : QWebEngineQuotaRequest() {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwebenginequotarequest(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qwebenginequotarequest(void* this_) {
 /*void* qm2083716222()*/{
   ;
   this_ =  new QWebEngineQuotaRequest();
-  this_ =  new MyQWebEngineQuotaRequest();
 }
 
 // Public inline Extend Visibility=Default Availability=Available

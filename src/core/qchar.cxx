@@ -16,62 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQChar_t {
-  QByteArrayData data[1];
-  char stringdata0[8];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQChar_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQChar_t qt_meta_stringdata_MyQChar = {
-   {
-  QT_MOC_LITERAL(0, 0, 7), // "MyQChar"
-  },
-  "MyQChar"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQChar[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQChar : public QChar {
-public:
-  virtual ~MyQChar() {}
-// void QChar()
-MyQChar() : QChar() {}
-// void QChar(ushort)
-MyQChar(ushort rc) : QChar(rc) {}
-// void QChar(uchar, uchar)
-MyQChar(uchar c, uchar r) : QChar(c, r) {}
-// void QChar(short)
-MyQChar(short rc) : QChar(rc) {}
-// void QChar(uint)
-MyQChar(uint rc) : QChar(rc) {}
-// void QChar(int)
-MyQChar(int rc) : QChar(rc) {}
-// void QChar(QChar::SpecialCharacter)
-MyQChar(QChar::SpecialCharacter s) : QChar(s) {}
-// void QChar(QLatin1Char)
-MyQChar(QLatin1Char ch) : QChar(ch) {}
-// void QChar(char16_t)
-MyQChar(char16_t ch) : QChar(ch) {}
-// void QChar(char)
-MyQChar(char c) : QChar(c) {}
-// void QChar(uchar)
-MyQChar(uchar c) : QChar(c) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qchar(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -83,7 +27,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm1574451635()*/{
   ;
   this_ =  new QChar();
-  this_ =  new MyQChar();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -93,7 +36,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm3017169055(unsigned short rc)*/{
   unsigned short rc = *(unsigned short*)this_;
   this_ =  new QChar(rc);
-  this_ =  new MyQChar(rc);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -103,7 +45,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm387908407(unsigned char c, unsigned char r)*/{
   unsigned char c = *(unsigned char*)this_; unsigned char r = *(unsigned char*)this_;
   this_ =  new QChar(c, r);
-  this_ =  new MyQChar(c, r);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -113,7 +54,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm766692668(short rc)*/{
   short rc = *(short*)this_;
   this_ =  new QChar(rc);
-  this_ =  new MyQChar(rc);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -123,7 +63,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm1238984188(unsigned int rc)*/{
   unsigned int rc = *(unsigned int*)this_;
   this_ =  new QChar(rc);
-  this_ =  new MyQChar(rc);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -133,7 +72,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm3503305798(int rc)*/{
   int rc = *(int*)this_;
   this_ =  new QChar(rc);
-  this_ =  new MyQChar(rc);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -143,7 +81,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm1755695445(QChar::SpecialCharacter s)*/{
   QChar::SpecialCharacter s = *(QChar::SpecialCharacter*)this_;
   this_ =  new QChar(s);
-  this_ =  new MyQChar(s);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -153,7 +90,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm1216774710(QLatin1Char ch)*/{
   QLatin1Char ch = *(QLatin1Char*)this_;
   this_ =  new QChar(ch);
-  this_ =  new MyQChar(ch);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -163,7 +99,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm2756419957(char16_t ch)*/{
   char16_t ch = *(char16_t*)this_;
   this_ =  new QChar(ch);
-  this_ =  new MyQChar(ch);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -173,7 +108,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm805690712(char c)*/{
   char c = *(char*)this_;
   this_ =  new QChar(c);
-  this_ =  new MyQChar(c);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -183,7 +117,6 @@ uint64_t ensure_inline_symbol_qchar(void* this_) {
 /*void* qm2815886544(unsigned char c)*/{
   unsigned char c = *(unsigned char*)this_;
   this_ =  new QChar(c);
-  this_ =  new MyQChar(c);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

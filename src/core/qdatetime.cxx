@@ -16,54 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQDateTime_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQDateTime_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQDateTime_t qt_meta_stringdata_MyQDateTime = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQDateTime"
-  },
-  "MyQDateTime"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQDateTime[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQDateTime : public QDateTime {
-public:
-  virtual ~MyQDateTime() {}
-// void QDateTime()
-MyQDateTime() : QDateTime() {}
-// void QDateTime(const QDate &)
-MyQDateTime(const QDate & arg0) : QDateTime(arg0) {}
-// void QDateTime(const QDate &, const QTime &, Qt::TimeSpec)
-MyQDateTime(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec) : QDateTime(arg0, arg1, spec) {}
-// void QDateTime(const QDate &, const QTime &, Qt::TimeSpec, int)
-MyQDateTime(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds) : QDateTime(date, time, spec, offsetSeconds) {}
-// void QDateTime(const QDate &, const QTime &, const QTimeZone &)
-MyQDateTime(const QDate & date, const QTime & time, const QTimeZone & timeZone) : QDateTime(date, time, timeZone) {}
-// void QDateTime(const QDateTime &)
-MyQDateTime(const QDateTime & other) : QDateTime(other) {}
-// void QDateTime(QDateTime &&)
-MyQDateTime(QDateTime && other) : QDateTime(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdatetime(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -75,7 +27,6 @@ uint64_t ensure_inline_symbol_qdatetime(void* this_) {
 /*void* qm1949427464()*/{
   ;
   this_ =  new QDateTime();
-  this_ =  new MyQDateTime();
 }
 
 // Public Visibility=Default Availability=Available
@@ -85,7 +36,6 @@ uint64_t ensure_inline_symbol_qdatetime(void* this_) {
 /*void* qm3960008292(const QDate & arg0, const QTime & arg1, Qt::TimeSpec spec)*/{
   const QDate & arg0 = *(const QDate *)this_; const QTime & arg1 = *(const QTime *)this_; Qt::TimeSpec spec = *(Qt::TimeSpec*)this_;
   this_ =  new QDateTime(arg0, arg1, spec);
-  this_ =  new MyQDateTime(arg0, arg1, spec);
 }
 
 // Public Visibility=Default Availability=Available
@@ -95,7 +45,6 @@ uint64_t ensure_inline_symbol_qdatetime(void* this_) {
 /*void* qm2891946974(const QDate & date, const QTime & time, Qt::TimeSpec spec, int offsetSeconds)*/{
   const QDate & date = *(const QDate *)this_; const QTime & time = *(const QTime *)this_; Qt::TimeSpec spec = *(Qt::TimeSpec*)this_; int offsetSeconds = *(int*)this_;
   this_ =  new QDateTime(date, time, spec, offsetSeconds);
-  this_ =  new MyQDateTime(date, time, spec, offsetSeconds);
 }
 
 // Public Visibility=Default Availability=Available
@@ -105,7 +54,6 @@ uint64_t ensure_inline_symbol_qdatetime(void* this_) {
 /*void* qm548597330(const QDate & date, const QTime & time, const QTimeZone & timeZone)*/{
   const QDate & date = *(const QDate *)this_; const QTime & time = *(const QTime *)this_; const QTimeZone & timeZone = *(const QTimeZone *)this_;
   this_ =  new QDateTime(date, time, timeZone);
-  this_ =  new MyQDateTime(date, time, timeZone);
 }
 
 // Public Visibility=Default Availability=Available
@@ -115,7 +63,6 @@ uint64_t ensure_inline_symbol_qdatetime(void* this_) {
 /*void* qm2288973173(const QDateTime & other)*/{
   const QDateTime & other = *(const QDateTime *)this_;
   this_ =  new QDateTime(other);
-  this_ =  new MyQDateTime(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -125,7 +72,6 @@ uint64_t ensure_inline_symbol_qdatetime(void* this_) {
 /*void* qm4137027568(QDateTime && other)*/{
   QDateTime && other =  static_cast<QDateTime &&>(*(QDateTime *)this_);
   this_ =  new QDateTime(other);
-  this_ =  new MyQDateTime(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

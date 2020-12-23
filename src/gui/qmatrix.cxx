@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQMatrix_t {
-  QByteArrayData data[1];
-  char stringdata0[10];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQMatrix_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQMatrix_t qt_meta_stringdata_MyQMatrix = {
-   {
-  QT_MOC_LITERAL(0, 0, 9), // "MyQMatrix"
-  },
-  "MyQMatrix"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQMatrix[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQMatrix : public QMatrix {
-public:
-  virtual ~MyQMatrix() {}
-// void QMatrix(Qt::Initialization)
-MyQMatrix(Qt::Initialization arg0) : QMatrix(arg0) {}
-// void QMatrix()
-MyQMatrix() : QMatrix() {}
-// void QMatrix(qreal, qreal, qreal, qreal, qreal, qreal)
-MyQMatrix(qreal m11, qreal m12, qreal m21, qreal m22, qreal dx, qreal dy) : QMatrix(m11, m12, m21, m22, dx, dy) {}
-// void QMatrix(QMatrix &&)
-MyQMatrix(QMatrix && other) : QMatrix(other) {}
-// void QMatrix(const QMatrix &)
-MyQMatrix(const QMatrix & other) : QMatrix(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmatrix(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qmatrix(void* this_) {
 /*void* qm4207020042(Qt::Initialization arg0)*/{
   Qt::Initialization arg0 = *(Qt::Initialization*)this_;
   this_ =  new QMatrix(arg0);
-  this_ =  new MyQMatrix(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qmatrix(void* this_) {
 /*void* qm1775922781()*/{
   ;
   this_ =  new QMatrix();
-  this_ =  new MyQMatrix();
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qmatrix(void* this_) {
 /*void* qm2063689224(double m11, double m12, double m21, double m22, double dx, double dy)*/{
   double m11 = *(double*)this_; double m12 = *(double*)this_; double m21 = *(double*)this_; double m22 = *(double*)this_; double dx = *(double*)this_; double dy = *(double*)this_;
   this_ =  new QMatrix(m11, m12, m21, m22, dx, dy);
-  this_ =  new MyQMatrix(m11, m12, m21, m22, dx, dy);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -113,7 +66,6 @@ uint64_t ensure_inline_symbol_qmatrix(void* this_) {
 /*void* qm2772338830(QMatrix && other)*/{
   QMatrix && other =  static_cast<QMatrix &&>(*(QMatrix *)this_);
   this_ =  new QMatrix(other);
-  this_ =  new MyQMatrix(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -123,7 +75,6 @@ uint64_t ensure_inline_symbol_qmatrix(void* this_) {
 /*void* qm1065353665(const QMatrix & other)*/{
   const QMatrix & other = *(const QMatrix *)this_;
   this_ =  new QMatrix(other);
-  this_ =  new MyQMatrix(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

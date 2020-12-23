@@ -16,62 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQJSValue_t {
-  QByteArrayData data[1];
-  char stringdata0[11];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQJSValue_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQJSValue_t qt_meta_stringdata_MyQJSValue = {
-   {
-  QT_MOC_LITERAL(0, 0, 10), // "MyQJSValue"
-  },
-  "MyQJSValue"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQJSValue[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQJSValue : public QJSValue {
-public:
-  virtual ~MyQJSValue() {}
-// void QJSValue(QJSValue::SpecialValue)
-MyQJSValue(QJSValue::SpecialValue value) : QJSValue(value) {}
-// void QJSValue(const QJSValue &)
-MyQJSValue(const QJSValue & other) : QJSValue(other) {}
-// void QJSValue(QJSValue &&)
-MyQJSValue(QJSValue && other) : QJSValue(other) {}
-// void QJSValue(bool)
-MyQJSValue(bool value) : QJSValue(value) {}
-// void QJSValue(int)
-MyQJSValue(int value) : QJSValue(value) {}
-// void QJSValue(uint)
-MyQJSValue(uint value) : QJSValue(value) {}
-// void QJSValue(double)
-MyQJSValue(double value) : QJSValue(value) {}
-// void QJSValue(const QString &)
-MyQJSValue(const QString & value) : QJSValue(value) {}
-// void QJSValue(const QLatin1String &)
-MyQJSValue(const QLatin1String & value) : QJSValue(value) {}
-// void QJSValue(const char *)
-MyQJSValue(const char * str) : QJSValue(str) {}
-// void QJSValue(QV4::ExecutionEngine *, quint64)
-MyQJSValue(QV4::ExecutionEngine * e, quint64 val) : QJSValue(e, val) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -83,7 +27,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm178543846(QJSValue::SpecialValue value)*/{
   QJSValue::SpecialValue value = *(QJSValue::SpecialValue*)this_;
   this_ =  new QJSValue(value);
-  this_ =  new MyQJSValue(value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -93,7 +36,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm3212897435(const QJSValue & other)*/{
   const QJSValue & other = *(const QJSValue *)this_;
   this_ =  new QJSValue(other);
-  this_ =  new MyQJSValue(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -103,7 +45,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm3233028379(QJSValue && other)*/{
   QJSValue && other =  static_cast<QJSValue &&>(*(QJSValue *)this_);
   this_ =  new QJSValue(other);
-  this_ =  new MyQJSValue(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -125,7 +66,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm2382507073(bool value)*/{
   bool value = *(bool*)this_;
   this_ =  new QJSValue(value);
-  this_ =  new MyQJSValue(value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -135,7 +75,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm433124809(int value)*/{
   int value = *(int*)this_;
   this_ =  new QJSValue(value);
-  this_ =  new MyQJSValue(value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -145,7 +84,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm2161747059(unsigned int value)*/{
   unsigned int value = *(unsigned int*)this_;
   this_ =  new QJSValue(value);
-  this_ =  new MyQJSValue(value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -155,7 +93,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm1734445428(double value)*/{
   double value = *(double*)this_;
   this_ =  new QJSValue(value);
-  this_ =  new MyQJSValue(value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -165,7 +102,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm609395147(const QString & value)*/{
   const QString & value = *(const QString *)this_;
   this_ =  new QJSValue(value);
-  this_ =  new MyQJSValue(value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -175,7 +111,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm1764458219(const QLatin1String & value)*/{
   const QLatin1String & value = *(const QLatin1String *)this_;
   this_ =  new QJSValue(value);
-  this_ =  new MyQJSValue(value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -185,7 +120,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm2059016584(const char * str)*/{
   const char * str = *(const char **)this_;
   this_ =  new QJSValue(str);
-  this_ =  new MyQJSValue(str);
 }
 
 // Public Visibility=Default Availability=Available
@@ -195,7 +129,6 @@ uint64_t ensure_inline_symbol_qjsvalue(void* this_) {
 /*void* qm3982393888(QV4::ExecutionEngine * e, unsigned long long val)*/{
   QV4::ExecutionEngine * e = *(QV4::ExecutionEngine **)this_; unsigned long long val = *(unsigned long long*)this_;
   this_ =  new QJSValue(e, val);
-  this_ =  new MyQJSValue(e, val);
 }
 
 

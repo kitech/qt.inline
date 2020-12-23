@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQQmlScriptString_t {
-  QByteArrayData data[1];
-  char stringdata0[19];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQQmlScriptString_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQQmlScriptString_t qt_meta_stringdata_MyQQmlScriptString = {
-   {
-  QT_MOC_LITERAL(0, 0, 18), // "MyQQmlScriptString"
-  },
-  "MyQQmlScriptString"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQQmlScriptString[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQQmlScriptString : public QQmlScriptString {
-public:
-  virtual ~MyQQmlScriptString() {}
-// void QQmlScriptString()
-MyQQmlScriptString() : QQmlScriptString() {}
-// void QQmlScriptString(const QQmlScriptString &)
-MyQQmlScriptString(const QQmlScriptString & arg0) : QQmlScriptString(arg0) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qqmlscriptstring(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qqmlscriptstring(void* this_) {
 /*void* qm1397905796()*/{
   ;
   this_ =  new QQmlScriptString();
-  this_ =  new MyQQmlScriptString();
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qqmlscriptstring(void* this_) {
 /*void* qm3468469346(const QQmlScriptString & arg0)*/{
   const QQmlScriptString & arg0 = *(const QQmlScriptString *)this_;
   this_ =  new QQmlScriptString(arg0);
-  this_ =  new MyQQmlScriptString(arg0);
 }
 
 

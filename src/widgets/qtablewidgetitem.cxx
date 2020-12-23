@@ -19,48 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTableWidgetItem_t {
-  QByteArrayData data[1];
-  char stringdata0[19];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTableWidgetItem_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTableWidgetItem_t qt_meta_stringdata_MyQTableWidgetItem = {
-   {
-  QT_MOC_LITERAL(0, 0, 18), // "MyQTableWidgetItem"
-  },
-  "MyQTableWidgetItem"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTableWidgetItem[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTableWidgetItem : public QTableWidgetItem {
-public:
-  virtual ~MyQTableWidgetItem() {}
-// void QTableWidgetItem(int)
-MyQTableWidgetItem(int type_) : QTableWidgetItem(type_) {}
-// void QTableWidgetItem(const QString &, int)
-MyQTableWidgetItem(const QString & text, int type_) : QTableWidgetItem(text, type_) {}
-// void QTableWidgetItem(const QIcon &, const QString &, int)
-MyQTableWidgetItem(const QIcon & icon, const QString & text, int type_) : QTableWidgetItem(icon, text, type_) {}
-// void QTableWidgetItem(const QTableWidgetItem &)
-MyQTableWidgetItem(const QTableWidgetItem & other) : QTableWidgetItem(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtablewidgetitem(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -72,7 +30,6 @@ uint64_t ensure_inline_symbol_qtablewidgetitem(void* this_) {
 /*void* qm184313016(int type_)*/{
   int type_ = *(int*)this_;
   this_ =  new QTableWidgetItem(type_);
-  this_ =  new MyQTableWidgetItem(type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -82,7 +39,6 @@ uint64_t ensure_inline_symbol_qtablewidgetitem(void* this_) {
 /*void* qm3597940345(const QString & text, int type_)*/{
   const QString & text = *(const QString *)this_; int type_ = *(int*)this_;
   this_ =  new QTableWidgetItem(text, type_);
-  this_ =  new MyQTableWidgetItem(text, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -92,7 +48,6 @@ uint64_t ensure_inline_symbol_qtablewidgetitem(void* this_) {
 /*void* qm3073502681(const QIcon & icon, const QString & text, int type_)*/{
   const QIcon & icon = *(const QIcon *)this_; const QString & text = *(const QString *)this_; int type_ = *(int*)this_;
   this_ =  new QTableWidgetItem(icon, text, type_);
-  this_ =  new MyQTableWidgetItem(icon, text, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -102,7 +57,6 @@ uint64_t ensure_inline_symbol_qtablewidgetitem(void* this_) {
 /*void* qm2956015959(const QTableWidgetItem & other)*/{
   const QTableWidgetItem & other = *(const QTableWidgetItem *)this_;
   this_ =  new QTableWidgetItem(other);
-  this_ =  new MyQTableWidgetItem(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

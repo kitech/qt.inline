@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQNativeGestureEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[22];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQNativeGestureEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQNativeGestureEvent_t qt_meta_stringdata_MyQNativeGestureEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 21), // "MyQNativeGestureEvent"
-  },
-  "MyQNativeGestureEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQNativeGestureEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQNativeGestureEvent : public QNativeGestureEvent {
-public:
-  virtual ~MyQNativeGestureEvent() {}
-// void QNativeGestureEvent(Qt::NativeGestureType, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)
-MyQNativeGestureEvent(Qt::NativeGestureType type_, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, qreal value, ulong sequenceId, quint64 intArgument) : QNativeGestureEvent(type_, localPos, windowPos, screenPos, value, sequenceId, intArgument) {}
-// void QNativeGestureEvent(Qt::NativeGestureType, const QTouchDevice *, const QPointF &, const QPointF &, const QPointF &, qreal, ulong, quint64)
-MyQNativeGestureEvent(Qt::NativeGestureType type_, const QTouchDevice * dev, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, qreal value, ulong sequenceId, quint64 intArgument) : QNativeGestureEvent(type_, dev, localPos, windowPos, screenPos, value, sequenceId, intArgument) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnativegestureevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qnativegestureevent(void* this_) {
 /*void* qm1328915930(Qt::NativeGestureType type_, const QTouchDevice * dev, const QPointF & localPos, const QPointF & windowPos, const QPointF & screenPos, double value, unsigned long sequenceId, unsigned long long intArgument)*/{
   Qt::NativeGestureType type_ = *(Qt::NativeGestureType*)this_; const QTouchDevice * dev = *(const QTouchDevice **)this_; const QPointF & localPos = *(const QPointF *)this_; const QPointF & windowPos = *(const QPointF *)this_; const QPointF & screenPos = *(const QPointF *)this_; double value = *(double*)this_; unsigned long sequenceId = *(unsigned long*)this_; unsigned long long intArgument = *(unsigned long long*)this_;
   this_ =  new QNativeGestureEvent(type_, dev, localPos, windowPos, screenPos, value, sequenceId, intArgument);
-  this_ =  new MyQNativeGestureEvent(type_, dev, localPos, windowPos, screenPos, value, sequenceId, intArgument);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

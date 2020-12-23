@@ -16,52 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQBitmap_t {
-  QByteArrayData data[1];
-  char stringdata0[10];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQBitmap_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQBitmap_t qt_meta_stringdata_MyQBitmap = {
-   {
-  QT_MOC_LITERAL(0, 0, 9), // "MyQBitmap"
-  },
-  "MyQBitmap"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQBitmap[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQBitmap : public QBitmap {
-public:
-  virtual ~MyQBitmap() {}
-// void QBitmap()
-MyQBitmap() : QBitmap() {}
-// void QBitmap(const QPixmap &)
-MyQBitmap(const QPixmap & arg0) : QBitmap(arg0) {}
-// void QBitmap(int, int)
-MyQBitmap(int w, int h) : QBitmap(w, h) {}
-// void QBitmap(const QSize &)
-MyQBitmap(const QSize & arg0) : QBitmap(arg0) {}
-// void QBitmap(const QString &, const char *)
-MyQBitmap(const QString & fileName, const char * format) : QBitmap(fileName, format) {}
-// void QBitmap(const QBitmap &)
-MyQBitmap(const QBitmap & other) : QBitmap(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qbitmap(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -73,7 +27,6 @@ uint64_t ensure_inline_symbol_qbitmap(void* this_) {
 /*void* qm1857860163()*/{
   ;
   this_ =  new QBitmap();
-  this_ =  new MyQBitmap();
 }
 
 // Public Visibility=Default Availability=Available
@@ -83,7 +36,6 @@ uint64_t ensure_inline_symbol_qbitmap(void* this_) {
 /*void* qm184471886(const QPixmap & arg0)*/{
   const QPixmap & arg0 = *(const QPixmap *)this_;
   this_ =  new QBitmap(arg0);
-  this_ =  new MyQBitmap(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -93,7 +45,6 @@ uint64_t ensure_inline_symbol_qbitmap(void* this_) {
 /*void* qm3297612919(int w, int h)*/{
   int w = *(int*)this_; int h = *(int*)this_;
   this_ =  new QBitmap(w, h);
-  this_ =  new MyQBitmap(w, h);
 }
 
 // Public Visibility=Default Availability=Available
@@ -103,7 +54,6 @@ uint64_t ensure_inline_symbol_qbitmap(void* this_) {
 /*void* qm2902527683(const QSize & arg0)*/{
   const QSize & arg0 = *(const QSize *)this_;
   this_ =  new QBitmap(arg0);
-  this_ =  new MyQBitmap(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -113,7 +63,6 @@ uint64_t ensure_inline_symbol_qbitmap(void* this_) {
 /*void* qm1118119835(const QString & fileName, const char * format)*/{
   const QString & fileName = *(const QString *)this_; const char * format = *(const char **)this_;
   this_ =  new QBitmap(fileName, format);
-  this_ =  new MyQBitmap(fileName, format);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -123,7 +72,6 @@ uint64_t ensure_inline_symbol_qbitmap(void* this_) {
 /*void* qm2690957762(const QBitmap & other)*/{
   const QBitmap & other = *(const QBitmap *)this_;
   this_ =  new QBitmap(other);
-  this_ =  new MyQBitmap(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

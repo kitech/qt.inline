@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQOperatingSystemVersion_t {
-  QByteArrayData data[1];
-  char stringdata0[26];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQOperatingSystemVersion_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQOperatingSystemVersion_t qt_meta_stringdata_MyQOperatingSystemVersion = {
-   {
-  QT_MOC_LITERAL(0, 0, 25), // "MyQOperatingSystemVersion"
-  },
-  "MyQOperatingSystemVersion"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQOperatingSystemVersion[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQOperatingSystemVersion : public QOperatingSystemVersion {
-public:
-  virtual ~MyQOperatingSystemVersion() {}
-// void QOperatingSystemVersion(QOperatingSystemVersion::OSType, int, int, int)
-MyQOperatingSystemVersion(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro) : QOperatingSystemVersion(osType, vmajor, vminor, vmicro) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qoperatingsystemversion(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qoperatingsystemversion(void* this_) {
 /*void* qm3511452327(QOperatingSystemVersion::OSType osType, int vmajor, int vminor, int vmicro)*/{
   QOperatingSystemVersion::OSType osType = *(QOperatingSystemVersion::OSType*)this_; int vmajor = *(int*)this_; int vminor = *(int*)this_; int vmicro = *(int*)this_;
   this_ =  new QOperatingSystemVersion(osType, vmajor, vminor, vmicro);
-  this_ =  new MyQOperatingSystemVersion(osType, vmajor, vminor, vmicro);
 }
 
 // Public static inline Direct Visibility=Default Availability=Available

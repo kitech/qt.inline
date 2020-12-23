@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQOpenGLPixelTransferOptions_t {
-  QByteArrayData data[1];
-  char stringdata0[30];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQOpenGLPixelTransferOptions_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQOpenGLPixelTransferOptions_t qt_meta_stringdata_MyQOpenGLPixelTransferOptions = {
-   {
-  QT_MOC_LITERAL(0, 0, 29), // "MyQOpenGLPixelTransferOptions"
-  },
-  "MyQOpenGLPixelTransferOptions"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQOpenGLPixelTransferOptions[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQOpenGLPixelTransferOptions : public QOpenGLPixelTransferOptions {
-public:
-  virtual ~MyQOpenGLPixelTransferOptions() {}
-// void QOpenGLPixelTransferOptions()
-MyQOpenGLPixelTransferOptions() : QOpenGLPixelTransferOptions() {}
-// void QOpenGLPixelTransferOptions(const QOpenGLPixelTransferOptions &)
-MyQOpenGLPixelTransferOptions(const QOpenGLPixelTransferOptions & arg0) : QOpenGLPixelTransferOptions(arg0) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qopenglpixeltransferoptions(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qopenglpixeltransferoptions(void* this_) {
 /*void* qm1100202295()*/{
   ;
   this_ =  new QOpenGLPixelTransferOptions();
-  this_ =  new MyQOpenGLPixelTransferOptions();
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qopenglpixeltransferoptions(void* this_) {
 /*void* qm1549735437(const QOpenGLPixelTransferOptions & arg0)*/{
   const QOpenGLPixelTransferOptions & arg0 = *(const QOpenGLPixelTransferOptions *)this_;
   this_ =  new QOpenGLPixelTransferOptions(arg0);
-  this_ =  new MyQOpenGLPixelTransferOptions(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

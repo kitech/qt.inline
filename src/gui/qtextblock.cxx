@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTextBlock_t {
-  QByteArrayData data[1];
-  char stringdata0[13];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTextBlock_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTextBlock_t qt_meta_stringdata_MyQTextBlock = {
-   {
-  QT_MOC_LITERAL(0, 0, 12), // "MyQTextBlock"
-  },
-  "MyQTextBlock"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTextBlock[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTextBlock : public QTextBlock {
-public:
-  virtual ~MyQTextBlock() {}
-// void QTextBlock(QTextDocumentPrivate *, int)
-MyQTextBlock(QTextDocumentPrivate * priv, int b) : QTextBlock(priv, b) {}
-// void QTextBlock()
-MyQTextBlock() : QTextBlock() {}
-// void QTextBlock(const QTextBlock &)
-MyQTextBlock(const QTextBlock & o) : QTextBlock(o) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextblock(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qtextblock(void* this_) {
 /*void* qm3172116198(QTextDocumentPrivate * priv, int b)*/{
   QTextDocumentPrivate * priv = *(QTextDocumentPrivate **)this_; int b = *(int*)this_;
   this_ =  new QTextBlock(priv, b);
-  this_ =  new MyQTextBlock(priv, b);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qtextblock(void* this_) {
 /*void* qm1178354496()*/{
   ;
   this_ =  new QTextBlock();
-  this_ =  new MyQTextBlock();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qtextblock(void* this_) {
 /*void* qm1111305327(const QTextBlock & o)*/{
   const QTextBlock & o = *(const QTextBlock *)this_;
   this_ =  new QTextBlock(o);
-  this_ =  new MyQTextBlock(o);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

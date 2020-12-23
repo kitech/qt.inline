@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQDragMoveEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQDragMoveEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQDragMoveEvent_t qt_meta_stringdata_MyQDragMoveEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 16), // "MyQDragMoveEvent"
-  },
-  "MyQDragMoveEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQDragMoveEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQDragMoveEvent : public QDragMoveEvent {
-public:
-  virtual ~MyQDragMoveEvent() {}
-// void QDragMoveEvent(const QPoint &, Qt::DropActions, const QMimeData *, Qt::MouseButtons, Qt::KeyboardModifiers, QEvent::Type)
-MyQDragMoveEvent(const QPoint & pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type_) : QDragMoveEvent(pos, actions, data, buttons, modifiers, type_) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qdragmoveevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qdragmoveevent(void* this_) {
 /*void* qm3446476968(const QPoint & pos, QFlags<Qt::DropAction> actions, const QMimeData * data, QFlags<Qt::MouseButton> buttons, QFlags<Qt::KeyboardModifier> modifiers, QEvent::Type type_)*/{
   const QPoint & pos = *(const QPoint *)this_; QFlags<Qt::DropAction> actions = *(QFlags<Qt::DropAction>*)this_; const QMimeData * data = *(const QMimeData **)this_; QFlags<Qt::MouseButton> buttons = *(QFlags<Qt::MouseButton>*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_; QEvent::Type type_ = *(QEvent::Type*)this_;
   this_ =  new QDragMoveEvent(pos, actions, data, buttons, modifiers, type_);
-  this_ =  new MyQDragMoveEvent(pos, actions, data, buttons, modifiers, type_);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQNetworkConfiguration_t {
-  QByteArrayData data[1];
-  char stringdata0[24];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQNetworkConfiguration_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQNetworkConfiguration_t qt_meta_stringdata_MyQNetworkConfiguration = {
-   {
-  QT_MOC_LITERAL(0, 0, 23), // "MyQNetworkConfiguration"
-  },
-  "MyQNetworkConfiguration"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQNetworkConfiguration[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQNetworkConfiguration : public QNetworkConfiguration {
-public:
-  virtual ~MyQNetworkConfiguration() {}
-// void QNetworkConfiguration()
-MyQNetworkConfiguration() : QNetworkConfiguration() {}
-// void QNetworkConfiguration(const QNetworkConfiguration &)
-MyQNetworkConfiguration(const QNetworkConfiguration & other) : QNetworkConfiguration(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkconfiguration(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qnetworkconfiguration(void* this_) {
 /*void* qm977478551()*/{
   ;
   this_ =  new QNetworkConfiguration();
-  this_ =  new MyQNetworkConfiguration();
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qnetworkconfiguration(void* this_) {
 /*void* qm1874593964(const QNetworkConfiguration & other)*/{
   const QNetworkConfiguration & other = *(const QNetworkConfiguration *)this_;
   this_ =  new QNetworkConfiguration(other);
-  this_ =  new MyQNetworkConfiguration(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

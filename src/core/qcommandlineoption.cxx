@@ -19,50 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQCommandLineOption_t {
-  QByteArrayData data[1];
-  char stringdata0[21];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQCommandLineOption_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQCommandLineOption_t qt_meta_stringdata_MyQCommandLineOption = {
-   {
-  QT_MOC_LITERAL(0, 0, 20), // "MyQCommandLineOption"
-  },
-  "MyQCommandLineOption"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQCommandLineOption[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQCommandLineOption : public QCommandLineOption {
-public:
-  virtual ~MyQCommandLineOption() {}
-// void QCommandLineOption(const QString &)
-MyQCommandLineOption(const QString & name) : QCommandLineOption(name) {}
-// void QCommandLineOption(const QStringList &)
-MyQCommandLineOption(const QStringList & names) : QCommandLineOption(names) {}
-// void QCommandLineOption(const QString &, const QString &, const QString &, const QString &)
-MyQCommandLineOption(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue) : QCommandLineOption(name, description, valueName, defaultValue) {}
-// void QCommandLineOption(const QStringList &, const QString &, const QString &, const QString &)
-MyQCommandLineOption(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue) : QCommandLineOption(names, description, valueName, defaultValue) {}
-// void QCommandLineOption(const QCommandLineOption &)
-MyQCommandLineOption(const QCommandLineOption & other) : QCommandLineOption(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcommandlineoption(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -74,7 +30,6 @@ uint64_t ensure_inline_symbol_qcommandlineoption(void* this_) {
 /*void* qm2018568397(const QString & name)*/{
   const QString & name = *(const QString *)this_;
   this_ =  new QCommandLineOption(name);
-  this_ =  new MyQCommandLineOption(name);
 }
 
 // Public Visibility=Default Availability=Available
@@ -84,7 +39,6 @@ uint64_t ensure_inline_symbol_qcommandlineoption(void* this_) {
 /*void* qm1822647685(const QStringList & names)*/{
   const QStringList & names = *(const QStringList *)this_;
   this_ =  new QCommandLineOption(names);
-  this_ =  new MyQCommandLineOption(names);
 }
 
 // Public Visibility=Default Availability=Available
@@ -94,7 +48,6 @@ uint64_t ensure_inline_symbol_qcommandlineoption(void* this_) {
 /*void* qm3631291941(const QString & name, const QString & description, const QString & valueName, const QString & defaultValue)*/{
   const QString & name = *(const QString *)this_; const QString & description = *(const QString *)this_; const QString & valueName = *(const QString *)this_; const QString & defaultValue = *(const QString *)this_;
   this_ =  new QCommandLineOption(name, description, valueName, defaultValue);
-  this_ =  new MyQCommandLineOption(name, description, valueName, defaultValue);
 }
 
 // Public Visibility=Default Availability=Available
@@ -104,7 +57,6 @@ uint64_t ensure_inline_symbol_qcommandlineoption(void* this_) {
 /*void* qm2547001035(const QStringList & names, const QString & description, const QString & valueName, const QString & defaultValue)*/{
   const QStringList & names = *(const QStringList *)this_; const QString & description = *(const QString *)this_; const QString & valueName = *(const QString *)this_; const QString & defaultValue = *(const QString *)this_;
   this_ =  new QCommandLineOption(names, description, valueName, defaultValue);
-  this_ =  new MyQCommandLineOption(names, description, valueName, defaultValue);
 }
 
 // Public Visibility=Default Availability=Available
@@ -114,7 +66,6 @@ uint64_t ensure_inline_symbol_qcommandlineoption(void* this_) {
 /*void* qm1154716957(const QCommandLineOption & other)*/{
   const QCommandLineOption & other = *(const QCommandLineOption *)this_;
   this_ =  new QCommandLineOption(other);
-  this_ =  new MyQCommandLineOption(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

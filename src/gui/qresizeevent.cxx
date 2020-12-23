@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQResizeEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[15];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQResizeEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQResizeEvent_t qt_meta_stringdata_MyQResizeEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 14), // "MyQResizeEvent"
-  },
-  "MyQResizeEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQResizeEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQResizeEvent : public QResizeEvent {
-public:
-  virtual ~MyQResizeEvent() {}
-// void QResizeEvent(const QSize &, const QSize &)
-MyQResizeEvent(const QSize & size, const QSize & oldSize) : QResizeEvent(size, oldSize) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qresizeevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qresizeevent(void* this_) {
 /*void* qm194315494(const QSize & size, const QSize & oldSize)*/{
   const QSize & size = *(const QSize *)this_; const QSize & oldSize = *(const QSize *)this_;
   this_ =  new QResizeEvent(size, oldSize);
-  this_ =  new MyQResizeEvent(size, oldSize);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,54 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQMediaContent_t {
-  QByteArrayData data[1];
-  char stringdata0[16];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQMediaContent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQMediaContent_t qt_meta_stringdata_MyQMediaContent = {
-   {
-  QT_MOC_LITERAL(0, 0, 15), // "MyQMediaContent"
-  },
-  "MyQMediaContent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQMediaContent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQMediaContent : public QMediaContent {
-public:
-  virtual ~MyQMediaContent() {}
-// void QMediaContent()
-MyQMediaContent() : QMediaContent() {}
-// void QMediaContent(const QUrl &)
-MyQMediaContent(const QUrl & contentUrl) : QMediaContent(contentUrl) {}
-// void QMediaContent(const QNetworkRequest &)
-MyQMediaContent(const QNetworkRequest & contentRequest) : QMediaContent(contentRequest) {}
-// void QMediaContent(const QMediaResource &)
-MyQMediaContent(const QMediaResource & contentResource) : QMediaContent(contentResource) {}
-// void QMediaContent(const QMediaResourceList &)
-MyQMediaContent(const QMediaResourceList & resources) : QMediaContent(resources) {}
-// void QMediaContent(const QMediaContent &)
-MyQMediaContent(const QMediaContent & other) : QMediaContent(other) {}
-// void QMediaContent(QMediaPlaylist *, const QUrl &, bool)
-MyQMediaContent(QMediaPlaylist * playlist, const QUrl & contentUrl, bool takeOwnership) : QMediaContent(playlist, contentUrl, takeOwnership) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qmediacontent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -75,7 +27,6 @@ uint64_t ensure_inline_symbol_qmediacontent(void* this_) {
 /*void* qm2757429219()*/{
   ;
   this_ =  new QMediaContent();
-  this_ =  new MyQMediaContent();
 }
 
 // Public Visibility=Default Availability=Available
@@ -85,7 +36,6 @@ uint64_t ensure_inline_symbol_qmediacontent(void* this_) {
 /*void* qm457712253(const QUrl & contentUrl)*/{
   const QUrl & contentUrl = *(const QUrl *)this_;
   this_ =  new QMediaContent(contentUrl);
-  this_ =  new MyQMediaContent(contentUrl);
 }
 
 // Public Visibility=Default Availability=Available
@@ -95,7 +45,6 @@ uint64_t ensure_inline_symbol_qmediacontent(void* this_) {
 /*void* qm3272073408(const QNetworkRequest & contentRequest)*/{
   const QNetworkRequest & contentRequest = *(const QNetworkRequest *)this_;
   this_ =  new QMediaContent(contentRequest);
-  this_ =  new MyQMediaContent(contentRequest);
 }
 
 // Public Visibility=Default Availability=Available
@@ -105,7 +54,6 @@ uint64_t ensure_inline_symbol_qmediacontent(void* this_) {
 /*void* qm3737170254(const QMediaContent & other)*/{
   const QMediaContent & other = *(const QMediaContent *)this_;
   this_ =  new QMediaContent(other);
-  this_ =  new MyQMediaContent(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -115,7 +63,6 @@ uint64_t ensure_inline_symbol_qmediacontent(void* this_) {
 /*void* qm2384954431(QMediaPlaylist * playlist, const QUrl & contentUrl, bool takeOwnership)*/{
   QMediaPlaylist * playlist = *(QMediaPlaylist **)this_; const QUrl & contentUrl = *(const QUrl *)this_; bool takeOwnership = *(bool*)this_;
   this_ =  new QMediaContent(playlist, contentUrl, takeOwnership);
-  this_ =  new MyQMediaContent(playlist, contentUrl, takeOwnership);
 }
 
 

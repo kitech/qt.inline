@@ -16,54 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQRegion_t {
-  QByteArrayData data[1];
-  char stringdata0[10];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQRegion_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQRegion_t qt_meta_stringdata_MyQRegion = {
-   {
-  QT_MOC_LITERAL(0, 0, 9), // "MyQRegion"
-  },
-  "MyQRegion"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQRegion[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQRegion : public QRegion {
-public:
-  virtual ~MyQRegion() {}
-// void QRegion()
-MyQRegion() : QRegion() {}
-// void QRegion(int, int, int, int, QRegion::RegionType)
-MyQRegion(int x, int y, int w, int h, QRegion::RegionType t) : QRegion(x, y, w, h, t) {}
-// void QRegion(const QRect &, QRegion::RegionType)
-MyQRegion(const QRect & r, QRegion::RegionType t) : QRegion(r, t) {}
-// void QRegion(const QPolygon &, Qt::FillRule)
-MyQRegion(const QPolygon & pa, Qt::FillRule fillRule) : QRegion(pa, fillRule) {}
-// void QRegion(const QRegion &)
-MyQRegion(const QRegion & region) : QRegion(region) {}
-// void QRegion(QRegion &&)
-MyQRegion(QRegion && other) : QRegion(other) {}
-// void QRegion(const QBitmap &)
-MyQRegion(const QBitmap & bitmap) : QRegion(bitmap) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qregion(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -75,7 +27,6 @@ uint64_t ensure_inline_symbol_qregion(void* this_) {
 /*void* qm1283955447()*/{
   ;
   this_ =  new QRegion();
-  this_ =  new MyQRegion();
 }
 
 // Public Visibility=Default Availability=Available
@@ -85,7 +36,6 @@ uint64_t ensure_inline_symbol_qregion(void* this_) {
 /*void* qm3346632747(int x, int y, int w, int h, QRegion::RegionType t)*/{
   int x = *(int*)this_; int y = *(int*)this_; int w = *(int*)this_; int h = *(int*)this_; QRegion::RegionType t = *(QRegion::RegionType*)this_;
   this_ =  new QRegion(x, y, w, h, t);
-  this_ =  new MyQRegion(x, y, w, h, t);
 }
 
 // Public Visibility=Default Availability=Available
@@ -95,7 +45,6 @@ uint64_t ensure_inline_symbol_qregion(void* this_) {
 /*void* qm732856443(const QRect & r, QRegion::RegionType t)*/{
   const QRect & r = *(const QRect *)this_; QRegion::RegionType t = *(QRegion::RegionType*)this_;
   this_ =  new QRegion(r, t);
-  this_ =  new MyQRegion(r, t);
 }
 
 // Public Visibility=Default Availability=Available
@@ -105,7 +54,6 @@ uint64_t ensure_inline_symbol_qregion(void* this_) {
 /*void* qm2484957508(const QPolygon & pa, Qt::FillRule fillRule)*/{
   const QPolygon & pa = *(const QPolygon *)this_; Qt::FillRule fillRule = *(Qt::FillRule*)this_;
   this_ =  new QRegion(pa, fillRule);
-  this_ =  new MyQRegion(pa, fillRule);
 }
 
 // Public Visibility=Default Availability=Available
@@ -115,7 +63,6 @@ uint64_t ensure_inline_symbol_qregion(void* this_) {
 /*void* qm2389037218(const QRegion & region)*/{
   const QRegion & region = *(const QRegion *)this_;
   this_ =  new QRegion(region);
-  this_ =  new MyQRegion(region);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -125,7 +72,6 @@ uint64_t ensure_inline_symbol_qregion(void* this_) {
 /*void* qm1258737589(QRegion && other)*/{
   QRegion && other =  static_cast<QRegion &&>(*(QRegion *)this_);
   this_ =  new QRegion(other);
-  this_ =  new MyQRegion(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -135,7 +81,6 @@ uint64_t ensure_inline_symbol_qregion(void* this_) {
 /*void* qm3509416065(const QBitmap & bitmap)*/{
   const QBitmap & bitmap = *(const QBitmap *)this_;
   this_ =  new QRegion(bitmap);
-  this_ =  new MyQRegion(bitmap);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

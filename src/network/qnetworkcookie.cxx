@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQNetworkCookie_t {
-  QByteArrayData data[1];
-  char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQNetworkCookie_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQNetworkCookie_t qt_meta_stringdata_MyQNetworkCookie = {
-   {
-  QT_MOC_LITERAL(0, 0, 16), // "MyQNetworkCookie"
-  },
-  "MyQNetworkCookie"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQNetworkCookie[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQNetworkCookie : public QNetworkCookie {
-public:
-  virtual ~MyQNetworkCookie() {}
-// void QNetworkCookie(const QByteArray &, const QByteArray &)
-MyQNetworkCookie(const QByteArray & name, const QByteArray & value) : QNetworkCookie(name, value) {}
-// void QNetworkCookie(const QNetworkCookie &)
-MyQNetworkCookie(const QNetworkCookie & other) : QNetworkCookie(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkcookie(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qnetworkcookie(void* this_) {
 /*void* qm325702650(const QByteArray & name, const QByteArray & value)*/{
   const QByteArray & name = *(const QByteArray *)this_; const QByteArray & value = *(const QByteArray *)this_;
   this_ =  new QNetworkCookie(name, value);
-  this_ =  new MyQNetworkCookie(name, value);
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qnetworkcookie(void* this_) {
 /*void* qm3021567445(const QNetworkCookie & other)*/{
   const QNetworkCookie & other = *(const QNetworkCookie *)this_;
   this_ =  new QNetworkCookie(other);
-  this_ =  new MyQNetworkCookie(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -19,48 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQPersistentModelIndex_t {
-  QByteArrayData data[1];
-  char stringdata0[24];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQPersistentModelIndex_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQPersistentModelIndex_t qt_meta_stringdata_MyQPersistentModelIndex = {
-   {
-  QT_MOC_LITERAL(0, 0, 23), // "MyQPersistentModelIndex"
-  },
-  "MyQPersistentModelIndex"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQPersistentModelIndex[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQPersistentModelIndex : public QPersistentModelIndex {
-public:
-  virtual ~MyQPersistentModelIndex() {}
-// void QPersistentModelIndex()
-MyQPersistentModelIndex() : QPersistentModelIndex() {}
-// void QPersistentModelIndex(const QModelIndex &)
-MyQPersistentModelIndex(const QModelIndex & index) : QPersistentModelIndex(index) {}
-// void QPersistentModelIndex(const QPersistentModelIndex &)
-MyQPersistentModelIndex(const QPersistentModelIndex & other) : QPersistentModelIndex(other) {}
-// void QPersistentModelIndex(QPersistentModelIndex &&)
-MyQPersistentModelIndex(QPersistentModelIndex && other) : QPersistentModelIndex(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpersistentmodelindex(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -72,7 +30,6 @@ uint64_t ensure_inline_symbol_qpersistentmodelindex(void* this_) {
 /*void* qm4053232108()*/{
   ;
   this_ =  new QPersistentModelIndex();
-  this_ =  new MyQPersistentModelIndex();
 }
 
 // Public Visibility=Default Availability=Available
@@ -82,7 +39,6 @@ uint64_t ensure_inline_symbol_qpersistentmodelindex(void* this_) {
 /*void* qm1357918003(const QModelIndex & index)*/{
   const QModelIndex & index = *(const QModelIndex *)this_;
   this_ =  new QPersistentModelIndex(index);
-  this_ =  new MyQPersistentModelIndex(index);
 }
 
 // Public Visibility=Default Availability=Available
@@ -92,7 +48,6 @@ uint64_t ensure_inline_symbol_qpersistentmodelindex(void* this_) {
 /*void* qm3157278356(const QPersistentModelIndex & other)*/{
   const QPersistentModelIndex & other = *(const QPersistentModelIndex *)this_;
   this_ =  new QPersistentModelIndex(other);
-  this_ =  new MyQPersistentModelIndex(other);
 }
 
 // Public inline Extend Visibility=Default Availability=Available
@@ -114,7 +69,6 @@ uint64_t ensure_inline_symbol_qpersistentmodelindex(void* this_) {
 /*void* qm3330546329(QPersistentModelIndex && other)*/{
   QPersistentModelIndex && other =  static_cast<QPersistentModelIndex &&>(*(QPersistentModelIndex *)this_);
   this_ =  new QPersistentModelIndex(other);
-  this_ =  new MyQPersistentModelIndex(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,54 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQByteArray_t {
-  QByteArrayData data[1];
-  char stringdata0[13];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQByteArray_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQByteArray_t qt_meta_stringdata_MyQByteArray = {
-   {
-  QT_MOC_LITERAL(0, 0, 12), // "MyQByteArray"
-  },
-  "MyQByteArray"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQByteArray[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQByteArray : public QByteArray {
-public:
-  virtual ~MyQByteArray() {}
-// void QByteArray()
-MyQByteArray() : QByteArray() {}
-// void QByteArray(const char *, int)
-MyQByteArray(const char * arg0, int size) : QByteArray(arg0, size) {}
-// void QByteArray(int, char)
-MyQByteArray(int size, char c) : QByteArray(size, c) {}
-// void QByteArray(int, Qt::Initialization)
-MyQByteArray(int size, Qt::Initialization arg1) : QByteArray(size, arg1) {}
-// void QByteArray(const QByteArray &)
-MyQByteArray(const QByteArray & arg0) : QByteArray(arg0) {}
-// void QByteArray(QByteArray &&)
-MyQByteArray(QByteArray && other) : QByteArray(other) {}
-// void QByteArray(QByteArrayDataPtr)
-MyQByteArray(QByteArrayDataPtr dd) : QByteArray(dd) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qbytearray(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -75,7 +27,6 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm2565301520()*/{
   ;
   this_ =  new QByteArray();
-  this_ =  new MyQByteArray();
 }
 
 // Public Visibility=Default Availability=Available
@@ -85,7 +36,6 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm1185669528(const char * arg0, int size)*/{
   const char * arg0 = *(const char **)this_; int size = *(int*)this_;
   this_ =  new QByteArray(arg0, size);
-  this_ =  new MyQByteArray(arg0, size);
 }
 
 // Public Visibility=Default Availability=Available
@@ -95,7 +45,6 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm3603703536(int size, char c)*/{
   int size = *(int*)this_; char c = *(char*)this_;
   this_ =  new QByteArray(size, c);
-  this_ =  new MyQByteArray(size, c);
 }
 
 // Public Visibility=Default Availability=Available
@@ -105,7 +54,6 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm3671312835(int size, Qt::Initialization arg1)*/{
   int size = *(int*)this_; Qt::Initialization arg1 = *(Qt::Initialization*)this_;
   this_ =  new QByteArray(size, arg1);
-  this_ =  new MyQByteArray(size, arg1);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -115,7 +63,6 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm4234054265(const QByteArray & arg0)*/{
   const QByteArray & arg0 = *(const QByteArray *)this_;
   this_ =  new QByteArray(arg0);
-  this_ =  new MyQByteArray(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -132,7 +79,6 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm2000392563(QByteArray && other)*/{
   QByteArray && other =  static_cast<QByteArray &&>(*(QByteArray *)this_);
   this_ =  new QByteArray(other);
-  this_ =  new MyQByteArray(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -1106,7 +1052,6 @@ uint64_t ensure_inline_symbol_qbytearray(void* this_) {
 /*void* qm2424989172(QByteArrayDataPtr dd)*/{
   QByteArrayDataPtr dd = *(QByteArrayDataPtr*)this_;
   this_ =  new QByteArray(dd);
-  this_ =  new MyQByteArray(dd);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

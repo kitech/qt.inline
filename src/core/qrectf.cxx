@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQRectF_t {
-  QByteArrayData data[1];
-  char stringdata0[9];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQRectF_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQRectF_t qt_meta_stringdata_MyQRectF = {
-   {
-  QT_MOC_LITERAL(0, 0, 8), // "MyQRectF"
-  },
-  "MyQRectF"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQRectF[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQRectF : public QRectF {
-public:
-  virtual ~MyQRectF() {}
-// void QRectF()
-MyQRectF() : QRectF() {}
-// void QRectF(const QPointF &, const QSizeF &)
-MyQRectF(const QPointF & topleft, const QSizeF & size) : QRectF(topleft, size) {}
-// void QRectF(const QPointF &, const QPointF &)
-MyQRectF(const QPointF & topleft, const QPointF & bottomRight) : QRectF(topleft, bottomRight) {}
-// void QRectF(qreal, qreal, qreal, qreal)
-MyQRectF(qreal left, qreal top, qreal width, qreal height) : QRectF(left, top, width, height) {}
-// void QRectF(const QRect &)
-MyQRectF(const QRect & rect) : QRectF(rect) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qrectf(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm2138932529()*/{
   ;
   this_ =  new QRectF();
-  this_ =  new MyQRectF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm3303482793(const QPointF & topleft, const QSizeF & size)*/{
   const QPointF & topleft = *(const QPointF *)this_; const QSizeF & size = *(const QSizeF *)this_;
   this_ =  new QRectF(topleft, size);
-  this_ =  new MyQRectF(topleft, size);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm650771439(const QPointF & topleft, const QPointF & bottomRight)*/{
   const QPointF & topleft = *(const QPointF *)this_; const QPointF & bottomRight = *(const QPointF *)this_;
   this_ =  new QRectF(topleft, bottomRight);
-  this_ =  new MyQRectF(topleft, bottomRight);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm1277739087(double left, double top, double width, double height)*/{
   double left = *(double*)this_; double top = *(double*)this_; double width = *(double*)this_; double height = *(double*)this_;
   this_ =  new QRectF(left, top, width, height);
-  this_ =  new MyQRectF(left, top, width, height);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qrectf(void* this_) {
 /*void* qm3008306862(const QRect & rect)*/{
   const QRect & rect = *(const QRect *)this_;
   this_ =  new QRectF(rect);
-  this_ =  new MyQRectF(rect);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

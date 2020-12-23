@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQLatin1String_t {
-  QByteArrayData data[1];
-  char stringdata0[16];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQLatin1String_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQLatin1String_t qt_meta_stringdata_MyQLatin1String = {
-   {
-  QT_MOC_LITERAL(0, 0, 15), // "MyQLatin1String"
-  },
-  "MyQLatin1String"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQLatin1String[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQLatin1String : public QLatin1String {
-public:
-  virtual ~MyQLatin1String() {}
-// void QLatin1String()
-MyQLatin1String() : QLatin1String() {}
-// void QLatin1String(const char *)
-MyQLatin1String(const char * s) : QLatin1String(s) {}
-// void QLatin1String(const char *, const char *)
-MyQLatin1String(const char * f, const char * l) : QLatin1String(f, l) {}
-// void QLatin1String(const char *, int)
-MyQLatin1String(const char * s, int sz) : QLatin1String(s, sz) {}
-// void QLatin1String(const QByteArray &)
-MyQLatin1String(const QByteArray & s) : QLatin1String(s) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qlatin1string(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qlatin1string(void* this_) {
 /*void* qm1602854854()*/{
   ;
   this_ =  new QLatin1String();
-  this_ =  new MyQLatin1String();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qlatin1string(void* this_) {
 /*void* qm1195323157(const char * s)*/{
   const char * s = *(const char **)this_;
   this_ =  new QLatin1String(s);
-  this_ =  new MyQLatin1String(s);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qlatin1string(void* this_) {
 /*void* qm312833696(const char * f, const char * l)*/{
   const char * f = *(const char **)this_; const char * l = *(const char **)this_;
   this_ =  new QLatin1String(f, l);
-  this_ =  new MyQLatin1String(f, l);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qlatin1string(void* this_) {
 /*void* qm2348215733(const char * s, int sz)*/{
   const char * s = *(const char **)this_; int sz = *(int*)this_;
   this_ =  new QLatin1String(s, sz);
-  this_ =  new MyQLatin1String(s, sz);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qlatin1string(void* this_) {
 /*void* qm850927326(const QByteArray & s)*/{
   const QByteArray & s = *(const QByteArray *)this_;
   this_ =  new QLatin1String(s);
-  this_ =  new MyQLatin1String(s);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

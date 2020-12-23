@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQQmlInfo_t {
-  QByteArrayData data[1];
-  char stringdata0[11];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQQmlInfo_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQQmlInfo_t qt_meta_stringdata_MyQQmlInfo = {
-   {
-  QT_MOC_LITERAL(0, 0, 10), // "MyQQmlInfo"
-  },
-  "MyQQmlInfo"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQQmlInfo[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQQmlInfo : public QQmlInfo {
-public:
-  virtual ~MyQQmlInfo() {}
-// void QQmlInfo(const QQmlInfo &)
-MyQQmlInfo(const QQmlInfo & arg0) : QQmlInfo(arg0) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qqmlinfo(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qqmlinfo(void* this_) {
 /*void* qm2846623795(const QQmlInfo & arg0)*/{
   const QQmlInfo & arg0 = *(const QQmlInfo *)this_;
   this_ =  new QQmlInfo(arg0);
-  this_ =  new MyQQmlInfo(arg0);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

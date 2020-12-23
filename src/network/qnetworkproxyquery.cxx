@@ -16,56 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQNetworkProxyQuery_t {
-  QByteArrayData data[1];
-  char stringdata0[21];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQNetworkProxyQuery_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQNetworkProxyQuery_t qt_meta_stringdata_MyQNetworkProxyQuery = {
-   {
-  QT_MOC_LITERAL(0, 0, 20), // "MyQNetworkProxyQuery"
-  },
-  "MyQNetworkProxyQuery"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQNetworkProxyQuery[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQNetworkProxyQuery : public QNetworkProxyQuery {
-public:
-  virtual ~MyQNetworkProxyQuery() {}
-// void QNetworkProxyQuery()
-MyQNetworkProxyQuery() : QNetworkProxyQuery() {}
-// void QNetworkProxyQuery(const QUrl &, QNetworkProxyQuery::QueryType)
-MyQNetworkProxyQuery(const QUrl & requestUrl, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(requestUrl, queryType) {}
-// void QNetworkProxyQuery(const QString &, int, const QString &, QNetworkProxyQuery::QueryType)
-MyQNetworkProxyQuery(const QString & hostname, int port, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(hostname, port, protocolTag, queryType) {}
-// void QNetworkProxyQuery(quint16, const QString &, QNetworkProxyQuery::QueryType)
-MyQNetworkProxyQuery(quint16 bindPort, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(bindPort, protocolTag, queryType) {}
-// void QNetworkProxyQuery(const QNetworkConfiguration &, const QUrl &, QNetworkProxyQuery::QueryType)
-MyQNetworkProxyQuery(const QNetworkConfiguration & networkConfiguration, const QUrl & requestUrl, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(networkConfiguration, requestUrl, queryType) {}
-// void QNetworkProxyQuery(const QNetworkConfiguration &, const QString &, int, const QString &, QNetworkProxyQuery::QueryType)
-MyQNetworkProxyQuery(const QNetworkConfiguration & networkConfiguration, const QString & hostname, int port, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(networkConfiguration, hostname, port, protocolTag, queryType) {}
-// void QNetworkProxyQuery(const QNetworkConfiguration &, quint16, const QString &, QNetworkProxyQuery::QueryType)
-MyQNetworkProxyQuery(const QNetworkConfiguration & networkConfiguration, quint16 bindPort, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType) : QNetworkProxyQuery(networkConfiguration, bindPort, protocolTag, queryType) {}
-// void QNetworkProxyQuery(const QNetworkProxyQuery &)
-MyQNetworkProxyQuery(const QNetworkProxyQuery & other) : QNetworkProxyQuery(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qnetworkproxyquery(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -77,7 +27,6 @@ uint64_t ensure_inline_symbol_qnetworkproxyquery(void* this_) {
 /*void* qm555834384()*/{
   ;
   this_ =  new QNetworkProxyQuery();
-  this_ =  new MyQNetworkProxyQuery();
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +36,6 @@ uint64_t ensure_inline_symbol_qnetworkproxyquery(void* this_) {
 /*void* qm531398455(const QUrl & requestUrl, QNetworkProxyQuery::QueryType queryType)*/{
   const QUrl & requestUrl = *(const QUrl *)this_; QNetworkProxyQuery::QueryType queryType = *(QNetworkProxyQuery::QueryType*)this_;
   this_ =  new QNetworkProxyQuery(requestUrl, queryType);
-  this_ =  new MyQNetworkProxyQuery(requestUrl, queryType);
 }
 
 // Public Visibility=Default Availability=Available
@@ -97,7 +45,6 @@ uint64_t ensure_inline_symbol_qnetworkproxyquery(void* this_) {
 /*void* qm1355284813(const QString & hostname, int port, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType)*/{
   const QString & hostname = *(const QString *)this_; int port = *(int*)this_; const QString & protocolTag = *(const QString *)this_; QNetworkProxyQuery::QueryType queryType = *(QNetworkProxyQuery::QueryType*)this_;
   this_ =  new QNetworkProxyQuery(hostname, port, protocolTag, queryType);
-  this_ =  new MyQNetworkProxyQuery(hostname, port, protocolTag, queryType);
 }
 
 // Public Visibility=Default Availability=Available
@@ -107,7 +54,6 @@ uint64_t ensure_inline_symbol_qnetworkproxyquery(void* this_) {
 /*void* qm747801699(unsigned short bindPort, const QString & protocolTag, QNetworkProxyQuery::QueryType queryType)*/{
   unsigned short bindPort = *(unsigned short*)this_; const QString & protocolTag = *(const QString *)this_; QNetworkProxyQuery::QueryType queryType = *(QNetworkProxyQuery::QueryType*)this_;
   this_ =  new QNetworkProxyQuery(bindPort, protocolTag, queryType);
-  this_ =  new MyQNetworkProxyQuery(bindPort, protocolTag, queryType);
 }
 
 // Public Visibility=Default Availability=Available
@@ -117,7 +63,6 @@ uint64_t ensure_inline_symbol_qnetworkproxyquery(void* this_) {
 /*void* qm2161991935(const QNetworkProxyQuery & other)*/{
   const QNetworkProxyQuery & other = *(const QNetworkProxyQuery *)this_;
   this_ =  new QNetworkProxyQuery(other);
-  this_ =  new MyQNetworkProxyQuery(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

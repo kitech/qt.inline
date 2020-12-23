@@ -29,7 +29,7 @@ uint64_t ensure_inline_symbol_qcborstreamwriter(void* this_) {
 // (12)qm3565469453 (36)_ZN17QCborStreamWriterC2EP9QIODevice
 /*void* qm3565469453(QIODevice * device)*/{
   QIODevice * device = *(QIODevice **)this_;
-  this_ = 0; // new QCborStreamWriter(device);
+  this_ =  new QCborStreamWriter(device);
 }
 
 // Public Visibility=Default Availability=Available
@@ -38,16 +38,7 @@ uint64_t ensure_inline_symbol_qcborstreamwriter(void* this_) {
 // (12)qm4071152689 (38)_ZN17QCborStreamWriterC2EP10QByteArray
 /*void* qm4071152689(QByteArray * data)*/{
   QByteArray * data = *(QByteArray **)this_;
-  this_ = 0; // new QCborStreamWriter(data);
-}
-
-// Public inline Visibility=Default Availability=NotAvailable
-// /usr/include/qt/QtCore/qcborstreamwriter.h:71
-// [-2] void QCborStreamWriter(const QCborStreamWriter &) 
-// (12)qm1302577443 (29)_ZN17QCborStreamWriterC2ERKS_
-/*void* qm1302577443(const QCborStreamWriter & arg0)*/{
-  const QCborStreamWriter & arg0 = *(const QCborStreamWriter *)this_;
-  this_ = 0; // new QCborStreamWriter(arg0);
+  this_ =  new QCborStreamWriter(data);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

@@ -16,56 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQPolygon_t {
-  QByteArrayData data[1];
-  char stringdata0[11];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQPolygon_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQPolygon_t qt_meta_stringdata_MyQPolygon = {
-   {
-  QT_MOC_LITERAL(0, 0, 10), // "MyQPolygon"
-  },
-  "MyQPolygon"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQPolygon[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQPolygon : public QPolygon {
-public:
-  virtual ~MyQPolygon() {}
-// void QPolygon()
-MyQPolygon() : QPolygon() {}
-// void QPolygon(int)
-MyQPolygon(int size) : QPolygon(size) {}
-// void QPolygon(const QVector<QPoint> &)
-MyQPolygon(const QVector<QPoint> & v) : QPolygon(v) {}
-// void QPolygon(QVector<QPoint> &&)
-MyQPolygon(QVector<QPoint> && v) : QPolygon(v) {}
-// void QPolygon(const QRect &, bool)
-MyQPolygon(const QRect & r, bool closed) : QPolygon(r, closed) {}
-// void QPolygon(int, const int *)
-MyQPolygon(int nPoints, const int * points) : QPolygon(nPoints, points) {}
-// void QPolygon(const QPolygon &)
-MyQPolygon(const QPolygon & other) : QPolygon(other) {}
-// void QPolygon(QPolygon &&)
-MyQPolygon(QPolygon && other) : QPolygon(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpolygon(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -77,7 +27,6 @@ uint64_t ensure_inline_symbol_qpolygon(void* this_) {
 /*void* qm1771381249()*/{
   ;
   this_ =  new QPolygon();
-  this_ =  new MyQPolygon();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -94,7 +43,6 @@ uint64_t ensure_inline_symbol_qpolygon(void* this_) {
 /*void* qm3835506676(int size)*/{
   int size = *(int*)this_;
   this_ =  new QPolygon(size);
-  this_ =  new MyQPolygon(size);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -104,7 +52,6 @@ uint64_t ensure_inline_symbol_qpolygon(void* this_) {
 /*void* qm2589534692(const QVector<QPoint> & v)*/{
   const QVector<QPoint> & v = *(const QVector<QPoint> *)this_;
   this_ =  new QPolygon(v);
-  this_ =  new MyQPolygon(v);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -114,7 +61,6 @@ uint64_t ensure_inline_symbol_qpolygon(void* this_) {
 /*void* qm3660574542(QVector<QPoint> && v)*/{
   QVector<QPoint> && v =  static_cast<QVector<QPoint> &&>(*(QVector<QPoint> *)this_);
   this_ =  new QPolygon(v);
-  this_ =  new MyQPolygon(v);
 }
 
 // Public Visibility=Default Availability=Available
@@ -124,7 +70,6 @@ uint64_t ensure_inline_symbol_qpolygon(void* this_) {
 /*void* qm1377135448(const QRect & r, bool closed)*/{
   const QRect & r = *(const QRect *)this_; bool closed = *(bool*)this_;
   this_ =  new QPolygon(r, closed);
-  this_ =  new MyQPolygon(r, closed);
 }
 
 // Public Visibility=Default Availability=Available
@@ -134,7 +79,6 @@ uint64_t ensure_inline_symbol_qpolygon(void* this_) {
 /*void* qm2591143148(int nPoints, const int * points)*/{
   int nPoints = *(int*)this_; const int * points = *(const int **)this_;
   this_ =  new QPolygon(nPoints, points);
-  this_ =  new MyQPolygon(nPoints, points);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -144,7 +88,6 @@ uint64_t ensure_inline_symbol_qpolygon(void* this_) {
 /*void* qm3767110173(const QPolygon & other)*/{
   const QPolygon & other = *(const QPolygon *)this_;
   this_ =  new QPolygon(other);
-  this_ =  new MyQPolygon(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -154,7 +97,6 @@ uint64_t ensure_inline_symbol_qpolygon(void* this_) {
 /*void* qm3428488994(QPolygon && other)*/{
   QPolygon && other =  static_cast<QPolygon &&>(*(QPolygon *)this_);
   this_ =  new QPolygon(other);
-  this_ =  new MyQPolygon(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

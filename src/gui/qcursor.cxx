@@ -16,52 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQCursor_t {
-  QByteArrayData data[1];
-  char stringdata0[10];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQCursor_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQCursor_t qt_meta_stringdata_MyQCursor = {
-   {
-  QT_MOC_LITERAL(0, 0, 9), // "MyQCursor"
-  },
-  "MyQCursor"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQCursor[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQCursor : public QCursor {
-public:
-  virtual ~MyQCursor() {}
-// void QCursor()
-MyQCursor() : QCursor() {}
-// void QCursor(Qt::CursorShape)
-MyQCursor(Qt::CursorShape shape) : QCursor(shape) {}
-// void QCursor(const QBitmap &, const QBitmap &, int, int)
-MyQCursor(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY) : QCursor(bitmap, mask, hotX, hotY) {}
-// void QCursor(const QPixmap &, int, int)
-MyQCursor(const QPixmap & pixmap, int hotX, int hotY) : QCursor(pixmap, hotX, hotY) {}
-// void QCursor(const QCursor &)
-MyQCursor(const QCursor & cursor) : QCursor(cursor) {}
-// void QCursor(QCursor &&)
-MyQCursor(QCursor && other) : QCursor(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcursor(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -73,7 +27,6 @@ uint64_t ensure_inline_symbol_qcursor(void* this_) {
 /*void* qm2060366876()*/{
   ;
   this_ =  new QCursor();
-  this_ =  new MyQCursor();
 }
 
 // Public Visibility=Default Availability=Available
@@ -83,7 +36,6 @@ uint64_t ensure_inline_symbol_qcursor(void* this_) {
 /*void* qm2270285397(Qt::CursorShape shape)*/{
   Qt::CursorShape shape = *(Qt::CursorShape*)this_;
   this_ =  new QCursor(shape);
-  this_ =  new MyQCursor(shape);
 }
 
 // Public Visibility=Default Availability=Available
@@ -93,7 +45,6 @@ uint64_t ensure_inline_symbol_qcursor(void* this_) {
 /*void* qm789977789(const QBitmap & bitmap, const QBitmap & mask, int hotX, int hotY)*/{
   const QBitmap & bitmap = *(const QBitmap *)this_; const QBitmap & mask = *(const QBitmap *)this_; int hotX = *(int*)this_; int hotY = *(int*)this_;
   this_ =  new QCursor(bitmap, mask, hotX, hotY);
-  this_ =  new MyQCursor(bitmap, mask, hotX, hotY);
 }
 
 // Public Visibility=Default Availability=Available
@@ -103,7 +54,6 @@ uint64_t ensure_inline_symbol_qcursor(void* this_) {
 /*void* qm2656705789(const QPixmap & pixmap, int hotX, int hotY)*/{
   const QPixmap & pixmap = *(const QPixmap *)this_; int hotX = *(int*)this_; int hotY = *(int*)this_;
   this_ =  new QCursor(pixmap, hotX, hotY);
-  this_ =  new MyQCursor(pixmap, hotX, hotY);
 }
 
 // Public Visibility=Default Availability=Available
@@ -113,7 +63,6 @@ uint64_t ensure_inline_symbol_qcursor(void* this_) {
 /*void* qm802496461(const QCursor & cursor)*/{
   const QCursor & cursor = *(const QCursor *)this_;
   this_ =  new QCursor(cursor);
-  this_ =  new MyQCursor(cursor);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -123,7 +72,6 @@ uint64_t ensure_inline_symbol_qcursor(void* this_) {
 /*void* qm710598164(QCursor && other)*/{
   QCursor && other =  static_cast<QCursor &&>(*(QCursor *)this_);
   this_ =  new QCursor(other);
-  this_ =  new MyQCursor(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQBitArray_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQBitArray_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQBitArray_t qt_meta_stringdata_MyQBitArray = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQBitArray"
-  },
-  "MyQBitArray"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQBitArray[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQBitArray : public QBitArray {
-public:
-  virtual ~MyQBitArray() {}
-// void QBitArray()
-MyQBitArray() : QBitArray() {}
-// void QBitArray(int, bool)
-MyQBitArray(int size, bool val) : QBitArray(size, val) {}
-// void QBitArray(const QBitArray &)
-MyQBitArray(const QBitArray & other) : QBitArray(other) {}
-// void QBitArray(QBitArray &&)
-MyQBitArray(QBitArray && other) : QBitArray(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qbitarray(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qbitarray(void* this_) {
 /*void* qm1992321311()*/{
   ;
   this_ =  new QBitArray();
-  this_ =  new MyQBitArray();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qbitarray(void* this_) {
 /*void* qm832187643(int size, bool val)*/{
   int size = *(int*)this_; bool val = *(bool*)this_;
   this_ =  new QBitArray(size, val);
-  this_ =  new MyQBitArray(size, val);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qbitarray(void* this_) {
 /*void* qm4273813453(const QBitArray & other)*/{
   const QBitArray & other = *(const QBitArray *)this_;
   this_ =  new QBitArray(other);
-  this_ =  new MyQBitArray(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available
@@ -111,7 +66,6 @@ uint64_t ensure_inline_symbol_qbitarray(void* this_) {
 /*void* qm4178915248(QBitArray && other)*/{
   QBitArray && other =  static_cast<QBitArray &&>(*(QBitArray *)this_);
   this_ =  new QBitArray(other);
-  this_ =  new MyQBitArray(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

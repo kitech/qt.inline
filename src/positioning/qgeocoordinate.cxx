@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQGeoCoordinate_t {
-  QByteArrayData data[1];
-  char stringdata0[17];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQGeoCoordinate_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQGeoCoordinate_t qt_meta_stringdata_MyQGeoCoordinate = {
-   {
-  QT_MOC_LITERAL(0, 0, 16), // "MyQGeoCoordinate"
-  },
-  "MyQGeoCoordinate"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQGeoCoordinate[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQGeoCoordinate : public QGeoCoordinate {
-public:
-  virtual ~MyQGeoCoordinate() {}
-// void QGeoCoordinate()
-MyQGeoCoordinate() : QGeoCoordinate() {}
-// void QGeoCoordinate(double, double)
-MyQGeoCoordinate(double latitude, double longitude) : QGeoCoordinate(latitude, longitude) {}
-// void QGeoCoordinate(double, double, double)
-MyQGeoCoordinate(double latitude, double longitude, double altitude) : QGeoCoordinate(latitude, longitude, altitude) {}
-// void QGeoCoordinate(const QGeoCoordinate &)
-MyQGeoCoordinate(const QGeoCoordinate & other) : QGeoCoordinate(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qgeocoordinate(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qgeocoordinate(void* this_) {
 /*void* qm2962345731()*/{
   ;
   this_ =  new QGeoCoordinate();
-  this_ =  new MyQGeoCoordinate();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qgeocoordinate(void* this_) {
 /*void* qm2039544426(double latitude, double longitude)*/{
   double latitude = *(double*)this_; double longitude = *(double*)this_;
   this_ =  new QGeoCoordinate(latitude, longitude);
-  this_ =  new MyQGeoCoordinate(latitude, longitude);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qgeocoordinate(void* this_) {
 /*void* qm901993072(double latitude, double longitude, double altitude)*/{
   double latitude = *(double*)this_; double longitude = *(double*)this_; double altitude = *(double*)this_;
   this_ =  new QGeoCoordinate(latitude, longitude, altitude);
-  this_ =  new MyQGeoCoordinate(latitude, longitude, altitude);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qgeocoordinate(void* this_) {
 /*void* qm263198482(const QGeoCoordinate & other)*/{
   const QGeoCoordinate & other = *(const QGeoCoordinate *)this_;
   this_ =  new QGeoCoordinate(other);
-  this_ =  new MyQGeoCoordinate(other);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

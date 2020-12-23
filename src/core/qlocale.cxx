@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQLocale_t {
-  QByteArrayData data[1];
-  char stringdata0[10];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQLocale_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQLocale_t qt_meta_stringdata_MyQLocale = {
-   {
-  QT_MOC_LITERAL(0, 0, 9), // "MyQLocale"
-  },
-  "MyQLocale"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQLocale[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQLocale : public QLocale {
-public:
-  virtual ~MyQLocale() {}
-// void QLocale()
-MyQLocale() : QLocale() {}
-// void QLocale(const QString &)
-MyQLocale(const QString & name) : QLocale(name) {}
-// void QLocale(QLocale::Language, QLocale::Country)
-MyQLocale(QLocale::Language language, QLocale::Country country) : QLocale(language, country) {}
-// void QLocale(QLocale::Language, QLocale::Script, QLocale::Country)
-MyQLocale(QLocale::Language language, QLocale::Script script, QLocale::Country country) : QLocale(language, script, country) {}
-// void QLocale(const QLocale &)
-MyQLocale(const QLocale & other) : QLocale(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qlocale(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qlocale(void* this_) {
 /*void* qm2788139536()*/{
   ;
   this_ =  new QLocale();
-  this_ =  new MyQLocale();
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qlocale(void* this_) {
 /*void* qm1813683587(const QString & name)*/{
   const QString & name = *(const QString *)this_;
   this_ =  new QLocale(name);
-  this_ =  new MyQLocale(name);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qlocale(void* this_) {
 /*void* qm3228077800(QLocale::Language language, QLocale::Country country)*/{
   QLocale::Language language = *(QLocale::Language*)this_; QLocale::Country country = *(QLocale::Country*)this_;
   this_ =  new QLocale(language, country);
-  this_ =  new MyQLocale(language, country);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qlocale(void* this_) {
 /*void* qm3045660338(QLocale::Language language, QLocale::Script script, QLocale::Country country)*/{
   QLocale::Language language = *(QLocale::Language*)this_; QLocale::Script script = *(QLocale::Script*)this_; QLocale::Country country = *(QLocale::Country*)this_;
   this_ =  new QLocale(language, script, country);
-  this_ =  new MyQLocale(language, script, country);
 }
 
 // Public Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qlocale(void* this_) {
 /*void* qm3982131532(const QLocale & other)*/{
   const QLocale & other = *(const QLocale *)this_;
   this_ =  new QLocale(other);
-  this_ =  new MyQLocale(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQPixelFormat_t {
-  QByteArrayData data[1];
-  char stringdata0[15];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQPixelFormat_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQPixelFormat_t qt_meta_stringdata_MyQPixelFormat = {
-   {
-  QT_MOC_LITERAL(0, 0, 14), // "MyQPixelFormat"
-  },
-  "MyQPixelFormat"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQPixelFormat[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQPixelFormat : public QPixelFormat {
-public:
-  virtual ~MyQPixelFormat() {}
-// void QPixelFormat()
-MyQPixelFormat() : QPixelFormat() {}
-// void QPixelFormat(QPixelFormat::ColorModel, uchar, uchar, uchar, uchar, uchar, uchar, QPixelFormat::AlphaUsage, QPixelFormat::AlphaPosition, QPixelFormat::AlphaPremultiplied, QPixelFormat::TypeInterpretation, QPixelFormat::ByteOrder, uchar)
-MyQPixelFormat(QPixelFormat::ColorModel colorModel, uchar firstSize, uchar secondSize, uchar thirdSize, uchar fourthSize, uchar fifthSize, uchar alphaSize, QPixelFormat::AlphaUsage alphaUsage, QPixelFormat::AlphaPosition alphaPosition, QPixelFormat::AlphaPremultiplied premultiplied, QPixelFormat::TypeInterpretation typeInterpretation, QPixelFormat::ByteOrder byteOrder, uchar subEnum) : QPixelFormat(colorModel, firstSize, secondSize, thirdSize, fourthSize, fifthSize, alphaSize, alphaUsage, alphaPosition, premultiplied, typeInterpretation, byteOrder, subEnum) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpixelformat(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qpixelformat(void* this_) {
 /*void* qm426697196()*/{
   ;
   this_ =  new QPixelFormat();
-  this_ =  new MyQPixelFormat();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qpixelformat(void* this_) {
 /*void* qm1123328726(QPixelFormat::ColorModel colorModel, unsigned char firstSize, unsigned char secondSize, unsigned char thirdSize, unsigned char fourthSize, unsigned char fifthSize, unsigned char alphaSize, QPixelFormat::AlphaUsage alphaUsage, QPixelFormat::AlphaPosition alphaPosition, QPixelFormat::AlphaPremultiplied premultiplied, QPixelFormat::TypeInterpretation typeInterpretation, QPixelFormat::ByteOrder byteOrder, unsigned char subEnum)*/{
   QPixelFormat::ColorModel colorModel = *(QPixelFormat::ColorModel*)this_; unsigned char firstSize = *(unsigned char*)this_; unsigned char secondSize = *(unsigned char*)this_; unsigned char thirdSize = *(unsigned char*)this_; unsigned char fourthSize = *(unsigned char*)this_; unsigned char fifthSize = *(unsigned char*)this_; unsigned char alphaSize = *(unsigned char*)this_; QPixelFormat::AlphaUsage alphaUsage = *(QPixelFormat::AlphaUsage*)this_; QPixelFormat::AlphaPosition alphaPosition = *(QPixelFormat::AlphaPosition*)this_; QPixelFormat::AlphaPremultiplied premultiplied = *(QPixelFormat::AlphaPremultiplied*)this_; QPixelFormat::TypeInterpretation typeInterpretation = *(QPixelFormat::TypeInterpretation*)this_; QPixelFormat::ByteOrder byteOrder = *(QPixelFormat::ByteOrder*)this_; unsigned char subEnum = *(unsigned char*)this_;
   this_ =  new QPixelFormat(colorModel, firstSize, secondSize, thirdSize, fourthSize, fifthSize, alphaSize, alphaUsage, alphaPosition, premultiplied, typeInterpretation, byteOrder, subEnum);
-  this_ =  new MyQPixelFormat(colorModel, firstSize, secondSize, thirdSize, fourthSize, fifthSize, alphaSize, alphaUsage, alphaPosition, premultiplied, typeInterpretation, byteOrder, subEnum);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

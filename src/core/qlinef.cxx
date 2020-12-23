@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQLineF_t {
-  QByteArrayData data[1];
-  char stringdata0[9];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQLineF_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQLineF_t qt_meta_stringdata_MyQLineF = {
-   {
-  QT_MOC_LITERAL(0, 0, 8), // "MyQLineF"
-  },
-  "MyQLineF"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQLineF[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQLineF : public QLineF {
-public:
-  virtual ~MyQLineF() {}
-// void QLineF()
-MyQLineF() : QLineF() {}
-// void QLineF(const QPointF &, const QPointF &)
-MyQLineF(const QPointF & pt1, const QPointF & pt2) : QLineF(pt1, pt2) {}
-// void QLineF(qreal, qreal, qreal, qreal)
-MyQLineF(qreal x1, qreal y1, qreal x2, qreal y2) : QLineF(x1, y1, x2, y2) {}
-// void QLineF(const QLine &)
-MyQLineF(const QLine & line) : QLineF(line) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qlinef(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qlinef(void* this_) {
 /*void* qm3851270499()*/{
   ;
   this_ =  new QLineF();
-  this_ =  new MyQLineF();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qlinef(void* this_) {
 /*void* qm2601427614(const QPointF & pt1, const QPointF & pt2)*/{
   const QPointF & pt1 = *(const QPointF *)this_; const QPointF & pt2 = *(const QPointF *)this_;
   this_ =  new QLineF(pt1, pt2);
-  this_ =  new MyQLineF(pt1, pt2);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qlinef(void* this_) {
 /*void* qm3982406120(double x1, double y1, double x2, double y2)*/{
   double x1 = *(double*)this_; double y1 = *(double*)this_; double x2 = *(double*)this_; double y2 = *(double*)this_;
   this_ =  new QLineF(x1, y1, x2, y2);
-  this_ =  new MyQLineF(x1, y1, x2, y2);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qlinef(void* this_) {
 /*void* qm2293692172(const QLine & line)*/{
   const QLine & line = *(const QLine *)this_;
   this_ =  new QLineF(line);
-  this_ =  new MyQLineF(line);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

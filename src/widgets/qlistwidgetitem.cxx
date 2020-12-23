@@ -19,48 +19,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQListWidgetItem_t {
-  QByteArrayData data[1];
-  char stringdata0[18];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQListWidgetItem_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQListWidgetItem_t qt_meta_stringdata_MyQListWidgetItem = {
-   {
-  QT_MOC_LITERAL(0, 0, 17), // "MyQListWidgetItem"
-  },
-  "MyQListWidgetItem"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQListWidgetItem[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQListWidgetItem : public QListWidgetItem {
-public:
-  virtual ~MyQListWidgetItem() {}
-// void QListWidgetItem(QListWidget *, int)
-MyQListWidgetItem(QListWidget * listview, int type_) : QListWidgetItem(listview, type_) {}
-// void QListWidgetItem(const QString &, QListWidget *, int)
-MyQListWidgetItem(const QString & text, QListWidget * listview, int type_) : QListWidgetItem(text, listview, type_) {}
-// void QListWidgetItem(const QIcon &, const QString &, QListWidget *, int)
-MyQListWidgetItem(const QIcon & icon, const QString & text, QListWidget * listview, int type_) : QListWidgetItem(icon, text, listview, type_) {}
-// void QListWidgetItem(const QListWidgetItem &)
-MyQListWidgetItem(const QListWidgetItem & other) : QListWidgetItem(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qlistwidgetitem(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -72,7 +30,6 @@ uint64_t ensure_inline_symbol_qlistwidgetitem(void* this_) {
 /*void* qm56480504(QListWidget * listview, int type_)*/{
   QListWidget * listview = *(QListWidget **)this_; int type_ = *(int*)this_;
   this_ =  new QListWidgetItem(listview, type_);
-  this_ =  new MyQListWidgetItem(listview, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -82,7 +39,6 @@ uint64_t ensure_inline_symbol_qlistwidgetitem(void* this_) {
 /*void* qm248460992(const QString & text, QListWidget * listview, int type_)*/{
   const QString & text = *(const QString *)this_; QListWidget * listview = *(QListWidget **)this_; int type_ = *(int*)this_;
   this_ =  new QListWidgetItem(text, listview, type_);
-  this_ =  new MyQListWidgetItem(text, listview, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -92,7 +48,6 @@ uint64_t ensure_inline_symbol_qlistwidgetitem(void* this_) {
 /*void* qm3565841736(const QIcon & icon, const QString & text, QListWidget * listview, int type_)*/{
   const QIcon & icon = *(const QIcon *)this_; const QString & text = *(const QString *)this_; QListWidget * listview = *(QListWidget **)this_; int type_ = *(int*)this_;
   this_ =  new QListWidgetItem(icon, text, listview, type_);
-  this_ =  new MyQListWidgetItem(icon, text, listview, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -102,7 +57,6 @@ uint64_t ensure_inline_symbol_qlistwidgetitem(void* this_) {
 /*void* qm2321330834(const QListWidgetItem & other)*/{
   const QListWidgetItem & other = *(const QListWidgetItem *)this_;
   this_ =  new QListWidgetItem(other);
-  this_ =  new MyQListWidgetItem(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

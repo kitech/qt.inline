@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQAccessibleTextCursorEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[29];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQAccessibleTextCursorEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQAccessibleTextCursorEvent_t qt_meta_stringdata_MyQAccessibleTextCursorEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 28), // "MyQAccessibleTextCursorEvent"
-  },
-  "MyQAccessibleTextCursorEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQAccessibleTextCursorEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQAccessibleTextCursorEvent : public QAccessibleTextCursorEvent {
-public:
-  virtual ~MyQAccessibleTextCursorEvent() {}
-// void QAccessibleTextCursorEvent(QObject *, int)
-MyQAccessibleTextCursorEvent(QObject * obj, int cursorPos) : QAccessibleTextCursorEvent(obj, cursorPos) {}
-// void QAccessibleTextCursorEvent(QAccessibleInterface *, int)
-MyQAccessibleTextCursorEvent(QAccessibleInterface * iface, int cursorPos) : QAccessibleTextCursorEvent(iface, cursorPos) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qaccessibletextcursorevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qaccessibletextcursorevent(void* this_) {
 /*void* qm3911566872(QObject * obj, int cursorPos)*/{
   QObject * obj = *(QObject **)this_; int cursorPos = *(int*)this_;
   this_ =  new QAccessibleTextCursorEvent(obj, cursorPos);
-  this_ =  new MyQAccessibleTextCursorEvent(obj, cursorPos);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qaccessibletextcursorevent(void* this_) {
 /*void* qm1570575241(QAccessibleInterface * iface, int cursorPos)*/{
   QAccessibleInterface * iface = *(QAccessibleInterface **)this_; int cursorPos = *(int*)this_;
   this_ =  new QAccessibleTextCursorEvent(iface, cursorPos);
-  this_ =  new MyQAccessibleTextCursorEvent(iface, cursorPos);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

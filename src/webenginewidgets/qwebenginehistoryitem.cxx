@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQWebEngineHistoryItem_t {
-  QByteArrayData data[1];
-  char stringdata0[24];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQWebEngineHistoryItem_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQWebEngineHistoryItem_t qt_meta_stringdata_MyQWebEngineHistoryItem = {
-   {
-  QT_MOC_LITERAL(0, 0, 23), // "MyQWebEngineHistoryItem"
-  },
-  "MyQWebEngineHistoryItem"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQWebEngineHistoryItem[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQWebEngineHistoryItem : public QWebEngineHistoryItem {
-public:
-  virtual ~MyQWebEngineHistoryItem() {}
-// void QWebEngineHistoryItem(const QWebEngineHistoryItem &)
-MyQWebEngineHistoryItem(const QWebEngineHistoryItem & other) : QWebEngineHistoryItem(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qwebenginehistoryitem(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qwebenginehistoryitem(void* this_) {
 /*void* qm4233152871(const QWebEngineHistoryItem & other)*/{
   const QWebEngineHistoryItem & other = *(const QWebEngineHistoryItem *)this_;
   this_ =  new QWebEngineHistoryItem(other);
-  this_ =  new MyQWebEngineHistoryItem(other);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

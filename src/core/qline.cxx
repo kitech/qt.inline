@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQLine_t {
-  QByteArrayData data[1];
-  char stringdata0[8];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQLine_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQLine_t qt_meta_stringdata_MyQLine = {
-   {
-  QT_MOC_LITERAL(0, 0, 7), // "MyQLine"
-  },
-  "MyQLine"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQLine[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQLine : public QLine {
-public:
-  virtual ~MyQLine() {}
-// void QLine()
-MyQLine() : QLine() {}
-// void QLine(const QPoint &, const QPoint &)
-MyQLine(const QPoint & pt1, const QPoint & pt2) : QLine(pt1, pt2) {}
-// void QLine(int, int, int, int)
-MyQLine(int x1, int y1, int x2, int y2) : QLine(x1, y1, x2, y2) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qline(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qline(void* this_) {
 /*void* qm18471404()*/{
   ;
   this_ =  new QLine();
-  this_ =  new MyQLine();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qline(void* this_) {
 /*void* qm2061364895(const QPoint & pt1, const QPoint & pt2)*/{
   const QPoint & pt1 = *(const QPoint *)this_; const QPoint & pt2 = *(const QPoint *)this_;
   this_ =  new QLine(pt1, pt2);
-  this_ =  new MyQLine(pt1, pt2);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qline(void* this_) {
 /*void* qm2751830069(int x1, int y1, int x2, int y2)*/{
   int x1 = *(int*)this_; int y1 = *(int*)this_; int x2 = *(int*)this_; int y2 = *(int*)this_;
   this_ =  new QLine(x1, y1, x2, y2);
-  this_ =  new MyQLine(x1, y1, x2, y2);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

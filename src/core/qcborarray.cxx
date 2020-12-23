@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQCborArray_t {
-  QByteArrayData data[1];
-  char stringdata0[13];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQCborArray_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQCborArray_t qt_meta_stringdata_MyQCborArray = {
-   {
-  QT_MOC_LITERAL(0, 0, 12), // "MyQCborArray"
-  },
-  "MyQCborArray"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQCborArray[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQCborArray : public QCborArray {
-public:
-  virtual ~MyQCborArray() {}
-// void QCborArray()
-MyQCborArray() : QCborArray() {}
-// void QCborArray(const QCborArray &)
-MyQCborArray(const QCborArray & other) : QCborArray(other) {}
-// void QCborArray(std::initializer_list<QCborValue>)
-MyQCborArray(std::initializer_list<QCborValue> args) : QCborArray(args) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcborarray(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qcborarray(void* this_) {
 /*void* qm1885219961()*/{
   ;
   this_ =  new QCborArray();
-  this_ =  new MyQCborArray();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qcborarray(void* this_) {
 /*void* qm677283162(const QCborArray & other)*/{
   const QCborArray & other = *(const QCborArray *)this_;
   this_ =  new QCborArray(other);
-  this_ =  new MyQCborArray(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qcborarray(void* this_) {
 /*void* qm2236812956(std::initializer_list<QCborValue> args)*/{
   std::initializer_list<QCborValue> args = *(std::initializer_list<QCborValue>*)this_;
   this_ =  new QCborArray(args);
-  this_ =  new MyQCborArray(args);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

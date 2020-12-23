@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQRandomGenerator_t {
-  QByteArrayData data[1];
-  char stringdata0[19];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQRandomGenerator_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQRandomGenerator_t qt_meta_stringdata_MyQRandomGenerator = {
-   {
-  QT_MOC_LITERAL(0, 0, 18), // "MyQRandomGenerator"
-  },
-  "MyQRandomGenerator"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQRandomGenerator[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQRandomGenerator : public QRandomGenerator {
-public:
-  virtual ~MyQRandomGenerator() {}
-// void QRandomGenerator(quint32)
-MyQRandomGenerator(quint32 seedValue) : QRandomGenerator(seedValue) {}
-// void QRandomGenerator(const quint32 *, qsizetype)
-MyQRandomGenerator(const quint32 * seedBuffer, qsizetype len_) : QRandomGenerator(seedBuffer, len_) {}
-// void QRandomGenerator(std::seed_seq &)
-MyQRandomGenerator(std::seed_seq & sseq) : QRandomGenerator(sseq) {}
-// void QRandomGenerator(const quint32 *, const quint32 *)
-MyQRandomGenerator(const quint32 * begin_, const quint32 * end_) : QRandomGenerator(begin_, end_) {}
-// void QRandomGenerator(const QRandomGenerator &)
-MyQRandomGenerator(const QRandomGenerator & other) : QRandomGenerator(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qrandomgenerator(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qrandomgenerator(void* this_) {
 /*void* qm1159609541(unsigned int seedValue)*/{
   unsigned int seedValue = *(unsigned int*)this_;
   this_ =  new QRandomGenerator(seedValue);
-  this_ =  new MyQRandomGenerator(seedValue);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qrandomgenerator(void* this_) {
 /*void* qm3276589479(const unsigned int * seedBuffer, long long len_)*/{
   const unsigned int * seedBuffer = *(const unsigned int **)this_; long long len_ = *(long long*)this_;
   this_ =  new QRandomGenerator(seedBuffer, len_);
-  this_ =  new MyQRandomGenerator(seedBuffer, len_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qrandomgenerator(void* this_) {
 /*void* qm1617958677(std::seed_seq & sseq)*/{
   std::seed_seq & sseq = *(std::seed_seq *)this_;
   this_ =  new QRandomGenerator(sseq);
-  this_ =  new MyQRandomGenerator(sseq);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qrandomgenerator(void* this_) {
 /*void* qm1270244191(const unsigned int * begin_, const unsigned int * end_)*/{
   const unsigned int * begin_ = *(const unsigned int **)this_; const unsigned int * end_ = *(const unsigned int **)this_;
   this_ =  new QRandomGenerator(begin_, end_);
-  this_ =  new MyQRandomGenerator(begin_, end_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qrandomgenerator(void* this_) {
 /*void* qm3268098557(const QRandomGenerator & other)*/{
   const QRandomGenerator & other = *(const QRandomGenerator *)this_;
   this_ =  new QRandomGenerator(other);
-  this_ =  new MyQRandomGenerator(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

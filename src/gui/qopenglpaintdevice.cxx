@@ -26,7 +26,7 @@ uint64_t ensure_inline_symbol_qopenglpaintdevice(void* this_) {
 // (12)qm1375776383 (27)_ZN18QOpenGLPaintDeviceC2Ev
 /*void* qm1375776383()*/{
   ;
-  this_ = 0; // new QOpenGLPaintDevice();
+  this_ =  new QOpenGLPaintDevice();
 }
 
 // Public Visibility=Default Availability=Available
@@ -35,7 +35,7 @@ uint64_t ensure_inline_symbol_qopenglpaintdevice(void* this_) {
 // (12)qm3642532105 (34)_ZN18QOpenGLPaintDeviceC2ERK5QSize
 /*void* qm3642532105(const QSize & size)*/{
   const QSize & size = *(const QSize *)this_;
-  this_ = 0; // new QOpenGLPaintDevice(size);
+  this_ =  new QOpenGLPaintDevice(size);
 }
 
 // Public Visibility=Default Availability=Available
@@ -44,7 +44,7 @@ uint64_t ensure_inline_symbol_qopenglpaintdevice(void* this_) {
 // (12)qm3957216492 (28)_ZN18QOpenGLPaintDeviceC2Eii
 /*void* qm3957216492(int width, int height)*/{
   int width = *(int*)this_; int height = *(int*)this_;
-  this_ = 0; // new QOpenGLPaintDevice(width, height);
+  this_ =  new QOpenGLPaintDevice(width, height);
 }
 
 // Public inline virtual Direct Visibility=Default Availability=Available

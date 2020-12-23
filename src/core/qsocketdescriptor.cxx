@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSocketDescriptor_t {
-  QByteArrayData data[1];
-  char stringdata0[20];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSocketDescriptor_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSocketDescriptor_t qt_meta_stringdata_MyQSocketDescriptor = {
-   {
-  QT_MOC_LITERAL(0, 0, 19), // "MyQSocketDescriptor"
-  },
-  "MyQSocketDescriptor"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSocketDescriptor[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSocketDescriptor : public QSocketDescriptor {
-public:
-  virtual ~MyQSocketDescriptor() {}
-// void QSocketDescriptor(QSocketDescriptor::DescriptorType)
-MyQSocketDescriptor(QSocketDescriptor::DescriptorType descriptor) : QSocketDescriptor(descriptor) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsocketdescriptor(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qsocketdescriptor(void* this_) {
 /*void* qm4154457918(int descriptor)*/{
   int descriptor = *(int*)this_;
   this_ =  new QSocketDescriptor(descriptor);
-  this_ =  new MyQSocketDescriptor(descriptor);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQKeyEvent_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQKeyEvent_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQKeyEvent_t qt_meta_stringdata_MyQKeyEvent = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQKeyEvent"
-  },
-  "MyQKeyEvent"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQKeyEvent[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQKeyEvent : public QKeyEvent {
-public:
-  virtual ~MyQKeyEvent() {}
-// void QKeyEvent(QEvent::Type, int, Qt::KeyboardModifiers, const QString &, bool, ushort)
-MyQKeyEvent(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, const QString & text, bool autorep, ushort count) : QKeyEvent(type_, key, modifiers, text, autorep, count) {}
-// void QKeyEvent(QEvent::Type, int, Qt::KeyboardModifiers, quint32, quint32, quint32, const QString &, bool, ushort)
-MyQKeyEvent(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, quint32 nativeScanCode, quint32 nativeVirtualKey, quint32 nativeModifiers, const QString & text, bool autorep, ushort count) : QKeyEvent(type_, key, modifiers, nativeScanCode, nativeVirtualKey, nativeModifiers, text, autorep, count) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qkeyevent(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qkeyevent(void* this_) {
 /*void* qm3101255376(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, const QString & text, bool autorep, unsigned short count)*/{
   QEvent::Type type_ = *(QEvent::Type*)this_; int key = *(int*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_; const QString & text = *(const QString *)this_; bool autorep = *(bool*)this_; unsigned short count = *(unsigned short*)this_;
   this_ =  new QKeyEvent(type_, key, modifiers, text, autorep, count);
-  this_ =  new MyQKeyEvent(type_, key, modifiers, text, autorep, count);
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qkeyevent(void* this_) {
 /*void* qm2402215125(QEvent::Type type_, int key, QFlags<Qt::KeyboardModifier> modifiers, unsigned int nativeScanCode, unsigned int nativeVirtualKey, unsigned int nativeModifiers, const QString & text, bool autorep, unsigned short count)*/{
   QEvent::Type type_ = *(QEvent::Type*)this_; int key = *(int*)this_; QFlags<Qt::KeyboardModifier> modifiers = *(QFlags<Qt::KeyboardModifier>*)this_; unsigned int nativeScanCode = *(unsigned int*)this_; unsigned int nativeVirtualKey = *(unsigned int*)this_; unsigned int nativeModifiers = *(unsigned int*)this_; const QString & text = *(const QString *)this_; bool autorep = *(bool*)this_; unsigned short count = *(unsigned short*)this_;
   this_ =  new QKeyEvent(type_, key, modifiers, nativeScanCode, nativeVirtualKey, nativeModifiers, text, autorep, count);
-  this_ =  new MyQKeyEvent(type_, key, modifiers, nativeScanCode, nativeVirtualKey, nativeModifiers, text, autorep, count);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

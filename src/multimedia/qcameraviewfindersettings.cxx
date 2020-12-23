@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQCameraViewfinderSettings_t {
-  QByteArrayData data[1];
-  char stringdata0[28];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQCameraViewfinderSettings_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQCameraViewfinderSettings_t qt_meta_stringdata_MyQCameraViewfinderSettings = {
-   {
-  QT_MOC_LITERAL(0, 0, 27), // "MyQCameraViewfinderSettings"
-  },
-  "MyQCameraViewfinderSettings"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQCameraViewfinderSettings[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQCameraViewfinderSettings : public QCameraViewfinderSettings {
-public:
-  virtual ~MyQCameraViewfinderSettings() {}
-// void QCameraViewfinderSettings()
-MyQCameraViewfinderSettings() : QCameraViewfinderSettings() {}
-// void QCameraViewfinderSettings(const QCameraViewfinderSettings &)
-MyQCameraViewfinderSettings(const QCameraViewfinderSettings & other) : QCameraViewfinderSettings(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcameraviewfindersettings(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qcameraviewfindersettings(void* this_) {
 /*void* qm2132849231()*/{
   ;
   this_ =  new QCameraViewfinderSettings();
-  this_ =  new MyQCameraViewfinderSettings();
 }
 
 // Public Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qcameraviewfindersettings(void* this_) {
 /*void* qm1355278296(const QCameraViewfinderSettings & other)*/{
   const QCameraViewfinderSettings & other = *(const QCameraViewfinderSettings *)this_;
   this_ =  new QCameraViewfinderSettings(other);
-  this_ =  new MyQCameraViewfinderSettings(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

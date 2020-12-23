@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQPoint_t {
-  QByteArrayData data[1];
-  char stringdata0[9];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQPoint_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQPoint_t qt_meta_stringdata_MyQPoint = {
-   {
-  QT_MOC_LITERAL(0, 0, 8), // "MyQPoint"
-  },
-  "MyQPoint"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQPoint[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQPoint : public QPoint {
-public:
-  virtual ~MyQPoint() {}
-// void QPoint()
-MyQPoint() : QPoint() {}
-// void QPoint(int, int)
-MyQPoint(int xpos, int ypos) : QPoint(xpos, ypos) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qpoint(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qpoint(void* this_) {
 /*void* qm496444458()*/{
   ;
   this_ =  new QPoint();
-  this_ =  new MyQPoint();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qpoint(void* this_) {
 /*void* qm4035995165(int xpos, int ypos)*/{
   int xpos = *(int*)this_; int ypos = *(int*)this_;
   this_ =  new QPoint(xpos, ypos);
-  this_ =  new MyQPoint(xpos, ypos);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

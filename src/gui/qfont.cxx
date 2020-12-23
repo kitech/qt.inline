@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQFont_t {
-  QByteArrayData data[1];
-  char stringdata0[8];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQFont_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQFont_t qt_meta_stringdata_MyQFont = {
-   {
-  QT_MOC_LITERAL(0, 0, 7), // "MyQFont"
-  },
-  "MyQFont"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQFont[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQFont : public QFont {
-public:
-  virtual ~MyQFont() {}
-// void QFont()
-MyQFont() : QFont() {}
-// void QFont(const QString &, int, int, bool)
-MyQFont(const QString & family, int pointSize, int weight, bool italic) : QFont(family, pointSize, weight, italic) {}
-// void QFont(const QFont &, QPaintDevice *)
-MyQFont(const QFont & font, QPaintDevice * pd) : QFont(font, pd) {}
-// void QFont(const QFont &, const QPaintDevice *)
-MyQFont(const QFont & font, const QPaintDevice * pd) : QFont(font, pd) {}
-// void QFont(const QFont &)
-MyQFont(const QFont & font) : QFont(font) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qfont(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qfont(void* this_) {
 /*void* qm2928234028()*/{
   ;
   this_ =  new QFont();
-  this_ =  new MyQFont();
 }
 
 // Public Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qfont(void* this_) {
 /*void* qm1453900756(const QString & family, int pointSize, int weight, bool italic)*/{
   const QString & family = *(const QString *)this_; int pointSize = *(int*)this_; int weight = *(int*)this_; bool italic = *(bool*)this_;
   this_ =  new QFont(family, pointSize, weight, italic);
-  this_ =  new MyQFont(family, pointSize, weight, italic);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qfont(void* this_) {
 /*void* qm3944613900(const QFont & font, QPaintDevice * pd)*/{
   const QFont & font = *(const QFont *)this_; QPaintDevice * pd = *(QPaintDevice **)this_;
   this_ =  new QFont(font, pd);
-  this_ =  new MyQFont(font, pd);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qfont(void* this_) {
 /*void* qm2959359983(const QFont & font, const QPaintDevice * pd)*/{
   const QFont & font = *(const QFont *)this_; const QPaintDevice * pd = *(const QPaintDevice **)this_;
   this_ =  new QFont(font, pd);
-  this_ =  new MyQFont(font, pd);
 }
 
 // Public Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qfont(void* this_) {
 /*void* qm223684493(const QFont & font)*/{
   const QFont & font = *(const QFont *)this_;
   this_ =  new QFont(font);
-  this_ =  new MyQFont(font);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

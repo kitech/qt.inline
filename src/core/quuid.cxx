@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQUuid_t {
-  QByteArrayData data[1];
-  char stringdata0[8];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQUuid_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQUuid_t qt_meta_stringdata_MyQUuid = {
-   {
-  QT_MOC_LITERAL(0, 0, 7), // "MyQUuid"
-  },
-  "MyQUuid"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQUuid[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQUuid : public QUuid {
-public:
-  virtual ~MyQUuid() {}
-// void QUuid()
-MyQUuid() : QUuid() {}
-// void QUuid(uint, ushort, ushort, uchar, uchar, uchar, uchar, uchar, uchar, uchar, uchar)
-MyQUuid(uint l, ushort w1, ushort w2, uchar b1, uchar b2, uchar b3, uchar b4, uchar b5, uchar b6, uchar b7, uchar b8) : QUuid(l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8) {}
-// void QUuid(const QString &)
-MyQUuid(const QString & arg0) : QUuid(arg0) {}
-// void QUuid(const char *)
-MyQUuid(const char * arg0) : QUuid(arg0) {}
-// void QUuid(const QByteArray &)
-MyQUuid(const QByteArray & arg0) : QUuid(arg0) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_quuid(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_quuid(void* this_) {
 /*void* qm3807779934()*/{
   ;
   this_ =  new QUuid();
-  this_ =  new MyQUuid();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_quuid(void* this_) {
 /*void* qm4113588650(unsigned int l, unsigned short w1, unsigned short w2, unsigned char b1, unsigned char b2, unsigned char b3, unsigned char b4, unsigned char b5, unsigned char b6, unsigned char b7, unsigned char b8)*/{
   unsigned int l = *(unsigned int*)this_; unsigned short w1 = *(unsigned short*)this_; unsigned short w2 = *(unsigned short*)this_; unsigned char b1 = *(unsigned char*)this_; unsigned char b2 = *(unsigned char*)this_; unsigned char b3 = *(unsigned char*)this_; unsigned char b4 = *(unsigned char*)this_; unsigned char b5 = *(unsigned char*)this_; unsigned char b6 = *(unsigned char*)this_; unsigned char b7 = *(unsigned char*)this_; unsigned char b8 = *(unsigned char*)this_;
   this_ =  new QUuid(l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8);
-  this_ =  new MyQUuid(l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_quuid(void* this_) {
 /*void* qm329551727(const QString & arg0)*/{
   const QString & arg0 = *(const QString *)this_;
   this_ =  new QUuid(arg0);
-  this_ =  new MyQUuid(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_quuid(void* this_) {
 /*void* qm2316714210(const char * arg0)*/{
   const char * arg0 = *(const char **)this_;
   this_ =  new QUuid(arg0);
-  this_ =  new MyQUuid(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_quuid(void* this_) {
 /*void* qm2103268818(const QByteArray & arg0)*/{
   const QByteArray & arg0 = *(const QByteArray *)this_;
   this_ =  new QUuid(arg0);
-  this_ =  new MyQUuid(arg0);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

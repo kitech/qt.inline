@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQLinearGradient_t {
-  QByteArrayData data[1];
-  char stringdata0[18];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQLinearGradient_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQLinearGradient_t qt_meta_stringdata_MyQLinearGradient = {
-   {
-  QT_MOC_LITERAL(0, 0, 17), // "MyQLinearGradient"
-  },
-  "MyQLinearGradient"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQLinearGradient[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQLinearGradient : public QLinearGradient {
-public:
-  virtual ~MyQLinearGradient() {}
-// void QLinearGradient()
-MyQLinearGradient() : QLinearGradient() {}
-// void QLinearGradient(const QPointF &, const QPointF &)
-MyQLinearGradient(const QPointF & start, const QPointF & finalStop) : QLinearGradient(start, finalStop) {}
-// void QLinearGradient(qreal, qreal, qreal, qreal)
-MyQLinearGradient(qreal xStart, qreal yStart, qreal xFinalStop, qreal yFinalStop) : QLinearGradient(xStart, yStart, xFinalStop, yFinalStop) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qlineargradient(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qlineargradient(void* this_) {
 /*void* qm2457760289()*/{
   ;
   this_ =  new QLinearGradient();
-  this_ =  new MyQLinearGradient();
 }
 
 // Public Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qlineargradient(void* this_) {
 /*void* qm2858924355(const QPointF & start, const QPointF & finalStop)*/{
   const QPointF & start = *(const QPointF *)this_; const QPointF & finalStop = *(const QPointF *)this_;
   this_ =  new QLinearGradient(start, finalStop);
-  this_ =  new MyQLinearGradient(start, finalStop);
 }
 
 // Public Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qlineargradient(void* this_) {
 /*void* qm2465875218(double xStart, double yStart, double xFinalStop, double yFinalStop)*/{
   double xStart = *(double*)this_; double yStart = *(double*)this_; double xFinalStop = *(double*)this_; double yFinalStop = *(double*)this_;
   this_ =  new QLinearGradient(xStart, yStart, xFinalStop, yFinalStop);
-  this_ =  new MyQLinearGradient(xStart, yStart, xFinalStop, yFinalStop);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

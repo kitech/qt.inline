@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTextBoundaryFinder_t {
-  QByteArrayData data[1];
-  char stringdata0[22];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTextBoundaryFinder_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTextBoundaryFinder_t qt_meta_stringdata_MyQTextBoundaryFinder = {
-   {
-  QT_MOC_LITERAL(0, 0, 21), // "MyQTextBoundaryFinder"
-  },
-  "MyQTextBoundaryFinder"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTextBoundaryFinder[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTextBoundaryFinder : public QTextBoundaryFinder {
-public:
-  virtual ~MyQTextBoundaryFinder() {}
-// void QTextBoundaryFinder()
-MyQTextBoundaryFinder() : QTextBoundaryFinder() {}
-// void QTextBoundaryFinder(const QTextBoundaryFinder &)
-MyQTextBoundaryFinder(const QTextBoundaryFinder & other) : QTextBoundaryFinder(other) {}
-// void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QString &)
-MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QString & string) : QTextBoundaryFinder(type_, string) {}
-// void QTextBoundaryFinder(QTextBoundaryFinder::BoundaryType, const QChar *, int, unsigned char *, int)
-MyQTextBoundaryFinder(QTextBoundaryFinder::BoundaryType type_, const QChar * chars, int length, unsigned char * buffer, int bufferSize) : QTextBoundaryFinder(type_, chars, length, buffer, bufferSize) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextboundaryfinder(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qtextboundaryfinder(void* this_) {
 /*void* qm861982634()*/{
   ;
   this_ =  new QTextBoundaryFinder();
-  this_ =  new MyQTextBoundaryFinder();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qtextboundaryfinder(void* this_) {
 /*void* qm329495540(const QTextBoundaryFinder & other)*/{
   const QTextBoundaryFinder & other = *(const QTextBoundaryFinder *)this_;
   this_ =  new QTextBoundaryFinder(other);
-  this_ =  new MyQTextBoundaryFinder(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qtextboundaryfinder(void* this_) {
 /*void* qm2219281450(QTextBoundaryFinder::BoundaryType type_, const QString & string)*/{
   QTextBoundaryFinder::BoundaryType type_ = *(QTextBoundaryFinder::BoundaryType*)this_; const QString & string = *(const QString *)this_;
   this_ =  new QTextBoundaryFinder(type_, string);
-  this_ =  new MyQTextBoundaryFinder(type_, string);
 }
 
 // Public Visibility=Default Availability=Available
@@ -99,7 +54,6 @@ uint64_t ensure_inline_symbol_qtextboundaryfinder(void* this_) {
 /*void* qm1232878065(QTextBoundaryFinder::BoundaryType type_, const QChar * chars, int length, unsigned char * buffer, int bufferSize)*/{
   QTextBoundaryFinder::BoundaryType type_ = *(QTextBoundaryFinder::BoundaryType*)this_; const QChar * chars = *(const QChar **)this_; int length = *(int*)this_; unsigned char * buffer = *(unsigned char **)this_; int bufferSize = *(int*)this_;
   this_ =  new QTextBoundaryFinder(type_, chars, length, buffer, bufferSize);
-  this_ =  new MyQTextBoundaryFinder(type_, chars, length, buffer, bufferSize);
 }
 
 // Public inline Extend Visibility=Default Availability=Available

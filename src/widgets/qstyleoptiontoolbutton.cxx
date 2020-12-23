@@ -16,44 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQStyleOptionToolButton_t {
-  QByteArrayData data[1];
-  char stringdata0[25];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQStyleOptionToolButton_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQStyleOptionToolButton_t qt_meta_stringdata_MyQStyleOptionToolButton = {
-   {
-  QT_MOC_LITERAL(0, 0, 24), // "MyQStyleOptionToolButton"
-  },
-  "MyQStyleOptionToolButton"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQStyleOptionToolButton[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQStyleOptionToolButton : public QStyleOptionToolButton {
-public:
-  virtual ~MyQStyleOptionToolButton() {}
-// void QStyleOptionToolButton()
-MyQStyleOptionToolButton() : QStyleOptionToolButton() {}
-// void QStyleOptionToolButton(const QStyleOptionToolButton &)
-MyQStyleOptionToolButton(const QStyleOptionToolButton & other) : QStyleOptionToolButton(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qstyleoptiontoolbutton(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -65,7 +27,6 @@ uint64_t ensure_inline_symbol_qstyleoptiontoolbutton(void* this_) {
 /*void* qm1506023081()*/{
   ;
   this_ =  new QStyleOptionToolButton();
-  this_ =  new MyQStyleOptionToolButton();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -75,7 +36,6 @@ uint64_t ensure_inline_symbol_qstyleoptiontoolbutton(void* this_) {
 /*void* qm2426672224(const QStyleOptionToolButton & other)*/{
   const QStyleOptionToolButton & other = *(const QStyleOptionToolButton *)this_;
   this_ =  new QStyleOptionToolButton(other);
-  this_ =  new MyQStyleOptionToolButton(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

@@ -16,52 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTextStream_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTextStream_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTextStream_t qt_meta_stringdata_MyQTextStream = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQTextStream"
-  },
-  "MyQTextStream"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTextStream[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTextStream : public QTextStream {
-public:
-  virtual ~MyQTextStream() {}
-// void QTextStream()
-MyQTextStream() : QTextStream() {}
-// void QTextStream(QIODevice *)
-MyQTextStream(QIODevice * device) : QTextStream(device) {}
-// void QTextStream(FILE *, QIODevice::OpenMode)
-MyQTextStream(FILE * fileHandle, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(fileHandle, openMode) {}
-// void QTextStream(QString *, QIODevice::OpenMode)
-MyQTextStream(QString * string, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(string, openMode) {}
-// void QTextStream(QByteArray *, QIODevice::OpenMode)
-MyQTextStream(QByteArray * array, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(array, openMode) {}
-// void QTextStream(const QByteArray &, QIODevice::OpenMode)
-MyQTextStream(const QByteArray & array, QFlags<QIODevice::OpenModeFlag> openMode) : QTextStream(array, openMode) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextstream(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -73,7 +27,6 @@ uint64_t ensure_inline_symbol_qtextstream(void* this_) {
 /*void* qm1102095014()*/{
   ;
   this_ =  new QTextStream();
-  this_ =  new MyQTextStream();
 }
 
 // Public Visibility=Default Availability=Available
@@ -83,7 +36,6 @@ uint64_t ensure_inline_symbol_qtextstream(void* this_) {
 /*void* qm488794110(QIODevice * device)*/{
   QIODevice * device = *(QIODevice **)this_;
   this_ =  new QTextStream(device);
-  this_ =  new MyQTextStream(device);
 }
 
 // Public Visibility=Default Availability=Available
@@ -93,7 +45,6 @@ uint64_t ensure_inline_symbol_qtextstream(void* this_) {
 /*void* qm2803988053(_IO_FILE * fileHandle, QFlags<QIODevice::OpenModeFlag> openMode)*/{
   _IO_FILE * fileHandle = *(_IO_FILE **)this_; QFlags<QIODevice::OpenModeFlag> openMode = *(QFlags<QIODevice::OpenModeFlag>*)this_;
   this_ =  new QTextStream(fileHandle, openMode);
-  this_ =  new MyQTextStream(fileHandle, openMode);
 }
 
 // Public Visibility=Default Availability=Available
@@ -103,7 +54,6 @@ uint64_t ensure_inline_symbol_qtextstream(void* this_) {
 /*void* qm1628970897(QString * string, QFlags<QIODevice::OpenModeFlag> openMode)*/{
   QString * string = *(QString **)this_; QFlags<QIODevice::OpenModeFlag> openMode = *(QFlags<QIODevice::OpenModeFlag>*)this_;
   this_ =  new QTextStream(string, openMode);
-  this_ =  new MyQTextStream(string, openMode);
 }
 
 // Public Visibility=Default Availability=Available
@@ -113,7 +63,6 @@ uint64_t ensure_inline_symbol_qtextstream(void* this_) {
 /*void* qm3935249134(QByteArray * array, QFlags<QIODevice::OpenModeFlag> openMode)*/{
   QByteArray * array = *(QByteArray **)this_; QFlags<QIODevice::OpenModeFlag> openMode = *(QFlags<QIODevice::OpenModeFlag>*)this_;
   this_ =  new QTextStream(array, openMode);
-  this_ =  new MyQTextStream(array, openMode);
 }
 
 // Public Visibility=Default Availability=Available
@@ -123,7 +72,6 @@ uint64_t ensure_inline_symbol_qtextstream(void* this_) {
 /*void* qm700417304(const QByteArray & array, QFlags<QIODevice::OpenModeFlag> openMode)*/{
   const QByteArray & array = *(const QByteArray *)this_; QFlags<QIODevice::OpenModeFlag> openMode = *(QFlags<QIODevice::OpenModeFlag>*)this_;
   this_ =  new QTextStream(array, openMode);
-  this_ =  new MyQTextStream(array, openMode);
 }
 
 

@@ -16,52 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQXmlStreamStringRef_t {
-  QByteArrayData data[1];
-  char stringdata0[22];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQXmlStreamStringRef_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQXmlStreamStringRef_t qt_meta_stringdata_MyQXmlStreamStringRef = {
-   {
-  QT_MOC_LITERAL(0, 0, 21), // "MyQXmlStreamStringRef"
-  },
-  "MyQXmlStreamStringRef"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQXmlStreamStringRef[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQXmlStreamStringRef : public QXmlStreamStringRef {
-public:
-  virtual ~MyQXmlStreamStringRef() {}
-// void QXmlStreamStringRef()
-MyQXmlStreamStringRef() : QXmlStreamStringRef() {}
-// void QXmlStreamStringRef(const QStringRef &)
-MyQXmlStreamStringRef(const QStringRef & aString) : QXmlStreamStringRef(aString) {}
-// void QXmlStreamStringRef(const QString &)
-MyQXmlStreamStringRef(const QString & aString) : QXmlStreamStringRef(aString) {}
-// void QXmlStreamStringRef(QString &&)
-MyQXmlStreamStringRef(QString && aString) : QXmlStreamStringRef(aString) {}
-// void QXmlStreamStringRef(const QXmlStreamStringRef &)
-MyQXmlStreamStringRef(const QXmlStreamStringRef & other) : QXmlStreamStringRef(other) {}
-// void QXmlStreamStringRef(QXmlStreamStringRef &&)
-MyQXmlStreamStringRef(QXmlStreamStringRef && other) : QXmlStreamStringRef(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -73,7 +27,6 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm1711037227()*/{
   ;
   this_ =  new QXmlStreamStringRef();
-  this_ =  new MyQXmlStreamStringRef();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -83,7 +36,6 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm3117984013(const QStringRef & aString)*/{
   const QStringRef & aString = *(const QStringRef *)this_;
   this_ =  new QXmlStreamStringRef(aString);
-  this_ =  new MyQXmlStreamStringRef(aString);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -93,7 +45,6 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm755874095(const QString & aString)*/{
   const QString & aString = *(const QString *)this_;
   this_ =  new QXmlStreamStringRef(aString);
-  this_ =  new MyQXmlStreamStringRef(aString);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -103,7 +54,6 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm1938220457(QString && aString)*/{
   QString && aString =  static_cast<QString &&>(*(QString *)this_);
   this_ =  new QXmlStreamStringRef(aString);
-  this_ =  new MyQXmlStreamStringRef(aString);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -113,7 +63,6 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm532697700(const QXmlStreamStringRef & other)*/{
   const QXmlStreamStringRef & other = *(const QXmlStreamStringRef *)this_;
   this_ =  new QXmlStreamStringRef(other);
-  this_ =  new MyQXmlStreamStringRef(other);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -123,7 +72,6 @@ uint64_t ensure_inline_symbol_qxmlstreamstringref(void* this_) {
 /*void* qm2330500859(QXmlStreamStringRef && other)*/{
   QXmlStreamStringRef && other =  static_cast<QXmlStreamStringRef &&>(*(QXmlStreamStringRef *)this_);
   this_ =  new QXmlStreamStringRef(other);
-  this_ =  new MyQXmlStreamStringRef(other);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

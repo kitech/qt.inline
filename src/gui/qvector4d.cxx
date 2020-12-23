@@ -16,58 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQVector4D_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQVector4D_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQVector4D_t qt_meta_stringdata_MyQVector4D = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQVector4D"
-  },
-  "MyQVector4D"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQVector4D[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQVector4D : public QVector4D {
-public:
-  virtual ~MyQVector4D() {}
-// void QVector4D()
-MyQVector4D() : QVector4D() {}
-// void QVector4D(Qt::Initialization)
-MyQVector4D(Qt::Initialization arg0) : QVector4D(arg0) {}
-// void QVector4D(float, float, float, float)
-MyQVector4D(float xpos, float ypos, float zpos, float wpos) : QVector4D(xpos, ypos, zpos, wpos) {}
-// void QVector4D(const QPoint &)
-MyQVector4D(const QPoint & point) : QVector4D(point) {}
-// void QVector4D(const QPointF &)
-MyQVector4D(const QPointF & point) : QVector4D(point) {}
-// void QVector4D(const QVector2D &)
-MyQVector4D(const QVector2D & vector) : QVector4D(vector) {}
-// void QVector4D(const QVector2D &, float, float)
-MyQVector4D(const QVector2D & vector, float zpos, float wpos) : QVector4D(vector, zpos, wpos) {}
-// void QVector4D(const QVector3D &)
-MyQVector4D(const QVector3D & vector) : QVector4D(vector) {}
-// void QVector4D(const QVector3D &, float)
-MyQVector4D(const QVector3D & vector, float wpos) : QVector4D(vector, wpos) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qvector4d(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -79,7 +27,6 @@ uint64_t ensure_inline_symbol_qvector4d(void* this_) {
 /*void* qm811398110()*/{
   ;
   this_ =  new QVector4D();
-  this_ =  new MyQVector4D();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -89,7 +36,6 @@ uint64_t ensure_inline_symbol_qvector4d(void* this_) {
 /*void* qm190076121(Qt::Initialization arg0)*/{
   Qt::Initialization arg0 = *(Qt::Initialization*)this_;
   this_ =  new QVector4D(arg0);
-  this_ =  new MyQVector4D(arg0);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -99,7 +45,6 @@ uint64_t ensure_inline_symbol_qvector4d(void* this_) {
 /*void* qm2922350328(float xpos, float ypos, float zpos, float wpos)*/{
   float xpos = *(float*)this_; float ypos = *(float*)this_; float zpos = *(float*)this_; float wpos = *(float*)this_;
   this_ =  new QVector4D(xpos, ypos, zpos, wpos);
-  this_ =  new MyQVector4D(xpos, ypos, zpos, wpos);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -109,7 +54,6 @@ uint64_t ensure_inline_symbol_qvector4d(void* this_) {
 /*void* qm4001596954(const QPoint & point)*/{
   const QPoint & point = *(const QPoint *)this_;
   this_ =  new QVector4D(point);
-  this_ =  new MyQVector4D(point);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -119,7 +63,6 @@ uint64_t ensure_inline_symbol_qvector4d(void* this_) {
 /*void* qm2090561866(const QPointF & point)*/{
   const QPointF & point = *(const QPointF *)this_;
   this_ =  new QVector4D(point);
-  this_ =  new MyQVector4D(point);
 }
 
 // Public Visibility=Default Availability=Available
@@ -129,7 +72,6 @@ uint64_t ensure_inline_symbol_qvector4d(void* this_) {
 /*void* qm2750090836(const QVector2D & vector)*/{
   const QVector2D & vector = *(const QVector2D *)this_;
   this_ =  new QVector4D(vector);
-  this_ =  new MyQVector4D(vector);
 }
 
 // Public Visibility=Default Availability=Available
@@ -139,7 +81,6 @@ uint64_t ensure_inline_symbol_qvector4d(void* this_) {
 /*void* qm4022340623(const QVector2D & vector, float zpos, float wpos)*/{
   const QVector2D & vector = *(const QVector2D *)this_; float zpos = *(float*)this_; float wpos = *(float*)this_;
   this_ =  new QVector4D(vector, zpos, wpos);
-  this_ =  new MyQVector4D(vector, zpos, wpos);
 }
 
 // Public Visibility=Default Availability=Available
@@ -149,7 +90,6 @@ uint64_t ensure_inline_symbol_qvector4d(void* this_) {
 /*void* qm3136306965(const QVector3D & vector)*/{
   const QVector3D & vector = *(const QVector3D *)this_;
   this_ =  new QVector4D(vector);
-  this_ =  new MyQVector4D(vector);
 }
 
 // Public Visibility=Default Availability=Available
@@ -159,7 +99,6 @@ uint64_t ensure_inline_symbol_qvector4d(void* this_) {
 /*void* qm464797492(const QVector3D & vector, float wpos)*/{
   const QVector3D & vector = *(const QVector3D *)this_; float wpos = *(float*)this_;
   this_ =  new QVector4D(vector, wpos);
-  this_ =  new MyQVector4D(vector, wpos);
 }
 
 // Public Extend Visibility=Default Availability=Available

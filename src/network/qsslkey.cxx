@@ -16,52 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSslKey_t {
-  QByteArrayData data[1];
-  char stringdata0[10];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSslKey_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSslKey_t qt_meta_stringdata_MyQSslKey = {
-   {
-  QT_MOC_LITERAL(0, 0, 9), // "MyQSslKey"
-  },
-  "MyQSslKey"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSslKey[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSslKey : public QSslKey {
-public:
-  virtual ~MyQSslKey() {}
-// void QSslKey()
-MyQSslKey() : QSslKey() {}
-// void QSslKey(const QByteArray &, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const QByteArray &)
-MyQSslKey(const QByteArray & encoded, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase) : QSslKey(encoded, algorithm, format, type_, passPhrase) {}
-// void QSslKey(QIODevice *, QSsl::KeyAlgorithm, QSsl::EncodingFormat, QSsl::KeyType, const QByteArray &)
-MyQSslKey(QIODevice * device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase) : QSslKey(device, algorithm, format, type_, passPhrase) {}
-// void QSslKey(Qt::HANDLE, QSsl::KeyType)
-MyQSslKey(Qt::HANDLE handle, QSsl::KeyType type_) : QSslKey(handle, type_) {}
-// void QSslKey(const QSslKey &)
-MyQSslKey(const QSslKey & other) : QSslKey(other) {}
-// void QSslKey(QSslKey &&)
-MyQSslKey(QSslKey && other) : QSslKey(other) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsslkey(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -73,7 +27,6 @@ uint64_t ensure_inline_symbol_qsslkey(void* this_) {
 /*void* qm176985637()*/{
   ;
   this_ =  new QSslKey();
-  this_ =  new MyQSslKey();
 }
 
 // Public Visibility=Default Availability=Available
@@ -83,7 +36,6 @@ uint64_t ensure_inline_symbol_qsslkey(void* this_) {
 /*void* qm68009653(const QByteArray & encoded, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase)*/{
   const QByteArray & encoded = *(const QByteArray *)this_; QSsl::KeyAlgorithm algorithm = *(QSsl::KeyAlgorithm*)this_; QSsl::EncodingFormat format = *(QSsl::EncodingFormat*)this_; QSsl::KeyType type_ = *(QSsl::KeyType*)this_; const QByteArray & passPhrase = *(const QByteArray *)this_;
   this_ =  new QSslKey(encoded, algorithm, format, type_, passPhrase);
-  this_ =  new MyQSslKey(encoded, algorithm, format, type_, passPhrase);
 }
 
 // Public Visibility=Default Availability=Available
@@ -93,7 +45,6 @@ uint64_t ensure_inline_symbol_qsslkey(void* this_) {
 /*void* qm4041924596(QIODevice * device, QSsl::KeyAlgorithm algorithm, QSsl::EncodingFormat format, QSsl::KeyType type_, const QByteArray & passPhrase)*/{
   QIODevice * device = *(QIODevice **)this_; QSsl::KeyAlgorithm algorithm = *(QSsl::KeyAlgorithm*)this_; QSsl::EncodingFormat format = *(QSsl::EncodingFormat*)this_; QSsl::KeyType type_ = *(QSsl::KeyType*)this_; const QByteArray & passPhrase = *(const QByteArray *)this_;
   this_ =  new QSslKey(device, algorithm, format, type_, passPhrase);
-  this_ =  new MyQSslKey(device, algorithm, format, type_, passPhrase);
 }
 
 // Public Visibility=Default Availability=Available
@@ -103,7 +54,6 @@ uint64_t ensure_inline_symbol_qsslkey(void* this_) {
 /*void* qm3271984934(void * handle, QSsl::KeyType type_)*/{
   void * handle = *(void **)this_; QSsl::KeyType type_ = *(QSsl::KeyType*)this_;
   this_ =  new QSslKey(handle, type_);
-  this_ =  new MyQSslKey(handle, type_);
 }
 
 // Public Visibility=Default Availability=Available
@@ -113,7 +63,6 @@ uint64_t ensure_inline_symbol_qsslkey(void* this_) {
 /*void* qm990881598(const QSslKey & other)*/{
   const QSslKey & other = *(const QSslKey *)this_;
   this_ =  new QSslKey(other);
-  this_ =  new MyQSslKey(other);
 }
 
 // Public Visibility=Default Availability=Available
@@ -123,7 +72,6 @@ uint64_t ensure_inline_symbol_qsslkey(void* this_) {
 /*void* qm4055785992(QSslKey && other)*/{
   QSslKey && other =  static_cast<QSslKey &&>(*(QSslKey *)this_);
   this_ =  new QSslKey(other);
-  this_ =  new MyQSslKey(other);
 }
 
 // Public inline Ignore Visibility=Default Availability=Available

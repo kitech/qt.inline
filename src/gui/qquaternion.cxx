@@ -16,50 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQQuaternion_t {
-  QByteArrayData data[1];
-  char stringdata0[14];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQQuaternion_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQQuaternion_t qt_meta_stringdata_MyQQuaternion = {
-   {
-  QT_MOC_LITERAL(0, 0, 13), // "MyQQuaternion"
-  },
-  "MyQQuaternion"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQQuaternion[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQQuaternion : public QQuaternion {
-public:
-  virtual ~MyQQuaternion() {}
-// void QQuaternion()
-MyQQuaternion() : QQuaternion() {}
-// void QQuaternion(Qt::Initialization)
-MyQQuaternion(Qt::Initialization arg0) : QQuaternion(arg0) {}
-// void QQuaternion(float, float, float, float)
-MyQQuaternion(float scalar, float xpos, float ypos, float zpos) : QQuaternion(scalar, xpos, ypos, zpos) {}
-// void QQuaternion(float, const QVector3D &)
-MyQQuaternion(float scalar, const QVector3D & vector) : QQuaternion(scalar, vector) {}
-// void QQuaternion(const QVector4D &)
-MyQQuaternion(const QVector4D & vector) : QQuaternion(vector) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qquaternion(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -71,7 +27,6 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm1733059385()*/{
   ;
   this_ =  new QQuaternion();
-  this_ =  new MyQQuaternion();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -81,7 +36,6 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm1670413819(Qt::Initialization arg0)*/{
   Qt::Initialization arg0 = *(Qt::Initialization*)this_;
   this_ =  new QQuaternion(arg0);
-  this_ =  new MyQQuaternion(arg0);
 }
 
 // Public Visibility=Default Availability=Available
@@ -91,7 +45,6 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm1853151988(float scalar, float xpos, float ypos, float zpos)*/{
   float scalar = *(float*)this_; float xpos = *(float*)this_; float ypos = *(float*)this_; float zpos = *(float*)this_;
   this_ =  new QQuaternion(scalar, xpos, ypos, zpos);
-  this_ =  new MyQQuaternion(scalar, xpos, ypos, zpos);
 }
 
 // Public Visibility=Default Availability=Available
@@ -101,7 +54,6 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm2652448911(float scalar, const QVector3D & vector)*/{
   float scalar = *(float*)this_; const QVector3D & vector = *(const QVector3D *)this_;
   this_ =  new QQuaternion(scalar, vector);
-  this_ =  new MyQQuaternion(scalar, vector);
 }
 
 // Public Visibility=Default Availability=Available
@@ -111,7 +63,6 @@ uint64_t ensure_inline_symbol_qquaternion(void* this_) {
 /*void* qm3375837105(const QVector4D & vector)*/{
   const QVector4D & vector = *(const QVector4D *)this_;
   this_ =  new QQuaternion(vector);
-  this_ =  new MyQQuaternion(vector);
 }
 
 // Public Extend Visibility=Default Availability=Available

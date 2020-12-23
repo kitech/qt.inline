@@ -16,46 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQTextFragment_t {
-  QByteArrayData data[1];
-  char stringdata0[16];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQTextFragment_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQTextFragment_t qt_meta_stringdata_MyQTextFragment = {
-   {
-  QT_MOC_LITERAL(0, 0, 15), // "MyQTextFragment"
-  },
-  "MyQTextFragment"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQTextFragment[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQTextFragment : public QTextFragment {
-public:
-  virtual ~MyQTextFragment() {}
-// void QTextFragment(const QTextDocumentPrivate *, int, int)
-MyQTextFragment(const QTextDocumentPrivate * priv, int f, int fe) : QTextFragment(priv, f, fe) {}
-// void QTextFragment()
-MyQTextFragment() : QTextFragment() {}
-// void QTextFragment(const QTextFragment &)
-MyQTextFragment(const QTextFragment & o) : QTextFragment(o) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qtextfragment(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -67,7 +27,6 @@ uint64_t ensure_inline_symbol_qtextfragment(void* this_) {
 /*void* qm3081189285(const QTextDocumentPrivate * priv, int f, int fe)*/{
   const QTextDocumentPrivate * priv = *(const QTextDocumentPrivate **)this_; int f = *(int*)this_; int fe = *(int*)this_;
   this_ =  new QTextFragment(priv, f, fe);
-  this_ =  new MyQTextFragment(priv, f, fe);
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -77,7 +36,6 @@ uint64_t ensure_inline_symbol_qtextfragment(void* this_) {
 /*void* qm1958237701()*/{
   ;
   this_ =  new QTextFragment();
-  this_ =  new MyQTextFragment();
 }
 
 // Public inline Visibility=Default Availability=Available
@@ -87,7 +45,6 @@ uint64_t ensure_inline_symbol_qtextfragment(void* this_) {
 /*void* qm3909927515(const QTextFragment & o)*/{
   const QTextFragment & o = *(const QTextFragment *)this_;
   this_ =  new QTextFragment(o);
-  this_ =  new MyQTextFragment(o);
 }
 
 // Public inline Direct Visibility=Default Availability=Available

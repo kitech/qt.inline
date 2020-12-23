@@ -16,42 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQSystemSemaphore_t {
-  QByteArrayData data[1];
-  char stringdata0[19];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQSystemSemaphore_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQSystemSemaphore_t qt_meta_stringdata_MyQSystemSemaphore = {
-   {
-  QT_MOC_LITERAL(0, 0, 18), // "MyQSystemSemaphore"
-  },
-  "MyQSystemSemaphore"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQSystemSemaphore[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQSystemSemaphore : public QSystemSemaphore {
-public:
-  virtual ~MyQSystemSemaphore() {}
-// void QSystemSemaphore(const QString &, int, QSystemSemaphore::AccessMode)
-MyQSystemSemaphore(const QString & key, int initialValue, QSystemSemaphore::AccessMode mode) : QSystemSemaphore(key, initialValue, mode) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qsystemsemaphore(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -63,7 +27,6 @@ uint64_t ensure_inline_symbol_qsystemsemaphore(void* this_) {
 /*void* qm694823264(const QString & key, int initialValue, QSystemSemaphore::AccessMode mode)*/{
   const QString & key = *(const QString *)this_; int initialValue = *(int*)this_; QSystemSemaphore::AccessMode mode = *(QSystemSemaphore::AccessMode*)this_;
   this_ =  new QSystemSemaphore(key, initialValue, mode);
-  this_ =  new MyQSystemSemaphore(key, initialValue, mode);
 }
 
 

@@ -16,48 +16,6 @@
 //  main block begin
 
 
-struct qt_meta_stringdata_MyQCalendar_t {
-  QByteArrayData data[1];
-  char stringdata0[12];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-  Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-  qptrdiff(offsetof(qt_meta_stringdata_MyQCalendar_t, stringdata0) + ofs \
-  - idx * sizeof(QByteArrayData)) \
-  )
-static const qt_meta_stringdata_MyQCalendar_t qt_meta_stringdata_MyQCalendar = {
-   {
-  QT_MOC_LITERAL(0, 0, 11), // "MyQCalendar"
-  },
-  "MyQCalendar"
-};
-#undef QT_MOC_LITERAL
-static const uint qt_meta_data_MyQCalendar[] = {
-  // content:
-  7,       // revision
-  0,       // classname
-  0,   0, // classinfo
-  0,   0, // methods
-  0,    0, // properties
-  0,    0, // enums/sets
-  0,    0, // constructors
-  0,       // flags
-  0,       // signalCount
-  0        // eod
-};
-class Q_DECL_EXPORT MyQCalendar : public QCalendar {
-public:
-  virtual ~MyQCalendar() {}
-// void QCalendar()
-MyQCalendar() : QCalendar() {}
-// void QCalendar(QCalendar::System)
-MyQCalendar(QCalendar::System system) : QCalendar(system) {}
-// void QCalendar(QLatin1String)
-MyQCalendar(QLatin1String name) : QCalendar(name) {}
-// void QCalendar(QStringView)
-MyQCalendar(QStringView name) : QCalendar(name) {}
-};
-
 extern "C" // Q_DECL_EXPORT
 uint64_t ensure_inline_symbol_qcalendar(void* this_) {
   uint64_t fnptrsumval = 0;
@@ -69,7 +27,6 @@ uint64_t ensure_inline_symbol_qcalendar(void* this_) {
 /*void* qm3825756679()*/{
   ;
   this_ =  new QCalendar();
-  this_ =  new MyQCalendar();
 }
 
 // Public Visibility=Default Availability=Available
@@ -79,7 +36,6 @@ uint64_t ensure_inline_symbol_qcalendar(void* this_) {
 /*void* qm1041500418(QCalendar::System system)*/{
   QCalendar::System system = *(QCalendar::System*)this_;
   this_ =  new QCalendar(system);
-  this_ =  new MyQCalendar(system);
 }
 
 // Public Visibility=Default Availability=Available
@@ -89,7 +45,6 @@ uint64_t ensure_inline_symbol_qcalendar(void* this_) {
 /*void* qm195008927(QLatin1String name)*/{
   QLatin1String name = *(QLatin1String*)this_;
   this_ =  new QCalendar(name);
-  this_ =  new MyQCalendar(name);
 }
 
 // Public inline Extend Visibility=Default Availability=Available
