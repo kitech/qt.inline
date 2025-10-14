@@ -273,10 +273,12 @@ int C_Z24qmlRegisterSingletonTypePKciiS0_PF8QJSValueP10QQmlEngineP9QJSEngineE_1(
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:608
 // [-2] void qmlRegisterBaseTypes(const char *, int, int)
+#if QT_VERSION <= QT_VERSION_CHECK(5,12,0)
 extern "C" Q_DECL_EXPORT
 void C_Z20qmlRegisterBaseTypesPKcii(const char * uri, int versionMajor, int versionMinor) {
   qmlRegisterBaseTypes(uri, versionMajor, versionMinor);
 }
+#endif
 
 // Invalid Visibility=Default Availability=Available
 // /usr/include/qt/QtQml/qqml.h:599

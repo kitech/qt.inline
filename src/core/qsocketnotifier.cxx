@@ -223,10 +223,12 @@ void C_ZN15QSocketNotifier10setEnabledEb(void *this_, bool arg0) {
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsocketnotifier.h:68
 // [-2] void activated(int, QSocketNotifier::QPrivateSignal)
+#if QT_VERSION <= QT_VERSION_CHECK(5,12,0)
 extern "C" Q_DECL_EXPORT
 void C_ZN15QSocketNotifier9activatedEiNS_14QPrivateSignalE(void *this_, int socket, QSocketNotifier::QPrivateSignal* arg1) {
   ((QSocketNotifier*)this_)->activated(socket, *arg1);
 }
+#endif
 
 //  main block end
 

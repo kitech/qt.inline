@@ -74,11 +74,12 @@ void* C_ZN18QMessageLogContextC2EPKciS1_S1_(const char * fileName, int lineNumbe
 // Public Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qlogging.h:71
 // [-2] void copy(const QMessageLogContext &)
+#if QT_VERSION <= QT_VERSION_CHECK(5,12,0)
 extern "C" Q_DECL_EXPORT
 void C_ZN18QMessageLogContext4copyERKS_(void *this_, QMessageLogContext* logContext) {
   ((QMessageLogContext*)this_)->copy(*logContext);
 }
-
+#endif
 
 extern "C" Q_DECL_EXPORT
 void C_ZN18QMessageLogContextD2Ev(void *this_) {

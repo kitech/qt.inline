@@ -57,18 +57,22 @@ MyExternalRefCountData(Qt::Initialization arg0) : QtSharedPointer::ExternalRefCo
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:148
 // [-2] void ExternalRefCountData(QtSharedPointer::ExternalRefCountData::DestroyerFn)
+#if QT_VERSION <= QT_VERSION_CHECK(5,12,0)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QtSharedPointer20ExternalRefCountDataC2EPFvPS0_E(QtSharedPointer::ExternalRefCountData::DestroyerFn d) {
   return  new QtSharedPointer::ExternalRefCountData(d);
 }
+#endif
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:154
 // [-2] void ExternalRefCountData(Qt::Initialization)
+#if QT_VERSION <= QT_VERSION_CHECK(5,12,0)
 extern "C" Q_DECL_EXPORT
 void* C_ZN15QtSharedPointer20ExternalRefCountDataC2EN2Qt14InitializationE(Qt::Initialization arg0) {
   return  new QtSharedPointer::ExternalRefCountData(arg0);
 }
+#endif
 
 // Public inline Visibility=Default Availability=Available
 // /usr/include/qt/QtCore/qsharedpointer_impl.h:155
